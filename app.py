@@ -1,21 +1,44 @@
 import streamlit as st
 
 # -----------------------
-# CONFIG STREAMLIT (doit être en tout premier)
+# CONFIG STREAMLIT
 # -----------------------
 st.set_page_config(
-    page_title="Quiz CAP Boucher",
+    page_title="Quiz CFA",
     page_icon="🥩",
     layout="centered"
 )
 
-# On importe directement tes données de quiz
-from quiz_cap_boucher_100 import quiz_data
+# -----------------------
+# IMPORT DES QUIZ DISPONIBLES
+# -----------------------
+# Pour l'instant, un seul quiz. Plus tard, tu pourras créer d'autres fichiers
+# (ex: quiz_cap_menuisier.py) et les ajouter ici.
+from quiz_cap_boucher_100 import quiz_data as quiz_boucher_data
 
+# Dictionnaire des quiz disponibles : clé = identifiant interne, valeur = dict info
+QUIZZES = {
+    "cap_boucher_100": {
+        "title": "CAP Boucher – 100 questions",
+        "description": "Révisions complètes 2ème année : anatomie, hygiène, désossage, technologie, législation.",
+        "data": quiz_boucher_data,
+        "icon": "🥩",
+    },
+    # Exemple futur :
+    # "cap_menuisier": {
+    #     "title": "CAP Menuisier – 50 questions",
+    #     "description": "Quiz sur les techniques de menuiserie, matériaux, sécurité.",
+    #     "data": quiz_menuisier_data,
+    #     "icon": "🪵",
+    # },
+}
 
 # -----------------------
-# 1) INITIALISATION DU STATE
+# STATE GLOBAL
 # -----------------------
+
+if "selected_quiz_key" not in st.session_state:
+    st.session_state.selected_quiz_key = None  # ex: "cap_boucher_100"
 
 if "current_theme" not in st.session_state:
     st.session_state.current_theme = None  # numéro de thème (1, 2, 3, 4, 5)
@@ -24,8 +47,7 @@ if "current_question_index" not in st.session_state:
 if "score" not in st.session_state:
     st.session_state.score = 0
 if "theme_scores" not in st.session_state:
-    # dictionnaire : {1: "5/20", 2: "10/20", ...}
-    st.session_state.theme_scores = {num: None for num in quiz_data["themes"].keys()}
+    st.session_state.theme_scores = {}
 if "show_correction" not in st.session_state:
     st.session_state.show_correction = False
 if "last_is_correct" not in st.session_state:
@@ -33,8 +55,31 @@ if "last_is_correct" not in st.session_state:
 
 
 # -----------------------
-# 2) FONCTIONS UTILES
+# FONCTIONS : GESTION DU QUIZ COURANT
 # -----------------------
+
+def get_current_quiz_data():
+    """Retourne le quiz_data du quiz sélectionné."""
+    if st.session_state.selected_quiz_key is None:
+        return None
+    return QUIZZES[st.session_state.selected_quiz_key]["data"]
+
+
+def reset_quiz_state_for_selected_quiz():
+    """Réinitialise l'état pour le quiz sélectionné."""
+    quiz_data = get_current_quiz_data()
+    if not quiz_data:
+        return
+    st.session_state.current_theme = None
+    st.session_state.current_question_index = 0
+    st.session_state.score = 0
+    # Crée un dict de scores vide pour chaque thème du quiz choisi
+    st.session_state.theme_scores = {
+        num: None for num in quiz_data["themes"].keys()
+    }
+    st.session_state.show_correction = False
+    st.session_state.last_is_correct = None
+
 
 def start_theme(theme_number: int):
     """Lance un thème : remet l'index de question et le score à zéro."""
@@ -45,8 +90,8 @@ def start_theme(theme_number: int):
     st.session_state.last_is_correct = None
 
 
-def go_back_to_menu():
-    """Retour au menu principal."""
+def go_back_to_main_menu():
+    """Retour au menu des thèmes pour le quiz courant."""
     st.session_state.current_theme = None
     st.session_state.current_question_index = 0
     st.session_state.score = 0
@@ -56,6 +101,7 @@ def go_back_to_menu():
 
 def get_current_question():
     """Retourne la question en cours en fonction du thème et de l'index."""
+    quiz_data = get_current_quiz_data()
     theme = quiz_data["themes"][st.session_state.current_theme]
     questions = theme["questions"]
     idx = st.session_state.current_question_index
@@ -65,11 +111,45 @@ def get_current_question():
 
 
 # -----------------------
-# 3) INTERFACE : MENU PRINCIPAL
+# INTERFACE : MENU GLOBAL DE SÉLECTION DE QUIZ
 # -----------------------
 
-def show_main_menu():
-    st.title(quiz_data.get("title", "Quiz CAP Boucher"))
+def show_quiz_selector():
+    st.title("Quiz CFA – Centre de Foix")
+
+    st.subheader("Choisissez un quiz")
+
+    # Liste des quiz avec description
+    for key, info in QUIZZES.items():
+        with st.container(border=True):
+            cols = st.columns([1, 5])
+            with cols[0]:
+                st.markdown(f"### {info.get('icon', '❓')}")
+            with cols[1]:
+                st.markdown(f"### {info['title']}")
+                st.write(info["description"])
+                if st.button(f"Lancer ce quiz", key=f"select_quiz_{key}"):
+                    st.session_state.selected_quiz_key = key
+                    reset_quiz_state_for_selected_quiz()
+                    st.rerun()
+
+
+# -----------------------
+# INTERFACE : MENU DES THÈMES (POUR LE QUIZ COURANT)
+# -----------------------
+
+def show_main_menu_for_current_quiz():
+    quiz_data = get_current_quiz_data()
+    if not quiz_data:
+        st.error("Aucun quiz sélectionné.")
+        return
+
+    st.title(quiz_data.get("title", "Quiz"))
+
+    # Bouton pour revenir au choix de quiz
+    if st.button("⬅️ Retour au menu des quiz"):
+        st.session_state.selected_quiz_key = None
+        st.rerun()
 
     st.subheader("Progression globale")
     total_questions = 0
@@ -103,17 +183,17 @@ def show_main_menu():
             else:
                 st.warning("Non fait")
 
-        # Bouton pour lancer le thème (adapté au tactile)
         if st.button(f"Commencer le thème {num}", key=f"btn_theme_{num}"):
             start_theme(num)
             st.rerun()
 
 
 # -----------------------
-# 4) INTERFACE : ÉCRAN D’UNE QUESTION
+# INTERFACE : ÉCRAN D’UNE QUESTION
 # -----------------------
 
 def show_question_screen():
+    quiz_data = get_current_quiz_data()
     theme_number = st.session_state.current_theme
     theme = quiz_data["themes"][theme_number]
     theme_name = theme["name"]
@@ -128,17 +208,14 @@ def show_question_screen():
     if q is None:
         st.error("Erreur : question introuvable.")
         if st.button("Retour au menu principal"):
-            go_back_to_menu()
+            go_back_to_main_menu()
             st.rerun()
         return
 
-    # Champs utilisés dans ton fichier :
-    # "questionNumber", "question", "answerOptions", "correction"
     st.write("### " + q["question"])
 
     options_text = [opt["text"] for opt in q["answerOptions"]]
 
-    # Radio sans index=None (compatible versions plus anciennes)
     selected = st.radio(
         "Choisissez une réponse :",
         options=options_text,
@@ -162,11 +239,10 @@ def show_question_screen():
                     st.session_state.score += 1
 
     with col2:
-        if st.button("Retour au menu"):
-            go_back_to_menu()
+        if st.button("Retour au menu des thèmes"):
+            go_back_to_main_menu()
             st.rerun()
 
-    # Zone de feedback / correction
     if st.session_state.show_correction:
         correct_option = next(
             (opt for opt in q["answerOptions"] if opt["isCorrect"]),
@@ -195,10 +271,11 @@ def show_question_screen():
 
 
 # -----------------------
-# 5) ÉCRAN DE RÉSULTAT D’UN THÈME
+# ÉCRAN DE RÉSULTAT D’UN THÈME
 # -----------------------
 
 def show_theme_result():
+    quiz_data = get_current_quiz_data()
     theme_number = st.session_state.current_theme
     theme = quiz_data["themes"][theme_number]
     theme_name = theme["name"]
@@ -208,24 +285,33 @@ def show_theme_result():
     st.title(f"Résultat : {theme_name}")
     st.success(f"Votre score : {score}/{total_questions}")
 
-    if st.button("Revenir au menu principal"):
-        go_back_to_menu()
+    if st.button("Revenir au menu des thèmes"):
+        go_back_to_main_menu()
         st.rerun()
 
 
 # -----------------------
-# 6) POINT D’ENTRÉE STREAMLIT
+# POINT D’ENTRÉE
 # -----------------------
 
 def main():
+    # 1) Pas encore de quiz choisi → menu global
+    if st.session_state.selected_quiz_key is None:
+        show_quiz_selector()
+        return
+
+    # 2) Quiz choisi, mais aucun thème en cours → menu des thèmes
     if st.session_state.current_theme is None:
-        show_main_menu()
+        show_main_menu_for_current_quiz()
+        return
+
+    # 3) Quiz + thème en cours → afficher question ou résultat
+    quiz_data = get_current_quiz_data()
+    theme = quiz_data["themes"][st.session_state.current_theme]
+    if st.session_state.current_question_index >= len(theme["questions"]):
+        show_theme_result()
     else:
-        theme = quiz_data["themes"][st.session_state.current_theme]
-        if st.session_state.current_question_index >= len(theme["questions"]):
-            show_theme_result()
-        else:
-            show_question_screen()
+        show_question_screen()
 
 
 if __name__ == "__main__":
