@@ -14,7 +14,7 @@ st.set_page_config(
 # -----------------------
 # Pour l'instant, un seul quiz. Plus tard, tu pourras créer d'autres fichiers
 # (ex: quiz_cap_menuisier.py) et les ajouter ici.
-from quiz_cap_boucher_100 import quiz_data as quiz_boucher_data
+from quizzes.quiz_cap_boucher_100 import quiz_data as quiz_boucher_data
 
 # Dictionnaire des quiz disponibles : clé = identifiant interne, valeur = dict info
 QUIZZES = {
