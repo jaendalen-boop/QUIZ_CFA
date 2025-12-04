@@ -95,20 +95,30 @@ def get_current_quiz_data():
 def reset_quiz_state_for_selected_quiz():
     """Réinitialise l'état de session pour le quiz sélectionné (sans effacer les scores globaux)."""
     quiz_data = get_current_quiz_data()
-    if not quiz_data:
+    quiz_key = st.session_state.selected_quiz_key
+    if not quiz_data or not quiz_key:
         return
 
+    # état de la session en cours
     st.session_state.current_theme = None
     st.session_state.current_question_index = 0
     st.session_state.score = 0
     st.session_state.show_correction = False
     st.session_state.last_is_correct = None
 
-    # initialiser le dict de scores pour ce quiz si besoin
+    # initialisation du dict de scores pour ce quiz si besoin
     if st.session_state.theme_scores is None or not isinstance(st.session_state.theme_scores, dict):
         st.session_state.theme_scores = {}
+    
+    # créer l'entrée pour ce quiz s'il n'existe pas
+    if quiz_key not in st.session_state.theme_scores:
+        st.session_state.theme_scores[quiz_key] = {}
+    
+    # initialiser chaque thème à None si pas encore fait
     for num in quiz_data["themes"].keys():
-        st.session_state.theme_scores.setdefault(num, None)
+        if num not in st.session_state.theme_scores[quiz_key]:
+            st.session_state.theme_scores[quiz_key][num] = None
+
 
 def start_theme(theme_number: int):
     """Lance un thème : remet l'index de question et le score à zéro."""
@@ -168,53 +178,65 @@ def show_quiz_selector():
 # -----------------------
 
 def show_main_menu_for_current_quiz():
+    """Affiche la liste des thèmes du quiz courant."""
     quiz_data = get_current_quiz_data()
-    if not quiz_data:
-        st.error("Aucun quiz sélectionné.")
+    quiz_key = st.session_state.selected_quiz_key
+    if not quiz_data or not quiz_key:
+        st.error("Aucune donnée de quiz chargée.")
         return
 
-    st.title(quiz_data.get("title", "Quiz"))
+    st.title(quiz_data["title"])
 
-    # Bouton pour revenir au choix de quiz
-    if st.button("⬅️ Retour au menu des quiz"):
+    # Bouton retour au menu des quiz
+    if st.button("🔙 Retour au menu des quiz"):
         st.session_state.selected_quiz_key = None
         st.rerun()
 
+    # Afficher le score cumulé
     st.subheader("Progression globale")
-    total_questions = 0
-    total_correct = 0
+    total_score = 0
+    total_max = 0
     all_completed = True
-
+    
+    # Récupérer les scores du quiz courant
+    quiz_scores = st.session_state.theme_scores.get(quiz_key, {})
+    
     for num, theme in quiz_data["themes"].items():
-        questions = theme["questions"]
-        total_questions += len(questions)
-        theme_score = st.session_state.theme_scores.get(num)
-        if theme_score is not None:
-            correct, total = theme_score.split("/")
-            total_correct += int(correct)
+        total_max += len(theme["questions"])
+        score_str = quiz_scores.get(num)
+        if score_str:
+            try:
+                score_val = int(score_str.split("/")[0])
+                total_score += score_val
+            except:
+                pass
         else:
             all_completed = False
-
-    st.write(f"Score cumulé : **{total_correct}/{total_questions}**")
-    if all_completed and total_questions > 0:
+    
+    st.write(f"Score cumulé : {total_score}/{total_max}")
+    
+    if all_completed and total_max > 0:
         st.success("🎉 Tous les thèmes complétés !")
 
+    # Liste des thèmes
     st.subheader("Choisissez un thème")
-
     for num, theme in quiz_data["themes"].items():
         col1, col2 = st.columns([3, 1])
         with col1:
             st.write(f"**{theme['name']}**")
         with col2:
-            theme_score = st.session_state.theme_scores.get(num)
+            theme_score = quiz_scores.get(num)
             if theme_score:
                 st.success(f"Complété ({theme_score})")
             else:
                 st.warning("Non fait")
-
-    if st.button(f"Commencer le thème {num}", key=f"btn_theme_{num}"):
-        start_theme(num)
-        st.rerun()
+        
+        # Bouton juste après les colonnes, pour chaque thème
+        if st.button(f"Commencer le thème {num}", key=f"btn_theme_{num}"):
+            start_theme(num)
+            st.rerun()
+        
+        st.write("")  # petit espacement entre les thèmes
 
 
 # -----------------------
@@ -313,7 +335,9 @@ def show_question_screen():
 # -----------------------
 
 def show_theme_result():
+    """Affiche les résultats finaux du thème et enregistre le score."""
     quiz_data = get_current_quiz_data()
+    quiz_key = st.session_state.selected_quiz_key
     theme_number = st.session_state.current_theme
     theme = quiz_data["themes"][theme_number]
     theme_name = theme["name"]
@@ -323,10 +347,14 @@ def show_theme_result():
     st.title(f"Résultat : {theme_name}")
     st.success(f"Votre score : {score}/{total_questions}")
 
+    # ⚠️ AJOUT CRITIQUE : Enregistrer le score pour ce thème du quiz courant
+    if quiz_key not in st.session_state.theme_scores:
+        st.session_state.theme_scores[quiz_key] = {}
+    st.session_state.theme_scores[quiz_key][theme_number] = f"{score}/{total_questions}"
+
     if st.button("Revenir au menu des thèmes"):
         go_back_to_main_menu()
         st.rerun()
-
 
 # -----------------------
 # POINT D’ENTRÉE
