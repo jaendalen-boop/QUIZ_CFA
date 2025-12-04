@@ -1,36 +1,42 @@
 import streamlit as st
 
-# -----------------------
-# CONFIG STREAMLIT
-# -----------------------
 st.set_page_config(
     page_title="Quiz CFA",
-    page_icon="🥩",
+    page_icon="🎓",
     layout="centered"
 )
 
-# -----------------------
-# IMPORT DES QUIZ DISPONIBLES
-# -----------------------
-# Pour l'instant, un seul quiz. Plus tard, tu pourras créer d'autres fichiers
-# (ex: quiz_cap_menuisier.py) et les ajouter ici.
+# --- IMPORT DES QUIZ DISPONIBLES ---
 from quizzes.quiz_cap_boucher_100 import quiz_data as quiz_boucher_data
+from quizzes.quiz_cap_boulanger_100 import quiz_data as quiz_boulanger_data
+from quizzes.quiz_cap_coiffure_100 import quiz_data as quiz_coiffure_data
+from quizzes.quiz_cap_charcutier_traiteur_100 import quiz_data as quiz_charcutier_data
 
-# Dictionnaire des quiz disponibles : clé = identifiant interne, valeur = dict info
 QUIZZES = {
     "cap_boucher_100": {
         "title": "CAP Boucher – 100 questions",
-        "description": "Révisions complètes 2ème année : anatomie, hygiène, désossage, technologie, législation.",
+        "description": "Révisions complètes 2ème année.",
         "data": quiz_boucher_data,
         "icon": "🥩",
     },
-    # Exemple futur :
-    # "cap_menuisier": {
-    #     "title": "CAP Menuisier – 50 questions",
-    #     "description": "Quiz sur les techniques de menuiserie, matériaux, sécurité.",
-    #     "data": quiz_menuisier_data,
-    #     "icon": "🪵",
-    # },
+    "cap_boulanger_100": {
+        "title": "CAP Boulanger – 100 questions",
+        "description": "Révisions complètes CAP Boulanger.",
+        "data": quiz_boulanger_data,
+        "icon": "🥖",
+    },
+    "cap_coiffure_100": {
+        "title": "CAP Coiffure – 100 questions",
+        "description": "Révisions complètes CAP Coiffure.",
+        "data": quiz_coiffure_data,
+        "icon": "💇",
+    },
+    "cap_charcutier_traiteur_100": {
+        "title": "CAP Charcutier-Traiteur – 100 questions",
+        "description": "Révisions complètes CAP Charcutier-Traiteur.",
+        "data": quiz_charcutier_data,
+        "icon": "🍖",
+    },
 }
 
 # -----------------------
