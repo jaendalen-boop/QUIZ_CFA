@@ -10,7 +10,8 @@ st.set_page_config(
 from quizzes.quiz_cap_boucher_100 import quiz_data as quiz_boucher_data
 from quizzes.quiz_cap_boulanger_100 import quiz_data as quiz_boulanger_data
 from quizzes.quiz_cap_coiffure_100 import quiz_data as quiz_coiffure_data
-from quizzes.quiz_cap_charcutier_traiteur_100 import quiz_data as quiz_charcutier_data
+from quizzes.quiz_cap_charcutier_traiteur_100 import quiz_data as quiz_charcutier_traiteur_data
+from quizzes.quiz_cap_peinture_carrosserie_100 import quiz_data as quiz_peinture_carrosserie_data
 
 QUIZZES = {
     "cap_boucher_100": {
@@ -29,15 +30,31 @@ QUIZZES = {
         "title": "CAP Coiffure – 100 questions",
         "description": "Révisions complètes CAP Coiffure.",
         "data": quiz_coiffure_data,
-        "icon": "💇",
+        "icon": "💇‍♀️",
     },
     "cap_charcutier_traiteur_100": {
         "title": "CAP Charcutier-Traiteur – 100 questions",
         "description": "Révisions complètes CAP Charcutier-Traiteur.",
-        "data": quiz_charcutier_data,
+        "data": quiz_charcutier_traiteur_data,
         "icon": "🍖",
     },
+    "cap_peinture_carrosserie_100": {
+        "title": "CAP Peinture en Carrosserie – 100 questions",
+        "description": "Révisions complètes CAP Peinture en carrosserie.",
+        "data": quiz_peinture_carrosserie_data,
+        "icon": "🚗",
+    },
 }
+
+# Couleurs par numéro de thème (si un thème 6 existe, on reprendra la dernière couleur)
+THEME_COLORS = {
+    1: "#4f46e5",  # bleu/violet
+    2: "#16a34a",  # vert
+    3: "#ea580c",  # orange
+    4: "#0ea5e9",  # bleu clair
+    5: "#e11d48",  # rose/rouge
+}
+
 
 # -----------------------
 # STATE GLOBAL
@@ -64,6 +81,10 @@ if "last_is_correct" not in st.session_state:
 # FONCTIONS : GESTION DU QUIZ COURANT
 # -----------------------
 
+# -----------------------
+# FONCTIONS : GESTION DU QUIZ COURANT
+# -----------------------
+
 def get_current_quiz_data():
     """Retourne le quiz_data du quiz sélectionné."""
     if st.session_state.selected_quiz_key is None:
@@ -72,20 +93,22 @@ def get_current_quiz_data():
 
 
 def reset_quiz_state_for_selected_quiz():
-    """Réinitialise l'état pour le quiz sélectionné."""
+    """Réinitialise l'état de session pour le quiz sélectionné (sans effacer les scores globaux)."""
     quiz_data = get_current_quiz_data()
     if not quiz_data:
         return
+
     st.session_state.current_theme = None
     st.session_state.current_question_index = 0
     st.session_state.score = 0
-    # Crée un dict de scores vide pour chaque thème du quiz choisi
-    st.session_state.theme_scores = {
-        num: None for num in quiz_data["themes"].keys()
-    }
     st.session_state.show_correction = False
     st.session_state.last_is_correct = None
 
+    # initialiser le dict de scores pour ce quiz si besoin
+    if st.session_state.theme_scores is None or not isinstance(st.session_state.theme_scores, dict):
+        st.session_state.theme_scores = {}
+    for num in quiz_data["themes"].keys():
+        st.session_state.theme_scores.setdefault(num, None)
 
 def start_theme(theme_number: int):
     """Lance un thème : remet l'index de question et le score à zéro."""
@@ -97,7 +120,7 @@ def start_theme(theme_number: int):
 
 
 def go_back_to_main_menu():
-    """Retour au menu des thèmes pour le quiz courant."""
+    """Retour au menu des thèmes pour le quiz courant (sans effacer les scores)."""
     st.session_state.current_theme = None
     st.session_state.current_question_index = 0
     st.session_state.score = 0
@@ -181,7 +204,7 @@ def show_main_menu_for_current_quiz():
     for num, theme in quiz_data["themes"].items():
         col1, col2 = st.columns([3, 1])
         with col1:
-            st.write(f"**{num}) {theme['name']}**")
+            st.write(f"**{theme['name']}**")
         with col2:
             theme_score = st.session_state.theme_scores.get(num)
             if theme_score:
@@ -189,9 +212,9 @@ def show_main_menu_for_current_quiz():
             else:
                 st.warning("Non fait")
 
-        if st.button(f"Commencer le thème {num}", key=f"btn_theme_{num}"):
-            start_theme(num)
-            st.rerun()
+    if st.button(f"Commencer le thème {num}", key=f"btn_theme_{num}"):
+        start_theme(num)
+        st.rerun()
 
 
 # -----------------------
@@ -207,7 +230,16 @@ def show_question_screen():
     idx = st.session_state.current_question_index
     total_questions = len(questions)
 
-    st.title(theme_name)
+    color = THEME_COLORS.get(theme_number, "#4f46e5")
+
+    st.markdown(
+    f"<h2 style='margin-bottom:0.2rem;'>{theme_name}</h2>"
+    f"<div style='height:4px;border-radius:999px;background:{color};margin-bottom:0.8rem;'></div>",
+    unsafe_allow_html=True,
+)
+
+    progress = (idx + 1) / total_questions
+    st.progress(progress)
     st.write(f"Question {idx + 1} / {total_questions}")
 
     q = get_current_question()
