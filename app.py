@@ -1,4 +1,5 @@
 import streamlit as st
+import random
 
 st.set_page_config(
     page_title="Quiz CFA",
@@ -60,12 +61,10 @@ THEME_COLORS = {
 # STATE GLOBAL
 # -----------------------
 
-import random
-
 if "selected_quiz_key" not in st.session_state:
-    st.session_state.selected_quiz_key = None  # ex: "cap_boucher_100"
+    st.session_state.selected_quiz_key = None
 if "current_theme" not in st.session_state:
-    st.session_state.current_theme = None  # numéro de thème (1, 2, 3, 4, 5)
+    st.session_state.current_theme = None
 if "current_question_index" not in st.session_state:
     st.session_state.current_question_index = 0
 if "score" not in st.session_state:
