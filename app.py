@@ -1,5 +1,6 @@
 import streamlit as st
 import random
+from datetime import datetime
 
 st.set_page_config(
     page_title="Quiz CFA",
@@ -22,30 +23,35 @@ QUIZZES = {
         "description": "Révisions complètes 2ème année.",
         "data": quiz_boucher_data,
         "icon": "🥩",
+        "color": "#e74c3c",  # rouge viande
     },
     "cap_boulanger_100": {
         "title": "CAP Boulanger – 100 questions",
         "description": "Révisions complètes CAP Boulanger.",
         "data": quiz_boulanger_data,
         "icon": "🥖",
+        "color": "#f39c12",  # orange pain
     },
     "cap_coiffure_100": {
         "title": "CAP Coiffure – 100 questions",
         "description": "Révisions complètes CAP Coiffure.",
         "data": quiz_coiffure_data,
         "icon": "💇",
+        "color": "#9b59b6",  # violet coiffure
     },
     "cap_charcutier_traiteur_100": {
         "title": "CAP Charcutier-Traiteur – 100 questions",
         "description": "Révisions complètes CAP Charcutier-Traiteur.",
         "data": quiz_charcutier_traiteur_data,
         "icon": "🍖",
+        "color": "#c0392b",  # rouge foncé charcuterie
     },
     "cap_peinture_carrosserie_100": {
         "title": "CAP Peinture en Carrosserie – 100 questions",
         "description": "Révisions complètes CAP Peinture en carrosserie.",
         "data": quiz_peinture_carrosserie_data,
         "icon": "🚗",
+        "color": "#3498db",  # bleu auto
     },
 }
 
@@ -160,6 +166,51 @@ def get_current_question():
     return None
 
 
+def generate_score_summary():
+    """Génère un récapitulatif textuel des scores pour export."""
+    quiz_data = get_current_quiz_data()
+    quiz_key = st.session_state.selected_quiz_key
+    quiz_info = QUIZZES[quiz_key]
+    quiz_scores = st.session_state.theme_scores.get(quiz_key, {})
+    
+    lines = []
+    lines.append("=" * 50)
+    lines.append(f"📊 RÉCAPITULATIF - {quiz_info['title']}")
+    lines.append(f"Date : {datetime.now().strftime('%d/%m/%Y %H:%M')}")
+    lines.append("=" * 50)
+    lines.append("")
+    
+    total_score = 0
+    total_max = 0
+    
+    for num, theme in quiz_data["themes"].items():
+        theme_name = theme["name"]
+        total_max += len(theme["questions"])
+        score_str = quiz_scores.get(num, "Non fait")
+        
+        if score_str and score_str != "Non fait":
+            try:
+                score_val = int(score_str.split("/")[0])
+                total_score += score_val
+            except:
+                pass
+        
+        lines.append(f"Thème {num} : {theme_name}")
+        lines.append(f"  Score : {score_str}")
+        lines.append("")
+    
+    lines.append("=" * 50)
+    lines.append(f"SCORE TOTAL : {total_score}/{total_max}")
+    
+    if total_max > 0:
+        percentage = (total_score / total_max) * 100
+        lines.append(f"Pourcentage : {percentage:.1f}%")
+    
+    lines.append("=" * 50)
+    
+    return "\n".join(lines)
+
+
 # -----------------------
 # INTERFACE : SÉLECTEUR DE QUIZ
 # -----------------------
@@ -169,10 +220,31 @@ def show_quiz_selector():
     st.subheader("Choisissez un quiz")
 
     for key, info in QUIZZES.items():
-        with st.container(border=True):
+        color = info.get("color", "#666")
+        
+        # Carte avec couleur de fond légère et bordure colorée
+        st.markdown(f"""
+            <style>
+            .quiz-card-{key} {{
+                background: linear-gradient(135deg, {color}15, {color}05);
+                border-left: 5px solid {color};
+                border-radius: 10px;
+                padding: 1rem;
+                margin-bottom: 1rem;
+                transition: transform 0.2s, box-shadow 0.2s;
+            }}
+            .quiz-card-{key}:hover {{
+                transform: translateY(-3px);
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            }}
+            </style>
+        """, unsafe_allow_html=True)
+        
+        with st.container():
+            st.markdown(f'<div class="quiz-card-{key}">', unsafe_allow_html=True)
             cols = st.columns([1, 5])
             with cols[0]:
-                st.markdown(f"{info.get('icon', '')}")
+                st.markdown(f"<h1 style='font-size:3rem;margin:0;'>{info.get('icon', '')}</h1>", unsafe_allow_html=True)
             with cols[1]:
                 st.markdown(f"**{info['title']}**")
                 st.write(info["description"])
@@ -180,7 +252,7 @@ def show_quiz_selector():
                     st.session_state.selected_quiz_key = key
                     reset_quiz_state_for_selected_quiz()
                     st.rerun()
-
+            st.markdown('</div>', unsafe_allow_html=True)
 
 # -----------------------
 # INTERFACE : MENU DES THÈMES (POUR LE QUIZ COURANT)
@@ -264,6 +336,7 @@ def show_question_screen():
     
     color = THEME_COLORS.get(theme_number, "#4f46e5")
     
+    # En-tête sans timer
     st.markdown(
         f"<h2 style='margin-bottom:0.2rem;'>{theme_name}</h2>"
         f"<div style='height:4px;border-radius:999px;background:{color};margin-bottom:0.8rem;'></div>",
@@ -311,20 +384,43 @@ def show_question_screen():
             go_back_to_main_menu()
             st.rerun()
     
+    # Affichage de la correction avec carte colorée
     if st.session_state.show_correction:
         correct_option = next((opt for opt in q["answerOptions"] if opt["isCorrect"]), None)
         
         if st.session_state.last_is_correct is True:
-            st.success("✅ Bonne réponse !")
+            st.markdown(
+                """
+                <div style='background-color:#d4edda;border-left:5px solid #28a745;padding:1rem;border-radius:8px;margin:1rem 0;'>
+                    <h3 style='color:#155724;margin:0;'>✅ Bonne réponse !</h3>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
         elif st.session_state.last_is_correct is False:
-            st.error("❌ Mauvaise réponse.")
-            if correct_option:
-                st.info(f"La bonne réponse était : {correct_option['text']}")
+            st.markdown(
+                f"""
+                <div style='background-color:#f8d7da;border-left:5px solid #dc3545;padding:1rem;border-radius:8px;margin:1rem 0;'>
+                    <h3 style='color:#721c24;margin:0 0 0.5rem 0;'>❌ Mauvaise réponse</h3>
+                    <p style='margin:0;color:#721c24;'><strong>La bonne réponse était :</strong> {correct_option['text'] if correct_option else 'N/A'}</p>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
         
+        # Affichage du cours dans une carte bleue
         if "correction" in q and q["correction"]:
-            st.markdown(f"**📚 Cours :**\n\n{q['correction']}")
+            st.markdown(
+                f"""
+                <div style='background-color:#d1ecf1;border-left:5px solid #17a2b8;padding:1rem;border-radius:8px;margin:1rem 0;'>
+                    <h4 style='color:#0c5460;margin:0 0 0.5rem 0;'>📚 Cours</h4>
+                    <div style='color:#0c5460;'>{q['correction']}</div>
+                </div>
+                """,
+                unsafe_allow_html=True
+            )
         
-        if st.button("Question suivante"):
+        if st.button("Question suivante ➡️"):
             st.session_state.show_correction = False
             st.session_state.last_is_correct = None
             st.session_state.current_question_index += 1
@@ -350,20 +446,47 @@ def show_theme_result():
     score = st.session_state.score
 
     st.title(f"Résultat : {theme_name}")
-    st.success(f"Votre score : {score}/{total_questions}")
+    
+    percentage = (score / total_questions) * 100
+    
+    if percentage == 100:
+        st.balloons()
+        st.success(f"🎉 Parfait ! Votre score : {score}/{total_questions} ({percentage:.0f}%)")
+    elif percentage >= 75:
+        st.success(f"👍 Très bien ! Votre score : {score}/{total_questions} ({percentage:.0f}%)")
+    elif percentage >= 50:
+        st.info(f"🆗 Pas mal ! Votre score : {score}/{total_questions} ({percentage:.0f}%)")
+    else:
+        st.warning(f"📚 Votre score : {score}/{total_questions} ({percentage:.0f}%) - Révise encore ce thème !")
 
-    # Enregistrer le score pour ce thème du quiz courant
-    if quiz_key not in st.session_state.theme_scores:
-        st.session_state.theme_scores[quiz_key] = {}
-    st.session_state.theme_scores
     # Enregistrer le score pour ce thème du quiz courant
     if quiz_key not in st.session_state.theme_scores:
         st.session_state.theme_scores[quiz_key] = {}
     st.session_state.theme_scores[quiz_key][theme_number] = f"{score}/{total_questions}"
 
-    if st.button("Revenir au menu des thèmes"):
-        go_back_to_main_menu()
-        st.rerun()
+    # Boutons d'action
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        if st.button("🔙 Revenir au menu des thèmes"):
+            go_back_to_main_menu()
+            st.rerun()
+    
+    with col2:
+        if st.button("🔄 Refaire ce thème"):
+            start_theme(theme_number)
+            st.rerun()
+    
+    st.write("")
+    
+    # Bouton téléchargement récapitulatif
+    summary_text = generate_score_summary()
+    st.download_button(
+        label="📄 Télécharger le récapitulatif complet",
+        data=summary_text,
+        file_name=f"recap_quiz_{quiz_key}_{datetime.now().strftime('%Y%m%d_%H%M')}.txt",
+        mime="text/plain"
+    )
 
 
 # -----------------------
