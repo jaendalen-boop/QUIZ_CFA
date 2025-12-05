@@ -342,4 +342,54 @@ def show_question_screen():
 def show_theme_result():
     """Affiche les résultats finaux du thème et enregistre le score."""
     quiz_data = get_current_quiz_data()
-    quiz_key = st.session_state.selected_
+    quiz_key = st.session_state.selected_quiz_key
+    theme_number = st.session_state.current_theme
+    theme = quiz_data["themes"][theme_number]
+    theme_name = theme["name"]
+    total_questions = len(theme["questions"])
+    score = st.session_state.score
+
+    st.title(f"Résultat : {theme_name}")
+    st.success(f"Votre score : {score}/{total_questions}")
+
+    # Enregistrer le score pour ce thème du quiz courant
+    if quiz_key not in st.session_state.theme_scores:
+        st.session_state.theme_scores[quiz_key] = {}
+    st.session_state.theme_scores
+    # Enregistrer le score pour ce thème du quiz courant
+    if quiz_key not in st.session_state.theme_scores:
+        st.session_state.theme_scores[quiz_key] = {}
+    st.session_state.theme_scores[quiz_key][theme_number] = f"{score}/{total_questions}"
+
+    if st.button("Revenir au menu des thèmes"):
+        go_back_to_main_menu()
+        st.rerun()
+
+
+# -----------------------
+# FONCTION PRINCIPALE
+# -----------------------
+
+def main():
+    # 1) Pas encore de quiz choisi → menu global
+    if st.session_state.selected_quiz_key is None:
+        show_quiz_selector()
+        return
+
+    # 2) Quiz choisi, mais aucun thème en cours → menu des thèmes
+    if st.session_state.current_theme is None:
+        show_main_menu_for_current_quiz()
+        return
+
+    # 3) Quiz + thème en cours → afficher question ou résultat
+    quiz_data = get_current_quiz_data()
+    theme = quiz_data["themes"][st.session_state.current_theme]
+    
+    if st.session_state.current_question_index >= len(theme["questions"]):
+        show_theme_result()
+    else:
+        show_question_screen()
+
+
+if __name__ == "__main__":
+    main()
