@@ -60,9 +60,10 @@ THEME_COLORS = {
 # STATE GLOBAL
 # -----------------------
 
+import random
+
 if "selected_quiz_key" not in st.session_state:
     st.session_state.selected_quiz_key = None  # ex: "cap_boucher_100"
-
 if "current_theme" not in st.session_state:
     st.session_state.current_theme = None  # numéro de thème (1, 2, 3, 4, 5)
 if "current_question_index" not in st.session_state:
@@ -75,11 +76,9 @@ if "show_correction" not in st.session_state:
     st.session_state.show_correction = False
 if "last_is_correct" not in st.session_state:
     st.session_state.last_is_correct = None
+if "shuffled_questions" not in st.session_state:
+    st.session_state.shuffled_questions = None
 
-
-# -----------------------
-# FONCTIONS : GESTION DU QUIZ COURANT
-# -----------------------
 
 # -----------------------
 # FONCTIONS : GESTION DU QUIZ COURANT
@@ -105,6 +104,7 @@ def reset_quiz_state_for_selected_quiz():
     st.session_state.score = 0
     st.session_state.show_correction = False
     st.session_state.last_is_correct = None
+    st.session_state.shuffled_questions = None
 
     # initialisation du dict de scores pour ce quiz si besoin
     if st.session_state.theme_scores is None or not isinstance(st.session_state.theme_scores, dict):
@@ -121,12 +121,21 @@ def reset_quiz_state_for_selected_quiz():
 
 
 def start_theme(theme_number: int):
-    """Lance un thème : remet l'index de question et le score à zéro."""
+    """Lance un thème, remet l'index de question et le score à zéro, et mélange les questions."""
+    quiz_data = get_current_quiz_data()
+    theme = quiz_data["themes"][theme_number]
+    questions = theme["questions"]
+    
+    # Créer une copie mélangée des questions
+    shuffled = questions.copy()
+    random.shuffle(shuffled)
+    
     st.session_state.current_theme = theme_number
     st.session_state.current_question_index = 0
     st.session_state.score = 0
     st.session_state.show_correction = False
     st.session_state.last_is_correct = None
+    st.session_state.shuffled_questions = shuffled
 
 
 def go_back_to_main_menu():
@@ -136,17 +145,26 @@ def go_back_to_main_menu():
     st.session_state.score = 0
     st.session_state.show_correction = False
     st.session_state.last_is_correct = None
+    st.session_state.shuffled_questions = None
 
 
 def get_current_question():
-    """Retourne la question en cours en fonction du thème et de l'index."""
-    quiz_data = get_current_quiz_data()
-    theme = quiz_data["themes"][st.session_state.current_theme]
-    questions = theme["questions"]
+    """Retourne la question en cours (depuis la liste mélangée si disponible)."""
     idx = st.session_state.current_question_index
+    
+    # Utiliser les questions mélangées si disponibles
+    if st.session_state.shuffled_questions:
+        questions = st.session_state.shuffled_questions
+    else:
+        # Fallback si pas de mélange (ne devrait pas arriver)
+        quiz_data = get_current_quiz_data()
+        theme = quiz_data["themes"][st.session_state.current_theme]
+        questions = theme["questions"]
+    
     if 0 <= idx < len(questions):
         return questions[idx]
     return None
+
 
 
 # -----------------------
@@ -248,7 +266,12 @@ def show_question_screen():
     theme_number = st.session_state.current_theme
     theme = quiz_data["themes"][theme_number]
     theme_name = theme["name"]
+    # Utiliser les questions mélangées
+if st.session_state.shuffled_questions:
+    questions = st.session_state.shuffled_questions
+else:
     questions = theme["questions"]
+
     idx = st.session_state.current_question_index
     total_questions = len(questions)
 
