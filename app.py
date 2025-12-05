@@ -16,42 +16,158 @@ from quizzes.quiz_cap_boulanger_100 import quiz_data as quiz_boulanger_data
 from quizzes.quiz_cap_coiffure_100 import quiz_data as quiz_coiffure_data
 from quizzes.quiz_cap_charcutier_traiteur_100 import quiz_data as quiz_charcutier_traiteur_data
 from quizzes.quiz_cap_peinture_carrosserie_100 import quiz_data as quiz_peinture_carrosserie_data
+from quizzes.quiz_cap_boulanger_100 import quiz_data as quiz_boulanger_data
+from quizzes.quiz_cap_coiffure_100 import quiz_data as quiz_coiffure_data
+from quizzes.quiz_cap_peinture_carrosserie_100 import quiz_data as quiz_peinture_carrosserie_data
+from quizzes.quiz_cap_carrosserie_100 import quiz_data as quiz_carrosserie_data
+from quizzes.quiz_cap_cuisine_100 import quiz_data as quiz_cuisine_data
+from quizzes.quiz_cap_electricite_100 import quiz_data as quiz_electricite_data
+from quizzes.quiz_cap_employe_polyvalent_commerce_100 import quiz_data as quiz_epc_data
+from quizzes.quiz_cap_macon_100 import quiz_data as quiz_macon_data
+from quizzes.quiz_cap_meca_vp_100 import quiz_data as quiz_meca_vp_data
+from quizzes.quiz_cap_menuisier_fabricant_100 import quiz_data as quiz_menuisier_fabricant_data
+from quizzes.quiz_cap_menuisier_installateur_100 import quiz_data as quiz_menuisier_installateur_data
+from quizzes.quiz_cap_patissier_100 import quiz_data as quiz_patissier_data
+from quizzes.quiz_cap_peintre_100 import quiz_data as quiz_peintre_data
+from quizzes.quiz_cap_platre_isolation_100 import quiz_data as quiz_platre_isolation_data
+from quizzes.quiz_cap_sanitaire_100 import quiz_data as quiz_sanitaire_data
+from quizzes.quiz_cap_serrurier_metallier_100 import quiz_data as quiz_serrurier_data
+from quizzes.quiz_cap_thermique_100 import quiz_data as quiz_thermique_data
 
 QUIZZES = {
     "cap_boucher_100": {
         "title": "CAP Boucher – 100 questions",
-        "description": "Révisions complètes 2ème année.",
+        "description": "Révisions complètes CAP Boucher.",
         "data": quiz_boucher_data,
         "icon": "🥩",
-        "color": "#e74c3c",  # rouge viande
+        "color": "#e74c3c",
     },
     "cap_boulanger_100": {
         "title": "CAP Boulanger – 100 questions",
         "description": "Révisions complètes CAP Boulanger.",
         "data": quiz_boulanger_data,
         "icon": "🥖",
-        "color": "#f39c12",  # orange pain
+        "color": "#f39c12",
     },
-    "cap_coiffure_100": {
-        "title": "CAP Coiffure – 100 questions",
-        "description": "Révisions complètes CAP Coiffure.",
-        "data": quiz_coiffure_data,
-        "icon": "💇",
-        "color": "#9b59b6",  # violet coiffure
+    "cap_carrosserie_100": {
+        "title": "CAP Carrosserie – 100 questions",
+        "description": "Révisions complètes CAP Carrosserie.",
+        "data": quiz_carrosserie_data,
+        "icon": "🔧",
+        "color": "#34495e",
+    
     },
     "cap_charcutier_traiteur_100": {
         "title": "CAP Charcutier-Traiteur – 100 questions",
         "description": "Révisions complètes CAP Charcutier-Traiteur.",
         "data": quiz_charcutier_traiteur_data,
         "icon": "🍖",
-        "color": "#c0392b",  # rouge foncé charcuterie
+        "color": "#c0392b",
+    },
+    "cap_coiffure_100": {
+        "title": "CAP Coiffure – 100 questions",
+        "description": "Révisions complètes CAP Coiffure.",
+        "data": quiz_coiffure_data,
+        "icon": "💇",
+        "color": "#9b59b6",
+    },
+    "cap_cuisine_100": {
+        "title": "CAP Cuisine – 100 questions",
+        "description": "Révisions complètes CAP Cuisine.",
+        "data": quiz_cuisine_data,
+        "icon": "👨‍🍳",
+        "color": "#e67e22",
+    },
+    "cap_electricite_100": {
+        "title": "CAP Électricité – 100 questions",
+        "description": "Révisions complètes CAP Électricité.",
+        "data": quiz_electricite_data,
+        "icon": "⚡",
+        "color": "#f1c40f",
+    },
+    "cap_employe_polyvalent_commerce_100": {
+        "title": "CAP Employé Polyvalent Commerce – 100 questions",
+        "description": "Révisions complètes CAP EPC.",
+        "data": quiz_epc_data,
+        "icon": "🛒",
+        "color": "#16a085",
+    },
+    "cap_macon_100": {
+        "title": "CAP Maçon – 100 questions",
+        "description": "Révisions complètes CAP Maçon.",
+        "data": quiz_macon_data,
+        "icon": "🧱",
+        "color": "#95a5a6",
+    },
+    "cap_meca_vp_100": {
+        "title": "CAP Mécanique VP – 100 questions",
+        "description": "Révisions complètes CAP Mécanique.",
+        "data": quiz_meca_vp_data,
+        "icon": "🔩",
+        "color": "#34495e",
+    },
+    "cap_menuisier_fabricant_100": {
+        "title": "CAP Menuisier Fabricant – 100 questions",
+        "description": "Révisions complètes CAP Menuisier Fabricant.",
+        "data": quiz_menuisier_fabricant_data,
+        "icon": "🪚",
+        "color": "#8b4513",
+    },
+    "cap_menuisier_installateur_100": {
+        "title": "CAP Menuisier Installateur – 100 questions",
+        "description": "Révisions complètes CAP Menuisier Installateur.",
+        "data": quiz_menuisier_installateur_data,
+        "icon": "🪛",
+        "color": "#a0522d",
+    },
+    "cap_patissier_100": {
+        "title": "CAP Pâtissier – 100 questions",
+        "description": "Révisions complètes CAP Pâtissier.",
+        "data": quiz_patissier_data,
+        "icon": "🍰",
+        "color": "#e91e63",
+    },
+    "cap_peintre_100": {
+        "title": "CAP Peintre – 100 questions",
+        "description": "Révisions complètes CAP Peintre.",
+        "data": quiz_peintre_data,
+        "icon": "🎨",
+        "color": "#673ab7",
     },
     "cap_peinture_carrosserie_100": {
         "title": "CAP Peinture en Carrosserie – 100 questions",
-        "description": "Révisions complètes CAP Peinture en carrosserie.",
+        "description": "Révisions complètes CAP Peinture Carrosserie.",
         "data": quiz_peinture_carrosserie_data,
         "icon": "🚗",
-        "color": "#3498db",  # bleu auto
+        "color": "#3498db",
+    },
+    "cap_platre_isolation_100": {
+        "title": "CAP Plâtre & Isolation – 100 questions",
+        "description": "Révisions complètes CAP Plâtre Isolation.",
+        "data": quiz_platre_isolation_data,
+        "icon": "🏗️",
+        "color": "#bdc3c7",
+    },
+    "cap_sanitaire_100": {
+        "title": "CAP Sanitaire – 100 questions",
+        "description": "Révisions complètes CAP Sanitaire.",
+        "data": quiz_sanitaire_data,
+        "icon": "🚰",
+        "color": "#3498db",
+    },
+    "cap_serrurerier_metallier_100": {
+        "title": "CAP Serrurerie-Métallier – 100 questions",
+        "description": "Révisions complètes CAP Serrurerie.",
+        "data": quiz_serrurier_data,
+        "icon": "🔑",
+        "color": "#7f8c8d",
+    },
+    "cap_thermique_100": {
+        "title": "CAP Thermique – 100 questions",
+        "description": "Révisions complètes CAP Thermique.",
+        "data": quiz_thermique_data,
+        "icon": "🔥",
+        "color": "#e74c3c",
     },
 }
 
@@ -354,77 +470,107 @@ def show_question_screen():
             go_back_to_main_menu()
             st.rerun()
         return
-    
+
+    # États supplémentaires pour verrouiller la réponse
+    if "answer_locked" not in st.session_state:
+        st.session_state.answer_locked = False
+    if "selected_answer" not in st.session_state:
+        st.session_state.selected_answer = None
+
     st.write(q["question"])
-    
+
     options_text = [opt["text"] for opt in q["answerOptions"]]
-    
-    selected = st.radio(
-        "Choisissez une réponse :",
-        options=options_text,
-        key=f"q_{theme_number}_{idx}"
-    )
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        if st.button("Valider la réponse"):
-            if not selected:
-                st.warning("Veuillez sélectionner une réponse.")
-            else:
-                correct_option = next((opt for opt in q["answerOptions"] if opt["isCorrect"]), None)
-                is_correct = correct_option is not None and selected == correct_option["text"]
-                st.session_state.last_is_correct = is_correct
-                st.session_state.show_correction = True
-                if is_correct:
-                    st.session_state.score += 1
-    
-    with col2:
-        if st.button("Retour au menu des thèmes"):
-            go_back_to_main_menu()
-            st.rerun()
-    
-    # Affichage de la correction avec carte colorée
-    if st.session_state.show_correction:
-        correct_option = next((opt for opt in q["answerOptions"] if opt["isCorrect"]), None)
-        
-        if st.session_state.last_is_correct is True:
-            st.markdown(
-                """
-                <div style='background-color:#d4edda;border-left:5px solid #28a745;padding:1rem;border-radius:8px;margin:1rem 0;'>
-                    <h3 style='color:#155724;margin:0;'>✅ Bonne réponse !</h3>
-                </div>
-                """,
-                unsafe_allow_html=True
+
+    # Avant validation : radio actif
+    if not st.session_state.answer_locked:
+        selected = st.radio(
+            "Choisissez une réponse :",
+            options=options_text,
+            key=f"q_{theme_number}_{idx}"
+        )
+        st.session_state.selected_answer = selected
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            if st.button("Valider la réponse"):
+                if not st.session_state.selected_answer:
+                    st.warning("Veuillez sélectionner une réponse.")
+                else:
+                    correct_option = next(
+                        (opt for opt in q["answerOptions"] if opt["isCorrect"]), None
+                    )
+                    is_correct = (
+                        correct_option is not None
+                        and st.session_state.selected_answer == correct_option["text"]
+                    )
+                    st.session_state.last_is_correct = is_correct
+                    st.session_state.show_correction = True
+                    st.session_state.answer_locked = True
+                    if is_correct:
+                        st.session_state.score += 1
+                    st.rerun()
+
+        with col2:
+            if st.button("Retour au menu des thèmes"):
+                go_back_to_main_menu()
+                st.rerun()
+
+    # Après validation : réponse figée + correction
+    else:
+        st.write(f"Votre réponse : {st.session_state.selected_answer}")
+
+        col1, col2 = st.columns(2)
+
+        with col2:
+            if st.button("Retour au menu des thèmes"):
+                go_back_to_main_menu()
+                st.rerun()
+
+        if st.session_state.show_correction:
+            correct_option = next(
+                (opt for opt in q["answerOptions"] if opt["isCorrect"]), None
             )
-        elif st.session_state.last_is_correct is False:
-            st.markdown(
-                f"""
-                <div style='background-color:#f8d7da;border-left:5px solid #dc3545;padding:1rem;border-radius:8px;margin:1rem 0;'>
-                    <h3 style='color:#721c24;margin:0 0 0.5rem 0;'>❌ Mauvaise réponse</h3>
-                    <p style='margin:0;color:#721c24;'><strong>La bonne réponse était :</strong> {correct_option['text'] if correct_option else 'N/A'}</p>
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
-        
-        # Affichage du cours dans une carte bleue
-        if "correction" in q and q["correction"]:
-            st.markdown(
-                f"""
-                <div style='background-color:#d1ecf1;border-left:5px solid #17a2b8;padding:1rem;border-radius:8px;margin:1rem 0;'>
-                    <h4 style='color:#0c5460;margin:0 0 0.5rem 0;'>📚 Cours</h4>
-                    <div style='color:#0c5460;'>{q['correction']}</div>
-                </div>
-                """,
-                unsafe_allow_html=True
-            )
-        
+
+            if st.session_state.last_is_correct is True:
+                st.markdown(
+                    """
+                    <div style='background-color:#d4edda;border-left:5px solid #28a745;padding:1rem;border-radius:8px;margin:1rem 0;'>
+                        <h3 style='color:#155724;margin:0;'>✅ Bonne réponse !</h3>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+            elif st.session_state.last_is_correct is False:
+                st.markdown(
+                    f"""
+                    <div style='background-color:#f8d7da;border-left:5px solid #dc3545;padding:1rem;border-radius:8px;margin:1rem 0;'>
+                        <h3 style='color:#721c24;margin:0 0 0.5rem 0;'>❌ Mauvaise réponse</h3>
+                        <p style='margin:0;color:#721c24;'><strong>La bonne réponse était :</strong> {correct_option['text'] if correct_option else 'N/A'}</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
+            # Affichage du cours dans une carte bleue
+            if "correction" in q and q["correction"]:
+                st.markdown(
+                    f"""
+                    <div style='background-color:#d1ecf1;border-left:5px solid #17a2b8;padding:1rem;border-radius:8px;margin:1rem 0;'>
+                        <h4 style='color:#0c5460;margin:0 0 0.5rem 0;'>📚 Cours</h4>
+                        <div style='color:#0c5460;'>{q['correction']}</div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+
         if st.button("Question suivante ➡️"):
             st.session_state.show_correction = False
             st.session_state.last_is_correct = None
             st.session_state.current_question_index += 1
-            
+            st.session_state.answer_locked = False
+            st.session_state.selected_answer = None
+
             if st.session_state.current_question_index >= total_questions:
                 show_theme_result()
             else:
