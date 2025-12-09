@@ -471,6 +471,27 @@ def show_question_screen():
             st.rerun()
         return
 
+    # -----------------------------
+    # MÉLANGE ALÉATOIRE DES RÉPONSES
+    # -----------------------------
+    if "shuffled_answers" not in st.session_state:
+        st.session_state.shuffled_answers = {}
+
+    q_id = f"{theme_number}_{idx}"  # identifiant unique pour la question courante
+
+    if q_id not in st.session_state.shuffled_answers:
+        # copie indépendante pour ne pas modifier les datas source
+        options = [opt.copy() for opt in q["answerOptions"]]
+        random.shuffle(options)
+        # réattribue des keys A/B/C/D si tu veux les garder cohérentes
+        for i, opt in enumerate(options):
+            opt["key"] = chr(ord("A") + i)
+        st.session_state.shuffled_answers[q_id] = options
+
+    answer_options = st.session_state.shuffled_answers[q_id]
+    options_text = [opt["text"] for opt in answer_options]
+    # -----------------------------
+
     # États supplémentaires pour verrouiller la réponse
     if "answer_locked" not in st.session_state:
         st.session_state.answer_locked = False
@@ -478,8 +499,6 @@ def show_question_screen():
         st.session_state.selected_answer = None
 
     st.write(q["question"])
-
-    options_text = [opt["text"] for opt in q["answerOptions"]]
 
     # Avant validation : radio actif
     if not st.session_state.answer_locked:
@@ -497,8 +516,9 @@ def show_question_screen():
                 if not st.session_state.selected_answer:
                     st.warning("Veuillez sélectionner une réponse.")
                 else:
+                    # On cherche la bonne option dans la liste mélangée
                     correct_option = next(
-                        (opt for opt in q["answerOptions"] if opt["isCorrect"]), None
+                        (opt for opt in answer_options if opt["isCorrect"]), None
                     )
                     is_correct = (
                         correct_option is not None
@@ -529,7 +549,7 @@ def show_question_screen():
 
         if st.session_state.show_correction:
             correct_option = next(
-                (opt for opt in q["answerOptions"] if opt["isCorrect"]), None
+                (opt for opt in answer_options if opt["isCorrect"]), None
             )
 
             if st.session_state.last_is_correct is True:
@@ -570,6 +590,10 @@ def show_question_screen():
             st.session_state.current_question_index += 1
             st.session_state.answer_locked = False
             st.session_state.selected_answer = None
+
+            # on nettoie l'ordre mélangé de la question précédente
+            if q_id in st.session_state.shuffled_answers:
+                del st.session_state.shuffled_answers[q_id]
 
             if st.session_state.current_question_index >= total_questions:
                 show_theme_result()

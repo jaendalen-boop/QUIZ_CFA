@@ -1,1147 +1,1129 @@
-# Fichier : quiz_cap_patissier_100.py
-
 quiz_data = {
-    "title": "Quiz CAP Pâtissier : Révisions Complètes (100 Questions)",
-    "themes": {
-        # =========================================================================
-        # THÈME 1 : HYGIÈNE, SÉCURITÉ ET RÈGLEMENTATION (Q. 1-20)
-        # =========================================================================
-        1: {
-            "name": "1. Hygiène, Sécurité et Réglementation (Q. 1-20)",
-            "questions": [
-                {
-                    "questionNumber": 1,
-                    "question": "Quelle est la température maximale de conservation des pâtisseries contenant des crèmes à base d'œufs (crème pâtissière, mousse à base d'œufs) en enceinte réfrigérée positive ?",
-                    "answerOptions": [
-                        {"text": "0 °C", "isCorrect": False},
-                        {"text": "Entre 0 °C et +4 °C (température de réfrigération standard pour les produits sensibles).", "isCorrect": True},
-                        {"text": "+8 °C", "isCorrect": False},
-                        {"text": "+12 °C", "isCorrect": False}
-                    ],
-                    "correction": "Le respect des **+4 °C** est crucial pour limiter la prolifération des bactéries pathogènes comme la salmonelle dans les crèmes."
-                },
-                {
-                    "questionNumber": 2,
-                    "question": "Que signifie l'acronyme **HACCP** en matière d'hygiène alimentaire ?",
-                    "answerOptions": [
-                        {"text": "Hygiène Alimentaire et Contrôle de la Contamination des Produits.", "isCorrect": False},
-                        {"text": "Hazard Analysis Critical Control Point (Analyse des Dangers et Points Critiques pour leur Maîtrise).", "isCorrect": True},
-                        {"text": "Hauteur, Approche, Contrôle, Conformité, Protection.", "isCorrect": False},
-                        {"text": "Habitudes Alimentaires et Chaîne de Préparation des Plats.", "isCorrect": False}
-                    ],
-                    "correction": "L'**HACCP** est une méthode de travail visant à garantir la sécurité sanitaire des aliments."
-                },
-                {
-                    "questionNumber": 3,
-                    "question": "Quelle est la zone du laboratoire (selon la 'marche en avant') où l'on effectue le lavage des fruits, des légumes ou la décongélation des matières premières ?",
-                    "answerOptions": [
-                        {"text": "La zone de finition.", "isCorrect": False},
-                        {"text": "La Zone 'Sale' ou 'Préparation Froide' (où le risque de contamination est le plus élevé).", "isCorrect": True},
-                        {"text": "La zone de cuisson.", "isCorrect": False},
-                        {"text": "La zone de stockage sec.", "isCorrect": False}
-                    ],
-                    "correction": "Le principe de la **marche en avant** exige la séparation des zones pour éviter la contamination croisée."
-                },
-                {
-                    "questionNumber": 4,
-                    "question": "Quel est le danger associé à la consommation de produits à base d'œufs crus (mousses, mayonnaise, tiramisu) si la chaîne du froid n'est pas respectée ?",
-                    "answerOptions": [
-                        {"text": "La listériose.", "isCorrect": False},
-                        {"text": "La Salmonellose (causée par la bactérie *Salmonella*).", "isCorrect": True},
-                        {"text": "Le botulisme.", "isCorrect": False},
-                        {"text": "La gastro-entérite virale.", "isCorrect": False}
-                    ],
-                    "correction": "La **Salmonellose** est le risque majeur des crèmes aux œufs mal conservées."
-                },
-                {
-                    "questionNumber": 5,
-                    "question": "Quel est le rôle d'un **gant cotte de mailles** en pâtisserie ?",
-                    "answerOptions": [
-                        {"text": "Empêcher le contact avec les produits chauds.", "isCorrect": False},
-                        {"text": "Protéger la main contre les coupures lors de l'utilisation d'une trancheuse à pain ou de couteaux très aiguisés (rare en pâtisserie, plus courant en boucherie/charcuterie).", "isCorrect": True},
-                        {"text": "Assurer l'étanchéité.", "isCorrect": False},
-                        {"text": "Isoler du froid.", "isCorrect": False}
-                    ],
-                    "correction": "Le **gant cotte de mailles** est un EPI (Équipement de Protection Individuelle) contre les blessures mécaniques."
-                },
-                {
-                    "questionNumber": 6,
-                    "question": "Pourquoi le port d'un **calot** ou d'une charlotte est-il obligatoire au laboratoire ?",
-                    "answerOptions": [
-                        {"text": "Pour avoir chaud.", "isCorrect": False},
-                        {"text": "Pour empêcher la chute des cheveux (corps étrangers) dans les préparations (risque physique de contamination).", "isCorrect": True},
-                        {"text": "Pour des raisons esthétiques.", "isCorrect": False},
-                        {"text": "Pour absorber la sueur.", "isCorrect": False}
-                    ],
-                    "correction": "Le **calot** ou la charlotte est essentiel pour l'hygiène de base."
-                },
-                {
-                    "questionNumber": 7,
-                    "question": "Quelle doit être la température minimale atteinte au cœur d'un produit (viande, appareils) pour garantir la destruction des bactéries (cuisson) ?",
-                    "answerOptions": [
-                        {"text": "40 °C", "isCorrect": False},
-                        {"text": "63 °C (température recommandée par la réglementation pour la destruction de la plupart des micro-organismes).", "isCorrect": True},
-                        {"text": "100 °C", "isCorrect": False},
-                        {"text": "55 °C", "isCorrect": False}
-                    ],
-                    "correction": "La cuisson doit atteindre **63 °C** au minimum pour être considérée comme 'sûre'."
-                },
-                {
-                    "questionNumber": 8,
-                    "question": "Quel est le rôle du **Plan de Maîtrise Sanitaire (PMS)** ?",
-                    "answerOptions": [
-                        {"text": "Créer de nouvelles recettes.", "isCorrect": False},
-                        {"text": "Décrire les mesures prises par l'établissement pour assurer l'hygiène et la sécurité sanitaire de ses productions (ensemble des procédures HACCP).", "isCorrect": True},
-                        {"text": "Gérer les commandes.", "isCorrect": False},
-                        {"text": "Contrôler la comptabilité.", "isCorrect": False}
-                    ],
-                    "correction": "Le **PMS** est un document obligatoire pour tout professionnel de l'agroalimentaire."
-                },
-                {
-                    "questionNumber": 9,
-                    "question": "Comment doit-on nettoyer et désinfecter le plan de travail après avoir manipulé des œufs ou de la viande (si présente en cuisine salée) ?",
-                    "answerOptions": [
-                        {"text": "Un simple coup d'éponge suffit.", "isCorrect": False},
-                        {"text": "Nettoyage (détergent), rinçage, puis désinfection (produit biocide) et rinçage final.", "isCorrect": True},
-                        {"text": "Uniquement désinfection sans nettoyage préalable.", "isCorrect": False},
-                        {"text": "Laver à l'eau chaude uniquement.", "isCorrect": False}
-                    ],
-                    "correction": "Le processus **Nettoyage-Rinçage-Désinfection-Rinçage** est la procédure standard."
-                },
-                {
-                    "questionNumber": 10,
-                    "question": "Quel est le risque de remettre une crème chaude (ex : crème pâtissière) immédiatement au réfrigérateur sans la refroidir rapidement ?",
-                    "answerOptions": [
-                        {"text": "La crème va figer trop vite.", "isCorrect": False},
-                        {"text": "La chaleur va contaminer le reste du réfrigérateur et augmenter sa température, mettant en danger les autres produits (rupture de la chaîne du froid).", "isCorrect": True},
-                        {"text": "La crème va devenir liquide.", "isCorrect": False},
-                        {"text": "La crème va coller au récipient.", "isCorrect": False}
-                    ],
-                    "correction": "Le **refroidissement rapide** (cellule de refroidissement ou bain-marie glacé) est obligatoire pour les produits chauds."
-                },
-                {
-                    "questionNumber": 11,
-                    "question": "Qu'est-ce qu'une **Contamination Croisée** ?",
-                    "answerOptions": [
-                        {"text": "Le mélange de deux crèmes différentes.", "isCorrect": False},
-                        {"text": "Le transfert de micro-organismes (bactéries, virus) d'un aliment (cru ou sale) à un autre (cuit ou propre) via les mains, les outils ou le plan de travail.", "isCorrect": True},
-                        {"text": "L'utilisation de deux farines différentes.", "isCorrect": False},
-                        {"text": "Le mélange de deux saveurs.", "isCorrect": False}
-                    ],
-                    "correction": "La **Contamination croisée** est le danger principal, d'où la séparation des zones et des ustensiles."
-                },
-                {
-                    "questionNumber": 12,
-                    "question": "Quelle est la méthode de conservation consistant à abaisser rapidement la température d'un produit cuit de +63 °C à +10 °C en moins de deux heures ?",
-                    "answerOptions": [
-                        {"text": "La surgélation.", "isCorrect": False},
-                        {"text": "La Réfrigération rapide (ou Refroidissement en cellule).", "isCorrect": True},
-                        {"text": "La stérilisation.", "isCorrect": False},
-                        {"text": "La pasteurisation.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Refroidissement rapide** est essentiel pour passer la 'zone de danger' (entre +10 °C et +63 °C) au plus vite."
-                },
-                {
-                    "questionNumber": 13,
-                    "question": "Quelle est l'interdiction absolue pour le personnel de laboratoire concernant les bijoux et accessoires ?",
-                    "answerOptions": [
-                        {"text": "Les montres sont interdites.", "isCorrect": False},
-                        {"text": "Le port de tout bijou, y compris les alliances et boucles d'oreilles, est interdit (risque de chute de corps étranger et difficulté de lavage des mains).", "isCorrect": True},
-                        {"text": "Les lunettes sont interdites.", "isCorrect": False},
-                        {"text": "Les chaussures de sécurité sont interdites.", "isCorrect": False}
-                    ],
-                    "correction": "Les **bijoux** et le vernis à ongles sont des vecteurs de contamination et sont formellement interdits."
-                },
-                {
-                    "questionNumber": 14,
-                    "question": "Quel est l'outil utilisé pour vérifier rapidement la température au cœur d'un produit (crème, appareil à flan) ?",
-                    "answerOptions": [
-                        {"text": "Le thermomètre à mercure.", "isCorrect": False},
-                        {"text": "Le Thermomètre à sonde électronique (ou Thermocouple).", "isCorrect": True},
-                        {"text": "Le pèse-sirop.", "isCorrect": False},
-                        {"text": "Le réfractomètre.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Thermomètre à sonde** est indispensable pour la traçabilité HACCP."
-                },
-                {
-                    "questionNumber": 15,
-                    "question": "Que doit-on faire avant de manipuler des produits finis prêts à être vendus (ex : mettre en boîte des macarons) ?",
-                    "answerOptions": [
-                        {"text": "Mettre des gants chirurgicaux (non obligatoires, mais utilisés).", "isCorrect": False},
-                        {"text": "Se laver les mains méticuleusement et changer de tablier ou de blouse si nécessaire (passage de zone 'sale' à 'propre').", "isCorrect": True},
-                        {"text": "Changer de chaussures.", "isCorrect": False},
-                        {"text": "Manger.", "isCorrect": False}
-                    ],
-                    "correction": "Le **lavage des mains** est l'action la plus importante pour éviter la contamination."
-                },
-                {
-                    "questionNumber": 16,
-                    "question": "Quelle est la définition d'un **Allergène** ?",
-                    "answerOptions": [
-                        {"text": "Un produit très cher.", "isCorrect": False},
-                        {"text": "Une substance (protéine) capable de provoquer une réaction immunitaire (allergie) chez certaines personnes (lait, œufs, fruits à coque, gluten, etc.).", "isCorrect": True},
-                        {"text": "Un ingrédient rare.", "isCorrect": False},
-                        {"text": "Un produit périmé.", "isCorrect": False}
-                    ],
-                    "correction": "L'affichage et la connaissance des **14 allergènes majeurs** sont obligatoires."
-                },
-                {
-                    "questionNumber": 17,
-                    "question": "Quelle est l'action à réaliser sur une pâte feuilletée avant l'enfournement pour éviter qu'elle ne gonfle trop ou de manière irrégulière ?",
-                    "answerOptions": [
-                        {"text": "La dorer.", "isCorrect": False},
-                        {"text": "La piquer à l'aide d'une pique-vite ou d'une fourchette (éviter l'emprisonnement de la vapeur).", "isCorrect": True},
-                        {"text": "La congeler.", "isCorrect": False},
-                        {"text": "La fleurer.", "isCorrect": False}
-                    ],
-                    "correction": "Le **piquage** permet à la vapeur d'eau de s'échapper, régulant ainsi le développement."
-                },
-                {
-                    "questionNumber": 18,
-                    "question": "Qu'est-ce qui est mesuré par le test de l'**Alvéographe de Chopin** ?",
-                    "answerOptions": [
-                        {"text": "La teneur en gluten du beurre.", "isCorrect": False},
-                        {"text": "La force boulangère (force des pâtes 'W') et l'extensibilité des farines (critères essentiels pour les viennoiseries et le pain).", "isCorrect": True},
-                        {"text": "Le pH du sucre.", "isCorrect": False},
-                        {"text": "La teneur en eau des fruits.", "isCorrect": False}
-                    ],
-                    "correction": "La **force W** détermine si une farine est adaptée à la panification ou à la pâtisserie fine."
-                },
-                {
-                    "questionNumber": 19,
-                    "question": "Quel risque peut engendrer la consommation d'une pâtisserie trop riche en colorants artificiels non homologués ?",
-                    "answerOptions": [
-                        {"text": "Un goût amer.", "isCorrect": False},
-                        {"text": "Un risque d'hyperactivité et des problèmes de santé (selon la réglementation en vigueur).", "isCorrect": True},
-                        {"text": "Elle ne dore pas à la cuisson.", "isCorrect": False},
-                        {"text": "Elle gèle plus rapidement.", "isCorrect": False}
-                    ],
-                    "correction": "L'utilisation des **additifs** (colorants, conservateurs) est strictement réglementée."
-                },
-                {
-                    "questionNumber": 20,
-                    "question": "Lors d'une brûlure thermique (contact four, caramel, etc.), quelle est la première chose à faire ?",
-                    "answerOptions": [
-                        {"text": "Percer la cloque.", "isCorrect": False},
-                        {"text": "Refroidir la zone brûlée immédiatement sous un jet d'eau tiède (15°C) pendant au moins 10 à 15 minutes.", "isCorrect": True},
-                        {"text": "Appliquer du beurre.", "isCorrect": False},
-                        {"text": "Couvrir d'un pansement sans rincer.", "isCorrect": False}
-                    ],
-                    "correction": "Le **refroidissement** est le premier soin pour stopper la propagation de la brûlure."
-                },
-            ]
-        },
-        # =========================================================================
-        # THÈME 2 : MATIÈRES PREMIÈRES FONDAMENTALES (Q. 21-40)
-        # =========================================================================
-        2: {
-            "name": "2. Matières Premières Fondamentales (Q. 21-40)",
-            "questions": [
-                {
-                    "questionNumber": 21,
-                    "question": "Quel est le rôle principal du **Gluten** dans la farine de blé ?",
-                    "answerOptions": [
-                        {"text": "Donner de la couleur à la pâte.", "isCorrect": False},
-                        {"text": "Former un réseau élastique et visqueux (après hydratation et pétrissage) qui retient le gaz carbonique (CO2) et permet le développement (la 'levée') de la pâte.", "isCorrect": True},
-                        {"text": "Sucrer la pâte.", "isCorrect": False},
-                        {"text": "Colorer le produit.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Gluten** (protéines) est le squelette des pâtes levées (viennoiserie, pain)."
-                },
-                {
-                    "questionNumber": 22,
-                    "question": "Comment appelle-t-on le sucre obtenu par l'hydrolyse du saccharose (mélange de glucose et de fructose) utilisé pour sa capacité à empêcher la cristallisation et à rendre les crèmes plus souples ?",
-                    "answerOptions": [
-                        {"text": "Le sucre glace.", "isCorrect": False},
-                        {"text": "Le Sucre inverti (ou Trimoline).", "isCorrect": True},
-                        {"text": "Le sucre candi.", "isCorrect": False},
-                        {"text": "Le fondant.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Sucre inverti** est un agent anti-cristallisant essentiel en confiserie et pour les ganaches."
-                },
-                {
-                    "questionNumber": 23,
-                    "question": "Quelle est la température de fusion approximative du **Beurre de Couverture (Beurre de Cacao)**, ce qui lui donne son caractère 'cassant' et 'fondant en bouche' ?",
-                    "answerOptions": [
-                        {"text": "10 °C", "isCorrect": False},
-                        {"text": "Environ 32 °C - 35 °C (légèrement en dessous de la température corporelle).", "isCorrect": True},
-                        {"text": "45 °C", "isCorrect": False},
-                        {"text": "60 °C", "isCorrect": False}
-                    ],
-                    "correction": "La faible température de fusion du **Beurre de Cacao** est responsable de la sensation agréable du chocolat en bouche."
-                },
-                {
-                    "questionNumber": 24,
-                    "question": "Quel est l'agent de liaison et de texturation principal dans les crèmes et appareils (ex : appareil à flan) ?",
-                    "answerOptions": [
-                        {"text": "L'eau.", "isCorrect": False},
-                        {"text": "L'Œuf (le jaune d'œuf contient des protéines et des lipides aux propriétés émulsifiantes et coagulantes).", "isCorrect": True},
-                        {"text": "Le sel.", "isCorrect": False},
-                        {"text": "Le bicarbonate de soude.", "isCorrect": False}
-                    ],
-                    "correction": "L'**Œuf** est l'ingrédient de base des appareils et crèmes liantes."
-                },
-                {
-                    "questionNumber": 25,
-                    "question": "Quel est le rôle de l'**Amidonnier (Amidon)** dans une crème pâtissière ?",
-                    "answerOptions": [
-                        {"text": "Donner du goût.", "isCorrect": False},
-                        {"text": "Permettre la gélification et l'épaississement de la crème (prise de masse et viscosité).", "isCorrect": True},
-                        {"text": "Rendre la crème plus liquide.", "isCorrect": False},
-                        {"text": "Protéger la crème de la chaleur.", "isCorrect": False}
-                    ],
-                    "correction": "L'**Amidon** (maïzena, farine) capte l'eau et crée la texture onctueuse de la crème pâtissière."
-                },
-                {
-                    "questionNumber": 26,
-                    "question": "Quel est le type de farine le plus couramment utilisé pour la pâtisserie (pâtes légères, fonds de tarte, gâteaux) ?",
-                    "answerOptions": [
-                        {"text": "La farine Type 150 (complète).", "isCorrect": False},
-                        {"text": "La Farine Type 45 (T45) ou Type 55 (T55) (faible taux de cendres, faible en protéines/gluten, favorise le croustillant et le sablage).", "isCorrect": True},
-                        {"text": "La farine Type 80 (bise).", "isCorrect": False},
-                        {"text": "La farine Type 110 (semi-complète).", "isCorrect": False}
-                    ],
-                    "correction": "La **T45** est la plus fine et la plus adaptée aux pâtes sèches et aux gâteaux."
-                },
-                {
-                    "questionNumber": 27,
-                    "question": "Quel est l'ingrédient indispensable utilisé dans la pâte à choux pour créer le 'craquelin' (croûte fine et croustillante) ?",
-                    "answerOptions": [
-                        {"text": "La farine de seigle.", "isCorrect": False},
-                        {"text": "Un mélange de beurre, sucre et farine étalé finement et congelé.", "isCorrect": True},
-                        {"text": "Le sucre glace.", "isCorrect": False},
-                        {"text": "La gélatine.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Craquelin** apporte du croquant et une belle uniformité au chou."
-                },
-                {
-                    "questionNumber": 28,
-                    "question": "Quel est le rôle du **Sel** dans une pâte levée (viennoiserie, pain) ?",
-                    "answerOptions": [
-                        {"text": "Accélérer la fermentation.", "isCorrect": False},
-                        {"text": "Contrôler (ralentir) l'activité des levures et donner du goût au produit.", "isCorrect": True},
-                        {"text": "Assouplir la pâte.", "isCorrect": False},
-                        {"text": "Blanchir la pâte.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Sel** est un agent de sapidité et un régulateur de la fermentation."
-                },
-                {
-                    "questionNumber": 29,
-                    "question": "Quelle est la principale différence entre la **Gélatine animale (feuille ou poudre)** et l'**Agar-Agar** ?",
-                    "answerOptions": [
-                        {"text": "L'Agar-Agar est moins cher.", "isCorrect": False},
-                        {"text": "L'Agar-Agar est d'origine végétale (algues), ne nécessite pas de refroidissement pour gélifier et résiste à des températures plus élevées.", "isCorrect": True},
-                        {"text": "La gélatine est plus puissante.", "isCorrect": False},
-                        {"text": "L'Agar-Agar donne un goût amer.", "isCorrect": False}
-                    ],
-                    "correction": "L'**Agar-Agar** est utilisé pour les préparations végétales ou les desserts qui doivent rester stables à température ambiante."
-                },
-                {
-                    "questionNumber": 30,
-                    "question": "Qu'est-ce que le **Cacao en poudre dégraissé** ?",
-                    "answerOptions": [
-                        {"text": "Du chocolat au lait.", "isCorrect": False},
-                        {"text": "Du Cacao dont la majeure partie du beurre de cacao a été extraite (faible teneur en matière grasse, goût intense).", "isCorrect": True},
-                        {"text": "Du chocolat blanc.", "isCorrect": False},
-                        {"text": "Du cacao sucré.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Cacao en poudre** standard contient au moins 20% de beurre de cacao. Le dégraissé en contient moins de 10%."
-                },
-                {
-                    "questionNumber": 31,
-                    "question": "Quel est le rôle de la **Lécithine** dans le jaune d'œuf, souvent utilisée en pâtisserie et en cuisine ?",
-                    "answerOptions": [
-                        {"text": "Épaissir.", "isCorrect": False},
-                        {"text": "Émulsifier (stabiliser un mélange normalement non miscible, comme l'eau et la matière grasse).", "isCorrect": True},
-                        {"text": "Sucrer.", "isCorrect": False},
-                        {"text": "Dorer.", "isCorrect": False}
-                    ],
-                    "correction": "La **Lécithine** est un excellent agent émulsifiant (ex : pour la crème anglaise, la mayonnaise)."
-                },
-                {
-                    "questionNumber": 32,
-                    "question": "Quel est l'effet de l'ajout de **Miel** ou de **Glucose** dans un appareil, notamment pour la conservation et l'humidité ?",
-                    "answerOptions": [
-                        {"text": "Assécher l'appareil.", "isCorrect": False},
-                        {"text": "Augmenter le pouvoir sucrant et retenir l'humidité (agent hygroscopique), prolongeant ainsi la conservation.", "isCorrect": True},
-                        {"text": "Durcir la pâte.", "isCorrect": False},
-                        {"text": "Donner une couleur blanche.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Miel** et le **Glucose** sont des agents humectants."
-                },
-                {
-                    "questionNumber": 33,
-                    "question": "Quelle est la caractéristique principale du **Beurre AOP (Appellation d'Origine Protégée)** pour la pâtisserie, notamment le feuilletage ?",
-                    "answerOptions": [
-                        {"text": "Il est plus salé.", "isCorrect": False},
-                        {"text": "Il garantit une faible teneur en eau (matière grasse pure et ferme), une grande plasticité et une qualité aromatique constante, essentielle pour un bon feuilletage.", "isCorrect": True},
-                        {"text": "Il est plus mou.", "isCorrect": False},
-                        {"text": "Il est plus cher.", "isCorrect": False}
-                    ],
-                    "correction": "Un **Beurre de Tourage** de qualité (souvent sec, > 82% MG) est indispensable au feuilletage."
-                },
-                {
-                    "questionNumber": 34,
-                    "question": "Quel est le rôle de la **Levure Biologique (Levure de boulanger)** dans la pâte à croissant ou à brioche ?",
-                    "answerOptions": [
-                        {"text": "Donner du croustillant.", "isCorrect": False},
-                        {"text": "Produire du gaz carbonique (CO2) par fermentation, ce qui fait lever (pousser) la pâte avant et pendant la cuisson.", "isCorrect": True},
-                        {"text": "Faire dorer.", "isCorrect": False},
-                        {"text": "Assurer la coloration.", "isCorrect": False}
-                    ],
-                    "correction": "La **Levure** est un micro-organisme vivant qui nécessite eau et chaleur pour s'activer."
-                },
-                {
-                    "questionNumber": 35,
-                    "question": "Comment appelle-t-on la **couverture de chocolat noir** qui contient au moins 70% de cacao (matière sèche) ?",
-                    "answerOptions": [
-                        {"text": "Chocolat au lait.", "isCorrect": False},
-                        {"text": "Chocolat noir 'fort' ou de 'Grand Cru'.", "isCorrect": True},
-                        {"text": "Chocolat blond.", "isCorrect": False},
-                        {"text": "Chocolat blanc.", "isCorrect": False}
-                    ],
-                    "correction": "Plus le pourcentage de cacao est élevé, plus le goût est intense et moins il est sucré."
-                },
-                {
-                    "questionNumber": 36,
-                    "question": "Quel est le rôle principal de la **Pectine (NH)** utilisée en confiserie et dans les entremets aux fruits ?",
-                    "answerOptions": [
-                        {"text": "Colorer.", "isCorrect": False},
-                        {"text": "Gélifier (épaississant à base de fruits) pour donner la texture 'confiture' ou la prise des inserts fruités (N.H. pour la gélification à chaud/thermoréversible).", "isCorrect": True},
-                        {"text": "Sucrer.", "isCorrect": False},
-                        {"text": "Émulsifier.", "isCorrect": False}
-                    ],
-                    "correction": "La **Pectine** est un gélifiant naturel dérivé de l'écorce des agrumes ou de la pomme."
-                },
-                {
-                    "questionNumber": 37,
-                    "question": "Quel est l'effet d'une **Farine trop riche en protéines (gluten)** sur une pâte sablée ?",
-                    "answerOptions": [
-                        {"text": "Elle sera très friable.", "isCorrect": False},
-                        {"text": "Elle rend la pâte trop élastique ('caoutchouteuse') et difficile à étaler après hydratation, entraînant un gâteau dur après cuisson.", "isCorrect": True},
-                        {"text": "Elle sera plus douce.", "isCorrect": False},
-                        {"text": "Elle ne se développe pas.", "isCorrect": False}
-                    ],
-                    "correction": "La **Pâte sablée** doit être travaillée le moins possible pour ne pas développer le gluten."
-                },
-                {
-                    "questionNumber": 38,
-                    "question": "Quelle est la particularité du **Beurre clarifié (ou Ghee)** ?",
-                    "answerOptions": [
-                        {"text": "Il est congelé.", "isCorrect": False},
-                        {"text": "C'est du beurre fondu dont on a retiré le petit lait (protéines) et l'eau ; il a un point de fumée plus élevé (idéal pour la cuisson) et se conserve plus longtemps.", "isCorrect": True},
-                        {"text": "Il est plus dur.", "isCorrect": False},
-                        {"text": "Il est plus salé.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Beurre clarifié** est une matière grasse presque pure."
-                },
-                {
-                    "questionNumber": 39,
-                    "question": "Comment appelle-t-on le processus de fusion et de recristallisation du chocolat visant à stabiliser le beurre de cacao pour qu'il soit brillant, cassant et qu'il ne 'grise' pas ?",
-                    "answerOptions": [
-                        {"text": "Le tempérage.", "isCorrect": True},
-                        {"text": "La cristallisation.", "isCorrect": False},
-                        {"text": "L'émulsion.", "isCorrect": False},
-                        {"text": "Le blanchiment.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Tempérage** (ou précristallisation) permet d'obtenir la forme de cristal de beurre de cacao stable (Forme V)."
-                },
-                {
-                    "questionNumber": 40,
-                    "question": "Quel ingrédient est essentiel pour réaliser une **Meringue Française** (la plus simple, souvent utilisée pour les décors ou comme base) ?",
-                    "answerOptions": [
-                        {"text": "De la crème fraîche.", "isCorrect": False},
-                        {"text": "Du Blanc d'œuf et du sucre semoule (montage des blancs puis ajout progressif du sucre).", "isCorrect": True},
-                        {"text": "Du jaune d'œuf.", "isCorrect": False},
-                        {"text": "De la levure chimique.", "isCorrect": False}
-                    ],
-                    "correction": "La **Meringue Française** est la plus légère mais la moins stable."
-                },
-            ]
-        },
-        # =========================================================================
-        # THÈME 3 : CRÈMES, APPAREILS ET GARNITURES (Q. 41-60)
-        # =========================================================================
-        3: {
-            "name": "3. Crèmes, Appareils et Garnitures (Q. 41-60)",
-            "questions": [
-                {
-                    "questionNumber": 41,
-                    "question": "Quel est le risque de ne pas fouetter la **Crème Pâtissière** suffisamment longtemps ou de la laisser refroidir sans protection ?",
-                    "answerOptions": [
-                        {"text": "Elle sera trop sucrée.", "isCorrect": False},
-                        {"text": "Elle risque de faire des grumeaux ou de développer une croûte dure et sèche en surface.", "isCorrect": True},
-                        {"text": "Elle va fondre.", "isCorrect": False},
-                        {"text": "Elle sera trop liquide.", "isCorrect": False}
-                    ],
-                    "correction": "La **Crème pâtissière** doit être filée au contact (film alimentaire) et turbinée après refroidissement."
-                },
-                {
-                    "questionNumber": 42,
-                    "question": "Quel est l'appareil de base composé de jaunes d'œufs, de sucre, de lait et de crème, cuit au four au bain-marie (ex : Crème brûlée ou Flan) ?",
-                    "answerOptions": [
-                        {"text": "La mousse.", "isCorrect": False},
-                        {"text": "L'Appareil à crème renversée (ou Appareil à flan ou Crème prise).", "isCorrect": True},
-                        {"text": "Le biscuit cuillère.", "isCorrect": False},
-                        {"text": "Le streusel.", "isCorrect": False}
-                    ],
-                    "correction": "La cuisson au **bain-marie** permet une cuisson douce et uniforme de l'appareil."
-                },
-                {
-                    "questionNumber": 43,
-                    "question": "Comment appelle-t-on le mélange de base de chocolat et de crème liquide, souvent utilisé pour les intérieurs de truffes, les glaçages ou les garnitures ?",
-                    "answerOptions": [
-                        {"text": "Le fondant.", "isCorrect": False},
-                        {"text": "La Ganache (chocolat fondu et crème chaude, créant une émulsion).", "isCorrect": True},
-                        {"text": "La crème au beurre.", "isCorrect": False},
-                        {"text": "La crème fouettée.", "isCorrect": False}
-                    ],
-                    "correction": "La **Ganache** est une émulsion stable dont la texture dépend du ratio crème/chocolat."
-                },
-                {
-                    "questionNumber": 44,
-                    "question": "Quel est l'effet de l'incorporation de **beurre doux** dans une crème pâtissière froide (pour obtenir une Crème Mousseline) ?",
-                    "answerOptions": [
-                        {"text": "Elle devient plus lourde.", "isCorrect": False},
-                        {"text": "Elle apporte de la légèreté, de l'onctuosité et une grande stabilité à température ambiante (nécessaire pour le Fraisier ou le Paris-Brest).", "isCorrect": True},
-                        {"text": "Elle devient plus liquide.", "isCorrect": False},
-                        {"text": "Elle donne un goût amer.", "isCorrect": False}
-                    ],
-                    "correction": "La **Crème Mousseline** est une crème pâtissière allégée et enrichie en beurre."
-                },
-                {
-                    "questionNumber": 45,
-                    "question": "Comment appelle-t-on la crème obtenue par ajout de gélatine et de crème fouettée à une base (crème pâtissière, purée de fruits) pour obtenir une texture légère et aérienne ?",
-                    "answerOptions": [
-                        {"text": "La crème au beurre.", "isCorrect": False},
-                        {"text": "La Crème Bavaroise (ou Bavarois).", "isCorrect": True},
-                        {"text": "La crème Diplomate.", "isCorrect": False},
-                        {"text": "La crème Chiboust.", "isCorrect": False}
-                    ],
-                    "correction": "La **Bavaroise** est stabilisée par la gélatine et allégée par la crème fouettée."
-                },
-                {
-                    "questionNumber": 46,
-                    "question": "Quelle est la technique utilisée pour incorporer de la crème fouettée ou des blancs d'œufs montés à un appareil plus lourd sans le faire retomber ?",
-                    "answerOptions": [
-                        {"text": "Fouetter rapidement.", "isCorrect": False},
-                        {"text": "Mélanger délicatement 'à la maryse' (spatule souple) en soulevant la masse de bas en haut (mouvement de coupe et retournement).", "isCorrect": True},
-                        {"text": "Mélanger au batteur.", "isCorrect": False},
-                        {"text": "Chauffer l'appareil.", "isCorrect": False}
-                    ],
-                    "correction": "Le **mélange à la maryse** (ou 'en coupant') préserve l'air incorporé (volume)."
-                },
-                {
-                    "questionNumber": 47,
-                    "question": "Quel est l'ingrédient principal de la **Crème au beurre** (méthode française) ?",
-                    "answerOptions": [
-                        {"text": "Du fromage blanc.", "isCorrect": False},
-                        {"text": "Du Beurre monté avec un sirop de sucre et des jaunes d'œufs (ou des œufs entiers).", "isCorrect": True},
-                        {"text": "De la crème fraîche.", "isCorrect": False},
-                        {"text": "De la crème pâtissière.", "isCorrect": False}
-                    ],
-                    "correction": "La **Crème au beurre** est une base solide pour la décoration et les intérieurs denses (Opéra, bûches)."
-                },
-                {
-                    "questionNumber": 48,
-                    "question": "Comment appelle-t-on la technique de montage qui consiste à battre les jaunes d'œufs avec le sucre jusqu'à ce que le mélange blanchisse et augmente de volume ?",
-                    "answerOptions": [
-                        {"text": "Sabler.", "isCorrect": False},
-                        {"text": "Blanchir.", "isCorrect": True},
-                        {"text": "Foncer.", "isCorrect": False},
-                        {"text": "Détremper.", "isCorrect": False}
-                    ],
-                    "correction": "Le **blanchiment** est la base de nombreuses crèmes et appareils (crème anglaise, génoise)."
-                },
-                {
-                    "questionNumber": 49,
-                    "question": "Quel est le risque de monter la **Crème liquide entière** (minimum 30% MG) en chantilly trop longtemps ?",
-                    "answerOptions": [
-                        {"text": "Elle devient trop liquide.", "isCorrect": False},
-                        {"text": "Elle se transforme en beurre (rupture de l'émulsion).", "isCorrect": True},
-                        {"text": "Elle ne monte pas.", "isCorrect": False},
-                        {"text": "Elle prend un goût amer.", "isCorrect": False}
-                    ],
-                    "correction": "Le **montage** doit être arrêté au bon moment (crème bien ferme, mais lisse)."
-                },
-                {
-                    "questionNumber": 50,
-                    "question": "Qu'est-ce qu'une **Crème Anglaise** (base du parfait, de l'entremets glacé ou consommée comme sauce) ?",
-                    "answerOptions": [
-                        {"text": "Une crème fouettée au sucre glace.", "isCorrect": False},
-                        {"text": "Une préparation onctueuse à base de lait, de jaunes d'œufs et de sucre, cuite 'à la nappe' (82-85 °C).", "isCorrect": True},
-                        {"text": "Un mélange de beurre et de sucre.", "isCorrect": False},
-                        {"text": "Une crème pâtissière sans amidon.", "isCorrect": False}
-                    ],
-                    "correction": "La cuisson **à la nappe** signifie que la crème recouvre le dos de la spatule (coagulation des protéines)."
-                },
-                {
-                    "questionNumber": 51,
-                    "question": "Quel est l'élément essentiel pour que la **Pâte à Choux** gonfle correctement (en dehors des œufs) ?",
-                    "answerOptions": [
-                        {"text": "Le sucre glace.", "isCorrect": False},
-                        {"text": "La Maîtrise de l'humidité et de la vapeur d'eau (l'eau de la pâte se transforme en vapeur, créant le vide interne).", "isCorrect": True},
-                        {"text": "Le miel.", "isCorrect": False},
-                        {"text": "La levure chimique.", "isCorrect": False}
-                    ],
-                    "correction": "La **vapeur** est le moteur du développement de la pâte à choux."
-                },
-                {
-                    "questionNumber": 52,
-                    "question": "Comment appelle-t-on la **Crème Diplomate** ?",
-                    "answerOptions": [
-                        {"text": "Une crème au beurre légère.", "isCorrect": False},
-                        {"text": "Un mélange de crème pâtissière, de gélatine et de crème fouettée.", "isCorrect": True},
-                        {"text": "Une crème anglaise épaisse.", "isCorrect": False},
-                        {"text": "Une simple crème fouettée.", "isCorrect": False}
-                    ],
-                    "correction": "La **Crème Diplomate** est utilisée pour le Millefeuille ou la tarte tropézienne."
-                },
-                {
-                    "questionNumber": 53,
-                    "question": "Quel est le rôle du **sirop d'imbibage** (souvent eau, sucre et alcool ou arômes) sur un biscuit ?",
-                    "answerOptions": [
-                        {"text": "Le rendre plus ferme.", "isCorrect": False},
-                        {"text": "Apporter de l'humidité, du goût et améliorer la texture et la conservation (évite que le biscuit soit sec).", "isCorrect": True},
-                        {"text": "Le colorer.", "isCorrect": False},
-                        {"text": "Le faire lever.", "isCorrect": False}
-                    ],
-                    "correction": "L'**imbibage** est essentiel pour les entremets (génoise, biscuit Joconde)."
-                },
-                {
-                    "questionNumber": 54,
-                    "question": "Quel est l'appareil de base composé d'œufs, de sucre, de poudre d'amande et d'amandes effilées, utilisé comme support (ex : Frangipane) ?",
-                    "answerOptions": [
-                        {"text": "La Crème d'amande (ou appareil à financier).", "isCorrect": True},
-                        {"text": "La crème pâtissière.", "isCorrect": False},
-                        {"text": "La meringue suisse.", "isCorrect": False},
-                        {"text": "La crème au beurre.", "isCorrect": False}
-                    ],
-                    "correction": "La **Crème d'amande** est la base de la galette des rois (souvent mélangée à de la crème pâtissière pour faire la Frangipane)."
-                },
-                {
-                    "questionNumber": 55,
-                    "question": "Quel est le risque d'ajouter de la **crème froide** à du chocolat fondu **trop chaud** ?",
-                    "answerOptions": [
-                        {"text": "Le chocolat va brûler.", "isCorrect": False},
-                        {"text": "L'émulsion va rater (granuleuse, huileuse, le mélange 'tranche') car la matière grasse et l'eau ne s'incorporent pas correctement.", "isCorrect": True},
-                        {"text": "Le chocolat devient dur.", "isCorrect": False},
-                        {"text": "Le goût sera amer.", "isCorrect": False}
-                    ],
-                    "correction": "Pour une **Ganache** réussie, la température du chocolat fondu et de la crème doivent être proches et contrôlées (vers 45-50°C)."
-                },
-                {
-                    "questionNumber": 56,
-                    "question": "Comment appelle-t-on le procédé par lequel une crème anglaise est cuite et épaissie grâce à la coagulation des protéines des jaunes d'œufs ?",
-                    "answerOptions": [
-                        {"text": "La gélification.", "isCorrect": False},
-                        {"text": "La Coagulation (processus irréversible déclenché par la chaleur).", "isCorrect": True},
-                        {"text": "La caramélisation.", "isCorrect": False},
-                        {"text": "La fermentation.", "isCorrect": False}
-                    ],
-                    "correction": "La **Coagulation** doit être douce pour ne pas faire des œufs brouillés (d'où le terme 'cuire à la nappe')."
-                },
-                {
-                    "questionNumber": 57,
-                    "question": "Quel est l'élément qui doit obligatoirement être ajouté pour utiliser la **Pectine NH** ?",
-                    "answerOptions": [
-                        {"text": "Le sel.", "isCorrect": False},
-                        {"text": "Un Acide (citron, jus de fruit, etc.) et du Sucre (pour que la gélification se produise).", "isCorrect": True},
-                        {"text": "L'eau.", "isCorrect": False},
-                        {"text": "Le colorant.", "isCorrect": False}
-                    ],
-                    "correction": "La **Pectine** est un gélifiant dont la prise dépend du sucre et de l'acidité."
-                },
-                {
-                    "questionNumber": 58,
-                    "question": "Quel est le type de meringue obtenu par cuisson des blancs d'œufs au bain-marie avec le sucre (mélange chauffé à 50-60°C) ?",
-                    "answerOptions": [
-                        {"text": "La meringue française.", "isCorrect": False},
-                        {"text": "La Meringue Suisse (très stable, dense et brillante, idéale pour les décors et les fonds de tarte).", "isCorrect": True},
-                        {"text": "La meringue italienne.", "isCorrect": False},
-                        {"text": "La meringue japonaise.", "isCorrect": False}
-                    ],
-                    "correction": "La **Meringue Suisse** est plus solide que la française."
-                },
-                {
-                    "questionNumber": 59,
-                    "question": "Quelle est la principale différence entre la **Mousseline** et la **Crème Pâtissière** ?",
-                    "answerOptions": [
-                        {"text": "La mousseline est plus lourde.", "isCorrect": False},
-                        {"text": "La Mousseline est enrichie en beurre pour la rendre plus onctueuse et stable (crème pâtissière + beurre incorporé après refroidissement).", "isCorrect": True},
-                        {"text": "La mousseline ne contient pas d'amidon.", "isCorrect": False},
-                        {"text": "La mousseline est cuite plus longtemps.", "isCorrect": False}
-                    ],
-                    "correction": "La **Mousseline** est la crème de base du Fraisier et du Paris-Brest."
-                },
-                {
-                    "questionNumber": 60,
-                    "question": "Comment appelle-t-on le procédé qui consiste à frotter du bout des doigts un mélange de beurre froid, de farine et de sucre pour obtenir une texture sableuse ?",
-                    "answerOptions": [
-                        {"text": "Fraser.", "isCorrect": False},
-                        {"text": "Sabler (ou Crémer).", "isCorrect": True},
-                        {"text": "Détremper.", "isCorrect": False},
-                        {"text": "Bouler.", "isCorrect": False}
-                    ],
-                    "correction": "Le **sablage** est l'étape initiale pour les pâtes sablées ou sucrées (pour imperméabiliser la farine et le beurre)."
-                },
-            ]
-        },
-        # =========================================================================
-        # THÈME 4 : PÂTES DE BASE ET TECHNIQUES DE TRAVAIL (Q. 61-80)
-        # =========================================================================
-        4: {
-            "name": "4. Pâtes de Base et Techniques de Travail (Q. 61-80)",
-            "questions": [
-                {
-                    "questionNumber": 61,
-                    "question": "Quel est le nom de la technique consistant à beurrer et fariner l'intérieur d'un moule avant de verser la pâte ?",
-                    "answerOptions": [
-                        {"text": "Fouetter.", "isCorrect": False},
-                        {"text": "Chemiser (ou Doublage).", "isCorrect": True},
-                        {"text": "Crémer.", "isCorrect": False},
-                        {"text": "Glacer.", "isCorrect": False}
-                    ],
-                    "correction": "Le **chemissage** permet un démoulage facile et propre."
-                },
-                {
-                    "questionNumber": 62,
-                    "question": "Quelle est la caractéristique essentielle de la **Pâte Sucrée** par rapport à la pâte sablée ?",
-                    "answerOptions": [
-                        {"text": "Elle est plus salée.", "isCorrect": False},
-                        {"text": "Elle contient des œufs entiers et la méthode initiale est le 'crémage' (beurre et sucre travaillés d'abord), ce qui la rend moins friable que la sablée.", "isCorrect": True},
-                        {"text": "Elle est plus riche en levure.", "isCorrect": False},
-                        {"text": "Elle ne contient pas de farine.", "isCorrect": False}
-                    ],
-                    "correction": "La **Pâte Sucrée** est plus robuste et s'utilise facilement pour les tartelettes."
-                },
-                {
-                    "questionNumber": 63,
-                    "question": "Qu'est-ce qu'une **Détrempe** dans la fabrication de la pâte feuilletée ?",
-                    "answerOptions": [
-                        {"text": "Le beurre de tourage.", "isCorrect": False},
-                        {"text": "Le mélange de base de farine, eau et sel (et parfois un peu de beurre) qui sera enveloppé par le beurre de tourage.", "isCorrect": True},
-                        {"text": "La garniture de la galette.", "isCorrect": False},
-                        {"text": "Le sirop d'imbibage.", "isCorrect": False}
-                    ],
-                    "correction": "La **Détrempe** est la base de la pâte feuilletée."
-                },
-                {
-                    "questionNumber": 64,
-                    "question": "Combien de **Tours Simples** sont nécessaires pour obtenir le feuilletage standard (et quel est le nombre de couches de beurre/détrempe après cuisson) ?",
-                    "answerOptions": [
-                        {"text": "1 tour simple (3 couches).", "isCorrect": False},
-                        {"text": "6 tours simples (plus de 700 couches après cuisson, soit 3^6 = 729 couches théoriques).", "isCorrect": True},
-                        {"text": "3 tours doubles (2^3 = 8 couches).", "isCorrect": False},
-                        {"text": "2 tours simples (9 couches).", "isCorrect": False}
-                    ],
-                    "correction": "Le **feuilletage traditionnel** requiert 6 tours simples (3 plis) ou 4 tours doubles (4 plis)."
-                },
-                {
-                    "questionNumber": 65,
-                    "question": "Quel est le risque de laisser la **pâte à croissant** (ou brioche) pointer trop longtemps avant l'étape de l'abaissage (façonnage) ?",
-                    "answerOptions": [
-                        {"text": "La pâte devient dure.", "isCorrect": False},
-                        {"text": "La pâte s'acidifie (sur-fermentation), perd de sa force (la mie sera dense et sans alvéoles) et prend un goût trop alcoolisé.", "isCorrect": True},
-                        {"text": "La pâte fond.", "isCorrect": False},
-                        {"text": "Le beurre s'incorpore trop bien.", "isCorrect": False}
-                    ],
-                    "correction": "La **fermentation** doit être contrôlée (souvent en chambre de pousse ou au froid)."
-                },
-                {
-                    "questionNumber": 66,
-                    "question": "Comment s'appelle l'opération qui consiste à couper l'excédent de pâte sur le bord d'un cercle à tarte après l'avoir foncée ?",
-                    "answerOptions": [
-                        {"text": "Abaisser.", "isCorrect": False},
-                        {"text": "Ébarber.", "isCorrect": True},
-                        {"text": "Bouler.", "isCorrect": False},
-                        {"text": "Fleurer.", "isCorrect": False}
-                    ],
-                    "correction": "L'**ébarbage** permet une finition nette avant cuisson."
-                },
-                {
-                    "questionNumber": 67,
-                    "question": "Quel est le risque de pétrir une **Pâte Sablée/Sucrée** trop longtemps après l'incorporation de la farine ?",
-                    "answerOptions": [
-                        {"text": "Elle sera trop molle.", "isCorrect": False},
-                        {"text": "Le gluten se développe (pâte élastique), entraînant un retrait important à la cuisson et une texture dure (non sablée).", "isCorrect": True},
-                        {"text": "Elle sera trop foncée.", "isCorrect": False},
-                        {"text": "Elle colle trop.", "isCorrect": False}
-                    ],
-                    "correction": "Les **pâtes sèches** doivent être 'frasées' et travaillées le moins possible."
-                },
-                {
-                    "questionNumber": 68,
-                    "question": "Comment appelle-t-on le procédé par lequel on ajoute un ingrédient chaud (sirop, lait) à un appareil froid (jaunes/sucre) pour éviter la coagulation des jaunes ?",
-                    "answerOptions": [
-                        {"text": "Chauffer.", "isCorrect": False},
-                        {"text": "Tempérer (ou Détendre l'appareil).", "isCorrect": True},
-                        {"text": "Mélanger.", "isCorrect": False},
-                        {"text": "Monter.", "isCorrect": False}
-                    ],
-                    "correction": "Le **tempérage** consiste à ajouter progressivement le liquide chaud pour remonter doucement la température."
-                },
-                {
-                    "questionNumber": 69,
-                    "question": "Quel est le rôle d'un **glaçage miroir** sur un entremets ?",
-                    "answerOptions": [
-                        {"text": "Apporter du croustillant.", "isCorrect": False},
-                        {"text": "Apporter une finition esthétique brillante, une couleur intense et protéger le produit de la dessiccation (assèchement).", "isCorrect": True},
-                        {"text": "Servir de garniture.", "isCorrect": False},
-                        {"text": "Augmenter le volume.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Glaçage miroir** est une finition à base de gélatine, glucose et chocolat ou nappage."
-                },
-                {
-                    "questionNumber": 70,
-                    "question": "Quel est le risque d'utiliser un beurre de tourage **trop froid** ou une détrempe **trop chaude** pour le feuilletage ?",
-                    "answerOptions": [
-                        {"text": "Le feuilletage est trop grand.", "isCorrect": False},
-                        {"text": "Le beurre se déchire (se casse) lors de l'abaissage, empêchant la création de fines couches régulières et ruinant le feuilletage (pâte qui 'déchire').", "isCorrect": True},
-                        {"text": "La pâte ne lève pas.", "isCorrect": False},
-                        {"text": "Le beurre fond.", "isCorrect": False}
-                    ],
-                    "correction": "La **température** et la **consistance** du beurre et de la détrempe doivent être les mêmes."
-                },
-                {
-                    "questionNumber": 71,
-                    "question": "Comment appelle-t-on la technique qui consiste à faire chauffer du sucre avec de l'eau sans mélanger, jusqu'à l'obtention d'une couleur ambrée ?",
-                    "answerOptions": [
-                        {"text": "Sabler.", "isCorrect": False},
-                        {"text": "Caraméliser (ou Cuisson au caramel).", "isCorrect": True},
-                        {"text": "Blanchir.", "isCorrect": False},
-                        {"text": "Crémer.", "isCorrect": False}
-                    ],
-                    "correction": "La **Caramélisation** peut être réalisée à sec ou au mouillé (avec eau)."
-                },
-                {
-                    "questionNumber": 72,
-                    "question": "Quel est le rôle de la **double cuisson** de la pâte à choux (sur le feu dans la casserole puis au four) ?",
-                    "answerOptions": [
-                        {"text": "Donner du goût.", "isCorrect": False},
-                        {"text": "Assécher l'appareil (gommer) pour retirer l'excès d'humidité et permettre aux choux de gonfler plus fortement au four (plus de vapeur possible).", "isCorrect": True},
-                        {"text": "Le faire dorer.", "isCorrect": False},
-                        {"text": "Le sucrer.", "isCorrect": False}
-                    ],
-                    "correction": "Le **gommage** ou 'desséchage' est crucial pour le croustillant final."
-                },
-                {
-                    "questionNumber": 73,
-                    "question": "Quel est le nom de la petite tartelette (souvent aux fruits ou au chocolat) dont le fond est cuit à blanc puis garni après cuisson ?",
-                    "answerOptions": [
-                        {"text": "Le chou.", "isCorrect": False},
-                        {"text": "Le Fond de tarte (ou Tartelette).", "isCorrect": True},
-                        {"text": "L'éclair.", "isCorrect": False},
-                        {"text": "Le millefeuille.", "isCorrect": False}
-                    ],
-                    "correction": "La cuisson **à blanc** se fait sans garniture pour garantir le croustillant de la pâte."
-                },
-                {
-                    "questionNumber": 74,
-                    "question": "Comment appelle-t-on la technique consistant à monter les blancs d'œufs au batteur tout en y versant un sirop de sucre cuit au 'petit boulé' (118 °C) ?",
-                    "answerOptions": [
-                        {"text": "Meringue française.", "isCorrect": False},
-                        {"text": "Meringue Italienne (la plus stable et la plus onctueuse, utilisée pour les mousses, les crèmes au beurre ou les décors).", "isCorrect": True},
-                        {"text": "Meringue suisse.", "isCorrect": False},
-                        {"text": "Meringue crémeuse.", "isCorrect": False}
-                    ],
-                    "correction": "La **Meringue Italienne** est stabilisée par la chaleur du sirop."
-                },
-                {
-                    "questionNumber": 75,
-                    "question": "Quel est le risque de cuire une **Génoise** (ou un biscuit type Roulé) à une température trop basse ?",
-                    "answerOptions": [
-                        {"text": "Elle brûle.", "isCorrect": False},
-                        {"text": "Elle dessèche avant d'avoir pu gonfler et ne dore pas (texture cassante et sèche).", "isCorrect": True},
-                        {"text": "Elle lève trop.", "isCorrect": False},
-                        {"text": "Elle colle au moule.", "isCorrect": False}
-                    ],
-                    "correction": "Les **biscuits aériens** nécessitent une cuisson rapide à haute température (souvent 180-200°C)."
-                },
-                {
-                    "questionNumber": 76,
-                    "question": "Quel est le rôle de la **Levure Chimique** dans un gâteau (quatre-quarts, cake) ?",
-                    "answerOptions": [
-                        {"text": "Donner de la couleur.", "isCorrect": False},
-                        {"text": "Produire du gaz carbonique (CO2) uniquement sous l'effet de la chaleur (pas de fermentation) pour faire lever le gâteau rapidement.", "isCorrect": True},
-                        {"text": "Réguler le sucre.", "isCorrect": False},
-                        {"text": "Hydrater la pâte.", "isCorrect": False}
-                    ],
-                    "correction": "La **Levure Chimique** est un agent levant instantané."
-                },
-                {
-                    "questionNumber": 77,
-                    "question": "Comment appelle-t-on le procédé qui consiste à rouler les bords de la pâte foncée dans le cercle pour créer une bordure de tarte régulière ?",
-                    "answerOptions": [
-                        {"text": "Bouler.", "isCorrect": False},
-                        {"text": "Foncer.", "isCorrect": True},
-                        {"text": "Abaisser.", "isCorrect": False},
-                        {"text": "Sabler.", "isCorrect": False}
-                    ],
-                    "correction": "Le **fonçage** est la mise en forme de la pâte dans le moule."
-                },
-                {
-                    "questionNumber": 78,
-                    "question": "Quel est le rôle de la **Détente** (repos de la pâte feuilletée entre chaque tour) ?",
-                    "answerOptions": [
-                        {"text": "La faire fondre.", "isCorrect": False},
-                        {"text": "Relâcher l'élasticité du gluten, ce qui permet d'étaler la pâte sans qu'elle ne se rétracte et évite qu'elle ne déchire au façonnage.", "isCorrect": True},
-                        {"text": "La faire lever.", "isCorrect": False},
-                        {"text": "La colorer.", "isCorrect": False}
-                    ],
-                    "correction": "La **Détente** (au frais) est cruciale pour la maniabilité et la régularité du feuilletage."
-                },
-                {
-                    "questionNumber": 79,
-                    "question": "Quelle est l'opération qui consiste à badigeonner la surface d'une pâte (viennoiserie, brioche) avec un jaune d'œuf ou un mélange œuf/lait avant cuisson ?",
-                    "answerOptions": [
-                        {"text": "Chemiser.", "isCorrect": False},
-                        {"text": "Dorer (ou Dorure).", "isCorrect": True},
-                        {"text": "Sabler.", "isCorrect": False},
-                        {"text": "Imbiber.", "isCorrect": False}
-                    ],
-                    "correction": "La **dorure** permet d'obtenir une belle couleur brillante en surface (réaction de Maillard)."
-                },
-                {
-                    "questionNumber": 80,
-                    "question": "Quel est le risque de travailler la **Pâte à Choux** trop chaude ou trop froide lors de l'incorporation des œufs ?",
-                    "answerOptions": [
-                        {"text": "La pâte se rétracte.", "isCorrect": False},
-                        {"text": "Trop chaude : les œufs cuisent (omelette) ; Trop froide : les œufs ne s'incorporent pas correctement (choux dense ou irrégulier).", "isCorrect": True},
-                        {"text": "La pâte fond.", "isCorrect": False},
-                        {"text": "La pâte est trop sèche.", "isCorrect": False}
-                    ],
-                    "correction": "La **température** est à maîtriser lors de l'ajout des œufs."
-                },
-            ]
-        },
-        # =========================================================================
-        # THÈME 5 : PRODUITS FINIS, CONSERVATION ET CUISSONS (Q. 81-100)
-        # =========================================================================
-        5: {
-            "name": "5. Produits Finis, Conservation et Cuissons (Q. 81-100)",
-            "questions": [
-                {
-                    "questionNumber": 81,
-                    "question": "Quel est l'entremets classique composé d'un disque de meringue, de crème chantilly et de fruits rouges ?",
-                    "answerOptions": [
-                        {"text": "Le Fraisier.", "isCorrect": False},
-                        {"text": "Le Pavlova (ou Vacherin aux fruits rouges).", "isCorrect": True},
-                        {"text": "L'Opéra.", "isCorrect": False},
-                        {"text": "Le Paris-Brest.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Pavlova** est léger et aérien (base meringue)."
-                },
-                {
-                    "questionNumber": 82,
-                    "question": "Quelle est la principale différence entre la **Pâte à Brioche** et la **Pâte à Pain** ?",
-                    "answerOptions": [
-                        {"text": "Le temps de repos.", "isCorrect": False},
-                        {"text": "La Brioche est enrichie en œufs et en beurre (matière grasse), ce qui la rend plus riche, plus moelleuse et plus jaune (texture non alvéolée).", "isCorrect": True},
-                        {"text": "La brioche contient plus de sel.", "isCorrect": False},
-                        {"text": "La brioche ne contient pas de levure.", "isCorrect": False}
-                    ],
-                    "correction": "La **Brioche** est une pâte levée riche (levure + œuf/beurre)."
-                },
-                {
-                    "questionNumber": 83,
-                    "question": "Quel est l'entremets composé d'une superposition de biscuit Joconde, de crème au beurre café et de ganache chocolat ?",
-                    "answerOptions": [
-                        {"text": "Le Saint-Honoré.", "isCorrect": False},
-                        {"text": "L'Opéra.", "isCorrect": True},
-                        {"text": "Le Forêt Noire.", "isCorrect": False},
-                        {"text": "Le Bavarois.", "isCorrect": False}
-                    ],
-                    "correction": "L'**Opéra** est un classique nécessitant une grande précision de montage."
-                },
-                {
-                    "questionNumber": 84,
-                    "question": "Quel est le risque de congeler un produit (ex : tarte) à la crème pâtissière simple (non stabilisée) ?",
-                    "answerOptions": [
-                        {"text": "La crème devient trop ferme.", "isCorrect": False},
-                        {"text": "L'eau contenue dans la crème cristallise, puis le produit 'tranche' (devient grumeleux et aqueux) à la décongélation (il faut la stabiliser à la gélatine ou au beurre).", "isCorrect": True},
-                        {"text": "La couleur change.", "isCorrect": False},
-                        {"text": "La crème brûle.", "isCorrect": False}
-                    ],
-                    "correction": "Pour la **surgélation**, les crèmes doivent être adaptées (crème pâtissière/beurre/gélatine ou mousses)."
-                },
-                {
-                    "questionNumber": 85,
-                    "question": "Comment s'appelle l'outil utilisé pour mesurer la densité d'un sirop ou d'une confiture, permettant d'en connaître le taux de sucre et le degré de cuisson (ex : petit boulé, grand cassé) ?",
-                    "answerOptions": [
-                        {"text": "Le thermomètre.", "isCorrect": False},
-                        {"text": "Le Pèse-sirop (ou Aréomètre ou Densimètre).", "isCorrect": True},
-                        {"text": "Le réfractomètre.", "isCorrect": False},
-                        {"text": "La balance de précision.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Pèse-sirop** permet de mesurer la concentration en sucre (ex : en degrés Baumé)."
-                },
-                {
-                    "questionNumber": 86,
-                    "question": "Quel est le nom de la préparation utilisée pour le garnissage des éclairs et des religieuses (souvent parfumée au café ou au chocolat) ?",
-                    "answerOptions": [
-                        {"text": "Crème au beurre.", "isCorrect": False},
-                        {"text": "Crème Pâtissière (éventuellement améliorée avec du beurre pour une meilleure tenue).", "isCorrect": True},
-                        {"text": "Mousse.", "isCorrect": False},
-                        {"text": "Ganache.", "isCorrect": False}
-                    ],
-                    "correction": "La **Crème Pâtissière** est le garnissage standard de la pâte à choux."
-                },
-                {
-                    "questionNumber": 87,
-                    "question": "Quel est le risque de ne pas respecter la phase de **détrempe** (ou repos au frais) sur une pâte à foncer (pâte brisée, pâte sablée) ?",
-                    "answerOptions": [
-                        {"text": "Elle cuit plus vite.", "isCorrect": False},
-                        {"text": "Elle se rétracte énormément à la cuisson (car le gluten n'est pas relâché) et le bord de la tarte s'effondre.", "isCorrect": True},
-                        {"text": "Elle devient trop molle.", "isCorrect": False},
-                        {"text": "Elle ne dore pas.", "isCorrect": False}
-                    ],
-                    "correction": "Le **repos au frais** est essentiel pour toutes les pâtes et entremets."
-                },
-                {
-                    "questionNumber": 88,
-                    "question": "Comment appelle-t-on le procédé par lequel on recouvre une tartelette de confiture ou de nappage pour la rendre brillante et la protéger de l'air ?",
-                    "answerOptions": [
-                        {"text": "Dorer.", "isCorrect": False},
-                        {"text": "Napper (ou Glaçage à l'abricot/Nappage neutre).", "isCorrect": True},
-                        {"text": "Blanchir.", "isCorrect": False},
-                        {"text": "Crémer.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Nappage** (souvent à base d'abricot) est un classique de finition."
-                },
-                {
-                    "questionNumber": 89,
-                    "question": "Quel est l'entremets classique constitué d'une couronne de pâte à choux, garni de crème mousseline pralinée et saupoudré d'amandes effilées ?",
-                    "answerOptions": [
-                        {"text": "Le Saint-Honoré.", "isCorrect": False},
-                        {"text": "Le Paris-Brest.", "isCorrect": True},
-                        {"text": "L'Opéra.", "isCorrect": False},
-                        {"text": "Le Forêt Noire.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Paris-Brest** est un chou emblématique."
-                },
-                {
-                    "questionNumber": 90,
-                    "question": "Quelle est la principale caractéristique d'un **biscuit à la cuillère** (par rapport à une génoise) ?",
-                    "answerOptions": [
-                        {"text": "Il est plus lourd.", "isCorrect": False},
-                        {"text": "Il est monté par séparation (jaunes/sucre, puis blancs fermes) et ne contient pas de matière grasse ajoutée, ce qui lui donne un aspect rugueux et une grande légèreté.", "isCorrect": True},
-                        {"text": "Il est cuit à la vapeur.", "isCorrect": False},
-                        {"text": "Il est très dense.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Biscuit à la cuillère** est la base du Tiramisu ou de la Charlotte."
-                },
-                {
-                    "questionNumber": 91,
-                    "question": "Quelle est la méthode de conservation consistant à abaisser la température d'un produit en dessous de -18 °C ?",
-                    "answerOptions": [
-                        {"text": "La réfrigération.", "isCorrect": False},
-                        {"text": "La Surgélation (ou Congélation pour usage domestique).", "isCorrect": True},
-                        {"text": "La pasteurisation.", "isCorrect": False},
-                        {"text": "La stérilisation.", "isCorrect": False}
-                    ],
-                    "correction": "La **Surgélation** permet une très longue conservation (souvent 12 mois) en bloquant l'activité bactérienne."
-                },
-                {
-                    "questionNumber": 92,
-                    "question": "Quel est le risque de mal doser l'**émulsion** dans la fabrication d'une ganache (trop de crème par rapport au chocolat) ?",
-                    "answerOptions": [
-                        {"text": "La ganache sera trop dure.", "isCorrect": False},
-                        {"text": "La ganache sera trop liquide, ne tiendra pas son montage ou son glaçage (rupture de la structure).", "isCorrect": True},
-                        {"text": "La ganache sera trop sèche.", "isCorrect": False},
-                        {"text": "La ganache sera trop grasse.", "isCorrect": False}
-                    ],
-                    "correction": "Le ratio **crème/chocolat** est essentiel pour la consistance souhaitée."
-                },
-                {
-                    "questionNumber": 93,
-                    "question": "Quel est le nom de la technique de cuisson d'une tarte ou d'une pièce garnie où l'on utilise un cercle rempli de billes de cuisson ou de haricots secs pour maintenir la forme ?",
-                    "answerOptions": [
-                        {"text": "Cuisson à sec.", "isCorrect": False},
-                        {"text": "Cuisson à blanc (avec lestage).", "isCorrect": True},
-                        {"text": "Cuisson au bain-marie.", "isCorrect": False},
-                        {"text": "Cuisson en différé.", "isCorrect": False}
-                    ],
-                    "correction": "La **Cuisson à blanc** est souvent lestée pour éviter que la pâte ne boursoufle."
-                },
-                {
-                    "questionNumber": 94,
-                    "question": "Qu'est-ce qu'une **Crème Chiboust** (utilisée pour le Saint-Honoré) ?",
-                    "answerOptions": [
-                        {"text": "Une crème au beurre pralinée.", "isCorrect": False},
-                        {"text": "Une crème pâtissière allégée par de la meringue italienne (stable et légère).", "isCorrect": True},
-                        {"text": "Une crème fouettée au mascarpone.", "isCorrect": False},
-                        {"text": "Une crème anglaise épaisse.", "isCorrect": False}
-                    ],
-                    "correction": "La **Crème Chiboust** est le mélange signature du Saint-Honoré."
-                },
-                {
-                    "questionNumber": 95,
-                    "question": "Quel est le rôle du **Praliné** dans la pâtisserie ?",
-                    "answerOptions": [
-                        {"text": "Émulsifier.", "isCorrect": False},
-                        {"text": "Apporter du croustillant (éclats), du gras (pâte d'oléagineux) et une saveur de fruits secs torréfiés (noisette/amande) et caramélisés.", "isCorrect": True},
-                        {"text": "Colorer.", "isCorrect": False},
-                        {"text": "Gélifier.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Praliné** est indispensable pour le Paris-Brest, le Rocher ou l'Opéra."
-                },
-                {
-                    "questionNumber": 96,
-                    "question": "Quel est l'entremets composé de biscuits cuillère imbibés d'un mélange café/alcool, de mascarpone et de cacao ?",
-                    "answerOptions": [
-                        {"text": "Le Bavarois.", "isCorrect": False},
-                        {"text": "Le Tiramisu.", "isCorrect": True},
-                        {"text": "Le Moka.", "isCorrect": False},
-                        {"text": "Le Fraisier.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Tiramisu** est un dessert italien à base d'œufs et de mascarpone."
-                },
-                {
-                    "questionNumber": 97,
-                    "question": "Quel est le risque de dorer une viennoiserie **trop tôt** (avant la pousse) ?",
-                    "answerOptions": [
-                        {"text": "Elle brûle.", "isCorrect": False},
-                        {"text": "La dorure forme une pellicule rigide qui empêche le développement et la pousse (la viennoiserie ne lève pas).", "isCorrect": True},
-                        {"text": "Elle devient trop molle.", "isCorrect": False},
-                        {"text": "Elle ne dore pas.", "isCorrect": False}
-                    ],
-                    "correction": "La **dorure** doit être appliquée juste avant l'enfournement, délicatement, pour ne pas 'casser' la pâte levée."
-                },
-                {
-                    "questionNumber": 98,
-                    "question": "Comment appelle-t-on la technique de finition d'un entremets qui consiste à projeter du chocolat fondu (au pistolet) sur le produit congelé pour obtenir un aspect 'velours' ?",
-                    "answerOptions": [
-                        {"text": "Le glacage miroir.", "isCorrect": False},
-                        {"text": "Le Flocage (ou Glaçage velours).", "isCorrect": True},
-                        {"text": "L'enrobage.", "isCorrect": False},
-                        {"text": "Le tempérage.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Flocage** (chocolat + beurre de cacao) est réalisé sur produit congelé."
-                },
-                {
-                    "questionNumber": 99,
-                    "question": "Quel est le risque d'ouvrir la porte du four pendant la cuisson d'une **pâte à choux** ou d'une **génoise** ?",
-                    "answerOptions": [
-                        {"text": "Elles gonflent trop.", "isCorrect": False},
-                        {"text": "La chute de température (entrée d'air froid) entraîne un affaissement immédiat et irréversible du produit (qui 'retombe').", "isCorrect": True},
-                        {"text": "Elles brûlent.", "isCorrect": False},
-                        {"text": "Elles deviennent dures.", "isCorrect": False}
-                    ],
-                    "correction": "Il ne faut jamais ouvrir le four en début de cuisson des **pâtes à fort développement**."
-                },
-                {
-                    "questionNumber": 100,
-                    "question": "Quel est le produit classique composé de deux fonds de Dacquoise (amande/noisette) et d'une crème au beurre pralinée ?",
-                    "answerOptions": [
-                        {"text": "Le Moka.", "isCorrect": False},
-                        {"text": "Le Succès Praliné.", "isCorrect": True},
-                        {"text": "La Bûche.", "isCorrect": False},
-                        {"text": "Le Fraisier.", "isCorrect": False}
-                    ],
-                    "correction": "Le **Succès** est un biscuit à base de poudre d'amande/noisette (Dacquoise)."
-                },
-            ]
-        }
+    "quizTitle": "CAP Pâtissier - Base de Données Complète (100 Questions)",
+    "description": "Base de données de 100 questions réparties en 5 thèmes pour le CAP Pâtissier, avec la bonne réponse fixée en position A.",
+    "theme1": {
+        "title": "Hygiène, Sécurité et Législation (HACCP)",
+        "questions": [
+            {
+                "questionNumber": 1,
+                "question": "Quelle est l'abréviation du système d'analyse des dangers et points critiques pour leur maîtrise ?",
+                "answerOptions": [
+                    {"text": "HACCP.", "isCorrect": True, "key": "A"},
+                    {"text": "PMS.", "isCorrect": False, "key": "B"},
+                    {"text": "DAT.", "isCorrect": False, "key": "C"},
+                    {"text": "CLP.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "HACCP signifie Hazard Analysis Critical Control Point. C'est la méthode de référence pour l'hygiène alimentaire."
+            },
+            {
+                "questionNumber": 2,
+                "question": "Quelle est la zone de température idéale pour la multiplication rapide des bactéries (appelée zone de danger) ?",
+                "answerOptions": [
+                    {"text": "Entre +8°C et +63°C.", "isCorrect": True, "key": "A"},
+                    {"text": "Entre 0°C et +3°C.", "isCorrect": False, "key": "B"},
+                    {"text": "Entre -18°C et 0°C.", "isCorrect": False, "key": "C"},
+                    {"text": "Au-delà de +100°C.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La 'zone de danger' se situe entre +8°C et +63°C. Les produits doivent y séjourner le moins longtemps possible."
+            },
+            {
+                "questionNumber": 3,
+                "question": "Quel document obligatoire en pâtisserie regroupe toutes les procédures d'hygiène et de sécurité sanitaire ?",
+                "answerOptions": [
+                    {"text": "Le Plan de Maîtrise Sanitaire (PMS).", "isCorrect": True, "key": "A"},
+                    {"text": "Le Guide de Bonnes Pratiques d'Hygiène (GBPH).", "isCorrect": False, "key": "B"},
+                    {"text": "La Déclaration d'Aptitude au Travail.", "isCorrect": False, "key": "C"},
+                    {"text": "Le Registre des Fournisseurs.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le Plan de Maîtrise Sanitaire (PMS) est un ensemble de documents décrivant les moyens mis en œuvre pour assurer l'hygiène et la sécurité des préparations."
+            },
+            {
+                "questionNumber": 4,
+                "question": "Quelle doit être la température maximale de stockage d'une crème pâtissière finie (produit 'à risque') ?",
+                "answerOptions": [
+                    {"text": "+3°C.", "isCorrect": True, "key": "A"},
+                    {"text": "+6°C.", "isCorrect": False, "key": "B"},
+                    {"text": "+10°C.", "isCorrect": False, "key": "C"},
+                    {"text": "+12°C.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Les préparations très sensibles (crèmes, mousses, etc.) doivent être conservées à +3°C maximum pour limiter la prolifération microbienne."
+            },
+            {
+                "questionNumber": 5,
+                "question": "Qu'est-ce qu'une Toxicité Alimentaire Collective (TIAC) ?",
+                "answerOptions": [
+                    {"text": "L'apparition de symptômes similaires chez au moins deux personnes après un repas commun.", "isCorrect": True, "key": "A"},
+                    {"text": "Une intoxication due à un seul aliment contaminé.", "isCorrect": False, "key": "B"},
+                    {"text": "Une maladie d'origine animale transmissible à l'homme.", "isCorrect": False, "key": "C"},
+                    {"text": "Une contamination par des produits chimiques.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La TIAC est définie par l'apparition de symptômes gastro-intestinaux similaires chez au moins deux personnes ayant consommé le même aliment."
+            },
+            {
+                "questionNumber": 6,
+                "question": "Quelle est la durée de conservation maximale recommandée pour les produits de pâtisserie finis, à base de crème et conservés au froid ?",
+                "answerOptions": [
+                    {"text": "3 jours.", "isCorrect": True, "key": "A"},
+                    {"text": "7 jours.", "isCorrect": False, "key": "B"},
+                    {"text": "24 heures.", "isCorrect": False, "key": "C"},
+                    {"text": "5 jours.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La Directive Pâtissière et les bonnes pratiques recommandent une conservation de 3 jours maximum pour les produits sensibles réfrigérés."
+            },
+            {
+                "questionNumber": 7,
+                "question": "Comment appelle-t-on le transfert de micro-organismes d'un aliment contaminé vers un aliment sain ?",
+                "answerOptions": [
+                    {"text": "La contamination croisée.", "isCorrect": True, "key": "A"},
+                    {"text": "La contamination environnementale.", "isCorrect": False, "key": "B"},
+                    {"text": "La contamination bactérienne.", "isCorrect": False, "key": "C"},
+                    {"text": "La contamination directe.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La contamination croisée se produit par contact (mains, ustensiles, planches à découper) entre produits crus et produits cuits ou prêts à consommer."
+            },
+            {
+                "questionNumber": 8,
+                "question": "Quelle est la température minimale interne à atteindre pour la cuisson des œufs afin de détruire la plupart des bactéries pathogènes ?",
+                "answerOptions": [
+                    {"text": "+63°C.", "isCorrect": True, "key": "A"},
+                    {"text": "+50°C.", "isCorrect": False, "key": "B"},
+                    {"text": "+75°C.", "isCorrect": False, "key": "C"},
+                    {"text": "+90°C.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Une température interne de +63°C est généralement suffisante pour la pasteurisation (cas de la crème anglaise par exemple)."
+            },
+            {
+                "questionNumber": 9,
+                "question": "Quel est l'objectif principal de la marche en avant dans l'organisation du laboratoire ?",
+                "answerOptions": [
+                    {"text": "Éviter le croisement des circuits propres et sales.", "isCorrect": True, "key": "A"},
+                    {"text": "Optimiser la production et le temps de travail.", "isCorrect": False, "key": "B"},
+                    {"text": "Réduire la consommation d'énergie de la pâtisserie.", "isCorrect": False, "key": "C"},
+                    {"text": "Faciliter la gestion des stocks de matières premières.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La marche en avant est un principe d'organisation spatiale ou temporelle visant à prévenir la contamination en séparant les flux 'propres' (produit fini) et 'sales' (déchets, vaisselle sale)."
+            },
+            {
+                "questionNumber": 10,
+                "question": "Quel équipement doit être utilisé pour refroidir rapidement une crème pâtissière après cuisson ?",
+                "answerOptions": [
+                    {"text": "Une cellule de refroidissement rapide.", "isCorrect": True, "key": "A"},
+                    {"text": "Un congélateur.", "isCorrect": False, "key": "B"},
+                    {"text": "Un réfrigérateur ménager.", "isCorrect": False, "key": "C"},
+                    {"text": "Un bain-marie froid.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La cellule de refroidissement est essentielle pour passer rapidement la crème de +63°C à +10°C en moins de deux heures et éviter la zone de danger."
+            },
+            {
+                "questionNumber": 11,
+                "question": "Quelle obligation légale concerne l'affichage des allergènes pour les produits vendus non préemballés ?",
+                "answerOptions": [
+                    {"text": "Ils doivent être mis à disposition du consommateur par écrit, sans qu'il ait à le demander.", "isCorrect": True, "key": "A"},
+                    {"text": "L'affichage oral est suffisant si le vendeur est capable de les citer.", "isCorrect": False, "key": "B"},
+                    {"text": "Seuls les allergènes majeurs doivent être déclarés.", "isCorrect": False, "key": "C"},
+                    {"text": "Ils ne sont pas obligatoires pour la pâtisserie artisanale.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La réglementation impose la mise à disposition écrite de la liste des 14 allergènes majeurs pour les denrées non préemballées."
+            },
+            {
+                "questionNumber": 12,
+                "question": "Quel produit est le plus efficace pour la désinfection des surfaces de travail en laboratoire de pâtisserie ?",
+                "answerOptions": [
+                    {"text": "Un désinfectant alimentaire conforme aux normes en vigueur.", "isCorrect": True, "key": "A"},
+                    {"text": "De l'eau de Javel pure.", "isCorrect": False, "key": "B"},
+                    {"text": "Un détergent standard.", "isCorrect": False, "key": "C"},
+                    {"text": "De l'eau chaude et du savon.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le nettoyage doit être suivi d'une désinfection avec un produit homologué et adapté au contact alimentaire."
+            },
+            {
+                "questionNumber": 13,
+                "question": "Quelle mesure de sécurité doit être respectée lors du port d'une tenue de travail professionnelle ?",
+                "answerOptions": [
+                    {"text": "Elle doit être propre, complète et exclusivement portée dans le laboratoire.", "isCorrect": True, "key": "A"},
+                    {"text": "Elle peut être portée pour le trajet entre le domicile et le travail.", "isCorrect": False, "key": "B"},
+                    {"text": "Seul le port de la coiffe est obligatoire.", "isCorrect": False, "key": "C"},
+                    {"text": "Elle doit être remplacée une fois par semaine.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La tenue (veste, pantalon, tablier, coiffe) doit être propre et ne jamais sortir de l'enceinte de production pour éviter les contaminations extérieures."
+            },
+            {
+                "questionNumber": 14,
+                "question": "Quelle est la définition d'un Point Critique pour la Maîtrise (CCP) ?",
+                "answerOptions": [
+                    {"text": "Une étape où une maîtrise est essentielle pour prévenir ou éliminer un danger.", "isCorrect": True, "key": "A"},
+                    {"text": "Un simple point d'attention dans le processus de production.", "isCorrect": False, "key": "B"},
+                    {"text": "Le moment de l'incorporation de la matière première la plus chère.", "isCorrect": False, "key": "C"},
+                    {"text": "L'étape de dressage final de la pâtisserie.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Un CCP est une étape du processus où l'on peut appliquer une mesure pour éviter que le produit devienne dangereux. Exemple : la cuisson/pasteurisation."
+            },
+            {
+                "questionNumber": 15,
+                "question": "Quel est le risque lié à une mauvaise gestion des allergènes en pâtisserie ?",
+                "answerOptions": [
+                    {"text": "Choc anaphylactique chez un client allergique.", "isCorrect": True, "key": "A"},
+                    {"text": "Dégradation prématurée du produit.", "isCorrect": False, "key": "B"},
+                    {"text": "Une perte de texture de la pâte.", "isCorrect": False, "key": "C"},
+                    {"text": "Une saveur amère.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "L'ingestion d'un allergène par une personne sensible peut provoquer une réaction grave, y compris le choc anaphylactique."
+            },
+            {
+                "questionNumber": 16,
+                "question": "Quel type de thermomètre est le plus précis et le plus utilisé en contrôle de température des aliments en laboratoire ?",
+                "answerOptions": [
+                    {"text": "Le thermomètre à sonde.", "isCorrect": True, "key": "A"},
+                    {"text": "Le thermomètre à alcool.", "isCorrect": False, "key": "B"},
+                    {"text": "Le thermomètre infrarouge (laser).", "isCorrect": False, "key": "C"},
+                    {"text": "Le thermomètre mural.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le thermomètre à sonde permet de mesurer la température à cœur des produits, ce qui est indispensable pour vérifier la pasteurisation ou le refroidissement."
+            },
+            {
+                "questionNumber": 17,
+                "question": "Quelle est la durée de conservation maximale pour les œufs frais entiers à température ambiante en pâtisserie, avant utilisation ?",
+                "answerOptions": [
+                    {"text": "Ils ne doivent pas être conservés à température ambiante, mais au frais (0°C à +4°C).", "isCorrect": True, "key": "A"},
+                    {"text": "15 jours.", "isCorrect": False, "key": "B"},
+                    {"text": "10 jours.", "isCorrect": False, "key": "C"},
+                    {"text": "3 semaines.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Les œufs frais doivent être stockés à une température stable, idéalement au froid positif, pour minimiser le risque de salmonelles, sauf indication contraire de la législation locale."
+            },
+            {
+                "questionNumber": 18,
+                "question": "Quelle action doit être effectuée avant et après chaque manipulation d'aliments en pâtisserie ?",
+                "answerOptions": [
+                    {"text": "Le lavage et la désinfection des mains.", "isCorrect": True, "key": "A"},
+                    {"text": "Le changement de tenue de travail.", "isCorrect": False, "key": "B"},
+                    {"text": "L'aération complète du laboratoire.", "isCorrect": False, "key": "C"},
+                    {"text": "La vérification des stocks de matières premières.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le lavage des mains est la mesure d'hygiène la plus simple et la plus efficace pour prévenir les contaminations manuportées."
+            },
+            {
+                "questionNumber": 19,
+                "question": "Qu'appelle-t-on la DLC sur un produit alimentaire ?",
+                "answerOptions": [
+                    {"text": "Date Limite de Consommation.", "isCorrect": True, "key": "A"},
+                    {"text": "Durée Limite de Chaleur.", "isCorrect": False, "key": "B"},
+                    {"text": "Déclaration Légale de Certification.", "isCorrect": False, "key": "C"},
+                    {"text": "Date de Lancement Commercial.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La DLC est la date au-delà de laquelle le produit est considéré comme impropre à la consommation et ne doit plus être commercialisé ni consommé."
+            },
+            {
+                "questionNumber": 20,
+                "question": "Comment s'appelle la technique de nettoyage qui consiste à enlever les salissures visibles avant l'application du désinfectant ?",
+                "answerOptions": [
+                    {"text": "Le dégraissage et le nettoyage.", "isCorrect": True, "key": "A"},
+                    {"text": "La décontamination seule.", "isCorrect": False, "key": "B"},
+                    {"text": "L'assainissement.", "isCorrect": False, "key": "C"},
+                    {"text": "La stérilisation.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le nettoyage (détergent) précède toujours la désinfection. On parle souvent de la technique des 5 étapes : Pré-nettoyage, Nettoyage, Rinçage, Désinfection, Rinçage final."
+            }
+        ]
+    },
+    "theme2": {
+        "title": "Pâtes et Fonds (Pâte à choux, feuilletée, sablée, etc.)",
+        "questions": [
+            {
+                "questionNumber": 21,
+                "question": "Quel ingrédient est responsable du levage de la pâte à choux lors de la cuisson par évaporation d'eau ?",
+                "answerOptions": [
+                    {"text": "La vapeur d'eau générée par l'humidité du four.", "isCorrect": True, "key": "A"},
+                    {"text": "La levure chimique contenue dans la farine.", "isCorrect": False, "key": "B"},
+                    {"text": "Les œufs ajoutés dans la panade.", "isCorrect": False, "key": "C"},
+                    {"text": "Le sucre qui cristallise à la chaleur.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le fort taux d'humidité de la panade, transformé en vapeur sous l'effet de la chaleur, gonfle la pâte et crée le creux caractéristique."
+            },
+            {
+                "questionNumber": 22,
+                "question": "Quel est le but principal de l'étape du 'frasage' lors de la réalisation d'une pâte sablée ?",
+                "answerOptions": [
+                    {"text": "Sablet le beurre avec la farine pour enrober les particules de gras.", "isCorrect": True, "key": "A"},
+                    {"text": "Incorporer les œufs et amalgamer les ingrédients.", "isCorrect": False, "key": "B"},
+                    {"text": "Aérer la pâte pour la rendre plus légère.", "isCorrect": False, "key": "C"},
+                    {"text": "Donner du corps et de l'élasticité au gluten.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le frasage est le mélange rapide du beurre froid avec la farine, souvent pour 'sablet' le mélange et limiter le développement du gluten."
+            },
+            {
+                "questionNumber": 23,
+                "question": "Comment appelle-t-on le fait de piquer une pâte à tarte avant cuisson ?",
+                "answerOptions": [
+                    {"text": "Foncer et piquer.", "isCorrect": True, "key": "A"},
+                    {"text": "Bouler et apprêter.", "isCorrect": False, "key": "B"},
+                    {"text": "Laminer et beurrer.", "isCorrect": False, "key": "C"},
+                    {"text": "Dégazer et rompre.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Piquer la pâte à tarte (foncée) permet à la vapeur de s'échapper durant la cuisson, empêchant ainsi la formation de bulles."
+            },
+            {
+                "questionNumber": 24,
+                "question": "Quel est le rôle du sel dans une pâte levée comme la pâte à croissant ?",
+                "answerOptions": [
+                    {"text": "Réguler l'activité de la levure et renforcer la structure de la pâte.", "isCorrect": True, "key": "A"},
+                    {"text": "Rendre la pâte plus souple et plus élastique.", "isCorrect": False, "key": "B"},
+                    {"text": "Accélérer la fermentation alcoolique.", "isCorrect": False, "key": "C"},
+                    {"text": "Améliorer la couleur de la croûte.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le sel est un inhibiteur de la levure (régulateur de fermentation) et il a une action sur le réseau de gluten, le rendant plus résistant."
+            },
+            {
+                "questionNumber": 25,
+                "question": "Quelle étape de la réalisation de la pâte feuilletée consiste à donner des tours simples ou doubles ?",
+                "answerOptions": [
+                    {"text": "Le tourage ou laminage.", "isCorrect": True, "key": "A"},
+                    {"text": "Le détaillage ou l'abaisse.", "isCorrect": False, "key": "B"},
+                    {"text": "L'apprêt ou le pointage.", "isCorrect": False, "key": "C"},
+                    {"text": "Le frasage ou le crémer.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le tourage est l'opération qui consiste à étaler alternativement la pâte et le beurre, puis à plier l'ensemble pour obtenir les feuillets caractéristiques."
+            },
+            {
+                "questionNumber": 26,
+                "question": "Qu'est-ce que le 'détrempe' dans le processus de fabrication de la pâte feuilletée ?",
+                "answerOptions": [
+                    {"text": "Le mélange initial d'eau, de farine et de sel, sans le beurre de tourage.", "isCorrect": True, "key": "A"},
+                    {"text": "Le beurre spécifique utilisé pour les tours.", "isCorrect": False, "key": "B"},
+                    {"text": "L'action de mouiller une pâte avant la cuisson.", "isCorrect": False, "key": "C"},
+                    {"text": "Le fait d'étaler la pâte avant la première soudure.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La détrempe est la base de la pâte feuilletée, c'est la partie sans la matière grasse de tourage."
+            },
+            {
+                "questionNumber": 27,
+                "question": "Quelle est la principale différence entre une pâte sablée et une pâte sucrée ?",
+                "answerOptions": [
+                    {"text": "La pâte sucrée intègre le sucre et le beurre par la méthode du crémage.", "isCorrect": True, "key": "A"},
+                    {"text": "La pâte sablée utilise de la poudre d'amande, pas la sucrée.", "isCorrect": False, "key": "B"},
+                    {"text": "La pâte sablée est travaillée à la feuille et la sucrée au crochet.", "isCorrect": False, "key": "C"},
+                    {"text": "La pâte sucrée ne contient pas d'œuf.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La pâte sucrée est réalisée par crémage (beurre et sucre travaillés ensemble), tandis que la sablée est généralement frasée (sablage farine/beurre)."
+            },
+            {
+                "questionNumber": 28,
+                "question": "Quel phénomène chimique cause le brunissement de la pâte pendant la cuisson (réaction non-enzymatique) ?",
+                "answerOptions": [
+                    {"text": "La réaction de Maillard (protéines et sucres) et la caramélisation (sucres).", "isCorrect": True, "key": "A"},
+                    {"text": "L'oxydation des lipides.", "isCorrect": False, "key": "B"},
+                    {"text": "L'évaporation de l'eau.", "isCorrect": False, "key": "C"},
+                    {"text": "La gélification de l'amidon.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La couleur de la croûte est le résultat de la réaction de Maillard (protéines et sucres) et de la caramélisation des sucres, deux réactions se produisant à haute température."
+            },
+            {
+                "questionNumber": 29,
+                "question": "Quelle doit être la température du four pour la cuisson d'une pâte à choux ?",
+                "answerOptions": [
+                    {"text": "Une température élevée au départ, puis une baisse pour le séchage.", "isCorrect": True, "key": "A"},
+                    {"text": "Une température basse et constante sur toute la durée.", "isCorrect": False, "key": "B"},
+                    {"text": "Une température extrêmement basse pour le croustillant.", "isCorrect": False, "key": "C"},
+                    {"text": "Une température très élevée pour un cœur très tendre.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le début à haute température assure le fort coup de vapeur pour le développement, suivi d'une température plus douce pour la cuisson à cœur et le séchage."
+            },
+            {
+                "questionNumber": 30,
+                "question": "Quel défaut est causé par un excès de pétrissage d'une pâte à tarte ?",
+                "answerOptions": [
+                    {"text": "La pâte devient élastique, se rétracte à la cuisson et est dure.", "isCorrect": True, "key": "A"},
+                    {"text": "La pâte est friable et n'a aucune tenue.", "isCorrect": False, "key": "B"},
+                    {"text": "La pâte colle aux doigts mais reste tendre.", "isCorrect": False, "key": "C"},
+                    {"text": "La pâte est trop colorée après cuisson.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Un pétrissage excessif développe le réseau de gluten, rendant la pâte nerveuse, élastique, difficile à travailler et rétractable à la cuisson."
+            },
+            {
+                "questionNumber": 31,
+                "question": "Qu'est-ce que l'apprêt en viennoiserie ?",
+                "answerOptions": [
+                    {"text": "Le temps de repos final de la pâte façonnée avant l'enfournement.", "isCorrect": True, "key": "A"},
+                    {"text": "Le mélange initial des ingrédients avant le pétrissage.", "isCorrect": False, "key": "B"},
+                    {"text": "L'incorporation du beurre de tourage.", "isCorrect": False, "key": "C"},
+                    {"text": "L'action d'étaler la pâte au rouleau.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "L'apprêt est le temps de pousse (fermentation) qui permet à la pièce façonnée d'atteindre le volume idéal juste avant la cuisson."
+            },
+            {
+                "questionNumber": 32,
+                "question": "Pourquoi est-il important d'utiliser du beurre froid pour le tourage de la pâte feuilletée ?",
+                "answerOptions": [
+                    {"text": "Pour créer des couches nettes entre la détrempe et le beurre.", "isCorrect": True, "key": "A"},
+                    {"text": "Pour que la pâte lève davantage durant l'apprêt.", "isCorrect": False, "key": "B"},
+                    {"text": "Pour que la pâte ait une couleur plus claire.", "isCorrect": False, "key": "C"},
+                    {"text": "Pour augmenter la durée de conservation.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le beurre froid et de bonne plasticité est indispensable pour ne pas se mélanger à la détrempe et former des couches distinctes qui donneront les feuillets à la cuisson."
+            },
+            {
+                "questionNumber": 33,
+                "question": "Quelle technique empêche la pâte à choux de retomber après la cuisson ?",
+                "answerOptions": [
+                    {"text": "Sécher les choux dans le four éteint ou légèrement ouvert après la cuisson.", "isCorrect": True, "key": "A"},
+                    {"text": "Augmenter fortement le temps de pétrissage de la panade.", "isCorrect": False, "key": "B"},
+                    {"text": "Utiliser une farine sans gluten.", "isCorrect": False, "key": "C"},
+                    {"text": "Ajouter du sucre glace au moment de la panade.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le séchage permet d'évacuer l'humidité résiduelle des choux, consolidant ainsi la coque pour qu'elle ne retombe pas une fois sortie du four."
+            },
+            {
+                "questionNumber": 34,
+                "question": "Quel est le nom de l'appareil utilisé pour réaliser des fonds de tarte réguliers ?",
+                "answerOptions": [
+                    {"text": "Le cercle à tarte ou le cadre.", "isCorrect": True, "key": "A"},
+                    {"text": "Le chinois.", "isCorrect": False, "key": "B"},
+                    {"text": "Le batteur-mélangeur.", "isCorrect": False, "key": "C"},
+                    {"text": "Le laminoir à froid.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le cercle à tarte est un anneau sans fond qui permet de cuire le fond de tarte pour obtenir une forme et des bords parfaits."
+            },
+            {
+                "questionNumber": 35,
+                "question": "Qu'est-ce que l'opération de 'rompre' ou 'dégazer' une pâte levée ?",
+                "answerOptions": [
+                    {"text": "Rabattre la pâte pour éliminer le gaz carbonique accumulé.", "isCorrect": True, "key": "A"},
+                    {"text": "L'ajout d'eau pour hydrater à nouveau la pâte.", "isCorrect": False, "key": "B"},
+                    {"text": "Le début du pétrissage après le frasage.", "isCorrect": False, "key": "C"},
+                    {"text": "Le fait de la laisser reposer au frais avant cuisson.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Rompre la pâte (ou la dégazer) permet de réchauffer légèrement la pâte, de redistribuer la levure et les nutriments, et d'améliorer la structure."
+            },
+            {
+                "questionNumber": 36,
+                "question": "Quelle méthode est utilisée pour vérifier si une pâte à choux est prête pour l'incorporation des œufs ?",
+                "answerOptions": [
+                    {"text": "La panade ne doit pas coller aux parois de la casserole après chauffage.", "isCorrect": True, "key": "A"},
+                    {"text": "La panade doit être très liquide et chaude.", "isCorrect": False, "key": "B"},
+                    {"text": "La panade doit avoir doublé de volume.", "isCorrect": False, "key": "C"},
+                    {"text": "La panade doit être complètement refroidie.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le dessèchement de la panade au feu doit être suffisant pour qu'elle se décolle des bords, gage de la bonne gélification de l'amidon."
+            },
+            {
+                "questionNumber": 37,
+                "question": "Quel est le pourcentage idéal de matière grasse dans la farine T45 ou T55 utilisée pour la pâtisserie ?",
+                "answerOptions": [
+                    {"text": "Un pourcentage très faible, souvent moins de 1%.", "isCorrect": True, "key": "A"},
+                    {"text": "Un pourcentage très élevé, supérieur à 10%.", "isCorrect": False, "key": "B"},
+                    {"text": "Entre 5% et 8%.", "isCorrect": False, "key": "C"},
+                    {"text": "Entre 3% et 5%.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La farine est principalement composée d'amidon et de protéines (gluten). La teneur en lipides (matière grasse) est généralement très faible."
+            },
+            {
+                "questionNumber": 38,
+                "question": "Quelle est la fonction du papier sulfurisé ou du tapis de cuisson lors de la cuisson d'un fond de tarte à blanc ?",
+                "answerOptions": [
+                    {"text": "Empêcher le fond de coller au support et le protéger.", "isCorrect": True, "key": "A"},
+                    {"text": "Accélérer la cuisson de la pâte.", "isCorrect": False, "key": "B"},
+                    {"text": "Faire monter la pâte davantage.", "isCorrect": False, "key": "C"},
+                    {"text": "Dégazer la pâte automatiquement.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le papier sulfurisé ou le tapis en silicone (Silpat) est utilisé pour faciliter le démoulage et protéger la pâte."
+            },
+            {
+                "questionNumber": 39,
+                "question": "Quel est l'effet d'un excès de sucre dans une pâte levée ou une viennoiserie ?",
+                "answerOptions": [
+                    {"text": "Il ralentit l'activité de la levure et colore fortement la croûte.", "isCorrect": True, "key": "A"},
+                    {"text": "Il accélère la pousse de la pâte.", "isCorrect": False, "key": "B"},
+                    {"text": "Il rend la mie plus dense et moins aérée.", "isCorrect": False, "key": "C"},
+                    {"text": "Il empêche le développement du gluten.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le sucre en grande quantité est osmotique, il 'aspire' l'eau nécessaire à la levure, ralentissant sa fermentation. Il favorise également la caramélisation."
+            },
+            {
+                "questionNumber": 40,
+                "question": "Quel terme technique désigne l'action d'enfermer le beurre dans la détrempe pour la pâte feuilletée ?",
+                "answerOptions": [
+                    {"text": "Beurrage ou encartage.", "isCorrect": True, "key": "A"},
+                    {"text": "Crémage.", "isCorrect": False, "key": "B"},
+                    {"text": "Sablage.", "isCorrect": False, "key": "C"},
+                    {"text": "Punchage.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "L'encartage est l'étape où le beurre de tourage est positionné et enfermé dans la détrempe avant le premier tour de pliage."
+            }
+        ]
+    },
+    "theme3": {
+        "title": "Crèmes et Appareils (Crème pâtissière, anglaise, mousseline, etc.)",
+        "questions": [
+            {
+                "questionNumber": 41,
+                "question": "Quel ingrédient est principalement responsable de l'épaississement de la crème pâtissière ?",
+                "answerOptions": [
+                    {"text": "L'amidon contenu dans la farine ou la poudre à crème.", "isCorrect": True, "key": "A"},
+                    {"text": "Le jaune d'œuf qui coagule.", "isCorrect": False, "key": "B"},
+                    {"text": "La matière grasse du lait ou du beurre.", "isCorrect": False, "key": "C"},
+                    {"text": "Le sucre par son pouvoir sucrant.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "L'amidon (farine, maïzena, poudre à crème) gélifie au contact du liquide chaud et assure la tenue de la crème pâtissière."
+            },
+            {
+                "questionNumber": 42,
+                "question": "Quelle est la principale différence entre une crème mousseline et une crème diplomate ?",
+                "answerOptions": [
+                    {"text": "La mousseline est une crème pâtissière montée au beurre, la diplomate est montée à la crème fouettée.", "isCorrect": True, "key": "A"},
+                    {"text": "La mousseline contient de la gélatine, la diplomate non.", "isCorrect": False, "key": "B"},
+                    {"text": "La mousseline est utilisée pour les entremets, la diplomate pour le Paris-Brest.", "isCorrect": False, "key": "C"},
+                    {"text": "La diplomate est une crème d'amande, la mousseline est une crème au beurre.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La crème mousseline est une crème pâtissière enrichie en beurre (incorporé en deux fois), tandis que la crème diplomate est une crème pâtissière mélangée à de la gélatine et de la crème fouettée."
+            },
+            {
+                "questionNumber": 43,
+                "question": "À quelle température minimale doit-on cuire une crème anglaise pour pasteuriser les jaunes d'œufs et garantir l'épaississement ?",
+                "answerOptions": [
+                    {"text": "+82°C (sans dépasser +85°C pour éviter le caillage).", "isCorrect": True, "key": "A"},
+                    {"text": "+60°C.", "isCorrect": False, "key": "B"},
+                    {"text": "+95°C.", "isCorrect": False, "key": "C"},
+                    {"text": "+75°C.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La coagulation des protéines d'œufs pour épaissir la crème anglaise se fait autour de 82-85°C. Au-delà, on risque la surcuisson et l'effet 'œufs brouillés'."
+            },
+            {
+                "questionNumber": 44,
+                "question": "Quel terme technique utilise-t-on pour l'appareil composé de jaunes d'œufs, de sucre et d'eau monté au ruban ?",
+                "answerOptions": [
+                    {"text": "L'appareil à bombe ou pâte à bombe.", "isCorrect": True, "key": "A"},
+                    {"text": "Le tant pour tant.", "isCorrect": False, "key": "B"},
+                    {"text": "Le sirop simple.", "isCorrect": False, "key": "C"},
+                    {"text": "Le sabayon.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "L'appareil à bombe est la base des mousses au beurre allégées. Il est réalisé avec un sirop de sucre cuit versé sur les jaunes d'œufs pour les pasteuriser et les monter."
+            },
+            {
+                "questionNumber": 45,
+                "question": "Quelle est l'utilité principale de recouvrir une crème pâtissière chaude d'un film alimentaire au contact ?",
+                "answerOptions": [
+                    {"text": "Empêcher la formation d'une croûte à la surface de la crème.", "isCorrect": True, "key": "A"},
+                    {"text": "Accélérer son refroidissement.", "isCorrect": False, "key": "B"},
+                    {"text": "Augmenter la température à cœur.", "isCorrect": False, "key": "C"},
+                    {"text": "Assurer la coloration de la crème.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le filmage 'au contact' empêche le contact de la surface avec l'air, prévenant ainsi le dessèchement qui crée la croûte."
+            },
+            {
+                "questionNumber": 46,
+                "question": "Quelle est la principale fonction du blanc d'œuf dans une meringue française ?",
+                "answerOptions": [
+                    {"text": "Assurer la structure et le volume par la coagulation des protéines.", "isCorrect": True, "key": "A"},
+                    {"text": "Donner du croustillant par la présence de l'amidon.", "isCorrect": False, "key": "B"},
+                    {"text": "Empêcher le sucre de cristalliser à la cuisson.", "isCorrect": False, "key": "C"},
+                    {"text": "Apporter un goût fruité.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Les protéines du blanc d'œuf (albumine) se déploient lors du fouettage pour emprisonner l'air, et coagulent à la chaleur pour former une coque solide."
+            },
+            {
+                "questionNumber": 47,
+                "question": "Par quelle opération fait-on refroidir un sirop de sucre cuit pour une meringue italienne ?",
+                "answerOptions": [
+                    {"text": "Le verser en filet sur les blancs en neige tout en fouettant.", "isCorrect": True, "key": "A"},
+                    {"text": "Le placer au congélateur 5 minutes.", "isCorrect": False, "key": "B"},
+                    {"text": "Le laisser refroidir complètement avant de l'ajouter.", "isCorrect": False, "key": "C"},
+                    {"text": "Le mélanger à de la glace pilée.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le sirop chaud (118-121°C) est versé lentement sur les blancs montés (bec d'oiseau), ce qui cuit les blancs et donne une meringue stable et brillante."
+            },
+            {
+                "questionNumber": 48,
+                "question": "Comment appelle-t-on le mélange de jaunes d'œufs et de sucre fouetté jusqu'à ce qu'il blanchisse ?",
+                "answerOptions": [
+                    {"text": "Blanchir les jaunes au ruban.", "isCorrect": True, "key": "A"},
+                    {"text": "Crémage.", "isCorrect": False, "key": "B"},
+                    {"text": "Pommader.", "isCorrect": False, "key": "C"},
+                    {"text": "Tempérer.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le fait de 'blanchir' désigne le mélange vigoureux du sucre et des jaunes. Le mélange prend une couleur plus claire et une consistance de ruban."
+            },
+            {
+                "questionNumber": 49,
+                "question": "Quel élément permet d'obtenir la texture aérée et stable d'une mousse au chocolat réussie ?",
+                "answerOptions": [
+                    {"text": "L'émulsion entre le chocolat fondu (gras) et les jaunes d'œufs ou le montage des blancs.", "isCorrect": True, "key": "A"},
+                    {"text": "L'ajout d'une grande quantité de lait.", "isCorrect": False, "key": "B"},
+                    {"text": "L'incorporation de poudre à crème.", "isCorrect": False, "key": "C"},
+                    {"text": "Le pétrissage très long du chocolat.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le secret de la mousse repose sur l'émulsion (chocolat/jaunes) et l'incorporation d'un élément foisonné (crème fouettée ou blancs en neige) qui piège l'air."
+            },
+            {
+                "questionNumber": 50,
+                "question": "Quelle est la principale utilité de la gélatine en pâtisserie ?",
+                "answerOptions": [
+                    {"text": "Assurer la prise et la tenue des crèmes et des mousses froides.", "isCorrect": True, "key": "A"},
+                    {"text": "Accélérer la fermentation des pâtes levées.", "isCorrect": False, "key": "B"},
+                    {"text": "Servir d'agent de foisonnement.", "isCorrect": False, "key": "C"},
+                    {"text": "Donner de la saveur aux crèmes.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La gélatine (agent gélifiant d'origine animale) confère une structure ferme aux préparations qui ne sont pas épaissies par l'amidon ou les œufs cuits."
+            },
+            {
+                "questionNumber": 51,
+                "question": "Comment appelle-t-on la crème obtenue en mélangeant de la crème pâtissière avec du beurre pur, foisonnée ?",
+                "answerOptions": [
+                    {"text": "Crème mousseline.", "isCorrect": True, "key": "A"},
+                    {"text": "Crème anglaise.", "isCorrect": False, "key": "B"},
+                    {"text": "Crème diplomate.", "isCorrect": False, "key": "C"},
+                    {"text": "Crème légère.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La crème mousseline est réalisée en battant de la crème pâtissière refroidie avec du beurre, généralement utilisée pour le fraisier ou le Paris-Brest."
+            },
+            {
+                "questionNumber": 52,
+                "question": "Quelle est la cause la plus fréquente d'une crème pâtissière qui 'tranche' (devient granuleuse) ?",
+                "answerOptions": [
+                    {"text": "Une cuisson insuffisante de l'amidon ou un refroidissement trop lent.", "isCorrect": True, "key": "A"},
+                    {"text": "L'ajout d'une trop grande quantité de sucre.", "isCorrect": False, "key": "B"},
+                    {"text": "Le fait d'utiliser de l'eau à la place du lait.", "isCorrect": False, "key": "C"},
+                    {"text": "Le foisonnement excessif à froid.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Si l'amidon n'est pas cuit suffisamment (il doit bouillir 1 à 2 minutes) ou si le refroidissement est trop lent, la crème peut se déstabiliser."
+            },
+            {
+                "questionNumber": 53,
+                "question": "Quel ingrédient permet de stabiliser une crème fouettée et d'éviter qu'elle ne retombe ?",
+                "answerOptions": [
+                    {"text": "Le sucre glace ou un stabilisant type Chantifix.", "isCorrect": True, "key": "A"},
+                    {"text": "Le sel fin.", "isCorrect": False, "key": "B"},
+                    {"text": "La levure chimique.", "isCorrect": False, "key": "C"},
+                    {"text": "Le jus de citron uniquement.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le sucre glace est préféré au sucre semoule pour son amidon (s'il en contient) qui aide à la stabilisation. Un stabilisant du commerce peut être utilisé."
+            },
+            {
+                "questionNumber": 54,
+                "question": "Quelle est la définition d'un appareil à génoise ?",
+                "answerOptions": [
+                    {"text": "Des œufs entiers ou des jaunes et du sucre fouettés au bain-marie jusqu'à une consistance de ruban, puis incorporation de farine.", "isCorrect": True, "key": "A"},
+                    {"text": "Un mélange de farine, sucre et beurre monté au crémeur.", "isCorrect": False, "key": "B"},
+                    {"text": "Une pâte levée enrichie de beurre et d'œufs.", "isCorrect": False, "key": "C"},
+                    {"text": "Une pâte à choux mélangée à de la crème fouettée.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La génoise est une pâte battue et chaude, dont le foisonnement repose uniquement sur l'incorporation d'air dans les œufs et le sucre."
+            },
+            {
+                "questionNumber": 55,
+                "question": "Quel est le risque lié à l'utilisation d'une crème liquide allégée pour faire une crème fouettée ?",
+                "answerOptions": [
+                    {"text": "La crème risque de ne pas monter ou de retomber rapidement.", "isCorrect": True, "key": "A"},
+                    {"text": "La crème sera trop jaune.", "isCorrect": False, "key": "B"},
+                    {"text": "La crème aura un goût de beurre rance.", "isCorrect": False, "key": "C"},
+                    {"text": "La crème sera trop sucrée.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Pour que la crème monte et tienne, elle doit avoir un taux de matière grasse d'au moins 30%, idéalement 35% pour une meilleure tenue."
+            },
+            {
+                "questionNumber": 56,
+                "question": "Comment appelle-t-on la technique qui consiste à faire tiédir les jaunes d'œufs avec le sucre avant d'y verser le lait chaud (crème anglaise) ?",
+                "answerOptions": [
+                    {"text": "Faire le mélange 'au ruban' avant l'ajout du lait.", "isCorrect": True, "key": "A"},
+                    {"text": "Puncher.", "isCorrect": False, "key": "B"},
+                    {"text": "Crémer au fouet.", "isCorrect": False, "key": "C"},
+                    {"text": "Homogénéiser.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le mélange est dit 'au ruban' lorsqu'il s'écoule lentement du fouet en formant un ruban continu, il est essentiel pour garantir une bonne incorporation du lait."
+            },
+            {
+                "questionNumber": 57,
+                "question": "Quelle est la fonction du sel en petite quantité dans les blancs d'œufs à monter en neige ?",
+                "answerOptions": [
+                    {"text": "Il n'a pas de rôle significatif ou peut même ralentir le montage.", "isCorrect": True, "key": "A"},
+                    {"text": "Il augmente l'élasticité et la fermeté.", "isCorrect": False, "key": "B"},
+                    {"text": "Il réduit le temps de fouettage.", "isCorrect": False, "key": "C"},
+                    {"text": "Il agit comme un agent de foisonnement.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Contrairement à une idée reçue, le sel n'aide pas au montage des blancs, il peut même le ralentir légèrement. L'acide (citron, vinaigre) et le sucre sont plus efficaces."
+            },
+            {
+                "questionNumber": 58,
+                "question": "Qu'est-ce que l'opération de 'chemiser' un moule ?",
+                "answerOptions": [
+                    {"text": "Recouvrir l'intérieur du moule d'une fine couche de beurre et de farine ou de sucre glace.", "isCorrect": True, "key": "A"},
+                    {"text": "Le recouvrir d'une feuille de papier sulfurisé uniquement sur les bords.", "isCorrect": False, "key": "B"},
+                    {"text": "Le tapisser de chocolat tempéré.", "isCorrect": False, "key": "C"},
+                    {"text": "Le mettre au frais pour le durcir.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Chemiser permet de faciliter le démoulage des appareils cuits comme les génoises ou les cakes."
+            },
+            {
+                "questionNumber": 59,
+                "question": "Quel ingrédient est ajouté pour faire une Crème Chiboust à partir d'une crème pâtissière ?",
+                "answerOptions": [
+                    {"text": "De la meringue italienne et de la gélatine.", "isCorrect": True, "key": "A"},
+                    {"text": "De la crème fouettée sans gélatine.", "isCorrect": False, "key": "B"},
+                    {"text": "De la crème au beurre.", "isCorrect": False, "key": "C"},
+                    {"text": "De la poudre d'amande torréfiée.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La crème Chiboust est une crème pâtissière allégée et stabilisée par l'ajout de meringue italienne et de gélatine fondue. Elle est utilisée pour le Saint-Honoré."
+            },
+            {
+                "questionNumber": 60,
+                "question": "Quel est le risque lors du montage d'une crème au beurre si le beurre est trop froid ou le sirop trop chaud ?",
+                "answerOptions": [
+                    {"text": "La crème va 'trancher' et devenir granuleuse.", "isCorrect": True, "key": "A"},
+                    {"text": "La crème sera trop liquide et ne prendra pas.", "isCorrect": False, "key": "B"},
+                    {"text": "La crème aura un goût d'amande très prononcé.", "isCorrect": False, "key": "C"},
+                    {"text": "La crème va trop foisonner et devenir mousseuse.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Une différence de température trop importante entre les éléments fait que l'émulsion ne prend pas, le beurre se sépare et la crème devient granuleuse."
+            }
+        ]
+    },
+    "theme4": {
+        "title": "Entremets et Petits Gâteaux (Montage, Finitions, Classiques)",
+        "questions": [
+            {
+                "questionNumber": 61,
+                "question": "Quelle est la fonction du 'punchage' dans la réalisation d'un entremets type opéra ou fraisier ?",
+                "answerOptions": [
+                    {"text": "Imbiber le biscuit ou la génoise d'un sirop pour l'humidifier et le parfumer.", "isCorrect": True, "key": "A"},
+                    {"text": "Dégazer la crème avant le montage final.", "isCorrect": False, "key": "B"},
+                    {"text": "Rendre le biscuit plus croustillant.", "isCorrect": False, "key": "C"},
+                    {"text": "Durcir la crème mousseline.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le punchage consiste à badigeonner ou arroser les biscuits de sirop (souvent alcoolisé ou parfumé) pour apporter de l'humidité et du goût à l'entremets."
+            },
+            {
+                "questionNumber": 62,
+                "question": "Quelle est la caractéristique principale d'une Crème Légère utilisée en entremets ?",
+                "answerOptions": [
+                    {"text": "Un mélange de crème pâtissière et de crème fouettée, souvent stabilisé à la gélatine.", "isCorrect": True, "key": "A"},
+                    {"text": "Une crème anglaise très peu cuite.", "isCorrect": False, "key": "B"},
+                    {"text": "Une crème au beurre très peu beurrée.", "isCorrect": False, "key": "C"},
+                    {"text": "Un appareil à génoise sans farine.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La crème légère (ou diplomate) est une crème pâtissière allégée par un foisonnement de crème fouettée et souvent stabilisée par de la gélatine pour la tenue."
+            },
+            {
+                "questionNumber": 63,
+                "question": "Quelle est la différence fondamentale entre une ganache de couverture et une ganache montée ?",
+                "answerOptions": [
+                    {"text": "La ganache montée contient plus de crème et est fouettée après refroidissement.", "isCorrect": True, "key": "A"},
+                    {"text": "La ganache de couverture contient de la gélatine, pas la ganache montée.", "isCorrect": False, "key": "B"},
+                    {"text": "La ganache montée est faite sans crème, seulement du chocolat et du beurre.", "isCorrect": False, "key": "C"},
+                    {"text": "La ganache de couverture est obligatoirement parfumée.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La ganache montée a un ratio crème/chocolat plus élevé et est laissée à refroidir avant d'être montée au fouet pour lui donner son aspect mousseux."
+            },
+            {
+                "questionNumber": 64,
+                "question": "Comment appelle-t-on l'opération qui consiste à recouvrir un entremets d'une fine couche de glaçage brillant (miroir) ?",
+                "answerOptions": [
+                    {"text": "Le glaçage miroir ou le nappage.", "isCorrect": True, "key": "A"},
+                    {"text": "Le chablonnage.", "isCorrect": False, "key": "B"},
+                    {"text": "Le chemisage.", "isCorrect": False, "key": "C"},
+                    {"text": "Le masquage.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le glaçage miroir, souvent à base de glucose, d'eau et de gélatine, est coulé sur un entremets congelé et sert de décoration et de protection."
+            },
+            {
+                "questionNumber": 65,
+                "question": "Quelle est l'une des techniques de montage les plus courantes pour le fraisier ou le framboisier ?",
+                "answerOptions": [
+                    {"text": "Le montage dans un cercle ou un cadre pour délimiter les bords du biscuit.", "isCorrect": True, "key": "A"},
+                    {"text": "Le montage à la main en superposant les couches sur un plat.", "isCorrect": False, "key": "B"},
+                    {"text": "L'utilisation d'un moule à savarin.", "isCorrect": False, "key": "C"},
+                    {"text": "La cuisson du fruit directement avec le biscuit.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "L'utilisation d'un cercle permet de réaliser un montage précis et stable, souvent avec un 'chemisage' de fruits ou de décoration sur les bords."
+            },
+            {
+                "questionNumber": 66,
+                "question": "Quel est le nom de l'opération qui consiste à badigeonner un biscuit de chocolat fondu avant le punchage ?",
+                "answerOptions": [
+                    {"text": "Le chablonnage.", "isCorrect": True, "key": "A"},
+                    {"text": "L'enrobage.", "isCorrect": False, "key": "B"},
+                    {"text": "Le masquage.", "isCorrect": False, "key": "C"},
+                    {"text": "Le trempage.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le chablonnage (ou l'application d'une fine couche de beurre de cacao ou chocolat) crée une barrière contre l'humidité du punch, assurant la bonne tenue du biscuit."
+            },
+            {
+                "questionNumber": 67,
+                "question": "Quel type de petit gâteau est traditionnellement garni de crème au beurre pralinée et de pâte à choux ?",
+                "answerOptions": [
+                    {"text": "Le Paris-Brest.", "isCorrect": True, "key": "A"},
+                    {"text": "L'éclair.", "isCorrect": False, "key": "B"},
+                    {"text": "Le Saint-Honoré.", "isCorrect": False, "key": "C"},
+                    {"text": "La Religieuse.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le Paris-Brest est une couronne de pâte à choux garnie de crème mousseline pralinée, créé en l'honneur d'une course cycliste."
+            },
+            {
+                "questionNumber": 68,
+                "question": "Quelle est la finition classique d'un entremets opéra ?",
+                "answerOptions": [
+                    {"text": "Un glaçage au chocolat noir.", "isCorrect": True, "key": "A"},
+                    {"text": "Un décor de sucre filé.", "isCorrect": False, "key": "B"},
+                    {"text": "Un poudrage de sucre glace.", "isCorrect": False, "key": "C"},
+                    {"text": "Un masquage de crème au beurre.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "L'opéra est traditionnellement terminé par un glaçage brillant au chocolat noir, souvent décoré d'une feuille d'or ou de l'inscription 'Opéra'."
+            },
+            {
+                "questionNumber": 69,
+                "question": "Quel est le nom du biscuit de base utilisé pour réaliser les bûches de Noël traditionnelles ?",
+                "answerOptions": [
+                    {"text": "Le biscuit roulade (ou biscuit à la cuillère/génoise).", "isCorrect": True, "key": "A"},
+                    {"text": "Le biscuit sablé.", "isCorrect": False, "key": "B"},
+                    {"text": "La pâte feuilletée.", "isCorrect": False, "key": "C"},
+                    {"text": "Le biscuit macaron.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La bûche est traditionnellement un roulé de biscuit souple, souvent une génoise ou un biscuit à la cuillère, généreusement garni."
+            },
+            {
+                "questionNumber": 70,
+                "question": "Quelle est la principale caractéristique du biscuit dacquoise ?",
+                "answerOptions": [
+                    {"text": "Un biscuit à base de blancs d'œufs, de sucre et de poudre d'amande et/ou de noisette.", "isCorrect": True, "key": "A"},
+                    {"text": "Un biscuit levé à la levure chimique.", "isCorrect": False, "key": "B"},
+                    {"text": "Un biscuit sans matière grasse.", "isCorrect": False, "key": "C"},
+                    {"text": "Un biscuit très fin cuit à haute température.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La dacquoise est un biscuit sans farine (ou très peu) et souvent utilisé comme base croustillante ou moelleuse pour les entremets."
+            },
+            {
+                "questionNumber": 71,
+                "question": "Quelle est la finition typique d'un éclair au chocolat ?",
+                "answerOptions": [
+                    {"text": "Un fondant chocolat.", "isCorrect": True, "key": "A"},
+                    {"text": "Un glaçage miroir.", "isCorrect": False, "key": "B"},
+                    {"text": "Une crème au beurre.", "isCorrect": False, "key": "C"},
+                    {"text": "Un poudrage de sucre glace.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "L'éclair est traditionnellement glacé avec un fondant, qui est un sucre cuit (cuit à 114°C) que l'on travaille pour obtenir une pâte lisse et brillante."
+            },
+            {
+                "questionNumber": 72,
+                "question": "Quel type de crème est le plus couramment utilisé pour lier et masquer un fraisier ?",
+                "answerOptions": [
+                    {"text": "La crème mousseline.", "isCorrect": True, "key": "A"},
+                    {"text": "La crème anglaise.", "isCorrect": False, "key": "B"},
+                    {"text": "La crème fouettée pure.", "isCorrect": False, "key": "C"},
+                    {"text": "La crème au beurre.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La crème mousseline (crème pâtissière montée au beurre) est la crème de référence pour sa richesse et sa tenue dans le fraisier classique."
+            },
+            {
+                "questionNumber": 73,
+                "question": "Qu'est-ce qu'une douille Saint-Honoré ?",
+                "answerOptions": [
+                    {"text": "Une douille spéciale en forme de triangle, utilisée pour le Saint-Honoré et les décors plissés.", "isCorrect": True, "key": "A"},
+                    {"text": "Une douille ronde, simple et lisse.", "isCorrect": False, "key": "B"},
+                    {"text": "Une douille cannelée, utilisée pour les éclairs.", "isCorrect": False, "key": "C"},
+                    {"text": "Une douille pour le dressage de la crème mousseline.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La douille Saint-Honoré est une douille plate et biseautée permettant de faire des décors en forme d'écailles ou de vagues sur les bords."
+            },
+            {
+                "questionNumber": 74,
+                "question": "Quel est l'élément de base qui donne sa structure au macaron (coque) ?",
+                "answerOptions": [
+                    {"text": "Le mélange de poudre d'amande, sucre glace et blancs d'œufs (tant pour tant).", "isCorrect": True, "key": "A"},
+                    {"text": "L'ajout de levure chimique.", "isCorrect": False, "key": "B"},
+                    {"text": "La présence de beurre dans la coque.", "isCorrect": False, "key": "C"},
+                    {"text": "L'utilisation de farine T45.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le macaron est un biscuit sans farine, sa coque est faite d'un mélange de poudre d'amande et de sucre glace lié par les blancs d'œufs et le sucre (meringue)."
+            },
+            {
+                "questionNumber": 75,
+                "question": "Comment appelle-t-on la technique qui consiste à faire retomber un peu les blancs montés avant l'ajout du tant pour tant ?",
+                "answerOptions": [
+                    {"text": "Le macaronage.", "isCorrect": True, "key": "A"},
+                    {"text": "Le foisonnement.", "isCorrect": False, "key": "B"},
+                    {"text": "Le lissage.", "isCorrect": False, "key": "C"},
+                    {"text": "L'émulsion.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le macaronage est l'action de mélanger l'appareil (meringue + tant pour tant) pour le rendre souple et brillant, lui donnant la consistance idéale pour être poché."
+            },
+            {
+                "questionNumber": 76,
+                "question": "Quel ingrédient est essentiel pour obtenir le 'croustillant' (streusel) dans certains entremets ?",
+                "answerOptions": [
+                    {"text": "Un mélange de beurre, farine, sucre et poudre (amande ou noisette) cuit au four.", "isCorrect": True, "key": "A"},
+                    {"text": "Une fine couche de génoise punchée.", "isCorrect": False, "key": "B"},
+                    {"text": "La meringue française.", "isCorrect": False, "key": "C"},
+                    {"text": "Une ganache montée.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le streusel (ou crumble) est une pâte sablée grossièrement émiettée, cuite et utilisée pour ajouter de la texture aux entremets."
+            },
+            {
+                "questionNumber": 77,
+                "question": "Quelle est la principale fonction du sirop d'imbibage dans un savarin ou un baba ?",
+                "answerOptions": [
+                    {"text": "Hydrater la pâte pour la rendre moelleuse et lui donner sa saveur finale.", "isCorrect": True, "key": "A"},
+                    {"text": "L'aider à monter davantage à la cuisson.", "isCorrect": False, "key": "B"},
+                    {"text": "Lui donner une couleur plus foncée.", "isCorrect": False, "key": "C"},
+                    {"text": "Empêcher le rassissement de la pâte.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le savarin et le baba, une fois cuits, sont généreusement imbibés de sirop (souvent au rhum) qui est la base de leur saveur et de leur texture si moelleuse."
+            },
+            {
+                "questionNumber": 78,
+                "question": "Quelle doit être la consistance d'un glaçage miroir pour être coulé sur un entremets congelé ?",
+                "answerOptions": [
+                    {"text": "Lisse et brillant, à une température précise (souvent autour de 30-35°C).", "isCorrect": True, "key": "A"},
+                    {"text": "Très liquide et très chaud.", "isCorrect": False, "key": "B"},
+                    {"text": "Épais et granuleuse.", "isCorrect": False, "key": "C"},
+                    {"text": "Fermé et durci comme un caramel.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le glaçage doit être parfaitement lisse et sa température est essentielle (température de travail) pour qu'il nappe l'entremets uniformément et sans être trop épais."
+            },
+            {
+                "questionNumber": 79,
+                "question": "Quel est le nom du fourrage à base de crème pâtissière, de raisins secs et souvent parfumé au rhum, utilisé pour l'intérieur de certains gâteaux de voyage ?",
+                "answerOptions": [
+                    {"text": "La crème diplomate.", "isCorrect": True, "key": "A"},
+                    {"text": "La crème mousseline.", "isCorrect": False, "key": "B"},
+                    {"text": "La frangipane.", "isCorrect": False, "key": "C"},
+                    {"text": "Le tant pour tant.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La crème diplomate (crème pâtissière + crème fouettée + gélatine) est utilisée pour sa légèreté. Le terme est parfois utilisé de manière plus générique pour certaines garnitures."
+            },
+            {
+                "questionNumber": 80,
+                "question": "Quelle est la technique pour obtenir des macarons avec une collerette régulière ?",
+                "answerOptions": [
+                    {"text": "Le croûtage (séchage) des coques avant cuisson et une bonne température de four.", "isCorrect": True, "key": "A"},
+                    {"text": "L'ajout d'une très grande quantité de colorant alimentaire.", "isCorrect": False, "key": "B"},
+                    {"text": "L'utilisation d'une meringue française uniquement.", "isCorrect": False, "key": "C"},
+                    {"text": "Un temps de macaronage très court.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le croûtage permet de former une fine pellicule à la surface. À la cuisson, la vapeur pousse la pâte vers le bas et s'échappe par la base, créant la collerette caractéristique."
+            }
+        ]
+    },
+    "theme5": {
+        "title": "Connaissance des Matières Premières (Farine, Œufs, Sucre, Chocolat)",
+        "questions": [
+            {
+                "questionNumber": 81,
+                "question": "Quelle protéine présente dans la farine, mélangée à l'eau, forme le réseau élastique indispensable à la panification ?",
+                "answerOptions": [
+                    {"text": "Le gluten.", "isCorrect": True, "key": "A"},
+                    {"text": "L'albumine.", "isCorrect": False, "key": "B"},
+                    {"text": "La caséine.", "isCorrect": False, "key": "C"},
+                    {"text": "La pectine.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le gluten est formé par l'hydratation et le travail des deux protéines de la farine : la gliadine et la gluténine."
+            },
+            {
+                "questionNumber": 82,
+                "question": "Quel est le sucre simple qui provient de la canne à sucre ou de la betterave et est le plus couramment utilisé en pâtisserie ?",
+                "answerOptions": [
+                    {"text": "Le saccharose.", "isCorrect": True, "key": "A"},
+                    {"text": "Le glucose.", "isCorrect": False, "key": "B"},
+                    {"text": "Le fructose.", "isCorrect": False, "key": "C"},
+                    {"text": "Le maltose.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le saccharose est le sucre de table, un disaccharide composé d'une molécule de glucose et d'une molécule de fructose."
+            },
+            {
+                "questionNumber": 83,
+                "question": "Comment appelle-t-on le procédé qui consiste à chauffer puis refroidir le chocolat pour stabiliser les cristaux de beurre de cacao ?",
+                "answerOptions": [
+                    {"text": "Le tempérage.", "isCorrect": True, "key": "A"},
+                    {"text": "Le pralinage.", "isCorrect": False, "key": "B"},
+                    {"text": "Le concassage.", "isCorrect": False, "key": "C"},
+                    {"text": "L'émulsion.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le tempérage assure un chocolat brillant, cassant et qui se conserve bien, en cristallisant le beurre de cacao sous sa forme la plus stable (cristal type V)."
+            },
+            {
+                "questionNumber": 84,
+                "question": "Quelle est l'une des fonctions du jaune d'œuf en pâtisserie (au-delà de la coloration et du goût) ?",
+                "answerOptions": [
+                    {"text": "L'émulsification des matières grasses et des liquides (par la lécithine).", "isCorrect": True, "key": "A"},
+                    {"text": "Le foisonnement.", "isCorrect": False, "key": "B"},
+                    {"text": "L'apport de fibres alimentaires.", "isCorrect": False, "key": "C"},
+                    {"text": "La cristallisation du sucre.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le jaune d'œuf est un excellent agent émulsifiant grâce à la lécithine qu'il contient, stabilisant les mélanges de gras et d'eau."
+            },
+            {
+                "questionNumber": 85,
+                "question": "Quel est le nom de la farine la plus raffinée, traditionnellement utilisée pour la pâtisserie fine ?",
+                "answerOptions": [
+                    {"text": "Farine T45.", "isCorrect": True, "key": "A"},
+                    {"text": "Farine T65.", "isCorrect": False, "key": "B"},
+                    {"text": "Farine T110 (bise).", "isCorrect": False, "key": "C"},
+                    {"text": "Farine T150 (complète).", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le T45 est le taux de cendres le plus bas, indiquant la farine la plus blanche, idéale pour les pâtes fines et les génoises."
+            },
+            {
+                "questionNumber": 86,
+                "question": "Quel ingrédient est nécessaire dans la réalisation d'une ganache de base avec du chocolat noir ?",
+                "answerOptions": [
+                    {"text": "De la crème liquide entière chaude et du chocolat.", "isCorrect": True, "key": "A"},
+                    {"text": "De l'eau et de la farine.", "isCorrect": False, "key": "B"},
+                    {"text": "Du blanc d'œuf et du sucre.", "isCorrect": False, "key": "C"},
+                    {"text": "Du lait en poudre et du sel.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La ganache est une émulsion simple entre une matière grasse (beurre de cacao) et un liquide (crème), assurant une texture lisse."
+            },
+            {
+                "questionNumber": 87,
+                "question": "Quelle est la caractéristique principale du sucre inverti (trimoline) par rapport au saccharose ?",
+                "answerOptions": [
+                    {"text": "Il possède un plus grand pouvoir sucrant et empêche la cristallisation.", "isCorrect": True, "key": "A"},
+                    {"text": "Il est moins hygroscopique.", "isCorrect": False, "key": "B"},
+                    {"text": "Il est plus facile à tempérer.", "isCorrect": False, "key": "C"},
+                    {"text": "Il est moins cher à l'achat.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le sucre inverti (mélange de glucose et de fructose) est très hygroscopique (retient l'humidité), ce qui maintient le moelleux des préparations et empêche la cristallisation."
+            },
+            {
+                "questionNumber": 88,
+                "question": "Quelle est la source de matière grasse principalement utilisée pour réaliser une Crème au Beurre Pâtissière ?",
+                "answerOptions": [
+                    {"text": "Le beurre doux de bonne qualité.", "isCorrect": True, "key": "A"},
+                    {"text": "La margarine végétale.", "isCorrect": False, "key": "B"},
+                    {"text": "La graisse de palme.", "isCorrect": False, "key": "C"},
+                    {"text": "L'huile d'olive.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le beurre est la matière grasse de référence pour la crème au beurre. Il est crucial qu'il soit à bonne température (température pommade) pour un bon montage."
+            },
+            {
+                "questionNumber": 89,
+                "question": "Quelle est la classification de la levure de boulanger utilisée pour les viennoiseries ?",
+                "answerOptions": [
+                    {"text": "Un champignon microscopique vivant (Saccharomyces cerevisiae).", "isCorrect": True, "key": "A"},
+                    {"text": "Un agent chimique (bicarbonate de sodium).", "isCorrect": False, "key": "B"},
+                    {"text": "Un dérivé de l'amidon.", "isCorrect": False, "key": "C"},
+                    {"text": "Une enzyme pour la digestion.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La levure de boulanger est un organisme vivant qui produit du gaz carbonique et de l'alcool par fermentation, faisant lever la pâte."
+            },
+            {
+                "questionNumber": 90,
+                "question": "Quelle est l'appellation du lait qui a subi une pasteurisation ultra-haute température ?",
+                "answerOptions": [
+                    {"text": "Le lait UHT.", "isCorrect": True, "key": "A"},
+                    {"text": "Le lait cru.", "isCorrect": False, "key": "B"},
+                    {"text": "Le lait stérilisé.", "isCorrect": False, "key": "C"},
+                    {"text": "Le lait microfiltré.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le lait UHT (Ultra Haute Température) est chauffé très brièvement à 135-150°C pour une très longue conservation à température ambiante."
+            },
+            {
+                "questionNumber": 91,
+                "question": "Quel est le nom de la membrane qui sépare le jaune du blanc d'œuf ?",
+                "answerOptions": [
+                    {"text": "La membrane vitelline.", "isCorrect": True, "key": "A"},
+                    {"text": "La cuticule.", "isCorrect": False, "key": "B"},
+                    {"text": "La coquille.", "isCorrect": False, "key": "C"},
+                    {"text": "La chalaze.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La membrane vitelline maintient le jaune d'œuf, et sa solidité est un indice de la fraîcheur de l'œuf."
+            },
+            {
+                "questionNumber": 92,
+                "question": "Quel ingrédient permet de stabiliser les émulsions d'un mélange de sirop et de purée de fruits pour les sorbets ?",
+                "answerOptions": [
+                    {"text": "Le stabilisateur ou les protéines du lait.", "isCorrect": True, "key": "A"},
+                    {"text": "Le sel fin.", "isCorrect": False, "key": "B"},
+                    {"text": "Le jus de citron uniquement.", "isCorrect": False, "key": "C"},
+                    {"text": "L'ajout d'une quantité très importante d'eau.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Les stabilisateurs (gommes, alginates, etc.) sont utilisés pour empêcher la formation de gros cristaux de glace et améliorer la texture des sorbets et des glaces."
+            },
+            {
+                "questionNumber": 93,
+                "question": "Quel est le pourcentage minimal de cacao sec total dans le chocolat noir de couverture de qualité ?",
+                "answerOptions": [
+                    {"text": "Au moins 35% de cacao sec total (masse et beurre).", "isCorrect": True, "key": "A"},
+                    {"text": "Au moins 15%.", "isCorrect": False, "key": "B"},
+                    {"text": "Au moins 20%.", "isCorrect": False, "key": "C"},
+                    {"text": "Au moins 25%.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La législation exige un minimum de 35% de cacao sec pour le chocolat de couverture. Les chocolats de couverture de qualité professionnelle ont souvent des pourcentages bien supérieurs."
+            },
+            {
+                "questionNumber": 94,
+                "question": "Quelle est la principale source de glucose en pâtisserie ?",
+                "answerOptions": [
+                    {"text": "Le sirop de glucose (liquide ou déshydraté).", "isCorrect": True, "key": "A"},
+                    {"text": "Le sucre glace.", "isCorrect": False, "key": "B"},
+                    {"text": "Le lait entier.", "isCorrect": False, "key": "C"},
+                    {"text": "Le sel fin.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le sirop de glucose est utilisé pour son pouvoir anti-cristallisant dans les confiseries et les glaces. Il est chimiquement une chaîne de molécules de glucose."
+            },
+            {
+                "questionNumber": 95,
+                "question": "Quel est le nom de la graisse végétale blanche, sans goût, souvent utilisée en remplacement du beurre pour son côté plastique ?",
+                "answerOptions": [
+                    {"text": "La margarine de feuilletage.", "isCorrect": True, "key": "A"},
+                    {"text": "La graisse de rognon.", "isCorrect": False, "key": "B"},
+                    {"text": "Le beurre clarifié.", "isCorrect": False, "key": "C"},
+                    {"text": "La graisse de canard.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La margarine de feuilletage est une matière grasse d'origine végétale ou un mélange, formulée spécifiquement pour être très plastique et résister au tourage."
+            },
+            {
+                "questionNumber": 96,
+                "question": "Quel est le nom du sous-produit du cacao utilisé pour sa richesse en matières grasses ?",
+                "answerOptions": [
+                    {"text": "Le beurre de cacao.", "isCorrect": True, "key": "A"},
+                    {"text": "La poudre de cacao.", "isCorrect": False, "key": "B"},
+                    {"text": "La masse de cacao.", "isCorrect": False, "key": "C"},
+                    {"text": "La fève de cacao.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le beurre de cacao est la matière grasse extraite de la fève de cacao. Il est crucial pour le tempérage du chocolat."
+            },
+            {
+                "questionNumber": 97,
+                "question": "Quel est l'effet de l'utilisation d'une farine trop riche en gluten pour la pâte à tarte ?",
+                "answerOptions": [
+                    {"text": "La pâte se rétracte beaucoup à la cuisson et devient dure.", "isCorrect": True, "key": "A"},
+                    {"text": "La pâte est très friable et s'effrite.", "isCorrect": False, "key": "B"},
+                    {"text": "La pâte ne colore pas du tout.", "isCorrect": False, "key": "C"},
+                    {"text": "La pâte lève excessivement.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Une farine trop forte (riche en gluten) développe un réseau trop élastique qui se rétracte lors de la cuisson des pâtes non-levées."
+            },
+            {
+                "questionNumber": 98,
+                "question": "Quelle substance est responsable de la prise en gelée des confitures et des pâtes de fruits ?",
+                "answerOptions": [
+                    {"text": "La pectine (contenue dans les fruits et ajoutée en poudre).", "isCorrect": True, "key": "A"},
+                    {"text": "Le sel fin.", "isCorrect": False, "key": "B"},
+                    {"text": "L'amidon.", "isCorrect": False, "key": "C"},
+                    {"text": "L'huile.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La pectine est un polysaccharide qui, en présence de sucre et d'un acide (citron), forme un gel, assurant la texture des confitures."
+            },
+            {
+                "questionNumber": 99,
+                "question": "Quel ingrédient est ajouté au lait dans la crème liquide pour en faire une crème entière UHT ?",
+                "answerOptions": [
+                    {"text": "Rien. C'est le résultat d'un écrémage partiel et d'une homogénéisation.", "isCorrect": True, "key": "A"},
+                    {"text": "De la farine et du sel.", "isCorrect": False, "key": "B"},
+                    {"text": "Du sucre glace et de la gélatine.", "isCorrect": False, "key": "C"},
+                    {"text": "De l'huile de palme.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "La crème entière est un produit laitier issu du lait. Elle est simplement la partie la plus grasse du lait séparée (écrémée), sans ajout d'ingrédient autre que le stabilisant (lait) pour certaines."
+            },
+            {
+                "questionNumber": 100,
+                "question": "Quelle est l'une des conséquences d'un mauvais tempérage du chocolat ?",
+                "answerOptions": [
+                    {"text": "Le chocolat blanchit (fat bloom), n'est pas cassant et fond mal en bouche.", "isCorrect": True, "key": "A"},
+                    {"text": "Le chocolat devient trop liquide et ne prend plus.", "isCorrect": False, "key": "B"},
+                    {"text": "Le chocolat prend un goût de caramel brûlé.", "isCorrect": False, "key": "C"},
+                    {"text": "Le chocolat a une forte odeur d'alcool.", "isCorrect": False, "key": "D"}
+                ],
+                "correction": "Le blanchiment gras (fat bloom) est dû à la cristallisation du beurre de cacao sous des formes instables. Il est inesthétique et altère la texture."
+            }
+        ]
     }
 }

@@ -1,0 +1,1332 @@
+quiz_data = {
+    "title": "Quiz Entraînement CAP Boulanger",
+    "description": "Test complet de 100 questions couvrant les savoirs technologiques et scientifiques du CAP Boulanger.",
+    "themes": [
+        "Matières Premières",
+        "Technologie de Panification",
+        "Hygiène et Sciences Appliquées",
+        "Matériel et Équipements",
+        "Culture Pro et Réglementation"
+    ],
+    "questions": [
+        # ==============================================================================
+        # THÈME 1 : MATIÈRES PREMIÈRES (20 questions)
+        # ==============================================================================
+        {
+            "id": 1,
+            "theme": "Matières Premières",
+            "question": "Quel est le rôle principal du sel dans la pâte à pain en termes de rhéologie ?",
+            "answerOptions": [
+                {"text": "Il donne une couleur jaune à la mie", "isCorrect": False},
+                {"text": "Il améliore la ténacité du gluten", "isCorrect": True},
+                {"text": "Il accélère fortement la fermentation", "isCorrect": False},
+                {"text": "Il rend la croûte beaucoup plus molle", "isCorrect": False}
+            ],
+            "correction": "Le sel renforce le maillage glutineux (ténacité) et régule la fermentation. Il ne l'accélère pas, il la freine légèrement.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 2,
+            "theme": "Matières Premières",
+            "question": "Quelle partie du grain de blé est principalement extraite pour obtenir une farine blanche ?",
+            "answerOptions": [
+                {"text": "L'amande farineuse", "isCorrect": True},
+                {"text": "L'enveloppe externe", "isCorrect": False},
+                {"text": "Le germe du blé", "isCorrect": False},
+                {"text": "Le son de blé", "isCorrect": False}
+            ],
+            "correction": "L'amande farineuse (endosperme) contient l'amidon et les protéines insolubles nécessaires à la farine blanche.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 3,
+            "theme": "Matières Premières",
+            "question": "Comment appelle-t-on les deux protéines insolubles qui forment le gluten en présence d'eau ?",
+            "answerOptions": [
+                {"text": "L'albumine et la globuline", "isCorrect": False},
+                {"text": "L'amylose et l'amylopectine", "isCorrect": False},
+                {"text": "La gliadine et la gluténine", "isCorrect": True},
+                {"text": "La caséine et le lactose", "isCorrect": False}
+            ],
+            "correction": "La gliadine (extensibilité) et la gluténine (élasticité) forment le réseau de gluten lors de l'hydratation et du pétrissage.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 4,
+            "theme": "Matières Premières",
+            "question": "Que représente le 'taux de cendres' classifiant les types de farine (T55, T65, etc.) ?",
+            "answerOptions": [
+                {"text": "La teneur en minéraux restants après calcination", "isCorrect": True},
+                {"text": "Le pourcentage d'humidité dans la farine", "isCorrect": False},
+                {"text": "La quantité de gluten présente dans la farine", "isCorrect": False},
+                {"text": "Le taux de sucres ajoutés à la mouture", "isCorrect": False}
+            ],
+            "correction": "Le type de farine (ex: T55) correspond à la teneur en matières minérales (cendres) contenues principalement dans les enveloppes.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 5,
+            "theme": "Matières Premières",
+            "question": "Quel est le nom scientifique du champignon unicellulaire constituant la levure de boulanger ?",
+            "answerOptions": [
+                {"text": "Lactobacillus sanfranciscensis", "isCorrect": False},
+                {"text": "Saccharomyces cerevisiae", "isCorrect": True},
+                {"text": "Escherichia coli", "isCorrect": False},
+                {"text": "Penicillium roqueforti", "isCorrect": False}
+            ],
+            "correction": "La levure de boulanger est composée de cellules vivantes de Saccharomyces cerevisiae.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 6,
+            "theme": "Matières Premières",
+            "question": "Quel composant de la farine est dégradé par les amylases lors de la fermentation ?",
+            "answerOptions": [
+                {"text": "Les lipides", "isCorrect": False},
+                {"text": "Les protéines", "isCorrect": False},
+                {"text": "L'amidon", "isCorrect": True},
+                {"text": "Les minéraux", "isCorrect": False}
+            ],
+            "correction": "Les amylases découpent l'amidon (sucre complexe) en sucres simples (maltose, glucose) assimilables par la levure.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 7,
+            "theme": "Matières Premières",
+            "question": "Quelle est la température optimale de conservation de la levure fraîche compressée ?",
+            "answerOptions": [
+                {"text": "Entre 0°C et 4°C", "isCorrect": True},
+                {"text": "Entre 10°C et 15°C", "isCorrect": False},
+                {"text": "À température ambiante", "isCorrect": False},
+                {"text": "Au congélateur à -18°C", "isCorrect": False}
+            ],
+            "correction": "La levure fraîche est un produit vivant et fragile qui doit être stocké au réfrigérateur entre 0 et 4°C.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 8,
+            "theme": "Matières Premières",
+            "question": "Parmi ces ingrédients, lequel est un 'améliorant' autorisé agissant comme antioxydant ?",
+            "answerOptions": [
+                {"text": "Le bicarbonate", "isCorrect": False},
+                {"text": "L'acide ascorbique (E300)", "isCorrect": True},
+                {"text": "Le chlorure de sodium", "isCorrect": False},
+                {"text": "L'huile de tournesol", "isCorrect": False}
+            ],
+            "correction": "L'acide ascorbique (Vitamine C) renforce le réseau de gluten en favorisant l'oxydation des ponts disulfures.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 9,
+            "theme": "Matières Premières",
+            "question": "Qu'apporte principalement le malt (farine de malt) ajouté à une pâte ?",
+            "answerOptions": [
+                {"text": "Des fibres insolubles", "isCorrect": False},
+                {"text": "Des enzymes et des sucres", "isCorrect": True},
+                {"text": "De la matière grasse", "isCorrect": False},
+                {"text": "Une acidité lactique", "isCorrect": False}
+            ],
+            "correction": "Le malt apporte des enzymes (amylases) et des sucres fermentescibles qui activent la fermentation et la coloration de la croûte.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 10,
+            "theme": "Matières Premières",
+            "question": "Quelle est la teneur moyenne en eau d'une farine stockée correctement ?",
+            "answerOptions": [
+                {"text": "Environ 50 %", "isCorrect": False},
+                {"text": "Environ 25 %", "isCorrect": False},
+                {"text": "Environ 15,5 %", "isCorrect": True},
+                {"text": "Environ 5 %", "isCorrect": False}
+            ],
+            "correction": "L'humidité standard d'une farine commerciale est d'environ 15,5 %. Au-delà, elle risque de moisir.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 11,
+            "theme": "Matières Premières",
+            "question": "Le levain est une culture symbiotique composée principalement de levures sauvages et de...",
+            "answerOptions": [
+                {"text": "Bactéries lactiques", "isCorrect": True},
+                {"text": "Moisissures nobles", "isCorrect": False},
+                {"text": "Enzymes protéases", "isCorrect": False},
+                {"text": "Germes de blé", "isCorrect": False}
+            ],
+            "correction": "Le levain est un équilibre entre levures sauvages et bactéries lactiques (lactobacilles), responsables de l'acidité.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 12,
+            "theme": "Matières Premières",
+            "question": "Dans une pâte levée, quel effet a un excès de sucre sur la fermentation ?",
+            "answerOptions": [
+                {"text": "Il n'a aucun effet notable", "isCorrect": False},
+                {"text": "Il détruit le réseau de gluten", "isCorrect": False},
+                {"text": "Il ralentit l'action de la levure", "isCorrect": True},
+                {"text": "Il rend la pâte blanche", "isCorrect": False}
+            ],
+            "correction": "Au-delà d'un certain seuil, la pression osmotique créée par le sucre déshydrate la levure et ralentit la fermentation.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 13,
+            "theme": "Matières Premières",
+            "question": "Quel type de farine est le plus adapté pour une brioche riche en beurre ?",
+            "answerOptions": [
+                {"text": "Farine de seigle (T170)", "isCorrect": False},
+                {"text": "Farine de force (riche en gluten)", "isCorrect": True},
+                {"text": "Farine de sarrasin", "isCorrect": False},
+                {"text": "Farine faible en protéines", "isCorrect": False}
+            ],
+            "correction": "Une farine de force (souvent appelée farine de gruau) est nécessaire pour supporter le poids du beurre et des œufs.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 14,
+            "theme": "Matières Premières",
+            "question": "Quelle eau est recommandée pour le pétrissage en boulangerie ?",
+            "answerOptions": [
+                {"text": "Une eau potable moyenne dureté", "isCorrect": True},
+                {"text": "Une eau distillée pure", "isCorrect": False},
+                {"text": "Une eau très riche en nitrates", "isCorrect": False},
+                {"text": "Une eau bouillante", "isCorrect": False}
+            ],
+            "correction": "L'eau doit être potable. Une dureté moyenne favorise un bon maillage glutineux (le calcium renforce le gluten).",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 15,
+            "theme": "Matières Premières",
+            "question": "Quelle céréale est panifiable uniquement si on la mélange à du blé (ou via des procédés spécifiques) ?",
+            "answerOptions": [
+                {"text": "Le maïs", "isCorrect": True},
+                {"text": "Le blé dur", "isCorrect": False},
+                {"text": "L'épeautre", "isCorrect": False},
+                {"text": "Le kamut", "isCorrect": False}
+            ],
+            "correction": "Le maïs ne contient pas de gluten formateur de réseau. Il n'est pas panifiable seul de manière traditionnelle.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 16,
+            "theme": "Matières Premières",
+            "question": "Quel est le rôle des matières grasses dans une pâte à pain (ex: pain de mie) ?",
+            "answerOptions": [
+                {"text": "Elles augmentent le croustillant", "isCorrect": False},
+                {"text": "Elles améliorent la conservation et le moelleux", "isCorrect": True},
+                {"text": "Elles remplacent totalement l'eau", "isCorrect": False},
+                {"text": "Elles acidifient la pâte", "isCorrect": False}
+            ],
+            "correction": "Les lipides imperméabilisent le réseau de gluten, retenant l'humidité, ce qui améliore le moelleux et la conservation.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 17,
+            "theme": "Matières Premières",
+            "question": "Le gluten est composé de gliadines et de gluténines. Que confèrent les gliadines ?",
+            "answerOptions": [
+                {"text": "La ténacité", "isCorrect": False},
+                {"text": "L'extensibilité", "isCorrect": True},
+                {"text": "L'élasticité", "isCorrect": False},
+                {"text": "La force", "isCorrect": False}
+            ],
+            "correction": "Les gliadines assurent la viscosité et l'extensibilité (la pâte s'allonge), tandis que les gluténines assurent l'élasticité (ressort).",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 18,
+            "theme": "Matières Premières",
+            "question": "Quelle est la particularité de la farine complète (T150) ?",
+            "answerOptions": [
+                {"text": "Elle contient tout le grain (amande + enveloppes)", "isCorrect": True},
+                {"text": "Elle est blanche et très fine", "isCorrect": False},
+                {"text": "Elle ne contient aucun son", "isCorrect": False},
+                {"text": "Elle lève plus vite que la T55", "isCorrect": False}
+            ],
+            "correction": "La farine intégrale ou complète (T150) contient la quasi-totalité du grain, y compris les sons (enveloppes).",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 19,
+            "theme": "Matières Premières",
+            "question": "Qu'est-ce que le 'plancher' pour une farine fraîchement moulue ?",
+            "answerOptions": [
+                {"text": "Une période de repos pour l'oxydation naturelle", "isCorrect": True},
+                {"text": "Une méthode de tamisage grossier", "isCorrect": False},
+                {"text": "Une technique de transport en vrac", "isCorrect": False},
+                {"text": "Le mélange avec de l'eau chaude", "isCorrect": False}
+            ],
+            "correction": "Le plancher est le temps de repos (environ 15-20 jours) nécessaire après la mouture pour que la farine s'oxyde et devienne panifiable.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 20,
+            "theme": "Matières Premières",
+            "question": "Le lait en poudre utilisé en boulangerie est généralement...",
+            "answerOptions": [
+                {"text": "Du lait entier (26% MG)", "isCorrect": False},
+                {"text": "Du lait concentré sucré", "isCorrect": False},
+                {"text": "Du lait écrémé 'Spray'", "isCorrect": True},
+                {"text": "Du babeurre fermenté", "isCorrect": False}
+            ],
+            "correction": "On utilise surtout du lait en poudre écrémé (procédé Spray) pour éviter le rancissement des graisses lors du stockage.",
+            "difficulty": "Moyen"
+        },
+
+        # ==============================================================================
+        # THÈME 2 : TECHNOLOGIE DE PANIFICATION (20 questions)
+        # ==============================================================================
+        {
+            "id": 21,
+            "theme": "Technologie de Panification",
+            "question": "Quelle étape se situe immédiatement après le pétrissage ?",
+            "answerOptions": [
+                {"text": "L'apprêt", "isCorrect": False},
+                {"text": "Le pointage (piquage)", "isCorrect": True},
+                {"text": "La cuisson", "isCorrect": False},
+                {"text": "Le façonnage", "isCorrect": False}
+            ],
+            "correction": "Le pointage est la première période de fermentation en masse, juste après le pétrissage.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 22,
+            "theme": "Technologie de Panification",
+            "question": "Qu'est-ce que l'autolyse en boulangerie ?",
+            "answerOptions": [
+                {"text": "Un mélange farine + eau au repos", "isCorrect": True},
+                {"text": "Un pétrissage intensif rapide", "isCorrect": False},
+                {"text": "Une cuisson à basse température", "isCorrect": False},
+                {"text": "L'ajout de levure en début de pétrissage", "isCorrect": False}
+            ],
+            "correction": "L'autolyse est un repos du mélange farine et eau (sans sel ni levure) permettant d'assouplir le gluten et de démarrer l'activité enzymatique.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 23,
+            "theme": "Technologie de Panification",
+            "question": "Quel est le but principal du 'rabat' durant le pointage ?",
+            "answerOptions": [
+                {"text": "Refroidir la pâte rapidement", "isCorrect": False},
+                {"text": "Redonner de la force et chasser le gaz carbonique", "isCorrect": True},
+                {"text": "Incorporer plus d'eau dans la pâte", "isCorrect": False},
+                {"text": "Mélanger les ingrédients oubliés", "isCorrect": False}
+            ],
+            "correction": "Le rabat structure la pâte, homogénéise la température et relance l'activité fermentaire en oxygénant la levure.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 24,
+            "theme": "Technologie de Panification",
+            "question": "Comment calcule-t-on la Température de Base (TB) ?",
+            "answerOptions": [
+                {"text": "T° Four + T° Fournil + T° Eau", "isCorrect": False},
+                {"text": "T° Farine + T° Air + T° Eau", "isCorrect": True},
+                {"text": "T° Pâte x 3", "isCorrect": False},
+                {"text": "T° Eau - T° Farine", "isCorrect": False}
+            ],
+            "correction": "La règle de base est : TB = T° Farine + T° Air ambiant + T° Eau de coulage.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 25,
+            "theme": "Technologie de Panification",
+            "question": "Quelle est la température de fin de pétrissage idéale pour une baguette de tradition ?",
+            "answerOptions": [
+                {"text": "Environ 35°C - 36°C", "isCorrect": False},
+                {"text": "Environ 24°C - 25°C", "isCorrect": True},
+                {"text": "Environ 18°C - 19°C", "isCorrect": False},
+                {"text": "Environ 29°C - 30°C", "isCorrect": False}
+            ],
+            "correction": "Une température de 24-25°C est idéale pour éviter une fermentation trop rapide et préserver les arômes.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 26,
+            "theme": "Technologie de Panification",
+            "question": "A quoi sert la 'buée' (injection de vapeur) dans le four en début de cuisson ?",
+            "answerOptions": [
+                {"text": "À nettoyer la sole du four", "isCorrect": False},
+                {"text": "À favoriser la levée et la brillance de la croûte", "isCorrect": True},
+                {"text": "À éteindre les résistances du four", "isCorrect": False},
+                {"text": "À donner un goût salé au pain", "isCorrect": False}
+            ],
+            "correction": "La vapeur retarde la formation de la croûte (favorisant le volume) et caramélise les sucres en surface (brillance).",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 27,
+            "theme": "Technologie de Panification",
+            "question": "L'étape qui consiste à diviser la pâte en pâtons de poids régulier s'appelle :",
+            "answerOptions": [
+                {"text": "Le pesage", "isCorrect": True},
+                {"text": "Le laminage", "isCorrect": False},
+                {"text": "Le tourage", "isCorrect": False},
+                {"text": "Le frisage", "isCorrect": False}
+            ],
+            "correction": "Le pesage (ou division) permet d'obtenir des pâtons de poids identique avant le boulage.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 28,
+            "theme": "Technologie de Panification",
+            "question": "Qu'est-ce que le 'ressuage' ?",
+            "answerOptions": [
+                {"text": "Le refroidissement du pain à la sortie du four", "isCorrect": True},
+                {"text": "L'évaporation de l'eau lors du pétrissage", "isCorrect": False},
+                {"text": "Le nettoyage des grilles de cuisson", "isCorrect": False},
+                {"text": "L'action de mouiller le pain avant l'enfournement", "isCorrect": False}
+            ],
+            "correction": "Le ressuage est l'étape où le pain perd son humidité interne et refroidit sur grille après cuisson.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 29,
+            "theme": "Technologie de Panification",
+            "question": "Quel défaut provoque un excès de force dans une pâte lors du façonnage ?",
+            "answerOptions": [
+                {"text": "La pâte se déchire et se rétracte", "isCorrect": True},
+                {"text": "La pâte colle aux mains", "isCorrect": False},
+                {"text": "La pâte s'étale comme une crêpe", "isCorrect": False},
+                {"text": "La pâte ne prend pas couleur au four", "isCorrect": False}
+            ],
+            "correction": "Une pâte avec trop de force (excès d'élasticité) refuse de s'allonger et a tendance à se déchirer.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 30,
+            "theme": "Technologie de Panification",
+            "question": "La réaction chimique responsable de la couleur dorée de la croûte s'appelle :",
+            "answerOptions": [
+                {"text": "La réaction de Maillard", "isCorrect": True},
+                {"text": "La fermentation alcoolique", "isCorrect": False},
+                {"text": "L'oxydation lipidique", "isCorrect": False},
+                {"text": "La pasteurisation", "isCorrect": False}
+            ],
+            "correction": "La réaction de Maillard est la réaction entre les sucres et les acides aminés sous l'effet de la chaleur.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 31,
+            "theme": "Technologie de Panification",
+            "question": "Que signifie 'ferrer' un pain ?",
+            "answerOptions": [
+                {"text": "Le brûler au niveau de la sole (le dessous)", "isCorrect": True},
+                {"text": "L'oublier dans la chambre de pousse", "isCorrect": False},
+                {"text": "Le couper avec une lame émoussée", "isCorrect": False},
+                {"text": "Ajouter trop de farine au façonnage", "isCorrect": False}
+            ],
+            "correction": "Un pain ferré est un pain dont le dessous est brûlé, souvent dû à une sole trop chaude ou un four sale.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 32,
+            "theme": "Technologie de Panification",
+            "question": "Quel type de pétrissage donne la mie la plus blanche et le plus de volume (au détriment du goût) ?",
+            "answerOptions": [
+                {"text": "Le pétrissage lent (PVL)", "isCorrect": False},
+                {"text": "Le pétrissage intensifié", "isCorrect": True},
+                {"text": "Le pétrissage amélioré", "isCorrect": False},
+                {"text": "Le frasage manuel", "isCorrect": False}
+            ],
+            "correction": "Le pétrissage intensifié oxyde beaucoup la pâte, blanchit la mie et donne beaucoup de volume, mais le goût est moins développé.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 33,
+            "theme": "Technologie de Panification",
+            "question": "La 'détente' est une période de repos qui se situe :",
+            "answerOptions": [
+                {"text": "Entre le pétrissage et le pointage", "isCorrect": False},
+                {"text": "Entre le pesage/boulage et le façonnage", "isCorrect": True},
+                {"text": "Après la cuisson", "isCorrect": False},
+                {"text": "Pendant la cuisson", "isCorrect": False}
+            ],
+            "correction": "La détente (ou repos intermédiaire) permet au gluten de se relâcher après le boulage pour faciliter le façonnage final.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 34,
+            "theme": "Technologie de Panification",
+            "question": "A quoi sert la 'coupe' ou 'scarification' (grigne) des pâtons avant enfournement ?",
+            "answerOptions": [
+                {"text": "C'est uniquement décoratif", "isCorrect": False},
+                {"text": "À évacuer le gaz carbonique et diriger le développement", "isCorrect": True},
+                {"text": "À faire entrer la chaleur dans le pain", "isCorrect": False},
+                {"text": "À vérifier si la pâte est cuite", "isCorrect": False}
+            ],
+            "correction": "Les coups de lame créent des points de faiblesse par où le gaz s'échappe, permettant au pain de se développer harmonieusement.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 35,
+            "theme": "Technologie de Panification",
+            "question": "Quelle est la durée moyenne d'un pétrissage en vitesse 2 (Mode Amélioré) ?",
+            "answerOptions": [
+                {"text": "Environ 20 à 25 minutes", "isCorrect": False},
+                {"text": "Environ 30 secondes", "isCorrect": False},
+                {"text": "Environ 10 à 12 minutes", "isCorrect": True},
+                {"text": "Plus de 45 minutes", "isCorrect": False}
+            ],
+            "correction": "En pétrissage amélioré, on compte généralement 3-4 min en 1ère vitesse (frasage) et 10-12 min en 2ème vitesse.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 36,
+            "theme": "Technologie de Panification",
+            "question": "Qu'est-ce que le 'frasage' ?",
+            "answerOptions": [
+                {"text": "Le mélange initial lent des ingrédients", "isCorrect": True},
+                {"text": "L'ajout d'eau en fin de pétrissage", "isCorrect": False},
+                {"text": "La décoration du pain avec de la farine", "isCorrect": False},
+                {"text": "Le nettoyage du pétrin", "isCorrect": False}
+            ],
+            "correction": "Le frasage est la première étape du pétrissage (vitesse lente) qui permet de mélanger les ingrédients de manière homogène.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 37,
+            "theme": "Technologie de Panification",
+            "question": "En technique de 'Pousse Contrôlée', que fait-on après le façonnage ?",
+            "answerOptions": [
+                {"text": "On cuit immédiatement", "isCorrect": False},
+                {"text": "On bloque la fermentation au froid (+2°C/+4°C)", "isCorrect": True},
+                {"text": "On laisse la pâte à 40°C", "isCorrect": False},
+                {"text": "On congèle la pâte à -18°C", "isCorrect": False}
+            ],
+            "correction": "La pousse contrôlée consiste à bloquer la fermentation au froid pour la retarder et la déclencher programmée avant la cuisson.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 38,
+            "theme": "Technologie de Panification",
+            "question": "Si un pain manque de sel, quelle sera la conséquence visible sur la pâte ?",
+            "answerOptions": [
+                {"text": "La pâte sera très ferme et cassante", "isCorrect": False},
+                {"text": "La pâte sera collante, molle et sans force", "isCorrect": True},
+                {"text": "La pâte ne lèvera pas du tout", "isCorrect": False},
+                {"text": "La croûte sera noire", "isCorrect": False}
+            ],
+            "correction": "Sans sel, le gluten manque de force (ténacité). La pâte devient molle, collante et relâche au four.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 39,
+            "theme": "Technologie de Panification",
+            "question": "Le 'bassinage' consiste à :",
+            "answerOptions": [
+                {"text": "Ajouter de l'eau en fin de pétrissage pour assouplir la pâte", "isCorrect": True},
+                {"text": "Plonger les pains dans l'eau bouillante", "isCorrect": False},
+                {"text": "Laisser la pâte reposer dans un bac en plastique", "isCorrect": False},
+                {"text": "Nettoyer le sol du fournil à grande eau", "isCorrect": False}
+            ],
+            "correction": "Le bassinage est une technique d'ajout d'eau réservée vers la fin du pétrissage pour hydrater davantage et alvéoler la mie.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 40,
+            "theme": "Technologie de Panification",
+            "question": "Qu'appelle-t-on 'l'apprêt' ?",
+            "answerOptions": [
+                {"text": "La dernière phase de fermentation avant cuisson", "isCorrect": True},
+                {"text": "La préparation du poste de travail", "isCorrect": False},
+                {"text": "Le calcul du prix de revient", "isCorrect": False},
+                {"text": "La pesée des ingrédients", "isCorrect": False}
+            ],
+            "correction": "L'apprêt est la fermentation finale après façonnage, durant laquelle le pâton prend son volume définitif avant cuisson.",
+            "difficulty": "Facile"
+        },
+
+        # ==============================================================================
+        # THÈME 3 : HYGIÈNE ET SCIENCES APPLIQUÉES (20 questions)
+        # ==============================================================================
+        {
+            "id": 41,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Quelle est la température maximale autorisée pour conserver des produits laitiers frais ?",
+            "answerOptions": [
+                {"text": "+4°C", "isCorrect": True},
+                {"text": "+10°C", "isCorrect": False},
+                {"text": "+20°C", "isCorrect": False},
+                {"text": "0°C", "isCorrect": False}
+            ],
+            "correction": "Les produits fragiles (lait, crème, œufs cassés) doivent être stockés entre 0°C et +4°C pour limiter le développement bactérien.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 42,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Que signifie l'acronyme HACCP ?",
+            "answerOptions": [
+                {"text": "Hazard Analysis Critical Control Point", "isCorrect": True},
+                {"text": "Hygiène Alimentaire Contrôlée par Chef Pâtissier", "isCorrect": False},
+                {"text": "Haute Autorité de Contrôle des Certificats Professionnels", "isCorrect": False},
+                {"text": "Habits Autorisés Contre Contamination Partielle", "isCorrect": False}
+            ],
+            "correction": "HACCP est une méthode d'analyse des dangers et de maîtrise des points critiques pour la sécurité alimentaire.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 43,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Quelle bactérie est principalement associée à la consommation d'œufs crus ou mal cuits ?",
+            "answerOptions": [
+                {"text": "La Listéria", "isCorrect": False},
+                {"text": "La Salmonelle", "isCorrect": True},
+                {"text": "Le Staphylocoque doré", "isCorrect": False},
+                {"text": "Le Clostridium", "isCorrect": False}
+            ],
+            "correction": "Les salmonelles se trouvent souvent sur la coquille des œufs et peuvent contaminer le produit s'il est consommé cru.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 44,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Dans le stockage des denrées, que signifie la règle FIFO (PEPS) ?",
+            "answerOptions": [
+                {"text": "Premier Entré, Premier Sorti", "isCorrect": True},
+                {"text": "Produits Frais En Premier Service", "isCorrect": False},
+                {"text": "Pas d'Entrée Pour les Stocks", "isCorrect": False},
+                {"text": "Produit Entamé Produit Sale", "isCorrect": False}
+            ],
+            "correction": "FIFO (First In, First Out) ou PEPS impose d'utiliser les produits les plus anciens avant les nouveaux pour éviter les péremptions.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 45,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Pourquoi est-il interdit de porter des bijoux (bagues, montres) au fournil ?",
+            "answerOptions": [
+                {"text": "Ils risquent de fondre au four", "isCorrect": False},
+                {"text": "Ils sont des nids à microbes et risquent de tomber", "isCorrect": True},
+                {"text": "C'est une question d'esthétique uniquement", "isCorrect": False},
+                {"text": "Cela raye le matériel en inox", "isCorrect": False}
+            ],
+            "correction": "Les bijoux hébergent des germes difficiles à nettoyer et représentent un risque physique (corps étranger) dans la pâte.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 46,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Quelle est la zone de température dangereuse favorisant la multiplication rapide des bactéries ?",
+            "answerOptions": [
+                {"text": "Entre +10°C et +63°C", "isCorrect": True},
+                {"text": "En dessous de 0°C", "isCorrect": False},
+                {"text": "Au dessus de 100°C", "isCorrect": False},
+                {"text": "Entre -18°C et -20°C", "isCorrect": False}
+            ],
+            "correction": "La zone tiède (10°C à 63°C) est celle où les bactéries se multiplient de façon exponentielle.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 47,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Quel est le principal gaz produit lors de la fermentation alcoolique par la levure ?",
+            "answerOptions": [
+                {"text": "Le dioxyde de carbone (CO2)", "isCorrect": True},
+                {"text": "L'oxygène (O2)", "isCorrect": False},
+                {"text": "L'azote (N2)", "isCorrect": False},
+                {"text": "Le méthane (CH4)", "isCorrect": False}
+            ],
+            "correction": "La levure transforme les sucres en alcool (éthanol) et en gaz carbonique (CO2), qui fait lever la pâte.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 48,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Quelle maladie professionnelle est très fréquente chez les boulangers due à la farine ?",
+            "answerOptions": [
+                {"text": "L'asthme du boulanger", "isCorrect": True},
+                {"text": "La perte de la vue", "isCorrect": False},
+                {"text": "Les troubles auditifs", "isCorrect": False},
+                {"text": "L'intoxication au plomb", "isCorrect": False}
+            ],
+            "correction": "L'inhalation constante de poussières de farine peut provoquer des allergies respiratoires graves (asthme).",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 49,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Un produit décongelé...",
+            "answerOptions": [
+                {"text": "Peut être recongelé immédiatement", "isCorrect": False},
+                {"text": "Ne doit jamais être recongelé tel quel", "isCorrect": True},
+                {"text": "Se conserve 1 mois au frigo", "isCorrect": False},
+                {"text": "Doit être lavé à l'eau de javel", "isCorrect": False}
+            ],
+            "correction": "La recongélation d'un produit décongelé favorise une prolifération bactérienne massive et dangereuse.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 50,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Quel est le pH approximatif d'un levain mûr ?",
+            "answerOptions": [
+                {"text": "Acide (entre 3,5 et 4,3)", "isCorrect": True},
+                {"text": "Neutre (7)", "isCorrect": False},
+                {"text": "Basique (9)", "isCorrect": False},
+                {"text": "Très acide (1)", "isCorrect": False}
+            ],
+            "correction": "Le levain est acide (acide lactique et acétique), ce qui lui confère son goût et ses propriétés de conservation.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 51,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "L'amidon est un glucide complexe composé de chaînes de...",
+            "answerOptions": [
+                {"text": "Glucose", "isCorrect": True},
+                {"text": "Lipides", "isCorrect": False},
+                {"text": "Protéines", "isCorrect": False},
+                {"text": "Vitamines", "isCorrect": False}
+            ],
+            "correction": "L'amidon est un polymère de glucose. C'est la réserve énergétique du blé.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 52,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Que se passe-t-il pour l'amidon autour de 60°C en présence d'eau ?",
+            "answerOptions": [
+                {"text": "Il gélatinise (empois d'amidon)", "isCorrect": True},
+                {"text": "Il caramélise", "isCorrect": False},
+                {"text": "Il s'évapore", "isCorrect": False},
+                {"text": "Il se transforme en gluten", "isCorrect": False}
+            ],
+            "correction": "L'empesage (ou gélatinisation) de l'amidon commence vers 60°C : les grains gonflent et absorbent l'eau, formant la mie.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 53,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Quel est le vecteur principal de contamination par le Staphylocoque doré ?",
+            "answerOptions": [
+                {"text": "Les manipulations humaines (peau, nez, plaies)", "isCorrect": True},
+                {"text": "L'eau du robinet", "isCorrect": False},
+                {"text": "La farine", "isCorrect": False},
+                {"text": "Les légumes mal lavés", "isCorrect": False}
+            ],
+            "correction": "Le Staphylocoque doré est une bactérie portée par l'homme (nez, bouche, plaies infectées) et transmise par les mains.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 54,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "La DDM (Date de Durabilité Minimale) remplace quel ancien sigle ?",
+            "answerOptions": [
+                {"text": "DLUO (Date Limite d'Utilisation Optimale)", "isCorrect": True},
+                {"text": "DLC (Date Limite de Consommation)", "isCorrect": False},
+                {"text": "AOP (Appellation d'Origine Protégée)", "isCorrect": False},
+                {"text": "TVA (Taxe sur la Valeur Ajoutée)", "isCorrect": False}
+            ],
+            "correction": "La DDM indique qu'après la date, le produit peut perdre des qualités gustatives mais reste sain, contrairement à la DLC.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 55,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Quelle est la définition de la 'marche en avant' ?",
+            "answerOptions": [
+                {"text": "Le circuit sans retour du produit propre vers le sale", "isCorrect": False},
+                {"text": "Le circuit sans retour du produit sale vers le propre", "isCorrect": True},
+                {"text": "Courir dans le laboratoire", "isCorrect": False},
+                {"text": "Toujours livrer le client avant de produire", "isCorrect": False}
+            ],
+            "correction": "La marche en avant signifie que le produit sain (fini) ne doit jamais croiser le circuit des déchets ou des produits bruts (sales).",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 56,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Le nettoyage élimine la saleté visible. Que fait la désinfection ?",
+            "answerOptions": [
+                {"text": "Elle fait briller le matériel", "isCorrect": False},
+                {"text": "Elle élimine ou réduit les micro-organismes", "isCorrect": True},
+                {"text": "Elle parfume le laboratoire", "isCorrect": False},
+                {"text": "Elle enlève les graisses brûlées", "isCorrect": False}
+            ],
+            "correction": "Désinfecter sert à tuer les bactéries invisibles restantes après le nettoyage.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 57,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Quel nutriment est le principal apport énergétique du pain ?",
+            "answerOptions": [
+                {"text": "Les glucides (sucres lents)", "isCorrect": True},
+                {"text": "Les lipides (graisses)", "isCorrect": False},
+                {"text": "Les vitamines C", "isCorrect": False},
+                {"text": "Le calcium", "isCorrect": False}
+            ],
+            "correction": "Le pain est un féculent riche en amidon (glucide complexe), source d'énergie durable.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 58,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Pourquoi le sel iodé est-il parfois utilisé ?",
+            "answerOptions": [
+                {"text": "Pour lutter contre les carences en iode (thyroïde)", "isCorrect": True},
+                {"text": "Pour donner un goût de mer au pain", "isCorrect": False},
+                {"text": "C'est interdit en boulangerie", "isCorrect": False},
+                {"text": "Pour colorer la pâte", "isCorrect": False}
+            ],
+            "correction": "C'est une mesure de santé publique pour prévenir les goitres, bien que le sel de cuisine standard soit souvent non iodé en boulangerie pro.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 59,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Qu'est-ce qu'une toxi-infection alimentaire collective (TIAC) ?",
+            "answerOptions": [
+                {"text": "Au moins 2 personnes malades ayant mangé le même aliment", "isCorrect": True},
+                {"text": "Une personne malade après un repas", "isCorrect": False},
+                {"text": "Une allergie aux arachides", "isCorrect": False},
+                {"text": "Une indigestion due à un excès de nourriture", "isCorrect": False}
+            ],
+            "correction": "Une TIAC est déclarée dès que deux cas similaires sont reliés à une même origine alimentaire.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 60,
+            "theme": "Hygiène et Sciences Appliquées",
+            "question": "Quelle est la température de mort des levures (Saccharomyces cerevisiae) ?",
+            "answerOptions": [
+                {"text": "50°C", "isCorrect": True},
+                {"text": "100°C", "isCorrect": False},
+                {"text": "30°C", "isCorrect": False},
+                {"text": "200°C", "isCorrect": False}
+            ],
+            "correction": "Les levures meurent autour de 50-55°C. C'est à ce moment que la fermentation s'arrête dans le four.",
+            "difficulty": "Moyen"
+        },
+
+        # ==============================================================================
+        # THÈME 4 : MATÉRIEL ET ÉQUIPEMENTS (20 questions)
+        # ==============================================================================
+        {
+            "id": 61,
+            "theme": "Matériel et Équipements",
+            "question": "Quel organe de sécurité est obligatoire sur un pétrin à spirale ?",
+            "answerOptions": [
+                {"text": "La grille de protection qui arrête la machine si levée", "isCorrect": True},
+                {"text": "Une lumière clignotante", "isCorrect": False},
+                {"text": "Un frein à main", "isCorrect": False},
+                {"text": "Un thermomètre digital intégré", "isCorrect": False}
+            ],
+            "correction": "La grille de sécurité empêche l'accès à la cuve en mouvement et doit couper le moteur instantanément si elle est ouverte.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 62,
+            "theme": "Matériel et Équipements",
+            "question": "À quoi sert une diviseuse hydraulique ?",
+            "answerOptions": [
+                {"text": "À pétrir la pâte rapidement", "isCorrect": False},
+                {"text": "À cuire les baguettes", "isCorrect": False},
+                {"text": "À découper un gros pâton en pièces de poids égal", "isCorrect": True},
+                {"text": "À injecter de l'eau dans la pâte", "isCorrect": False}
+            ],
+            "correction": "La diviseuse permet de découper un bac de pâte en 10 ou 20 pâtons rectangulaires de même poids.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 63,
+            "theme": "Matériel et Équipements",
+            "question": "Quel matériau est préconisé pour les tables de travail en boulangerie moderne ?",
+            "answerOptions": [
+                {"text": "Le bois brut non traité", "isCorrect": False},
+                {"text": "L'acier inoxydable (Inox)", "isCorrect": True},
+                {"text": "Le carrelage poreux", "isCorrect": False},
+                {"text": "Le tissu", "isCorrect": False}
+            ],
+            "correction": "L'inox est lisse, imputrescible et facile à désinfecter, contrairement au bois qui peut retenir les bactéries.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 64,
+            "theme": "Matériel et Équipements",
+            "question": "Comment appelle-t-on la toile de lin utilisée pour faire pousser les baguettes ?",
+            "answerOptions": [
+                {"text": "La couche", "isCorrect": True},
+                {"text": "La nappe", "isCorrect": False},
+                {"text": "Le torchon", "isCorrect": False},
+                {"text": "Le tapis", "isCorrect": False}
+            ],
+            "correction": "La couche (en lin) absorbe l'excès d'humidité et soutient les pâtons durant l'apprêt.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 65,
+            "theme": "Matériel et Équipements",
+            "question": "Quelle est la fonction d'un 'refroidisseur d'eau' au fournil ?",
+            "answerOptions": [
+                {"text": "Obtenir une eau à +1°C / +3°C pour la température de base", "isCorrect": True},
+                {"text": "Fabriquer des glaçons pour l'apéritif", "isCorrect": False},
+                {"text": "Refroidir le four après cuisson", "isCorrect": False},
+                {"text": "Stocker les levures", "isCorrect": False}
+            ],
+            "correction": "Le refroidisseur fournit de l'eau très froide indispensable pour calculer la température de base, surtout en été ou pétrissage intensif.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 66,
+            "theme": "Matériel et Équipements",
+            "question": "Sur un four à sole, qu'est-ce que l'ourra ?",
+            "answerOptions": [
+                {"text": "Le clapet d'évacuation des buées", "isCorrect": True},
+                {"text": "Le bouton d'allumage", "isCorrect": False},
+                {"text": "La porte vitrée", "isCorrect": False},
+                {"text": "Le système d'injection de vapeur", "isCorrect": False}
+            ],
+            "correction": "L'ourra est le registre (cheminée) que l'on ouvre en fin de cuisson pour sécher le pain et obtenir une croûte croustillante.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 67,
+            "theme": "Matériel et Équipements",
+            "question": "Quel appareil sert à donner la forme allongée aux baguettes mécaniquement ?",
+            "answerOptions": [
+                {"text": "La façonneuse", "isCorrect": True},
+                {"text": "La bouleuse", "isCorrect": False},
+                {"text": "Le laminoir", "isCorrect": False},
+                {"text": "La diviseuse", "isCorrect": False}
+            ],
+            "correction": "La façonneuse lamine, enroule et allonge le pâton pour lui donner sa forme finale.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 68,
+            "theme": "Matériel et Équipements",
+            "question": "Comment appelle-t-on les paniers en osier (ou plastique) servant à la pousse des miches ?",
+            "answerOptions": [
+                {"text": "Les bannetons", "isCorrect": True},
+                {"text": "Les moules à manqué", "isCorrect": False},
+                {"text": "Les parisiennes", "isCorrect": False},
+                {"text": "Les clayettes", "isCorrect": False}
+            ],
+            "correction": "Le banneton donne sa forme au pain durant l'apprêt et laisse souvent un motif spiralé fariné.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 69,
+            "theme": "Matériel et Équipements",
+            "question": "Quelle maintenance préventive est essentielle sur une diviseuse ?",
+            "answerOptions": [
+                {"text": "Le dépoussiérage des farines (aspirateur) quotidien", "isCorrect": True},
+                {"text": "Le lavage à grande eau au jet", "isCorrect": False},
+                {"text": "Le graissage des couteaux à l'huile de moteur", "isCorrect": False},
+                {"text": "Le démontage complet du moteur", "isCorrect": False}
+            ],
+            "correction": "La farine s'accumule et peut colmater ou moisir. Un dépoussiérage à sec (aspirateur/balayette) est quotidien.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 70,
+            "theme": "Matériel et Équipements",
+            "question": "À quoi sert un 'repose-pâton' ou 'balancelle' ?",
+            "answerOptions": [
+                {"text": "À laisser détendre les pâtons entre division et façonnage", "isCorrect": True},
+                {"text": "À peser la farine", "isCorrect": False},
+                {"text": "À stocker le pain cuit", "isCorrect": False},
+                {"text": "À pétrir doucement", "isCorrect": False}
+            ],
+            "correction": "La balancelle permet la 'détente' des pâtons (repos intermédiaire) en circuit automatisé ou semi-automatisé.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 71,
+            "theme": "Matériel et Équipements",
+            "question": "Quel est l'avantage d'un four rotatif (chariot) par rapport au four à sole ?",
+            "answerOptions": [
+                {"text": "La productivité et la facilité d'enfournement", "isCorrect": True},
+                {"text": "La qualité de la croûte (meilleure sur sole)", "isCorrect": False},
+                {"text": "Il ne consomme pas d'énergie", "isCorrect": False},
+                {"text": "Il ne nécessite pas de buée", "isCorrect": False}
+            ],
+            "correction": "Le four rotatif permet de cuire un chariot entier d'un coup, idéal pour la viennoiserie ou le pain moulé, mais la sole donne un meilleur 'fond' au pain.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 72,
+            "theme": "Matériel et Équipements",
+            "question": "Quel outil utilise le boulanger pour grigner (scarifier) le pain ?",
+            "answerOptions": [
+                {"text": "Une lame de rasoir (ou incisette)", "isCorrect": True},
+                {"text": "Un couteau de chef", "isCorrect": False},
+                {"text": "Une paire de ciseaux", "isCorrect": False},
+                {"text": "Une spatule", "isCorrect": False}
+            ],
+            "correction": "On utilise une lame très fine et tranchante montée sur un support pour ne pas déchirer la pâte.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 73,
+            "theme": "Matériel et Équipements",
+            "question": "Qu'est-ce qu'une 'échelle' en boulangerie ?",
+            "answerOptions": [
+                {"text": "Un chariot à glissières pour stocker plaques ou grilles", "isCorrect": True},
+                {"text": "Un escabeau pour nettoyer le plafond", "isCorrect": False},
+                {"text": "Un outil de mesure de température", "isCorrect": False},
+                {"text": "Une recette progressive", "isCorrect": False}
+            ],
+            "correction": "L'échelle (ou parisien) permet de stocker verticalement les plaques de cuisson ou les grilles pour gagner de la place.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 74,
+            "theme": "Matériel et Équipements",
+            "question": "Pourquoi les plaques de cuisson doivent-elles être graissées ou siliconées ?",
+            "answerOptions": [
+                {"text": "Pour éviter que les produits n'attachent (collent)", "isCorrect": True},
+                {"text": "Pour donner du goût", "isCorrect": False},
+                {"text": "Pour qu'elles chauffent plus vite", "isCorrect": False},
+                {"text": "C'est inutile", "isCorrect": False}
+            ],
+            "correction": "Les revêtements anti-adhésifs ou la graisse empêchent la viennoiserie (sucre/œuf) de coller au métal.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 75,
+            "theme": "Matériel et Équipements",
+            "question": "Quel est le rôle d'une 'chambre de fermentation' ?",
+            "answerOptions": [
+                {"text": "Maîtriser la température et l'hygrométrie de pousse", "isCorrect": True},
+                {"text": "Cuire le pain à basse température", "isCorrect": False},
+                {"text": "Stocker la farine", "isCorrect": False},
+                {"text": "Laver les ustensiles", "isCorrect": False}
+            ],
+            "correction": "La chambre permet de régler précisément chaleur et humidité pour garantir une levée régulière quelle que soit la météo.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 76,
+            "theme": "Matériel et Équipements",
+            "question": "Comment nettoyer correctement une couche en lin ?",
+            "answerOptions": [
+                {"text": "Brossage à sec et séchage régulier", "isCorrect": True},
+                {"text": "Lavage en machine à 90°C avec javel chaque jour", "isCorrect": False},
+                {"text": "Trempage dans l'eau froide", "isCorrect": False},
+                {"text": "On ne la nettoie jamais", "isCorrect": False}
+            ],
+            "correction": "Le lin rétrécit et moisit à l'eau. On les brosse à sec et on les fait sécher pour éviter l'humidité. On les lave rarement.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 77,
+            "theme": "Matériel et Équipements",
+            "question": "Le coupe-pâte (corne) sert principalement à :",
+            "answerOptions": [
+                {"text": "Couper des morceaux de pâte et racler le pétrin", "isCorrect": True},
+                {"text": "Couper le pain cuit", "isCorrect": False},
+                {"text": "Ouvrir les sacs de farine", "isCorrect": False},
+                {"text": "Tartiner le beurre", "isCorrect": False}
+            ],
+            "correction": "Outil prolongeant la main du boulanger, il sert à diviser la masse et à curer (nettoyer) les bacs sans perte.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 78,
+            "theme": "Matériel et Équipements",
+            "question": "Quel risque présente un pétrin à axe oblique par rapport à un spirale ?",
+            "answerOptions": [
+                {"text": "Risque de pincement si protection absente (bras mécanique)", "isCorrect": True},
+                {"text": "Il chauffe trop la pâte", "isCorrect": False},
+                {"text": "Il ne peut pas pétrir de petites quantités", "isCorrect": False},
+                {"text": "Il explose souvent", "isCorrect": False}
+            ],
+            "correction": "Les bras mécaniques de l'axe oblique sont puissants et le risque de happement est réel si la grille n'est pas sécurisée.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 79,
+            "theme": "Matériel et Équipements",
+            "question": "Dans un four à sole électrique, les résistances chauffantes sont situées...",
+            "answerOptions": [
+                {"text": "Sous la sole et au niveau de la voûte", "isCorrect": True},
+                {"text": "Uniquement au fond", "isCorrect": False},
+                {"text": "Uniquement sur les côtés", "isCorrect": False},
+                {"text": "Dans la porte", "isCorrect": False}
+            ],
+            "correction": "La chauffe doit être uniforme : par le bas (sole) pour le fond du pain et par le haut (voûte) pour le développement et la couleur.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 80,
+            "theme": "Matériel et Équipements",
+            "question": "Un 'silo' à farine est utilisé pour :",
+            "answerOptions": [
+                {"text": "Le stockage en vrac de grandes quantités de farine", "isCorrect": True},
+                {"text": "Jeter les déchets", "isCorrect": False},
+                {"text": "Stocker l'eau", "isCorrect": False},
+                {"text": "Cuire le pain", "isCorrect": False}
+            ],
+            "correction": "Les silos (souvent extérieurs ou en chambre dédiée) permettent de stocker la farine livrée par camion-citerne sans sacs.",
+            "difficulty": "Facile"
+        },
+
+        # ==============================================================================
+        # THÈME 5 : CULTURE PRO ET RÉGLEMENTATION (20 questions)
+        # ==============================================================================
+        {
+            "id": 81,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Que stipule le 'Décret Pain' de 1993 concernant le Pain de Tradition Française ?",
+            "answerOptions": [
+                {"text": "Aucun additif ni surgélation n'est autorisé", "isCorrect": True},
+                {"text": "Il doit contenir de l'acide ascorbique", "isCorrect": False},
+                {"text": "Il peut être fabriqué à base de pâte surgelée", "isCorrect": False},
+                {"text": "Il doit obligatoirement être bio", "isCorrect": False}
+            ],
+            "correction": "Le décret 93-1074 interdit tout additif et toute surgélation à n'importe quel stade pour l'appellation 'Tradition'.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 82,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Qui est le saint patron des boulangers fêté le 16 mai ?",
+            "answerOptions": [
+                {"text": "Saint Honoré", "isCorrect": True},
+                {"text": "Saint Michel", "isCorrect": False},
+                {"text": "Saint Pierre", "isCorrect": False},
+                {"text": "Saint Laurent", "isCorrect": False}
+            ],
+            "correction": "Saint Honoré est le patron des boulangers et pâtissiers.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 83,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Quelle est la différence légale entre une 'Boulangerie' et un 'Dépôt de pain' ?",
+            "answerOptions": [
+                {"text": "La boulangerie pétrit, façonne et cuit sur place", "isCorrect": True},
+                {"text": "Le dépôt de pain vend plus cher", "isCorrect": False},
+                {"text": "La boulangerie ne vend que du pain blanc", "isCorrect": False},
+                {"text": "Il n'y a aucune différence", "isCorrect": False}
+            ],
+            "correction": "L'appellation 'Boulangerie' est protégée : le professionnel doit fabriquer son pain sur le lieu de vente du début à la fin.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 84,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Quel est le poids standard cuit (approximatif) d'une baguette courante en France ?",
+            "answerOptions": [
+                {"text": "250 g", "isCorrect": True},
+                {"text": "400 g", "isCorrect": False},
+                {"text": "100 g", "isCorrect": False},
+                {"text": "500 g", "isCorrect": False}
+            ],
+            "correction": "Le poids standard commercial est de 250g cuit (environ 350g en pâte crue).",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 85,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Le sel est réglementé en boulangerie pour des raisons de santé. Quelle est la tendance recommandée ?",
+            "answerOptions": [
+                {"text": "Réduire le taux de sel (vers 18g/kg de farine)", "isCorrect": True},
+                {"text": "Augmenter le taux de sel à 30g/kg", "isCorrect": False},
+                {"text": "Supprimer totalement le sel", "isCorrect": False},
+                {"text": "Remplacer le sel par du sucre", "isCorrect": False}
+            ],
+            "correction": "L'OMS et les pouvoirs publics incitent à réduire le sel (historiquement 20-22g, aujourd'hui on vise 16-18g par kg de farine).",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 86,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Que signifie le label 'AB' sur une farine ?",
+            "answerOptions": [
+                {"text": "Agriculture Biologique", "isCorrect": True},
+                {"text": "Assez Bonne", "isCorrect": False},
+                {"text": "Agriculteur Boulanger", "isCorrect": False},
+                {"text": "Appellation Boulangère", "isCorrect": False}
+            ],
+            "correction": "Le label AB garantit un mode de production sans produits chimiques de synthèse ni OGM.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 87,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Le prix du pain en France est-il fixé par l'État ?",
+            "answerOptions": [
+                {"text": "Non, les prix sont libres depuis 1987", "isCorrect": True},
+                {"text": "Oui, c'est le préfet qui décide", "isCorrect": False},
+                {"text": "Oui, il est le même partout", "isCorrect": False},
+                {"text": "Uniquement pour la baguette", "isCorrect": False}
+            ],
+            "correction": "Depuis l'ordonnance de 1986 (appliquée 1987), le prix du pain est libre et fixé par chaque artisan.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 88,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Qu'est-ce que le 'parage' en viennoiserie ?",
+            "answerOptions": [
+                {"text": "Couper les bords de la pâte pour avoir des couches nettes", "isCorrect": True},
+                {"text": "Décorer le magasin", "isCorrect": False},
+                {"text": "Mettre son tablier", "isCorrect": False},
+                {"text": "Peser les ingrédients", "isCorrect": False}
+            ],
+            "correction": "Parer la pâte feuilletée consiste à couper les bords (les rognures) pour révéler le feuilletage avant le détaillage final.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 89,
+            "theme": "Culture Pro et Réglementation",
+            "question": "La galette des rois est traditionnellement associée à quelle fête ?",
+            "answerOptions": [
+                {"text": "L'Épiphanie", "isCorrect": True},
+                {"text": "La Chandeleur", "isCorrect": False},
+                {"text": "Pâques", "isCorrect": False},
+                {"text": "La Toussaint", "isCorrect": False}
+            ],
+            "correction": "L'Épiphanie (début janvier) célèbre la venue des Rois Mages, traditionnellement avec une galette ou brioche.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 90,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Un pain 'au levain' doit obligatoirement avoir un pH maximal de...",
+            "answerOptions": [
+                {"text": "4,3", "isCorrect": True},
+                {"text": "7", "isCorrect": False},
+                {"text": "2", "isCorrect": False},
+                {"text": "10", "isCorrect": False}
+            ],
+            "correction": "Légalement, l'appellation 'Pain au levain' impose un pH acide (max 4,3) et une flore bactérienne spécifique.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 91,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Quelle mention est obligatoire sur l'étiquette prix en boutique ?",
+            "answerOptions": [
+                {"text": "Le prix à la pièce et le prix au kilo", "isCorrect": True},
+                {"text": "La date de naissance du boulanger", "isCorrect": False},
+                {"text": "La marque de la farine", "isCorrect": False},
+                {"text": "Le nombre de calories", "isCorrect": False}
+            ],
+            "correction": "Pour l'information du consommateur, le prix au kilo est obligatoire en plus du prix de vente à l'unité.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 92,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Le document unique d'évaluation des risques (DUER) est-il obligatoire en boulangerie ?",
+            "answerOptions": [
+                {"text": "Oui, dès l'embauche du premier salarié", "isCorrect": True},
+                {"text": "Non, c'est facultatif", "isCorrect": False},
+                {"text": "Uniquement pour les usines", "isCorrect": False},
+                {"text": "Seulement s'il y a eu un accident", "isCorrect": False}
+            ],
+            "correction": "Le DUER est obligatoire pour toute entreprise ayant au moins un salarié pour prévenir les risques pro.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 93,
+            "theme": "Culture Pro et Réglementation",
+            "question": "En France, quelle est la durée légale hebdomadaire du travail (hors heures supp) ?",
+            "answerOptions": [
+                {"text": "35 heures", "isCorrect": True},
+                {"text": "39 heures", "isCorrect": False},
+                {"text": "48 heures", "isCorrect": False},
+                {"text": "40 heures", "isCorrect": False}
+            ],
+            "correction": "La durée légale est de 35h. En boulangerie, les heures supplémentaires sont courantes mais la base légale reste 35h.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 94,
+            "theme": "Culture Pro et Réglementation",
+            "question": "L'affichage des allergènes en boutique est-il obligatoire ?",
+            "answerOptions": [
+                {"text": "Oui, pour tous les produits non emballés", "isCorrect": True},
+                {"text": "Non, c'est au client de deviner", "isCorrect": False},
+                {"text": "Uniquement pour le gluten", "isCorrect": False},
+                {"text": "Seulement pour les gâteaux", "isCorrect": False}
+            ],
+            "correction": "La liste des 14 allergènes majeurs doit être accessible par écrit pour le consommateur.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 95,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Qu'est-ce que le 'Label Rouge' ?",
+            "answerOptions": [
+                {"text": "Une garantie de qualité supérieure", "isCorrect": True},
+                {"text": "Une marque de peinture", "isCorrect": False},
+                {"text": "Une farine premier prix", "isCorrect": False},
+                {"text": "Un label pour les fruits rouges", "isCorrect": False}
+            ],
+            "correction": "Le Label Rouge atteste qu'un produit possède un niveau de qualité supérieur à celui d'un produit courant similaire (ex: Farine Label Rouge).",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 96,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Quel ingrédient est strictement interdit dans le pain de 'Tradition Française' ?",
+            "answerOptions": [
+                {"text": "L'acide ascorbique (Vitamine C)", "isCorrect": True},
+                {"text": "La farine de fève (< 2%)", "isCorrect": False},
+                {"text": "Le gluten de blé", "isCorrect": False},
+                {"text": "La levure", "isCorrect": False}
+            ],
+            "correction": "Le décret interdit tout additif. L'acide ascorbique est considéré comme un additif, contrairement à la farine de fève (adjuvant naturel) qui est tolérée en faible dose.",
+            "difficulty": "Difficile"
+        },
+        {
+            "id": 97,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Que signifie AOP ?",
+            "answerOptions": [
+                {"text": "Appellation d'Origine Protégée", "isCorrect": True},
+                {"text": "Association des Ouvriers Patrons", "isCorrect": False},
+                {"text": "Alimentation Originale Parisienne", "isCorrect": False},
+                {"text": "Action Organisation Production", "isCorrect": False}
+            ],
+            "correction": "L'AOP garantit le lien avec un terroir et un savoir-faire traditionnel (ex: Beurre Charentes-Poitou AOP).",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 98,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Quel organisme contrôle l'hygiène dans les commerces alimentaires en France ?",
+            "answerOptions": [
+                {"text": "La DDPP (Services vétérinaires)", "isCorrect": True},
+                {"text": "La Poste", "isCorrect": False},
+                {"text": "La Mairie uniquement", "isCorrect": False},
+                {"text": "Les pompiers", "isCorrect": False}
+            ],
+            "correction": "La Direction Départementale de la Protection des Populations (ex-services vétérinaires) effectue les contrôles sanitaires.",
+            "difficulty": "Moyen"
+        },
+        {
+            "id": 99,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Qu'appelle-t-on la 'Coupe du Monde de la Boulangerie' ?",
+            "answerOptions": [
+                {"text": "Un concours international prestigieux", "isCorrect": True},
+                {"text": "Une bataille de farine", "isCorrect": False},
+                {"text": "Une fête de village", "isCorrect": False},
+                {"text": "Un examen de fin d'année", "isCorrect": False}
+            ],
+            "correction": "C'est un concours de haut niveau qui se tient généralement lors du salon Europain/Sirha, réunissant les meilleures équipes mondiales.",
+            "difficulty": "Facile"
+        },
+        {
+            "id": 100,
+            "theme": "Culture Pro et Réglementation",
+            "question": "Quelle est la particularité du pain 'Complet' légalement ?",
+            "answerOptions": [
+                {"text": "Il doit être riche en son (fibres)", "isCorrect": True},
+                {"text": "Il doit peser 1kg", "isCorrect": False},
+                {"text": "Il est cuit à la vapeur", "isCorrect": False},
+                {"text": "Il contient des noix", "isCorrect": False}
+            ],
+            "correction": "Le pain complet est préparé avec une farine intégrale ou complète, riche en enveloppes du grain (son).",
+            "difficulty": "Facile"
+        }
+    ]
+}
