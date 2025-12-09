@@ -33,6 +33,7 @@ from quizzes.quiz_cap_platre_isolation_100 import quiz_data as quiz_platre_isola
 from quizzes.quiz_cap_sanitaire_100 import quiz_data as quiz_sanitaire_data
 from quizzes.quiz_cap_serrurier_metallier_100 import quiz_data as quiz_serrurier_data
 from quizzes.quiz_cap_thermique_100 import quiz_data as quiz_thermique_data
+from quizzes.quiz_cap_carreleur_100 import quiz_data as quiz_carreleur_data
 
 QUIZZES = {
     "cap_boucher_100": {
@@ -168,6 +169,13 @@ QUIZZES = {
         "data": quiz_thermique_data,
         "icon": "🔥",
         "color": "#e74c3c",
+    },
+"cap_carreleur_100": {
+    "title": "CAP Carreleur – 100 questions",
+    "description": "Révisions complètes CAP Carreleur.",
+    "data": quiz_carreleur_data,
+    "icon": "🧱",
+    "color": "#2ecc71",
     },
 }
 
