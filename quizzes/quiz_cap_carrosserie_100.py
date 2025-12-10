@@ -1,1146 +1,1144 @@
-# Fichier : quiz_cap_carrosserie_100.py
-
 quiz_data = {
-    "title": "Quiz CAP Réparation des Carrosseries : Révisions Complètes (100 Questions)",
+    "title": "Quiz CAP Carrossier Automobile : Révisions Complètes (100 Questions)",
     "themes": {
-        # =========================================================================
-        # THÈME 1 : HYGIÈNE, SÉCURITÉ, OUTILS ET ENVIRONNEMENT (Q. 1-20)
-        # =========================================================================
         1: {
-            "name": "1. Hygiène, Sécurité, Outils et Environnement (Q. 1-20)",
+            "name": "THÈME 1 : Sécurité, Hygiène, et Organisation du Poste de Travail (Q. 1-20)",
             "questions": [
+                # =========================================================================
+                # QUESTIONS 1 à 20 : SÉCURITÉ, HYGIÈNE ET ORGANISATION
+                # =========================================================================
                 {
                     "questionNumber": 1,
-                    "question": "Quel est l'Équipement de Protection Individuelle (EPI) absolument indispensable lors des opérations de ponçage du mastic ou de l'apprêt ?",
+                    "question": "Quel est l'équipement de protection individuelle (EPI) absolument obligatoire lors des opérations de meulage ou de ponçage générant des projections solides ?",
                     "answerOptions": [
-                        {"text": "Des bottes de sécurité.", "isCorrect": False},
-                        {"text": "Un Masque respiratoire (P3) et des lunettes de protection (contre la poussière et les particules de ponçage).", "isCorrect": True},
-                        {"text": "Des gants en tissu.", "isCorrect": False},
-                        {"text": "Un casque anti-bruit.", "isCorrect": False}
+                        {"text": "Les lunettes ou l'écran facial de protection.", "isCorrect": True},
+                        {"text": "Un casque antibruit haute performance avec atténuation active du son.", "isCorrect": False},
+                        {"text": "Des gants en nitrile épais pour la manipulation de solvants.", "isCorrect": False},
+                        {"text": "La combinaison de travail ignifugée de classe 3 (protection contre les fortes chaleures).", "isCorrect": False}
                     ],
-                    "correction": "Le **masque P3** protège des poussières fines de ponçage très nocives."
+                    "correction": "Rappel de Cours : Les opérations de meulage et de ponçage sont particulièrement dangereuses car elles projettent des particules à haute vitesse. La protection des yeux par des lunettes de sécurité ou un écran facial est la première mesure de sécurité pour éviter des lésions oculaires graves."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quel est le risque principal lié à l'utilisation des produits de peinture (solvants, bases, vernis) en cabine ou à l'air libre ?",
+                    "question": "Conformément aux règles d'hygiène et de sécurité, quelle est la procédure correcte pour stocker les chiffons souillés par des produits inflammables (solvants, peintures) ?",
                     "answerOptions": [
-                        {"text": "Un risque de coupure.", "isCorrect": False},
-                        {"text": "Un risque d'intoxication (inhalation de COV), d'inflammation et d'incendie (produits très inflammables).", "isCorrect": True},
-                        {"text": "Un risque de choc électrique.", "isCorrect": False},
-                        {"text": "Un risque de chute.", "isCorrect": False}
+                        {"text": "Les placer dans un récipient métallique fermé, à couvercle étanche, pour prévenir tout risque d'auto-inflammation ou de propagation d'incendie.", "isCorrect": True},
+                        {"text": "Les jeter immédiatement dans la benne à ordures ménagères classique pour une élimination rapide.", "isCorrect": False},
+                        {"text": "Les laver immédiatement à grande eau avant de les faire sécher à l'air libre dans l'atelier.", "isCorrect": False},
+                        {"text": "Les regrouper en tas sous l'établi en attendant la fin de journée pour une élimination différée.", "isCorrect": False}
                     ],
-                    "correction": "Une **ventilation** et une **filtration** forcées sont obligatoires lors de la pulvérisation de peinture."
+                    "correction": "Rappel de Cours : Certains chiffons imbibés de produits peuvent s'auto-enflammer. Pour éviter un départ de feu, ils doivent être stockés dans des conteneurs sécurisés, généralement métalliques et hermétiques, qui coupent l'apport en oxygène."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Que signifie le pictogramme de sécurité GHS représentant une **tête de mort sur un os** ?",
+                    "question": "Quelle est la fonction principale d'un pont élévateur à quatre colonnes dans un atelier de carrosserie ?",
                     "answerOptions": [
-                        {"text": "Produit comburant.", "isCorrect": False},
-                        {"text": "Produit toxique et mortel (à très faible dose par ingestion, inhalation ou contact cutané).", "isCorrect": True},
-                        {"text": "Produit inflammable.", "isCorrect": False},
-                        {"text": "Produit corrosif.", "isCorrect": False}
+                        {"text": "Permettre la levée sécurisée du véhicule pour les travaux de diagnostic et de réparation du soubassement, notamment le débosselage sur marbre.", "isCorrect": True},
+                        {"text": "Servir uniquement de zone de stockage temporaire des véhicules en attente de réparation peinture.", "isCorrect": False},
+                        {"text": "Il est spécifiquement conçu pour les opérations de démontage des moteurs lourds et des boîtes de vitesses.", "isCorrect": False},
+                        {"text": "Il assure principalement la mise à niveau automatique de la caisse pour les contrôles géométriques des trains roulants après accident.", "isCorrect": False}
                     ],
-                    "correction": "Ce pictogramme indique un **danger très grave** nécessitant des précautions extrêmes."
+                    "correction": "Rappel de Cours : En carrosserie, le pont élévateur est essentiel pour accéder au dessous du véhicule. Les modèles à quatre colonnes sont souvent utilisés pour supporter le véhicule de manière stable, facilitant les travaux lourds sur le châssis ou la structure."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Comment doit-on éliminer les **chiffons souillés par les solvants et diluants** après dégraissage ?",
+                    "question": "Lors de l'utilisation d'un poste de soudure MAG (Métal Active Gaz), quel gaz de protection est couramment utilisé ?",
                     "answerOptions": [
-                        {"text": "Les jeter à la poubelle normale.", "isCorrect": False},
-                        {"text": "Les placer dans un contenant métallique hermétique dédié aux déchets dangereux (Risque d'auto-inflammation).", "isCorrect": True},
-                        {"text": "Les brûler à l'air libre.", "isCorrect": False},
-                        {"text": "Les rincer à l'eau.", "isCorrect": False}
+                        {"text": "Un mélange d'Argon et de Dioxyde de Carbone (Ar+CO2​).", "isCorrect": True},
+                        {"text": "Exclusivement de l'Hélium pur pour assurer une pénétration maximale.", "isCorrect": False},
+                        {"text": "Uniquement de l'Azote (N) sous très haute pression pour refroidir l'arc.", "isCorrect": False},
+                        {"text": "Un mélange d'Hydrogène et d'Oxygène pour un arc très chaud.", "isCorrect": False}
                     ],
-                    "correction": "Certains solvants peuvent s'enflammer spontanément (**auto-inflammation**) au contact de l'air."
+                    "correction": "Rappel de Cours : Le soudage MAG utilise un fil-électrode fusible et un gaz actif. Le mélange le plus courant est l'Argon mélangé à du Dioxyde de Carbone (CO2​), ou parfois de l'oxygène, pour stabiliser l'arc et améliorer le mouillage (l'étalement) du bain de fusion."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel est l'outil de mesurage utilisé pour vérifier l'alignement des points de référence (châssis) sur le marbre (outil de redressage) ?",
+                    "question": "Avant d'entreprendre une soudure sur une zone de caisse traitée avec des produits de protection, que doit faire le carrossier ?",
                     "answerOptions": [
-                        {"text": "Le pied à coulisse.", "isCorrect": False},
-                        {"text": "Le Mètre ruban, l'Équerre, et le Système de mesurage électronique ou laser (pour le contrôle géométrique).", "isCorrect": True},
-                        {"text": "La brosse métallique.", "isCorrect": False},
-                        {"text": "Le pistolet à peinture.", "isCorrect": False}
+                        {"text": "Décaper la zone de soudure jusqu'au métal nu pour garantir une bonne pénétration et éviter la production de fumées toxiques ou un mauvais cordon de soudure.", "isCorrect": True},
+                        {"text": "Appliquer une nouvelle couche de cire anti-corrosion sur le revêtement existant pour protéger le métal pendant la soudure.", "isCorrect": False},
+                        {"text": "Humidifier la zone avec de l'eau pour éviter la surchauffe et la déformation de la tôle environnante.", "isCorrect": False},
+                        {"text": "Utiliser uniquement un fil fourré auto-protecteur pour compenser la présence de la couche protectrice initiale.", "isCorrect": False}
                     ],
-                    "correction": "Le **contrôle géométrique** sur marbre est essentiel après un choc important."
+                    "correction": "Rappel de Cours : Les revêtements, comme les cires, les mastics ou les peintures, dégagent des fumées toxiques lors de la soudure et empêchent une bonne fusion. Il est impératif de décaper le métal dans la zone de soudure."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Quelle doit être la procédure de sécurité lors du **soudage (MIG/MAG)** ?",
+                    "question": "Quel est l'objectif principal de la fiche d'instruction ou de la fiche de poste dans l'organisation du travail en carrosserie ?",
                     "answerOptions": [
-                        {"text": "Porter un t-shirt et des lunettes de soleil.", "isCorrect": False},
-                        {"text": "Porter un masque/casque de soudage avec filtre auto-obscurcissant, des gants en cuir, des vêtements ignifugés et travailler dans une zone ventilée.", "isCorrect": True},
-                        {"text": "Travailler sans ventilation.", "isCorrect": False},
-                        {"text": "Utiliser un extincteur à eau.", "isCorrect": False}
+                        {"text": "Détailler la séquence des opérations à effectuer, les outils nécessaires, les temps barèmes et les consignes de sécurité spécifiques pour une réparation donnée.", "isCorrect": True},
+                        {"text": "Servir de bon de commande unique pour l'approvisionnement des pièces de rechange auprès du magasinier.", "isCorrect": False},
+                        {"text": "Documenter uniquement les réclamations clients après la livraison du véhicule.", "isCorrect": False},
+                        {"text": "Calculer la masse volumique des différents types de mastics utilisés.", "isCorrect": False}
                     ],
-                    "correction": "Le **casque de soudage** protège des UV, des IR et des projections."
+                    "correction": "Rappel de Cours : La fiche d'instruction standardise le processus. Elle est un guide pour le carrossier, assurant la qualité et l'efficacité de la réparation en listant toutes les étapes, les ressources et les précautions à prendre."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quel est le risque de travailler sur un véhicule **électrique ou hybride** sans avoir préalablement déconnecté la batterie de service et le circuit haute tension ?",
+                    "question": "Quelle est la procédure de sécurité essentielle avant de débrancher la batterie d'un véhicule moderne impliqué dans un choc ?",
                     "answerOptions": [
-                        {"text": "Le véhicule démarre tout seul.", "isCorrect": False},
-                        {"text": "Un risque de choc électrique grave (électrocution) dû à la haute tension (jusqu'à 600 V) du circuit de traction.", "isCorrect": True},
-                        {"text": "Le véhicule s'enflamme.", "isCorrect": False},
-                        {"text": "La tôle rouille.", "isCorrect": False}
+                        {"text": "S'assurer que le contact est coupé et attendre le temps de latence spécifié par le constructeur (souvent quelques minutes) pour le déchargement des condensateurs des systèmes pyrotechniques (airbags).", "isCorrect": True},
+                        {"text": "Débrancher immédiatement la borne positive, sans précaution particulière, pour isoler le circuit le plus rapidement possible.", "isCorrect": False},
+                        {"text": "Utiliser impérativement une pince ampèremétrique pour vérifier l'absence de courant résiduel dans le circuit.", "isCorrect": False},
+                        {"text": "Injecter un gaz inerte dans l'habitacle pour neutraliser le risque d'explosion des systèmes de retenue.", "isCorrect": False}
                     ],
-                    "correction": "La **sécurité électrique** (consignation) est une procédure spécifique et obligatoire pour ces véhicules."
+                    "correction": "Rappel de Cours : Les véhicules modernes comportent des systèmes de sécurité (airbags, prétensionneurs de ceinture) qui nécessitent un temps d'attente après la coupure du contact pour que les condensateurs d'alimentation se déchargent. Cela évite le déploiement intempestif des airbags lors des manipulations."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Qu'est-ce qu'une **Fiche de Données de Sécurité (FDS)** ?",
+                    "question": "Dans le cadre de l'évaluation d'un dommage, à quoi correspond l'Unité de Réparation Élémentaire (URE) ?",
                     "answerOptions": [
-                        {"text": "Un catalogue de pièces détachées.", "isCorrect": False},
-                        {"text": "Un document légal fournissant des informations détaillées sur les dangers d'un produit chimique, son stockage, sa manipulation et les mesures d'urgence.", "isCorrect": True},
-                        {"text": "Un document de commande.", "isCorrect": False},
-                        {"text": "Un document de suivi client.", "isCorrect": False}
+                        {"text": "C'est l'unité de temps utilisée par les constructeurs automobiles (généralement 0,1 heure, soit 6 minutes) pour chiffrer précisément les temps de main-d'œuvre.", "isCorrect": True},
+                        {"text": "C'est le prix standard d'un litre de peinture de finition bi-couche.", "isCorrect": False},
+                        {"text": "C'est l'abréviation technique pour \"Ultra Résistance aux Éléments\", un type d'acier à haute limite élastique.", "isCorrect": False},
+                        {"text": "C'est l'outil de mesure de la déformation du châssis en millimètres après un choc violent.", "isCorrect": False}
                     ],
-                    "correction": "La **FDS** doit être consultée avant toute utilisation d'un produit inconnu."
+                    "correction": "Rappel de Cours : L'URE est l'unité de base pour la facturation des travaux de main-d'œuvre en carrosserie et peinture, permettant d'uniformiser et de justifier les temps passés auprès des assureurs et des clients."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Quel est l'outil utilisé pour redresser (débosseler) une tôle par l'extérieur en tirant le métal grâce à des pointes de soudure ?",
+                    "question": "Que doit-on faire avant de soulever un véhicule sur un pont élévateur ?",
                     "answerOptions": [
-                        {"text": "La lime de carrossier.", "isCorrect": False},
-                        {"text": "Le Tire-Clou (ou Spotter).", "isCorrect": True},
-                        {"text": "Le marteau à planer.", "isCorrect": False},
-                        {"text": "Le pistolet à colle.", "isCorrect": False}
+                        {"text": "Vérifier le bon positionnement des patins de levage aux emplacements spécifiques indiqués par le constructeur sur la caisse, et s'assurer que le véhicule est stable et que l'environnement est dégagé.", "isCorrect": True},
+                        {"text": "Augmenter la pression des quatre pneus à 3 bars pour mieux répartir la charge sur le pont.", "isCorrect": False},
+                        {"text": "Vidanger le réservoir de carburant pour alléger le poids total du véhicule.", "isCorrect": False},
+                        {"text": "Desserrer légèrement les roues arrière pour faciliter leur démontage ultérieur.", "isCorrect": False}
                     ],
-                    "correction": "Le **Tire-Clou** est essentiel pour le débosselage sans démontage lourd."
+                    "correction": "Rappel de Cours : L'utilisation des points de levage spécifiés est essentielle pour ne pas endommager la structure du véhicule (bas de caisse, plancher) et garantir la sécurité de la manipulation sur le pont."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Quel est le risque de poncer ou souder un élément peint avec une ancienne peinture au plomb (sur les vieux véhicules) ?",
+                    "question": "Quelle est la raison principale de l'obligation de porter un appareil respiratoire à adduction d'air dans la cabine de peinture ?",
                     "answerOptions": [
-                        {"text": "La peinture coule.", "isCorrect": False},
-                        {"text": "Inhalation de fumées ou de poussières toxiques (le plomb est un poison).", "isCorrect": True},
-                        {"text": "Le métal se déforme.", "isCorrect": False},
-                        {"text": "Le vernis jaunit.", "isCorrect": False}
+                        {"text": "Protéger l'opérateur contre l'inhalation des isocyanates et des solvants très toxiques présents dans les peintures polyuréthanes et les vernis.", "isCorrect": True},
+                        {"text": "Maintenir la température corporelle de l'opérateur à un niveau constant.", "isCorrect": False},
+                        {"text": "Filtrer les particules de poussière avant qu'elles n'entrent en contact avec la carrosserie fraîchement peinte.", "isCorrect": False},
+                        {"text": "Améliorer la qualité de la lumière en diffusant l'air purifié sur le jet de peinture.", "isCorrect": False}
                     ],
-                    "correction": "Le **Plomb** et ses oxydes sont des poisons lourds et nécessitent des procédures de travail spécifiques et un EPI adapté."
+                    "correction": "Rappel de Cours : Les peintures, en particulier les vernis et certaines bases, contiennent des isocyanates qui sont extrêmement dangereux pour le système respiratoire. Seul un masque à adduction d'air, qui fournit de l'air frais extérieur, offre une protection suffisante."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Quelle est l'importance du **dégraissage** d'une tôle avant l'application du mastic ?",
+                    "question": "Qu'est-ce qui caractérise un \"chariot de servante\" bien organisé dans l'atelier ?",
                     "answerOptions": [
-                        {"text": "Le rendre plus lisse.", "isCorrect": False},
-                        {"text": "Éliminer les traces de graisse, silicone, ou d'huile qui empêchent l'adhérence (accroche) du mastic, créant un décollement ou des bulles.", "isCorrect": True},
-                        {"text": "Le rendre plus rugueux.", "isCorrect": False},
-                        {"text": "Le colorer.", "isCorrect": False}
+                        {"text": "Un rangement logique et systématique des outils, avec des emplacements mémorisés pour chaque catégorie (clés, douilles, tournevis), facilitant la prise et la remise rapides de l'outillage.", "isCorrect": True},
+                        {"text": "L'absence totale de tout outil électrique ou pneumatique pour des raisons de sécurité.", "isCorrect": False},
+                        {"text": "Une utilisation exclusive de tiroirs transparents pour voir les outils sans les ouvrir.", "isCorrect": False},
+                        {"text": "Une organisation qui privilégie le désordre créatif pour s'adapter à toutes les situations imprévues.", "isCorrect": False}
                     ],
-                    "correction": "Le **dégraissage** à l'aide d'un dégraissant spécifique est une étape fondamentale."
+                    "correction": "Rappel de Cours : Un poste de travail bien organisé, notamment la servante, est un gain de temps énorme. Le rangement doit suivre une logique d'utilisation pour optimiser l'efficacité de l'opérateur (méthode 5S par exemple)."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quelle est la cause principale d'une **mauvaise polymérisation** (durcissement) du vernis bi-composant ?",
+                    "question": "Pourquoi doit-on impérativement utiliser un extracteur de fumées pendant les opérations de soudage ou de brasage ?",
                     "answerOptions": [
-                        {"text": "Une température ambiante trop élevée.", "isCorrect": False},
-                        {"text": "Un mauvais dosage du durcisseur (catalyseur) ou une température de cabine trop basse/trop haute par rapport au durcisseur utilisé.", "isCorrect": True},
-                        {"text": "Un support mal dégraissé.", "isCorrect": False},
-                        {"text": "Une épaisseur de vernis trop faible.", "isCorrect": False}
+                        {"text": "Pour évacuer les fumées potentiellement toxiques et les gaz nocifs (oxydes de métaux, fluorures) générés par la fusion des matériaux et la combustion des revêtements de protection.", "isCorrect": True},
+                        {"text": "Pour injecter de l'air frais dans l'atmosphère et refroidir la tôle soudée plus rapidement.", "isCorrect": False},
+                        {"text": "Pour concentrer la chaleur de l'arc sur la zone de travail et améliorer la pénétration de la soudure.", "isCorrect": False},
+                        {"text": "Pour filtrer les rayons ultraviolets émis par l'arc électrique du poste à souder.", "isCorrect": False}
                     ],
-                    "correction": "Le dosage du **durcisseur** est une opération de précision (souvent 2:1 ou 3:1) et doit respecter la FDS."
+                    "correction": "Rappel de Cours : Les fumées de soudure sont classées cancérigènes ou mutagènes. L'extraction localisée à la source est fondamentale pour la santé du carrossier et pour maintenir une atmosphère de travail saine."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quel est l'outil utilisé pour le **planage** après débosselage (pour s'assurer que la tôle est parfaitement lisse) ?",
+                    "question": "Quel est le rôle principal de la fiche suiveuse dans le processus de réparation ?",
                     "answerOptions": [
-                        {"text": "Le marteau rivoir.", "isCorrect": False},
-                        {"text": "La Lime de carrossier (ou râpe) avec un support flexible, utilisée pour révéler les creux et les bosses de la tôle.", "isCorrect": True},
-                        {"text": "Le pistolet à souder.", "isCorrect": False},
-                        {"text": "Le pied à coulisse.", "isCorrect": False}
+                        {"text": "Assurer la traçabilité de toutes les étapes de la réparation, du diagnostic initial à la sortie atelier, en répertoriant les interventions, les pièces montées et la signature des différents techniciens.", "isCorrect": True},
+                        {"text": "Uniquement répertorier les outils spéciaux prêtés par le magasinier pour une tâche spécifique.", "isCorrect": False},
+                        {"text": "Servir de document légal pour l'enregistrement du kilométrage quotidien de l'outil de mesurage sur marbre.", "isCorrect": False},
+                        {"text": "Justifier l'application d'un vernis mat plutôt que brillant.", "isCorrect": False}
                     ],
-                    "correction": "La **Lime de carrossier** agit comme un révélateur des défauts de surface."
+                    "correction": "Rappel de Cours : La fiche suiveuse est un outil de qualité et de gestion. Elle garantit que toutes les opérations prévues ont été réalisées et permet de retrouver l'historique de l'intervention en cas de besoin."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Que doit-on faire de l'**eau de lavage** des sols ou des outils contenant des résidus de peinture et de solvants ?",
+                    "question": "Lors de l'utilisation d'une meuleuse d'angle, quelle précaution de sécurité relative à la garde doit-on toujours respecter ?",
                     "answerOptions": [
-                        {"text": "La jeter à l'égout.", "isCorrect": False},
-                        {"text": "La collecter dans un bac de décantation/traitement pour séparation des boues et des solvants, avant élimination par une filière spécialisée.", "isCorrect": True},
-                        {"text": "La réutiliser telle quelle.", "isCorrect": False},
-                        {"text": "La stocker dans des fûts ouverts.", "isCorrect": False}
+                        {"text": "Maintenir la garde de protection fermement fixée et orientée de manière à intercepter toute projection en direction de l'opérateur, même si elle gêne la visibilité.", "isCorrect": True},
+                        {"text": "La retirer systématiquement pour une meilleure visibilité de la zone de travail.", "isCorrect": False},
+                        {"text": "La remplacer par un chiffon épais pour absorber les étincelles.", "isCorrect": False},
+                        {"text": "La régler au maximum de son ouverture pour un refroidissement optimal du disque.", "isCorrect": False}
                     ],
-                    "correction": "Le **traitement des effluents** est une obligation environnementale et légale."
+                    "correction": "Rappel de Cours : La garde de protection est l'élément de sécurité le plus important d'une meuleuse, conçue pour contenir les projections et, surtout, les fragments en cas de rupture du disque. Son retrait est strictement interdit."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quelle est l'importance de débrancher la **batterie 12 V** d'un véhicule avant toute opération de soudage ou de redressage au Tire-Clou ?",
+                    "question": "Quel est l'élément qui permet d'assurer l'efficacité du système d'extraction d'air dans une cabine de peinture ?",
                     "answerOptions": [
-                        {"text": "Pour la recharger.", "isCorrect": False},
-                        {"text": "Éviter les courts-circuits, les pics de tension et la destruction des calculateurs (ECU) sensibles aux variations électriques.", "isCorrect": True},
-                        {"text": "Pour alléger le véhicule.", "isCorrect": False},
-                        {"text": "Pour l'isoler du froid.", "isCorrect": False}
+                        {"text": "La bonne maintenance et le remplacement régulier des filtres à air (plafond et sol) pour garantir un flux d'air laminaire sans turbulences et une bonne évacuation des brouillards de peinture.", "isCorrect": True},
+                        {"text": "Une température interne toujours maintenue à 50∘C même en phase de pistolage.", "isCorrect": False},
+                        {"text": "L'utilisation d'un mélange d'air comprimé pur et d'azote pour le pistolet.", "isCorrect": False},
+                        {"text": "Le nettoyage quotidien des vitres de la cabine avec un produit à base d'ammoniaque.", "isCorrect": False}
                     ],
-                    "correction": "La **déconnexion** de la batterie protège l'électronique de bord."
+                    "correction": "Rappel de Cours : Les filtres sont cruciaux. Les filtres de plafond assurent un air propre entrant, et les filtres de sol (ou de dépression) piègent les brouillards de peinture, maintenant un environnement propre pour la peinture et la santé de l'opérateur."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Quel est l'outil utilisé pour lisser et répartir le mastic de carrosserie sur la zone à réparer ?",
+                    "question": "Quelle est la première étape à réaliser avant de démonter un composant endommagé impliquant des systèmes électroniques ou des airbags ?",
                     "answerOptions": [
-                        {"text": "Le rouleau.", "isCorrect": False},
-                        {"text": "La Spatule (ou Couteau) en plastique ou caoutchouc.", "isCorrect": True},
-                        {"text": "Le marteau.", "isCorrect": False},
-                        {"text": "Le pinceau.", "isCorrect": False}
+                        {"text": "Consulter la documentation technique du constructeur (méthode de réparation) pour identifier les procédures spécifiques de désactivation des systèmes pyrotechniques et les points de coupure de l'énergie.", "isCorrect": True},
+                        {"text": "Procéder directement au desserrage des vis pour gagner du temps sur l'opération.", "isCorrect": False},
+                        {"text": "Marquer la pièce à la peinture rouge pour signaler son état endommagé.", "isCorrect": False},
+                        {"text": "Nettoyer la pièce à l'aide d'un dégraissant puissant pour améliorer l'adhérence des outils.", "isCorrect": False}
                     ],
-                    "correction": "La **Spatule** permet une application uniforme et sans bulle."
+                    "correction": "Rappel de Cours : Les systèmes électroniques et pyrotechniques nécessitent des protocoles stricts de déconnexion pour la sécurité du carrossier. La documentation constructeur est la seule source fiable pour ces procédures."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Quelle doit être la procédure lors du travail sous le véhicule (démontage de pièces sous la caisse) ?",
+                    "question": "Quel type de raccord rapide est le plus adapté et le plus sûr pour alimenter les outils pneumatiques de l'atelier ?",
                     "answerOptions": [
-                        {"text": "Utiliser un simple cric hydraulique.", "isCorrect": False},
-                        {"text": "Utiliser impérativement des chandelles (ou le pont élévateur avec des cales de sécurité) pour éviter l'écrasement en cas de défaillance du cric.", "isCorrect": True},
-                        {"text": "Travailler seul.", "isCorrect": False},
-                        {"text": "Ne pas porter d'EPI.", "isCorrect": False}
+                        {"text": "Les raccords rapides à sécurité (anti-coup de fouet), qui permettent la décompression progressive de l'air avant le désaccouplement, minimisant le risque de mouvement brusque et dangereux du flexible.", "isCorrect": True},
+                        {"text": "Les raccords en plastique standard, légers et très économiques à l'achat.", "isCorrect": False},
+                        {"text": "Les raccords à visser permanent (non rapides), qui ne peuvent pas être déconnectés sans outil spécifique.", "isCorrect": False},
+                        {"text": "Les raccords munis de soupapes de sécurité automatiques qui libèrent toute la pression d'un coup.", "isCorrect": False}
                     ],
-                    "correction": "Les **chandelles** sont le dispositif de sécurité passif obligatoire pour le travail sous caisse."
+                    "correction": "Rappel de Cours : L'éjection d'un raccord sous pression (coup de fouet) peut causer des blessures graves. Les raccords de sécurité réduisent la pression interne avant le désaccouplement complet, rendant l'opération plus sûre."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quel est le danger principal du ponçage du **mastic Polyester** ?",
+                    "question": "Dans la classification des incendies, quelle catégorie correspond aux feux de liquides ou de solides liquéfiables (comme l'essence, les huiles, les solvants ou les peintures) ?",
                     "answerOptions": [
-                        {"text": "Il dégage des vapeurs acides.", "isCorrect": False},
-                        {"text": "Il crée une grande quantité de poussière fine, irritante et très nocive pour les voies respiratoires (nécessite aspiration et masque P3).", "isCorrect": True},
-                        {"text": "Il est inflammable.", "isCorrect": False},
-                        {"text": "Il est corrosif.", "isCorrect": False}
+                        {"text": "Classe B.", "isCorrect": True},
+                        {"text": "Classe A.", "isCorrect": False},
+                        {"text": "Classe C.", "isCorrect": False},
+                        {"text": "Classe F.", "isCorrect": False}
                     ],
-                    "correction": "Le **mastic** nécessite une aspiration et un ponçage adapté."
+                    "correction": "Rappel de Cours : Les classes de feux sont : A (solides secs, bois, papier), B (liquides inflammables), C (gaz), D (métaux), F (auxiliaires de cuisson). Les produits de carrosserie inflammables sont de Classe B."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel est l'outil de coupe adapté pour une découpe précise d'une tôle fine avant soudage (par opposition à la meuleuse) ?",
+                    "question": "À quelle fréquence minimale les extincteurs de l'atelier doivent-ils faire l'objet d'une vérification par une entreprise spécialisée ?",
                     "answerOptions": [
-                        {"text": "La cisaille manuelle.", "isCorrect": False},
-                        {"text": "La Grignoteuse ou la Scie sabre (Lame pour métal fin).", "isCorrect": True},
-                        {"text": "Le chalumeau.", "isCorrect": False},
-                        {"text": "Le cutter.", "isCorrect": False}
+                        {"text": "Une fois par an, conformément à la réglementation en vigueur et aux normes de sécurité incendie.", "isCorrect": True},
+                        {"text": "Tous les cinq ans, uniquement lors du renouvellement complet du parc de machines.", "isCorrect": False},
+                        {"text": "Uniquement après utilisation.", "isCorrect": False},
+                        {"text": "Deux fois par mois, une vérification visuelle par l'opérateur étant suffisante.", "isCorrect": False}
                     ],
-                    "correction": "La **Grignoteuse** permet une découpe sans déformation excessive."
+                    "correction": "Rappel de Cours : La réglementation impose une vérification annuelle du bon état de fonctionnement et de la conformité des extincteurs par un professionnel agréé."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quel est le rôle du **chariot à outils mobile** en carrosserie ?",
+                    "question": "Quel est l'intérêt principal de l'utilisation d'une douille à choc de couleur (code couleur) ?",
                     "answerOptions": [
-                        {"text": "Stocker les pièces neuves.", "isCorrect": False},
-                        {"text": "Organiser, sécuriser et avoir à portée de main les outils nécessaires (marteaux, tas, clés, etc.) pour chaque opération, afin d'éviter les déplacements inutiles et la perte de temps.", "isCorrect": True},
-                        {"text": "Servir d'établi.", "isCorrect": False},
-                        {"text": "Transporter la peinture.", "isCorrect": False}
+                        {"text": "Faciliter l'identification visuelle et rapide de la bonne dimension pour la clé dynamométrique, en réduisant les erreurs de sélection d'outil.", "isCorrect": True},
+                        {"text": "Indiquer le sens de rotation (serrage ou desserrage) que la douille est censée effectuer.", "isCorrect": False},
+                        {"text": "Signaler que la douille est fabriquée dans un alliage d'aluminium ultraléger.", "isCorrect": False},
+                        {"text": "Être exclusivement réservée aux écrous de roue en plastique.", "isCorrect": False}
                     ],
-                    "correction": "L'**organisation de l'atelier** est clé pour l'efficacité et la sécurité."
+                    "correction": "Rappel de Cours : Les codes couleurs sur les outils (douilles, clés) sont un système d'organisation qui permet d'accélérer le travail et de diminuer les erreurs de montage/démontage, le technicien identifiant la taille au premier coup d'œil."
                 },
             ]
         },
-        # =========================================================================
-        # THÈME 2 : STRUCTURES ET MATÉRIAUX (Q. 21-40)
-        # =========================================================================
         2: {
-            "name": "2. Structures et Matériaux (Q. 21-40)",
+            "name": "THÈME 2 : Débosselage et Remplacement des Éléments de Carrosserie (Q. 21-40)",
             "questions": [
+                # =========================================================================
+                # QUESTIONS 21 à 40 : DÉBOSSELAGE
+                # =========================================================================
                 {
                     "questionNumber": 21,
-                    "question": "Quelle est la principale différence entre un **Acier Basse Limite Élastique (B.L.E)** et un **Acier Haute Limite Élastique (H.L.E)** ?",
+                    "question": "Quelle technique est recommandée pour redresser une zone de tôle fortement étirée ou déformée, après un choc ?",
                     "answerOptions": [
-                        {"text": "La couleur.", "isCorrect": False},
-                        {"text": "Le H.L.E est plus dur, plus résistant, moins ductile et ne doit pas être chauffé/soudé sans procédure stricte (caractéristiques mécaniques perdues lors du chauffage).", "isCorrect": True},
-                        {"text": "Le B.L.E est plus cher.", "isCorrect": False},
-                        {"text": "Le H.L.E est plus léger.", "isCorrect": False}
+                        {"text": "L'utilisation d'un tas et d'un marteau pour débosseler, combinée à un chauffage par rétreinte localisée (au décapeur thermique ou à la flamme) pour resserrer la tôle et lui faire retrouver sa forme initiale sans la sur-étirer davantage.", "isCorrect": True},
+                        {"text": "La pose immédiate d'une couche de mastic polyester très épais pour cacher la déformation.", "isCorrect": False},
+                        {"text": "Uniquement le tirage à froid et en force sur un banc de redressage, sans aucune application de chaleur.", "isCorrect": False},
+                        {"text": "Le refroidissement intensif de la zone avec de la neige carbonique (CO2​ solide) avant le débosselage.", "isCorrect": False}
                     ],
-                    "correction": "Les **Aciers H.L.E** sont utilisés pour les structures de sécurité (châssis) et exigent une réparation spécifique (souvent remplacement)."
+                    "correction": "Rappel de Cours : Le chauffage par rétreinte (ou rétreint) est essentiel pour les tôles étirées. La chaleur appliquée localement fait se contracter la tôle, la \"resserrant\" et lui permettant de retrouver sa tension d'origine."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Quelle est la particularité du **soudage de l'Aluminium** par rapport à l'acier ?",
+                    "question": "Qu'est-ce qu'un « marbre » en carrosserie ?",
                     "answerOptions": [
-                        {"text": "Il n'y a pas de différence.", "isCorrect": False},
-                        {"text": "Il nécessite un poste à souder et un gaz de protection spécifiques (Argon, procédé TIG ou MIG Aluminium) et ne doit jamais être mélangé avec des outils ayant servi à l'acier (risque de corrosion).", "isCorrect": True},
-                        {"text": "Il est plus rapide.", "isCorrect": False},
-                        {"text": "Il nécessite de l'eau.", "isCorrect": False}
+                        {"text": "Un banc de redressage de haute précision, équipé de systèmes de mesure tridimensionnelle pour contrôler et rétablir la géométrie exacte de la structure déformée (châssis, caisse).", "isCorrect": True},
+                        {"text": "Un type de revêtement de sol très luxueux et fragile, utilisé dans les bureaux d'accueil des ateliers.", "isCorrect": False},
+                        {"text": "Une plaque de métal uniquement utilisée pour souder des petites pièces. ", "isCorrect": False},
+                        {"text": "Un outil de palpage électronique pour mesurer l'épaisseur de la peinture.", "isCorrect": False}
                     ],
-                    "correction": "L'**Aluminium** a un point de fusion bas et s'oxyde très vite."
+                    "correction": "Le 'marbre' est le banc sur lequel on fixe et mesure le châssis ou la coque pour le redresser après un choc important, en rétablissant les points de contrôle aux côtes constructeur."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quel est le rôle des **Zones à Déformation Programmée** sur un véhicule moderne (zones fusibles) ?",
+                    "question": "Quel est l'outil spécifique utilisé pour tirer une tôle en acier avec un poste de soudage par points (point-soudure) en débosselage sans démontage ?",
                     "answerOptions": [
-                        {"text": "Rendre la voiture plus rapide.", "isCorrect": False},
-                        {"text": "Absorber l'énergie d'un choc en se déformant de manière contrôlée, protégeant ainsi l'habitacle et les occupants (sécurité passive).", "isCorrect": True},
-                        {"text": "Rendre la carrosserie plus dure.", "isCorrect": False},
-                        {"text": "Améliorer l'aérodynamisme.", "isCorrect": False}
+                        {"text": "Le spotter (ou tire-clous).", "isCorrect": True},
+                        {"text": "Le pistolet à air chaud.", "isCorrect": False},
+                        {"text": "La meuleuse à poncer.", "isCorrect": False},
+                        {"text": "La clé à chocs pneumatique.", "isCorrect": False}
                     ],
-                    "correction": "Ces zones doivent être **remplacées** et non redressées après un choc."
+                    "correction": "Rappel de Cours : Le spotter est un équipement qui permet de souder de petites rondelles ou des clous sur la tôle pour ensuite tirer la bosse avec un marteau à inertie ou un système de levier."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quel est le matériau principal utilisé pour les pare-chocs, les ailes et certains éléments de garniture des véhicules modernes ?",
+                    "question": "Pourquoi est-il crucial de suivre la méthode de soudage du constructeur pour le remplacement d'un élément structurel (longeron, montant) ?",
                     "answerOptions": [
-                        {"text": "Le bois.", "isCorrect": False},
-                        {"text": "Le Plastique (Polypropylène - PP, Polycarbonate - PC, ABS, etc.).", "isCorrect": True},
-                        {"text": "L'aluminium.", "isCorrect": False},
-                        {"text": "L'acier.", "isCorrect": False}
+                        {"text": "Pour garantir la résistance aux chocs du véhicule (sécurité passive), en utilisant le même type de soudure (par points, par cordons) et les mêmes paramètres que l'origine, surtout sur les zones en aciers à haute limite élastique (HLE).", "isCorrect": True},
+                        {"text": "Simplement pour respecter les traditions de l'atelier sans conséquence technique réelle.", "isCorrect": False},
+                        {"text": "Car cela influence directement la consommation de carburant future du véhicule.", "isCorrect": False},
+                        {"text": "Afin d'éviter la décoloration des joints d'étanchéité en caoutchouc.", "isCorrect": False}
                     ],
-                    "correction": "Le **Plastique** est léger et résistant aux chocs légers."
+                    "correction": "Rappel de Cours : Les véhicules modernes utilisent des matériaux et des techniques d'assemblage complexes pour la sécurité. Le non-respect des méthodes de soudage du constructeur peut compromettre la résistance de la caisse en cas de nouvel accident."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Comment s'appelle la technique de réparation des plastiques (pare-chocs) qui consiste à faire fondre les bords et à ajouter une matière d'apport (souvent avec un pistolet à air chaud) ?",
+                    "question": "Quel est le rôle principal d'une tireuse par point (ou spotter) ?",
                     "answerOptions": [
-                        {"text": "Le collage.", "isCorrect": False},
-                        {"text": "Le Soudage Plastique (ou Thermofusion).", "isCorrect": True},
-                        {"text": "Le débosselage.", "isCorrect": False},
-                        {"text": "Le planage.", "isCorrect": False}
+                        {"text": "Tirer de petites déformations sans percer la tôle, en utilisant des électrodes et un marteau à inertie.", "isCorrect": True},
+                        {"text": "Souder de grandes pièces structurelles de manière permanente.", "isCorrect": False},
+                        {"text": "Dégraisser la carrosserie avant la peinture.", "isCorrect": False},
+                        {"text": "Mesurer les points de contrôle sur marbre.", "isCorrect": False}
                     ],
-                    "correction": "Le **soudage** permet une réparation solide du plastique, souvent renforcée par des agrafes."
+                    "correction": "Rappel de Cours : La tireuse par point est l'outil de débosselage moderne qui permet de travailler sur la tôle sans accès par l'arrière, en minimisant l'étirement du métal."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Quel est le risque de redresser une tôle en acier HLE avec un outillage classique (marteau et tas) ?",
+                    "question": "Après le débosselage et avant le masticage, quel type de papier abrasif est le plus approprié pour garantir une bonne accroche de l'apprêt et du mastic sur le métal ?",
                     "answerOptions": [
-                        {"text": "La tôle devient trop souple.", "isCorrect": False},
-                        {"text": "La tôle (très dure) se fissure, se déchire, ou ses caractéristiques mécaniques de sécurité sont altérées par la chaleur ou le choc.", "isCorrect": True},
-                        {"text": "La tôle rouille.", "isCorrect": False},
-                        {"text": "La tôle change de couleur.", "isCorrect": False}
+                        {"text": "Un grain grossier (P80 à P120), ponçage à sec, pour créer de la rugosité.", "isCorrect": True},
+                        {"text": "Un grain très fin (P2000), ponçage à l'eau, pour une surface miroir.", "isCorrect": False},
+                        {"text": "Une brosse métallique rotative pour un nettoyage en profondeur.", "isCorrect": False},
+                        {"text": "Aucun, car le mastic doit être appliqué sur une surface parfaitement lisse.", "isCorrect": False}
                     ],
-                    "correction": "Le **HLE** doit être coupé et remplacé selon les procédures constructeur."
+                    "correction": "Rappel de Cours : L'adhérence des produits de préparation nécessite une surface rugueuse. Un grain P80 à P120 crée des microsillons qui ancrent le mastic et l'apprêt."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Qu'est-ce que le **Châssis (ou Structure Monocoque)** d'un véhicule ?",
+                    "question": "Le mastic polyester a-t-il une fonction anti-corrosion ?",
                     "answerOptions": [
-                        {"text": "Le moteur.", "isCorrect": False},
-                        {"text": "L'ossature porteuse du véhicule (habitacle, berceau moteur, longerons) qui assure la rigidité, la sécurité et l'alignement des trains roulants.", "isCorrect": True},
-                        {"text": "La peinture.", "isCorrect": False},
-                        {"text": "Les portes.", "isCorrect": False}
+                        {"text": "Non, il est absorbant et doit être appliqué sur un primaire ou un métal sain et protégé contre la corrosion.", "isCorrect": True},
+                        {"text": "Oui, c'est sa fonction principale, il remplace l'anti-rouille.", "isCorrect": False},
+                        {"text": "Oui, mais uniquement sur les tôles en aluminium.", "isCorrect": False},
+                        {"text": "Uniquement s'il est mélangé à de la poudre de zinc.", "isCorrect": False}
                     ],
-                    "correction": "La réparation du **Châssis** se fait sur marbre pour garantir la géométrie."
+                    "correction": "Rappel de Cours : Le mastic est un produit de finition. Il n'a pas de rôle structurel ou anti-corrosion (il doit être appliqué sur un primaire ou un métal sain) ; il sert uniquement à parfaire la planéité."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Quel est le type de mastic utilisé pour les petites imperfections ou les rayures fines (par opposition au mastic de remplissage épais) ?",
+                    "question": "Qu'est-ce qu'une tôle à Haute Limite Élastique (HLE) ?",
                     "answerOptions": [
-                        {"text": "Mastic aluminium.", "isCorrect": False},
-                        {"text": "Mastic de Finition (ou Mastic Fin), plus liquide et plus facile à poncer.", "isCorrect": True},
-                        {"text": "Mastic fibre de verre.", "isCorrect": False},
-                        {"text": "Mastic polyester.", "isCorrect": False}
+                        {"text": "Un acier moderne caractérisé par une résistance mécanique très élevée, utilisé pour les zones de sécurité de la caisse, qui nécessite des méthodes de réparation spécifiques (soudure par points haute résistance, interdiction de chauffage).", "isCorrect": True},
+                        {"text": "Une tôle facilement déformable utilisée uniquement pour les éléments extérieurs (ailes).", "isCorrect": False},
+                        {"text": "Une tôle en composite de fibre de carbone très légère.", "isCorrect": False},
+                        {"text": "Une tôle ancienne, non traitée, utilisée pour les véhicules de collection.", "isCorrect": False}
                     ],
-                    "correction": "Le **Mastic de finition** est appliqué après le mastic de remplissage."
+                    "correction": "Rappel de Cours : Les HLE sont des aciers clés pour la sécurité. Leur soudage ou leur chauffage incorrect (rétreinte) peut entraîner une perte de résistance catastrophique."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel est l'outil spécifique utilisé pour coller des éléments structurels (remplacement d'un panneau d'aile soudé) ?",
+                    "question": "Quel est l'objectif principal de l'ajustage (ou jeu) d'un élément de carrosserie neuf (porte, capot, aile) ?",
                     "answerOptions": [
-                        {"text": "La colle cyanoacrylate.", "isCorrect": False},
-                        {"text": "Le Pistolet à cartouche pour Mastic/Colle Bi-composant (colle structurale ou colle époxy).", "isCorrect": True},
-                        {"text": "Le chalumeau.", "isCorrect": False},
-                        {"text": "Le fer à souder.", "isCorrect": False}
+                        {"text": "Assurer l'alignement parfait de l'élément avec les éléments adjacents (aile, montant, pavillon) pour garantir l'esthétique, l'étanchéité et le bon fonctionnement (ouverture/fermeture).", "isCorrect": True},
+                        {"text": "Appliquer une peinture de finition.", "isCorrect": False},
+                        {"text": "Réaliser le démontage complet des garnitures intérieures.", "isCorrect": False},
+                        {"text": "Vérifier la pression des pneus.", "isCorrect": False}
                     ],
-                    "correction": "Le **collage structural** remplace de plus en plus le soudage sur les véhicules modernes."
+                    "correction": "Rappel de Cours : L'alignement ou l'ajustage est primordial. Des jeux incorrects compromettent l'esthétique, l'aérodynamisme, l'étanchéité et peuvent entraîner des bruits de roulement."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Pourquoi la réparation des panneaux en **fibre de carbone** nécessite-t-elle des EPI spécifiques (masque P3) et un atelier dédié ?",
+                    "question": "Dans quel cas est-il autorisé de réparer une tôle HLE ?",
                     "answerOptions": [
-                        {"text": "Le carbone est inflammable.", "isCorrect": False},
-                        {"text": "Les poussières de carbone sont conductrices d'électricité et très dangereuses pour la santé (voies respiratoires et organes).", "isCorrect": True},
-                        {"text": "Le carbone est corrosif.", "isCorrect": False},
-                        {"text": "Le carbone est très lourd.", "isCorrect": False}
+                        {"text": "La réparation est généralement interdite ou fortement réglementée par le constructeur. Seul le remplacement par soudage ou collage selon la méthode prescrite est autorisé, car la chaleur altère la structure.", "isCorrect": True},
+                        {"text": "Uniquement pour les impacts de grêle, sans chauffage.", "isCorrect": False},
+                        {"text": "Pour toutes les déformations de moins de 5 cm de diamètre.", "isCorrect": False},
+                        {"text": "Si l'on utilise un marteau à rétreindre.", "isCorrect": False}
                     ],
-                    "correction": "La **fibre de carbone** est un matériau très technique (composites) et ses poussières sont très dangereuses."
+                    "correction": "Rappel de Cours : Pour les raisons de sécurité mentionnées à la Q. 28, la réparation de ces aciers est généralement proscrite ou limitée à des cas très précis."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Comment s'appelle le phénomène qui se produit lorsque le métal est déformé dans une zone, entraînant une bosse ou un creux dans une autre zone distante ?",
+                    "question": "Lors du remplacement d'un pare-chocs en plastique, que doit-on vérifier en priorité avant le montage ?",
                     "answerOptions": [
-                        {"text": "Le planage.", "isCorrect": False},
-                        {"text": "La Déformation indirecte ou Tensions résiduelles (le choc se propage et génère des déformations secondaires).", "isCorrect": True},
-                        {"text": "Le soudage.", "isCorrect": False},
-                        {"text": "Le décapage.", "isCorrect": False}
+                        {"text": "Que toutes les fixations (agrafes, pattes) sont intactes et que l'élément est prêt à être peint (souvent un apprêt industriel est appliqué en usine).", "isCorrect": True},
+                        {"text": "Le niveau d'huile moteur.", "isCorrect": False},
+                        {"text": "Le kilométrage du véhicule.", "isCorrect": False},
+                        {"text": "La présence d'un film de protection en aluminium.", "isCorrect": False}
                     ],
-                    "correction": "Le carrossier doit comprendre comment les **tensions** sont réparties sur la tôle."
+                    "correction": "Rappel de Cours : Le pare-chocs doit être structurellement parfait pour le montage et la peinture. L'état des fixations est crucial pour le jeu et l'ajustage final."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quelle est l'utilité du **Mastic fibre de verre** ?",
+                    "question": "Pourquoi est-il nécessaire d'utiliser une règle à poncer longue et rigide lors du ponçage du mastic ?",
                     "answerOptions": [
-                        {"text": "L'obtention d'une finition lisse.", "isCorrect": False},
-                        {"text": "Reboucher des trous ou des perforations importantes (propriétés de remplissage et de rigidité) avant l'application du mastic polyester fin.", "isCorrect": True},
-                        {"text": "Réparer l'aluminium.", "isCorrect": False},
-                        {"text": "Réparer les plastiques.", "isCorrect": False}
+                        {"text": "Pour s'assurer que la surface est parfaitement plane sur une grande distance et éliminer les \"vagues\" ou les creux localisés laissés par la déformation ou l'application du mastic.", "isCorrect": True},
+                        {"text": "Elle permet de poncer plus rapidement sans effort.", "isCorrect": False},
+                        {"text": "Elle est uniquement utilisée pour le ponçage à l'eau.", "isCorrect": False},
+                        {"text": "Elle sert à mesurer l'épaisseur du mastic.", "isCorrect": False}
                     ],
-                    "correction": "Le **Mastic fibre** est très rigide et fort en remplissage."
+                    "correction": "Rappel de Cours : Seule une règle longue permet d'évaluer la planéité sur la longueur. Les ponceuses orbitales créent des surfaces courbes ; la règle manuelle rectifie la surface."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quel est le risque de monter un **élément de carrosserie non d'origine (adaptable)** ?",
+                    "question": "Quel est le risque de trop chauffer une tôle HLE lors d'un débosselage ?",
                     "answerOptions": [
-                        {"text": "Il est plus cher.", "isCorrect": False},
-                        {"text": "Les tolérances, la qualité de l'acier (ou l'épaisseur) ou les points d'attache peuvent être différents, nécessitant des ajustements ou compromettant la résistance structurelle.", "isCorrect": True},
-                        {"text": "Il rouille moins.", "isCorrect": False},
-                        {"text": "Il est plus lourd.", "isCorrect": False}
+                        {"text": "Modification de la structure cristalline du métal (trempe), perte des propriétés de résistance mécanique et fragilisation de la zone en cas de nouvel impact (sécurité passive compromise).", "isCorrect": True},
+                        {"text": "Le vernis de finition jaunira immédiatement.", "isCorrect": False},
+                        {"text": "L'antivol de direction se bloquera.", "isCorrect": False},
+                        {"text": "Le rétreint sera trop important et impossible à corriger.", "isCorrect": False}
                     ],
-                    "correction": "Les pièces de **sécurité** doivent impérativement être d'origine ou certifiées."
+                    "correction": "Rappel de Cours : Un chauffage excessif des aciers HLE détruit leur haute limite élastique. C'est pourquoi la réparation est souvent remplacée par le remplacement du panneau."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Qu'est-ce qu'une **Tôle galvanisée** ?",
+                    "question": "Quelle est l'importance de dégraisser une zone de travail avant d'appliquer l'apprêt ou le mastic ?",
                     "answerOptions": [
-                        {"text": "Une tôle très brillante.", "isCorrect": False},
-                        {"text": "Une tôle recouverte d'une couche protectrice de zinc (par trempage) pour une résistance maximale à la corrosion (rouille).", "isCorrect": True},
-                        {"text": "Une tôle très épaisse.", "isCorrect": False},
-                        {"text": "Une tôle en aluminium.", "isCorrect": False}
+                        {"text": "Pour garantir une adhérence chimique et mécanique optimale du produit, car toute trace de silicone, de graisse ou d'huile peut provoquer un décollement ou un rejet (cratering).", "isCorrect": True},
+                        {"text": "Pour améliorer l'odeur dans l'atelier.", "isCorrect": False},
+                        {"text": "Pour fluidifier le mastic et faciliter son application.", "isCorrect": False},
+                        {"text": "Pour durcir la tôle métallique sous-jacente.", "isCorrect": False}
                     ],
-                    "correction": "La **Galvanisation** protège l'acier de l'oxydation."
+                    "correction": "Rappel de Cours : Le dégraissage est une étape fondamentale. Les contaminants (silicone, huile) sont la cause principale des défauts d'adhérence ou des défauts visuels dans la peinture (trous de poisson)."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quel est le rôle de l'**apprêt époxy** sur un métal brut ?",
+                    "question": "Lors du débosselage, qu'est-ce qu'un « tas » ?",
                     "answerOptions": [
-                        {"text": "Remplir les creux.", "isCorrect": False},
-                        {"text": "Servir de primaire d'accrochage sur le métal nu (anti-rouille) et d'isolant (barrière) contre l'humidité (avant l'apprêt de garnissage).", "isCorrect": True},
-                        {"text": "Donner la couleur finale.", "isCorrect": False},
-                        {"text": "Lisser la surface.", "isCorrect": False}
+                        {"text": "Un bloc d'acier lourd et de forme spécifique (demi-lune, cuillère, etc.) qui sert de support immobile et d'enclume lors du travail au marteau, permettant de frapper la bosse contre une surface dure.", "isCorrect": True},
+                        {"text": "L'ensemble des pièces démontées qui attendent d'être remontées.", "isCorrect": False},
+                        {"text": "Le nom donné à la plus grosse déformation sur une carrosserie.", "isCorrect": False},
+                        {"text": "Un type de mastic très liquide pour les zones difficiles d'accès.", "isCorrect": False}
                     ],
-                    "correction": "L'**Apprêt époxy** est le meilleur primaire anti-corrosion."
+                    "correction": "Rappel de Cours : Le tas et le marteau sont les outils de base du carrossier. Le tas sert à contrer le choc pour que le marteau ramène la tôle à sa position initiale."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Comment appelle-t-on le revêtement qui, après séchage, donne la couleur visible mais qui n'a aucune protection mécanique (nécessite un vernis) ?",
+                    "question": "Pourquoi les points de contrôle d'une caisse redressée sur marbre doivent-ils correspondre aux cotes du constructeur (au millimètre près) ?",
                     "answerOptions": [
-                        {"text": "L'apprêt.", "isCorrect": False},
-                        {"text": "La Base mate (ou Base solvantée ou Hydro-diluable).", "isCorrect": True},
-                        {"text": "Le mastic.", "isCorrect": False},
-                        {"text": "L'époxy.", "isCorrect": False}
+                        {"text": "Pour garantir la sécurité passive (déformation programmée en cas de nouvel accident), la géométrie des trains roulants, et le bon montage des éléments neufs (ajustage).", "isCorrect": True},
+                        {"text": "Pour respecter une tradition de l'atelier sans impact réel.", "isCorrect": False},
+                        {"text": "Pour améliorer la réception radio du véhicule.", "isCorrect": False},
+                        {"text": "Uniquement pour le plaisir de l'expert en assurance.", "isCorrect": False}
                     ],
-                    "correction": "La **Base** est la couche de pigments."
+                    "correction": "Rappel de Cours : La structure du véhicule doit retrouver ses cotes d'origine. C'est une obligation légale et de sécurité pour le client."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Quel est l'outil utilisé pour évaluer l'épaisseur des couches de peinture et d'apprêt après réparation ?",
+                    "question": "Quel est l'outil indispensable pour vérifier la profondeur et la régularité d'une bosse après la première phase de débosselage, avant l'application du mastic ?",
                     "answerOptions": [
-                        {"text": "Le pied à coulisse.", "isCorrect": False},
-                        {"text": "Le Micromètre (ou Jauge d'épaisseur de film sec).", "isCorrect": True},
-                        {"text": "Le mètre ruban.", "isCorrect": False},
-                        {"text": "L'humidimètre.", "isCorrect": False}
+                        {"text": "Une règle de carrossier (ou règle à poncer) souple et/ou un réglet, utilisé(e) avec la main pour palper et identifier les zones creuses et les bosses résiduelles (hauts/bas).", "isCorrect": True},
+                        {"text": "Une simple éponge humide.", "isCorrect": False},
+                        {"text": "Un thermomètre à infrarouge.", "isCorrect": False},
+                        {"text": "Un outil de diagnostic électronique.", "isCorrect": False}
                     ],
-                    "correction": "Le **Micromètre** est essentiel pour vérifier que la réparation n'a pas créé de surépaisseur excessive."
+                    "correction": "Rappel de Cours : Le contrôle visuel ne suffit pas. L'utilisation d'une règle (ou d'un réglet) et le sens du toucher (palpation) sont les méthodes les plus fiables pour détecter les variations de niveau de la tôle."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Quel est le rôle du **Mastic à l'étain (brasure)** ?",
+                    "question": "Quelle est la principale méthode utilisée pour réparer les impacts de grêle sans peinture (DSP - Débosselage Sans Peinture) ?",
                     "answerOptions": [
-                        {"text": "Remplir les creux sans rigidité.", "isCorrect": False},
-                        {"text": "Réparer les tôles en aluminium ou combler de gros défauts sur acier, en offrant une finition très dure et résistante (sans utiliser de polyester/fibre).", "isCorrect": True},
-                        {"text": "Réparer les plastiques.", "isCorrect": False},
-                        {"text": "Coller les vitres.", "isCorrect": False}
+                        {"text": "L'utilisation de tiges et leviers spéciaux pour masser la tôle depuis l'intérieur, combinée à des ventouses de tirage par l'extérieur, sans endommager la peinture.", "isCorrect": True},
+                        {"text": "L'application d'un produit chimique qui fait disparaître la bosse par évaporation.", "isCorrect": False},
+                        {"text": "Uniquement l'utilisation d'un spotter (tire-clous).", "isCorrect": False},
+                        {"text": "La projection d'eau bouillante pour détendre la tôle.", "isCorrect": False}
                     ],
-                    "correction": "Le **Mastic à l'étain** est une technique de réparation traditionnelle, très solide mais complexe."
+                    "correction": "Rappel de Cours : La technique DSP est un métier de précision qui consiste à faire remonter la tôle par pression progressive de l'intérieur, ce qui permet de conserver la peinture d'origine."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quel est l'inconvénient principal des **Peintures Hydro-diluables (à l'eau)** ?",
+                    "question": "Quelle est la différence entre un « panneau vissé » et un « panneau soudé » en carrosserie ?",
                     "answerOptions": [
-                        {"text": "Elles sont moins chères.", "isCorrect": False},
-                        {"text": "Elles nécessitent plus de temps de séchage/évaporation avant le vernissage et sont plus sensibles à l'humidité et à la température lors de l'application (cabine obligatoire).", "isCorrect": True},
-                        {"text": "Elles sont plus toxiques.", "isCorrect": False},
-                        {"text": "Elles ont une mauvaise colorimétrie.", "isCorrect": False}
+                        {"text": "Les panneaux vissés (aile, porte) sont démontables et remplaçables facilement, tandis que les panneaux soudés (pavillon, montant, bas de caisse) font partie intégrante de la structure et nécessitent des techniques de découpe et de soudage pour leur remplacement.", "isCorrect": True},
+                        {"text": "Les panneaux vissés sont toujours en aluminium, les soudés en acier.", "isCorrect": False},
+                        {"text": "Les panneaux vissés sont uniquement utilisés pour les véhicules anciens.", "isCorrect": False},
+                        {"text": "Il n'y a aucune différence, seul le terme change selon l'expert.", "isCorrect": False}
                     ],
-                    "correction": "L'**Hydro-diluable** est la norme environnementale, mais exige un contrôle parfait de l'environnement de travail."
+                    "correction": "Rappel de Cours : Cette distinction est fondamentale pour déterminer la complexité et le coût de la réparation, et pour savoir si la réparation implique des éléments structurels (soudés) ou des éléments de tôlerie extérieure (vissés)."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quel est l'outil utilisé pour déterminer la formulation exacte d'une couleur d'origine (teinte d'un véhicule) ?",
+                    "question": "Qu'est-ce qu'un jeu d'alignement incorrect (un jeu trop grand ou trop petit) entre deux panneaux (ex : porte et aile) peut causer ?",
                     "answerOptions": [
-                        {"text": "Le pied à coulisse.", "isCorrect": False},
-                        {"text": "Le Spectrophotomètre (ou Colorimètre) pour mesurer les pigments et les effets (métallisé, nacré).", "isCorrect": True},
-                        {"text": "Le décapeur thermique.", "isCorrect": False},
-                        {"text": "Le marteau à planer.", "isCorrect": False}
+                        {"text": "Des bruits aérodynamiques, une mauvaise étanchéité à l'eau ou à l'air, et un aspect esthétique de mauvaise qualité.", "isCorrect": True},
+                        {"text": "Une panne de moteur.", "isCorrect": False},
+                        {"text": "Le blocage des freins.", "isCorrect": False},
+                        {"text": "Une usure prématurée des pneus avant.", "isCorrect": False}
                     ],
-                    "correction": "Le **Spectrophotomètre** est indispensable pour les teintes complexes (tri-couche, nacré)."
+                    "correction": "Rappel de Cours : L'ajustage est essentiel pour la fonctionnalité et l'esthétique. Un mauvais ajustage peut aussi empêcher les portes de se verrouiller correctement ou frotter sur la peinture voisine."
                 },
             ]
         },
-        # =========================================================================
-        # THÈME 3 : TECHNIQUES DE DÉFORMATION ET RÉPARATION (Q. 41-60)
-        # =========================================================================
         3: {
-            "name": "3. Techniques de Déformation et Réparation (Q. 41-60)",
+            "name": "THÈME 3 : Préparation et Application des Produits (Peinture) (Q. 41-60)",
             "questions": [
+                # =========================================================================
+                # QUESTIONS 41 à 60 : PEINTURE, PRÉPARATION ET FINITION
+                # =========================================================================
                 {
                     "questionNumber": 41,
-                    "question": "Quelle est la principale technique de réparation utilisée pour débosseler sans peinture (DSP) ?",
+                    "question": "Quelle est la principale fonction du Mastic Polyester dans la réparation ?",
                     "answerOptions": [
-                        {"text": "Le soudage.", "isCorrect": False},
-                        {"text": "Le massage de la tôle par l'intérieur (ou l'extérieur avec des ventouses) à l'aide de leviers spéciaux (tiges) pour faire remonter le creux sans abîmer la peinture.", "isCorrect": True},
-                        {"text": "Le ponçage.", "isCorrect": False},
-                        {"text": "Le remplissage au mastic.", "isCorrect": False}
+                        {"text": "Combler les creux et les irrégularités de surface après le débosselage pour obtenir un support parfaitement lisse et préparer la surface pour l'apprêt.", "isCorrect": True},
+                        {"text": "Servir de revêtement anti-corrosion pour le métal nu.", "isCorrect": False},
+                        {"text": "Fixer les éléments en plastique sur la carrosserie métallique.", "isCorrect": False},
+                        {"text": "Remplacer la soudure pour les réparations de tôle légère.", "isCorrect": False}
                     ],
-                    "correction": "La **DSP** est réservée aux impacts légers sans étirement ni dégradation de la peinture."
+                    "correction": "Rappel de Cours : Le mastic permet de compenser les petites imperfections qui n'ont pu être totalement éliminées par le débosselage (micro-creux, défauts de surface). Il doit être appliqué en couches minces."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Quel est l'outil utilisé pour **contre-frapper** (taper la bosse par l'intérieur) lors du débosselage (marteau/tas) ?",
+                    "question": "Qu'est-ce que l'« apprêt garnissant » (ou surfacer) ?",
                     "answerOptions": [
-                        {"text": "Le pistolet à peinture.", "isCorrect": False},
-                        {"text": "Le Tas (pièce métallique lourde et lisse, utilisé comme enclume ou support de frappe pour la rétreinte).", "isCorrect": True},
-                        {"text": "La spatule.", "isCorrect": False},
-                        {"text": "Le micromètre.", "isCorrect": False}
+                        {"text": "Une couche épaisse de peinture qui masque les défauts de débosselage sans mastic.", "isCorrect": False},
+                        {"text": "Un produit de préparation épais qui est appliqué après le mastic ou sur le métal/l'ancien revêtement, puis poncé, pour uniformiser la surface et combler les fines rayures du ponçage.", "isCorrect": True},
+                        {"text": "La couche de finition finale (le vernis).", "isCorrect": False},
+                        {"text": "Un additif pour faire sécher la peinture plus rapidement.", "isCorrect": False}
                     ],
-                    "correction": "Le **Tas** assure que la force de frappe est appliquée uniquement sur la zone souhaitée."
+                    "correction": "Rappel de Cours : L'apprêt garnissant est essentiel pour la finition. Il crée une surface uniforme (isolant) sur laquelle la base couleur sera appliquée. Il doit être poncé très finement."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Comment appelle-t-on le procédé qui consiste à chauffer une tôle pour la contracter (rétrécir) et la faire revenir à sa forme initiale ?",
+                    "question": "Quel est le grain de ponçage le plus fin (P-grit) que l'on doit utiliser sur l'apprêt avant d'appliquer la base couleur ou le vernis (pour éviter l'apparition des rayures sous la peinture) ?",
                     "answerOptions": [
-                        {"text": "Le soudage.", "isCorrect": False},
-                        {"text": "La Rétreinte (chauffage ciblé au chalumeau ou à l'électrode en étoile, suivi d'un refroidissement rapide).", "isCorrect": True},
-                        {"text": "Le planage.", "isCorrect": False},
-                        {"text": "Le ponçage.", "isCorrect": False}
+                        {"text": "P320 (gros grain).", "isCorrect": False},
+                        {"text": "P800 à P1200 (très fin, pour l'apprêt).", "isCorrect": True},
+                        {"text": "P40 (très grossier, pour le décapage).", "isCorrect": False},
+                        {"text": "P5000 (finition polissage).", "isCorrect": False}
                     ],
-                    "correction": "La **Rétreinte** est utilisée pour éliminer l'étirement excessif de la tôle."
+                    "correction": "Rappel de Cours : L'apprêt doit être poncé très finement (minimum P800, souvent P1000 ou P1200 en fonction de la couleur) pour éviter que le grain de ponçage ne soit visible sous la peinture de finition."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quel est le risque de trop **tirer** une tôle endommagée au Tire-Clou ?",
+                    "question": "Quelle est la fonction principale du « catalyseur » (ou durcisseur) dans la peinture bi-composant ?",
                     "answerOptions": [
-                        {"text": "Le métal rouille.", "isCorrect": False},
-                        {"text": "La tôle s'étire (ou s'allonge) créant une nouvelle bosse (un point dur) et nécessitant une rétreinte pour la contracter.", "isCorrect": True},
-                        {"text": "La peinture se décolle.", "isCorrect": False},
-                        {"text": "Le mastic ne tient pas.", "isCorrect": False}
+                        {"text": "Déclencher la réaction chimique de polymérisation (séchage) du produit (apprêt, vernis ou peinture) pour qu'il durcisse et résiste aux agents chimiques et aux chocs.", "isCorrect": True},
+                        {"text": "Donner la couleur finale à la peinture.", "isCorrect": False},
+                        {"text": "Améliorer l'odeur du produit pendant l'application.", "isCorrect": False},
+                        {"text": "Nettoyer le pistolet après utilisation.", "isCorrect": False}
                     ],
-                    "correction": "Le débosselage se fait par **petites touches** pour ne pas étirer le métal."
+                    "correction": "Rappel de Cours : Le catalyseur est vital. Sans lui, les produits bi-composants ne durciraient pas et resteraient poisseux."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Quelle est la technique de préparation du métal brut (après ponçage ou meulage) avant application d'un primaire ?",
+                    "question": "Quel défaut visuel de la peinture se caractérise par de petites crevasses ou des plis qui se forment lors de l'application d'une nouvelle couche, souvent causés par une incompatibilité chimique avec l'ancienne peinture ou par l'application d'une couche trop épaisse sur un produit pas assez sec ?",
                     "answerOptions": [
-                        {"text": "Le laquage.", "isCorrect": False},
-                        {"text": "Le Dégraissage puis l'Application d'un Primaire d'accrochage (souvent époxy ou phosphatant) pour éviter la corrosion immédiate (rouille éclair).", "isCorrect": True},
-                        {"text": "Le polissage.", "isCorrect": False},
-                        {"text": "Le soudage.", "isCorrect": False}
+                        {"text": "Le Farinage.", "isCorrect": False},
+                        {"text": "Le Cratering (trous de poisson).", "isCorrect": False},
+                        {"text": "Le Tressage (ou peau d'orange).", "isCorrect": False},
+                        {"text": "Le Craquelage (ou Crazing/Lifting).", "isCorrect": True}
                     ],
-                    "correction": "Le métal doit être protégé très rapidement contre l'**oxydation**."
+                    "correction": "Rappel de Cours : Le craquelage (ou 'Lifting') se produit lorsque le solvant de la nouvelle couche attaque la couche inférieure, créant une réaction chimique non désirée."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Comment s'appelle l'outil qui permet de déformer et de positionner le châssis ou la caisse sur le **marbre** ?",
+                    "question": "Quelle est la méthode recommandée pour nettoyer un pistolet de peinture après utilisation ?",
                     "answerOptions": [
-                        {"text": "Le cric.", "isCorrect": False},
-                        {"text": "La Tour de redressage ou la Poutre de traction (avec vérins et chaînes).", "isCorrect": True},
-                        {"text": "Le pistolet à souder.", "isCorrect": False},
-                        {"text": "Le micromètre.", "isCorrect": False}
+                        {"text": "Démonter le pistolet et le nettoyer immédiatement avec le diluant approprié pour éviter que le produit ne sèche et ne bouche les buses et conduits.", "isCorrect": True},
+                        {"text": "Le laisser tremper une nuit dans l'eau tiède.", "isCorrect": False},
+                        {"text": "Utiliser un jet de sable très fin pour décoller les résidus.", "isCorrect": False},
+                        {"text": "Le nettoyer uniquement une fois par semaine.", "isCorrect": False}
                     ],
-                    "correction": "La **Tour de redressage** applique une force contrôlée pour corriger la géométrie du châssis."
+                    "correction": "Rappel de Cours : La propreté du pistolet est essentielle pour la qualité du pistolage. Le nettoyage immédiat avec le bon solvant prévient l'encrassement."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Quel est l'inconvénient du **soudage MAG** par rapport au TIG (pour l'acier) ?",
+                    "question": "Quelle est la fonction d'un 'nuancier' ou d'un 'spectrophotomètre' en cabine de peinture ?",
                     "answerOptions": [
-                        {"text": "Il est plus lent.", "isCorrect": False},
-                        {"text": "Il laisse plus de projections (gratons), nécessite un nettoyage plus important et le cordon de soudure est plus épais (moins esthétique).", "isCorrect": True},
-                        {"text": "Il n'est pas automatique.", "isCorrect": False},
-                        {"text": "Il ne soude pas l'acier.", "isCorrect": False}
+                        {"text": "Identifier la couleur exacte du véhicule à peindre, pour garantir la meilleure correspondance possible avec la peinture d'origine (Recherche de teinte).", "isCorrect": True},
+                        {"text": "Mesurer la pression de l'air dans la cabine.", "isCorrect": False},
+                        {"text": "Vérifier la planéité de la carrosserie.", "isCorrect": False},
+                        {"text": "Calculer le temps de séchage en fonction de l'humidité ambiante.", "isCorrect": False}
                     ],
-                    "correction": "Le **MAG** (avec fil fourré ou fil plein et gaz actif) est le plus courant en carrosserie pour sa rapidité."
+                    "correction": "Rappel de Cours : La recherche de teinte est la première étape en peinture. Le spectrophotomètre est un outil numérique qui analyse la couleur du véhicule pour trouver la formule exacte dans la base de données du fabricant de peinture."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quel est le risque de poncer une vieille peinture sans savoir si elle contient de l'amiante ou du plomb (vieux véhicules) ?",
+                    "question": "Qu'est-ce que l'« effet peau d'orange » (ou Tressage) dans la peinture ?",
                     "answerOptions": [
-                        {"text": "Le ponçage est inefficace.", "isCorrect": False},
-                        {"text": "Inhalation de particules extrêmement dangereuses (plomb ou amiante) entraînant des maladies graves (silicose, cancer).", "isCorrect": True},
-                        {"text": "La tôle se déforme.", "isCorrect": False},
-                        {"text": "La peinture devient trop brillante.", "isCorrect": False}
+                        {"text": "Un aspect de la peinture qui ressemble à la texture d'une écorce d'orange, dû à une viscosité trop élevée, un réglage incorrect du pistolet ou un mauvais mouillage de la surface.", "isCorrect": True},
+                        {"text": "Une couleur qui devient orange sous l'effet du soleil.", "isCorrect": False},
+                        {"text": "Un défaut causé par une rayure profonde dans l'apprêt.", "isCorrect": False},
+                        {"text": "Un défaut causé par la poussière dans la cabine.", "isCorrect": False}
                     ],
-                    "correction": "Le **diagnostic** des matériaux anciens est une obligation."
+                    "correction": "Rappel de Cours : La peau d'orange réduit le brillant de la peinture. Elle est souvent corrigée par un ponçage fin (P1500 ou plus) suivi d'un polissage."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Comment s'appelle l'outil de mesurage qui permet de vérifier l'écartement des longerons par rapport à l'axe central du véhicule (après un choc avant/arrière) ?",
+                    "question": "Pourquoi est-il important de poncer légèrement les plastiques neufs (pare-chocs, rétroviseurs) avant d'appliquer un primaire d'adhérence ?",
                     "answerOptions": [
-                        {"text": "Le pied à coulisse.", "isCorrect": False},
-                        {"text": "La Pige de mesure (ou Équerre de mesure géométrique).", "isCorrect": True},
-                        {"text": "Le micromètre.", "isCorrect": False},
-                        {"text": "Le décamètre.", "isCorrect": False}
+                        {"text": "Pour créer une légère rugosité mécanique (micro-rayures) qui favorisera l'accroche du primaire d'adhérence et de l'apprêt, car les plastiques lisses n'offrent aucune accroche.", "isCorrect": True},
+                        {"text": "Pour enlever la couleur noire du plastique et le rendre transparent.", "isCorrect": False},
+                        {"text": "Pour durcir le plastique et le rendre plus résistant aux chocs.", "isCorrect": False},
+                        {"text": "Pour retirer les fils électriques qui dépassent.", "isCorrect": False}
                     ],
-                    "correction": "La **Pige** ou le marbre permet de vérifier la conformité aux cotes constructeur."
+                    "correction": "Rappel de Cours : Le plastique est un support non poreux et chimiquement inerte. Sans un primaire d'adhérence spécifique et un léger ponçage, la peinture et l'apprêt se décolleraient facilement à cause des flexions ou des chocs thermiques."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Quel est le rôle du **dégraissage avec un chiffon humide** (non sec) ?",
+                    "question": "Quel est le rôle du vernis (ou laque) dans la peinture bi-couche (base mate + vernis) ?",
                     "answerOptions": [
-                        {"text": "Rendre la surface plus rugueuse.", "isCorrect": False},
-                        {"text": "Le chiffon est humidifié par le dégraissant pour emprisonner et retirer les impuretés (au lieu de les étaler), puis un chiffon sec est utilisé pour essuyer l'excès.", "isCorrect": True},
-                        {"text": "Rendre la surface plus lisse.", "isCorrect": False},
-                        {"text": "Laisser des traces.", "isCorrect": False}
+                        {"text": "Fournir la brillance, la profondeur de la couleur, et assurer la protection contre les UV, les intempéries et les micro-rayures.", "isCorrect": True},
+                        {"text": "Donner la couleur exacte au véhicule.", "isCorrect": False},
+                        {"text": "Servir uniquement de dégraissant avant la peinture.", "isCorrect": False},
+                        {"text": "Remplacer l'apprêt garnissant.", "isCorrect": False}
                     ],
-                    "correction": "Le dégraissage doit se faire en **deux étapes** (humide puis sec) pour éviter l'étalement des contaminants."
+                    "correction": "Rappel de Cours : Dans un système bi-couche (le plus commun), la base contient les pigments de couleur, mais c'est le vernis qui assure la protection et la finition esthétique."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Quelle est la cause principale de l'apparition de **cloques** dans la peinture après séchage ?",
+                    "question": "Qu'est-ce qu'un « marouflage » en peinture ?",
                     "answerOptions": [
-                        {"text": "La peinture était trop liquide.", "isCorrect": False},
-                        {"text": "De l'humidité ou des contaminants (graisse, silicone, poussière) sont emprisonnés sous la couche de finition, ou un mauvais temps de séchage entre les couches.", "isCorrect": True},
-                        {"text": "La peinture était trop épaisse.", "isCorrect": False},
-                        {"text": "Le vernis était trop brillant.", "isCorrect": False}
+                        {"text": "L'action de masquer les parties du véhicule (vitres, joints, pneus) qui ne doivent pas recevoir de peinture, en utilisant du ruban adhésif et des films de protection (papier ou plastique).", "isCorrect": True},
+                        {"text": "Le mélange de la peinture et du catalyseur dans le godet.", "isCorrect": False},
+                        {"text": "Le polissage final de la peinture après séchage.", "isCorrect": False},
+                        {"text": "Le décapage de l'ancienne peinture avec un produit chimique.", "isCorrect": False}
                     ],
-                    "correction": "Les **cloques** sont généralement dues à l'humidité ou à une mauvaise préparation."
+                    "correction": "Rappel de Cours : Le marouflage est une étape cruciale pour garantir la netteté des bords et éviter les projections indésirables."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quel est l'objectif du **ponçage par étape** (granulométrie croissante, ex : P80, P180, P400) ?",
+                    "question": "Quel est le risque de poncer une vieille peinture sans utiliser de masque de protection respiratoire approprié (filtres P3) ?",
                     "answerOptions": [
-                        {"text": "Allonger le temps de travail.", "isCorrect": False},
-                        {"text": "Éliminer progressivement les défauts laissés par le grain précédent (rayures) pour obtenir une surface parfaitement lisse (l'apprêt ne doit pas révéler les rayures du ponçage précédent).", "isCorrect": True},
-                        {"text": "Rendre la surface rugueuse.", "isCorrect": False},
-                        {"text": "Économiser du papier.", "isCorrect": False}
+                        {"text": "Inhalation de poussières de métaux lourds et de vieux pigments potentiellement toxiques ou cancérigènes, même si les isocyanates ne sont pas présents.", "isCorrect": True},
+                        {"text": "Une mauvaise adhérence de l'apprêt.", "isCorrect": False},
+                        {"text": "Le durcissement du mastic.", "isCorrect": False},
+                        {"text": "L'apparition d'un effet 'peau d'orange'.", "isCorrect": False}
                     ],
-                    "correction": "Le respect de la **granulométrie** est essentiel pour une finition sans défaut."
+                    "correction": "Rappel de Cours : Même les vieilles peintures dégagent des poussières dangereuses. Une protection respiratoire adaptée au ponçage est toujours nécessaire."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quelle est la fonction d'un **apprêt garnissant (ou bouche-pores)** ?",
+                    "question": "Quelle est la fonction du diluant (ou du réducteur) dans une peinture automobile liquide ?",
                     "answerOptions": [
-                        {"text": "Donner la couleur finale.", "isCorrect": False},
-                        {"text": "Combler les petites imperfections de la surface après masticage et ponçage (rayures P180-P240) et créer une couche isolante avant la peinture de finition.", "isCorrect": True},
-                        {"text": "Protéger le métal de la corrosion.", "isCorrect": False},
-                        {"text": "Dégraisser la surface.", "isCorrect": False}
+                        {"text": "Ajuster la viscosité du produit pour un pistolage optimal et conforme aux réglages du pistolet, et aider au séchage en s'évaporant.", "isCorrect": True},
+                        {"text": "Changer la couleur de la peinture.", "isCorrect": False},
+                        {"text": "Remplacer le catalyseur.", "isCorrect": False},
+                        {"text": "Servir uniquement de produit de nettoyage.", "isCorrect": False}
                     ],
-                    "correction": "L'**Apprêt garnissant** est la couche de préparation pour le ponçage final."
+                    "correction": "Rappel de Cours : Le diluant est ajouté pour fluidifier le produit et garantir une application uniforme et un bon tendu de la peinture (surface lisse)."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quel est le risque de ne pas utiliser le **durcisseur** adapté à la température de la cabine (durcisseur trop rapide par temps froid) ?",
+                    "question": "Lors du polissage de la carrosserie, pourquoi doit-on toujours utiliser un tampon de polissage et de la pâte à polir sur une machine rotative (lustreuse) et non pas uniquement à la main ?",
                     "answerOptions": [
-                        {"text": "Le vernis coule.", "isCorrect": False},
-                        {"text": "Le vernis sèche trop vite en surface (peau) et ne durcit pas en profondeur (défaut de cuisson/polymérisation, surface poisseuse ou molle).", "isCorrect": True},
-                        {"text": "Le vernis est trop brillant.", "isCorrect": False},
-                        {"text": "Le vernis devient mat.", "isCorrect": False}
+                        {"text": "Pour garantir la vitesse et la pression constantes et nécessaires à la friction qui va retirer les micro-rayures et les défauts de la couche de vernis, ce qui est impossible à reproduire manuellement.", "isCorrect": True},
+                        {"text": "Le polissage à la main est interdit par le constructeur.", "isCorrect": False},
+                        {"text": "La machine permet d'appliquer la cire protectrice sans effort.", "isCorrect": False},
+                        {"text": "La machine sert uniquement à appliquer le dégraissant.", "isCorrect": False}
                     ],
-                    "correction": "Le choix du **durcisseur** (standard, rapide, lent) est dicté par la température de l'atelier/cabine."
+                    "correction": "Rappel de Cours : Le polissage (ou lustrage) est un micro-ponçage qui nécessite de la vitesse et de la chaleur pour 'fondre' la surface du vernis. Seule une machine peut obtenir ce résultat."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quel est le risque si la **pression d'air** du pistolet à peinture est trop faible ?",
+                    "question": "Quelle est la technique de peinture utilisée pour fondre la couleur neuve dans l'ancienne, généralement utilisée sur les panneaux adjacents à celui qui a été réparé, pour masquer les différences de teinte (métallisé/nacré) ?",
                     "answerOptions": [
-                        {"text": "Le brouillard est trop fin.", "isCorrect": False},
-                        {"text": "Le jet de peinture est mal pulvérisé (gros grain), ce qui crée l'effet 'peau d'orange' ou des défauts de mouillage.", "isCorrect": True},
-                        {"text": "La peinture coule.", "isCorrect": False},
-                        {"text": "La peinture sèche trop vite.", "isCorrect": False}
+                        {"text": "Le pistolage uniforme.", "isCorrect": False},
+                        {"text": "Le raccord noyé (ou Fading/Blending).", "isCorrect": True},
+                        {"text": "L'application au pinceau.", "isCorrect": False},
+                        {"text": "Le décapage total.", "isCorrect": False}
                     ],
-                    "correction": "La **pression** d'air (souvent 2 à 3 bars) doit être adaptée à la viscosité de la peinture et au type de pistolet (HVLP, conventionnel)."
+                    "correction": "Rappel de Cours : Le raccord noyé est essentiel, surtout avec les teintes complexes (métallisées ou nacrées). Il consiste à pulvériser une brume de la base couleur sur la zone adjacente pour que la différence de couleur soit imperceptible."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Comment s'appelle l'opération qui consiste à **estomper** la peinture (la base) sur une zone adjacente à la zone réparée pour masquer le raccord de couleur ?",
+                    "question": "Quel est l'intérêt d'utiliser une cabine de peinture ventilée et pressurisée ?",
                     "answerOptions": [
-                        {"text": "Le masquage.", "isCorrect": False},
-                        {"text": "Le Raccord noyé ou Raccord fondu (la base est étirée ou diffusée par l'air ou le diluant de raccordement).", "isCorrect": True},
-                        {"text": "Le mouillage.", "isCorrect": False},
-                        {"text": "Le garnissage.", "isCorrect": False}
+                        {"text": "Maintenir un environnement de travail sans poussière, avec une température et un flux d'air contrôlés (laminaire), assurant une application de peinture de haute qualité et sécurisant l'opérateur.", "isCorrect": True},
+                        {"text": "Elle permet de sécher le mastic plus rapidement.", "isCorrect": False},
+                        {"text": "Elle permet de débosseler la tôle par aspiration.", "isCorrect": False},
+                        {"text": "Elle sert uniquement de zone de stockage des pièces neuves.", "isCorrect": False}
                     ],
-                    "correction": "Le **Raccord noyé** est indispensable pour les teintes complexes ou vieillies."
+                    "correction": "Rappel de Cours : La cabine est le cœur de la peinture. Le flux d'air (laminaire) empêche la poussière de se déposer sur la carrosserie fraîchement peinte."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Quel est le rôle du **filtre à air** (ou séparateur d'eau) sur le circuit d'air comprimé de l'atelier ?",
+                    "question": "Après un polissage, quelle opération est essentielle pour préparer la carrosserie à l'application d'une cire de protection ou d'un traitement céramique ?",
                     "answerOptions": [
-                        {"text": "Réguler la pression.", "isCorrect": False},
-                        {"text": "Éliminer l'humidité (eau) et les impuretés/huiles du compresseur qui pourraient contaminer la peinture et causer des défauts (cratères, piqûres).", "isCorrect": True},
-                        {"text": "Augmenter le débit.", "isCorrect": False},
-                        {"text": "Refroidir l'air.", "isCorrect": False}
+                        {"text": "Un nettoyage en profondeur (dégraissage) avec un produit anti-silicone (IPA ou Cleaner) pour retirer tous les résidus de pâte à polir, qui pourraient masquer les défauts ou empêcher l'adhérence du revêtement.", "isCorrect": True},
+                        {"text": "L'application d'une couche d'apprêt garnissant transparent.", "isCorrect": False},
+                        {"text": "Le ponçage à sec avec un P100 pour créer une base d'accroche.", "isCorrect": False},
+                        {"text": "Un polissage intensif à l'eau.", "isCorrect": False}
                     ],
-                    "correction": "Un air **propre et sec** est fondamental pour une peinture de qualité."
+                    "correction": "Rappel de Cours : Les pâtes à polir laissent des résidus gras ou des \"fillers\" (produits qui masquent temporairement les défauts). Pour une protection durable (cire ou céramique), la surface doit être parfaitement propre et exempte de ces résidus."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quelle est la cause principale d'un défaut de peinture appelé **« peau d'orange »** ?",
+                    "question": "Quel est l'objectif du ponçage \"à sec\" (sans eau) ?",
                     "answerOptions": [
-                        {"text": "La surface était trop lisse.", "isCorrect": False},
-                        {"text": "Viscosité trop élevée (peinture trop épaisse), pression d'air trop basse, distance pistolet/support trop grande, ou un vernis/diluant mal adapté.", "isCorrect": True},
-                        {"text": "La peinture était trop diluée.", "isCorrect": False},
-                        {"text": "Le séchage était trop lent.", "isCorrect": False}
+                        {"text": "Éviter la formation de rouille sur le métal nu et permettre au papier abrasif (souvent auto-agrippant et aspiré par la machine) de ne pas se saturer trop vite, en particulier pour les gros grains (mastic/apprêt).", "isCorrect": True},
+                        {"text": "Il est réservé uniquement aux peintures à l'eau.", "isCorrect": False},
+                        {"text": "Il est utilisé pour les finitions brillantes.", "isCorrect": False},
+                        {"text": "Il crée une surface parfaitement lisse pour le vernis.", "isCorrect": False}
                     ],
-                    "correction": "La **Peau d'orange** est un manque de tension de surface (mauvais étalement du film)."
+                    "correction": "Rappel de Cours : Le ponçage à sec est la norme pour le mastic, l'apprêt et le métal nu. L'eau est principalement utilisée pour le ponçage de finition du vernis (P1500 à P3000)."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Comment s'appelle l'opération qui consiste à éliminer les poussières et les impuretés sur la surface avant le vernissage (souvent avec un chiffon collant) ?",
+                    "question": "Quel est l'outil utilisé pour enlever les contaminations incrustées dans la couche de vernis (sève, goudron, poussières de frein) avant le polissage ?",
                     "answerOptions": [
-                        {"text": "Le dégraissage.", "isCorrect": False},
-                        {"text": "L'Époussetage (avec un tampon d'essuyage ou un chiffon de dépoussiérage collant).", "isCorrect": True},
-                        {"text": "Le ponçage.", "isCorrect": False},
-                        {"text": "Le masquage.", "isCorrect": False}
+                        {"text": "La gomme de décontamination (Clay Bar) et un lubrifiant adapté.", "isCorrect": True},
+                        {"text": "Un burin de carrossier.", "isCorrect": False},
+                        {"text": "Un pistolet à peinture avec une buse très fine.", "isCorrect": False},
+                        {"text": "Un grattoir métallique.", "isCorrect": False}
                     ],
-                    "correction": "L'**Époussetage** final est crucial avant l'application de la base et du vernis."
+                    "correction": "Rappel de Cours : La gomme de décontamination est un produit argileux très malléable qui, frotté sur la surface lubrifiée, permet de retirer les contaminants qui seraient sinon abrasifs et causeraient des rayures au polissage."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quel est le risque de ne pas respecter le **temps d'évaporation** entre la couche de base (peinture couleur) et la couche de vernis ?",
+                    "question": "Quelle est la principale cause de l'apparition de « coulures » (ou larmes) dans la peinture ou le vernis ?",
                     "answerOptions": [
-                        {"text": "Le vernis ne brille pas.", "isCorrect": False},
-                        {"text": "Le solvant de la base (encore présent) peut remonter à travers le vernis et créer des défauts (taches, matité, craquelures ou 'remontée de la laque').", "isCorrect": True},
-                        {"text": "La couleur change.", "isCorrect": False},
-                        {"text": "Le vernis coule.", "isCorrect": False}
+                        {"text": "L'application d'une couche trop épaisse de produit, un pistolage trop lent, ou une viscosité trop faible (trop de diluant), ce qui fait que le produit coule sous son propre poids avant de sécher.", "isCorrect": True},
+                        {"text": "Une cabine de peinture trop chaude.", "isCorrect": False},
+                        {"text": "Une surface de carrosserie trop rugueuse.", "isCorrect": False},
+                        {"text": "Un dégraissage excessif de la surface.", "isCorrect": False}
                     ],
-                    "correction": "Le **temps d'évaporation** (ou flash-off) est essentiel pour que le solvant s'échappe de la base."
+                    "correction": "Rappel de Cours : Les coulures sont un défaut d'application. Elles se corrigent par un ponçage à l'eau de la zone affectée, puis un polissage, ou, si le défaut est trop important, par l'application d'une nouvelle couche après ponçage."
                 },
             ]
         },
-        # =========================================================================
-        # THÈME 4 : PEINTURE ET PRÉPARATION (Q. 61-80)
-        # =========================================================================
         4: {
-            "name": "4. Peinture et Préparation (Q. 61-80)",
+            "name": "THÈME 4 : Soudage, Collage et Systèmes de Carrosserie (Q. 61-80)",
             "questions": [
+                # =========================================================================
+                # QUESTIONS 61 à 80 : SOUDURE, COLLAGE, VITRAGE ET PLASTIQUE
+                # =========================================================================
                 {
                     "questionNumber": 61,
-                    "question": "Quel est le rôle du **papier de masquage** (papier kraft) ?",
+                    "question": "Quel est l'avantage du soudage MIG/MAG par rapport au soudage à l'arc électrode enrobée dans le cadre de la carrosserie ?",
                     "answerOptions": [
-                        {"text": "Protéger la zone à peindre.", "isCorrect": False},
-                        {"text": "Protéger les parties non à peindre (vitres, pneus, joints, intérieur) contre le brouillard de pulvérisation.", "isCorrect": True},
-                        {"text": "Dégraisser le support.", "isCorrect": False},
-                        {"text": "Poncer la carrosserie.", "isCorrect": False}
+                        {"text": "Meilleure qualité du cordon de soudure, possibilité de souder des tôles fines (moins de 1,5 mm) et vitesse d'exécution élevée.", "isCorrect": True},
+                        {"text": "Coût des consommables beaucoup plus faible (gaz).", "isCorrect": False},
+                        {"text": "Meilleur pour le soudage des plastiques.", "isCorrect": False},
+                        {"text": "Moins de projection d'étincelles (scories).", "isCorrect": False}
                     ],
-                    "correction": "Le **Masquage** assure une délimitation propre et une protection intégrale du véhicule."
+                    "correction": "Rappel de Cours : Le MIG/MAG (semi-automatique) est adapté aux faibles épaisseurs de la carrosserie. Il offre une soudure plus propre et un meilleur contrôle de l'apport de chaleur, limitant la déformation des tôles."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quel est le risque d'utiliser un **ruban de masquage classique** (pour la maison) en carrosserie ?",
+                    "question": "Quelle est la fonction principale du primaire sur un pare-brise neuf avant la pose du cordon de colle ?",
                     "answerOptions": [
-                        {"text": "Il est trop cher.", "isCorrect": False},
-                        {"text": "Il laisse des résidus de colle, est peu résistant aux solvants de la peinture et peut ne pas être adapté aux courbes (contrairement au ruban 'fineline').", "isCorrect": True},
-                        {"text": "Il est trop large.", "isCorrect": False},
-                        {"text": "Il déchire la peinture.", "isCorrect": False}
+                        {"text": "Assurer l'adhérence maximale et l'étanchéité de la colle polyuréthane sur le verre et sur la carrosserie, et servir d'anti-UV pour le joint de colle.", "isCorrect": True},
+                        {"text": "Nettoyer les traces de doigts sur le verre.", "isCorrect": False},
+                        {"text": "Augmenter la résistance aux rayures du verre.", "isCorrect": False},
+                        {"text": "Rendre la colle plus souple et plus liquide.", "isCorrect": False}
                     ],
-                    "correction": "Le **ruban de masquage professionnel** est résistant aux solvants et à la chaleur de la cabine."
+                    "correction": "Rappel de Cours : Le primaire (ou activateur/black-out) est essentiel. Sans lui, la colle ne tiendra pas de manière fiable à long terme, ce qui est critique pour la sécurité (le pare-brise étant un élément structurel important sur les véhicules modernes)."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Comment s'appelle l'opération qui consiste à corriger un défaut de peinture (poussière, coulure) après séchage ?",
+                    "question": "Quelle est la principale méthode utilisée pour réparer une fente sur un élément de carénage en plastique (pare-chocs, support de phare) ?",
                     "answerOptions": [
-                        {"text": "Le dégraissage.", "isCorrect": False},
-                        {"text": "Le Ponçage à l'eau très fin (P1500 à P3000) suivi du Polissage (lustrage) pour retrouver la brillance.", "isCorrect": True},
-                        {"text": "Le masquage.", "isCorrect": False},
-                        {"text": "Le garnissage.", "isCorrect": False}
+                        {"text": "Le soudage du plastique par fusion (souvent avec un apport de matière) ou le collage bi-composant spécifique pour plastique.", "isCorrect": True},
+                        {"text": "L'utilisation d'un tas et d'un marteau pour le redresser.", "isCorrect": False},
+                        {"text": "Le ponçage à sec avec un P4000 pour la rendre invisible.", "isCorrect": False},
+                        {"text": "L'application d'un vernis très épais pour combler la fente.", "isCorrect": False}
                     ],
-                    "correction": "Le **Polissage** est la touche finale pour un aspect impeccable."
+                    "correction": "Rappel de Cours : Les plastiques nécessitent un soudage (souvent à l'air chaud ou par friction) ou un collage structurel avec des produits souples pour résister à la flexion."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quel est l'outil utilisé pour poncer des surfaces courbes ou difficiles d'accès sans créer de creux ou de bosses ?",
+                    "question": "Pourquoi la carrosserie des véhicules modernes intègre-t-elle de plus en plus de colles et d'adhésifs (collage structurel) en plus du soudage ?",
                     "answerOptions": [
-                        {"text": "La cale rigide.", "isCorrect": False},
-                        {"text": "La Cale souple (ou Cale à main en mousse ou caoutchouc).", "isCorrect": True},
-                        {"text": "La ponceuse rotative.", "isCorrect": False},
-                        {"text": "Le pistolet à peinture.", "isCorrect": False}
+                        {"text": "Pour augmenter la rigidité de la caisse, améliorer la sécurité en cas d'impact et réduire les vibrations (bruit) en créant une liaison continue entre les éléments, surtout sur les aciers HLE qui sont difficiles à souder.", "isCorrect": True},
+                        {"text": "Pour faire des économies de main-d'œuvre importantes.", "isCorrect": False},
+                        {"text": "Pour rendre la réparation totalement impossible pour la concurrence.", "isCorrect": False},
+                        {"text": "Uniquement pour coller les joints en caoutchouc.", "isCorrect": False}
                     ],
-                    "correction": "La **cale souple** épouse les formes du panneau."
+                    "correction": "Rappel de Cours : Le collage structurel est une méthode d'assemblage moderne qui améliore les performances et la sécurité du véhicule en répartissant les contraintes sur une surface plus large que le point de soudure."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est le rôle du **dégraissant antistatique** (souvent pour les plastiques) ?",
+                    "question": "Quel type de protection anti-corrosion doit être appliqué sur les zones d'une tôle qui ont été décapées ou soudées avant l'application du mastic/apprêt ?",
                     "answerOptions": [
-                        {"text": "Rendre le plastique collant.", "isCorrect": False},
-                        {"text": "Éliminer la charge statique sur le plastique pour empêcher la poussière d'y adhérer (important avant l'apprêt plastique).", "isCorrect": True},
-                        {"text": "Le rendre plus rugueux.", "isCorrect": False},
-                        {"text": "Le rendre plus souple.", "isCorrect": False}
+                        {"text": "Un primaire époxy ou un primaire phosphatant (wash primer) pour isoler le métal nu et garantir une protection chimique durable contre la rouille.", "isCorrect": True},
+                        {"text": "Du vernis transparent pour lustrer.", "isCorrect": False},
+                        {"text": "Un simple dégrippant.", "isCorrect": False},
+                        {"text": "Du mastic polyester directement sur le métal nu.", "isCorrect": False}
                     ],
-                    "correction": "Les **plastiques** attirent la poussière par électrostatisme."
+                    "correction": "Rappel de Cours : Le métal nu rouille rapidement. Les primaires anticorrosion sont essentiels pour assurer la durabilité de la réparation."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Quel est le type de peinture qui utilise un **vernis bi-couche** (Base mate + Vernis) ?",
+                    "question": "Quelle précaution faut-il prendre lors du soudage d'un panneau à l'intérieur du véhicule (par exemple sur un bas de caisse) ?",
                     "answerOptions": [
-                        {"text": "Les teintes unies (non métallisées) non brillantes.", "isCorrect": False},
-                        {"text": "Les teintes Métallisées, Nacrées et les bases Hydro-diluables (la protection et la brillance sont apportées par la couche de vernis).", "isCorrect": True},
-                        {"text": "Les teintes mates.", "isCorrect": False},
-                        {"text": "Les apprêts.", "isCorrect": False}
+                        {"text": "Démonter ou éloigner les éléments inflammables, les garnitures, les faisceaux électriques et les réservoirs pour éviter tout départ de feu ou tout dommage par la chaleur ou les projections (étincelles).", "isCorrect": True},
+                        {"text": "Ouvrir toutes les portes pour aérer.", "isCorrect": False},
+                        {"text": "Augmenter la puissance du poste de soudure au maximum.", "isCorrect": False},
+                        {"text": "Coller un ruban adhésif rouge sur la zone de soudure.", "isCorrect": False}
                     ],
-                    "correction": "Le **Bi-couche** est le système le plus répandu (brillance et protection dans le vernis)."
+                    "correction": "Rappel de Cours : Le risque d'incendie est élevé lors de la soudure à proximité de matériaux inflammables. La sécurité incendie et la protection des éléments internes sont primordiales."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Comment appelle-t-on le défaut où la peinture s'écaille ou se décolle du support après un certain temps ?",
+                    "question": "Pourquoi doit-on utiliser un outil spécifique pour découper le cordon de colle d'un pare-brise (couteau électrique vibrant, fil d'acier) ?",
                     "answerOptions": [
-                        {"text": "Le farinage.", "isCorrect": False},
-                        {"text": "Le Décollement (problème d'adhérence du primaire/mastic sur la tôle, souvent dû à un mauvais dégraissage ou à un ponçage insuffisant).", "isCorrect": True},
-                        {"text": "Le jaunissement.", "isCorrect": False},
-                        {"text": "La craquelure.", "isCorrect": False}
+                        {"text": "Pour couper le cordon de colle proprement sans endommager la carrosserie (peinture/métal) ni le tableau de bord, et pour garantir la sécurité de l'opérateur.", "isCorrect": True},
+                        {"text": "Un simple marteau de carrossier suffit.", "isCorrect": False},
+                        {"text": "Une pince multiprise pour arracher la vitre.", "isCorrect": False},
+                        {"text": "Un burin pneumatique pour casser la colle dure.", "isCorrect": False}
                     ],
-                    "correction": "Le **Décollement** (ou perte d'accroche) est le défaut le plus grave du carrossier-peintre."
+                    "correction": "Rappel de Cours : Le cordon de colle est très résistant. Seuls des outils spécifiques permettent de découper la colle proprement et sans risque pour le véhicule et le technicien."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quel est le rôle du **diluant de raccordement** (blender) ?",
+                    "question": "Lors du remplacement d'une porte soudée, quelle opération est obligatoire après le soudage et avant la peinture ?",
                     "answerOptions": [
-                        {"text": "Accélérer le séchage.", "isCorrect": False},
-                        {"text": "Dissoudre légèrement les bords du vernis ou de la base pour créer un raccord invisible et sans démarcation (utilisé dans la technique du raccord noyé).", "isCorrect": True},
-                        {"text": "Rendre la peinture plus opaque.", "isCorrect": False},
-                        {"text": "Nettoyer le pistolet.", "isCorrect": False}
+                        {"text": "L'application d'un revêtement d'étanchéité (mastic de joint) et/ou d'une cire de corps creux sur les zones soudées et intérieures pour rétablir la protection anti-corrosion et l'étanchéité.", "isCorrect": True},
+                        {"text": "L'installation immédiate des garnitures intérieures.", "isCorrect": False},
+                        {"text": "Le ponçage de finition au P3000.", "isCorrect": False},
+                        {"text": "Le nettoyage de la vitre avec de l'eau savonneuse.", "isCorrect": False}
                     ],
-                    "correction": "Le **Diluant de raccordement** 'adoucit' les bords du film."
+                    "correction": "Rappel de Cours : Les corps creux (l'intérieur d'une porte ou d'un longeron) doivent être protégés par une cire spécifique pour prévenir la rouille interne."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel est l'outil utilisé pour **mélanger** la base mate ou le vernis avant l'application (pour remettre les pigments en suspension) ?",
+                    "question": "Quel est le risque majeur lors d'une soudure sur un élément de carrosserie proche des boîtiers électroniques ou des faisceaux ?",
                     "answerOptions": [
-                        {"text": "La spatule.", "isCorrect": False},
-                        {"text": "Le Mélangeur mécanique ou l'Agitateur (nécessaire pour les bases métallisées et nacrées).", "isCorrect": True},
-                        {"text": "Le pistolet à peinture.", "isCorrect": False},
-                        {"text": "La balance.", "isCorrect": False}
+                        {"text": "La génération de courants parasites (surtensions ou électromagnétiques) dans le véhicule, qui peuvent endommager ou déprogrammer les calculateurs électroniques (ECU, BSI, etc.), nécessitant une déconnexion et une mise à la terre des masses.", "isCorrect": True},
+                        {"text": "L'explosion du poste de soudure par manque d'air.", "isCorrect": False},
+                        {"text": "La déformation irréversible des vitres latérales.", "isCorrect": False},
+                        {"text": "La rupture du flexible de l'airbag latéral.", "isCorrect": False}
                     ],
-                    "correction": "Les **pigments métallisés** se déposent très vite et doivent être remis en suspension."
+                    "correction": "Rappel de Cours : Il est impératif de débrancher la batterie et, idéalement, de déconnecter certains calculateurs (selon les prescriptions constructeur) avant toute opération de soudure pour prévenir les dommages électroniques."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Quel est le risque de poncer le mastic ou l'apprêt à la **main** au lieu de la cale ou de la ponceuse (sur une grande surface plane) ?",
+                    "question": "Quelle est la caractéristique principale d'un mastic pour plastique ?",
                     "answerOptions": [
-                        {"text": "Le ponçage est trop lent.", "isCorrect": False},
-                        {"text": "Créer des vagues, des bosses et des creux (ondulations) car la main ne permet pas de respecter la planéité du panneau.", "isCorrect": True},
-                        {"text": "Le ponçage est trop efficace.", "isCorrect": False},
-                        {"text": "La poussière est trop fine.", "isCorrect": False}
+                        {"text": "Il est plus souple et plus flexible que le mastic polyester standard pour suivre les mouvements du plastique et éviter qu'il ne fissure ou ne craquelle.", "isCorrect": True},
+                        {"text": "Il est moins cher à l'achat.", "isCorrect": False},
+                        {"text": "Il est beaucoup plus dur et moins ponçable.", "isCorrect": False},
+                        {"text": "Il est uniquement utilisé pour la fibre de verre.", "isCorrect": False}
                     ],
-                    "correction": "La **cale** (rigide ou souple) est essentielle pour la planéité."
+                    "correction": "Rappel de Cours : Le plastique se déforme légèrement. Le mastic utilisé doit donc avoir une certaine élasticité pour ne pas se rompre. L'adhérence est assurée par un primaire spécial pour plastique."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Comment s'appelle l'opération qui consiste à passer une flamme (ou un décapeur thermique) rapidement sur un plastique nu avant l'apprêt ?",
+                    "question": "Qu'est-ce qu'une tôle « galvanisée » et quelle est son importance en carrosserie ?",
                     "answerOptions": [
-                        {"text": "Le soudage.", "isCorrect": False},
-                        {"text": "Le Flammage (ou Primaire d'adhérence par la chaleur) pour ouvrir les pores du plastique et améliorer l'accroche.", "isCorrect": True},
-                        {"text": "Le dégraissage.", "isCorrect": False},
-                        {"text": "Le ponçage.", "isCorrect": False}
+                        {"text": "Une tôle recouverte d'une fine couche de zinc, utilisée pour sa résistance supérieure à la corrosion par rapport à l'acier nu, souvent trouvée sur les bas de caisse et les portes.", "isCorrect": True},
+                        {"text": "Une tôle peinte en couleur or pour la finition.", "isCorrect": False},
+                        {"text": "Une tôle en composite de fibre de verre.", "isCorrect": False},
+                        {"text": "Une tôle non traitée thermiquement.", "isCorrect": False}
                     ],
-                    "correction": "Le **Flammage** est une technique d'amélioration de l'accroche sur certains plastiques (PP)."
+                    "correction": "Rappel de Cours : La galvanisation est un traitement essentiel. Lorsque l'on travaille sur ces tôles (soudure, ponçage), il est crucial de rétablir cette protection (primaire riche en zinc) pour éviter la rouille."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Quel est le défaut de peinture qui apparaît sous la forme de petits **cratères** (comme des piqûres) ?",
+                    "question": "Quel est le rôle du dégraissant anti-silicone (ou décontaminant) ?",
                     "answerOptions": [
-                        {"text": "La coulure.", "isCorrect": False},
-                        {"text": "Les Cratères (ou 'fisheyes') causés par la contamination de surface (silicone, graisse, eau) qui repousse la peinture.", "isCorrect": True},
-                        {"text": "La peau d'orange.", "isCorrect": False},
-                        {"text": "Le farinage.", "isCorrect": False}
+                        {"text": "Enlever toutes les impuretés invisibles (huiles, graisses, cires, silicones) qui empêchent l'adhérence des produits de préparation et de peinture, avant l'application de tout produit.", "isCorrect": True},
+                        {"text": "Donner de la brillance au vernis de finition.", "isCorrect": False},
+                        {"text": "Durcir le mastic polyester.", "isCorrect": False},
+                        {"text": "Réparer les rayures profondes.", "isCorrect": False}
                     ],
-                    "correction": "Les **Cratères** sont le signe d'une contamination (souvent silicone) qui doit être éliminée avec un additif anti-silicone."
+                    "correction": "Rappel de Cours : L'anti-silicone est indispensable pour éliminer les contaminants qui causent les défauts de peinture (trous de poisson)."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quel est le rôle de la **Balance électronique de précision** en peinture ?",
+                    "question": "Quelle est la condition nécessaire pour pouvoir réparer une bosse sur un réservoir de carburant métallique ?",
                     "answerOptions": [
-                        {"text": "Mesurer l'épaisseur.", "isCorrect": False},
-                        {"text": "Peser très précisément les différents composants de la peinture (bases, pigments, diluant, durcisseur) selon la formule de la teinte (colorimétrie).", "isCorrect": True},
-                        {"text": "Mesurer la pression.", "isCorrect": False},
-                        {"text": "Mesurer la température.", "isCorrect": False}
+                        {"text": "Il est strictement interdit de le réparer (soudure ou chauffage). Il doit être remplacé par un élément neuf ou réformé, car le risque d'explosion est trop grand, même vidé.", "isCorrect": True},
+                        {"text": "Le vider complètement et le remplir d'eau ou de gaz inerte avant toute opération de soudure ou de chauffage.", "isCorrect": False},
+                        {"text": "Le réparer uniquement avec du mastic souple et de l'adhésif.", "isCorrect": False},
+                        {"text": "Le laisser plein de carburant pour étouffer toute flamme.", "isCorrect": False}
                     ],
-                    "correction": "La **Balance** garantit le respect de la formule pour une couleur conforme."
+                    "correction": "Rappel de Cours : Par principe de précaution absolue, les réservoirs doivent être remplacés. Le risque de gaz explosifs résiduels est trop important pour une réparation sûre."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quel est le risque d'appliquer le mastic de carrosserie sur une tôle non poncée (tôle brillante/glacée) ?",
+                    "question": "Lors du ponçage du mastic, quelle est la conséquence d'un grain abrasif trop fin utilisé immédiatement après l'application ?",
                     "answerOptions": [
-                        {"text": "Le mastic sèche trop vite.", "isCorrect": False},
-                        {"text": "Le mastic n'adhère pas (il n'a pas de 'clef d'accroche') et se décollera ou se fissurera rapidement après application des couches suivantes.", "isCorrect": True},
-                        {"text": "Le mastic coule.", "isCorrect": False},
-                        {"text": "Le mastic est trop liquide.", "isCorrect": False}
+                        {"text": "Le temps de ponçage est très long, le papier s'encrasse rapidement (bourrage), et le produit met plus de temps à être mis en forme, entraînant une perte de temps et un gaspillage de papier.", "isCorrect": True},
+                        {"text": "La surface devient trop brillante.", "isCorrect": False},
+                        {"text": "Le mastic va rétrécir et fissurer.", "isCorrect": False},
+                        {"text": "La tôle sous-jacente rouillera immédiatement.", "isCorrect": False}
                     ],
-                    "correction": "La tôle doit être **poncée au métal brut** (P80 ou P120) pour l'accroche."
+                    "correction": "Rappel de Cours : Il faut commencer par le grain le plus gros nécessaire (P80 ou P120) pour la mise en forme, puis monter progressivement en finesse pour l'élimination des rayures (jusqu'à P320-P400)."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Comment s'appelle la technique de polissage utilisée pour enlever les traces de ponçage fin (après correction de défauts) ?",
+                    "question": "Qu'est-ce qu'une peinture \"tri-couche\" (ou trois couches) ?",
                     "answerOptions": [
-                        {"text": "Le lustrage.", "isCorrect": False},
-                        {"text": "Le Polissage (avec une polisseuse rotative ou orbitale, et une pâte à polir abrasive, puis une pâte de finition).", "isCorrect": True},
-                        {"text": "Le décapage.", "isCorrect": False},
-                        {"text": "Le mouillage.", "isCorrect": False}
+                        {"text": "Une peinture qui nécessite une base couleur, suivie d'une couche intermédiaire (par exemple nacrée ou effet Xirallic) et enfin du vernis, pour obtenir un effet de profondeur et de couleur spécifique.", "isCorrect": True},
+                        {"text": "Une peinture qui ne contient pas de diluant.", "isCorrect": False},
+                        {"text": "Une peinture qui sèche trois fois plus vite que les autres.", "isCorrect": False},
+                        {"text": "Un apprêt anti-corrosion en trois étapes.", "isCorrect": False}
                     ],
-                    "correction": "Le **Polissage** rétablit le brillant et l'aspect miroir du vernis."
+                    "correction": "Rappel de Cours : Les tri-couches sont complexes à appliquer, car la couche intermédiaire doit être pulvérisée très précisément pour obtenir l'effet désiré (couleurs claires, perles ou nacrés)."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Quel est le rôle de la **température** dans une cabine de peinture (hors cuisson) ?",
+                    "question": "Quel est l'objectif du ponçage à la main (avec cale) par rapport au ponçage à la machine ?",
                     "answerOptions": [
-                        {"text": "Réguler l'humidité.", "isCorrect": False},
-                        {"text": "Maintenir une température constante (20 à 25°C) pour un séchage et un étalement optimaux du vernis (tension de surface) et contrôler la viscosité du produit.", "isCorrect": True},
-                        {"text": "Changer la couleur.", "isCorrect": False},
-                        {"text": "Assurer la sécurité.", "isCorrect": False}
+                        {"text": "Le ponçage à la main permet une meilleure sensation de la surface (contrôle) pour des travaux de finition précis et garantit la planéité des grandes surfaces (en utilisant une longue cale) ou des arêtes/lignes de style.", "isCorrect": True},
+                        {"text": "La machine est toujours plus rapide et précise.", "isCorrect": False},
+                        {"text": "Le ponçage à la main est interdit par la réglementation.", "isCorrect": False},
+                        {"text": "Il est uniquement utilisé pour le décapage initial.", "isCorrect": False}
                     ],
-                    "correction": "La **température** influence directement le temps de tirage et l'aspect final."
+                    "correction": "Rappel de Cours : La cale de ponçage manuelle est essentielle pour obtenir une surface parfaitement plane (rectification des bosses ou des creux)."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quel est le défaut causé par une épaisseur excessive de peinture ou de vernis, souvent dans les parties verticales ?",
+                    "question": "Quelle est la fonction d'un papier abrasif avec support en mousse (Soft Pad) ?",
                     "answerOptions": [
-                        {"text": "La peau d'orange.", "isCorrect": False},
-                        {"text": "La Coulure (la peinture/vernis glisse sous l'effet de la gravité avant d'avoir tiré suffisamment).", "isCorrect": True},
-                        {"text": "Le farinage.", "isCorrect": False},
-                        {"text": "Le craquellement.", "isCorrect": False}
+                        {"text": "Permettre un ponçage plus souple et plus homogène sur les surfaces courbes ou les arêtes, réduisant ainsi le risque de \"traverser\" le vernis ou de marquer la tôle.", "isCorrect": True},
+                        {"text": "Remplacer l'utilisation d'un dégraissant pour enlever le silicone.", "isCorrect": False},
+                        {"text": "Augmenter la rugosité de la surface pour une meilleure adhérence.", "isCorrect": False},
+                        {"text": "Servir uniquement pour le ponçage du plastique de pare-chocs.", "isCorrect": False}
                     ],
-                    "correction": "La **Coulure** est corrigée par ponçage et polissage après séchage."
+                    "correction": "Rappel de Cours : Le support en mousse permet au carrossier d'appliquer une pression plus douce et de suivre les contours, ce qui est crucial pour le ponçage de finition du vernis."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Quel est le risque de peindre un plastique (pare-chocs) sans avoir ajouté d'**assouplissant** ou de **flexibilisant** au vernis ?",
+                    "question": "Quel est le rôle du mastic de finition (finition/fine filler) ?",
                     "answerOptions": [
-                        {"text": "Le vernis coule.", "isCorrect": False},
-                        {"text": "Le vernis/laque est trop rigide et craquelle ou se décolle lors des déformations (chocs légers ou vibrations) du plastique.", "isCorrect": True},
-                        {"text": "Le vernis devient mat.", "isCorrect": False},
-                        {"text": "Le vernis jaunit.", "isCorrect": False}
+                        {"text": "Remplir les micro-rayures, les piqûres ou les petits défauts de l'apprêt et du mastic polyester avant l'application de la base couleur, sans avoir besoin d'une couche d'apprêt supplémentaire.", "isCorrect": True},
+                        {"text": "Servir de couche d'isolation thermique.", "isCorrect": False},
+                        {"text": "Remplacer le vernis de finition.", "isCorrect": False},
+                        {"text": "Coller les insignes de marque sur le véhicule.", "isCorrect": False}
                     ],
-                    "correction": "L'**Assouplissant** permet au vernis de suivre la flexibilité du support plastique."
+                    "correction": "Rappel de Cours : Le mastic de finition est la dernière étape de préparation de surface pour les petits défauts, garantissant une surface zéro défaut avant la peinture."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel est l'outil utilisé pour nettoyer et dégraisser les outils de peinture (pistolets) ?",
+                    "question": "Qu'est-ce qui est crucial à faire avant de remonter un phare ou un feu arrière après une réparation de carrosserie ?",
                     "answerOptions": [
-                        {"text": "L'eau claire.", "isCorrect": False},
-                        {"text": "Le Diluant de nettoyage (ou Solvant de nettoyage) dans un bac de lavage de pistolet.", "isCorrect": True},
-                        {"text": "Le savon.", "isCorrect": False},
-                        {"text": "L'huile.", "isCorrect": False}
+                        {"text": "Vérifier l'état et le fonctionnement des ampoules, des connecteurs, et s'assurer que les pattes de fixation (souvent en plastique) sont intactes et correctement serrées (sans forcer) pour garantir l'alignement et l'étanchéité.", "isCorrect": True},
+                        {"text": "Le nettoyer avec de l'acide pour le faire briller.", "isCorrect": False},
+                        {"text": "Le peindre en noir pour le rendre invisible.", "isCorrect": False},
+                        {"text": "Le graisser abondamment pour faciliter le montage.", "isCorrect": False}
                     ],
-                    "correction": "Le **diluant de nettoyage** est essentiel, même pour les bases hydro-diluables, afin d'éliminer toute trace de pigment ou de résine."
+                    "correction": "Rappel de Cours : Les phares et feux sont chers et complexes. Les fixations sont fragiles. Il faut s'assurer du bon fonctionnement électrique et de l'alignement pour l'esthétique et la sécurité."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Comment s'appelle l'outil utilisé pour déterminer le niveau d'humidité dans le bois ou le plâtre (pour les véhicules utilitaires ou les camping-cars) ?",
+                    "question": "Quelle est la principale source de défauts de la peinture (poussière, cratères) dans une cabine de peinture ?",
                     "answerOptions": [
-                        {"text": "Le thermomètre.", "isCorrect": False},
-                        {"text": "L'Humidimètre.", "isCorrect": True},
-                        {"text": "Le micromètre.", "isCorrect": False},
-                        {"text": "Le spectophotomètre.", "isCorrect": False}
+                        {"text": "Un mauvais entretien et un manque de remplacement des filtres (plafond/sol), des vêtements de travail contaminés, ou un mauvais dégraissage de la carrosserie.", "isCorrect": True},
+                        {"text": "Une trop forte lumière dans la cabine.", "isCorrect": False},
+                        {"text": "Une température trop basse.", "isCorrect": False},
+                        {"text": "Une utilisation excessive de diluant.", "isCorrect": False}
                     ],
-                    "correction": "L'**Humidimètre** est important pour les structures composites ou les aménagements intérieurs."
+                    "correction": "Rappel de Cours : La propreté est le facteur numéro un de la qualité de la peinture. Les filtres doivent être changés régulièrement selon le plan de maintenance."
                 },
             ]
         },
-        # =========================================================================
-        # THÈME 5 : CONTRÔLE, ORGANISATION ET SOUDAGE (Q. 81-100)
-        # =========================================================================
         5: {
-            "name": "5. Contrôle, Organisation et Soudage (Q. 81-100)",
+            "name": "THÈME 5 : Maintenance, Équipement et Réglementation (Q. 81-100)",
             "questions": [
+                # =========================================================================
+                # QUESTIONS 81 à 100 : MAINTENANCE, ÉQUIPEMENT ET RÉGLEMENTATION
+                # =========================================================================
                 {
                     "questionNumber": 81,
-                    "question": "Quel est le rôle des **points de référence constructeur** sur un châssis ?",
+                    "question": "Quel est l'outil indispensable pour effacer les codes de défauts (DTC) des calculateurs après le remplacement d'un capteur (airbag, ABS) ou d'un module électronique sur un véhicule après une réparation ?",
                     "answerOptions": [
-                        {"text": "Déterminer la couleur.", "isCorrect": False},
-                        {"text": "Servir de base de mesure (fixes et précis) pour le contrôle géométrique, permettant de vérifier si la caisse a été déformée par le choc (vérification des cotes X, Y, Z).", "isCorrect": True},
-                        {"text": "Indiquer l'emplacement des roues.", "isCorrect": False},
-                        {"text": "Indiquer le type de moteur.", "isCorrect": False}
+                        {"text": "Un outil de diagnostic électronique (valise ou scan tool) qui se connecte au port OBD-II (On-Board Diagnostics) du véhicule.", "isCorrect": True},
+                        {"text": "Un voltmètre à aiguille de très haute précision.", "isCorrect": False},
+                        {"text": "Un simple jeu de clés plates métriques.", "isCorrect": False},
+                        {"text": "Un appareil de mesure du taux d'humidité de la peinture.", "isCorrect": False}
                     ],
-                    "correction": "Les **cotes constructeur** sont la référence absolue pour le redressage sur marbre."
+                    "correction": "Rappel de Cours : La valise de diagnostic permet de communiquer avec les calculateurs, d'identifier les pannes (DTC) et, dans certains cas, d'effectuer le \"télécodage\" (reparamétrage) des nouveaux composants montés (capteurs, modules)."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Quel est le risque de souder une tôle **non dégraissée** (ou non décapée) ?",
+                    "question": "Quelle est l'importance de l'étanchéité des passages de roues et des dessous de caisse après une réparation structurelle ?",
                     "answerOptions": [
-                        {"text": "La soudure est trop brillante.", "isCorrect": False},
-                        {"text": "Le bain de fusion est contaminé (création de porosités), la soudure est fragile, et dégage des fumées toxiques (graisse brûlée).", "isCorrect": True},
-                        {"text": "La soudure est trop longue.", "isCorrect": False},
-                        {"text": "La soudure ne chauffe pas.", "isCorrect": False}
+                        {"text": "Empêcher l'infiltration d'eau et d'humidité à l'intérieur de la structure ou de la caisse, ce qui pourrait engendrer une corrosion rapide et des dommages aux composants électriques (faisceaux) ou mécaniques.", "isCorrect": True},
+                        {"text": "Uniquement pour des raisons esthétiques.", "isCorrect": False},
+                        {"text": "Pour améliorer l'isolation phonique seulement.", "isCorrect": False},
+                        {"text": "Pour faciliter le démontage ultérieur des roues.", "isCorrect": False}
                     ],
-                    "correction": "Le métal doit être **nu et propre** avant soudage."
+                    "correction": "Rappel de Cours : L'étanchéité et les protections de soubassement (anti-gravillons, cire) sont essentielles pour la longévité de la carrosserie. Elles doivent être systématiquement rétablies."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Comment s'appelle l'opération qui consiste à éliminer l'excès de matière après un soudage (cordon de soudure) pour obtenir une surface plane ?",
+                    "question": "Quel est le rôle principal d'un capteur de stationnement (PDC - Park Distance Control) ?",
                     "answerOptions": [
-                        {"text": "Le planage.", "isCorrect": False},
-                        {"text": "Le Meulage et le Ponçage (souvent à la meuleuse, puis ponceuse pour la finition).", "isCorrect": True},
-                        {"text": "Le débosselage.", "isCorrect": False},
-                        {"text": "Le dégraissage.", "isCorrect": False}
+                        {"text": "Mesurer la distance entre le véhicule et un obstacle (approche) et avertir le conducteur par un signal sonore et/ou visuel pour faciliter les manœuvres de stationnement et prévenir les chocs à basse vitesse.", "isCorrect": True},
+                        {"text": "Allumer automatiquement les feux de croisement.", "isCorrect": False},
+                        {"text": "Vérifier la pression des pneus.", "isCorrect": False},
+                        {"text": "Détecter la vitesse du véhicule pour l'ABS.", "isCorrect": False}
                     ],
-                    "correction": "Le **Meulage** est suivi du ponçage pour préparer la surface au masticage."
+                    "correction": "Rappel de Cours : Les capteurs de stationnement sont des éléments de carrosserie qui nécessitent un étalonnage ou un remplacement après un choc, car ils sont souvent intégrés aux pare-chocs."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Quel est l'outil utilisé pour vérifier qu'une soudure est bien **pénétrée** (soudure pleine) ?",
+                    "question": "Comment s'appelle la procédure électronique qui doit être effectuée après le remplacement de l'ECU (Engine Control Unit) ou d'un module électronique important ?",
                     "answerOptions": [
-                        {"text": "Le mètre ruban.", "isCorrect": False},
-                        {"text": "Le Contrôle visuel (aspect régulier du cordon), le contrôle par Ressuage (pour les fissures) ou les tests destructifs.", "isCorrect": True},
-                        {"text": "Le marteau.", "isCorrect": False},
-                        {"text": "Le pied à coulisse.", "isCorrect": False}
+                        {"text": "Le télécodage ou l'apprentissage (reparamétrage) qui permet d'associer le nouveau module au véhicule et à ses options (VIN - Vehicle Identification Number) pour qu'il fonctionne correctement.", "isCorrect": True},
+                        {"text": "La défragmentation de la mémoire.", "isCorrect": False},
+                        {"text": "Le nettoyage du filtre à air.", "isCorrect": False},
+                        {"text": "La mise en pression des pneus.", "isCorrect": False}
                     ],
-                    "correction": "Une mauvaise **pénétration** entraîne une soudure fragile (point de rupture)."
+                    "correction": "Rappel de Cours : Le télécodage est une étape nécessaire pour que les nouveaux calculateurs communiquent avec le reste du réseau du véhicule. C'est un travail de diagnostic électronique."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Quel est le rôle du **Mastic d'étanchéité** (mastic de joint) ?",
+                    "question": "Quel est le risque si un capteur d'aide à la conduite (ADAS) comme un radar ou une caméra de pare-brise est mal positionné après une réparation ?",
                     "answerOptions": [
-                        {"text": "Maintenir la couleur.", "isCorrect": False},
-                        {"text": "Assurer l'étanchéité à l'eau et à l'air des joints de la carrosserie (soudure, ailes, fonds de coffre) pour éviter la corrosion interne et l'infiltration.", "isCorrect": True},
-                        {"text": "Maintenir la rigidité.", "isCorrect": False},
-                        {"text": "Remplir les bosses.", "isCorrect": False}
+                        {"text": "Les systèmes de sécurité (freinage d'urgence, maintien de voie) fonctionneront de manière incorrecte, entraînant des fausses alertes, des freinages intempestifs ou un dysfonctionnement total, ce qui compromet gravement la sécurité.", "isCorrect": True},
+                        {"text": "Le klaxon ne fonctionnera plus.", "isCorrect": False},
+                        {"text": "La peinture va s'écailler autour du capteur.", "isCorrect": False},
+                        {"text": "La consommation de carburant augmentera de manière significative.", "isCorrect": False}
                     ],
-                    "correction": "Le **Mastic d'étanchéité** (souvent polyuréthane) est une couche de protection essentielle."
+                    "correction": "Rappel de Cours : Les systèmes ADAS (Advanced Driver Assistance Systems) sont basés sur une calibration très précise. Le moindre décalage nécessite un étalonnage (souvent statique ou dynamique) après une réparation de carrosserie."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Qu'est-ce qu'une **Fiche de Travail (ou Ordre de Réparation)** ?",
+                    "question": "Quelle est la procédure de sécurité primordiale lors de la manipulation des modules d'airbag déconnectés ?",
                     "answerOptions": [
-                        {"text": "Un plan de la carrosserie.", "isCorrect": False},
-                        {"text": "Le document de suivi du véhicule qui liste les travaux à effectuer, les pièces à commander, les temps alloués, et le détail de chaque étape de la réparation.", "isCorrect": True},
-                        {"text": "Le catalogue de peinture.", "isCorrect": False},
-                        {"text": "Le devis initial.", "isCorrect": False}
+                        {"text": "Les stocker avec la partie pyrotechnique (la face qui se déploie) tournée vers le haut dans un endroit sec et sécurisé, loin de toute source de chaleur ou d'électricité statique.", "isCorrect": True},
+                        {"text": "Les jeter immédiatement dans la benne à ordures classique pour une élimination rapide.", "isCorrect": False},
+                        {"text": "Les exposer directement au soleil pour vérifier la pression interne.", "isCorrect": False},
+                        {"text": "Les marquer avec de la peinture phosphorescente pour les retrouver facilement.", "isCorrect": False}
                     ],
-                    "correction": "La **Fiche de Travail** garantit la traçabilité et le respect des temps barèmes."
+                    "correction": "Rappel de Cours : Les airbags sont des composants dangereux. Ils doivent être manipulés et stockés conformément aux instructions du constructeur pour éviter un déploiement accidentel."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Quel est l'outil utilisé pour démonter des agrafes ou des garnitures sans les casser ?",
+                    "question": "Quel est le risque si l'on tente de redresser à la chaleur une tôle en Aluminium ?",
                     "answerOptions": [
-                        {"text": "Le marteau.", "isCorrect": False},
-                        {"text": "Le Levier de démontage (ou Pince à garnitures) en plastique ou composite.", "isCorrect": True},
-                        {"text": "Le chalumeau.", "isCorrect": False},
-                        {"text": "Le pistolet à souder.", "isCorrect": False}
+                        {"text": "L'aluminium a une faible tolérance thermique : il peut fondre ou se ramollir localement très rapidement, entraînant des déformations catastrophiques et une perte de ses propriétés mécaniques, ce qui est très difficile à récupérer.", "isCorrect": True},
+                        {"text": "La tôle d'acier va se dilater de manière incontrôlée.", "isCorrect": False},
+                        {"text": "La peinture va s'éclaircir et devenir plus brillante.", "isCorrect": False},
+                        {"text": "Une augmentation de la densité du métal.", "isCorrect": False}
                     ],
-                    "correction": "Le **Démontage sans casse** (éléments plastiques) est une compétence clé."
+                    "correction": "Rappel de Cours : L'aluminium nécessite des techniques de débosselage et de soudage spécifiques. Le chauffage doit être très contrôlé et limité par rapport à l'acier."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Quel est le rôle de la **cabine de peinture ventilée** (hors phase de cuisson) ?",
+                    "question": "Pourquoi est-il indispensable de protéger l'intérieur du véhicule (sièges, volant, sol) pendant les travaux de carrosserie et de peinture ?",
                     "answerOptions": [
-                        {"text": "Réguler l'humidité.", "isCorrect": False},
-                        {"text": "Assurer l'extraction des brouillards de peinture et des solvants (sécurité et propreté), et maintenir une atmosphère saine et exempte de poussière pendant l'application.", "isCorrect": True},
-                        {"text": "Accélérer le séchage.", "isCorrect": False},
-                        {"text": "Éclairer l'opérateur.", "isCorrect": False}
+                        {"text": "Pour éviter la contamination des tissus et surfaces intérieures par la poussière, la graisse, la peinture, le mastic, ou les solvants, ce qui pourrait dégrader l'état général du véhicule et la satisfaction du client.", "isCorrect": True},
+                        {"text": "Pour maintenir la température intérieure à un niveau constant.", "isCorrect": False},
+                        {"text": "Uniquement pour masquer l'odeur des produits chimiques pendant la réparation.", "isCorrect": False},
+                        {"text": "Pour empêcher l'utilisation des commandes de la climatisation.", "isCorrect": False}
                     ],
-                    "correction": "La **cabine** est un environnement contrôlé, vital pour la qualité et la sécurité."
+                    "correction": "Rappel de Cours : Les protections intérieures (housses de siège, tapis, couvre-volant) sont un signe de professionnalisme et une garantie de propreté pour le client."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Comment appelle-t-on la déformation d'un panneau qui n'a pas été redressée et qui est recouverte d'une épaisseur excessive de mastic ?",
+                    "question": "Quel est le rôle du 'fil de masse' (ou mise à la terre) pendant la soudure ?",
                     "answerOptions": [
-                        {"text": "Le craquellement.", "isCorrect": False},
-                        {"text": "La Surcharges de mastic (l'épaisseur excessive de mastic est fragile, risque de craquellement et est visible à la lime de carrossier).", "isCorrect": True},
-                        {"text": "La coulure.", "isCorrect": False},
-                        {"text": "La peau d'orange.", "isCorrect": False}
+                        {"text": "Créer un circuit électrique complet pour le passage du courant, en assurant que le courant de soudure circule à travers les pièces à souder et non à travers le reste du véhicule (risques de chocs électriques et d'endommagement des roulements ou des circuits).", "isCorrect": True},
+                        {"text": "Refroidir la torche de soudage.", "isCorrect": False},
+                        {"text": "Neutraliser les fumées toxiques.", "isCorrect": False},
+                        {"text": "Maintenir la pression du gaz inerte.", "isCorrect": False}
                     ],
-                    "correction": "Le **Mastic** doit rester une fine couche de finition sur une tôle redressée au maximum."
+                    "correction": "Rappel de Cours : La pince de masse doit être placée sur le métal nu, le plus près possible de la zone de soudage, pour éviter les dégâts électriques."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Quel est le rôle du **démontage de pièces** (feux, poignées, joints) avant la peinture ?",
+                    "question": "Pourquoi est-il essentiel d'utiliser de l'eau déminéralisée ou distillée avec certains produits de polissage ou pour le ponçage à l'eau ?",
                     "answerOptions": [
-                        {"text": "Rendre la voiture plus légère.", "isCorrect": False},
-                        {"text": "Garantir une couverture totale de la pièce à peindre (peindre sous les joints et les garnitures) pour éviter les traces de masquage visibles.", "isCorrect": True},
-                        {"text": "Vérifier l'état interne.", "isCorrect": False},
-                        {"text": "Les nettoyer.", "isCorrect": False}
+                        {"text": "L'eau du robinet contient des minéraux (calcaire, sels) qui peuvent laisser des traces blanchâtres indélébiles (marques d'eau) sur le vernis de finition après séchage.", "isCorrect": True},
+                        {"text": "L'eau déminéralisée augmente le taux d'évaporation du produit.", "isCorrect": False},
+                        {"text": "Elle permet de poncer plus rapidement.", "isCorrect": False},
+                        {"text": "Elle durcit le vernis de finition.", "isCorrect": False}
                     ],
-                    "correction": "Le **Démontage** permet une finition de qualité professionnelle."
+                    "correction": "Rappel de Cours : L'eau déminéralisée est un standard de qualité en carrosserie pour éviter les défauts de finition lors des opérations de lavage et de ponçage/polissage humide."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quel est l'outil utilisé pour déterminer la nature d'un plastique (ABS, PP, etc.) avant de le souder (pour choisir la bonne matière d'apport) ?",
+                    "question": "Quel est le risque de nettoyer un véhicule avec un chiffon sec ou une éponge non rincée ?",
                     "answerOptions": [
-                        {"text": "Le micromètre.", "isCorrect": False},
-                        {"text": "Le Marqueur d'identification (ou la vérification du sigle gravé sur la pièce) ou le test à la flamme (pour les professionnels).", "isCorrect": True},
-                        {"text": "Le pistolet à souder.", "isCorrect": False},
-                        {"text": "La balance.", "isCorrect": False}
+                        {"text": "Les particules de poussière et de saleté se transforment en abrasif et créent des micro-rayures sur toute la surface de la peinture, détériorant le brillant du vernis.", "isCorrect": True},
+                        {"text": "Le chiffon prend feu spontanément.", "isCorrect": False},
+                        {"text": "La porte se bloque et ne s'ouvre plus.", "isCorrect": False},
+                        {"text": "Le moteur ne démarre plus.", "isCorrect": False}
                     ],
-                    "correction": "Il faut souder avec le **même type de plastique** pour une fusion homogène."
+                    "correction": "Rappel de Cours : L'entretien de la carrosserie nécessite des techniques douces pour ne pas rayer le vernis. Un lavage insuffisant ou l'utilisation de matériaux contaminés est la première cause des micro-rayures."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est le risque de poncer une zone fraichement soudée sans avoir laissé le temps au métal de **refroidir** ?",
+                    "question": "Quel est l'objectif principal du contrôle final (qualité) avant la livraison du véhicule au client ?",
                     "answerOptions": [
-                        {"text": "La soudure s'écaille.", "isCorrect": False},
-                        {"text": "La tôle (ramollie par la chaleur) s'étire ou se déforme sous la pression du ponçage ou du meulage (création de bosses).", "isCorrect": True},
-                        {"text": "La soudure rouille.", "isCorrect": False},
-                        {"text": "Le mastic ne tient pas.", "isCorrect": False}
+                        {"text": "Vérifier la conformité de la réparation (alignements, peinture, finition), l'absence de défauts, le bon fonctionnement des systèmes électriques/mécaniques et la propreté finale du véhicule.", "isCorrect": True},
+                        {"text": "Vérifier uniquement le niveau d'huile moteur.", "isCorrect": False},
+                        {"text": "Demander l'avis de l'expert d'assurance sur la réparation.", "isCorrect": False},
+                        {"text": "Réaliser une dernière couche de vernis de protection.", "isCorrect": False}
                     ],
-                    "correction": "Le **refroidissement** est crucial pour que le métal retrouve sa rigidité."
+                    "correction": "Rappel de Cours : Le contrôle qualité est la dernière étape pour garantir la satisfaction du client et la sécurité du véhicule."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Comment s'appelle l'outil utilisé pour effectuer une petite réparation de carrosserie (débosselage) sur des éléments en aluminium, sans utiliser de soudure ?",
+                    "question": "Qu'est-ce qu'un \"pistolet à peinture HVLP\" (High Volume Low Pressure) ?",
                     "answerOptions": [
-                        {"text": "Le tire-clou.", "isCorrect": False},
-                        {"text": "Le Système de Ventouses à colle (pour tirer l'aluminium à froid sans le souder, ce qui pourrait le fragiliser).", "isCorrect": True},
-                        {"text": "Le chalumeau.", "isCorrect": False},
-                        {"text": "Le marteau rivoir.", "isCorrect": False}
+                        {"text": "Un type de pistolet qui utilise un grand volume d'air à basse pression, ce qui augmente le taux de transfert (moins de perte de produit) et réduit le brouillard de pulvérisation.", "isCorrect": True},
+                        {"text": "Un pistolet qui ne pulvérise que de l'eau.", "isCorrect": False},
+                        {"text": "Un pistolet qui ne fonctionne qu'avec de l'air comprimé chaud.", "isCorrect": False},
+                        {"text": "Un pistolet utilisé uniquement pour le décapage de la rouille.", "isCorrect": False}
                     ],
-                    "correction": "L'**Aluminium** est souvent réparé à froid car la chaleur le fragilise."
+                    "correction": "Rappel de Cours : Les pistolets HVLP sont la norme dans de nombreux pays pour des raisons environnementales et économiques (meilleure efficacité de transfert)."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Quel est le rôle de la **ventilation forcée** dans la cabine pendant la phase de cuisson du vernis ?",
+                    "question": "Quelle est l'importance du recyclage des pots de peinture et des diluants usagés en carrosserie ?",
                     "answerOptions": [
-                        {"text": "Refroidir le véhicule.", "isCorrect": False},
-                        {"text": "Assurer l'extraction des vapeurs de solvants qui s'échappent du vernis pendant le chauffage (pour prévenir l'explosion et garantir un séchage sain).", "isCorrect": True},
-                        {"text": "Maintenir l'humidité.", "isCorrect": False},
-                        {"text": "Empêcher la coulure.", "isCorrect": False}
+                        {"text": "Les produits sont classés comme déchets dangereux (solvants, restes de peinture) et doivent être collectés, stockés et traités par des filières spécialisées pour des raisons de protection de l'environnement et de conformité légale.", "isCorrect": True},
+                        {"text": "Cela permet de réutiliser le diluant indéfiniment.", "isCorrect": False},
+                        {"text": "Ils peuvent être jetés avec les ordures ménagères si la quantité est faible.", "isCorrect": False},
+                        {"text": "Ils servent de combustible pour le chauffage de l'atelier.", "isCorrect": False}
                     ],
-                    "correction": "La **Ventilation** (et la filtration) est active pendant toutes les phases."
+                    "correction": "Rappel de Cours : La gestion des déchets dangereux (fûts, solvants, chiffons souillés) est une obligation légale stricte pour les professionnels de la carrosserie."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quel est l'outil utilisé pour appliquer un **antigravillon** (protection noire granuleuse sur les bas de caisse) ?",
+                    "question": "Qu'est-ce que le \"dégraissage inter-couche\" en peinture ?",
                     "answerOptions": [
-                        {"text": "Le pistolet à peinture HVLP.", "isCorrect": False},
-                        {"text": "Le Pistolet à cartouche (spécifique aux produits épais) pour pulvériser l'anti-gravillon (produit sous forme pâteuse).", "isCorrect": True},
-                        {"text": "Le rouleau.", "isCorrect": False},
-                        {"text": "Le pinceau.", "isCorrect": False}
+                        {"text": "Un nettoyage rapide de la surface (avec un chiffon et un dégraissant doux) entre deux couches (ex : entre l'apprêt et la base couleur ou entre la base couleur et le vernis) pour éliminer les micro-poussières ou les résidus de ponçage avant la pulvérisation suivante.", "isCorrect": True},
+                        {"text": "Le retrait de toute la peinture pour un nouveau départ.", "isCorrect": False},
+                        {"text": "Le mélange de la peinture à l'eau.", "isCorrect": False},
+                        {"text": "Le séchage du mastic.", "isCorrect": False}
                     ],
-                    "correction": "L'**Antigravillon** est un revêtement texturé appliqué sous pression."
+                    "correction": "Rappel de Cours : Ce nettoyage est essentiel pour éviter les défauts d'inclusion de poussières et garantir la propreté maximale entre les couches."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Comment s'appelle l'opération qui consiste à éliminer les petites pointes ou défauts (gratons) d'une soudure avant le meulage ?",
+                    "question": "Quelle est la principale différence entre le marteau de carrossier (pour débosseler) et le marteau à inertie (pour le spotter) ?",
                     "answerOptions": [
-                        {"text": "Le décapage.", "isCorrect": False},
-                        {"text": "Le Burinage (ou Dégrappage) au marteau ou au burin pneumatique.", "isCorrect": True},
-                        {"text": "Le ponçage.", "isCorrect": False},
-                        {"text": "Le planage.", "isCorrect": False}
+                        {"text": "Le marteau de carrossier frappe contre un tas pour reformer la tôle (force opposée), tandis que le marteau à inertie est utilisé pour tirer la tôle vers l'extérieur (force de traction) après soudure d'un élément (clou/rondelle).", "isCorrect": True},
+                        {"text": "Le marteau à inertie est uniquement utilisé pour le soudage.", "isCorrect": False},
+                        {"text": "Le marteau de carrossier est toujours plus lourd.", "isCorrect": False},
+                        {"text": "Il n'y a aucune différence technique.", "isCorrect": False}
                     ],
-                    "correction": "Le **Burinage** enlève la matière en excès avant la finition à la meule."
+                    "correction": "Rappel de Cours : Les deux marteaux ont des fonctions opposées. L'un frappe pour remettre en forme par pression, l'autre tire par inertie."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quel est l'outil de diagnostic utilisé pour identifier les défauts électriques (avant et après réparation) liés aux capteurs ou aux calculateurs de carrosserie ?",
+                    "question": "À quoi sert la 'cire de corps creux' ?",
                     "answerOptions": [
-                        {"text": "Le multimètre.", "isCorrect": False},
-                        {"text": "La Valise de Diagnostic (outil de lecture des calculateurs et des codes défauts).", "isCorrect": True},
-                        {"text": "Le thermomètre.", "isCorrect": False},
-                        {"text": "Le micromètre.", "isCorrect": False}
+                        {"text": "Un produit cireux ou huileux qui est injecté à l'intérieur des longerons, des montants et des portes (zones inaccessibles) pour empêcher la corrosion interne et l'accumulation d'humidité, en particulier après une réparation ou des contacts avec de l'eau salée.", "isCorrect": True},
+                        {"text": "Un produit de polissage pour le vernis.", "isCorrect": False},
+                        {"text": "Un lubrifiant pour le moteur.", "isCorrect": False},
+                        {"text": "Un produit pour nettoyer les vitres.", "isCorrect": False}
                     ],
-                    "correction": "La **Valise de Diagnostic** est cruciale pour les systèmes électroniques (ADAS, airbags, etc.)."
+                    "correction": "Rappel de Cours : La protection des corps creux est essentielle pour la longévité du véhicule et doit être rétablie après toute opération de soudure sur les zones de structure."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Quelle est l'importance de remplacer les **rivets de sécurité** (par exemple, sur un capot ou une traverse) par des rivets neufs de même qualité ?",
+                    "question": "Lorsqu'un code défaut (DTC) est effacé par l'outil de diagnostic, que signifie un effacement réussi ?",
                     "answerOptions": [
-                        {"text": "Pour des raisons esthétiques.", "isCorrect": False},
-                        {"text": "Garantir la résistance structurelle et le bon fonctionnement des éléments (ex: charnières) en cas de nouvel accident (respect des normes de sécurité).", "isCorrect": True},
-                        {"text": "Pour des raisons de couleur.", "isCorrect": False},
-                        {"text": "Pour des raisons de poids.", "isCorrect": False}
+                        {"text": "Que la panne ou le défaut à l'origine du code est résolu et que le témoin lumineux au tableau de bord (ex : Airbag, ABS) est éteint. Si le défaut n'est pas résolu, le code reviendra immédiatement (défaut permanent).", "isCorrect": True},
+                        {"text": "Que le moteur va s'arrêter automatiquement.", "isCorrect": False},
+                        {"text": "Que la peinture est sèche et prête à être livrée.", "isCorrect": False},
+                        {"text": "Que les pneus ont la bonne pression.", "isCorrect": False}
                     ],
-                    "correction": "Le **respect des fixations** d'origine est une exigence constructeur."
+                    "correction": "Rappel de Cours : Un défaut ne disparaît pas automatiquement après la réparation. L'effacement est nécessaire pour indiquer au calculateur que la panne est résolue et pour éteindre le témoin au tableau de bord."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Quel est l'outil utilisé pour poncer (ou 'déglacer') légèrement le vernis autour de la zone à peindre avant un raccord noyé ?",
+                    "question": "Quel est le rôle d'un amortisseur de choc (ou atténuateur) situé derrière certains pare-chocs ?",
                     "answerOptions": [
-                        {"text": "Le pistolet.", "isCorrect": False},
-                        {"text": "Le Disque abrasif de dépolissage (P800, P1000 ou abrasif 'Scotch-Brite') pour créer une 'clef' d'accroche pour le nouveau vernis.", "isCorrect": True},
-                        {"text": "Le marteau.", "isCorrect": False},
-                        {"text": "La spatule.", "isCorrect": False}
+                        {"text": "Absorber et dissiper l'énergie cinétique d'un choc à basse vitesse, minimisant ainsi les dégâts structurels et la déformation permanente des éléments de carrosserie principaux.", "isCorrect": True},
+                        {"text": "Maintenir le pare-chocs parfaitement droit en cas de vent fort.", "isCorrect": False},
+                        {"text": "Servir de point d'ancrage pour le câble de la batterie.", "isCorrect": False},
+                        {"text": "Mesurer la température extérieure pour la climatisation.", "isCorrect": False}
                     ],
-                    "correction": "Le **dépolissage** assure l'accrochage du nouveau vernis (évite le décollement)."
+                    "correction": "Rappel de Cours : Ces absorbeurs sont conçus pour \"sacrifier\" leur intégrité en se déformant lors d'un petit choc, protégeant ainsi le reste du véhicule. Ils sont généralement à usage unique."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quelle est la cause principale de la **perte de brillance** (matité) ou du jaunissement d'un vernis neuf après quelques mois ?",
+                    "question": "Quel est le risque si un opérateur de l'atelier porte des bijoux (bagues, bracelets) lourds ou métalliques lors de travaux électriques ?",
                     "answerOptions": [
-                        {"text": "Trop de polissage.", "isCorrect": False},
-                        {"text": "Un vernis de mauvaise qualité (faible résistance aux UV) ou un durcisseur non adapté (trop rapide, trop lent) qui a entraîné une mauvaise polymérisation à cœur.", "isCorrect": True},
-                        {"text": "Une mauvaise couleur.", "isCorrect": False},
-                        {"text": "Un ponçage excessif.", "isCorrect": False}
+                        {"text": "Le risque de court-circuit accidentel par contact entre le bijou et les bornes électriques de la batterie ou du circuit, entraînant des brûlures graves pour l'opérateur ou des dommages aux circuits (soudure du bijou au métal, etc.).", "isCorrect": True},
+                        {"text": "Une accélération du temps de séchage de la peinture à proximité.", "isCorrect": False},
+                        {"text": "Le déclenchement inattendu du klaxon du véhicule.", "isCorrect": False},
+                        {"text": "Une décharge électrostatique du pistolet à peinture.", "isCorrect": False}
                     ],
-                    "correction": "La **résistance aux UV** et la polymérisation garantissent la durabilité du brillant."
-                },
+                    "correction": "Rappel de Cours : Le port de tout objet métallique ou conducteur est strictement interdit lors des travaux électriques ou à proximité des circuits de la batterie (risque d'arc électrique et de graves blessures par brûlure)."
+                }
             ]
         }
     }

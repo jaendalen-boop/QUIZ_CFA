@@ -1,1144 +1,1137 @@
 quiz_data = {
-    "title": "Quiz CAP Charcutier-Traiteur : 100 Questions (Révisions)",
+    "title": "CAP Charcutier Traiteur - Base de Données Complète (100 Questions) - Corrigée V1",
+    
+    "description": "Base de données de 100 questions pour le CAP Charcutier Traiteur. Les longueurs des réponses ont été uniformisées pour éviter tout biais lors d'un test.",
+    
     "themes": {
-        # =========================================================================
-        # THÈME 1 : HYGIÈNE, SÉCURITÉ & LOCAUX (HACCP) (Q. 1-20)
-        # =========================================================================
+        # THÈME 1
         1: {
-            "name": "1. Hygiène, Sécurité & Locaux (HACCP)",
+            "name": "Hygiène, Sécurité, Environnement (HSE) et Traçabilité (HACCP)",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quel est l'objectif principal de l'analyse des dangers et des points critiques pour leur maîtrise (méthode HACCP) ?",
+                    "question": "Quel est l'Équipement de Protection Individuelle (EPI) essentiel lors du désossage ou du parage des viandes ?",
                     "answerOptions": [
-                        {"text": "Diminuer le coût des matières premières.", "isCorrect": False},
-                        {"text": "Garantir la sécurité et la salubrité des aliments.", "isCorrect": True},
-                        {"text": "Augmenter la durée de vie des produits finis.", "isCorrect": False},
-                        {"text": "Simplifier les tâches de nettoyage quotidiennes.", "isCorrect": False}
+                        {"text": "Le masque respiratoire de type FFP2 (ou FFP3) pour les poussières fines de farine en suspension dans l'air.", "isCorrect": False, "key": "A"},
+                        {"text": "Le tablier de cuisine en coton (ou en lin) et les gants isolants pour le travail à haute température (four).", "isCorrect": False, "key": "B"},
+                        {"text": "Le gant cotte de mailles (ou anti-coupure) et le tablier étanche pour prévenir les coupures graves et les projections.", "isCorrect": True, "key": "C"},
+                        {"text": "Le casque anti-bruit pour les zones de tranchage intensif (trancheuse électrique) et de boyautage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**HACCP** (Hazard Analysis Critical Control Point) est un système préventif visant à identifier, évaluer et maîtriser les dangers significatifs au regard de la **sécurité des aliments** (biologiques, chimiques, physiques). C'est le fondement de l'hygiène alimentaire."
+                    "correction": "Le gant de mailles est indispensable pour la sécurité lors de la manipulation des couteaux et des pièces de viande (désossage)."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Selon le Plan de Maîtrise Sanitaire (PMS), quelle est la fréquence minimale recommandée pour le contrôle des températures des enceintes réfrigérées ?",
+                    "question": "Quelle est la 'zone de danger' (ou 'Temperature Danger Zone - TDZ') où la prolifération des bactéries est maximale ?",
                     "answerOptions": [
-                        {"text": "Une fois par semaine.", "isCorrect": False},
-                        {"text": "Deux fois par jour (matin et soir).", "isCorrect": True},
-                        {"text": "Une fois par service (midi et soir).", "isCorrect": False},
-                        {"text": "Une fois par jour au début de la journée.", "isCorrect": False}
+                        {"text": "La zone des températures positives : entre +15°C et +20°C (température ambiante) pour le pointage des pâtes.", "isCorrect": False, "key": "A"},
+                        {"text": "La zone comprise entre +8°C et +63°C, qui favorise la multiplication rapide des micro-organismes (toxines).", "isCorrect": True, "key": "B"},
+                        {"text": "La zone des très hautes températures (supérieure à +100°C), pour la stérilisation (appertisation).", "isCorrect": False, "key": "C"},
+                        {"text": "La zone des températures négatives : entre -5°C et -18°C (congélation) pour la conservation longue durée.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **contrôle des températures** doit être effectué au **minimum deux fois par jour** et enregistré pour s'assurer que la chaîne du froid est respectée de manière constante."
+                    "correction": "Les aliments doivent être maintenus à une température inférieure à 8°C (réfrigération) ou supérieure à 63°C (maintien au chaud)."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Que doit-on utiliser pour désinfecter les surfaces de travail après un nettoyage ?",
+                    "question": "Quel est le risque lié à la présence de verre ou de corps étranger (plastique dur) dans une préparation (pâté, terrine) ?",
                     "answerOptions": [
-                        {"text": "Un détergent seul.", "isCorrect": False},
-                        {"text": "Un désinfectant approprié.", "isCorrect": True},
-                        {"text": "De l'eau chaude et du sel.", "isCorrect": False},
-                        {"text": "Un désinfectant mélangé au détergent (produit deux-en-un).", "isCorrect": False}
+                        {"text": "Le risque d'allergie respiratoire (asthme du charcutier) ou d'explosion (ATEX) en cas de forte concentration.", "isCorrect": False, "key": "A"},
+                        {"text": "La corrosion accélérée des pièces métalliques du hachoir et du poussoir (acidité).", "isCorrect": False, "key": "B"},
+                        {"text": "Le risque de blessure grave (coupure ou hémorragie interne) pour le consommateur final (contamination physique).", "isCorrect": True, "key": "C"},
+                        {"text": "L'augmentation rapide de la viscosité de la pâte lors de l'incorporation de la lécithine (émulsifiant).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le processus classique est **Nettoyage** (avec un détergent) pour enlever les salissures visibles, suivi du **Rinçage**, puis de la **Désinfection** (avec un produit bactéricide, fongicide, etc.) pour tuer les micro-organismes. L'efficacité du désinfectant est souvent diminuée par la présence de détergent."
+                    "correction": "Toute contamination physique doit faire l'objet d'une procédure d'isolement (alerte immédiate) et d'une enquête (traçabilité)."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Quelle est la température maximale autorisée pour les préparations froides de charcuterie-traiteur (salades composées, sandwiches, etc.) au moment de la vente ?",
+                    "question": "Quelle est la principale mesure de sécurité à prendre lors de l'utilisation d'un cutter (hachoir-mélangeur) ou d'une trancheuse électrique ?",
                     "answerOptions": [
-                        {"text": "+2 °C", "isCorrect": False},
-                        {"text": "+4 °C", "isCorrect": True},
-                        {"text": "+6 °C", "isCorrect": False},
-                        {"text": "+8 °C", "isCorrect": False}
+                        {"text": "Travailler seul et sans supervision pour optimiser la cadence de production journalière.", "isCorrect": False, "key": "A"},
+                        {"text": "S'assurer que les protections (carters, grilles, poussoir) sont en place et que l'appareil est débranché avant le nettoyage.", "isCorrect": True, "key": "B"},
+                        {"text": "Mettre le pétrin en marche pendant le nettoyage des ustensiles pour un gain de temps (faux).", "isCorrect": False, "key": "C"},
+                        {"text": "Le port du masque de soudage (protection UV) et de vêtements anti-feu (gants).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La température réglementaire pour les produits très périssables (comme les préparations charcutières froides, les plats cuisinés réfrigérés) est de **+4 °C** (avec une tolérance souvent admise jusqu'à +6 °C en vitrine, mais +4 °C est la norme de conservation idéale)."
+                    "correction": "Les machines coupantes ou tournantes (lames) sont les principales sources d'accidents graves (amputation). La consignation est obligatoire."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Qu'appelle-t-on la 'marche en avant' dans l'agencement des locaux de charcuterie-traiteur ?",
+                    "question": "Quel est le danger lié à la manipulation des nitrites (sel nitrité) ou des additifs chimiques (conservateurs) ?",
                     "answerOptions": [
-                        {"text": "La progression du personnel de l'entrée à la sortie.", "isCorrect": False},
-                        {"text": "Le flux continu du produit du secteur sale au secteur propre.", "isCorrect": True},
-                        {"text": "L'organisation des livraisons en fonction des commandes clients.", "isCorrect": False},
-                        {"text": "Le respect des étapes de la recette sans retour en arrière.", "isCorrect": False}
+                        {"text": "L'inactivation de la levure par contact direct avec le sel et l'absence de pousse de la pâte.", "isCorrect": False, "key": "A"},
+                        {"text": "Le risque de brûlure chimique sur la peau et le danger de dépassement du dosage (toxicité pour le consommateur).", "isCorrect": True, "key": "B"},
+                        {"text": "La corrosion accélérée des pièces métalliques du pétrin et du fournil.", "isCorrect": False, "key": "C"},
+                        {"text": "L'augmentation excessive du temps de pétrissage (pointage) de la pâte finale.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **marche en avant** est un principe essentiel de l'hygiène. Elle garantit qu'un produit propre ou fini ne revienne jamais en contact avec une zone sale ou une matière première brute, évitant ainsi la **contamination croisée**."
+                    "correction": "Les nitrites sont dosés très précisément pour leur rôle anti-bactérien (Clostridium Botulinum) mais sont toxiques en cas de surdosage."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Quel est le risque le plus important lié à une rupture de la chaîne du froid sur des produits cuits, tranchés et prêts à consommer ?",
+                    "question": "Quelle est la procédure correcte pour la gestion des Huiles Alimentaires Usagées (HAU) après une friture ?",
                     "answerOptions": [
-                        {"text": "La perte de texture du produit.", "isCorrect": False},
-                        {"text": "La multiplication rapide des bactéries pathogènes.", "isCorrect": True},
-                        {"text": "La décoloration prématurée de la viande.", "isCorrect": False},
-                        {"text": "L'altération du goût par oxydation.", "isCorrect": False}
+                        {"text": "Les jeter directement dans les poubelles (ordures ménagères) sans possibilité de réutilisation.", "isCorrect": False, "key": "A"},
+                        {"text": "Les stocker séparément, identifier la nature du déchet et les confier à des entreprises spécialisées (collecte et recyclage).", "isCorrect": True, "key": "B"},
+                        {"text": "Les recongeler pour une revente ultérieure à un prix réduit dans les prochaines 48 heures.", "isCorrect": False, "key": "C"},
+                        {"text": "Les réintroduire (une partie) dans la prochaine fournée de pâte fraîche (réutilisation immédiate).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Une température trop élevée favorise la **multiplication des micro-organismes**, notamment des bactéries pathogènes (comme *Listeria* ou *Salmonella*), rendant le produit dangereux pour la consommation."
+                    "correction": "Les HAU sont un déchet polluant. Leur recyclage (biocarburant) est soumis à une réglementation environnementale stricte."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quelle est la zone de température où la croissance microbienne est la plus rapide (appelée 'Danger Zone') ?",
+                    "question": "Quelle est la signification de la 'DLUO' (Date Limite d'Utilisation Optimale) sur un ingrédient non périssable (épices séchées) ?",
                     "answerOptions": [
-                        {"text": "De -5 °C à 0 °C.", "isCorrect": False},
-                        {"text": "De +10 °C à +63 °C.", "isCorrect": True},
-                        {"text": "De +65 °C à +85 °C.", "isCorrect": False},
-                        {"text": "Au-delà de +100 °C.", "isCorrect": False}
+                        {"text": "Elle indique la date après laquelle l'ingrédient ne peut plus être consommé (danger bactériologique).", "isCorrect": False, "key": "A"},
+                        {"text": "Elle indique la date après laquelle les qualités organoleptiques (goût, arôme, texture) ne sont plus garanties (sans risque sanitaire).", "isCorrect": True, "key": "B"},
+                        {"text": "Elle indique la température maximale de conservation pour l'ingrédient (+4°C).", "isCorrect": False, "key": "C"},
+                        {"text": "Elle indique la zone de danger bactériologique (entre +8°C et +63°C).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La zone de danger se situe généralement entre **+10 °C et +63 °C**. C'est dans cet intervalle que les bactéries se développent le plus rapidement. Il faut minimiser le temps de passage des aliments dans cette zone."
+                    "correction": "La DLUO (remplacée par le DDM : Date de Durabilité Minimale) n'est pas une date limite de consommation (DLC) sanitaire."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quel document doit être consulté pour connaître les risques spécifiques et les mesures de premiers secours liés à un produit chimique de nettoyage ou de désinfection ?",
+                    "question": "Quelle est la principale mesure d'hygiène à prendre lors du nettoyage des ustensiles (hachoir, cutter, poussoir) pour éviter la contamination croisée ?",
                     "answerOptions": [
-                        {"text": "Le registre des clients.", "isCorrect": False},
-                        {"text": "La Fiche de Données de Sécurité (FDS).", "isCorrect": True},
-                        {"text": "Le Plan de Maîtrise Sanitaire (PMS).", "isCorrect": False},
-                        {"text": "Le cahier de recettes.", "isCorrect": False}
+                        {"text": "Utiliser uniquement de l'eau froide (moins de 10°C) pour lubrifier les lames et les pièces de coupe (faux).", "isCorrect": False, "key": "A"},
+                        {"text": "Le nettoyage (eau/détergent) suivi impérativement de la désinfection (produit biocide) puis du rinçage/séchage.", "isCorrect": True, "key": "B"},
+                        {"text": "Laisser les outils dans l'eau savonneuse toute la nuit (développement bactérien).", "isCorrect": False, "key": "C"},
+                        {"text": "Le masque de type FFP3 pour filtrer les fines particules de farine en suspension dans l'air.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **Fiche de Données de Sécurité (FDS)** est un document légal et obligatoire qui accompagne les produits chimiques. Elle détaille leur composition, leurs dangers (toxicité, corrosivité) et les procédures à suivre en cas d'accident."
+                    "correction": "Le protocole 'Nettoyage-Désinfection' est la base de l'HACCP pour éliminer les résidus et les micro-organismes (bactéries)."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Dans le cadre de l'hygiène du personnel, pourquoi le port de bijoux (bagues, bracelets) est-il strictement interdit en zone de production ?",
+                    "question": "Quel est le risque de remettre une préparation chaude directement au réfrigérateur (grand volume) sans refroidissement rapide ?",
                     "answerOptions": [
-                        {"text": "Risque de vol ou de perte des objets.", "isCorrect": False},
-                        {"text": "Risque d'usure prématurée des bijoux.", "isCorrect": False},
-                        {"text": "Risque de contamination bactérienne ou de chute de corps étranger.", "isCorrect": True},
-                        {"text": "Risque d'interférence avec les machines électroniques.", "isCorrect": False}
+                        {"text": "Le risque de 'remontée en température' des autres aliments stockés (rupture de la chaîne du froid) et de prolifération bactérienne.", "isCorrect": True, "key": "A"},
+                        {"text": "L'augmentation excessive du taux d'humidité de la pâte en cours de préparation.", "isCorrect": False, "key": "B"},
+                        {"text": "Le risque de prolifération d'organismes thermophiles sur le pain cuit.", "isCorrect": False, "key": "C"},
+                        {"text": "La corrosion accélérée des pièces métalliques du pétrin et du fournil.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les bijoux, en particulier les bagues et montres, sont des **niches à bactéries** (zone difficile à nettoyer). Ils constituent également un risque de contamination physique (chute d'un débris de bijou dans la préparation)."
+                    "correction": "Le refroidissement doit être rapide (de +63°C à +10°C en moins de deux heures) à l'aide d'une cellule de refroidissement (blast chiller)."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Quelle est la température de refroidissement des plats cuisinés qui doit être atteinte 'à cœur' en moins de deux heures, après la fin de cuisson ?",
+                    "question": "Quelle est l'importance du 'sens de la marche' (flux en avant) dans l'organisation du laboratoire (HACCP) ?",
                     "answerOptions": [
-                        {"text": "+63 °C à +10 °C.", "isCorrect": True},
-                        {"text": "+100 °C à +4 °C.", "isCorrect": False},
-                        {"text": "+75 °C à +12 °C.", "isCorrect": False},
-                        {"text": "+50 °C à +8 °C.", "isCorrect": False}
+                        {"text": "Garantir l'image de marque de la boutique, sans aucun lien avec l'hygiène alimentaire (HACCP).", "isCorrect": False, "key": "A"},
+                        {"text": "Éviter la contamination croisée en séparant les zones 'sales' (matières premières) des zones 'propres' (produit fini).", "isCorrect": True, "key": "B"},
+                        {"text": "Assurer uniquement la protection contre les brûlures des mains et des avant-bras de l'opérateur.", "isCorrect": False, "key": "C"},
+                        {"text": "Permettre au boulanger de travailler sans être soumis aux variations de température du fournil.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La réglementation impose un refroidissement rapide des plats chauds. La température doit passer de **+63 °C à +10 °C à cœur en moins de deux heures** afin de traverser très rapidement la 'Danger Zone' et limiter la croissance bactérienne."
+                    "correction": "Le produit doit toujours avancer dans le processus, sans jamais croiser les flux de déchets ou de matières premières non travaillées."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Dans l'atelier de charcuterie, quel équipement est destiné à prévenir les risques liés à la coupure des mains ?",
+                    "question": "Quelle est la température maximale de conservation des produits 'Très Périssables' (viandes fraîches, farces, pâtes crues) ?",
                     "answerOptions": [
-                        {"text": "Les chaussures de sécurité.", "isCorrect": False},
-                        {"text": "Le tablier en tissu imperméable.", "isCorrect": False},
-                        {"text": "Le gant de cotte de mailles.", "isCorrect": True},
-                        {"text": "Le masque anti-projection.", "isCorrect": False}
+                        {"text": "La zone des températures positives : entre +15°C et +20°C (température ambiante).", "isCorrect": False, "key": "A"},
+                        {"text": "Une température de conservation de +4°C maximum (réglementation européenne).", "isCorrect": True, "key": "B"},
+                        {"text": "La zone des très hautes températures (supérieure à +100°C), pour la stérilisation.", "isCorrect": False, "key": "C"},
+                        {"text": "Une température de conservation de 0°C (ou -1°C) maximum pour la viande fraîche (DLC très courte).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **gant de cotte de mailles** (souvent en acier inoxydable) est un Équipement de Protection Individuelle (EPI) essentiel lors des opérations de désossage, parage ou utilisation de couteaux puissants, afin de protéger l'opérateur contre les blessures graves."
+                    "correction": "Les farces et les produits de charcuterie sont souvent conservés à 4°C maximum (DLC courte), tandis que la viande fraîche (non transformée) est à 0°C ou 2°C max."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Après l'utilisation d'une chambre froide, pourquoi est-il important de refermer la porte rapidement ?",
+                    "question": "Que doit-on faire obligatoirement avant d'entamer une opération de désossage (parage) sur une pièce de viande (gigot, épaule) ?",
                     "answerOptions": [
-                        {"text": "Pour maintenir la pression interne.", "isCorrect": False},
-                        {"text": "Pour éviter la formation d'odeurs.", "isCorrect": False},
-                        {"text": "Pour éviter la condensation et la formation de givre.", "isCorrect": True},
-                        {"text": "Pour bloquer la sortie des gaz réfrigérants.", "isCorrect": False}
+                        {"text": "Vérifier la température du four pour s'assurer que les produits seront enfournés à chaud.", "isCorrect": False, "key": "A"},
+                        {"text": "Se laver et se désinfecter les mains de manière rigoureuse (procédure de lavage) et enfiler les EPI.", "isCorrect": True, "key": "B"},
+                        {"text": "Protéger les vitres, les pièces en plastique/caoutchouc et les réservoirs d'essence à proximité des étincelles.", "isCorrect": False, "key": "C"},
+                        {"text": "S'assurer que l'eau utilisée pour le pétrissage est à une température maximale de 10°C.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'air ambiant chaud et humide de l'atelier, lorsqu'il rentre en contact avec l'air froid de la chambre, provoque de la **condensation** (gouttelettes d'eau, risque microbien) et du **givre** sur les évaporateurs, ce qui réduit l'efficacité frigorifique et nécessite un dégivrage plus fréquent."
+                    "correction": "Le lavage des mains (avant/après) est le Point Critique pour la Maîtrise (CCP) de l'hygiène personnelle."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quel micro-organisme est particulièrement redouté dans les produits de charcuterie traiteur car il se développe même à basse température (froid positif) ?",
+                    "question": "Quel est le risque si l'on ne nettoie pas correctement le hachoir ou le poussoir entre deux fabrications (farce différente) ?",
                     "answerOptions": [
-                        {"text": "La Salmonelle (Salmonella).", "isCorrect": False},
-                        {"text": "La Listeria (Listeria monocytogenes).", "isCorrect": True},
-                        {"text": "L'Escherichia Coli (E. Coli).", "isCorrect": False},
-                        {"text": "Le Staphylocoque doré.", "isCorrect": False}
+                        {"text": "Le risque de contamination croisée entre un allergène (fruits à coque) et une autre préparation (risque client).", "isCorrect": True, "key": "A"},
+                        {"text": "La diminution du temps de pétrissage pour la deuxième pâte (gain de temps).", "isCorrect": False, "key": "B"},
+                        {"text": "La contamination des fonds de peinture ou de la cabine, entraînant des défauts (poussières, cratères).", "isCorrect": False, "key": "C"},
+                        {"text": "L'altération des propriétés de la levure par contact avec l'eau froide.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La bactérie **Listeria monocytogenes** est un germe psychrophile, c'est-à-dire qu'elle est capable de se multiplier même aux températures de réfrigération (+4°C), ce qui la rend dangereuse dans les produits prêts à consommer."
+                    "correction": "La gestion des allergènes (gluten, œufs, lait, fruits à coque) est obligatoire (étiquetage) et passe par un nettoyage strict."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Quel type de conditionnement est utilisé pour prolonger significativement la durée de vie des produits en empêchant la croissance de la plupart des micro-organismes aérobies ?",
+                    "question": "Quel est le risque de laisser des aliments (viande) sur un plan de travail à température ambiante pendant plus de deux heures ?",
                     "answerOptions": [
-                        {"text": "Conditionnement sous atmosphère protectrice (MAP).", "isCorrect": False},
-                        {"text": "Conditionnement sous-vide.", "isCorrect": True},
-                        {"text": "Conditionnement en barquette ouverte.", "isCorrect": False},
-                        {"text": "Conditionnement par film étirable simple.", "isCorrect": False}
+                        {"text": "Le risque de 'brûlure' des micro-organismes (levures et bactéries) et de bloquer l'activité du levain.", "isCorrect": False, "key": "A"},
+                        {"text": "Le risque d'intoxication alimentaire (Salmonella, Listeria) due à la multiplication rapide des bactéries dans la 'zone de danger'.", "isCorrect": True, "key": "B"},
+                        {"text": "La diminution du temps de pétrissage pour la deuxième pâte (gain de temps).", "isCorrect": False, "key": "C"},
+                        {"text": "La zone des températures ambiantes (entre +15°C et +20°C) pour le stockage des œufs frais.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **conditionnement sous-vide** consiste à retirer l'air de l'emballage. L'absence d'oxygène limite la croissance des bactéries aérobies (qui ont besoin d'oxygène) et ralentit l'oxydation, prolongeant ainsi la DLC."
+                    "correction": "Le temps d'exposition à température ambiante doit être minimisé (moins de 2 heures) pour le travail des farces et des viandes."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Dans l'aménagement des vestiaires du personnel, quelle séparation est essentielle pour respecter les normes d'hygiène ?",
+                    "question": "Que doit-on faire si l'on trouve de la moisissure sur une matière première (pâte d'épice, fromage) ?",
                     "answerOptions": [
-                        {"text": "Une séparation entre les hommes et les femmes.", "isCorrect": False},
-                        {"text": "Une séparation entre les vêtements de travail et les effets personnels.", "isCorrect": True},
-                        {"text": "Une séparation entre les vestiaires et les toilettes.", "isCorrect": False},
-                        {"text": "Une séparation entre les chaussures et les couvre-chefs.", "isCorrect": False}
+                        {"text": "Les isoler, stopper la production concernée, signaler l'incident et rechercher la source de la contamination.", "isCorrect": True, "key": "A"},
+                        {"text": "Continuer la production en retirant uniquement la zone visiblement contaminée (risque sanitaire).", "isCorrect": False, "key": "B"},
+                        {"text": "Ajouter un additif (émulsifiant) dans la pâte pour neutraliser le corps étranger (sans effet).", "isCorrect": False, "key": "C"},
+                        {"text": "Les laisser pour la fin de la production, car le four brûlera tous les corps étrangers (faux).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les vestiaires doivent être équipés de **doubles armoires (ou doubles casiers)** afin que les vêtements de ville (source potentielle de contamination) ne soient jamais en contact avec les tenues de travail propres (la blouse, le pantalon professionnel, etc.)."
+                    "correction": "La moisissure peut produire des mycotoxines (toxiques). Le produit doit être jeté. Une enquête de traçabilité est lancée (DLC, fournisseur)."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Quelle est l'obligation principale concernant la traçabilité des ingrédients reçus dans l'atelier ?",
+                    "question": "Quel est le risque pour l'opérateur en cas de manipulation de poids lourds (caisse de viande, sacs de sel) sans matériel adapté ?",
                     "answerOptions": [
-                        {"text": "Les jeter immédiatement après utilisation.", "isCorrect": False},
-                        {"text": "Conserver les étiquettes de DLC/DLUO et les bons de livraison.", "isCorrect": True},
-                        {"text": "Les enregistrer uniquement s'ils sont défectueux.", "isCorrect": False},
-                        {"text": "Les conserver pendant 48 heures.", "isCorrect": False}
+                        {"text": "Le risque de Troubles Musculo-Squelettiques (TMS), notamment le mal de dos (lumbago, hernie) ou les douleurs articulaires.", "isCorrect": True, "key": "A"},
+                        {"text": "Le risque d'intoxication aux poussières de farine dues à une rupture du sac lors du transport.", "isCorrect": False, "key": "B"},
+                        {"text": "Le risque de brûlure chimique sur la peau lors de l'incorporation de la farine dans le pétrin.", "isCorrect": False, "key": "C"},
+                        {"text": "Le risque d'explosion (ATEX) en cas de choc du sac sur le sol du laboratoire.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **traçabilité** 'en amont' (ce qui entre) et 'en aval' (ce qui sort) est vitale. Il faut conserver les documents (bons, étiquettes, enregistrements de lot) permettant de retracer l'origine des ingrédients et le devenir des produits finis en cas de problème sanitaire."
+                    "correction": "Le port de charges lourdes doit être sécurisé (chariot, transpalette, dos droit) pour prévenir les maladies professionnelles (TMS)."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Que signifie le sigle 'DLC' apposé sur un produit de charcuterie ?",
+                    "question": "Quel est le rôle du 'Plan de Maîtrise Sanitaire' (PMS) dans le laboratoire de charcuterie ?",
                     "answerOptions": [
-                        {"text": "Date Limite de Consommation.", "isCorrect": True},
-                        {"text": "Durée Longue de Conservation.", "isCorrect": False},
-                        {"text": "Date Limite de Congélation.", "isCorrect": False},
-                        {"text": "Durée Légale de Commercialisation.", "isCorrect": False}
+                        {"text": "Mesurer la teneur en gluten (W) de la farine utilisée pour le pétrissage.", "isCorrect": False, "key": "A"},
+                        {"text": "Décrire les mesures prises pour assurer l'hygiène et la sécurité des denrées (traçabilité, CCP, procédures de nettoyage).", "isCorrect": True, "key": "B"},
+                        {"text": "Contrôler la température interne du four pendant le défournement des baguettes.", "isCorrect": False, "key": "C"},
+                        {"text": "Évaluer le pH (acidité) de la pâte avant la fermentation finale (apprêt).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **DLC** (Date Limite de Consommation) est une date impérative : le produit est considéré comme dangereux pour la santé après cette date et ne doit plus être consommé. Elle est utilisée pour les produits microbiologiquement périssables (comme la charcuterie fraîche)."
+                    "correction": "Le PMS (basé sur l'HACCP) est un document obligatoire qui rassemble toutes les procédures de l'entreprise (hygiène, contrôles, traçabilité)."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quel type de nettoyage doit-on réaliser en cas de déversement de sang ou de jus de viande sur le sol ?",
+                    "question": "Que doit-on faire si l'on constate une infestation de nuisibles (rongeurs, insectes) dans la zone de stockage des ingrédients ?",
                     "answerOptions": [
-                        {"text": "Un simple balayage humide.", "isCorrect": False},
-                        {"text": "Un nettoyage et une désinfection immédiate de la zone.", "isCorrect": True},
-                        {"text": "Attendre la fin du service pour traiter l'incident.", "isCorrect": False},
-                        {"text": "Appliquer seulement de la sciure pour absorber.", "isCorrect": False}
+                        {"text": "Couper immédiatement la batterie (alimentation électrique), déplacer le véhicule à l'extérieur et alerter les secours si nécessaire.", "isCorrect": False, "key": "A"},
+                        {"text": "Contacter immédiatement une entreprise de lutte antiparasitaire et jeter toutes les marchandises contaminées (risque sanitaire).", "isCorrect": True, "key": "B"},
+                        {"text": "Augmenter la température du fournil pour chasser les nuisibles par la chaleur excessive.", "isCorrect": False, "key": "C"},
+                        {"text": "Ajouter plus de sel dans la pâte pour désinfecter la farine contaminée par les excréments.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les fluides corporels (sang, jus de viande) sont des milieux de culture idéaux pour les bactéries. Leur déversement nécessite une **intervention immédiate** (Nettoyage - Rinçage - Désinfection) pour éliminer le danger de contamination croisée ou de glissade."
+                    "correction": "Les nuisibles sont des vecteurs de maladies (Salmonella). Les produits contaminés doivent être détruits. La dératisation est vitale."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel est le risque physique le plus courant lié à l'utilisation d'un poussoir ou d'un mélangeur en charcuterie ?",
+                    "question": "Quelle est la conséquence d'un non-respect de la température de cuisson à cœur pour une terrine (température insuffisante) ?",
                     "answerOptions": [
-                        {"text": "Brûlures dues à la chaleur.", "isCorrect": False},
-                        {"text": "Chutes sur sol glissant.", "isCorrect": False},
-                        {"text": "Écrasement ou happement des mains.", "isCorrect": True},
-                        {"text": "Inhalation de vapeurs toxiques.", "isCorrect": False}
+                        {"text": "Un risque de mie collante, moins digeste, et une conservation réduite (humidité résiduelle trop importante).", "isCorrect": False, "key": "A"},
+                        {"text": "Le risque de 'survie bactérienne' (Clostridium) et de risque d'intoxication alimentaire (danger mortel potentiel).", "isCorrect": True, "key": "B"},
+                        {"text": "L'obtention d'un pain avec une saveur très acide, caractéristique du pain au levain.", "isCorrect": False, "key": "C"},
+                        {"text": "La déformation du pain lors du défournement (affaissement) et l'absence d'alvéolage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les machines comme les poussoirs, hachoirs ou mélangeurs comportent des pièces mobiles et puissantes. Le risque majeur est le **happement** des mains ou des vêtements. D'où l'importance des dispositifs de sécurité (capotages, arrêts d'urgence)."
+                    "correction": "La cuisson à cœur doit atteindre 65°C à 72°C (selon le produit) pour garantir la destruction des pathogènes (sonde de température)."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quel est l'équipement de protection individuelle (EPI) indispensable pour toute manipulation de produits gras ou humides en atelier de production ?",
+                    "question": "Quel est le rôle de la 'fiche de traçabilité' (étiquette) pour un jambon cuit ou une salaison ?",
                     "answerOptions": [
-                        {"text": "Le filet à cheveux uniquement.", "isCorrect": False},
-                        {"text": "Les manchettes de protection.", "isCorrect": False},
-                        {"text": "Le tablier en plastique ou polyuréthane", "isCorrect": True},
-                        {"text": "Les gants en latex non poudrés.", "isCorrect": False}
+                        {"text": "Assurer la sécurité du véhicule pour l'utilisateur et la conformité avec la réglementation routière (législation).", "isCorrect": False, "key": "A"},
+                        {"text": "Permettre d'identifier l'origine des matières, la date de fabrication, le numéro de lot et la DLC (en cas de rappel produit).", "isCorrect": True, "key": "B"},
+                        {"text": "Ajouter un additif (émulsifiant) dans la pâte pour neutraliser le corps étranger (sans effet).", "isCorrect": False, "key": "C"},
+                        {"text": "Les laisser pour la fin de la production, car le four brûlera tous les corps étrangers (faux).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **tablier en plastique, PVC ou polyuréthane** protège l'opérateur (et ses vêtements propres) contre les projections de graisses, de sang, de saumures ou d'eau, assurant une barrière contre l'humidité et la souillure."
-                },
+                    "correction": "La traçabilité est la capacité de retrouver l'historique d'un produit (du champ à l'assiette) et elle est obligatoire."
+                }
             ]
         },
-        # =========================================================================
-        # THÈME 2 : MATIÈRES PREMIÈRES : VIANDE ET ADDITIFS (Q. 21-40)
-        # =========================================================================
+        # THÈME 2
         2: {
-            "name": "2. Matières Premières : Viande et Additifs",
+            "name": "Transformation des Viandes et Pâtés/Terrines",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quel est le rôle principal du sel nitrité (sel de salaison) dans la fabrication des charcuteries cuites ?",
+                    "question": "Quel est le rôle de la 'coupe au cutter' (hachage ultra-fin) dans la fabrication des mousses et des saucissons de Paris ?",
                     "answerOptions": [
-                        {"text": "Accélérer la cuisson.", "isCorrect": False},
-                        {"text": "Émulsifier la graisse.", "isCorrect": False},
-                        {"text": "Fixer la couleur rose et inhiber la bactérie *Clostridium botulinum*.", "isCorrect": True},
-                        {"text": "Rendre la viande plus tendre.", "isCorrect": False}
+                        {"text": "La jauge de profondeur pour les pneus ou le vernier pour les petites pièces.", "isCorrect": False, "key": "A"},
+                        {"text": "Elle permet l'émulsion (mélange stable) de la viande, de la glace (ou eau) et du gras (création d'une texture très fine et homogène).", "isCorrect": True, "key": "B"},
+                        {"text": "Le régulateur de pression pour le pistolet de peinture (température et pH).", "isCorrect": False, "key": "C"},
+                        {"text": "Le pistolet à air chaud pour le séchage des mastics et des apprêts.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **sel nitrité** (un mélange de sel commun et de nitrite de sodium/potassium) est crucial. Il confère la couleur rose caractéristique aux charcuteries et, surtout, il a une puissante action antibactérienne contre la toxine du **botulisme** (*C. botulinum*), un danger majeur en salaison."
+                    "correction": "Le cutter (sous vide et à basse température) permet d'obtenir une farce très fine, onctueuse et bien liée (par l'émulsion du gras et de l'eau)."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Quel terme technique désigne l'opération qui consiste à éliminer les tendons, les aponévroses et l'excès de gras visible avant l'utilisation d'une pièce de viande en charcuterie ?",
+                    "question": "Que signifie le terme 'dénervation' (ou 'parage') d'une pièce de viande (longe, épaule) ?",
                     "answerOptions": [
-                        {"text": "Le parage.", "isCorrect": True},
-                        {"text": "Le dénerverage.", "isCorrect": False},
-                        {"text": "Le dégraissage.", "isCorrect": False},
-                        {"text": "Le blanchiment.", "isCorrect": False}
+                        {"text": "Il indique la force de la farine (W) : plus le T est élevé, plus la farine est forte et stable.", "isCorrect": False, "key": "A"},
+                        {"text": "C'est l'action de retirer les nerfs, les aponévroses (tissus conjonctifs), le cartilage et les parties non nobles (graisse excessive) de la viande.", "isCorrect": True, "key": "B"},
+                        {"text": "Il indique le pouvoir d'hydratation maximal de la farine (la quantité d'eau absorbée).", "isCorrect": False, "key": "C"},
+                        {"text": "Il indique la présence ou l'absence d'additifs (améliorants, enzymes) dans la farine de base.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **parage** est l'opération préliminaire qui prépare la viande ou les abats en retirant les parties non comestibles ou indésirables (aponévroses, gros vaisseaux, cartilages) pour obtenir une matière première nette et de qualité constante."
+                    "correction": "Le parage est essentiel pour la qualité de la farce (texture, goût, et absence de parties dures ou nerveuses)."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quel type de viande est traditionnellement utilisé pour la fabrication de la farce fine dans des produits comme les mousses ou les galantines ?",
+                    "question": "Quel est le rôle de la 'panne' (graisse de porc dure et blanche) dans la farce à pâté ou à saucisse ?",
                     "answerOptions": [
-                        {"text": "Viande de porc très grasse (poitrine).", "isCorrect": False},
-                        {"text": "Maigre de veau ou de volaille (viande blanche).", "isCorrect": True},
-                        {"text": "Maigre de bœuf persillé.", "isCorrect": False},
-                        {"text": "Abats rouges (foie, cœur).", "isCorrect": False}
+                        {"text": "Il active la levure et accélère la fermentation (pousse) de la pâte fraîche.", "isCorrect": False, "key": "A"},
+                        {"text": "Elle apporte le moelleux, la saveur, l'onctuosité et sert d'agent de liaison après la cuisson (texture).", "isCorrect": True, "key": "B"},
+                        {"text": "Il sert d'agent de blanchiment de la mie du pain (aspect très blanc).", "isCorrect": False, "key": "C"},
+                        {"text": "Il sert uniquement à colorer la croûte du pain lors de la cuisson finale.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **farce fine** (ou farce mousseline) est généralement élaborée à partir de **viande maigre et blanche** (veau, volaille, lapin) car elle est peu colorée et son goût neutre se prête mieux à l'ajout de crème et d'œufs pour une texture délicate et homogène."
+                    "correction": "La panne (graisse dorsale) est la graisse la plus noble. Elle est utilisée pour sa tenue à la chaleur et sa saveur neutre (hachage idéal)."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quel est le rôle de la glace ou de l'eau glacée dans la fabrication des émulsions charcutières (comme les saucissons de Paris ou les saucisses de Francfort) ?",
+                    "question": "Quelle est la principale différence entre une 'terrine' et un 'pâté en croûte' (aspect visuel) ?",
                     "answerOptions": [
-                        {"text": "Hydrater les épices.", "isCorrect": False},
-                        {"text": "Permettre l'extraction des protéines (myosine) et réguler la température.", "isCorrect": True},
-                        {"text": "Rendre le produit final plus léger.", "isCorrect": False},
-                        {"text": "Dissoudre le sel plus rapidement.", "isCorrect": False}
+                        {"text": "La terrine est cuite dans un moule (faïence, céramique) et n'a pas de pâte (croûte) ; le pâté est entouré d'une pâte et est démoulé.", "isCorrect": True, "key": "A"},
+                        {"text": "La levure ne permet pas de faire lever la pâte ; seul le levain permet la production de gaz carbonique (CO₂).", "isCorrect": False, "key": "B"},
+                        {"text": "Le levain est une poudre sèche déshydratée ; la levure est une pâte fraîche (en cube) ou liquide.", "isCorrect": False, "key": "C"},
+                        {"text": "La levure apporte l'acidité et les arômes ; le levain sert uniquement à la pousse du pain.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La glace est essentielle pour deux raisons : 1) Elle maintient la température en dessous de **10-12 °C** pour éviter que la graisse ne fonde. 2) Le froid permet l'**extraction des protéines myofibrillaires** (notamment la myosine) qui sont les agents liants de l'émulsion viande-graisse-eau."
+                    "correction": "La terrine est généralement servie directement dans son plat de cuisson. Le pâté en croûte nécessite une pâte (souvent à foncer) pour sa tenue."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quel additif, souvent utilisé comme antioxydant (E300), contribue à stabiliser la couleur et accélérer la réaction du nitrite dans les produits salés ?",
+                    "question": "Quel est le rôle des 'couennes' de porc (peau) dans la fabrication d'une tête roulée (fromage de tête) ?",
                     "answerOptions": [
-                        {"text": "Le phosphate.", "isCorrect": False},
-                        {"text": "L'acide ascorbique (ou vitamine C).", "isCorrect": True},
-                        {"text": "Le glutamate monosodique (MSG).", "isCorrect": False},
-                        {"text": "Le carraghénane.", "isCorrect": False}
+                        {"text": "La tôle sera plus collante, difficile à travailler, mais le pain sera plus léger et alvéolé (mie plus ouverte).", "isCorrect": False, "key": "A"},
+                        {"text": "Elles sont cuites longuement pour produire de la gélatine naturelle (collagène) qui lie la préparation et lui donne sa tenue ferme.", "isCorrect": True, "key": "B"},
+                        {"text": "La fermentation sera bloquée par la forte concentration en sel et en levure (osmose).", "isCorrect": False, "key": "C"},
+                        {"text": "La mie du pain sera jaune intense et la croûte sera très peu colorée (blanche).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**Acide Ascorbique** (E300) ou l'Ascorbate de Sodium (E301) sont des antioxydants qui jouent un rôle de catalyseur. Ils réduisent le nitrite en oxyde nitrique plus rapidement, stabilisant ainsi la couleur rose (nitrosomyoglobine) et protégeant de l'oxydation."
+                    "correction": "Le collagène des couennes (ou des pieds) est le liant naturel utilisé dans de nombreuses préparations (aspic, jambon persillé, tête roulée)."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Quel est l'effet d'un excès de sel dans une farce ou une mêlée de charcuterie ?",
+                    "question": "Quel est l'impact de la 'glace' (eau congelée) dans la préparation d'une farce fine au cutter ?",
                     "answerOptions": [
-                        {"text": "Une augmentation de la durée de vie sans altération du goût.", "isCorrect": False},
-                        {"text": "Une texture finale sèche et friable (dénaturation des protéines).", "isCorrect": True},
-                        {"text": "Un manque de cohésion de l'émulsion.", "isCorrect": False},
-                        {"text": "Une coloration plus pâle du produit.", "isCorrect": False}
+                        {"text": "Elle permet de réguler la température de la pâte en fin de pétrissage (température de base ou de masse idéale : 24°C).", "isCorrect": False, "key": "A"},
+                        {"text": "Elle permet de maintenir la température de la farce au plus bas (moins de 12°C) pendant le cutterage pour éviter que le gras ne fonde.", "isCorrect": True, "key": "B"},
+                        {"text": "Elle sert uniquement à nettoyer le pétrin et les outils après le pointage final.", "isCorrect": False, "key": "C"},
+                        {"text": "Elle influence directement le goût (acidité) et la couleur de la croûte du pain après la cuisson.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Bien que le sel soit nécessaire à l'extraction des protéines, un excès de sel peut provoquer une **dénaturation trop rapide** de ces protéines. Cela conduit à un dessèchement (saumure trop forte) et à une perte de la capacité de rétention d'eau, rendant la texture finale sèche et peu appétissante."
+                    "correction": "Le cutterage rapide (friction) produit de la chaleur. La glace est essentielle pour l'émulsion et la qualité de la farce."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quel élément nutritif est l'agent liant fondamental qui permet la cohésion d'une farce de charcuterie cuite ?",
+                    "question": "Quel est le nom de l'opération qui consiste à insérer de petits morceaux de gras (ou de fruits) dans le corps d'une farce pour la décorer ou l'aromatiser ?",
                     "answerOptions": [
-                        {"text": "Le gras (lipides).", "isCorrect": False},
-                        {"text": "Les fibres (glucides).", "isCorrect": False},
-                        {"text": "Les protéines.", "isCorrect": True},
-                        {"text": "L'eau (humidité).", "isCorrect": False}
+                        {"text": "Le lardonage ou le piquetage (insertion à l'aide d'une lardoire) pour la décoration (ex : terrine de chevreuil).", "isCorrect": True, "key": "A"},
+                        {"text": "Le taux d'humidité (H) de la farine mesuré au dessiccateur.", "isCorrect": False, "key": "B"},
+                        {"text": "Le taux de cendres (T) de la farine mesuré après incinération.", "isCorrect": False, "key": "C"},
+                        {"text": "Le pH (potentiel Hydrogène) de la farine qui mesure son acidité de base.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Ce sont les **protéines** de la viande, principalement la **myosine** et l'actine (protéines myofibrillaires), qui, sous l'action du sel et du travail mécanique (cutter/mélangeur) et de la chaleur (cuisson), forment un gel qui lie l'eau et la graisse, assurant la cohésion et la tenue du produit."
+                    "correction": "Le lardonage est une technique de décoration et d'apport de moelleux (gras) dans les farces maigres (gibier, volaille)."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "À quoi correspond le terme 'couenne fraîche' dans la préparation des terrines ou des pâtés ?",
+                    "question": "Quel est le rôle du 'sel' (NaCl) dans la fabrication de la charcuterie (hors salaison) ?",
                     "answerOptions": [
-                        {"text": "La peau du porc blanchie, sans gras ni poils.", "isCorrect": True},
-                        {"text": "La barde utilisée pour chemiser les moules.", "isCorrect": False},
-                        {"text": "Le gras dorsal du porc.", "isCorrect": False},
-                        {"text": "Le boyau naturel utilisé pour l'embossage.", "isCorrect": False}
+                        {"text": "Elles produisent de l'acide lactique et de l'acide acétique, donnant l'acidité et les arômes caractéristiques.", "isCorrect": False, "key": "A"},
+                        {"text": "Il est indispensable pour le goût (exhausteur), la conservation (anti-bactérien) et le liant de la farce (extraction des protéines).", "isCorrect": True, "key": "B"},
+                        {"text": "Elles servent uniquement à renforcer le réseau de gluten (ténacité) lors du pétrissage intensif.", "isCorrect": False, "key": "C"},
+                        {"text": "Elles régulent le brunissement de la croûte et la coloration de la mie du pain.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **couenne fraîche** est la peau du porc. Elle est blanchie (cuite partiellement puis refroidie) puis parfois hachée très finement. Riche en **collagène**, elle est utilisée comme liant naturel pour apporter du fondant et du corps aux farces après cuisson."
+                    "correction": "Le sel (salage) est le premier conservateur. Il permet aussi l'extraction de la myosine (protéine) qui lie les farces cuites."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel terme désigne le tissu conjonctif riche en collagène, souvent présent autour des muscles et qui se transforme en gélatine à la cuisson ?",
+                    "question": "Quel est l'effet de l'utilisation d'une 'force de hachage' (ou d'un disque de hachoir) trop fin sur la farce à saucisse ?",
                     "answerOptions": [
-                        {"text": "Le cartilage.", "isCorrect": False},
-                        {"text": "L'aponévrose (ou tendon).", "isCorrect": True},
-                        {"text": "La moelle.", "isCorrect": False},
-                        {"text": "Le nerf.", "isCorrect": False}
+                        {"text": "Elle assouplit la pâte, augmente le volume du produit et améliore la saveur et la conservation.", "isCorrect": False, "key": "A"},
+                        {"text": "Le hachage trop fin écrase la viande (échauffement) et donne une texture pâteuse (absence de grain) au produit fini.", "isCorrect": True, "key": "B"},
+                        {"text": "Elle rend la pâte trop ferme (ténace) et difficile à travailler au laminoir (tourage).", "isCorrect": False, "key": "C"},
+                        {"text": "Elle sert uniquement à colorer la mie du produit (jaune intense) sans changer la texture.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**aponévrose** (membrane fibreuse) et les **tendons** sont principalement constitués de collagène. C'est le collagène qui, sous l'effet de la chaleur humide (longue cuisson), se solubilise et donne la **gélatine**, essentielle pour le liant et la texture des produits de traiteur."
+                    "correction": "Le choix du disque (3mm, 6mm, 8mm) est crucial pour la texture (grain) du saucisson ou du pâté de campagne."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Pourquoi est-il déconseillé d'utiliser de l'huile d'olive pure pour rissoler les viandes destinées aux plats cuisinés avant de mouiller ?",
+                    "question": "Quel est le nom de l'instrument qui permet de 'pousser' (ou d'embosser) la farce à saucisse dans son boyau naturel ou synthétique ?",
                     "answerOptions": [
-                        {"text": "Elle est trop acide.", "isCorrect": False},
-                        {"text": "Son point de fumée est relativement bas, elle peut brûler et donner un goût amer.", "isCorrect": True},
-                        {"text": "Elle est trop liquide.", "isCorrect": False},
-                        {"text": "Elle ne colore pas suffisamment la viande.", "isCorrect": False}
+                        {"text": "Le jeu de cales d'épaisseur (ou la jauge d'épaisseur) pour mesurer l'espace entre deux surfaces.", "isCorrect": False, "key": "A"},
+                        {"text": "Le poussoir hydraulique (ou à manivelle) pour introduire la farce sous pression (remplissage homogène).", "isCorrect": True, "key": "B"},
+                        {"text": "L'amylase, qui transforme l'amidon en sucres (alimentation de la levure).", "isCorrect": False, "key": "C"},
+                        {"text": "Le colorant (curcuma) pour donner une couleur jaune à la mie des pains spéciaux.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**huile d'olive** vierge a un point de fumée plus bas que d'autres graisses (comme l'huile de tournesol ou le beurre clarifié). À haute température, elle se dégrade et **fume**, ce qui génère des composés amers et cancérigènes."
+                    "correction": "Le poussoir doit être utilisé sans créer de bulles d'air (poches) dans le boyau (risque de contamination et de mauvaise tenue)."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Quel est l'additif le plus couramment utilisé pour améliorer la capacité des viandes à retenir l'eau (rétention d'eau) dans les produits cuits ?",
+                    "question": "Quel est l'impact d'une mauvaise 'température de cuisson' (trop forte et trop rapide) sur un jambon au torchon ?",
                     "answerOptions": [
-                        {"text": "Les nitrates.", "isCorrect": False},
-                        {"text": "Les phosphates.", "isCorrect": True},
-                        {"text": "Les sulfates.", "isCorrect": False},
-                        {"text": "Les glutamates.", "isCorrect": False}
+                        {"text": "Le son déchire le réseau de gluten, réduisant le volume du pain et augmentant l'hydratation (besoin en eau).", "isCorrect": False, "key": "A"},
+                        {"text": "Le jambon sera sec, décharné et présentera des poches de gras et d'eau (perte de rendement et de texture).", "isCorrect": True, "key": "B"},
+                        {"text": "Le son accélère l'activité de la levure et augmente la production d'acide lactique.", "isCorrect": False, "key": "C"},
+                        {"text": "Le son ne change rien aux propriétés de la pâte, il est uniquement un apport nutritionnel (fibres).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les **phosphates** (E450, E451, E452) sont utilisés pour augmenter le pH de la viande. Cela augmente la capacité des protéines à se lier à l'eau, ce qui réduit la perte de poids à la cuisson et améliore le moelleux du produit fini."
+                    "correction": "Le jambon (produit cuit) doit être cuit lentement, à basse température (souvent en dessous de 85°C) pour conserver son hydratation et son moelleux."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quel paramètre physique, mesuré à l'aide d'un densimètre lors de la préparation d'une saumure, est exprimé en degrés Baumé (°Bé) ?",
+                    "question": "Quel est le rôle du 'foie' (volaille ou porc) dans la fabrication des mousses et des pâtés supérieurs (farce fine) ?",
                     "answerOptions": [
-                        {"text": "Le pH du mélange.", "isCorrect": False},
-                        {"text": "Le taux d'acidité.", "isCorrect": False},
-                        {"text": "La concentration en sel.", "isCorrect": True},
-                        {"text": "La pression osmotique.", "isCorrect": False}
+                        {"text": "Elle dégrade l'amidon en sucres simples (maltose) qui servent de nourriture à la levure et assurent la coloration de la croûte.", "isCorrect": False, "key": "A"},
+                        {"text": "Il apporte une saveur puissante, une couleur spécifique (rosée) et une texture fondante (crémeuse) à la préparation.", "isCorrect": True, "key": "B"},
+                        {"text": "Elle régule l'acidité (pH) de la pâte et assure la bonne conservation du produit fini.", "isCorrect": False, "key": "C"},
+                        {"text": "Elle sert uniquement à blanchir la mie du pain et à réduire l'activité des lactobacilles (levain).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **densimètre** mesure la densité du liquide. Cette densité est ensuite convertie en **degrés Baumé (°Bé)** ou en pourcentage massique, représentant la **concentration en sel** de la saumure. Cette mesure est vitale pour la maîtrise de la salaison."
+                    "correction": "Le foie (foie gras, foie de volaille) est l'ingrédient clé des mousses et des pâtés haut de gamme (texture et goût)."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quelle coupe de la carcasse porcine, située sous les côtes, fournit la matière première principalement utilisée pour la fabrication des lardons et du bacon ?",
+                    "question": "Quel est l'impact d'une 'farce trop chaude' (hachage ou cutterage excessif) lors de l'embossage de la saucisse ?",
                     "answerOptions": [
-                        {"text": "L'Épaule (Plat de côtes).", "isCorrect": False},
-                        {"text": "L'Échine.", "isCorrect": False},
-                        {"text": "Le Flanc ou Poitrine.", "isCorrect": True},
-                        {"text": "Le Filet.", "isCorrect": False}
+                        {"text": "Elle rend la pâte plus ferme, plus tenace (renforcement du gluten) et elle augmente le temps de pétrissage.", "isCorrect": False, "key": "A"},
+                        {"text": "La farce risque de se 'casser' (le gras fond) et le produit final sera sec, décharné et de mauvaise qualité (mauvais liant).", "isCorrect": True, "key": "B"},
+                        {"text": "Elle n'a aucun impact sur la pâte, mais elle accélère la corrosion des machines du fournil.", "isCorrect": False, "key": "C"},
+                        {"text": "Elle diminue le taux de cendres de la farine et ralentit l'activité des bactéries lactiques du levain.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **poitrine** (ou flanc) est la partie ventrale du porc, située sous la cage thoracique. Elle est caractérisée par l'alternance de couches de gras et de maigre, ce qui la rend idéale pour la salaison, la production de lardons et de bacon."
+                    "correction": "La température de la farce doit être maintenue sous les 12°C. L'utilisation de glace (eau) est vitale."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Quel est le risque si une saumure d'injection est préparée à une température trop élevée ?",
+                    "question": "Quel est le rôle du 'lard' (ou barde de lard) dans la cuisson d'une terrine ou d'un pâté ?",
                     "answerOptions": [
-                        {"text": "Une coagulation prématurée des protéines en surface.", "isCorrect": True},
-                        {"text": "Une action insuffisante des nitrites.", "isCorrect": False},
-                        {"text": "Un goût final trop salé.", "isCorrect": False},
-                        {"text": "Une coloration grise de la viande.", "isCorrect": False}
+                        {"text": "Il apporte une valeur nutritive, de la couleur, du liant et améliore la conservation du produit fini.", "isCorrect": False, "key": "A"},
+                        {"text": "Il est utilisé pour envelopper la farce (protection) et l'empêcher de se dessécher pendant la cuisson (maintien du moelleux).", "isCorrect": True, "key": "B"},
+                        {"text": "Il renforce le réseau de gluten (ténacité) et augmente le temps de pétrissage de la pâte.", "isCorrect": False, "key": "C"},
+                        {"text": "Il sert d'agent de blanchiment de la mie du pain (aspect très blanc et sec).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Si la saumure est trop chaude (idéalement elle doit être entre 2 °C et 4 °C), elle peut provoquer une **cuisson ou dénaturation partielle** des protéines en surface de la viande au point d'injection. Ces protéines coagulées bouchent les canaux et empêchent une bonne diffusion de la saumure."
+                    "correction": "La barde de lard (graisse de couverture) est essentielle pour la cuisson lente et le moelleux des farces maigres (gibier, poisson)."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Dans la charcuterie, qu'appelle-t-on un 'assaisonnement composite' ?",
+                    "question": "Quel est le nom de l'élément qui permet le 'liant' d'une farce (cohésion) et sa bonne tenue après cuisson (ingrédient non protéique) ?",
                     "answerOptions": [
-                        {"text": "Un assaisonnement contenant uniquement du sel et du poivre.", "isCorrect": False},
-                        {"text": "Un mélange d'épices et d'aromates spécifiques déjà préparé (prêt à l'emploi).", "isCorrect": True},
-                        {"text": "Un mélange d'assaisonnement et d'additifs (nitrite, phosphate).", "isCorrect": False},
-                        {"text": "Un assaisonnement liquide (type saumure).", "isCorrect": False}
+                        {"text": "La panade (mélange de pain trempé ou de farine/lait/œuf) pour l'apport d'amidon (agent de liaison).", "isCorrect": True, "key": "A"},
+                        {"text": "La levure lactique et la levure acétique (pour les arômes et l'acidité).", "isCorrect": False, "key": "B"},
+                        {"text": "La levure en poudre et la levure en flocons (pour le volume et la coloration).", "isCorrect": False, "key": "C"},
+                        {"text": "La levure de surface (pour la croûte) et la levure de masse (pour la mie).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**assaisonnement composite** est un mélange d'épices, d'aromates, parfois de liants ou d'additifs, préparé à l'avance par le fournisseur pour garantir un profil aromatique constant et standardisé dans les fabrications."
+                    "correction": "La panade (farine, pain de mie, semoule) sert d'absorbant et de liant (amidon) pour améliorer la texture des farces grossières."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Quel ingrédient est essentiel pour réaliser la **panade** dans la fabrication de certaines terrines ou pâtés, et quel est son rôle ?",
+                    "question": "Quel est le nom de la technique qui consiste à chauffer le boyau d'une saucisse (ou le jambon) dans une étuve pour démarrer la 'fermentation' (saucisson sec) ?",
                     "answerOptions": [
-                        {"text": "Le vin blanc, pour la saveur.", "isCorrect": False},
-                        {"text": "Le foie de volaille, pour la couleur.", "isCorrect": False},
-                        {"text": "Le pain de mie trempé dans du lait, comme agent de liaison", "isCorrect": True},
-                        {"text": "La gélatine en poudre, pour la tenue.", "isCorrect": False}
+                        {"text": "L'étuvage (ou 'séchage') pour la maturation du produit avant le séchage final (développement du goût et de l'acidité).", "isCorrect": True, "key": "A"},
+                        {"text": "Le pétrissage intensif pour développer le réseau de gluten.", "isCorrect": False, "key": "B"},
+                        {"text": "L'autolyse (mélange farine/eau) pour améliorer l'extensibilité.", "isCorrect": False, "key": "C"},
+                        {"text": "La dégradation enzymatique par les amylases (pour les sucres).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **panade** est un mélange de féculent (pain de mie, mie de pain) trempé dans un liquide (lait, bouillon) ou un roux. Elle est ajoutée à la farce pour **augmenter sa capacité de rétention d'eau** et donner du moelleux au produit fini."
+                    "correction": "L'étuvage est l'étape cruciale où les micro-organismes (ferments) transforment les sucres et baissent le pH (conservation et saveur)."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Quelle technique permet d'utiliser de la viande de catégorie inférieure (moins noble) pour obtenir une farce fine et homogène avec une bonne tenue ?",
+                    "question": "Quel est l'impact de l'utilisation d'une 'pochée' (viande de veau hachée très fine) dans la farce à quenelle (produit traiteur) ?",
                     "answerOptions": [
-                        {"text": "L'attendrissement mécanique.", "isCorrect": False},
-                        {"text": "Le **cutterage** (ou passage au cutter-émulsionneur).", "isCorrect": True},
-                        {"text": "La maturation.", "isCorrect": False},
-                        {"text": "La simple découpe au couteau.", "isCorrect": False}
+                        {"text": "Il ralentit l'activité des levures et des bactéries (fermentation lente et contrôlée, pousse différée).", "isCorrect": False, "key": "A"},
+                        {"text": "Elle apporte une texture très légère, aérée et une grande onctuosité au produit fini (par mélange de panade et d'œufs).", "isCorrect": True, "key": "B"},
+                        {"text": "Il détruit totalement les micro-organismes (levures et bactéries) de la pâte.", "isCorrect": False, "key": "C"},
+                        {"text": "Il n'a aucun impact sur l'activité des levures, mais il améliore la coloration de la croûte.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **cutter** est une machine munie de lames rotatives très rapides qui permet de réaliser une **émulsion très fine** de la viande, de la graisse et de l'eau. Le cutterage permet d'extraire les protéines liantes, ce qui améliore la texture et la cohésion, même avec des viandes moins persillées."
+                    "correction": "La pochée est une farce de base (panade + veau ou volaille) qui peut être montée au beurre et aux œufs pour la légèreté (quenelles de brochet)."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "En traiteur, quel est l'intérêt principal d'utiliser des **œufs entiers** dans la préparation de l'appareil (mélange) d'une quiche ou d'une tarte salée ?",
+                    "question": "Quel est le rôle du 'poussoir à pousses fines' (ou buse de petit diamètre) dans la charcuterie ?",
                     "answerOptions": [
-                        {"text": "Apporter uniquement de la couleur.", "isCorrect": False},
-                        {"text": "Servir d'agent de liaison et de coagulation à la chaleur.", "isCorrect": True},
-                        {"text": "Augmenter le volume de la garniture.", "isCorrect": False},
-                        {"text": "Diminuer le temps de cuisson.", "isCorrect": False}
+                        {"text": "Il sert de nourriture à la levure et participe à la coloration de la croûte (réaction de Maillard).", "isCorrect": False, "key": "A"},
+                        {"text": "Il permet l'embossage (remplissage) des petits boyaux (saucisses cocktails, chipolatas) pour une cuisson rapide.", "isCorrect": True, "key": "B"},
+                        {"text": "Il ralentit la fermentation et augmente le taux de cendres de la farine (T).", "isCorrect": False, "key": "C"},
+                        {"text": "Il sert uniquement à blanchir la mie du pain et à réduire l'activité des lactobacilles.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'œuf est un agent de **liaison** (ou de coagulation). Sous l'effet de la chaleur, les protéines de l'œuf coagulent et solidifient l'appareil liquide (mélange crème/lait), permettant à la garniture de la quiche ou de la tarte de se tenir."
+                    "correction": "Le choix de l'embout (buse) est crucial pour la régularité et le diamètre des saucisses (calibrage)."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quelle matière première est exclusivement réservée à la fabrication des rillettes du Mans selon la réglementation de l'IGP (Indication Géographique Protégée) ?",
+                    "question": "Quel est le nom de la technique qui consiste à cuire une farce à pâté directement dans un bain-marie (four) pour une cuisson douce et uniforme ?",
                     "answerOptions": [
-                        {"text": "L'échine de porc.", "isCorrect": False},
-                        {"text": "La longe de porc.", "isCorrect": False},
-                        {"text": "Le gras et le maigre des morceaux de porc (hors tête et abats).", "isCorrect": True},
-                        {"text": "Le jambon de porc uniquement.", "isCorrect": False}
+                        {"text": "L'autolyse, pour permettre aux enzymes (protéases) de rendre la pâte plus extensible et facile à travailler.", "isCorrect": False, "key": "A"},
+                        {"text": "La cuisson au bain-marie (humidité) pour éviter le dessèchement de la farce et la création d'une croûte (moelleux).", "isCorrect": True, "key": "B"},
+                        {"text": "Le bassinage, qui consiste à ajouter de l'eau en fin de pétrissage (pâte très hydratée).", "isCorrect": False, "key": "C"},
+                        {"text": "Le pointage, qui est la première fermentation de la pâte en masse (après le pétrissage).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les **Rillettes du Mans (IGP)** sont soumises à un cahier des charges strict. Elles doivent être fabriquées exclusivement à partir de **morceaux de porc** (maigre et gras), avec une interdiction formelle d'utiliser la tête, le couenne ou les abats dans la mêlée."
+                    "correction": "Le bain-marie (eau chaude) permet de réguler la température de la terrine et de garantir une cuisson à cœur (70°C) sans dessèchement."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quel terme désigne le boyau naturel le plus fréquemment utilisé pour l'embossage de petites saucisses crues (type chipolatas ou saucisses de Toulouse) ?",
+                    "question": "Quel est l'objectif du 'boyau naturel' (intestin d'animal) dans le saucisson (vs boyau synthétique) ?",
                     "answerOptions": [
-                        {"text": "Le fuseau de porc.", "isCorrect": False},
-                        {"text": "Le menu de mouton.", "isCorrect": True},
-                        {"text": "Le chaudin de porc.", "isCorrect": False},
-                        {"text": "La baudruche de bœuf.", "isCorrect": False}
+                        {"text": "Le sucre freine l'activité de la levure (osmose) : il faut augmenter le dosage de levure ou diminuer la quantité d'eau.", "isCorrect": False, "key": "A"},
+                        {"text": "Il est perméable et favorise les échanges gazeux (séchage, fumage) et le développement de la fleur (moisissure noble).", "isCorrect": True, "key": "B"},
+                        {"text": "Le sucre détruit les bactéries lactiques du levain (acidité) et empêche l'obtention des arômes.", "isCorrect": False, "key": "C"},
+                        {"text": "Le sucre rend la pâte plus ferme, plus tenace (renforcement du gluten) et augmente le temps de pétrissage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **menu de mouton** (intestin grêle du mouton ou de la chèvre) est le plus fin et le plus délicat des boyaux. Il est idéal pour les petites charcuteries fraîches crues (chipolatas, merguez) car il est discret et facile à croquer."
-                },
+                    "correction": "Le boyau naturel (tripes) est la méthode traditionnelle. Il joue un rôle crucial dans la maturation (séchage) et l'arôme du saucisson sec."
+                }
             ]
         },
-        # =========================================================================
-        # THÈME 3 : TECHNIQUES DE BASE EN CHARCUTERIE (Q. 41-60)
-        # =========================================================================
+        # THÈME 3
         3: {
-            "name": "3. Techniques de Base en Charcuterie",
+            "name": "Préparations Culinaires (Plats Cuisinés, Sauces, Assaisonnements) et Traiteur",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Qu'appelle-t-on le *dégorgeage* des abats blancs, comme les cervelles ou les ris de veau, avant leur cuisson ?",
+                    "question": "Quel est le rôle du 'roux' (mélange de beurre et de farine) dans la préparation d'une sauce (base Béchamel, Velouté) ?",
                     "answerOptions": [
-                        {"text": "L'élimination du gras superficiel.", "isCorrect": False},
-                        {"text": "La mise en trempe dans de l'eau froide pour éliminer les impuretés et le sang.", "isCorrect": True},
-                        {"text": "Le fait de les faire bouillir rapidement.", "isCorrect": False},
-                        {"text": "Le retrait des membranes fibreuses.", "isCorrect": False}
+                        {"text": "Développer le réseau de gluten, incorporer l'air (pour le volume) et obtenir une pâte homogène et élastique.", "isCorrect": False, "key": "A"},
+                        {"text": "Servir d'agent de liaison (épaississant) pour la sauce (amidon) et permettre l'incorporation d'un liquide sans grumeaux.", "isCorrect": True, "key": "B"},
+                        {"text": "Accélérer l'activité des bactéries lactiques pour obtenir une pâte plus acide et aromatique.", "isCorrect": False, "key": "C"},
+                        {"text": "Servir uniquement à mélanger les ingrédients (farine, eau, sel, levure) sans développer la structure.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **dégorgeage** consiste à laisser tremper les abats (cervelle, rognons, ris) dans de l'**eau froide** et vinaigrée ou salée pendant quelques heures. Cette opération permet d'extraire les résidus de sang et d'impuretés qui pourraient altérer la saveur et l'aspect final."
+                    "correction": "Le roux (blanc, blond ou brun) est la base de l'épaississement des sauces chaudes (liaison amidon)."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Quel est l'intérêt d'utiliser une *barde* de porc (feuille de gras) pour chemiser l'intérieur d'un moule avant d'y placer une farce de pâté ou de terrine ?",
+                    "question": "Comment appelle-t-on le type de 'bouillon' (base liquide aromatisée) utilisé pour la cuisine de traiteur (soupes, sauces, braisage) ?",
                     "answerOptions": [
-                        {"text": "Diminuer le temps de cuisson.", "isCorrect": False},
-                        {"text": "Empêcher l'assaisonnement de s'échapper.", "isCorrect": False},
-                        {"text": "Maintenir l'humidité de la farce et faciliter le démoulage.", "isCorrect": True},
-                        {"text": "Apporter une saveur très fumée.", "isCorrect": False}
+                        {"text": "Le fond (blanc ou brun) : extraction lente des sucs des os, des légumes et de la garniture aromatique (mirepoix).", "isCorrect": True, "key": "A"},
+                        {"text": "L'apprêt (ou apprêt final), qui est la dernière fermentation avant l'enfournement.", "isCorrect": False, "key": "B"},
+                        {"text": "Le bassinage, qui est l'ajout d'eau en fin de pétrissage (pâte très hydratée).", "isCorrect": False, "key": "C"},
+                        {"text": "Le coupage ou l'assemblage (mélange de farines T55 et T65 par exemple).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **barde** (une fine tranche de gras dorsal) est utilisée pour **chemiser** les pâtés. Elle protège la farce de la chaleur sèche du four, empêche le dessèchement de la périphérie et, après cuisson, le gras solidifié facilite le démoulage."
+                    "correction": "Les fonds (de veau, de volaille, de poisson) sont la base de la cuisine. Ils sont concentrés pour les sauces et dilués pour les potages."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Lors de l'embossage d'une saucisse, que risque-t-on si la farce est trop lâchement tassée dans le boyau ?",
+                    "question": "Quel est le but de 'laisser suer' une garniture aromatique (oignons, carottes) au début d'une préparation (fond, braisé) ?",
                     "answerOptions": [
-                        {"text": "Le boyau éclate à la cuisson.", "isCorrect": False},
-                        {"text": "Des poches d'air se forment, favorisant l'oxydation et l'altération bactérienne.", "isCorrect": True},
-                        {"text": "Le produit final est trop sec.", "isCorrect": False},
-                        {"text": "La couleur ne se fixe pas correctement.", "isCorrect": False}
+                        {"text": "Resserrer le réseau de gluten, homogénéiser la température de la pâte et expulser le gaz carbonique (CO₂).", "isCorrect": False, "key": "A"},
+                        {"text": "Ramollir les légumes et développer leurs arômes sans aucune coloration (cuisson douce à l'étouffée).", "isCorrect": True, "key": "B"},
+                        {"text": "Accélérer l'activité de la levure et augmenter la production d'acide lactique.", "isCorrect": False, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'embossage doit être ferme pour que la farce adhère bien au boyau. Un **embossage lâche** laisse des **bulles d'air** à l'intérieur, ce qui favorise la croissance de micro-organismes aérobies et conduit à une mauvaise conservation et une mauvaise fixation de la couleur."
+                    "correction": "Le suage permet de concentrer les arômes des légumes avant l'ajout du liquide (départ d'une sauce ou d'un braisé)."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quel ingrédient, souvent utilisé pour la préparation de l'appareil à crépinette, permet de 'coller' la farce entre les deux couches de crépine ?",
+                    "question": "Quelle est la principale difficulté lors de la confection d'un 'pâté en croûte' (problème de cuisson) ?",
                     "answerOptions": [
-                        {"text": "Le gros sel.", "isCorrect": False},
-                        {"text": "Le jaune d'œuf.", "isCorrect": True},
-                        {"text": "La chapelure sèche.", "isCorrect": False},
-                        {"text": "L'eau-de-vie.", "isCorrect": False}
+                        {"text": "L'aluminium s'oxyde très rapidement (couche d'alumine) et a un point de fusion très bas (risque de perçage).", "isCorrect": False, "key": "A"},
+                        {"text": "S'assurer que la farce est cuite à cœur (70°C) sans que la croûte ne soit brûlée ou détrempée par l'humidité de la farce.", "isCorrect": True, "key": "B"},
+                        {"text": "Le bassinage, qui est l'ajout d'eau en fin de pétrissage (pâte très hydratée).", "isCorrect": False, "key": "C"},
+                        {"text": "Le coupage ou l'assemblage (mélange de farines T55 et T65 par exemple).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **jaune d'œuf** (ou parfois l'œuf entier) agit comme un **liant** grâce à ses protéines qui coagulent à la cuisson. Il permet de s'assurer que la farce (hachée ou mêlée) reste bien compacte et solidaire de la crépine pendant la cuisson et la dégustation."
+                    "correction": "La cuisson du pâté en croûte est délicate (deux éléments différents à cuire). L'ajout de gelée (foncée) après cuisson est crucial pour l'esthétique et la conservation."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Quel est le but principal de l'opération de *ficelage* ou de *bridage* d'une pièce de viande avant cuisson ou salaison ?",
+                    "question": "Quel est le but de 'faire dégorger' (tremper) les ris de veau ou les abats avant la cuisson ?",
                     "answerOptions": [
-                        {"text": "Décorer la pièce pour la vente.", "isCorrect": False},
-                        {"text": "Maintenir une forme régulière pour une cuisson uniforme.", "isCorrect": True},
-                        {"text": "Empêcher la viande de perdre son gras.", "isCorrect": False},
-                        {"text": "Permettre l'injection de saumure.", "isCorrect": False}
+                        {"text": "Contrôler la déchirure de la croûte pendant la cuisson (développement du pain) et créer un motif esthétique.", "isCorrect": False, "key": "A"},
+                        {"text": "Retirer les impuretés, le sang résiduel et blanchir la pièce pour une meilleure présentation et une texture plus souple.", "isCorrect": True, "key": "B"},
+                        {"text": "Accélérer l'activité de la levure et augmenter la production d'acide lactique.", "isCorrect": False, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **ficelage** (ou bridage) est une technique visant à donner ou maintenir une **forme compacte et régulière** à la pièce. Une forme régulière assure que la chaleur pénètre de manière uniforme, garantissant une cuisson à cœur homogène."
+                    "correction": "Le dégorgement (à l'eau froide) est une étape de préparation pour les abats ou certaines viandes (saumurage) avant la cuisson."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Comment doit-on préchauffer le matériel (saumuroir, ustensiles) avant de réaliser une saumure injectable à froid ?",
+                    "question": "Quelle est la principale caractéristique de la 'pâte à foncer' utilisée pour les tartes ou les fonds de quiche (produits traiteur) ?",
                     "answerOptions": [
-                        {"text": "Le chauffer à 60 °C pour stériliser.", "isCorrect": False},
-                        {"text": "Le refroidir au maximum.", "isCorrect": True},
-                        {"text": "Le laisser à température ambiante.", "isCorrect": False},
-                        {"text": "Le rincer à l'eau très chaude.", "isCorrect": False}
+                        {"text": "Il donne une pâte avec une extensibilité et une blancheur de mie modérées (le plus souvent utilisé).", "isCorrect": False, "key": "A"},
+                        {"text": "C'est une pâte non levée, croustillante, qui ne se rétracte pas à la cuisson et est riche en matière grasse (beurre ou margarine).", "isCorrect": True, "key": "B"},
+                        {"text": "Il donne une pâte très tenace, avec une mie très colorée et une forte acidité (pétrissage lent/manuel).", "isCorrect": False, "key": "C"},
+                        {"text": "Il sert uniquement à mélanger les ingrédients (farine, eau, sel, levure) sans développer la structure.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La saumure d'injection doit être maintenue entre **2 °C et 4 °C**. Il est donc essentiel de refroidir tous les ustensiles (cuves, mélangeurs) avant l'opération pour éviter d'augmenter la température de la saumure et de compromettre son efficacité ou la qualité de la viande."
+                    "correction": "La pâte à foncer (ou pâte brisée) est la base des préparations salées (quiches, tourtes). Elle est neutre en goût et résiste à l'humidité de la garniture."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Quelle est la principale fonction de la **crépine de porc** (poche graisseuse fine) utilisée en charcuterie et traiteur ?",
+                    "question": "Quel est le phénomène qui se produit lors du 'montage d'une mayonnaise' (sauce froide) ?",
                     "answerOptions": [
-                        {"text": "Servir d'assaisonnement.", "isCorrect": False},
-                        {"text": "Remplacer les boyaux naturels.", "isCorrect": False},
-                        {"text": "Envelopper des préparations pour les lier et les protéger à la cuisson.", "isCorrect": True},
-                        {"text": "Augmenter le poids de la préparation.", "isCorrect": False}
+                        {"text": "Le coup de four : le développement rapide du pain sous l'effet de la chaleur et de l'évaporation de l'eau.", "isCorrect": False, "key": "A"},
+                        {"text": "L'émulsion : l'incorporation stable d'une phase huileuse (gras) dans une phase aqueuse (eau, jaune d'œuf) grâce à la lécithine (jaune).", "isCorrect": True, "key": "B"},
+                        {"text": "La réaction enzymatique : la transformation de l'amidon en sucres simples (amylase).", "isCorrect": False, "key": "C"},
+                        {"text": "L'autolyse : le repos de la pâte pour améliorer l'extensibilité.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **crépine** est utilisée comme enveloppe pour des produits tels que les crépinettes, les rôtis farcis ou certains pâtés. Sa structure fine et graisseuse **lie** la farce et la **protège** contre le dessèchement lors de la cuisson."
+                    "correction": "La mayonnaise est une émulsion stable (liée par la lécithine du jaune d'œuf) ; si elle est trop froide ou trop rapide, elle 'tourne' (casse l'émulsion)."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Lors de la préparation d'une farce de boudin blanc, comment doit être la viande utilisée (volaille ou veau) par rapport à la graisse ajoutée ?",
+                    "question": "Quel est le rôle de la 'gelée' (gélatine) versée dans le pâté en croûte après la cuisson ?",
                     "answerOptions": [
-                        {"text": "La viande doit être très persillée.", "isCorrect": False},
-                        {"text": "La viande doit être maigre et la graisse ferme.", "isCorrect": True},
-                        {"text": "La viande doit être grasse et la graisse souple.", "isCorrect": False},
-                        {"text": "La viande et la graisse doivent être à température ambiante.", "isCorrect": False}
+                        {"text": "Elle maintient l'humidité de la surface du pain pour retarder la formation de la croûte (meilleur développement, croûte fine et brillante).", "isCorrect": False, "key": "A"},
+                        {"text": "Elle remplit l'espace vide créé par la rétractation de la farce, améliore la conservation et l'esthétique (coupe nette).", "isCorrect": True, "key": "B"},
+                        {"text": "Elle sert uniquement à nettoyer les parois du four avant l'enfournement du pain.", "isCorrect": False, "key": "C"},
+                        {"text": "Elle diminue le temps de cuisson et augmente le taux de cendres de la farine (T).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **boudin blanc** est une émulsion de type fine. Pour garantir la blancheur et la finesse du produit, on utilise du **maigre** (volaille, veau) auquel on ajoute une **graisse ferme** (gras de porc ou de veau) pour obtenir la texture souhaitée sans excès d'humidité."
+                    "correction": "La gelée (chaude et liquide) est versée par la cheminée (trou du couvercle) et se solidifie en refroidissant (tenue du pâté)."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Quel est l'effet d'une *maturation* prolongée (plusieurs jours au froid) de la viande avant de la hacher pour une saucisse sèche ?",
+                    "question": "Quelle est l'étape qui consiste à vérifier la température à cœur d'un plat cuisiné (lasagnes, gratins) avant le maintien au chaud ou la vente ?",
                     "answerOptions": [
-                        {"text": "Une diminution de la rétention d'eau.", "isCorrect": False},
-                        {"text": "Une augmentation de la saveur et de la couleur.", "isCorrect": True},
-                        {"text": "Une accélération de la coagulation des protéines.", "isCorrect": False},
-                        {"text": "Une destruction totale des bactéries.", "isCorrect": False}
+                        {"text": "La division (ou pesée), réalisée à la main ou à la diviseuse (mécanique).", "isCorrect": False, "key": "A"},
+                        {"text": "Le contrôle à la sonde thermique (température interne) : minimum 65°C pour le maintien au chaud.", "isCorrect": True, "key": "B"},
+                        {"text": "Le rafraîchi (pour le levain), qui consiste à ajouter de la farine et de l'eau.", "isCorrect": False, "key": "C"},
+                        {"text": "Le bassinage, qui est l'ajout d'eau en fin de pétrissage (pâte très hydratée).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **maturation** (ou mûrissage) permet aux enzymes naturelles de la viande de dégrader légèrement les protéines. Cela attendrit la viande et développe les **arômes** et la **couleur** (par oxydation de la myoglobine) avant l'assaisonnement et l'embossage."
+                    "correction": "Le maintien au chaud (CCP) doit être supérieur à 63°C pour éviter la prolifération bactérienne (TDZ)."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Quel procédé de préparation permet d'isoler des aliments de l'air en les submergeant complètement dans une graisse chauffée puis refroidie, comme le saindoux ?",
+                    "question": "Quel est le but de 'l'assaisonnement' (sel, poivre, épices) dans les préparations traiteur (salades, farces) ?",
                     "answerOptions": [
-                        {"text": "La pasteurisation.", "isCorrect": False},
-                        {"text": "Le fumage à chaud.", "isCorrect": False},
-                        {"text": "L'appertisation.", "isCorrect": False},
-                        {"text": "L'**enrobage** (ou confit).", "isCorrect": True}
+                        {"text": "Donner une forme ronde au pâton et resserrer la surface pour donner de la force et de la tenue au pâton.", "isCorrect": False, "key": "A"},
+                        {"text": "Améliorer le goût (saveur) et l'équilibre des saveurs (acide, salé, sucré) pour une expérience gustative complète.", "isCorrect": True, "key": "B"},
+                        {"text": "Accélérer l'activité de la levure et augmenter la production d'acide lactique.", "isCorrect": False, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**enrobage dans la graisse** (confit) est une technique de conservation ancestrale. La graisse fondue et refroidie forme une couche hermétique qui **isole l'aliment de l'air et de l'humidité**, empêchant la prolifération des bactéries aérobies (qui ont besoin d'oxygène)."
+                    "correction": "L'assaisonnement est l'étape qui finalise le goût. Il doit être ajusté pour équilibrer la préparation."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Lors du hachage de la viande, pourquoi est-il essentiel de maintenir la température de la viande et du matériel très basse (proche de 0 °C) ?",
+                    "question": "Quel est le phénomène qui se produit dans le four lors de la cuisson d'un jambon ou d'une terrine (viande cuite) ?",
                     "answerOptions": [
-                        {"text": "Pour éviter que le sel ne se dissolve.", "isCorrect": False},
-                        {"text": "Pour empêcher la fusion des graisses.", "isCorrect": True},
-                        {"text": "Pour garantir la couleur finale.", "isCorrect": False},
-                        {"text": "Pour mieux sentir les odeurs de la viande.", "isCorrect": False}
+                        {"text": "La formation d'une fine pellicule sèche à la surface du pâton pour éviter qu'il ne colle aux outils.", "isCorrect": False, "key": "A"},
+                        {"text": "La coagulation des protéines (chaleur) qui permet de lier la farce (tenue) et de détruire les micro-organismes (sécurité).", "isCorrect": True, "key": "B"},
+                        {"text": "La dégradation enzymatique par les amylases (pour les sucres) lors de l'autolyse.", "isCorrect": False, "key": "C"},
+                        {"text": "La coloration rapide de la croûte lors de la cuisson (réaction de Maillard).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le hachage, surtout avec des machines puissantes, génère de la chaleur par friction. Cette chaleur risque de faire **fondre le gras**. Une graisse fondue s'émulsionne mal, ce qui conduit à une séparation du gras et à un produit final de mauvaise tenue."
+                    "correction": "La coagulation (dénaturation) des protéines est essentielle pour la tenue des farces (pâtés, terrines). C'est le but de la cuisson à cœur."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quel est le rôle de la **semoule de riz** ou de la **farine de riz** dans certaines préparations charcutières (comme le boudin noir ou les farces fines) ?",
+                    "question": "Quel est l'outil utilisé pour ébavurer et lisser un cordon de soudure (préparation avant masticage) ?",
                     "answerOptions": [
-                        {"text": "Rendre la farce plus croustillante.", "isCorrect": False},
-                        {"text": "Agir comme agent de liaison et améliorer le rendement en eau.", "isCorrect": True},
-                        {"text": "Accélérer la maturation.", "isCorrect": False},
-                        {"text": "Augmenter le taux de protéines.", "isCorrect": False}
+                        {"text": "La meuleuse d'angle ou la ponceuse pneumatique (disque abrasif ou disque à lamelles).", "isCorrect": False, "key": "A"},
+                        {"text": "La mandoline (ou le couteau de chef) pour la découpe fine et régulière des légumes (salades, garnitures).", "isCorrect": True, "key": "B"},
+                        {"text": "La corne (ou raclette) pour le travail des pâtes molles (rabat, nettoyage).", "isCorrect": False, "key": "C"},
+                        {"text": "Le banneton pour la pousse des pains ronds (seigle, campagne).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **semoule de riz** (ou d'autres féculents) est un agent de **liaison** et de **charge** (réglementé). Elle a une forte capacité d'absorption de l'eau, ce qui permet d'obtenir une texture plus souple, un meilleur rendement (moins de perte à la cuisson) et une meilleure tenue du produit."
+                    "correction": "La régularité des coupes (ciselage, taillage) est la base de l'esthétique des plats traiteur."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quel est le but de l'opération de *piquage* (ou piquetage) des saucissons avant l'étuvage et le séchage ?",
+                    "question": "Quel est le nom du processus d'assemblage qui utilise une colle spéciale (bi-composante) pour la fixation de certains éléments ?",
                     "answerOptions": [
-                        {"text": "Injecter l'assaisonnement.", "isCorrect": False},
-                        {"text": "Marquer le produit pour l'identification.", "isCorrect": False},
-                        {"text": "Permettre l'évacuation de l'air et de l'eau.", "isCorrect": True},
-                        {"text": "Accélérer la coloration.", "isCorrect": False}
+                        {"text": "Le collage structurel (méthode de plus en plus courante pour les pièces en composite, aluminium ou en acier HLE).", "isCorrect": False, "key": "A"},
+                        {"text": "La décoration et le 'lustrage' des plats (ajout de gelée, d'herbes, de lustrant) pour l'aspect visuel (vente).", "isCorrect": True, "key": "B"},
+                        {"text": "L'autolyse (repos de la farine et de l'eau) pour améliorer l'extensibilité.", "isCorrect": False, "key": "C"},
+                        {"text": "Le rafraîchi (pour le levain), qui consiste à ajouter de la farine et de l'eau.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **piquage** consiste à percer le boyau (généralement après embossage) pour faire sortir l'**air** (qui peut provoquer des moisissures) et l'**excès d'eau** (qui doit s'évaporer) lors des phases d'étuvage et de séchage."
+                    "correction": "L'aspect visuel est le premier facteur de vente (attractivité) pour les produits traiteur (étalage, buffet)."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quel est l'effet d'une cuisson en étuve (chaleur humide) des saucissons après l'embossage, avant le séchage ?",
+                    "question": "Quel est l'impact d'une mauvaise 'coupe' (trop rapide ou irrégulière) de la viande destinée à un pâté en croûte ?",
                     "answerOptions": [
-                        {"text": "Durcir rapidement le boyau.", "isCorrect": False},
-                        {"text": "Permettre le développement de la flore de surface et la fixation de la couleur.", "isCorrect": True},
-                        {"text": "Diminuer l'acidité de la mêlée.", "isCorrect": False},
-                        {"text": "Sécher le produit immédiatement.", "isCorrect": False}
+                        {"text": "Le pain va s'étaler (pas de coup de four), la croûte sera épaisse, et il y aura un risque de sous-cuisson (mie collante).", "isCorrect": False, "key": "A"},
+                        {"text": "Le risque de texture irrégulière, de mauvaise tenue à la coupe et de perte de l'esthétique (farce grossière ou trop fine).", "isCorrect": True, "key": "B"},
+                        {"text": "La buée (vapeur) sera excessive et le pain sera acide (mauvais goût).", "isCorrect": False, "key": "C"},
+                        {"text": "L'activité de la levure sera bloquée et le pain n'aura aucun volume (pain plat).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**étuvage** est une étape chaude et humide cruciale. Elle permet la **fermentation** par les flores (lactobacilles), qui crée l'acidité nécessaire à la conservation et au développement du goût, et elle fixe la couleur rose (nitrosomyoglobine)."
+                    "correction": "La taille des dés (coupe) est cruciale pour la texture à la dégustation et la tenue du pâté (farce en gros dés ou en haché)."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Comment appelle-t-on le mélange de viande, de gras et d'assaisonnement destiné à être embossé dans un boyau ?",
+                    "question": "Quel est le rôle du 'gros sel' (sel de Guérande, sel gemme) dans la préparation des salaisons ?",
                     "answerOptions": [
-                        {"text": "Le hachis.", "isCorrect": False},
-                        {"text": "Le parage.", "isCorrect": False},
-                        {"text": "La mêlée.", "isCorrect": True},
-                        {"text": "L'appareil.", "isCorrect": False}
+                        {"text": "Il empêche le pâton de coller aux toiles (couches) ou au plan de travail avant la cuisson.", "isCorrect": False, "key": "A"},
+                        {"text": "Il permet la 'prise au sel' (osmose) : extraction de l'eau et pénétration du sel pour la conservation et l'arôme (produits secs).", "isCorrect": True, "key": "B"},
+                        {"text": "Il sert uniquement à colorer la croûte du pain lors de la cuisson finale (aspect esthétique).", "isCorrect": False, "key": "C"},
+                        {"text": "Il accélère l'activité des bactéries lactiques pour obtenir une pâte plus acide.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **mêlée** est le nom technique donné à la préparation (viande, gras, sel, épices, additifs) prête à être embossée. C'est l'étape qui précède immédiatement l'utilisation du poussoir ou de l'embosseuse."
+                    "correction": "Le gros sel est utilisé pour le salage à sec (jambons, lardons). Il permet une pénétration lente et contrôlée."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quel rôle la présence d'amidon ou de féculent (pomme de terre, riz) joue-t-elle dans le boudin noir traditionnel ?",
+                    "question": "Quel est l'outil utilisé pour retirer les points de soudure d'origine (dessoudage) sans déformer la tôle?",
                     "answerOptions": [
-                        {"text": "Il augmente la teneur en fer du produit.", "isCorrect": False},
-                        {"text": "Il est utilisé comme agent liant pour éviter la déstructuration.", "isCorrect": True},
-                        {"text": "Il rend le boyau plus résistant.", "isCorrect": False},
-                        {"text": "Il accélère la coagulation du sang.", "isCorrect": False}
+                        {"text": "La perceuse et le foret à dépointer (perçage au centre du point de soudure).", "isCorrect": False, "key": "A"},
+                        {"text": "La cellule de refroidissement (blast chiller) pour un refroidissement rapide des plats cuisinés (moins de 2 heures).", "isCorrect": True, "key": "B"},
+                        {"text": "Le diviseuse-bouleuse (pour la division en pâtons égaux).", "isCorrect": False, "key": "C"},
+                        {"text": "Le pétrin (pour le mélange et l'incorporation des ingrédients).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Dans le boudin noir (un produit coagulé par la chaleur), l'amidon ou le féculent est l'agent liant qui agit en synergie avec les protéines du sang et du gras pour assurer une **texture lisse et homogène** et éviter que le produit ne se délite à la coupe."
+                    "correction": "Le refroidissement rapide est un CCP (Point Critique pour la Maîtrise) de l'HACCP pour les produits cuisinés (farces, sauces, soupes)."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "En charcuterie sèche, quelle opération est réalisée après le salage pour permettre au sel de pénétrer uniformément dans la masse de la viande ?",
+                    "question": "Comment s'appelle l'opération qui consiste à étaler la pâte à croissant (ou pâte feuilletée) avant le 'tourage' ?",
                     "answerOptions": [
-                        {"text": "Le fumage.", "isCorrect": False},
-                        {"text": "Le **repos** (ou période d'attente/ressuage).", "isCorrect": True},
-                        {"text": "Le pochage.", "isCorrect": False},
-                        {"text": "Le blanchiment.", "isCorrect": False}
+                        {"text": "L'abaisse (ou l'étalement), pour obtenir la forme et l'épaisseur désirées pour le beurre d'incorporation.", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'pochage' : cuisson d'un aliment (quenelle, terrine, abats) dans un liquide (fond ou bouillon) à basse température (inférieure à 100°C).", "isCorrect": True, "key": "B"},
+                        {"text": "Le rafraîchi (pour le levain), qui consiste à ajouter de la farine et de l'eau.", "isCorrect": False, "key": "C"},
+                        {"text": "Le chanfreinage (ou ébarbage) pour préparer les bords de la tôle à la soudure (angle de pénétration).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Après le salage (sel sec), un temps de **repos au froid** est nécessaire. Ce temps permet au sel de se dissoudre dans l'eau du muscle et de se diffuser de manière homogène par **osmose** dans toute la pièce, garantissant l'assaisonnement et l'action conservatrice."
+                    "correction": "Le pochage est une cuisson douce pour les produits délicats (poisson, abats) afin d'assurer un moelleux maximum (sans ébullition)."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quel est le nom de la technique qui consiste à introduire la saumure directement dans la masse musculaire de la pièce de viande à l'aide d'aiguilles ?",
+                    "question": "Quel est le but du 'maintien au chaud' (bain-marie, vitrine chauffante) des plats traiteur (au-delà de 2 heures) ?",
                     "answerOptions": [
-                        {"text": "Le saumurage à sec.", "isCorrect": False},
-                        {"text": "Le saumurage par barattage.", "isCorrect": False},
-                        {"text": "Le saumurage par injection.", "isCorrect": True},
-                        {"text": "Le saumurage par immersion.", "isCorrect": False}
+                        {"text": "Avoir une consistance (plasticité) similaire à celle de la pâte pour éviter qu'il ne s'échappe lors du laminoir (beurre trop froid).", "isCorrect": False, "key": "A"},
+                        {"text": "Maintenir impérativement la température à cœur du produit au-dessus de 63°C (hors zone de danger bactériologique).", "isCorrect": True, "key": "B"},
+                        {"text": "Accélérer la production de gaz carbonique (CO₂) et la levée du produit fini.", "isCorrect": False, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **saumurage par injection** (ou injection artérielle/intramusculaire) est une technique rapide et très courante. Elle permet une diffusion rapide et uniforme des ingrédients (sel, nitrites, phosphates) au cœur du produit, réduisant le temps de saumurage et augmentant le rendement."
+                    "correction": "Le maintien au chaud (supérieur à 63°C) est un CCP pour la sécurité alimentaire. La durée maximale est réglementée (souvent 4 heures)."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Que doit-on éviter d'ajouter en trop grande quantité dans une farce destinée à la préparation d'un boudin blanc, car cela nuit à sa finesse ?",
+                    "question": "Quel est le nom de l'étape qui consiste à plier la pâte à plusieurs reprises (3 ou 4 tours) avec le beurre pour créer les 'feuilles' ?",
                     "answerOptions": [
-                        {"text": "Le lait entier.", "isCorrect": False},
-                        {"text": "La crème.", "isCorrect": False},
-                        {"text": "L'oignon frais (ou échalote).", "isCorrect": True},
-                        {"text": "Le sel.", "isCorrect": False}
+                        {"text": "Le tourage (tour simple ou tour double), qui crée l'alternance de pâte et de matière grasse (feuilletage).", "isCorrect": False, "key": "A"},
+                        {"text": "L'opération de 'saisir' (ou marquer) une pièce de viande (braisé, rôti) avant la cuisson lente.", "isCorrect": True, "key": "B"},
+                        {"text": "L'apprêt (ou apprêt final), qui est la dernière fermentation avant l'enfournement.", "isCorrect": False, "key": "C"},
+                        {"text": "L'autolyse (repos de la farine et de l'eau) pour améliorer l'extensibilité.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le boudin blanc est une charcuterie fine à la texture lisse. L'ajout d'**oignon** (même cuit) apporte de la texture et un goût fort qui ne correspond pas au profil délicat recherché. Les aromates doivent souvent être infusés dans le lait/la crème puis retirés."
+                    "correction": "Saisir (cuisson rapide et forte) crée une croûte (réaction de Maillard) qui conserve les sucs et donne la couleur du braisé (goût)."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quelle opération de préparation est indispensable pour les boyaux naturels avant leur utilisation pour l'embossage ?",
+                    "question": "Quel est le rôle de la 'détente' (temps de repos) des pâtons avant le façonnage final (baguette) ?",
                     "answerOptions": [
-                        {"text": "Les faire sécher pendant 24 heures.", "isCorrect": False},
-                        {"text": "Les tremper et les rincer longuement dans de l'eau claire et tiède.", "isCorrect": True},
-                        {"text": "Les blanchir dans l'eau bouillante.", "isCorrect": False},
-                        {"text": "Les fumer pour les assouplir.", "isCorrect": False}
+                        {"text": "Permettre au réseau de gluten de se relâcher pour que le pâton soit plus souple et extensible pour le façonnage.", "isCorrect": False, "key": "A"},
+                        {"text": "La vérification finale de l'assaisonnement et de la texture (avant la vente ou le conditionnement).", "isCorrect": True, "key": "B"},
+                        {"text": "Ajouter du sel dans la pâte pour freiner la fermentation et augmenter l'acidité.", "isCorrect": False, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les boyaux naturels sont conservés dans le sel. Avant utilisation, ils doivent être **trempés, rincés** et parfois brossés pour éliminer l'excès de sel et les impuretés, les réhydrater et leur redonner leur souplesse."
-                },
+                    "correction": "Le contrôle qualité (goût et texture) est la dernière vérification avant de proposer le produit au client."
+                }
             ]
         },
-        # =========================================================================
-        # THÈME 4 : TRAITEUR : FONDS, SAUCES ET PÂTES (BASES) (Q. 61-80)
-        # =========================================================================
+        # THÈME 4
         4: {
-            "name": "4. Traiteur : Fonds, Sauces et Pâtes (bases)",
+            "name": "Techniques de Conservation (Salaison, Fumage, Mise sous vide) et Produits Secs",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel terme culinaire désigne l'ensemble des légumes (oignon, carotte, céleri) taillés en petits dés, utilisés comme base aromatique pour les fonds et les sauces ?",
+                    "question": "Quelle est la principale caractéristique du 'séchage' dans la fabrication du saucisson sec (produit fermenté) ?",
                     "answerOptions": [
-                        {"text": "La mirepoix.", "isCorrect": True},
-                        {"text": "La brunoise.", "isCorrect": False},
-                        {"text": "La matignon.", "isCorrect": False},
-                        {"text": "L'arômate.", "isCorrect": False}
+                        {"text": "Elle est très enrichie en œufs, en sucre et en matière grasse (beurre) et nécessite un pétrissage très long.", "isCorrect": False, "key": "A"},
+                        {"text": "C'est l'étape de déshydratation progressive (perte de poids) qui permet la conservation longue durée et le développement des arômes (maturation).", "isCorrect": True, "key": "B"},
+                        {"text": "Elle est très peu hydratée (moins de 50% d'eau) pour une conservation très longue.", "isCorrect": False, "key": "C"},
+                        {"text": "Elle est fabriquée sans sel, pour un goût plus doux et un pétrissage très court.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **mirepoix** est le terme technique pour l'association de légumes aromatiques (souvent oignon, carotte, céleri) taillés en dés. C'est la base de saveur des fonds de cuisson, des bouillons, et de nombreuses sauces."
+                    "correction": "Le séchage (lent et contrôlé) réduit l'activité de l'eau (Aw) et bloque le développement des bactéries (conservation). La perte de poids est essentielle."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quel est l'objectif principal de l'opération de *blanchiment* des os avant de les utiliser pour réaliser un fond blanc ?",
+                    "question": "Quel est le nom de l'ingrédient (E250) qui fixe la couleur rose (hémoglobine) et empêche le développement du Clostridium Botulinum ?",
                     "answerOptions": [
-                        {"text": "Commencer leur cuisson.", "isCorrect": False},
-                        {"text": "Retirer les impuretés, le sang et les résidus qui troubleraient le fond.", "isCorrect": True},
-                        {"text": "Les attendrir pour une extraction plus facile.", "isCorrect": False},
-                        {"text": "Les saler avant cuisson.", "isCorrect": False}
+                        {"text": "Le sel nitrité (mélange de sel de cuisine et de nitrite de sodium) pour le jambon et les saucissons secs.", "isCorrect": True, "key": "A"},
+                        {"text": "Le mastic polyester (bi-composant) pour combler les défauts de surface (creux, rayures profondes) avant l'apprêt.", "isCorrect": False, "key": "B"},
+                        {"text": "La farine de maïs (sans gluten) avec une poudre à lever (baking powder) pour le volume.", "isCorrect": False, "key": "C"},
+                        {"text": "La farine de blé (T150) avec une faible hydratation pour la conservation.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **blanchiment** consiste à plonger les os dans de l'eau froide, porter à ébullition, écumer, puis égoutter et rincer. Cela permet d'éliminer les impuretés (sang, protéines coagulées) et d'assurer la **clarté** du fond blanc."
+                    "correction": "Le sel nitrité est le conservateur/fixateur de couleur le plus important de la charcuterie. Son dosage est strictement réglementé (toxicité)."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Qu'appelle-t-on un **roux blanc** dans l'élaboration des sauces de base en traiteur ?",
+                    "question": "Quelle est la principale caractéristique du 'fumage' (à chaud ou à froid) des produits (saucisses, jambon) ?",
                     "answerOptions": [
-                        {"text": "Un mélange de beurre et de farine cuit jusqu'à obtenir une couleur dorée.", "isCorrect": False},
-                        {"text": "Un mélange d'huile et de maïzena pour lier.", "isCorrect": False},
-                        {"text": "Un mélange de beurre et de farine cuit sans coloration.", "isCorrect": True},
-                        {"text": "Un mélange de crème et de jaunes d'œufs.", "isCorrect": False}
+                        {"text": "Il se conserve beaucoup plus longtemps (plusieurs jours) grâce à l'acidité produite par les bactéries lactiques.", "isCorrect": False, "key": "A"},
+                        {"text": "Il apporte des arômes boisés, une couleur spécifique (dorée/brune) et des propriétés anti-bactériennes (phénols).", "isCorrect": True, "key": "B"},
+                        {"text": "Il doit être consommé dans les 24 heures en raison d'une forte teneur en eau (hydrolyse).", "isCorrect": False, "key": "C"},
+                        {"text": "Il contient des additifs (conservateurs) qui prolongent sa durée de vie (faux pour le vrai levain).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **roux** est une liaison chaude réalisée en cuisant de la farine et une matière grasse (beurre). Un **roux blanc** est cuit juste assez longtemps pour éliminer le goût de cru de la farine, sans prendre de couleur. Il sert de base à la sauce béchamel ou aux veloutés."
+                    "correction": "Le fumage (souvent à froid, moins de 25°C) est une étape d'aromatisation et de conservation (naturelle) grâce aux composants de la fumée."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quel type de fond est traditionnellement utilisé comme base pour la réalisation d'une sauce demi-glace classique ?",
+                    "question": "Quel est le rôle de la 'saumure' (mélange de sel, nitrite, sucres, épices) dans le jambon cuit ?",
                     "answerOptions": [
-                        {"text": "Un fumet de poisson.", "isCorrect": False},
-                        {"text": "Un fond blanc de volaille.", "isCorrect": False},
-                        {"text": "Un fond brun de veau ou de bœuf.", "isCorrect": True},
-                        {"text": "Un bouillon de légumes.", "isCorrect": False}
+                        {"text": "L'incorporation de la matière grasse (beurre de tourage) pendant l'étape de tourage (pliage).", "isCorrect": False, "key": "A"},
+                        {"text": "Elle permet la pénétration du sel (conservation), la fixation de la couleur et le moelleux de la viande (par injection).", "isCorrect": True, "key": "B"},
+                        {"text": "L'utilisation de farine de seigle (T130) qui contient des pentosanes (gommes).", "isCorrect": False, "key": "C"},
+                        {"text": "La cuisson à haute température (plus de 300°C) pour un développement rapide de la croûte.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **demi-glace** est une sauce brune réduite, très concentrée en saveur. Elle est traditionnellement obtenue à partir d'un **fond brun de veau** (ou bœuf), préalablement coloré par le rôtissage des os et de la garniture aromatique."
+                    "correction": "La saumure (liquide) est injectée directement dans les muscles pour garantir une salaison uniforme (jambon cuit, épaule)."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est le rôle principal de la **liaison** (amidon, roux, œufs, etc.) dans une sauce ?",
+                    "question": "Quel est le nom de la technique pour cuire une baguette de tradition sur la sole du four (sans plaque) ?",
                     "answerOptions": [
-                        {"text": "Augmenter le temps de conservation.", "isCorrect": False},
-                        {"text": "Améliorer la brillance.", "isCorrect": False},
-                        {"text": "Apporter l'épaisseur et la texture désirées.", "isCorrect": True},
-                        {"text": "Accélérer l'évaporation de l'eau.", "isCorrect": False}
+                        {"text": "La cuisson sur sole (ou cuisson à plat) pour une meilleure transmission de la chaleur et une croûte croustillante.", "isCorrect": False, "key": "A"},
+                        {"text": "La 'mise sous vide' (emballage) : retrait de l'air pour ralentir l'oxydation (goût) et la croissance des micro-organismes aérobies.", "isCorrect": True, "key": "B"},
+                        {"text": "La cuisson par injection de vapeur (buée) pour l'humidification de la surface.", "isCorrect": False, "key": "C"},
+                        {"text": "La surgélation de la pâte (pousse bloquée) pour une cuisson différée.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **liaison** est l'action d'épaissir un liquide. Elle permet d'augmenter la viscosité de la sauce pour qu'elle nappe correctement l'aliment (technique du 'nappage à la cuillère')."
+                    "correction": "La mise sous vide (emballage sans oxygène) prolonge la DLC des produits cuits et crus (conservation froide) et évite la contamination."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Quelle opération consiste à réduire une sauce ou un fond de cuisson par ébullition pour concentrer ses saveurs ?",
+                    "question": "Quel est le risque de sécher un saucisson sec (maturation) dans une pièce trop chaude et trop humide ?",
                     "answerOptions": [
-                        {"text": "Le blanquettage.", "isCorrect": False},
-                        {"text": "La déglace.", "isCorrect": False},
-                        {"text": "La réduction.", "isCorrect": True},
-                        {"text": "Le mouillage.", "isCorrect": False}
+                        {"text": "Elle n'utilise pas de levure ni de levain. La pousse est assurée par l'évaporation de l'eau (buée) lors de la cuisson (gonflement).", "isCorrect": False, "key": "A"},
+                        {"text": "Le risque de 'croûtage' (surface sèche et dure) qui bloque l'évaporation de l'eau interne (produit moisi ou pourri à l'intérieur).", "isCorrect": True, "key": "B"},
+                        {"text": "Elle est fabriquée avec une farine de seigle (T130) et un levain liquide pour l'acidité.", "isCorrect": False, "key": "C"},
+                        {"text": "Elle nécessite un pétrissage très long et un temps de pointage de plus de 4 heures.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **réduction** est un processus de cuisson prolongée à feu doux ou moyen. L'évaporation de l'eau concentre les composés aromatiques et le corps du liquide, intensifiant ainsi le goût du fond ou de la sauce."
+                    "correction": "Le séchage doit être très lent et progressif. Une mauvaise ventilation ou une humidité/température élevée entraîne le croûtage (produit non sécuritaire)."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Quel type de pâte est utilisée pour chemiser un moule destiné à accueillir une terrine de poisson ou de légumes cuite au four ?",
+                    "question": "Quel est le risque si la température de la chambre de 'salaison' (jambon sec) est trop basse ou trop élevée ?",
                     "answerOptions": [
-                        {"text": "Une pâte feuilletée.", "isCorrect": False},
-                        {"text": "Une pâte à choux.", "isCorrect": False},
-                        {"text": "Une pâte brisée (ou pâte à foncer).", "isCorrect": True},
-                        {"text": "Une pâte levée.", "isCorrect": False}
+                        {"text": "Le risque de 'brûler' les micro-organismes (levures et bactéries) et de bloquer l'activité du levain.", "isCorrect": False, "key": "A"},
+                        {"text": "Le risque de 'contamination' (trop chaud) ou de 'non-pénétration du sel' (trop froid, altération de la qualité).", "isCorrect": True, "key": "B"},
+                        {"text": "La diminution du taux de cendres (T) de la farine utilisée pour le rafraîchi.", "isCorrect": False, "key": "C"},
+                        {"text": "L'augmentation de la force (W) de la farine de rafraîchi (ténacité).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **pâte brisée** (ou pâte à foncer) est une pâte simple, non levée. Elle est idéale pour les fonds de tarte et pour **chemiser** les moules de pâtés en croûte et terrines, car elle est résistante, retient l'humidité et sert de support rigide à la farce."
+                    "correction": "La salaison (prise de sel) est une étape de conservation. Le sel doit pénétrer uniformément le muscle (température et temps précis)."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quelle technique est utilisée pour incorporer de la gélatine ou de la crème dans un fond de volaille chaud sans provoquer de grumeaux ou de coagulation irrégulière ?",
+                    "question": "Quel est le rôle de la 'fleur' (ou pénicillium) à la surface du saucisson sec (couleur blanche/verte) ?",
                     "answerOptions": [
-                        {"text": "Le glaçage.", "isCorrect": False},
-                        {"text": "Le tempérage.", "isCorrect": True},
-                        {"text": "Le bouillonnage.", "isCorrect": False},
-                        {"text": "L'émulsion.", "isCorrect": False}
+                        {"text": "La peau d'orange (surface irrégulière) ou l'inclusion de poussières (petites bosses).", "isCorrect": False, "key": "A"},
+                        {"text": "C'est une moisissure noble (levure de surface) qui protège le produit de l'oxydation et des moisissures toxiques (goût).", "isCorrect": True, "key": "B"},
+                        {"text": "Le pain de seigle (T130) qui contient des pentosanes (gommes).", "isCorrect": False, "key": "C"},
+                        {"text": "Le pain complet (T150) qui nécessite un temps de pétrissage très long (fibres).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **tempérage** consiste à mélanger progressivement une petite quantité du liquide chaud au liquide froid ou à l'agent de liaison (comme la gélatine fondue ou la crème) pour élever doucement sa température. Cela prévient les chocs thermiques qui peuvent causer une coagulation indésirable (grumeaux)."
+                    "correction": "La fleur (levure naturelle ou inoculée) est un signe de qualité pour les produits secs traditionnels (protection contre les moisissures pathogènes)."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel ingrédient est traditionnellement utilisé pour réaliser le *détrempe* (mélange initial) d'une pâte feuilletée ou d'une pâte levée ?",
+                    "question": "Quel est le nom de l'étape qui permet de donner la brillance et la couleur finale au croissant ou à la brioche avant la cuisson ?",
                     "answerOptions": [
-                        {"text": "Des œufs et du sucre.", "isCorrect": False},
-                        {"text": "De la farine et de l'eau (ou du lait).", "isCorrect": True},
-                        {"text": "De la semoule et de la graisse.", "isCorrect": False},
-                        {"text": "Des noix et des graines.", "isCorrect": False}
+                        {"text": "La dorure (badigeonnage à l'œuf entier ou au jaune d'œuf) avant ou après l'apprêt final.", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'plombage' : ajout de graisse (saindoux) ou de cire sur la surface coupée (boudin) pour éviter l'oxydation (contact avec l'air).", "isCorrect": True, "key": "B"},
+                        {"text": "La buée (vapeur d'eau) pour humidifier la surface du pain (croûte fine).", "isCorrect": False, "key": "C"},
+                        {"text": "Le pointage (première fermentation) en masse (avant la division).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **détrempe** est le premier mélange, la base non grasse des pâtes. Pour la pâte feuilletée ou levée, elle est constituée de **farine**, d'**eau** (ou lait) et, souvent, de sel et d'un peu de matière grasse (pour la pâte feuilletée, le reste du beurre est incorporé par tourage)."
+                    "correction": "Le plombage (ou la mise en graisse) est une technique de conservation pour les produits à forte teneur en gras (pâtés, rillettes) qui oxydent vite (couleur grise)."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Dans la réalisation d'une sauce émulsionnée froide (type mayonnaise), quel ingrédient apporte la stabilisation et est l'agent liant essentiel ?",
+                    "question": "Quel est le nom de la technique de conservation par 'confit' (graisse d'oie, de canard, de porc) des viandes ?",
                     "answerOptions": [
-                        {"text": "Le vinaigre.", "isCorrect": False},
-                        {"text": "Le sel.", "isCorrect": False},
-                        {"text": "Le jaune d'œuf (lécithine).", "isCorrect": True},
-                        {"text": "La moutarde.", "isCorrect": False}
+                        {"text": "Obtenir une mie très blanche, très aérée, avec une croûte fine (souple) grâce au moule fermé et à l'enrichissement en matière grasse.", "isCorrect": False, "key": "A"},
+                        {"text": "Le confisage (ou confit) : cuisson lente dans la graisse, puis recouvrement total par la graisse (barrière à l'air) pour la conservation longue.", "isCorrect": True, "key": "B"},
+                        {"text": "Fabriquer un pain très acide (pH bas) pour une conservation longue (plus de 5 jours).", "isCorrect": False, "key": "C"},
+                        {"text": "Utiliser uniquement de la farine de seigle (T130) et du levain naturel pour l'acidité.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "C'est la **lécithine** présente dans le **jaune d'œuf** qui est l'agent émulsifiant naturel. Elle permet aux phases aqueuse (vinaigre, eau) et grasse (huile) de se mélanger et de former une émulsion stable (la mayonnaise)."
+                    "correction": "Le confit est une méthode de conservation ancestrale. La graisse (chauffée et liquide) recouvre la viande (cuite) et bloque l'accès à l'oxygène (anaérobie)."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Quel est le rôle principal de l'ajout de **concentré de tomate** dans la préparation d'un fond brun lié (sauce espagnole, par exemple) ?",
+                    "question": "Quel est le nom de l'outil qui permet de mélanger et de doser très précisément la teinte (couleur) et ses composants ?",
                     "answerOptions": [
-                        {"text": "Épaissir le fond.", "isCorrect": False},
-                        {"text": "Apporter de l'acidité et améliorer la couleur (rouge-brun).", "isCorrect": True},
-                        {"text": "Servir d'agent de conservation.", "isCorrect": False},
-                        {"text": "Remplacer les légumes aromatiques.", "isCorrect": False}
+                        {"text": "Le spectro-photomètre (lecture optique de la couleur) et la balance de précision (dosage au gramme près).", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'thermo-plongeur' ou 'cuiseur sous vide' (thermo-sonde) pour la cuisson des produits traiteur (contrôle précis de la température).", "isCorrect": True, "key": "B"},
+                        {"text": "Le pain de mie (carré, cuit en moule fermé) pour les sandwichs.", "isCorrect": False, "key": "C"},
+                        {"text": "Le croissant (pâte levée feuilletée, enrichie en beurre).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le concentré de tomate (ou la purée de tomate) est souvent pincé avec la mirepoix lors de la préparation des fonds bruns. Son acidité aide à décoller les sucs de cuisson, mais son rôle principal est d'apporter une **couleur riche et appétissante** et un goût légèrement acidulé au fond."
+                    "correction": "La cuisson sous vide (ou à basse température) garantit une cuisson précise et un moelleux maximal. Elle est essentielle pour le traiteur."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Comment doit être la température du liquide (lait, fond blanc) ajouté au roux pour éviter la formation de grumeaux lors de la réalisation d'une béchamel ?",
+                    "question": "Quel est le danger de laisser un croissant (pâte crue) dans une chambre de pousse trop chaude et trop humide ?",
                     "answerOptions": [
-                        {"text": "Le liquide doit être à température ambiante.", "isCorrect": False},
-                        {"text": "Le liquide doit être très froid.", "isCorrect": False},
-                        {"text": "Le liquide doit être chaud (bouillant).", "isCorrect": True},
-                        {"text": "La température du liquide n'a aucune importance.", "isCorrect": False}
+                        {"text": "Le beurre va fondre et s'incorporer à la pâte (dégraissage) ; le feuilletage sera perdu (produit plat et lourd).", "isCorrect": False, "key": "A"},
+                        {"text": "La 'sur-salaison' : un jambon trop salé qui ne peut pas se dessaler et a un goût trop prononcé (mauvaise qualité).", "isCorrect": True, "key": "B"},
+                        {"text": "L'activité de la levure sera bloquée et le produit n'aura aucun volume (pain plat).", "isCorrect": False, "key": "C"},
+                        {"text": "La croûte sera épaisse et dure, même après la cuisson (sous-développement).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Pour éviter les grumeaux, il faut créer un **choc thermique** contrôlé. On ajoute un **liquide chaud** (souvent bouillant) sur le roux froid, ou un liquide froid sur le roux chaud, en fouettant vigoureusement."
+                    "correction": "Le dosage du sel (salaison) est crucial. Une sur-salaison peut être irrécupérable (goût trop salé, jambon trop sec)."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quel terme désigne la masse de graisse et d'impuretés qui remonte à la surface des fonds et des bouillons pendant la cuisson, et que l'on retire ?",
+                    "question": "Quel est le nom de l'étape qui consiste à réactiver le levain naturel (ajout d'eau et de farine) pour augmenter sa population de micro-organismes ?",
                     "answerOptions": [
-                        {"text": "La déglace.", "isCorrect": False},
-                        {"text": "L'écume.", "isCorrect": True},
-                        {"text": "La panade.", "isCorrect": False},
-                        {"text": "La lie.", "isCorrect": False}
+                        {"text": "Le rafraîchi, pour le préparer au pétrissage (levain chef ou levain de masse).", "isCorrect": False, "key": "A"},
+                        {"text": "La 'stérilisation' (ou appertisation) : chauffage à haute température (plus de 115°C) pour tuer toutes les bactéries (conserve longue durée).", "isCorrect": True, "key": "B"},
+                        {"text": "Le bassinage, qui est l'ajout d'eau en fin de pétrissage (pâte très hydratée).", "isCorrect": False, "key": "C"},
+                        {"text": "Le pointage (ou pointage en masse), qui est la première fermentation de la pâte.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**écume** (ou mousse) est constituée de protéines coagulées, de gras et d'impuretés. L'écumage est une opération essentielle pour garantir la **clarté** et la saveur pure du fond ou du bouillon."
+                    "correction": "La stérilisation est utilisée pour les conserves (bocaux) qui peuvent être stockées à température ambiante (produit stable)."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Qu'est-ce qui donne à une **pâte feuilletée** sa texture caractéristique (feuilles fines et séparées) ?",
+                    "question": "Quel est le rôle du 'pâté fermentée' (ancienne pâte réintroduite) dans la fabrication du pain (méthode indirecte) ?",
                     "answerOptions": [
-                        {"text": "L'ajout d'une grande quantité d'œufs.", "isCorrect": False},
-                        {"text": "La présence de levure chimique.", "isCorrect": False},
-                        {"text": "L'alternance des couches de détrempe et de beurre après le tourage.", "isCorrect": True},
-                        {"text": "Le long temps de repos à température ambiante.", "isCorrect": False}
+                        {"text": "Améliorer le goût, la conservation et la force (W) de la pâte fraîche (pousse plus rapide).", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'pressage' (ou égouttage) des terrines ou du fromage de tête après cuisson (pour retirer le liquide de cuisson et améliorer la tenue).", "isCorrect": True, "key": "B"},
+                        {"text": "Réguler l'acidité (pH) de la pâte et assurer la bonne conservation du produit fini.", "isCorrect": False, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **feuilletage** est créé par l'empilement de couches de **détrempe** (farine/eau) et de **beurre**, séparées par des étapes de **tourage** et de repos au froid. C'est l'eau du beurre qui, en s'évaporant à la cuisson, gonfle les couches et crée les feuillets."
+                    "correction": "Le pressage (avec un poids) permet d'expulser l'air et le jus de cuisson de la farce (meilleure coupe, meilleure conservation)."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quelle opération de préparation de la pâte doit être réalisée pour empêcher une pâte à foncer (brisée) de gonfler au four si elle est cuite 'à blanc' ?",
+                    "question": "Quel est le nom de la technique pour cuire des petits pains ronds (pains au lait, hamburgers) sur une plaque (grille) sans la sole du four ?",
                     "answerOptions": [
-                        {"text": "Le pétrissage intensif.", "isCorrect": False},
-                        {"text": "Le boulochage.", "isCorrect": False},
-                        {"text": "Le piquage.", "isCorrect": True},
-                        {"text": "Le rabat.", "isCorrect": False}
+                        {"text": "La cuisson sur plaque (ou cuisson sur grille) pour une croûte souple et fine (produits de viennoiserie).", "isCorrect": False, "key": "A"},
+                        {"text": "L'utilisation de la 'lécithine de soja' (émulsifiant) pour stabiliser les farces fines et les mousses.", "isCorrect": True, "key": "B"},
+                        {"text": "La cuisson par injection de vapeur (buée) pour l'humidification de la surface.", "isCorrect": False, "key": "C"},
+                        {"text": "La surgélation de la pâte (pousse bloquée) pour une cuisson différée.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **piquage** (perforation du fond de pâte avec une fourchette) permet à la vapeur d'eau de s'échapper pendant la cuisson, ce qui empêche la pâte de cloquer, de se déformer et de gonfler excessivement."
+                    "correction": "La lécithine est un additif (E322) qui aide à l'émulsion (mélange stable) des farces à forte teneur en gras et en eau."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Comment s'appelle l'opération qui consiste à verser de l'eau ou un liquide (vin, bouillon) sur un plat ou un ustensile chaud pour dissoudre et récupérer les sucs de cuisson ?",
+                    "question": "Quel est l'ingrédient principal utilisé dans les pains sans gluten (pour les personnes intolérantes) ?",
                     "answerOptions": [
-                        {"text": "Le mouillage.", "isCorrect": False},
-                        {"text": "Le chinoisage.", "isCorrect": False},
-                        {"text": "La déglace.", "isCorrect": True},
-                        {"text": "Le blanchiment.", "isCorrect": False}
+                        {"text": "Des farines de céréales (maïs, riz, sarrasin) et l'ajout d'une gomme (gomme de guar) pour compenser l'absence de gluten.", "isCorrect": False, "key": "A"},
+                        {"text": "La 'date limite de consommation' (DLC) qui indique la date au-delà de laquelle l'aliment est considéré comme dangereux (risques sanitaires).", "isCorrect": True, "key": "B"},
+                        {"text": "De la farine de seigle (T130) avec un levain de seigle (acidité) pour la structure.", "isCorrect": False, "key": "C"},
+                        {"text": "De la farine de blé (T150) avec une faible hydratation pour la conservation.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **déglace** est l'opération consistant à dissoudre les sucs de cuisson caramélisés (le **sautage**) au fond d'un récipient chaud à l'aide d'un liquide froid ou tiède. Ces sucs (les saveurs concentrées) sont la base aromatique de nombreuses sauces."
+                    "correction": "La DLC est obligatoire pour les produits très périssables (viande, charcuterie fraîche). Elle est calculée en laboratoire (tests)."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quel ingrédient est absolument nécessaire pour la croissance de la levure boulangère dans une pâte levée (comme la pâte à brioche ou à pain) ?",
+                    "question": "Quel est le risque d'utiliser une quantité trop importante de levain chef (trop de bactéries lactiques) dans la pâte à pain ?",
                     "answerOptions": [
-                        {"text": "Le sel.", "isCorrect": False},
-                        {"text": "La chaleur et les sucres fermentescibles.", "isCorrect": True},
-                        {"text": "Le gras de porc.", "isCorrect": False},
-                        {"text": "L'acidité du citron.", "isCorrect": False}
+                        {"text": "Un pain trop acide (goût de vinaigre), une mie trop serrée et un risque de sur-acidification (dégradation de la pâte).", "isCorrect": False, "key": "A"},
+                        {"text": "La 'pasteurisation' : chauffage à température moyenne (70°C à 85°C) pour réduire la population de germes (conservation courte, au froid).", "isCorrect": True, "key": "B"},
+                        {"text": "La non-levée de la pâte (pas de CO₂) et une absence de volume (pain plat).", "isCorrect": False, "key": "C"},
+                        {"text": "L'augmentation de la force (W) de la farine de rafraîchi (ténacité).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **levure** est un micro-organisme vivant (champignon) qui se nourrit de **sucres** (ceux naturellement présents dans la farine ou ajoutés). La **chaleur** (température tiède) est nécessaire pour son activation, et la fermentation produit du dioxyde de carbone qui fait lever la pâte."
+                    "correction": "La pasteurisation est utilisée pour le conditionnement (jus de fruits, certains pâtés) : elle est moins agressive que la stérilisation."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Quel terme désigne la fine couche de gélatine ou de graisse qui est versée sur un pâté, une terrine ou un plat froid après cuisson et refroidissement, pour la décoration et la conservation ?",
+                    "question": "Quelle est l'étape qui permet de donner une couleur très foncée (caramélisation) et un goût prononcé aux pains spéciaux (pain au seigle, pain noir) ?",
                     "answerOptions": [
-                        {"text": "La panade.", "isCorrect": False},
-                        {"text": "L'appareil.", "isCorrect": False},
-                        {"text": "La brillance.", "isCorrect": False},
-                        {"text": "La gelée (ou le glaçage).", "isCorrect": True}
+                        {"text": "L'ajout de malt torréfié ou de poudre de cacao (coloration) et une cuisson lente à température moyenne.", "isCorrect": False, "key": "A"},
+                        {"text": "La 'surgélation' (chute rapide de la température à -18°C) pour bloquer l'activité enzymatique et bactérienne (conservation très longue).", "isCorrect": True, "key": "B"},
+                        {"text": "L'incorporation de la matière grasse (beurre de tourage) pendant l'étape de tourage (feuilletage).", "isCorrect": False, "key": "C"},
+                        {"text": "La surgélation de la pâte (pousse bloquée) pour une cuisson différée.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **gelée** (ou glaçage à la gelée) est une préparation liquide enrichie en gélatine (collagène). Une fois refroidie, elle se solidifie, protégeant le produit de l'oxydation, lui donnant une belle brillance, et le préservant jusqu'à la consommation."
+                    "correction": "La surgélation (rapide) est préférée à la congélation (lente) pour la qualité. Elle est utilisée pour la majorité des plats cuisinés traiteur."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel est le rôle de la matière grasse (beurre ou saindoux) dans la réalisation d'une pâte sablée ou d'une pâte sucrée ?",
+                    "question": "Quel est le but d'un 'pointage très long' (pousse lente de plusieurs heures) pour la pâte de tradition ?",
                     "answerOptions": [
-                        {"text": "Augmenter le temps de pétrissage.", "isCorrect": False},
-                        {"text": "Empêcher la formation de gluten.", "isCorrect": True},
-                        {"text": "Améliorer la rétention d'eau.", "isCorrect": False},
-                        {"text": "Accélérer l'évaporation de l'alcool.", "isCorrect": False}
+                        {"text": "Développer une meilleure complexité aromatique, un meilleur alvéolage et une meilleure conservation.", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'poussièreur' : un chiffon collant (pistolet à air chaud) pour retirer les micro-poussières avant l'application du vernis.", "isCorrect": False, "key": "B"},
+                        {"text": "La 'maturation' (affinage) des produits secs (saucisson, jambon) qui permet le développement des saveurs (enzymes).", "isCorrect": True, "key": "C"},
+                        {"text": "Accélérer la production de gaz carbonique (CO₂) et la levée du produit fini.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le gras est **sabler** la farine (mélange initial). En enrobant les particules de farine, il empêche le contact entre l'eau et les protéines, limitant la formation du **gluten**. Cela donne la texture friable et non élastique caractéristique des pâtes dites 'sablées'."
+                    "correction": "La maturation (plusieurs semaines à mois) est l'étape qui donne les arômes et la saveur finale des produits de salaison (goût de terroir)."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Quel ustensile de cuisine est utilisé pour filtrer les fonds et les sauces afin d'en éliminer toutes les impuretés et les résidus d'os ou de légumes ?",
+                    "question": "Quelle est la principale caractéristique de la farine de maïs (polenta, pain de maïs) utilisée en panification ?",
                     "answerOptions": [
-                        {"text": "Le poussoir.", "isCorrect": False},
-                        {"text": "La bassine à rôtir.", "isCorrect": False},
-                        {"text": "Le chinois étamine.", "isCorrect": True},
-                        {"text": "Le batteur.", "isCorrect": False}
+                        {"text": "Elle est naturellement sans gluten et doit être mélangée à de la farine de blé (ou un liant) pour pouvoir lever.", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'pH' (Potentiel Hydrogène) : un indicateur de l'acidité (basse) de la farce qui assure la conservation des produits secs (fermentation).", "isCorrect": True, "key": "B"},
+                        {"text": "Elle est très riche en sel (minéraux) et freine l'activité de la levure (osmose).", "isCorrect": False, "key": "C"},
+                        {"text": "Elle sert uniquement à colorer la croûte du pain lors de la cuisson finale (aspect esthétique).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **chinois étamine** (ou chinois) est un tamis conique de très fine maille. Il permet l'opération de **chinoisage**, qui garantit une parfaite clarté et un aspect lisse et brillant aux fonds, bouillons et sauces."
-                },
+                    "correction": "Le pH (souvent autour de 5.0 à 5.3) indique une bonne fermentation (acide) qui est un facteur clé pour la conservation (produit sec et sûr)."
+                }
             ]
         },
-        # =========================================================================
-        # THÈME 5 : CUISSONS, SALAISON & RÉGLEMENTATION (Q. 81-100)
-        # =========================================================================
+        # THÈME 5
         5: {
-            "name": "5. Cuissons, Salaison & Réglementation",
+            "name": "Gestion (Fiches Techniques, Prix de Revient, Coûts) et Mathématiques Appliquées",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel est l'objectif d'une cuisson **lente et douce** (type pochage) pour une charcuterie comme le jambon cuit ou le boudin blanc ?",
+                    "question": "Quel est le nom du tableau qui permet de calculer le prix de revient d'une intervention (main d'œuvre, peinture, pièces) ?",
                     "answerOptions": [
-                        {"text": "Favoriser le développement des saveurs de fumage.", "isCorrect": False},
-                        {"text": "Éviter le dessèchement et la perte de gras.", "isCorrect": True},
-                        {"text": "Atteindre rapidement les 63 °C à cœur.", "isCorrect": False},
-                        {"text": "Ramollir le boyau.", "isCorrect": False}
+                        {"text": "Le tableau de 'la formule du boulanger' (ou 'recette') pour la détermination des ingrédients.", "isCorrect": False, "key": "A"},
+                        {"text": "La 'Fiche Technique de Fabrication' (FTF) qui détaille la recette, les étapes, le coût des matières et le prix de revient théorique.", "isCorrect": True, "key": "B"},
+                        {"text": "Le coefficient d'hydratation (H) de la farine (pour la force).", "isCorrect": False, "key": "C"},
+                        {"text": "Le plan de production et le planning des employés (gestion du personnel).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La cuisson lente et douce (souvent par **pochage** ou en cellule vapeur) permet d'éviter un choc thermique. L'objectif est de minimiser la rétractation des protéines du muscle, ce qui assure un produit **moelleux** et réduit les pertes de poids (eau et gras)."
+                    "correction": "La FTF est le document de base pour la standardisation de la production et le calcul du coût (Matières Premières)."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Que se passe-t-il si une pâte à frire (beignet, acras) est plongée dans un bain de friture dont la température est trop basse ?",
+                    "question": "Si une terrine de 1,5 kg (poids net) a une perte à la cuisson de 20%, quel est son poids après cuisson (en kg) ?",
                     "answerOptions": [
-                        {"text": "Elle dore immédiatement sans cuire à cœur.", "isCorrect": False},
-                        {"text": "Elle se déchire et se délite.", "isCorrect": False},
-                        {"text": "Elle absorbe excessivement la matière grasse.", "isCorrect": True},
-                        {"text": "Elle cuit trop rapidement.", "isCorrect": False}
+                        {"text": "1,20 kg (1,5 kg x (1 - 0,20)).", "isCorrect": True, "key": "A"},
+                        {"text": "10,0 kg d'eau (100% d'hydratation).", "isCorrect": False, "key": "B"},
+                        {"text": "70,0 kg d'eau.", "isCorrect": False, "key": "C"},
+                        {"text": "1,4 kg d'eau.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Si la température de l'huile est trop basse (idéalement 170 °C-180 °C), la pâte n'est pas saisie immédiatement. L'eau s'évapore lentement, le produit n'est pas imperméabilisé et la pâte **absorbe trop de graisse**, rendant le beignet lourd et gras."
+                    "correction": "Calcul : 1,5 kg x 0,80 = 1,20 kg. La perte (fonte du gras, évaporation de l'eau) doit être intégrée au calcul du prix de revient."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Quelle doit être la température minimale interne **à cœur** d'une viande de porc cuite (comme un pâté ou une terrine) pour être considérée comme hygiéniquement sûre ?",
+                    "question": "Si la matière première (viande, gras, épices) coûte 8,00 € pour une terrine de 1 kg cuite, et que l'on vise un coût matière de 30% du prix de vente HT, quel est le prix de vente HT minimum (en €) ?",
                     "answerOptions": [
-                        {"text": "60 °C.", "isCorrect": False},
-                        {"text": "68 °C.", "isCorrect": True},
-                        {"text": "75 °C.", "isCorrect": False},
-                        {"text": "80 °C.", "isCorrect": False}
+                        {"text": "26,67 € HT (8,00 € / 0,30).", "isCorrect": True, "key": "A"},
+                        {"text": "180 grammes de sel.", "isCorrect": False, "key": "B"},
+                        {"text": "9 grammes de sel.", "isCorrect": False, "key": "C"},
+                        {"text": "18 grammes de sel.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Pour les produits charcutiers cuits, le standard est d'atteindre **68 °C à cœur** et de maintenir cette température quelques minutes. Cette cuisson permet de détruire la plupart des germes pathogènes (y compris les parasites, comme la trichine)."
+                    "correction": "Calcul : 8,00 € / 0,30 = 26,67 € HT. Le coût matière (ou 'food cost') est la base de la rentabilité en traiteur."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Quel est le rôle principal du **sucre** ajouté à la saumure ou à la mêlée de salaison pour un jambon ou une saucisse sèche ?",
+                    "question": "Quel est le rôle du 'coefficient de production' (ou rendement) dans la gestion des ingrédients (ex : rendement de désossage) ?",
                     "answerOptions": [
-                        {"text": "Servir d'agent de conservation anti-bactérien.", "isCorrect": False},
-                        {"text": "Faciliter la coagulation des protéines.", "isCorrect": False},
-                        {"text": "Contrer l'excès de goût salé et servir de nutriment aux ferments.", "isCorrect": True},
-                        {"text": "Améliorer la rétention d'eau.", "isCorrect": False}
+                        {"text": "Calculer le coût total de production (matières premières + main d'œuvre + charges) pour fixer le prix de vente.", "isCorrect": False, "key": "A"},
+                        {"text": "Il permet de calculer la quantité de matière première brute (os inclus) à commander pour obtenir la quantité nette de produit désossé.", "isCorrect": True, "key": "B"},
+                        {"text": "Mesurer la force de la farine (W) à l'alvéographe (test de qualité).", "isCorrect": False, "key": "C"},
+                        {"text": "Vérifier la bonne exécution du nettoyage et l'absence de micro-organismes (HACCP).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **sucre** (dextrose, saccharose) sert de **nutriment** aux ferments lactiques (flore utile) qui transforment le sucre en acide lactique. Cette acidification est essentielle pour le goût, la conservation, et la fixation de la couleur. Il atténue également la perception du goût salé."
+                    "correction": "Le rendement (ex : 80% de viande sur os) permet de gérer les achats et de calculer le coût réel de la matière première nette."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Quel terme réglementaire désigne le temps d'utilisation au cours duquel un produit alimentaire non pré-emballé (comme une salade traiteur) conserve toutes ses propriétés après la confection ?",
+                    "question": "Quel est le rôle du 'diagnostic' dans la réparation de carrosserie (après un choc) ?",
                     "answerOptions": [
-                        {"text": "La DLC (Date Limite de Consommation).", "isCorrect": False},
-                        {"text": "La DDM (Date de Durabilité Minimale).", "isCorrect": False},
-                        {"text": "La DCL (Date Limite de Consommation).", "isCorrect": False},
-                        {"text": "La **DUO (Durée d'Utilisation Optimale)** ou DLC secondaire.", "isCorrect": True}
+                        {"text": "Identifier les dommages visibles et cachés (structure, mécanique, électrique) pour établir la méthode de réparation.", "isCorrect": False, "key": "A"},
+                        {"text": "L'analyse des 'Points Critiques pour la Maîtrise' (CCP) qui sont les étapes où un danger (température, pH) doit être maîtrisé (HACCP).", "isCorrect": True, "key": "B"},
+                        {"text": "40°C.", "isCorrect": False, "key": "C"},
+                        {"text": "20°C.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Pour les produits transformés et reconditionnés à la coupe ou dans l'atelier (comme les salades ou plats cuisinés), on parle de **DLC secondaire** ou **DUO**. Cette date courte est fixée par le professionnel (souvent 3 jours) et doit apparaître clairement. La DLC est pour l'industriel."
+                    "correction": "Les CCP sont les étapes clés du processus où le risque est le plus grand (cuisson, refroidissement, maintien au froid/chaud)."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Quel est l'effet recherché par l'opération de **fraisage** d'une pièce de viande salée (le fait de frotter la pièce avec du sel sec) ?",
+                    "question": "Quel est le nom de l'outil qui permet de lire les codes défaut (DTC) des calculateurs du véhicule (électronique embarquée) ?",
                     "answerOptions": [
-                        {"text": "Diminuer le pH de la viande.", "isCorrect": False},
-                        {"text": "Assurer la répartition uniforme du sel et démarrer l'osmose.", "isCorrect": True},
-                        {"text": "Accélérer le séchage.", "isCorrect": False},
-                        {"text": "Supprimer les additifs chimiques.", "isCorrect": False}
+                        {"text": "La valise de diagnostic (ou outil de scan) pour les calculateurs (Airbag, ABS, ESP, etc.).", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'Plan d'Assurance Qualité' (PAQ) qui définit les contrôles (température, grammage, pH) à chaque étape de la production.", "isCorrect": True, "key": "B"},
+                        {"text": "Le thermomètre sonde pour la mesure de la température interne du four.", "isCorrect": False, "key": "C"},
+                        {"text": "L'hydromètre pour la mesure de l'humidité du fournil (hygrométrie).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **fraisage** est l'action de masser le sel sec sur la surface de la viande. Cela garantit une **couverture complète et uniforme** en sel, permettant à l'osmose (le sel pénètre et l'eau sort) de démarrer de manière homogène."
+                    "correction": "Le PAQ (partie du PMS) assure que le produit fabriqué est conforme (poids, goût, sécurité) aux normes de l'entreprise."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "En matière de congélation, quelle est la température maximale autorisée par la réglementation pour la conservation d'une viande crue ?",
+                    "question": "Si la matière première coûte 100 € et que vous vendez le produit fini 300 € HT, quel est le taux de marge brute (en pourcentage) par rapport au prix de vente ?",
                     "answerOptions": [
-                        {"text": "-8 °C.", "isCorrect": False},
-                        {"text": "-12 °C.", "isCorrect": False},
-                        {"text": "-18 °C.", "isCorrect": True},
-                        {"text": "-25 °C.", "isCorrect": False}
+                        {"text": "66,67 % ((300 € - 100 €) / 300 € x 100).", "isCorrect": True, "key": "A"},
+                        {"text": "10% de perte.", "isCorrect": False, "key": "B"},
+                        {"text": "25% de perte.", "isCorrect": False, "key": "C"},
+                        {"text": "80% de perte.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La température légale de la **congélation** des aliments est de **-18 °C** ou moins. Cette température arrête la multiplication bactérienne et ralentit les réactions chimiques qui peuvent altérer la qualité du produit (oxydation)."
+                    "correction": "Calcul : (300 - 100) / 300 = 0,6667. La marge brute doit couvrir les charges (main d'œuvre, loyer) pour dégager un bénéfice."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Quel est le risque principal si l'on utilise de l'huile de friture au-delà de son point de fumée de manière prolongée ?",
+                    "question": "Quel est l'impact de la levure fraîche (en cube) sur la formule du boulanger (vs levure sèche) ?",
                     "answerOptions": [
-                        {"text": "La perte de l'arôme.", "isCorrect": False},
-                        {"text": "La dégradation de la matière grasse et la production de composés toxiques.", "isCorrect": True},
-                        {"text": "L'huile devient plus visqueuse.", "isCorrect": False},
-                        {"text": "Le produit est moins croustillant.", "isCorrect": False}
+                        {"text": "Elle contient environ 70% d'eau. Il faut en mettre trois fois plus que de levure sèche (1 pour 3) et ajuster l'hydratation.", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'Coût de Revient Horaire' (CRH) : calcul du coût (salaires, charges, amortissement machine) de chaque heure travaillée.", "isCorrect": True, "key": "B"},
+                        {"text": "Elle ne contient pas d'eau. Il n'y a pas besoin d'ajustement de l'hydratation de la formule.", "isCorrect": False, "key": "C"},
+                        {"text": "Elle a le même dosage que le levain naturel (10% de la masse de farine).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **point de fumée** est la température à laquelle la graisse commence à se décomposer. Le dépassement prolongé entraîne la formation d'**acroléine**, un composé irritant et potentiellement toxique, ainsi qu'une altération rapide de la qualité de l'huile."
+                    "correction": "Le CRH est indispensable pour tarifer correctement les plats (traiteur) et les services (prestation) en intégrant le coût de la main d'œuvre (le plus gros poste)."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Dans le séchage des saucissons, quel indicateur visuel ou tactile permet de déterminer si le produit est prêt à être commercialisé ?",
+                    "question": "Quelle est la marge commerciale à réaliser sur un produit (en pourcentage) pour couvrir les coûts (matières + main d'œuvre) et dégager un bénéfice ?",
                     "answerOptions": [
-                        {"text": "Le poids initial de la mêlée.", "isCorrect": False},
-                        {"text": "La présence de flore de surface (fleur).", "isCorrect": False},
-                        {"text": "L'obtention d'une perte de poids spécifique.", "isCorrect": True},
-                        {"text": "La brillance du boyau.", "isCorrect": False}
+                        {"text": "Plus de 20% à 50% de marge brute sur les coûts (selon le type de produit et l'entreprise).", "isCorrect": False, "key": "A"},
+                        {"text": "Plus de 60% à 75% de marge brute sur le prix de vente (le plus souvent en charcuterie/traiteur).", "isCorrect": True, "key": "B"},
+                        {"text": "La marge est toujours négative (perte) dans le secteur de la boulangerie (faux).", "isCorrect": False, "key": "C"},
+                        {"text": "10% de marge brute (marge très faible, risquant d'annuler le bénéfice).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le séchage est mesuré par la **perte de poids** (le ressuyage). La réglementation et les cahiers des charges fixent un pourcentage minimum de perte de poids (ex. 30 à 40 %) pour garantir une quantité d'eau suffisamment faible pour la conservation et l'obtention de la texture."
+                    "correction": "Les produits traiteur et charcutiers (forte main d'œuvre) nécessitent des marges élevées (souvent au-delà de 60% ou 70%) pour être rentables."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Quelle méthode de cuisson est la plus appropriée pour des pièces de viande dures, riches en tissus conjonctifs (collagène), comme l'épaule de porc pour un effiloché ?",
+                    "question": "Quel est le nom du coût qui inclut la rémunération des employés et les charges sociales dans le prix de revient ?",
                     "answerOptions": [
-                        {"text": "Rôtir à feu vif.", "isCorrect": False},
-                        {"text": "Griller sur barbecue.", "isCorrect": False},
-                        {"text": "Cuisson lente et humide (braiser ou mijoter).", "isCorrect": True},
-                        {"text": "Poêler rapidement.", "isCorrect": False}
+                        {"text": "Le coût de la main d'œuvre (ou coût salarial) pour la production du pain.", "isCorrect": True, "key": "A"},
+                        {"text": "Le coût des matières premières (farine, eau, sel, levure) uniquement.", "isCorrect": False, "key": "B"},
+                        {"text": "Le coût des charges fixes (loyer, assurance, électricité) uniquement.", "isCorrect": False, "key": "C"},
+                        {"text": "Le coût de la logistique (transport et stockage des ingrédients).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les viandes riches en **collagène** nécessitent une **cuisson lente et humide** (braisage, mijotage). La chaleur humide et douce permet au collagène de se transformer en gélatine, attendrissant la viande sans la dessécher."
+                    "correction": "Le coût de la main d'œuvre (salaire, charges) est souvent le coût le plus important dans le prix de revient d'une charcuterie artisanale."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quel est le principal facteur qui définit la **durée de vie (DLC)** d'une charcuterie fraîche cuite (comme le pâté de campagne) ?",
+                    "question": "Si vous avez une commande de 15 kg de farce de saucisse (poids net) et que le rendement de la farce (parage) est de 90%, quelle quantité de viande brute faut-il préparer ?",
                     "answerOptions": [
-                        {"text": "Le coût de la matière première.", "isCorrect": False},
-                        {"text": "La quantité d'épices ajoutées.", "isCorrect": False},
-                        {"text": "L'activité de l'eau (Aw) et le pH du produit.", "isCorrect": True},
-                        {"text": "La taille du produit.", "isCorrect": False}
+                        {"text": "35,3 kg de pâte crue (120 x 0,25 kg = 30 kg cuit. 30 kg / 0,85 = 35,3 kg cru).", "isCorrect": False, "key": "A"},
+                        {"text": "16,67 kg de viande brute (15 kg / 0,90).", "isCorrect": True, "key": "B"},
+                        {"text": "25,5 kg de pâte crue.", "isCorrect": False, "key": "C"},
+                        {"text": "40,0 kg de pâte crue.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**activité de l'eau (Aw)** et le **pH** sont les deux facteurs physico-chimiques les plus importants pour la conservation. Un pH bas (acidité) et une faible Aw (peu d'eau disponible) limitent le développement des micro-organismes, prolongeant la DLC."
+                    "correction": "Calcul : 15 kg / 0,90 = 16,67 kg. Le rendement est essentiel pour la gestion des stocks et l'approvisionnement (viande)."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est le but de l'opération de **fleurage** d'une pâte à tarte salée ?",
+                    "question": "Quel est le nom de la propriété de la farine qui indique le pourcentage d'eau qu'elle peut absorber (hydratation maximale) ?",
                     "answerOptions": [
-                        {"text": "Ajouter de l'eau à la pâte.", "isCorrect": False},
-                        {"text": "Saupoudrer de farine pour empêcher la pâte de coller.", "isCorrect": True},
-                        {"text": "Mettre la pâte en boule.", "isCorrect": False},
-                        {"text": "La laisser reposer au froid.", "isCorrect": False}
+                        {"text": "L'absorption d'eau, mesurée au farinographe (test de qualité).", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'Seuil de Rentabilité' (SR) : le montant de chiffre d'affaires à réaliser pour couvrir toutes les charges (bénéfice nul).", "isCorrect": True, "key": "B"},
+                        {"text": "Le rapport P/L (ténacité/extensibilité) mesuré à l'alvéographe.", "isCorrect": False, "key": "C"},
+                        {"text": "Le pH (potentiel Hydrogène) de la farine qui mesure son acidité de base.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **fleurage** est l'action de saupoudrer légèrement de **farine** le plan de travail et la pâte. Cela empêche la pâte (notamment la pâte feuilletée ou levée) d'adhérer au support pendant les étapes de travail (fonçage, tourage, abaisse)."
+                    "correction": "Le SR (ou 'point mort') est le seuil à atteindre pour commencer à générer du bénéfice. Il est crucial pour la survie de l'entreprise."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Quel danger est associé à la consommation de charcuteries crues ou insuffisamment cuites, non traitées pour la salaison ?",
+                    "question": "Si le coût matière d'un plat traiteur (salade composée) est de 3,50 € et que la marge souhaitée est de 65% du prix de vente HT, quel est le prix de vente HT minimum (en €) ?",
                     "answerOptions": [
-                        {"text": "La botulisme uniquement.", "isCorrect": False},
-                        {"text": "Les parasites (comme la Trichinellose).", "isCorrect": True},
-                        {"text": "La listériose uniquement.", "isCorrect": False},
-                        {"text": "La présence d'additifs.", "isCorrect": False}
+                        {"text": "4,00 € HT (2,00 € / (1 - 0,50)).", "isCorrect": False, "key": "A"},
+                        {"text": "10,00 € HT (3,50 € / (1 - 0,65)).", "isCorrect": True, "key": "B"},
+                        {"text": "2,00 € HT.", "isCorrect": False, "key": "C"},
+                        {"text": "1,00 € HT.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'un des risques majeurs associés à la consommation de viande de porc crue ou insuffisamment cuite est la **Trichinellose** (due à un ver parasite). La cuisson à 68 °C ou la congélation à -18 °C sont des mesures efficaces pour le détruire."
+                    "correction": "Calcul : 3,50 € / (1 - 0,65) = 3,50 € / 0,35 = 10,00 € HT. Le coût matière ne doit représenter que 35% du prix de vente."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Quel type de fumage (à chaud ou à froid) est généralement utilisé pour les jambons secs et les saucissons, où l'on cherche à apporter de l'arôme sans cuire la viande ?",
+                    "question": "Quel est le rôle de la 'fiche technique' (fiche recette) dans la production de la boulangerie ?",
                     "answerOptions": [
-                        {"text": "Fumage à chaud (température > 65 °C).", "isCorrect": False},
-                        {"text": "Fumage à froid (température < 25 °C).", "isCorrect": True},
-                        {"text": "Fumage à l'eau.", "isCorrect": False},
-                        {"text": "Fumage par injection.", "isCorrect": False}
+                        {"text": "Garantir la constance de la qualité du produit, sa traçabilité et le calcul de son prix de revient (quantité et coût).", "isCorrect": True, "key": "A"},
+                        {"text": "Déterminer la température de base de la pâte (T° de base) en fonction de la saison.", "isCorrect": False, "key": "B"},
+                        {"text": "Mesurer la force de la farine (W) à l'alvéographe (test de qualité).", "isCorrect": False, "key": "C"},
+                        {"text": "Vérifier la bonne exécution du nettoyage et l'absence de micro-organismes (HACCP).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **fumage à froid** (entre 18 °C et 25 °C) ajoute de l'arôme et des propriétés conservatrices à la viande sans déclencher la cuisson des protéines. Il est utilisé pour les produits séchés ou crus (saumon fumé, saucisson sec, jambon sec)."
+                    "correction": "La fiche technique (FTF) est le document de référence (norme de l'entreprise) pour la fabrication et la gestion (standardisation)."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quel est le document réglementaire essentiel qui rassemble toutes les procédures d'hygiène et d'autocontrôle mises en place dans l'établissement de charcuterie-traiteur ?",
+                    "question": "Quel est le mode de calcul qui permet de répartir les coûts (loyer, électricité) sur l'ensemble de la production (tous les pains et viennoiseries) ?",
                     "answerOptions": [
-                        {"text": "Le registre de caisse.", "isCorrect": False},
-                        {"text": "Le Plan de Maîtrise Sanitaire (PMS).", "isCorrect": True},
-                        {"text": "Le cahier de recettes.", "isCorrect": False},
-                        {"text": "La Fiche de Données de Sécurité (FDS).", "isCorrect": False}
+                        {"text": "Le calcul des charges indirectes (ou frais généraux), répartis par unité de production ou par heure de travail.", "isCorrect": True, "key": "A"},
+                        {"text": "Le calcul du coût des matières premières (farine, eau, sel, levure) uniquement.", "isCorrect": False, "key": "B"},
+                        {"text": "Le calcul du prix de vente HT uniquement.", "isCorrect": False, "key": "C"},
+                        {"text": "Le calcul du taux de perte à la cuisson (évaporation de l'eau).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **Plan de Maîtrise Sanitaire (PMS)** est le document central et obligatoire de l'entreprise. Il décrit l'ensemble des mesures (HACCP, traçabilité, gestion des non-conformités) pour garantir la sécurité et la salubrité des aliments produits."
+                    "correction": "Les charges indirectes (fixes) doivent être incluses dans le prix de revient (par un coefficient) pour ne pas être déficitaires."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Quelle est l'alternative à l'eau pour réaliser un bain-marie (cuisson au four) afin d'assurer une température de cuisson très stable pour un appareil à flan ou une terrine délicate ?",
+                    "question": "Si vous avez une production de 500 baguettes de 250 g et que la consommation moyenne de farine est de 0,15 kg par baguette, quelle quantité de farine faut-il commander ?",
                     "answerOptions": [
-                        {"text": "L'huile de friture.", "isCorrect": False},
-                        {"text": "L'eau-de-vie.", "isCorrect": False},
-                        {"text": "Le gros sel.", "isCorrect": True},
-                        {"text": "Le bouillon de légumes.", "isCorrect": False}
+                        {"text": "75,0 kg de farine (500 baguettes x 0,15 kg/baguette).", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'FIFO' (First In, First Out) : règle de gestion des stocks (le premier produit reçu est le premier vendu/utilisé) pour la DLC.", "isCorrect": True, "key": "B"},
+                        {"text": "100,0 kg de farine.", "isCorrect": False, "key": "C"},
+                        {"text": "50,0 kg de farine.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Un **bain de gros sel** (au lieu d'eau) est souvent utilisé pour les cuissons très délicates. Le sel absorbe et redistribue la chaleur de manière plus homogène que l'eau, et surtout, il ne s'évapore pas, assurant un niveau de chaleur constant tout au long de la cuisson."
+                    "correction": "Le FIFO est obligatoire pour les produits alimentaires (DLC) afin d'éviter la péremption (rupture de stock) et les pertes."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Selon le code de la consommation, quelle mention est obligatoire sur l'étiquetage d'un produit alimentaire pré-emballé ?",
+                    "question": "Quel est le but du 'poids net' (PN) d'un ingrédient dans la fiche technique ?",
                     "answerOptions": [
-                        {"text": "Le nom et le prénom de l'opérateur.", "isCorrect": False},
-                        {"text": "Le code APE de l'entreprise.", "isCorrect": False},
-                        {"text": "La liste des ingrédients (dont les allergènes) et la DLC.", "isCorrect": True},
-                        {"text": "Le chiffre d'affaires.", "isCorrect": False}
+                        {"text": "Le poids de l'ingrédient tel qu'il est ajouté à la formule (sans les emballages, les déchets ou les impuretés).", "isCorrect": True, "key": "A"},
+                        {"text": "Le prix de vente HT du produit fini (sans les taxes ni les charges).", "isCorrect": False, "key": "B"},
+                        {"text": "Le coût total de la main d'œuvre (salaire + charges sociales) pour la production.", "isCorrect": False, "key": "C"},
+                        {"text": "Le taux de perte à la cuisson (évaporation de l'eau) du produit fini.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La réglementation INCO impose la présence de plusieurs mentions obligatoires, dont : la **dénomination de vente**, la liste des **ingrédients** (avec mise en évidence des **allergènes**), la quantité nette, le nom de l'exploitant, l'origine, la **DLC/DDM** et la déclaration nutritionnelle."
+                    "correction": "Le poids net est la base du calcul du coût des matières premières (uniquement le produit utilisé, pas la tare)."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Quel est l'effet d'une trop forte présence de **tissus conjonctifs** (tendons, aponévroses) dans une viande destinée à être hachée pour une saucisse ?",
+                    "question": "Quel est le nom du coût qui varie directement en fonction de la quantité produite (farine, eau, levure, sel) ?",
                     "answerOptions": [
-                        {"text": "Une amélioration de la saveur.", "isCorrect": False},
-                        {"text": "Une dégradation de la couleur.", "isCorrect": False},
-                        {"text": "Une texture caoutchouteuse ou élastique après cuisson.", "isCorrect": True},
-                        {"text": "Une absence de gras.", "isCorrect": False}
+                        {"text": "Les charges variables (ou coûts directs) pour la production du pain.", "isCorrect": True, "key": "A"},
+                        {"text": "Les charges fixes (loyer, assurance, électricité) qui ne changent pas avec la production.", "isCorrect": False, "key": "B"},
+                        {"text": "Le coût de la main d'œuvre (ou coût salarial) pour la production.", "isCorrect": False, "key": "C"},
+                        {"text": "Le prix de vente HT du produit fini (sans les taxes).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les tissus conjonctifs (composés de collagène) sont difficiles à hacher finement et à fondre complètement à basse température. S'ils sont trop abondants, ils donnent au produit fini une **texture élastique ou caoutchouteuse** désagréable en bouche. D'où l'importance du parage."
+                    "correction": "Les charges variables (matières premières) sont directement liées à la quantité produite (si je fais plus, je dépense plus de matières)."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Quel type de viande, peu colorée et avec un goût neutre, est idéal pour la fabrication des **galantines** et des ballotines de volaille ?",
+                    "question": "Comment s'appelle l'opération qui consiste à vérifier la force de la farine (W, P/L) à l'aide d'un appareil ?",
                     "answerOptions": [
-                        {"text": "Viande de bœuf très rouge.", "isCorrect": False},
-                        {"text": "Viande de canard gras.", "isCorrect": False},
-                        {"text": "Viande blanche (volaille ou veau).", "isCorrect": True},
-                        {"text": "Viande d'agneau forte.", "isCorrect": False}
+                        {"text": "Le test d'alvéographe (test de qualité des farines) pour la détermination du réseau de gluten.", "isCorrect": False, "key": "A"},
+                        {"text": "L'inventaire : le dénombrement (comptage) physique des stocks (matières premières et produits finis) pour ajuster les comptes.", "isCorrect": True, "key": "B"},
+                        {"text": "Le test de DLC (Date Limite de Consommation) des produits périssables (pâtisseries).", "isCorrect": False, "key": "C"},
+                        {"text": "Le test de température de la pâte (T° de base) en fin de pétrissage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les **galantines** et **ballotines** sont des charcuteries cuites froides, souvent servies en tranches. On privilégie la **viande blanche** (poulet, dinde, veau) pour obtenir une farce claire, fine et neutre, qui se marie bien avec la garniture (truffes, pistaches, légumes)."
+                    "correction": "L'inventaire (souvent annuel) permet de valoriser les stocks et de calculer le coût réel (écart entre la théorie et la réalité)."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "En charcuterie, qu'appelle-t-on le *ressuyage* de la viande après salaison ?",
+                    "question": "Quel est le taux de TVA (Taxe sur la Valeur Ajoutée) applicable aux pains et viennoiseries (produits alimentaires) en France ?",
                     "answerOptions": [
-                        {"text": "L'injection de saumure pour hydrater le produit.", "isCorrect": False},
-                        {"text": "La période de repos où la viande perd de l'eau et le sel se diffuse.", "isCorrect": True},
-                        {"text": "L'application d'une fleur de moisissure en surface.", "isCorrect": False},
-                        {"text": "Le frottage de la pièce avec des aromates.", "isCorrect": False}
+                        {"text": "Le taux réduit de 5,5% (ou 10% pour la consommation immédiate) pour les produits alimentaires (traiteur : 10% ou 20%).", "isCorrect": True, "key": "A"},
+                        {"text": "Le taux normal de 20% (applicable aux pièces, aux fournitures et à la main d'œuvre non réduite).", "isCorrect": False, "key": "B"},
+                        {"text": "Le taux standard de 10% (pour les travaux immobiliers ou les transports de voyageurs).", "isCorrect": False, "key": "C"},
+                        {"text": "Le taux standard de 0% (exonération totale) pour les produits exportés à l'international.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **ressuyage** est la période de repos au froid qui suit le salage ou l'injection. Pendant cette étape, le sel termine sa **diffusion** dans la masse, et la viande perd une partie de son **eau** (perte de poids), préparant le produit à l'étuvage ou au séchage."
-                },
+                    "correction": "Les produits de charcuterie/traiteur sont souvent soumis au taux intermédiaire (10%) ou au taux normal (20%) en fonction du conditionnement et du type de produit (consommation immédiate ou non)."
+                }
             ]
         }
     }

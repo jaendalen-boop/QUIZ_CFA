@@ -1,1143 +1,1136 @@
 quiz_data = {
-    "title": "Quiz CAP Coiffure : Révisions Complètes (100 Questions)",
+    "title": "CAP Métiers de la Coiffure - Base de Données Complète (100 Questions) - V5 (Longueurs Neutralisées)",
+    
+    "description": "Base de données de 100 questions pour le CAP Coiffure. Les options de réponses sont de longueurs variées et non prédictives. Correction précise et rappel de cours systématique.",
+    
     "themes": {
-        # =========================================================================
-        # THÈME 1 : BIOLOGIE DU CHEVEU ET DU CUIR CHEVELU (Q. 1-20)
-        # =========================================================================
+        # THÈME 1 (LONGUEUR NEUTRALISÉE)
         1: {
-            "name": "1. Biologie du cheveu et du cuir chevelu (Q. 1-20)",
+            "name": "Hygiène, Sécurité, Environnement (HSE) et Législation",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quelle est la partie du cheveu qui se trouve au-dessus de la peau et qui est constituée de cellules mortes kératinisées ?",
+                    "question": "Quelle est l'étape essentielle pour l'hygiène des outils de coupe entre deux clients ?",
                     "answerOptions": [
-                        {"text": "Le bulbe pilaire", "isCorrect": False, "rationale": "Le bulbe est la partie vivante, située sous le cuir chevelu, responsable de la croissance."},
-                        {"text": "Le cortex", "isCorrect": False, "rationale": "Le cortex est la couche interne de la tige, mais la question fait référence à la partie visible dans son ensemble."},
-                        {"text": "La tige pilaire", "isCorrect": True, "rationale": "La **tige pilaire** est la partie visible, inerte et kératinisée, qui émerge du follicule."},
-                        {"text": "La papille dermique", "isCorrect": False, "rationale": "La papille est le 'cœur' nourricier du follicule, située à sa base."}
+                        {"text": "Les nettoyer uniquement à l'eau savonneuse.", "isCorrect": False, "key": "A"},
+                        {"text": "Nettoyage suivi d'une désinfection biocide.", "isCorrect": True, "key": "B"},
+                        {"text": "Les ranger dans une trousse à outils fermée.", "isCorrect": False, "key": "C"},
+                        {"text": "Stérilisation à haute température au four.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **tige pilaire** est la partie que l'on coiffe et qui n'est plus vivante. Elle est constituée de trois couches : la cuticule, le cortex et parfois la moelle."
+                    "correction": "Le protocole obligatoire est le nettoyage (élimination des débris) puis la **désinfection** (élimination des germes) avec un produit homologué (normes AFNOR) pour éviter la **contamination croisée**."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quel est le pourcentage approximatif de Kératine dans la composition de la fibre capillaire ?",
+                    "question": "Quel est le rôle du 'Protège-nuque' (bande de papier jetable) positionné avant la cape de coupe ?",
                     "answerOptions": [
-                        {"text": "Environ 10 %", "isCorrect": False, "rationale": "10 % est le pourcentage approximatif d'eau dans un cheveu sain."},
-                        {"text": "Environ 35 %", "isCorrect": False, "rationale": "Cette valeur est trop faible pour le composant majeur du cheveu."},
-                        {"text": "Environ 85 %", "isCorrect": True, "rationale": "La **Kératine** est la protéine structurelle principale du cheveu, garantissant sa résistance."},
-                        {"text": "Environ 60 %", "isCorrect": False, "rationale": "60 % est une estimation courante de la quantité de protéines dans l'ensemble du corps humain."}
+                        {"text": "Absorber l'excès de produit coiffant.", "isCorrect": False, "key": "A"},
+                        {"text": "Sa fonction est d'absorber les produits chimiques qui coulent sur le cou du client.", "isCorrect": False, "key": "B"},
+                        {"text": "Isoler la cape de coupe de la peau du client (barrière hygiénique jetable).", "isCorrect": True, "key": "C"},
+                        {"text": "Soutenir la tête du client pendant le shampooing et le soin.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **Kératine** est une protéine fibreuse, riche en soufre, qui représente l'essentiel de la masse du cheveu. Sa qualité est essentielle pour l'élasticité et la solidité de la fibre."
+                    "correction": "Le protège-nuque est un élément d'hygiène à **usage unique** (EAU). Il est obligatoire pour isoler la peau du tissu de la cape réutilisable."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Dans le cycle pilaire, quelle est la phase la plus longue, correspondant à la période de croissance active du cheveu ?",
+                    "question": "Comment doit-on gérer les déchets chimiques (restes de colorant, oxydant) en salon de coiffure ?",
                     "answerOptions": [
-                        {"text": "La phase Catagène", "isCorrect": False, "rationale": "La phase Catagène est une phase de transition et de régression, très courte (quelques semaines)."},
-                        {"text": "La phase Anagène", "isCorrect": True, "rationale": "La phase **Anagène** est la phase de production et de croissance du cheveu, durant de 2 à 7 ans."},
-                        {"text": "La phase Télogène", "isCorrect": False, "rationale": "La phase Télogène est la phase de repos et de chute, plus longue que la Catagène, mais plus courte que l'Anagène."},
-                        {"text": "La phase Kératogène", "isCorrect": False, "rationale": "La Kératogenèse est le processus de fabrication de la kératine, non une phase du cycle."}
+                        {"text": "Les jeter directement dans l'évier.", "isCorrect": False, "key": "A"},
+                        {"text": "Les mélanger aux ordures ménagères classiques.", "isCorrect": False, "key": "B"},
+                        {"text": "Stocker dans des contenants spécifiques.", "isCorrect": True, "key": "C"},
+                        {"text": "Les conserver dans leur emballage d'origine pour les réutiliser.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La phase **Anagène** est la phase de croissance et représente environ 85 % à 90 % des cheveux sur le cuir chevelu à un moment donné."
+                    "correction": "Les produits chimiques (oxydant, colorant) sont considérés comme des **Déchets Dangereux** (DD). Ils doivent être gérés par des entreprises spécialisées."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Quel est le rôle principal de la mélanine, située dans le cortex de la tige pilaire ?",
+                    "question": "Quel est le risque de travailler sans gants de protection lors de l'application de produits chimiques ?",
                     "answerOptions": [
-                        {"text": "Assurer la souplesse du cheveu", "isCorrect": False, "rationale": "La souplesse est assurée par l'équilibre kératine/eau/lipides."},
-                        {"text": "Fournir les nutriments essentiels au bulbe", "isCorrect": False, "rationale": "Les nutriments sont apportés par la papille dermique."},
-                        {"text": "Déterminer la couleur naturelle du cheveu", "isCorrect": True, "rationale": "La **mélanine** (eumélanine et phéomélanine) est le pigment naturel qui donne sa couleur au cheveu."},
-                        {"text": "Lubrifier le cuir chevelu et la fibre", "isCorrect": False, "rationale": "La lubrification est le rôle du sébum (glande sébacée)."}
+                        {"text": "La décoloration accélérée du peignoir.", "isCorrect": False, "key": "A"},
+                        {"text": "Le risque de dermatite ou de réactions allergiques cutanées.", "isCorrect": True, "key": "B"},
+                        {"text": "La rupture des ponts cystines.", "isCorrect": False, "key": "C"},
+                        {"text": "L'oxydation rapide des lames des ciseaux de coiffure.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le cortex contient les pigments de **mélanine**. La quantité et le type de mélanine (eumélanine pour les couleurs foncées, phéomélanine pour les rouges/jaunes) déterminent la couleur finale."
+                    "correction": "Les gants sont des **Équipements de Protection Individuelle (EPI)** obligatoires pour protéger la peau des produits agressifs et prévenir les maladies professionnelles."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Comment agissent les produits ayant un pH très alcalin sur la couche externe du cheveu ?",
+                    "question": "Quel est le danger principal lié à l'utilisation d'appareils électriques près d'une source d'eau ?",
                     "answerOptions": [
-                        {"text": "Ils ferment et resserrent les écailles de la cuticule.", "isCorrect": False, "rationale": "C'est l'effet des produits acides (pH < 7)."},
-                        {"text": "Ils dissolvent les ponts disulfures sans ouvrir les écailles.", "isCorrect": False, "rationale": "Les produits alcalins ouvrent les écailles ET peuvent faciliter la rupture des ponts disulfures."},
-                        {"text": "Ils ouvrent et font gonfler les écailles de la cuticule.", "isCorrect": True, "rationale": "Un pH **alcalin** (basique), comme celui des colorations d'oxydation, ouvre les écailles pour la pénétration du produit."},
-                        {"text": "Ils n'ont aucun effet sur la structure externe.", "isCorrect": False, "rationale": "Le pH a un impact majeur sur la cuticule du cheveu."}
+                        {"text": "Le danger principal est le risque d'intoxication aux poussières de kératine ou l'électrostatique.", "isCorrect": False, "key": "A"},
+                        {"text": "Risque d'électrocution (court-circuit) par le contact entre l'eau et les parties électriques.", "isCorrect": True, "key": "B"},
+                        {"text": "Le risque principal de Troubles Musculo-Squelettiques (TMS) lié à une mauvaise posture de l'utilisateur.", "isCorrect": False, "key": "C"},
+                        {"text": "La chute du pH de l'eau de rinçage au contact des produits.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Pour que la couleur ou les produits de permanente puissent atteindre le cortex, il faut un milieu **alcalin** pour provoquer le gonflement de la tige et l'ouverture de la **cuticule**."
+                    "correction": "Le coiffeur doit veiller à la sécurité des installations. Le **risque électrique** (court-circuit, électrocution) près de l'eau est très élevé."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "La porosité d'un cheveu est directement liée à l'état de quelle partie de la fibre ?",
+                    "question": "Que doit-on faire si un client signale une forte sensation de brûlure pendant une coloration ?",
                     "answerOptions": [
-                        {"text": "Le cortex", "isCorrect": False, "rationale": "Le cortex est plus lié à la force et à l'élasticité."},
-                        {"text": "La moelle", "isCorrect": False, "rationale": "La moelle est souvent absente et n'influence pas la porosité."},
-                        {"text": "La cuticule", "isCorrect": True, "rationale": "La **cuticule** est la couche externe qui détermine la capacité du cheveu à absorber et retenir l'humidité et les produits."},
-                        {"text": "Le sébum", "isCorrect": False, "rationale": "Le sébum est une sécrétion lipidique, pas une partie de la fibre."}
+                        {"text": "Appliquer une dose supplémentaire d'oxydant.", "isCorrect": False, "key": "A"},
+                        {"text": "Rincer immédiatement et abondamment à l'eau claire.", "isCorrect": True, "key": "B"},
+                        {"text": "Continuer l'application et attendre 5 minutes de plus pour voir.", "isCorrect": False, "key": "C"},
+                        {"text": "Demander au client de patienter jusqu'à la fin.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **porosité** est la mesure de la capacité du cheveu à absorber. Elle dépend de l'état des **écailles de la cuticule** : plus elles sont ouvertes, plus le cheveu est poreux."
+                    "correction": "La sécurité du client est la priorité. Une sensation de brûlure indique une **réaction indésirable** (allergie ou irritation) : il faut rincer sans délai."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quel terme technique désigne la présence de pointes fourchues ?",
+                    "question": "Quel est le risque lié à l'accumulation de cheveux coupés sur le sol du salon ?",
                     "answerOptions": [
-                        {"text": "Alopécie", "isCorrect": False, "rationale": "L'alopécie est le terme désignant la chute de cheveux."},
-                        {"text": "Trichoptilose", "isCorrect": True, "rationale": "La **trichoptilose** est le terme scientifique pour désigner l'éclatement ou le dédoublement de la pointe du cheveu (fourche)."},
-                        {"text": "Pityriasis", "isCorrect": False, "rationale": "Le Pityriasis est un état pelliculaire."},
-                        {"text": "Séborrhée", "isCorrect": False, "rationale": "La séborrhée est la production excessive de sébum."}
+                        {"text": "Le risque d'intoxication à la kératine des cheveux.", "isCorrect": False, "key": "A"},
+                        {"text": "Risque de chute et de glissade.", "isCorrect": True, "key": "B"},
+                        {"text": "La rupture des ponts salins sous les pieds.", "isCorrect": False, "key": "C"},
+                        {"text": "Le risque de 'remontée' de l'eau dans le bac ou dans les égouts.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **trichoptilose** est le résultat d'une agression physique ou chimique (brossage trop agressif, chaleur excessive) qui fragilise et fend la fibre à son extrémité."
+                    "correction": "Le sol doit être **balayé après chaque coupe** pour des raisons de sécurité (glissade) et d'hygiène (propreté du salon)."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quel type de liaison faible, rompue par la chaleur et l'eau, est responsable de la mise en forme temporaire (brushing, rouleaux) ?",
+                    "question": "Quelle est l'importance du 'test d'allergie' (touche d'essai) pour une première coloration ?",
                     "answerOptions": [
-                        {"text": "Les ponts salins", "isCorrect": False, "rationale": "Les ponts salins sont sensibles au pH."},
-                        {"text": "Les liaisons peptidiques", "isCorrect": False, "rationale": "Ces liaisons forment la chaîne de Kératine et sont très solides."},
-                        {"text": "Les liaisons disulfures", "isCorrect": False, "rationale": "Ces liaisons sont rompues par la permanente et le défrisage chimique."},
-                        {"text": "Les liaisons hydrogènes", "isCorrect": True, "rationale": "Les **liaisons hydrogènes** sont rompues lorsque le cheveu est mouillé ou chauffé, puis elles se reforment lorsque le cheveu sèche, fixant la nouvelle forme temporairement."}
+                        {"text": "Mesurer le pouvoir éclaircissant de l'oxydant sur le cheveu du client.", "isCorrect": False, "key": "A"},
+                        {"text": "Vérifier la bonne adhésion du produit colorant à la fibre capillaire.", "isCorrect": False, "key": "B"},
+                        {"text": "L'objectif est de vérifier l'adhésion du produit et de mesurer le pouvoir éclaircissant de l'oxydant.", "isCorrect": False, "key": "C"},
+                        {"text": "Détecter une hypersensibilité ou une allergie au produit 48h avant l'application.", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "Les **liaisons hydrogènes** sont des liens faibles qui se rompent et se reforment facilement. C'est le principe de base de toutes les techniques de coiffage nécessitant l'utilisation d'eau et de chaleur."
+                    "correction": "Le test d'allergie (touche d'essai) est légalement **obligatoire 48h avant** la première application de coloration d'oxydation pour prévenir les réactions graves."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Quel est le pH naturel du cuir chevelu et du cheveu sain ?",
+                    "question": "Quel est le risque de porter des 'bijoux' (bagues, bracelets) lors de la manipulation des cheveux ou des produits ?",
                     "answerOptions": [
-                        {"text": "Neutre (pH 7)", "isCorrect": False, "rationale": "Le pH 7 est celui de l'eau pure."},
-                        {"text": "Légèrement alcalin (pH 7.5 à 8.5)", "isCorrect": False, "rationale": "Le cheveu sain est acide, pas alcalin."},
-                        {"text": "Très acide (pH 3 à 4)", "isCorrect": False, "rationale": "Ce niveau d'acidité est utilisé pour des soins très spécifiques (fermeture intense)."},
-                        {"text": "Légèrement acide (pH 4.5 à 5.5)", "isCorrect": True, "rationale": "Le cuir chevelu et le cheveu sont naturellement **acides** (pH idéal d'environ 5.5) grâce au film hydrolipidique."}
+                        {"text": "Contamination croisée, risque de blessure et accrochage dans la chevelure.", "isCorrect": True, "key": "A"},
+                        {"text": "La dégradation du pH du cuir chevelu par la bague.", "isCorrect": False, "key": "B"},
+                        {"text": "Le risque de rouille des appareils électriques au contact du métal.", "isCorrect": False, "key": "C"},
+                        {"text": "Le risque de brûlure thermique liée au contact du métal sur le cheveu au contact de la chaleur.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le pH naturel du cheveu et du cuir chevelu est **légèrement acide** (pH 4.5 à 5.5). C'est pour cette raison qu'on utilise souvent des soins et shampoings avec un pH acide pour lisser les écailles."
+                    "correction": "Les bijoux (surtout les bagues) sont des **vecteurs de bactéries**. Ils sont interdits ou fortement déconseillés en contact direct avec le client pour des raisons d'hygiène et de sécurité."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "La glande sébacée est une annexe du cheveu qui sécrète le sébum. Où se déverse principalement cette sécrétion ?",
+                    "question": "Quelle est la procédure correcte de stockage des serviettes utilisées pour les clients ?",
                     "answerOptions": [
-                        {"text": "Directement sur le cuir chevelu (épiderme)", "isCorrect": False, "rationale": "Bien que le sébum arrive sur le cuir chevelu, il est d'abord produit dans le follicule."},
-                        {"text": "Dans le canal du muscle arrecteur", "isCorrect": False, "rationale": "Le muscle arrecteur n'a pas de canal de sécrétion."},
-                        {"text": "Dans la papille dermique", "isCorrect": False, "rationale": "La papille fournit les nutriments, elle ne reçoit pas les sécrétions."},
-                        {"text": "Dans le canal pilaire (follicule)", "isCorrect": True, "rationale": "La glande sébacée est connectée et déverse son contenu dans le canal du **follicule pileux**, d'où il migre vers le cuir chevelu."}
+                        {"text": "L'important est de les laisser sécher à l'air libre, de préférence dans la salle de pause à l'abri de la lumière.", "isCorrect": False, "key": "A"},
+                        {"text": "Stockage dans un bac fermé, séparé du linge propre.", "isCorrect": True, "key": "B"},
+                        {"text": "Les jeter après chaque usage, même si elles sont juste humides.", "isCorrect": False, "key": "C"},
+                        {"text": "Les réutiliser immédiatement après séchage à la main.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La glande sébacée est annexée au **follicule pileux**. Le sébum remonte le long du cheveu pour former le film hydrolipidique protecteur sur le cuir chevelu et la tige."
+                    "correction": "Les serviettes utilisées (linge sale) doivent être stockées dans un **bac fermé, à l'écart des serviettes propres** pour éviter toute contamination croisée."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Le terme 'état séborrhéique' désigne une anomalie du cuir chevelu qui se traduit par :",
+                    "question": "Quel est le risque d'utiliser une brosse ou un peigne avec des 'dents cassées' ou des 'bords tranchants' ?",
                     "answerOptions": [
-                        {"text": "Une chute de cheveux diffuse due à un stress.", "isCorrect": False, "rationale": "Ceci est un effluvium télogène."},
-                        {"text": "Une sécheresse extrême et des pellicules fines.", "isCorrect": False, "rationale": "Ceci est un état pityriasique simple (pellicules sèches)."},
-                        {"text": "Une hyper-sécrétion des glandes sébacées.", "isCorrect": True, "rationale": "L'état **séborrhéique** est la production excessive de sébum, rendant le cuir chevelu et les cheveux gras."},
-                        {"text": "Une maladie fongique de la peau.", "isCorrect": False, "rationale": "Ceci correspondrait plutôt à une mycose ou une teigne."}
+                        {"text": "Le risque de coupure ou d'éraflure du cuir chevelu et d'agression mécanique de la fibre.", "isCorrect": True, "key": "A"},
+                        {"text": "Le risque de dermatite de contact avec la kératine.", "isCorrect": False, "key": "B"},
+                        {"text": "La rupture des ponts salins de la kératine du cheveu.", "isCorrect": False, "key": "C"},
+                        {"text": "L'accélération de l'oxydation des produits coiffants.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **séborrhée** est une production anormale de sébum. Si l'anomalie est liée à la présence de levures (Malassezia), on parle d'état séborrhéique complexe (pellicules grasses)."
+                    "correction": "Un **matériel défectueux** (dents cassées, bords tranchants) agresse le cuir chevelu et fragilise le cheveu (casse, fourches). Il doit être remplacé."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quel est le nom du muscle qui, en se contractant, redresse le cheveu (provoque la chair de poule) ?",
+                    "question": "Quel est le rôle du 'Désinfectant' (produit biocide) dans le protocole d'hygiène ?",
                     "answerOptions": [
-                        {"text": "Le muscle lisseur", "isCorrect": False, "rationale": "Nom inventé, terme incorrect."},
-                        {"text": "Le muscle papillaire", "isCorrect": False, "rationale": "La papille est le tissu nourricier, pas un muscle."},
-                        {"text": "Le muscle arrecteur", "isCorrect": True, "rationale": "Le **muscle arrecteur** (ou arrecteur du poil) est un petit muscle involontaire rattaché au follicule, qui se contracte sous l'effet du froid ou de la peur."},
-                        {"text": "Le muscle cutané", "isCorrect": False, "rationale": "Terme trop vague et imprécis pour cette fonction spécifique."}
+                        {"text": "Il sert uniquement à enlever la saleté visible des sols.", "isCorrect": False, "key": "A"},
+                        {"text": "Il détruit les micro-organismes (bactéries, champignons, virus) après le nettoyage.", "isCorrect": True, "key": "B"},
+                        {"text": "Il renforce la structure du cheveu en le gainant.", "isCorrect": False, "key": "C"},
+                        {"text": "Il augmente le pH des colorations pour les rendre plus agressives.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **muscle arrecteur** est rattaché au follicule. Sa contraction entraîne le redressement du cheveu et la formation de la 'chair de poule' (horripilation)."
+                    "correction": "La **désinfection** est l'étape qui suit le nettoyage. Elle est essentielle pour l'hygiène des outils et des surfaces pour garantir un environnement sain."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quel est l'élément qui permet de distinguer chimiquement l'eumélanine de la phéomélanine ?",
+                    "question": "Quelle est l'attitude à adopter en cas de coupure légère sur un poste de travail (coiffeur) ?",
                     "answerOptions": [
-                        {"text": "Le taux d'oxygène", "isCorrect": False, "rationale": "L'oxygène est impliqué dans l'oxydation des colorants, pas dans la structure de la mélanine."},
-                        {"text": "La présence de Fer", "isCorrect": False, "rationale": "Le fer est un composant de l'hémoglobine (sang)."},
-                        {"text": "La présence de Soufre", "isCorrect": True, "rationale": "La **phéomélanine** (pigments jaunes/rouges) contient du **soufre** dans sa structure, contrairement à l'eumélanine (pigments bruns/noirs)."},
-                        {"text": "La taille des granules", "isCorrect": False, "rationale": "La taille est différente, mais c'est la structure chimique qui les distingue fondamentalement."}
+                        {"text": "Nettoyer, désinfecter la plaie et la recouvrir d'un pansement étanche.", "isCorrect": True, "key": "A"},
+                        {"text": "Continuer le service après avoir essuyé la coupure avec une serviette.", "isCorrect": False, "key": "B"},
+                        {"text": "Appliquer de la teinture pour stopper le saignement (effet astringent).", "isCorrect": False, "key": "C"},
+                        {"text": "Demander à un collègue de faire le pansement rapidement.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **phéomélanine**, responsable des reflets chauds, contient des atomes de **soufre** qui la rendent plus difficile à éclaircir ou à neutraliser complètement lors d'une décoloration."
+                    "correction": "Une plaie doit être immédiatement soignée et **isolée (pansement étanche)** pour éviter la contamination du client ou des produits (risque de transmission d'agent pathogène)."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "La phase Télogène du cycle pilaire est caractérisée par :",
+                    "question": "Quel est le danger de laisser une serviette imbibée de produit (colorant) sur les épaules après le rinçage ?",
                     "answerOptions": [
-                        {"text": "Une division cellulaire intense dans la matrice.", "isCorrect": False, "rationale": "Ceci est la phase Anagène."},
-                        {"text": "Une période de croissance rapide.", "isCorrect": False, "rationale": "La croissance est maximale en phase Anagène."},
-                        {"text": "L'involution du follicule.", "isCorrect": False, "rationale": "Ceci est la phase Catagène."},
-                        {"text": "Le repos du cheveu et sa chute imminente.", "isCorrect": True, "rationale": "La phase **Télogène** est la phase de repos, où le cheveu est 'mort' et prêt à tomber (ou est tombé) pour laisser place au nouveau cheveu."}
+                        {"text": "Le risque de toxicité et d'intoxication par inhalation des vapeurs chimiques.", "isCorrect": False, "key": "A"},
+                        {"text": "Le risque de réaction cutanée (irritation, brûlure) due au contact prolongé du produit chimique.", "isCorrect": True, "key": "B"},
+                        {"text": "La corrosion accélérée des pièces du bac à shampooing.", "isCorrect": False, "key": "C"},
+                        {"text": "L'augmentation rapide de la viscosité du produit sur la peau.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "En phase **Télogène**, le cheveu est expulsé du follicule et le bulbe pilaire se prépare à entrer dans une nouvelle phase Anagène pour recréer un nouveau cheveu."
+                    "correction": "Tous les produits chimiques doivent être **rincés immédiatement** et abondamment après leur temps de pause. La serviette souillée doit être retirée sans délai."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quel type de cheveux présente le plus de risque de casse ou de fragilité aux nœuds en raison de sa forme très elliptique et aplatie ?",
+                    "question": "Que doit-on faire si l'on constate un 'dysfonctionnement électrique' (étincelle, odeur de brûlé) sur un appareil ?",
                     "answerOptions": [
-                        {"text": "Le cheveu asiatique", "isCorrect": False, "rationale": "Les cheveux asiatiques sont généralement ronds, très épais et résistants."},
-                        {"text": "Le cheveu crépu (africain)", "isCorrect": True, "rationale": "Le cheveu **crépu** possède une forme très plate, créant des points de fragilité au niveau des courbures, d'où le risque de casse."},
-                        {"text": "Le cheveu caucasien fin", "isCorrect": False, "rationale": "Le cheveu caucasien est généralement de forme ovale."},
-                        {"text": "Le cheveu méché", "isCorrect": False, "rationale": "Le cheveu méché est fragilisé par le traitement, mais sa forme n'est pas la cause première de sa fragilité."}
+                        {"text": "Continuer à l'utiliser en faisant plus attention en attendant la fin de la journée.", "isCorrect": False, "key": "A"},
+                        {"text": "Le mettre dans l'eau pour le refroidir si la chaleur est trop élevée.", "isCorrect": False, "key": "B"},
+                        {"text": "Couper immédiatement l'alimentation électrique, débrancher et signaler l'appareil pour réparation.", "isCorrect": True, "key": "C"},
+                        {"text": "Attendre la fin de la journée pour le jeter à la poubelle.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le cheveu **crépu** (Africain) est caractérisé par une forme transversale très **elliptique et aplatie** avec une pousse en spirale, ce qui le rend structurellement plus fragile et susceptible de se casser."
+                    "correction": "Tout appareil défectueux doit être **mis hors service immédiatement** pour éviter les accidents (électrocution, incendie) et signalé à la direction."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Qu'est-ce que le film hydrolipidique du cuir chevelu ?",
+                    "question": "Quel est l'objectif principal de la 'traçabilité' des produits chimiques (FDS) ?",
                     "answerOptions": [
-                        {"text": "Un revêtement lipidique pur (sébum).", "isCorrect": False, "rationale": "Il contient également de l'eau (sueur)."},
-                        {"text": "La couche la plus superficielle de l'épiderme.", "isCorrect": False, "rationale": "Ceci est la couche cornée."},
-                        {"text": "Un mélange d'eau (sueur) et de graisse (sébum).", "isCorrect": True, "rationale": "Le film **hydrolipidique** est un mélange de **sébum** (lipides) et de **sueur** (eau), créant une barrière protectrice acide."},
-                        {"text": "Le résultat d'une coloration permanente.", "isCorrect": False, "rationale": "La coloration modifie la couleur du cheveu, pas la composition de la barrière cutanée."}
+                        {"text": "Assurer la sécurité du véhicule pour l'utilisateur en cas de livraison.", "isCorrect": False, "key": "A"},
+                        {"text": "Permettre d'identifier l'origine, la composition et les risques d'un produit en cas d'accident ou de réaction.", "isCorrect": True, "key": "B"},
+                        {"text": "Ajouter un additif pour modifier la texture du produit.", "isCorrect": False, "key": "C"},
+                        {"text": "Mesurer la teneur en kératine du cheveu avant l'application.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le film **hydrolipidique** est une émulsion protectrice qui maintient l'hydratation du cuir chevelu, protège contre les microbes et contribue au pH acide (manteau acide)."
+                    "correction": "La **FDS** (Fiche de Données de Sécurité) est un document légal obligatoire qui détaille les propriétés physiques, chimiques et les **précautions d'emploi** des produits dangereux."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Laquelle des structures suivantes est responsable de l'apport en nutriments au bulbe pilaire pour la croissance du cheveu ?",
+                    "question": "Quel est l'Équipement de Protection Individuelle (EPI) essentiel pour le coiffeur lors d'une coloration ?",
                     "answerOptions": [
-                        {"text": "La gaine épithéliale", "isCorrect": False, "rationale": "La gaine protège et guide le cheveu."},
-                        {"text": "Le follicule pileux", "isCorrect": False, "rationale": "Le follicule est l'enveloppe générale."},
-                        {"text": "La papille dermique", "isCorrect": True, "rationale": "La **papille dermique** est richement vascularisée et apporte l'oxygène et les nutriments nécessaires à la division cellulaire de la matrice."},
-                        {"text": "Le cortex", "isCorrect": False, "rationale": "Le cortex est la partie interne de la tige pilaire (le cheveu lui-même)."}
+                        {"text": "Les bouchons d'oreille.", "isCorrect": False, "key": "A"},
+                        {"text": "Les gants pour les mains, la blouse et éventuellement des lunettes de protection.", "isCorrect": True, "key": "B"},
+                        {"text": "Le casque anti-bruit pour le sèche-cheveux.", "isCorrect": False, "key": "C"},
+                        {"text": "Les chaussures de sécurité à coque pour prévenir les coupures.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **papille dermique** est le point de connexion entre le cheveu et le réseau sanguin du derme. Elle est vitale pour la santé et la croissance de la fibre."
+                    "correction": "Le port des **gants** et de la **tenue professionnelle** (blouse, tablier) est obligatoire pour la manipulation des produits chimiques. Ils protègent la peau et les vêtements."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Les ponts disulfures (ou ponts cystine) sont les liaisons les plus résistantes du cheveu. Ils sont modifiés chimiquement lors de quelle technique ?",
+                    "question": "Quel est le risque si un produit est stocké à une température trop élevée (près d'un radiateur) ?",
                     "answerOptions": [
-                        {"text": "Le brushing et la mise en plis", "isCorrect": False, "rationale": "Ces techniques modifient les liaisons hydrogènes (faibles)."},
-                        {"text": "Le shampooing et le soin hydratant", "isCorrect": False, "rationale": "Ces actions n'atteignent pas les ponts disulfures."},
-                        {"text": "La coloration ton sur ton", "isCorrect": False, "rationale": "La coloration n'a pas besoin de rompre les liaisons disulfures."},
-                        {"text": "La permanente ou le défrisage chimique", "isCorrect": True, "rationale": "La **permanente** (ou le défrisage) utilise des réducteurs pour rompre les ponts disulfures, puis un fixateur pour les reformer dans une nouvelle position."}
+                        {"text": "Le risque de dégradation prématurée et de modification de son efficacité (perte d'oxydation).", "isCorrect": True, "key": "A"},
+                        {"text": "Le risque de 'remontée en température' du produit au contact des cheveux.", "isCorrect": False, "key": "B"},
+                        {"text": "La diminution du temps de pétrissage du produit.", "isCorrect": False, "key": "C"},
+                        {"text": "L'augmentation rapide de la viscosité de la pâte couleur.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les ponts **disulfures** sont les fondations du cheveu. Leur rupture puis leur reconstruction sont l'objectif des techniques de **permanente** ou de lissage chimique pour obtenir une modification durable de la forme."
+                    "correction": "Les produits chimiques (couleur, oxydant) doivent être stockés dans un **endroit frais et sec** (à l'abri de la lumière et de la chaleur) pour garantir leur stabilité et leur efficacité."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Si un cheveu est décrit comme 'hyperséborrhéique', quel type de shampoing est généralement le plus adapté pour le premier lavage ?",
+                    "question": "Quel est le rôle du 'shampooing neutralisant' (souvent acide) après une permanente ou une décoloration ?",
                     "answerOptions": [
-                        {"text": "Un shampoing au pH très acide.", "isCorrect": False, "rationale": "Le pH acide est pour resserrer les écailles après un traitement chimique."},
-                        {"text": "Un shampoing de traitement volumateur.", "isCorrect": False, "rationale": "Un volumateur ne gère pas la séborrhée."},
-                        {"text": "Un shampoing doux et purifiant.", "isCorrect": True, "rationale": "Il faut un shampoing **doux et purifiant** pour réguler la production de sébum sans agresser, ce qui pourrait provoquer un effet rebond."},
-                        {"text": "Un shampoing très décapant (alcalin).", "isCorrect": False, "rationale": "Un shampoing trop décapant peut agresser le cuir chevelu et provoquer une production de sébum en réaction (effet rebond)."}
+                        {"text": "Servir uniquement à enlever la saleté visible.", "isCorrect": False, "key": "A"},
+                        {"text": "Il permet de rétablir le pH naturel (acide) du cheveu après l'application de produits alcalins.", "isCorrect": True, "key": "B"},
+                        {"text": "Il sert d'agent de blanchiment pour éclaircir la fibre capillaire.", "isCorrect": False, "key": "C"},
+                        {"text": "Il augmente la viscosité de la pâte à la surface du cheveu.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Il faut traiter l'excès de sébum avec un shampoing **doux et régulateur** (purifiant) pour éviter de décaper le cuir chevelu et d'entraîner une hyper-sécrétion en réponse."
+                    "correction": "Le shampooing acide ou le soin neutralisant est essentiel pour **rééquilibrer le pH élevé (alcalin)** des produits chimiques et refermer les écailles (brillance et protection)."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quel est le nom de la membrane fibreuse transparente qui entoure la racine du cheveu et le relie à la peau ?",
+                    "question": "Quelle est l'attitude à adopter par le personnel en cas d'incendie dans l'établissement ?",
                     "answerOptions": [
-                        {"text": "L'épiderme", "isCorrect": False, "rationale": "L'épiderme est la couche externe de la peau."},
-                        {"text": "Le cortex", "isCorrect": False, "rationale": "Le cortex est la couche interne du cheveu."},
-                        {"text": "La gaine épithéliale", "isCorrect": True, "rationale": "La **gaine épithéliale** (interne et externe) est le tissu qui entoure la racine, assurant sa cohésion et la guidant dans sa pousse."},
-                        {"text": "La matrice", "isCorrect": False, "rationale": "La matrice est la zone de production des cellules à la base du bulbe."}
+                        {"text": "Alerter, couper les énergies et évacuer les clients vers le point de rassemblement, sans paniquer.", "isCorrect": True, "key": "A"},
+                        {"text": "Tenter d'éteindre le feu par ses propres moyens, avec un linge humide.", "isCorrect": False, "key": "B"},
+                        {"text": "Courir chercher de l'eau pour éteindre le feu s'il est petit.", "isCorrect": False, "key": "C"},
+                        {"text": "Continuer le service en attendant l'arrivée des secours si possible.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **gaine épithéliale** (ou gaine du follicule) est l'enveloppe protectrice qui maintient et protège le cheveu en formation dans sa 'poche' (le follicule)."
+                    "correction": "Le **Plan de Sécurité Incendie** (PSSI) doit être maîtrisé : la priorité est à l'alerte et à l'évacuation rapide des personnes."
                 }
             ]
         },
-        # =========================================================================
-        # THÈME 2 : COLORIMÉTRIE ET PRODUITS (Q. 21-40)
-        # =========================================================================
+        # THÈME 2 (LONGUEUR NEUTRALISÉE)
         2: {
-            "name": "2. Colorimétrie et Produits (Q. 21-40)",
+            "name": "Technologie des Produits et Matériels (Chimie et Matériaux)",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Dans le système international de coloration (I.S.N), à quoi correspond le chiffre après la virgule (ou le tiret) ?",
+                    "question": "Quel est le principal composant de la fibre capillaire (cheveu) qui lui donne sa structure et sa résistance ?",
                     "answerOptions": [
-                        {"text": "À la hauteur de ton (niveau de clarté)", "isCorrect": False, "rationale": "La hauteur de ton est le chiffre avant la virgule."},
-                        {"text": "Au reflet primaire (dominant)", "isCorrect": True, "rationale": "Le premier chiffre après le point ou la virgule indique le **reflet primaire**, c'est-à-dire le reflet le plus dominant de la couleur."},
-                        {"text": "Au reflet secondaire (nuance)", "isCorrect": False, "rationale": "Le reflet secondaire est le deuxième chiffre après la virgule."},
-                        {"text": "À la nature du cheveu (pourcentage de blanc)", "isCorrect": False, "rationale": "Le pourcentage de blanc doit être évalué par le coiffeur."}
+                        {"text": "La Cellule.", "isCorrect": False, "key": "A"},
+                        {"text": "Le Collagène.", "isCorrect": False, "key": "B"},
+                        {"text": "L'Amidon.", "isCorrect": False, "key": "C"},
+                        {"text": "La Kératine, une protéine fibreuse et soufrée.", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "Le premier chiffre après le séparateur indique le **reflet principal** (par exemple, 6.**4**5, où '4' est le reflet cuivré principal). Le chiffre avant le séparateur indique la hauteur de ton (6 = blond foncé)."
+                    "correction": "La **Kératine** est la protéine majeure du cheveu (près de 90% de sa composition). Elle est responsable de sa rigidité, de sa souplesse et de son imperméabilité."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Quelles sont les trois couleurs primaires qui, mélangées en proportions égales, sont censées créer une couleur neutre (gris/marron) ?",
+                    "question": "Quel est le rôle de l'agent alcalin (souvent l'ammoniaque) dans une coloration d'oxydation ?",
                     "answerOptions": [
-                        {"text": "Le jaune, le vert et le bleu", "isCorrect": False, "rationale": "Le vert est une couleur secondaire."},
-                        {"text": "Le rouge, le violet et le bleu", "isCorrect": False, "rationale": "Le violet est une couleur secondaire."},
-                        {"text": "Le rouge, le jaune et le bleu", "isCorrect": True, "rationale": "Le **rouge, le jaune et le bleu** sont les trois couleurs primaires. Leur mélange permet de créer toutes les autres couleurs."},
-                        {"text": "Le cyan, le magenta et le jaune", "isCorrect": False, "rationale": "Ce sont les primaires en synthèse soustractive (impression), mais le rouge est utilisé en coiffure pour simplifier l'enseignement."}
+                        {"text": "Resserrer les écailles et neutraliser le pH.", "isCorrect": False, "key": "A"},
+                        {"text": "Ouvrir les écailles (cuticule) pour permettre aux pigments de pénétrer au cœur du cortex.", "isCorrect": True, "key": "B"},
+                        {"text": "Accélérer l'activité des bactéries lactiques pour améliorer l'odeur.", "isCorrect": False, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le bac et les outils.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les bases de la colorimétrie reposent sur le **rouge, le jaune et le bleu**. Leur superposition ou mélange en proportions équilibrées doit théoriquement annuler les reflets pour créer un fond neutre."
+                    "correction": "L'**alcalinité** (pH élevé) est nécessaire pour gonfler la cuticule et faire pénétrer les colorants (pigments d'oxydation) et l'oxydant à l'intérieur de la fibre."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quelle est la couleur considérée comme la couleur opposée (complémentaire) au jaune dans le cercle chromatique de coiffure ?",
+                    "question": "Quel est le nom de l'appareil qui permet de 'lisser' les cheveux par la chaleur (fer plat) ?",
                     "answerOptions": [
-                        {"text": "Le rouge", "isCorrect": False, "rationale": "Le rouge et le jaune sont adjacents (couleurs chaudes)."},
-                        {"text": "Le vert", "isCorrect": False, "rationale": "Le vert est composé de jaune et bleu. Il neutralise le rouge."},
-                        {"text": "Le bleu-violet", "isCorrect": True, "rationale": "Le **bleu-violet** (ou juste violet/mauve) est la couleur complémentaire du jaune. Il est utilisé pour neutraliser les reflets jaunes indésirables après un éclaircissement."},
-                        {"text": "L'orange", "isCorrect": False, "rationale": "L'orange est composé de jaune et rouge. Il neutralise le bleu."}
+                        {"text": "Le Lisseur (ou fer à lisser), qui utilise des plaques chauffantes pour modifier temporairement les ponts hydrogènes.", "isCorrect": True, "key": "A"},
+                        {"text": "Le fer à friser.", "isCorrect": False, "key": "B"},
+                        {"text": "Le casque de séchage.", "isCorrect": False, "key": "C"},
+                        {"text": "Le vaporisateur.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Dans le cercle chromatique, le **violet/bleu-violet** est directement opposé au jaune. Les couleurs complémentaires s'annulent lorsqu'elles sont mélangées à part égale."
+                    "correction": "Le **lisseur** (chaleur sèche) modifie temporairement la structure du cheveu (rupture des ponts hydrogène). Le lissage s'annule au premier shampooing."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quel est le rôle principal de l'eau oxygénée (Peroxyde d'hydrogène) dans une coloration d'oxydation (permanente) ?",
+                    "question": "Quel est le rôle du 'Conditionneur' ou 'Après-shampooing' (produit de soin) ?",
                     "answerOptions": [
-                        {"text": "Elle apporte les pigments colorants au cheveu.", "isCorrect": False, "rationale": "Ce sont les crèmes colorantes qui contiennent les pigments."},
-                        {"text": "Elle fixe la kératine pour refermer les écailles.", "isCorrect": False, "rationale": "C'est l'action des produits acides, non de l'oxydant."},
-                        {"text": "Elle permet le gonflement du cheveu.", "isCorrect": False, "rationale": "Le gonflement est provoqué par le milieu alcalin de la crème colorante (ammoniaque)."},
-                        {"text": "Elle oxyde et révèle les précurseurs de couleur.", "isCorrect": True, "rationale": "L'eau oxygénée est l'**oxydant** qui, au contact des précurseurs de couleur, permet la réaction chimique qui crée la couleur définitive à l'intérieur du cortex."}
+                        {"text": "Décolorer le cheveu de plusieurs tons.", "isCorrect": False, "key": "A"},
+                        {"text": "Démêler les cheveux, lisser la cuticule (écailles), apporter brillance et douceur.", "isCorrect": True, "key": "B"},
+                        {"text": "Servir de substitut à la coloration d'oxydation en apportant de l'éclat.", "isCorrect": False, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le bac.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'eau oxygénée (ou révélateur, ou développeur) est l'agent **oxydant**. Sa concentration (volume) détermine le pouvoir éclaircissant du mélange colorant."
+                    "correction": "Le conditionneur (soin **acide**) rétablit le pH naturel du cheveu et **referme les écailles** après l'ouverture par le shampooing (alcalin)."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Qu'est-ce qu'une coloration 'ton sur ton' (ou semi-permanente) ?",
+                    "question": "Comment appelle-t-on la concentration de l'eau oxygénée utilisée dans les colorations (oxydant) ?",
                     "answerOptions": [
-                        {"text": "Une coloration qui éclaircit de 3 tons ou plus.", "isCorrect": False, "rationale": "Ceci est une coloration d'oxydation forte ou une décoloration."},
-                        {"text": "Une coloration sans aucun agent alcalin (sans ammoniaque, sans MEA).", "isCorrect": False, "rationale": "La plupart des ton sur ton contiennent un alcalin doux."},
-                        {"text": "Une coloration qui pénètre peu et s'estompe après plusieurs shampooings.", "isCorrect": True, "rationale": "La coloration **ton sur ton** travaille avec un oxydant faible et ne pénètre que partiellement le cortex, elle s'estompe donc sans effet de racine marqué."},
-                        {"text": "Une coloration qui couvre 100% des cheveux blancs de manière permanente.", "isCorrect": False, "rationale": "Elle couvre en transparence et s'estompe, elle est dite semi-permanente."}
+                        {"text": "Le pH.", "isCorrect": False, "key": "A"},
+                        {"text": "L'indice de viscosité.", "isCorrect": False, "key": "B"},
+                        {"text": "La température de séchage.", "isCorrect": False, "key": "C"},
+                        {"text": "Le 'Volume' (ex : 10, 20, 30, 40 Vol), qui mesure la quantité d'oxygène libérée.", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "La coloration **ton sur ton** permet de foncer, de corriger des reflets ou d'apporter de la brillance. Elle est utilisée pour une modification légère car elle ne pénètre pas en profondeur le cheveu et s'élimine progressivement."
+                    "correction": "Le **Volume (Vol)** est l'unité de mesure de la concentration en eau oxygénée. Plus le volume est élevé, plus le pouvoir éclaircissant est important (oxydation)."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Quelle est la principale différence entre une mèche et un balayage ?",
+                    "question": "Quel est le type de ciseaux utilisé pour 'désépaissir' la masse de cheveux (effilage) ?",
                     "answerOptions": [
-                        {"text": "La mèche est toujours plus claire que la couleur de base, tandis que le balayage peut être plus foncé.", "isCorrect": False, "rationale": "Les deux peuvent être clairs ou foncés."},
-                        {"text": "La mèche est une séparation franche (plus épaisse), et le balayage est un éclaircissement fondu et naturel.", "isCorrect": True, "rationale": "La **mèche** a un effet plus prononcé et marqué. Le **balayage** est réalisé avec des séparations fines pour un rendu plus subtil et sans démarcation."},
-                        {"text": "Le balayage est réalisé avec une décoloration, la mèche avec une coloration.", "isCorrect": False, "rationale": "Les deux techniques peuvent utiliser les deux types de produits."},
-                        {"text": "Le balayage est posé à l'air libre, la mèche est toujours sous papier aluminium.", "isCorrect": False, "rationale": "La technique de pose (aluminium, cellophane) ne définit pas le balayage ou la mèche."}
+                        {"text": "Les ciseaux sculpteurs (ou effileurs), dont les lames sont crantées.", "isCorrect": True, "key": "A"},
+                        {"text": "Les ciseaux droits (pour la coupe classique).", "isCorrect": False, "key": "B"},
+                        {"text": "Le rasoir.", "isCorrect": False, "key": "C"},
+                        {"text": "La tondeuse électrique.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **mèche** est caractérisée par une forte différenciation de couleur (effet zébré si mal réalisée), alors que le **balayage** cherche un éclaircissement plus doux, plus fondu et plus naturel."
+                    "correction": "Les **ciseaux effileurs** (crantés) permettent de désépaissir la masse, de créer du mouvement et d'alléger les pointes sans créer de marques franches."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Dans le cadre d'une permanente classique, quel produit est appliqué en premier lieu pour modifier durablement la forme du cheveu ?",
+                    "question": "Quel est le rôle de la 'Gaine protectrice' (cuticule) qui entoure la fibre capillaire ?",
                     "answerOptions": [
-                        {"text": "Le fixateur (oxydant)", "isCorrect": False, "rationale": "Le fixateur est appliqué en dernier pour reformer les ponts."},
-                        {"text": "La lotion réductrice (alcaline)", "isCorrect": True, "rationale": "La lotion **réductrice** est le produit actif qui rompt les ponts disulfures (liaisons fortes) du cheveu, lui permettant d'adopter la forme du bigoudi."},
-                        {"text": "Le shampoing acide", "isCorrect": False, "rationale": "Le shampoing est utilisé après le processus."},
-                        {"text": "Le soin neutralisant", "isCorrect": False, "rationale": "Le neutralisant est une autre appellation du fixateur."}
+                        {"text": "Assurer la nutrition du cheveu.", "isCorrect": False, "key": "A"},
+                        {"text": "Déterminer la couleur naturelle (mélanine).", "isCorrect": False, "key": "B"},
+                        {"text": "Protéger le cheveu des agressions et lui donner sa brillance.", "isCorrect": True, "key": "C"},
+                        {"text": "Produire le sébum et l'excès de sébum.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La lotion **réductrice** (souvent à base de Thiol ou de dérivé de la cystéine) est appliquée en premier pour casser les liaisons de la Kératine, qui sont ensuite réalignées par le bigoudi."
+                    "correction": "La **cuticule** est la couche protectrice externe (écailles). Si elle est lisse et fermée (grâce à un pH acide), le cheveu est brillant et en bonne santé."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Quel risque peut engendrer l'utilisation d'un oxydant de haut volume (40 volumes ou 12%) sur un cheveu déjà sensibilisé ?",
+                    "question": "Comment appelle-t-on la liaison (ponts) de la kératine qui est temporairement rompue par l'eau ou la chaleur ?",
                     "answerOptions": [
-                        {"text": "Une couverture incomplète des cheveux blancs.", "isCorrect": False, "rationale": "L'oxydant à 40 vol est très puissant, la couverture ne serait pas le problème majeur."},
-                        {"text": "Un dépôt de couleur trop foncé (surcharge pigmentaire).", "isCorrect": False, "rationale": "C'est le contraire, il y a risque d'éclaircissement trop fort."},
-                        {"text": "Une rupture totale des liaisons, rendant le cheveu élastique et cassant.", "isCorrect": True, "rationale": "L'oxydant fort sur cheveu sensibilisé entraîne un risque de **brûlure chimique** et la destruction du cortex (cheveu caoutchouteux)."},
-                        {"text": "Une repousse de couleur très foncée.", "isCorrect": False, "rationale": "La repousse n'est pas affectée par un sur-oxydation de la tige."}
+                        {"text": "Les ponts hydrogène (ou salins) qui sont modifiés par l'eau et la chaleur.", "isCorrect": True, "key": "A"},
+                        {"text": "Les ponts disulfures (rompus par la permanente).", "isCorrect": False, "key": "B"},
+                        {"text": "Les liaisons peptidiques.", "isCorrect": False, "key": "C"},
+                        {"text": "Les liaisons covalentes.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'oxydant fort (30 ou 40 vol) est réservé aux éclaircissements importants. Utilisé sur un cheveu déjà fragilisé, il peut entraîner une **porosité extrême**, une perte d'élasticité et une **casse** irréversible."
+                    "correction": "Le brushing ou le lissage modifie temporairement la forme du cheveu (rupture des **ponts hydrogène**). Le mouillage annule l'effet car ces ponts se reforment."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Que signifie le terme 'Hauteur de Ton' en colorimétrie ?",
+                    "question": "Quel est le rôle du 'Shampooing Doux' (à pH neutre ou légèrement acide) dans un programme de soins ?",
                     "answerOptions": [
-                        {"text": "L'intensité du reflet (par exemple, doré intense ou subtil).", "isCorrect": False, "rationale": "Ceci est géré par la concentration du reflet (ex: .33)."},
-                        {"text": "Le degré de clarté ou d'obscurité d'une couleur.", "isCorrect": True, "rationale": "La **Hauteur de Ton** est la valeur de clarté, numérotée de 1 (Noir) à 10 (Blond très très clair)."},
-                        {"text": "La quantité de pigments de mélanine présente.", "isCorrect": False, "rationale": "Elle en est la conséquence, mais la HdT est une échelle chiffrée."},
-                        {"text": "La couleur du reflet dominant (ex: rouge, cendrée).", "isCorrect": False, "rationale": "Ceci correspond au reflet."}
+                        {"text": "Décolorer le cheveu de plusieurs tons.", "isCorrect": False, "key": "A"},
+                        {"text": "Rendre la pâte trop ferme.", "isCorrect": False, "key": "B"},
+                        {"text": "Nettoyer les cheveux et le cuir chevelu sans les agresser (usage fréquent ou cheveux fragiles).", "isCorrect": True, "key": "C"},
+                        {"text": "Servir uniquement à colorer la mie du produit.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **Hauteur de Ton** est toujours représentée par le premier chiffre de la formule colorante (ex: un 8 est un blond clair, un 5 est un châtain clair). C'est l'étape 1 du diagnostic."
+                    "correction": "Un shampooing doux (pH neutre ou acide) **respecte l'équilibre naturel** (pH autour de 5,5) du cuir chevelu et du cheveu et est recommandé pour un usage fréquent."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Quel est l'effet d'une coloration permanente (oxydation) sur les pigments naturels du cheveu ?",
+                    "question": "Quel est le nom de la substance ajoutée à un produit pour en prolonger la conservation (durée de vie) ?",
                     "answerOptions": [
-                        {"text": "Elle n'a aucun effet sur les pigments naturels.", "isCorrect": False, "rationale": "C'est le cas du ton sur ton ou de la coloration directe."},
-                        {"text": "Elle entoure les pigments naturels sans les modifier.", "isCorrect": False, "rationale": "Elle les modifie en profondeur."},
-                        {"text": "Elle détruit partiellement les pigments naturels (éclaircissement).", "isCorrect": True, "rationale": "L'oxydant (eau oxygénée) va **dégrader/détruire** (éclaircir) la mélanine naturelle en même temps qu'il développe la couleur artificielle. C'est le principe de l'éclaircissement."},
-                        {"text": "Elle ajoute des pigments naturels de synthèse.", "isCorrect": False, "rationale": "Elle ajoute des pigments artificiels."}
-                    ] ,
-                    "correction": "Le processus de la coloration d'oxydation est double : elle **détruit** les pigments naturels pour créer un fond d'éclaircissement, et elle **dépose** les pigments artificiels pour créer la nouvelle couleur."
+                        {"text": "Le Conservateur (parabènes, phénoxyéthanol, etc.) pour empêcher la prolifération bactérienne.", "isCorrect": True, "key": "A"},
+                        {"text": "Le colorant.", "isCorrect": False, "key": "B"},
+                        {"text": "L'agent émulsifiant.", "isCorrect": False, "key": "C"},
+                        {"text": "L'amylase.", "isCorrect": False, "key": "D"}
+                    ],
+                    "correction": "Les **conservateurs** (dans les cosmétiques) sont essentiels pour empêcher la contamination du produit par les bactéries, les levures et les moisissures (durée d'utilisation)."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Comment appelle-t-on le niveau de clarté naturellement atteint par le cheveu lorsqu'on détruit la mélanine (suite à une décoloration par exemple) ?",
+                    "question": "Quel est le rôle du 'Sérum Coiffant' (souvent à base de silicone) pour la finition d'une coiffure ?",
                     "answerOptions": [
-                        {"text": "Le reflet artificiel", "isCorrect": False, "rationale": "Ceci est la couleur déposée."},
-                        {"text": "Le fond de clarification", "isCorrect": True, "rationale": "Le **fond de clarification** (ou fond d'éclaircissement) est la couleur résiduelle chaude (rouge, rouge-orange, jaune-orange, jaune) qui apparaît lorsque la mélanine est détruite."},
-                        {"text": "La hauteur de ton cible", "isCorrect": False, "rationale": "Ceci est le résultat souhaité."},
-                        {"text": "Le voile pigmentaire", "isCorrect": False, "rationale": "Ceci est un terme générique pour les pigments."}
+                        {"text": "Fixer le cheveu de manière rigide.", "isCorrect": False, "key": "A"},
+                        {"text": "Décolorer le cheveu de plusieurs tons.", "isCorrect": False, "key": "B"},
+                        {"text": "Apporter brillance, lisser les pointes (anti-fourches) et protéger contre l'humidité.", "isCorrect": True, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le bac.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **fond de clarification** est essentiel en colorimétrie. Il est toujours chaud (orangé ou jaune) et doit être neutralisé par un reflet froid (cendré ou irisé) pour obtenir une couleur neutre ou un reflet précis."
+                    "correction": "Le **sérum** est un produit de finition léger. Il gaine la fibre, l'alourdit (effet lissant) et apporte un effet miroir et une protection anti-humidité."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quel est le rôle du 'Perming', une substance souvent contenue dans les produits de permanente ?",
+                    "question": "Quel est le nom de la technique qui consiste à tordre les cheveux et à appliquer une solution chimique pour obtenir une boucle durable ?",
                     "answerOptions": [
-                        {"text": "Il fixe la couleur après la coloration.", "isCorrect": False, "rationale": "C'est l'oxydant."},
-                        {"text": "Il assouplit et démêle la fibre.", "isCorrect": False, "rationale": "C'est le rôle des après-shampoings."},
-                        {"text": "Il agit comme agent de réduction (rupture des ponts disulfures).", "isCorrect": True, "rationale": "Le terme **Perming** fait référence à l'action de réduction qui permet de casser les liaisons fortes du cheveu pour le rendre malléable et lui donner une nouvelle forme."},
-                        {"text": "Il crée une barrière protectrice contre la chaleur.", "isCorrect": False, "rationale": "C'est le rôle des thermo-protecteurs."}
+                        {"text": "Le lissage brésilien.", "isCorrect": False, "key": "A"},
+                        {"text": "La Permanente (ou 'mini-vague') qui modifie de façon chimique et durable la structure interne du cheveu.", "isCorrect": True, "key": "B"},
+                        {"text": "Le balayage.", "isCorrect": False, "key": "C"},
+                        {"text": "La coloration.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le 'Perming' désigne le principe actif de la **lotion réductrice** (le produit de permanente) qui rompt temporairement la structure interne du cheveu."
+                    "correction": "La **permanente** utilise des produits (réducteur puis fixateur) pour rompre et reformer les ponts disulfures de la kératine (modification chimique durable de la forme)."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quelle est la principale fonction du sel dans la composition d'un shampoing ?",
+                    "question": "Quel est le rôle du 'Diffuseur' (embout rond) sur un sèche-cheveux ?",
                     "answerOptions": [
-                        {"text": "Lui donner un parfum agréable.", "isCorrect": False, "rationale": "Le parfum est donné par les fragrances."},
-                        {"text": "Créer l'effet moussant.", "isCorrect": False, "rationale": "Les agents moussants sont les tensioactifs."},
-                        {"text": "Épaissir le produit (rendre la texture plus riche).", "isCorrect": True, "rationale": "Le sel (Chlorure de Sodium, NaCl) est un agent **épaississant** (viscosant) très courant dans les shampoings pour améliorer la texture et la sensation de richesse."},
-                        {"text": "Détruire les bactéries (agent antiseptique).", "isCorrect": False, "rationale": "Le rôle antiseptique est mineur en coiffure par rapport à l'épaississement."}
+                        {"text": "Il augmente la chaleur pour un séchage plus rapide.", "isCorrect": False, "key": "A"},
+                        {"text": "Il diminue le taux de cendres.", "isCorrect": False, "key": "B"},
+                        {"text": "Il n'a aucun impact sur la pâte.", "isCorrect": False, "key": "C"},
+                        {"text": "Il répartit la chaleur sur une grande surface pour sécher les cheveux bouclés/frisés sans défaire la boucle.", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "Le sel est utilisé comme **épaississant** à faible coût dans de nombreux shampoings. Un taux trop élevé peut cependant dessécher ou irriter le cuir chevelu chez certaines personnes."
+                    "correction": "Le **diffuseur** est essentiel pour les cheveux bouclés. Il sèche le cheveu par le dessous, en respectant la formation de la boucle naturelle (volume et texture)."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Quelle est l'unité de mesure utilisée pour quantifier la puissance de l'eau oxygénée (Peroxyde d'hydrogène) ?",
+                    "question": "Quel est le nom de la substance (matière grasse) qui protège le cuir chevelu de la sécheresse ?",
                     "answerOptions": [
-                        {"text": "Le pH", "isCorrect": False, "rationale": "Le pH mesure l'acidité/alcalinité."},
-                        {"text": "Le degré Baumé", "isCorrect": False, "rationale": "Le Baumé est utilisé pour la concentration de sel (saumure)."},
-                        {"text": "Le Volume", "isCorrect": True, "rationale": "La puissance de l'oxydant est exprimée en **Volumes** (par exemple, 10, 20, 30 ou 40 volumes), qui représente la quantité d'oxygène libérée."},
-                        {"text": "Le millilitre (ml)", "isCorrect": False, "rationale": "Le millilitre mesure la quantité de liquide."}
+                        {"text": "L'Ammoniaque.", "isCorrect": False, "key": "A"},
+                        {"text": "La Kératine.", "isCorrect": False, "key": "B"},
+                        {"text": "Le Collagène.", "isCorrect": False, "key": "C"},
+                        {"text": "Le Sébum (film hydrolipidique) : mélange de lipides et de sueur.", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "Le **Volume** indique le pouvoir d'éclaircissement : 10 volumes (3%) ne fait que déposer la couleur ; 20 volumes (6%) éclaircit d'un à deux tons ; 30 volumes (9%) de deux à trois tons, etc."
+                    "correction": "Le **sébum** est la protection naturelle du cuir chevelu et de la fibre. L'excès de sébum rend le cheveu gras (cuir chevelu séborrhéique)."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quelle est la couleur complémentaire à l'orange (ou cuivré) que l'on utilise pour neutraliser un fond d'éclaircissement trop chaud ?",
+                    "question": "Quel est le nom de l'appareil (à chaleur humide) utilisé pour accélérer le temps de pause des produits ?",
                     "answerOptions": [
-                        {"text": "Le rouge", "isCorrect": False, "rationale": "Le rouge et l'orange sont adjacents."},
-                        {"text": "Le jaune", "isCorrect": False, "rationale": "Le jaune est une composante de l'orange."},
-                        {"text": "Le bleu", "isCorrect": True, "rationale": "Le **bleu** est la couleur complémentaire de l'orange (ou cuivré). Il est souvent utilisé dans les colorations 'cendrées' (reflet .1) pour obtenir un résultat neutre."},
-                        {"text": "Le violet", "isCorrect": False, "rationale": "Le violet neutralise le jaune."}
+                        {"text": "Le casque de séchage (chaleur sèche).", "isCorrect": False, "key": "A"},
+                        {"text": "La panade.", "isCorrect": False, "key": "B"},
+                        {"text": "Le Vaporisateur (ou Climazon), qui produit de la chaleur humide pour faciliter la pénétration des produits.", "isCorrect": True, "key": "C"},
+                        {"text": "La levure de surface.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **bleu** est essentiel pour contrôler les reflets oranges et cuivrés qui apparaissent aux hauteurs de ton moyennes (5 à 7). Les cendrés (reflets bleutés) sont donc utilisés comme neutralisateurs."
+                    "correction": "La **chaleur humide** ouvre la cuticule, optimisant le résultat des colorations (meilleure couverture) et permettant aux masques (soins profonds) de pénétrer plus facilement."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Dans le processus de lissage permanent (type défrisage chimique), quel est le produit qui intervient en deuxième position pour fixer la nouvelle forme lisse du cheveu ?",
+                    "question": "Quel est le rôle du 'Pinceau Applicateur' (avec des fibres synthétiques) en coloration ?",
                     "answerOptions": [
-                        {"text": "La crème lissante (réductrice)", "isCorrect": False, "rationale": "C'est la première étape."},
-                        {"text": "Le protecteur thermique", "isCorrect": False, "rationale": "C'est un soin de protection, pas l'élément chimique fixateur."},
-                        {"text": "Le shampoing clarifiant", "isCorrect": False, "rationale": "C'est l'étape de préparation/nettoyage."},
-                        {"text": "Le neutralisant (fixateur oxydant)", "isCorrect": True, "rationale": "Comme pour la permanente, le **neutralisant** (fixateur) est un oxydant qui reforme les ponts disulfures dans la position souhaitée (lisse), rendant la modification permanente."}
+                        {"text": "Le pétrissage intensif.", "isCorrect": False, "key": "A"},
+                        {"text": "L'autolyse.", "isCorrect": False, "key": "B"},
+                        {"text": "Servir à la décoloration des vêtements.", "isCorrect": False, "key": "C"},
+                        {"text": "Permettre une application précise (racines) et une bonne répartition du produit sur la mèche.", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "Après la rupture des ponts par le produit réducteur et la mise en forme (fer à lisser ou traction manuelle), le **neutralisant** est indispensable pour que les ponts se reforment durablement dans la nouvelle structure."
+                    "correction": "Le **pinceau** (adapté à la texture du produit) est l'outil de base pour la coloration (précision, séparation des sections et contrôle de l'application)."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Quelle catégorie de produit est la plus courante pour masquer les premières petites zones de cheveux blancs de manière subtile et non permanente ?",
+                    "question": "Quel est l'outil utilisé pour réaliser des mèches ou un balayage (isoler la mèche) ?",
                     "answerOptions": [
-                        {"text": "La coloration de décapage", "isCorrect": False, "rationale": "Le décapage est une correction de couleur (très fort)."},
-                        {"text": "Les colorations fugaces (temporaires)", "isCorrect": True, "rationale": "Les colorations **fugaces** (mousses, sprays, masques) se déposent en surface et partent au premier shampoing, idéales pour un camouflage léger ou temporaire."},
-                        {"text": "La coloration d'oxydation 30 volumes", "isCorrect": False, "rationale": "C'est un produit fort pour un changement radical."},
-                        {"text": "Le décolorant en poudre", "isCorrect": False, "rationale": "Ceci éclaircit le cheveu."}
+                        {"text": "Le couteau à pain.", "isCorrect": False, "key": "A"},
+                        {"text": "Le papier aluminium (ou papier thermoplastique), qui isole la mèche traitée et maintient la chaleur.", "isCorrect": True, "key": "B"},
+                        {"text": "Le coupe-ongle.", "isCorrect": False, "key": "C"},
+                        {"text": "Le ciseau de cuisine.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les colorations **fugaces** sont idéales pour les clients qui ne veulent pas s'engager sur une couleur permanente. Elles n'impliquent aucune transformation chimique interne du cheveu."
+                    "correction": "L'**aluminium** (ou le papier thermoplastique) est essentiel pour créer un milieu occlusif (chaud) qui permet au produit de décolorer efficacement et rapidement."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Quelle molécule alcaline est le plus souvent utilisée dans les colorations d'oxydation (permanentes) pour ouvrir les écailles du cheveu ?",
+                    "question": "Quel est le rôle du 'Mousse Coiffante' (ou agent de fixation) pour un coiffage au rouleau ?",
                     "answerOptions": [
-                        {"text": "Le silicone", "isCorrect": False, "rationale": "Le silicone est un agent cosmétique (gainage)."},
-                        {"text": "L'acide lactique", "isCorrect": False, "rationale": "C'est un acide."},
-                        {"text": "L'ammoniaque (ou l'éthanolamine)", "isCorrect": True, "rationale": "L'**ammoniaque** (ou son substitut, l'éthanolamine/MEA) est l'agent alcalin qui rend le pH du mélange haut, ouvrant les écailles pour que les colorants et l'oxydant pénètrent."},
-                        {"text": "Le formol", "isCorrect": False, "rationale": "Le formol est un conservateur/fixateur dangereux, non un alcalin pour la couleur."}
+                        {"text": "Il fixe la coiffure (tenue) et apporte volume et corps, particulièrement pour les mises en plis et les coiffages bouclés.", "isCorrect": True, "key": "A"},
+                        {"text": "Il ralentit la fermentation.", "isCorrect": False, "key": "B"},
+                        {"text": "Il sert de nourriture à la levure.", "isCorrect": False, "key": "C"},
+                        {"text": "Il sert uniquement à blanchir la mie.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**ammoniaque** ou l'éthanolamine sont indispensables pour créer un milieu alcalin permettant la pénétration du produit. L'ammoniaque est plus puissante mais a une forte odeur, le MEA est plus doux mais nécessite plus de temps de pose."
+                    "correction": "La **mousse** est un agent de coiffage temporaire. Elle doit être appliquée sur cheveux humides pour la mise en forme et garantir une mémoire de forme durable."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Pourquoi est-il crucial de réaliser un 'test d'allergie' (touche d'essai) 48 heures avant toute coloration d'oxydation ?",
+                    "question": "Quel est le rôle du 'Miroir de poche' (ou miroir à main) utilisé en fin de prestation (après la coupe) ?",
                     "answerOptions": [
-                        {"text": "Pour vérifier le résultat final de la couleur.", "isCorrect": False, "rationale": "Le test d'allergie n'est pas pour la couleur, mais pour la sécurité."},
-                        {"text": "Pour déterminer le fond de clarification.", "isCorrect": False, "rationale": "Ceci se fait par diagnostic visuel ou sur une mèche test."},
-                        {"text": "Pour prévenir une réaction d'hypersensibilité cutanée aux colorants.", "isCorrect": True, "rationale": "Le test d'allergie est une obligation légale pour s'assurer que le client ne fera pas de réaction sévère (eczéma, œdème) aux **précurseurs de couleur** (notamment la PPD/PTD)."},
-                        {"text": "Pour vérifier si le cheveu est assez poreux.", "isCorrect": False, "rationale": "Ceci est un diagnostic de porosité."}
+                        {"text": "L'autolyse.", "isCorrect": False, "key": "A"},
+                        {"text": "Permettre au client de visualiser l'arrière de la coupe (nuque) et de valider le résultat final.", "isCorrect": True, "key": "B"},
+                        {"text": "Le bassinage.", "isCorrect": False, "key": "C"},
+                        {"text": "Le pointage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le test d'allergie est une exigence légale et de sécurité pour détecter les réactions aux produits, notamment à la PPD ou PTD. Le non-respect de cette procédure peut avoir des conséquences graves pour le client et le professionnel."
+                    "correction": "Le **miroir à main** est un outil essentiel de la consultation. Il permet de montrer la coupe finale (arrière de la tête) et d'obtenir la validation du client."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Dans la nomenclature colorimétrique (ex: 7.34), quel chiffre représente le reflet cuivré ?",
+                    "question": "Quelle est la fonction principale du 'Système de ventilation' dans un salon de coiffure ?",
                     "answerOptions": [
-                        {"text": "Le 7", "isCorrect": False, "rationale": "Le 7 est la hauteur de ton (Blond)."},
-                        {"text": "Le 3", "isCorrect": False, "rationale": "Le 3 est le reflet doré (jaune)."},
-                        {"text": "Le 4", "isCorrect": True, "rationale": "Le **4** est le chiffre international pour le reflet **cuivré** (orange)."},
-                        {"text": "Le 5", "isCorrect": False, "rationale": "Le 5 est le reflet acajou ou rouge violacé."}
+                        {"text": "Assurer le renouvellement de l'air et l'évacuation des odeurs et des vapeurs chimiques (ammoniaque) pour la santé.", "isCorrect": True, "key": "A"},
+                        {"text": "Le sucre freine l'activité de la levure.", "isCorrect": False, "key": "B"},
+                        {"text": "Le sucre détruit les bactéries lactiques.", "isCorrect": False, "key": "C"},
+                        {"text": "Le sucre rend la pâte plus ferme.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les principaux reflets sont : .1 = Cendré (Bleu/Vert) ; .2 = Irisé (Violet) ; .3 = Doré (Jaune) ; **.4 = Cuivré (Orange)** ; .5 = Acajou ; .6 = Rouge ; .7 = Marron/Naturel."
+                    "correction": "L'**aération** (Ventilation Mécanique Contrôlée - VMC) est cruciale dans un salon pour l'évacuation des vapeurs de produits chimiques et pour le confort des clients."
                 }
             ]
         },
-        # =========================================================================
-        # THÈME 3 : TECHNIQUES DE COUPE ET MISE EN FORME (Q. 41-60)
-        # =========================================================================
+        # THÈME 3 (LONGUEUR NEUTRALISÉE)
         3: {
-            "name": "3. Techniques de Coupe et Mise en Forme (Q. 41-60)",
+            "name": "Techniques de Coiffure (Coupe, Coiffage, Mise en Forme)",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quelle ligne de coupe est définie par une élévation des cheveux à $180^{\\circ}$ par rapport au crâne ?",
+                    "question": "Comment appelle-t-on le fait de 'couper les cheveux de la même longueur' sur tout le pourtour de la tête ?",
                     "answerOptions": [
-                        {"text": "L'augmentation de la masse (coupe pleine)", "isCorrect": False, "rationale": "La coupe pleine (masse) est réalisée avec une élévation à $0^{\\circ}$."},
-                        {"text": "La coupe au carré (B.O.B.)", "isCorrect": False, "rationale": "Le carré est généralement réalisé avec une élévation à $0^{\\circ}$ ou basse."},
-                        {"text": "La coupe progressive ou dégradée forte", "isCorrect": True, "rationale": "L'élévation à $180^{\\circ}$ (ou perpendiculaire au sol) est utilisée pour créer un **dégradé fort** ou une structure progressive et légère."},
-                        {"text": "La frange droite", "isCorrect": False, "rationale": "La frange est généralement coupée à $0^{\\circ}$ ou à une faible élévation."}
+                        {"text": "Le dégradé.", "isCorrect": False, "key": "A"},
+                        {"text": "La Coupe Carrée (ou coupe pleine), qui est réalisée à angle droit (0° de projection).", "isCorrect": True, "key": "B"},
+                        {"text": "L'effilage.", "isCorrect": False, "key": "C"},
+                        {"text": "Le piquetage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Une élévation à $180^{\\circ}$ (tirer la mèche au maximum vers le haut) crée un maximum de couches et un **dégradé** important, réduisant le poids sur les pointes."
+                    "correction": "La **coupe carrée** (ligne droite) est la coupe de base, effectuée sans projection (0°). Elle apporte du poids et de la structure à la ligne de coupe."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Quel est le rôle du 'point de pivot' dans une coupe de cheveux ?",
+                    "question": "Quel est le nom de la technique qui consiste à 'raccourcir les cheveux de manière progressive' (plus court en dessous) ?",
                     "answerOptions": [
-                        {"text": "Il sert à définir le contour d'oreille.", "isCorrect": False, "rationale": "Le contour d'oreille est une zone, pas un point de pivot."},
-                        {"text": "C'est l'endroit où le cheveu est le plus long sur le sommet de tête.", "isCorrect": False, "rationale": "Le sommet est une zone, pas un point de pivot."},
-                        {"text": "C'est le point de référence central (souvent au sommet) autour duquel les sections sont peignées pour la coupe.", "isCorrect": True, "rationale": "Le **point de pivot** est le point central autour duquel on effectue des séparations radiales pour garantir la symétrie de la coupe."},
-                        {"text": "Il indique l'angle de la nuque.", "isCorrect": False, "rationale": "L'angle de la nuque est lié au contour de nuque."}
+                        {"text": "La Permanente.", "isCorrect": False, "key": "A"},
+                        {"text": "Le Lissage.", "isCorrect": False, "key": "B"},
+                        {"text": "Le Dégradé (ou 'Coupe en Couches'), qui enlève de la masse pour apporter du volume et du mouvement.", "isCorrect": True, "key": "C"},
+                        {"text": "Le chignon.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **point de pivot** est utilisé notamment dans les coupes dégradées radiales pour s'assurer que l'angle de projection par rapport à la tête est le même sur l'ensemble de la zone, garantissant l'harmonie du dégradé."
+                    "correction": "Le **dégradé** est réalisé avec une projection (élévation) du cheveu, souvent à 45° ou 90°. Il est crucial pour créer du volume et du mouvement."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Que signifie l'angle de 'projection' ou d'élévation lors de l'exécution d'une coupe ?",
+                    "question": "Quelle est la principale différence entre une 'frange droite' et une 'frange effilée' ?",
                     "answerOptions": [
-                        {"text": "L'inclinaison des ciseaux par rapport à la mèche.", "isCorrect": False, "rationale": "Ceci est l'angle de coupe."},
-                        {"text": "L'angle entre la mèche peignée et la surface du crâne.", "isCorrect": True, "rationale": "L'angle de **projection** (ou d'élévation) est l'angle selon lequel la mèche est soulevée par rapport à la tête. Il influence directement le dégradé."},
-                        {"text": "L'angle du corps du coiffeur.", "isCorrect": False, "rationale": "La posture du coiffeur est importante, mais ce n'est pas la projection."},
-                        {"text": "L'angle de la raie sur le côté.", "isCorrect": False, "rationale": "La raie est une séparation."}
+                        {"text": "La frange droite (coupe pleine) est dense ; la frange effilée est plus légère, floue et se fond dans la masse.", "isCorrect": True, "key": "A"},
+                        {"text": "Le temps de pause de la coloration.", "isCorrect": False, "key": "B"},
+                        {"text": "Le type de shampooing utilisé.", "isCorrect": False, "key": "C"},
+                        {"text": "Le prix de la prestation.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'angle de **projection** est fondamental pour la technique de coupe. $0^{\\circ}$ donne une ligne pleine (masse), $45^{\\circ}$ donne un dégradé moyen, et $90^{\\circ}$ ou plus un dégradé prononcé."
+                    "correction": "La frange droite (coupe pleine) crée une ligne nette. La frange **effilée** (ciseaux crantés) apporte de la légèreté, du mouvement et de la douceur."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quel terme désigne la zone du crâne s'étendant du front jusqu'au point le plus haut de la tête ?",
+                    "question": "Comment appelle-t-on le fait de 'séparer la chevelure' en plusieurs zones avant de commencer la prestation ?",
                     "answerOptions": [
-                        {"text": "La nuque", "isCorrect": False, "rationale": "La nuque est la partie arrière inférieure."},
-                        {"text": "La zone occipitale", "isCorrect": False, "rationale": "L'occipital est l'arrière de la tête."},
-                        {"text": "Le sommet (ou Top)", "isCorrect": True, "rationale": "Le **sommet** (ou top, ou crown) est la partie supérieure et avant du crâne."},
-                        {"text": "La tempe", "isCorrect": False, "rationale": "La tempe est une zone latérale."}
+                        {"text": "Le crêpage.", "isCorrect": False, "key": "A"},
+                        {"text": "Le démêlage.", "isCorrect": False, "key": "B"},
+                        {"text": "Le Sectionnement (ou la Séparation), qui garantit la symétrie, la précision et la méthodologie de travail.", "isCorrect": True, "key": "C"},
+                        {"text": "Le coiffage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **sommet** est une zone clé pour les coupes. C'est souvent là que l'on trouve les cheveux les plus courts ou que l'on crée le volume dans les coupes dégradées."
+                    "correction": "Le **sectionnement** (avec des pinces) est l'étape de base. Il permet de travailler de manière ordonnée et de garantir la précision du résultat (coupe ou couleur) en isolant les zones."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Quelle est la principale fonction du peigne fin à queue lors d'une coupe ou d'une coloration ?",
+                    "question": "Quel est l'objectif du 'Brushing' (mise en forme temporaire) ?",
                     "answerOptions": [
-                        {"text": "Servir de guide pour la coupe des pointes.", "isCorrect": False, "rationale": "Le peigne classique sert de guide."},
-                        {"text": "Apporter du volume lors du séchage.", "isCorrect": False, "rationale": "La brosse ronde est pour le volume."},
-                        {"text": "Réaliser des séparations précises et propres.", "isCorrect": True, "rationale": "Le peigne à queue (fine) est essentiel pour créer des **séparations nettes** (lignes, raies) pour les mèches, les balayages et les coupes de précision."},
-                        {"text": "Mélanger le produit colorant.", "isCorrect": False, "rationale": "Le bol et le pinceau sont utilisés pour le mélange."}
+                        {"text": "Sécher les cheveux tout en leur donnant du volume, des boucles, ou un lissage, à l'aide d'une brosse et d'un sèche-cheveux.", "isCorrect": True, "key": "A"},
+                        {"text": "Modifier durablement la structure du cheveu.", "isCorrect": False, "key": "B"},
+                        {"text": "Créer des mèches.", "isCorrect": False, "key": "C"},
+                        {"text": "Neutraliser un reflet.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le peigne à queue, qu'elle soit en plastique ou en métal, est l'outil indispensable du coiffeur pour le travail des **séparations**."
+                    "correction": "Le **brushing** utilise la chaleur pour modifier temporairement la forme du cheveu (ponts hydrogène). La brosse (ronde ou plate) est l'outil principal de mise en forme."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Lors d'une mise en plis traditionnelle sur bigoudis, quel est le rôle du produit coiffant (lotion ou mousse) avant l'enroulage ?",
+                    "question": "Quel est le nom de l'action qui consiste à 'tirer les cheveux vers l'extérieur' (à 90° de la tête) lors d'un dégradé ?",
                     "answerOptions": [
-                        {"text": "Ramollir la kératine pour une modification permanente.", "isCorrect": False, "rationale": "Ceci est le rôle de la lotion permanente."},
-                        {"text": "Apporter un reflet temporaire.", "isCorrect": False, "rationale": "Ceci est le rôle d'une coloration fugace."},
-                        {"text": "Créer et fixer temporairement les liaisons hydrogènes dans la nouvelle forme.", "isCorrect": True, "rationale": "Le produit de mise en plis (mousse, lotion) enveloppe le cheveu pour aider à rompre les liaisons hydrogènes (cheveux mouillés) et pour les **fixer** dans la forme du bigoudi en séchant."},
-                        {"text": "Réduire la taille des ponts disulfures.", "isCorrect": False, "rationale": "Ceci est le rôle de l'agent réducteur."}
+                        {"text": "L'effilage.", "isCorrect": False, "key": "A"},
+                        {"text": "La Projection (ou l'Élévation), qui détermine l'angle de coupe et le degré de dégradé.", "isCorrect": True, "key": "B"},
+                        {"text": "Le lissage.", "isCorrect": False, "key": "C"},
+                        {"text": "Le bouclage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le coiffage temporaire (mise en plis, brushing) repose sur les **liaisons hydrogènes**. Le produit coiffant permet de maintenir l'humidité et de solidifier le coiffage après séchage."
+                    "correction": "La **projection** (angle d'élévation du cheveu) est le facteur clé pour réaliser un dégradé. Plus l'angle est grand, plus le dégradé est fort (volume maximal)."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Comment appelle-t-on le fait de couper une mèche légèrement plus longue que le guide précédent pour créer une coupe en dégradé, tout en conservant une certaine masse ?",
+                    "question": "Quel est le rôle du 'Crêpage' (brossage à rebrousse-poil) dans la réalisation d'une coiffure (chignon) ?",
                     "answerOptions": [
-                        {"text": "Le pivotage", "isCorrect": False, "rationale": "Le pivotage est un mouvement de séparation."},
-                        {"text": "L'inclinaison", "isCorrect": False, "rationale": "L'inclinaison est l'angle de la tête du client."},
-                        {"text": "La projection en décroissance", "isCorrect": True, "rationale": "Cette technique, ou **dégradé progressif**, consiste à allonger légèrement chaque mèche coupée par rapport au guide pour obtenir un dégradé tout en préservant de la longueur et de la masse."},
-                        {"text": "Le dégradé à $180^{\\circ}$", "isCorrect": False, "rationale": "Le $180^{\\circ}$ donne un dégradé très fort."}
+                        {"text": "Rendre le cheveu plus lisse et plus brillant.", "isCorrect": False, "key": "A"},
+                        {"text": "Apporter un volume maximal à la base de la coiffure (racines) et créer une 'armature' pour la tenue.", "isCorrect": True, "key": "B"},
+                        {"text": "Le tresser.", "isCorrect": False, "key": "C"},
+                        {"text": "Décolorer le cheveu.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **projection en décroissance** (ou l'utilisation d'un guide immobile dans une coupe de masse) permet de créer un dégradé doux ou une forme arrondie, idéale pour éviter une coupe trop marquée et conserver du poids."
+                    "correction": "Le **crêpage** (tapotage de la brosse) permet de créer un volume artificiel et une base solide, indispensable pour la bonne tenue d'une coiffure attachée ou d'un chignon."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quel accessoire est indispensable pour réaliser une coupe de précision sur cheveux très courts (coupe homme) ?",
+                    "question": "Comment appelle-t-on le type de 'mouvement' qui consiste à boucler les cheveux autour d'un bigoudi (ou rouleau) ?",
                     "answerOptions": [
-                        {"text": "Le ciseau sculpteur (désépaissir)", "isCorrect": False, "rationale": "Le ciseau sculpteur est pour désépaissir, pas pour la précision du contour."},
-                        {"text": "La brosse squelette", "isCorrect": False, "rationale": "La brosse squelette est pour le séchage."},
-                        {"text": "Le rasoir mécanique (ou tondeuse de finition)", "isCorrect": True, "rationale": "Le **rasoir mécanique** ou la tondeuse de finition (trimmer) est l'outil de choix pour définir les contours et la nuque de manière nette et précise sur cheveux courts."},
-                        {"text": "La brosse ronde en céramique", "isCorrect": False, "rationale": "La brosse ronde est pour le brushing."}
+                        {"text": "L'effilage.", "isCorrect": False, "key": "A"},
+                        {"text": "Le Lissage.", "isCorrect": False, "key": "B"},
+                        {"text": "L'Enroulage (mise en plis ou permanente), qui consiste à former une boucle ou une ondulation autour du support.", "isCorrect": True, "key": "C"},
+                        {"text": "Le démêlage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La netteté des **contours** (nuque, tour d'oreille) est essentielle dans les coupes courtes pour homme. La tondeuse de finition permet une finition plus nette que les ciseaux seuls."
+                    "correction": "L'**enroulage** (sur rouleaux ou bigoudis) est la technique de base pour créer des boucles par chaleur (mise en plis) ou par chimie (permanente) en contrôlant la forme."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Lors du séchage, quelle est la technique qui permet d'obtenir un effet lisse et brillant sur des cheveux longs en utilisant une brosse ronde ?",
+                    "question": "Quelle est la fonction principale des 'Pinces de séparation' dans une mise en forme ?",
                     "answerOptions": [
-                        {"text": "Le 'Crush' (froissage)", "isCorrect": False, "rationale": "Le froissage crée un effet wavy ou bouclé."},
-                        {"text": "Le 'Plaquage'", "isCorrect": False, "rationale": "Le plaquage est une technique de lissage au fer."},
-                        {"text": "Le Brushing", "isCorrect": True, "rationale": "Le **brushing** est la technique qui utilise la brosse ronde et le séchoir pour lisser, boucler ou onduler les cheveux de manière temporaire tout en apportant de la brillance."},
-                        {"text": "Le 'Texturage'", "isCorrect": False, "rationale": "Le texturage est une technique de coupe ou de produit."}
+                        {"text": "Mesurer la force de la farine.", "isCorrect": False, "key": "A"},
+                        {"text": "Assurer la netteté des séparations (sectionnement) et maintenir les mèches en attente.", "isCorrect": True, "key": "B"},
+                        {"text": "Resserrer le réseau de gluten.", "isCorrect": False, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le bac.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **brushing** combine la chaleur (qui rompt les liaisons hydrogènes) et la tension (de la brosse) pour modeler la forme du cheveu, créant une surface lisse qui reflète la lumière (brillance)."
+                    "correction": "Les **pinces** (ou clips) sont les outils de base pour le sectionnement (coupe, couleur) et le maintien de la coiffure (mise en forme, chignon) pour un travail méthodique."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Quel est le but de la technique d'effilage (ou désépaississement) ?",
+                    "question": "Quel est le nom de la technique de coupe qui consiste à 'couper seulement les pointes' (retirer la partie abîmée) ?",
                     "answerOptions": [
-                        {"text": "Raccourcir la longueur des cheveux.", "isCorrect": False, "rationale": "Ceci est le but de la coupe classique."},
-                        {"text": "Ajouter du volume aux cheveux fins.", "isCorrect": False, "rationale": "L'effilage enlève de la masse, ce qui réduit le volume au point d'effilage."},
-                        {"text": "Réduire la masse et adoucir la ligne de coupe.", "isCorrect": True, "rationale": "L'**effilage** sert à alléger l'épaisseur d'une masse de cheveux (souvent les pointes) ou à fondre la ligne de coupe pour un rendu plus souple."},
-                        {"text": "Créer des ondulations serrées.", "isCorrect": False, "rationale": "Ceci est le but de la permanente."}
+                        {"text": "Le défrisage.", "isCorrect": False, "key": "A"},
+                        {"text": "L'Épointage (ou Couper les fourches), qui permet d'assainir la fibre sans modifier significativement la longueur.", "isCorrect": True, "key": "B"},
+                        {"text": "Le balayage.", "isCorrect": False, "key": "C"},
+                        {"text": "La permanente.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**effilage** est souvent réalisé avec des ciseaux sculpteurs. Il est essentiel pour personnaliser une coupe en allégeant les chevelures épaisses ou pour créer un mouvement plus fluide sur les pointes."
+                    "correction": "L'**épointage** est le soin de base pour l'entretien des cheveux longs. Il doit être fait régulièrement pour éviter que la fourche ne remonte sur la longueur du cheveu."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Quelle séparation est utilisée pour isoler la zone de la tête qui va du coin de l'œil jusqu'au sommet du crâne, et qui est souvent coupée en dernier ?",
+                    "question": "Quel est le risque de sécher les cheveux 'sans protecteur thermique' avant d'utiliser un lisseur (fer plat) ?",
                     "answerOptions": [
-                        {"text": "Le point de pivot", "isCorrect": False, "rationale": "Le point de pivot est un point central."},
-                        {"text": "La raie centrale", "isCorrect": False, "rationale": "La raie centrale est une ligne verticale."},
-                        {"text": "La raie de séparation des zones frontales", "isCorrect": True, "rationale": "Cette zone est généralement délimitée par une raie qui va du coin de l'œil ou de la tempe jusqu'au sommet (point haut du crâne), délimitant le dessus de la tête (Top) pour les coupes homme ou les franges."},
-                        {"text": "La zone occipitale", "isCorrect": False, "rationale": "L'occipital est la zone arrière."}
+                        {"text": "La buée (vapeur) sera excessive.", "isCorrect": False, "key": "A"},
+                        {"text": "L'activité de la levure sera bloquée.", "isCorrect": False, "key": "B"},
+                        {"text": "Le risque de 'brûlure' de la kératine (dommages irréversibles) et la déshydratation excessive de la fibre.", "isCorrect": True, "key": "C"},
+                        {"text": "Le cheveu va s'étaler.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les **zones frontales** (devant) et latérales sont souvent les plus visibles. Les séparations doivent être précises pour les isoler et les travailler en symétrie avec le reste de la coupe."
+                    "correction": "Le **protecteur thermique** crée une barrière entre la chaleur extrême du lisseur (jusqu'à 230°C) et la kératine du cheveu, prévenant la casse et les fourches."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quelle est la principale caractéristique de la technique de 'coupe sur doigts' ?",
+                    "question": "Quel est le nom de la technique qui consiste à 'réaliser des tresses très fines et serrées' pour un coiffage structuré ?",
                     "answerOptions": [
-                        {"text": "Elle est utilisée exclusivement pour couper des lignes droites.", "isCorrect": False, "rationale": "Elle est plus souvent utilisée pour les dégradés."},
-                        {"text": "Elle permet de dégrader en utilisant le dos de la main comme guide.", "isCorrect": False, "rationale": "C'est l'inverse : les doigts tiennent la mèche."},
-                        {"text": "Elle permet de contrôler la tension et l'élévation de la mèche pour la dégrader.", "isCorrect": True, "rationale": "La technique de **coupe sur doigts** permet au coiffeur de contrôler précisément la tension de la mèche et l'angle de projection (dégradé) par rapport au crâne."},
-                        {"text": "Elle n'est utilisée que pour les coupes aux ciseaux sculpteurs.", "isCorrect": False, "rationale": "Elle est utilisée pour tous les types de ciseaux."}
+                        {"text": "La mandoline.", "isCorrect": False, "key": "A"},
+                        {"text": "Le Tressage (ou Vanille), qui est un coiffage sans chaleur, souvent réalisé pour donner une texture ondulée au cheveu.", "isCorrect": True, "key": "B"},
+                        {"text": "La corne.", "isCorrect": False, "key": "C"},
+                        {"text": "Le banneton.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **coupe sur doigts** est la méthode la plus courante pour réaliser un dégradé. Les doigts servent à retenir la mèche, assurant une élévation et une tension uniformes."
+                    "correction": "Le **tressage** est une technique complexe qui permet de contrôler la forme du cheveu sans chimie ni chaleur et est une base pour de nombreuses coiffures attachées."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quel est l'effet recherché lorsque l'on utilise un fer à lisser sur des mèches fines à répétition ?",
+                    "question": "Quel est le rôle du 'Filet à Cheveux' (accessoire) dans la réalisation d'un chignon sophistiqué ?",
                     "answerOptions": [
-                        {"text": "Créer des boucles très serrées (permanentées).", "isCorrect": False, "rationale": "Le fer à lisser est pour le lissage ou les vagues amples, pas la permanente."},
-                        {"text": "Ouvrir les écailles pour un meilleur dépôt de couleur.", "isCorrect": False, "rationale": "C'est le rôle du produit alcalin."},
-                        {"text": "Rompre temporairement les liaisons hydrogènes pour un effet lisse et durable.", "isCorrect": True, "rationale": "Le fer à lisser (thermique) rompt les **liaisons hydrogènes**, permettant à la kératine de se fixer dans une forme lisse jusqu'au prochain contact avec l'eau."},
-                        {"text": "Augmenter la porosité du cheveu.", "isCorrect": False, "rationale": "La chaleur excessive peut endommager, mais le but n'est pas d'augmenter la porosité."}
+                        {"text": "Il permet de maintenir les mèches courtes ou indisciplinées et d'assurer une finition lisse et propre au chignon.", "isCorrect": True, "key": "A"},
+                        {"text": "Le rafraîchi.", "isCorrect": False, "key": "B"},
+                        {"text": "L'autolyse.", "isCorrect": False, "key": "C"},
+                        {"text": "Le collage structurel.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le fer à lisser utilise une chaleur élevée pour **modifier temporairement** la structure du cheveu en le lissant. L'utilisation d'un protecteur thermique est cruciale."
+                    "correction": "Le **filet** (ou l'élastique transparent) est un accessoire pour 'cacher' les mèches volantes et garantir la propreté et la tenue esthétique du chignon."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Dans le cas d'une coupe homme aux ciseaux et au peigne, quel est le rôle du peigne ?",
+                    "question": "Quel est l'impact d'un 'séchage incomplet' (cheveux encore humides) sur un chignon ou une coiffure attachée ?",
                     "answerOptions": [
-                        {"text": "Il sert uniquement à démêler la mèche avant de la couper.", "isCorrect": False, "rationale": "Son rôle est plus technique dans cette méthode."},
-                        {"text": "Il sert à retenir et à soulever les cheveux du crâne pour créer la mèche guide.", "isCorrect": True, "rationale": "Dans la technique **ciseaux sur peigne**, le peigne définit la longueur en retenant la mèche et sert de guide pour la coupe et la progression."},
-                        {"text": "Il permet de vérifier la symétrie de la coupe après sa réalisation.", "isCorrect": False, "rationale": "Ceci est fait avec un miroir et un examen visuel."},
-                        {"text": "Il protège le crâne des ciseaux.", "isCorrect": False, "rationale": "Le rôle est technique, pas sécuritaire."}
+                        {"text": "La coiffure ne tiendra pas car l'humidité rompt les ponts hydrogène, et elle risque de se défaire ou de gonfler.", "isCorrect": True, "key": "A"},
+                        {"text": "La buée (vapeur) sera excessive.", "isCorrect": False, "key": "B"},
+                        {"text": "Le pain va s'étaler.", "isCorrect": False, "key": "C"},
+                        {"text": "Le vin rouge trop froid.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La technique **ciseaux sur peigne** est essentielle pour les coupes courtes (homme ou femme) et permet un contrôle précis de la longueur, créant des lignes douces et fluides."
+                    "correction": "Le coiffage (lissage, boucle, attache) doit toujours se faire sur **cheveux parfaitement secs** pour garantir une tenue longue durée et éviter les frisottis."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quelle est l'incidence d'un cheveu tenu avec une forte tension lors de la coupe ?",
+                    "question": "Quel est le nom du type de 'bigoudi' (rouleau) utilisé pour une mise en plis qui donne une boucle serrée ?",
                     "answerOptions": [
-                        {"text": "La coupe sera plus souple et légère.", "isCorrect": False, "rationale": "L'inverse est souvent vrai."},
-                        {"text": "La ligne de coupe sera plus nette, mais le cheveu aura tendance à remonter au séchage.", "isCorrect": True, "rationale": "Une tension **trop forte** étire le cheveu au maximum. Au séchage, le cheveu reprend sa forme naturelle, ce qui entraîne une **remontée** de la ligne de coupe et une perte de la longueur souhaitée."},
-                        {"text": "La ligne de coupe sera floue et mal définie.", "isCorrect": False, "rationale": "L'inverse est souvent vrai."},
-                        {"text": "Cela facilite le dégradé.", "isCorrect": False, "rationale": "La tension est indépendante du dégradé (projection)."}
+                        {"text": "Le Bigoudi de petit diamètre (ou rouleau fin), qui produit des boucles serrées et un volume maximal.", "isCorrect": True, "key": "A"},
+                        {"text": "La marmite.", "isCorrect": False, "key": "B"},
+                        {"text": "La planche à découper.", "isCorrect": False, "key": "C"},
+                        {"text": "Le poêlon.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **tension** doit être maîtrisée. Une tension trop forte sur les cheveux bouclés, fins ou très élastiques est une erreur courante qui entraîne une ligne de coupe finale inégale et plus courte que prévu."
+                    "correction": "Le diamètre du **bigoudi** est directement lié à la taille de la boucle : petit diamètre (boucle serrée et volume), grand diamètre (ondulation large et souple)."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Dans la géométrie de la tête, où se situe la zone occipitale ?",
+                    "question": "Quel est le nom de l'action qui consiste à 'fixer les cheveux' par un produit (laque, spray) après le coiffage ?",
                     "answerOptions": [
-                        {"text": "Juste derrière les oreilles (zone temporale).", "isCorrect": False, "rationale": "Ceci est la zone sous-occipitale/latérale."},
-                        {"text": "À la base de la nuque.", "isCorrect": False, "rationale": "Ceci est la nuque."},
-                        {"text": "À l'arrière du crâne, au-dessus de la nuque.", "isCorrect": True, "rationale": "L'**occipital** est la zone du crâne qui forme un renflement à l'arrière, entre le sommet et la nuque."},
-                        {"text": "Au centre du front.", "isCorrect": False, "rationale": "Ceci est la zone frontale."}
+                        {"text": "L'assiette de présentation.", "isCorrect": False, "key": "A"},
+                        {"text": "La soupière.", "isCorrect": False, "key": "B"},
+                        {"text": "La 'Laquage' (ou Fixation), qui permet de maintenir la coiffure en place et de la protéger de l'humidité.", "isCorrect": True, "key": "C"},
+                        {"text": "Le plat de service.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**os occipital** est le repère osseux de l'arrière de la tête. Cette zone est cruciale pour le positionnement du dégradé ou de la masse dans les coupes au carré."
+                    "correction": "Le **laquage** (ou la pulvérisation de spray) est l'étape de finition qui garantit la tenue de la coiffure en créant un film protecteur autour de la fibre."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Quel est l'objectif du séchage en 'mouvement de serpent' (mouvement en S) avec un fer à lisser ?",
+                    "question": "Comment appelle-t-on le fait de 'peigner les cheveux dans leur direction naturelle' pour vérifier la ligne de coupe ?",
                     "answerOptions": [
-                        {"text": "Obtenir un lissage parfait et sans volume.", "isCorrect": False, "rationale": "Ceci est le lissage droit classique."},
-                        {"text": "Créer des ondulations souples et naturelles (effet 'wavy').", "isCorrect": True, "rationale": "Le mouvement en 'S' avec le fer à lisser permet de créer des **ondulations souples** ou 'wavy', très populaires, sans créer une boucle serrée comme un fer à friser."},
-                        {"text": "Réaliser un frisage permanent.", "isCorrect": False, "rationale": "Ceci est le rôle de la permanente."},
-                        {"text": "Faire adhérer les mèches coupées au guide.", "isCorrect": False, "rationale": "Ceci est une technique de coupe."}
+                        {"text": "Le chanfreinage.", "isCorrect": False, "key": "A"},
+                        {"text": "L'abaisse.", "isCorrect": False, "key": "B"},
+                        {"text": "Le rafraîchi.", "isCorrect": False, "key": "C"},
+                        {"text": "Le Coiffage 'en l'air' (ou 'Naturel'), qui permet de visualiser le résultat final de la coupe une fois les cheveux détendus.", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "Le coiffage avec des **vagues** souples nécessite un mouvement de **va-et-vient** (le 'S') avec le fer à lisser ou un fer à boucler de gros diamètre."
+                    "correction": "Le contrôle de la coupe se fait toujours **sans tension**, en coiffant 'en l'air', pour s'assurer que la ligne est droite, que la coupe est symétrique et que le tombé est naturel."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "L'angle de 'chute' (ou retombée naturelle) d'une mèche est un critère essentiel pour le diagnostic. Comment est-il mesuré ?",
+                    "question": "Quel est le but d'utiliser un 'peigne à queue' (peigne fin avec une pointe) pour la coloration ?",
                     "answerOptions": [
-                        {"text": "Par la longueur totale du cheveu.", "isCorrect": False, "rationale": "La longueur n'est pas l'angle de chute."},
-                        {"text": "Par le diamètre de la fibre.", "isCorrect": False, "rationale": "Le diamètre influence, mais ne mesure pas l'angle."},
-                        {"text": "Par l'angle que forme le cheveu avec le crâne lorsqu'il est au repos.", "isCorrect": True, "rationale": "L'angle de **chute naturelle** est la manière dont le cheveu retombe naturellement sans tension. Il détermine la façon dont la coupe finale sera vue et est crucial pour la réalisation d'une frange ou d'une raie."},
-                        {"text": "Par la couleur du pigment.", "isCorrect": False, "rationale": "La couleur n'a pas de rapport avec l'angle de chute."}
+                        {"text": "Avoir une consistance (plasticité) similaire à celle de la pâte.", "isCorrect": False, "key": "A"},
+                        {"text": "Accélérer la production de gaz carbonique (CO₂).", "isCorrect": False, "key": "B"},
+                        {"text": "Servir uniquement à nettoyer le pétrin.", "isCorrect": False, "key": "C"},
+                        {"text": "Séparer les mèches très fines (précision du traçage) et appliquer le produit sur les racines ou les zones délicates.", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "L'angle de **chute** varie d'un client à l'autre et doit être pris en compte avant de couper. Si la mèche est peignée dans une direction qui n'est pas sa chute naturelle, le résultat final peut être décevant."
+                    "correction": "Le **peigne à queue** est indispensable pour le travail de précision (racines, mèches, séparation) en coupe, couleur ou mise en forme (traçage des séparations)."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Dans le cas d'une coupe dégradée, à quoi sert le 'guide' (ou mèche témoin) ?",
+                    "question": "Quel est le nom de l'action qui consiste à 'réaliser des torsades' sur les mèches pour un coiffage sophistiqué ?",
                     "answerOptions": [
-                        {"text": "Il sert à déterminer la quantité de produit à appliquer.", "isCorrect": False, "rationale": "Le guide est pour la coupe."},
-                        {"text": "C'est la première mèche coupée qui détermine la longueur des mèches suivantes.", "isCorrect": True, "rationale": "Le **guide** est la mèche de référence dont la longueur sert de repère à toutes les mèches adjacentes, assurant la cohésion et la progression de la coupe."},
-                        {"text": "Il indique l'épaisseur du cheveu (son diamètre).", "isCorrect": False, "rationale": "Ceci est la texture."},
-                        {"text": "Il permet de créer des mèches artificielles.", "isCorrect": False, "rationale": "Ceci est une extension."}
+                        {"text": "La dorure.", "isCorrect": False, "key": "A"},
+                        {"text": "Le 'Torsadage' (ou Twist), qui est un coiffage de finition pour créer du mouvement et une texture spirale.", "isCorrect": True, "key": "B"},
+                        {"text": "La buée (vapeur d'eau).", "isCorrect": False, "key": "C"},
+                        {"text": "Le pointage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **guide** peut être 'mobile' (la longueur progresse) ou 'fixe' (toutes les mèches sont ramenées au même point central). C'est le point de départ de toute coupe de précision."
+                    "correction": "Le **torsadage** (twist) est une technique qui permet de créer des effets de relief et de mouvement dans une coiffure attachée ou un chignon."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Qu'est-ce qu'une 'coupe pleine' ?",
+                    "question": "Quel est le rôle du 'Piquetage' (ou point cut) dans la finition d'une coupe ?",
                     "answerOptions": [
-                        {"text": "Une coupe avec une élévation de $90^{\\circ}$.", "isCorrect": False, "rationale": "Ceci est un dégradé."},
-                        {"text": "Une coupe qui nécessite une permanente.", "isCorrect": False, "rationale": "Le terme n'est pas lié à la permanente."},
-                        {"text": "Une coupe réalisée sans dégradé, où tous les cheveux ont la même longueur au point de chute (élévation $0^{\\circ}$).", "isCorrect": True, "rationale": "La **coupe pleine** (ou coupe de masse, ou coupe droite) est réalisée avec une élévation à **$0^{\\circ}$**, produisant une ligne nette et une concentration maximale de la masse aux extrémités."},
-                        {"text": "Une coupe réalisée uniquement au rasoir.", "isCorrect": False, "rationale": "Le rasoir est un outil, pas une technique de masse."}
+                        {"text": "Couper les pointes verticalement (en pointes) pour alléger légèrement la masse et apporter de la souplesse et du mouvement.", "isCorrect": True, "key": "A"},
+                        {"text": "Ajouter du sel dans la pâte.", "isCorrect": False, "key": "B"},
+                        {"text": "Servir uniquement à nettoyer le pétrin.", "isCorrect": False, "key": "C"},
+                        {"text": "Permettre au réseau de gluten de se relâcher.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **coupe pleine** est la base de nombreuses coiffures, notamment le carré classique. Elle se caractérise par une ligne finale nette et un poids maximal sur la pointe."
+                    "correction": "Le **piquetage** (coupe en pointes) est une technique de finition. Il sert à 'casser' la ligne de coupe pour un effet plus doux, léger et aérien."
                 }
             ]
         },
-        # =========================================================================
-        # THÈME 4 : HYGIÈNE, SOINS ET LÉGISLATION (Q. 61-80)
-        # =========================================================================
+        # THÈME 4 (LONGUEUR NEUTRALISÉE)
         4: {
-            "name": "4. Hygiène, Soins et Législation (Q. 61-80)",
+            "name": "Techniques de Coloration et Décoloration (Colorimétrie)",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel terme technique désigne le processus qui vise à éliminer ou à tuer les micro-organismes (bactéries, virus, champignons) sur des surfaces inertes ?",
+                    "question": "Quelles sont les trois 'Couleurs Primaires' utilisées dans le cercle chromatique de la coiffure ?",
                     "answerOptions": [
-                        {"text": "Le nettoyage", "isCorrect": False, "rationale": "Le nettoyage élimine les salissures visibles, pas nécessairement les micro-organismes."},
-                        {"text": "L'asepsie", "isCorrect": False, "rationale": "L'asepsie est l'absence totale de germes."},
-                        {"text": "La désinfection", "isCorrect": True, "rationale": "La **désinfection** est l'opération qui permet de tuer ou d'inhiber les micro-organismes (à l'exception de certaines spores) sur des surfaces inertes (outils, plans de travail)."},
-                        {"text": "La stérilisation", "isCorrect": False, "rationale": "La stérilisation est une élimination totale, réservée aux dispositifs médicaux."}
+                        {"text": "Orange, Vert, Violet.", "isCorrect": False, "key": "A"},
+                        {"text": "Blanc, Gris, Noir.", "isCorrect": False, "key": "B"},
+                        {"text": "Rouge, Jaune, Bleu, qui, mélangées, permettent d'obtenir toutes les autres couleurs.", "isCorrect": True, "key": "C"},
+                        {"text": "Magenta, Cyan, Jaune.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **désinfection** est la procédure la plus courante et la plus importante en salon. Elle doit être effectuée après le **nettoyage** (l'élimination des salissures visibles) pour être efficace."
+                    "correction": "Les **couleurs primaires** (Rouge, Jaune, Bleu) sont la base de la colorimétrie. Leur mélange crée les couleurs secondaires (Orange, Vert, Violet) et les reflets."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quelle est la principale maladie fongique du cuir chevelu que le coiffeur doit identifier et refuser de traiter ?",
+                    "question": "Quel est le rôle du 'pigment naturel' (Mélanine) contenu dans le cortex du cheveu ?",
                     "answerOptions": [
-                        {"text": "La séborrhée", "isCorrect": False, "rationale": "La séborrhée est un état lié à l'excès de sébum."},
-                        {"text": "L'alopécie", "isCorrect": False, "rationale": "L'alopécie est la chute de cheveux."},
-                        {"text": "La teigne", "isCorrect": True, "rationale": "La **teigne** est une mycose (champignon) très contagieuse qui nécessite un traitement médical et pour laquelle le coiffeur doit refuser le service pour éviter la propagation."},
-                        {"text": "La trichoptilose", "isCorrect": False, "rationale": "La trichoptilose est la fourche du cheveu."}
+                        {"text": "Déterminer la forme du cheveu.", "isCorrect": False, "key": "A"},
+                        {"text": "Déterminer la 'Couleur Naturelle' du cheveu (eumélanine pour le foncé, phéomélanine pour le clair).", "isCorrect": True, "key": "B"},
+                        {"text": "Servir uniquement à nettoyer le bac.", "isCorrect": False, "key": "C"},
+                        {"text": "Protéger le cheveu des agressions.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **teigne** est caractérisée par des plaques rondes, squameuses, avec des cheveux cassés près de la racine. Elle est hautement contagieuse. Le coiffeur doit orienter le client vers un médecin ou un dermatologue."
+                    "correction": "La **mélanine** est le pigment naturel. L'eumélanine (brun/noir) et la phéomélanine (roux/jaune) sont présentes dans le cortex et déterminent la hauteur de ton et les reflets naturels."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Quel produit de soin est formulé avec un pH acide et a pour principal objectif de refermer les écailles de la cuticule après un traitement chimique (coloration, permanente) ?",
+                    "question": "Quelle est la 'Couleur Secondaire' obtenue par le mélange des couleurs primaires 'Bleu' et 'Rouge' ?",
                     "answerOptions": [
-                        {"text": "Le shampoing clarifiant (pH alcalin)", "isCorrect": False, "rationale": "Le clarifiant est alcalin ou neutre."},
-                        {"text": "Le masque protéiné (pH neutre)", "isCorrect": False, "rationale": "Le masque vise la réparation interne."},
-                        {"text": "Le conditionneur ou après-shampoing (Rinçage acide)", "isCorrect": True, "rationale": "Les **conditionneurs** et les rinçages acides (pH bas) sont utilisés pour neutraliser l'alcalinité des traitements, lisser la cuticule et apporter brillance et démêlage."},
-                        {"text": "Le sérum pointes sèches (pH élevé)", "isCorrect": False, "rationale": "Le sérum est un soin filmogène, non pH-actif."}
+                        {"text": "Le Vert (Bleu + Jaune).", "isCorrect": False, "key": "A"},
+                        {"text": "Le Rouge (primaire).", "isCorrect": False, "key": "B"},
+                        {"text": "Le Violet (couleur secondaire) ; utilisé pour neutraliser le reflet Jaune.", "isCorrect": True, "key": "C"},
+                        {"text": "Le Jaune (primaire).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le cheveu et le cuir chevelu ont besoin de retrouver leur **pH acide** naturel (4.5 à 5.5) après une agression chimique. Le conditionneur ou le soin post-couleur remplissent cette fonction."
+                    "correction": "Mélange : Bleu + Rouge = **Violet**. Le Violet (reflet en .2) est la couleur complémentaire du Jaune (reflet résiduel de décoloration)."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quelle est la zone du cheveu qui doit être principalement ciblée lors de l'application d'un masque capillaire hydratant et nourrissant ?",
+                    "question": "Comment appelle-t-on le processus qui consiste à 'éclaircir' la couleur naturelle des cheveux avant une coloration ?",
                     "answerOptions": [
-                        {"text": "Le cuir chevelu uniquement (pour le stimuler).", "isCorrect": False, "rationale": "Le masque risque de graisser le cuir chevelu, sauf si spécifiquement indiqué."},
-                        {"text": "Les racines et les 5 premiers centimètres.", "isCorrect": False, "rationale": "Cette zone est souvent saine."},
-                        {"text": "Les pointes et les demi-longueurs (zone la plus ancienne et fragilisée).", "isCorrect": True, "rationale": "Le masque doit cibler les **longueurs et pointes**, car elles sont la partie la plus ancienne, la plus exposée et la plus poreuse du cheveu."},
-                        {"text": "L'ensemble de la chevelure, y compris le visage.", "isCorrect": False, "rationale": "Le visage est exclu."}
+                        {"text": "Le Dégraissage.", "isCorrect": False, "key": "A"},
+                        {"text": "Le balayage.", "isCorrect": False, "key": "B"},
+                        {"text": "Le shampooing.", "isCorrect": False, "key": "C"},
+                        {"text": "La Décoloration (ou Blanchiment), qui ouvre les écailles et oxyde les pigments (mélanine).", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "Les **longueurs et pointes** ont besoin d'être nourries car elles sont souvent sèches et abîmées. Il est généralement conseillé d'éviter le cuir chevelu pour ne pas alourdir la chevelure et créer un effet gras."
+                    "correction": "La **décoloration** (poudre ou crème décolorante + oxydant) est une action chimique qui détruit les pigments naturels (mélanine) pour atteindre un niveau d'éclaircissement souhaité."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est le risque professionnel principal lié à la manipulation répétée de produits chimiques (colorants, permanentes) sans gants appropriés ?",
+                    "question": "Quel est le rôle du 'Nuancier' (catalogue de couleurs) dans la consultation client ?",
                     "answerOptions": [
-                        {"text": "Une chute de cheveux précoce.", "isCorrect": False, "rationale": "Ceci est lié à des facteurs internes ou à une intoxication aigüe."},
-                        {"text": "Le développement d'une allergie respiratoire.", "isCorrect": False, "rationale": "Ceci est lié à l'inhalation des vapeurs."},
-                        {"text": "L'eczéma de contact ou une dermatite professionnelle.", "isCorrect": True, "rationale": "Le risque majeur est la sensibilisation cutanée, conduisant à l'**eczéma de contact** (ou dermatite) due à la pénétration des allergènes et des produits agressifs dans la peau."},
-                        {"text": "Une brûlure thermique.", "isCorrect": False, "rationale": "Ceci est lié à la chaleur (fers, séchoirs)."}
+                        {"text": "Servir uniquement à mélanger le produit.", "isCorrect": False, "key": "A"},
+                        {"text": "Servir à enrouler les bigoudis.", "isCorrect": False, "key": "B"},
+                        {"text": "Il permet au client de choisir la couleur désirée et au coiffeur de déterminer la formule à appliquer.", "isCorrect": True, "key": "C"},
+                        {"text": "Servir à vérifier la porosité.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La protection des mains (port de gants) est essentielle. La **dermatite de contact** est l'une des maladies professionnelles les plus courantes chez les coiffeurs et peut devenir très invalidante."
+                    "correction": "Le **nuancier** est l'outil de communication (entre coiffeur et client) et de travail (formulation de la couleur) indispensable pour garantir la précision du résultat."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Que doit impérativement faire le coiffeur après la coupe et avant le coiffage, conformément aux règles d'hygiène ?",
+                    "question": "Quelle est la 'Couleur Complémentaire' utilisée pour neutraliser un reflet 'Orange' non désiré ?",
                     "answerOptions": [
-                        {"text": "Appliquer un masque hydratant.", "isCorrect": False, "rationale": "Le masque n'est pas une obligation d'hygiène."},
-                        {"text": "Désinfecter les ciseaux et le peigne.", "isCorrect": False, "rationale": "C'est avant et après chaque client."},
-                        {"text": "Changer le peignoir et rincer les cheveux coupés.", "isCorrect": True, "rationale": "Le client doit être débarrassé des cheveux coupés (poudres, brossage, rinçage) et le peignoir de coupe doit être retiré et mis à laver avant l'étape de coiffage."},
-                        {"text": "Proposer la carte de fidélité.", "isCorrect": False, "rationale": "Ceci est commercial."}
+                        {"text": "Le Vert.", "isCorrect": False, "key": "A"},
+                        {"text": "Le Jaune.", "isCorrect": False, "key": "B"},
+                        {"text": "Le Rouge.", "isCorrect": False, "key": "C"},
+                        {"text": "Le Bleu (reflet en .1 ou .8) ou le Bleu Cendré, qui permet d'atténuer l'Orange.", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "Retirer les cheveux coupés et changer le peignoir (pour un peignoir de coiffage propre) est une étape de confort et d'hygiène pour le client avant de passer au séchage et au coiffage final."
+                    "correction": "Le **Bleu** est la couleur complémentaire de l'Orange. Il est utilisé pour neutraliser les reflets cuivrés/orangés qui apparaissent souvent lors des éclaircissements."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Selon la législation, quel est le document obligatoire qui doit être affiché de manière lisible et à proximité des postes de travail ?",
+                    "question": "Comment est codifiée la 'Hauteur de Ton' (degré de clarté/obscurité) dans la numérotation des couleurs ?",
                     "answerOptions": [
-                        {"text": "Le certificat d'aptitude professionnelle (CAP).", "isCorrect": False, "rationale": "Ceci est un diplôme."},
-                        {"text": "Le prix de tous les produits de revente.", "isCorrect": False, "rationale": "Seuls les prix des prestations sont obligatoires."},
-                        {"text": "La liste des prix des principales prestations TTC.", "isCorrect": True, "rationale": "L'affichage des **prix des prestations** les plus courantes (coupe, brushing, couleur) est une obligation légale de protection du consommateur."},
-                        {"text": "Le bilan comptable de l'année précédente.", "isCorrect": False, "rationale": "Ceci est confidentiel."}
+                        {"text": "De 1 (le plus clair) à 10 (le plus foncé).", "isCorrect": False, "key": "A"},
+                        {"text": "De 0 à 100%.", "isCorrect": False, "key": "B"},
+                        {"text": "De 1 (le Noir - le plus foncé) à 10 (le Blond Platine - le plus clair), qui détermine la base de la couleur.", "isCorrect": True, "key": "C"},
+                        {"text": "De -10 à +10.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**affichage des prix** (TTC) est obligatoire et doit être facilement visible. Ne pas afficher les prix est passible d'une amende."
+                    "correction": "La **hauteur de ton** (le premier chiffre) indique la clarté : 1 (noir), 5 (châtain clair), 8 (blond clair), 10 (blond très clair/platine). C'est la base de la formulation."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quelles sont les précautions à prendre lors de l'utilisation d'un sèche-cheveux (séchoir à main) ?",
+                    "question": "Quel est le nom de l'action qui consiste à 'recouvrir les cheveux blancs' par une coloration ?",
                     "answerOptions": [
-                        {"text": "Le tenir sans buse pour une meilleure diffusion de la chaleur.", "isCorrect": False, "rationale": "La buse est essentielle pour diriger la chaleur."},
-                        {"text": "Ne jamais utiliser de protecteur thermique.", "isCorrect": False, "rationale": "Le protecteur thermique est recommandé."},
-                        {"text": "Ne pas plaquer le flux d'air chaud sur une même zone de manière prolongée et utiliser la buse.", "isCorrect": True, "rationale": "Il faut éviter de brûler le cuir chevelu ou le cheveu. La **buse** permet de concentrer le flux d'air pour un meilleur lissage tout en maintenant une distance sécuritaire."},
-                        {"text": "Utiliser la puissance maximale même sur cheveux fins.", "isCorrect": False, "rationale": "La puissance doit être adaptée au type de cheveu."}
+                        {"text": "Le défrisage.", "isCorrect": False, "key": "A"},
+                        {"text": "Le Couverture (ou Masquage), qui utilise une base naturelle pour apporter le pigment manquant.", "isCorrect": True, "key": "B"},
+                        {"text": "Le balayage.", "isCorrect": False, "key": "C"},
+                        {"text": "La permanente.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'utilisation de la **buse** et le maintien d'une distance de sécurité sont essentiels pour éviter la surchauffe, l'assèchement excessif de la fibre et les brûlures du cuir chevelu."
+                    "correction": "La **couverture** des cheveux blancs (cheveux sans mélanine) nécessite l'ajout d'une base naturelle (reflet .0) pure pour garantir une bonne prise de la couleur et un résultat uniforme."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel terme désigne l'action d'éliminer les poux et les lentes ?",
+                    "question": "Quel est le rôle du 'Pré-Pigmentation' (ajout d'un pigment chaud avant la couleur) sur des cheveux décolorés ?",
                     "answerOptions": [
-                        {"text": "La décontamination", "isCorrect": False, "rationale": "La décontamination est plus générale (produits chimiques)."},
-                        {"text": "Le défrisage", "isCorrect": False, "rationale": "Le défrisage est une technique de lissage chimique."},
-                        {"text": "La pédiculose", "isCorrect": False, "rationale": "La pédiculose est l'infestation (le nom du problème)."},
-                        {"text": "La dépédiculisation", "isCorrect": True, "rationale": "La **dépédiculisation** est le processus spécifique de traitement et d'élimination des poux (Pediculus humanus capitis)."}
+                        {"text": "La dorure.", "isCorrect": False, "key": "A"},
+                        {"text": "La buée (vapeur d'eau).", "isCorrect": False, "key": "B"},
+                        {"text": "Réintroduire les pigments chauds (Rouge, Orange) détruits par la décoloration pour obtenir une couleur foncée harmonieuse.", "isCorrect": True, "key": "C"},
+                        {"text": "Le pointage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **dépédiculisation** est le terme correct. Le coiffeur doit identifier la pédiculose et refuser la prestation pour éviter de contaminer le salon (serviettes, peignes, matériel)."
+                    "correction": "La **pré-pigmentation** est obligatoire pour les retours au foncé sur des bases très claires afin d'éviter le reflet verdâtre ou l'effet 'terne' de la coloration."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Quelle est la principale fonction d'un 'shampoing clarifiant' ou 'chélatant' ?",
+                    "question": "Comment est codifié le 'Reflet' (nuance) dans la numérotation des couleurs (le ou les chiffres après la virgule) ?",
                     "answerOptions": [
-                        {"text": "Augmenter l'épaisseur du cheveu fin.", "isCorrect": False, "rationale": "Ceci est le rôle des shampoings volumateurs."},
-                        {"text": "Fixer les pigments de couleur pour qu'ils durent plus longtemps.", "isCorrect": False, "rationale": "Ceci est le rôle des shampoings pour cheveux colorés."},
-                        {"text": "Éliminer les résidus (silicones, minéraux, calcaire) accumulés sur la fibre.", "isCorrect": True, "rationale": "Le shampoing **clarifiant** est conçu pour décaper la fibre des résidus cosmétiques, minéraux ou des traces de chlore, préparant le cheveu à recevoir une coloration ou un soin profond."},
-                        {"text": "Hydrater le cuir chevelu sec.", "isCorrect": False, "rationale": "Le clarifiant peut être asséchant."}
+                        {"text": "Par des symboles.", "isCorrect": False, "key": "A"},
+                        {"text": "Par des chiffres (ex : .1 cendré, .3 doré, .6 rouge), qui indiquent la nuance dominante.", "isCorrect": True, "key": "B"},
+                        {"text": "Par des lettres.", "isCorrect": False, "key": "C"},
+                        {"text": "Uniquement par la hauteur de ton.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le shampoing **clarifiant** est souvent utilisé avant une coloration pour garantir une pénétration uniforme ou avant un soin pour maximiser l'efficacité des actifs."
+                    "correction": "Le **reflet** (le ou les chiffres après le point/virgule) indique la nuance. Le premier reflet est dominant, le second est secondaire : ex. 6.34 (Doré dominant, Cuivré secondaire)."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Quel équipement de protection individuelle (EPI) est le plus important pour le coiffeur lors de l'application de décolorant ou de produits agressifs ?",
+                    "question": "Quel est l'impact du 'temps de pause' non respecté pour une coloration ?",
                     "answerOptions": [
-                        {"text": "Le tablier de coupe en tissu.", "isCorrect": False, "rationale": "Le tablier protège les vêtements."},
-                        {"text": "Les lunettes de protection.", "isCorrect": False, "rationale": "Elles sont utiles, mais moins critiques que la protection des mains."},
-                        {"text": "Les gants de protection jetables (Nitrile ou Vinyle).", "isCorrect": True, "rationale": "Les **gants** sont l'EPI n°1 pour protéger la peau des mains, constamment exposées aux produits chimiques et à l'eau."},
-                        {"text": "Le bonnet jetable.", "isCorrect": False, "rationale": "Il sert à protéger les cheveux du coiffeur."}
+                        {"text": "Un temps trop court donne une couleur non prise ; un temps trop long risque d'abîmer le cheveu (sensibilisation).", "isCorrect": True, "key": "A"},
+                        {"text": "Le pain de mie.", "isCorrect": False, "key": "B"},
+                        {"text": "Le spectro-photomètre.", "isCorrect": False, "key": "C"},
+                        {"text": "Le croissant.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les **gants de protection** sont indispensables pour prévenir l'irritation, la dermatite et l'absorption de substances chimiques potentiellement nocives."
+                    "correction": "Le **temps de pause** (respect du protocole) est crucial pour garantir le résultat souhaité (couleur, éclaircissement) et préserver la qualité de la fibre capillaire."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Quelle est la principale différence entre un conditionneur (après-shampoing) et un masque capillaire ?",
+                    "question": "Quel est le risque de superposer des colorations permanentes sur les longueurs (et non seulement sur les racines) ?",
                     "answerOptions": [
-                        {"text": "Le conditionneur est toujours acide, le masque est toujours neutre.", "isCorrect": False, "rationale": "Les deux peuvent être acides."},
-                        {"text": "Le conditionneur agit en surface, le masque agit en profondeur.", "isCorrect": True, "rationale": "Le **conditionneur** (après-shampoing) a une action rapide et de surface (démêlage, lissage). Le **masque** est un soin plus riche, nécessitant un temps de pose pour pénétrer en profondeur (cortex) et réparer."},
-                        {"text": "Le masque contient des tensioactifs, le conditionneur non.", "isCorrect": False, "rationale": "Les tensioactifs sont dans le shampoing."},
-                        {"text": "Le conditionneur est réservé aux cheveux fins, le masque aux cheveux épais.", "isCorrect": False, "rationale": "Les deux sont adaptés à tous les types selon leur formulation."}
+                        {"text": "Le risque de 'surcharge pigmentaire' (cheveux trop foncés, opaques) et de sensibilisation excessive de la fibre.", "isCorrect": True, "key": "A"},
+                        {"text": "Le beurre va fondre.", "isCorrect": False, "key": "B"},
+                        {"text": "L'activité de la levure sera bloquée.", "isCorrect": False, "key": "C"},
+                        {"text": "La croûte sera épaisse et dure.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **masque** a un rôle de **traitement** (réparation interne/nutrition) et nécessite donc un temps de pose. Le conditionneur a un rôle de **finition** (lissage de la cuticule et démêlage) et est appliqué rapidement."
+                    "correction": "La coloration permanente s'applique uniquement en racine (repousse). Sur les longueurs, on utilise un produit plus doux (**ton sur ton ou patine**) pour éviter d'abîmer et de foncer inutilement."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Qu'est-ce que l'effluvium télogène, un diagnostic parfois rencontré en salon ?",
+                    "question": "Quel est le nom de la technique qui permet de faire un 'test de porosité' ?",
                     "answerOptions": [
-                        {"text": "Une chute de cheveux saisonnière, souvent diffuse, suite à un stress ou une carence.", "isCorrect": True, "rationale": "L'**effluvium télogène** est une accélération de la chute (plus de 100 cheveux par jour) liée à un déséquilibre du cycle pilaire (passage massif en phase télogène) après un événement stressant."},
-                        {"text": "Une chute de cheveux localisée (calvitie) chez l'homme.", "isCorrect": False, "rationale": "Ceci est l'alopécie androgénétique."},
-                        {"text": "Une inflammation chronique du cuir chevelu.", "isCorrect": False, "rationale": "Ceci est une dermatite ou un psoriasis."},
-                        {"text": "Une maladie auto-immune (pelade).", "isCorrect": False, "rationale": "Ceci est l'alopécie areata."}
+                        {"text": "Le rafraîchi.", "isCorrect": False, "key": "A"},
+                        {"text": "Le Test à l'Eau (observation de l'absorption) ou le toucher (rugosité), qui détermine si le cheveu est en bon état avant coloration.", "isCorrect": True, "key": "B"},
+                        {"text": "Le pointage.", "isCorrect": False, "key": "C"},
+                        {"text": "Le bassinage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**effluvium télogène** est une chute souvent réversible. Il nécessite des soins stimulants et, si la cause est persistante, un avis médical."
+                    "correction": "Un cheveu **poreux** (écailles ouvertes) absorbe trop vite la couleur (effet trop foncé) et la délave rapidement. La porosité est un élément clé du diagnostic avant coloration."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quelle température maximale est considérée comme 'à risque' pour les outils chauffants (fer à lisser, fer à friser) sur des cheveux fins et sensibilisés ?",
+                    "question": "Quel est le rôle du 'Déjaunisseur' (Shampooing Violet) sur les cheveux blonds ou blancs ?",
                     "answerOptions": [
-                        {"text": "Entre $80^{\\circ}$C et $120^{\\circ}$C", "isCorrect": False, "rationale": "C'est la fourchette basse, souvent recommandée."},
-                        {"text": "Entre $120^{\\circ}$C et $160^{\\circ}$C", "isCorrect": False, "rationale": "C'est la fourchette idéale pour cheveux fins."},
-                        {"text": "Au-delà de $180^{\\circ}$C et $200^{\\circ}$C", "isCorrect": True, "rationale": "Les températures supérieures à $180^{\\circ}$C (voire $200^{\\circ}$C) peuvent entraîner la **dénaturation de la kératine** des cheveux fins ou décolorés, provoquant la casse et l'apparition de 'bulles' (dommages irréversibles)."},
-                        {"text": "Entre $50^{\\circ}$C et $70^{\\circ}$C", "isCorrect": False, "rationale": "C'est la température du séchage au diffuseur."}
+                        {"text": "Améliorer le goût.", "isCorrect": False, "key": "A"},
+                        {"text": "Réguler l'acidité.", "isCorrect": False, "key": "B"},
+                        {"text": "Neutraliser les reflets 'Jaunes' indésirables en appliquant le pigment complémentaire (Violet).", "isCorrect": True, "key": "C"},
+                        {"text": "Servir uniquement à nettoyer le bac.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La température doit toujours être adaptée. Pour les cheveux fragiles ou très éclaircis, il ne faut idéalement pas dépasser $160^{\\circ}$C pour éviter les dommages thermiques. Le seuil de $180^{\\circ}$C est le maximum à utiliser avec prudence."
+                    "correction": "Le **Violet** neutralise le Jaune (couleur complémentaire). Le shampooing violet est un entretien pour les blonds clairs ou les gris/blancs afin de maintenir un reflet froid."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quelle substance toxique peut être émise par certains défrisages chimiques contenant des aldéhydes, nécessitant une bonne ventilation en salon ?",
+                    "question": "Quel est le nom de l'action qui consiste à 'éclaircir légèrement' le cheveu par petites touches pour un effet soleil ?",
                     "answerOptions": [
-                        {"text": "L'oxygène (O2)", "isCorrect": False, "rationale": "L'oxygène est inoffensif."},
-                        {"text": "Le Peroxyde d'hydrogène", "isCorrect": False, "rationale": "Le Peroxyde est un oxydant, mais pas une substance de défrisage à aldéhydes."},
-                        {"text": "Le Formol (Formadéhyde)", "isCorrect": True, "rationale": "Le **Formol** (ou ses libérateurs) est un agent lissant puissant, mais il est classé comme cancérogène. Son usage est très réglementé, voire interdit, dans de nombreux pays. Une excellente ventilation est vitale s'il est utilisé."},
-                        {"text": "Le Silicone", "isCorrect": False, "rationale": "Le silicone est un agent cosmétique (gainage)."}
+                        {"text": "La cuisson sur plaque.", "isCorrect": False, "key": "A"},
+                        {"text": "La cuisson par injection de vapeur.", "isCorrect": False, "key": "B"},
+                        {"text": "La surgélation de la pâte.", "isCorrect": False, "key": "C"},
+                        {"text": "Le Balayage (ou Mèches), qui utilise une technique de 'voile' ou de 'triangles' pour apporter du contraste et de la lumière.", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "Le **Formol** est une substance potentiellement très dangereuse, surtout lorsqu'elle est chauffée (lissage brésilien par exemple). Les coiffeurs doivent exiger des produits sans formaldéhyde (formol) pour la sécurité de tous."
+                    "correction": "Le **balayage** est une technique de coloration partielle qui apporte de la profondeur et du relief. Elle se travaille souvent 'à l'air libre' (sans alu)."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Lors du shampooing, quel est le mouvement de massage à privilégier sur le cuir chevelu ?",
+                    "question": "Quel est le rôle du 'Masque Réparateur' (soin profond) après une décoloration ou un service technique ?",
                     "answerOptions": [
-                        {"text": "Des mouvements circulaires amples avec les ongles.", "isCorrect": False, "rationale": "Les ongles peuvent irriter le cuir chevelu."},
-                        {"text": "Des mouvements de va-et-vient énergiques (frottements).", "isCorrect": False, "rationale": "Les frottements peuvent créer des nœuds et des frictions."},
-                        {"text": "Des mouvements doux et circulaires avec la pulpe des doigts.", "isCorrect": True, "rationale": "Le massage doit être doux, stimulant et non irritant, effectué avec la **pulpe des doigts** pour décoller les impuretés et stimuler la microcirculation."},
-                        {"text": "Uniquement des pressions sans mouvement.", "isCorrect": False, "rationale": "Le mouvement est nécessaire pour le nettoyage."}
+                        {"text": "Des farines de céréales.", "isCorrect": False, "key": "A"},
+                        {"text": "De la farine de blé.", "isCorrect": False, "key": "B"},
+                        {"text": "Il permet de refermer les écailles et d'apporter les lipides et protéines manquants pour l'hydratation et la force.", "isCorrect": True, "key": "C"},
+                        {"text": "De la farine de seigle.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le bon geste de shampooing est un **massage doux** avec la pulpe des doigts. Un massage trop énergique ou l'utilisation des ongles risque de créer des lésions et de stimuler une production excessive de sébum (effet rebond)."
+                    "correction": "Les **soins (masques)** sont vitaux après une prestation chimique (couleur, décoloration) pour réparer les dommages, renforcer la fibre et prolonger la tenue de la couleur."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quelle est la durée de validité du 'Document Unique d’Évaluation des Risques Professionnels' (DUERP) dans une entreprise de coiffure ?",
+                    "question": "Quel est le risque d'utiliser un oxydant (développeur) dont la 'concentration est trop faible' (ex : 10 Vol au lieu de 30 Vol) ?",
                     "answerOptions": [
-                        {"text": "Il est mis à jour tous les 5 ans.", "isCorrect": False, "rationale": "La mise à jour doit être plus fréquente."},
-                        {"text": "Il n'est pas obligatoire dans les salons de moins de 10 salariés.", "isCorrect": False, "rationale": "Il est obligatoire dès le premier salarié."},
-                        {"text": "Il doit être mis à jour au moins une fois par an et à chaque modification importante.", "isCorrect": True, "rationale": "Le **DUERP** est obligatoire dès l'embauche du premier salarié et doit être mis à jour **au moins annuellement** ou lors de tout changement majeur (nouveau matériel, nouvel agencement, accident de travail)."},
-                        {"text": "Il est valable à vie tant que l'entreprise ne change pas d'adresse.", "isCorrect": False, "rationale": "Ceci est faux."}
+                        {"text": "Un pain trop acide.", "isCorrect": False, "key": "A"},
+                        {"text": "Le risque d'obtenir une couleur trop foncée ou un éclaircissement insuffisant (oxydation incomplète des pigments).", "isCorrect": True, "key": "B"},
+                        {"text": "La non-levée de la pâte.", "isCorrect": False, "key": "C"},
+                        {"text": "L'augmentation de la force.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **DUERP** est un document légal essentiel qui recense les risques professionnels (postures, produits chimiques, bruit, etc.) pour la santé et la sécurité des employés."
+                    "correction": "L'**oxydant (volume)** détermine le pouvoir éclaircissant. Une erreur de volume entraîne un échec de la coloration (trop foncé, ou mauvaise neutralisation des reflets)."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "À quoi sert un peignoir 'jetable' ou 'à usage unique' ?",
+                    "question": "Quel est le nom du produit utilisé pour 'enlever les taches de coloration' (sur la peau ou le front) après la prestation ?",
                     "answerOptions": [
-                        {"text": "À protéger le client des coupures de ciseaux.", "isCorrect": False, "rationale": "Ceci est le rôle du col protecteur."},
-                        {"text": "À garantir une hygiène irréprochable et éviter la contamination croisée entre clients.", "isCorrect": True, "rationale": "Le peignoir **jetable** garantit qu'il n'y a pas de transfert de salissures, produits ou parasites d'un client à l'autre (contamination croisée)."},
-                        {"text": "À donner une touche luxueuse au salon.", "isCorrect": False, "rationale": "L'objectif est l'hygiène."},
-                        {"text": "À remplacer le shampoing.", "isCorrect": False, "rationale": "Ceci n'a aucun sens."}
+                        {"text": "Le 'Détachant' (ou Nettoyeur de peau), à base d'agents réducteurs doux, pour dissoudre le pigment sans irriter la peau.", "isCorrect": True, "key": "A"},
+                        {"text": "L'ajout de malt torréfié.", "isCorrect": False, "key": "B"},
+                        {"text": "L'incorporation de la matière grasse.", "isCorrect": False, "key": "C"},
+                        {"text": "La surgélation de la pâte.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les peignoirs, serviettes et capes doivent être **propres** pour chaque client. Le jetable est une solution pour les zones de grande affluence ou pour les prestations très salissantes (décapage)."
+                    "correction": "Le **détachant** est utilisé pour garantir la propreté de la peau après la coloration. Il est souvent précédé d'une crème grasse (contour du visage) pour prévenir la coloration de la peau."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "L'utilisation de la chaleur (bonnets chauffants, climazon) lors d'un masque de soin a pour but de :",
+                    "question": "Quel est le rôle du 'Patine' (couleur très diluée) appliquée après une décoloration ou un balayage ?",
                     "answerOptions": [
-                        {"text": "Accélérer l'évaporation de l'eau contenue dans le cheveu.", "isCorrect": False, "rationale": "Ceci assécherait le cheveu."},
-                        {"text": "Rompre les liaisons disulfures pour rendre le cheveu plus souple.", "isCorrect": False, "rationale": "Ceci est le rôle de la permanente."},
-                        {"text": "Dilater légèrement les écailles pour améliorer la pénétration des actifs.", "isCorrect": True, "rationale": "La **chaleur douce** permet d'écarter légèrement les écailles de la cuticule, favorisant la pénétration du masque hydratant ou nourrissant dans le cortex."},
-                        {"text": "Activer la circulation sanguine du cuir chevelu.", "isCorrect": False, "rationale": "La chaleur du soin est centrée sur la fibre."},
+                        {"text": "Développer une meilleure complexité aromatique.", "isCorrect": False, "key": "A"},
+                        {"text": "Neutraliser un reflet indésirable (jaune/orange) et apporter une nuance finale (cendré, doré) sans éclaircir davantage.", "isCorrect": True, "key": "B"},
+                        {"text": "La 'maturation' (affinage) des produits secs.", "isCorrect": False, "key": "C"},
+                        {"text": "Accélérer la production de gaz carbonique (CO₂).", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **chaleur** (passive ou active) est un accélérateur de pénétration. Elle optimise l'efficacité des actifs de soin, d'où l'utilisation de climazons ou de serviettes chaudes."
+                    "correction": "La **patine** (souvent un ton sur ton sans ammoniaque) est utilisée en finition (après éclaircissement) pour personnaliser le reflet et uniformiser la couleur."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "En cas de brûlure chimique due à un produit colorant (sur le cuir chevelu par exemple), quel est le premier geste d'urgence à effectuer ?",
+                    "question": "Quelle est l'incidence du 'pourcentage de cheveux blancs' sur le choix de la coloration ?",
                     "answerOptions": [
-                        {"text": "Appliquer immédiatement une crème anti-inflammatoire.", "isCorrect": False, "rationale": "Ce n'est pas le premier geste."},
-                        {"text": "Neutraliser l'effet du produit avec de l'acide acétique (vinaigre).", "isCorrect": False, "rationale": "Ceci est risqué et peut aggraver la situation."},
-                        {"text": "Rincer immédiatement et abondamment à l'eau claire et froide.", "isCorrect": True, "rationale": "Le premier geste face à toute brûlure chimique est de stopper la réaction en **rinçant abondamment à l'eau froide** pendant au moins 10 à 15 minutes."},
-                        {"text": "Laisser sécher à l'air libre et observer.", "isCorrect": False, "rationale": "Ceci laisserait la brûlure progresser."}
+                        {"text": "Elle est naturellement sans gluten.", "isCorrect": False, "key": "A"},
+                        {"text": "Plus le pourcentage de cheveux blancs est important, plus le coiffeur doit ajouter une 'Base Naturelle' pure dans le mélange.", "isCorrect": True, "key": "B"},
+                        {"text": "Elle est très riche en sel.", "isCorrect": False, "key": "C"},
+                        {"text": "Elle sert uniquement à colorer la croûte du pain.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le rinçage immédiat à l'**eau froide** permet d'éliminer le produit et d'arrêter la réaction chimique pour limiter la profondeur de la brûlure."
+                    "correction": "La couverture des cheveux blancs (cheveux sans pigment) nécessite un apport de **base (.0)** pour garantir un résultat uniforme, durable et éviter la transparence du reflet."
                 }
             ]
         },
-        # =========================================================================
-        # THÈME 5 : PRATIQUE COMMERCIALE ET DIAGNOSTIC CLIENT (Q. 81-100)
-        # =========================================================================
+        # THÈME 5 (LONGUEUR NEUTRALISÉE)
         5: {
-            "name": "5. Pratique Commerciale et Diagnostic Client (Q. 81-100)",
+            "name": "Commercialisation, Relation Client et Gestion (Vente)",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quelle est la première étape obligatoire du diagnostic en salon avant d'entamer toute prestation de coupe ou technique ?",
+                    "question": "Quel est le but de la 'Vente Additionnelle' (ou 'Upselling') en salon de coiffure ?",
                     "answerOptions": [
-                        {"text": "Le test d'allergie (48h avant).", "isCorrect": False, "rationale": "Le test d'allergie est pour la coloration, non la coupe."},
-                        {"text": "Le toucher et l'examen visuel du cuir chevelu et du cheveu.", "isCorrect": True, "rationale": "Le **diagnostic** commence par l'observation et le toucher pour évaluer la nature, l'état, la porosité, la densité et l'état du cuir chevelu du client."},
-                        {"text": "La vente d'un produit additionnel.", "isCorrect": False, "rationale": "Ceci est une démarche commerciale secondaire."},
-                        {"text": "L'analyse des tendances de mode.", "isCorrect": False, "rationale": "Ceci influence le choix, mais n'est pas la première étape du diagnostic technique."}
+                        {"text": "Elle est très enrichie en œufs.", "isCorrect": False, "key": "A"},
+                        {"text": "Proposer des produits ou services complémentaires (soin, masque, produit coiffant) pour augmenter le panier moyen.", "isCorrect": True, "key": "B"},
+                        {"text": "Elle est très peu hydratée.", "isCorrect": False, "key": "C"},
+                        {"text": "Elle est fabriquée sans sel.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **diagnostic** est la base du métier. Il permet d'adapter la technique, les produits et les temps de pose à la réalité de la chevelure du client pour garantir un résultat professionnel."
+                    "correction": "La **vente additionnelle** (le soin proposé après le shampooing, l'achat du produit à domicile) est essentielle pour la rentabilité et le chiffre d'affaires du salon."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Quel est le but principal de la technique de 'reformulation' lors de l'entretien client ?",
+                    "question": "Quel est le rôle de la 'Consultation Client' (avant le service) ?",
                     "answerOptions": [
-                        {"text": "Corriger le client s'il utilise des termes techniques incorrects.", "isCorrect": False, "rationale": "Le rôle est d'assurer la compréhension, pas de corriger le client."},
-                        {"text": "Vérifier la bonne compréhension des attentes du client avant de commencer.", "isCorrect": True, "rationale": "La **reformulation** (répéter avec ses propres mots ce que le client a exprimé) est essentielle pour s'assurer que le coiffeur et le client sont sur la même longueur d'onde et éviter les erreurs."},
-                        {"text": "Lui proposer un autre style.", "isCorrect": False, "rationale": "Ceci est une suggestion, pas une reformulation."},
-                        {"text": "Évaluer sa capacité à payer la prestation.", "isCorrect": False, "rationale": "Ceci n'est pas professionnel."}
+                        {"text": "Le mastic polyester.", "isCorrect": False, "key": "A"},
+                        {"text": "La farine de maïs.", "isCorrect": False, "key": "B"},
+                        {"text": "Établir un diagnostic (état du cheveu, historique couleur) et définir les attentes du client pour garantir la satisfaction.", "isCorrect": True, "key": "C"},
+                        {"text": "La farine de blé.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **reformulation** est un outil de communication. Elle valide la demande ('Si je comprends bien, vous voulez une base 6.0 avec des reflets 7.4 ?') et sécurise la prestation."
+                    "correction": "La **consultation** (écoute active et diagnostic) est l'étape de base. Elle permet de valider la prestation et d'assurer un résultat en phase avec les attentes du client."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Quelle est la principale caractéristique d'un cheveu de 'nature fine' ?",
+                    "question": "Quelle est l'importance de la 'Fiche Client' (dossier personnel) pour la coiffure ?",
                     "answerOptions": [
-                        {"text": "Il ne prend pas la couleur.", "isCorrect": False, "rationale": "La nature n'empêche pas la couleur."},
-                        {"text": "Son diamètre est inférieur à 0,05 mm.", "isCorrect": True, "rationale": "Un cheveu **fin** a un diamètre faible (moins de 0,05 mm), ce qui le rend moins résistant et plus susceptible de s'alourdir ou de manquer de volume."},
-                        {"text": "Il est obligatoirement bouclé.", "isCorrect": False, "rationale": "Le cheveu fin peut être raide, ondulé ou bouclé."},
-                        {"text": "Il a une porosité très élevée.", "isCorrect": False, "rationale": "La porosité est l'état, non la nature."}
+                        {"text": "Elle permet de tracer l'historique des prestations, des produits utilisés et des préférences (fidélisation et sécurité).", "isCorrect": True, "key": "A"},
+                        {"text": "Il doit être consommé dans les 24 heures.", "isCorrect": False, "key": "B"},
+                        {"text": "Il se conserve beaucoup plus longtemps.", "isCorrect": False, "key": "C"},
+                        {"text": "Il contient des additifs.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **nature fine** demande des produits légers, des coupes en masse (pour le volume) et des techniques de coloration douces, car la fibre est plus délicate."
+                    "correction": "La **fiche client** (historique, allergies, formules couleur) est un document de travail et de sécurité. Elle est indispensable pour la fidélisation et la qualité du suivi."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Lors d'une vente de produits, que signifie 'adapter son argumentation au profil du client' ?",
+                    "question": "Quel est le rôle du 'Prix de Vente' (ou tarif) dans la gestion du salon ?",
                     "answerOptions": [
-                        {"text": "Parler plus fort si le client est âgé.", "isCorrect": False, "rationale": "Ceci est inapproprié."},
-                        {"text": "Ne proposer que des produits chers, sans tenir compte de la prestation.", "isCorrect": False, "rationale": "Ceci est une mauvaise pratique commerciale."},
-                        {"text": "Mettre en avant l'avantage du produit en fonction du problème identifié lors du diagnostic.", "isCorrect": True, "rationale": "La vente doit être un **conseil** basé sur le diagnostic. Si le cheveu est sec, on argumente sur l'hydratation (avantage) plutôt que sur le prix (caractéristique)."},
-                        {"text": "Dire au client qu'il a de mauvais cheveux pour justifier la vente.", "isCorrect": False, "rationale": "Ceci est une attitude négative et contre-productive."}
+                        {"text": "L'incorporation de la matière grasse.", "isCorrect": False, "key": "A"},
+                        {"text": "Il doit couvrir les coûts (matières premières, salaires, loyer) et dégager une marge bénéficiaire (rentabilité).", "isCorrect": True, "key": "B"},
+                        {"text": "L'utilisation de farine de seigle.", "isCorrect": False, "key": "C"},
+                        {"text": "La cuisson à haute température.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Une bonne pratique commerciale est de faire une 'vente-conseil'. Le coiffeur doit utiliser le **diagnostic** (cheveu gras, sec, cassant) pour justifier et personnaliser la recommandation du produit."
+                    "correction": "La **tarification** (définition des prix) est la base de la rentabilité. Elle doit être cohérente avec les charges (coût de revient) et le positionnement du salon."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Qu'est-ce qu'un 'chèque cadeau' du point de vue de la gestion commerciale d'un salon de coiffure ?",
+                    "question": "Quel est le nom de la technique de vente qui consiste à 'proposer un produit supérieur' (plus cher) à celui initialement demandé ?",
                     "answerOptions": [
-                        {"text": "Une charge (dépense) pour le salon.", "isCorrect": False, "rationale": "C'est une recette (vente)."},
-                        {"text": "Une remise faite au client pour sa fidélité.", "isCorrect": False, "rationale": "Ceci est une réduction."},
-                        {"text": "Un produit financier qui crée une créance du client envers le salon.", "isCorrect": True, "rationale": "Le chèque cadeau est une **vente encaissée d'avance** qui crée une dette ou une obligation pour le salon de fournir une prestation future. C'est une méthode d'augmentation du chiffre d'affaires immédiat."},
-                        {"text": "Un moyen de paiement qui ne peut être utilisé que pour les produits de revente.", "isCorrect": False, "rationale": "Il peut être utilisé pour les prestations."}
+                        {"text": "Le 'Montée en Gamme' (Upgrading) : suggérer un soin plus luxueux ou un produit de marque supérieure.", "isCorrect": True, "key": "A"},
+                        {"text": "La cuisson par injection de vapeur.", "isCorrect": False, "key": "B"},
+                        {"text": "La cuisson sur sole.", "isCorrect": False, "key": "C"},
+                        {"text": "La surgélation de la pâte.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les chèques cadeaux sont une ressource de trésorerie immédiate, mais ils représentent un service qui devra être rendu (une **créance client**)."
+                    "correction": "L'**upgrading** (montée en gamme) est une technique de vente par la suggestion d'un avantage (meilleure qualité, meilleur résultat, soin plus profond) justifiant le surcoût."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Si une cliente avec 50 % de cheveux blancs souhaite une couleur rousse (ex: 6.4), quelle est la technique de coloration de base à privilégier ?",
+                    "question": "Quelle est l'attitude à adopter en cas de 'réclamation' (client insatisfait) après une prestation ?",
                     "answerOptions": [
-                        {"text": "Une coloration ton sur ton uniquement.", "isCorrect": False, "rationale": "Le ton sur ton ne couvre pas bien les cheveux blancs (transparence)."},
-                        {"text": "Une coloration permanente avec un oxydant 40 volumes.", "isCorrect": False, "rationale": "Le 40 volumes est trop puissant pour une simple couverture."},
-                        {"text": "Un mélange de la couleur choisie (6.4) avec sa base naturelle (6.0).", "isCorrect": True, "rationale": "Pour couvrir un fort pourcentage de blancs avec un reflet, il faut obligatoirement ajouter une part de la **base naturelle** (la plus proche de la hauteur de ton) pour apporter le pigment de fond nécessaire."},
-                        {"text": "Une décoloration totale suivie de la couleur 6.4.", "isCorrect": False, "rationale": "Ceci est trop agressif pour une simple couverture."}
+                        {"text": "Elle n'utilise pas de levure.", "isCorrect": False, "key": "A"},
+                        {"text": "Écouter activement la plainte, s'excuser et proposer une solution (retouche immédiate, geste commercial).", "isCorrect": True, "key": "B"},
+                        {"text": "Elle est fabriquée avec une farine de seigle.", "isCorrect": False, "key": "C"},
+                        {"text": "Elle nécessite un pétrissage très long.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les cheveux blancs ont besoin de **pigments de fond** (la base naturelle .0) pour que le reflet (le .4) s'accroche et que la couverture soit opaque et durable. C'est le principe du mouillage ou du mélange base + reflet."
+                    "correction": "La gestion des **réclamations** est vitale. Un client mécontent traité avec empathie et solutionné peut devenir un client très fidèle (fidélisation)."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Qu'est-ce qu'un cheveu 'hydrophile' (très poreux) du point de vue de la coiffure ?",
+                    "question": "Quel est l'élément essentiel de la 'vitrine' (façade) du salon pour attirer le client ?",
                     "answerOptions": [
-                        {"text": "Un cheveu qui repousse l'eau et les produits.", "isCorrect": False, "rationale": "Ceci est hydrophobe."},
-                        {"text": "Un cheveu qui n'a jamais été traité chimiquement.", "isCorrect": False, "rationale": "Les cheveux naturels sont généralement moins poreux."},
-                        {"text": "Un cheveu qui absorbe l'eau rapidement, mais la retient mal, et sèche très vite.", "isCorrect": True, "rationale": "Un cheveu **hydrophile** (qui aime l'eau) absorbe l'eau facilement (cuticule ouverte), mais la perd tout aussi vite. Il nécessite des soins riches en lipides pour retenir l'humidité."},
-                        {"text": "Un cheveu au pH neutre (7).", "isCorrect": False, "rationale": "Le pH n'est pas directement lié à l'hydrophilie."}
+                        {"text": "Le risque de 'brûler' les micro-organismes.", "isCorrect": False, "key": "A"},
+                        {"text": "Le pain complet.", "isCorrect": False, "key": "B"},
+                        {"text": "La propreté, l'éclairage, la présentation des produits (merchandising) et des 'modèles' (images de coupes).", "isCorrect": True, "key": "C"},
+                        {"text": "Le pain de seigle.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**hydrophilie** est un signe de porosité élevée (cheveu abîmé, coloré, décoloré). Ces cheveux ont besoin de produits scellants (après-shampoings acides, sérums) pour lisser les écailles et retenir l'hydratation."
+                    "correction": "La **vitrine** (premier contact) doit refléter la qualité du service (propreté, modernité) et donner envie d'entrer. Elle est le reflet de l'image de marque du salon."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Quel est le pourcentage de T.V.A. (Taxe sur la Valeur Ajoutée) généralement applicable aux prestations de coiffure en France (taux normal) ?",
+                    "question": "Quel est le rôle de la 'communication non verbale' (posture, gestes) du coiffeur en salle ?",
                     "answerOptions": [
-                        {"text": "5,5 %", "isCorrect": False, "rationale": "Ceci est le taux réduit pour certains produits alimentaires de première nécessité."},
-                        {"text": "10 %", "isCorrect": False, "rationale": "Ceci est le taux intermédiaire."},
-                        {"text": "20 %", "isCorrect": True, "rationale": "Le taux de T.V.A. **normal** (le plus courant) applicable aux prestations de services (comme la coupe, le brushing, la couleur) et à la revente de produits est de **20 %**."},
-                        {"text": "Aucune TVA (taux 0 %)", "isCorrect": False, "rationale": "La TVA est toujours appliquée sauf cas très spécifiques (micro-entreprises sous le seuil de franchise)."}
+                        {"text": "La peau d'orange.", "isCorrect": False, "key": "A"},
+                        {"text": "Elle transmet la confiance, le professionnalisme et l'attention sans avoir besoin de parler (sourire, gestes précis, calme).", "isCorrect": True, "key": "B"},
+                        {"text": "Le pain de seigle.", "isCorrect": False, "key": "C"},
+                        {"text": "Le pain complet.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le coiffeur doit appliquer le taux normal de **20 %** sur la majorité des services et des produits de revente. C'est la base de la gestion des encaissements (prix TTC)."
+                    "correction": "Le coiffeur doit être attentif, calme et dégager du professionnalisme. La **communication non verbale** est essentielle pour mettre le client en confiance et exprimer l'expertise."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Lors du diagnostic, quel est l'impact d'une faible densité de cheveux sur le choix de la coupe ?",
+                    "question": "Quel est le but d'utiliser un langage 'technique professionnel' (mèches, patine, hauteur de ton) avec les collègues ?",
                     "answerOptions": [
-                        {"text": "La coupe sera longue et très effilée.", "isCorrect": False, "rationale": "L'effilage enlève de la masse."},
-                        {"text": "Il faudra privilégier les coupes en dégradé fort pour apporter du mouvement.", "isCorrect": False, "rationale": "Le dégradé retire de la masse aux pointes."},
-                        {"text": "Il est préférable de choisir une coupe pleine pour conserver de la masse et créer une illusion de volume.", "isCorrect": True, "rationale": "Une faible **densité** nécessite de conserver le maximum de matière sur les longueurs, d'où la préférence pour les **coupes pleines** (élévation $0^{\\circ}$) pour un effet de densité visuelle."},
-                        {"text": "La couleur ne pourra pas prendre uniformément.", "isCorrect": False, "rationale": "La densité n'influence pas la prise de couleur."}
+                        {"text": "La dorure.", "isCorrect": False, "key": "A"},
+                        {"text": "La buée (vapeur d'eau).", "isCorrect": False, "key": "B"},
+                        {"text": "Le pointage.", "isCorrect": False, "key": "C"},
+                        {"text": "Assurer la précision des commandes, le diagnostic et la transmission des instructions (langage codifié).", "isCorrect": True, "key": "D"}
                     ],
-                    "correction": "La **densité** est le nombre de cheveux par centimètre carré. Une faible densité se traite souvent par des coupes de masse (carrés pleins, B.O.B.) et des coiffages volumateurs."
+                    "correction": "Le **vocabulaire professionnel** (en couleur ou en coupe) garantit la bonne exécution des tâches, l'absence d'erreurs et l'efficacité du travail en équipe."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Que signifie la méthode commerciale dite de 'montée en gamme' (ou Upselling) ?",
+                    "question": "Comment s'appelle l'action qui consiste à 'proposer au client un produit coiffant' (à usage domestique) après la coiffure ?",
                     "answerOptions": [
-                        {"text": "Vendre uniquement des produits pour l'hygiène.", "isCorrect": False, "rationale": "Ceci est un focus sur une catégorie de produits."},
-                        {"text": "Proposer au client une prestation plus complète ou un produit de qualité supérieure à celui initialement demandé.", "isCorrect": True, "rationale": "La **montée en gamme** consiste à suggérer une prestation ou un produit à plus forte valeur (ex: proposer un soin profond en plus du shampoing) pour augmenter le panier moyen."},
-                        {"text": "Vendre des produits à prix cassés pour écouler le stock.", "isCorrect": False, "rationale": "Ceci est du déstockage (ou Downselling)."},
-                        {"text": "Forcer le client à acheter ce qu'il ne veut pas.", "isCorrect": False, "rationale": "Ceci est de la vente forcée (mauvaise pratique)."}
+                        {"text": "La 'Vente Croisée' (Cross-selling) : vendre un produit pour que le client puisse reproduire la coiffure à la maison.", "isCorrect": True, "key": "A"},
+                        {"text": "Obtenir une mie très blanche.", "isCorrect": False, "key": "B"},
+                        {"text": "Fabriquer un pain très acide.", "isCorrect": False, "key": "C"},
+                        {"text": "Utiliser uniquement de la farine de seigle.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "L'**Upselling** est une technique de vente qui doit rester dans le conseil. Elle permet d'améliorer la qualité du service rendu au client tout en augmentant le chiffre d'affaires du salon."
+                    "correction": "La **vente croisée** (vendre le shampooing, le spray, le sérum) est une source de revenu importante et un service client (conseil à domicile pour reproduire le résultat)."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Lors de l'examen visuel, comment se manifeste généralement un cuir chevelu en 'état pityriasique simple' ?",
+                    "question": "Quel est le document qui détaille la recette, les étapes, la quantité des ingrédients et le coût des matières premières pour une prestation ?",
                     "answerOptions": [
-                        {"text": "Par des plaques rouges et suintantes.", "isCorrect": False, "rationale": "Ceci est une dermatite sévère."},
-                        {"text": "Par des pellicules grasses et jaunâtres qui collent au cuir chevelu.", "isCorrect": False, "rationale": "Ceci est l'état pityriasique gras."},
-                        {"text": "Par de fines pellicules blanches et sèches qui tombent facilement sur les épaules.", "isCorrect": True, "rationale": "L'état **pityriasique simple** correspond aux pellicules sèches. Il est souvent dû à une simple desquamation du cuir chevelu sec ou irrité."},
-                        {"text": "Par une perte de cheveux en forme de rond.", "isCorrect": False, "rationale": "Ceci est l'alopécie areata."}
+                        {"text": "La 'Fiche Technique de Prestation' (FTP) qui permet la standardisation de la formule couleur (coût et résultat).", "isCorrect": True, "key": "A"},
+                        {"text": "Le tableau de 'la formule du boulanger'.", "isCorrect": False, "key": "B"},
+                        {"text": "Le coefficient d'hydratation (H) de la farine.", "isCorrect": False, "key": "C"},
+                        {"text": "Le plan de production et le planning des employés.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Les **pellicules sèches** (pityriasis simple) sont le résultat d'un déséquilibre. Elles nécessitent un traitement antifongique léger et une hydratation du cuir chevelu."
+                    "correction": "La **FTP** (fiche technique prestation) est la base de la standardisation (même résultat) et de la gestion des coûts (produits utilisés et coût de revient)."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est l'objectif d'une technique de 'pré-pigmentation' avant une coloration ?",
+                    "question": "Quel est le rôle du 'Seuil de Rentabilité' (SR) pour la gestion du salon ?",
                     "answerOptions": [
-                        {"text": "Éclaircir le cheveu d'un ton supplémentaire.", "isCorrect": False, "rationale": "La pré-pigmentation ne sert pas à éclaircir."},
-                        {"text": "Neutraliser un reflet trop chaud (orange ou jaune).", "isCorrect": False, "rationale": "Ceci est la neutralisation classique."},
-                        {"text": "Réintroduire des pigments chauds sur un cheveu très décoloré avant de foncer.", "isCorrect": True, "rationale": "La **pré-pigmentation** est essentielle pour 'remplir' un cheveu poreux qui a perdu ses pigments chauds naturels (fond de clarification), avant d'appliquer une couleur foncée. Elle garantit que la couleur ne 'vire' pas au vert ou au gris."},
-                        {"text": "Rendre la coupe plus nette et précise.", "isCorrect": False, "rationale": "Ceci est une technique de coloration."}
+                        {"text": "Le montant de chiffre d'affaires à réaliser pour couvrir toutes les charges (fixes et variables) et atteindre un bénéfice nul.", "isCorrect": True, "key": "A"},
+                        {"text": "L'absorption d'eau.", "isCorrect": False, "key": "B"},
+                        {"text": "Le rapport P/L.", "isCorrect": False, "key": "C"},
+                        {"text": "Le pH.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **pré-pigmentation** est cruciale lorsqu'on passe d'un blond très clair (niveau 9 ou 10) à un châtain (niveau 4 ou 5) pour éviter une couleur terne ou des reflets indésirables."
+                    "correction": "Le **SR** (ou 'point mort') est le seuil à atteindre (en CA) pour ne pas être déficitaire. Il est crucial pour la survie et la planification financière de l'entreprise."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "En cas de litige avec un client (résultat non conforme), quelle est la meilleure attitude professionnelle à adopter en premier lieu ?",
+                    "question": "Si vous commandez 10 L de shampooing (coût 40 €/L) et que la remise fournisseur est de 20%, quel est le coût HT total (en €) ?",
                     "answerOptions": [
-                        {"text": "Argumenter que l'erreur est celle du client.", "isCorrect": False, "rationale": "Ceci est non commercial et aggrave le conflit."},
-                        {"text": "Refuser tout dialogue et le faire partir.", "isCorrect": False, "rationale": "Ceci est illégal."},
-                        {"text": "Écouter attentivement sa plainte, puis proposer une solution (retouche, soin offert, etc.).", "isCorrect": True, "rationale": "La première étape est toujours l'**écoute active et l'empathie**. Reconnaître la frustration du client et proposer une solution de réparation est la clé de la gestion de litige."},
-                        {"text": "Lui demander de revenir la semaine suivante.", "isCorrect": False, "rationale": "Il faut agir immédiatement si possible."}
+                        {"text": "2,00 € HT.", "isCorrect": False, "key": "A"},
+                        {"text": "4,00 € HT.", "isCorrect": False, "key": "B"},
+                        {"text": "320,00 € HT (10 L x 40 €/L = 400 € ; 400 € x 0,80 = 320 €).", "isCorrect": True, "key": "C"},
+                        {"text": "1,00 € HT.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le service après-vente est primordial. Une bonne gestion des **litiges** (écoute et proposition de solution) peut transformer un client mécontent en un client fidèle."
+                    "correction": "Calcul : Coût brut (40 * 10) = 400 € HT. Remise (400 * 0,20) = 80 €. **Coût net** (400 - 80) = **320,00 € HT**."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Que doit-on impérativement prendre en compte lors du choix de la coiffure finale pour une cliente ?",
+                    "question": "Quel est le rôle de la 'fiche technique' dans la standardisation des services ?",
                     "answerOptions": [
-                        {"text": "Uniquement les tendances de l'année en cours.", "isCorrect": False, "rationale": "Les tendances ne sont qu'une partie du choix."},
-                        {"text": "Le type de cheveu, la morphologie du visage et le style de vie de la cliente.", "isCorrect": True, "rationale": "Le choix de la coiffure doit être **personnalisé** et s'appuyer sur le **diagnostic** (type de cheveu), la **morphologie** (forme du visage) et le **style de vie** (le temps que la cliente peut consacrer à son coiffage)."},
-                        {"text": "Le prix maximal que le client est prêt à dépenser.", "isCorrect": False, "rationale": "Le prix influence, mais n'est pas un critère technique de coiffure."},
-                        {"text": "La capacité du coiffeur à réaliser la coupe.", "isCorrect": False, "rationale": "Le coiffeur est censé maîtriser les techniques de base."}
+                        {"text": "Déterminer la température de base de la pâte.", "isCorrect": False, "key": "A"},
+                        {"text": "Mesurer la force de la farine.", "isCorrect": False, "key": "B"},
+                        {"text": "Garantir la constance de la qualité de la prestation, sa traçabilité et le calcul de son prix de revient.", "isCorrect": True, "key": "C"},
+                        {"text": "Vérifier la bonne exécution du nettoyage.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le coiffeur doit être un conseiller. L'adéquation entre la **coiffure, le visage et le style de vie** garantit que le client sera satisfait et pourra se coiffer lui-même à la maison."
+                    "correction": "La **FTF** (ou FTP) est le document de référence qui permet de garantir le même niveau de qualité à chaque client et de maîtriser la consommation de produits (gestion des coûts)."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quel est le terme générique pour désigner les ventes de shampoings, soins et produits de coiffage que le client emporte chez lui ?",
+                    "question": "Quel est le mode de calcul qui permet de répartir les coûts (loyer, assurance, électricité) sur l'ensemble des prestations ?",
                     "answerOptions": [
-                        {"text": "Les produits consommables", "isCorrect": False, "rationale": "Les consommables sont les produits utilisés en salon."},
-                        {"text": "Les ventes de services", "isCorrect": False, "rationale": "Les services sont les prestations (coupe, couleur)."},
-                        {"text": "La revente", "isCorrect": True, "rationale": "La **revente** (ou vente additionnelle) désigne la vente des produits que le client utilisera chez lui. Elle est essentielle pour le chiffre d'affaires et la fidélisation."},
-                        {"text": "Les marges brutes", "isCorrect": False, "rationale": "Ceci est un terme comptable."}
+                        {"text": "Le calcul du coût des matières premières.", "isCorrect": False, "key": "A"},
+                        {"text": "Le calcul des charges indirectes (ou frais généraux), réparties par prestation ou par heure de travail.", "isCorrect": True, "key": "B"},
+                        {"text": "Le calcul du prix de vente HT uniquement.", "isCorrect": False, "key": "C"},
+                        {"text": "Le calcul du taux de perte à la cuisson.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "La **revente** est une source de profit importante et un gage de professionnalisme, car elle permet au client d'entretenir la qualité de sa prestation (couleur, soin) à la maison."
+                    "correction": "Les **charges indirectes** (fixes) doivent être incluses dans le prix de revient (par un coefficient ou une imputation horaire) pour garantir la rentabilité globale du salon."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Comment le coiffeur évalue-t-il la 'résistance' ou l'élasticité d'un cheveu ?",
+                    "question": "Si le taux de TVA applicable à la 'vente de produits cosmétiques' est de 20%, quel est le montant de la TVA pour un masque à 25,00 € HT ?",
                     "answerOptions": [
-                        {"text": "En regardant la brillance du cheveu.", "isCorrect": False, "rationale": "La brillance est liée à la cuticule (état, pH)."},
-                        {"text": "En tirant doucement sur une mèche mouillée et en observant sa capacité à revenir à sa longueur initiale.", "isCorrect": True, "rationale": "L'**élasticité** est testée sur cheveux mouillés. Un cheveu en bonne santé s'étire sans casser et reprend sa forme. Un cheveu qui s'étire beaucoup et ne revient pas est très endommagé (élastique)."},
-                        {"text": "En le brossant très fort.", "isCorrect": False, "rationale": "Ceci est un test de résistance à la casse, mais non d'élasticité."},
-                        {"text": "En mesurant son épaisseur à la règle.", "isCorrect": False, "rationale": "Ceci est la nature (fin/épais)."}
+                        {"text": "5,00 € (25,00 € x 0,20).", "isCorrect": True, "key": "A"},
+                        {"text": "75,0 kg de farine.", "isCorrect": False, "key": "B"},
+                        {"text": "100,0 kg de farine.", "isCorrect": False, "key": "C"},
+                        {"text": "50,0 kg de farine.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **test d'élasticité** est crucial. Un cheveu trop élastique doit être traité avec des soins protéinés pour le renforcer avant d'envisager une nouvelle technique chimique."
+                    "correction": "Calcul : Montant de la **TVA** = Prix HT * Taux de TVA. Soit 25,00 € * 0,20 = **5,00 €**. Le prix TTC sera de 30,00 € (25,00 € + 5,00 €)."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quel terme marketing désigne le processus de fidélisation du client ?",
+                    "question": "Quel est le but du 'Poids Net' (PN) d'un ingrédient dans la fiche technique de prestation (FTP) ?",
                     "answerOptions": [
-                        {"text": "La prospection", "isCorrect": False, "rationale": "La prospection est l'acquisition de nouveaux clients."},
-                        {"text": "La rétention client (ou fidélisation)", "isCorrect": True, "rationale": "La **rétention client** est l'ensemble des actions visant à maintenir la clientèle existante (cartes de fidélité, offres personnalisées, qualité de service)."},
-                        {"text": "L'amortissement", "isCorrect": False, "rationale": "L'amortissement est comptable."},
-                        {"text": "L'inventaire", "isCorrect": False, "rationale": "L'inventaire est la gestion des stocks."}
+                        {"text": "Le poids de l'ingrédient tel qu'il est ajouté à la formule (sans les emballages, les déchets ou les impuretés).", "isCorrect": True, "key": "A"},
+                        {"text": "Le prix de vente HT du produit fini.", "isCorrect": False, "key": "B"},
+                        {"text": "Le coût total de la main d'œuvre.", "isCorrect": False, "key": "C"},
+                        {"text": "Le taux de perte à la cuisson.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Il est plus coûteux d'acquérir un nouveau client que de fidéliser un client existant. La qualité du service et du conseil est le meilleur outil de **rétention client**."
+                    "correction": "Le **poids net** (ou dosage : ex. 15 g de couleur) est la base du calcul du coût des matières premières. On ne compte que la quantité de produit effectivement utilisée."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "En coloration, quelle est la principale anomalie que l'on cherche à identifier lors du diagnostic en racines (repousse) ?",
+                    "question": "Comment calcule-t-on le 'Prix TTC' (Toutes Taxes Comprises) à partir du Prix HT (Hors Taxe) et du taux de TVA ?",
                     "answerOptions": [
-                        {"text": "La longueur des pointes.", "isCorrect": False, "rationale": "La longueur est visible sur toute la tête."},
-                        {"text": "La présence d'un fond d'éclaircissement rouge.", "isCorrect": False, "rationale": "Ceci apparaît après la décoloration."},
-                        {"text": "Le pourcentage de cheveux blancs et la hauteur de ton naturelle.", "isCorrect": True, "rationale": "La **repousse** indique la base de travail : le pourcentage de **cheveux blancs** (à couvrir) et la **hauteur de ton naturelle** (pour choisir l'oxydant et la formule colorante)."},
-                        {"text": "Le diamètre du cheveu (fin ou épais).", "isCorrect": False, "rationale": "Le diamètre est le même partout."}
+                        {"text": "Les charges variables.", "isCorrect": False, "key": "A"},
+                        {"text": "Prix HT multiplié par (1 + Taux de TVA en décimal, soit 1,20 pour 20%).", "isCorrect": True, "key": "B"},
+                        {"text": "Le coût de la main d'œuvre.", "isCorrect": False, "key": "C"},
+                        {"text": "Le prix de vente HT du produit fini.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le diagnostic de la **repousse** est la base de toute retouche couleur. Il dicte la formule (base, reflet, oxydant) pour obtenir un résultat uniforme entre la racine et les longueurs."
+                    "correction": "Formule économique : **Prix TTC = Prix HT x (1 + t)**. Cette formule est essentielle pour la facturation et l'encaissement (gestion de la TVA collectée)."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Quel est le risque de réaliser une permanente sur un cheveu fortement coloré avec du henné naturel pur ?",
+                    "question": "Comment s'appelle l'opération qui consiste à 'compter les produits' pour vérifier l'exactitude des stocks ?",
                     "answerOptions": [
-                        {"text": "Un éclaircissement non désiré de la couleur.", "isCorrect": False, "rationale": "Le henné est stable."},
-                        {"text": "La coloration peut virer au vert.", "isCorrect": False, "rationale": "Ceci arrive avec la décoloration, pas la permanente."},
-                        {"text": "Une incompatibilité chimique entraînant une forte chaleur, la casse ou la brûlure du cheveu.", "isCorrect": True, "rationale": "Le **henné naturel pur** (notamment celui contenant des sels métalliques non compatibles) peut interagir violemment avec les produits de permanente ou de défrisage, provoquant une **réaction chimique forte** (chaleur) et la casse des cheveux."},
-                        {"text": "L'absence totale de boucles.", "isCorrect": False, "rationale": "Ceci est le risque si la permanente est mal faite."}
+                        {"text": "Le test d'alvéographe.", "isCorrect": False, "key": "A"},
+                        {"text": "L'inventaire : le dénombrement (comptage) physique des stocks pour ajuster les comptes et contrôler les pertes.", "isCorrect": True, "key": "B"},
+                        {"text": "Le test de DLC.", "isCorrect": False, "key": "C"},
+                        {"text": "Le test de température de la pâte.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Il est impératif de diagnostiquer la présence de henné métallique ou d'attendre une très longue repousse avant d'appliquer un produit de permanente ou de lissage chimique. Le **risque de casse** est majeur."
+                    "correction": "L'**inventaire** (mensuel ou annuel) permet de valoriser les stocks (actif de l'entreprise) et de calculer le coût réel des marchandises vendues (CMV)."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quel est l'objectif du 'cross-selling' (vente croisée) en coiffure ?",
+                    "question": "Quel est le rôle du 'Prix d'appel' (tarif de base bas) dans la stratégie commerciale du salon ?",
                     "answerOptions": [
-                        {"text": "Vendre un produit de soin pour le corps.", "isCorrect": False, "rationale": "Ceci est une vente hors-domaine."},
-                        {"text": "Proposer un produit complémentaire à la prestation que le client vient d'acheter.", "isCorrect": True, "rationale": "Le **cross-selling** (vente croisée) consiste à vendre un produit qui va avec la prestation achetée (ex: si coupe + brushing, proposer un spray thermo-protecteur pour le coiffage)."},
-                        {"text": "Réserver le prochain rendez-vous avant que le client parte.", "isCorrect": False, "rationale": "Ceci est la prise de rendez-vous."},
-                        {"text": "Vendre un produit pour les cheveux d'enfant.", "isCorrect": False, "rationale": "Ceci est une catégorie de produit."}
+                        {"text": "Attirer le client avec un prix faible (coupe simple, brushing) pour ensuite lui vendre des services additionnels (couleur, soin).", "isCorrect": True, "key": "A"},
+                        {"text": "Le taux standard de 0%.", "isCorrect": False, "key": "B"},
+                        {"text": "Le taux réduit de 5,5%.", "isCorrect": False, "key": "C"},
+                        {"text": "Le taux standard de 10%.", "isCorrect": False, "key": "D"}
                     ],
-                    "correction": "Le **cross-selling** est une technique qui ajoute de la valeur pour le client et le salon. Le produit est directement lié au besoin créé par le service (ex: shampoing spécifique après une couleur)."
+                    "correction": "Le **prix d'appel** est un outil marketing. Il permet d'attirer le client sur une prestation de base (faible marge) pour le fidéliser et lui vendre des prestations à forte marge."
                 }
             ]
         }

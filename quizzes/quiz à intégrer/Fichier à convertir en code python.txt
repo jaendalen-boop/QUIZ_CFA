@@ -1,0 +1,605 @@
+THÈME 1 : TECHNOLOGIE DES MATÉRIAUX ET SUPPORTS (Questions 1 à 20)
+
+Question 1 : Dans le classement UPEC, que désigne la lettre P ?
+
+A. Le poinçonnement B. La porosité du carreau à l'eau C. La protection contre les produits chimiques acides D. La provenance géographique du matériau
+
+Rappel de Cours : P correspond au Poinçonnement (chute d'objets, pieds de meubles, talons). U = Usure, E = Eau, C = Chimique.
+
+Question 2 : Quelle est la caractéristique principale du Grès Cérame ?
+
+A. Sa porosité quasi nulle B. Sa composition à base de pierre volcanique naturelle et de résine C. Sa fragilité extrême D. Son obligation d'être toujours émaillé
+
+Rappel de Cours : Le grès cérame est vitrifié dans la masse. Avec une absorption d'eau inférieure à 0,5%, il est très dur et ingélif.
+
+Question 3 : Un mortier-colle classé C2S1 est :
+
+A. Amélioré et déformable B. Standard C. Uniquement pour les murs intérieurs en plâtre D. Une colle en pâte prête à l'emploi non résistante au gel
+
+Rappel de Cours : C2 signifie "performances améliorées" (adhérence) et S1 signifie "déformable" (capable d'absorber des contraintes comme sur un plancher chauffant ou une façade).
+
+Question 4 : La terre cuite (tomette) est un matériau :
+
+A. Absorbant B. Vitrifié C. Insensible aux taches d'huile et de graisse sans traitement D. Synthétique
+
+Rappel de Cours : La terre cuite est poreuse. Elle nécessite impérativement un traitement (imperméabilisant ou huile de lin) après la pose pour ne pas se tacher.
+
+Question 5 : Qu'est-ce qu'un carreau "rectifié" ?
+
+A. Un carreau aux bords recoupés droits après cuisson B. Un carreau qui a été recuit deux fois pour changer sa couleur C. Un carreau avec des bords arrondis D. Un carreau artisanal
+
+Rappel de Cours : La rectification est une taille mécanique des bords pour obtenir des dimensions exactes et des angles vifs, permettant des joints très fins (2mm).
+
+Question 6 : Lequel de ces supports est interdit pour une pose collée directe sans préparation spécifique en zone humide ?
+
+A. Le plâtre traditionnel B. Le béton banché C. La plaque de ciment D. Le bloc de béton cellulaire hydrofugé dans la masse
+
+Rappel de Cours : Le plâtre est très sensible à l'eau. En zone humide (douche), il nécessite impérativement une protection (SPEC) ou un primaire étanche avant carrelage.
+
+Question 7 : Quelle colle utilise-t-on pour poser sur un support bois (panneaux CTBH/CTBX) ?
+
+A. Une colle bi-composant ou très déformable (C2S1 / C2S2) B. Un mortier de scellement classique maigre C. Une barbotine de ciment pur D. Une colle standard C1
+
+Rappel de Cours : Le bois "travaille" (bouge). Il faut une colle capable de suivre ces mouvements sans casser, donc très flexible.
+
+Question 8 : La norme PEI IV indique un carreau destiné à :
+
+A. Un passage intense B. Un usage mural uniquement C. Une salle de bain privative D. Un plafond
+
+Rappel de Cours : Le classement PEI (pour l'émail) va de I à V. PEI IV et V sont pour les sols soumis à des passages fréquents (magasins, entrées, cuisines).
+
+Question 9 : Un "Primaire" sert avant tout à :
+
+A. Réguler la porosité B. Reboucher les gros trous du mur C. Coller le carreau D. Faire briller
+
+Rappel de Cours : Il uniformise l'absorption du support (évite que la colle ne "grille" en séchant trop vite) et fixe les poussières résiduelles.
+
+Question 10 : La "Barbotine" est constituée de :
+
+A. Ciment et eau B. Sable et chaux C. Plâtre et filasse D. Colle et résine
+
+Rappel de Cours : Mélange liquide de ciment pur et d'eau, utilisé pour faire adhérer le carrelage sur une chape fraîche en pose scellée (traditionnelle).
+
+Question 11 : Le travertin est une roche :
+
+A. Calcaire sédimentaire B. Volcanique très dure comme le granit C. Artificielle fabriquée en usine D. Plastique
+
+Rappel de Cours : C'est une pierre naturelle calcaire comportant des petites cavités (vacuoles) qu'il faut souvent reboucher lors du jointoiement.
+
+Question 12 : Un joint de carrelage "époxy" est à base de :
+
+A. Résine thermodurcissable B. Ciment blanc et sable fin C. Chaux hydraulique naturelle D. Plâtre gros de construction
+
+Rappel de Cours : L'époxy est une résine bi-composant (chimique) totalement étanche, anti-tache et très résistante, contrairement aux joints ciment.
+
+Question 13 : Quel outil diamanté est nécessaire pour percer du grès cérame ?
+
+A. Un trépan B. Un foret béton à percussion C. Une mèche à bois plate D. Un poinçon
+
+Rappel de Cours : Le grès cérame est trop dur pour les forets classiques. On utilise un trépan diamanté (souvent refroidi à l'eau ou à la cire) pour l'user par abrasion.
+
+Question 14 : La chape fluide anhydrite craint :
+
+A. L'humidité résiduelle B. La chaleur du chauffage au sol C. Les grands carreaux D. Le primaire
+
+Rappel de Cours : À base de sulfate de calcium, elle est incompatible avec l'eau une fois sèche et incompatible chimiquement avec le ciment (colle) sans primaire.
+
+Question 15 : Les carreaux de faïence sont constitués :
+
+A. D'argile pressée émaillée B. De ciment teinté dans la masse C. De verre fondu D. De granit poli
+
+Rappel de Cours : La faïence est une céramique à pâte poreuse (biscuit) recouverte d'une couche d'émail décoratif imperméable.
+
+Question 16 : Le SPEC (Système de Protection à l'Eau sous Carrelage) est :
+
+A. Une protection liquide B. Une étanchéité totale pour piscine C. Un type de carrelage D. Une marque de colle
+
+Rappel de Cours : C'est une résine qu'on applique au rouleau sur les murs de douche pour protéger le support (plâtre) des infiltrations, mais ce n'est pas un cuvelage.
+
+Question 17 : Quelle est la durée de vie pratique d'une gâchée de mortier-colle (DPU) ?
+
+A. Quelques heures B. 10 minutes C. 2 jours D. 30 secondes
+
+Rappel de Cours : La Durée Pratique d'Utilisation est le temps pendant lequel on peut utiliser la colle dans le seau avant qu'elle ne commence à durcir.
+
+Question 18 : Un carreau "ingélif" résiste :
+
+A. Au gel B. Aux rayures profondes C. Aux acides forts D. Au feu
+
+Rappel de Cours : Sa faible porosité empêche l'eau de pénétrer et d'éclater le carreau en gonflant sous l'effet du gel.
+
+Question 19 : Le peigne U9 dépose des sillons de :
+
+A. 9 mm carrés B. 9 cm de haut C. 1 mm de large D. Forme triangulaire
+
+Rappel de Cours : La nomenclature U indique des dents carrées. Le chiffre indique la taille de la dent en mm.
+
+Question 20 : Les plaques de prête à carreler (type Wedi) sont en :
+
+A. Polystyrène extrudé B. Laine de roche compressée C. Bois aggloméré hydrofuge D. Carton alvéolé
+
+Rappel de Cours : Mousse rigide de polystyrène extrudé recouverte d'un tissu de verre et d'un enduit mortier, offrant un support léger et étanche.
+THÈME 2 : TECHNIQUES DE POSE (Questions 21 à 40)
+
+Question 21 : Le double encollage est obligatoire pour les carreaux de :
+
+A. Grand format B. Mosaïque 2x2 cm C. Faïence 15x15 cm D. Tomette 10x10 cm
+
+Rappel de Cours : Au-delà d'un certain format (souvent 30x30 cm ou plus selon les normes colles), il faut encoller le support ET le dos du carreau pour chasser l'air.
+
+Question 22 : La largeur minimale du joint pour un carrelage rectifié au sol est de :
+
+A. 2 mm B. 0 mm (joint nul) C. 1 cm D. 5 mm minimum
+
+Rappel de Cours : La pose à "joint nul" est interdite. Pour du rectifié, le DTU autorise de descendre à 2 mm.
+
+Question 23 : En pose décalée (lames type parquet), le décalage maximum conseillé est :
+
+A. 1/3 de la longueur B. 1/2 de la longueur C. Aléatoire complet D. 5 cm
+
+Rappel de Cours : Pour éviter les "becs" dus au tuilage (courbure) naturel des carreaux longs, on évite le décalage à coupe de pierre (1/2).
+
+Question 24 : Le calepinage sert à :
+
+A. Prévoir les coupes B. Nettoyer le sol C. Mélanger la colle D. Poncer les joints
+
+Rappel de Cours : C'est le plan de pose (dessin) qui permet de répartir les coupes esthétiquement et de calculer les quantités.
+
+Question 25 : Le temps d'ouverture de la colle est :
+
+A. Le délai maximum pour afficher le carreau après étalement B. Le temps de mélange C. Le temps de séchage final D. L'heure d'ouverture du chantier
+
+Rappel de Cours : Si on dépasse ce temps, la colle forme une peau en surface et n'adhère plus au carreau (ne transfère plus).
+
+Question 26 : Un joint de fractionnement doit traverser :
+
+A. La chape et le carrelage B. Juste le carrelage C. Juste la chape D. Le plafond
+
+Rappel de Cours : Il divise les grandes surfaces (tous les 60m² environ) pour canaliser les fissures dues au retrait du béton.
+
+Question 27 : Quelle pente minimale pour une douche à l'italienne ?
+
+A. 1 % à 2 % B. 10 % C. 0 % D. 0,1 %
+
+Rappel de Cours : Il faut une pente suffisante pour l'évacuation rapide de l'eau, généralement entre 1 et 2 cm par mètre.
+
+Question 28 : La pose sur plots est utilisée pour :
+
+A. Les terrasses extérieures B. Les douches C. Les murs D. Les plafonds
+
+Rappel de Cours : Elle permet de créer un sol drainant, démontable et de passer des câbles/tuyaux dessous, sans jointoiement.
+
+Question 29 : "Battre" un carreau signifie :
+
+A. L'enfoncer dans la colle B. Le casser C. Le couper D. Le laver
+
+Rappel de Cours : On utilise un maillet pour écraser les sillons de colle et assurer un bon transfert (adhérence).
+
+Question 30 : Le joint périphérique (dilatation) se place :
+
+A. Le long des murs B. Au milieu de la pièce C. Autour de chaque carreau D. Sous la colle
+
+Rappel de Cours : Il faut laisser un vide (5mm min) contre les murs pour que le carrelage puisse bouger/dilater sans soulever ("chapeau de gendarme").
+
+Question 31 : L'outil pour couper une courbe dans un carreau est :
+
+A. La pince bec de perroquet B. La carrelette droite C. Le marteau D. Le tournevis
+
+Rappel de Cours : On grignote la matière petit à petit avec cette pince spécifique.
+
+Question 32 : Sur un mur, on démarre généralement la pose :
+
+A. Au 2ème rang, sur un tasseau B. Directement au sol C. Par le haut du plafond D. Par les coupes
+
+Rappel de Cours : Le sol n'étant jamais droit, on fixe une règle de niveau pour poser le 2ème rang entier, et on fait les coupes du bas à la fin.
+
+Question 33 : Les croisillons autonivelants (cadrans/coins) permettent de :
+
+A. Supprimer les désaffleurs B. Remplacer la colle C. Éviter les joints D. Poser sans niveau
+
+Rappel de Cours : Ils tirent mécaniquement les carreaux pour les aligner parfaitement en hauteur les uns par rapport aux autres.
+
+Question 34 : En pose diagonale, les axes de démarrage sont à :
+
+A. 45° B. 90° C. 10° D. 30°
+
+Rappel de Cours : On trace les diagonales de la pièce ou on part à 45° par rapport au mur principal.
+
+Question 35 : La natte de désolidarisation se pose :
+
+A. Entre le support et le carrelage B. Sur le carrelage C. Sous la chape D. Au plafond
+
+Rappel de Cours : Elle absorbe les tensions et mouvements horizontaux du support (fissures, plancher bois) pour ne pas les transmettre au carrelage.
+
+Question 36 : Pour une pose scellée, le support doit être :
+
+A. Une dalle béton brute ou un ravoirage B. Un plancher bois C. Un carrelage existant D. Une moquette
+
+Rappel de Cours : La pose scellée inclut la réalisation de la chape. On ne peut pas la faire sur un support déformable ou lisse.
+
+Question 37 : Le profilé de finition "quart de rond" protège :
+
+A. Les angles sortants B. Les joints C. Le sol D. Le peintre
+
+Rappel de Cours : Il masque la tranche du carreau (souvent non émaillée) et évite d'avoir un angle coupant ou fragile.
+
+Question 38 : Un délai de "mise en service" des locaux signifie :
+
+A. Le temps d'attente avant l'utilisation normale (trafic, eau) B. Le temps de pose C. La durée du chantier D. L'heure de la pause
+
+Rappel de Cours : Il faut attendre le séchage complet à cœur (colle + joints), souvent plusieurs jours, avant de remplir une piscine ou d'ouvrir un magasin.
+
+Question 39 : Le joint de fractionnement est obligatoire tous les :
+
+A. 60 m² environ B. 5 m² C. 200 m² D. 10 m²
+
+Rappel de Cours : Valeur indicative courante (ou tous les 8m linéaires) pour limiter les tensions de retrait.
+
+Question 40 : Le "taraudage" au dos d'un carreau :
+
+A. Améliore l'accroche mécanique B. Est un défaut C. Sert à l'évacuation de l'eau D. Sert à couper
+
+Rappel de Cours : Les reliefs (queues d'aronde ou stries) au dos des carreaux céramiques permettent à la colle ou au mortier de s'agripper.
+THÈME 3 : PRÉPARATION ET CHAPE (Questions 41 à 60)
+
+Question 41 : Le ragréage autolissant sert à :
+
+A. Niveler le sol B. Faire une pente C. Imperméabiliser D. Isoler
+
+Rappel de Cours : Il rattrape les défauts de planéité (creux/bosses) jusqu'à 10-20mm avant la pose collée.
+
+Question 42 : La bande périphérique résiliente (mousse) a une épaisseur de :
+
+A. 5 à 8 mm B. 10 cm C. 1 mm D. 50 cm
+
+Rappel de Cours : Elle désolidarise la chape des murs verticaux pour permettre la dilatation.
+
+Question 43 : Le test à la bombe à carbure mesure :
+
+A. L'humidité de la chape B. La dureté du béton C. La planéité D. La température
+
+Rappel de Cours : Méthode chimique précise pour savoir si la chape est assez sèche pour recevoir le revêtement (surtout pour les sols sensibles ou chapes anhydrites).
+
+Question 44 : Une chape "flottante" est posée sur :
+
+A. Un isolant thermique ou acoustique B. Le béton directement C. De l'eau D. Du sable
+
+Rappel de Cours : Elle est séparée de la structure porteuse par une couche d'interposition (isolant), d'où le terme "flottante".
+
+Question 45 : Le treillis soudé sert à :
+
+A. Armer la chape B. Chauffer le sol C. Faire le niveau D. Rien
+
+Rappel de Cours : Il limite la fissuration de retrait du mortier, surtout dans les chapes flottantes.
+
+Question 46 : Pour carreler sur de l'ancien carrelage, il faut appliquer :
+
+A. Un primaire d'adhérence B. De l'eau C. De l'huile D. Un vernis
+
+Rappel de Cours : La surface lisse de l'ancien carrelage n'offre pas d'accroche. Le primaire (souvent granuleux) crée un pont d'adhérence.
+
+Question 47 : La "forme de pente" se tire avec :
+
+A. Des guides inclinés B. Un niveau laser horizontal C. Un râteau D. Une pelle
+
+Rappel de Cours : Indispensable pour l'écoulement des eaux sur terrasse.
+
+Question 48 : Le dosage classique d'une chape mortier est de :
+
+A. 300-350 kg de ciment / m3 B. 150 kg / m3 C. 600 kg / m3 D. 50 kg / m3
+
+Rappel de Cours : Un bon équilibre pour avoir une chape solide mais pas cassante (trop de retrait).
+
+Question 49 : La laitance de surface doit être :
+
+A. Éliminée par ponçage B. Conservée C. Peinte D. Mouillée
+
+Rappel de Cours : C'est une croûte friable sans cohésion qui empêche la colle de tenir sur le "vrai" support dur.
+
+Question 50 : Le primaire pour support poreux (plâtre) :
+
+A. Bloque le fond B. Le rend rugueux C. Le mouille D. Le décape
+
+Rappel de Cours : Il empêche le support de boire l'eau de la colle instantanément.
+
+Question 51 : Le SEL (Système d'Étanchéité Liquide) se pose :
+
+A. Sous le carrelage B. Sur le carrelage C. Sous la chape D. Dehors
+
+Rappel de Cours : Dernière barrière étanche avant le revêtement céramique (douches, balcons).
+
+Question 52 : Une chape adhérente est :
+
+A. Collée au support béton (souvent avec barbotine) B. Posée sur un film plastique C. Posée sur isolant D. Suspendue
+
+Rappel de Cours : Contrairement à la chape flottante ou désolidarisée, elle fait corps avec la dalle.
+
+Question 53 : Le "sonnage" détecte :
+
+A. Les décollements B. L'humidité C. Les tuyaux D. L'électricité
+
+Rappel de Cours : Un son creux révèle un vide sous le carreau ou la chape.
+
+Question 54 : Le sable pour mortier doit être :
+
+A. Lavé (propre) B. Argileux C. Salé D. Organique
+
+Rappel de Cours : Les impuretés nuisent à la résistance du ciment.
+
+Question 55 : Le délai de séchage (DTU) d'une chape ciment est d'environ :
+
+A. 1 semaine par cm d'épaisseur B. 1 jour C. 1 heure D. 1 an
+
+Rappel de Cours : Règle empirique pour le séchage naturel avant recouvrement.
+
+Question 56 : L'épaisseur mini d'une chape rapportée est de :
+
+A. 4 cm (ou 3 à 5 cm selon le type) B. 5 mm C. 1 mm D. 20 cm
+
+Rappel de Cours : En dessous, le mortier n'a pas de résistance mécanique et casse.
+
+Question 57 : Un joint de dilatation bâtiment doit être :
+
+A. Respecté (non recouvert) B. Comblé au ciment C. Carrelé par dessus D. Ignoré
+
+Rappel de Cours : On utilise un profilé souple spécifique ou on arrête le carrelage de part et d'autre.
+
+Question 58 : Une natte drainante s'utilise :
+
+A. En extérieur B. En intérieur sec C. Au mur D. Au plafond
+
+Rappel de Cours : Pour éviter la stagnation d'eau dans la structure de la terrasse.
+
+Question 59 : Le ravoirage sert à :
+
+A. Noyer les gaines techniques (plomberie/elec) et remettre à niveau B. Coller le carrelage C. Faire l'étanchéité D. Décorer
+
+Rappel de Cours : Couche maigre de mortier sous la chape ou l'isolant.
+
+Question 60 : L'avis technique est délivré par :
+
+A. Le CSTB B. Le carreleur C. Le client D. La mairie
+
+Rappel de Cours : Centre Scientifique et Technique du Bâtiment. Il valide les procédés non traditionnels.
+THÈME 4 : MOSAÏQUE ET FINITIONS (Questions 61 à 80)
+
+Question 61 : La mosaïque sur papier "Belle Face" se pose :
+
+A. Papier vers le haut (visible) B. Papier dans la colle C. Papier retiré avant la pose D. Papier sur le côté
+
+Rappel de Cours : Le papier maintient les tesselles par le dessus. On le mouille et on l'enlève une fois la colle prise, avant de faire les joints.
+
+Question 62 : Le joint époxy est :
+
+A. Anti-acide et étanche B. Poreux C. Facile à nettoyer à l'eau froide D. Fragile
+
+Rappel de Cours : Résistant aux attaques chimiques et bactériologiques (cuisines pro, piscines).
+
+Question 63 : Le nettoyage du voile de ciment se fait à :
+
+A. L'acide (produit détartrant) B. La javel C. L'huile D. Le savon
+
+Rappel de Cours : Il faut dissoudre la pellicule de ciment (alcalin) avec une solution acide adaptée.
+
+Question 64 : La pince Zag-Zag coupe :
+
+A. La pâte de verre et les émaux B. Le bois C. Le béton D. L'acier
+
+Rappel de Cours : Outil de mosaïste pour tailler les tesselles.
+
+Question 65 : L'émulsion du joint consiste à :
+
+A. Lisser le joint frais à l'éponge humide B. Mélanger la poudre C. Attendre que ça sèche D. Peindre
+
+Rappel de Cours : Cela ferme le grain du joint et le rend régulier.
+
+Question 66 : La colle pour pâte de verre en piscine est souvent adjuvée de :
+
+A. Latex B. Sable C. Plâtre D. Gravier
+
+Rappel de Cours : Pour augmenter l'adhérence et l'imperméabilité.
+
+Question 67 : Opus Incertum =
+
+A. Pose irrégulière (morceaux cassés) B. Pose droite C. Pose diagonale D. Pose chevron
+
+Rappel de Cours : Assemblage de fragments de formes aléatoires.
+
+Question 68 : Pour un joint silicone propre, on utilise :
+
+A. De l'eau savonneuse pour lisser B. De la poussière C. De l'huile de vidange D. Rien
+
+Rappel de Cours : Le produit lissant empêche le silicone de coller à l'outil.
+
+Question 69 : Les tesselles sont :
+
+A. Les éléments de la mosaïque B. Les outils C. Les joints D. Les colles
+
+Rappel de Cours : Petits cubes de matière.
+
+Question 70 : La barbotine de jointoiement s'applique :
+
+A. En diagonale avec une raclette caoutchouc B. Au rouleau C. Au pistolet D. À la main
+
+Rappel de Cours : Pour bien remplir les interstices sans creuser.
+
+Question 71 : Un joint large nécessite :
+
+A. Du sable dans le mélange B. Du ciment pur C. De l'eau seulement D. Du plâtre
+
+Rappel de Cours : Pour éviter le retrait et la fissuration.
+
+Question 72 : Rénover un joint silicone :
+
+A. Tout enlever et refaire B. Remettre par dessus C. Laver D. Peindre
+
+Rappel de Cours : Le neuf ne tient pas sur le vieux.
+
+Question 73 : Andamento :
+
+A. Flux des tesselles B. Couleur C. Colle D. Outil
+
+Rappel de Cours : La direction des lignes de pose en mosaïque d'art.
+
+Question 74 : Calepinage rosace :
+
+A. Du centre vers l'extérieur B. Des bords vers le centre C. Au hasard D. En ligne droite
+
+Rappel de Cours : Pour centrer le motif.
+
+Question 75 : Joint creusé =
+
+A. Trop d'eau au nettoyage B. Pas assez d'eau C. Joint trop dur D. Mauvaise couleur
+
+Rappel de Cours : L'éponge a emporté la matière.
+
+Question 76 : Protection terre cuite avant joint :
+
+A. Bouche-pores ou huile B. Eau C. Rien D. Acide
+
+Rappel de Cours : Pour éviter que le ciment ne tache la porosité de la terre cuite.
+
+Question 77 : Mastic polyuréthane (PU) est :
+
+A. Un joint souple B. Un joint rigide C. Un ciment D. Une colle à bois
+
+Rappel de Cours : Utilisé pour les joints de dilatation.
+
+Question 78 : L'eau de rinçage des joints doit être :
+
+A. Changée souvent (propre) B. Sale C. Chaude D. Gelée
+
+Rappel de Cours : Pour ne pas laisser de traces (voile).
+
+Question 79 : Délai jointoiement après pose collée :
+
+A. 24h B. 1h C. 5 min D. 1 mois
+
+Rappel de Cours : Laisser sécher la colle.
+
+Question 80 : Pince à molettes =
+
+A. Zag-Zag B. Tenaille C. Cutter D. Marteau
+
+Rappel de Cours : Autre nom de la pince mosaïste.
+THÈME 5 : SÉCURITÉ, PLAN ET CALCULS (Questions 81 à 100)
+
+Question 81 : Surface d'un rectangle ?
+
+A. L x l B. L + l C. L x 2 D. l x 2
+
+Rappel de Cours : Longueur fois largeur.
+
+Question 82 : EPI obligatoire pour les genoux :
+
+A. Genouillères B. Casque C. Gants D. Masque
+
+Rappel de Cours : Prévient l'hygroma.
+
+Question 83 : Règle 3-4-5 (Pythagore) sert à :
+
+A. Faire une équerre (90°) B. Faire un rond C. Calculer une surface D. Mesurer un volume
+
+Rappel de Cours : Traçage d'angle droit sur chantier.
+
+Question 84 : Marge de sécurité (coupes/casse) :
+
+A. 5% à 10% B. 0% C. 50% D. 1%
+
+Rappel de Cours : Pour ne pas manquer de carreaux à la fin.
+
+Question 85 : Masque FFP2 pour :
+
+A. Poussières (ciment/silice) B. Bruit C. Froid D. Soleil
+
+Rappel de Cours : Protection respiratoire.
+
+Question 86 : Échelle 1/50 :
+
+A. 1 cm plan = 50 cm réel B. 1 cm plan = 1 m réel C. 50 cm plan = 1 cm réel D. Agrandissement
+
+Rappel de Cours : Réduction de 50 fois.
+
+Question 87 : Port de charge (sac ciment) :
+
+A. Dos droit, jambes fléchies B. Dos rond C. Jambes raides D. À bout de bras
+
+Rappel de Cours : Ergonomie et gestes et postures.
+
+Question 88 : Trait de niveau :
+
+A. 1 m du sol fini B. Au sol C. Au plafond D. 10 cm du sol
+
+Rappel de Cours : Référence commune à tous les artisans.
+
+Question 89 : Quantité de carreaux 30x30 dans 1 m² ?
+
+A. 11,11 B. 9 C. 10 D. 12
+
+Rappel de Cours : 1 / (0,3x0,3).
+
+Question 90 : FDS signifie :
+
+A. Fiche de Données de Sécurité B. Fin De Série C. Fer De Soudure D. Façade Du Sud
+
+Rappel de Cours : Informations toxicologiques des produits.
+
+Question 91 : Déchet dangereux :
+
+A. Colle époxy / Solvants B. Carton C. Carreau cassé D. Palette bois
+
+Rappel de Cours : Déchets chimiques.
+
+Question 92 : Surface pièce 4m x 5m :
+
+A. 20 m² B. 9 m² C. 18 m² D. 25 m²
+
+Rappel de Cours : 4 x 5.
+
+Question 93 : Cordeau à tracer (bleu) :
+
+A. Tracer des axes droits B. Mesurer C. Couper D. Nettoyer
+
+Rappel de Cours : Pour matérialiser le calepinage au sol.
+
+Question 94 : Projection ciment dans l'œil :
+
+A. Rincer à l'eau B. Frotter C. Mettre un pansement D. Rien
+
+Rappel de Cours : Urgence chimique (brûlure basique).
+
+Question 95 : Nombre de paquets pour 40m² (paquet de 1,5m²) :
+
+A. 27 B. 26 C. 20 D. 30
+
+Rappel de Cours : 40 / 1,5 = 26,66 -> 27 paquets entiers.
+
+Question 96 : Travail à l'avancement :
+
+A. On recule en posant B. On marche sur le carrelage C. On avance D. On piétine
+
+Rappel de Cours : Pour ne pas abîmer le travail frais.
+
+Question 97 : Aspirateur classe M :
+
+A. Poussières nocives chantier B. Maison C. Eau D. Voiture
+
+Rappel de Cours : Filtration moyenne (Medium) pour poussières minérales.
+
+Question 98 : Niveau à bulle :
+
+A. Horizontalité / Verticalité B. Poids C. Longueur D. Angle
+
+Rappel de Cours : Contrôle de la planéité et de l'aplomb.
+
+Question 99 : Périmètre rectangle :
+
+A. (L + l) x 2 B. L x l C. L + l D. L x 4
+
+Rappel de Cours : Longueur du contour (pour les plinthes).
+
+Question 100 : Sécurité électrique eau :
+
+A. Disjoncteur différentiel 30mA B. Prise normale C. Pieds nus D. Fils dénudés
+
+Rappel de Cours : Protection contre l'électrocution.
