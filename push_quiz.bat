@@ -1,4 +1,3 @@
-@echo off
 REM Script de push automatique pour QUIZ_CFA
 
 git add .
