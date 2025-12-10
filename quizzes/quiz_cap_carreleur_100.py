@@ -9,223 +9,223 @@ quiz_data = {
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Dans le classement UPEC, que désigne la lettre P ?",
+                    "question": "Dans le classement UPEC, à quoi correspond précisément la lettre 'E' ?",
                     "answerOptions": [
-                        {"text": "Le poinçonnement", "isCorrect": True},
-                        {"text": "La porosité du carreau à l'eau", "isCorrect": False},
-                        {"text": "La protection contre les produits chimiques acides", "isCorrect": False},
-                        {"text": "La provenance géographique du matériau", "isCorrect": False}
+                        {"text": "Au comportement du matériau face à l'eau et à l'humidité", "isCorrect": True},
+                        {"text": "À l'épaisseur du carreau en millimètres", "isCorrect": False},
+                        {"text": "À l'esthétique générale du produit", "isCorrect": False},
+                        {"text": "À l'envers du carreau (le dos)", "isCorrect": False}
                     ],
-                    "correction": "P correspond au Poinçonnement (chute d'objets, pieds de meubles, talons). U = Usure, E = Eau, C = Chimique."
+                    "correction": "Le classement UPEC définit l'usage des locaux. E (de E1 à E3) classe la résistance à l'eau. Une salle de bain requiert un classement E élevé (E3), contrairement à une chambre (E1)."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quelle est la caractéristique principale du Grès Cérame ?",
+                    "question": "Quelle est la propriété principale qui distingue le Grès Cérame des autres céramiques ?",
                     "answerOptions": [
-                        {"text": "Sa porosité quasi nulle", "isCorrect": True},
-                        {"text": "Sa composition à base de pierre volcanique naturelle et de résine", "isCorrect": False},
-                        {"text": "Sa fragilité extrême", "isCorrect": False},
-                        {"text": "Son obligation d'être toujours émaillé", "isCorrect": False}
+                        {"text": "Sa porosité quasi nulle (inférieure à 0,5 %)", "isCorrect": True},
+                        {"text": "Sa couleur toujours rouge brique due à l'argile", "isCorrect": False},
+                        {"text": "Le fait qu'il soit obligatoirement émaillé en surface", "isCorrect": False},
+                        {"text": "Sa fragilité importante lors de la découpe", "isCorrect": False}
                     ],
-                    "correction": "Le grès cérame est vitrifié dans la masse. Avec une absorption d'eau inférieure à 0,5%, il est très dur et ingélif."
+                    "correction": "Le grès cérame est vitrifié dans la masse lors d'une cuisson à très haute température. Cette absence de porosité le rend ingélif (résiste au gel), très dur et résistant aux taches."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Un mortier-colle classé C2S1 est :",
+                    "question": "Que signifie la classification 'C2S1' pour un mortier-colle ?",
                     "answerOptions": [
-                        {"text": "Amélioré et déformable", "isCorrect": True},
-                        {"text": "Standard", "isCorrect": False},
-                        {"text": "Uniquement pour les murs intérieurs en plâtre", "isCorrect": False},
-                        {"text": "Une colle en pâte prête à l'emploi non résistante au gel", "isCorrect": False}
+                        {"text": "C'est un mortier-colle amélioré et déformable", "isCorrect": True},
+                        {"text": "C'est une colle standard pour mur intérieur uniquement", "isCorrect": False},
+                        {"text": "C'est une colle en pâte prête à l'emploi", "isCorrect": False},
+                        {"text": "C'est un ciment pur sans adjuvant", "isCorrect": False}
                     ],
-                    "correction": "C2 signifie 'performances améliorées' (adhérence) et S1 signifie 'déformable' (capable d'absorber des contraintes comme sur un plancher chauffant ou une façade)."
+                    "correction": "C est un mortier-colle (Ciment), 2 signifie qu'il a des performances d'adhérence élevées, et S1 indique qu'il est capable de se déformer légèrement pour suivre les mouvements du support (plancher chauffant, façade)."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "La terre cuite (tomette) est un matériau :",
+                    "question": "La faïence est un produit céramique destiné exclusivement :",
                     "answerOptions": [
-                        {"text": "Absorbant", "isCorrect": True},
-                        {"text": "Vitrifié", "isCorrect": False},
-                        {"text": "Insensible aux taches d'huile et de graisse sans traitement", "isCorrect": False},
-                        {"text": "Synthétique", "isCorrect": False}
+                        {"text": "Au revêtement mural intérieur", "isCorrect": True},
+                        {"text": "Aux sols de salle de bain privatifs", "isCorrect": False},
+                        {"text": "Aux terrasses extérieures couvertes", "isCorrect": False},
+                        {"text": "Aux plafonds suspendus", "isCorrect": False}
                     ],
-                    "correction": "La terre cuite est poreuse. Elle nécessite impérativement un traitement (imperméabilisant ou huile de lin) après la pose pour ne pas se tacher."
+                    "correction": "La faïence a une pâte 'tendre' et poreuse (biscuit). Son émail est décoratif mais fragile. Elle ne résiste ni au gel, ni à l'usure de la marche (abrasion), d'où son usage mural strict."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Qu'est-ce qu'un carreau 'rectifié' ?",
+                    "question": "Pourquoi applique-t-on un primaire d'accrochage sur un support lisse avant de carreler ?",
                     "answerOptions": [
-                        {"text": "Un carreau aux bords recoupés droits après cuisson", "isCorrect": True},
-                        {"text": "Un carreau qui a été recuit deux fois pour changer sa couleur", "isCorrect": False},
-                        {"text": "Un carreau avec des bords arrondis", "isCorrect": False},
-                        {"text": "Un carreau artisanal", "isCorrect": False}
+                        {"text": "Pour créer un pont d'adhérence chimique et mécanique", "isCorrect": True},
+                        {"text": "Pour nettoyer le sol de la poussière", "isCorrect": False},
+                        {"text": "Pour changer la couleur du support", "isCorrect": False},
+                        {"text": "Pour imperméabiliser totalement le sol", "isCorrect": False}
                     ],
-                    "correction": "La rectification est une taille mécanique des bords pour obtenir des dimensions exactes et des angles vifs, permettant des joints très fins (2mm)."
+                    "correction": "Sur un support 'fermé' (lisse, non absorbant comme un ancien carrelage), la colle n'accroche pas. Le primaire apporte une rugosité et une compatibilité chimique pour que la colle tienne."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Lequel de ces supports est interdit pour une pose collée directe sans préparation spécifique en zone humide ?",
+                    "question": "Lequel de ces matériaux est une pierre naturelle calcaire ?",
                     "answerOptions": [
-                        {"text": "Le plâtre traditionnel", "isCorrect": True},
-                        {"text": "Le béton banché", "isCorrect": False},
-                        {"text": "La plaque de ciment", "isCorrect": False},
-                        {"text": "Le bloc de béton cellulaire hydrofugé dans la masse", "isCorrect": False}
+                        {"text": "Le Travertin", "isCorrect": True},
+                        {"text": "Le Grès cérame émaillé", "isCorrect": False},
+                        {"text": "Le carreau de ciment", "isCorrect": False},
+                        {"text": "La pâte de verre", "isCorrect": False}
                     ],
-                    "correction": "Le plâtre est très sensible à l'eau. En zone humide (douche), il nécessite impérativement une protection (SPEC) ou un primaire étanche avant carrelage."
+                    "correction": "Le travertin est une roche sédimentaire calcaire caractérisée par de petites cavités (vacuoles). C'est un matériau naturel, contrairement aux autres qui sont manufacturés."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quelle colle utilise-t-on pour poser sur un support bois (panneaux CTBH/CTBX) ?",
+                    "question": "Sur un support base plâtre (carreau de plâtre, enduit), quelle précaution chimique est indispensable avant de coller au ciment ?",
                     "answerOptions": [
-                        {"text": "Une colle bi-composant ou très déformable (C2S1 / C2S2)", "isCorrect": True},
-                        {"text": "Un mortier de scellement classique maigre", "isCorrect": False},
-                        {"text": "Une barbotine de ciment pur", "isCorrect": False},
-                        {"text": "Une colle standard C1", "isCorrect": False}
+                        {"text": "Appliquer un primaire pour isoler le plâtre du ciment", "isCorrect": True},
+                        {"text": "Mouiller abondamment le plâtre à l'eau", "isCorrect": False},
+                        {"text": "Poncer le plâtre jusqu'à la brique", "isCorrect": False},
+                        {"text": "Utiliser uniquement du ciment prompt", "isCorrect": False}
                     ],
-                    "correction": "Le bois 'travaille' (bouge). Il faut une colle capable de suivre ces mouvements sans casser, donc très flexible."
+                    "correction": "Le contact direct entre le plâtre et le ciment (alcalin) en présence d'humidité crée de l'ettringite (sel gonflant) qui décolle le carrelage. Le primaire sert de barrière."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "La norme PEI IV indique un carreau destiné à :",
+                    "question": "La norme PEI (Porcelain Enamel Institute) mesure :",
                     "answerOptions": [
-                        {"text": "Un passage intense", "isCorrect": True},
-                        {"text": "Un usage mural uniquement", "isCorrect": False},
-                        {"text": "Une salle de bain privative", "isCorrect": False},
-                        {"text": "Un plafond", "isCorrect": False}
+                        {"text": "La résistance à l'abrasion de surface des carreaux émaillés", "isCorrect": True},
+                        {"text": "La résistance à la glissance pieds nus", "isCorrect": False},
+                        {"text": "La résistance à la flexion du carreau", "isCorrect": False},
+                        {"text": "La résistance au gel", "isCorrect": False}
                     ],
-                    "correction": "Le classement PEI (pour l'émail) va de I à V. PEI IV et V sont pour les sols soumis à des passages fréquents (magasins, entrées, cuisines)."
+                    "correction": "Plus l'indice PEI est élevé (de I à V), plus l'émail résiste au piétinement sans s'user. Un PEI V est nécessaire pour un hall d'entrée d'immeuble."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Un 'Primaire' sert avant tout à :",
+                    "question": "Un support classé 'Wedi' ou 'Q-Board' est constitué de :",
                     "answerOptions": [
-                        {"text": "Réguler la porosité", "isCorrect": True},
-                        {"text": "Reboucher les gros trous du mur", "isCorrect": False},
-                        {"text": "Coller le carreau", "isCorrect": False},
-                        {"text": "Faire briller", "isCorrect": False}
+                        {"text": "Mousse rigide de polystyrène extrudé armée d'un tissu de verre et mortier", "isCorrect": True},
+                        {"text": "Plâtre hydrofugé simple", "isCorrect": False},
+                        {"text": "Bois aggloméré marine", "isCorrect": False},
+                        {"text": "Laine de roche compressée", "isCorrect": False}
                     ],
-                    "correction": "Il uniformise l'absorption du support (évite que la colle ne 'grille' en séchant trop vite) et fixe les poussières résiduelles."
+                    "correction": "Ces panneaux sont légers, imputrescibles, étanches et offrent un support idéal pour carreler directement (tabliers de baignoire, plans vasques)."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "La 'Barbotine' est constituée de :",
+                    "question": "La 'Tomette' traditionnelle en terre cuite nécessite un traitement après pose car :",
                     "answerOptions": [
-                        {"text": "Ciment et eau", "isCorrect": True},
-                        {"text": "Sable et chaux", "isCorrect": False},
-                        {"text": "Plâtre et filasse", "isCorrect": False},
-                        {"text": "Colle et résine", "isCorrect": False}
+                        {"text": "Elle est naturellement poreuse et tache facilement", "isCorrect": True},
+                        {"text": "Elle est trop glissante", "isCorrect": False},
+                        {"text": "Elle risque de fondre", "isCorrect": False},
+                        {"text": "Elle change de couleur à la lumière", "isCorrect": False}
                     ],
-                    "correction": "Mélange liquide de ciment pur et d'eau, utilisé pour faire adhérer le carrelage sur une chape fraîche en pose scellée (traditionnelle)."
+                    "correction": "La terre cuite absorbe les liquides (huile, vin). Il faut la saturer avec un hydrofuge/oléofuge ou de l'huile de lin pour la protéger durablement."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Le travertin est une roche :",
+                    "question": "Qu'est-ce qu'un SPEC (Système de Protection à l'Eau sous Carrelage) ?",
                     "answerOptions": [
-                        {"text": "Calcaire sédimentaire", "isCorrect": True},
-                        {"text": "Volcanique très dure comme le granit", "isCorrect": False},
-                        {"text": "Artificielle fabriquée en usine", "isCorrect": False},
-                        {"text": "Plastique", "isCorrect": False}
+                        {"text": "Une protection liquide appliquée au mur avant carrelage en zone humide", "isCorrect": True},
+                        {"text": "Un système d'étanchéité totale pour piscine", "isCorrect": False},
+                        {"text": "Un type de colle étanche", "isCorrect": False},
+                        {"text": "Un joint spécial", "isCorrect": False}
                     ],
-                    "correction": "C'est une pierre naturelle calcaire comportant des petites cavités (vacuoles) qu'il faut souvent reboucher lors du jointoiement."
+                    "correction": "Le SPEC protège le support sensible (plâtre) des éclaboussures dans une douche, mais ne résiste pas à la pression de l'eau comme une étanchéité de bassin."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Un joint de carrelage 'époxy' est à base de :",
+                    "question": "Quelle est la particularité d'une colle 'D2' (Dispersion) ?",
                     "answerOptions": [
-                        {"text": "Résine thermodurcissable", "isCorrect": True},
-                        {"text": "Ciment blanc et sable fin", "isCorrect": False},
-                        {"text": "Chaux hydraulique naturelle", "isCorrect": False},
-                        {"text": "Plâtre gros de construction", "isCorrect": False}
+                        {"text": "C'est une pâte prête à l'emploi résistante à l'humidité pour murs intérieurs", "isCorrect": True},
+                        {"text": "C'est une poudre à gâcher avec de l'eau", "isCorrect": False},
+                        {"text": "C'est une colle pour l'extérieur", "isCorrect": False},
+                        {"text": "C'est une colle rapide (30 minutes)", "isCorrect": False}
                     ],
-                    "correction": "L'époxy est une résine bi-composant (chimique) totalement étanche, anti-tache et très résistante, contrairement aux joints ciment."
+                    "correction": "Les colles en pâte (D) sèchent par évaporation de l'eau. D2 indique une tenue améliorée à l'humidité, idéale pour les murs de salles de bain, mais interdite au sol."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quel outil diamanté est nécessaire pour percer du grès cérame ?",
+                    "question": "Quel outil est le plus adapté pour percer un trou propre dans du grès cérame très dur ?",
                     "answerOptions": [
-                        {"text": "Un trépan", "isCorrect": True},
-                        {"text": "Un foret béton à percussion", "isCorrect": False},
+                        {"text": "Un trépan ou une scie cloche diamantée", "isCorrect": True},
+                        {"text": "Un foret béton classique à percussion", "isCorrect": False},
                         {"text": "Une mèche à bois plate", "isCorrect": False},
-                        {"text": "Un poinçon", "isCorrect": False}
+                        {"text": "Un pointeau et un marteau", "isCorrect": False}
                     ],
-                    "correction": "Le grès cérame est trop dur pour les forets classiques. On utilise un trépan diamanté (souvent refroidi à l'eau ou à la cire) pour l'user par abrasion."
+                    "correction": "Le grès cérame est trop dur pour être percé par percussion (risque de casse). Il faut l'user par abrasion avec du diamant."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "La chape fluide anhydrite craint :",
+                    "question": "Un mortier de jointoiement 'Flex' ou souple est conseillé pour :",
                     "answerOptions": [
-                        {"text": "L'humidité résiduelle", "isCorrect": True},
-                        {"text": "La chaleur du chauffage au sol", "isCorrect": False},
-                        {"text": "Les grands carreaux", "isCorrect": False},
-                        {"text": "Le primaire", "isCorrect": False}
+                        {"text": "Les supports soumis à des déformations (plancher bois, chauffage au sol)", "isCorrect": True},
+                        {"text": "Les murs en béton statiques", "isCorrect": False},
+                        {"text": "Reboucher des trous dans le mur", "isCorrect": False},
+                        {"text": "Coller les plinthes", "isCorrect": False}
                     ],
-                    "correction": "À base de sulfate de calcium, elle est incompatible avec l'eau une fois sèche et incompatible chimiquement avec le ciment (colle) sans primaire."
+                    "correction": "Ce mortier contient des résines qui lui permettent d'absorber de légères tensions sans fissurer, contrairement à un joint ciment standard rigide."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Les carreaux de faïence sont constitués :",
+                    "question": "La chape fluide Anhydrite est fabriquée à base de :",
                     "answerOptions": [
-                        {"text": "D'argile pressée émaillée", "isCorrect": True},
-                        {"text": "De ciment teinté dans la masse", "isCorrect": False},
-                        {"text": "De verre fondu", "isCorrect": False},
-                        {"text": "De granit poli", "isCorrect": False}
+                        {"text": "Sulfate de calcium (Gypse)", "isCorrect": True},
+                        {"text": "Ciment Portland gris", "isCorrect": False},
+                        {"text": "Chaux hydraulique", "isCorrect": False},
+                        {"text": "Argile expansée", "isCorrect": False}
                     ],
-                    "correction": "La faïence est une céramique à pâte poreuse (biscuit) recouverte d'une couche d'émail décoratif imperméable."
+                    "correction": "L'anhydrite permet de grandes surfaces sans joints de fractionnement et une mise en chauffe rapide, mais craint l'humidité résiduelle et nécessite un primaire spécifique."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Le SPEC (Système de Protection à l'Eau sous Carrelage) est :",
+                    "question": "Le profilé de finition 'quart de rond' en PVC ou Alu sert principalement à :",
                     "answerOptions": [
-                        {"text": "Une protection liquide", "isCorrect": True},
-                        {"text": "Une étanchéité totale pour piscine", "isCorrect": False},
-                        {"text": "Un type de carrelage", "isCorrect": False},
-                        {"text": "Une marque de colle", "isCorrect": False}
+                        {"text": "Protéger l'angle sortant des chocs et masquer la tranche du carreau", "isCorrect": True},
+                        {"text": "Faire l'étanchéité de la douche", "isCorrect": False},
+                        {"text": "Soutenir le plafond", "isCorrect": False},
+                        {"text": "Remplacer le joint de dilatation", "isCorrect": False}
                     ],
-                    "correction": "C'est une résine qu'on applique au rouleau sur les murs de douche pour protéger le support (plâtre) des infiltrations, mais ce n'est pas un cuvelage."
+                    "correction": "La coupe d'un carreau est souvent tranchante et inesthétique (biscuit visible). Le profilé offre une finition propre, arrondie et sécurisée."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Quelle est la durée de vie pratique d'une gâchée de mortier-colle (DPU) ?",
+                    "question": "À quoi sert le peigne (spatule crantée) du carreleur ?",
                     "answerOptions": [
-                        {"text": "Quelques heures", "isCorrect": True},
-                        {"text": "10 minutes", "isCorrect": False},
-                        {"text": "2 jours", "isCorrect": False},
-                        {"text": "30 secondes", "isCorrect": False}
+                        {"text": "À calibrer l'épaisseur du lit de colle de manière régulière", "isCorrect": True},
+                        {"text": "À gratter l'ancien carrelage", "isCorrect": False},
+                        {"text": "À lisser les joints", "isCorrect": False},
+                        {"text": "À mélanger la colle dans le seau", "isCorrect": False}
                     ],
-                    "correction": "La Durée Pratique d'Utilisation est le temps pendant lequel on peut utiliser la colle dans le seau avant qu'elle ne commence à durcir."
+                    "correction": "La taille des dents (6mm, 9mm, double encollage) détermine la quantité de colle déposée pour assurer le transfert nécessaire selon la taille du carreau."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Un carreau 'ingélif' résiste :",
+                    "question": "La norme de glissance 'R' (ex: R10, R11) concerne l'adhérence :",
                     "answerOptions": [
-                        {"text": "Au gel", "isCorrect": True},
-                        {"text": "Aux rayures profondes", "isCorrect": False},
-                        {"text": "Aux acides forts", "isCorrect": False},
-                        {"text": "Au feu", "isCorrect": False}
+                        {"text": "Pieds chaussés (locaux professionnels, terrasses)", "isCorrect": True},
+                        {"text": "Pieds nus (piscines)", "isCorrect": False},
+                        {"text": "Des véhicules", "isCorrect": False},
+                        {"text": "De la colle au support", "isCorrect": False}
                     ],
-                    "correction": "Sa faible porosité empêche l'eau de pénétrer et d'éclater le carreau en gonflant sous l'effet du gel."
+                    "correction": "Pour les pieds nus (salle de bain, piscine), on utilise le classement A, B, C. Le classement R (Ramp) concerne la sécurité avec chaussures."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Le peigne U9 dépose des sillons de :",
+                    "question": "Un carreau 'Rectifié' a subi un traitement mécanique pour :",
                     "answerOptions": [
-                        {"text": "9 mm carrés", "isCorrect": True},
-                        {"text": "9 cm de haut", "isCorrect": False},
-                        {"text": "1 mm de large", "isCorrect": False},
-                        {"text": "Forme triangulaire", "isCorrect": False}
+                        {"text": "Avoir des bords parfaitement droits et des dimensions exactes", "isCorrect": True},
+                        {"text": "Être rendu antidérapant", "isCorrect": False},
+                        {"text": "Devenir brillant comme un miroir", "isCorrect": False},
+                        {"text": "Résister aux acides", "isCorrect": False}
                     ],
-                    "correction": "La nomenclature U indique des dents carrées. Le chiffre indique la taille de la dent en mm."
+                    "correction": "La rectification est une taille mécanique des bords pour obtenir des dimensions exactes et des angles vifs, permettant des joints très fins (2 mm) pour un aspect plus contemporain et monolithique."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Les plaques de prête à carreler (type Wedi) sont en :",
+                    "question": "La 'Durée Pratique d'Utilisation' (DPU) d'une colle désigne :",
                     "answerOptions": [
-                        {"text": "Polystyrène extrudé", "isCorrect": True},
-                        {"text": "Laine de roche compressée", "isCorrect": False},
-                        {"text": "Bois aggloméré hydrofuge", "isCorrect": False},
-                        {"text": "Carton alvéolé", "isCorrect": False}
+                        {"text": "Le temps disponible pour utiliser le mélange dans le seau avant qu'il ne durcisse", "isCorrect": True},
+                        {"text": "Le temps de séchage une fois posé au mur", "isCorrect": False},
+                        {"text": "La durée de garantie décennale", "isCorrect": False},
+                        {"text": "Le temps qu'il faut pour mélanger la poudre", "isCorrect": False}
                     ],
-                    "correction": "Mousse rigide de polystyrène extrudé recouverte d'un tissu de verre et d'un enduit mortier, offrant un support léger et étanche."
+                    "correction": "Une fois gâchée, la réaction chimique commence. Après la DPU (ex: 3h), la colle perd ses propriétés et doit être jetée, il ne faut jamais rajouter d'eau."
                 }
             ]
         },
@@ -237,223 +237,223 @@ quiz_data = {
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Le double encollage est obligatoire pour les carreaux de :",
+                    "question": "La technique du 'Double Encollage' consiste à :",
                     "answerOptions": [
-                        {"text": "Grand format", "isCorrect": True},
-                        {"text": "Mosaïque 2x2 cm", "isCorrect": False},
-                        {"text": "Faïence 15x15 cm", "isCorrect": False},
-                        {"text": "Tomette 10x10 cm", "isCorrect": False}
+                        {"text": "Appliquer la colle sur le support ET au dos du carreau", "isCorrect": True},
+                        {"text": "Mettre deux couches de colle l'une sur l'autre sur le sol", "isCorrect": False},
+                        {"text": "Utiliser deux types de colles différents pour plus de sécurité", "isCorrect": False},
+                        {"text": "Coller le carreau puis recoller un autre carreau dessus", "isCorrect": False}
                     ],
-                    "correction": "Au-delà d'un certain format (souvent 30x30 cm ou plus selon les normes colles), il faut encoller le support ET le dos du carreau pour chasser l'air."
+                    "correction": "Obligatoire pour les grands formats, cette technique chasse l'air sous le carreau et garantit un taux de transfert de colle proche de 100%."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "La largeur minimale du joint pour un carrelage rectifié au sol est de :",
+                    "question": "Pour démarrer une pose droite au sol, on trace généralement :",
                     "answerOptions": [
-                        {"text": "2 mm", "isCorrect": True},
-                        {"text": "0 mm (joint nul)", "isCorrect": False},
-                        {"text": "1 cm", "isCorrect": False},
-                        {"text": "5 mm minimum", "isCorrect": False}
+                        {"text": "Deux axes perpendiculaires au centre de la pièce ou équilibrés par rapport à l'entrée", "isCorrect": True},
+                        {"text": "Une ligne le long du mur le plus long", "isCorrect": False},
+                        {"text": "Un trait au hasard au milieu", "isCorrect": False},
+                        {"text": "Le contour des meubles", "isCorrect": False}
                     ],
-                    "correction": "La pose à 'joint nul' est interdite. Pour du rectifié, le DTU autorise de descendre à 2 mm."
+                    "correction": "Démarrer au centre permet de répartir les coupes (les chutes) de manière égale sur les côtés, ce qui est plus esthétique que d'avoir un carreau entier d'un côté et une petite coupe de l'autre."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "En pose décalée (lames type parquet), le décalage maximum conseillé est :",
+                    "question": "Quelle est la largeur minimale autorisée pour un joint de carrelage au sol (hors rectifié) ?",
                     "answerOptions": [
-                        {"text": "1/3 de la longueur", "isCorrect": True},
-                        {"text": "1/2 de la longueur", "isCorrect": False},
-                        {"text": "Aléatoire complet", "isCorrect": False},
-                        {"text": "5 cm", "isCorrect": False}
+                        {"text": "4 mm minimum selon le DTU (pour carreaux pressés non rectifiés)", "isCorrect": True},
+                        {"text": "0 mm (pose à joints nuls)", "isCorrect": False},
+                        {"text": "10 mm obligatoirement", "isCorrect": False},
+                        {"text": "1 mm maximum", "isCorrect": False}
                     ],
-                    "correction": "Pour éviter les 'becs' dus au tuilage (courbure) naturel des carreaux longs, on évite le décalage à coupe de pierre (1/2)."
+                    "correction": "La pose à 'joint nul' est interdite car elle ne permet pas la dilatation des matériaux. Pour du rectifié, on peut descendre à 2 mm."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Le calepinage sert à :",
+                    "question": "Le joint de fractionnement de la chape doit être :",
                     "answerOptions": [
-                        {"text": "Prévoir les coupes", "isCorrect": True},
-                        {"text": "Nettoyer le sol", "isCorrect": False},
-                        {"text": "Mélanger la colle", "isCorrect": False},
-                        {"text": "Poncer les joints", "isCorrect": False}
+                        {"text": "Respecté et prolongé à travers le carrelage (profilé souple ou mastic)", "isCorrect": True},
+                        {"text": "Recouvert par le carrelage pour le cacher", "isCorrect": False},
+                        {"text": "Rempli de ciment dur", "isCorrect": False},
+                        {"text": "Déplacé selon l'envie du client", "isCorrect": False}
                     ],
-                    "correction": "C'est le plan de pose (dessin) qui permet de répartir les coupes esthétiquement et de calculer les quantités."
+                    "correction": "Si on carrele par-dessus un joint de fractionnement sans le respecter, le carrelage fissurera exactement à cet endroit lors des mouvements de la chape."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Le temps d'ouverture de la colle est :",
+                    "question": "Pour réaliser une coupe en angle rentrant ('coupe en drapeau' ou en L), il est conseillé de :",
                     "answerOptions": [
-                        {"text": "Le délai maximum pour afficher le carreau après étalement", "isCorrect": True},
-                        {"text": "Le temps de mélange", "isCorrect": False},
-                        {"text": "Le temps de séchage final", "isCorrect": False},
-                        {"text": "L'heure d'ouverture du chantier", "isCorrect": False}
+                        {"text": "Percer un trou à l'intersection des traits de coupe avant de couper", "isCorrect": True},
+                        {"text": "Couper directement avec la carrelette en forçant", "isCorrect": False},
+                        {"text": "Casser le carreau en deux et recoller", "isCorrect": False},
+                        {"text": "Chauffer le carreau au chalumeau", "isCorrect": False}
                     ],
-                    "correction": "Si on dépasse ce temps, la colle forme une peau en surface et n'adhère plus au carreau (ne transfère plus)."
+                    "correction": "Le trou (réalisé à la perceuse ou meuleuse) évite la concentration de contraintes qui ferait fendre le carreau dans l'angle intérieur."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Un joint de fractionnement doit traverser :",
+                    "question": "L'opération de 'battage' des carreaux a pour but :",
                     "answerOptions": [
-                        {"text": "La chape et le carrelage", "isCorrect": True},
-                        {"text": "Juste le carrelage", "isCorrect": False},
-                        {"text": "Juste la chape", "isCorrect": False},
-                        {"text": "Le plafond", "isCorrect": False}
+                        {"text": "D'écraser les sillons de colle pour assurer un bon transfert", "isCorrect": True},
+                        {"text": "De vérifier la solidité du carreau", "isCorrect": False},
+                        {"text": "De faire sécher la colle plus vite", "isCorrect": False},
+                        {"text": "D'enlever la poussière", "isCorrect": False}
                     ],
-                    "correction": "Il divise les grandes surfaces (tous les 60m² environ) pour canaliser les fissures dues au retrait du béton."
+                    "correction": "On tapote le carreau (maillet ou batte) pour chasser l'air et assurer que la colle mouille bien toute la surface du dos du carreau."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quelle pente minimale pour une douche à l'italienne ?",
+                    "question": "Quelle pente doit-on respecter pour une douche à l'italienne ?",
                     "answerOptions": [
-                        {"text": "1 % à 2 %", "isCorrect": True},
-                        {"text": "10 %", "isCorrect": False},
-                        {"text": "0 %", "isCorrect": False},
-                        {"text": "0,1 %", "isCorrect": False}
+                        {"text": "Entre 1 cm et 2 cm par mètre vers la bonde", "isCorrect": True},
+                        {"text": "Le sol doit être parfaitement plat", "isCorrect": False},
+                        {"text": "10 cm par mètre", "isCorrect": False},
+                        {"text": "Une pente inverse pour retenir l'eau", "isCorrect": False}
                     ],
-                    "correction": "Il faut une pente suffisante pour l'évacuation rapide de l'eau, généralement entre 1 et 2 cm par mètre."
+                    "correction": "L'évacuation de l'eau doit être rapide pour éviter la stagnation et les glissades."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "La pose sur plots est utilisée pour :",
+                    "question": "Que se passe-t-il si on ne respecte pas le joint périphérique (dilatation) ?",
                     "answerOptions": [
-                        {"text": "Les terrasses extérieures", "isCorrect": True},
-                        {"text": "Les douches", "isCorrect": False},
-                        {"text": "Les murs", "isCorrect": False},
-                        {"text": "Les plafonds", "isCorrect": False}
+                        {"text": "Le carrelage se soulève au milieu de la pièce ou casse les plinthes", "isCorrect": True},
+                        {"text": "Le carrelage change de couleur", "isCorrect": False},
+                        {"text": "Les joints se creusent", "isCorrect": False},
+                        {"text": "Rien, c'est juste esthétique", "isCorrect": False}
                     ],
-                    "correction": "Elle permet de créer un sol drainant, démontable et de passer des câbles/tuyaux dessous, sans jointoiement."
+                    "correction": "Le carrelage et la chape se dilatent. S'ils sont bloqués contre les murs, la pression énorme fait 'exploser' ou soulever le sol (phénomène de flambement)."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "'Battre' un carreau signifie :",
+                    "question": "La pose diagonale s'effectue traditionnellement avec un angle de :",
                     "answerOptions": [
-                        {"text": "L'enfoncer dans la colle", "isCorrect": True},
-                        {"text": "Le casser", "isCorrect": False},
-                        {"text": "Le couper", "isCorrect": False},
-                        {"text": "Le laver", "isCorrect": False}
+                        {"text": "45 degrés par rapport aux murs principaux", "isCorrect": True},
+                        {"text": "30 degrés", "isCorrect": False},
+                        {"text": "10 degrés", "isCorrect": False},
+                        {"text": "90 degrés", "isCorrect": False}
                     ],
-                    "correction": "On utilise un maillet pour écraser les sillons de colle et assurer un bon transfert (adhérence)."
+                    "correction": "Cette pose est plus complexe (beaucoup de coupes) mais permet de masquer les défauts de parallélisme des murs d'une pièce ('faux d'équerre')."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Le joint périphérique (dilatation) se place :",
+                    "question": "Les croisillons 'récupérables' doivent être :",
                     "answerOptions": [
-                        {"text": "Le long des murs", "isCorrect": True},
-                        {"text": "Au milieu de la pièce", "isCorrect": False},
-                        {"text": "Autour de chaque carreau", "isCorrect": False},
-                        {"text": "Sous la colle", "isCorrect": False}
+                        {"text": "Retirés avant de faire les joints", "isCorrect": True},
+                        {"text": "Laissés dans le joint et recouverts", "isCorrect": False},
+                        {"text": "Collés au fond", "isCorrect": False},
+                        {"text": "Fondus au chalumeau", "isCorrect": False}
                     ],
-                    "correction": "Il faut laisser un vide (5mm min) contre les murs pour que le carrelage puisse bouger/dilater sans soulever ('chapeau de gendarme')."
+                    "correction": "Si on les laisse, ils créent une surépaisseur ou apparaissent à travers le joint fin, ce qui est inesthétique et fragilise l'étanchéité."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "L'outil pour couper une courbe dans un carreau est :",
+                    "question": "Le 'Temps d'ouverture' de la colle correspond :",
                     "answerOptions": [
-                        {"text": "La pince bec de perroquet", "isCorrect": True},
-                        {"text": "La carrelette droite", "isCorrect": False},
-                        {"text": "Le marteau", "isCorrect": False},
-                        {"text": "Le tournevis", "isCorrect": False}
+                        {"text": "Au délai maximum entre l'étalement de la colle et la pose du carreau", "isCorrect": True},
+                        {"text": "Au temps qu'il faut pour ouvrir le sac", "isCorrect": False},
+                        {"text": "Au temps de séchage avant de marcher dessus", "isCorrect": False},
+                        {"text": "À la pause déjeuner", "isCorrect": False}
                     ],
-                    "correction": "On grignote la matière petit à petit avec cette pince spécifique."
+                    "correction": "Il ne faut pas étaler de la colle trop à l'avance. Si la colle forme une 'peau' en surface au toucher, elle est morte : il faut la racler et en remettre."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Sur un mur, on démarre généralement la pose :",
+                    "question": "En pose décalée (type parquet), pourquoi limite-t-on le décalage à 1/3 du carreau ?",
                     "answerOptions": [
-                        {"text": "Au 2ème rang, sur un tasseau", "isCorrect": True},
-                        {"text": "Directement au sol", "isCorrect": False},
-                        {"text": "Par le haut du plafond", "isCorrect": False},
-                        {"text": "Par les coupes", "isCorrect": False}
+                        {"text": "Pour limiter les désaffleurs liés au tuilage (courbure) naturel des carreaux", "isCorrect": True},
+                        {"text": "Parce que c'est interdit par la loi", "isCorrect": False},
+                        {"text": "Pour économiser des carreaux", "isCorrect": False},
+                        {"text": "Pour utiliser moins de colle", "isCorrect": False}
                     ],
-                    "correction": "Le sol n'étant jamais droit, on fixe une règle de niveau pour poser le 2ème rang entier, et on fait les coupes du bas à la fin."
+                    "correction": "Les carreaux longs sont souvent bombés au centre. Si on met le centre (point haut) à côté du bout (point bas) du carreau voisin, on crée une marche (désaffleur)."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Les croisillons autonivelants (cadrans/coins) permettent de :",
+                    "question": "Lors d'une pose murale, pourquoi utilise-t-on un tasseau ou une règle de départ ?",
                     "answerOptions": [
-                        {"text": "Supprimer les désaffleurs", "isCorrect": True},
-                        {"text": "Remplacer la colle", "isCorrect": False},
-                        {"text": "Éviter les joints", "isCorrect": False},
-                        {"text": "Poser sans niveau", "isCorrect": False}
+                        {"text": "Pour démarrer le deuxième rang parfaitement de niveau", "isCorrect": True},
+                        {"text": "Pour empêcher les carreaux de tomber", "isCorrect": False},
+                        {"text": "Pour décorer le bas du mur", "isCorrect": False},
+                        {"text": "Pour cacher la misère", "isCorrect": False}
                     ],
-                    "correction": "Ils tirent mécaniquement les carreaux pour les aligner parfaitement en hauteur les uns par rapport aux autres."
+                    "correction": "Le sol n'est jamais droit. On pose le carrelage mural à partir d'une ligne horizontale parfaite, puis on coupe les carreaux du bas (1er rang) sur mesure à la fin."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "En pose diagonale, les axes de démarrage sont à :",
+                    "question": "Le désaffleur désigne :",
                     "answerOptions": [
-                        {"text": "45°", "isCorrect": True},
-                        {"text": "90°", "isCorrect": False},
-                        {"text": "10°", "isCorrect": False},
-                        {"text": "30°", "isCorrect": False}
+                        {"text": "Une différence de niveau entre deux carreaux adjacents (une 'dalle')", "isCorrect": True},
+                        {"text": "Un carreau d'une couleur différente", "isCorrect": False},
+                        {"text": "Un joint mal fait", "isCorrect": False},
+                        {"text": "Une fissure dans le carreau", "isCorrect": False}
                     ],
-                    "correction": "On trace les diagonales de la pièce ou on part à 45° par rapport au mur principal."
+                    "correction": "C'est un défaut de planéité locale. Il y a des tolérances normatives, mais le carreleur doit viser le 'zéro désaffleur' pour l'esthétique et la sécurité."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "La natte de désolidarisation se pose :",
+                    "question": "La pince 'Bec de Perroquet' est utilisée pour :",
                     "answerOptions": [
-                        {"text": "Entre le support et le carrelage", "isCorrect": True},
-                        {"text": "Sur le carrelage", "isCorrect": False},
-                        {"text": "Sous la chape", "isCorrect": False},
-                        {"text": "Au plafond", "isCorrect": False}
+                        {"text": "Grignoter la céramique pour des coupes courbes ou complexes", "isCorrect": True},
+                        {"text": "Couper les rails métalliques", "isCorrect": False},
+                        {"text": "Arracher les vieux carreaux", "isCorrect": False},
+                        {"text": "Serrer les boulons", "isCorrect": False}
                     ],
-                    "correction": "Elle absorbe les tensions et mouvements horizontaux du support (fissures, plancher bois) pour ne pas les transmettre au carrelage."
+                    "correction": "Elle permet d'ajuster une coupe autour d'un tuyau ou d'une huisserie là où la carrelette droite ne peut pas aller."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Pour une pose scellée, le support doit être :",
+                    "question": "Pour percer du carrelage, il faut impérativement enlever quel mode sur la perceuse ?",
                     "answerOptions": [
-                        {"text": "Une dalle béton brute ou un ravoirage", "isCorrect": True},
-                        {"text": "Un plancher bois", "isCorrect": False},
-                        {"text": "Un carrelage existant", "isCorrect": False},
-                        {"text": "Une moquette", "isCorrect": False}
+                        {"text": "Le mode percussion", "isCorrect": True},
+                        {"text": "Le mode vissage", "isCorrect": False},
+                        {"text": "Le sens de rotation", "isCorrect": False},
+                        {"text": "La lumière", "isCorrect": False}
                     ],
-                    "correction": "La pose scellée inclut la réalisation de la chape. On ne peut pas la faire sur un support déformable ou lisse."
+                    "correction": "La percussion frappe le carreau et le brise instantanément. Il faut percer en rotation simple avec un foret adapté (béton carbure ou diamant)."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Le profilé de finition 'quart de rond' protège :",
+                    "question": "Une plinthe à gorge (à talon) est obligatoire dans :",
                     "answerOptions": [
-                        {"text": "Les angles sortants", "isCorrect": True},
-                        {"text": "Les joints", "isCorrect": False},
-                        {"text": "Le sol", "isCorrect": False},
-                        {"text": "Le peintre", "isCorrect": False}
+                        {"text": "Les cuisines collectives et locaux agroalimentaires", "isCorrect": True},
+                        {"text": "Les chambres à coucher", "isCorrect": False},
+                        {"text": "Les salons", "isCorrect": False},
+                        {"text": "Les plafonds", "isCorrect": False}
                     ],
-                    "correction": "Il masque la tranche du carreau (souvent non émaillée) et évite d'avoir un angle coupant ou fragile."
+                    "correction": "L'arrondi concave à la base de la plinthe facilite le nettoyage et empêche la crasse de s'accumuler dans l'angle droit mur/sol, conformément aux normes d'hygiène."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Un délai de 'mise en service' des locaux signifie :",
+                    "question": "La pose scellée traditionnelle consiste à :",
                     "answerOptions": [
-                        {"text": "Le temps d'attente avant l'utilisation normale (trafic, eau)", "isCorrect": True},
-                        {"text": "Le temps de pose", "isCorrect": False},
-                        {"text": "La durée du chantier", "isCorrect": False},
-                        {"text": "L'heure de la pause", "isCorrect": False}
+                        {"text": "Poser les carreaux sur un mortier de chape frais (pose à l'avancement)", "isCorrect": True},
+                        {"text": "Coller les carreaux sur une chape sèche", "isCorrect": False},
+                        {"text": "Visser les carreaux", "isCorrect": False},
+                        {"text": "Poser les carreaux sur un lit de sable sec", "isCorrect": False}
                     ],
-                    "correction": "Il faut attendre le séchage complet à cœur (colle + joints), souvent plusieurs jours, avant de remplir une piscine ou d'ouvrir un magasin."
+                    "correction": "C'est une technique complexe qui permet de rattraper de gros niveaux et de solidariser totalement le revêtement au support en une seule opération."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Le joint de fractionnement est obligatoire tous les :",
+                    "question": "Quel est le délai moyen avant de pouvoir marcher sur un carrelage collé (ouverture au trafic piéton) ?",
                     "answerOptions": [
-                        {"text": "60 m² environ", "isCorrect": True},
-                        {"text": "5 m²", "isCorrect": False},
-                        {"text": "200 m²", "isCorrect": False},
-                        {"text": "10 m²", "isCorrect": False}
+                        {"text": "24 heures", "isCorrect": True},
+                        {"text": "1 heure", "isCorrect": False},
+                        {"text": "10 minutes", "isCorrect": False},
+                        {"text": "7 jours", "isCorrect": False}
                     ],
-                    "correction": "Valeur indicative courante (ou tous les 8m linéaires) pour limiter les tensions de retrait."
+                    "correction": "Il faut laisser le temps à la colle de faire sa prise hydraulique ou son séchage. Marcher trop tôt risque de déplacer les carreaux ou de créer des désaffleurs."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Le 'taraudage' au dos d'un carreau :",
+                    "question": "Les systèmes de nivellement à cadrans ou coins (croisillons auto-nivelants) servent à :",
                     "answerOptions": [
-                        {"text": "Améliore l'accroche mécanique", "isCorrect": True},
-                        {"text": "Est un défaut", "isCorrect": False},
-                        {"text": "Sert à l'évacuation de l'eau", "isCorrect": False},
-                        {"text": "Sert à couper", "isCorrect": False}
+                        {"text": "Ajuster parfaitement la planéité entre deux carreaux voisins", "isCorrect": True},
+                        {"text": "Remplacer la colle", "isCorrect": False},
+                        {"text": "Éviter de faire des joints", "isCorrect": False},
+                        {"text": "Mesurer l'humidité", "isCorrect": False}
                     ],
-                    "correction": "Les reliefs (queues d'aronde ou stries) au dos des carreaux céramiques permettent à la colle ou au mortier de s'agripper."
+                    "correction": "En serrant le système, on tire le carreau le plus bas vers le haut pour l'aligner avec son voisin, éliminant ainsi les désaffleurs pendant le séchage."
                 }
             ]
         },
@@ -465,223 +465,223 @@ quiz_data = {
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Le ragréage autolissant sert à :",
+                    "question": "À quoi sert principalement un ragréage autolissant ?",
                     "answerOptions": [
-                        {"text": "Niveler le sol", "isCorrect": True},
-                        {"text": "Faire une pente", "isCorrect": False},
-                        {"text": "Imperméabiliser", "isCorrect": False},
-                        {"text": "Isoler", "isCorrect": False}
+                        {"text": "À obtenir une surface parfaitement plane et lisse avant la pose", "isCorrect": True},
+                        {"text": "À isoler thermiquement le sol", "isCorrect": False},
+                        {"text": "À boucher les trous profonds de plus de 5 cm", "isCorrect": False},
+                        {"text": "À faire l'étanchéité", "isCorrect": False}
                     ],
-                    "correction": "Il rattrape les défauts de planéité (creux/bosses) jusqu'à 10-20mm avant la pose collée."
+                    "correction": "Il s'applique sur une primaire, coule tout seul et se lisse pour rattraper les défauts de 3 à 10 mm généralement."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "La bande périphérique résiliente (mousse) a une épaisseur de :",
+                    "question": "Quelle est l'épaisseur minimale recommandée pour une chape ciment adhérente ?",
                     "answerOptions": [
-                        {"text": "5 à 8 mm", "isCorrect": True},
-                        {"text": "10 cm", "isCorrect": False},
-                        {"text": "1 mm", "isCorrect": False},
-                        {"text": "50 cm", "isCorrect": False}
+                        {"text": "4 cm", "isCorrect": True},
+                        {"text": "5 mm", "isCorrect": False},
+                        {"text": "1 cm", "isCorrect": False},
+                        {"text": "20 cm", "isCorrect": False}
                     ],
-                    "correction": "Elle désolidarise la chape des murs verticaux pour permettre la dilatation."
+                    "correction": "En dessous de cette épaisseur, le mortier n'a pas assez de corps, il sèche trop vite, 'brûle' et s'effrite ou se décolle."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Le test à la bombe à carbure mesure :",
+                    "question": "La désolidarisation sous chape (film polyane) sert à :",
                     "answerOptions": [
-                        {"text": "L'humidité de la chape", "isCorrect": True},
-                        {"text": "La dureté du béton", "isCorrect": False},
-                        {"text": "La planéité", "isCorrect": False},
-                        {"text": "La température", "isCorrect": False}
+                        {"text": "Rendre la chape indépendante du support pour éviter la transmission des fissures", "isCorrect": True},
+                        {"text": "Coller la chape au béton", "isCorrect": False},
+                        {"text": "Faire des économies de ciment", "isCorrect": False},
+                        {"text": "Empêcher la chape de sécher", "isCorrect": False}
                     ],
-                    "correction": "Méthode chimique précise pour savoir si la chape est assez sèche pour recevoir le revêtement (surtout pour les sols sensibles ou chapes anhydrites)."
+                    "correction": "La chape 'flotte' sur le film de désolidarisation, ce qui lui permet de bouger (retrait) sans être contrainte par les mouvements de la dalle porteuse."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Une chape 'flottante' est posée sur :",
+                    "question": "Quel est le rôle du treillis soudé (grillage) dans une chape ?",
                     "answerOptions": [
-                        {"text": "Un isolant thermique ou acoustique", "isCorrect": True},
-                        {"text": "Le béton directement", "isCorrect": False},
-                        {"text": "De l'eau", "isCorrect": False},
-                        {"text": "Du sable", "isCorrect": False}
+                        {"text": "Limiter la fissuration due au retrait du mortier", "isCorrect": True},
+                        {"text": "Chauffer le sol par conduction électrique", "isCorrect": False},
+                        {"text": "Faire barrière aux insectes", "isCorrect": False},
+                        {"text": "Remplacer le ciment", "isCorrect": False}
                     ],
-                    "correction": "Elle est séparée de la structure porteuse par une couche d'interposition (isolant), d'où le terme 'flottante'."
+                    "correction": "Il sert d'armature. Il est indispensable dans les chapes flottantes (sur isolant) ou désolidarisées pour maintenir la cohésion de l'ouvrage."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Le treillis soudé sert à :",
+                    "question": "La bande périphérique en mousse bleue de 5mm sert à :",
                     "answerOptions": [
-                        {"text": "Armer la chape", "isCorrect": True},
-                        {"text": "Chauffer le sol", "isCorrect": False},
-                        {"text": "Faire le niveau", "isCorrect": False},
-                        {"text": "Rien", "isCorrect": False}
+                        {"text": "Désolidariser la chape des murs verticaux (joint de dilatation périphérique)", "isCorrect": True},
+                        {"text": "Décorer le bas des murs avant la plinthe", "isCorrect": False},
+                        {"text": "Empêcher les insectes de passer", "isCorrect": False},
+                        {"text": "Isoler phoniquement le plafond", "isCorrect": False}
                     ],
-                    "correction": "Il limite la fissuration de retrait du mortier, surtout dans les chapes flottantes."
+                    "correction": "Sans cette bande, la chape en dilatant pousserait contre les murs, risquant de fissurer ou de soulever le sol."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Pour carreler sur de l'ancien carrelage, il faut appliquer :",
+                    "question": "Avant de coller sur un ancien carrelage, quelle préparation est cruciale ?",
                     "answerOptions": [
-                        {"text": "Un primaire d'adhérence", "isCorrect": True},
-                        {"text": "De l'eau", "isCorrect": False},
-                        {"text": "De l'huile", "isCorrect": False},
-                        {"text": "Un vernis", "isCorrect": False}
+                        {"text": "Dégraisser, poncer (griffer) et appliquer un primaire d'accrochage", "isCorrect": True},
+                        {"text": "Juste passer un coup de balai", "isCorrect": False},
+                        {"text": "Mouiller abondamment le sol", "isCorrect": False},
+                        {"text": "Mettre une couche de ciment pur", "isCorrect": False}
                     ],
-                    "correction": "La surface lisse de l'ancien carrelage n'offre pas d'accroche. Le primaire (souvent granuleux) crée un pont d'adhérence."
+                    "correction": "L'émail de l'ancien carrelage est lisse et non poreux. Il faut créer une accroche mécanique et chimique pour que la nouvelle colle tienne."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "La 'forme de pente' se tire avec :",
+                    "question": "Sur une terrasse extérieure, la 'forme de pente' est destinée à :",
                     "answerOptions": [
-                        {"text": "Des guides inclinés", "isCorrect": True},
-                        {"text": "Un niveau laser horizontal", "isCorrect": False},
-                        {"text": "Un râteau", "isCorrect": False},
-                        {"text": "Une pelle", "isCorrect": False}
+                        {"text": "Évacuer les eaux de pluie vers l'extérieur ou les siphons", "isCorrect": True},
+                        {"text": "Faire joli", "isCorrect": False},
+                        {"text": "Empêcher de marcher", "isCorrect": False},
+                        {"text": "Renforcer la dalle", "isCorrect": False}
                     ],
-                    "correction": "Indispensable pour l'écoulement des eaux sur terrasse."
+                    "correction": "Une terrasse plate retient l'eau (flaques), ce qui favorise les infiltrations, la mousse et le gel. Une pente de 1,5% est un minimum."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Le dosage classique d'une chape mortier est de :",
+                    "question": "Le dosage standard en ciment pour une chape traditionnelle est d'environ :",
                     "answerOptions": [
-                        {"text": "300-350 kg de ciment / m3", "isCorrect": True},
-                        {"text": "150 kg / m3", "isCorrect": False},
-                        {"text": "600 kg / m3", "isCorrect": False},
+                        {"text": "350 kg de ciment par mètre cube de sable", "isCorrect": True},
+                        {"text": "100 kg / m3", "isCorrect": False},
+                        {"text": "800 kg / m3", "isCorrect": False},
                         {"text": "50 kg / m3", "isCorrect": False}
                     ],
-                    "correction": "Un bon équilibre pour avoir une chape solide mais pas cassante (trop de retrait)."
+                    "correction": "Un dosage correct assure la dureté. Trop maigre, la chape s'effrite ('chape brûlée'). Trop gras, elle fissure beaucoup (retrait excessif)."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "La laitance de surface doit être :",
+                    "question": "La laitance de ciment qui remonte en surface de la chape doit être :",
                     "answerOptions": [
-                        {"text": "Éliminée par ponçage", "isCorrect": True},
-                        {"text": "Conservée", "isCorrect": False},
-                        {"text": "Peinte", "isCorrect": False},
-                        {"text": "Mouillée", "isCorrect": False}
+                        {"text": "Éliminée par ponçage ou brossage avant le collage", "isCorrect": True},
+                        {"text": "Conservée car elle protège la chape", "isCorrect": False},
+                        {"text": "Peinte pour la cacher", "isCorrect": False},
+                        {"text": "Mouillée tous les jours", "isCorrect": False}
                     ],
-                    "correction": "C'est une croûte friable sans cohésion qui empêche la colle de tenir sur le 'vrai' support dur."
+                    "correction": "C'est une pellicule fine et poudreuse sans résistance. Si on colle dessus, la colle arrache la laitance et le carreau se décolle."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Le primaire pour support poreux (plâtre) :",
+                    "question": "Le primaire 'bouche-pores' est spécifiquement utile pour :",
                     "answerOptions": [
-                        {"text": "Bloque le fond", "isCorrect": True},
-                        {"text": "Le rend rugueux", "isCorrect": False},
-                        {"text": "Le mouille", "isCorrect": False},
-                        {"text": "Le décape", "isCorrect": False}
+                        {"text": "Les supports très absorbants (plâtre, béton cellulaire)", "isCorrect": True},
+                        {"text": "Les supports bloqués (verre, métal)", "isCorrect": False},
+                        {"text": "Les supports humides", "isCorrect": False},
+                        {"text": "Les supports gras", "isCorrect": False}
                     ],
-                    "correction": "Il empêche le support de boire l'eau de la colle instantanément."
+                    "correction": "Il sature la porosité du support. Sans lui, le support 'boit' l'eau de la colle instantanément, empêchant sa prise correcte (colle grillée)."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Le SEL (Système d'Étanchéité Liquide) se pose :",
+                    "question": "Le SEL (Système d'Étanchéité Liquide) s'applique :",
                     "answerOptions": [
-                        {"text": "Sous le carrelage", "isCorrect": True},
-                        {"text": "Sur le carrelage", "isCorrect": False},
-                        {"text": "Sous la chape", "isCorrect": False},
-                        {"text": "Dehors", "isCorrect": False}
+                        {"text": "Sous le carrelage, en plusieurs couches croisées", "isCorrect": True},
+                        {"text": "Sur le carrelage pour le protéger", "isCorrect": False},
+                        {"text": "Sous la chape béton", "isCorrect": False},
+                        {"text": "Uniquement dans les angles", "isCorrect": False}
                     ],
-                    "correction": "Dernière barrière étanche avant le revêtement céramique (douches, balcons)."
+                    "correction": "C'est une résine qui forme une membrane caoutchouteuse continue et étanche, obligatoire dans les douches à l'italienne."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Une chape adhérente est :",
+                    "question": "Le ravoirage est une couche maigre destinée à :",
                     "answerOptions": [
-                        {"text": "Collée au support béton (souvent avec barbotine)", "isCorrect": True},
-                        {"text": "Posée sur un film plastique", "isCorrect": False},
-                        {"text": "Posée sur isolant", "isCorrect": False},
-                        {"text": "Suspendue", "isCorrect": False}
+                        {"text": "Noyer les gaines techniques (plomberie, électricité) pour retrouver un sol plat", "isCorrect": True},
+                        {"text": "Coller le carrelage", "isCorrect": False},
+                        {"text": "Faire la finition décorative", "isCorrect": False},
+                        {"text": "Remplacer l'isolant", "isCorrect": False}
                     ],
-                    "correction": "Contrairement à la chape flottante ou désolidarisée, elle fait corps avec la dalle."
+                    "correction": "Il permet d'obtenir une surface plane au-dessus des tuyaux pour ensuite poser l'isolant ou la chape proprement."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Le 'sonnage' détecte :",
+                    "question": "Le test d'adhérence par 'sonnage' consiste à :",
                     "answerOptions": [
-                        {"text": "Les décollements", "isCorrect": True},
-                        {"text": "L'humidité", "isCorrect": False},
-                        {"text": "Les tuyaux", "isCorrect": False},
-                        {"text": "L'électricité", "isCorrect": False}
+                        {"text": "Frapper le sol avec une tige métallique pour écouter si ça sonne 'creux'", "isCorrect": True},
+                        {"text": "Utiliser un sonar", "isCorrect": False},
+                        {"text": "Écouter le bruit des pas", "isCorrect": False},
+                        {"text": "Crier fort", "isCorrect": False}
                     ],
-                    "correction": "Un son creux révèle un vide sous le carreau ou la chape."
+                    "correction": "Un son creux indique que la chape est décollée de la dalle ou que le carreau est décollé de la chape (défaut d'adhérence)."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Le sable pour mortier doit être :",
+                    "question": "Le sable utilisé pour le mortier de chape doit être :",
                     "answerOptions": [
-                        {"text": "Lavé (propre)", "isCorrect": True},
-                        {"text": "Argileux", "isCorrect": False},
-                        {"text": "Salé", "isCorrect": False},
-                        {"text": "Organique", "isCorrect": False}
+                        {"text": "Lavé et exempt d'impuretés (argile, matières organiques)", "isCorrect": True},
+                        {"text": "Du sable de plage non rincé", "isCorrect": False},
+                        {"text": "De la terre végétale", "isCorrect": False},
+                        {"text": "Des gravats broyés", "isCorrect": False}
                     ],
-                    "correction": "Les impuretés nuisent à la résistance du ciment."
+                    "correction": "L'argile ou le sel empêchent la prise correcte du ciment et fragilisent la structure du mortier."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Le délai de séchage (DTU) d'une chape ciment est d'environ :",
+                    "question": "Le délai de séchage théorique d'une chape ciment est de :",
                     "answerOptions": [
-                        {"text": "1 semaine par cm d'épaisseur", "isCorrect": True},
-                        {"text": "1 jour", "isCorrect": False},
-                        {"text": "1 heure", "isCorrect": False},
-                        {"text": "1 an", "isCorrect": False}
+                        {"text": "1 semaine par centimètre d'épaisseur", "isCorrect": True},
+                        {"text": "24 heures pour toute l'épaisseur", "isCorrect": False},
+                        {"text": "1 heure par centimètre", "isCorrect": False},
+                        {"text": "6 mois minimum", "isCorrect": False}
                     ],
-                    "correction": "Règle empirique pour le séchage naturel avant recouvrement."
+                    "correction": "C'est une règle empirique. Recouvrir une chape trop humide enferme l'eau, ce qui peut provoquer des désordres chimiques ou des décollements."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "L'épaisseur mini d'une chape rapportée est de :",
+                    "question": "Une natte de drainage (type Ditra-Drain) en extérieur se place :",
                     "answerOptions": [
-                        {"text": "4 cm (ou 3 à 5 cm selon le type)", "isCorrect": True},
-                        {"text": "5 mm", "isCorrect": False},
-                        {"text": "1 mm", "isCorrect": False},
-                        {"text": "20 cm", "isCorrect": False}
+                        {"text": "Sous le carrelage, au-dessus de la forme de pente étanchée", "isCorrect": True},
+                        {"text": "Sous la dalle béton", "isCorrect": False},
+                        {"text": "Au-dessus du carrelage", "isCorrect": False},
+                        {"text": "Dans le jardin", "isCorrect": False}
                     ],
-                    "correction": "En dessous, le mortier n'a pas de résistance mécanique et casse."
+                    "correction": "Elle permet à l'eau qui traverse les joints de circuler et de s'évacuer sans stagner sous le carreau, évitant les sinistres liés au gel."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Un joint de dilatation bâtiment doit être :",
+                    "question": "Un joint de dilatation du bâtiment (gros œuvre) doit être :",
                     "answerOptions": [
-                        {"text": "Respecté (non recouvert)", "isCorrect": True},
-                        {"text": "Comblé au ciment", "isCorrect": False},
-                        {"text": "Carrelé par dessus", "isCorrect": False},
-                        {"text": "Ignoré", "isCorrect": False}
+                        {"text": "Répercuté à l'identique dans la chape et le carrelage", "isCorrect": True},
+                        {"text": "Comblé avec du béton pour le bloquer", "isCorrect": False},
+                        {"text": "Recouvert par un carreau entier", "isCorrect": False},
+                        {"text": "Ignoré s'il est petit", "isCorrect": False}
                     ],
-                    "correction": "Il reprend le joint de dilatation du bâtiment (gros œuvre). On ne doit jamais le recouvrir ('ponter'). On utilise des profilés souples spécifiques."
+                    "correction": "C'est une coupure structurelle qui bouge. Si on le bloque ('ponter le joint'), le carrelage cassera net à cet endroit."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Une natte drainante s'utilise :",
+                    "question": "L'Avis Technique (ATec) d'un produit est délivré par :",
                     "answerOptions": [
-                        {"text": "En extérieur", "isCorrect": True},
-                        {"text": "En intérieur sec", "isCorrect": False},
-                        {"text": "Au mur", "isCorrect": False},
-                        {"text": "Au plafond", "isCorrect": False}
+                        {"text": "Le CSTB (Centre Scientifique et Technique du Bâtiment)", "isCorrect": True},
+                        {"text": "Le fabricant lui-même", "isCorrect": False},
+                        {"text": "Le client final", "isCorrect": False},
+                        {"text": "L'architecte", "isCorrect": False}
                     ],
-                    "correction": "Pour éviter la stagnation d'eau dans la structure de la terrasse."
+                    "correction": "C'est le document officiel qui valide l'aptitude à l'emploi d'un produit. Il est indispensable pour être couvert par les assurances décennales."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Le ravoirage sert à :",
+                    "question": "Pour tirer une chape de niveau, le carreleur réalise d'abord :",
                     "answerOptions": [
-                        {"text": "Noyer les gaines techniques (plomberie/elec) et remettre à niveau", "isCorrect": True},
-                        {"text": "Coller le carrelage", "isCorrect": False},
-                        {"text": "Faire l'étanchéité", "isCorrect": False},
-                        {"text": "Décorer", "isCorrect": False}
+                        {"text": "Des 'nus' ou bandes de guides en mortier", "isCorrect": True},
+                        {"text": "Des trous", "isCorrect": False},
+                        {"text": "Des dessins au sol", "isCorrect": False},
+                        {"text": "Une prière", "isCorrect": False}
                     ],
-                    "correction": "Couche maigre de mortier sous la chape ou l'isolant."
+                    "correction": "Ces bandes servent de rails sur lesquels la règle va glisser pour araser le mortier parfaitement plan."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "L'avis technique est délivré par :",
+                    "question": "Sur un support bois, l'utilisation d'une natte de désolidarisation est :",
                     "answerOptions": [
-                        {"text": "Le CSTB", "isCorrect": True},
-                        {"text": "Le carreleur", "isCorrect": False},
-                        {"text": "Le client", "isCorrect": False},
-                        {"text": "La mairie", "isCorrect": False}
+                        {"text": "Fortement recommandée voire obligatoire selon le format", "isCorrect": True},
+                        {"text": "Interdite", "isCorrect": False},
+                        {"text": "Inutile si la colle est forte", "isCorrect": False},
+                        {"text": "Dangereuse", "isCorrect": False}
                     ],
-                    "correction": "Centre Scientifique et Technique du Bâtiment. Il valide les procédés non traditionnels."
+                    "correction": "Le bois gonfle et bouge. La natte permet de dissocier les mouvements du support bois de ceux du carrelage rigide, évitant la casse."
                 }
             ]
         },
@@ -693,223 +693,223 @@ quiz_data = {
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "La mosaïque sur papier 'Belle Face' se pose :",
+                    "question": "La pose de mosaïque 'sur papier' (technique belle face) implique que :",
                     "answerOptions": [
-                        {"text": "Papier vers le haut (visible)", "isCorrect": True},
-                        {"text": "Papier dans la colle", "isCorrect": False},
-                        {"text": "Papier retiré avant la pose", "isCorrect": False},
-                        {"text": "Papier sur le côté", "isCorrect": False}
+                        {"text": "Le papier est collé sur la face visible et doit être retiré après la pose", "isCorrect": True},
+                        {"text": "Le papier est au dos et reste noyé dans la colle", "isCorrect": False},
+                        {"text": "Le papier sert de joint", "isCorrect": False},
+                        {"text": "Le papier est décoratif et reste visible", "isCorrect": False}
                     ],
-                    "correction": "Le papier maintient les tesselles par le dessus. On le mouille et on l'enlève une fois la colle prise, avant de faire les joints."
+                    "correction": "Cette technique permet de voir l'alignement, mais demande une étape supplémentaire : mouiller le papier pour le décoller une fois la colle prise, avant de jointoyer."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Le joint époxy est :",
+                    "question": "Le joint Époxy est particulièrement recommandé pour :",
                     "answerOptions": [
-                        {"text": "Anti-acide et étanche", "isCorrect": True},
-                        {"text": "Poreux", "isCorrect": False},
-                        {"text": "Facile à nettoyer à l'eau froide", "isCorrect": False},
-                        {"text": "Fragile", "isCorrect": False}
+                        {"text": "Les locaux nécessitant une hygiène parfaite et une résistance chimique (cuisines pro, piscines)", "isCorrect": True},
+                        {"text": "Les chambres à coucher", "isCorrect": False},
+                        {"text": "Les plafonds", "isCorrect": False},
+                        {"text": "Les plinthes bois", "isCorrect": False}
                     ],
-                    "correction": "Résistant aux attaques chimiques et bactériologiques (cuisines pro, piscines)."
+                    "correction": "Contrairement au joint ciment, l'époxy n'est pas poreux, ne tache pas, ne s'effrite pas et résiste aux acides de nettoyage puissants."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Le nettoyage du voile de ciment se fait à :",
+                    "question": "Le produit utilisé pour enlever le voile de ciment après jointoiement est :",
                     "answerOptions": [
-                        {"text": "L'acide (produit détartrant)", "isCorrect": True},
-                        {"text": "La javel", "isCorrect": False},
-                        {"text": "L'huile", "isCorrect": False},
-                        {"text": "Le savon", "isCorrect": False}
+                        {"text": "Un nettoyant acide (désincrustant)", "isCorrect": True},
+                        {"text": "De l'eau de Javel pure", "isCorrect": False},
+                        {"text": "Du liquide vaisselle", "isCorrect": False},
+                        {"text": "De l'huile de lin", "isCorrect": False}
                     ],
-                    "correction": "Il faut dissoudre la pellicule de ciment (alcalin) avec une solution acide adaptée."
+                    "correction": "Le ciment étant basique (alcalin), seul un acide peut dissoudre les résidus. Il faut utiliser des acides tamponnés pour ne pas attaquer le joint lui-même."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "La pince Zag-Zag coupe :",
+                    "question": "La 'Zag-Zag' est une pince spécifique pour :",
                     "answerOptions": [
-                        {"text": "La pâte de verre et les émaux", "isCorrect": True},
-                        {"text": "Le bois", "isCorrect": False},
-                        {"text": "Le béton", "isCorrect": False},
-                        {"text": "L'acier", "isCorrect": False}
+                        {"text": "Tailler les tesselles de mosaïque (pâte de verre, émaux)", "isCorrect": True},
+                        {"text": "Couper les carreaux de 60x60", "isCorrect": False},
+                        {"text": "Couper les fils électriques", "isCorrect": False},
+                        {"text": "Arracher les clous", "isCorrect": False}
                     ],
-                    "correction": "Outil de mosaïste pour tailler les tesselles."
+                    "correction": "Équipée de molettes en carbure, elle permet de 'croquer' le verre avec précision pour ajuster les formes des tesselles."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "L'émulsion du joint consiste à :",
+                    "question": "L'étape de l'émulsion lors du jointoiement consiste à :",
                     "answerOptions": [
-                        {"text": "Lisser le joint frais à l'éponge humide", "isCorrect": True},
-                        {"text": "Mélanger la poudre", "isCorrect": False},
-                        {"text": "Attendre que ça sèche", "isCorrect": False},
-                        {"text": "Peindre", "isCorrect": False}
+                        {"text": "Passer une éponge humide en mouvements circulaires pour lisser et fermer le joint", "isCorrect": True},
+                        {"text": "Mélanger la poudre avec de l'eau", "isCorrect": False},
+                        {"text": "Gratter le joint sec avec un couteau", "isCorrect": False},
+                        {"text": "Appliquer un vernis", "isCorrect": False}
                     ],
-                    "correction": "Cela ferme le grain du joint et le rend régulier."
+                    "correction": "C'est l'étape de finition qui donne l'aspect lisse et régulier au joint tout en nettoyant le surplus sur les carreaux."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "La colle pour pâte de verre en piscine est souvent adjuvée de :",
+                    "question": "Pourquoi utilise-t-on souvent une colle blanche pour la pâte de verre ?",
                     "answerOptions": [
-                        {"text": "Latex", "isCorrect": True},
-                        {"text": "Sable", "isCorrect": False},
-                        {"text": "Plâtre", "isCorrect": False},
-                        {"text": "Gravier", "isCorrect": False}
+                        {"text": "Pour ne pas altérer la couleur des tesselles par transparence", "isCorrect": True},
+                        {"text": "Parce qu'elle est moins chère", "isCorrect": False},
+                        {"text": "Parce qu'elle sèche plus vite", "isCorrect": False},
+                        {"text": "Pour faire joli derrière", "isCorrect": False}
                     ],
-                    "correction": "Pour augmenter l'adhérence et l'imperméabilité."
+                    "correction": "La pâte de verre est translucide. Une colle grise assombrirait le rendu final et ternirait l'éclat de la mosaïque."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Opus Incertum =",
+                    "question": "L'Opus Incertum est une technique de pose utilisant :",
                     "answerOptions": [
-                        {"text": "Pose irrégulière (morceaux cassés)", "isCorrect": True},
-                        {"text": "Pose droite", "isCorrect": False},
-                        {"text": "Pose diagonale", "isCorrect": False},
-                        {"text": "Pose chevron", "isCorrect": False}
+                        {"text": "Des morceaux cassés de formes irrégulières assemblés comme un puzzle", "isCorrect": True},
+                        {"text": "Des carreaux carrés posés droit", "isCorrect": False},
+                        {"text": "Des carreaux rectangulaires en chevron", "isCorrect": False},
+                        {"text": "Des ronds parfaits", "isCorrect": False}
                     ],
-                    "correction": "Assemblage de fragments de formes aléatoires."
+                    "correction": "Incertum signifie incertain. On assemble les morceaux (souvent du marbre cassé ou du carrelage) de manière aléatoire en gérant l'espacement des joints."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Pour un joint silicone propre, on utilise :",
+                    "question": "Pour lisser un joint silicone proprement, on utilise :",
                     "answerOptions": [
-                        {"text": "De l'eau savonneuse pour lisser", "isCorrect": True},
+                        {"text": "Un outil trempé dans de l'eau savonneuse (produit lissant)", "isCorrect": True},
+                        {"text": "De l'huile", "isCorrect": False},
                         {"text": "De la poussière", "isCorrect": False},
-                        {"text": "De l'huile de vidange", "isCorrect": False},
-                        {"text": "Rien", "isCorrect": False}
+                        {"text": "Un chiffon sec", "isCorrect": False}
                     ],
-                    "correction": "Le produit lissant empêche le silicone de coller à l'outil."
+                    "correction": "Le savon empêche le silicone (qui est très collant) d'adhérer au doigt ou à la spatule de lissage."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Les tesselles sont :",
+                    "question": "En mosaïque, comment appelle-t-on les petits éléments qui composent l'ouvrage ?",
                     "answerOptions": [
-                        {"text": "Les éléments de la mosaïque", "isCorrect": True},
-                        {"text": "Les outils", "isCorrect": False},
-                        {"text": "Les joints", "isCorrect": False},
-                        {"text": "Les colles", "isCorrect": False}
+                        {"text": "Les tesselles", "isCorrect": True},
+                        {"text": "Les tuiles", "isCorrect": False},
+                        {"text": "Les gravats", "isCorrect": False},
+                        {"text": "Les pixels", "isCorrect": False}
                     ],
-                    "correction": "Petits cubes de matière."
+                    "correction": "Elles peuvent être en marbre, pierre, verre, céramique ou or. Leur taille varie généralement de quelques millimètres à 2 cm."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "La barbotine de jointoiement s'applique :",
+                    "question": "La barbotine de jointoiement traditionnelle s'applique :",
                     "answerOptions": [
-                        {"text": "En diagonale avec une raclette caoutchouc", "isCorrect": True},
-                        {"text": "Au rouleau", "isCorrect": False},
-                        {"text": "Au pistolet", "isCorrect": False},
-                        {"text": "À la main", "isCorrect": False}
+                        {"text": "À la raclette en caoutchouc en diagonale des joints", "isCorrect": True},
+                        {"text": "Au pinceau fin", "isCorrect": False},
+                        {"text": "Au rouleau à peinture", "isCorrect": False},
+                        {"text": "À la truelle en fer", "isCorrect": False}
                     ],
-                    "correction": "Pour bien remplir les interstices sans creuser."
+                    "correction": "Le mouvement diagonal évite que l'outil ne rentre dans le joint et ne le creuse. La raclette souple permet de bien faire pénétrer la pâte au fond."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Un joint large nécessite :",
+                    "question": "Un joint large 'rustique' (plus de 10mm) nécessite l'ajout de :",
                     "answerOptions": [
-                        {"text": "Du sable dans le mélange", "isCorrect": True},
-                        {"text": "Du ciment pur", "isCorrect": False},
-                        {"text": "De l'eau seulement", "isCorrect": False},
-                        {"text": "Du plâtre", "isCorrect": False}
+                        {"text": "Sable dans le mélange pour limiter le retrait", "isCorrect": True},
+                        {"text": "Plus d'eau", "isCorrect": False},
+                        {"text": "Plâtre", "isCorrect": False},
+                        {"text": "Colorant", "isCorrect": False}
                     ],
-                    "correction": "Pour éviter le retrait et la fissuration."
+                    "correction": "Un ciment pur fissurerait en séchant sur une telle largeur. Le sable (charge) apporte la stabilité dimensionnelle au mortier de joint."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Rénover un joint silicone :",
+                    "question": "Peut-on appliquer un nouveau joint silicone sur un ancien joint moisi ?",
                     "answerOptions": [
-                        {"text": "Tout enlever et refaire", "isCorrect": True},
-                        {"text": "Remettre par dessus", "isCorrect": False},
-                        {"text": "Laver", "isCorrect": False},
-                        {"text": "Peindre", "isCorrect": False}
+                        {"text": "Non, il faut retirer totalement l'ancien et dégraisser", "isCorrect": True},
+                        {"text": "Oui, ça couvre bien", "isCorrect": False},
+                        {"text": "Oui, si on met beaucoup de produit", "isCorrect": False},
+                        {"text": "Oui, si on chauffe", "isCorrect": False}
                     ],
-                    "correction": "Le neuf ne tient pas sur le vieux."
+                    "correction": "Le silicone n'adhère pas sur du silicone réticulé. De plus, la moisissure reviendrait très vite par dessous."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Andamento :",
+                    "question": "L'Andamento en mosaïque désigne :",
                     "answerOptions": [
-                        {"text": "Flux des tesselles", "isCorrect": True},
-                        {"text": "Couleur", "isCorrect": False},
-                        {"text": "Colle", "isCorrect": False},
-                        {"text": "Outil", "isCorrect": False}
+                        {"text": "Le rythme, le flux et la direction des lignes de tesselles", "isCorrect": True},
+                        {"text": "Le type de colle", "isCorrect": False},
+                        {"text": "La couleur du joint", "isCorrect": False},
+                        {"text": "L'outil de coupe", "isCorrect": False}
                     ],
-                    "correction": "La direction des lignes de pose en mosaïque d'art."
+                    "correction": "C'est la 'signature' du mosaïste. La manière dont les lignes de tesselles suivent les formes du dessin donne le mouvement et la vie à l'œuvre."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Calepinage rosace :",
+                    "question": "Lors du calepinage d'une rosace, on commence par :",
                     "answerOptions": [
-                        {"text": "Du centre vers l'extérieur", "isCorrect": True},
-                        {"text": "Des bords vers le centre", "isCorrect": False},
-                        {"text": "Au hasard", "isCorrect": False},
-                        {"text": "En ligne droite", "isCorrect": False}
+                        {"text": "Le centre du motif", "isCorrect": True},
+                        {"text": "La périphérie", "isCorrect": False},
+                        {"text": "Le bas", "isCorrect": False},
+                        {"text": "N'importe où", "isCorrect": False}
                     ],
-                    "correction": "Pour centrer le motif."
+                    "correction": "Pour garantir la symétrie parfaite du dessin, le point de départ est le centre géométrique."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Joint creusé =",
+                    "question": "Un joint 'creusé' est souvent la conséquence :",
                     "answerOptions": [
-                        {"text": "Trop d'eau au nettoyage", "isCorrect": True},
-                        {"text": "Pas assez d'eau", "isCorrect": False},
-                        {"text": "Joint trop dur", "isCorrect": False},
-                        {"text": "Mauvaise couleur", "isCorrect": False}
+                        {"text": "D'un nettoyage trop insistant avec une éponge trop mouillée", "isCorrect": True},
+                        {"text": "D'un mélange trop sec", "isCorrect": False},
+                        {"text": "D'un carreau trop dur", "isCorrect": False},
+                        {"text": "D'une température trop froide", "isCorrect": False}
                     ],
-                    "correction": "L'éponge a emporté la matière."
+                    "correction": "L'eau en excès délave le joint frais et emporte la matière, laissant le joint en retrait par rapport au bord du carreau."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Protection terre cuite avant joint :",
+                    "question": "Avant de jointoyer des carreaux poreux (terre cuite), il faut :",
                     "answerOptions": [
-                        {"text": "Bouche-pores ou huile", "isCorrect": True},
-                        {"text": "Eau", "isCorrect": False},
-                        {"text": "Rien", "isCorrect": False},
-                        {"text": "Acide", "isCorrect": False}
+                        {"text": "Appliquer un produit de pré-traitement (bouche-pores)", "isCorrect": True},
+                        {"text": "Les mouiller à grande eau", "isCorrect": False},
+                        {"text": "Les poncer", "isCorrect": False},
+                        {"text": "Ne rien faire", "isCorrect": False}
                     ],
-                    "correction": "Pour éviter que le ciment ne tache la porosité de la terre cuite."
+                    "correction": "Sans protection, les pigments du joint pénètrent irréversiblement dans les pores de la terre cuite, la tachant définitivement ('voile indélébile')."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Mastic polyuréthane (PU) est :",
+                    "question": "Le mastic Polyuréthane (PU) est utilisé pour :",
                     "answerOptions": [
-                        {"text": "Un joint souple", "isCorrect": True},
-                        {"text": "Un joint rigide", "isCorrect": False},
-                        {"text": "Un ciment", "isCorrect": False},
-                        {"text": "Une colle à bois", "isCorrect": False}
+                        {"text": "Les joints de dilatation et de fractionnement (joint souple)", "isCorrect": True},
+                        {"text": "Coller les carreaux au sol", "isCorrect": False},
+                        {"text": "Faire les joints de faïence classiques", "isCorrect": False},
+                        {"text": "Lisser les murs", "isCorrect": False}
                     ],
-                    "correction": "Utilisé pour les joints de dilatation."
+                    "correction": "Il reste souple et élastique après séchage, ce qui lui permet d'absorber les mouvements sans se décoller, contrairement au joint ciment rigide."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "L'eau de rinçage des joints doit être :",
+                    "question": "Pourquoi faut-il changer très souvent l'eau de rinçage lors du nettoyage des joints ?",
                     "answerOptions": [
-                        {"text": "Changée souvent (propre)", "isCorrect": True},
-                        {"text": "Sale", "isCorrect": False},
-                        {"text": "Chaude", "isCorrect": False},
-                        {"text": "Gelée", "isCorrect": False}
+                        {"text": "Pour éviter de redéposer un voile de ciment sur les carreaux", "isCorrect": True},
+                        {"text": "Pour consommer de l'eau", "isCorrect": False},
+                        {"text": "Pour se réchauffer les mains", "isCorrect": False},
+                        {"text": "Pour faire mousser", "isCorrect": False}
                     ],
-                    "correction": "Pour ne pas laisser de traces (voile)."
+                    "correction": "Une eau chargée de ciment laisse des traces blanchâtres (spectres) en séchant sur le carrelage, difficiles à enlever ensuite."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Délai jointoiement après pose collée :",
+                    "question": "Le délai d'attente avant jointoiement après une pose collée est généralement de :",
                     "answerOptions": [
-                        {"text": "24h", "isCorrect": True},
-                        {"text": "1h", "isCorrect": False},
-                        {"text": "5 min", "isCorrect": False},
+                        {"text": "24 heures", "isCorrect": True},
+                        {"text": "1 heure", "isCorrect": False},
+                        {"text": "5 minutes", "isCorrect": False},
                         {"text": "1 mois", "isCorrect": False}
                     ],
-                    "correction": "Laisser sécher la colle."
+                    "correction": "Il faut laisser l'humidité de la colle s'évaporer par les joints ouverts. Si on ferme trop tôt, on risque des variations de couleur du joint (carbonatation)."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Pince à molettes =",
+                    "question": "La 'marteline' et le 'tranchet' sont des outils traditionnels pour :",
                     "answerOptions": [
-                        {"text": "Zag-Zag", "isCorrect": True},
-                        {"text": "Tenaille", "isCorrect": False},
-                        {"text": "Cutter", "isCorrect": False},
-                        {"text": "Marteau", "isCorrect": False}
+                        {"text": "Couper le marbre et la pierre en mosaïque d'art", "isCorrect": True},
+                        {"text": "Mélanger le béton", "isCorrect": False},
+                        {"text": "Percer le carrelage", "isCorrect": False},
+                        {"text": "Poncer le sol", "isCorrect": False}
                     ],
-                    "correction": "Autre nom de la pince mosaïste."
+                    "correction": "Le tranchet est planté dans un billot, et la marteline frappe la pierre pour la fendre avec précision."
                 }
             ]
         },
@@ -921,223 +921,223 @@ quiz_data = {
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Surface d'un rectangle ?",
+                    "question": "Quelle est la formule pour calculer la surface d'une pièce rectangulaire ?",
                     "answerOptions": [
-                        {"text": "L x l", "isCorrect": True},
-                        {"text": "L + l", "isCorrect": False},
-                        {"text": "L x 2", "isCorrect": False},
-                        {"text": "l x 2", "isCorrect": False}
+                        {"text": "Longueur x Largeur", "isCorrect": True},
+                        {"text": "(Longueur + Largeur) x 2", "isCorrect": False},
+                        {"text": "Longueur + Largeur", "isCorrect": False},
+                        {"text": "Longueur x 2", "isCorrect": False}
                     ],
-                    "correction": "Longueur fois largeur."
+                    "correction": "C'est la base du métré. Le résultat s'exprime en mètres carrés (m²)."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "EPI obligatoire pour les genoux :",
+                    "question": "Quel Équipement de Protection Individuelle (EPI) prévient l'hygroma du genou ?",
                     "answerOptions": [
-                        {"text": "Genouillères", "isCorrect": True},
-                        {"text": "Casque", "isCorrect": False},
-                        {"text": "Gants", "isCorrect": False},
-                        {"text": "Masque", "isCorrect": False}
+                        {"text": "Les genouillères", "isCorrect": True},
+                        {"text": "Les chaussures de sécurité", "isCorrect": False},
+                        {"text": "Le casque", "isCorrect": False},
+                        {"text": "Les lunettes", "isCorrect": False}
                     ],
-                    "correction": "Prévient l'hygroma."
+                    "correction": "Le carreleur passe sa vie à genoux. L'hygroma (boule de liquide synovial) est une maladie professionnelle fréquente qui s'évite par une protection adaptée."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Règle 3-4-5 (Pythagore) sert à :",
+                    "question": "La règle du '3-4-5' (Théorème de Pythagore) est utilisée sur chantier pour :",
                     "answerOptions": [
-                        {"text": "Faire une équerre (90°)", "isCorrect": True},
-                        {"text": "Faire un rond", "isCorrect": False},
+                        {"text": "Vérifier ou tracer un angle droit parfait (l'équerre)", "isCorrect": True},
                         {"text": "Calculer une surface", "isCorrect": False},
-                        {"text": "Mesurer un volume", "isCorrect": False}
+                        {"text": "Mesurer une hauteur", "isCorrect": False},
+                        {"text": "Vérifier l'horizontalité", "isCorrect": False}
                     ],
-                    "correction": "Traçage d'angle droit sur chantier."
+                    "correction": "Si on mesure 3m d'un côté et 4m de l'autre, la diagonale doit faire exactement 5m pour que l'angle soit à 90°."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Marge de sécurité (coupes/casse) :",
+                    "question": "Quelle marge de sécurité (perte/coupes) ajoute-t-on généralement pour une pose droite ?",
                     "answerOptions": [
-                        {"text": "5% à 10%", "isCorrect": True},
-                        {"text": "0%", "isCorrect": False},
-                        {"text": "50%", "isCorrect": False},
-                        {"text": "1%", "isCorrect": False}
+                        {"text": "5 % à 10 %", "isCorrect": True},
+                        {"text": "0 %", "isCorrect": False},
+                        {"text": "50 %", "isCorrect": False},
+                        {"text": "1 %", "isCorrect": False}
                     ],
-                    "correction": "Pour ne pas manquer de carreaux à la fin."
+                    "correction": "Il faut prévoir les chutes liées aux coupes en périphérie et la casse éventuelle. En pose diagonale, on compte plutôt 10% à 15%."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Masque FFP2 pour :",
+                    "question": "Le port d'un masque FFP2/FFP3 est recommandé lors :",
                     "answerOptions": [
-                        {"text": "Poussières (ciment/silice)", "isCorrect": True},
-                        {"text": "Bruit", "isCorrect": False},
-                        {"text": "Froid", "isCorrect": False},
-                        {"text": "Soleil", "isCorrect": False}
+                        {"text": "Du mélange des colles en poudre et de la découpe à sec", "isCorrect": True},
+                        {"text": "De la pose des croisillons", "isCorrect": False},
+                        {"text": "Du nettoyage à l'eau", "isCorrect": False},
+                        {"text": "De la conduite du camion", "isCorrect": False}
                     ],
-                    "correction": "Protection respiratoire."
+                    "correction": "Les poussières de ciment et de silice (céramique) sont très fines et nocives pour les voies respiratoires à long terme."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Échelle 1/50 :",
+                    "question": "Sur un plan d'architecte, que signifie l'échelle 1/50 ?",
                     "answerOptions": [
-                        {"text": "1 cm plan = 50 cm réel", "isCorrect": True},
-                        {"text": "1 cm plan = 1 m réel", "isCorrect": False},
-                        {"text": "50 cm plan = 1 cm réel", "isCorrect": False},
-                        {"text": "Agrandissement", "isCorrect": False}
+                        {"text": "1 cm sur le plan représente 50 cm dans la réalité", "isCorrect": True},
+                        {"text": "1 cm sur le plan représente 1 mètre", "isCorrect": False},
+                        {"text": "Le dessin est 50 fois plus grand que la réalité", "isCorrect": False},
+                        {"text": "50 cm sur le plan représente 1 cm réel", "isCorrect": False}
                     ],
-                    "correction": "Réduction de 50 fois."
+                    "correction": "C'est une échelle de réduction. Pour avoir la dimension réelle, on multiplie la mesure du plan par 50."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Port de charge (sac ciment) :",
+                    "question": "Quelle est la bonne posture pour soulever un sac de colle de 25 kg ?",
                     "answerOptions": [
-                        {"text": "Dos droit, jambes fléchies", "isCorrect": True},
-                        {"text": "Dos rond", "isCorrect": False},
-                        {"text": "Jambes raides", "isCorrect": False},
-                        {"text": "À bout de bras", "isCorrect": False}
+                        {"text": "Dos droit, jambes fléchies, charge collée au corps", "isCorrect": True},
+                        {"text": "Jambes tendues, dos courbé en avant", "isCorrect": False},
+                        {"text": "Porter à bout de bras loin du corps", "isCorrect": False},
+                        {"text": "Soulever par à-coups brusques", "isCorrect": False}
                     ],
-                    "correction": "Ergonomie et gestes et postures."
+                    "correction": "Cette technique utilise la force des cuisses et protège la colonne vertébrale, prévenant les lombalgies et hernies discales."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Trait de niveau :",
+                    "question": "À quoi correspond le 'Trait de niveau' tracé par le maçon sur les murs (généralement à 1m) ?",
                     "answerOptions": [
-                        {"text": "1 m du sol fini", "isCorrect": True},
-                        {"text": "Au sol", "isCorrect": False},
-                        {"text": "Au plafond", "isCorrect": False},
-                        {"text": "10 cm du sol", "isCorrect": False}
+                        {"text": "À une référence altimétrique commune pour tous les artisans", "isCorrect": True},
+                        {"text": "À la hauteur du carrelage fini", "isCorrect": False},
+                        {"text": "À la hauteur des plinthes", "isCorrect": False},
+                        {"text": "À une décoration", "isCorrect": False}
                     ],
-                    "correction": "Référence commune à tous les artisans."
+                    "correction": "Le carreleur mesure 1 mètre vers le bas depuis ce trait pour déterminer le niveau exact de son sol fini."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Quantité de carreaux 30x30 dans 1 m² ?",
+                    "question": "Combien de carreaux de 30x30 cm (0,09 m²) faut-il théoriquement pour couvrir 1 m² ?",
                     "answerOptions": [
-                        {"text": "11,11", "isCorrect": True},
-                        {"text": "9", "isCorrect": False},
-                        {"text": "10", "isCorrect": False},
-                        {"text": "12", "isCorrect": False}
+                        {"text": "11,11 carreaux (soit 12)", "isCorrect": True},
+                        {"text": "9 carreaux", "isCorrect": False},
+                        {"text": "100 carreaux", "isCorrect": False},
+                        {"text": "3 carreaux", "isCorrect": False}
                     ],
-                    "correction": "1 / (0,3x0,3). On compte 12 carreaux pour couvrir 1m² et avoir un peu de marge."
+                    "correction": "Calcul : 1 divisé par 0,09 = 11,11. On compte 12 carreaux pour couvrir 1m² et avoir un peu de marge."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "FDS signifie :",
+                    "question": "Les Fiches de Données de Sécurité (FDS) servent à :",
                     "answerOptions": [
-                        {"text": "Fiche de Données de Sécurité", "isCorrect": True},
-                        {"text": "Fin De Série", "isCorrect": False},
-                        {"text": "Fer De Soudure", "isCorrect": False},
-                        {"text": "Façade Du Sud", "isCorrect": False}
+                        {"text": "Connaître les risques chimiques d'un produit et les mesures de premiers secours", "isCorrect": True},
+                        {"text": "Connaître le prix du produit", "isCorrect": False},
+                        {"text": "Savoir comment poser le produit", "isCorrect": False},
+                        {"text": "Faire la publicité du produit", "isCorrect": False}
                     ],
-                    "correction": "Informations toxicologiques des produits."
+                    "correction": "Elles sont obligatoires sur le chantier pour tous les produits dangereux (colles, résines, nettoyants acides)."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Déchet dangereux :",
+                    "question": "Où doit-on jeter les restes de produits chimiques (bidons de solvant, résine époxy) ?",
                     "answerOptions": [
-                        {"text": "Colle époxy / Solvants", "isCorrect": True},
-                        {"text": "Carton", "isCorrect": False},
-                        {"text": "Carreau cassé", "isCorrect": False},
-                        {"text": "Palette bois", "isCorrect": False}
+                        {"text": "En déchetterie spécialisée (déchets dangereux)", "isCorrect": True},
+                        {"text": "Dans la poubelle normale", "isCorrect": False},
+                        {"text": "Dans les égouts", "isCorrect": False},
+                        {"text": "Dans la nature", "isCorrect": False}
                     ],
-                    "correction": "Déchets chimiques."
+                    "correction": "Ce sont des déchets polluants qui ne doivent pas être mélangés aux gravats inertes (céramique, béton)."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Surface pièce 4m x 5m :",
+                    "question": "Quelle est la surface à carreler d'une pièce faisant 4m de long sur 5m de large ?",
                     "answerOptions": [
                         {"text": "20 m²", "isCorrect": True},
                         {"text": "9 m²", "isCorrect": False},
                         {"text": "18 m²", "isCorrect": False},
-                        {"text": "25 m²", "isCorrect": False}
+                        {"text": "22 m²", "isCorrect": False}
                     ],
-                    "correction": "4 x 5."
+                    "correction": "4 x 5 = 20."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Cordeau à tracer (bleu) :",
+                    "question": "Le cordeau à tracer (bleu) permet de :",
                     "answerOptions": [
-                        {"text": "Tracer des axes droits", "isCorrect": True},
-                        {"text": "Mesurer", "isCorrect": False},
-                        {"text": "Couper", "isCorrect": False},
-                        {"text": "Nettoyer", "isCorrect": False}
+                        {"text": "Matérialiser au sol des axes rectilignes sur de grandes longueurs", "isCorrect": True},
+                        {"text": "Mesurer des distances", "isCorrect": False},
+                        {"text": "Couper le carrelage", "isCorrect": False},
+                        {"text": "Poncer la chape", "isCorrect": False}
                     ],
-                    "correction": "Pour matérialiser le calepinage au sol."
+                    "correction": "On tend la ficelle poudrée et on la 'claque' pour imprimer une ligne bleue au sol, base du calepinage."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Projection ciment dans l'œil :",
+                    "question": "Que faire en cas de projection de ciment ou de chaux dans les yeux ?",
                     "answerOptions": [
-                        {"text": "Rincer à l'eau", "isCorrect": True},
-                        {"text": "Frotter", "isCorrect": False},
+                        {"text": "Rincer abondamment à l'eau claire immédiatement et consulter", "isCorrect": True},
+                        {"text": "Frotter les yeux", "isCorrect": False},
                         {"text": "Mettre un pansement", "isCorrect": False},
-                        {"text": "Rien", "isCorrect": False}
+                        {"text": "Attendre le soir", "isCorrect": False}
                     ],
-                    "correction": "Urgence chimique (brûlure basique)."
+                    "correction": "Le ciment est basique (pH élevé) et provoque des brûlures chimiques graves à la cornée. Le rinçage immédiat est la seule action qui limite les dégâts."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Nombre de paquets pour 40m² (paquet de 1,5m²) :",
+                    "question": "Si un paquet de carrelage couvre 1,5 m², combien de paquets faut-il pour 40 m² (sans marge) ?",
                     "answerOptions": [
-                        {"text": "27", "isCorrect": True},
-                        {"text": "26", "isCorrect": False},
-                        {"text": "20", "isCorrect": False},
-                        {"text": "30", "isCorrect": False}
+                        {"text": "27 paquets", "isCorrect": True},
+                        {"text": "26 paquets", "isCorrect": False},
+                        {"text": "20 paquets", "isCorrect": False},
+                        {"text": "30 paquets", "isCorrect": False}
                     ],
-                    "correction": "40 / 1,5 = 26,66 -> 27 paquets entiers."
+                    "correction": "40 / 1,5 = 26,66. Comme on ne vend pas de paquets ouverts, il faut arrondir à l'entier supérieur, soit 27."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Travail à l'avancement :",
+                    "question": "Travailler 'à l'avancement' signifie :",
                     "answerOptions": [
-                        {"text": "On recule en posant", "isCorrect": True},
-                        {"text": "On marche sur le carrelage", "isCorrect": False},
-                        {"text": "On avance", "isCorrect": False},
-                        {"text": "On piétine", "isCorrect": False}
+                        {"text": "Progresser en marchant sur le support brut et non sur le carrelage frais", "isCorrect": True},
+                        {"text": "Marcher sur le carrelage qu'on vient de poser", "isCorrect": False},
+                        {"text": "Commencer par la porte", "isCorrect": False},
+                        {"text": "Aller très vite", "isCorrect": False}
                     ],
-                    "correction": "Pour ne pas abîmer le travail frais."
+                    "correction": "Le carreleur est face à son travail et recule vers la sortie. Cela évite d'abîmer la planéité des carreaux fraîchement posés."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Aspirateur classe M :",
+                    "question": "Un aspirateur de classe M est obligatoire sur chantier pour :",
                     "answerOptions": [
-                        {"text": "Poussières nocives chantier", "isCorrect": True},
-                        {"text": "Maison", "isCorrect": False},
-                        {"text": "Eau", "isCorrect": False},
-                        {"text": "Voiture", "isCorrect": False}
+                        {"text": "Aspirer les poussières nocives (minérales, bois) avec une filtration adaptée", "isCorrect": True},
+                        {"text": "Aspirer l'eau", "isCorrect": False},
+                        {"text": "Nettoyer les bureaux", "isCorrect": False},
+                        {"text": "Faire moins de bruit", "isCorrect": False}
                     ],
-                    "correction": "Filtration moyenne (Medium) pour poussières minérales."
+                    "correction": "Les aspirateurs ménagers rejettent les poussières fines dangereuses dans l'air. La classe M (Moyenne) garantit la capture des particules respirables."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Niveau à bulle :",
+                    "question": "Le niveau à bulle permet de contrôler :",
                     "answerOptions": [
-                        {"text": "Horizontalité / Verticalité", "isCorrect": True},
-                        {"text": "Poids", "isCorrect": False},
-                        {"text": "Longueur", "isCorrect": False},
-                        {"text": "Angle", "isCorrect": False}
+                        {"text": "L'horizontalité et la verticalité", "isCorrect": True},
+                        {"text": "La longueur", "isCorrect": False},
+                        {"text": "L'angle à 45°", "isCorrect": False},
+                        {"text": "La température", "isCorrect": False}
                     ],
-                    "correction": "Contrôle de la planéité et de l'aplomb."
+                    "correction": "C'est l'outil de contrôle permanent du carreleur. La bulle doit être centrée entre les deux traits."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Périmètre rectangle :",
+                    "question": "Le calcul du périmètre d'une pièce sert à commander :",
                     "answerOptions": [
-                        {"text": "(L + l) x 2", "isCorrect": True},
-                        {"text": "L x l", "isCorrect": False},
-                        {"text": "L + l", "isCorrect": False},
-                        {"text": "L x 4", "isCorrect": False}
+                        {"text": "Les plinthes", "isCorrect": True},
+                        {"text": "La colle", "isCorrect": False},
+                        {"text": "Le carrelage de sol", "isCorrect": False},
+                        {"text": "Le primaire", "isCorrect": False}
                     ],
-                    "correction": "Longueur du contour (pour les plinthes)."
+                    "correction": "Périmètre = (Longueur + Largeur) x 2. Il faut ensuite déduire la largeur des portes pour connaître le métré linéaire de plinthes."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Sécurité électrique eau :",
+                    "question": "Pourquoi doit-on utiliser un disjoncteur différentiel 30mA avec une scie à eau ?",
                     "answerOptions": [
-                        {"text": "Disjoncteur différentiel 30mA", "isCorrect": True},
-                        {"text": "Prise normale", "isCorrect": False},
-                        {"text": "Pieds nus", "isCorrect": False},
-                        {"text": "Fils dénudés", "isCorrect": False}
+                        {"text": "Pour couper le courant instantanément en cas de fuite d'électricité (protection des personnes)", "isCorrect": True},
+                        {"text": "Pour économiser l'électricité", "isCorrect": False},
+                        {"text": "Pour que la machine tourne plus vite", "isCorrect": False},
+                        {"text": "Pour empêcher la machine de chauffer", "isCorrect": False}
                     ],
-                    "correction": "Protection contre l'électrocution."
+                    "correction": "L'eau et l'électricité créent un risque mortel d'électrocution. Le 30mA détecte la moindre fuite de courant vers la terre (et donc potentiellement à travers le corps humain) et disjoncte."
                 }
             ]
         }
