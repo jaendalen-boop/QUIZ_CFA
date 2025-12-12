@@ -1,1153 +1,1145 @@
-# Fichier : quiz_cap_meca_vp_100.py
-
 quiz_data = {
-    "title": "Quiz CAP Maintenance des Véhicules (VP) : Révisions Complètes (100 Questions)",
+    "title": "Quiz CAP Maintenance des Véhicules (Option A) : Moteur, Liaison au Sol, Électricité et Sécurité (100 Questions)",
     "themes": {
         # =========================================================================
-        # THÈME 1 : MOTEUR THERMIQUE ET PÉRIPHÉRIQUES (Q. 1-20)
+        # THÈME 1 : MOTORISATION ET MAINTENANCE PÉRIODIQUE (Questions 1 à 20)
         # =========================================================================
         1: {
-            "name": "1. Moteur Thermique et Périphériques (Q. 1-20)",
+            "name": "THÈME 1 : MOTORISATION ET MAINTENANCE PÉRIODIQUE",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Dans un moteur à quatre temps, quel est l'ordre chronologique des phases du cycle ?",
+                    "question": "Quel est l'ordre chronologique des 4 temps du cycle d'un moteur thermique ?",
                     "answerOptions": [
-                        {"text": "Compression, Admission, Échappement, Détente.", "isCorrect": False},
-                        {"text": "Admission, Compression, Détente, Échappement.", "isCorrect": True},
-                        {"text": "Détente, Échappement, Admission, Compression.", "isCorrect": False},
-                        {"text": "Échappement, Détente, Compression, Admission.", "isCorrect": False}
+                        {"text": "Admission Compression Combustion Échappement", "isCorrect": True},
+                        {"text": "Compression Admission Échappement Combustion", "isCorrect": False},
+                        {"text": "Admission Échappement Compression Combustion", "isCorrect": False},
+                        {"text": "Combustion Compression Admission Échappement", "isCorrect": False}
                     ],
-                    "correction": "Le cycle d'un moteur thermique est : **Admission** du mélange, **Compression** du mélange, **Détente** (explosion) qui produit la puissance, et **Échappement** des gaz brûlés."
+                    "correction": "Le cycle à 4 temps se déroule toujours dans cet ordre précis : 1. Admission, 2. Compression, 3. Combustion-Détente, 4. Échappement."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quel est le rôle principal du turbocompresseur ?",
+                    "question": "Quelle pièce mécanique commande l'ouverture et la fermeture des soupapes ?",
                     "answerOptions": [
-                        {"text": "Refroidir l'huile moteur.", "isCorrect": False},
-                        {"text": "Augmenter la pression des gaz d'échappement.", "isCorrect": False},
-                        {"text": "Augmenter la quantité d'air admise dans les cylindres pour améliorer la puissance.", "isCorrect": True},
-                        {"text": "Filtrer le carburant.", "isCorrect": False}
+                        {"text": "L'arbre à cames", "isCorrect": True},
+                        {"text": "Le vilebrequin du moteur", "isCorrect": False},
+                        {"text": "La pompe à injection", "isCorrect": False},
+                        {"text": "Le collecteur d'admission", "isCorrect": False}
                     ],
-                    "correction": "Le turbocompresseur utilise l'énergie des gaz d'échappement pour comprimer l'air d'admission, améliorant ainsi le **rendement** et la puissance du moteur."
+                    "correction": "C'est l'arbre à cames qui, grâce à ses cames, appuie sur les soupapes pour les ouvrir au bon moment."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quel est le rôle du calorstat (ou thermostat) dans le circuit de refroidissement ?",
+                    "question": "Quelle est la fonction principale de l'huile moteur ?",
                     "answerOptions": [
-                        {"text": "Démarrer le ventilateur.", "isCorrect": False},
-                        {"text": "Maintenir le moteur à sa température de fonctionnement optimale en régulant la circulation du liquide de refroidissement vers le radiateur.", "isCorrect": True},
-                        {"text": "Filtrer le liquide de refroidissement.", "isCorrect": False},
-                        {"text": "Indiquer la pression d'huile.", "isCorrect": False}
+                        {"text": "Lubrifier", "isCorrect": True},
+                        {"text": "Augmenter la compression", "isCorrect": False},
+                        {"text": "Nettoyer le pare-brise", "isCorrect": False},
+                        {"text": "Refroidir l'habitacle", "isCorrect": False}
                     ],
-                    "correction": "Le **calorstat** est une vanne thermostatique. Il reste fermé tant que le moteur est froid, puis s'ouvre pour permettre la circulation vers le radiateur lorsque la température idéale est atteinte."
+                    "correction": "La fonction première de l'huile est de lubrifier les pièces en mouvement pour limiter les frottements et l'usure."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Qu'est-ce que le 'jeu aux soupapes' ?",
+                    "question": "Sur un bidon d'huile, que signifie l'indice '5W' dans la désignation 5W30 ?",
                     "answerOptions": [
-                        {"text": "La distance entre deux cylindres.", "isCorrect": False},
-                        {"text": "Le jeu fonctionnel (distance) entre la queue de soupape et le poussoir/culbuteur, nécessaire pour la dilatation thermique.", "isCorrect": True},
-                        {"text": "Le temps d'ouverture de la soupape.", "isCorrect": False},
-                        {"text": "Le diamètre du siège de soupape.", "isCorrect": False}
+                        {"text": "La viscosité à froid", "isCorrect": True},
+                        {"text": "La viscosité à chaud", "isCorrect": False},
+                        {"text": "La qualité de l'huile", "isCorrect": False},
+                        {"text": "La quantité dans le bidon", "isCorrect": False}
                     ],
-                    "correction": "Le **jeu aux soupapes** est essentiel. S'il est incorrect, les soupapes peuvent mal se fermer (perte de compression) ou ne pas se dilater correctement (risque de casse)."
+                    "correction": "Le premier chiffre suivi de W (Winter) indique la fluidité de l'huile à froid."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quelle est la conséquence d'une 'détérioration de la courroie de distribution' (rupture) sur un moteur non interférentiel ?",
+                    "question": "Quel élément assure la circulation du liquide de refroidissement dans le moteur ?",
                     "answerOptions": [
-                        {"text": "Une simple perte de puissance.", "isCorrect": False},
-                        {"text": "Le moteur s'arrête sans dommage majeur.", "isCorrect": True},
-                        {"text": "Une surchauffe immédiate.", "isCorrect": False},
-                        {"text": "Une fuite d'huile.", "isCorrect": False}
+                        {"text": "La pompe à eau", "isCorrect": True},
+                        {"text": "Le radiateur moteur", "isCorrect": False},
+                        {"text": "Le vase d'expansion", "isCorrect": False},
+                        {"text": "Le thermostat d'eau", "isCorrect": False}
                     ],
-                    "correction": "Sur un moteur **non interférentiel**, les soupapes ne touchent pas les pistons si la courroie casse. Le moteur s'arrête. Sur un moteur interférentiel, la rupture entraîne la destruction du moteur."
+                    "correction": "La pompe à eau force la circulation du liquide de refroidissement à travers le bloc moteur et le radiateur."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Quel est le rôle du 'carter d'huile' ?",
+                    "question": "Quel est le rôle du filtre à air ?",
                     "answerOptions": [
-                        {"text": "Filtrer l'air d'admission.", "isCorrect": False},
-                        {"text": "Stocker l'huile nécessaire à la lubrification du moteur et assurer son refroidissement partiel.", "isCorrect": True},
-                        {"text": "Maintenir les pistons.", "isCorrect": False},
-                        {"text": "Refroidir les gaz d'échappement.", "isCorrect": False}
+                        {"text": "Retenir les poussières", "isCorrect": True},
+                        {"text": "Filtrer l'essence", "isCorrect": False},
+                        {"text": "Refroidir l'air entrant", "isCorrect": False},
+                        {"text": "Mesurer le débit d'air", "isCorrect": False}
                     ],
-                    "correction": "Le **carter d'huile** est le réservoir en bas du moteur. La crépine de la pompe à huile y plonge pour aspirer l'huile et la distribuer sous pression."
+                    "correction": "Son rôle exclusif est de retenir les impuretés et poussières contenues dans l'air ambiant."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Lors d'un changement de bougies d'allumage (essence), que doit-on vérifier avant de serrer ?",
+                    "question": "Quand doit-on contrôler le niveau d'huile moteur pour une précision maximale ?",
                     "answerOptions": [
-                        {"text": "La couleur du carter.", "isCorrect": False},
-                        {"text": "Le type de joint et l'écartement des électrodes (gap).", "isCorrect": True},
-                        {"text": "Le niveau de liquide de frein.", "isCorrect": False},
-                        {"text": "La pression des pneus.", "isCorrect": False}
+                        {"text": "Moteur froid et à plat", "isCorrect": True},
+                        {"text": "Moteur chaud et tournant", "isCorrect": False},
+                        {"text": "Moteur froid en pente", "isCorrect": False},
+                        {"text": "Moteur chaud et en pente", "isCorrect": False}
                     ],
-                    "correction": "L'**écartement des électrodes** (gap) est crucial pour la qualité de l'étincelle et doit correspondre aux spécifications du constructeur."
+                    "correction": "Le niveau se vérifie idéalement sur un sol horizontal et moteur froid pour que l'huile soit redescendue dans le carter."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quel composant d'un moteur Diesel permet d'augmenter la température de l'air admis pour faciliter le démarrage à froid ?",
+                    "question": "Quelle pièce relie le piston au vilebrequin ?",
                     "answerOptions": [
-                        {"text": "Les bougies d'allumage.", "isCorrect": False},
-                        {"text": "Les bougies de préchauffage.", "isCorrect": True},
-                        {"text": "Le turbo.", "isCorrect": False},
-                        {"text": "Le filtre à particules.", "isCorrect": False}
+                        {"text": "La bielle", "isCorrect": True},
+                        {"text": "La culasse", "isCorrect": False},
+                        {"text": "La soupape", "isCorrect": False},
+                        {"text": "Le segment", "isCorrect": False}
                     ],
-                    "correction": "Les **bougies de préchauffage** sont des résistances électriques qui chauffent la chambre de combustion avant et pendant le démarrage, car l'inflammation du Diesel nécessite une haute température."
+                    "correction": "La bielle transforme le mouvement rectiligne alternatif du piston en mouvement rotatif du vilebrequin."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Quelle est l'unité de mesure de la 'viscosité' de l'huile moteur ?",
+                    "question": "Quel composant permet d'enflammer le mélange air-essence dans un moteur essence ?",
                     "answerOptions": [
-                        {"text": "Le Newton (N).", "isCorrect": False},
-                        {"text": "Le Watt (W).", "isCorrect": False},
-                        {"text": "Le SAE (Society of Automotive Engineers), ex : 5W30.", "isCorrect": True},
-                        {"text": "Le Bar (B).", "isCorrect": False}
+                        {"text": "La bougie d'allumage", "isCorrect": True},
+                        {"text": "La bougie de préchauffage", "isCorrect": False},
+                        {"text": "L'injecteur de carburant", "isCorrect": False},
+                        {"text": "La bobine d'allumage", "isCorrect": False}
                     ],
-                    "correction": "L'indice **SAE** (ex : 5W30) indique la viscosité. Le premier chiffre (5W) correspond à la fluidité à froid (Winter), le second (30) à la fluidité à chaud."
+                    "correction": "C'est l'étincelle électrique de la bougie d'allumage qui déclenche la combustion."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Comment appelle-t-on le dispositif qui réduit la pollution en transformant les gaz toxiques (CO, NOx, HC) en gaz moins nocifs (CO2, N2, H2O) ?",
+                    "question": "Que faut-il remplacer systématiquement lors d'une vidange moteur ?",
                     "answerOptions": [
-                        {"text": "L'intercooler.", "isCorrect": False},
-                        {"text": "Le catalyseur (ou pot catalytique).", "isCorrect": True},
-                        {"text": "Le reniflard.", "isCorrect": False},
-                        {"text": "Le démarreur.", "isCorrect": False}
+                        {"text": "Le joint de bouchon", "isCorrect": True},
+                        {"text": "Le bouchon de vidange", "isCorrect": False},
+                        {"text": "Le carter d'huile", "isCorrect": False},
+                        {"text": "La jauge à huile", "isCorrect": False}
                     ],
-                    "correction": "Le **catalyseur** (trois voies pour l'essence) est un dispositif antipollution essentiel. Il contient des métaux précieux (Platine, Rhodium) qui servent de catalyseurs chimiques."
+                    "correction": "Le joint s'écrase au serrage pour assurer l'étanchéité et doit être changé à chaque intervention."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Lors du remplacement d'un joint de culasse, quelle procédure de serrage est obligatoire ?",
+                    "question": "À quoi sert le vase d'expansion dans le circuit de refroidissement ?",
                     "answerOptions": [
-                        {"text": "Le serrage au jugé.", "isCorrect": False},
-                        {"text": "Le serrage en spirale.", "isCorrect": False},
-                        {"text": "Le serrage en escargot (ou par passe) et selon le couple et l'angle du constructeur.", "isCorrect": True},
-                        {"text": "Le serrage en ligne droite.", "isCorrect": False}
+                        {"text": "Compenser la dilatation du liquide", "isCorrect": True},
+                        {"text": "Refroidir directement le moteur", "isCorrect": False},
+                        {"text": "Filtrer les impuretés du liquide", "isCorrect": False},
+                        {"text": "Chauffer l'habitacle du véhicule", "isCorrect": False}
                     ],
-                    "correction": "Le serrage des vis de culasse doit suivre un **ordre (spirale ou escargot)** et un couple/angle très précis pour assurer l'étanchéité et éviter le voilage de la culasse."
+                    "correction": "Le liquide change de volume en chauffant ; le vase d'expansion absorbe ces variations."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quel est le rôle du 'volant moteur' ?",
+                    "question": "Quelle est la conséquence d'une courroie de distribution cassée moteur tournant ?",
                     "answerOptions": [
-                        {"text": "Distribuer le carburant.", "isCorrect": False},
-                        {"text": "Équilibrer les irrégularités de rotation du moteur et servir de support au mécanisme d'embrayage.", "isCorrect": True},
-                        {"text": "Ouvrir les soupapes.", "isCorrect": False},
-                        {"text": "Refroidir les pistons.", "isCorrect": False}
+                        {"text": "La casse moteur", "isCorrect": True},
+                        {"text": "Une simple panne d'essence", "isCorrect": False},
+                        {"text": "Un bruit de sifflement", "isCorrect": False},
+                        {"text": "L'arrêt de la climatisation", "isCorrect": False}
                     ],
-                    "correction": "Le **volant moteur** (souvent bi-masse aujourd'hui) est une masse lourde qui stocke l'énergie cinétique pour régulariser la rotation entre les temps moteurs."
+                    "correction": "La synchronisation est perdue, les pistons percutent les soupapes, entraînant des dégâts majeurs."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quel système est utilisé dans les moteurs Diesel modernes pour réduire les émissions d'oxydes d'azote (NOx) ?",
+                    "question": "Quel est le rôle des segments situés sur le piston ?",
                     "answerOptions": [
-                        {"text": "Le FAP (Filtre à Particules).", "isCorrect": False},
-                        {"text": "Le système SCR (Selective Catalytic Reduction) utilisant l'AdBlue.", "isCorrect": True},
-                        {"text": "Le turbo simple.", "isCorrect": False},
-                        {"text": "La pompe à huile.", "isCorrect": False}
+                        {"text": "Assurer l'étanchéité", "isCorrect": True},
+                        {"text": "Guider la bielle", "isCorrect": False},
+                        {"text": "Fixer l'axe de piston", "isCorrect": False},
+                        {"text": "Alléger le piston", "isCorrect": False}
                     ],
-                    "correction": "Le système **SCR** injecte de l'AdBlue (solution d'urée) dans les gaz d'échappement pour convertir les NOx en azote et en eau, réduisant ainsi la pollution."
+                    "correction": "Ils assurent l'étanchéité aux gaz de combustion et raclent l'huile."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Lors d'un test de compression moteur, une valeur faible peut indiquer un problème au niveau de :",
+                    "question": "Lors du remplacement d'un filtre à huile vissé, que faut-il faire avant le montage ?",
                     "answerOptions": [
-                        {"text": "L'alternateur.", "isCorrect": False},
-                        {"text": "Le démarreur.", "isCorrect": False},
-                        {"text": "L'étanchéité des soupapes, le joint de culasse ou la segmentation des pistons.", "isCorrect": True},
-                        {"text": "L'autoradio.", "isCorrect": False}
+                        {"text": "Huiler le joint", "isCorrect": True},
+                        {"text": "Remplir le filtre d'eau", "isCorrect": False},
+                        {"text": "Graisser le filetage", "isCorrect": False},
+                        {"text": "Poncer le plan de joint", "isCorrect": False}
                     ],
-                    "correction": "La **compression** est vitale. Un manque indique une fuite de pression dans la chambre de combustion, souvent due à un composant défectueux (soupapes qui ferment mal, joint de culasse percé, segments usés)."
+                    "correction": "Il faut enduire le joint d'huile moteur propre pour éviter qu'il ne se déchire ou ne grippe."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quel organe mécanique assure la synchronisation entre le vilebrequin et l'arbre à cames ?",
+                    "question": "Quel liquide utilise-t-on pour le système de refroidissement d'un moteur moderne ?",
                     "answerOptions": [
-                        {"text": "La bielle.", "isCorrect": False},
-                        {"text": "Le pignon de différentiel.", "isCorrect": False},
-                        {"text": "La courroie ou la chaîne de distribution.", "isCorrect": True},
-                        {"text": "Le collecteur d'admission.", "isCorrect": False}
+                        {"text": "Un liquide spécifique", "isCorrect": True},
+                        {"text": "De l'eau du robinet", "isCorrect": False},
+                        {"text": "De l'eau déminéralisée", "isCorrect": False},
+                        {"text": "De l'huile hydraulique", "isCorrect": False}
                     ],
-                    "correction": "La **courroie/chaîne de distribution** est l'organe essentiel qui garantit que les soupapes s'ouvrent et se ferment au bon moment par rapport à la position des pistons (le calage)."
+                    "correction": "On utilise un liquide spécifique (eau + antigel + additifs) qui ne gèle pas et ne bout pas à 100°C."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Qu'est-ce qu'un 'injecteur' ?",
+                    "question": "Quelle pièce du moteur ferme le haut des cylindres et supporte les soupapes ?",
                     "answerOptions": [
-                        {"text": "Un filtre à air.", "isCorrect": False},
-                        {"text": "Un dispositif qui pulvérise précisément le carburant dans l'admission ou la chambre de combustion.", "isCorrect": True},
-                        {"text": "Une pièce de l'embrayage.", "isCorrect": False},
-                        {"text": "Le réservoir d'huile.", "isCorrect": False}
+                        {"text": "La culasse", "isCorrect": True},
+                        {"text": "Le bas moteur", "isCorrect": False},
+                        {"text": "Le cache-culbuteurs", "isCorrect": False},
+                        {"text": "Le joint de culasse", "isCorrect": False}
                     ],
-                    "correction": "L'**injecteur** est contrôlé électroniquement pour délivrer la quantité exacte de carburant, au bon moment et sous haute pression (surtout Diesel Common Rail), pour une combustion optimale."
+                    "correction": "La culasse coiffe le bloc moteur et contient les chambres de combustion."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Quel est le rôle de la pompe à eau dans le moteur ?",
+                    "question": "Quel est le symptôme principal d'un joint de culasse défectueux ?",
                     "answerOptions": [
-                        {"text": "Injecter le carburant.", "isCorrect": False},
-                        {"text": "Mettre le liquide de refroidissement en circulation forcée entre le moteur et le radiateur.", "isCorrect": True},
-                        {"text": "Assurer la pression d'huile.", "isCorrect": False},
-                        {"text": "Gérer la climatisation.", "isCorrect": False}
+                        {"text": "Fumée blanche épaisse", "isCorrect": True},
+                        {"text": "Fumée noire à l'échappement", "isCorrect": False},
+                        {"text": "Cliquetis dans le moteur", "isCorrect": False},
+                        {"text": "Usure des pneus avant", "isCorrect": False}
                     ],
-                    "correction": "La **pompe à eau** est souvent entraînée par la courroie d'accessoire (ou de distribution) et est vitale pour éviter la surchauffe du moteur."
+                    "correction": "Une fumée blanche épaisse à chaud indique que du liquide de refroidissement pénètre dans les cylindres."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quel est le principal symptôme d'un filtre à air encrassé ?",
+                    "question": "Qu'est-ce que la cylindrée unitaire d'un moteur ?",
                     "answerOptions": [
-                        {"text": "Un bruit métallique.", "isCorrect": False},
-                        {"text": "Une perte de puissance et une augmentation de la consommation de carburant (mélange trop riche).", "isCorrect": True},
-                        {"text": "Un problème de freinage.", "isCorrect": False},
-                        {"text": "Une fuite de liquide de refroidissement.", "isCorrect": False}
+                        {"text": "Le volume d'un cylindre", "isCorrect": True},
+                        {"text": "Le volume total du moteur", "isCorrect": False},
+                        {"text": "La puissance du moteur", "isCorrect": False},
+                        {"text": "Le diamètre du piston", "isCorrect": False}
                     ],
-                    "correction": "Un filtre à air sale réduit l'arrivée d'air frais. Le moteur est **étouffé**, ce qui entraîne une baisse de performance et une surconsommation, car le rapport air/carburant est déséquilibré."
+                    "correction": "C'est le volume balayé par le piston entre le PMB et le PMH dans un seul cylindre."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Qu'est-ce qu'un moteur 'interférentiel' ?",
+                    "question": "Quel outil permet de serrer une vis au couple prescrit par le constructeur ?",
                     "answerOptions": [
-                        {"text": "Un moteur qui ne fait pas de bruit.", "isCorrect": False},
-                        {"text": "Un moteur dont les soupapes et les pistons peuvent entrer en collision en cas de décalage de la distribution.", "isCorrect": True},
-                        {"text": "Un moteur avec turbo.", "isCorrect": False},
-                        {"text": "Un moteur électrique.", "isCorrect": False}
+                        {"text": "Une clé dynamométrique", "isCorrect": True},
+                        {"text": "Une clé à chocs pneumatique", "isCorrect": False},
+                        {"text": "Une clé plate mixte", "isCorrect": False},
+                        {"text": "Une pince multiprise", "isCorrect": False}
                     ],
-                    "correction": "La majorité des moteurs modernes sont **interférentiels**. La rupture de la courroie ou un mauvais calage entraîne des dégâts mécaniques majeurs (soupapes tordues, pistons marqués)."
+                    "correction": "La clé dynamométrique permet d'appliquer une force de serrage (couple) exacte."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Le système de 'recyclage des gaz d'échappement' (EGR) sert principalement à :",
+                    "question": "Pourquoi ne doit-on jamais ouvrir le bouchon du vase d'expansion moteur chaud ?",
                     "answerOptions": [
-                        {"text": "Faire fonctionner la climatisation.", "isCorrect": False},
-                        {"text": "Réduire la température de combustion pour diminuer la formation d'oxydes d'azote (NOx).", "isCorrect": True},
-                        {"text": "Augmenter la pression d'huile.", "isCorrect": False},
-                        {"text": "Filtrer la poussière.", "isCorrect": False}
+                        {"text": "Risque de brûlures graves", "isCorrect": True},
+                        {"text": "Risque de désamorcer la pompe", "isCorrect": False},
+                        {"text": "Risque de faire entrer de l'air", "isCorrect": False},
+                        {"text": "Risque de casser le bouchon", "isCorrect": False}
                     ],
-                    "correction": "La vanne **EGR** (Exhaust Gas Recirculation) réintroduit une petite partie des gaz d'échappement dans l'admission. Ces gaz inertes abaissent la température de combustion, ce qui réduit la production de NOx."
+                    "correction": "Le circuit est sous pression ; l'ouverture brutale provoque une éjection de liquide bouillant."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 2 : TRAINS ROULANTS, LIAISON AU SOL ET FREINAGE (Q. 21-40)
+        # THÈME 2 : LIAISON AU SOL (Questions 21 à 40)
         # =========================================================================
         2: {
-            "name": "2. Trains Roulants, Liaison au Sol et Freinage (Q. 21-40)",
+            "name": "THÈME 2 : LIAISON AU SOL",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quel est le rôle principal du système ABS (Anti-lock Braking System) ?",
+                    "question": "Quelle est la limite légale d'usure de la profondeur des sculptures d'un pneu ?",
                     "answerOptions": [
-                        {"text": "Réduire la distance de freinage sur toutes surfaces.", "isCorrect": False},
-                        {"text": "Empêcher le blocage des roues lors du freinage pour conserver la direction du véhicule.", "isCorrect": True},
-                        {"text": "Augmenter la puissance de freinage.", "isCorrect": False},
-                        {"text": "Réguler la hauteur de caisse.", "isCorrect": False}
+                        {"text": "1,6 mm", "isCorrect": True},
+                        {"text": "1,0 mm", "isCorrect": False},
+                        {"text": "2,5 mm", "isCorrect": False},
+                        {"text": "3,0 mm", "isCorrect": False}
                     ],
-                    "correction": "L'**ABS** ne réduit pas toujours la distance de freinage, mais il permet au conducteur de **garder le contrôle de la direction** en évitant le blocage des roues."
+                    "correction": "Le Code de la route impose 1,6 mm minimum pour évacuer l'eau."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Que mesure-t-on lors de la vérification du parallélisme (géométrie) d'un train avant ?",
+                    "question": "Quel est le rôle principal de l'amortisseur ?",
                     "answerOptions": [
-                        {"text": "L'usure des plaquettes de frein.", "isCorrect": False},
-                        {"text": "L'angle d'inclinaison des roues par rapport à l'axe longitudinal du véhicule (le pincement ou l'ouverture).", "isCorrect": True},
-                        {"text": "La pression des amortisseurs.", "isCorrect": False},
-                        {"text": "La hauteur des ressorts.", "isCorrect": False}
+                        {"text": "Freiner les oscillations du ressort", "isCorrect": True},
+                        {"text": "Supporter tout le poids du véhicule", "isCorrect": False},
+                        {"text": "Remplacer les ressorts de suspension", "isCorrect": False},
+                        {"text": "Diriger les roues avant dans les virages", "isCorrect": False}
                     ],
-                    "correction": "Le **parallélisme** (ou pince/ouverture) est l'angle d'une roue vue de dessus. Un défaut provoque une usure anormale des pneus et une mauvaise tenue de route."
+                    "correction": "L'amortisseur freine l'effet de rebond du ressort pour maintenir la roue au sol."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quelle est la fonction principale de l'amortisseur ?",
+                    "question": "Quel outil utilise-t-on pour mesurer la pression des pneumatiques ?",
                     "answerOptions": [
-                        {"text": "Supporter le poids du véhicule.", "isCorrect": False},
-                        {"text": "Amortir les chocs.", "isCorrect": False},
-                        {"text": "Freiner les oscillations du ressort de suspension pour maintenir le pneu en contact permanent avec la route.", "isCorrect": True},
-                        {"text": "Transmettre le mouvement de rotation.", "isCorrect": False}
+                        {"text": "Un manomètre", "isCorrect": True},
+                        {"text": "Un thermomètre", "isCorrect": False},
+                        {"text": "Un micromètre", "isCorrect": False},
+                        {"text": "Un tachymètre", "isCorrect": False}
                     ],
-                    "correction": "L'amortisseur est un élément de **dissipation d'énergie** (souvent hydraulique). Il agit comme un frein pour le ressort, qui lui supporte le poids du véhicule."
+                    "correction": "Le manomètre mesure la pression des fluides."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quelle est l'une des causes les plus fréquentes de vibrations dans la direction à haute vitesse ?",
+                    "question": "Une usure prononcée uniquement sur les deux bords extérieurs de la bande de roulement indique :",
                     "answerOptions": [
-                        {"text": "Un filtre à huile bouché.", "isCorrect": False},
-                        {"text": "Un mauvais équilibrage des roues ou un défaut de la jante/du pneu.", "isCorrect": True},
-                        {"text": "Une défaillance de l'ABS.", "isCorrect": False},
-                        {"text": "Un mauvais serrage de bougie.", "isCorrect": False}
+                        {"text": "Un sous-gonflage", "isCorrect": True},
+                        {"text": "Un sur-gonflage", "isCorrect": False},
+                        {"text": "Un carrossage négatif", "isCorrect": False},
+                        {"text": "Un freinage trop brusque", "isCorrect": False}
                     ],
-                    "correction": "L'**équilibrage des roues** est essentiel. Une petite masse manquante ou mal placée provoque des vibrations ressenties dans le volant à partir de certaines vitesses."
+                    "correction": "Un pneu sous-gonflé s'écrase et porte sur ses épaules, créant une usure latérale."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quel est le liquide de travail utilisé dans la majorité des circuits de freinage hydraulique ?",
+                    "question": "Quelle est la propriété physique essentielle du liquide de frein ?",
                     "answerOptions": [
-                        {"text": "L'eau.", "isCorrect": False},
-                        {"text": "Le liquide de refroidissement.", "isCorrect": False},
-                        {"text": "Le liquide de frein (souvent DOT 4 ou DOT 5.1).", "isCorrect": True},
-                        {"text": "L'huile moteur.", "isCorrect": False}
+                        {"text": "Incompressible", "isCorrect": True},
+                        {"text": "Inflammable", "isCorrect": False},
+                        {"text": "Compressible", "isCorrect": False},
+                        {"text": "Élastique", "isCorrect": False}
                     ],
-                    "correction": "Le **liquide de frein** est non compressible et doit avoir un point d'ébullition élevé (pour résister à la chaleur du freinage). Il est très hygroscopique (absorbe l'eau) et doit être remplacé régulièrement."
+                    "correction": "Le liquide doit être incompressible pour transmettre l'effort de freinage instantanément."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Un 'pincement' excessif des roues avant (vues de dessus) entraîne principalement :",
+                    "question": "Sur un pneu de dimension 205/55 R 16, que représente le chiffre 16 ?",
                     "answerOptions": [
-                        {"text": "Une usure anormale sur l'extérieur de la bande de roulement.", "isCorrect": False},
-                        {"text": "Une usure anormale sur l'intérieur de la bande de roulement.", "isCorrect": True},
-                        {"text": "Une usure uniforme.", "isCorrect": False},
-                        {"text": "Une fuite d'huile.", "isCorrect": False}
+                        {"text": "Le diamètre de la jante", "isCorrect": True},
+                        {"text": "La largeur du pneu", "isCorrect": False},
+                        {"text": "La hauteur du flanc", "isCorrect": False},
+                        {"text": "L'indice de vitesse", "isCorrect": False}
                     ],
-                    "correction": "Le **pincement** (les roues 'regardent' vers l'intérieur) crée un frottement qui use prématurément l'intérieur des pneus. L'ouverture use l'extérieur."
+                    "correction": "16 indique le diamètre intérieur du pneu (en pouces)."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quel est le composant qui transmet le mouvement de rotation de la boîte de vitesses à la roue motrice (sur un véhicule à traction) ?",
+                    "question": "Quel élément frotte contre le disque pour freiner le véhicule ?",
                     "answerOptions": [
-                        {"text": "La rotule de direction.", "isCorrect": False},
-                        {"text": "Le cardan (arbre de transmission ou arbre de roue).", "isCorrect": True},
-                        {"text": "Le disque de frein.", "isCorrect": False},
-                        {"text": "Le ressort de suspension.", "isCorrect": False}
+                        {"text": "Les plaquettes", "isCorrect": True},
+                        {"text": "Les segments", "isCorrect": False},
+                        {"text": "Les tambours", "isCorrect": False},
+                        {"text": "Les étriers", "isCorrect": False}
                     ],
-                    "correction": "Le **cardan** (ou joint homocinétique) est crucial car il doit transmettre le couple quelle que soit la position de la roue (braquage et hauteur de suspension)."
+                    "correction": "Les plaquettes sont pincées contre le disque par l'étrier."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Pourquoi la purge du circuit de freinage est-elle obligatoire après un remplacement d'étrier ou de maître-cylindre ?",
+                    "question": "À quoi sert le système ABS lors d'un freinage d'urgence ?",
                     "answerOptions": [
-                        {"text": "Pour enlever l'excès de liquide.", "isCorrect": False},
-                        {"text": "Pour retirer l'air qui s'est introduit dans le circuit et qui rendrait le liquide compressible (frein mou).", "isCorrect": True},
-                        {"text": "Pour recalibrer l'ABS.", "isCorrect": False},
-                        {"text": "Pour changer le liquide de refroidissement.", "isCorrect": False}
+                        {"text": "Éviter le blocage des roues", "isCorrect": True},
+                        {"text": "Réduire la distance de moitié", "isCorrect": False},
+                        {"text": "Refroidir les disques de frein", "isCorrect": False},
+                        {"text": "Augmenter la puissance moteur", "isCorrect": False}
                     ],
-                    "correction": "L'**air** est compressible, contrairement au liquide de frein. Sa présence rend la pédale 'spongieuse' (molle) et dangereuse. La purge l'élimine."
+                    "correction": "L'ABS relâche la pression pour éviter le blocage et garder le contrôle directionnel."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quelle est la première lecture à faire sur le flanc d'un pneu (par exemple 205/55 R 16) ?",
+                    "question": "Pourquoi est-il nécessaire de purger un circuit de freinage hydraulique ?",
                     "answerOptions": [
-                        {"text": "Le diamètre de la jante (16).", "isCorrect": False},
-                        {"text": "La largeur de la bande de roulement en millimètres (205).", "isCorrect": True},
-                        {"text": "Le type de gomme (R).", "isCorrect": False},
-                        {"text": "Le code de vitesse (V).", "isCorrect": False}
+                        {"text": "Pour chasser l'air", "isCorrect": True},
+                        {"text": "Pour retirer l'huile", "isCorrect": False},
+                        {"text": "Pour nettoyer les disques", "isCorrect": False},
+                        {"text": "Pour graisser les pistons", "isCorrect": False}
                     ],
-                    "correction": "Le premier chiffre (**205**) correspond à la **largeur** du pneu en millimètres (mm). Le deuxième (55) est le ratio d'aspect (hauteur par rapport à la largeur)."
+                    "correction": "L'air est compressible et rend la pédale molle ; il faut l'évacuer."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Quel est l'outil spécifique utilisé pour mesurer l'usure de la bande de roulement des pneus ?",
+                    "question": "Quel composant transforme le mouvement de rotation du volant en mouvement de translation pour braquer les roues ?",
                     "answerOptions": [
-                        {"text": "Le pied à coulisse.", "isCorrect": False},
-                        {"text": "La jauge de profondeur (ou testeur d'usure de pneu).", "isCorrect": True},
-                        {"text": "Le micromètre.", "isCorrect": False},
-                        {"text": "Le manomètre.", "isCorrect": False}
+                        {"text": "La crémaillère", "isCorrect": True},
+                        {"text": "Le cardan", "isCorrect": False},
+                        {"text": "L'amortisseur", "isCorrect": False},
+                        {"text": "Le triangle", "isCorrect": False}
                     ],
-                    "correction": "La **jauge de profondeur** permet de vérifier que l'usure n'atteint pas le témoin légal (**1,6 mm** minimum en France)."
+                    "correction": "Le pignon s'engrène sur la crémaillère qui se déplace latéralement."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Le voyant ESP (Electronic Stability Program) allumé en permanence indique :",
+                    "question": "Quel défaut de géométrie correspond à des roues avant qui 'regardent' vers l'intérieur ?",
                     "answerOptions": [
-                        {"text": "Que le moteur est chaud.", "isCorrect": False},
-                        {"text": "Un défaut dans le système de stabilité et de contrôle de traction (capteur d'angle au volant, capteur de lacet, etc.).", "isCorrect": True},
-                        {"text": "Que les pneus sont sous-gonflés.", "isCorrect": False},
-                        {"text": "Un manque de carburant.", "isCorrect": False}
+                        {"text": "Le pincement", "isCorrect": True},
+                        {"text": "L'ouverture", "isCorrect": False},
+                        {"text": "La chasse", "isCorrect": False},
+                        {"text": "Le carrossage", "isCorrect": False}
                     ],
-                    "correction": "L'**ESP** est un système de sécurité qui agit sur les freins pour stabiliser le véhicule. Un voyant allumé signifie que le système est désactivé ou défaillant et nécessite un diagnostic."
+                    "correction": "Le pincement est la convergence des roues vers l'avant."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quelle est la précaution essentielle à prendre avant de démonter un étrier de frein ?",
+                    "question": "Que signifie l'indice 'DOT' sur un bidon de liquide de frein ?",
                     "answerOptions": [
-                        {"text": "Vidanger l'huile moteur.", "isCorrect": False},
-                        {"text": "Placer un bac de récupération pour le liquide de frein qui va s'écouler.", "isCorrect": True},
-                        {"text": "Débrancher la batterie.", "isCorrect": False},
-                        {"text": "Changer les bougies.", "isCorrect": False}
+                        {"text": "Department of Transportation", "isCorrect": True},
+                        {"text": "Direction Of Tires", "isCorrect": False},
+                        {"text": "Digital Oil Temperature", "isCorrect": False},
+                        {"text": "Direct On Turbo", "isCorrect": False}
                     ],
-                    "correction": "Le liquide de frein est un produit **dangereux pour l'environnement** et agressif pour les peintures. Il doit être récupéré et traité comme un déchet spécial."
+                    "correction": "C'est une norme de sécurité américaine classant les liquides selon leur point d'ébullition."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Que peut provoquer un soufflet de cardan déchiré ?",
+                    "question": "Quel est le rôle du servo-frein (ou Master-vac) ?",
                     "answerOptions": [
-                        {"text": "Un problème d'éclairage.", "isCorrect": False},
-                        {"text": "La perte de la graisse du joint et l'entrée de poussière/eau, entraînant la destruction rapide du joint de cardan.", "isCorrect": True},
-                        {"text": "Une fuite de liquide de refroidissement.", "isCorrect": False},
-                        {"text": "Une usure des plaquettes de frein.", "isCorrect": False}
+                        {"text": "Amplifier l'effort conducteur", "isCorrect": True},
+                        {"text": "Remplacer le frein à main", "isCorrect": False},
+                        {"text": "Créer la pression hydraulique", "isCorrect": False},
+                        {"text": "Répartir le freinage avant-arrière", "isCorrect": False}
                     ],
-                    "correction": "Le **soufflet** protège les roulements du cardan. S'il est percé, la lubrification est perdue et des corps étrangers rentrent, ce qui provoque rapidement un bruit de claquement en braquage."
+                    "correction": "Il utilise la dépression moteur pour multiplier la force exercée sur la pédale."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Pourquoi le serrage des roues (écrous/vis) doit-il toujours se faire au 'couple' (à la clé dynamométrique) ?",
+                    "question": "Pourquoi équilibre-t-on une roue après le montage d'un pneu neuf ?",
                     "answerOptions": [
-                        {"text": "Pour que la roue soit plus belle.", "isCorrect": False},
-                        {"text": "Pour éviter la déformation du disque de frein ou de la jante, et garantir la sécurité.", "isCorrect": True},
-                        {"text": "Pour gagner du temps.", "isCorrect": False},
-                        {"text": "Pour réduire le bruit.", "isCorrect": False}
+                        {"text": "Pour supprimer les vibrations", "isCorrect": True},
+                        {"text": "Pour gonfler le pneu plus vite", "isCorrect": False},
+                        {"text": "Pour faciliter le serrage des écrous", "isCorrect": False},
+                        {"text": "Pour améliorer l'esthétique de la jante", "isCorrect": False}
                     ],
-                    "correction": "Un serrage excessif (**surtension**) peut voiler le disque de frein (vibrations au freinage) ou étirer les goujons. Un serrage insuffisant est un danger immédiat."
+                    "correction": "L'équilibrage compense les écarts de masse pour éviter les vibrations au volant."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quelle est la conséquence la plus grave de l'usure de l'épaisseur des disques de frein (sous la cote minimale) ?",
+                    "question": "Quel élément assure la liaison élastique entre le châssis et la roue ?",
                     "answerOptions": [
-                        {"text": "Le patinage du moteur.", "isCorrect": False},
-                        {"text": "Le risque de rupture du disque sous la contrainte thermique et mécanique du freinage (danger immédiat).", "isCorrect": True},
-                        {"text": "Une mauvaise lecture de la température.", "isCorrect": False},
-                        {"text": "Une usure du volant moteur.", "isCorrect": False}
+                        {"text": "Le ressort", "isCorrect": True},
+                        {"text": "La rotule", "isCorrect": False},
+                        {"text": "La barre stab", "isCorrect": False},
+                        {"text": "Le cardan", "isCorrect": False}
                     ],
-                    "correction": "Les disques trop minces perdent leur capacité à dissiper la chaleur et risquent de **se fissurer ou de se briser** lors d'un freinage intense."
+                    "correction": "Le ressort se déforme pour absorber les chocs de la route."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Qu'est-ce qu'une 'crémaillère de direction' ?",
+                    "question": "Quelle pièce mécanique permet de transmettre le couple moteur aux roues tout en autorisant le braquage ?",
                     "answerOptions": [
-                        {"text": "Une pièce du moteur.", "isCorrect": False},
-                        {"text": "Un mécanisme qui transforme le mouvement de rotation du volant en mouvement linéaire pour orienter les roues.", "isCorrect": True},
-                        {"text": "Le support de l'alternateur.", "isCorrect": False},
-                        {"text": "Le système d'échappement.", "isCorrect": False}
+                        {"text": "Le cardan", "isCorrect": True},
+                        {"text": "L'embrayage", "isCorrect": False},
+                        {"text": "Le triangle", "isCorrect": False},
+                        {"text": "La fusée", "isCorrect": False}
                     ],
-                    "correction": "La **crémaillère** est la pièce centrale de la direction. Elle est reliée au volant par la colonne de direction et aux roues par les biellettes de direction."
+                    "correction": "Le cardan (transmission) possède des joints homocinétiques pour s'adapter aux angles."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Quel est le rôle du 'tambour' de frein, souvent utilisé sur les roues arrière ?",
+                    "question": "Qu'est-ce que 'l'aquaplaning' ?",
                     "answerOptions": [
-                        {"text": "Un élément de suspension.", "isCorrect": False},
-                        {"text": "Un élément fixe qui reçoit la pression des mâchoires pour ralentir la rotation de la roue.", "isCorrect": False},
-                        {"text": "Un élément rotatif (solidaire de la roue) qui est freiné par l'écartement des mâchoires/garnitures.", "isCorrect": True},
-                        {"text": "Un capteur ABS.", "isCorrect": False}
+                        {"text": "La perte d'adhérence sur l'eau", "isCorrect": True},
+                        {"text": "Le nettoyage automatique des pneus", "isCorrect": False},
+                        {"text": "Un système de freinage pour bateau", "isCorrect": False},
+                        {"text": "Une technique de conduite sur glace", "isCorrect": False}
                     ],
-                    "correction": "Le **tambour** est une cloche qui tourne avec la roue. Le freinage est obtenu par l'écartement des mâchoires qui viennent frotter contre la paroi intérieure du tambour."
+                    "correction": "Une pellicule d'eau s'insère sous le pneu qui ne touche plus le sol."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Quelle est la principale fonction du 'roulement de roue' ?",
+                    "question": "Sur un étrier de frein flottant, quelle pièce reçoit la pression hydraulique pour pousser les plaquettes ?",
                     "answerOptions": [
-                        {"text": "Générer de l'électricité.", "isCorrect": False},
-                        {"text": "Permettre la rotation de la roue autour de son axe avec le minimum de friction.", "isCorrect": True},
-                        {"text": "Faire tenir le pneu sur la jante.", "isCorrect": False},
-                        {"text": "Maintenir la pression des pneus.", "isCorrect": False}
+                        {"text": "Le piston", "isCorrect": True},
+                        {"text": "La vis de purge", "isCorrect": False},
+                        {"text": "Le disque ventilé", "isCorrect": False},
+                        {"text": "La colonnette", "isCorrect": False}
                     ],
-                    "correction": "Le **roulement** utilise des billes ou des rouleaux pour minimiser le frottement. Un roulement défectueux se manifeste par un bruit de grondement (ronronnement) qui augmente avec la vitesse."
+                    "correction": "Le piston reçoit la pression hydraulique."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quel est le risque si l'on installe des pneus dont l'indice de charge est inférieur à celui spécifié par le constructeur ?",
+                    "question": "Quel contrôle visuel simple permet de vérifier l'état des plaquettes de frein sans démontage ?",
                     "answerOptions": [
-                        {"text": "Un bruit excessif.", "isCorrect": False},
-                        {"text": "Un risque d'éclatement ou de dégradation du pneu lors d'une forte charge ou à haute vitesse.", "isCorrect": True},
-                        {"text": "Le moteur va consommer plus.", "isCorrect": False},
-                        {"text": "Le freinage sera meilleur.", "isCorrect": False}
+                        {"text": "L'épaisseur de la garniture", "isCorrect": True},
+                        {"text": "La couleur de l'étrier", "isCorrect": False},
+                        {"text": "La brillance du disque", "isCorrect": False},
+                        {"text": "La date de fabrication", "isCorrect": False}
                     ],
-                    "correction": "L'**indice de charge** doit impérativement être respecté (ou supérieur). Un indice inférieur met en danger l'intégrité du pneu en cas de surcharge du véhicule."
+                    "correction": "On vérifie l'épaisseur de matière restante sur la plaquette."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Que signifie un jeu excessif dans une rotule de suspension ?",
+                    "question": "Si la pédale de frein s'enfonce lentement jusqu'au plancher lors d'un appui constant à l'arrêt, cela indique :",
                     "answerOptions": [
-                        {"text": "La voiture est trop basse.", "isCorrect": False},
-                        {"text": "Une mauvaise liaison au sol, des bruits anormaux et un risque de déboîtement du train roulant (danger).", "isCorrect": True},
-                        {"text": "Le moteur ne démarre plus.", "isCorrect": False},
-                        {"text": "Le chauffage ne marche plus.", "isCorrect": False}
+                        {"text": "Une fuite interne ou externe", "isCorrect": True},
+                        {"text": "Un niveau de liquide trop haut", "isCorrect": False},
+                        {"text": "Des plaquettes de frein neuves", "isCorrect": False},
+                        {"text": "Un disque de frein voilé", "isCorrect": False}
                     ],
-                    "correction": "La rotule assure le lien entre le porte-moyeu et le bras de suspension. Un **jeu excessif** (usure) est un défaut grave et un motif de contre-visite au contrôle technique."
+                    "correction": "Cela signale une perte de pression (fuite)."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 3 : ÉLECTRICITÉ, ÉLECTRONIQUE ET CLIMATISATION (Q. 41-60)
+        # THÈME 3 : TRANSMISSION ET CHAÎNE CINÉMATIQUE (Questions 41 à 60)
         # =========================================================================
         3: {
-            "name": "3. Électricité, Électronique et Climatisation (Q. 41-60)",
+            "name": "THÈME 3 : TRANSMISSION ET CHAÎNE CINÉMATIQUE",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel est le rôle de l'alternateur ?",
+                    "question": "Quelle est la fonction principale de l'embrayage ?",
                     "answerOptions": [
-                        {"text": "Stocker l'énergie électrique.", "isCorrect": False},
-                        {"text": "Transformer l'énergie mécanique du moteur en énergie électrique pour alimenter les consommateurs et recharger la batterie.", "isCorrect": True},
-                        {"text": "Faire démarrer le moteur.", "isCorrect": False},
-                        {"text": "Couper le circuit électrique en cas de panne.", "isCorrect": False}
+                        {"text": "Accoupler et désaccoupler", "isCorrect": True},
+                        {"text": "Augmenter la puissance moteur", "isCorrect": False},
+                        {"text": "Freiner le véhicule en descente", "isCorrect": False},
+                        {"text": "Refroidir l'huile de la boîte", "isCorrect": False}
                     ],
-                    "correction": "L'**alternateur** est le générateur du véhicule. Il produit du courant alternatif (AC) qui est ensuite redressé en courant continu (DC) par un pont de diodes."
+                    "correction": "Il permet de lier (accoupler) ou séparer (désaccoupler) le moteur de la boîte de vitesses."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Quelle est la principale unité de mesure d'un test de batterie (capacité) ?",
+                    "question": "De quels éléments est composé un kit d'embrayage standard ?",
                     "answerOptions": [
-                        {"text": "Le Volt (V).", "isCorrect": False},
-                        {"text": "L'Ampère-heure (Ah).", "isCorrect": True},
-                        {"text": "L'Ohm (Ω).", "isCorrect": False},
-                        {"text": "Le Bar (B).", "isCorrect": False}
+                        {"text": "Mécanisme disque et butée", "isCorrect": True},
+                        {"text": "Piston bielle et vilebrequin", "isCorrect": False},
+                        {"text": "Arbre pignon et couronne", "isCorrect": False},
+                        {"text": "Étrier plaquette et disque", "isCorrect": False}
                     ],
-                    "correction": "L'**Ampère-heure (Ah)** mesure la capacité de stockage de la batterie. Le CCA (Cold Cranking Amps) mesure sa capacité de fournir un fort courant de démarrage à froid."
+                    "correction": "Le kit '3 pièces' comprend le mécanisme, le disque et la butée."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Pourquoi doit-on impérativement débrancher la batterie avant de travailler sur le circuit électrique ?",
+                    "question": "Lorsqu'un conducteur appuie à fond sur la pédale d'embrayage, on dit qu'il est :",
                     "answerOptions": [
-                        {"text": "Pour réinitialiser les calculateurs.", "isCorrect": False},
-                        {"text": "Pour éviter les courts-circuits, les arcs électriques (risques d'incendie) et les dommages aux calculateurs.", "isCorrect": True},
-                        {"text": "Pour tester la tension.", "isCorrect": False},
-                        {"text": "Pour vider le réservoir.", "isCorrect": False}
+                        {"text": "Débrayé", "isCorrect": True},
+                        {"text": "Embrayé", "isCorrect": False},
+                        {"text": "Accouplé", "isCorrect": False},
+                        {"text": "En prise", "isCorrect": False}
                     ],
-                    "correction": "Débrancher la batterie (le **moins en premier**) est la règle de sécurité de base pour tout travail électrique ou mécanique où un contact involontaire peut provoquer un court-circuit."
+                    "correction": "Appuyer sur la pédale = DÉBRAYER (couper la liaison)."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quel est le rôle du 'démarreur' ?",
+                    "question": "Quel est le rôle de la boîte de vitesses ?",
                     "answerOptions": [
-                        {"text": "Produire de l'électricité.", "isCorrect": False},
-                        {"text": "Fournir un couple mécanique pour lancer la rotation initiale du moteur thermique.", "isCorrect": True},
-                        {"text": "Réguler la tension.", "isCorrect": False},
-                        {"text": "Contrôler la boîte de vitesses.", "isCorrect": False}
+                        {"text": "Adapter le couple et la vitesse", "isCorrect": True},
+                        {"text": "Produire de l'énergie électrique", "isCorrect": False},
+                        {"text": "Filtrer les gaz d'échappement", "isCorrect": False},
+                        {"text": "Orienter les roues directrices", "isCorrect": False}
                     ],
-                    "correction": "Le **démarreur** est un moteur électrique qui s'engage sur la couronne du volant moteur pour démarrer le cycle du moteur thermique."
+                    "correction": "Elle multiplie la force (couple) ou la vitesse selon les besoins."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Le multiplexage (réseau CAN) dans un véhicule sert à :",
+                    "question": "Dans une boîte manuelle, comment appelle-t-on l'arbre relié au moteur (via l'embrayage) ?",
                     "answerOptions": [
-                        {"text": "Augmenter la vitesse maximale.", "isCorrect": False},
-                        {"text": "Réduire le nombre de câbles en faisant transiter l'information entre les calculateurs par deux fils de communication.", "isCorrect": True},
-                        {"text": "Couper le moteur à distance.", "isCorrect": False},
-                        {"text": "Améliorer l'éclairage intérieur.", "isCorrect": False}
+                        {"text": "L'arbre primaire", "isCorrect": True},
+                        {"text": "L'arbre secondaire", "isCorrect": False},
+                        {"text": "L'arbre de transmission", "isCorrect": False},
+                        {"text": "L'arbre à cames", "isCorrect": False}
                     ],
-                    "correction": "Le **multiplexage** (réseau CAN - Controller Area Network) permet aux calculateurs de partager des informations vitales (vitesse, température, régime moteur) via un bus de communication, simplifiant le câblage."
+                    "correction": "L'énergie entre par l'arbre primaire."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Qu'est-ce qu'un 'fusible' et à quoi sert-il ?",
+                    "question": "Quel composant permet aux roues motrices de tourner à des vitesses différentes dans un virage ?",
                     "answerOptions": [
-                        {"text": "Un interrupteur simple.", "isCorrect": False},
-                        {"text": "Un composant calibré qui fond en cas de surintensité pour protéger le circuit électrique.", "isCorrect": True},
-                        {"text": "Une résistance pour augmenter le courant.", "isCorrect": False},
-                        {"text": "Un capteur de tension.", "isCorrect": False}
+                        {"text": "Le différentiel", "isCorrect": True},
+                        {"text": "Le turbo", "isCorrect": False},
+                        {"text": "L'alternateur", "isCorrect": False},
+                        {"text": "Le radiateur", "isCorrect": False}
                     ],
-                    "correction": "Le **fusible** est une sécurité. Il est toujours monté en série et sa capacité (en Ampères) est choisie pour protéger le câblage et les composants du circuit."
+                    "correction": "Le différentiel autorise la différence de vitesse entre roue intérieure et extérieure."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Quel est le gaz réfrigérant le plus couramment utilisé dans les systèmes de climatisation automobiles modernes (après l'interdiction du R-134a dans les nouveaux modèles) ?",
+                    "question": "Quelle pièce protège les articulations du cardan (transmission) et retient la graisse ?",
                     "answerOptions": [
-                        {"text": "Le Butane.", "isCorrect": False},
-                        {"text": "Le R-12.", "isCorrect": False},
-                        {"text": "Le R-1234yf.", "isCorrect": True},
-                        {"text": "L'Air comprimé.", "isCorrect": False}
+                        {"text": "Le soufflet", "isCorrect": True},
+                        {"text": "Le joint spi", "isCorrect": False},
+                        {"text": "La rotule", "isCorrect": False},
+                        {"text": "Le silentbloc", "isCorrect": False}
                     ],
-                    "correction": "Le **R-1234yf** (Tétrafluoropropène) a remplacé le R-134a sur les véhicules neufs en raison de son potentiel de réchauffement climatique (PRG) beaucoup plus faible."
+                    "correction": "Le soufflet de cardan retient la graisse et empêche les impuretés d'entrer."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quel composant électrique est vital pour la sécurité et la bonne gestion du moteur (injection) ?",
+                    "question": "Quel est le symptôme caractéristique d'un cardan usé ?",
                     "answerOptions": [
-                        {"text": "Le klaxon.", "isCorrect": False},
-                        {"text": "Le capteur PMH (Point Mort Haut) ou capteur de vilebrequin.", "isCorrect": True},
-                        {"text": "Le lève-vitre.", "isCorrect": False},
-                        {"text": "L'ampoule de plaque.", "isCorrect": False}
+                        {"text": "Un claquement en virage", "isCorrect": True},
+                        {"text": "Un sifflement au freinage", "isCorrect": False},
+                        {"text": "Une fumée bleue au pot", "isCorrect": False},
+                        {"text": "Un volant dur à tourner", "isCorrect": False}
                     ],
-                    "correction": "Le **capteur PMH** est crucial. Il donne la position et la vitesse de rotation du moteur au calculateur pour le calage de l'allumage/injection. Sans lui, le moteur ne démarre pas."
+                    "correction": "Un bruit de 'clac-clac' en braquant est typique."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Dans un circuit de climatisation, quel organe est chargé de comprimer le fluide frigorigène à haute pression ?",
+                    "question": "Sur quoi frotte le disque d'embrayage pour transmettre le mouvement ?",
                     "answerOptions": [
-                        {"text": "Le condenseur.", "isCorrect": False},
-                        {"text": "Le compresseur.", "isCorrect": True},
-                        {"text": "Le détendeur.", "isCorrect": False},
-                        {"text": "L'évaporateur.", "isCorrect": False}
+                        {"text": "Le volant moteur", "isCorrect": True},
+                        {"text": "Le carter d'huile", "isCorrect": False},
+                        {"text": "La poulie damper", "isCorrect": False},
+                        {"text": "Le collecteur", "isCorrect": False}
                     ],
-                    "correction": "Le **compresseur**, entraîné par le moteur, est le cœur du système. Il augmente la pression et la température du fluide avant qu'il n'aille au condenseur."
+                    "correction": "Le disque est pressé contre la face rectifiée du volant moteur."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Qu'est-ce qu'un 'relais' électrique ?",
+                    "question": "Quel grade d'huile est typique pour une boîte de vitesses manuelle ?",
                     "answerOptions": [
-                        {"text": "Une bobine d'allumage.", "isCorrect": False},
-                        {"text": "Un interrupteur commandé par un faible courant pour permettre à un fort courant de circuler dans un autre circuit.", "isCorrect": True},
-                        {"text": "Un capteur de niveau.", "isCorrect": False},
-                        {"text": "Un redresseur.", "isCorrect": False}
+                        {"text": "75W80", "isCorrect": True},
+                        {"text": "5W30", "isCorrect": False},
+                        {"text": "10W40", "isCorrect": False},
+                        {"text": "DOT 4", "isCorrect": False}
                     ],
-                    "correction": "Le **relais** permet de protéger l'interrupteur principal et le câblage de commande en utilisant un faible courant, tout en contrôlant des composants qui consomment beaucoup (phares, démarreur, klaxon)."
+                    "correction": "L'huile de boîte est visqueuse, souvent 75W80 ou 80W90."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Comment appelle-t-on la pièce qui assure la régulation de la tension de sortie de l'alternateur ?",
+                    "question": "À quoi servent les 'synchros' (synchroniseurs) dans une boîte de vitesses ?",
                     "answerOptions": [
-                        {"text": "Le redresseur.", "isCorrect": False},
-                        {"text": "Le régulateur de tension.", "isCorrect": True},
-                        {"text": "Le contacteur.", "isCorrect": False},
-                        {"text": "Le pont de diodes.", "isCorrect": False}
+                        {"text": "Faciliter le passage des vitesses", "isCorrect": True},
+                        {"text": "Augmenter la puissance du moteur", "isCorrect": False},
+                        {"text": "Refroidir les pignons de boîte", "isCorrect": False},
+                        {"text": "Réduire la consommation d'huile", "isCorrect": False}
                     ],
-                    "correction": "Le **régulateur de tension** maintient la tension de sortie de l'alternateur entre 13,8 V et 14,8 V, quelle que soit la vitesse du moteur, pour éviter de surcharger la batterie."
+                    "correction": "Ils amènent les pignons à la même vitesse pour éviter les craquements."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quel est le risque de tester un circuit électrique avec un testeur artisanal (lampe témoin) sur un circuit électronique moderne (faible intensité) ?",
+                    "question": "Si le régime moteur augmente à l'accélération mais que la vitesse n'augmente pas proportionnellement, l'embrayage :",
                     "answerOptions": [
-                        {"text": "Le test sera trop précis.", "isCorrect": False},
-                        {"text": "Le courant élevé de la lampe témoin risque de détruire le calculateur (ECU) ou le capteur testé.", "isCorrect": True},
-                        {"text": "La batterie va se décharger.", "isCorrect": False},
-                        {"text": "Rien.", "isCorrect": False}
+                        {"text": "Patine", "isCorrect": True},
+                        {"text": "Colle", "isCorrect": False},
+                        {"text": "Grippe", "isCorrect": False},
+                        {"text": "Bloque", "isCorrect": False}
                     ],
-                    "correction": "Il faut impérativement utiliser un **multimètre numérique** (haute impédance) pour vérifier les circuits électroniques sensibles. Une lampe témoin est réservée aux circuits de puissance (phares, klaxon)."
+                    "correction": "Le disque glisse (patine) car il n'accroche plus assez le volant moteur."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quel est le rôle du 'condenseur' (climatisation) ?",
+                    "question": "Quelle pièce transmet le mouvement de la boîte de vitesses aux roues ?",
                     "answerOptions": [
-                        {"text": "Produire le froid.", "isCorrect": False},
-                        {"text": "Faire passer le fluide frigorigène de l'état gazeux à l'état liquide en évacuant la chaleur (situé à l'avant du véhicule).", "isCorrect": True},
-                        {"text": "Filtrer le gaz.", "isCorrect": False},
-                        {"text": "Démarrer le moteur.", "isCorrect": False}
+                        {"text": "La transmission transversale", "isCorrect": True},
+                        {"text": "La barre stabilisatrice", "isCorrect": False},
+                        {"text": "La crémaillère de direction", "isCorrect": False},
+                        {"text": "Le triangle de suspension", "isCorrect": False}
                     ],
-                    "correction": "Le **condenseur** est l'équivalent du radiateur dans le circuit de refroidissement. C'est là que la chaleur absorbée dans l'habitacle est relâchée dans l'air extérieur."
+                    "correction": "La transmission (ou cardan) relie la boîte au moyeu de roue."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Que signifie la lecture 'Circuit Ouvert' sur un multimètre (mode Ohmmètre) ?",
+                    "question": "Sur un embrayage hydraulique, quelle pièce reçoit la pression pour actionner la fourchette ?",
                     "answerOptions": [
-                        {"text": "Le courant est trop fort.", "isCorrect": False},
-                        {"text": "Le circuit est incomplet, interrompu, ou la résistance est infinie (coupure de câble).", "isCorrect": True},
-                        {"text": "Le circuit est en court-circuit.", "isCorrect": False},
-                        {"text": "Le courant est trop faible.", "isCorrect": False}
+                        {"text": "Le récepteur", "isCorrect": True},
+                        {"text": "L'émetteur", "isCorrect": False},
+                        {"text": "Le master-vac", "isCorrect": False},
+                        {"text": "Le répartiteur", "isCorrect": False}
                     ],
-                    "correction": "Un **circuit ouvert** indique que le courant ne peut pas circuler. Le multimètre affiche 'OL' (Over Limit) ou l'infini, signifiant une rupture (câble coupé, fusible grillé, composant déconnecté)."
+                    "correction": "L'émetteur (pédale) pousse le liquide vers le récepteur (boîte)."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quel capteur est utilisé par l'ABS pour détecter la vitesse de rotation de chaque roue ?",
+                    "question": "En première vitesse, par rapport à la quatrième vitesse, le couple aux roues est :",
                     "answerOptions": [
-                        {"text": "Le capteur de température.", "isCorrect": False},
-                        {"text": "Le capteur de régime moteur.", "isCorrect": False},
-                        {"text": "Le capteur de vitesse de roue (capteur actif ou passif).", "isCorrect": True},
-                        {"text": "Le capteur de pression d'huile.", "isCorrect": False}
+                        {"text": "Plus élevé", "isCorrect": True},
+                        {"text": "Plus faible", "isCorrect": False},
+                        {"text": "Identique", "isCorrect": False},
+                        {"text": "Nul", "isCorrect": False}
                     ],
-                    "correction": "Chaque roue est équipée d'un **capteur de vitesse** (souvent à effet Hall ou inductif) qui informe le calculateur ABS de sa rotation pour détecter le blocage imminent ou le patinage."
+                    "correction": "La 1ère vitesse démultiplie la rotation pour multiplier la force (couple)."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Lors d'une recharge de batterie avec un chargeur, quel est l'ordre correct de raccordement ?",
+                    "question": "Quel est le rôle du diaphragme dans le mécanisme d'embrayage ?",
                     "answerOptions": [
-                        {"text": "Moins sur Moins, puis Plus sur Plus.", "isCorrect": True},
-                        {"text": "Plus sur Moins, puis Moins sur Plus.", "isCorrect": False},
-                        {"text": "Peu importe l'ordre.", "isCorrect": False},
-                        {"text": "Moins sur Plus, puis Plus sur Moins.", "isCorrect": False}
+                        {"text": "Agir comme un ressort", "isCorrect": True},
+                        {"text": "Filtrer l'huile de boîte", "isCorrect": False},
+                        {"text": "Ventiler le mécanisme", "isCorrect": False},
+                        {"text": "Mesurer la vitesse", "isCorrect": False}
                     ],
-                    "correction": "Raccorder **Plus sur Plus et Moins sur Moins** évite les inversions de polarité qui peuvent endommager la batterie ou l'électronique du véhicule."
+                    "correction": "C'est une rondelle élastique qui plaque le disque contre le volant moteur."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Le filtre d'habitacle (filtre à pollen) a pour but de :",
+                    "question": "Qu'est-ce qui est spécifique à la marche arrière dans une boîte de vitesses ?",
                     "answerOptions": [
-                        {"text": "Filtrer le carburant.", "isCorrect": False},
-                        {"text": "Nettoyer l'air entrant dans l'habitacle des poussières, pollens et parfois des mauvaises odeurs.", "isCorrect": True},
-                        {"text": "Filtrer l'huile moteur.", "isCorrect": False},
-                        {"text": "Augmenter le débit d'air.", "isCorrect": False}
+                        {"text": "Un pignon intermédiaire", "isCorrect": True},
+                        {"text": "Une courroie spéciale", "isCorrect": False},
+                        {"text": "Un embrayage inversé", "isCorrect": False},
+                        {"text": "Un deuxième moteur", "isCorrect": False}
                     ],
-                    "correction": "Le **filtre d'habitacle** est crucial pour la santé des occupants et pour le bon fonctionnement de la ventilation/climatisation (un filtre bouché réduit l'efficacité et fait forcer le ventilateur)."
+                    "correction": "Un pignon intermédiaire inverse le sens de rotation."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quel est le risque de manipuler un câble haute tension d'un véhicule hybride ou électrique sans formation spécifique ?",
+                    "question": "Quelle pièce centrale du disque d'embrayage s'emboîte sur les cannelures de l'arbre primaire ?",
                     "answerOptions": [
-                        {"text": "Une mauvaise couleur.", "isCorrect": False},
-                        {"text": "Un risque de choc électrique (électrocution) très grave ou mortel (tension supérieure à 60V DC).", "isCorrect": True},
-                        {"text": "Une fuite d'huile.", "isCorrect": False},
-                        {"text": "Un problème de freinage.", "isCorrect": False}
+                        {"text": "Le moyeu", "isCorrect": True},
+                        {"text": "La frette", "isCorrect": False},
+                        {"text": "La garniture", "isCorrect": False},
+                        {"text": "Les ressorts", "isCorrect": False}
                     ],
-                    "correction": "Les véhicules électriques et hybrides utilisent des tensions de **plusieurs centaines de Volts**. Seul un personnel qualifié (habilitation électrique B2VL/BR) est autorisé à travailler sur ces circuits (câbles souvent orange)."
+                    "correction": "Le moyeu cannelé assure la liaison en rotation avec l'arbre primaire."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Quel est le rôle de l'évaporateur dans le circuit de climatisation ?",
+                    "question": "Quel entretien est nécessaire sur un embrayage à sec standard ?",
                     "answerOptions": [
-                        {"text": "Assurer la compression.", "isCorrect": False},
-                        {"text": "Permettre au fluide frigorigène de passer de l'état liquide à l'état gazeux en absorbant la chaleur de l'air de l'habitacle (produit le froid).", "isCorrect": True},
-                        {"text": "Dégivrer la lunette arrière.", "isCorrect": False},
-                        {"text": "Filtrer l'humidité.", "isCorrect": False}
+                        {"text": "Aucun entretien courant", "isCorrect": True},
+                        {"text": "Graissage tous les mois", "isCorrect": False},
+                        {"text": "Vidange tous les ans", "isCorrect": False},
+                        {"text": "Tension des ressorts", "isCorrect": False}
                     ],
-                    "correction": "Situé dans l'habitacle, l'**évaporateur** est la zone d'échange froid. Le fluide y absorbe les calories de l'air, ce qui le refroidit (et le déshumidifie au passage)."
+                    "correction": "C'est une pièce d'usure sans entretien (pas de vidange ni graissage)."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Que signifie le terme 'Lin' (L-line) et 'K-line' dans le diagnostic électronique ?",
+                    "question": "Dans le différentiel, comment appelle-t-on les petits pignons coniques situés à l'intérieur du boîtier ?",
                     "answerOptions": [
-                        {"text": "Deux types de phares.", "isCorrect": False},
-                        {"text": "Des protocoles de communication pour le diagnostic entre un outil (valise) et les calculateurs (ECU).", "isCorrect": True},
-                        {"text": "Deux types de batteries.", "isCorrect": False},
-                        {"text": "Des marques de pneus.", "isCorrect": False}
+                        {"text": "Les satellites et planétaires", "isCorrect": True},
+                        {"text": "Les soupapes et culbuteurs", "isCorrect": False},
+                        {"text": "Les bielles et pistons", "isCorrect": False},
+                        {"text": "Les vis et les écrous", "isCorrect": False}
                     ],
-                    "correction": "Le **LIN** et le **K-Line** sont des protocoles de communication standard (ISO) qui permettent à l'outil de diagnostic de lire les codes défauts et les paramètres des calculateurs."
+                    "correction": "Le mécanisme interne est composé de planétaires et de satellites."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 4 : DIAGNOSTIC, MÉTHODOLOGIE ET DOCUMENTATION (Q. 61-80)
+        # THÈME 4 : ÉLECTRICITÉ ET SIGNALISATION (Questions 61 à 80)
         # =========================================================================
         4: {
-            "name": "4. Diagnostic, Méthodologie et Documentation (Q. 61-80)",
+            "name": "THÈME 4 : ÉLECTRICITÉ ET SIGNALISATION",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel est l'outil principal utilisé pour lire et effacer les codes défauts (DTC) des calculateurs (ECU) ?",
+                    "question": "Quelle est l'unité de mesure de la tension électrique (U) ?",
                     "answerOptions": [
-                        {"text": "Le multimètre.", "isCorrect": False},
-                        {"text": "La clé dynamométrique.", "isCorrect": False},
-                        {"text": "L'outil de diagnostic (ou 'valise' de diagnostic).", "isCorrect": True},
-                        {"text": "Le manomètre.", "isCorrect": False}
+                        {"text": "Le Volt", "isCorrect": True},
+                        {"text": "L'Ampère", "isCorrect": False},
+                        {"text": "L'Ohm", "isCorrect": False},
+                        {"text": "Le Watt", "isCorrect": False}
                     ],
-                    "correction": "L'**outil de diagnostic** (ou scanner) se connecte à la prise OBD (On-Board Diagnostics) du véhicule pour interroger les calculateurs et identifier la source d'une panne électronique."
+                    "correction": "La tension se mesure en Volts (V)."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quel est l'objectif de la méthode de diagnostic 'Organe, Fonction, Cause, Remède' (OFCG) ?",
+                    "question": "Sur quelle position régler le multimètre pour une batterie de voiture ?",
                     "answerOptions": [
-                        {"text": "Changer le moteur sans réfléchir.", "isCorrect": False},
-                        {"text": "Structurer la recherche de panne en partant du défaut constaté (Organe) vers la solution (Remède).", "isCorrect": True},
-                        {"text": "Ne s'occuper que du châssis.", "isCorrect": False},
-                        {"text": "Travailler plus lentement.", "isCorrect": False}
+                        {"text": "Voltmètre courant continu", "isCorrect": True},
+                        {"text": "Voltmètre courant alternatif", "isCorrect": False},
+                        {"text": "Ohmmètre résistance", "isCorrect": False},
+                        {"text": "Ampèremètre intensité", "isCorrect": False}
                     ],
-                    "correction": "L'**OFCG** est une méthode rigoureuse : 1. Identification de l'**Organe** ou système défaillant. 2. Identification de la **Fonction** ou dysfonctionnement. 3. Recherche de la **Cause**. 4. Mise en œuvre du **Remède**."
+                    "correction": "Une batterie délivre du courant continu (DC / V=)."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Dans le diagnostic, que signifie un 'Code Défaut Permanent' ?",
+                    "question": "Quel est le rôle principal de l'alternateur ?",
                     "answerOptions": [
-                        {"text": "Un défaut facile à réparer.", "isCorrect": False},
-                        {"text": "Un défaut qui est présent à l'instant du diagnostic et qui nécessite une intervention immédiate (ex : capteur débranché).", "isCorrect": True},
-                        {"text": "Un défaut qui a disparu.", "isCorrect": False},
-                        {"text": "Un défaut qui n'existe pas.", "isCorrect": False}
+                        {"text": "Recharger la batterie moteur tournant", "isCorrect": True},
+                        {"text": "Démarrer le moteur thermique le matin", "isCorrect": False},
+                        {"text": "Protéger le circuit contre les courts-circuits", "isCorrect": False},
+                        {"text": "Convertir le courant continu en alternatif", "isCorrect": False}
                     ],
-                    "correction": "Un code **Permanent** signifie que le défaut est toujours là. Un code **Fugitif** (ou mémorisé) est un défaut qui est apparu puis a disparu (intermittent) et qui est moins urgent."
+                    "correction": "Il produit de l'électricité pour les consommateurs et recharge la batterie."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quelle est l'importance du 'couple de serrage' lors du remontage d'une pièce mécanique ?",
+                    "question": "Comment se branche un ampèremètre pour mesurer l'intensité ?",
                     "answerOptions": [
-                        {"text": "Elle n'a aucune importance, il suffit de serrer fort.", "isCorrect": False},
-                        {"text": "Elle assure la bonne étanchéité, la sécurité et évite la déformation ou la rupture des pièces.", "isCorrect": True},
-                        {"text": "Elle permet de gagner du temps.", "isCorrect": False},
-                        {"text": "Elle rend la pièce plus légère.", "isCorrect": False}
+                        {"text": "En série", "isCorrect": True},
+                        {"text": "En parallèle", "isCorrect": False},
+                        {"text": "En dérivation", "isCorrect": False},
+                        {"text": "Aux bornes de la batterie", "isCorrect": False}
                     ],
-                    "correction": "Le **couple de serrage** est une valeur vitale (ex : vis de roues, culasse, carter). Il doit être respecté à l'aide d'une **clé dynamométrique** pour garantir la fiabilité de la réparation."
+                    "correction": "Le courant doit traverser l'appareil, donc branchement en série."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Que doit-on faire en premier lieu lorsqu'un client se présente avec une panne (selon la méthodologie) ?",
+                    "question": "Quelle est la fonction d'un fusible ?",
                     "answerOptions": [
-                        {"text": "Démonter immédiatement le moteur.", "isCorrect": False},
-                        {"text": "Écouter attentivement la description de la panne par le client et la vérifier (essai routier ou test en atelier).", "isCorrect": True},
-                        {"text": "Remplacer l'alternateur.", "isCorrect": False},
-                        {"text": "Nettoyer les phares.", "isCorrect": False}
+                        {"text": "Fondre en cas de surintensité", "isCorrect": True},
+                        {"text": "Augmenter la tension du circuit", "isCorrect": False},
+                        {"text": "Stocker l'énergie électrique", "isCorrect": False},
+                        {"text": "Refroidir les fils électriques", "isCorrect": False}
                     ],
-                    "correction": "La **description du client** est la première source d'information. Elle permet de circonscrire le problème (bruit à froid, panne intermittente, etc.) avant de passer au diagnostic technique."
+                    "correction": "Il fond pour couper le circuit en cas de surcharge, protégeant le faisceau."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Quel document technique fournit le schéma détaillé du circuit électrique d'un véhicule ?",
+                    "question": "Quelle tension doit-on mesurer aux bornes de la batterie moteur tournant ?",
                     "answerOptions": [
-                        {"text": "La carte grise.", "isCorrect": False},
-                        {"text": "La revue technique automobile (RTA) ou le manuel d'atelier du constructeur.", "isCorrect": True},
-                        {"text": "Le permis de conduire.", "isCorrect": False},
-                        {"text": "La facture d'achat.", "isCorrect": False}
+                        {"text": "Environ 14 Volts", "isCorrect": True},
+                        {"text": "Exactement 12 Volts", "isCorrect": False},
+                        {"text": "Moins de 10 Volts", "isCorrect": False},
+                        {"text": "Environ 24 Volts", "isCorrect": False}
                     ],
-                    "correction": "La **documentation technique** du constructeur (ou RTA) contient toutes les données nécessaires (couples de serrage, schémas, méthodes de dépose/repose) pour une intervention conforme."
+                    "correction": "L'alternateur charge, la tension monte entre 13,5V et 14,5V."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Qu'est-ce qu'un 'témoin de niveau d'huile' allumé en rouge sur le tableau de bord (après le démarrage) ?",
+                    "question": "Quelle formule représente la Loi d'Ohm ?",
                     "answerOptions": [
-                        {"text": "Un simple manque d'huile.", "isCorrect": False},
-                        {"text": "Un défaut de pression d'huile (danger imminent pour le moteur).", "isCorrect": True},
-                        {"text": "Un manque de carburant.", "isCorrect": False},
-                        {"text": "Un problème de phares.", "isCorrect": False}
+                        {"text": "U = R x I", "isCorrect": True},
+                        {"text": "U = R / I", "isCorrect": False},
+                        {"text": "R = U x I", "isCorrect": False},
+                        {"text": "I = U x R", "isCorrect": False}
                     ],
-                    "correction": "Le voyant rouge de l'huile indique un manque de **pression** (souvent dû à une pompe défectueuse ou un niveau très bas), ce qui provoque un grippage rapide du moteur. Il faut couper le moteur immédiatement."
+                    "correction": "U (Tension) = R (Résistance) x I (Intensité)."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quel est l'outil utilisé pour évaluer l'état interne des cylindres (soupapes, pistons) sans démontage du moteur ?",
+                    "question": "De combien d'éléments de 2 Volts une batterie de 12 Volts est-elle constituée ?",
                     "answerOptions": [
-                        {"text": "Le marteau.", "isCorrect": False},
-                        {"text": "Le boroscope (ou endoscope).", "isCorrect": True},
-                        {"text": "Le voltmètre.", "isCorrect": False},
-                        {"text": "La clé à choc.", "isCorrect": False}
+                        {"text": "6 éléments", "isCorrect": True},
+                        {"text": "4 éléments", "isCorrect": False},
+                        {"text": "12 éléments", "isCorrect": False},
+                        {"text": "2 éléments", "isCorrect": False}
                     ],
-                    "correction": "Le **boroscope** (caméra fine) est inséré par l'orifice de bougie d'allumage/préchauffage pour inspecter l'état des têtes de piston et des soupapes, ou la présence de dépôts (calamine)."
+                    "correction": "6 éléments x 2V = 12V."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel est le risque de remplacer un calculateur (ECU) sans respecter la procédure de 'codage' ou 'télécodage' ?",
+                    "question": "Quelle couleur de voyant s'allume pour les feux de route (pleins phares) ?",
                     "answerOptions": [
-                        {"text": "Il fonctionnera mieux.", "isCorrect": False},
-                        {"text": "Le nouveau calculateur ne reconnaîtra pas l'antidémarrage et empêchera le démarrage du véhicule.", "isCorrect": True},
-                        {"text": "La voiture sera plus rapide.", "isCorrect": False},
-                        {"text": "Le chauffage sera meilleur.", "isCorrect": False}
+                        {"text": "Bleu", "isCorrect": True},
+                        {"text": "Vert", "isCorrect": False},
+                        {"text": "Orange", "isCorrect": False},
+                        {"text": "Rouge", "isCorrect": False}
                     ],
-                    "correction": "Le **codage** (ou appairage) est une procédure essentielle qui lie le calculateur au véhicule (antidémarrage, numéro de série) pour des raisons de sécurité et de compatibilité."
+                    "correction": "Le voyant des feux de route est réglementairement Bleu."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Pourquoi doit-on utiliser de l'outillage spécifique pour manipuler un 'filtre à carburant Diesel' lors de son remplacement ?",
+                    "question": "Qu'est-ce qu'un relais dans un circuit automobile ?",
                     "answerOptions": [
-                        {"text": "Pour le rendre plus lourd.", "isCorrect": False},
-                        {"text": "Pour éviter d'introduire des impuretés dans le circuit Haute Pression (injecteurs) et pour respecter la procédure de réamorçage.", "isCorrect": True},
-                        {"text": "Pour le faire tourner.", "isCorrect": False},
-                        {"text": "Pour le rendre plus petit.", "isCorrect": False}
+                        {"text": "Un interrupteur commandé à distance", "isCorrect": True},
+                        {"text": "Un générateur de courant continu", "isCorrect": False},
+                        {"text": "Un consommateur de forte puissance", "isCorrect": False},
+                        {"text": "Un capteur de température moteur", "isCorrect": False}
                     ],
-                    "correction": "Le circuit **Diesel Haute Pression** est très sensible aux impuretés (eau, poussière). Les injecteurs sont fragiles. Le réamorçage doit se faire sans air."
+                    "correction": "Il utilise un petit courant de commande pour fermer un circuit de puissance."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Quel est le but d'un essai routier (test drive) après une réparation complexe ?",
+                    "question": "Pour mesurer une résistance (en Ohms), le circuit doit impérativement être :",
                     "answerOptions": [
-                        {"text": "Consommer l'essence du client.", "isCorrect": False},
-                        {"text": "Valider la réparation, s'assurer que le défaut a disparu et que les paramètres de conduite sont corrects (sécurité et confort).", "isCorrect": True},
-                        {"text": "Écouter la radio.", "isCorrect": False},
-                        {"text": "Regarder le paysage.", "isCorrect": False}
+                        {"text": "Hors tension", "isCorrect": True},
+                        {"text": "Sous tension", "isCorrect": False},
+                        {"text": "Moteur tournant", "isCorrect": False},
+                        {"text": "Phares allumés", "isCorrect": False}
                     ],
-                    "correction": "L'**essai routier** est l'étape de validation finale. Il permet de reproduire les conditions de la panne et de s'assurer de l'efficacité de l'intervention."
+                    "correction": "Si le circuit est sous tension, la mesure est fausse et l'ohmmètre peut griller."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Que représente le sigle DTC dans le diagnostic automobile ?",
+                    "question": "Quel composant permet de lancer le moteur thermique au démarrage ?",
                     "answerOptions": [
-                        {"text": "Diagnostic de Température de Carburant.", "isCorrect": False},
-                        {"text": "Data Terminal Collector.", "isCorrect": False},
-                        {"text": "Diagnostic Trouble Code (Code de Défaut de Diagnostic).", "isCorrect": True},
-                        {"text": "Diesel Turbo Cleaner.", "isCorrect": False}
+                        {"text": "Le démarreur", "isCorrect": True},
+                        {"text": "L'alternateur", "isCorrect": False},
+                        {"text": "Le compresseur", "isCorrect": False},
+                        {"text": "Le calculateur", "isCorrect": False}
                     ],
-                    "correction": "Le **DTC** est le code alphanumérique standardisé (P0xxx pour le moteur, Bxxxx pour la carrosserie, etc.) qui est lu par la valise et renvoie à une panne spécifique."
+                    "correction": "Le démarreur est un moteur électrique puissant qui lance le moteur thermique."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Qu'est-ce qu'une 'fiche de travail' ou 'ordre de réparation' ?",
+                    "question": "En électricité automobile, le pôle négatif de la batterie est relié :",
                     "answerOptions": [
-                        {"text": "Le manuel d'atelier.", "isCorrect": False},
-                        {"text": "Le document qui récapitule les travaux à effectuer, le temps alloué, et l'historique des pannes (pour le mécanicien).", "isCorrect": True},
-                        {"text": "La facture finale.", "isCorrect": False},
-                        {"text": "Le catalogue de pièces.", "isCorrect": False}
+                        {"text": "À la masse (carrosserie)", "isCorrect": True},
+                        {"text": "Au démarreur uniquement", "isCorrect": False},
+                        {"text": "Aux phares avant", "isCorrect": False},
+                        {"text": "Au calculateur moteur", "isCorrect": False}
                     ],
-                    "correction": "L'**ordre de réparation** est l'outil de gestion de l'atelier. Il permet au technicien de savoir ce qu'il doit faire et au chef d'atelier de suivre l'avancement et la rentabilité du travail."
+                    "correction": "La carrosserie métallique sert de conducteur de retour (Masse)."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Lors du remplacement d'un filtre à huile, quelle précaution doit être prise avec le nouveau joint ?",
+                    "question": "Que signifie le terme 'Multiplexage' simplifié ?",
                     "answerOptions": [
-                        {"text": "Le laisser sec.", "isCorrect": False},
-                        {"text": "L'humidifier ou le graisser légèrement avec de l'huile moteur propre.", "isCorrect": True},
-                        {"text": "Le couper en deux.", "isCorrect": False},
-                        {"text": "Le serrer très fort.", "isCorrect": False}
+                        {"text": "Faire passer plusieurs informations sur un même fil", "isCorrect": True},
+                        {"text": "Mettre plusieurs batteries dans le coffre", "isCorrect": False},
+                        {"text": "Utiliser des fils plus gros pour les phares", "isCorrect": False},
+                        {"text": "Multiplier la tension par deux", "isCorrect": False}
                     ],
-                    "correction": "Humidifier le **joint** assure une meilleure étanchéité au serrage et facilite le démontage ultérieur du filtre (le joint ne colle pas à la plaque)."
+                    "correction": "Faire circuler des informations codées numériques via un réseau réduit de fils."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quel est l'outil de mesure utilisé pour contrôler la planéité d'une culasse (vérification de voilage) ?",
+                    "question": "Quel liquide trouve-t-on dans une batterie au plomb standard ?",
                     "answerOptions": [
-                        {"text": "Le flexomètre.", "isCorrect": False},
-                        {"text": "La règle de planéité (ou réglet) et le jeu de cales d'épaisseur.", "isCorrect": True},
-                        {"text": "Le compresseur.", "isCorrect": False},
-                        {"text": "La balance.", "isCorrect": False}
+                        {"text": "De l'électrolyte", "isCorrect": True},
+                        {"text": "De l'huile minérale", "isCorrect": False},
+                        {"text": "Du liquide de frein", "isCorrect": False},
+                        {"text": "De l'essence sans plomb", "isCorrect": False}
                     ],
-                    "correction": "La **règle de planéité** et les cales d'épaisseur permettent de mesurer les écarts par rapport à une surface parfaitement plane. Un voilage nécessite un surfaçage ou un remplacement."
+                    "correction": "L'électrolyte (mélange eau + acide sulfurique)."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Que doit vérifier le technicien avant de 'réamorcer' un circuit de refroidissement après une vidange ?",
+                    "question": "Si un fusible grille instantanément dès qu'on le remplace, il y a probablement :",
                     "answerOptions": [
-                        {"text": "Le niveau d'huile.", "isCorrect": False},
-                        {"text": "L'absence de fuite et la bonne fermeture du bouchon de vidange/purge.", "isCorrect": True},
-                        {"text": "La couleur des sièges.", "isCorrect": False},
-                        {"text": "La pression des pneus.", "isCorrect": False}
+                        {"text": "Un court-circuit franc", "isCorrect": True},
+                        {"text": "Une batterie déchargée", "isCorrect": False},
+                        {"text": "Une ampoule grillée", "isCorrect": False},
+                        {"text": "Un faux contact oxydé", "isCorrect": False}
                     ],
-                    "correction": "Il faut s'assurer de l'**étanchéité** complète du circuit avant de remettre sous pression, pour éviter une fuite massive du nouveau liquide."
+                    "correction": "Le court-circuit est permanent, il faut trouver la panne avant de changer le fusible."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quelle est la principale méthode pour diagnostiquer une fuite du système de climatisation ?",
+                    "question": "Quel est le rôle des bougies de préchauffage sur un moteur Diesel ?",
                     "answerOptions": [
-                        {"text": "L'essai routier.", "isCorrect": False},
-                        {"text": "L'utilisation d'un traceur UV ou d'un détecteur électronique de fuite de gaz (sniffer).", "isCorrect": True},
-                        {"text": "La mesure de la pression d'huile.", "isCorrect": False},
-                        {"text": "Le test de compression.", "isCorrect": False}
+                        {"text": "Réchauffer la chambre de combustion", "isCorrect": True},
+                        {"text": "Créer l'étincelle d'allumage", "isCorrect": False},
+                        {"text": "Refroidir le gasoil injecté", "isCorrect": False},
+                        {"text": "Nettoyer les injecteurs", "isCorrect": False}
                     ],
-                    "correction": "Le **traceur UV** (ajouté au gaz) est le plus efficace. Il s'accumule sur la fuite et est visible sous une lumière UV. Le détecteur électronique repère les émissions de gaz frigorigène."
+                    "correction": "Elles aident à l'auto-inflammation du gasoil lors des démarrages à froid."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Quel est l'objectif du 'déglaçage' des cylindres avant de remonter une segmentation neuve ?",
+                    "question": "Comment vérifier visuellement si une ampoule à filament est grillée ?",
                     "answerOptions": [
-                        {"text": "Rendre la surface plus brillante.", "isCorrect": False},
-                        {"text": "Créer une micro-strie (honnage) sur la paroi du cylindre pour retenir l'huile et favoriser le rodage des nouveaux segments.", "isCorrect": True},
-                        {"text": "Enlever la poussière.", "isCorrect": False},
-                        {"text": "Changer la taille des cylindres.", "isCorrect": False}
+                        {"text": "Le filament est coupé", "isCorrect": True},
+                        {"text": "Le verre est transparent", "isCorrect": False},
+                        {"text": "Le culot est en métal", "isCorrect": False},
+                        {"text": "La marque est illisible", "isCorrect": False}
                     ],
-                    "correction": "Le **déglaçage** (ou honnage) permet de casser le film lisse créé par l'ancienne segmentation. La nouvelle surface retient l'huile (lubrification) et permet une meilleure étanchéité."
+                    "correction": "Si le filament est rompu, le circuit est ouvert."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel est le risque de croiser les fils d'une bougie d'allumage sur un moteur à essence ?",
+                    "question": "Quelle précaution est primordiale avant d'intervenir sur le démarreur ?",
                     "answerOptions": [
-                        {"text": "La voiture ira plus vite.", "isCorrect": False},
-                        {"text": "Un 'raté' moteur, un cliquetis et un risque de destruction du catalyseur par injection de carburant non brûlé.", "isCorrect": True},
-                        {"text": "Une fuite d'huile.", "isCorrect": False},
-                        {"text": "Le freinage sera moins efficace.", "isCorrect": False}
+                        {"text": "Débrancher la batterie", "isCorrect": True},
+                        {"text": "Mettre les pleins phares", "isCorrect": False},
+                        {"text": "Gonfler les pneus", "isCorrect": False},
+                        {"text": "Ouvrir les vitres", "isCorrect": False}
                     ],
-                    "correction": "L'ordre d'allumage doit être respecté. Un fil croisé provoque une étincelle au mauvais moment (**décalage d'allumage**), entraînant une mauvaise combustion et l'envoi d'essence imbrûlée dans le catalyseur."
+                    "correction": "Risque de court-circuit violent car le câble vient directement du '+' batterie."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Quelle est la première chose à vérifier lorsqu'un moteur Diesel ne démarre pas (outre la batterie) ?",
+                    "question": "Qu'indique l'unité 'Ah' (Ampère-heure) sur une batterie ?",
                     "answerOptions": [
-                        {"text": "Le niveau de liquide lave-glace.", "isCorrect": False},
-                        {"text": "L'arrivée de carburant (circuit d'alimentation Diesel) ou l'état des bougies de préchauffage (à froid).", "isCorrect": True},
-                        {"text": "Le clignotant.", "isCorrect": False},
-                        {"text": "Le réglage des sièges.", "isCorrect": False}
+                        {"text": "La capacité de stockage", "isCorrect": True},
+                        {"text": "La tension de la batterie", "isCorrect": False},
+                        {"text": "La puissance au démarrage", "isCorrect": False},
+                        {"text": "La date de fabrication", "isCorrect": False}
                     ],
-                    "correction": "Un moteur Diesel nécessite une **compression** élevée et une source de **chaleur** (bougies de préchauffage) pour l'auto-inflammation, ainsi qu'une **arrivée de carburant** sous haute pression. L'absence de l'un de ces éléments empêche le démarrage."
+                    "correction": "C'est la quantité d'énergie (réserve) que la batterie peut stocker."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 5 : SÉCURITÉ, HYGIÈNE ET ENVIRONNEMENT (HSE) (Q. 81-100)
+        # THÈME 5 : SANTÉ, SÉCURITÉ, ENVIRONNEMENT (Questions 81 à 100)
         # =========================================================================
         5: {
-            "name": "5. Sécurité, Hygiène et Environnement (HSE) (Q. 81-100)",
+            "name": "THÈME 5 : SANTÉ, SÉCURITÉ, ENVIRONNEMENT",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel est l'EPI (Équipement de Protection Individuelle) obligatoire lors du travail sous un véhicule levé (pont élévateur) ?",
+                    "question": "Que signifie le sigle EPI ?",
                     "answerOptions": [
-                        {"text": "La casquette de baseball.", "isCorrect": False},
-                        {"text": "Les chaussures de sécurité (coquées) et, si nécessaire, les lunettes de protection.", "isCorrect": True},
-                        {"text": "Les gants en tissu.", "isCorrect": False},
-                        {"text": "Le gilet jaune.", "isCorrect": False}
+                        {"text": "Équipement de Protection Individuelle", "isCorrect": True},
+                        {"text": "Établissement Public Industriel", "isCorrect": False},
+                        {"text": "Entretien Périodique Informatique", "isCorrect": False},
+                        {"text": "Élément Pour l'Incendie", "isCorrect": False}
                     ],
-                    "correction": "Les **chaussures de sécurité** protègent contre les chutes d'objets lourds (pièces, outils) et sont l'EPI de base en atelier. Les lunettes protègent des projections."
+                    "correction": "Équipements portés par le travailleur pour se protéger (gants, lunettes...)."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Comment doit-on stocker les huiles usagées dans l'atelier ?",
+                    "question": "Après avoir levé un véhicule avec un cric, que doit-on placer avant de travailler dessous ?",
                     "answerOptions": [
-                        {"text": "Dans le caniveau.", "isCorrect": False},
-                        {"text": "Dans un bidon non identifié.", "isCorrect": False},
-                        {"text": "Dans des contenants étanches, clairement identifiés, et stockés dans une zone de rétention (bac anti-débordement).", "isCorrect": True},
-                        {"text": "Dans des bouteilles en verre.", "isCorrect": False}
+                        {"text": "Des chandelles de calage", "isCorrect": True},
+                        {"text": "Des parpaings en béton", "isCorrect": False},
+                        {"text": "Des cales en bois tendre", "isCorrect": False},
+                        {"text": "Un deuxième cric hydraulique", "isCorrect": False}
                     ],
-                    "correction": "L'**huile usagée** est un déchet dangereux (DID). Le stockage doit respecter l'environnement (zone de rétention) pour éviter la pollution des sols en cas de fuite."
+                    "correction": "Interdiction formelle de passer sous un véhicule sans chandelles stables."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Lors d'une intervention sur le circuit de climatisation, quel est le risque lié au fluide frigorigène (R-1234yf) ?",
+                    "question": "Dans quelle poubelle doit-on jeter un filtre à huile usagé ?",
                     "answerOptions": [
-                        {"text": "La perte de poids.", "isCorrect": False},
-                        {"text": "Le risque de gelure (brûlure par le froid) en cas de contact direct, et de toxicité en cas d'inhalation des vapeurs.", "isCorrect": True},
-                        {"text": "L'incendie du véhicule.", "isCorrect": False},
-                        {"text": "La décharge électrique.", "isCorrect": False}
+                        {"text": "Déchets Industriels Spéciaux", "isCorrect": True},
+                        {"text": "Déchets Industriels Banals", "isCorrect": False},
+                        {"text": "La poubelle de bureau", "isCorrect": False},
+                        {"text": "La benne à ferraille propre", "isCorrect": False}
                     ],
-                    "correction": "Le fluide sort à très basse température. Il faut porter des **gants et des lunettes de protection**. Le gaz doit être impérativement récupéré par une station agréée."
+                    "correction": "C'est un déchet dangereux qui nécessite une filière spécifique (DIS)."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Quel est le risque de travailler sur un véhicule soulevé par un cric hydraulique simple (sans chandelles) ?",
+                    "question": "Quelle est la bonne posture pour soulever une charge lourde ?",
                     "answerOptions": [
-                        {"text": "Le desserrage des roues.", "isCorrect": False},
-                        {"text": "L'affaissement du véhicule (instabilité) et le risque d'accident très grave ou mortel.", "isCorrect": True},
-                        {"text": "La décharge de la batterie.", "isCorrect": False},
-                        {"text": "Le moteur ne démarre plus.", "isCorrect": False}
+                        {"text": "Dos droit et jambes pliées", "isCorrect": True},
+                        {"text": "Dos rond et jambes tendues", "isCorrect": False},
+                        {"text": "Dos cambré et bras tendus", "isCorrect": False},
+                        {"text": "Jambes écartées et dos courbé", "isCorrect": False}
                     ],
-                    "correction": "Le **cric est un outil de levage**, pas de maintien. Travailler sans **chandelles** (outils de maintien) est une faute de sécurité grave."
+                    "correction": "Utiliser la force des cuisses en gardant le dos droit."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Que doit-on faire de la batterie d'un véhicule qui est considérée comme HS (hors service) ?",
+                    "question": "Quel équipement doit-on utiliser moteur tournant dans un atelier fermé ?",
                     "answerOptions": [
-                        {"text": "La jeter dans la poubelle normale.", "isCorrect": False},
-                        {"text": "La stocker dans un conteneur dédié pour être recyclée par une filière agréée (déchet dangereux).", "isCorrect": True},
-                        {"text": "La laisser dans la voiture.", "isCorrect": False},
-                        {"text": "La vider de son électrolyte.", "isCorrect": False}
+                        {"text": "Un extracteur de gaz", "isCorrect": True},
+                        {"text": "Un ventilateur de plafond", "isCorrect": False},
+                        {"text": "Un masque en papier", "isCorrect": False},
+                        {"text": "Un absorbeur d'humidité", "isCorrect": False}
                     ],
-                    "correction": "Les **batteries** contiennent du plomb et de l'acide sulfurique. Elles sont classées comme déchets dangereux (DD) et leur recyclage est obligatoire par des entreprises spécialisées."
+                    "correction": "Il faut évacuer le monoxyde de carbone avec un extracteur branché sur l'échappement."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Quel est le type d'extincteur approprié pour éteindre un feu de carburant (essence, huile) ?",
+                    "question": "Que faire immédiatement si du liquide de frein gicle dans les yeux ?",
                     "answerOptions": [
-                        {"text": "Extincteur à eau.", "isCorrect": False},
-                        {"text": "Extincteur de type B ou F (Poudre ou CO2).", "isCorrect": True},
-                        {"text": "Extincteur à mousse.", "isCorrect": False},
-                        {"text": "Extincteur à sel.", "isCorrect": False}
+                        {"text": "Rincer à l'eau abondamment", "isCorrect": True},
+                        {"text": "Frotter avec un chiffon sec", "isCorrect": False},
+                        {"text": "Mettre des gouttes de collyre", "isCorrect": False},
+                        {"text": "Fermer les yeux et attendre", "isCorrect": False}
                     ],
-                    "correction": "Les feux de liquides inflammables (carburants) sont de classe B. Le CO2 (qui étouffe) ou la poudre B/C est le plus adapté. L'eau aggraverait la situation."
+                    "correction": "Rincer à l'eau claire 10-15 minutes et consulter un médecin."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Quelle est la nature du danger lors de l'utilisation de la soufflette à air comprimé ?",
+                    "question": "À quoi sert la coque en acier des chaussures de sécurité ?",
                     "answerOptions": [
-                        {"text": "Le moteur va s'arrêter.", "isCorrect": False},
-                        {"text": "Le risque de projection de particules dans les yeux ou le risque d'embolie gazeuse (si contact avec la peau sous pression).", "isCorrect": True},
-                        {"text": "Le gel des mains.", "isCorrect": False},
-                        {"text": "La corrosion.", "isCorrect": False}
+                        {"text": "Protéger contre l'écrasement", "isCorrect": True},
+                        {"text": "Éviter l'usure de la chaussette", "isCorrect": False},
+                        {"text": "Améliorer l'adhérence au sol", "isCorrect": False},
+                        {"text": "Isoler du froid en hiver", "isCorrect": False}
                     ],
-                    "correction": "Le port de **lunettes de protection** est obligatoire lors du soufflage pour se prémunir des projections. Souffler sur la peau peut aussi être fatal (embolie)."
+                    "correction": "Protéger les orteils contre la chute d'objets lourds."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Lors du remplacement d'un pneu, quelle est la position la plus stable pour desserrer les écrous de roue ?",
+                    "question": "Sur un véhicule électrique, que signale une gaine de câble orange ?",
                     "answerOptions": [
-                        {"text": "Lorsque la roue est en l'air (sur cric).", "isCorrect": False},
-                        {"text": "Lorsque le véhicule est encore au sol (roues au contact).", "isCorrect": True},
-                        {"text": "Lorsque le moteur tourne.", "isCorrect": False},
-                        {"text": "Lorsque les freins sont desserrés.", "isCorrect": False}
+                        {"text": "Danger Haute Tension", "isCorrect": True},
+                        {"text": "Câble de masse 12 Volts", "isCorrect": False},
+                        {"text": "Tuyau de lave-glace", "isCorrect": False},
+                        {"text": "Circuit de climatisation", "isCorrect": False}
                     ],
-                    "correction": "Le desserrage initial (et le serrage final) doit toujours se faire avec le véhicule **au sol** pour que le couple de serrage puisse être appliqué sans faire tourner la roue."
+                    "correction": "C'est la norme pour signaler la Haute Tension (Danger de mort)."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Quel est l'objectif du Plan de Nettoyage et de Désinfection (PND) en atelier ?",
+                    "question": "Que signifie un pictogramme carré rouge avec une tête de mort ?",
                     "answerOptions": [
-                        {"text": "Former les apprentis.", "isCorrect": False},
-                        {"text": "Garantir un environnement de travail propre pour la santé et la sécurité du personnel et des clients.", "isCorrect": True},
-                        {"text": "Calculer la TVA.", "isCorrect": False},
-                        {"text": "Vendre des pièces détachées.", "isCorrect": False}
+                        {"text": "Produit toxique ou mortel", "isCorrect": True},
+                        {"text": "Produit corrosif pour la peau", "isCorrect": False},
+                        {"text": "Produit inflammable", "isCorrect": False},
+                        {"text": "Produit polluant l'eau", "isCorrect": False}
                     ],
-                    "correction": "Le **PND** (souvent PHS - Plan d'Hygiène et de Sécurité en mécanique) est essentiel pour éviter les glissades (huile) et les contaminations (produits chimiques)."
+                    "correction": "Toxicité aiguë (danger de mort par ingestion, inhalation ou contact)."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Quel est le risque de verser de l'eau sur un moteur qui vient de s'arrêter (surchauffe) ?",
+                    "question": "Où doit-on jeter les chiffons souillés d'huile ?",
                     "answerOptions": [
-                        {"text": "Une panne électrique.", "isCorrect": False},
-                        {"text": "Un choc thermique qui peut provoquer la fissure de la culasse ou du bloc moteur (déformation brutale).", "isCorrect": True},
-                        {"text": "Une fuite de carburant.", "isCorrect": False},
-                        {"text": "Un problème de suspension.", "isCorrect": False}
+                        {"text": "Dans le bac à chiffons sales", "isCorrect": True},
+                        {"text": "Dans la poubelle à papiers", "isCorrect": False},
+                        {"text": "Dans les toilettes de l'atelier", "isCorrect": False},
+                        {"text": "Dans la nature derrière le garage", "isCorrect": False}
                     ],
-                    "correction": "Le refroidissement doit être **progressif**. L'eau froide sur un métal très chaud provoque un choc thermique violent et irréversible."
+                    "correction": "Ils sont inflammables et polluants, donc conteneur spécifique."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quel document légal doit être fourni au client après une réparation (selon le Code de la Consommation) ?",
+                    "question": "Pourquoi ne jamais diriger une soufflette d'air comprimé vers la peau ?",
                     "answerOptions": [
-                        {"text": "Le bulletin météo.", "isCorrect": False},
-                        {"text": "La facture détaillée (pièces, main d'œuvre, TVA).", "isCorrect": True},
-                        {"text": "Un ticket de caisse simple.", "isCorrect": False},
-                        {"text": "Un plan de salle.", "isCorrect": False}
+                        {"text": "Risque d'embolie gazeuse", "isCorrect": True},
+                        {"text": "Risque de coup de soleil", "isCorrect": False},
+                        {"text": "Risque de salir la peau", "isCorrect": False},
+                        {"text": "Risque de sécher la peau", "isCorrect": False}
                     ],
-                    "correction": "La **facture** est une obligation légale. Elle doit être détaillée pour justifier le prix et sert de preuve pour la garantie des pièces et de l'intervention."
+                    "correction": "L'air peut passer dans le sang et provoquer une embolie mortelle."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel risque peut engendrer le contact prolongé de l'huile moteur usagée avec la peau ?",
+                    "question": "Quel extincteur pour un feu d'essence (Classe B) ?",
                     "answerOptions": [
-                        {"text": "Une odeur agréable.", "isCorrect": False},
-                        {"text": "Une irritation, des dermites, voire un risque d'affections cutanées graves (carcinogènes).", "isCorrect": True},
-                        {"text": "Une baisse de la tension.", "isCorrect": False},
-                        {"text": "Un choc électrique.", "isCorrect": False}
+                        {"text": "Poudre ou CO2", "isCorrect": True},
+                        {"text": "Eau pulvérisée simple", "isCorrect": False},
+                        {"text": "Couverture en laine", "isCorrect": False},
+                        {"text": "Seau de sable humide", "isCorrect": False}
                     ],
-                    "correction": "Le port de **gants de protection** est essentiel. L'huile usagée est chargée de résidus de combustion et de métaux lourds (déchets chimiques)."
+                    "correction": "Poudre ou CO2 pour étouffer le feu. Jamais d'eau (l'essence flotte)."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Qu'est-ce que la 'FDS' (Fiche de Données de Sécurité) et où doit-elle se trouver ?",
+                    "question": "Quel type de gants pour manipuler des produits chimiques ?",
                     "answerOptions": [
-                        {"text": "La fiche de fabrication de la voiture.", "isCorrect": False},
-                        {"text": "Un document donnant les risques, les mesures de sécurité et le traitement des déchets pour un produit chimique (obligatoire en atelier).", "isCorrect": True},
-                        {"text": "Le prix de la voiture.", "isCorrect": False},
-                        {"text": "Le manuel d'utilisation.", "isCorrect": False}
+                        {"text": "Gants en nitrile étanches", "isCorrect": True},
+                        {"text": "Gants en cuir épais", "isCorrect": False},
+                        {"text": "Gants en laine polaire", "isCorrect": False},
+                        {"text": "Gants en cotte de mailles", "isCorrect": False}
                     ],
-                    "correction": "Chaque produit chimique (huile, liquide de refroidissement, nettoyant) doit avoir sa **FDS**, consultable par les employés et les secours en cas d'accident."
+                    "correction": "Le nitrile résiste aux hydrocarbures et protège la peau."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Pourquoi doit-on utiliser un outil de diagnostic pour réinitialiser le témoin d'entretien (voyant de vidange) sur les véhicules modernes ?",
+                    "question": "Sur un pont élévateur, quelle action de sécurité est obligatoire avant de travailler ?",
                     "answerOptions": [
-                        {"text": "Pour que le voyant soit éteint.", "isCorrect": False},
-                        {"text": "Car la réinitialisation est gérée électroniquement par le calculateur (ECU) et non manuellement.", "isCorrect": True},
-                        {"text": "Pour changer la couleur du voyant.", "isCorrect": False},
-                        {"text": "Pour vidanger l'huile.", "isCorrect": False}
+                        {"text": "Poser le pont sur les taquets", "isCorrect": True},
+                        {"text": "Couper l'alimentation électrique", "isCorrect": False},
+                        {"text": "Mettre une sangle de sécurité", "isCorrect": False},
+                        {"text": "Laisser le pont en pression hydraulique", "isCorrect": False}
                     ],
-                    "correction": "Les véhicules modernes gèrent l'entretien via l'**ECU**. La réinitialisation doit être faite via le port OBD pour informer le calculateur que l'entretien a été effectué."
+                    "correction": "Verrouiller mécaniquement le pont sur ses crans de sécurité."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quel est le risque de réutiliser un joint de culasse après un démontage ?",
+                    "question": "Si du liquide de frein tombe sur la carrosserie, que faire ?",
                     "answerOptions": [
-                        {"text": "Il fonctionnera mieux.", "isCorrect": False},
-                        {"text": "Le joint est 'écrasé' et déformé pour l'étanchéité. Sa réutilisation entraînera une fuite immédiate ou un mélange des fluides (eau/huile).", "isCorrect": True},
-                        {"text": "Il sera trop petit.", "isCorrect": False},
-                        {"text": "Il n'y a aucun risque.", "isCorrect": False}
+                        {"text": "Rincer tout de suite à l'eau", "isCorrect": True},
+                        {"text": "Essuyer avec un chiffon sec", "isCorrect": False},
+                        {"text": "Attendre que le produit sèche", "isCorrect": False},
+                        {"text": "Mettre du diluant peinture", "isCorrect": False}
                     ],
-                    "correction": "Le **joint de culasse** est une pièce à usage unique. Il se déforme sous l'effet du couple de serrage et ne peut plus garantir l'étanchéité une seconde fois."
+                    "correction": "Rincer à l'eau immédiatement car c'est un décapant puissant."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Quelle précaution prendre avant d'utiliser une clé à chocs pneumatique ?",
+                    "question": "Quel équipement est obligatoire pour utiliser un touret à meuler ?",
                     "answerOptions": [
-                        {"text": "S'assurer que la pression d'air est au minimum.", "isCorrect": False},
-                        {"text": "Vérifier la pression d'air et s'assurer d'utiliser les douilles adaptées (douilles à chocs).", "isCorrect": True},
-                        {"text": "Ne pas mettre de gants.", "isCorrect": False},
-                        {"text": "Ne pas serrer de vis.", "isCorrect": False}
+                        {"text": "Des lunettes de protection", "isCorrect": True},
+                        {"text": "Des gants en plastique fin", "isCorrect": False},
+                        {"text": "Une écharpe autour du cou", "isCorrect": False},
+                        {"text": "Des lunettes de soleil teintées", "isCorrect": False}
                     ],
-                    "correction": "L'utilisation de **douilles à chocs** (plus résistantes) est impérative pour éviter la rupture de l'outil. Le bruit nécessite souvent le port de protections auditives."
+                    "correction": "Risque de lésions oculaires par projections d'étincelles ou de limaille."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quel est le principal risque lié au liquide de refroidissement usagé ?",
+                    "question": "À quoi sert un bac de rétention sous les fûts d'huile ?",
                     "answerOptions": [
-                        {"text": "Une mauvaise odeur.", "isCorrect": False},
-                        {"text": "Sa toxicité (contient de l'éthylène glycol) et son impact environnemental, nécessitant une collecte et un traitement spécifiques.", "isCorrect": True},
-                        {"text": "L'incendie.", "isCorrect": False},
-                        {"text": "Le gel des mains.", "isCorrect": False}
+                        {"text": "Récupérer les fuites accidentelles", "isCorrect": True},
+                        {"text": "Ranger les outils de distribution", "isCorrect": False},
+                        {"text": "Surélever les fûts pour le dos", "isCorrect": False},
+                        {"text": "Laver les pièces mécaniques", "isCorrect": False}
                     ],
-                    "correction": "Le **liquide de refroidissement** est toxique (surtout pour les animaux domestiques qui peuvent en boire en cas de fuite). Il est classé comme déchet dangereux."
+                    "correction": "Empêcher la pollution des sols en cas de fuite du fût."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Que doit-on toujours faire après avoir utilisé un pont élévateur pour s'assurer qu'il est hors tension ?",
+                    "question": "Quel document lance officiellement l'intervention sur le véhicule ?",
                     "answerOptions": [
-                        {"text": "Le graisser.", "isCorrect": False},
-                        {"text": "Remettre le véhicule au sol et couper le disjoncteur ou l'interrupteur général (selon les consignes).", "isCorrect": True},
-                        {"text": "Le nettoyer avec de l'eau.", "isCorrect": False},
-                        {"text": "Laisser la clé sur le tableau de bord.", "isCorrect": False}
+                        {"text": "L'Ordre de Réparation", "isCorrect": True},
+                        {"text": "Le certificat d'immatriculation", "isCorrect": False},
+                        {"text": "Le contrôle technique", "isCorrect": False},
+                        {"text": "La facture proforma", "isCorrect": False}
                     ],
-                    "correction": "Couper l'alimentation électrique (par un disjoncteur/interrupteur dédié) est une mesure de sécurité pour éviter une utilisation non autorisée ou un incident électrique."
+                    "correction": "L'O.R. est le contrat signé par le client autorisant les travaux."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Qu'est-ce que la 'TVA' dans le prix d'une réparation ?",
+                    "question": "Pourquoi est-il interdit de transvaser des produits chimiques dans des bouteilles d'eau ?",
                     "answerOptions": [
-                        {"text": "Le Taux de Vidange Automobile.", "isCorrect": False},
-                        {"text": "La Taxe sur la Valeur Ajoutée (impôt sur la consommation).", "isCorrect": True},
-                        {"text": "La Température du Véhicule Automatique.", "isCorrect": False},
-                        {"text": "Le Taux de Vitesse Acceptable.", "isCorrect": False}
+                        {"text": "Risque grave de confusion et d'ingestion", "isCorrect": True},
+                        {"text": "Le plastique va fondre immédiatement", "isCorrect": False},
+                        {"text": "C'est difficile de verser dedans", "isCorrect": False},
+                        {"text": "L'étiquette ne colle pas bien", "isCorrect": False}
                     ],
-                    "correction": "La **TVA** est la Taxe sur la Valeur Ajoutée, appliquée à tous les produits et services (pièces, main d'œuvre). En mécanique, le taux normal est de 20%."
+                    "correction": "Risque mortel qu'une personne boive le produit par erreur."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Le terme 'FIFO' (First In, First Out) appliqué aux stocks de pièces et de liquides en atelier signifie :",
+                    "question": "Une flaque d'huile au sol constitue un risque de :",
                     "answerOptions": [
-                        {"text": "Ranger les nouvelles pièces devant.", "isCorrect": False},
-                        {"text": "Utiliser les pièces (ou liquides) reçues en premier (les plus anciennes) avant les pièces plus récentes.", "isCorrect": True},
-                        {"text": "Jeter toutes les pièces usagées.", "isCorrect": False},
-                        {"text": "Travailler lentement.", "isCorrect": False}
+                        {"text": "Chute de plain-pied", "isCorrect": True},
+                        {"text": "Risque électrique", "isCorrect": False},
+                        {"text": "Risque auditif", "isCorrect": False},
+                        {"text": "Troubles musculosquelettiques", "isCorrect": False}
                     ],
-                    "correction": "Le **FIFO** garantit que les produits avec une date de péremption (huile, liquide, additifs) ou à durée de garantie limitée sont utilisés en premier, minimisant le gaspillage et l'obsolescence."
-                },
+                    "correction": "Les glissades sont une cause majeure d'accidents en atelier."
+                }
             ]
         }
     }
 }
-
-# Exemple d'accès aux données :
-# print(quiz_data["title"])
-# print(quiz_data["themes"][1]["name"])
-# print(quiz_data["themes"][1]["questions"][0]["question"])
-# print(quiz_data["themes"][1]["questions"][0]["answerOptions"][1]["isCorrect"])

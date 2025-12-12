@@ -1,605 +1,205 @@
-THÈME 1 : TECHNOLOGIE DES MATÉRIAUX ET ASSEMBLAGES
+THÈME 1 : RÉCEPTION ET SUIVI DES COMMANDES
 
-Question 1 : Quelle est la caractéristique principale d'un acier HLE ?
+Question 1 : Quel document le réceptionnaire doit-il impérativement émarger pour attester de la réception des marchandises ? A. Bon de livraison B. Facture proforma détaillée C. Relevé de compte fournisseur D. Bon de commande interne Rappel de Cours : Le bon de livraison est le document officiel qui accompagne la marchandise. La signature (émargement) de ce document par le réceptionnaire transfère la responsabilité de la marchandise du transporteur vers le magasin.
 
-A. Une limite d'élasticité élevée B. Une protection anticorrosion par galvanisation à chaud C. Une capacité à être soudé sans gaz de protection D. Une structure en nid d'abeille composite
+Question 2 : Quelle est la première étape du contrôle quantitatif lors d'une livraison ? A. Compter les colis B. Ouvrir tous les cartons C. Mettre en rayon D. Vérifier les prix Rappel de Cours : Le contrôle quantitatif commence toujours par le dénombrement des colis (palettes ou cartons) pour vérifier la concordance avec le bon de transport, avant même de contrôler le détail des articles.
 
-Rappel de Cours : HLE signifie Haute Limite Élastique. Ces aciers peuvent subir de fortes contraintes avant de se déformer définitivement, permettant d'alléger les structures tout en gardant la solidité.
+Question 3 : Que doit faire l'équipier s'il constate qu'un carton est écrasé ou ouvert à la réception ? A. Émettre des réserves écrites précises B. Refuser la totalité de la livraison sans motif C. Accepter la marchandise sans rien dire D. Appeler le fournisseur pour se plaindre verbalement Rappel de Cours : En cas d'anomalie visible (avarie), il est obligatoire d'inscrire des réserves caractérisées (ex: "1 carton ouvert, 3 produits manquants") sur le document de transport pour préserver les recours contre le transporteur.
 
-Question 2 : Quel gaz est requis pour le soudage MAG des aciers courants ?
+Question 4 : Quel matériel de manutention est le plus adapté pour déplacer une palette au sol sur une courte distance ? A. Transpalette B. Chariot élévateur C. Diable D. Monte-charge Rappel de Cours : Le transpalette (manuel ou électrique) est l'outil spécifique conçu pour soulever et déplacer des palettes au niveau du sol. Le diable sert pour les cartons en vrac, et le chariot élévateur pour le gerbage en hauteur.
 
-A. Un mélange d'Argon et de dioxyde de carbone B. De l'Argon pur pour éviter l'oxydation C. De l'oxygène pur pour augmenter la chaleur D. De l'acétylène dissous
+Question 5 : Quelle méthode de gestion de stock impose de sortir les produits aux dates les plus courtes en premier ? A. FEFO B. LIFO C. CUMP D. FIFO Rappel de Cours : La méthode FEFO (First Expired, First Out) ou "Premier périmé, premier sorti" est impérative pour les produits périssables afin d'éviter la casse et le gaspillage alimentaire.
 
-Rappel de Cours : Le MAG (Metal Active Gas) nécessite un gaz actif. Le CO2 ajouté à l'Argon stabilise l'arc et favorise la pénétration, contrairement à l'Argon pur utilisé pour l'aluminium (MIG).
+Question 6 : Lors d'un contrôle qualitatif sur des produits frais, que doit-on vérifier en priorité absolue ? A. Température à cœur B. Esthétique du carton C. Couleur du logo D. Poids de la palette Rappel de Cours : Le respect de la chaîne du froid est critique. La prise de température à cœur (ou entre deux produits) garantit que la marchandise n'a pas subi de réchauffement dangereux pour la santé du consommateur.
 
-Question 3 : Comment réagit un thermodurcissable lors d'un test de chauffe ?
+Question 7 : Comment appelle-t-on la zone du magasin réservée au stockage des marchandises non exposées à la vente ? A. Réserve B. Surface de vente C. Zone chaude D. Linéaire Rappel de Cours : La réserve est le lieu de stockage des produits en attente de mise en rayon. C'est une zone non accessible aux clients, contrairement à la surface de vente.
 
-A. Il carbonise sans fondre B. Il ramollit et peut être remodelé C. Il devient liquide comme de l'eau D. Il devient transparent
+Question 8 : Quelle est la conséquence immédiate d'une livraison non contrôlée à la réception ? A. Stocks théoriques et réels faux B. Augmentation du chiffre d'affaires C. Amélioration de la marge commerciale D. Satisfaction accrue de la clientèle Rappel de Cours : Si l'on ne contrôle pas la livraison, on intègre dans le stock informatique des quantités potentiellement erronées (manquants non détectés), ce qui fausse l'inventaire et la gestion des réapprovisionnements.
 
-Rappel de Cours : Les thermodurcissables (comme le SMC ou les résines polyesters) ont durci irréversiblement lors de leur fabrication. Ils ne peuvent pas être soudés, seulement collés.
+Question 9 : Que signifie le sigle DLC présent sur les produits périssables ? A. Date limite de consommation B. Date longue de conservation C. Délai légal de commercialisation D. Durée limite de chargement Rappel de Cours : La DLC (Date Limite de Consommation) est une date impérative de sécurité sanitaire. Au-delà de cette date, le produit est impropre à la consommation et doit être retiré.
 
-Question 4 : Quelle précaution est spécifique au redressage de l'aluminium ?
+Question 10 : Quelle action permet de prévenir les risques liés aux gestes et postures lors du déchargement ? A. Plier les genoux pour soulever B. Courber le dos vers l'avant C. Porter les charges à bout de bras D. Faire des mouvements brusques Rappel de Cours : Pour protéger son dos (colonne vertébrale), il faut utiliser la force des jambes en pliant les genoux et garder la charge le plus près possible du corps.
 
-A. Effectuer une chauffe de recuit pour éviter les criques B. Refroidir brutalement la zone avec de l'eau C. Utiliser impérativement des marteaux en acier trempé D. Magnétiser la zone avant de frapper
+Question 11 : Quel document permet de vérifier la conformité entre ce qui a été commandé et ce qui est livré ? A. Bon de commande B. Facture client C. Ticket de caisse D. Fiche technique Rappel de Cours : Le contrôle de conformité consiste à rapprocher le bon de livraison (ce qui est reçu) avec le bon de commande (ce qui a été demandé) pour détecter les erreurs de préparation du fournisseur.
 
-Rappel de Cours : L'aluminium s'écrouit (durcit) très vite sous les chocs et devient cassant. Le recuit (vers 300°C) redonne de la malléabilité au métal.
+Question 12 : Quelle est la procédure correcte si un produit livré ne correspond pas à la commande mais est en bon état ? A. Isoler le produit et contacter le fournisseur B. Mettre le produit en rayon immédiatement C. Jeter le produit dans la benne à déchets D. Offrir le produit au personnel du magasin Rappel de Cours : C'est une erreur de référence. Le produit ne doit pas être vendu ni jeté. Il faut l'isoler en zone de litige et contacter le fournisseur pour organiser une reprise ou obtenir un avoir.
 
-Question 5 : Le soudo-brasage MIG utilise un fil d'apport constitué de :
+Question 13 : Quel équipement de protection individuelle est indispensable pour manipuler des palettes en bois ? A. Gants de manutention B. Lunettes de soleil C. Masque chirurgical D. Tablier de cuisine Rappel de Cours : Les gants de manutention protègent les mains contre les échardes, les coupures et les frottements liés à la manipulation des palettes et des cartons.
 
-A. Cuivre et silicium B. Acier inoxydable enrichi au carbone C. Aluminium pur D. Fer doux standard
+Question 14 : Que doit-on faire des emballages plastiques et cartons après le dépotage de la marchandise ? A. Effectuer un tri sélectif rigoureux B. Tout jeter dans la même poubelle grise C. Brûler les cartons sur le parking arrière D. Laisser les déchets dans l'allée centrale Rappel de Cours : La gestion des déchets en commerce impose le tri sélectif (cartons, plastiques, bois) pour permettre leur recyclage et réduire l'impact environnemental.
 
-Rappel de Cours : Le fil CuSi3 (Cupro-Silicium) fond à une température plus basse que l'acier (environ 1000°C), ce qui permet d'assembler les tôles HLE sans détruire leur structure ni leur protection anticorrosion.
+Question 15 : Quelle information est essentielle pour assurer la traçabilité d'un produit alimentaire ? A. Numéro de lot B. Prix de vente C. Couleur du paquet D. Nom du caissier Rappel de Cours : Le numéro de lot permet d'identifier l'historique de fabrication du produit. Il est indispensable pour procéder aux retraits ou rappels de produits en cas de problème sanitaire.
 
-Question 6 : Quel est le but principal de la cataphorèse en usine ?
+Question 16 : Pourquoi est-il important de ne pas gerber les palettes trop haut dans la réserve ? A. Éviter les chutes d'objets B. Gagner du temps au rangement C. Cacher les produits aux clients D. Faire de l'exercice physique Rappel de Cours : La hauteur de gerbage doit être limitée pour garantir la stabilité de la pile et la sécurité du personnel, évitant ainsi le risque d'écrasement ou de chute de la marchandise.
 
-A. Protéger la caisse contre la corrosion B. Donner la couleur finale du véhicule C. Insonoriser l'habitacle D. Coller les différents panneaux entre eux
+Question 17 : Quelle mention indique qu'un produit peut être consommé après la date indiquée sans risque pour la santé ? A. DDM B. DLC C. THT D. NF Rappel de Cours : La DDM (Date de Durabilité Minimale), anciennement DLUO, indique que le produit peut perdre ses qualités gustatives mais reste sain à consommer après la date, contrairement à la DLC.
 
-Rappel de Cours : C'est un dépôt de peinture par électrolyse dans un bain, qui couvre 100% de la surface, y compris les corps creux, pour une protection antirouille totale.
+Question 18 : Dans le cadre de la réception, que signifie "émarger" un document ? A. Signer et apposer le tampon B. Lire le document silencieusement C. Photocopier le document en deux D. Détruire le document après lecture Rappel de Cours : L'émargement consiste juridiquement à apposer sa signature (et souvent le tampon du magasin) pour valider officiellement la réception et accepter le transfert de responsabilité.
 
-Question 7 : Les aciers au Bore sont principalement utilisés pour :
+Question 19 : Si un colis arrive ouvert, quelle mention spécifique doit apparaître sur le bon de transport ? A. Carton ouvert et nombre de manquants B. Sous réserve de déballage ultérieur C. Colis en mauvais état général D. Marchandise abîmée par le chauffeur Rappel de Cours : Les réserves doivent être précises, datées et significatives. La mention "sous réserve de déballage" n'a aucune valeur juridique. Il faut constater la réalité des faits (ex: carton ouvert) et les conséquences (ex: 2 pièces manquantes).
 
-A. Les renforts de sécurité indéformables B. Les ailes avant pour leur souplesse C. Les peaux de portières D. Le plancher de coffre
+Question 20 : Quel outil permet de lire les codes-barres pour vérifier les réceptions informatiquement ? A. Douchette B. Calculatrice C. Clavier D. Souris Rappel de Cours : La douchette (ou scanner) permet de lire les codes-barres (EAN) et de les comparer instantanément avec les données du bon de livraison informatisé ou de la commande.
+THÈME 2 : MISE EN VALEUR ET APPROVISIONNEMENT DE L'ESPACE COMMERCIAL
 
-Rappel de Cours : Ces aciers ultra-durs (THLE) sont placés dans les montants de baie ou les traverses pour protéger la cellule de survie. Ils ne se redressent pas.
+Question 21 : Quelle technique consiste à ramener les produits du fond de l'étagère vers le bord avant pour donner une impression de rayon plein ? A. Le facing B. Le balisage promotionnel C. La démarque inconnue D. L'inventaire tournant permanent Rappel de Cours : Le facing (ou façade) est l'action de remettre en ordre les produits sur le bord de la tablette. Cela améliore la visibilité de l'offre et l'esthétique du rayon.
 
-Question 8 : L'avantage d'un rivet aveugle est de permettre l'assemblage :
+Question 22 : Quel niveau de présentation assure généralement les meilleures ventes pour un produit ? A. Niveau des yeux B. Niveau des mains C. Niveau du sol D. Niveau du chapeau Rappel de Cours : Le niveau des yeux est la zone la plus vendeuse ("le niveau des yeux est le niveau des achats") car le client voit le produit sans effort. Le niveau des mains est le second plus performant.
 
-A. En n'accédant qu'à un seul côté des tôles B. Sans avoir besoin de percer les tôles au préalable C. De manière invisible après la pose D. Avec une simple pince multiprise
+Question 23 : Lors du réassort, où doit-on placer les nouveaux produits par rapport aux anciens ? A. Derrière les anciens B. Devant les anciens C. Au dessus des anciens D. Sur une autre étagère Rappel de Cours : Pour garantir la rotation des stocks et respecter la méthode FIFO (First In, First Out), les produits ayant la date la plus courte (les anciens) doivent rester devant pour être vendus en premier.
 
-Rappel de Cours : Appelé aussi rivet "pop", il est idéal pour les corps creux où l'on ne peut pas passer un tas ou une bouterolle derrière.
+Question 24 : En plus du prix de vente, quelle information de prix est obligatoire sur l'étiquette d'un produit alimentaire ? A. Prix à l'unité de mesure B. Marge commerciale du magasin C. Coût de transport du produit D. Historique des prix pratiqués Rappel de Cours : L'affichage du prix à l'unité de mesure (prix au kilo ou au litre) est obligatoire. Il permet au consommateur de comparer les prix de produits de contenances différentes.
 
-Question 9 : La corrosion galvanique se produit par contact entre :
+Question 25 : Quel type d'implantation consiste à disposer une famille de produits du haut vers le bas de la gondole ? A. Verticale B. Horizontale C. Aléatoire D. Diagonale Rappel de Cours : L'implantation verticale est privilégiée car elle oblige le client à balayer le rayon du regard de haut en bas et de gauche à droite, augmentant la visibilité de l'ensemble de la gamme.
 
-A. Deux métaux de nature différente en milieu humide B. Une tôle et un mastic polyester C. La peinture et le vernis D. L'acier et de l'huile moteur
+Question 26 : Quelle est la première action à effectuer avant de poser de nouveaux produits sur une étagère vide ? A. Nettoyer B. Compter C. Baliser D. Commander Rappel de Cours : L'hygiène est un prérequis commercial et sanitaire. On profite toujours d'une rupture ou d'un réassort pour dépoussiérer et nettoyer la tablette avant de la remplir.
 
-Rappel de Cours : C'est un phénomène de pile électrochimique. L'aluminium se corrode s'il est en contact direct avec de l'acier et de l'eau. Il faut isoler les assemblages.
+Question 27 : Que désigne le sigle ILV dans un magasin ? A. Information sur le Lieu de Vente B. Impôt Légal sur la Vente C. Inventaire Lourd de Vérification D. Indice Large de Valorisation Rappel de Cours : L'ILV (signalétique, panneaux directionnels) sert à guider et informer le client dans le magasin, contrairement à la PLV qui sert à promouvoir un produit spécifique.
 
-Question 10 : Le verre feuilleté est composé de :
+Question 28 : Comment appelle-t-on l'absence d'un produit en rayon alors qu'il devrait y être ? A. Rupture B. Surstock C. Démarque D. Assortiment Rappel de Cours : La rupture de stock est l'ennemi du commerçant : elle entraîne une perte de chiffre d'affaires immédiate et peut détériorer l'image du magasin aux yeux des clients.
 
-A. Deux feuilles de verre collées par un film plastique B. Une seule feuille de verre trempé thermiquement C. Un plastique polycarbonate incassable D. Trois couches de verre armé de fil de fer
+Question 29 : Quelle technique consiste à placer des produits complémentaires côte à côte (ex: pinceaux à côté de la peinture) ? A. Cross-merchandising B. Gestion administrative des stocks C. Théâtralisation de l'offre commerciale D. Approvisionnement automatique assisté Rappel de Cours : Le cross-merchandising (ou ventes croisées) suggère au client un achat additionnel logique en rapprochant des produits appartenant à des univers différents mais consommés ensemble.
 
-Rappel de Cours : Obligatoire pour le pare-brise, le film PVB retient les éclats en cas de choc, assurant la sécurité des passagers.
+Question 30 : Quel emplacement est stratégique pour mettre en avant les promotions en entrée d'allée ? A. Tête de gondole B. Pied de gondole C. Fond de rayon D. Zone de caisse Rappel de Cours : La Tête de Gondole (TG) est l'emplacement situé à l'extrémité du rayon, donnant sur l'allée de circulation principale. C'est une zone promotionnelle majeure.
 
-Question 11 : Le collage structural est souvent associé au rivetage pour :
+Question 31 : Si le prix en rayon est de 10€ et le prix scanné en caisse est de 12€, quel prix le client doit-il payer ? A. 10 euros B. 11 euros C. 12 euros D. 22 euros Rappel de Cours : En cas d'erreur d'étiquetage en défaveur du client, le magasin est légalement tenu d'appliquer le prix affiché en rayon (le plus bas), sauf si ce prix est dérisoire.
 
-A. Répartir les efforts et assurer l'étanchéité B. Éviter d'utiliser des outils pneumatiques C. Faire des économies de rivets D. Remplacer totalement la soudure sur le châssis
+Question 32 : Comment appelle-t-on la zone du magasin proche de l'entrée où la circulation des clients est la plus forte ? A. Zone chaude B. Zone froide C. Zone tiède D. Zone morte Rappel de Cours : La zone chaude est la partie du magasin où le flux clients est naturel et dense. On y place souvent les produits d'achat d'impulsion ou les promotions fortes.
 
-Rappel de Cours : C'est la technique du "rivetage-collage". La colle assure la tenue mécanique continue et l'étanchéité, les rivets maintiennent le tout pendant la prise.
+Question 33 : Quel terme désigne l'adaptation de l'assortiment en fonction des événements du calendrier (Noël, Rentrée, Pâques) ? A. Saisonnalité B. Fidélisation C. Segmentation D. Canalisation Rappel de Cours : La saisonnalité rythme la vie commerciale. L'équipier doit adapter les mises en avant et les commandes en fonction de ces événements pour répondre à la demande ponctuelle.
 
-Question 12 : Un fusible structurel sur un longeron sert à :
+Question 34 : Quel est l'objectif principal de la PLV (Publicité sur le Lieu de Vente) ? A. Déclencher l'achat B. Surveiller le vol C. Gérer les stocks D. Nettoyer le sol Rappel de Cours : La PLV (affiches, stops-rayons, présentoirs) a pour but d'attirer l'attention du client sur un produit pour transformer son intérêt en acte d'achat.
 
-A. Programmer la déformation en un point précis B. Couper le circuit électrique en cas de choc C. Empêcher toute pliure du châssis D. Fixer le pare-chocs avant
+Question 35 : Que représente le "nombre de facings" d'un produit ? A. Nombre de produits vus de face B. Nombre total de produits en stock C. Nombre de produits commandés hier D. Nombre de produits périmés jetés Rappel de Cours : Le facing (exprimé en nombre) correspond à la largeur accordée au produit sur la tablette. Un facing de 3 signifie que 3 produits sont visibles de front par le client.
 
-Rappel de Cours : Ce sont des amorces de pliure (trous, emboutis) qui garantissent que le longeron s'écrase en accordéon pour absorber l'énergie sans transmettre le choc à l'habitacle.
+Question 36 : Pour une mise en avant "Barbecue", quel produit est le plus logique à associer au charbon de bois ? A. Allume-feu B. Lessive liquide C. Stylo à bille D. Lait demi-écrémé Rappel de Cours : C'est une logique de besoin client. L'allume-feu est indispensable à l'utilisation du charbon. Les associer facilite la vie du client et augmente le panier moyen.
 
-Question 13 : Le soudage par résistance par points chauffe le métal grâce à :
+Question 37 : Où doit être positionnée l'étiquette prix par rapport au produit en rayon ? A. Juste en dessous B. Juste au dessus C. Sur le côté gauche D. Sur le côté droit Rappel de Cours : Par convention et pour éviter toute confusion, l'étiquette prix (électronique ou papier) se place sur la réglette, juste en dessous du produit correspondant.
 
-A. L'intensité du courant électrique traversant les tôles B. La friction mécanique des électrodes C. Un apport de gaz combustible D. Un arc électrique créé par une électrode enrobée
+Question 38 : Quel type d'achat est réalisé sans planification, à la vue du produit ? A. Impulsion B. Réfléchi C. Routinier D. Obligatoire Rappel de Cours : L'achat d'impulsion est un achat "coup de cœur" non prévu sur la liste de courses. Une bonne mise en valeur (TG, îlot) favorise ce type d'achat.
 
-Rappel de Cours : C'est l'effet Joule. La résistance des tôles au passage du courant crée la chaleur nécessaire à la fusion du noyau sous la pression des pinces.
+Question 39 : Dans l'assortiment, que désigne la "largeur" de l'offre ? A. Le nombre de familles de produits B. Le nombre de références par famille C. La taille physique des produits D. La surface totale du magasin Rappel de Cours : La largeur correspond à la diversité des besoins couverts (ex: épicerie, liquide, frais). La profondeur correspond au choix (marques, tailles) à l'intérieur d'une famille.
 
-Question 14 : Quel plastique est un thermoplastique courant en automobile ?
+Question 40 : Quel risque présente un carton laissé vide au milieu d'une allée pendant le remplissage ? A. Chute client B. Rupture stock C. Erreur prix D. Vente vente Rappel de Cours : C'est un risque majeur de sécurité (PSE). Tout obstacle dans les allées de circulation peut entraîner la chute d'un client et engager la responsabilité du magasin.
+THÈME 3 : CONSEIL ET ACCOMPAGNEMENT DU CLIENT
 
-A. Le Polypropylène B. Le Polyester armé de fibres de verre C. La résine Époxy D. Le Polyuréthane thermodurci
+Question 41 : Quelle est la toute première étape incontournable de la prise de contact avec un client ? A. Sourire B. Demander le budget C. Présenter un produit D. Faire une démonstration Rappel de Cours : La règle des "4x20" enseigne que les 20 premières secondes sont décisives. Le sourire (même au téléphone) et le regard constituent la base de l'accueil avant toute parole.
 
-Rappel de Cours : Le PP (ou PP-EPDM) est utilisé pour la majorité des pare-chocs car il est souple et se soude facilement à chaud.
+Question 42 : Quel type de question permet d'obtenir un maximum d'informations sur les besoins du client ? A. Ouverte B. Fermée C. Alternative D. Retorique Rappel de Cours : Une question ouverte (commençant par CQQCOQP : Comment, Qui, Quoi...) invite le client à s'exprimer librement et à développer ses attentes, contrairement à la question fermée.
 
-Question 15 : La protection cathodique de l'acier est assurée par :
+Question 43 : Dans la méthode SONCAS, à quoi correspond la lettre "S" ? A. Sécurité B. Service C. Silence D. Souplesse Rappel de Cours : Le SONCAS (Sécurité, Orgueil, Nouveauté, Confort, Argent, Sympathie) est une typologie qui permet d'identifier les motivations d'achat psychologiques du client. La Sécurité correspond au besoin d'être rassuré (garantie, fiabilité).
 
-A. Le zinc B. Le carbone C. Le cuivre D. Le fer
+Question 44 : Quelle technique d'écoute active consiste à répéter avec ses propres mots ce que le client vient de dire ? A. Reformulation B. Interruption C. Argumentation D. Conclusion Rappel de Cours : La reformulation permet de valider que l'on a bien compris le besoin du client ("Si je vous comprends bien, vous cherchez...") et lui montre qu'il est écouté.
 
-Rappel de Cours : Dans une tôle zinguée, le zinc s'oxyde "à la place" de l'acier, protégeant ce dernier même si la couche est légèrement rayée.
+Question 45 : Que doit faire le vendeur si un client exprime une objection sur le prix ? A. Justifier la valeur du produit B. Baisser le prix immédiatement C. Ignorer la remarque du client D. Dire que le client a tort Rappel de Cours : Une objection prix doit être traitée en valorisant le produit (qualité, durabilité, services). On défend le rapport qualité/prix plutôt que de brader l'article tout de suite.
 
-Question 16 : Le sertissage de peau de porte est un assemblage :
+Question 46 : Comment qualifie-t-on la vente d'un produit qui remplace celui demandé par le client (en cas de rupture par exemple) ? A. Vente de substitution B. Vente additionnelle C. Vente complémentaire D. Vente forcée illégale Rappel de Cours : La vente de substitution (ou de report) consiste à proposer un produit équivalent répondant aux mêmes besoins lorsque le produit initialement souhaité n'est pas disponible.
 
-A. Mécanique par repliage du bord B. Chimique par fusion de la matière C. Thermique par soudure continue D. Provisoire par vis
+Question 47 : Quelle action permet de fidéliser le client à la fin de la vente ? A. Proposer la carte de fidélité B. Ranger le rayon immédiatement C. Partir en pause déjeuner D. Parler à un collègue Rappel de Cours : La proposition de la carte de fidélité ou l'inscription au fichier client permet de créer un lien durable, de collecter des données et d'inciter le client à revenir.
 
-Rappel de Cours : La tôle extérieure est repliée sur la doublure intérieure. On ajoute un cordon de mastic pour l'étanchéité et le calage.
+Question 48 : Quelle est la signification du sigle CAP dans la construction d'un argumentaire ? A. Caractéristique Avantage Preuve B. Client Achat Produit C. Commerce Achat Partage D. Contact Attente Prix Rappel de Cours : La méthode CAP structure l'argument : on cite une Caractéristique technique, on la traduit en Avantage pour ce client précis, et on apporte une Preuve (démonstration, label).
 
-Question 17 : Le soudage MIG de l'aluminium impose l'usage d'un gaz :
+Question 49 : Si un client hésite entre deux produits, quel type de question peut aider à conclure la vente ? A. Question alternative B. Question piège C. Question ouverte D. Question curieuse Rappel de Cours : La question alternative ("Vous préférez le bleu ou le rouge ?") propose un choix restreint qui incite le client à prendre une décision d'achat positive, quelle que soit sa réponse.
 
-A. Inerte comme l'Argon pur B. Actif comme le dioxyde de carbone C. Oxydant comme l'oxygène D. Combustible comme le propane
+Question 50 : Lors de la prise de congé, que faut-il faire même si le client n'a rien acheté ? A. Rester aimable et saluer B. Montrer son mécontentement C. Refuser de dire au revoir D. Soupirer bruyamment Rappel de Cours : La qualité de l'accueil doit être constante. Un client qui n'achète pas aujourd'hui peut revenir demain. La dernière impression (prise de congé) doit rester positive.
 
-Rappel de Cours : L'aluminium s'oxyde instantanément à l'air. Il faut un gaz 100% inerte pour protéger le bain de fusion sans réagir avec lui.
+Question 51 : Quel mot désigne l'ensemble des éléments non verbaux (gestes, posture) qui accompagnent le discours du vendeur ? A. La gestuelle B. Le vocabulaire C. L'argumentaire D. La procédure Rappel de Cours : La communication non verbale (gestuelle, regard, posture) représente plus de 50% du message perçu par le client. Elle doit être en accord avec le discours verbal.
 
-Question 18 : Les matériaux composites carbone sont choisis pour :
+Question 52 : Quelle proposition correspond à une "vente complémentaire" pour l'achat d'une paire de chaussures ? A. Cirage B. Pantalon C. Chemise D. Chapeau Rappel de Cours : La vente complémentaire est un produit directement lié à l'usage du produit principal (les piles pour un jouet, le cirage pour les chaussures). Le reste est de la vente additionnelle d'opportunité.
 
-A. Leur rapport légèreté et rigidité exceptionnel B. Leur capacité à se déformer plastiquement C. Leur facilité de réparation par soudure D. Leur faible coût de fabrication
+Question 53 : Face à un client agressif qui parle fort en magasin, quelle est la meilleure attitude ? A. Isoler le client du flux B. Crier plus fort que lui C. Appeler la police directement D. Se moquer de lui Rappel de Cours : Il faut isoler le client pour ne pas déranger les autres clients ("Venez, nous allons voir cela au calme"), rester courtois mais ferme, et l'écouter pour faire retomber la pression.
 
-Rappel de Cours : Utilisés sur les véhicules sportifs ou haut de gamme pour gagner du poids sur la structure (cellule) ou la carrosserie.
+Question 54 : Dans le SONCAS, un client qui demande "Est-ce que c'est solide ?" exprime une motivation de type : A. Sécurité B. Orgueil C. Nouveauté D. Sympathie Rappel de Cours : La recherche de solidité, de fiabilité ou de garantie est typique du profil "Sécurité". L'argumentaire doit alors rassurer le client sur la durabilité du produit.
 
-Question 19 : L'étamage est une technique de garnissage utilisant :
+Question 55 : Quelle phrase correspond à la phase de "recherche des besoins" ? A. Pour quel usage cherchez-vous ce produit ? B. Ce produit est en promotion exceptionnelle. C. Passez en caisse, s'il vous plaît. D. Nous fermons le magasin dans dix minutes. Rappel de Cours : C'est une question ouverte d'investigation. Avant de proposer (argumenter), il faut impérativement découvrir ce que le client veut faire (besoin).
 
-A. Un alliage étain et plomb B. Une résine synthétique polyester C. Un ciment à prise rapide D. De l'aluminium fondu
+Question 56 : Quel est l'objectif principal de la démonstration d'un produit ? A. Prouver qu'il fonctionne B. S'amuser avec le produit C. Passer le temps en rayon D. Déballer un modèle neuf Rappel de Cours : La démonstration sert de PREUVE (le P de CAP). Elle rend l'avantage concret aux yeux du client et lève souvent les derniers doutes.
 
-Rappel de Cours : Méthode traditionnelle pour combler les défauts ou assurer l'étanchéité d'une jonction soudée, offrant une durabilité supérieure au mastic.
+Question 57 : Qu'est-ce qu'un "signal d'achat" émis par le client ? A. Il demande les conditions de livraison B. Il regarde ailleurs en soupirant C. Il croise les bras fermement D. Il répond par monosyllabes Rappel de Cours : Un client qui se projette dans l'après-achat (livraison, garantie, entretien) envoie un signal vert. C'est le moment d'arrêter d'argumenter et de conclure la vente.
 
-Question 20 : Une tôle insonorisée type sandwich contient :
+Question 58 : Pour un client motivé par l'Argent (SONCAS), quel argument est le plus percutant ? A. Promotion B. Esthétique C. Innovation D. Popularité Rappel de Cours : Le profil "Argent" est sensible à l'économie réalisée, au prix bas, à la promotion ou au retour sur investissement.
 
-A. Une couche de polymère entre deux feuilles d'acier B. Une couche de laine de verre collée C. Du vide entre deux parois D. Une plaque de plomb vissée
+Question 59 : Que signifie l'expression "garder le contact visuel" avec le client ? A. Regarder le client dans les yeux B. Fixer le produit sans bouger C. Regarder ses propres chaussures D. Surveiller l'écran de l'ordinateur Rappel de Cours : Le contact visuel maintient l'attention, crée la confiance et permet d'observer les réactions non verbales du client. C'est une marque de respect et d'intérêt.
 
-Rappel de Cours : Appelée tôle "acoustique", la couche centrale amortit les vibrations pour réduire le bruit dans l'habitacle.
-THÈME 2 : TECHNIQUES DE RÉPARATION (Questions 21 à 40)
+Question 60 : Quelle est la bonne attitude si vous ne connaissez pas la réponse à une question technique d'un client ? A. Aller chercher l'information B. Inventer une réponse crédible C. Dire que ce n'est pas important D. Changer de sujet rapidement Rappel de Cours : L'honnêteté prime. Il ne faut jamais mentir. La bonne attitude est de dire "Je ne veux pas vous dire de bêtise, je vérifie tout de suite" et de consulter un collègue ou une fiche technique.
+THÈME 4 : ENCAISSEMENT ET SERVICES OMNICANAUX
 
-Question 21 : Lors du planage, le rôle du tas est de :
+Question 61 : Comment appelle-t-on la somme d'argent présente dans le tiroir-caisse à l'ouverture du poste pour rendre la monnaie ? A. Fond de caisse B. Recette journalière C. Prélèvement intermédiaire D. Marge commerciale Rappel de Cours : Le fond de caisse est la dotation initiale en pièces et petits billets confiée au caissier à l'ouverture pour lui permettre de rendre la monnaie aux premiers clients.
 
-A. Servir de contre-appui au marteau B. Frapper directement la tôle par l'extérieur C. Chauffer la tôle par contact D. Mesurer la profondeur de la bosse
+Question 62 : Quel acronyme résume les règles de politesse indispensables lors du passage en caisse ? A. SBAM B. FIFO C. DLUO D. SMIC Rappel de Cours : Le SBAM (Sourire, Bonjour, Au revoir, Merci) est la base comportementale de la relation client en caisse. On y ajoute souvent le + pour le "regard".
 
-Rappel de Cours : La tôle est prise en sandwich entre le marteau (qui frappe) et le tas (qui soutient) pour lisser la surface.
+Question 63 : Quel document est légalement exigible par le caissier pour accepter un paiement par chèque d'un montant élevé ? A. Pièce d'identité officielle B. Facture de téléphone récente C. Carte vitale avec photo D. Carte de fidélité du magasin Rappel de Cours : Pour lutter contre la fraude, le commerçant peut exiger une pièce d'identité officielle (CNI, Passeport, Permis) pour vérifier que le porteur est bien le titulaire du chèque.
 
-Question 22 : La "chaude de retrait" sert à :
+Question 64 : Quel appareil permet de procéder à l'encaissement par carte bancaire ? A. TPE B. TPV C. GAB D. DAB Rappel de Cours : Le TPE (Terminal de Paiement Électronique) est le boîtier qui permet de lire la carte bancaire, de saisir le code confidentiel ou d'utiliser le sans contact.
 
-A. Rétracter une tôle allongée B. Assouplir une tôle avant formage C. Souder deux tôles bord à bord D. Décaper la peinture
+Question 65 : Que doit faire l'hôte de caisse si un article ne possède pas de code-barres et ne passe pas au scanner ? A. Saisir le code manuellement B. Inventer un prix approximatif C. Offrir le produit au client D. Refuser la vente du produit Rappel de Cours : Si le scan échoue, la procédure consiste à saisir manuellement les chiffres du code EAN (Gencod) présents sous les barres, ou à appeler un responsable pour obtenir le prix.
 
-Rappel de Cours : En chauffant un point et en le refroidissant, on crée une contraction qui résorbe l'excédent de métal (les "clocs").
+Question 66 : Quel service permet au client d'acheter sur internet et de venir chercher sa commande en magasin ? A. Click and Collect B. Cash and Carry C. Drop shipping D. Market place Rappel de Cours : Le Click & Collect (ou retrait en magasin) est une stratégie omnicanale où le client réserve ou paie en ligne, puis se déplace pour récupérer son achat, générant du trafic en point de vente.
 
-Question 23 : La cuillère de carrossier s'utilise principalement pour :
+Question 67 : Quelle est la limite de montant par transaction pour un paiement "sans contact" classique en France ? A. 50 euros B. 20 euros C. 30 euros D. 80 euros Rappel de Cours : Le plafond du paiement sans contact a été relevé à 50 euros pour faciliter les transactions rapides et limiter les contacts physiques avec le clavier du terminal.
 
-A. Faire levier dans les zones inaccessibles au tas B. Appliquer les mastics de finition C. Mélanger les teintes de peinture D. Gratter les joints de sertissage
+Question 68 : Quel est l'objectif principal d'un "prélèvement" en cours de journée à la caisse ? A. Sécuriser les espèces B. Compter le bénéfice C. Payer les fournisseurs D. Rembourser un client Rappel de Cours : Le prélèvement consiste à retirer les grosses coupures ou le surplus d'espèces du tiroir-caisse pour les mettre en coffre. Cela réduit le risque de vol en cas de braquage.
 
-Rappel de Cours : Outil polyvalent qui peut servir de tas intérieur ou de levier pour repousser les bosses dans les doublures.
+Question 69 : Quel document spécifique sort de l'imprimante de caisse lors de la clôture de la journée pour valider la comptabilité ? A. Ticket Z B. Bon de livraison C. Facture acquittée D. Relevé bancaire Rappel de Cours : Le Ticket Z (ou Z de caisse) récapitule le chiffre d'affaires réalisé sur la caisse depuis l'ouverture. Il sert de base pour compter la caisse et vérifier les écarts.
 
-Question 24 : Le tire-clou permet de redresser :
+Question 70 : Si le montant compté dans le tiroir est inférieur au montant théorique indiqué par le logiciel, il y a : A. Manquant de caisse B. Excédent de caisse C. Bénéfice net D. Marge brute Rappel de Cours : Un manquant signifie qu'il manque de l'argent physique par rapport à ce qui a été enregistré (souvent dû à une erreur de rendu monnaie en faveur du client ou à un vol).
 
-A. Depuis l'extérieur sans dégarnir B. En démontant obligatoirement l'intérieur C. Uniquement les pièces en aluminium D. Sans toucher à la peinture
+Question 71 : Quelle action faut-il effectuer impérativement sur un vêtement avant de le mettre dans le sac du client ? A. Démagnétiser l'antivol B. Couper l'étiquette prix C. Laver le vêtement D. Repasser le tissu Rappel de Cours : Pour éviter que l'alarme ne sonne à la sortie et ne mette le client dans l'embarras, il est impératif de retirer ou désactiver (démagnétiser) le macaron antivol lors de l'encaissement.
 
-Rappel de Cours : On soude une électrode temporaire sur la tôle nue et on tire. Cela évite de démonter toute la garniture intérieure de la porte ou de l'aile.
+Question 72 : Quelle est la différence majeure entre l'E-réservation et le Click & Collect ? A. Le paiement se fait en magasin pour l'E-réservation B. Le paiement se fait en ligne pour l'E-réservation C. L'E-réservation oblige à acheter le produit réservé D. Le Click & Collect est plus lent que l'E-réservation Rappel de Cours : En E-réservation, le client bloque le produit mais ne paie qu'en magasin après l'avoir vu ou essayé. En Click & Collect, l'achat est ferme et payé (ou engagé) en ligne.
 
-Question 25 : Une batte à rétreindre possède une surface :
+Question 73 : Que signifie scanner le QR Code de l'application fidélité du client ? A. Identifier le client B. Payer la commande C. Vérifier son âge D. Annuler la vente Rappel de Cours : Scanner la carte ou l'application de fidélité permet d'identifier le client dans la base de données pour lui attribuer ses points et appliquer ses remises personnalisées.
 
-A. Striée pour marquer le métal B. Parfaitement lisse et polie C. Bombée en caoutchouc D. En bois tendre
+Question 74 : Lorsqu'un client paie en espèces, quelle est la procédure de sécurité pour les billets de 20€ et plus ? A. Vérifier les signes de sécurité B. Refuser systématiquement le billet C. Demander une photocopie du billet D. Appeler la police immédiatement Rappel de Cours : Le contrôle des billets (toucher, regarder par transparence, incliner ou utiliser un détecteur UV) est indispensable pour éviter d'encaisser de la fausse monnaie.
 
-Rappel de Cours : Les stries empêchent le métal de glisser vers l'extérieur lors de l'impact, le forçant à se refouler sur lui-même.
+Question 75 : Un client rapporte un produit défectueux sous garantie. Quel document est nécessaire pour traiter sa demande ? A. Preuve d'achat B. Carte d'identité C. Permis de conduire D. Justificatif de domicile Rappel de Cours : Le ticket de caisse (ou la facture) constitue la preuve d'achat et la date de départ de la garantie légale. Sans lui, il est difficile de faire valoir ses droits.
 
-Question 26 : Quelle préparation de surface est requise avant le masticage ?
+Question 76 : Quelle solution permet d'envoyer le ticket de caisse par mail au lieu de l'imprimer ? A. Ticket dématérialisé B. Archivage numérique fiscal C. Impression thermique directe D. Duplicata comptable papier Rappel de Cours : La dématérialisation du ticket (e-ticket) est une démarche écologique et pratique prévue par la loi anti-gaspillage, permettant au client de conserver ses preuves d'achat numériquement.
 
-A. Ponçage au gros grain et dégraissage B. Ponçage à l'eau au grain très fin C. Application d'une couche de vernis brillant D. Simple nettoyage à l'eau savonneuse
+Question 77 : Que désignent les codes PLU utilisés en caisse pour les fruits et légumes ? A. Codes courts pour identifier les produits vrac B. Codes pour annuler une ligne d'article C. Codes secrets pour ouvrir le tiroir D. Codes postaux des fournisseurs Rappel de Cours : Les codes PLU (Price Look Up) sont des codes courts (ex: 4011 pour les bananes) que le caissier saisit pour identifier les produits vendus au poids sans code-barres.
 
-Rappel de Cours : Il faut créer des rayures (P80/P120) pour l'accroche mécanique et éliminer tout gras ou rouille.
+Question 78 : Un bon d'achat "non rendu monnaie" signifie que : A. On ne rend pas la monnaie si le montant du bon est supérieur à l'achat B. On ne peut pas utiliser le bon pour payer C. On doit rendre la monnaie sur le bon obligatoirement D. Le bon est périmé et inutilisable Rappel de Cours : Si le client utilise un bon de 10€ pour un achat de 8€, le magasin ne rend pas les 2€ de différence. Le client doit compléter son achat pour ne pas perdre cette valeur.
 
-Question 27 : Le débosselage sans peinture (DSP) se pratique par :
+Question 79 : Quelle tablette vendeur permet de commander un produit non disponible en magasin pour le livrer chez le client ? A. Extension de gamme B. Rupture de charge C. Inventaire fiscal D. Balisage rayon Rappel de Cours : Les outils d'extension de gamme permettent de proposer au client l'intégralité du catalogue de l'enseigne (le "stock infini"), même si le produit n'est pas physiquement présent en rayon.
 
-A. Poussées progressives de l'intérieur B. Traction brutale avec une ventouse C. Chauffage intense au chalumeau D. Application d'une couche de mastic
+Question 80 : En fin de journée, si le fond de caisse initial n'est pas retiré de la recette, le chiffre d'affaires sera : A. Faux et surestimé B. Juste et précis C. Faux et sous-estimé D. Égal à zéro Rappel de Cours : La recette correspond uniquement à ce que les clients ont payé. Il faut impérativement soustraire le fond de caisse (l'argent mis au début) pour connaître le vrai Chiffre d'Affaires.
+THÈME 5 : PRÉVENTION, SANTÉ ET ENVIRONNEMENT (PSE) & CADRE JURIDIQUE
 
-Rappel de Cours : On "masse" la tôle par l'arrière avec des tringles pour faire revenir la bosse sans casser le vernis d'origine.
+Question 81 : Quel Équipement de Protection Individuelle (EPI) est obligatoire pour protéger les pieds contre la chute d'objets lourds en réserve ? A. Chaussures de sécurité B. Baskets de sport confortables C. Bottes en caoutchouc étanches D. Sandales de sécurité ouvertes Rappel de Cours : Les chaussures de sécurité normées (avec coque renforcée en acier ou composite) sont obligatoires dans les zones de stockage pour prévenir les risques d'écrasement des orteils.
 
-Question 28 : Le meulage excessif d'un cordon de soudure entraîne :
+Question 82 : Quel est le délai légal de rétractation pour un client ayant effectué un achat sur le site internet de l'enseigne ? A. 14 jours B. 7 jours C. 30 jours D. 24 heures Rappel de Cours : Dans le cadre de la vente à distance (internet, téléphone), le code de la consommation accorde au client un délai de 14 jours pour changer d'avis et retourner le produit sans justification.
 
-A. Une amorce de rupture par amincissement B. Une meilleure solidité de l'assemblage C. Une protection contre la rouille D. Une modification de la structure moléculaire
+Question 83 : Que signifie le sigle PRAP dans le domaine de la prévention des risques ? A. Prévention des Risques liés à l'Activité Physique B. Programme Rapide d'Amélioration de la Productivité C. Plan Régional d'Action pour le Personnel D. Procédure Réglementaire d'Administration Physique Rappel de Cours : La formation PRAP vise à apprendre les bonnes pratiques (gestes et postures) pour prévenir les troubles musculo-squelettiques (TMS) liés à l'activité professionnelle.
 
-Rappel de Cours : Il ne faut pas creuser la tôle adjacente ("caniveau"). On doit juste araser le cordon au niveau de la tôle.
+Question 84 : Quels sont les trois éléments indispensables pour qu'un feu se déclenche (le triangle du feu) ? A. Combustible et comburant et énergie B. Essence et briquet et oxygène C. Chaleur et fumée et flamme D. Vent et papier et étincelle Rappel de Cours : Le triangle du feu réunit le Combustible (ce qui brûle), le Comburant (l'oxygène de l'air) et l'Énergie d'activation (chaleur/étincelle). Si l'un manque, le feu s'éteint.
 
-Question 29 : À quelle consistance l'étain doit-il être travaillé ?
+Question 85 : Comment appelle-t-on la démarque (perte de stock) causée par des vols commis par les employés du magasin ? A. Démarque interne B. Démarque externe C. Démarque administrative D. Démarque technique Rappel de Cours : La démarque inconnue se divise principalement en démarque externe (vols clients) et démarque interne (vols personnel ou consommation sur place non payée par les salariés).
 
-A. Pâteuse comme du beurre B. Totalement liquide et fluide C. Solide et froide D. En poudre sèche
+Question 86 : Quel est le numéro d'appel d'urgence européen à composer pour joindre les secours (SAMU, Pompiers, Police) ? A. 112 B. 15 C. 18 D. 17 Rappel de Cours : Le 112 est le numéro unique disponible gratuitement partout dans l'Union Européenne. Il fonctionne même sans carte SIM ou avec un téléphone verrouillé.
 
-Rappel de Cours : On maintient l'étain dans sa plage de température pâteuse pour pouvoir le modeler à la spatule en bois. S'il est liquide, il coule.
+Question 87 : Quelle est la durée légale de garantie de conformité pour un appareil électroménager neuf ? A. 2 ans B. 1 an C. 6 mois D. 10 ans Rappel de Cours : La garantie légale de conformité couvre les défauts du bien pendant 2 ans à compter de la délivrance du produit. C'est une obligation légale pour le vendeur professionnel.
 
-Question 30 : Pour séparer un panneau de porte soudé par points, on utilise :
+Question 88 : Quelle couleur est utilisée pour la signalisation des issues de secours et du matériel de premier secours ? A. Vert B. Rouge C. Jaune D. Bleu Rappel de Cours : En signalétique de sécurité, le vert (souvent associé au blanc) indique le sauvetage et les secours (sorties, défibrillateurs). Le rouge indique l'interdiction ou le matériel incendie.
 
-A. Un foret à dépointer B. Un burin pneumatique tranchant C. Une scie sabre D. Un chalumeau découpeur
+Question 89 : Que finance l'éco-participation affichée sur le prix des appareils électriques ? A. Le coût de la collecte et du recyclage B. La marge bénéficiaire du distributeur C. Le salaire du personnel de rayon D. La taxe sur la valeur ajoutée Rappel de Cours : L'éco-participation (ou éco-contribution) est une somme reversée intégralement aux éco-organismes pour financer la gestion de la fin de vie des produits (DEEE).
 
-Rappel de Cours : Le foret plat usine le point de soudure de la tôle supérieure sans percer la doublure qui doit être réutilisée.
+Question 90 : Quelle est la règle de sécurité à respecter impérativement lors de l'utilisation d'un cutter ? A. Rétracter la lame immédiatement après usage B. Laisser la lame sortie pour gagner du temps C. Mettre le cutter dans sa poche lame sortie D. Utiliser la lame pour faire levier Rappel de Cours : Les coupures sont fréquentes. Il faut toujours utiliser un cutter de sécurité ou rentrer la lame systématiquement dès que la coupe est finie avant de poser l'outil ou de le ranger.
 
-Question 31 : L'équerre hydraulique est un outil de :
+Question 91 : Un commerçant a-t-il le droit de refuser de vendre un produit disponible à un client sans motif légitime ? A. Non c'est strictement interdit par la loi B. Oui si le client lui semble antipathique C. Oui s'il veut garder le produit pour lui D. Oui si c'est la fin de la journée Rappel de Cours : Le refus de vente est un délit (sauf motif légitime comme la vente d'alcool aux mineurs ou un produit réglementé). L'offre exposée doit être vendue à tout demandeur.
 
-A. Traction et de poussée structurelle B. Mesure de la géométrie des trains C. Découpe des tôles D. Soudage par points
+Question 92 : Quel type d'extincteur est préconisé pour éteindre un feu d'origine électrique (tableau électrique) sans endommager le matériel ? A. Extincteur au dioxyde de carbone B. Extincteur à eau pulvérisée C. Extincteur à eau avec additif D. Seau d'eau du robinet Rappel de Cours : Le CO2 (dioxyde de carbone) étouffe le feu en privant l'oxygène et ne laisse aucun résidu, ce qui préserve les composants électroniques, contrairement à l'eau ou la poudre.
 
-Rappel de Cours : Vérin puissant utilisé pour redresser les éléments forts (longeron, passage de roue) lors d'un choc important.
+Question 93 : Que signifie le logo "Triman" (petit bonhomme avec trois flèches) présent sur les emballages ? A. Le produit ou l'emballage doit être trié B. Le produit est fabriqué en France C. Le produit est issu de l'agriculture biologique D. Le produit est dangereux pour la santé Rappel de Cours : Le logo Triman indique au consommateur que le produit ou l'emballage ne doit pas être jeté dans la poubelle tout-venant mais doit faire l'objet d'un tri (bac jaune, borne verre, etc.).
 
-Question 32 : La technique du "pas de pèlerin" en soudure permet de :
+Question 94 : Quel est le principal objectif du RGPD (Règlement Général sur la Protection des Données) en magasin ? A. Protéger les données personnelles des clients B. Augmenter les ventes par email C. Surveiller la navigation internet des salariés D. Simplifier la comptabilité du magasin Rappel de Cours : Le RGPD impose des règles strictes pour garantir que les données collectées (nom, adresse, email, téléphone) soient sécurisées et utilisées uniquement avec l'accord du client.
 
-A. Limiter la déformation thermique B. Souder plus vite C. Utiliser moins de fil D. Souder sans masque
+Question 95 : Quelle mention est obligatoire sur l'étiquette d'un produit alimentaire pour protéger les personnes allergiques ? A. La liste des allergènes en gras B. Le nom du directeur du magasin C. La recette complète du produit D. La photo de l'usine de fabrication Rappel de Cours : Les 14 allergènes majeurs (arachides, lait, œufs, gluten...) doivent être mis en évidence typographiquement (gras, italique, souligné) dans la liste des ingrédients.
 
-Rappel de Cours : En soudant par petits bouts espacés, on répartit la chaleur et on évite que la tôle ne gondole.
+Question 96 : En cas d'évacuation du magasin suite à une alarme incendie, où le personnel et les clients doivent-ils se rendre ? A. Au point de rassemblement B. Dans la réserve du magasin C. Aux toilettes du personnel D. Dans leur véhicule personnel Rappel de Cours : En cas d'alarme, il faut évacuer les locaux dans le calme et se diriger vers le point de rassemblement (signalé par un panneau vert) pour le recensement des personnes.
 
-Question 33 : La lime fraisée sert à :
+Question 97 : Qu'est-ce qu'un "Accident de Travail" ? A. Un accident survenu par le fait ou à l'occasion du travail B. Un accident survenu pendant les vacances annuelles C. Une maladie chronique qui apparaît lentement D. Une dispute verbale avec un collègue de travail Rappel de Cours : Pour être qualifié d'accident du travail, l'événement doit être soudain et survenir pendant les heures de travail et sur le lieu de travail (ou lors d'une mission).
 
-A. Révéler les défauts de planéité B. Couper les boulons rouillés C. Limer le mastic durci D. Affûter les forets
+Question 98 : Quelle est la bonne posture pour ramasser un carton posé au sol ? A. Se rapprocher et fléchir les jambes B. Garder les jambes raides et courber le dos C. Se pencher sur le côté en torsion D. Tirer le carton avec une seule main Rappel de Cours : Pour protéger la colonne vertébrale, il faut encadrer la charge, garder le dos droit et utiliser la force des cuisses (fléchissement) pour soulever la charge.
 
-Rappel de Cours : Passée à plat, elle marque les sommets (brillants) et ignore les creux (mats), montrant au carrossier où il doit taper.
+Question 99 : Qui est le salarié formé pour intervenir en premier lieu en cas d'accident ou de malaise au sein de l'équipe ? A. Le Sauveteur Secouriste du Travail B. Le délégué du personnel titulaire C. Le responsable des ressources humaines D. Le comptable de l'entreprise Rappel de Cours : Le SST (Sauveteur Secouriste du Travail) est un employé formé aux premiers secours et à la prévention des risques, capable d'intervenir en attendant les pompiers ou le SAMU.
 
-Question 34 : Le mastic chargé d'aluminium est utilisé pour :
-
-A. Sa résistance mécanique et thermique B. Sa facilité de ponçage extrême C. Sa couleur invisible sur l'acier D. Remplacer la peinture
-
-Rappel de Cours : Plus dense et dur, il convient aux grosses réparations ou aux zones chaudes (capot moteur), là où un mastic standard pourrait s'affaisser.
-
-Question 35 : La coupe en "Z" ou en escalier sur un longeron sert à :
-
-A. Augmenter la surface de soudure B. Faciliter la découpe à la scie C. Utiliser moins de gaz D. Faire joli
-
-Rappel de Cours : Cela évite une ligne de faiblesse continue sur toute la section verticale du longeron et renforce la jonction.
-
-Question 36 : Le soyage des tôles permet un assemblage :
-
-A. À recouvrement avec une surface plane B. Bord à bord sans recouvrement C. Perpendiculaire en angle droit D. Provisoire par clips
-
-Rappel de Cours : On déforme le bord d'une tôle pour qu'elle passe sous l'autre, gardant le niveau extérieur aligné pour faciliter la finition.
-
-Question 37 : Quel outil pneumatique utilise-t-on pour découper une aile arrière ?
-
-A. La scie sabre B. La visseuse à chocs C. La ponceuse orbitale D. Le pistolet à colle
-
-Rappel de Cours : La scie sabre permet de couper les montants et les doublures avec précision sans trop chauffer la zone.
-
-Question 38 : La température de recuit de l'aluminium se vérifie avec :
-
-A. Un feutre thermosensible ou du savon B. La couleur rouge du métal C. La fumée qui se dégage D. Un thermomètre médical
-
-Rappel de Cours : L'alu ne change pas de couleur avant de fondre. Il faut un indicateur externe qui change d'aspect vers 300°C.
-
-Question 39 : Le jointoiement des tôles après réparation se fait avec :
-
-A. Un mastic polyuréthane ou hybride B. Du mastic polyester de finition C. De la colle à pare-brise D. Du ruban adhésif
-
-Rappel de Cours : Ce cordon souple refait l'étanchéité d'origine entre les tôles assemblées ou serties.
-
-Question 40 : En redressage, pourquoi commence-t-on par la périphérie du choc ?
-
-A. Pour libérer les contraintes progressivement B. Parce que c'est la zone la plus abîmée C. Pour ne pas abîmer le marteau D. Parce que c'est plus facile d'accès
-
-Rappel de Cours : On déroule le choc à l'envers. Le centre du choc est le point dur qui maintient les tensions ; le débloquer en dernier permet au métal de reprendre sa place.
-THÈME 3 : ANALYSE DES DOMMAGES ET MÉTROLOGIE (Questions 41 à 60)
-
-Question 41 : La "mise en assiette" sur un marbre consiste à :
-
-A. Fixer le véhicule de niveau par les bas de caisse B. Déposer la mécanique avant et arrière C. Placer des cibles laser sur le toit D. Vérifier la pression des quatre roues
-
-Rappel de Cours : C'est la base de la mesure. Le véhicule est bridé sur ses points d'ancrage rigides pour servir de référence fixe.
-
-Question 42 : Un pli sur le pavillon (toit) après un choc avant indique :
-
-A. Une déformation structurelle de la caisse B. Un simple défaut d'alignement du capot C. Un impact direct sur le toit D. Une mauvaise qualité de l'acier
-
-Rappel de Cours : L'énergie du choc a traversé les longerons, les montants de baie et a fait plier le toit. Le véhicule est probablement "vrillé" ou "banané".
-
-Question 43 : La pige de carrossier sert à effectuer des mesures :
-
-A. Comparatives par symétrie gauche/droite B. De température du moteur C. De hauteur de caisse par rapport au sol D. D'épaisseur de peinture
-
-Rappel de Cours : On règle la pige sur une diagonale saine et on la reporte sur le côté accidenté. Si ça ne correspond pas, la caisse a bougé.
-
-Question 44 : Le système de mesure "Touch" fonctionne grâce à :
-
-A. Un bras articulé numérisé B. Des règles graduées en bois C. Un niveau à bulle géant D. Des caméras thermiques
-
-Rappel de Cours : Le bras palpeur touche les points de contrôle sous la voiture et transmet les coordonnées X, Y, Z à l'ordinateur.
-
-Question 45 : En carrosserie, l'axe Z correspond à :
-
-A. La hauteur verticale B. La longueur du véhicule C. La largeur du véhicule D. L'angle de braquage
-
-Rappel de Cours : X = Longueur, Y = Largeur, Z = Hauteur. C'est la convention internationale de mesure 3D.
-
-Question 46 : Un longeron vrillé a subi une déformation en :
-
-A. Torsion B. Compression simple C. Extension D. Flexion latérale pure
-
-Rappel de Cours : La pièce a tourné sur elle-même. C'est très difficile à redresser car il faut appliquer un couple de force inverse.
-
-Question 47 : L'accord de réparation est donné par :
-
-A. L'expert automobile mandaté B. Le mécanicien du garage C. Le client uniquement D. Le vendeur de pièces
-
-Rappel de Cours : L'expert valide que la méthode technique est sûre et que le coût est justifié par rapport à la valeur du véhicule.
-
-Question 48 : Une déformation en "banane" affecte :
-
-A. L'alignement latéral de la structure B. La hauteur du toit uniquement C. La longueur des portes avant D. La largeur des voies
-
-Rappel de Cours : Le véhicule est courbé sur le côté. L'empattement est plus court d'un côté que de l'autre.
-
-Question 49 : La géométrie des trains roulants dépend directement de :
-
-A. La position des points d'ancrage du soubassement B. La marque des amortisseurs C. La pression des pneus D. La taille du volant
-
-Rappel de Cours : Si le berceau ou les longerons sont déplacés par un choc, il est impossible de régler le parallélisme correctement.
-
-Question 50 : Le contrôle des jeux et affleurements permet de valider :
-
-A. La qualité de l'ajustage des éléments mobiles B. La puissance du moteur C. La teinte de la peinture D. L'étanchéité des vitres
-
-Rappel de Cours : Des espaces réguliers entre les pièces (ex: porte/aile) sont la preuve visuelle que la structure est bien remise en ligne.
-
-Question 51 : Sur un véhicule électrique accidenté, la priorité est de :
-
-A. Vérifier l'intégrité du bac batterie B. Recharger la batterie à fond C. Démonter le moteur électrique D. Changer les fusibles 12V
-
-Rappel de Cours : Une batterie déformée peut prendre feu des jours après l'accident (emballement thermique). Inspection visuelle impérative.
-
-Question 52 : Pour contrôler la chasse, on mesure :
-
-A. La différence d'empattement gauche/droite B. La distance entre les deux roues avant C. La hauteur sous coque D. Le diamètre des disques de frein
-
-Rappel de Cours : Si une roue a reculé suite à un choc trottoir, l'empattement de ce côté sera plus petit.
-
-Question 53 : Les têtes d'amortisseurs rapprochées indiquent :
-
-A. Un affaissement des montants ou de la traverse B. Un pneu dégonflé C. Un capot trop long D. Un moteur trop lourd
-
-Rappel de Cours : Fréquent lors des chocs latéraux ou frontaux importants. La "voie supérieure" est hors cote.
-
-Question 54 : Une fissure de peinture sur un élément structurel révèle :
-
-A. Un pli de métal sous-jacent B. Une mauvaise préparation peinture C. Un gravillon D. Une rayure superficielle
-
-Rappel de Cours : Le métal a travaillé élastiquement ou plastiquement, mais la peinture rigide a cassé. C'est un indice crucial pour l'expert.
-
-Question 55 : Le point zéro des mesures constructeur est :
-
-A. Une référence virtuelle ou physique d'origine B. Le pare-chocs avant C. Le centre du volant D. La boule d'attelage
-
-Rappel de Cours : Toutes les cotes (X, Y, Z) partent de ce point. Il est souvent au centre de l'essieu avant ou arrière.
-
-Question 56 : La procédure VGE (Véhicule Gravement Endommagé) bloque :
-
-A. La carte grise en préfecture B. Les portières de la voiture C. Le démarrage du moteur D. L'assurance du conducteur
-
-Rappel de Cours : Le véhicule ne peut plus rouler sur route ouverte tant qu'il n'est pas réparé et contrôlé par l'expert (rapport de conformité).
-
-Question 57 : Un châssis en "losange" présente :
-
-A. Un décalage longitudinal des longerons l'un par rapport à l'autre B. Une variation de largeur de voie C. Une pliure vers le haut D. Une pliure vers le bas
-
-Rappel de Cours : Le cadre est faussé mais reste à plat. Les diagonales ne sont plus égales.
-
-Question 58 : Le compas de carrossier est utilisé pour :
-
-A. Tracer ou comparer des grandes diagonales B. Dessiner des cercles sur la tôle C. Mesurer l'épaisseur de tôle D. Gratter la rouille
-
-Rappel de Cours : Outil de diagnostic rapide ("la grande barre") pour voir si une baie de pare-brise ou un compartiment moteur est carré.
-
-Question 59 : Une jante alu fissurée doit être :
-
-A. Remplacée obligatoirement B. Soudée par un professionnel C. Redressée à chaud D. Collée à l'époxy
-
-Rappel de Cours : Les réparations structurelles sur jantes alu sont interdites car la structure moléculaire est fragilisée, avec risque d'éclatement.
-
-Question 60 : Un mauvais alignement du hayon peut provenir :
-
-A. D'une caisse vrillée B. D'un pare-chocs mal mis C. D'une vitre trop lourde D. De vérins trop puissants
-
-Rappel de Cours : Si le hayon touche d'un côté et baille de l'autre, l'encadrement arrière est déformé.
-THÈME 4 : PRÉPARATION ET PEINTURE (Questions 61 à 80)
-
-Question 61 : Le primaire phosphatant (Wash Primer) assure :
-
-A. L'adhérence chimique sur tôle nue B. Le garnissage des rayures profondes C. La brillance finale D. L'étanchéité des jonctions
-
-Rappel de Cours : Il contient de l'acide qui mord le métal (acier, zinc, alu) pour garantir que les couches suivantes ne pèleront pas.
-
-Question 62 : Le voile de placement sert à :
-
-A. Orienter les particules métallisées uniformément B. Mettre plus d'épaisseur de peinture C. Faire sécher la base plus vite D. Corriger une coulure
-
-Rappel de Cours : Appliqué un peu plus loin et moins mouillé, il évite les effets de "nuages" ou "marbrures" sur les gris métallisés.
-
-Question 63 : Les "yeux de poisson" (silicones) sont causés par :
-
-A. Une contamination grasse du support B. Une température trop basse C. Une peinture périmée D. Un excès de durcisseur
-
-Rappel de Cours : Le gras repousse la peinture. Il faut dégraisser méticuleusement avant de peindre.
-
-Question 64 : Un papier abrasif P80 est plus :
-
-A. Gros qu'un P400 B. Fin qu'un P400 C. Souple qu'un P400 D. Cher qu'un P400
-
-Rappel de Cours : Petit chiffre = Gros grains (décaper). Grand chiffre = Petits grains (finition).
-
-Question 65 : La technologie HVLP vise à :
-
-A. Augmenter le taux de transfert de produit B. Augmenter la pression de sortie C. Pulvériser plus loin D. Sécher instantanément
-
-Rappel de Cours : "High Volume Low Pressure". Moins de pression = moins de rebond et de brouillard = plus de peinture sur la voiture.
-
-Question 66 : L'apprêt garnissant a pour fonction de :
-
-A. Isoler les fonds et remplir les micro-défauts B. Remplacer le mastic C. Faire briller la tôle D. Protéger des UV
-
-Rappel de Cours : Il crée une couche tampon uniforme et ponçable entre le travail de tôlerie/mastic et la peinture de finition.
-
-Question 67 : La méthode "mouillé sur mouillé" permet de :
-
-A. Peindre sans poncer l'apprêt B. Peindre sous l'eau C. Poncer à l'eau uniquement D. Mettre deux couches de vernis
-
-Rappel de Cours : On applique la laque alors que l'apprêt est encore "amoureux" (pas sec à cœur), ce qui crée une liaison chimique directe. Gain de temps énorme sur pièces neuves.
-
-Question 68 : Les spectres (embusquages) apparaissent quand :
-
-A. Les fonds ne sont pas assez secs ou isolés B. On a mis trop de vernis C. La couleur est trop claire D. On a poncé trop fin
-
-Rappel de Cours : Le solvant de la finition pénètre les couches inférieures et fait gonfler les zones de mastic/ponçage, rendant la réparation visible.
-
-Question 69 : Les bases mates à l'eau nécessitent :
-
-A. Une ventilation forcée (venturis) pour sécher B. Une cuisson à 80°C avant vernis C. D'être mélangées à du durcisseur D. Une application au pinceau
-
-Rappel de Cours : L'eau s'évapore lentement. Il faut un flux d'air pour chasser l'humidité de la couche avant de pouvoir vernir.
-
-Question 70 : Le godet d'un pistolet gravité est placé :
-
-A. Au-dessus de la buse B. En dessous de la poignée C. Sur le côté D. Au sol relié par un tuyau
-
-Rappel de Cours : La peinture tombe par gravité dans le pistolet, ce qui permet d'utiliser tout le produit, contrairement aux pistolets à succion.
-
-Question 71 : Un vernis "poudré" est le résultat de :
-
-A. Une évaporation du diluant avant contact avec la tôle B. Une surcharge de produit C. Une cabine trop humide D. Un pistolet trop près
-
-Rappel de Cours : Si on peint de trop loin ou s'il fait trop chaud avec un diluant rapide, les gouttelettes arrivent sèches et forment des grains au lieu d'un film lisse.
-
-Question 72 : Le dégraissage antisilicone s'effectue avec :
-
-A. Deux chiffons (un mouillé, un sec) B. Un seul chiffon imbibé C. De l'air comprimé D. Une éponge à l'eau
-
-Rappel de Cours : Le premier chiffon dissout le gras, le second (sec) le ramasse avant que le produit ne s'évapore. Sinon, on ne fait qu'étaler le gras.
-
-Question 73 : La poudre guide de ponçage sert à :
-
-A. Révéler les irrégularités de surface B. Lubrifier le papier C. Colorer l'apprêt D. Boucher les pores
-
-Rappel de Cours : La poudre noire reste dans les creux non poncés, montrant visuellement ce qu'il reste à rectifier.
-
-Question 74 : La coupe Viscosimétrique sert à mesurer :
-
-A. La fluidité de la peinture B. La température de la cabine C. Le poids du pistolet D. L'épaisseur du film
-
-Rappel de Cours : Le temps d'écoulement (ex: 20 secondes) garantit que le mélange est correct pour être pulvérisé.
-
-Question 75 : L'additif assouplissant est requis pour peindre :
-
-A. Les pièces plastiques souples B. Le capot moteur chaud C. Les jantes alu D. Le toit
-
-Rappel de Cours : Il rend le vernis flexible pour qu'il ne craquelle pas si le pare-chocs se déforme légèrement (appui, gravillons).
-
-Question 76 : Le diluant raccord permet de :
-
-A. Fondre les brouillards de vernis en zone de transition B. Nettoyer le pistolet C. Diluer la base mate D. Enlever les silicones
-
-Rappel de Cours : Il dissout le brouillard sec en périphérie de la réparation pour qu'il fusionne avec l'ancien vernis, rendant la retouche invisible au lustrage.
-
-Question 77 : Un produit 2K durcit par :
-
-A. Réaction chimique avec un isocyanate B. Séchage à l'air simple C. Exposition aux UV D. Congélation
-
-Rappel de Cours : La polymérisation crée un film très dur et résistant aux solvants (vernis, brillants directs).
-
-Question 78 : Le ruban mousse dans les entrées de porte évite :
-
-A. La formation d'une arête de vernis franche B. De peindre les joints C. De fermer la porte D. Les coulures
-
-Rappel de Cours : Il soulève légèrement le bord pour créer un dégradé de peinture "flou" facile à lustrer, au lieu d'une marche d'escalier dure.
-
-Question 79 : La température standard d'étuvage est de :
-
-A. 60°C B. 100°C C. 200°C D. 20°C
-
-Rappel de Cours : Suffisant pour durcir le vernis en 30 min sans faire fondre les plastiques ou l'électronique de la voiture.
-
-Question 80 : Pour rectifier une coulure sèche, on utilise :
-
-A. Une cale à araser ou un rabot B. Du diluant de nettoyage C. Un décapeur thermique D. Une polisseuse directement
-
-Rappel de Cours : Il faut couper la surépaisseur "tête de la coulure" avant de poncer et lustrer, sinon on perce le vernis autour.
-THÈME 5 : HYGIÈNE, SÉCURITÉ ET ENVIRONNEMENT (Questions 81 à 100)
-
-Question 81 : La protection respiratoire contre les isocyanates exige :
-
-A. Un masque à cartouches A2P3 ou à adduction d'air B. Un masque à poussières P2 C. Une ventilation naturelle D. Un mouchoir
-
-Rappel de Cours : Les gaz toxiques des durcisseurs traversent les masques papier. Il faut du charbon actif ou de l'air propre externe.
-
-Question 82 : Le balisage d'un véhicule électrique en réparation est :
-
-A. Obligatoire pour prévenir du risque électrique B. Facultatif si on fait attention C. Réservé aux concessionnaires D. Inutile si la batterie est débranchée
-
-Rappel de Cours : La zone de danger doit être identifiée pour que personne ne touche les câbles oranges par inadvertance.
-
-Question 83 : Sur un feu de batterie Lithium, l'extincteur CO2 est :
-
-A. Peu efficace car il ne refroidit pas assez B. Le meilleur choix C. Dangereux car explosif D. Suffisant
-
-Rappel de Cours : L'emballement thermique est une réaction chimique interne. Seule une inondation massive d'eau peut refroidir la batterie.
-
-Question 84 : Les solvants chlorés sont bannis car :
-
-A. Nocifs pour la couche d'ozone et la santé B. Ils rouillent le métal C. Ils évaporent trop vite D. Ils sont colorés
-
-Rappel de Cours : Remplacés par des produits moins agressifs pour l'environnement.
-
-Question 85 : Le positionnement des bras du pont élévateur doit se faire :
-
-A. Sur les points de levage renforcés du soubassement B. Sous les bas de caisse en plastique C. Sous le plancher plat D. Sous le réservoir
-
-Rappel de Cours : Risque de chute du véhicule ou d'écrasement du plancher si on lève ailleurs.
-
-Question 86 : Les poussières d'aluminium présentent un risque :
-
-A. D'explosion en présence d'étincelles B. De radiation C. De moisissure D. De glissade
-
-Rappel de Cours : La poudre d'alu est un combustible. Il ne faut jamais meuler de l'acier (étincelles) près d'un poste de ponçage alu.
-
-Question 87 : Consigner un VE signifie :
-
-A. Condamner physiquement la remise sous tension B. Noter son kilométrage C. Le garer dehors D. Enlever les fusibles des phares
-
-Rappel de Cours : On pose un cadenas sur la prise de service pour garantir la sécurité du technicien.
-
-Question 88 : Les gants en nitrile protègent mieux que le latex contre :
-
-A. Les hydrocarbures et solvants de peinture B. La chaleur C. Les coupures D. Le froid
-
-Rappel de Cours : Le latex se désagrège au contact des diluants.
-
-Question 89 : Le rinçage d'un œil contaminé doit durer :
-
-A. Au moins 15 minutes B. 30 secondes C. 1 minute D. 2 heures
-
-Rappel de Cours : C'est le temps nécessaire pour diluer le produit chimique incrusté.
-
-Question 90 : Le Document Unique (DUER) est :
-
-A. L'inventaire obligatoire des risques de l'atelier B. Le carnet d'entretien de la voiture C. Le livre de comptes D. Le planning des congés
-
-Rappel de Cours : Base de la prévention en entreprise.
-
-Question 91 : La fièvre des métaux est causée par :
-
-A. L'inhalation de fumées de zinc (galva) B. Le bruit C. Le froid D. La fatigue
-
-Rappel de Cours : Symptômes pseudo-grippaux après soudure sur tôle zinguée sans aspiration.
-
-Question 92 : Un chiffon souillé est un déchet :
-
-A. Dangereux (DID) B. Banal (DIB) C. Vert D. Recyclable
-
-Rappel de Cours : Il est imprégné de produits chimiques inflammables et polluants.
-
-Question 93 : Le seuil de danger pour l'audition est de :
-
-A. 85 décibels B. 120 décibels C. 50 décibels D. 200 décibels
-
-Rappel de Cours : Une journée à 85dB détruit l'oreille aussi sûrement qu'un bruit unique très fort.
-
-Question 94 : Le risque hydrogène concerne :
-
-A. La charge des batteries au plomb B. Le gonflage des pneus C. La peinture D. Le lavage
-
-Rappel de Cours : Gaz explosif dégagé lors de la recharge. Ventiler le local.
-
-Question 95 : Pour éviter les TMS, il faut :
-
-A. Adapter la hauteur de travail (pont) B. Travailler à genoux C. Porter lourd D. Courir
-
-Rappel de Cours : Le dos est le premier outil du carrossier, il faut le préserver.
-
-Question 96 : La surpression en cabine sert à :
-
-A. Chasser les poussières vers l'extérieur B. Comprimer la peinture C. Empêcher la porte de s'ouvrir D. Faire du vent
-
-Rappel de Cours : Empêche les saletés de l'atelier d'entrer.
-
-Question 97 : Les condensateurs Start & Stop présentent un risque :
-
-A. De choc électrique résiduel B. D'incendie C. De fuite d'eau D. De bruit
-
-Rappel de Cours : Ils stockent de l'énergie même moteur coupé.
-
-Question 98 : Lentilles de contact + Solvants =
-
-A. Danger de piégeage du produit contre l'œil B. Meilleure vision C. Protection efficace D. Rien
-
-Rappel de Cours : Aggrave les brûlures chimiques.
-
-Question 99 : Le nettoyage pistolet à l'air libre est :
-
-A. Interdit (émissions COV) B. Recommandé C. Obligatoire D. Pratique
-
-Rappel de Cours : Utiliser des machines fermées à recyclage de solvant.
-
-Question 100 : La couleur Orange en VE indique :
-
-A. La Haute Tension (Danger) B. La masse C. Le 12 Volts D. Les données
-
-Rappel de Cours : Code couleur universel de sécurité.
+Question 100 : Quelle pratique commerciale trompeuse consiste à afficher un prix bas en rayon mais à en passer un plus élevé en caisse délibérément ? A. Publicité mensongère B. Vente à perte autorisée C. Dumping commercial D. Mécénat d'entreprise Rappel de Cours : Si l'erreur est délibérée ou répétée sans correction malgré les signalements, cela peut être qualifié de pratique commerciale trompeuse, lourdement sanctionnée par la répression des fraudes.

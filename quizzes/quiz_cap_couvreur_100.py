@@ -1,1153 +1,1145 @@
-# Fichier : quiz_cap_couvreur_100.py
-
 quiz_data = {
-    "title": "Quiz CAP Couvreur : Révisions Complètes (100 Questions)",
+    "title": "Quiz CAP Couvreur : Technologie, Techniques, Sécurité et Calculs (100 Questions)",
     "themes": {
         # =========================================================================
-        # THÈME 1 : MATÉRIAUX ET GÉOMÉTRIE DE COUVERTURE (Q. 1-20)
+        # THÈME 1 : HYGIÈNE, SÉCURITÉ ET PRÉVENTION DES RISQUES (Questions 1 à 20)
         # =========================================================================
         1: {
-            "name": "1. Matériaux et Géométrie de Couverture (Q. 1-20)",
+            "name": "THÈME 1 : HYGIÈNE, SÉCURITÉ ET PRÉVENTION DES RISQUES (SST)",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Qu'appelle-t-on le 'pureau' dans la pose de tuiles ou d'ardoises ?",
+                    "question": "Quelle est la protection collective prioritaire à installer en rive de toiture ?",
                     "answerOptions": [
-                        {"text": "La partie de la tuile fixée sur le liteau.", "isCorrect": False},
-                        {"text": "La partie visible de la tuile ou de l'ardoise exposée aux intempéries.", "isCorrect": True},
-                        {"text": "La distance entre deux liteaux consécutifs.", "isCorrect": False},
-                        {"text": "La hauteur totale de la tuile.", "isCorrect": False}
+                        {"text": "Garde-corps", "isCorrect": True},
+                        {"text": "Ligne de vie temporaire", "isCorrect": False},
+                        {"text": "Ancrage structurel individuel", "isCorrect": False},
+                        {"text": "Échelle de toit plate", "isCorrect": False}
                     ],
-                    "correction": "Le **pureau** est la dimension exposée. Il est crucial pour calculer le nombre de matériaux nécessaires au mètre carré et assurer le bon recouvrement."
+                    "correction": "Le Code du travail impose de privilégier la protection collective (garde-corps) sur la protection individuelle (harnais) pour limiter les risques de chute de hauteur."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quel terme désigne le croisement rentrant de deux versants d'une toiture ?",
+                    "question": "Quelle est la hauteur minimale de dépassement d'une échelle d'accès au niveau supérieur ?",
                     "answerOptions": [
-                        {"text": "Le Faîtage.", "isCorrect": False},
-                        {"text": "L'Arêtier.", "isCorrect": False},
-                        {"text": "La Noue.", "isCorrect": True},
-                        {"text": "La Rive.", "isCorrect": False}
+                        {"text": "1 mètre", "isCorrect": True},
+                        {"text": "50 centimètres", "isCorrect": False},
+                        {"text": "10 centimètres", "isCorrect": False},
+                        {"text": "2 mètres", "isCorrect": False}
                     ],
-                    "correction": "La **Noue** est le point le plus délicat à traiter en couverture car l'eau y converge et nécessite une étanchéité particulière, souvent en zinguerie."
+                    "correction": "Pour sécuriser l'accès, l'échelle doit dépasser le niveau d'accès d'au moins 1 mètre afin de permettre à l'opérateur de se tenir aux montants lors du rétablissement."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quelle est la principale fonction de l'écran sous-toiture (EST) ?",
+                    "question": "Quelle classe de montage d'échafaudage autorise une charge de 200 kg/m² ?",
                     "answerOptions": [
-                        {"text": "Améliorer l'isolation thermique uniquement.", "isCorrect": False},
-                        {"text": "Assurer le parement intérieur du comble.", "isCorrect": False},
-                        {"text": "Permettre la récupération des eaux de pluie.", "isCorrect": False},
-                        {"text": "Contribuer à l'étanchéité à l'eau (neige poudreuse, infiltration) et à l'air, et protéger des poussières.", "isCorrect": True}
+                        {"text": "Classe 3", "isCorrect": True},
+                        {"text": "Classe 1", "isCorrect": False},
+                        {"text": "Classe 6", "isCorrect": False},
+                        {"text": "Classe 5", "isCorrect": False}
                     ],
-                    "correction": "L'**Écran Sous-Toiture** (EST) est une membrane de protection qui renforce l'étanchéité, notamment contre la neige poudreuse et le vent."
+                    "correction": "Les classes d'échafaudage définissent la charge admissible. La classe 3 correspond à une charge de 200 daN/m² (environ 200 kg), standard pour les travaux de couverture courants."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Comment appelle-t-on l'élément de charpente horizontal qui supporte les chevrons ?",
+                    "question": "Que signifie le sigle EPI ?",
                     "answerOptions": [
-                        {"text": "Le Liteau.", "isCorrect": False},
-                        {"text": "La Panne (faîtière, intermédiaire, sablière).", "isCorrect": True},
-                        {"text": "L'Entrait.", "isCorrect": False},
-                        {"text": "Le Contre-liteau.", "isCorrect": False}
+                        {"text": "Équipement de Protection Individuelle", "isCorrect": True},
+                        {"text": "Élément de Prévention Incendie", "isCorrect": False},
+                        {"text": "Échafaudage Pour Industrie", "isCorrect": False},
+                        {"text": "Étude Préalable d'Intervention", "isCorrect": False}
                     ],
-                    "correction": "Les **Pannes** (faîtière en haut, sablière en bas, intermédiaires) sont les pièces maîtresses d'un versant, soutenues par les fermes ou les murs."
+                    "correction": "Les EPI (casque, chaussures, harnais, gants) sont des dispositifs destinés à être portés par une personne en vue de la protéger contre un ou plusieurs risques."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel type de pose est principalement utilisé pour les ardoises sur voligeage continu ?",
+                    "question": "Quel document unique doit obligatoirement être présent sur le chantier pour l'évaluation des risques ?",
                     "answerOptions": [
-                        {"text": "La pose à joints droits.", "isCorrect": False},
-                        {"text": "La pose à lattes.", "isCorrect": False},
-                        {"text": "La pose au clou (ou au crochet).", "isCorrect": True},
-                        {"text": "La pose à sec.", "isCorrect": False}
+                        {"text": "Le DUER", "isCorrect": True},
+                        {"text": "Le PPSPS", "isCorrect": False},
+                        {"text": "Le CCTP", "isCorrect": False},
+                        {"text": "Le DICT", "isCorrect": False}
                     ],
-                    "correction": "L'ardoise est généralement fixée soit par clouage direct sur les liteaux ou voliges, soit par l'utilisation de **crochets** qui se fixent sur les liteaux."
+                    "correction": "Le Document Unique d'Évaluation des Risques (DUER) est obligatoire dans toute entreprise et répertorie les risques professionnels ainsi que les mesures de prévention associées."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Que représente la 'Ligne de Faîtage' ?",
+                    "question": "À quel moment le port du harnais de sécurité est-il obligatoire sur un toit ?",
                     "answerOptions": [
-                        {"text": "L'intersection basse du toit (égout).", "isCorrect": False},
-                        {"text": "L'intersection haute et horizontale des deux versants d'un toit.", "isCorrect": True},
-                        {"text": "L'intersection inclinée des deux versants.", "isCorrect": False},
-                        {"text": "Le bord latéral du toit.", "isCorrect": False}
+                        {"text": "En l'absence de protection collective", "isCorrect": True},
+                        {"text": "Uniquement s'il pleut ou vente fort", "isCorrect": False},
+                        {"text": "Seulement pour les travaux sur ardoises", "isCorrect": False},
+                        {"text": "Quand la pente est supérieure à 45 degrés", "isCorrect": False}
                     ],
-                    "correction": "Le **Faîtage** est la ligne de crête. Il est couvert par des tuiles faîtières ou un closoir ventilé pour assurer l'étanchéité et la ventilation."
+                    "correction": "Le harnais est une protection individuelle qui ne doit être utilisée que lorsqu'il est techniquement impossible de mettre en place une protection collective (garde-corps, échafaudage)."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Dans le cas d'une couverture en tuiles, à quoi sert le 'recouvrement' ?",
+                    "question": "Quelle est la couleur conventionnelle des réseaux de gaz enterrés lors d'un terrassement ?",
                     "answerOptions": [
-                        {"text": "À faciliter la marche du couvreur.", "isCorrect": False},
-                        {"text": "À masquer le pureau.", "isCorrect": False},
-                        {"text": "À garantir que l'eau ne pénètre pas dans le comble en s'écoulant sur la tuile inférieure.", "isCorrect": True},
-                        {"text": "À fixer la tuile sur le liteau.", "isCorrect": False}
+                        {"text": "Jaune", "isCorrect": True},
+                        {"text": "Bleu", "isCorrect": False},
+                        {"text": "Rouge", "isCorrect": False},
+                        {"text": "Vert", "isCorrect": False}
                     ],
-                    "correction": "Le **recouvrement** est la partie d'une tuile qui est cachée par la tuile supérieure. Il est essentiel à l'étanchéité et est strictement encadré par les DTU selon la pente et la zone géographique."
+                    "correction": "Le code couleur normalisé pour le grillage avertisseur des réseaux enterrés est le jaune pour le gaz, rouge pour l'électricité, bleu pour l'eau et vert pour les télécoms."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quel est le DTU (Document Technique Unifié) de référence pour la pose des tuiles de terre cuite à emboîtement ou à glissement ?",
+                    "question": "Quel est le principal risque lié à la découpe de matériaux contenant de l'amiante ?",
                     "answerOptions": [
-                        {"text": "DTU 40.21.", "isCorrect": True},
-                        {"text": "DTU 40.11.", "isCorrect": False},
-                        {"text": "DTU 40.35.", "isCorrect": False},
-                        {"text": "DTU 60.1.", "isCorrect": False}
+                        {"text": "Inhalation de fibres cancérigènes", "isCorrect": True},
+                        {"text": "Coupure profonde aux mains", "isCorrect": False},
+                        {"text": "Échauffement excessif de la meuleuse", "isCorrect": False},
+                        {"text": "Projection d'éclats dans les yeux", "isCorrect": False}
                     ],
-                    "correction": "Le **DTU 40.21** concerne les tuiles de terre cuite, le 40.11 les ardoises, et le 40.41 les couvertures en zinc."
+                    "correction": "L'amiante libère des fibres microscopiques invisibles qui, une fois inhalées, peuvent provoquer des maladies graves comme l'asbestose ou le cancer du poumon."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Comment nomme-t-on le dispositif métallique utilisé pour l'évacuation des eaux de pluie en partie basse de toiture ?",
+                    "question": "Comment doit-on stocker les bouteilles de gaz sur un chantier ?",
                     "answerOptions": [
-                        {"text": "Le Solin.", "isCorrect": False},
-                        {"text": "Le Chéneau ou la Gouttière.", "isCorrect": True},
-                        {"text": "Le Larmier.", "isCorrect": False},
-                        {"text": "Le Brisis.", "isCorrect": False}
+                        {"text": "Debout et attachées", "isCorrect": True},
+                        {"text": "Couchées au sol", "isCorrect": False},
+                        {"text": "En plein soleil", "isCorrect": False},
+                        {"text": "Dans un véhicule fermé", "isCorrect": False}
                     ],
-                    "correction": "Le **Chéneau** est souvent intégré à la maçonnerie ou à la charpente, tandis que la **Gouttière** est un élément suspendu (pendante)."
+                    "correction": "Les bouteilles de gaz doivent toujours être stockées verticalement (debout) et arrimées solidement pour éviter qu'elles ne tombent et n'endommagent le robinet."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Quel est le rôle des 'contreliteaux' dans le système de couverture ?",
+                    "question": "Quelle est la charge maximale recommandée pour le port manuel répétitif de charges par un homme ?",
                     "answerOptions": [
-                        {"text": "Supporter directement la couverture.", "isCorrect": False},
-                        {"text": "Permettre la fixation de l'écran sous-toiture.", "isCorrect": False},
-                        {"text": "Créer une lame d'air de ventilation entre l'écran sous-toiture et les liteaux.", "isCorrect": True},
-                        {"text": "Décorer le bord du toit.", "isCorrect": False}
+                        {"text": "25 kg", "isCorrect": True},
+                        {"text": "55 kg", "isCorrect": False},
+                        {"text": "75 kg", "isCorrect": False},
+                        {"text": "100 kg", "isCorrect": False}
                     ],
-                    "correction": "Les **contreliteaux** sont posés sur les chevrons (dans le sens de la pente) et les liteaux sont cloués sur eux. Ils créent le vide indispensable à la ventilation de la sous-face de la couverture."
+                    "correction": "La norme AFNOR NF X35-109 recommande de ne pas dépasser 25 kg pour le port répétitif de charges afin de prévenir les troubles musculo-squelettiques (TMS)."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "À quoi sert une 'tuile de ventilation' ou une 'ardoise de ventilation' ?",
+                    "question": "Quel type d'extincteur est le plus adapté pour un feu d'origine électrique ?",
                     "answerOptions": [
-                        {"text": "À éclairer le comble.", "isCorrect": False},
-                        {"text": "À améliorer l'isolation thermique.", "isCorrect": False},
-                        {"text": "À éviter la condensation dans le comble et permettre l'évacuation de l'air humide.", "isCorrect": True},
-                        {"text": "À empêcher les oiseaux de pénétrer.", "isCorrect": False}
+                        {"text": "CO2", "isCorrect": True},
+                        {"text": "Eau", "isCorrect": False},
+                        {"text": "Mousse", "isCorrect": False},
+                        {"text": "Sable", "isCorrect": False}
                     ],
-                    "correction": "La **ventilation** est vitale pour éviter la dégradation de la charpente (humidité) et de l'isolation (condensation)."
+                    "correction": "L'extincteur au dioxyde de carbone (CO2) est privilégié pour les feux électriques car il est non conducteur et ne laisse pas de résidus corrosifs sur les équipements."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quelle est la caractéristique principale d'une 'Tuile Canal' (ou romane) ?",
+                    "question": "Quelle vérification est indispensable avant d'utiliser un échafaudage fixe ?",
                     "answerOptions": [
-                        {"text": "Elle se fixe uniquement par crochets.", "isCorrect": False},
-                        {"text": "Elle est plate et s'emboîte de manière mécanique.", "isCorrect": False},
-                        {"text": "Elle se compose de deux éléments (le courant et le couvert) et nécessite une très faible pente.", "isCorrect": True},
-                        {"text": "Elle est utilisée uniquement pour les toits-terrasses.", "isCorrect": False}
+                        {"text": "La réception de l'échafaudage", "isCorrect": True},
+                        {"text": "La propreté des planchers", "isCorrect": False},
+                        {"text": "La couleur de la peinture", "isCorrect": False},
+                        {"text": "La marque du fabricant", "isCorrect": False}
                     ],
-                    "correction": "La **Tuile Canal** est typique du Sud de la France. Elle fonctionne par superposition (courant : en dessous, couvert : au-dessus) et est compatible avec les toits à faible pente."
+                    "correction": "Avant toute utilisation, un échafaudage doit faire l'objet d'une 'réception', un examen formel validant sa conformité, sa stabilité et la présence des protections."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Qu'est-ce qu'une 'panne sablière' ?",
+                    "question": "Quel est le rôle de la plinthe au pied d'un garde-corps ?",
                     "answerOptions": [
-                        {"text": "La panne la plus haute de la toiture.", "isCorrect": False},
-                        {"text": "La panne qui se trouve à l'aplomb du mur et reçoit l'égout du toit.", "isCorrect": True},
-                        {"text": "Une panne intermédiaire.", "isCorrect": False},
-                        {"text": "La pièce qui relie les chevrons.", "isCorrect": False}
+                        {"text": "Empêcher la chute d'objets ou de matériaux", "isCorrect": True},
+                        {"text": "Faire joli pour la finition de l'échafaudage", "isCorrect": False},
+                        {"text": "Servir de marchepied pour gagner de la hauteur", "isCorrect": False},
+                        {"text": "Renforcer la structure verticale des montants", "isCorrect": False}
                     ],
-                    "correction": "La **panne sablière** est la panne inférieure. Elle repose sur le mur et est souvent scellée ou ancrée."
+                    "correction": "La plinthe (ou butée de pied) est un élément de sécurité obligatoire du garde-corps qui empêche les outils ou matériaux de glisser et de tomber sur des personnes en contrebas."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Quel matériau de couverture est connu pour sa très longue durée de vie (plus de 100 ans) et son excellent aspect esthétique ?",
+                    "question": "Que doit faire un couvreur en cas d'orage imminent ?",
                     "answerOptions": [
-                        {"text": "Les bardeaux bitumés.", "isCorrect": False},
-                        {"text": "L'ardoise naturelle.", "isCorrect": True},
-                        {"text": "La tôle ondulée en acier.", "isCorrect": False},
-                        {"text": "La tuile de béton.", "isCorrect": False}
+                        {"text": "Descendre immédiatement du toit", "isCorrect": True},
+                        {"text": "Se mettre à l'abri sous la charpente", "isCorrect": False},
+                        {"text": "Continuer pour finir l'étanchéité", "isCorrect": False},
+                        {"text": "S'attacher plus court avec son harnais", "isCorrect": False}
                     ],
-                    "correction": "L'**ardoise naturelle** est très résistante aux cycles de gel/dégel et à la pollution. Elle est très prisée pour son esthétique et sa durabilité."
+                    "correction": "Le risque de foudroiement et de glissade est extrême. La consigne de sécurité stricte est d'arrêter les travaux et de descendre de la toiture dès l'approche d'un orage."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quel est le rôle du 'Solin' ?",
+                    "question": "Quel angle d'inclinaison est préconisé pour positionner une échelle simple contre un mur ?",
                     "answerOptions": [
-                        {"text": "Relier deux tuiles.", "isCorrect": False},
-                        {"text": "Assurer l'étanchéité au raccordement entre le toit et un élément vertical (mur, cheminée, lucarne).", "isCorrect": True},
-                        {"text": "Soutenir la gouttière.", "isCorrect": False},
-                        {"text": "Permettre la ventilation.", "isCorrect": False}
+                        {"text": "Entre 65 et 75 degrés", "isCorrect": True},
+                        {"text": "Entre 30 et 40 degrés", "isCorrect": False},
+                        {"text": "Exactement 90 degrés", "isCorrect": False},
+                        {"text": "Moins de 45 degrés", "isCorrect": False}
                     ],
-                    "correction": "Le **Solin** (souvent en zinc ou en mortier) est indispensable pour que l'eau qui coule sur l'élément vertical ne s'infiltre pas dans la toiture."
+                    "correction": "Un angle compris entre 65° et 75° assure la stabilité optimale de l'échelle, évitant qu'elle ne glisse du pied (trop plat) ou ne bascule en arrière (trop raide)."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Dans le calcul des toitures, qu'est-ce que le 'dévers' ?",
+                    "question": "Quel équipement est spécifique à la prévention des chutes à travers une toiture fragile ?",
                     "answerOptions": [
-                        {"text": "La hauteur totale du toit.", "isCorrect": False},
-                        {"text": "L'angle d'inclinaison du toit (pente).", "isCorrect": False},
-                        {"text": "L'ensemble des surfaces d'un toit.", "isCorrect": False},
-                        {"text": "Le fait que les liteaux ne sont pas parfaitement de niveau (défaut de planéité) ou l'inclinaison des lattes pour le ruissellement.", "isCorrect": True}
+                        {"text": "Chemin de circulation", "isCorrect": True},
+                        {"text": "Chaussures de sécurité", "isCorrect": False},
+                        {"text": "Casque avec jugulaire", "isCorrect": False},
+                        {"text": "Gants anti-coupure", "isCorrect": False}
                     ],
-                    "correction": "Le **dévers** désigne la légère inclinaison latérale des matériaux qui permet à l'eau de s'écouler correctement vers la gouttière."
+                    "correction": "Sur les matériaux fragiles (fibrociment, plaques translucides), il est impératif d'utiliser des chemins de circulation (planches de répartition) pour ne pas passer au travers."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Quelle est la principale différence entre la 'Tuile Plate' et la 'Tuile à Emboîtement' ?",
+                    "question": "Quelle substance est strictement interdite pour nettoyer les mains après l'usage de bitume ?",
                     "answerOptions": [
-                        {"text": "La Tuile Plate est plus légère.", "isCorrect": False},
-                        {"text": "La Tuile Plate repose sur un grand recouvrement pour l'étanchéité, tandis que la Tuile à Emboîtement a des tenons qui s'imbriquent pour un recouvrement réduit.", "isCorrect": True},
-                        {"text": "La Tuile Plate est plus facile à poser.", "isCorrect": False},
-                        {"text": "La Tuile à Emboîtement est interdite.", "isCorrect": False}
+                        {"text": "Essence", "isCorrect": True},
+                        {"text": "Savon d'atelier", "isCorrect": False},
+                        {"text": "Lingettes spéciales", "isCorrect": False},
+                        {"text": "Huile végétale", "isCorrect": False}
                     ],
-                    "correction": "La **Tuile à Emboîtement** (ou mécanique) est plus rapide à poser et nécessite moins de recouvrement, car son étanchéité est en partie assurée par la forme des tenons."
+                    "correction": "L'utilisation de solvants comme l'essence ou le White Spirit sur la peau est dangereuse (pénétration cutanée toxique). Il faut utiliser des savons microbilles ou huiles spécifiques."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Comment se nomme la surface d'un toit qui est inclinée ?",
+                    "question": "Quelle est la signification du pictogramme rond à fond bleu sur un chantier ?",
                     "answerOptions": [
-                        {"text": "Le Tiers.", "isCorrect": False},
-                        {"text": "L'Égout.", "isCorrect": False},
-                        {"text": "Le Versant.", "isCorrect": True},
-                        {"text": "Le Lucarne.", "isCorrect": False}
+                        {"text": "Une obligation", "isCorrect": True},
+                        {"text": "Une interdiction", "isCorrect": False},
+                        {"text": "Un avertissement", "isCorrect": False},
+                        {"text": "Une indication incendie", "isCorrect": False}
                     ],
-                    "correction": "Le **Versant** est l'une des faces inclinées de la toiture. Un toit à deux pans a deux versants."
+                    "correction": "La signalisation de sécurité est normée : les panneaux ronds à fond bleu imposent une obligation (exemple : 'Port du casque obligatoire')."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel est l'avantage du 'Voligeage' (planches jointives) par rapport au Liteau (lattes espacées) ?",
+                    "question": "Pour éviter les troubles musculo-squelettiques lors de la pose d'ardoises, que doit privilégier le couvreur ?",
                     "answerOptions": [
-                        {"text": "Il est moins cher.", "isCorrect": False},
-                        {"text": "Il est plus léger.", "isCorrect": False},
-                        {"text": "Il offre un support continu, essentiel pour les petites couvertures (zinc, ardoise naturelle) et assure une meilleure rigidité.", "isCorrect": True},
-                        {"text": "Il permet une meilleure ventilation.", "isCorrect": False}
+                        {"text": "L'alternance des tâches et des postures", "isCorrect": True},
+                        {"text": "Le travail à genoux sans genouillères", "isCorrect": False},
+                        {"text": "Le port de charges lourdes d'un seul coup", "isCorrect": False},
+                        {"text": "La rapidité d'exécution sans pause", "isCorrect": False}
                     ],
-                    "correction": "Le **Voligeage** est souvent obligatoire pour les couvertures métalliques ou lorsque les matériaux (ardoises) n'ont pas la résistance structurelle des tuiles mécaniques."
+                    "correction": "La prévention des TMS repose sur la variation des gestes, l'utilisation d'aides à la manutention et l'alternance des postures pour ne pas solliciter toujours les mêmes articulations."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quelle est l'unité de mesure de la 'pente' d'un toit en France ?",
+                    "question": "Quelle action est prioritaire lors de la découverte d'un accident sur chantier ?",
                     "answerOptions": [
-                        {"text": "Le degré (°).", "isCorrect": False},
-                        {"text": "Le pourcent (%).", "isCorrect": True},
-                        {"text": "Le radian.", "isCorrect": False},
-                        {"text": "La hauteur au faîtage.", "isCorrect": False}
+                        {"text": "Protéger", "isCorrect": True},
+                        {"text": "Alerter", "isCorrect": False},
+                        {"text": "Secourir", "isCorrect": False},
+                        {"text": "Filmer", "isCorrect": False}
                     ],
-                    "correction": "La **pente** est exprimée en **pourcentage (%)** ou en fractions (ex : 40%), qui représente la différence de hauteur sur 100 cm de longueur horizontale."
+                    "correction": "La procédure de secourisme suit l'ordre P.A.S. : Protéger (la zone et soi-même), Alerter (les secours), puis Secourir (la victime). On ne peut secourir sans avoir sécurisé la zone."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 2 : ZINGUERIE ET ÉVACUATION DES EAUX (Q. 21-40)
+        # THÈME 2 : TECHNOLOGIE DES MATÉRIAUX ET OUTILLAGE PROFESSIONNEL (Questions 21 à 40)
         # =========================================================================
         2: {
-            "name": "2. Zinguerie et Évacuation des Eaux (Q. 21-40)",
+            "name": "THÈME 2 : TECHNOLOGIE DES MATÉRIAUX ET OUTILLAGE PROFESSIONNEL",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quel matériau est le plus couramment utilisé pour les travaux de zinguerie (gouttières, chéneaux, abergements) ?",
+                    "question": "Quelle est la matière première principale constitutive d'une tuile traditionnelle ?",
                     "answerOptions": [
-                        {"text": "L'aluminium galvanisé.", "isCorrect": False},
-                        {"text": "Le Plomb.", "isCorrect": False},
-                        {"text": "Le Zinc (naturel, prépatiné, ou titane).", "isCorrect": True},
-                        {"text": "L'acier inoxydable.", "isCorrect": False}
+                        {"text": "Argile", "isCorrect": True},
+                        {"text": "Ciment prompt", "isCorrect": False},
+                        {"text": "Résine polymère", "isCorrect": False},
+                        {"text": "Silice pure", "isCorrect": False}
                     ],
-                    "correction": "Le **Zinc** est le matériau de zinguerie traditionnel, apprécié pour sa malléabilité, sa durabilité et sa capacité à se patiner (s'auto-protéger)."
+                    "correction": "La tuile de terre cuite est fabriquée à partir d'argile, qui est broyée, humidifiée, façonnée puis cuite à haute température pour obtenir sa dureté finale."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Dans le cas d'une gouttière pendante, comment s'appelle la pièce métallique qui la maintient au chevron ou à la planche de rive ?",
+                    "question": "Quel outil spécifique le couvreur utilise-t-il pour tailler l'ardoise manuellement sur le toit ?",
                     "answerOptions": [
-                        {"text": "Le Solin.", "isCorrect": False},
-                        {"text": "Le Crochet.", "isCorrect": True},
-                        {"text": "La Naissance.", "isCorrect": False},
-                        {"text": "La Bavette.", "isCorrect": False}
+                        {"text": "Le marteau et l'enclume", "isCorrect": True},
+                        {"text": "La meuleuse d'angle thermique", "isCorrect": False},
+                        {"text": "La cisaille à métaux articulée", "isCorrect": False},
+                        {"text": "Le massicot de chantier hydraulique", "isCorrect": False}
                     ],
-                    "correction": "Les **crochets** sont fixés au support (chevrons ou bandeau) et doivent assurer la pente nécessaire à l'écoulement de l'eau dans la gouttière."
+                    "correction": "La taille artisanale de l'ardoise (épaufrure) se réalise traditionnellement à l'aide d'un marteau de couvreur (ayant un tranchant et une pointe) et d'une enclume (ou tas) sur laquelle on appuie l'ardoise."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Comment assure-t-on la dilatation des éléments de zinc longs (ex : chéneaux) ?",
+                    "question": "Comment appelle-t-on le phénomène naturel de protection qui se forme à la surface du zinc neuf ?",
                     "answerOptions": [
-                        {"text": "En utilisant des soudures continues.", "isCorrect": False},
-                        {"text": "En les découpant en petits tronçons de 1 mètre.", "isCorrect": False},
-                        {"text": "En prévoyant des joints de dilatation (ou des couvre-joints) et une fixation permettant le mouvement.", "isCorrect": True},
-                        {"text": "Par un revêtement spécial.", "isCorrect": False}
+                        {"text": "La patine", "isCorrect": True},
+                        {"text": "La rouille perforante", "isCorrect": False},
+                        {"text": "Le vernis industriel", "isCorrect": False},
+                        {"text": "La couche de primaire", "isCorrect": False}
                     ],
-                    "correction": "Le **Zinc** se dilate et se rétracte beaucoup avec la température. Si la dilatation n'est pas gérée (joints de dilatation), le métal se déchire ou se déforme."
+                    "correction": "Le zinc naturel s'auto-protège en réagissant avec l'eau et le dioxyde de carbone de l'air, formant une couche de carbonate de zinc appelée 'patine', qui le rend gris mat et durable."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quel est le rôle d'une 'Bande de Rive' ?",
+                    "question": "Quel est le rôle principal d'un écran de sous-toiture de type HPV ?",
                     "answerOptions": [
-                        {"text": "Améliorer l'étanchéité au faîtage.", "isCorrect": False},
-                        {"text": "Assurer l'étanchéité et l'esthétique du bord latéral de la toiture (la rive).", "isCorrect": True},
-                        {"text": "Servir de support aux tuiles.", "isCorrect": False},
-                        {"text": "Protéger la gouttière.", "isCorrect": False}
+                        {"text": "Laisser passer la vapeur d'eau venant de l'intérieur", "isCorrect": True},
+                        {"text": "Empêcher totalement l'air de circuler sous les tuiles", "isCorrect": False},
+                        {"text": "Remplacer définitivement les tuiles cassées ou absentes", "isCorrect": False},
+                        {"text": "Renforcer la structure porteuse de la charpente en bois", "isCorrect": False}
                     ],
-                    "correction": "La **Bande de Rive** peut être en bois ou en métal (zinc) et protège la planche de rive ou les pannes sablières des intempéries sur le côté du toit."
+                    "correction": "Un écran HPV (Haute Perméabilité à la Vapeur d'eau) assure l'étanchéité à l'eau venant de l'extérieur tout en permettant l'évacuation de l'humidité intérieure, évitant ainsi la condensation dans l'isolant."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quelle est la pièce métallique qui assure la jonction entre le bas de la gouttière et le tube de descente ?",
+                    "question": "Quelle essence de bois est la plus couramment utilisée pour les liteaux de couverture ?",
                     "answerOptions": [
-                        {"text": "Le Talon.", "isCorrect": False},
-                        {"text": "La Platine.", "isCorrect": False},
-                        {"text": "La Naissance (ou Moignon).", "isCorrect": True},
-                        {"text": "Le Solin.", "isCorrect": False}
+                        {"text": "Sapin", "isCorrect": True},
+                        {"text": "Chêne massif", "isCorrect": False},
+                        {"text": "Teck exotique", "isCorrect": False},
+                        {"text": "Ébène noir", "isCorrect": False}
                     ],
-                    "correction": "La **Naissance** est l'entonnoir par lequel l'eau du chéneau ou de la gouttière est dirigée vers la conduite de descente."
+                    "correction": "Les résineux (sapin, épicéa) sont privilégiés pour le litelage (liteaux, voliges) en raison de leur légèreté, de leur coût abordable et de leur facilité de clouage."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Comment s'appelle l'outil manuel utilisé par le zingueur pour plier le zinc sur de courtes longueurs (ou pour pincer des ourlets) ?",
+                    "question": "Quel terme désigne la partie visible d'une ardoise ou d'une tuile une fois posée ?",
                     "answerOptions": [
-                        {"text": "Le Coupe-Franche.", "isCorrect": False},
-                        {"text": "Le Marteau de charpentier.", "isCorrect": False},
-                        {"text": "La Pince à Tôle ou la Pince à Border.", "isCorrect": True},
-                        {"text": "Le Chalumeau.", "isCorrect": False}
+                        {"text": "Le pureau", "isCorrect": True},
+                        {"text": "Le recouvrement", "isCorrect": False},
+                        {"text": "Le tenon", "isCorrect": False},
+                        {"text": "La doucine", "isCorrect": False}
                     ],
-                    "correction": "La **Pince à Tôle** ou à border permet de réaliser des plis nets et des finitions sur les petites pièces de zinguerie."
+                    "correction": "Le pureau correspond à la partie du matériau de couverture qui reste exposée aux intempéries et n'est pas recouverte par l'élément du rang supérieur."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quel est l'inconvénient majeur du 'Plomb' en zinguerie d'abergement (solin) ?",
+                    "question": "Quelle caractéristique physique définit la classe de résistance d'une ardoise naturelle ?",
                     "answerOptions": [
-                        {"text": "Il est très difficile à souder.", "isCorrect": False},
-                        {"text": "Il est très léger.", "isCorrect": False},
-                        {"text": "Il est toxique (plombémie) et sa dilatation/contraction est moins maîtrisée que le zinc.", "isCorrect": True},
-                        {"text": "Il rouille très vite.", "isCorrect": False}
+                        {"text": "La teneur en carbonate de calcium", "isCorrect": True},
+                        {"text": "La couleur de la roche d'extraction", "isCorrect": False},
+                        {"text": "La forme de découpe de l'ardoise", "isCorrect": False},
+                        {"text": "Le nom de la carrière d'origine", "isCorrect": False}
                     ],
-                    "correction": "Bien qu'il soit très malléable, le **Plomb** est de moins en moins utilisé en construction pour des raisons de santé publique (toxicité)."
+                    "correction": "La norme NF EN 12326 classe les ardoises selon leur teneur en carbonate (résistance aux pluies acides), leur oxydation thermique et leur absorption d'eau. Une forte teneur en carbonate fragilise l'ardoise dans le temps."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Quelle est la pente minimale recommandée pour un chéneau en zinc afin d'assurer un bon écoulement des eaux ?",
+                    "question": "Quel outil permet de tracer des lignes parallèles au bord d'une feuille de zinc ?",
                     "answerOptions": [
-                        {"text": "5 % (5 cm par mètre).", "isCorrect": False},
-                        {"text": "1 % (1 cm par mètre), ou minimum 5 mm par mètre.", "isCorrect": True},
-                        {"text": "0 % (parfaitement horizontal).", "isCorrect": False},
-                        {"text": "20 %.", "isCorrect": False}
+                        {"text": "Trusquin", "isCorrect": True},
+                        {"text": "Équerre", "isCorrect": False},
+                        {"text": "Compas", "isCorrect": False},
+                        {"text": "Niveau", "isCorrect": False}
                     ],
-                    "correction": "Une pente d'au moins **5 mm/mètre** est nécessaire pour garantir l'écoulement et éviter la stagnation de l'eau (et le développement de mousses)."
+                    "correction": "Le trusquin est l'outil de traçage par excellence du zingueur. Il permet de marquer par rayure une ligne parfaitement parallèle au bord de la feuille de métal pour préparer un pliage."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel est le DTU de référence pour les travaux de couverture en Métal (Zinc, Cuivre, Acier) ?",
+                    "question": "Quelle est la particularité d'une tuile à emboîtement par rapport à une tuile plate ?",
                     "answerOptions": [
-                        {"text": "DTU 40.21.", "isCorrect": False},
-                        {"text": "DTU 40.41 (Couvertures par éléments métalliques en feuilles et longues feuilles en zinc, cuivre, acier...).", "isCorrect": True},
-                        {"text": "DTU 43.1.", "isCorrect": False},
-                        {"text": "DTU 40.35.", "isCorrect": False}
+                        {"text": "Elle possède des reliefs pour guider l'eau et se caler", "isCorrect": True},
+                        {"text": "Elle est obligatoirement fabriquée en béton gris", "isCorrect": False},
+                        {"text": "Elle ne nécessite aucune fixation sur le liteau", "isCorrect": False},
+                        {"text": "Elle est deux fois plus lourde au mètre carré", "isCorrect": False}
                     ],
-                    "correction": "Le **DTU 40.41** est la référence pour tout ce qui concerne la pose du zinc à tasseaux, à joints debouts, ainsi que les chéneaux et gouttières."
+                    "correction": "Les tuiles à emboîtement (ou mécaniques) disposent de chicanes et de reliefs latéraux qui assurent l'étanchéité et le verrouillage entre elles, permettant de réduire le recouvrement nécessaire."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Dans le cas d'une toiture plate, quel système d'étanchéité est le plus couramment utilisé ?",
+                    "question": "Quel métal est réputé pour sa couleur 'vert-de-gris' après oxydation ?",
                     "answerOptions": [
-                        {"text": "La couverture en tuiles.", "isCorrect": False},
-                        {"text": "L'étanchéité multicouche (bitume armé) ou membrane synthétique (PVC, EPDM).", "isCorrect": True},
-                        {"text": "Le voligeage simple.", "isCorrect": False},
-                        {"text": "Le bac acier simple.", "isCorrect": False}
+                        {"text": "Cuivre", "isCorrect": True},
+                        {"text": "Plomb", "isCorrect": False},
+                        {"text": "Aluminium", "isCorrect": False},
+                        {"text": "Acier", "isCorrect": False}
                     ],
-                    "correction": "Les **membranes bitumineuses** (soudées au chalumeau) ou les **membranes synthétiques** sont indispensables pour les toitures-terrasses, même si celles-ci ont une très faible pente."
+                    "correction": "Le cuivre, initialement rouge-orangé, s'oxyde avec le temps pour devenir brun foncé, puis finit par prendre une teinte verte caractéristique appelée vert-de-gris."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Comment se nomme la technique de raccordement du zinc qui consiste à créer un pli vertical entre deux lés, utilisé sur les toitures à faible pente ?",
+                    "question": "À quoi sert une 'bignette' dans la caisse à outils du zingueur ?",
                     "answerOptions": [
-                        {"text": "Le Solin.", "isCorrect": False},
-                        {"text": "La Soudure.", "isCorrect": False},
-                        {"text": "Le Joint Debout (ou Agrafage à joint debout).", "isCorrect": True},
-                        {"text": "Le Recouvrement Simple.", "isCorrect": False}
+                        {"text": "Façonner le plomb", "isCorrect": True},
+                        {"text": "Couper le bois", "isCorrect": False},
+                        {"text": "Visser les crochets", "isCorrect": False},
+                        {"text": "Percer le béton", "isCorrect": False}
                     ],
-                    "correction": "Le **Joint Debout** est une méthode d'agrafage mécanique qui permet l'étanchéité sur des pentes très faibles, tout en gérant la dilatation du métal."
+                    "correction": "La bignette est un outil de frappe spécifique (sorte de batte en bois ou plastique) utilisé pour travailler et former les feuilles de plomb sans les marquer ni les percer."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quel est l'élément qui empêche l'eau de remonter par capillarité sous le bas de la tuile de l'égout ou de la feuille de zinc ?",
+                    "question": "Quelle est la classe d'emploi minimale requise pour le bois de charpente exposé à l'humidité ?",
                     "answerOptions": [
-                        {"text": "Le Clou de fixation.", "isCorrect": False},
-                        {"text": "Le Larmier (ou Tête d'égout).", "isCorrect": True},
-                        {"text": "Le Crochet.", "isCorrect": False},
-                        {"text": "Le Noue.", "isCorrect": False}
+                        {"text": "Classe 2", "isCorrect": True},
+                        {"text": "Classe 1", "isCorrect": False},
+                        {"text": "Classe 0", "isCorrect": False},
+                        {"text": "Classe A", "isCorrect": False}
                     ],
-                    "correction": "Le **Larmier** est un petit pli (ou une bavette) qui force l'eau à se décrocher (à 'larmoyer') avant d'atteindre le support, protégeant ainsi le bandeau de rive."
+                    "correction": "Les bois de charpente et de couverture (liteaux) doivent être traités au minimum en Classe 2 (supportant une humidité occasionnelle supérieure à 20%) pour résister aux insectes et champignons."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quel est le métal qui résiste le mieux à l'environnement marin (air salin) en zinguerie ?",
+                    "question": "Quel est l'avantage principal de l'acier inoxydable pour les crochets d'ardoise ?",
                     "answerOptions": [
-                        {"text": "L'acier galvanisé.", "isCorrect": False},
-                        {"text": "Le Cuivre.", "isCorrect": True},
-                        {"text": "Le Zinc traditionnel.", "isCorrect": False},
-                        {"text": "L'Aluminium.", "isCorrect": False}
+                        {"text": "Résistance totale à la corrosion", "isCorrect": True},
+                        {"text": "Facilité de peinture en couleur", "isCorrect": False},
+                        {"text": "Coût d'achat très faible", "isCorrect": False},
+                        {"text": "Souplesse extrême au pliage", "isCorrect": False}
                     ],
-                    "correction": "Le **Cuivre** est l'un des matériaux les plus durables et résistants à la corrosion saline, mais aussi l'un des plus chers."
+                    "correction": "L'inox (acier inoxydable) est utilisé pour les crochets, notamment en bord de mer, car il offre la meilleure résistance à la corrosion saline par rapport au cuivre ou à l'acier galvanisé."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Lors d'une soudure à l'étain sur du zinc, quel produit est indispensable pour nettoyer et préparer la surface métallique ?",
+                    "question": "Quel phénomène physique affecte particulièrement les gouttières en zinc lors des changements de température ?",
                     "answerOptions": [
-                        {"text": "L'eau déminéralisée.", "isCorrect": False},
-                        {"text": "Le Flux (ou Décapant, souvent à base d'acide).", "isCorrect": True},
-                        {"text": "L'acétone.", "isCorrect": False},
-                        {"text": "L'huile de lin.", "isCorrect": False}
+                        {"text": "Dilatation", "isCorrect": True},
+                        {"text": "Sublimation", "isCorrect": False},
+                        {"text": "Évaporation", "isCorrect": False},
+                        {"text": "Fusion", "isCorrect": False}
                     ],
-                    "correction": "Le **Flux** (ou décapant) permet de décaper l'oxydation superficielle du zinc, assurant que l'étain 'accroche' correctement au métal pour une soudure étanche."
+                    "correction": "Les métaux se dilatent à la chaleur et se rétractent au froid. Il est crucial de prévoir des joints de dilatation sur les longues gouttières en zinc pour éviter qu'elles ne cassent ou ne se déforment."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Qu'est-ce qu'une 'chatière de ventilation' ?",
+                    "question": "Quel outil est indispensable pour réaliser un pliage net sur une feuille de métal à l'atelier ?",
                     "answerOptions": [
-                        {"text": "Une trappe d'accès pour les chats.", "isCorrect": False},
-                        {"text": "Un accessoire de toiture permettant une ventilation localisée et permanente du comble.", "isCorrect": True},
-                        {"text": "Une petite fenêtre de toit.", "isCorrect": False},
-                        {"text": "Un système de chauffage.", "isCorrect": False}
+                        {"text": "Plieuse", "isCorrect": True},
+                        {"text": "Cisaille", "isCorrect": False},
+                        {"text": "Boudineuse", "isCorrect": False},
+                        {"text": "Guillotine", "isCorrect": False}
                     ],
-                    "correction": "La **Chatière** est un élément (souvent sous forme de tuile ou de grille) installé en toiture pour assurer la circulation de l'air, en complément des entrées d'air en bas de pente."
+                    "correction": "La plieuse d'atelier (manuelle ou numérique) permet de plier les feuilles de métal (zinc, cuivre, acier) selon des angles précis et rectilignes sur toute la longueur de la feuille."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Quel est le danger d'utiliser des agrafes en acier sur du zinc (ou du cuivre) ?",
+                    "question": "Qu'est-ce qu'une 'noue' dans la terminologie des matériaux ?",
                     "answerOptions": [
-                        {"text": "Une mauvaise tenue mécanique.", "isCorrect": False},
-                        {"text": "Un risque de corrosion par électrolyse (contact de deux métaux différents).", "isCorrect": True},
-                        {"text": "Un coût trop élevé.", "isCorrect": False},
-                        {"text": "Une couleur inadaptée.", "isCorrect": False}
+                        {"text": "Une bande métallique pour l'angle rentrant", "isCorrect": True},
+                        {"text": "Une tuile faîtière ventilée par le dessous", "isCorrect": False},
+                        {"text": "Un crochet de sécurité pour l'échelle", "isCorrect": False},
+                        {"text": "Une planche de rive en bois massif", "isCorrect": False}
                     ],
-                    "correction": "Il faut éviter le contact entre métaux de potentiels différents (**couple électrolytique**). Pour le zinc, on utilise des fixations en inox ou en cuivre."
+                    "correction": "La noue est l'ouvrage (souvent métallique en zinc ou plomb) qui assure l'étanchéité dans l'angle rentrant formé par la rencontre de deux versants de toiture, collectant les eaux de ruissellement."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Pour quelle raison la descente d'eau pluviale ne doit-elle pas être collée directement au mur ?",
+                    "question": "Quelle propriété du plomb le rend utile pour les abergements complexes ?",
                     "answerOptions": [
-                        {"text": "Pour des raisons esthétiques.", "isCorrect": False},
-                        {"text": "Pour permettre la dilatation du tuyau et éviter que l'humidité ne pénètre dans le mur.", "isCorrect": True},
-                        {"text": "Pour faciliter l'accès aux fenêtres.", "isCorrect": False},
-                        {"text": "Pour que la peinture sèche.", "isCorrect": False}
+                        {"text": "Malléabilité", "isCorrect": True},
+                        {"text": "Rigidité", "isCorrect": False},
+                        {"text": "Transparence", "isCorrect": False},
+                        {"text": "Élasticité", "isCorrect": False}
                     ],
-                    "correction": "Des **colliers de fixation** sont utilisés pour maintenir la descente à distance du mur, permettant sa dilatation et l'aération entre le tuyau et la façade."
+                    "correction": "Le plomb est un métal extrêmement malléable, ce qui permet de le marteler pour lui faire épouser parfaitement les formes irrégulières des tuiles ou des maçonneries (cheminées) afin d'assurer l'étanchéité."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Quel élément permet d'éviter l'obstruction du tube de descente par les feuilles et débris ?",
+                    "question": "Quel type de clou doit-on utiliser pour fixer une plaque de zinc ?",
                     "answerOptions": [
-                        {"text": "Une bavette de rive.", "isCorrect": False},
-                        {"text": "Un crapaudine (grille de protection) à la naissance de la descente.", "isCorrect": True},
-                        {"text": "Un joint de dilatation.", "isCorrect": False},
-                        {"text": "Un solin.", "isCorrect": False}
+                        {"text": "Clou calotin", "isCorrect": True},
+                        {"text": "Clou lisse simple", "isCorrect": False},
+                        {"text": "Vis à bois longue", "isCorrect": False},
+                        {"text": "Agrafe pneumatique", "isCorrect": False}
                     ],
-                    "correction": "La **crapaudine** est une petite grille bombée installée dans le trou de naissance pour filtrer les débris volumineux."
+                    "correction": "On utilise des clous calotins (avec une tête large en plomb ou étanche) ou des pattes de fixation spécifiques pour éviter les infiltrations d'eau au niveau des points de fixation du zinc."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Dans le cas d'une couverture en bac acier, quel est le principal rôle du feutre anti-condensation (ou régulateur de condensation) ?",
+                    "question": "Quelle est la fonction d'une pince à soyer ?",
                     "answerOptions": [
-                        {"text": "Réduire la corrosion.", "isCorrect": False},
-                        {"text": "Absorber l'humidité présente sous la tôle et la rejeter à l'extérieur quand la température le permet, évitant les gouttes d'eau.", "isCorrect": True},
-                        {"text": "Renforcer la tôle.", "isCorrect": False},
-                        {"text": "Améliorer l'isolation phonique.", "isCorrect": False}
+                        {"text": "Réduire le diamètre d'un tuyau pour l'emboîtement", "isCorrect": True},
+                        {"text": "Couper les tiges filetées de gros diamètre", "isCorrect": False},
+                        {"text": "Sertir les rails de plaques de plâtre", "isCorrect": False},
+                        {"text": "Élargir le trou d'évacuation de la gouttière", "isCorrect": False}
                     ],
-                    "correction": "Les tôles métalliques condensent facilement. Le **feutre anti-condensation** est essentiel dans les bâtiments non isolés pour prévenir les 'pluies' intérieures."
+                    "correction": "La pince à soyer (ou pince à rétreindre) sert à plisser le bout d'un tuyau de descente en zinc pour réduire légèrement son diamètre, permettant ainsi de l'emboîter dans le tuyau suivant."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "La 'Soudure à recouvrement' est-elle autorisée pour les tuiles de terre cuite ?",
+                    "question": "Parmi ces matériaux, lequel est un isolant thermique souvent posé par le couvreur ?",
                     "answerOptions": [
-                        {"text": "Oui, toujours.", "isCorrect": False},
-                        {"text": "Oui, mais uniquement pour les tuiles plates.", "isCorrect": False},
-                        {"text": "Non, les tuiles sont des éléments de couverture qui s'imbriquent et ne se soudent pas.", "isCorrect": True},
-                        {"text": "Oui, mais uniquement au niveau du faîtage.", "isCorrect": False}
+                        {"text": "Laine minérale", "isCorrect": True},
+                        {"text": "Béton armé", "isCorrect": False},
+                        {"text": "Plaque de plâtre", "isCorrect": False},
+                        {"text": "Parpaing creux", "isCorrect": False}
                     ],
-                    "correction": "Les tuiles ne sont pas soudées, elles s'imbriquent avec un **recouvrement** dimensionné selon la pente et la zone d'exposition."
+                    "correction": "Le couvreur intervient souvent dans l'isolation de toiture (sarking ou entre chevrons) en posant des isolants comme la laine de verre, la laine de roche ou des panneaux de polyuréthane."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 3 : SÉCURITÉ, ACCÈS ET NORMES (DTU) (Q. 41-60)
+        # THÈME 3 : TECHNIQUES DE POSE : TUILES ET ARDOISES (Questions 41 à 60)
         # =========================================================================
         3: {
-            "name": "3. Sécurité, Accès et Normes (DTU) (Q. 41-60)",
+            "name": "THÈME 3 : TECHNIQUES DE POSE : TUILES ET ARDOISES (Petits éléments)",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel est l'Équipement de Protection Individuelle (EPI) obligatoire pour tout travail en hauteur au-delà de 3 mètres, en l'absence de protection collective (échafaudage) ?",
+                    "question": "Comment nomme-t-on la partie visible de l'ardoise une fois posée sur le toit ?",
                     "answerOptions": [
-                        {"text": "Le casque de chantier et les gants.", "isCorrect": False},
-                        {"text": "Le harnais de sécurité (antichute) rattaché à un point d'ancrage fixe.", "isCorrect": True},
-                        {"text": "Les bottes de sécurité.", "isCorrect": False},
-                        {"text": "Les lunettes de protection.", "isCorrect": False}
+                        {"text": "Pureau", "isCorrect": True},
+                        {"text": "Recouvrement", "isCorrect": False},
+                        {"text": "Faux-pureau", "isCorrect": False},
+                        {"text": "Chef de tête", "isCorrect": False}
                     ],
-                    "correction": "Le **harnais** est la protection individuelle essentielle pour éviter les chutes lors du travail en toiture, notamment lors de la mise en place de l'échafaudage."
+                    "correction": "Le pureau est la surface de l'ardoise (ou de la tuile) qui reçoit la pluie. C'est la partie qui n'est pas recouverte par les ardoises des rangs supérieurs."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Que signifie le terme 'Zonage' dans les DTU de couverture ?",
+                    "question": "Quel élément en bois permet de relever le premier rang de tuiles à l'égout ?",
                     "answerOptions": [
-                        {"text": "La délimitation de la zone de chantier.", "isCorrect": False},
-                        {"text": "La répartition du territoire français en zones de vent et de neige, impactant le calcul du recouvrement et la fixation des matériaux.", "isCorrect": True},
-                        {"text": "Le calcul de la surface du toit.", "isCorrect": False},
-                        {"text": "La vérification de l'accès au toit.", "isCorrect": False}
+                        {"text": "Chanlatte", "isCorrect": True},
+                        {"text": "Chevron", "isCorrect": False},
+                        {"text": "Panne", "isCorrect": False},
+                        {"text": "Contre-liteau", "isCorrect": False}
                     ],
-                    "correction": "Le **Zonage** (Zone 1, 2, 3) est essentiel. Une couverture en zone de vent élevée (ex: bord de mer) exige une fixation plus importante des matériaux."
+                    "correction": "La chanlatte est une pièce de bois biseautée (ou un liteau surélevé) fixée à l'égout. Elle permet de donner au premier rang la même inclinaison que les suivants (basculement)."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Quel est le risque majeur lié à la manipulation des vieilles plaques de fibrociment avant 1997 ?",
+                    "question": "Quelle est la formule théorique pour calculer le pureau d'une ardoise posée au crochet ?",
                     "answerOptions": [
-                        {"text": "La toxicité du plomb.", "isCorrect": False},
-                        {"text": "La présence d'Amiante (risque de cancer par inhalation de fibres).", "isCorrect": True},
-                        {"text": "Le risque électrique.", "isCorrect": False},
-                        {"text": "Une trop forte chaleur.", "isCorrect": False}
+                        {"text": "Longueur de l'ardoise moins le recouvrement divisé par deux", "isCorrect": True},
+                        {"text": "Longueur de l'ardoise plus le recouvrement divisé par deux", "isCorrect": False},
+                        {"text": "Longueur totale de l'ardoise divisée par trois", "isCorrect": False},
+                        {"text": "Hauteur du crochet multipliée par la pente du toit", "isCorrect": False}
                     ],
-                    "correction": "L'**Amiante** est très présent dans les plaques en fibrociment d'avant 1997. Des procédures strictes (EPI, confinement, traçabilité des déchets) doivent être respectées pour la dépose."
+                    "correction": "La formule P = (L - R) / 2 est fondamentale. Elle permet de déterminer l'espacement des liteaux pour que l'eau ne remonte pas au-delà de la tête de l'ardoise du rang inférieur."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Que doit-on vérifier avant d'utiliser une échelle pour monter en toiture ?",
+                    "question": "Quelle technique de pose est obligatoire pour les tuiles plates rectangulaires ?",
                     "answerOptions": [
-                        {"text": "Qu'elle est de couleur vive.", "isCorrect": False},
-                        {"text": "Qu'elle est stabilisée, dépasse d'au moins 1 mètre le point d'accès, et que l'angle d'inclinaison est d'environ 75°.", "isCorrect": True},
-                        {"text": "Qu'elle est en bois uniquement.", "isCorrect": False},
-                        {"text": "Qu'elle est attachée par une corde à la cheminée.", "isCorrect": False}
+                        {"text": "Joints croisés", "isCorrect": True},
+                        {"text": "Joints droits superposés", "isCorrect": False},
+                        {"text": "Pose en diagonale simple", "isCorrect": False},
+                        {"text": "Alignement vertical strict", "isCorrect": False}
                     ],
-                    "correction": "L'**angle de 75°** (règle du 4 pour 1 : 4 de hauteur pour 1 de base) est optimal pour la stabilité. Le dépassement de 1 m est pour faciliter la prise en main et la sécurisation du passage sur le toit."
+                    "correction": "Les tuiles plates doivent être posées à joints croisés (la tuile du dessus couvre le joint des deux tuiles du dessous) pour assurer l'étanchéité, contrairement à certaines tuiles canal à joints droits."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Quel est le DTU de référence pour les travaux de Charpente en Bois (assemblages) ?",
+                    "question": "Qu'est-ce qu'un 'arêtier' sur une toiture ?",
                     "answerOptions": [
-                        {"text": "DTU 40.11.", "isCorrect": False},
-                        {"text": "DTU 31.1.", "isCorrect": True},
-                        {"text": "DTU 43.3.", "isCorrect": False},
-                        {"text": "DTU 20.1.", "isCorrect": False}
+                        {"text": "Angle sortant", "isCorrect": True},
+                        {"text": "Angle rentrant", "isCorrect": False},
+                        {"text": "Mur pignon", "isCorrect": False},
+                        {"text": "Gouttière pendante", "isCorrect": False}
                     ],
-                    "correction": "Le **DTU 31.1** concerne les charpentes et escaliers en bois. Le couvreur doit connaître les bases pour évaluer et préparer le support."
+                    "correction": "L'arêtier est la ligne de rencontre de deux versants formant un angle saillant (sortant), par opposition à la noue qui forme un angle rentrant."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Pour quelle raison un couvreur ne doit-il jamais monter sur une couverture en verre synthétique (type polycarbonate) non supportée ?",
+                    "question": "Quel est le rôle principal d'une tuile chatière ?",
                     "answerOptions": [
-                        {"text": "Elle glisse trop.", "isCorrect": False},
-                        {"text": "Elle n'est pas faite pour être couverte.", "isCorrect": False},
-                        {"text": "Elle ne supporte pas le poids d'un homme et représente un risque de chute par traversée.", "isCorrect": True},
-                        {"text": "Elle est trop lourde.", "isCorrect": False}
+                        {"text": "Ventiler", "isCorrect": True},
+                        {"text": "Éclairer", "isCorrect": False},
+                        {"text": "Isoler", "isCorrect": False},
+                        {"text": "Décorer", "isCorrect": False}
                     ],
-                    "correction": "Les **matériaux légers ou non porteurs** (fibrociment, tôle fine, polycarbonate) nécessitent l'utilisation de planches de répartition de charge (passerelles) pour marcher sans risque."
+                    "correction": "La chatière est une tuile technique spécifique comportant une ouverture grillagée destinée à créer une circulation d'air sous la couverture pour éviter la condensation et le pourrissement des bois."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Quel est le rôle du 'Closoir de Faîtage' ?",
+                    "question": "Comment appelle-t-on la ligne supérieure horizontale de jonction de deux versants ?",
                     "answerOptions": [
-                        {"text": "Simplement un élément décoratif.", "isCorrect": False},
-                        {"text": "Assurer l'étanchéité à l'eau et au vent du faîtage tout en permettant la ventilation de la sous-face de la toiture.", "isCorrect": True},
-                        {"text": "Fixer les tuiles de rive.", "isCorrect": False},
-                        {"text": "Réduire la dilatation du zinc.", "isCorrect": False}
+                        {"text": "Faîtage", "isCorrect": True},
+                        {"text": "Rive latérale", "isCorrect": False},
+                        {"text": "Égout de toit", "isCorrect": False},
+                        {"text": "Solin de base", "isCorrect": False}
                     ],
-                    "correction": "Le **Closoir** (souvent ventilé et souple) est devenu indispensable. Il remplace le scellement au mortier pour les faîtages, permettant une meilleure durabilité et ventilation."
+                    "correction": "Le faîtage est le sommet du toit. Son étanchéité est critique et peut être réalisée à sec (closoir) ou au mortier (scellement)."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Dans quel cas doit-on prévoir un 'pare-vapeur' sous l'isolant dans le comble ?",
+                    "question": "Quelle est la fonction d'un closoir ventilé sous les faîtières ?",
                     "answerOptions": [
-                        {"text": "Jamais.", "isCorrect": False},
-                        {"text": "Uniquement pour l'isolation extérieure.", "isCorrect": False},
-                        {"text": "Pour empêcher la vapeur d'eau intérieure (habitation) de migrer dans l'isolant et de condenser.", "isCorrect": True},
-                        {"text": "Pour bloquer les insectes.", "isCorrect": False}
+                        {"text": "Assurer l'étanchéité et la ventilation en pose à sec", "isCorrect": True},
+                        {"text": "Coller définitivement les tuiles faîtières au support", "isCorrect": False},
+                        {"text": "Remplacer les tuiles faîtières en terre cuite", "isCorrect": False},
+                        {"text": "Empêcher totalement l'air de sortir par le haut", "isCorrect": False}
                     ],
-                    "correction": "Le **pare-vapeur** (ou frein-vapeur) est posé côté chaud (intérieur). Sans lui, la condensation dégrade l'isolant (perte d'efficacité) et la charpente."
+                    "correction": "Le closoir est un rouleau souple posé sur la lisse de rehausse. Il empêche l'eau et la neige poudreuse de pénétrer tout en laissant l'air chaud s'échapper du comble."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Quel terme désigne la dégradation du bois par un champignon qui mange la cellulose, provoquant un aspect cotonneux et une perte de résistance ?",
+                    "question": "Dans quel cas doit-on augmenter la valeur du recouvrement minimal ?",
                     "answerOptions": [
-                        {"text": "Le Vrillette.", "isCorrect": False},
-                        {"text": "La Termite.", "isCorrect": False},
-                        {"text": "La Mérule.", "isCorrect": True},
-                        {"text": "Le Capricorne.", "isCorrect": False}
+                        {"text": "Faible pente", "isCorrect": True},
+                        {"text": "Forte pente", "isCorrect": False},
+                        {"text": "Grand pureau", "isCorrect": False},
+                        {"text": "Petit format", "isCorrect": False}
                     ],
-                    "correction": "La **Mérule** est un champignon très dangereux qui dégrade rapidement les charpentes humides. Sa présence doit être signalée immédiatement."
+                    "correction": "Plus la pente du toit est faible, plus l'eau s'écoule lentement et risque de remonter par capillarité ou vent. Il faut donc augmenter le recouvrement pour garantir l'étanchéité."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Pourquoi la bâche ou la mise hors d'eau provisoire est-elle une étape critique du chantier de couverture ?",
+                    "question": "Quelle fixation est préconisée pour les tuiles de rive exposées au vent ?",
                     "answerOptions": [
-                        {"text": "Pour ne pas salir les murs.", "isCorrect": False},
-                        {"text": "Pour respecter l'esthétique du chantier.", "isCorrect": False},
-                        {"text": "Pour prévenir immédiatement les dégâts des eaux (infiltrations) sur la construction ou l'habitation.", "isCorrect": True},
-                        {"text": "Pour accélérer les travaux.", "isCorrect": False}
+                        {"text": "Vissage", "isCorrect": True},
+                        {"text": "Collage silicone", "isCorrect": False},
+                        {"text": "Pose libre", "isCorrect": False},
+                        {"text": "Mortier pur", "isCorrect": False}
                     ],
-                    "correction": "Le couvreur est responsable de l'**intégrité du bâtiment**. Il doit toujours s'assurer qu'en cas d'intempérie (pluie, neige), le toit en cours de réalisation est étanche."
+                    "correction": "Les rives sont les zones les plus sollicitées par le vent (dépression). Le vissage dans la charpente ou le liteau est la fixation mécanique la plus sûre."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Quel est le risque de travailler sur un toit rendu glissant par la pluie ou le gel ?",
+                    "question": "Qu'appelle-t-on 'le tranchis' dans une noue ouverte ?",
                     "answerOptions": [
-                        {"text": "Un risque de maladie.", "isCorrect": False},
-                        {"text": "Un risque de chute de hauteur accru (glissade).", "isCorrect": True},
-                        {"text": "Un risque de perte d'outils.", "isCorrect": False},
-                        {"text": "Un risque d'erreur de mesure.", "isCorrect": False}
+                        {"text": "La coupe biaisée des tuiles ou ardoises dans l'axe de la noue", "isCorrect": True},
+                        {"text": "La plaque de zinc qui récupère l'eau au fond de la noue", "isCorrect": False},
+                        {"text": "Le liteau supplémentaire posé le long de la pince", "isCorrect": False},
+                        {"text": "La première tuile entière posée avant la coupe", "isCorrect": False}
                     ],
-                    "correction": "Le travail en toiture doit être interrompu ou très fortement sécurisé en cas de pluie, gel, vent violent, ou neige. Le risque de chute est multiplié."
+                    "correction": "Le tranchis désigne l'alignement de la coupe des éléments de couverture (tuiles/ardoises) le long de la ligne de noue pour dégager le couloir d'écoulement des eaux."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quelle est la zone du toit la plus sensible à l'action du vent (soulèvement) ?",
+                    "question": "Quelle est la particularité de la pose des tuiles canal traditionnelles ?",
                     "answerOptions": [
-                        {"text": "Le milieu du versant.", "isCorrect": False},
-                        {"text": "Les rives, les faîtages et les arêtiers (périmètre et saillies).", "isCorrect": True},
-                        {"text": "La zone près de la noue.", "isCorrect": False},
-                        {"text": "Le pied de la cheminée.", "isCorrect": False}
+                        {"text": "Alternance de tuiles de courant et tuiles de couvert", "isCorrect": True},
+                        {"text": "Fixation obligatoire de chaque tuile par quatre clous", "isCorrect": False},
+                        {"text": "Utilisation exclusive sur des pentes supérieures à 60 degrés", "isCorrect": False},
+                        {"text": "Emboîtement mécanique latéral et longitudinal complexe", "isCorrect": False}
                     ],
-                    "correction": "Le **vent** crée une dépression (soulèvement) maximale sur les bords et les angles de la toiture. C'est pourquoi les fixations doivent y être renforcées (DTU)."
+                    "correction": "La pose traditionnelle se fait 'tige de botte' : une tuile de courant (dessous, creux vers le haut) et une tuile de couvert (dessus, creux vers le bas) qui chevauche deux courants."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quel est le rôle du 'Gardien de corps' sur un échafaudage de pied ?",
+                    "question": "Que signifie 'panacher' les ardoises ou les tuiles avant la pose ?",
                     "answerOptions": [
-                        {"text": "Le montant vertical.", "isCorrect": False},
-                        {"text": "La partie qui empêche la chute des ouvriers (garde-corps, lisse, sous-lisse et plinthe).", "isCorrect": True},
-                        {"text": "La liaison avec le bâtiment.", "isCorrect": False},
-                        {"text": "Le système de roue.", "isCorrect": False}
+                        {"text": "Mélanger les palettes pour harmoniser les nuances de couleur", "isCorrect": True},
+                        {"text": "Trier les éléments cassés pour les jeter à la benne", "isCorrect": False},
+                        {"text": "Mouiller les matériaux pour qu'ils ne glissent pas", "isCorrect": False},
+                        {"text": "Peindre les éléments avec une teinte différente", "isCorrect": False}
                     ],
-                    "correction": "Le **garde-corps** est une protection collective obligatoire contre les chutes de hauteur. Il doit être complet (lisse haute, sous-lisse, plinthe)."
+                    "correction": "Le panachage consiste à prélever les matériaux dans différentes palettes simultanément lors de la pose pour éviter de créer des zones de couleurs différentes (nuances de cuisson ou de carrière) sur le toit."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quelle est la règle de sécurité fondamentale lors du levage des matériaux en toiture (ex: tuiles, sacs de mortier) ?",
+                    "question": "À quoi sert la 'pince' réalisée au marteau sur une ardoise ?",
                     "answerOptions": [
-                        {"text": "Lever les matériaux à la main.", "isCorrect": False},
-                        {"text": "Utiliser un engin de levage vérifié (monte-matériaux) et s'assurer que la charge est stabilisée, ne passe pas au-dessus des ouvriers et que la zone est balisée.", "isCorrect": True},
-                        {"text": "Ne jamais lever plus de 10 kg.", "isCorrect": False},
-                        {"text": "Lever les matériaux en cas de vent fort.", "isCorrect": False}
+                        {"text": "Faciliter l'écoulement de l'eau entre les ardoises", "isCorrect": True},
+                        {"text": "Marquer l'emplacement exact du futur clou", "isCorrect": False},
+                        {"text": "Décorer le bord visible de l'ardoise", "isCorrect": False},
+                        {"text": "Renforcer la solidité de l'ardoise", "isCorrect": False}
                     ],
-                    "correction": "Le levage présente un double risque : chute de l'objet (blessure) et surcharge de l'engin (rupture). La **sécurité** passe par l'organisation de la zone."
+                    "correction": "Lors de la taille de l'ardoise, on réalise une coupe en biseau (épaufrure) appelée pince. Elle permet à l'eau de s'évaser et de ne pas remonter par capillarité entre les ardoises superposées."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Que représente la 'Zone 1' dans le zonage Vent des DTU ?",
+                    "question": "Quel accessoire empêche l'intrusion de petits animaux sous l'onde des tuiles à l'égout ?",
                     "answerOptions": [
-                        {"text": "La zone la plus exposée au vent.", "isCorrect": False},
-                        {"text": "La zone la moins exposée au vent (l'intérieur des terres, les plaines).", "isCorrect": True},
-                        {"text": "La zone de montagne.", "isCorrect": False},
-                        {"text": "La zone de bord de mer.", "isCorrect": False}
+                        {"text": "Peigne", "isCorrect": True},
+                        {"text": "Closoir", "isCorrect": False},
+                        {"text": "Solin", "isCorrect": False},
+                        {"text": "Noquet", "isCorrect": False}
                     ],
-                    "correction": "La **Zone 1** est la zone la moins contraignante pour le vent (vitesse de référence la plus faible), ce qui implique des exigences de fixation moindres."
+                    "correction": "Le peigne d'égout (ou barrière anti-nuisibles) comble le vide sous l'onde de la tuile tout en permettant le passage de l'air pour la ventilation basse."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quel est le risque lié à l'utilisation d'un chalumeau pour la soudure du zinc ou l'étanchéité bitumineuse ?",
+                    "question": "Quelle est la conséquence d'un 'pincement' au niveau du lattage ?",
                     "answerOptions": [
-                        {"text": "Le risque de fuite d'eau.", "isCorrect": False},
-                        {"text": "Le risque de brûlure et d'incendie de la charpente (point chaud).", "isCorrect": True},
-                        {"text": "Le risque électrique.", "isCorrect": False},
-                        {"text": "Le risque de soulèvement par le vent.", "isCorrect": False}
+                        {"text": "Les ardoises vont bailler et risquent de casser", "isCorrect": True},
+                        {"text": "L'étanchéité sera meilleure face au vent", "isCorrect": False},
+                        {"text": "Le pureau sera plus grand que prévu", "isCorrect": False},
+                        {"text": "La consommation de bois sera réduite", "isCorrect": False}
                     ],
-                    "correction": "Le chalumeau produit une très forte chaleur. Il est essentiel de s'assurer qu'il n'y a pas de matériaux inflammables à proximité et de disposer d'un extincteur."
+                    "correction": "Un pincement se produit si les liteaux ne sont pas parfaitement plans. L'ardoise ne pose pas à plat, elle 'baille' (se soulève), ce qui la rend fragile au vent et au poids (casse)."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Pourquoi le port de lunettes de protection (ou visière) est-il indispensable lors de la découpe de tuiles (à la disqueuse) ?",
+                    "question": "Où doit se situer la jonction de deux liteaux bout à bout ?",
                     "answerOptions": [
-                        {"text": "Pour éviter le bruit.", "isCorrect": False},
-                        {"text": "Pour se protéger des projections de poussière et d'éclats.", "isCorrect": True},
-                        {"text": "Pour avoir l'air professionnel.", "isCorrect": False},
-                        {"text": "Pour éviter la pluie.", "isCorrect": False}
+                        {"text": "Toujours sur un chevron", "isCorrect": True},
+                        {"text": "N'importe où entre deux chevrons", "isCorrect": False},
+                        {"text": "Exactement au milieu de l'entraxe", "isCorrect": False},
+                        {"text": "Uniquement sur les pannes pignon", "isCorrect": False}
                     ],
-                    "correction": "La découpe de matériaux (tuiles, ardoises) génère des **éclats** dangereux pour les yeux. Les lunettes ou la visière sont obligatoires."
+                    "correction": "Pour assurer la solidité de la structure, les aboutages de liteaux doivent impérativement se faire sur un support solide (le chevron) et jamais 'dans le vide'."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Comment s'appelle l'outil qui permet de mesurer précisément la pente d'un toit ?",
+                    "question": "Quelle pièce métallique assure l'étanchéité entre une couverture en ardoise et un mur latéral ?",
                     "answerOptions": [
-                        {"text": "Le Mètre ruban.", "isCorrect": False},
-                        {"text": "Le Niveau laser.", "isCorrect": False},
-                        {"text": "Le Décamètre.", "isCorrect": False},
-                        {"text": "L'inclinomètre (ou fausse équerre, ou équerre de charpentier spécialisée).", "isCorrect": True}
+                        {"text": "Noquet", "isCorrect": True},
+                        {"text": "Dousine", "isCorrect": False},
+                        {"text": "Lambourde", "isCorrect": False},
+                        {"text": "Chevêtre", "isCorrect": False}
                     ],
-                    "correction": "L'**inclinomètre** donne l'angle ou la pente directement. La pente est un facteur déterminant pour le choix du matériau de couverture et de son recouvrement (DTU)."
+                    "correction": "Les noquets sont des pièces métalliques pliées en équerre (souvent en zinc), glissées à chaque rang d'ardoise contre le mur, garantissant une étanchéité parfaite à chaque niveau."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Qu'est-ce qu'une 'échelle à crinoline' ?",
+                    "question": "Comment calcule-t-on le nombre de tuiles au mètre carré ?",
                     "answerOptions": [
-                        {"text": "Une échelle souple.", "isCorrect": False},
-                        {"text": "Une échelle fixe sécurisée par une enceinte métallique (arceaux) pour la protection contre les chutes.", "isCorrect": True},
-                        {"text": "Une échelle en bois.", "isCorrect": False},
-                        {"text": "Une échelle articulée.", "isCorrect": False}
+                        {"text": "1 divisé par la surface utile d'une tuile", "isCorrect": True},
+                        {"text": "Surface du toit divisée par le pureau", "isCorrect": False},
+                        {"text": "Largeur utile multipliée par le pureau", "isCorrect": False},
+                        {"text": "Pureau divisé par la largeur utile", "isCorrect": False}
                     ],
-                    "correction": "L'**échelle à crinoline** est utilisée pour les accès réguliers et sécurisés aux toitures-terrasses ou installations techniques sur de grandes hauteurs."
+                    "correction": "La consommation au m² se détermine par la formule : 1 / (Pureau × Largeur Utile). C'est indispensable pour réaliser le quantitatif (devis et commandes)."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quel est l'objectif principal du nettoyage du toit ('démoussage') ?",
+                    "question": "Quelle est la méthode correcte pour fixer une tuile à emboîtement sur le liteau ?",
                     "answerOptions": [
-                        {"text": "Améliorer l'esthétique uniquement.", "isCorrect": False},
-                        {"text": "Retirer les mousses et lichens qui retiennent l'humidité et dégradent la porosité des tuiles, réduisant ainsi leur étanchéité et leur résistance au gel.", "isCorrect": True},
-                        {"text": "Remplacer les tuiles.", "isCorrect": False},
-                        {"text": "Augmenter la dilatation du zinc.", "isCorrect": False}
+                        {"text": "Vissage ou clouage dans le trou pré-percé", "isCorrect": True},
+                        {"text": "Collage au mastic polyuréthane sur le dessus", "isCorrect": False},
+                        {"text": "Ligature au fil de fer recuit sous la tuile", "isCorrect": False},
+                        {"text": "Simple pose sans aucune fixation mécanique", "isCorrect": False}
                     ],
-                    "correction": "La **mousse** engendre des dégradations par rétention d'eau et cycles de gel/dégel. Le démoussage prévient les fuites et prolonge la durée de vie du toit."
+                    "correction": "Les tuiles à emboîtement disposent de trous pré-percés en tête. On utilise des vis ou des clous crantés pour les fixer au liteau, selon les règles 'au vent' définies par les DTU."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 4 : TECHNIQUES DE POSE ET RÉPARATIONS (Q. 61-80)
+        # THÈME 4 : MÉTAUX, ZINGUERIE ET ÉVACUATION DES EAUX PLUVIALES (Questions 61 à 80)
         # =========================================================================
         4: {
-            "name": "4. Techniques de Pose et Réparations (Q. 61-80)",
+            "name": "THÈME 4 : MÉTAUX, ZINGUERIE ET ÉVACUATION DES EAUX PLUVIALES",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quelle est la technique utilisée pour poser les ardoises qui donne l'effet 'écailles' (bord supérieur arrondi) et utilise un clou par ardoise ?",
+                    "question": "Quelle opération prépare la panne du fer à souder avant son utilisation ?",
                     "answerOptions": [
-                        {"text": "La pose à lattes.", "isCorrect": False},
-                        {"text": "La pose au clou (ou clouage direct).", "isCorrect": True},
-                        {"text": "La pose à claire-voie.", "isCorrect": False},
-                        {"text": "La pose d'ardoise d'ornementation.", "isCorrect": False}
+                        {"text": "L'étamage", "isCorrect": True},
+                        {"text": "Le limage à froid", "isCorrect": False},
+                        {"text": "Le trempage à l'eau", "isCorrect": False},
+                        {"text": "Le graissage à l'huile", "isCorrect": False}
                     ],
-                    "correction": "Le **clouage direct** est la technique la plus traditionnelle, notamment en régions à fort vent, car elle offre une grande résistance (la fixation est masquée par l'ardoise du rang supérieur)."
+                    "correction": "L'étamage consiste à recouvrir la pointe en cuivre du fer d'une fine couche d'étain fondu. Cela facilite le transfert de chaleur et l'adhérence de la soudure lors du travail."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Comment appelle-t-on la méthode de pose qui consiste à utiliser des lattes de bois espacées pour supporter les tuiles (le cas le plus fréquent) ?",
+                    "question": "Quelle est la pente minimale conventionnelle (DTU) pour une gouttière pendante ?",
                     "answerOptions": [
-                        {"text": "Le Voligeage.", "isCorrect": False},
-                        {"text": "Le Chevrons.", "isCorrect": False},
-                        {"text": "Le Liteaunage (ou lattage).", "isCorrect": True},
-                        {"text": "La Couverture sèche.", "isCorrect": False}
+                        {"text": "5 mm par mètre", "isCorrect": True},
+                        {"text": "2 cm par mètre", "isCorrect": False},
+                        {"text": "10 mm par mètre", "isCorrect": False},
+                        {"text": "0 mm par mètre", "isCorrect": False}
                     ],
-                    "correction": "Le **liteaunage** est la pose des lattes de bois (liteaux) sur les chevrons ou contreliteaux. L'espacement correspond au pureau des tuiles."
+                    "correction": "Pour assurer un bon écoulement de l'eau et son auto-curage (évacuation des débris), une pente minimale de 5 mm/m est requise par le DTU 40.5."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Quelle est l'étape essentielle avant toute pose de liteaux (ou lattage) ?",
+                    "question": "Quel phénomène chimique se produit si on met en contact direct du cuivre et du zinc ?",
                     "answerOptions": [
-                        {"text": "La pose des arêtiers.", "isCorrect": False},
-                        {"text": "Le Traçage des lignes de pureau et de l'égout.", "isCorrect": True},
-                        {"text": "La découpe de toutes les tuiles.", "isCorrect": False},
-                        {"text": "Le levage des matériaux.", "isCorrect": False}
+                        {"text": "Électrolyse", "isCorrect": True},
+                        {"text": "Polymérisation", "isCorrect": False},
+                        {"text": "Sublimation", "isCorrect": False},
+                        {"text": "Condensation", "isCorrect": False}
                     ],
-                    "correction": "Le **traçage** est indispensable pour positionner les liteaux à l'entraxe exact du pureau, garantissant que les tuiles s'alignent et que le recouvrement est respecté sur toute la hauteur."
+                    "correction": "L'électrolyse (ou couple galvanique) provoque la corrosion rapide du zinc (métal moins noble) par le cuivre en présence d'humidité. Il faut toujours isoler ces deux métaux."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Lors du remplacement d'une tuile cassée, quel outil permet de la retirer sans soulever excessivement les tuiles voisines (afin de ne pas les casser) ?",
+                    "question": "Quel type de gouttière repose directement sur une corniche ou un entablement ?",
                     "answerOptions": [
-                        {"text": "Un Pied-de-biche.", "isCorrect": False},
-                        {"text": "Un Égoïne.", "isCorrect": False},
-                        {"text": "Un Crochet d'extraction (ou lève-tuile).", "isCorrect": True},
-                        {"text": "Une Cisaille.", "isCorrect": False}
+                        {"text": "Nantaise", "isCorrect": True},
+                        {"text": "Pendante", "isCorrect": False},
+                        {"text": "Demi-ronde", "isCorrect": False},
+                        {"text": "Carrée", "isCorrect": False}
                     ],
-                    "correction": "Le **lève-tuile** permet de soulever délicatement les tuiles des rangs supérieurs pour dégager la tuile à remplacer et pour la glisser en place."
+                    "correction": "La gouttière nantaise (ou havraise selon le profil) est une gouttière rampante posée sur le bas du versant ou sur une corniche, contrairement à la gouttière pendante fixée par des crochets sous l'égout."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est l'inconvénient principal de la pose de tuiles scellées au mortier (traditionnelle) par rapport à la pose sèche ?",
+                    "question": "À quoi sert le décapant (ou eau à souder) appliqué sur le zinc ?",
                     "answerOptions": [
-                        {"text": "C'est plus rapide.", "isCorrect": False},
-                        {"text": "Le mortier peut se fissurer (gel/dégel) et le faîtage/rive n'est pas ventilé, entraînant des risques de condensation.", "isCorrect": True},
-                        {"text": "Le coût du mortier est trop faible.", "isCorrect": False},
-                        {"text": "Le mortier s'écaille.", "isCorrect": False}
+                        {"text": "Nettoyer chimiquement la zone à souder", "isCorrect": True},
+                        {"text": "Refroidir le métal avant la soudure", "isCorrect": False},
+                        {"text": "Coller les deux pièces ensemble", "isCorrect": False},
+                        {"text": "Donner une couleur brillante au zinc", "isCorrect": False}
                     ],
-                    "correction": "La **pose sèche** (avec closoirs ventilés) est aujourd'hui la norme, car elle offre une meilleure durabilité, résilience aux mouvements et ventilation."
+                    "correction": "Le décapant dissout les oxydes présents en surface du métal. Sans lui, l'étain n'adhère pas et la soudure est impossible."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Lors de la pose des tuiles mécaniques, dans quel sens (horizontal) doit-on progresser ?",
+                    "question": "Quelle est l'épaisseur standard la plus courante pour une feuille de zinc en couverture ?",
                     "answerOptions": [
-                        {"text": "De haut en bas.", "isCorrect": False},
-                        {"text": "De bas en haut, et de droite à gauche (pour un droitier, afin de reposer le pied sur les tuiles déjà posées).", "isCorrect": True},
-                        {"text": "De gauche à droite, puis de haut en bas.", "isCorrect": False},
-                        {"text": "Du centre vers les rives.", "isCorrect": False}
+                        {"text": "0,65 mm", "isCorrect": True},
+                        {"text": "2,50 mm", "isCorrect": False},
+                        {"text": "0,10 mm", "isCorrect": False},
+                        {"text": "5,00 mm", "isCorrect": False}
                     ],
-                    "correction": "La pose commence à l'égout (bas) pour remonter au faîtage. La progression latérale dépend de la main dominante du couvreur (travailler sur la partie déjà couverte)."
+                    "correction": "Les épaisseurs normalisées pour le zinc de couverture sont 0,65 mm, 0,70 mm et 0,80 mm (les numéros 12, 13 et 14). Le 0,65 mm est le standard usuel."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Quel est le risque de réaliser des coupes de tuiles à l'intérieur du bâtiment (dans le comble) ?",
+                    "question": "Quel accessoire permet d'absorber les variations de longueur d'une longue gouttière ?",
                     "answerOptions": [
-                        {"text": "Salissure des murs.", "isCorrect": False},
-                        {"text": "L'inhalation de poussières de silice (nocives pour les poumons) et le risque d'incendie (étincelles).", "isCorrect": True},
-                        {"text": "Un risque de contact avec la charpente.", "isCorrect": False},
-                        {"text": "Le bris de la tuile.", "isCorrect": False}
+                        {"text": "Joint de dilatation", "isCorrect": True},
+                        {"text": "Talon de naissance", "isCorrect": False},
+                        {"text": "Crapaudine", "isCorrect": False},
+                        {"text": "Dauphin en fonte", "isCorrect": False}
                     ],
-                    "correction": "La **découpe** doit toujours être faite à l'extérieur (ou sous aspiration forcée) avec le port d'un masque FFP3 pour se protéger des poussières."
+                    "correction": "Le zinc se dilate fortement à la chaleur. Au-delà de 12 mètres linéaires, il est obligatoire d'installer un joint de dilatation pour éviter la rupture des soudures."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Comment assure-t-on la fixation des tuiles de faîtage (pièces de finition) ?",
+                    "question": "Comment appelle-t-on le façonnage cylindrique en bordure d'une feuille de zinc ?",
                     "answerOptions": [
-                        {"text": "Uniquement par emboîtement.", "isCorrect": False},
-                        {"text": "Par des crochets spécifiques, des vis inox et un closoir ventilé (pose sèche).", "isCorrect": True},
-                        {"text": "Elles ne sont jamais fixées.", "isCorrect": False},
-                        {"text": "Par un simple ruban adhésif.", "isCorrect": False}
+                        {"text": "Ourlet", "isCorrect": True},
+                        {"text": "Pliage", "isCorrect": False},
+                        {"text": "Relevé", "isCorrect": False},
+                        {"text": "Solin", "isCorrect": False}
                     ],
-                    "correction": "Les tuiles de **faîtage** sont les plus exposées au vent et doivent être obligatoirement fixées (mécaniquement), surtout en zone ventée."
+                    "correction": "L'ourlet (ou boudin) est un roulotté du métal sur lui-même. Il sert à rigidifier le bord de la feuille et à le rendre non coupant."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Qu'est-ce qu'une 'Couverture à tasseaux' en zinguerie ?",
+                    "question": "Quelle pince est utilisée pour élargir l'extrémité d'un tuyau de descente femelle ?",
                     "answerOptions": [
-                        {"text": "Une couverture temporaire.", "isCorrect": False},
-                        {"text": "Une technique traditionnelle où les feuilles de zinc sont raccordées par des profilés bois recouverts d'une bande métallique (couvre-joint).", "isCorrect": True},
-                        {"text": "Une toiture plate.", "isCorrect": False},
-                        {"text": "Une toiture en ardoise.", "isCorrect": False}
+                        {"text": "Pince à emboîture", "isCorrect": True},
+                        {"text": "Pince à rétreindre", "isCorrect": False},
+                        {"text": "Pince à sertir", "isCorrect": False},
+                        {"text": "Pince coupante", "isCorrect": False}
                     ],
-                    "correction": "La **couverture à tasseaux** est une technique ancienne qui permet l'étanchéité et la dilatation sur les toitures monumentales ou de faible pente. Elle est remplacée par le joint debout pour les toits modernes."
+                    "correction": "La pince à emboîture écarte le métal pour créer la partie femelle, tandis que la pince à rétreindre (ou à soyer) réduit le diamètre pour créer la partie mâle."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Quel est le rôle du 'garde-neige' sur une toiture ?",
+                    "question": "Quel bois est formellement interdit en support direct d'une couverture en zinc ?",
                     "answerOptions": [
-                        {"text": "Empêcher le vent de s'infiltrer.", "isCorrect": False},
-                        {"text": "Empêcher la neige (et la glace) de glisser brutalement du toit (avalanches) et de blesser les passants ou endommager les installations.", "isCorrect": True},
-                        {"text": "Réduire le poids de la neige.", "isCorrect": False},
-                        {"text": "Isoler la toiture.", "isCorrect": False}
+                        {"text": "Chêne", "isCorrect": True},
+                        {"text": "Sapin", "isCorrect": False},
+                        {"text": "Épicéa", "isCorrect": False},
+                        {"text": "Peuplier", "isCorrect": False}
                     ],
-                    "correction": "Le **garde-neige** est obligatoire en zone montagneuse ou pour les toitures très exposées au gel, afin de retenir la masse de neige et éviter les accidents."
+                    "correction": "Le chêne et le châtaignier sont des bois riches en tanins. En présence d'humidité, ces tanins attaquent le zinc par acidité. On utilise exclusivement des résineux (sapin, épicéa)."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Lors de la pose d'une fenêtre de toit (type Vélux), quelle est l'étape essentielle pour l'étanchéité ?",
+                    "question": "Quel est le métal d'apport utilisé pour souder le zinc ?",
                     "answerOptions": [
-                        {"text": "L'utilisation de vitrage teinté.", "isCorrect": False},
-                        {"text": "La pose d'un raccord d'étanchéité spécifique au modèle de tuile (ou ardoise) et au respect des pentes minimales.", "isCorrect": True},
-                        {"text": "La fixation du dormant uniquement.", "isCorrect": False},
-                        {"text": "La vérification de l'isolation.", "isCorrect": False}
+                        {"text": "Alliage étain-plomb", "isCorrect": True},
+                        {"text": "Aluminium pur", "isCorrect": False},
+                        {"text": "Cuivre rouge", "isCorrect": False},
+                        {"text": "Acier doux", "isCorrect": False}
                     ],
-                    "correction": "Le **raccord d'étanchéité** (ou 'kit costière') permet de faire la transition entre l'élément vertical de la fenêtre et la couverture inclinée, assurant l'écoulement de l'eau."
+                    "correction": "La soudure du zinc se fait à l'aide d'une baguette d'alliage étain (33%) et plomb (67%), fondant à une température inférieure à celle du zinc."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Pour une pose en ardoises au crochet, que représente le 'recouvrement' (R) ?",
+                    "question": "Quelle est la largeur de recouvrement minimale pour une soudure à plat ?",
                     "answerOptions": [
-                        {"text": "La longueur du crochet.", "isCorrect": False},
-                        {"text": "La distance entre le bas d'une ardoise et le haut de la troisième ardoise du rang inférieur (la partie non couverte par la 2e ardoise).", "isCorrect": True},
-                        {"text": "Le pureau divisé par deux.", "isCorrect": False},
-                        {"text": "La largeur de l'ardoise.", "isCorrect": False}
+                        {"text": "10 mm", "isCorrect": True},
+                        {"text": "2 mm", "isCorrect": False},
+                        {"text": "50 mm", "isCorrect": False},
+                        {"text": "1 mm", "isCorrect": False}
                     ],
-                    "correction": "Le **recouvrement** est le calcul le plus important en ardoise, car il garantit que trois épaisseurs d'ardoises sont superposées à chaque point, assurant l'étanchéité."
+                    "correction": "Pour garantir la solidité mécanique de la jonction par capillarité, les feuilles de métal doivent se chevaucher d'au moins 10 mm sur une partie plane."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quel est le risque de poser des tuiles mécaniques sur une pente inférieure à celle autorisée par le fabricant et le DTU ?",
+                    "question": "Qu'est-ce qu'une 'naissance' en zinguerie ?",
                     "answerOptions": [
-                        {"text": "Le soulèvement par le vent.", "isCorrect": False},
-                        {"text": "Le matériau sera trop léger.", "isCorrect": False},
-                        {"text": "Un risque d'infiltration et de fuite, car l'eau n'aura pas le temps de s'écouler sur le recouvrement (effet de lame d'eau).", "isCorrect": True},
-                        {"text": "Une mauvaise isolation.", "isCorrect": False}
+                        {"text": "La pièce de raccordement entre la gouttière et le tuyau de descente", "isCorrect": True},
+                        {"text": "Le premier crochet posé en haut de la pente de la gouttière", "isCorrect": False},
+                        {"text": "Le début d'une bande de plomb sur une cheminée", "isCorrect": False},
+                        {"text": "L'outil servant à tracer les cercles sur le métal", "isCorrect": False}
                     ],
-                    "correction": "La **pente minimale** est une exigence d'étanchéité. Si elle n'est pas respectée, la tuile est moins efficace contre l'eau."
+                    "correction": "La naissance (ou moignon) est l'élément soudé ou agrafé sur la gouttière pour diriger l'eau vers le tuyau de descente vertical."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quel outil est le plus adapté pour la découpe d'ardoises naturelles (à la main) ?",
+                    "question": "Quel est l'espacement maximal recommandé entre deux crochets de gouttière ?",
                     "answerOptions": [
-                        {"text": "La Disqueuse (meuleuse).", "isCorrect": False},
-                        {"text": "Le Couteau d'ardoise (ou rogne-ardoise).", "isCorrect": True},
-                        {"text": "Le Ciseau à bois.", "isCorrect": False},
-                        {"text": "La Scie sauteuse.", "isCorrect": False}
+                        {"text": "50 cm", "isCorrect": True},
+                        {"text": "100 cm", "isCorrect": False},
+                        {"text": "150 cm", "isCorrect": False},
+                        {"text": "10 cm", "isCorrect": False}
                     ],
-                    "correction": "Le **rogne-ardoise** (ou marteau d'ardoise) est l'outil traditionnel du couvreur, qui permet de couper et de percer l'ardoise rapidement et précisément."
+                    "correction": "Selon le DTU 40.5, les crochets doivent être espacés de 50 cm maximum pour soutenir le poids de la gouttière remplie d'eau (ou de neige/glace) sans qu'elle ne fléchisse."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quel est le nom de la tuile plate utilisée pour la transition entre la couverture et la planche de rive (bord latéral) ?",
+                    "question": "Quel système de couverture zinc est privilégié pour les toitures à faible pente et grande surface ?",
                     "answerOptions": [
-                        {"text": "La Tuile chatière.", "isCorrect": False},
-                        {"text": "La Tuile de rive (ou demi-tuile de rive).", "isCorrect": True},
-                        {"text": "La Tuile faîtière.", "isCorrect": False},
-                        {"text": "La Tuile à douille.", "isCorrect": False}
+                        {"text": "Le joint debout", "isCorrect": True},
+                        {"text": "La couverture à tasseaux", "isCorrect": False},
+                        {"text": "La plaque ondulée", "isCorrect": False},
+                        {"text": "La pose à clins", "isCorrect": False}
                     ],
-                    "correction": "La **Tuile de rive** (ou tuile bordure) est une tuile spécifique qui assure l'étanchéité et la protection des éléments de charpente sur le côté du toit."
+                    "correction": "Le joint debout est une technique de sertissage mécanique des feuilles de zinc sur toute leur longueur. Elle offre une étanchéité parfaite même par vent fort et permet la dilatation libre."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Comment calcule-t-on le nombre de liteaux nécessaires pour un versant ?",
+                    "question": "Quelle pièce assure l'étanchéité entre une cheminée et la toiture en partie haute (amont) ?",
                     "answerOptions": [
-                        {"text": "En multipliant la largeur par la longueur du toit.", "isCorrect": False},
-                        {"text": "En divisant la longueur de la rampant (en hauteur) par le pureau majoré du recouvrement.", "isCorrect": False},
-                        {"text": "En divisant la longueur de la rampant (en hauteur) par le pureau.", "isCorrect": True},
-                        {"text": "En multipliant le nombre de chevrons par deux.", "isCorrect": False}
+                        {"text": "La besace", "isCorrect": True},
+                        {"text": "La bavette", "isCorrect": False},
+                        {"text": "Le noquet", "isCorrect": False},
+                        {"text": "Le solin", "isCorrect": False}
                     ],
-                    "correction": "Le nombre de rangées est obtenu par la division de la **hauteur de rampant par le pureau**. Il faut souvent ajuster la ligne de faîtage et d'égout (faux-pureau)."
+                    "correction": "Derrière la cheminée (côté faîtage), l'eau s'accumule. On installe une 'besace' (ou dos d'âne) en zinc pour diviser le flux d'eau et le renvoyer de chaque côté de la souche."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quelle est la particularité d'une 'Tuile à douille' ?",
+                    "question": "Quelle protection le couvreur doit-il utiliser lors de l'application d'acide chlorhydrique pur ?",
                     "answerOptions": [
-                        {"text": "Elle permet la ventilation.", "isCorrect": False},
-                        {"text": "Elle permet le passage de conduits (ex: antenne, VMC, raccordement de panneau solaire).", "isCorrect": True},
-                        {"text": "Elle est plus légère.", "isCorrect": False},
-                        {"text": "Elle est utilisée pour le faîtage.", "isCorrect": False}
+                        {"text": "Gants et lunettes étanches", "isCorrect": True},
+                        {"text": "Casque anti-bruit simple", "isCorrect": False},
+                        {"text": "Chaussures de sécurité", "isCorrect": False},
+                        {"text": "Ceinture de maintien", "isCorrect": False}
                     ],
-                    "correction": "La **Tuile à douille** est utilisée pour assurer la traversée du toit par un élément technique tout en maintenant l'étanchéité."
+                    "correction": "La préparation du décapant (zinc coupé à l'esprit de sel) dégage des vapeurs toxiques et le liquide est corrosif. La protection des yeux et des mains est vitale contre les brûlures chimiques."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Qu'est-ce qu'une 'Pente minimal' en couverture ?",
+                    "question": "Qu'appelle-t-on 'le développé' d'une gouttière ?",
                     "answerOptions": [
-                        {"text": "La pente maximale autorisée par le DTU.", "isCorrect": False},
-                        {"text": "La pente au-dessous de laquelle le système de couverture choisi (matériau et recouvrement) n'est plus étanche.", "isCorrect": True},
-                        {"text": "La pente d'un toit-terrasse.", "isCorrect": False},
-                        {"text": "La pente la plus esthétique.", "isCorrect": False}
+                        {"text": "La largeur de la bande de métal avant façonnage", "isCorrect": True},
+                        {"text": "La longueur totale de la toiture du bâtiment", "isCorrect": False},
+                        {"text": "Le volume d'eau qu'elle peut contenir", "isCorrect": False},
+                        {"text": "La distance entre deux descentes", "isCorrect": False}
                     ],
-                    "correction": "La **pente minimale** est une donnée technique cruciale qui dépend du matériau, du type de pose et de la zone climatique."
+                    "correction": "Le développé (ex: DEV 25 ou DEV 33) correspond à la largeur de la feuille de zinc à plat nécessaire pour fabriquer le profil de la gouttière."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel est l'élément qui permet la transition étanche entre une noue et les tuiles des deux versants adjacents ?",
+                    "question": "Quel accessoire termine une gouttière à ses extrémités ?",
                     "answerOptions": [
-                        {"text": "Un solin maçonné.", "isCorrect": False},
-                        {"text": "Un chéneau de noue (en zinc ou en membrane).", "isCorrect": True},
-                        {"text": "Un joint debout.", "isCorrect": False},
-                        {"text": "Une tuile canal.", "isCorrect": False}
+                        {"text": "Talon", "isCorrect": True},
+                        {"text": "Coude", "isCorrect": False},
+                        {"text": "Bague", "isCorrect": False},
+                        {"text": "Clou", "isCorrect": False}
                     ],
-                    "correction": "La **Noue** (angle rentrant) exige une pièce métallique (chéneau de noue) ou une membrane qui récolte l'eau des deux versants avant qu'elle ne rejoigne l'égout."
+                    "correction": "Le talon (ou fond de gouttière) est la pièce demi-circulaire ou plate soudée à l'extrémité de la gouttière pour fermer le profil et empêcher l'eau de sortir par le bout."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "En cas de réparation, comment se nomme la technique qui consiste à injecter un produit chimique sur les tuiles pour ralentir le retour des mousses et lichens ?",
+                    "question": "Comment fixe-t-on généralement un abergement de cheminée sur la souche en maçonnerie ?",
                     "answerOptions": [
-                        {"text": "L'Hydrofuge.", "isCorrect": True},
-                        {"text": "Le Cimentage.", "isCorrect": False},
-                        {"text": "Le Décapage.", "isCorrect": False},
-                        {"text": "L'Anticorrosion.", "isCorrect": False}
+                        {"text": "Bande de porte-solin vissée et joint mastic", "isCorrect": True},
+                        {"text": "Simple collage au mortier ciment", "isCorrect": False},
+                        {"text": "Clouage direct dans la brique creuse", "isCorrect": False},
+                        {"text": "Pose libre sans aucune fixation", "isCorrect": False}
                     ],
-                    "correction": "L'**Hydrofuge** (souvent incolore) est un traitement qui pénètre le matériau poreux (tuile de terre cuite, béton) et le rend plus imperméable, limitant la rétention d'eau et la prolifération végétale."
+                    "correction": "La partie supérieure (solin) est maintenue par une bande métallique (porte-solin) vissée mécaniquement dans la maçonnerie, avec un joint mastic (engravure) pour l'étanchéité à l'eau de ruissellement."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 5 : CHARPENTE, VMC ET ISOLATION (Q. 81-100)
+        # THÈME 5 : LECTURE DE PLAN, CALEPINAGE ET GÉOMÉTRIE (Questions 81 à 100)
         # =========================================================================
         5: {
-            "name": "5. Charpente, VMC et Isolation (Q. 81-100)",
+            "name": "THÈME 5 : LECTURE DE PLAN, CALEPINAGE ET GÉOMÉTRIE DE TOIT",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel est le rôle du 'chevron' dans la charpente traditionnelle ?",
+                    "question": "Quelle est la longueur réelle d'un mur mesurant 10 cm sur un plan à l'échelle 1/50 ?",
                     "answerOptions": [
-                        {"text": "Soutenir la panne faîtière.", "isCorrect": False},
-                        {"text": "Transmettre les charges de la couverture aux pannes (il est posé dans le sens de la pente).", "isCorrect": True},
-                        {"text": "Faire la liaison avec le mur.", "isCorrect": False},
-                        {"text": "Permettre la fixation des liteaux uniquement.", "isCorrect": False}
+                        {"text": "5 mètres", "isCorrect": True},
+                        {"text": "50 mètres", "isCorrect": False},
+                        {"text": "10 mètres", "isCorrect": False},
+                        {"text": "1 mètre", "isCorrect": False}
                     ],
-                    "correction": "Les **chevrons** sont les pièces qui courent des pannes aux pannes (sablière à faîtière). Ils reçoivent les liteaux et sont les premiers éléments à supporter la couverture."
+                    "correction": "L'échelle 1/50 signifie que 1 cm sur le plan égale 50 cm en réalité. Donc 10 cm x 50 = 500 cm, soit 5 mètres."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Qu'est-ce qu'une 'ferme' de charpente ?",
+                    "question": "À quoi correspond une pente de toit de 100 % ?",
                     "answerOptions": [
-                        {"text": "Un petit élément de remplissage.", "isCorrect": False},
-                        {"text": "Un élément porteur principal (triangle) qui transmet le poids de la toiture aux murs porteurs.", "isCorrect": True},
-                        {"text": "La fixation des tuiles.", "isCorrect": False},
-                        {"text": "La partie basse de la toiture.", "isCorrect": False}
+                        {"text": "45 degrés", "isCorrect": True},
+                        {"text": "90 degrés", "isCorrect": False},
+                        {"text": "100 degrés", "isCorrect": False},
+                        {"text": "10 degrés", "isCorrect": False}
                     ],
-                    "correction": "La **ferme** est un assemblage de pièces (entrait, arbalétrier, poinçon) qui donne sa forme à la toiture et supporte l'ensemble des pannes."
+                    "correction": "Une pente de 100 % signifie qu'on s'élève de 1 mètre verticalement pour 1 mètre horizontalement. Cela forme un triangle rectangle isocèle dont l'angle est de 45°."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Quel est le rôle du 'poinçon' dans une ferme traditionnelle ?",
+                    "question": "Quel théorème de géométrie permet de calculer la longueur du rampant si l'on connaît la hauteur et la projection horizontale ?",
                     "answerOptions": [
-                        {"text": "Relier les arbalétriers et les entraits au centre (pièce verticale).", "isCorrect": True},
-                        {"text": "Soutenir les chevrons.", "isCorrect": False},
-                        {"text": "Former la noue.", "isCorrect": False},
-                        {"text": "Fixer les liteaux.", "isCorrect": False}
+                        {"text": "Pythagore", "isCorrect": True},
+                        {"text": "Thalès", "isCorrect": False},
+                        {"text": "Archimède", "isCorrect": False},
+                        {"text": "Newton", "isCorrect": False}
                     ],
-                    "correction": "Le **poinçon** est la pièce centrale verticale de la ferme, souvent couronnée par la panne faîtière."
+                    "correction": "Le triangle formé par la hauteur, la projection horizontale et le rampant est un triangle rectangle. Le théorème de Pythagore (a² + b² = c²) permet de calculer l'hypoténuse (le rampant)."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Lors de la pose de l'isolant entre chevrons, quelle est la précaution essentielle à prendre concernant l'écran sous-toiture (EST) ?",
+                    "question": "Que représente la 'vue en plan' sur un dossier technique ?",
                     "answerOptions": [
-                        {"text": "L'isoler complètement du soleil.", "isCorrect": False},
-                        {"text": "Assurer une lame d'air de ventilation de 2 cm minimum entre l'isolant et l'EST (sauf EST HPV).", "isCorrect": True},
-                        {"text": "Le coller directement à l'isolant.", "isCorrect": False},
-                        {"text": "L'enlever après la pose de l'isolant.", "isCorrect": False}
+                        {"text": "La toiture vue de dessus", "isCorrect": True},
+                        {"text": "La toiture vue de face", "isCorrect": False},
+                        {"text": "La charpente coupée au milieu", "isCorrect": False},
+                        {"text": "Le détail du faîtage zoomé", "isCorrect": False}
                     ],
-                    "correction": "Si l'EST n'est pas de type 'Haute Perméabilité à la Vapeur' (HPV), une **lame d'air** doit être ménagée pour l'évacuation de l'humidité du comble."
+                    "correction": "La vue en plan est une projection horizontale géométrale, c'est-à-dire une représentation de l'ouvrage vu du dessus, 'à vol d'oiseau'."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Dans le cas d'une couverture en ardoise, quel est le rôle d'un 'Coyau' ?",
+                    "question": "Qu'est-ce que le 'calepinage' avant la pose ?",
                     "answerOptions": [
-                        {"text": "Le coyau est un élément décoratif uniquement.", "isCorrect": False},
-                        {"text": "C'est une petite pièce de bois ajoutée aux chevrons pour donner une légère courbure (redent) à l'égout, facilitant l'écoulement.", "isCorrect": True},
-                        {"text": "C'est un type de liteau.", "isCorrect": False},
-                        {"text": "C'est le nom du crochet.", "isCorrect": False}
+                        {"text": "Le calcul de répartition des éléments pour éviter les coupes inutiles", "isCorrect": True},
+                        {"text": "Le nettoyage complet du support de couverture", "isCorrect": False},
+                        {"text": "La pose de l'isolant thermique entre les chevrons", "isCorrect": False},
+                        {"text": "La mesure de la hauteur du bâtiment au laser", "isCorrect": False}
                     ],
-                    "correction": "Le **Coyau** permet de 'redresser' le bas de pente, améliorant l'esthétique et évitant que l'eau ne stagne à l'égout."
+                    "correction": "Le calepinage est l'étude préalable qui détermine le nombre de rangs et l'espacement exact (pureau) pour que la couverture tombe juste (sans coupe) à l'égout et au faîtage."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Qu'est-ce qu'une 'VMC' (Ventilation Mécanique Contrôlée) ?",
+                    "question": "Dans un cartouche de plan, que signifie le symbole d'une flèche pointant vers le haut avec la lettre N ?",
                     "answerOptions": [
-                        {"text": "Un chauffage d'appoint.", "isCorrect": False},
-                        {"text": "Un système qui assure le renouvellement permanent de l'air dans le bâtiment.", "isCorrect": True},
-                        {"text": "Un système de toiture plate.", "isCorrect": False},
-                        {"text": "Un type de tuile.", "isCorrect": False}
+                        {"text": "L'orientation Nord", "isCorrect": True},
+                        {"text": "Le sens de la pente", "isCorrect": False},
+                        {"text": "La direction du vent dominant", "isCorrect": False},
+                        {"text": "Le point le plus haut du toit", "isCorrect": False}
                     ],
-                    "correction": "Le couvreur doit s'assurer que les sorties de **VMC** (bouches à douille) sont correctement posées et étanches, et que la ventilation générale de la toiture est assurée."
+                    "correction": "Cette rose des vents simplifiée indique le Nord géographique, ce qui est essentiel pour déterminer l'exposition des versants aux intempéries."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Lors d'une réparation de charpente, quel type d'attaque du bois doit être traité par injection de produit fongicide et insecticide ?",
+                    "question": "Comment appelle-t-on la distance horizontale entre le mur de façade et l'aplomb du faîtage ?",
                     "answerOptions": [
-                        {"text": "L'humidité simple.", "isCorrect": False},
-                        {"text": "Les attaques de termites, capricornes et vrillettes (insectes xylophages).", "isCorrect": True},
-                        {"text": "Le soulèvement par le vent.", "isCorrect": False},
-                        {"text": "L'usure naturelle.", "isCorrect": False}
+                        {"text": "La projection horizontale", "isCorrect": True},
+                        {"text": "Le rampant réel", "isCorrect": False},
+                        {"text": "La hauteur sous flèche", "isCorrect": False},
+                        {"text": "La longueur développée", "isCorrect": False}
                     ],
-                    "correction": "Les **insectes xylophages** détruisent le bois de l'intérieur. Le traitement (curatif ou préventif) est indispensable pour la pérennité de la structure."
+                    "correction": "La projection horizontale (ou base) est la distance au sol. Elle diffère de la longueur du rampant qui suit la pente du toit."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Quelle est la caractéristique d'une toiture à 'quatrième pan' ou 'toit en croupe' ?",
+                    "question": "Quelle est la surface d'un versant rectangulaire de 10 mètres de long sur 6 mètres de rampant ?",
                     "answerOptions": [
-                        {"text": "Le toit n'a qu'un seul versant.", "isCorrect": False},
-                        {"text": "Le toit a deux longs versants et deux versants triangulaires aux extrémités (croupe).", "isCorrect": True},
-                        {"text": "Le toit est parfaitement plat.", "isCorrect": False},
-                        {"text": "Le toit est formé de quatre noues.", "isCorrect": False}
+                        {"text": "60 mètres carrés", "isCorrect": True},
+                        {"text": "16 mètres carrés", "isCorrect": False},
+                        {"text": "32 mètres carrés", "isCorrect": False},
+                        {"text": "600 mètres carrés", "isCorrect": False}
                     ],
-                    "correction": "La **croupe** est une terminaison en triangle. Elle implique la création d'**arêtiers** (angles saillants) à la place des rives droites."
+                    "correction": "La surface d'un rectangle se calcule par la formule : Longueur x Largeur (ici le rampant). Donc 10 x 6 = 60 m²."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Que signifie l'acronyme 'HPV' pour un écran sous-toiture ?",
+                    "question": "Quel instrument simple permet de reporter un angle relevé sur le toit vers l'établi ?",
                     "answerOptions": [
-                        {"text": "Haute Pression du Vent.", "isCorrect": False},
-                        {"text": "Haute Performance Verte.", "isCorrect": False},
-                        {"text": "Haute Perméabilité à la Vapeur (sans besoin de lame d'air de ventilation sous l'écran).", "isCorrect": True},
-                        {"text": "Hauteur de Pente Validée.", "isCorrect": False}
+                        {"text": "Fausse équerre", "isCorrect": True},
+                        {"text": "Niveau à bulle", "isCorrect": False},
+                        {"text": "Fil à plomb", "isCorrect": False},
+                        {"text": "Pied à coulisse", "isCorrect": False}
                     ],
-                    "correction": "Les EST de type **HPV** sont très pratiques car ils peuvent être posés directement sur l'isolant (sans lame d'air), simplifiant l'isolation par l'intérieur."
+                    "correction": "La fausse équerre (ou sauterelle) possède une lame mobile qui permet de 'copier' un angle sur le chantier pour le tracer ensuite sur les matériaux à couper."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Quel est le risque d'installer un conduit de cheminée sans une 'souche' (traversée de toit) correctement maçonnée et abergée ?",
+                    "question": "Que désigne le terme 'rampant' en géométrie de toiture ?",
                     "answerOptions": [
-                        {"text": "Le vent éteint le feu.", "isCorrect": False},
-                        {"text": "Un risque de fuite d'eau, et un risque d'incendie (distance de sécurité non respectée avec la charpente).", "isCorrect": True},
-                        {"text": "Le conduit rouille.", "isCorrect": False},
-                        {"text": "Le conduit se bouche.", "isCorrect": False}
+                        {"text": "La longueur de la pente du toit", "isCorrect": True},
+                        {"text": "La hauteur du mur pignon", "isCorrect": False},
+                        {"text": "La largeur de la maison au sol", "isCorrect": False},
+                        {"text": "L'épaisseur de l'isolant posé", "isCorrect": False}
                     ],
-                    "correction": "Le **conduit de cheminée** doit être ignifugé et abergé (solin et bande) pour garantir l'étanchéité et la sécurité incendie."
+                    "correction": "Le rampant est la ligne de plus grande pente du versant. C'est la longueur réelle sur laquelle on pose les tuiles ou ardoises."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quelle est la principale fonction du 'pare-pluie' dans un mur ?",
+                    "question": "Si un toit monte de 30 cm par mètre horizontal, quelle est sa pente ?",
                     "answerOptions": [
-                        {"text": "Maintenir la chaleur.", "isCorrect": False},
-                        {"text": "Évacuer l'eau qui pénètre derrière le revêtement extérieur et protéger l'isolant du mur.", "isCorrect": True},
-                        {"text": "Accrocher les tuiles.", "isCorrect": False},
-                        {"text": "Ventiler le grenier.", "isCorrect": False}
+                        {"text": "30 %", "isCorrect": True},
+                        {"text": "30 degrés", "isCorrect": False},
+                        {"text": "3 degrés", "isCorrect": False},
+                        {"text": "33 %", "isCorrect": False}
                     ],
-                    "correction": "Le **pare-pluie** est une membrane qui joue un rôle similaire à l'écran sous-toiture, mais pour l'enveloppe verticale."
+                    "correction": "Le pourcentage de pente exprime la dénivellation en centimètres pour une distance horizontale de 100 cm (1 mètre). 30 cm pour 1 m correspond donc exactement à 30 %."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Qu'est-ce qu'une 'isolation par l'extérieur' (ITE) de toiture ?",
+                    "question": "Quelle ligne est perpendiculaire aux courbes de niveau et indique le chemin de l'eau ?",
                     "answerOptions": [
-                        {"text": "L'isolant est posé entre les chevrons.", "isCorrect": False},
-                        {"text": "L'isolant est posé sur les chevrons (méthode Sarking ou équivalent).", "isCorrect": True},
-                        {"text": "L'isolant est projeté au sol du comble.", "isCorrect": False},
-                        {"text": "L'isolant est collé sous les tuiles.", "isCorrect": False}
+                        {"text": "La ligne de plus grande pente", "isCorrect": True},
+                        {"text": "La ligne de traîne", "isCorrect": False},
+                        {"text": "La ligne de bris", "isCorrect": False},
+                        {"text": "La ligne de rive", "isCorrect": False}
                     ],
-                    "correction": "L'**ITE** est très efficace. Elle est posée en continu sur les chevrons (méthode **Sarking**) et élimine les ponts thermiques de la charpente."
+                    "correction": "L'eau suit toujours la ligne de plus grande pente sous l'effet de la gravité. Cette ligne est géométriquement perpendiculaire aux lignes horizontales (faîtage/égout)."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Quel est le rôle du 'fausse-coupe' ou 'décrochement' dans la pose des ardoises au crochet ?",
+                    "question": "Quel type de trait utilise-t-on sur un plan pour représenter les parties cachées ?",
                     "answerOptions": [
-                        {"text": "Gérer la fixation.", "isCorrect": False},
-                        {"text": "Assurer l'alignement vertical des joints entre les ardoises (pour garantir la superposition de trois épaisseurs).", "isCorrect": True},
-                        {"text": "Réduire le poids.", "isCorrect": False},
-                        {"text": "Faciliter le nettoyage.", "isCorrect": False}
+                        {"text": "Trait interrompu court", "isCorrect": True},
+                        {"text": "Trait continu fort", "isCorrect": False},
+                        {"text": "Trait mixte fin", "isCorrect": False},
+                        {"text": "Trait ondulé", "isCorrect": False}
                     ],
-                    "correction": "Le **décrochement** ou 'fausse-coupe' est l'écartement latéral d'une ardoise par rapport à la verticale, qui doit être rigoureusement respecté."
+                    "correction": "En dessin technique normalisé, les arêtes cachées (ce qui est derrière ou dessous) se dessinent toujours en traits interrompus (pointillés)."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Quelles sont les deux charges principales que doit supporter la charpente (hors charges permanentes du bâtiment) ?",
+                    "question": "Comment nomme-t-on le petit versant triangulaire qui remplace le pignon à l'extrémité d'un toit ?",
                     "answerOptions": [
-                        {"text": "La charge des tuiles et la charge des outils.", "isCorrect": False},
-                        {"text": "Les charges climatiques : Poids de la Neige et Effet du Vent (pression/dépression).", "isCorrect": True},
-                        {"text": "Le poids du couvreur et de la cheminée.", "isCorrect": False},
-                        {"text": "Le poids des gouttières et des fixations.", "isCorrect": False}
+                        {"text": "Croupe", "isCorrect": True},
+                        {"text": "Lucarne", "isCorrect": False},
+                        {"text": "Coyau", "isCorrect": False},
+                        {"text": "Outreau", "isCorrect": False}
                     ],
-                    "correction": "Les **charges climatiques** sont réglementées par les DTU Neige et Vent et sont prises en compte dès le calcul de dimensionnement de la charpente."
+                    "correction": "Une croupe est un pan de toiture, généralement triangulaire, situé à l'extrémité d'un comble à deux versants, remplaçant la partie haute du pignon."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quel est l'outil indispensable pour percer les ardoises (pour le clouage) sans les fissurer ?",
+                    "question": "Pour calculer la quantité d'ardoises, pourquoi ajoute-t-on un coefficient de perte ?",
                     "answerOptions": [
-                        {"text": "La Perceuse à percussion.", "isCorrect": False},
-                        {"text": "Le Marteau d'ardoise (avec sa pointe).", "isCorrect": True},
-                        {"text": "Le Poinçon standard.", "isCorrect": False},
-                        {"text": "Le Pistolet à clous.", "isCorrect": False}
+                        {"text": "Pour anticiper la casse et les coupes", "isCorrect": True},
+                        {"text": "Pour augmenter la facture du client", "isCorrect": False},
+                        {"text": "Pour avoir du stock pour l'année prochaine", "isCorrect": False},
+                        {"text": "Pour isoler le plancher des combles", "isCorrect": False}
                     ],
-                    "correction": "Le **Marteau d'ardoise** est multifonction (couper, percer, clouer). Sa pointe fine permet de créer un trou sans briser l'ardoise."
+                    "correction": "Lors des découpes (rives, noues, faîtages) et du transport, de la matière est perdue ou cassée. On ajoute généralement 5% à 10% de marge de sécurité."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Quelle est la distance minimale (dite 'distance au feu') à respecter entre un conduit de cheminée et les éléments en bois de la charpente (DTU 24.1) ?",
+                    "question": "Quelle vue permet de visualiser les épaisseurs des matériaux (isolant, liteaux, chevrons) ?",
                     "answerOptions": [
-                        {"text": "10 cm (variable selon le conduit, souvent 16 cm).", "isCorrect": True},
-                        {"text": "3 cm.", "isCorrect": False},
-                        {"text": "50 cm.", "isCorrect": False},
-                        {"text": "La distance n'est pas réglementée.", "isCorrect": False}
+                        {"text": "La coupe verticale", "isCorrect": True},
+                        {"text": "Le plan de situation", "isCorrect": False},
+                        {"text": "La vue de dessus", "isCorrect": False},
+                        {"text": "La façade nord", "isCorrect": False}
                     ],
-                    "correction": "La **distance de sécurité** (souvent 16 cm si conduit non isolé) est essentielle pour prévenir l'incendie de la charpente par la chaleur transmise par le conduit."
+                    "correction": "La coupe (section verticale) tranche le bâtiment pour montrer la superposition des couches et les détails d'assemblage invisibles sur les autres vues."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Pourquoi les tuiles de rive sont-elles souvent scellées au mortier même en pose sèche ?",
+                    "question": "Quel est le nom du trait tracé perpendiculairement à l'égout pour guider la pose ?",
                     "answerOptions": [
-                        {"text": "Pour des raisons économiques.", "isCorrect": False},
-                        {"text": "Pour assurer une fixation mécanique supérieure au vent et éviter les infiltrations latérales (en complément des tuiles à rabat ou des bandes de rive).", "isCorrect": True},
-                        {"text": "Pour améliorer la ventilation.", "isCorrect": False},
-                        {"text": "Pour les rendre plus légères.", "isCorrect": False}
+                        {"text": "Le trait carré", "isCorrect": True},
+                        {"text": "Le trait de niveau", "isCorrect": False},
+                        {"text": "Le trait de Jupiter", "isCorrect": False},
+                        {"text": "Le trait oblique", "isCorrect": False}
                     ],
-                    "correction": "Bien que le faîtage se pose de plus en plus souvent à sec, les **rives** restent une zone très exposée où le scellement est souvent préféré ou requis pour la tenue au vent."
+                    "correction": "Le trait carré est une ligne tracée au cordeau perpendiculairement à l'égout. Il sert de référence verticale pour aligner les rangs de tuiles ou d'ardoises (notamment pour les joints)."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Quel est le risque de surcharger la toiture avec un stock trop important de tuiles sur une petite zone ?",
+                    "question": "Combien de millimètres y a-t-il dans 2,40 mètres ?",
                     "answerOptions": [
-                        {"text": "Dommages à l'écran sous-toiture uniquement.", "isCorrect": False},
-                        {"text": "Un risque de rupture ou de déformation de la charpente (surcharge mécanique ponctuelle).", "isCorrect": True},
-                        {"text": "Le soulèvement par le vent.", "isCorrect": False},
-                        {"text": "Les tuiles glissent.", "isCorrect": False}
+                        {"text": "2400 mm", "isCorrect": True},
+                        {"text": "240 mm", "isCorrect": False},
+                        {"text": "24 mm", "isCorrect": False},
+                        {"text": "24000 mm", "isCorrect": False}
                     ],
-                    "correction": "Le **stockage** des matériaux doit être réparti sur le toit et, si possible, le long des murs porteurs (pannes et fermes) pour ne pas dépasser la charge admissible par la charpente."
+                    "correction": "1 mètre = 1000 millimètres. Donc 2,40 m multiplié par 1000 donne 2400 mm. La maîtrise des conversions est vitale pour la lecture de plan."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Quel est le rôle du 'pare-oiseau' ou 'peigne d'égout' ?",
+                    "question": "Quelle forme géométrique a généralement une 'tourelle' en couverture ?",
                     "answerOptions": [
-                        {"text": "Décorer l'égout.", "isCorrect": False},
-                        {"text": "Empêcher les oiseaux, rongeurs ou gros insectes de pénétrer sous la toiture (au niveau de l'égout).", "isCorrect": True},
-                        {"text": "Améliorer l'écoulement de l'eau.", "isCorrect": False},
-                        {"text": "Faciliter le nettoyage.", "isCorrect": False}
+                        {"text": "Conique", "isCorrect": True},
+                        {"text": "Cubique", "isCorrect": False},
+                        {"text": "Plate", "isCorrect": False},
+                        {"text": "Triangulaire", "isCorrect": False}
                     ],
-                    "correction": "Le **pare-oiseau** est une grille (souvent en plastique) placée sous le premier rang de tuiles, qui bouche l'espace sans empêcher la ventilation."
+                    "correction": "Les tourelles ont souvent une base circulaire et un toit en forme de cône, ce qui demande une technique de couverture spécifique (gironnage des ardoises)."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Lors de la pose des liteaux, quel est le principal défaut à éviter pour garantir la planéité et le bon écoulement ?",
+                    "question": "Sur un plan, qu'indique la 'cotation' ?",
                     "answerOptions": [
-                        {"text": "Un espacement trop grand.", "isCorrect": False},
-                        {"text": "Une mauvaise horizontalité (niveaux) et des défauts de planéité (pas dans le même plan) des liteaux.", "isCorrect": True},
-                        {"text": "Des liteaux trop longs.", "isCorrect": False},
-                        {"text": "Des liteaux trop courts.", "isCorrect": False}
+                        {"text": "Les dimensions réelles de l'ouvrage", "isCorrect": True},
+                        {"text": "Le prix des matériaux au mètre carré", "isCorrect": False},
+                        {"text": "Le nom de l'architecte", "isCorrect": False},
+                        {"text": "La date de fin de chantier", "isCorrect": False}
                     ],
-                    "correction": "La toiture doit être parfaitement **plane** pour que les tuiles ou ardoises reposent correctement et pour que le recouvrement soit efficace partout."
+                    "correction": "La cotation (les chiffres fléchés) indique toujours les dimensions réelles (cotes) de l'objet, quelle que soit l'échelle du dessin imprimé."
                 },
             ]
         }
     }
 }
-
-# Exemple d'accès aux données :
-# print(quiz_data["title"])
-# print(quiz_data["themes"][1]["name"])
-# print(quiz_data["themes"][1]["questions"][0]["question"])
-# print(quiz_data["themes"][1]["questions"][0]["answerOptions"][1]["isCorrect"])

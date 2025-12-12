@@ -1,1153 +1,1145 @@
-# Fichier : quiz_cap_menuisier_fabricant_100.py
-
 quiz_data = {
-    "title": "Quiz CAP Menuisier Fabricant : Révisions Complètes (100 Questions)",
+    "title": "Quiz CAP Menuisier Fabricant (100 Questions)",
     "themes": {
         # =========================================================================
-        # THÈME 1 : MATÉRIAUX ET TECHNOLOGIES DU BOIS (Q. 1-20)
+        # THÈME 1 : TECHNOLOGIE DES MATÉRIAUX ET PRODUITS CONNEXES (Questions 1 à 20)
         # =========================================================================
         1: {
-            "name": "1. Matériaux et Technologies du Bois (Q. 1-20)",
+            "name": "THÈME 1 : TECHNOLOGIE DES MATÉRIAUX ET PRODUITS CONNEXES",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Comment appelle-t-on le phénomène de déformation du bois qui se produit lors du séchage (diminution de l'humidité) ?",
+                    "question": "Quelle essence de bois est classée comme un feuillu indigène dur ?",
                     "answerOptions": [
-                        {"text": "Le Gerçage.", "isCorrect": False},
-                        {"text": "Le Retrait (diminution de volume).", "isCorrect": True},
-                        {"text": "Le Tuilage.", "isCorrect": False},
-                        {"text": "Le Flambage.", "isCorrect": False}
+                        {"text": "Chêne", "isCorrect": True},
+                        {"text": "Sapin", "isCorrect": False},
+                        {"text": "Épicéa", "isCorrect": False},
+                        {"text": "Pin sylvestre", "isCorrect": False}
                     ],
-                    "correction": "Le **Retrait** est la diminution dimensionnelle du bois due à la perte d'eau (séchage). Le **Gonflement** est l'inverse."
+                    "correction": "Le chêne est un bois feuillu (angiosperme) indigène, c'est-à-dire qui pousse naturellement dans nos régions, reconnu pour sa dureté et sa résistance. Les autres choix sont des résineux."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quelle est la principale caractéristique de l'essence de bois **Chêne** ?",
+                    "question": "Quel panneau est constitué d'un nombre impair de feuilles de bois déroulé collées à fil croisé ?",
                     "answerOptions": [
-                        {"text": "Bois très tendre et léger.", "isCorrect": False},
-                        {"text": "Bois dur, résistant et durable, utilisé pour la menuiserie extérieure et le mobilier de prestige.", "isCorrect": True},
-                        {"text": "Bois résineux à croissance rapide.", "isCorrect": False},
-                        {"text": "Bois uniquement utilisé en charpente.", "isCorrect": False}
+                        {"text": "Contreplaqué", "isCorrect": True},
+                        {"text": "Aggloméré", "isCorrect": False},
+                        {"text": "Latté", "isCorrect": False},
+                        {"text": "Médium", "isCorrect": False}
                     ],
-                    "correction": "Le **Chêne** est une essence de feuillu noble, appréciée pour sa dureté et sa résistance à l'humidité."
+                    "correction": "Le contreplaqué est obtenu par superposition de feuilles de placage (plis) collées entre elles, le fil du bois de chaque pli étant perpendiculaire au précédent pour équilibrer le panneau."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quel est le pourcentage d'humidité visé pour les bois destinés à la **menuiserie intérieure** (meubles, portes intérieures) ?",
+                    "question": "Quelle colle est la plus adaptée pour un assemblage intérieur en milieu sec ?",
                     "answerOptions": [
-                        {"text": "Plus de 30%.", "isCorrect": False},
-                        {"text": "Environ 18% (bois extérieur).", "isCorrect": False},
-                        {"text": "Entre 8% et 12%.", "isCorrect": True},
-                        {"text": "0%.", "isCorrect": False}
+                        {"text": "Colle vinylique", "isCorrect": True},
+                        {"text": "Colle polyuréthane", "isCorrect": False},
+                        {"text": "Colle résorcine", "isCorrect": False},
+                        {"text": "Colle époxy", "isCorrect": False}
                     ],
-                    "correction": "Le bois destiné à l'intérieur doit être séché pour atteindre un taux d'humidité en équilibre avec l'air ambiant (8-12%) afin d'éviter les déformations."
+                    "correction": "La colle vinylique (blanche) est l'adhésif standard pour les travaux de menuiserie intérieure en milieu sec (Classe D1 ou D2). Elle est facile d'emploi et nettoye à l'eau avant séchage."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Comment appelle-t-on le panneau composé de fines couches de bois (placages) collées à fils croisés ?",
+                    "question": "Comment appelle-t-on la partie physiologiquement active de l'arbre située sous l'écorce où circule la sève élaborée ?",
                     "answerOptions": [
-                        {"text": "L'Aggloméré (Panneau de particules).", "isCorrect": False},
-                        {"text": "Le MDF (Medium Density Fiberboard).", "isCorrect": False},
-                        {"text": "Le Contreplaqué.", "isCorrect": True},
-                        {"text": "Le Panneau latté.", "isCorrect": False}
+                        {"text": "Liber", "isCorrect": True},
+                        {"text": "Aubier", "isCorrect": False},
+                        {"text": "Duramen", "isCorrect": False},
+                        {"text": "Cambium", "isCorrect": False}
                     ],
-                    "correction": "Le **Contreplaqué** offre une grande stabilité dimensionnelle grâce au collage à fils croisés."
+                    "correction": "Le liber est la couche interne de l'écorce où circule la sève élaborée descendante. Attention à ne pas confondre avec le cambium (zone de croissance) ou l'aubier (sève brute)."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel est le rôle d'une **Lasure** (produit de finition pour bois) ?",
+                    "question": "Quel défaut du bois se caractérise par une séparation des cernes annuels de croissance ?",
                     "answerOptions": [
-                        {"text": "Former un film opaque et imperméable (comme une peinture).", "isCorrect": False},
-                        {"text": "Protéger le bois contre l'humidité, les UV et les insectes, tout en laissant apparent le veinage (produit semi-transparent).", "isCorrect": True},
-                        {"text": "Rendre le bois plus dur.", "isCorrect": False},
-                        {"text": "Coller les chants.", "isCorrect": False}
+                        {"text": "Roulure", "isCorrect": True},
+                        {"text": "Gélivure", "isCorrect": False},
+                        {"text": "Cadranure", "isCorrect": False},
+                        {"text": "Gerçure", "isCorrect": False}
                     ],
-                    "correction": "La **Lasure** est utilisée en menuiserie extérieure pour l'entretien et la protection, sans masquer l'aspect naturel du bois."
+                    "correction": "La roulure est une fente suivant un cerne annuel, souvent causée par des vents violents ou des chocs, qui désolidarise les couches du bois."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Quelle est la caractéristique essentielle du **MDF** (Panneau de fibres à moyenne densité) pour l'agencement ?",
+                    "question": "Que signifie l'acronyme MDF pour désigner un type de panneau ?",
                     "answerOptions": [
-                        {"text": "Sa grande légèreté.", "isCorrect": False},
-                        {"text": "Son homogénéité, permettant la coupe dans tous les sens et des usinages complexes (moulures, sculptures).", "isCorrect": True},
-                        {"text": "Sa résistance à l'eau.", "isCorrect": False},
-                        {"text": "Son faible coût de revient.", "isCorrect": False}
+                        {"text": "Medium Density Fiberboard", "isCorrect": True},
+                        {"text": "Medium Density Fragment", "isCorrect": False},
+                        {"text": "Material Density Fiber", "isCorrect": False},
+                        {"text": "Main Density Fabrication", "isCorrect": False}
                     ],
-                    "correction": "Le **MDF** est très utilisé en ébénisterie et agencement intérieur grâce à sa facilité d'usinage et sa bonne tenue des vis (à condition d'utiliser un vissage adapté)."
+                    "correction": "MDF signifie Medium Density Fiberboard, traduit en français par panneau de fibres à densité moyenne. Il est composé de fibres de bois et d'un liant synthétique."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Qu'est-ce que le **Contre-fil** dans une pièce de bois ?",
+                    "question": "Quelle est l'unité conventionnelle utilisée pour exprimer le taux d'humidité du bois ?",
                     "answerOptions": [
-                        {"text": "La direction de la fibre au centre du bois.", "isCorrect": False},
-                        {"text": "La direction perpendiculaire à la veine du bois.", "isCorrect": False},
-                        {"text": "La zone où la fibre du bois n'est pas parallèle à la surface de la pièce, rendant le rabotage ou l'usinage difficile (arrachement).", "isCorrect": True},
-                        {"text": "La zone de couleur foncée.", "isCorrect": False}
+                        {"text": "Pourcentage", "isCorrect": True},
+                        {"text": "Gramme par litre", "isCorrect": False},
+                        {"text": "Degré Celsius", "isCorrect": False},
+                        {"text": "Pascal", "isCorrect": False}
                     ],
-                    "correction": "Le **Contre-fil** est la direction inverse des fibres, souvent source d'arrachement de matière lors de l'usinage à la toupie ou à la raboteuse."
+                    "correction": "Le taux d'humidité (H%) s'exprime en pourcentage. Il représente le rapport entre la masse d'eau contenue dans le bois et la masse de ce même bois à l'état anhydre (totalement sec)."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quelle colle est la plus couramment utilisée en menuiserie intérieure pour les assemblages non structuraux (meubles, caissons) ?",
+                    "question": "Quel terme désigne la direction générale des fibres du bois par rapport à l'axe de la pièce ?",
                     "answerOptions": [
-                        {"text": "La colle Polyuréthane (PU).", "isCorrect": False},
-                        {"text": "La colle Époxy.", "isCorrect": False},
-                        {"text": "La colle Vinylique (ou Colle Blanche, PVAC/PVA).", "isCorrect": True},
-                        {"text": "La colle Néoprène.", "isCorrect": False}
+                        {"text": "Fil", "isCorrect": True},
+                        {"text": "Grain", "isCorrect": False},
+                        {"text": "Maille", "isCorrect": False},
+                        {"text": "Texture", "isCorrect": False}
                     ],
-                    "correction": "La **colle vinylique** (D2, D3 pour l'humidité) est économique, facile d'emploi et assure un collage suffisant pour la menuiserie intérieure."
+                    "correction": "Le fil désigne l'orientation des fibres axiales. On parle de fil droit, fil tors, ou contre-fil, ce qui influence grandement l'usinage et la résistance mécanique."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Quel terme désigne l'opération de recouvrir la tranche d'un panneau (MDF ou Agglo) avec une bande de bois ou de mélaminé pour masquer les fibres ?",
+                    "question": "Quel traitement thermique permet d'améliorer la stabilité dimensionnelle du bois en modifiant sa structure chimique ?",
                     "answerOptions": [
-                        {"text": "Le Ponçage.", "isCorrect": False},
-                        {"text": "Le Placage.", "isCorrect": False},
-                        {"text": "Le Chantournage.", "isCorrect": False},
-                        {"text": "Le Plaquage de chants (ou le Chantournement).", "isCorrect": True}
+                        {"text": "Rétification", "isCorrect": True},
+                        {"text": "Autoclave", "isCorrect": False},
+                        {"text": "Ignifugation", "isCorrect": False},
+                        {"text": "Trempage", "isCorrect": False}
                     ],
-                    "correction": "Le **Plaquage de chants** est indispensable pour la finition des panneaux dérivés."
+                    "correction": "La rétification est un traitement à haute température (torréfaction) qui détruit l'hémicellulose, rendant le bois moins hygroscopique, plus stable et résistant aux champignons, mais plus cassant."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Qu'est-ce qu'une **Bûche** de bois dans le jargon de la menuiserie ?",
+                    "question": "Quelle partie du bois est la plus résistante aux attaques biologiques et possède la meilleure durabilité naturelle ?",
                     "answerOptions": [
-                        {"text": "Le bois de chauffage.", "isCorrect": False},
-                        {"text": "Une pièce de bois destinée à la fabrication de tourillons.", "isCorrect": True},
-                        {"text": "Une chute de bois.", "isCorrect": False},
-                        {"text": "Un morceau de bois résineux.", "isCorrect": False}
+                        {"text": "Duramen", "isCorrect": True},
+                        {"text": "Aubier", "isCorrect": False},
+                        {"text": "Écorce", "isCorrect": False},
+                        {"text": "Cambium", "isCorrect": False}
                     ],
-                    "correction": "Bien que le terme soit général, dans le contexte de l'assemblage, une **bûche** peut désigner un tourillon ou une cheville."
+                    "correction": "Le duramen, ou bois de cœur, est la partie centrale de l'arbre. Elle est imprégnée de substances (tanins, résines) qui la rendent naturellement plus durable que l'aubier."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Quel est l'inconvénient majeur des panneaux de **particules brutes** (Aggloméré) par rapport au MDF ?",
+                    "question": "Quel type de panneau est reconnaissable à ses grandes lamelles de bois orientées en couches croisées visibles en surface ?",
                     "answerOptions": [
-                        {"text": "Leur trop grande résistance.", "isCorrect": False},
-                        {"text": "Leur mauvaise tenue à l'humidité et leur surface rugueuse ne permettant pas de belles finitions (peinture, laque).", "isCorrect": True},
-                        {"text": "Leur légèreté.", "isCorrect": False},
-                        {"text": "Leur prix élevé.", "isCorrect": False}
+                        {"text": "OSB", "isCorrect": True},
+                        {"text": "HDF", "isCorrect": False},
+                        {"text": "Mélaminé", "isCorrect": False},
+                        {"text": "Stratifié", "isCorrect": False}
                     ],
-                    "correction": "L'Aggloméré est souvent réservé aux meubles cachés ou recouvert de mélaminé/stratifié, car il est sensible à l'humidité et difficile à peindre proprement."
+                    "correction": "L'OSB (Oriented Strand Board) est constitué de lamelles minces et longues orientées. Cette structure lui confère de très bonnes résistances mécaniques pour le contreventement."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Que signifie le traitement du bois par la classe **Classe 4** ?",
+                    "question": "Quelle classe d'emploi doit respecter un bois utilisé en extérieur avec contact permanent avec le sol ou l'eau douce ?",
                     "answerOptions": [
-                        {"text": "Utilisation intérieure sèche.", "isCorrect": False},
-                        {"text": "Bois pouvant être en contact avec le sol ou l'eau douce (humidité permanente).", "isCorrect": True},
-                        {"text": "Bois ignifugé.", "isCorrect": False},
-                        {"text": "Bois très léger.", "isCorrect": False}
+                        {"text": "Classe 4", "isCorrect": True},
+                        {"text": "Classe 1", "isCorrect": False},
+                        {"text": "Classe 2", "isCorrect": False},
+                        {"text": "Classe 3", "isCorrect": False}
                     ],
-                    "correction": "La **Classe 4** (ou classe d'emploi) est destinée aux bois très exposés (terrasse, poteaux extérieurs)."
+                    "correction": "La Classe 4 regroupe les bois pouvant être en contact permanent avec le sol ou l'eau douce (poteaux, pontons). La Classe 3 concerne l'extérieur sans contact avec le sol."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quelle est la différence entre un **Vernis** et une **Lasure** ?",
+                    "question": "Quel est le rôle principal d'un vernis appliqué sur un ouvrage en bois ?",
                     "answerOptions": [
-                        {"text": "Le Vernis protège moins bien.", "isCorrect": False},
-                        {"text": "Le Vernis forme un film protecteur rigide et imperméable en surface (aspect plus plastique), tandis que la Lasure pénètre le bois (semi-transparent).", "isCorrect": True},
-                        {"text": "La Lasure est toujours colorée.", "isCorrect": False},
-                        {"text": "Le Vernis est réservé aux meubles.", "isCorrect": False}
+                        {"text": "Protection et finition", "isCorrect": True},
+                        {"text": "Collage structurel", "isCorrect": False},
+                        {"text": "Traitement insecticide", "isCorrect": False},
+                        {"text": "Ignifugation du matériau", "isCorrect": False}
                     ],
-                    "correction": "Le **Vernis** est un produit filmogène qui peut craqueler à l'extérieur. La lasure est non-filmogène."
+                    "correction": "Le vernis crée un film transparent en surface qui protège le bois des taches, de l'abrasion et de l'humidité, tout en apportant un aspect esthétique (mat, satiné, brillant)."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Qu'est-ce qu'un panneau **Mélaminé** ?",
+                    "question": "Quelle essence de bois résineux est souvent caractérisée par une couleur rougeâtre et des nœuds foncés très durs ?",
                     "answerOptions": [
-                        {"text": "Un panneau recouvert de peinture.", "isCorrect": False},
-                        {"text": "Un panneau (souvent Agglo ou MDF) dont la surface est revêtue de papier décor imprégné de résine mélamine, pressé à chaud.", "isCorrect": True},
-                        {"text": "Un panneau très résistant au feu.", "isCorrect": False},
-                        {"text": "Un panneau de bois massif.", "isCorrect": False}
+                        {"text": "Pin sylvestre", "isCorrect": True},
+                        {"text": "Peuplier", "isCorrect": False},
+                        {"text": "Hêtre", "isCorrect": False},
+                        {"text": "Frêne", "isCorrect": False}
                     ],
-                    "correction": "Le **Mélaminé** est le matériau standard pour la fabrication de caissons de cuisine, penderies, bureaux grâce à son coût et sa facilité d'entretien."
+                    "correction": "Le Pin sylvestre (Pin du Nord) présente un duramen rougeâtre distinct de l'aubier jaune pâle, ainsi que des nœuds souvent noirs et durs. Les autres propositions sont des feuillus."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quel est l'outil utilisé pour mesurer le taux d'humidité du bois ?",
+                    "question": "Quel composant de quincaillerie permet la rotation d'une porte autour d'un axe vertical ?",
                     "answerOptions": [
-                        {"text": "Le Mètre ruban.", "isCorrect": False},
-                        {"text": "L'Hygromètre (ou Humidimètre).", "isCorrect": True},
-                        {"text": "Le Pied à coulisse.", "isCorrect": False},
-                        {"text": "Le Sonomètre.", "isCorrect": False}
+                        {"text": "Paumelle", "isCorrect": True},
+                        {"text": "Serrure", "isCorrect": False},
+                        {"text": "Crémone", "isCorrect": False},
+                        {"text": "Gâche", "isCorrect": False}
                     ],
-                    "correction": "L'**Hygromètre** est essentiel pour vérifier que le bois est apte à être usiné sans risque de déformation ultérieure."
+                    "correction": "La paumelle (ou la charnière) est l'organe de rotation qui relie l'ouvrant au dormant. La serrure et la crémone servent au verrouillage, la gâche reçoit le pêne."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Quel est le sens de la **Veine** du bois ?",
+                    "question": "Comment nomme-t-on la déformation d'une pièce de bois qui se courbe dans le sens de sa longueur sur sa face ?",
                     "answerOptions": [
-                        {"text": "La direction de la coupe.", "isCorrect": False},
-                        {"text": "La direction des fibres du bois, parallèle à l'axe de l'arbre (le 'fil du bois').", "isCorrect": True},
-                        {"text": "La couleur du bois.", "isCorrect": False},
-                        {"text": "Le sens du ponçage.", "isCorrect": False}
+                        {"text": "Cambrure", "isCorrect": True},
+                        {"text": "Tuilage", "isCorrect": False},
+                        {"text": "Gauchissement", "isCorrect": False},
+                        {"text": "Désaffleur", "isCorrect": False}
                     ],
-                    "correction": "La **Veine** ou **Fil** du bois est le sens de la fibre. Il est crucial pour l'usinage, l'assemblage et la finition (ponçage, vernis)."
+                    "correction": "La cambrure (ou flèche de face) est une courbure longitudinale sur le chant. Le tuilage est transversal, le gauchissement est une déformation hélicoïdale."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Qu'est-ce que le **Placage** en menuiserie ?",
+                    "question": "Quel matériau composite est utilisé pour les plans de travail de cuisine pour sa très grande dureté et résistance à la chaleur ?",
                     "answerOptions": [
-                        {"text": "Un défaut du bois.", "isCorrect": False},
-                        {"text": "L'opération de coller une feuille de bois mince (0,6 mm) sur un panneau support (Agglo, MDF) pour améliorer l'aspect esthétique.", "isCorrect": True},
-                        {"text": "Le fait de peindre le bois.", "isCorrect": False},
-                        {"text": "L'assemblage de deux pièces.", "isCorrect": False}
+                        {"text": "Stratifié HPL", "isCorrect": True},
+                        {"text": "Panneau de particules brut", "isCorrect": False},
+                        {"text": "Contreplaqué okoumé", "isCorrect": False},
+                        {"text": "Panneau de fibres tendre", "isCorrect": False}
                     ],
-                    "correction": "Le **Placage** permet d'obtenir l'aspect d'un bois noble à moindre coût et d'éviter les déformations du bois massif."
+                    "correction": "Le stratifié HPL (High Pressure Laminate) est composé de feuilles de papier kraft imprégnées de résine phénolique pressées à chaud. Il offre une excellente résistance de surface."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quel type d'essence de bois est le **Pin maritime** ?",
+                    "question": "Quelle propriété mécanique désigne la capacité du bois à résister à la pénétration d'un corps dur ?",
                     "answerOptions": [
-                        {"text": "Un bois exotique.", "isCorrect": False},
-                        {"text": "Un résineux (bois tendre).", "isCorrect": True},
-                        {"text": "Un feuillu (bois dur).", "isCorrect": False},
-                        {"text": "Un bois composite.", "isCorrect": False}
+                        {"text": "Dureté", "isCorrect": True},
+                        {"text": "Résilience", "isCorrect": False},
+                        {"text": "Élasticité", "isCorrect": False},
+                        {"text": "Flexibilité", "isCorrect": False}
                     ],
-                    "correction": "Le **Pin** (sapin, épicéa) est un bois résineux (ou bois blanc), souvent utilisé en ossature, menuiserie courante ou pour les fonds de meubles."
+                    "correction": "La dureté (souvent mesurée par l'essai Monnin ou Brinell) qualifie la résistance à l'empreinte ou à la rayure. La résilience concerne la résistance aux chocs."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quelle est la principale fonction du **Silicone (ou mastic)** en pose de menuiserie extérieure ?",
+                    "question": "Quel est le nom du solvant couramment utilisé pour diluer les vernis polyuréthanes ?",
                     "answerOptions": [
-                        {"text": "Le collage.", "isCorrect": False},
-                        {"text": "Le calfeutrement et l'étanchéité à l'air et à l'eau entre le dormant de la fenêtre et la maçonnerie.", "isCorrect": True},
-                        {"text": "La coloration.", "isCorrect": False},
-                        {"text": "Le ponçage.", "isCorrect": False}
+                        {"text": "Diluant synthétique", "isCorrect": True},
+                        {"text": "Eau distillée", "isCorrect": False},
+                        {"text": "Huile de lin", "isCorrect": False},
+                        {"text": "Vinaigre blanc", "isCorrect": False}
                     ],
-                    "correction": "Le **mastic de calfeutrement** est un élément crucial pour les performances thermiques (RT2012/RE2020) et l'étanchéité de la fenêtre."
+                    "correction": "Les vernis PU (polyuréthanes) à solvant nécessitent des diluants spécifiques ou synthétiques pour le nettoyage et l'application. L'eau est pour les produits acryliques."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Que signifie le sigle **PEFC** ou **FSC** sur les panneaux et bois ?",
+                    "question": "Quelle anomalie de croissance se manifeste par une ondulation des fibres donnant un aspect esthétique recherché pour le placage ?",
                     "answerOptions": [
-                        {"text": "Panneau de Fabrication Exceptionnelle.", "isCorrect": False},
-                        {"text": "Certification garantissant que le bois provient d'une gestion forestière durable et responsable.", "isCorrect": True},
-                        {"text": "Panneau Extérieur Forte Charge.", "isCorrect": False},
-                        {"text": "Finition Sans Colle.", "isCorrect": False}
+                        {"text": "Ronce", "isCorrect": True},
+                        {"text": "Chancre", "isCorrect": False},
+                        {"text": "Loupe", "isCorrect": False},
+                        {"text": "Broussin", "isCorrect": False}
                     ],
-                    "correction": "Ces certifications garantissent la **traçabilité** et l'origine environnementale du bois."
+                    "correction": "La ronce est un enchevêtrement de fibres (souvent à la base du tronc ou aux fourches) qui, une fois tranché, révèle des motifs décoratifs très prisés en ébénisterie."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 2 : LECTURE DE PLANS ET TRAÇAGE (Q. 21-40)
+        # THÈME 2 : DESSIN TECHNIQUE ET LECTURE DE PLANS (Questions 21 à 40)
         # =========================================================================
         2: {
-            "name": "2. Lecture de Plans et Traçage (Q. 21-40)",
+            "name": "THÈME 2 : DESSIN TECHNIQUE ET LECTURE DE PLANS",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Que représente une **échelle 1/10ème** dans un plan de menuiserie ou d'agencement ?",
+                    "question": "Que représente conventionnellement un trait continu fort sur un dessin technique ?",
                     "answerOptions": [
-                        {"text": "1 mm sur le plan représente 10 cm dans la réalité.", "isCorrect": False},
-                        {"text": "1 cm sur le plan représente 10 cm dans la réalité.", "isCorrect": True},
-                        {"text": "1 cm sur le plan représente 10 mètres dans la réalité.", "isCorrect": False},
-                        {"text": "Le plan est dix fois plus grand que la réalité.", "isCorrect": False}
+                        {"text": "Arêtes vues", "isCorrect": True},
+                        {"text": "Arêtes cachées", "isCorrect": False},
+                        {"text": "Axes de symétrie", "isCorrect": False},
+                        {"text": "Hachures", "isCorrect": False}
                     ],
-                    "correction": "L'échelle 1/10ème est très courante en menuiserie pour les plans d'exécution car elle permet de représenter de petits ouvrages avec précision."
+                    "correction": "Le trait continu fort est utilisé pour dessiner les contours et les arêtes visibles de l'objet. Les arêtes cachées sont en pointillés et les axes en traits mixtes."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Comment appelle-t-on le dessin qui représente l'objet vu de face, donnant les dimensions en largeur et hauteur ?",
+                    "question": "Où doit se positionner la vue de dessus par rapport à la vue de face dans la méthode de projection européenne ?",
                     "answerOptions": [
-                        {"text": "La Coupe.", "isCorrect": False},
-                        {"text": "L'Élévation (ou Vue de face).", "isCorrect": True},
-                        {"text": "Le Plan de masse.", "isCorrect": False},
-                        {"text": "La Perspective.", "isCorrect": False}
+                        {"text": "Sous la vue de face", "isCorrect": True},
+                        {"text": "Au-dessus de la vue de face", "isCorrect": False},
+                        {"text": "À gauche de la vue de face", "isCorrect": False},
+                        {"text": "À droite de la vue de face", "isCorrect": False}
                     ],
-                    "correction": "L'**Élévation** est essentielle pour l'implantation et le contrôle des hauteurs."
+                    "correction": "En projection européenne (symbole du cône tronqué), la vue de dessus se dessine toujours en dessous de la vue de face. C'est l'inverse de la méthode américaine."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quel est l'outil utilisé pour reporter un angle précis (autre que 90°) d'un plan ou d'un mur sur une pièce de bois ?",
+                    "question": "Quelle est la signification d'une échelle notée 1:5 dans le cartouche ?",
                     "answerOptions": [
-                        {"text": "L'Équerre fixe.", "isCorrect": False},
-                        {"text": "La Règle graduée.", "isCorrect": False},
-                        {"text": "La Fausse équerre (ou sauterelle).", "isCorrect": True},
-                        {"text": "Le Trusquin.", "isCorrect": False}
+                        {"text": "Réduction", "isCorrect": True},
+                        {"text": "Agrandissement", "isCorrect": False},
+                        {"text": "Taille réelle", "isCorrect": False},
+                        {"text": "Déformation", "isCorrect": False}
                     ],
-                    "correction": "La **Fausse équerre** permet de prendre un angle et de le bloquer pour le reporter sans erreur."
+                    "correction": "Une échelle 1:5 signifie que 1 cm sur le dessin représente 5 cm en réalité. Le dessin est donc plus petit que l'objet réel, c'est une réduction."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quel outil de traçage sert à tracer des lignes parallèles au bord d'une pièce de bois ?",
+                    "question": "Quel type de trait est utilisé pour représenter les axes de symétrie et les axes de révolution ?",
                     "answerOptions": [
-                        {"text": "Le Crayon.", "isCorrect": False},
-                        {"text": "Le Compas.", "isCorrect": False},
-                        {"text": "Le Trusquin.", "isCorrect": True},
-                        {"text": "Le Niveau.", "isCorrect": False}
+                        {"text": "Trait mixte fin", "isCorrect": True},
+                        {"text": "Trait continu fort", "isCorrect": False},
+                        {"text": "Trait interrompu court", "isCorrect": False},
+                        {"text": "Trait continu fin ondu", "isCorrect": False}
                     ],
-                    "correction": "Le **Trusquin** est indispensable pour marquer l'épaisseur des tenons, mortaises ou feuillures."
+                    "correction": "Le trait mixte fin (une alternance de traits longs et de traits courts ou points) est normalisé pour matérialiser les axes de symétrie et les trajectoires."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Que représente une ligne en **pointillés fins** sur un plan de menuiserie ?",
+                    "question": "Que matérialisent les hachures sur une vue en coupe ?",
                     "answerOptions": [
-                        {"text": "Une arête visible.", "isCorrect": False},
-                        {"text": "Une ligne de coupe.", "isCorrect": False},
-                        {"text": "Une arête cachée (ou une pièce située derrière la vue principale).", "isCorrect": True},
-                        {"text": "L'axe de symétrie.", "isCorrect": False}
+                        {"text": "Matière coupée", "isCorrect": True},
+                        {"text": "Surfaces vides", "isCorrect": False},
+                        {"text": "Parties vitrées", "isCorrect": False},
+                        {"text": "Zones invisibles", "isCorrect": False}
                     ],
-                    "correction": "Le trait en **pointillés fins** (trait interrompu fin) est la convention pour représenter les éléments non visibles."
+                    "correction": "Les hachures indiquent les zones où la matière a été physiquement traversée par le plan de coupe imaginaire. Leur motif dépend du matériau (ex : traits continus pour le bois)."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Comment appelle-t-on la **représentation grandeur nature** (souvent sur panneau ou au sol) de l'ouvrage, permettant de vérifier toutes les cotes et les assemblages avant la fabrication ?",
+                    "question": "Quelle est la différence fondamentale entre une section et une coupe ?",
                     "answerOptions": [
-                        {"text": "Le Plan d'ensemble.", "isCorrect": False},
-                        {"text": "L'Épure.", "isCorrect": True},
-                        {"text": "Le Schéma électrique.", "isCorrect": False},
-                        {"text": "Le Croquis.", "isCorrect": False}
+                        {"text": "La section ne représente que la partie touchée par le plan sécant", "isCorrect": True},
+                        {"text": "La section représente la partie coupée et tout ce qui est derrière", "isCorrect": False},
+                        {"text": "La section est une vue en perspective de la pièce coupée en deux", "isCorrect": False},
+                        {"text": "La section est une représentation simplifiée sans aucune hachure", "isCorrect": False}
                     ],
-                    "correction": "L'**Épure** est la base du travail traditionnel du menuisier, garantissant l'exactitude de toutes les pièces."
+                    "correction": "Contrairement à la coupe qui montre la surface coupée + l'arrière-plan visible, la section ne dessine strictement que la trace du plan de coupe sur la matière."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quel est l'objectif principal de la phase de **Traçage** ?",
+                    "question": "Quelle dimension donne la cote sur un plan, quelle que soit l'échelle du dessin ?",
                     "answerOptions": [
-                        {"text": "Couper le bois.", "isCorrect": False},
-                        {"text": "Dessiner sur les pièces de bois les lignes de coupe et d'usinage (emplacement des assemblages, moulures, etc.) avec exactitude.", "isCorrect": True},
-                        {"text": "Vérifier la couleur.", "isCorrect": False},
-                        {"text": "Coller les pièces.", "isCorrect": False}
+                        {"text": "Dimension réelle", "isCorrect": True},
+                        {"text": "Dimension mesurée", "isCorrect": False},
+                        {"text": "Dimension réduite", "isCorrect": False},
+                        {"text": "Dimension agrandie", "isCorrect": False}
                     ],
-                    "correction": "Le **Traçage** est l'étape qui transfère les informations du plan à la pièce, toute erreur est critique."
+                    "correction": "La valeur inscrite (la cote) indique toujours la dimension réelle de l'objet fini, indépendamment de l'échelle utilisée pour le représenter sur le papier."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Que signifie le sigle **NFP 01-010** (norme de dessin technique) ?",
+                    "question": "Dans quel coin de la feuille se situe généralement le cartouche d'un plan A3 ou A4 ?",
                     "answerOptions": [
-                        {"text": "Norme de Fabrication des Portes.", "isCorrect": False},
-                        {"text": "Règles générales de représentation (projection orthogonale, vues, coupes).", "isCorrect": True},
-                        {"text": "Norme de Fixation des Poutres.", "isCorrect": False},
-                        {"text": "Norme de finition des Parquets.", "isCorrect": False}
+                        {"text": "En bas à droite", "isCorrect": True},
+                        {"text": "En haut à gauche", "isCorrect": False},
+                        {"text": "Au centre de la feuille", "isCorrect": False},
+                        {"text": "En haut à droite", "isCorrect": False}
                     ],
-                    "correction": "La **NFP 01-010** fixe les conventions de base pour la lecture et la réalisation des plans."
+                    "correction": "Le cartouche, qui contient les informations essentielles (titre, échelle, auteur), se place invariablement dans l'angle inférieur droit du document."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Comment appelle-t-on la vue d'un plan qui montre le bâtiment ou l'agencement comme s'il était coupé par un plan vertical, révélant les épaisseurs, hauteurs et intérieurs cachés ?",
+                    "question": "Comment nomme-t-on une vue qui permet de voir l'intérieur d'un meuble en supprimant virtuellement une partie de celui-ci ?",
                     "answerOptions": [
-                        {"text": "La Vue de dessus.", "isCorrect": False},
-                        {"text": "La Coupe.", "isCorrect": True},
-                        {"text": "L'Élévation.", "isCorrect": False},
-                        {"text": "La Perspective.", "isCorrect": False}
+                        {"text": "Vue en coupe", "isCorrect": True},
+                        {"text": "Vue de dessous", "isCorrect": False},
+                        {"text": "Vue auxiliaire", "isCorrect": False},
+                        {"text": "Vue perspective", "isCorrect": False}
                     ],
-                    "correction": "La **Coupe** (A-A, B-B...) est indispensable pour comprendre l'assemblage et les détails de pose (dormant dans la maçonnerie)."
+                    "correction": "La vue en coupe utilise un plan sécant imaginaire pour 'ouvrir' l'objet et révéler les détails intérieurs, les assemblages et les épaisseurs invisibles de l'extérieur."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Quel est le repère utilisé pour positionner les éléments d'une menuiserie par rapport à une structure (mur ou dalle) ?",
+                    "question": "Quel symbole précède la valeur numérique pour indiquer le diamètre d'un perçage cylindrique ?",
                     "answerOptions": [
-                        {"text": "La Couleur.", "isCorrect": False},
-                        {"text": "Le Nu intérieur et le Nu extérieur (surface finie de la maçonnerie).", "isCorrect": True},
-                        {"text": "L'épaisseur du verre.", "isCorrect": False},
-                        {"text": "Le Fil du bois.", "isCorrect": False}
+                        {"text": "Ø", "isCorrect": True},
+                        {"text": "R", "isCorrect": False},
+                        {"text": "Ep", "isCorrect": False},
+                        {"text": "Carré", "isCorrect": False}
                     ],
-                    "correction": "Les cotes de pose des dormants sont toujours données par rapport au **Nu extérieur** ou **Nu intérieur** de la maçonnerie."
+                    "correction": "Le symbole Ø (phi majuscule ou diamètre) est utilisé devant la cote pour spécifier un diamètre. La lettre R est utilisée pour les rayons."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Dans le système de **Cotes** (dimensions) sur un plan, que représente la ligne d'attache ?",
+                    "question": "Quelle perspective cavalière conserve les vraies grandeurs sur la face avant ?",
                     "answerOptions": [
-                        {"text": "Le trait de coupe.", "isCorrect": False},
-                        {"text": "Le prolongement de l'arête à coter, définissant les limites de la mesure.", "isCorrect": True},
-                        {"text": "La dimension numérique.", "isCorrect": False},
-                        {"text": "Le symbole d'épaisseur.", "isCorrect": False}
+                        {"text": "Oui", "isCorrect": True},
+                        {"text": "Non car tout est déformé", "isCorrect": False},
+                        {"text": "Uniquement sur les fuyantes", "isCorrect": False},
+                        {"text": "Seulement si l'angle est nul", "isCorrect": False}
                     ],
-                    "correction": "Les **lignes d'attache** et les **lignes de cote** sont les bases de la cotation."
+                    "correction": "En perspective cavalière, la face frontale (face avant) est représentée en vraie grandeur (échelle 1), sans déformation, contrairement aux fuyantes qui sont réduites."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quel instrument de mesure assure une précision au centième de millimètre pour le contrôle des dimensions (épaisseur, diamètre) ?",
+                    "question": "Quel terme désigne l'usinage réalisé sur l'arête d'une pièce pour recevoir un vitrage ou un panneau ?",
                     "answerOptions": [
-                        {"text": "Le Mètre ruban.", "isCorrect": False},
-                        {"text": "Le Pied à coulisse.", "isCorrect": True},
-                        {"text": "L'Équerre.", "isCorrect": False},
-                        {"text": "La Règle de maçon.", "isCorrect": False}
+                        {"text": "Feuillure", "isCorrect": True},
+                        {"text": "Rainure", "isCorrect": False},
+                        {"text": "Chanfrein", "isCorrect": False},
+                        {"text": "Mortaise", "isCorrect": False}
                     ],
-                    "correction": "Le **Pied à coulisse** est l'outil de contrôle de précision indispensable en atelier pour vérifier l'épaisseur des usinages."
+                    "correction": "La feuillure est une entaille à angle droit pratiquée sur l'arête d'une pièce. La rainure est une entaille pratiquée sur la face ou le chant, mais pas sur l'arête."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Lors du traçage d'un Tenon-Mortaise, pourquoi doit-on toujours tracer sur les **faces de parement** (faces de référence) ?",
+                    "question": "Sur un plan de menuiserie, comment le bois de bout est-il conventionnellement hachuré ?",
                     "answerOptions": [
-                        {"text": "Pour que ce soit plus joli.", "isCorrect": False},
-                        {"text": "Pour assurer la précision et la justesse de l'assemblage en prenant en compte les éventuels défauts d'équerrage ou d'épaisseur de la pièce.", "isCorrect": True},
-                        {"text": "Pour gagner du temps.", "isCorrect": False},
-                        {"text": "Pour ne pas abîmer le bois.", "isCorrect": False}
+                        {"text": "Cernes annuels", "isCorrect": True},
+                        {"text": "Traits parallèles", "isCorrect": False},
+                        {"text": "Hachures croisées", "isCorrect": False},
+                        {"text": "Points espacés", "isCorrect": False}
                     ],
-                    "correction": "La **Face de Parement** (FP) et le **Chant de Parement** (CP) sont les références d'où partent toutes les mesures."
+                    "correction": "Pour distinguer le bois de fil du bois de bout (coupe transversale), on dessine souvent des arcs de cercle imitant les cernes de croissance du bois de bout."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Comment appelle-t-on le plan qui indique la position d'un meuble ou d'une menuiserie par rapport aux murs et aux autres équipements de la pièce ?",
+                    "question": "Quelle est la hauteur standardisée d'une feuille au format A4 en orientation portrait ?",
                     "answerOptions": [
-                        {"text": "Le Plan de ferraillage.", "isCorrect": False},
-                        {"text": "Le Plan d'implantation.", "isCorrect": True},
-                        {"text": "Le Schéma de principe.", "isCorrect": False},
-                        {"text": "Le Plan de coupe.", "isCorrect": False}
+                        {"text": "297 mm", "isCorrect": True},
+                        {"text": "210 mm", "isCorrect": False},
+                        {"text": "420 mm", "isCorrect": False},
+                        {"text": "148 mm", "isCorrect": False}
                     ],
-                    "correction": "Le **Plan d'implantation** est utilisé lors de la pose sur chantier."
+                    "correction": "Le format A4 mesure 210 x 297 mm. En portrait (vertical), la hauteur est donc de 297 mm. C'est le format de base des dossiers techniques."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quel est l'outil essentiel pour vérifier que les angles d'un cadre (porte, fenêtre) sont parfaitement droits ?",
+                    "question": "Que désigne le terme 'Nomenclature' sur un plan d'ensemble ?",
                     "answerOptions": [
-                        {"text": "La Règle.", "isCorrect": False},
-                        {"text": "L'Équerre (fixe ou à chapeau).", "isCorrect": True},
-                        {"text": "Le Compas.", "isCorrect": False},
-                        {"text": "Le Niveau laser.", "isCorrect": False}
+                        {"text": "Liste des pièces", "isCorrect": True},
+                        {"text": "Titre du dessin", "isCorrect": False},
+                        {"text": "Nom du dessinateur", "isCorrect": False},
+                        {"text": "Type de projection", "isCorrect": False}
                     ],
-                    "correction": "L'**Équerre** est l'outil de base pour le contrôle des angles à 90°."
+                    "correction": "La nomenclature est le tableau qui liste tous les éléments constitutifs de l'ensemble (repère, nombre, désignation, matière, dimensions brutes)."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Sur un plan, que représente le symbole d'un **cercle avec deux flèches opposées** ?",
+                    "question": "Quel trait est utilisé pour représenter les arêtes cachées d'un ouvrage ?",
                     "answerOptions": [
-                        {"text": "Un axe de symétrie.", "isCorrect": False},
-                        {"text": "Le sens d'ouverture et de rotation d'une porte (ouvrant à la française).", "isCorrect": True},
-                        {"text": "Un robinet.", "isCorrect": False},
-                        {"text": "Un éclairage.", "isCorrect": False}
+                        {"text": "Interrompu court fin", "isCorrect": True},
+                        {"text": "Continu fort noir", "isCorrect": False},
+                        {"text": "Mixte fin à deux tirets", "isCorrect": False},
+                        {"text": "Continu fin rouge", "isCorrect": False}
                     ],
-                    "correction": "Ce symbole indique le type d'ouverture (poussant ou tirant) et le sens du débattement."
+                    "correction": "Les arêtes cachées (qui existent mais sont masquées par de la matière) se dessinent en trait interrompu court fin (pointillés)."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Quel est le nom donné au trait d'outil qui délimite la longueur finie (ou la fin de l'assemblage) de la pièce ?",
+                    "question": "En dessin technique, que signifie le terme 'Calepinage' ?",
                     "answerOptions": [
-                        {"text": "Le Trait de rive.", "isCorrect": True},
-                        {"text": "Le Trait de coupe.", "isCorrect": False},
-                        {"text": "Le Trait d'axe.", "isCorrect": False},
-                        {"text": "Le Trait de lumière.", "isCorrect": False}
+                        {"text": "Répartition des éléments", "isCorrect": True},
+                        {"text": "Calcul de résistance", "isCorrect": False},
+                        {"text": "Dessin à main levée", "isCorrect": False},
+                        {"text": "Choix de la quincaillerie", "isCorrect": False}
                     ],
-                    "correction": "Le **Trait de rive** ou 'trait d'équerre' marque la dimension finale de la pièce."
+                    "correction": "Le calepinage est le dessin ou le calcul qui permet de prévoir la disposition des éléments (panneaux, lames de parquet, carrelage) pour optimiser les coupes et l'esthétique."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Que signifie la cotation **'Ø 8'** sur un plan de fabrication ?",
+                    "question": "Quel terme désigne la face la plus belle d'une pièce de bois, qui sera visible sur l'ouvrage fini ?",
                     "answerOptions": [
-                        {"text": "Une épaisseur de 8 mm.", "isCorrect": False},
-                        {"text": "Un diamètre de 8 mm (souvent pour un perçage, un tourillon ou une vis).", "isCorrect": True},
-                        {"text": "Une largeur de 8 mm.", "isCorrect": False},
-                        {"text": "Un angle de 8 degrés.", "isCorrect": False}
+                        {"text": "Parement", "isCorrect": True},
+                        {"text": "Contre-parement", "isCorrect": False},
+                        {"text": "Rive", "isCorrect": False},
+                        {"text": "Chant", "isCorrect": False}
                     ],
-                    "correction": "Le symbole **Ø** (Phi) représente le diamètre."
+                    "correction": "Le parement est la face visible et soignée. La face opposée, souvent cachée ou moins soignée, est le contre-parement."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Qu'est-ce qu'une **Feuillure** en menuiserie ?",
+                    "question": "Quelle information n'est PAS indiquée dans une cotation complète ?",
                     "answerOptions": [
-                        {"text": "Un défaut du bois.", "isCorrect": False},
-                        {"text": "Une entaille (rainure) rectangulaire pratiquée sur le bord d'une pièce de bois pour recevoir un autre élément (ex : un panneau, un vitrage).", "isCorrect": True},
-                        {"text": "Une vis.", "isCorrect": False},
-                        {"text": "Un angle à 45°.", "isCorrect": False}
+                        {"text": "Couleur de la pièce", "isCorrect": True},
+                        {"text": "Ligne de cote", "isCorrect": False},
+                        {"text": "Ligne d'attache", "isCorrect": False},
+                        {"text": "Valeur de la cote", "isCorrect": False}
                     ],
-                    "correction": "La **Feuillure** est essentielle dans la fabrication des portes et fenêtres pour l'assemblage du vitrage ou des panneaux."
+                    "correction": "La cotation indique la géométrie (dimensions). La couleur ou la finition exacte est généralement indiquée dans la nomenclature ou le cahier des charges, pas dans la cote elle-même."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Dans le cas d'une **menuiserie intérieure** (porte ou meuble), quelle est la cote la plus importante pour la pose ?",
+                    "question": "À quoi sert le 'Trait d'axe' lors de l'établissement d'un plan sur règle ?",
                     "answerOptions": [
-                        {"text": "La largeur de la feuillure.", "isCorrect": False},
-                        {"text": "La Cote de réservation (dimension de l'ouverture dans le mur ou la maçonnerie).", "isCorrect": True},
-                        {"text": "La couleur du bois.", "isCorrect": False},
-                        {"text": "Le prix.", "isCorrect": False}
+                        {"text": "Référence de symétrie", "isCorrect": True},
+                        {"text": "Indiquer la coupe", "isCorrect": False},
+                        {"text": "Marquer les arêtes", "isCorrect": False},
+                        {"text": "Définir l'échelle", "isCorrect": False}
                     ],
-                    "correction": "La **cote de réservation** (dimensions brutes) doit être respectée pour que le dormant ou le meuble s'insère correctement, en prévoyant le jeu de pose nécessaire."
+                    "correction": "Sur une règle (plan échelle 1 sur panneau), le trait d'axe sert de référence géométrique centrale pour tracer les symétries et positionner les assemblages."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 3 : USINAGE ET TECHNIQUES D'ASSEMBLAGE (Q. 41-60)
+        # THÈME 3 : PROCÉDÉS D'USINAGE ET OUTILLAGE (Questions 41 à 60)
         # =========================================================================
         3: {
-            "name": "3. Usinage et Techniques d'Assemblage (Q. 41-60)",
+            "name": "THÈME 3 : PROCÉDÉS D'USINAGE ET OUTILLAGE",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel est le rôle de la **Dégauchisseuse** ?",
+                    "question": "Quelle est la fonction principale d'une dégauchisseuse ?",
                     "answerOptions": [
-                        {"text": "Couper le bois en longueur.", "isCorrect": False},
-                        {"text": "Rendre planes et d'équerre les faces de référence du bois massif.", "isCorrect": True},
-                        {"text": "Réaliser des moulures.", "isCorrect": False},
-                        {"text": "Percer des trous.", "isCorrect": False}
+                        {"text": "Dresser une face et un chant", "isCorrect": True},
+                        {"text": "Mettre le bois à épaisseur constante", "isCorrect": False},
+                        {"text": "Réaliser des tenons et des mortaises", "isCorrect": False},
+                        {"text": "Scier le bois de long", "isCorrect": False}
                     ],
-                    "correction": "La **Dégauchisseuse** est la première machine utilisée pour préparer le bois, créant les deux faces de référence (FP et CP)."
+                    "correction": "La dégauchisseuse sert à rendre plane une surface de référence (la face) et à dresser un chant perpendiculaire à cette face (l'équerrage). C'est la première étape de l'usinage massif."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Quel est le rôle de la **Raboteuse** ?",
+                    "question": "Sur une toupie, dans quel sens doit-on amener la pièce de bois par rapport à la rotation de l'outil pour travailler en sécurité ?",
                     "answerOptions": [
-                        {"text": "Rendre la pièce d'équerre.", "isCorrect": False},
-                        {"text": "Amener les pièces de bois massives à l'épaisseur et à la largeur finale, en travaillant parallèlement à la face dégauchie.", "isCorrect": True},
-                        {"text": "Couper les angles.", "isCorrect": False},
-                        {"text": "Réaliser des rainures.", "isCorrect": False}
+                        {"text": "Sens contraire", "isCorrect": True},
+                        {"text": "Sens identique", "isCorrect": False},
+                        {"text": "Sens avalant", "isCorrect": False},
+                        {"text": "Sens quelconque", "isCorrect": False}
                     ],
-                    "correction": "La **Raboteuse** permet d'obtenir le calibrage exact de la pièce, après le travail à la dégauchisseuse."
+                    "correction": "Le travail doit toujours se faire en 'opposition', c'est-à-dire que l'avance du bois s'oppose à la rotation de l'outil. Le travail en 'avalant' (même sens) est extrêmement dangereux et interdit manuellement car la pièce est projetée."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Comment appelle-t-on l'assemblage où l'extrémité d'une pièce (le **tenon**) vient s'insérer dans un logement (la **mortaise**) de l'autre pièce ?",
+                    "question": "Quel matériau est utilisé pour les plaquettes de coupe modernes afin d'usiner des matériaux abrasifs comme le mélaminé ?",
                     "answerOptions": [
-                        {"text": "L'Assemblage par tourillon.", "isCorrect": False},
-                        {"text": "L'Assemblage à Tenon et Mortaise.", "isCorrect": True},
-                        {"text": "L'Assemblage à queue d'aronde.", "isCorrect": False},
-                        {"text": "L'Assemblage par plat-joint.", "isCorrect": False}
+                        {"text": "Carbure de tungstène", "isCorrect": True},
+                        {"text": "Acier rapide", "isCorrect": False},
+                        {"text": "Acier fondu", "isCorrect": False},
+                        {"text": "Fer doux", "isCorrect": False}
                     ],
-                    "correction": "Le **Tenon-Mortaise** est l'assemblage traditionnel le plus solide, utilisé pour les cadres et les traverses."
+                    "correction": "Le carbure de tungstène (souvent noté HW ou HM) est beaucoup plus dur et résistant à l'usure que l'acier rapide (HSS), ce qui est indispensable pour les colles et matériaux composites abrasifs."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quelle machine d'atelier est utilisée pour réaliser des moulures, des feuillures ou des rainures complexes ?",
+                    "question": "À quoi sert le couteau diviseur situé derrière la lame d'une scie circulaire ?",
                     "answerOptions": [
-                        {"text": "La Scie à ruban.", "isCorrect": False},
-                        {"text": "La Toupie (ou Toupillage).", "isCorrect": True},
-                        {"text": "La Ponceuse à bande.", "isCorrect": False},
-                        {"text": "La Perceuse à colonne.", "isCorrect": False}
+                        {"text": "Empêcher le resserrement du bois", "isCorrect": True},
+                        {"text": "Aspirer les copeaux", "isCorrect": False},
+                        {"text": "Refroidir la lame", "isCorrect": False},
+                        {"text": "Guider la coupe parallèle", "isCorrect": False}
                     ],
-                    "correction": "La **Toupie** (ou la défonceuse manuelle) est l'outil pour les usinages de profilés. Elle nécessite une vigilance extrême en sécurité."
+                    "correction": "Le couteau diviseur maintient le trait de scie ouvert après la coupe. Il empêche le bois (qui peut avoir des tensions internes) de se refermer sur la lame arrière et de provoquer un rejet violent."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Quel est le principal danger du travail d'usinage **en contre-fil** ?",
+                    "question": "Quel réglage détermine la profondeur de passe sur une dégauchisseuse ?",
                     "answerOptions": [
-                        {"text": "Une coupe trop lente.", "isCorrect": False},
-                        {"text": "L'arrachement des fibres du bois, produisant un défaut de surface (éclats).", "isCorrect": True},
-                        {"text": "L'échauffement des outils.", "isCorrect": False},
-                        {"text": "La perte de la pièce.", "isCorrect": False}
+                        {"text": "Hauteur de la table d'entrée", "isCorrect": True},
+                        {"text": "Hauteur de la table de sortie", "isCorrect": False},
+                        {"text": "Vitesse de l'arbre", "isCorrect": False},
+                        {"text": "Inclinaison du guide", "isCorrect": False}
                     ],
-                    "correction": "Le **Contre-fil** oblige à inverser l'orientation de la pièce ou à prendre de très faibles passes pour éviter l'arrachement."
+                    "correction": "La table de sortie est alignée avec le point haut des fers. C'est en abaissant la table d'entrée que l'on détermine l'épaisseur de bois qui sera enlevée (la prise de passe)."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Qu'est-ce qu'une **Languette** (dans un assemblage) ?",
+                    "question": "Comment appelle-t-on l'opération qui consiste à usiner une pièce pour lui donner une épaisseur et une largeur précises après le dégauchissage ?",
                     "answerOptions": [
-                        {"text": "La partie saillante et mince d'une pièce qui vient s'insérer dans la rainure de la pièce opposée (assemblage Rainure et Languette).", "isCorrect": True},
-                        {"text": "L'épaisseur de la pièce.", "isCorrect": False},
-                        {"text": "Un défaut d'usinage.", "isCorrect": False},
-                        {"text": "Une vis.", "isCorrect": False}
+                        {"text": "Rabotage", "isCorrect": True},
+                        {"text": "Chantournement", "isCorrect": False},
+                        {"text": "Calibrage", "isCorrect": False},
+                        {"text": "Ponçage", "isCorrect": False}
                     ],
-                    "correction": "L'assemblage **Rainure et Languette** est couramment utilisé pour l'assemblage de panneaux (parquets, fonds de meubles)."
+                    "correction": "Le rabotage (sur la raboteuse) permet de calibrer la pièce, c'est-à-dire de rendre la face opposée parallèle à la face de référence dégauchie, en fixant l'épaisseur finale."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Quel est le rôle du **Presseur** sur une machine à bois (Toupie, Scie à format) ?",
+                    "question": "Quel outil portatif est le plus adapté pour réaliser une rainure arrêtée en plein panneau ?",
                     "answerOptions": [
-                        {"text": "Guider la pièce.", "isCorrect": False},
-                        {"text": "Maintenir fermement la pièce de bois contre la table et le guide pendant l'usinage pour garantir la sécurité et la qualité de coupe.", "isCorrect": True},
-                        {"text": "Lubrifier l'outil.", "isCorrect": False},
-                        {"text": "Évacuer les copeaux.", "isCorrect": False}
+                        {"text": "Défonceuse", "isCorrect": True},
+                        {"text": "Scie sauteuse", "isCorrect": False},
+                        {"text": "Rabot électrique", "isCorrect": False},
+                        {"text": "Ponceuse à bande", "isCorrect": False}
                     ],
-                    "correction": "Le **Presseur** (mécanique, pneumatique ou manuel) est un élément de sécurité et de précision essentiel."
+                    "correction": "La défonceuse est une machine plongeante qui permet d'usiner des rainures, feuillures ou moulures n'importe où sur la surface d'un panneau, contrairement aux outils de rive."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Comment appelle-t-on l'assemblage très résistant, souvent utilisé pour les tiroirs, qui ressemble à des dents entrelacées ?",
+                    "question": "Quelle est la fonction d'un entraîneur mécanique installé sur une toupie ?",
                     "answerOptions": [
-                        {"text": "L'Assemblage à tenon.", "isCorrect": False},
-                        {"text": "L'Assemblage à Queue d'Aronde.", "isCorrect": True},
-                        {"text": "L'Assemblage par lamello.", "isCorrect": False},
-                        {"text": "L'Assemblage à mi-bois.", "isCorrect": False}
+                        {"text": "Sécurité et régularité", "isCorrect": True},
+                        {"text": "Graissage automatique", "isCorrect": False},
+                        {"text": "Nettoyage de la table", "isCorrect": False},
+                        {"text": "Affûtage en continu", "isCorrect": False}
                     ],
-                    "correction": "La **Queue d'Aronde** est un assemblage mécanique auto-serrant, apprécié pour sa solidité et son esthétisme."
+                    "correction": "L'entraîneur plaque le bois contre le guide et la table et le fait avancer à vitesse constante. Il éloigne les mains de l'outil (sécurité) et améliore la qualité de surface (régularité)."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Quel est l'outil utilisé pour réaliser un assemblage de panneaux (plats-joints) à l'aide de chevilles en bois (lamelles compressées) ?",
+                    "question": "Que signifie le marquage 'HSS' sur un foret ou un fer de rabot ?",
                     "answerOptions": [
-                        {"text": "La Fraise à tenon.", "isCorrect": False},
-                        {"text": "La Lamelleuse (ou Lamello).", "isCorrect": True},
-                        {"text": "La Dégauchisseuse.", "isCorrect": False},
-                        {"text": "La Scie plongeante.", "isCorrect": False}
+                        {"text": "High Speed Steel", "isCorrect": True},
+                        {"text": "High Solid System", "isCorrect": False},
+                        {"text": "Heavy Steel Structure", "isCorrect": False},
+                        {"text": "Hard Stone Standard", "isCorrect": False}
                     ],
-                    "correction": "La **Lamelleuse** fraise une fente pour y insérer une lamelle (cheville en bois). L'eau de la colle fait gonfler la lamelle et assure un assemblage solide et aligné."
+                    "correction": "HSS signifie 'High Speed Steel' (Acier Rapide). C'est un acier capable de conserver sa dureté à haute température, utilisé pour les outils coupants dans le bois massif non abrasif."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Lors du sciage, à quoi sert le **Couteau diviseur** sur une scie circulaire ou à format ?",
+                    "question": "Lors du sciage à la scie à ruban, à quelle hauteur doit être réglé le guide-lame supérieur ?",
                     "answerOptions": [
-                        {"text": "Pousser le bois.", "isCorrect": False},
-                        {"text": "Empêcher le bois de se refermer sur la lame après la coupe, réduisant le risque de rejet (ou 'kickback') et d'accident.", "isCorrect": True},
-                        {"text": "Mesurer la coupe.", "isCorrect": False},
-                        {"text": "Refroidir la lame.", "isCorrect": False}
+                        {"text": "Au plus près de la pièce", "isCorrect": True},
+                        {"text": "Au maximum en haut", "isCorrect": False},
+                        {"text": "Au milieu de la course", "isCorrect": False},
+                        {"text": "Au niveau de la table", "isCorrect": False}
                     ],
-                    "correction": "Le **Couteau diviseur** est un élément de sécurité essentiel, mais doit être correctement réglé (lame)."
+                    "correction": "Le guide doit être réglé juste au-dessus de la pièce à scier (environ 1 cm) pour limiter la flexion de la lame, assurer une coupe précise et protéger l'opérateur de la partie non travaillante de la lame."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Qu'est-ce qu'un **Tourillon** dans le domaine de l'assemblage ?",
+                    "question": "Quel défaut d'usinage appelle-t-on un 'talon' en sortie de raboteuse ?",
                     "answerOptions": [
-                        {"text": "Une vis spéciale.", "isCorrect": False},
-                        {"text": "Une cheville cylindrique en bois, insérée dans deux perçages pour assembler deux pièces de bois (alternative courante au Tenon-Mortaise).", "isCorrect": True},
-                        {"text": "Un défaut du bois.", "isCorrect": False},
-                        {"text": "Une butée de coupe.", "isCorrect": False}
+                        {"text": "Une encoche en bout de pièce", "isCorrect": True},
+                        {"text": "Une brûlure sur la face", "isCorrect": False},
+                        {"text": "Une surface pelucheuse", "isCorrect": False},
+                        {"text": "Une trace de denture", "isCorrect": False}
                     ],
-                    "correction": "L'assemblage par **tourillon** est très rapide à réaliser (avec une perceuse et une chevilleuse)."
+                    "correction": "Le talon est une marque creuse (surrabotage) aux extrémités de la pièce (entrée ou sortie), souvent causée par un mauvais réglage des rouleaux de la table ou une pièce mal soutenue."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quel est le rôle de la **Scie à format** ?",
+                    "question": "Sur une mortaiseuse à chaîne, quel est le mouvement de coupe ?",
                     "answerOptions": [
-                        {"text": "Couper le bois massif.", "isCorrect": False},
-                        {"text": "Découper des panneaux (Agglo, MDF, Contreplaqué) à la dimension exacte, avec des coupes précises et des angles parfaits (45°).", "isCorrect": True},
-                        {"text": "Dégauchir le bois.", "isCorrect": False},
-                        {"text": "Percer des trous.", "isCorrect": False}
+                        {"text": "Rotation continue", "isCorrect": True},
+                        {"text": "Mouvement alternatif vertical", "isCorrect": False},
+                        {"text": "Mouvement pendulaire", "isCorrect": False},
+                        {"text": "Oscillation latérale", "isCorrect": False}
                     ],
-                    "correction": "La **Scie à format** (souvent avec inciseur) est la machine principale pour la découpe des panneaux."
+                    "correction": "La chaîne coupante tourne en continu autour d'un guide, comme une tronçonneuse."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Comment appelle-t-on l'opération de creuser le logement d'une charnière ou d'une fiche pour qu'elle soit noyée dans le bois ?",
+                    "question": "Pour réaliser un tenon, quelle machine est spécifiquement conçue avec plusieurs arbres pour faire les arasements et les joues en un seul passage ?",
                     "answerOptions": [
-                        {"text": "Le Perçage.", "isCorrect": False},
-                        {"text": "Le Mortaisage (ou La Bédaneuse pour la mortaise de serrure).", "isCorrect": False},
-                        {"text": "Le Défonçage (ou l'Encastrement).", "isCorrect": True},
-                        {"text": "Le Ponçage.", "isCorrect": False}
+                        {"text": "Tenonneuse", "isCorrect": True},
+                        {"text": "Toupie", "isCorrect": False},
+                        {"text": "Scie à format", "isCorrect": False},
+                        {"text": "Mortaiseuse", "isCorrect": False}
                     ],
-                    "correction": "L'**Encastrement** ou **Défonçage** de la quincaillerie est essentiel pour un bon fonctionnement (charnière)."
+                    "correction": "La tenonneuse (simple ou double) possède des scies pour couper à longueur, et des dérouleurs ou disques pour usiner les joues du tenon simultanément."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quel est le rôle du **Serre-joint** dans le processus d'assemblage ?",
+                    "question": "Qu'est-ce que 'l'avoyage' sur une lame de scie traditionnelle ?",
                     "answerOptions": [
-                        {"text": "Maintenir la pièce en place avant la coupe.", "isCorrect": False},
-                        {"text": "Maintenir les pièces assemblées sous pression pendant le temps de prise de la colle.", "isCorrect": True},
-                        {"text": "Mesurer la longueur.", "isCorrect": False},
-                        {"text": "Poncer le bois.", "isCorrect": False}
+                        {"text": "L'inclinaison latérale des dents", "isCorrect": True},
+                        {"text": "L'affûtage de la pointe", "isCorrect": False},
+                        {"text": "La trempe du métal", "isCorrect": False},
+                        {"text": "Le nettoyage de la lame", "isCorrect": False}
                     ],
-                    "correction": "Le **Serrage** est une étape critique pour la solidité finale d'un collage."
+                    "correction": "L'avoyage consiste à incliner alternativement les dents à gauche et à droite. Cela crée un trait de scie plus large que la lame, évitant que le corps de la lame ne frotte et ne chauffe dans le bois."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quel outil manuel est utilisé pour affiner le fond d'une mortaise ou parfaire un angle rentrant après un usinage machine ?",
+                    "question": "Quelle vitesse de rotation est généralement adaptée pour une fraise de toupie de petit diamètre ?",
                     "answerOptions": [
-                        {"text": "La Plane.", "isCorrect": False},
-                        {"text": "Le Ciseau à bois (ou Bédane).", "isCorrect": True},
-                        {"text": "La Râpe.", "isCorrect": False},
-                        {"text": "La Visseuse.", "isCorrect": False}
+                        {"text": "Haute vitesse", "isCorrect": True},
+                        {"text": "Basse vitesse", "isCorrect": False},
+                        {"text": "Vitesse nulle", "isCorrect": False},
+                        {"text": "Vitesse variable lente", "isCorrect": False}
                     ],
-                    "correction": "Le **Ciseau à bois** reste indispensable pour la finition manuelle des assemblages traditionnels."
+                    "correction": "Plus le diamètre de l'outil est petit, plus la vitesse de rotation (tr/min) doit être élevée pour maintenir une vitesse de coupe périphérique suffisante (environ 45-60 m/s pour le bois)."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Comment doit-on guider une pièce de bois lors de l'usinage à la **Toupie** pour des raisons de sécurité ?",
+                    "question": "Quel accessoire est indispensable pour usiner des pièces courtes à la dégauchisseuse en toute sécurité ?",
                     "answerOptions": [
-                        {"text": "En tenant la pièce très lâchement.", "isCorrect": False},
-                        {"text": "Toujours dans le sens inverse du sens de rotation de l'outil (sens opposé à la coupe).", "isCorrect": True},
-                        {"text": "Toujours dans le sens de rotation de l'outil.", "isCorrect": False},
-                        {"text": "Peu importe le sens.", "isCorrect": False}
+                        {"text": "Poussoir", "isCorrect": True},
+                        {"text": "Gants en cuir épais", "isCorrect": False},
+                        {"text": "Compas d'épaisseur", "isCorrect": False},
+                        {"text": "Lunettes de soleil", "isCorrect": False}
                     ],
-                    "correction": "Travailler en **contre-rotation** (sauf indication contraire pour certaines opérations) est la règle de sécurité de base pour éviter le rejet et garantir le contrôle de la pièce."
+                    "correction": "L'utilisation d'un poussoir est obligatoire pour les pièces courtes ou en fin de passe, afin de garder les mains à une distance sûre de l'arbre porte-fers. Les gants sont interdits (risque de happement)."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Qu'est-ce qu'une **Rainure** ?",
+                    "question": "Quelle opération réalise-t-on avec une scie à format ?",
                     "answerOptions": [
-                        {"text": "Un trou carré.", "isCorrect": False},
-                        {"text": "Une entaille longitudinale de section rectangulaire réalisée sur le chant d'une pièce de bois (pour recevoir un panneau, un fond de meuble, ou une languette).", "isCorrect": True},
-                        {"text": "Une coupe en angle.", "isCorrect": False},
-                        {"text": "Une moulure ronde.", "isCorrect": False}
+                        {"text": "Mise aux dimensions de panneaux", "isCorrect": True},
+                        {"text": "Perçage de trous profonds", "isCorrect": False},
+                        {"text": "Ponçage de finition", "isCorrect": False},
+                        {"text": "Moulurage de chants courbes", "isCorrect": False}
                     ],
-                    "correction": "La **Rainure** est courante en agencement (pour les fonds de tiroirs ou les panneaux de portes)."
+                    "correction": "La scie à format est conçue avec un chariot coulissant pour déligner et tronçonner des panneaux (ou du massif) avec une grande précision dimensionnelle et d'équerrage."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quel est le risque principal lors de l'utilisation d'une **Défonceuse manuelle** ?",
+                    "question": "En ponçage, quel numéro de grain correspond à la finition la plus fine ?",
                     "answerOptions": [
-                        {"text": "Un défaut de collage.", "isCorrect": False},
-                        {"text": "Le rejet de la machine (à cause du sens de coupe ou de la vitesse d'avance) et la coupure des doigts.", "isCorrect": True},
-                        {"text": "La déformation du bois.", "isCorrect": False},
-                        {"text": "Le manque de précision.", "isCorrect": False}
+                        {"text": "180", "isCorrect": True},
+                        {"text": "80", "isCorrect": False},
+                        {"text": "40", "isCorrect": False},
+                        {"text": "120", "isCorrect": False}
                     ],
-                    "correction": "La **Défonceuse** est puissante et exige une excellente prise en main et des guides solides (gabarit)."
+                    "correction": "La numérotation correspond au nombre de mailles par pouce du tamis. Plus le chiffre est élevé (180, 240, etc.), plus le grain est fin. Un grain 40 est très grossier (dégrossissage)."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Comment s'appelle l'assemblage réalisé en coupant les deux pièces à 45° pour former un angle de 90° (souvent pour les cadres ou moulures) ?",
+                    "question": "Quel est le risque principal lors de l'usinage d'une pièce de bois 'à contre-fil' ?",
                     "answerOptions": [
-                        {"text": "L'Assemblage à Tenon-Mortaise.", "isCorrect": False},
-                        {"text": "L'Assemblage à Onglet (ou à coupe d'onglet).", "isCorrect": True},
-                        {"text": "L'Assemblage par tourillon.", "isCorrect": False},
-                        {"text": "L'Assemblage à plat-joint.", "isCorrect": False}
+                        {"text": "Éclats et arrachements", "isCorrect": True},
+                        {"text": "Usure prématurée de l'outil", "isCorrect": False},
+                        {"text": "Surchauffe du moteur", "isCorrect": False},
+                        {"text": "Blocage de la pièce", "isCorrect": False}
                     ],
-                    "correction": "L'**Onglet** (ou coupe à 45°) est privilégié pour son esthétisme, mais il est moins résistant mécaniquement qu'un Tenon-Mortaise."
+                    "correction": "Travailler à contre-fil signifie que l'outil soulève les fibres au lieu de les couper net, provoquant des arrachements de matière inesthétiques sur la surface."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quel est le rôle du **Contre-profil** sur une menuiserie (porte, fenêtre) ?",
+                    "question": "Quel type de montage d'outil sur toupie nécessite impérativement l'utilisation d'un guide à lunette ou d'un travail au gabarit ?",
                     "answerOptions": [
-                        {"text": "Rendre la pièce plus lourde.", "isCorrect": False},
-                        {"text": "Assurer la continuité du profil et de la moulure sur les traverses de l'assemblage (Tenon-Mortaise à Contre-profil).", "isCorrect": True},
-                        {"text": "Protéger la pièce contre le feu.", "isCorrect": False},
-                        {"text": "Éviter le collage.", "isCorrect": False}
+                        {"text": "Travail à l'arbre", "isCorrect": True},
+                        {"text": "Travail au guide parallèle", "isCorrect": False},
+                        {"text": "Travail au chariot", "isCorrect": False},
+                        {"text": "Travail à l'entraîneur", "isCorrect": False}
                     ],
-                    "correction": "Le **Contre-profil** permet un assemblage invisible et esthétique entre les montants et les traverses des cadres."
+                    "correction": "Le travail à l'arbre (chantournage) se fait sans le guide parallèle continu. Il nécessite un roulement à billes ou une bague de copiage et un montage spécifique (lunette, protecteur) pour la sécurité."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 4 : FABRICATION DE MENUISERIE ET AGENCEMENT (Q. 61-80)
+        # THÈME 4 : TECHNIQUES D'ASSEMBLAGE ET DE MONTAGE (Questions 61 à 80)
         # =========================================================================
         4: {
-            "name": "4. Fabrication de Menuiserie et Agencement (Q. 61-80)",
+            "name": "THÈME 4 : TECHNIQUES D'ASSEMBLAGE ET DE MONTAGE",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Dans une fenêtre ou une porte, comment appelle-t-on le cadre fixe qui est scellé dans la maçonnerie ?",
+                    "question": "Quel est l'assemblage traditionnel le plus couramment utilisé pour lier un montant et une traverse en menuiserie massive ?",
                     "answerOptions": [
-                        {"text": "Le Dormant (ou Châssis fixe).", "isCorrect": True},
-                        {"text": "L'Ouvrant (ou Vantail).", "isCorrect": False},
-                        {"text": "Le Linteau.", "isCorrect": False},
-                        {"text": "Le Joint de calfeutrement.", "isCorrect": False}
+                        {"text": "Tenon et mortaise", "isCorrect": True},
+                        {"text": "Queue d'aronde", "isCorrect": False},
+                        {"text": "Rainure et languette", "isCorrect": False},
+                        {"text": "Plat joint", "isCorrect": False}
                     ],
-                    "correction": "Le **Dormant** (ou Bâti) est la partie de la menuiserie fixée au mur."
+                    "correction": "L'assemblage à tenon et mortaise est la référence structurelle en menuiserie. Le tenon (partie mâle) pénètre dans la mortaise (partie femelle), assurant une grande résistance mécanique grâce à la surface de collage."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quel est le rôle du **Jet d'eau** sur la traverse basse d'un ouvrant de fenêtre ?",
+                    "question": "Quel assemblage est spécifiquement conçu pour résister à l'arrachement de la façade d'un tiroir ?",
                     "answerOptions": [
-                        {"text": "Ralentir l'ouverture.", "isCorrect": False},
-                        {"text": "Faciliter l'évacuation des eaux de ruissellement vers l'extérieur pour éviter l'infiltration sous le dormant.", "isCorrect": True},
-                        {"text": "Servir de poignée.", "isCorrect": False},
-                        {"text": "Tenir le vitrage.", "isCorrect": False}
+                        {"text": "Queue d'aronde", "isCorrect": True},
+                        {"text": "Coupe d'onglet", "isCorrect": False},
+                        {"text": "Enfourchement", "isCorrect": False},
+                        {"text": "Tourillon", "isCorrect": False}
                     ],
-                    "correction": "Le **Jet d'eau** est un élément de protection contre l'humidité, souvent associé à une bavette métallique ou un rejingot."
+                    "correction": "La forme trapézoïdale de la queue d'aronde offre un verrouillage mécanique naturel qui empêche la façade de se détacher des côtés lorsque l'on tire le tiroir, même sans colle."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Comment appelle-t-on la pièce de quincaillerie qui permet de régler la position et l'aplomb d'une porte après la pose ?",
+                    "question": "Quelle pièce de bois maintient un vitrage dans la feuillure d'un châssis ?",
                     "answerOptions": [
-                        {"text": "La Cale.", "isCorrect": False},
-                        {"text": "La Fiche à lacets (ou charnière réglable).", "isCorrect": True},
-                        {"text": "Le Verrou.", "isCorrect": False},
-                        {"text": "La Crémone.", "isCorrect": False}
+                        {"text": "Parclose", "isCorrect": True},
+                        {"text": "Chambranle", "isCorrect": False},
+                        {"text": "Cimaise", "isCorrect": False},
+                        {"text": "Plinthe", "isCorrect": False}
                     ],
-                    "correction": "La **Fiche réglable** ou paumelle réglable permet d'ajuster le jeu entre la porte et le dormant."
+                    "correction": "La parclose est la baguette (en bois, alu ou PVC) qui vient se fixer contre le vitrage pour le maintenir plaqué au fond de la feuillure. Elle est démontable pour permettre le remplacement de la vitre."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Dans la fabrication d'un caisson d'agencement, quel assemblage est le plus rapide et le plus courant pour lier les montants et les traverses ?",
+                    "question": "Quel usinage permet d'assembler des cadres moulurés sans avoir à réaliser de coupe d'onglet dans les angles ?",
                     "answerOptions": [
-                        {"text": "Tenon-Mortaise.", "isCorrect": False},
-                        {"text": "Vis et Tourillon (ou Quincaillerie d'assemblage invisible : ex: Rastex, Excentrique).", "isCorrect": True},
-                        {"text": "Queue d'aronde.", "isCorrect": False},
-                        {"text": "Assemblage à mi-bois.", "isCorrect": False}
+                        {"text": "Profil et contre-profil", "isCorrect": True},
+                        {"text": "Tenon à épaulement", "isCorrect": False},
+                        {"text": "Enfourchement simple", "isCorrect": False},
+                        {"text": "Assemblage à vis", "isCorrect": False}
                     ],
-                    "correction": "L'assemblage par **tourillon et quincaillerie** est privilégié en série pour sa rapidité et son aspect démontable."
+                    "correction": "L'assemblage à profil et contre-profil permet d'emboîter les moulures des montants et des traverses de manière complémentaire, assurant à la fois l'assemblage mécanique et la continuité esthétique du profil."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est le rôle des **Calages de vitrage** (petites cales en plastique ou en bois) ?",
+                    "question": "À quoi servent les stries présentes sur la surface des tourillons en bois ?",
                     "answerOptions": [
-                        {"text": "Empêcher le verre de bouger.", "isCorrect": False},
-                        {"text": "Assurer le jeu nécessaire et le positionnement du vitrage, notamment en supportant son poids pour éviter la déformation de l'ouvrant (calage en L).", "isCorrect": True},
-                        {"text": "Rendre la fenêtre décorative.", "isCorrect": False},
-                        {"text": "Assurer l'étanchéité.", "isCorrect": False}
+                        {"text": "Permettre la remontée de la colle", "isCorrect": True},
+                        {"text": "Augmenter le diamètre du tourillon", "isCorrect": False},
+                        {"text": "Faciliter le perçage du bois", "isCorrect": False},
+                        {"text": "Améliorer l'esthétique du joint", "isCorrect": False}
                     ],
-                    "correction": "Le **Calage** est essentiel pour la bonne tenue et la durabilité du vitrage, en particulier les doubles et triples vitrages lourds."
+                    "correction": "Les cannelures ou stries permettent à l'excédent de colle situé au fond du trou de remonter le long du tourillon lors de l'enfoncement, évitant ainsi une pression hydraulique qui pourrait fendre le bois."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Comment appelle-t-on le profil qui maintient le panneau ou le vitrage dans la feuillure et assure l'étanchéité intérieure ?",
+                    "question": "Quel terme désigne la partie fixe d'une fenêtre scellée à la maçonnerie ?",
                     "answerOptions": [
-                        {"text": "La Traverse.", "isCorrect": False},
-                        {"text": "Le Parclose.", "isCorrect": True},
-                        {"text": "Le Dormant.", "isCorrect": False},
-                        {"text": "Le Linteau.", "isCorrect": False}
+                        {"text": "Dormant", "isCorrect": True},
+                        {"text": "Ouvrant", "isCorrect": False},
+                        {"text": "Vantail", "isCorrect": False},
+                        {"text": "Battant", "isCorrect": False}
                     ],
-                    "correction": "La **Parclose** (souvent amovible) est posée après la mise en place du vitrage/panneau et des joints d'étanchéité."
+                    "correction": "Le dormant est le cadre fixe de la menuiserie, attaché au gros œuvre. L'ouvrant (ou vantail/battant) est la partie mobile qui s'articule sur le dormant."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Quel est l'objectif d'une **Dégondeuse** ?",
+                    "question": "Quelle technique permet d'augmenter la longueur d'une pièce de bois massive en collant plusieurs éléments bout à bout ?",
                     "answerOptions": [
-                        {"text": "Fixer les gonds.", "isCorrect": False},
-                        {"text": "Permettre le retrait facile des ouvrants (portes ou fenêtres) de leurs gonds ou fiches, notamment pour la pose finale ou la maintenance.", "isCorrect": True},
-                        {"text": "Régler l'aplomb.", "isCorrect": False},
-                        {"text": "Lubrifier les charnières.", "isCorrect": False}
+                        {"text": "Aboutage", "isCorrect": True},
+                        {"text": "Élargissement", "isCorrect": False},
+                        {"text": "Placage", "isCorrect": False},
+                        {"text": "Stratification", "isCorrect": False}
                     ],
-                    "correction": "La **Dégondeuse** (petit levier) facilite le démontage des portes non réglables."
+                    "correction": "L'aboutage (souvent réalisé par entures multiples ou 'finger joint') permet d'obtenir de grandes longueurs de bois épurées de défauts en collant des pièces courtes en bout."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Dans un meuble, quel est le rôle du **Dos** (panneau arrière) ?",
+                    "question": "Quel est le rôle principal de l'arasement dans un assemblage à tenon et mortaise ?",
                     "answerOptions": [
-                        {"text": "Servir de décoration.", "isCorrect": False},
-                        {"text": "Assurer la rigidité et l'équerrage du caisson (contreventement) et cacher le mur.", "isCorrect": True},
-                        {"text": "Servir de poignée.", "isCorrect": False},
-                        {"text": "Être la façade du meuble.", "isCorrect": False}
+                        {"text": "Limiter l'enfoncement et assurer l'équerrage", "isCorrect": True},
+                        {"text": "Cacher la colle à l'intérieur du joint", "isCorrect": False},
+                        {"text": "Renforcer la résistance à la flexion", "isCorrect": False},
+                        {"text": "Permettre le passage de l'outil de coupe", "isCorrect": False}
                     ],
-                    "correction": "Le **Dos** (souvent en panneau mince) est un élément structurel crucial pour la stabilité du meuble."
+                    "correction": "L'arasement est l'épaulement du tenon. Il vient buter contre la face de la pièce mortaisée, définissant ainsi la dimension intérieure de l'ouvrage et garantissant la géométrie (l'équerrage)."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel terme désigne la menuiserie posée **en applique** ?",
+                    "question": "Comment vérifie-t-on géométriquement l'équerrage d'un cadre lors du serrage ?",
                     "answerOptions": [
-                        {"text": "La pose d'une fenêtre à l'intérieur du tableau du mur (tunnel).", "isCorrect": False},
-                        {"text": "La pose où le dormant recouvre partiellement la maçonnerie (souvent à l'intérieur, pour pouvoir ajouter un isolant).", "isCorrect": True},
-                        {"text": "La pose uniquement pour l'extérieur.", "isCorrect": False},
-                        {"text": "La pose sans vis.", "isCorrect": False}
+                        {"text": "En comparant les longueurs des diagonales", "isCorrect": True},
+                        {"text": "En mesurant la longueur des montants", "isCorrect": False},
+                        {"text": "En serrant les joints au maximum", "isCorrect": False},
+                        {"text": "En vérifiant le niveau à bulle", "isCorrect": False}
                     ],
-                    "correction": "La pose **en applique** est courante dans les constructions neuves avec Isolation Thermique par l'Intérieur (ITI)."
+                    "correction": "Un cadre rectangulaire est d'équerre si ses deux diagonales sont de longueur rigoureusement identique. Si elles diffèrent, le cadre est déformé (en losange)."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Quelle est la principale fonction de la **Crémone** (ou Verrouillage Multipoints) sur une porte ou fenêtre moderne ?",
+                    "question": "Quel assemblage plat utilise une lamelle en bois compressé en forme de navette ?",
                     "answerOptions": [
-                        {"text": "Lier les montants et traverses.", "isCorrect": False},
-                        {"text": "Assurer la fermeture et la sécurité sur plusieurs points le long du dormant (meilleure étanchéité et sécurité anti-effraction).", "isCorrect": True},
-                        {"text": "Décorer la menuiserie.", "isCorrect": False},
-                        {"text": "Faciliter le ponçage.", "isCorrect": False}
+                        {"text": "Lamello", "isCorrect": True},
+                        {"text": "Domino", "isCorrect": False},
+                        {"text": "Tourillon", "isCorrect": False},
+                        {"text": "Visseuse", "isCorrect": False}
                     ],
-                    "correction": "La **Crémone** améliore les performances de la menuiserie (étanchéité air/eau et résistance mécanique)."
+                    "correction": "Le système Lamello utilise des lamelles (biscuits) en hêtre compressé qui gonflent au contact de la colle aqueuse, assurant un blocage dans la rainure usinée par une fraiseuse spécifique."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Qu'est-ce qu'un panneau de porte ou de meuble dit **'à âme pleine'** ?",
+                    "question": "Quel diamètre de perçage est standard pour la pose de charnières invisibles sur des portes de placard ?",
                     "answerOptions": [
-                        {"text": "Un panneau très léger.", "isCorrect": False},
-                        {"text": "Un panneau dont l'intérieur est entièrement rempli de matériau (bois massif reconstitué, aggloméré) par opposition à l'âme alvéolaire (nid d'abeille).", "isCorrect": True},
-                        {"text": "Un panneau de verre.", "isCorrect": False},
-                        {"text": "Un panneau de couleur vive.", "isCorrect": False}
+                        {"text": "35 mm", "isCorrect": True},
+                        {"text": "20 mm", "isCorrect": False},
+                        {"text": "50 mm", "isCorrect": False},
+                        {"text": "8 mm", "isCorrect": False}
                     ],
-                    "correction": "La porte **à âme pleine** est plus lourde, plus isolante (phonique et thermique) et plus résistante que la porte à âme alvéolaire."
+                    "correction": "Le boîtier des charnières invisibles standard nécessite un perçage à fond plat de 35 mm de diamètre (généralement réalisé à la mèche forstner) sur la face intérieure de la porte."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Quel est l'outil utilisé pour réaliser les mortaises pour les serrures (logement du boîtier et de la têtière) ?",
+                    "question": "Pourquoi doit-on réaliser un avant-trou avant de visser dans du bois dur ou près d'un chant ?",
                     "answerOptions": [
-                        {"text": "La Perceuse visseuse.", "isCorrect": False},
-                        {"text": "La Mortaiseuse (ou la Bédaneuse ou à l'aide de la défonceuse).", "isCorrect": True},
-                        {"text": "La Scie sauteuse.", "isCorrect": False},
-                        {"text": "Le Trusquin.", "isCorrect": False}
+                        {"text": "Pour éviter que le bois ne se fende", "isCorrect": True},
+                        {"text": "Pour refroidir la vis lors de l'insertion", "isCorrect": False},
+                        {"text": "Pour augmenter la vitesse de vissage", "isCorrect": False},
+                        {"text": "Pour cacher la tête de vis", "isCorrect": False}
                     ],
-                    "correction": "La **Mortaiseuse** permet de creuser précisément le logement rectangulaire de la serrure dans l'épaisseur du montant."
+                    "correction": "La vis agit comme un coin en pénétrant la matière. Sans avant-trou (pilote) pour évacuer de la matière, la pression latérale exercée par le corps de la vis risque de provoquer l'éclatement du bois."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quelle est la fonction d'un **joint de frappe** ou d'un **joint périphérique** sur l'ouvrant d'une fenêtre ?",
+                    "question": "Quel assemblage est caractérisé par un tenon visible sur le chant de la pièce mortaisée ?",
                     "answerOptions": [
-                        {"text": "Empêcher le bois de se fissurer.", "isCorrect": False},
-                        {"text": "Assurer l'étanchéité à l'air et à l'eau lorsque l'ouvrant est fermé sur le dormant.", "isCorrect": True},
-                        {"text": "Faire tenir la quincaillerie.", "isCorrect": False},
-                        {"text": "Décorer la fenêtre.", "isCorrect": False}
+                        {"text": "Enfourchement", "isCorrect": True},
+                        {"text": "Tenon borgne", "isCorrect": False},
+                        {"text": "Queue d'aronde", "isCorrect": False},
+                        {"text": "Trait de Jupiter", "isCorrect": False}
                     ],
-                    "correction": "Les **joints** (en EPDM, silicone, etc.) sont fondamentaux pour les performances thermiques de la menuiserie."
+                    "correction": "L'enfourchement est un assemblage où la mortaise débouche sur le bout de la pièce. On voit donc le tenon et la mortaise sur trois faces (les deux parements et le bout)."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Lors de la pose d'un meuble, quel est l'outil indispensable pour s'assurer que l'ouvrage est de niveau et d'aplomb ?",
+                    "question": "Quelle pièce de quincaillerie permet d'assembler et de désassembler facilement un meuble en kit ?",
                     "answerOptions": [
-                        {"text": "Le Mètre ruban.", "isCorrect": False},
-                        {"text": "Le Niveau à bulle (ou Niveau laser) et le Fil à plomb.", "isCorrect": True},
-                        {"text": "Le Serre-joint.", "isCorrect": False},
-                        {"text": "La Règle.", "isCorrect": False}
+                        {"text": "Boîtier excentrique", "isCorrect": True},
+                        {"text": "Pointe tête homme", "isCorrect": False},
+                        {"text": "Colle néoprène", "isCorrect": False},
+                        {"text": "Agrafe divergente", "isCorrect": False}
                     ],
-                    "correction": "Le **Niveau** garantit l'horizontalité. L'**Aplomb** garantit la verticalité, essentiels pour le bon fonctionnement des tiroirs et portes."
+                    "correction": "Le système de boîtier excentrique (souvent associé à un goujon de liaison) permet de serrer les panneaux entre eux par une simple rotation, rendant le meuble démontable."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quel type de fixation est privilégié pour fixer un meuble haut de cuisine au mur ?",
+                    "question": "Comment appelle-t-on la pièce rapportée insérée dans deux rainures pour assembler deux panneaux chant contre chant ?",
                     "answerOptions": [
-                        {"text": "Un simple clou.", "isCorrect": False},
-                        {"text": "Les Suspentes (ou Attaches) réglables pour charges lourdes (avec chevilles adaptées au mur).", "isCorrect": True},
-                        {"text": "De la colle simple.", "isCorrect": False},
-                        {"text": "Du ruban adhésif.", "isCorrect": False}
+                        {"text": "Fausse languette", "isCorrect": True},
+                        {"text": "Languette bâtarde", "isCorrect": False},
+                        {"text": "Clavette", "isCorrect": False},
+                        {"text": "Alèse", "isCorrect": False}
                     ],
-                    "correction": "Les **suspentes réglables** permettent l'ajustement final du meuble et doivent supporter des charges très importantes (vaisselle, etc.)."
+                    "correction": "La fausse languette est une pièce indépendante (souvent en contreplaqué ou bois dur) qui vient s'insérer dans les rainures de deux pièces à joindre, contrairement à la languette usinée dans la masse."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Qu'est-ce qu'une **Traverse** dans un cadre de porte ou de fenêtre ?",
+                    "question": "Quelle technique consiste à décaler légèrement le trou de la cheville dans le tenon vers l'arasement pour serrer l'assemblage ?",
                     "answerOptions": [
-                        {"text": "La pièce verticale.", "isCorrect": False},
-                        {"text": "La pièce horizontale qui relie les deux montants (ex : traverse haute, traverse basse).", "isCorrect": True},
-                        {"text": "Le verre.", "isCorrect": False},
-                        {"text": "Le joint.", "isCorrect": False}
+                        {"text": "Chevillage à la tire", "isCorrect": True},
+                        {"text": "Perçage en plein", "isCorrect": False},
+                        {"text": "Vissage forcé", "isCorrect": False},
+                        {"text": "Clouage oblique", "isCorrect": False}
                     ],
-                    "correction": "Les **Montants** sont verticaux, les **Traverses** sont horizontales."
+                    "correction": "Le chevillage à la tire crée une contrainte mécanique : en enfonçant la cheville, le décalage des trous tire le tenon vers l'intérieur de la mortaise, fermant hermétiquement l'arasement."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quel est le rôle du **Rejingot** dans une fenêtre ?",
+                    "question": "Quel est l'angle de coupe pour réaliser un cadre rectangulaire avec un assemblage à onglet ?",
                     "answerOptions": [
-                        {"text": "Servir de poignée.", "isCorrect": False},
-                        {"text": "Élément moulé sur l'appui de fenêtre maçonné qui empêche l'eau de pénétrer et assure l'étanchéité sous le dormant.", "isCorrect": True},
-                        {"text": "Protéger le verre.", "isCorrect": False},
-                        {"text": "Faire la jonction entre l'ouvrant et le dormant.", "isCorrect": False}
+                        {"text": "45 degrés", "isCorrect": True},
+                        {"text": "30 degrés", "isCorrect": False},
+                        {"text": "60 degrés", "isCorrect": False},
+                        {"text": "90 degrés", "isCorrect": False}
                     ],
-                    "correction": "Le **Rejingot** (souvent maçonné ou intégré au seuil) est essentiel pour l'évacuation des eaux de pluie."
+                    "correction": "Pour former un angle droit (90°), chaque pièce doit être coupée selon la bissectrice de l'angle, soit 45° (90 divisé par 2)."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Comment appelle-t-on le procédé qui permet de masquer le jeu entre le dormant de la menuiserie et la maçonnerie après la pose ?",
+                    "question": "Quel profil spécifique situé sur la traverse basse d'une fenêtre rejette l'eau de pluie vers l'extérieur ?",
                     "answerOptions": [
-                        {"text": "Le Défonçage.", "isCorrect": False},
-                        {"text": "La Pose des Couvre-joints (ou des Moulures de finition).", "isCorrect": True},
-                        {"text": "Le Calage.", "isCorrect": False},
-                        {"text": "Le Ferraillage.", "isCorrect": False}
+                        {"text": "Jet d'eau", "isCorrect": True},
+                        {"text": "Dousine", "isCorrect": False},
+                        {"text": "Quart de rond", "isCorrect": False},
+                        {"text": "Congé", "isCorrect": False}
                     ],
-                    "correction": "Les **Couvre-joints** assurent la finition esthétique intérieure."
+                    "correction": "Le jet d'eau est une moulure saillante ou une pièce rapportée sur la traverse basse de l'ouvrant qui empêche l'eau de ruisseler vers l'intérieur par gravité et capillarité."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Dans le cas d'un plan de travail de cuisine, quel type de bois composite est le plus résistant à l'humidité et à l'abrasion ?",
+                    "question": "Pourquoi le collage en 'bois de bout' est-il déconseillé pour un assemblage structurel ?",
                     "answerOptions": [
-                        {"text": "Le Bois massif brut.", "isCorrect": False},
-                        {"text": "Le Stratifié (panneau recouvert d'une feuille épaisse et dure de résine).", "isCorrect": True},
-                        {"text": "Le Panneau de particules.", "isCorrect": False},
-                        {"text": "Le MDF standard.", "isCorrect": False}
+                        {"text": "Car la porosité des fibres absorbe la colle sans adhérer", "isCorrect": True},
+                        {"text": "Car le bois de bout est trop dur pour la colle", "isCorrect": False},
+                        {"text": "Car la colle sèche instantanément au contact", "isCorrect": False},
+                        {"text": "Car la surface est trop grasse pour le collage", "isCorrect": False}
                     ],
-                    "correction": "Le **Stratifié** est le standard pour les plans de travail grâce à sa résistance et sa facilité de nettoyage."
+                    "correction": "Les fibres en bois de bout agissent comme des pailles et absorbent la colle par capillarité, laissant le joint 'maigre' et très cassant. C'est pourquoi on utilise des tenons (bois de fil) et non de simples collages bout à bout."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Quel est le risque de fixer l'ouvrant d'une fenêtre avant d'avoir vérifié l'équerrage du dormant et son niveau ?",
+                    "question": "Quel terme désigne une planche collée sur le chant d'un panneau de particules pour le masquer et le protéger ?",
                     "answerOptions": [
-                        {"text": "La perte de temps.", "isCorrect": False},
-                        {"text": "L'ouvrant ne fermera pas correctement (frottement, joint non compressé, dérèglement) ou la fenêtre ne sera pas étanche.", "isCorrect": True},
-                        {"text": "La rupture du verre.", "isCorrect": False},
-                        {"text": "La déformation du mur.", "isCorrect": False}
+                        {"text": "Alèse", "isCorrect": True},
+                        {"text": "Alaise", "isCorrect": False},
+                        {"text": "alaise", "isCorrect": False},
+                        {"text": "Aleze", "isCorrect": False}
                     ],
-                    "correction": "Le **Dormant** doit être parfaitement de niveau, d'aplomb et d'équerre avant de recevoir l'ouvrant."
+                    "correction": "Une alèse (ou alaise, les deux orthographes sont admises mais désignent la pièce technique) est une bande de bois massif collée sur le chant d'un panneau dérivé pour permettre le profilage et protéger les arêtes."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 5 : SÉCURITÉ, HYGIÈNE ET FINITIONS (Q. 81-100)
+        # THÈME 5 : SANTÉ, SÉCURITÉ ET ENVIRONNEMENT (SSE) (Questions 81 à 100)
         # =========================================================================
         5: {
-            "name": "5. Sécurité, Hygiène et Finitions (Q. 81-100)",
+            "name": "THÈME 5 : SANTÉ, SÉCURITÉ ET ENVIRONNEMENT (SSE)",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel est l'Équipement de Protection Individuelle (EPI) essentiel lors de l'utilisation de machines bruyantes (Toupie, Raboteuse, Scie) ?",
+                    "question": "À partir de quel seuil d'exposition sonore quotidienne l'employeur doit-il mettre des protections auditives à disposition ?",
                     "answerOptions": [
-                        {"text": "Les Gants en cuir.", "isCorrect": False},
-                        {"text": "Les Protections auditives (casque ou bouchons anti-bruit).", "isCorrect": True},
-                        {"text": "Le Masque FFP3.", "isCorrect": False},
-                        {"text": "Le Gilet de sécurité.", "isCorrect": False}
+                        {"text": "80 décibels", "isCorrect": True},
+                        {"text": "100 décibels", "isCorrect": False},
+                        {"text": "120 décibels", "isCorrect": False},
+                        {"text": "140 décibels", "isCorrect": False}
                     ],
-                    "correction": "Le bruit excessif peut entraîner une **surdité** irréversible. La protection auditive est obligatoire au-delà de 85 dB."
+                    "correction": "Le seuil d'action inférieur est fixé à 80 dB(A) sur 8 heures. À ce niveau, l'employeur doit fournir des protections. À partir de 85 dB(A), le port devient obligatoire."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Quel est le risque principal lors de l'usinage du bois (sciage, ponçage) et des panneaux dérivés (MDF, Agglo) ?",
+                    "question": "Quelle maladie professionnelle grave et spécifique peut être provoquée par l'inhalation prolongée de poussières de bois durs ?",
                     "answerOptions": [
-                        {"text": "Les produits chimiques.", "isCorrect": False},
-                        {"text": "L'inhalation de poussières fines de bois (cancérogènes ou irritantes) et de colles (Formaldéhyde).", "isCorrect": True},
-                        {"text": "La chute d'objet.", "isCorrect": False},
-                        {"text": "Le glissement.", "isCorrect": False}
+                        {"text": "Cancer de l'ethmoïde", "isCorrect": True},
+                        {"text": "Eczéma de contact", "isCorrect": False},
+                        {"text": "Surdité professionnelle", "isCorrect": False},
+                        {"text": "Tétanos", "isCorrect": False}
                     ],
-                    "correction": "L'**aspiration** centralisée et le port du **Masque FFP3** sont obligatoires contre les poussières."
+                    "correction": "Les poussières de bois (notamment chêne et hêtre) sont classées cancérogènes. Elles peuvent provoquer un adénocarcinome de l'ethmoïde, un cancer des sinus de la face."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Quel est l'outil obligatoire pour guider et pousser les petites pièces de bois sur une machine (Toupie, Dégauchisseuse) ?",
+                    "question": "Dans quelle situation le port de gants de protection est-il formellement interdit ?",
                     "answerOptions": [
-                        {"text": "La main.", "isCorrect": False},
-                        {"text": "Le Poussoir.", "isCorrect": True},
-                        {"text": "Le Gant.", "isCorrect": False},
-                        {"text": "Le Serre-joint.", "isCorrect": False}
+                        {"text": "Usinage sur machine tournante", "isCorrect": True},
+                        {"text": "Manutention de bois bruts", "isCorrect": False},
+                        {"text": "Déchargement du camion", "isCorrect": False},
+                        {"text": "Nettoyage de l'atelier", "isCorrect": False}
                     ],
-                    "correction": "Le **Poussoir** (ou la pousse-main) permet de garder les mains éloignées de la zone de coupe (lame ou fer) et d'assurer une poussée régulière."
+                    "correction": "Le port de gants est strictement interdit lors du travail sur des machines à outils rotatifs (toupie, dégauchisseuse) car le gant risque d'être happé par l'outil et d'entraîner la main."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Quel est le risque lié au port de **gants** lors de l'utilisation d'une machine tournante (Toupie, Perceuse à colonne) ?",
+                    "question": "Que signifie un panneau de sécurité rond à fond bleu avec un symbole blanc ?",
                     "answerOptions": [
-                        {"text": "La coupure.", "isCorrect": False},
-                        {"text": "L'entraînement du gant par l'outil, provoquant l'amputation ou l'écrasement de la main.", "isCorrect": True},
-                        {"text": "L'allergie.", "isCorrect": False},
-                        {"text": "Le glissement de la pièce.", "isCorrect": False}
+                        {"text": "Obligation", "isCorrect": True},
+                        {"text": "Interdiction", "isCorrect": False},
+                        {"text": "Avertissement", "isCorrect": False},
+                        {"text": "Sauvetage", "isCorrect": False}
                     ],
-                    "correction": "Le port de gants est **interdit** sur les machines tournantes (sauf cas spécifiques, après analyse de risque) !"
+                    "correction": "La signalisation bleue est une obligation (ex : port du casque, lunettes). Le rouge est pour l'interdiction, le jaune pour le danger et le vert pour le secours."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Quel est le rôle du **Micro-réglage** sur une machine (ex : guide de Toupie, lame de Scie à format) ?",
+                    "question": "Quel type d'extincteur doit-on utiliser en priorité sur un feu d'origine électrique pour ne pas endommager le matériel ?",
                     "answerOptions": [
-                        {"text": "Le déplacement rapide.", "isCorrect": False},
-                        {"text": "Permettre un ajustement fin et précis de la position de l'outil ou du guide (au 1/10e de mm) pour garantir l'exactitude des usinages.", "isCorrect": True},
-                        {"text": "Le nettoyage.", "isCorrect": False},
-                        {"text": "L'arrêt d'urgence.", "isCorrect": False}
+                        {"text": "Extincteur au CO2", "isCorrect": True},
+                        {"text": "Extincteur à eau", "isCorrect": False},
+                        {"text": "Extincteur à mousse", "isCorrect": False},
+                        {"text": "Seau de sable", "isCorrect": False}
                     ],
-                    "correction": "La précision est la base du métier. Le **Micro-réglage** assure cette précision."
+                    "correction": "Le dioxyde de carbone (CO2) est un gaz inerte qui étouffe le feu sans conduire l'électricité et sans laisser de résidus, ce qui préserve les composants électriques."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Quel est le danger d'utiliser des **solvants** (nettoyants, diluants) dans un local mal ventilé ?",
+                    "question": "Quelle est la différence médicale entre une électrisation et une électrocution ?",
                     "answerOptions": [
-                        {"text": "Une mauvaise coupe.", "isCorrect": False},
-                        {"text": "Intoxication par inhalation, risque d'incendie/explosion et irritation des voies respiratoires.", "isCorrect": True},
-                        {"text": "Une chute.", "isCorrect": False},
-                        {"text": "La rouille.", "isCorrect": False}
+                        {"text": "L'électrocution entraîne le décès", "isCorrect": True},
+                        {"text": "L'électrisation est toujours mortelle", "isCorrect": False},
+                        {"text": "C'est exactement la même chose", "isCorrect": False},
+                        {"text": "L'électrocution est une brûlure légère", "isCorrect": False}
                     ],
-                    "correction": "Les **solvants** doivent être utilisés avec une ventilation adéquate (hotte aspirante) et le port d'un masque à cartouche adapté."
+                    "correction": "L'électrisation désigne le passage du courant dans le corps avec des blessures variables. On ne parle d'électrocution que lorsque ce passage de courant cause la mort de la victime."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Comment appelle-t-on le type de ponçage qui vise à rendre le bois rugueux avant l'application d'un vernis ou d'une laque ?",
+                    "question": "Quelle est la fonction du bouton 'Coup de poing' rouge sur fond jaune présent sur les machines ?",
                     "answerOptions": [
-                        {"text": "Le Ponçage de finition.", "isCorrect": False},
-                        {"text": "L'Égrenage (avec un grain fin, typiquement P220 ou supérieur).", "isCorrect": True},
-                        {"text": "Le Décapage.", "isCorrect": False},
-                        {"text": "Le Ponçage grossier.", "isCorrect": False}
+                        {"text": "Arrêt d'urgence", "isCorrect": True},
+                        {"text": "Mise en marche", "isCorrect": False},
+                        {"text": "Réglage vitesse", "isCorrect": False},
+                        {"text": "Allumage lampe", "isCorrect": False}
                     ],
-                    "correction": "L'**Égrenage** entre deux couches de finition est indispensable pour assurer l'accroche de la couche suivante et supprimer les fibres relevées par la première application."
+                    "correction": "Ce bouton est l'Arrêt d'Urgence (AU). Il permet de couper immédiatement l'alimentation de la machine en cas d'incident pour protéger l'opérateur."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Que doit-on vérifier en priorité sur une machine avant de commencer un usinage ?",
+                    "question": "Quelle est la posture recommandée pour soulever une charge lourde au sol afin de protéger sa colonne vertébrale ?",
                     "answerOptions": [
-                        {"text": "Sa couleur.", "isCorrect": False},
-                        {"text": "Le bon réglage des protecteurs, des guides, le serrage de l'outil (lame/fraise) et l'aspiration.", "isCorrect": True},
-                        {"text": "Son âge.", "isCorrect": False},
-                        {"text": "Le stock de bois.", "isCorrect": False}
+                        {"text": "Dos plat et jambes fléchies", "isCorrect": True},
+                        {"text": "Jambes raides et dos rond", "isCorrect": False},
+                        {"text": "Dos courbé et bras tendus", "isCorrect": False},
+                        {"text": "Torsion du buste sur le côté", "isCorrect": False}
                     ],
-                    "correction": "Les **réglages et la sécurité** sont primordiaux. Une lame mal serrée est un danger de mort."
+                    "correction": "Il faut rapprocher la charge du corps, plier les genoux pour utiliser la force des cuisses et garder le dos bien droit (plat) pour éviter les lésions discales."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Quelle est la règle d'or concernant le travail en hauteur sur une échelle (pose d'agencement, fenêtres) ?",
+                    "question": "Que signale un pictogramme de danger en forme de losange représentant une flamme ?",
                     "answerOptions": [
-                        {"text": "Monter le plus haut possible.", "isCorrect": False},
-                        {"text": "L'échelle est un moyen d'accès temporaire ; le travail doit se faire sur un échafaudage ou une plateforme stable si le travail est long ou répétitif.", "isCorrect": True},
-                        {"text": "Ne jamais attacher l'échelle.", "isCorrect": False},
-                        {"text": "Travailler les mains chargées.", "isCorrect": False}
+                        {"text": "Produit inflammable", "isCorrect": True},
+                        {"text": "Produit corrosif", "isCorrect": False},
+                        {"text": "Produit toxique", "isCorrect": False},
+                        {"text": "Produit explosif", "isCorrect": False}
                     ],
-                    "correction": "L'**échelle** doit être sécurisée (amarrée) et son utilisation limitée. Privilégier les solutions collectives (échafaudage)."
+                    "correction": "Le symbole de la flamme indique que le produit (colle, vernis, solvant) peut s'enflammer facilement au contact d'une source de chaleur ou d'une étincelle."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Comment appelle-t-on le procédé qui consiste à appliquer un produit (ex : cire ou huile) qui pénètre le bois sans former de couche en surface (aspect très naturel) ?",
+                    "question": "Où doivent être stockés les produits chimiques volatils et inflammables dans l'atelier ?",
                     "answerOptions": [
-                        {"text": "Le Vernissage.", "isCorrect": False},
-                        {"text": "L'Imprégnation (ou Finition par Huile, Cire, etc.).", "isCorrect": True},
-                        {"text": "Le Décapage.", "isCorrect": False},
-                        {"text": "Le Laquage.", "isCorrect": False}
+                        {"text": "Armoire ventilée sur rétention", "isCorrect": True},
+                        {"text": "Étagère en bois ouverte", "isCorrect": False},
+                        {"text": "Sous les établis de travail", "isCorrect": False},
+                        {"text": "Dans le vestiaire personnel", "isCorrect": False}
                     ],
-                    "correction": "La finition par **imprégnation** est souvent utilisée pour les parquets, les plans de travail ou les meubles haut de gamme."
+                    "correction": "Les produits dangereux doivent être stockés dans une armoire de sécurité ventilée, équipée d'un bac de rétention pour récupérer les fuites éventuelles et éviter la pollution ou l'incendie."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quel est le risque lié à un sol d'atelier encombré de chutes de bois ou de copeaux ?",
+                    "question": "Quel sigle désigne la concentration maximale de poussière admissible dans l'air que peut respirer un travailleur ?",
                     "answerOptions": [
-                        {"text": "Le défaut de coupe.", "isCorrect": False},
-                        {"text": "Le risque de chute, de glissade (sur les copeaux lisses) et d'incendie (combustible).", "isCorrect": True},
-                        {"text": "Le bruit.", "isCorrect": False},
-                        {"text": "L'usure des outils.", "isCorrect": False}
+                        {"text": "VLEP", "isCorrect": True},
+                        {"text": "SMIC", "isCorrect": False},
+                        {"text": "HTML", "isCorrect": False},
+                        {"text": "SNCF", "isCorrect": False}
                     ],
-                    "correction": "Le **nettoyage régulier** de l'atelier est une règle de sécurité et d'hygiène fondamentale (incendie, TMS)."
+                    "correction": "La Valeur Limite d'Exposition Professionnelle (VLEP) pour les poussières de bois est fixée réglementairement (actuellement 1 mg/m³) pour protéger la santé à long terme."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est le danger d'utiliser un **compresseur d'air** pour se dépoussiérer ?",
+                    "question": "Quel équipement de protection individuelle est indispensable lors de l'utilisation de la scie circulaire pour éviter les projections dans les yeux ?",
                     "answerOptions": [
-                        {"text": "La salissure.", "isCorrect": False},
-                        {"text": "Le risque de projection de corps étranger dans les yeux et le risque d'embolie gazeuse (en cas de contact direct sur la peau).", "isCorrect": True},
-                        {"text": "Le bruit.", "isCorrect": False},
-                        {"text": "Le froid.", "isCorrect": False}
+                        {"text": "Lunettes de protection", "isCorrect": True},
+                        {"text": "Chaussures de sécurité", "isCorrect": False},
+                        {"text": "Casque de chantier", "isCorrect": False},
+                        {"text": "Gilet fluorescent", "isCorrect": False}
                     ],
-                    "correction": "L'air comprimé est dangereux. Utiliser plutôt un aspirateur ou une balayette pour le nettoyage des vêtements et des mains."
+                    "correction": "Les projections de copeaux et d'éclats de bois sont fréquentes et rapides. Les lunettes de sécurité (ou visière) sont l'unique barrière efficace pour éviter les lésions oculaires."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Quel est l'objectif du **Décapage** d'une vieille menuiserie ?",
+                    "question": "En cas d'accident, quelle est la première action du Sauveteur Secouriste du Travail (SST) ?",
                     "answerOptions": [
-                        {"text": "L'appliquer d'une nouvelle finition.", "isCorrect": False},
-                        {"text": "Retirer les anciennes couches de finition (peinture, vernis) avant l'application d'un nouveau traitement ou une réparation (ponçage ou produit chimique).", "isCorrect": True},
-                        {"text": "La rendre plus solide.", "isCorrect": False},
-                        {"text": "La faire sécher.", "isCorrect": False}
+                        {"text": "Protéger", "isCorrect": True},
+                        {"text": "Examiner", "isCorrect": False},
+                        {"text": "Alerter", "isCorrect": False},
+                        {"text": "Secourir", "isCorrect": False}
                     ],
-                    "correction": "Le **Décapage** permet d'accéder au bois brut pour une rénovation complète."
+                    "correction": "La procédure P.A.S. impose de PROTÉGER d'abord (supprimer le danger pour éviter un sur-accident), puis d'ALERTER les secours, et enfin de SECOURIR la victime."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Que signifie le sigle **DUERP** pour une entreprise de menuiserie ?",
+                    "question": "Quel risque spécifique est lié au mélange d'air et de poussière de bois fine en suspension ?",
                     "answerOptions": [
-                        {"text": "Dossier Unique d'Étude et de Réalisation de Projets.", "isCorrect": False},
-                        {"text": "Document Unique d'Évaluation des Risques Professionnels (inventaire des risques et mesures de prévention de l'entreprise).", "isCorrect": True},
-                        {"text": "Déclaration d'Urgence des Éléments de Rénovation et de Pose.", "isCorrect": False},
-                        {"text": "Détail Unifié des Essences et des Revêtements de Panneaux.", "isCorrect": False}
+                        {"text": "Explosion ATEX", "isCorrect": True},
+                        {"text": "Corrosion du métal", "isCorrect": False},
+                        {"text": "Moisissure rapide", "isCorrect": False},
+                        {"text": "Gel des machines", "isCorrect": False}
                     ],
-                    "correction": "Le **DUERP** est un document légal et obligatoire pour toute entreprise ayant au moins un salarié."
+                    "correction": "Un nuage de poussière de bois en suspension peut exploser violemment en présence d'une étincelle. C'est le risque ATEX (Atmosphère Explosive) qui impose une aspiration efficace."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quelle est la principale fonction du **Laquage** (peinture de finition) ?",
+                    "question": "Quel dispositif de sécurité protège l'opérateur d'un contact accidentel avec la lame sur le dessus d'une scie circulaire ?",
                     "answerOptions": [
-                        {"text": "Laisser la couleur du bois apparente.", "isCorrect": False},
-                        {"text": "Former un film opaque, lisse et très dur en surface, masquant le veinage (aspect haut de gamme).", "isCorrect": True},
-                        {"text": "Pénétrer le bois en profondeur.", "isCorrect": False},
-                        {"text": "Servir uniquement d'antiseptique.", "isCorrect": False}
+                        {"text": "Cape de protection", "isCorrect": True},
+                        {"text": "Couteau diviseur", "isCorrect": False},
+                        {"text": "Volant de réglage", "isCorrect": False},
+                        {"text": "Guide parallèle", "isCorrect": False}
                     ],
-                    "correction": "Le **Laquage** (souvent polyuréthane) est la finition la plus exigeante en préparation (ponçage fin)."
+                    "correction": "La cape de protection (ou protecteur de lame) recouvre la partie supérieure de la denture. Elle doit être réglée au plus près de la pièce pour empêcher l'accès des mains à la zone de coupe."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Quel est le risque en cas d'utilisation d'une lame de scie **mal affûtée** ?",
+                    "question": "Que signifie le sigle EPI dans le domaine de la sécurité au travail ?",
                     "answerOptions": [
-                        {"text": "Une coupe plus rapide.", "isCorrect": False},
-                        {"text": "Un échauffement de la lame, un effort excessif, un bruit important, une mauvaise qualité de coupe (brûlure, éclatement) et un risque de rejet.", "isCorrect": True},
-                        {"text": "Une meilleure finition.", "isCorrect": False},
-                        {"text": "L'usure de l'aspiration.", "isCorrect": False}
+                        {"text": "Équipement de Protection Individuelle", "isCorrect": True},
+                        {"text": "Élément de Production Industrielle", "isCorrect": False},
+                        {"text": "Échelle Pour Intervention", "isCorrect": False},
+                        {"text": "État Prévisionnel Incendie", "isCorrect": False}
                     ],
-                    "correction": "Une **lame affûtée** est un gage de sécurité et de qualité."
+                    "correction": "Les EPI sont les équipements portés par le travailleur (casque, gants, chaussures, lunettes, masque) pour le protéger contre un ou plusieurs risques."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quel est le risque en cas de contact du bois avec du **métal ferreux** (clous, vis non galvanisées) avant la finition (sur Chêne ou Châtaignier) ?",
+                    "question": "Quelle est la tension limite de sécurité en courant alternatif en milieu sec (TBT) ?",
                     "answerOptions": [
-                        {"text": "Le bois prend feu.", "isCorrect": False},
-                        {"text": "Une réaction chimique (oxydation des tanins) entraînant l'apparition de tâches noires sur le bois (rouille).", "isCorrect": True},
-                        {"text": "Le bois se déforme.", "isCorrect": False},
-                        {"text": "Le bois devient plus dur.", "isCorrect": False}
+                        {"text": "50 Volts", "isCorrect": True},
+                        {"text": "230 Volts", "isCorrect": False},
+                        {"text": "400 Volts", "isCorrect": False},
+                        {"text": "1000 Volts", "isCorrect": False}
                     ],
-                    "correction": "Certaines essences (tanniques) doivent être en contact avec de l'acier inoxydable ou galvanisé pour éviter ces taches."
+                    "correction": "La Très Basse Tension (TBT) est inférieure à 50 V en courant alternatif. En dessous de ce seuil, le risque d'électrocution est considéré comme nul pour une personne en bonne santé en milieu sec."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Comment doit être la pièce de bois (dégauchie/rabotée) avant d'être usinée à la **Toupie** pour des raisons de sécurité ?",
+                    "question": "Quel élément du garde-corps empêche la chute d'objets ou le glissement des pieds depuis un échafaudage ?",
                     "answerOptions": [
-                        {"text": "Elle doit être poncée.", "isCorrect": False},
-                        {"text": "Elle doit avoir au moins une face de référence plane et dressée, bien dégauchie pour un appui stable sur la table.", "isCorrect": True},
-                        {"text": "Elle doit être mouillée.", "isCorrect": False},
-                        {"text": "Elle doit être très courte.", "isCorrect": False}
+                        {"text": "Plinthe", "isCorrect": True},
+                        {"text": "Lisse", "isCorrect": False},
+                        {"text": "Sous-lisse", "isCorrect": False},
+                        {"text": "Montant", "isCorrect": False}
                     ],
-                    "correction": "Le travail à la **Toupie** sur des pièces brutes ou gauches est extrêmement dangereux et conduit à des rejets."
+                    "correction": "La plinthe (ou butée de pied) est la planche située au niveau du plancher de l'échafaudage. Elle empêche le pied de glisser dans le vide et retient les outils qui pourraient tomber."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Quel est le rôle du **Primaire (ou Sous-couche)** dans le processus de finition (peinture ou vernis) ?",
+                    "question": "Quel est le phénomène dangereux qui se produit lorsque le bois se referme sur la lame arrière d'une scie circulaire ?",
                     "answerOptions": [
-                        {"text": "Rendre la finition plus foncée.", "isCorrect": False},
-                        {"text": "Bloquer les fonds, uniformiser l'absorption du bois et assurer une meilleure adhérence de la couche de finition (évite la surconsommation).", "isCorrect": True},
-                        {"text": "Sécher rapidement.", "isCorrect": False},
-                        {"text": "Protéger contre le feu.", "isCorrect": False}
+                        {"text": "Rejet", "isCorrect": True},
+                        {"text": "Coupe", "isCorrect": False},
+                        {"text": "Ponçage", "isCorrect": False},
+                        {"text": "Guidage", "isCorrect": False}
                     ],
-                    "correction": "La **Sous-couche** est essentielle pour la qualité, la durabilité et l'uniformité de la finition."
+                    "correction": "Si le bois serre la lame (défaut de couteau diviseur ou tensions internes), la rotation des dents arrière soulève la pièce et la projette violemment vers l'opérateur : c'est le rejet."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quelle est l'attitude à adopter face à une **panne de machine** (ex : bruit anormal) en cours d'usinage ?",
+                    "question": "Quelle classe de filtre doit avoir un masque respiratoire pour être efficace contre les poussières de bois fines et toxiques ?",
                     "answerOptions": [
-                        {"text": "Continuer de travailler.", "isCorrect": False},
-                        {"text": "Couper immédiatement l'alimentation électrique (bouton d'arrêt d'urgence ou disjoncteur) et signaler l'anomalie.", "isCorrect": True},
-                        {"text": "Tenter de la réparer soi-même sans couper le courant.", "isCorrect": False},
-                        {"text": "Demander l'avis d'un collègue.", "isCorrect": False}
+                        {"text": "P3", "isCorrect": True},
+                        {"text": "P1", "isCorrect": False},
+                        {"text": "A2", "isCorrect": False},
+                        {"text": "K1", "isCorrect": False}
                     ],
-                    "correction": "L'**Arrêt d'Urgence** est la première réaction en cas d'incident. La maintenance doit se faire machine à l'arrêt et consignée (hors tension)."
+                    "correction": "Pour les poussières de bois (notamment cancérogènes), il faut une filtration haute efficacité de type P3 (ou FFP3 pour les masques jetables). P1 est insuffisant."
                 },
             ]
         }
     }
 }
-
-# Exemple d'accès aux données :
-# print(quiz_data["title"])
-# print(quiz_data["themes"][3]["name"])
-# print(quiz_data["themes"][3]["questions"][4]["question"])
-# print(quiz_data["themes"][3]["questions"][4]["answerOptions"][2]["isCorrect"])

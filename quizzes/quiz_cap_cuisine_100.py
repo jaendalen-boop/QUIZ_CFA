@@ -1,1138 +1,1143 @@
 quiz_data = {
-    # La clé "title" a été conservée pour la compatibilité avec votre "app.py"
-    "title": "CAP Cuisine - Base de Données Complète (100 Questions) - Corrigée V4",
-    
-    "description": "Base de données de 100 questions pour le CAP Cuisine. Les longueurs des réponses ont été uniformisées pour éviter tout biais. Version finale corrigée.",
-    
-    # La clé "themes" (avec dictionnaire interne) est correcte
+    "title": "Quiz CAP Cuisine : Hygiène, Technologie, Techniques et Produits (100 Questions)",
     "themes": {
-        # THÈME 1
+        # =========================================================================
+        # THÈME 1 : HYGIÈNE, SÉCURITÉ ET MICROBIOLOGIE (HACCP) (Questions 1 à 20)
+        # =========================================================================
         1: {
-            "name": "Hygiène, Sécurité et Législation (HACCP)",
+            "name": "THÈME 1 : HYGIÈNE, SÉCURITÉ ET MICROBIOLOGIE (HACCP)",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quelle est la température maximale de conservation des aliments réfrigérés dans une chambre froide positive ?",
+                    "question": "Quelle est la température maximale légale de conservation des préparations froides lors du service ?",
                     "answerOptions": [
-                        {"text": "+4°C.", "isCorrect": True, "key": "A"},
-                        {"text": "+8°C, si la durée de stockage est inférieure à 24 heures.", "isCorrect": False, "key": "B"},
-                        {"text": "+10°C, pour les produits végétaux non transformés.", "isCorrect": False, "key": "C"},
-                        {"text": "+12°C.", "isCorrect": False, "key": "D"}
+                        {"text": "3 degrés Celsius", "isCorrect": True},
+                        {"text": "10 degrés Celsius", "isCorrect": False},
+                        {"text": "63 degrés Celsius", "isCorrect": False},
+                        {"text": "20 degrés Celsius", "isCorrect": False}
                     ],
-                    "correction": "La température maximale légale de conservation des denrées périssables est généralement fixée à +4°C (ou moins selon les produits)."
+                    "correction": "La chaîne du froid impose une température à cœur comprise entre 0 et +3°C pour les produits périssables ou transformés. Au-delà, le développement microbien reprend."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quel est le nom de la zone de température où les micro-organismes se développent le plus rapidement ?",
+                    "question": "Que signifie l'acronyme HACCP ?",
                     "answerOptions": [
-                        {"text": "La zone de danger (+10°C à +63°C).", "isCorrect": True, "key": "A"},
-                        {"text": "La zone de refroidissement rapide (entre 0°C et +10°C).", "isCorrect": False, "key": "B"},
-                        {"text": "La zone de congélation (inférieure à -18°C).", "isCorrect": False, "key": "C"},
-                        {"text": "La zone de pasteurisation (supérieure à +75°C).", "isCorrect": False, "key": "D"}
+                        {"text": "Hazard Analysis Critical Control Point", "isCorrect": True},
+                        {"text": "Haute Autorité de Contrôle Culinaire Professionnel", "isCorrect": False},
+                        {"text": "Hazard Association for Cooking Control Process", "isCorrect": False},
+                        {"text": "Hygiène Alimentaire et Contrôle Critique des Procédures", "isCorrect": False}
                     ],
-                    "correction": "La 'zone de danger' microbien se situe entre +10°C et +63°C. Les aliments doivent la traverser le plus rapidement possible."
+                    "correction": "HACCP signifie 'Hazard Analysis Critical Control Point', traduit par Analyse des Dangers et Points Critiques pour leur Maîtrise. C'est une méthode préventive obligatoire."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quel est le temps maximum autorisé pour abaisser la température d'une préparation de +63°C à +10°C ?",
+                    "question": "Quelle est la température minimale réglementaire pour une liaison chaude ?",
                     "answerOptions": [
-                        {"text": "Moins de 2 heures.", "isCorrect": True, "key": "A"},
-                        {"text": "Moins de 4 heures, pour les liquides uniquement.", "isCorrect": False, "key": "B"},
-                        {"text": "Moins de 6 heures.", "isCorrect": False, "key": "C"},
-                        {"text": "Moins de 1 heure, selon le GBPH.", "isCorrect": False, "key": "D"}
+                        {"text": "63 degrés", "isCorrect": True},
+                        {"text": "55 degrés", "isCorrect": False},
+                        {"text": "45 degrés", "isCorrect": False},
+                        {"text": "37 degrés", "isCorrect": False}
                     ],
-                    "correction": "Le refroidissement rapide est critique pour limiter la prolifération bactérienne dans la zone de danger. La cellule de refroidissement est l'outil adapté."
+                    "correction": "Pour éviter la prolifération bactérienne, les plats chauds doivent être maintenus à une température strictement supérieure ou égale à +63°C à cœur jusqu'au service."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Que signifie l'acronyme DLC sur l'emballage d'un produit alimentaire ?",
+                    "question": "Quelle bactérie est principalement associée à la manipulation des œufs crus ou des volailles mal cuites ?",
                     "answerOptions": [
-                        {"text": "Date Limite de Consommation.", "isCorrect": True, "key": "A"},
-                        {"text": "Durée Limite de Cuisson recommandée.", "isCorrect": False, "key": "B"},
-                        {"text": "Déclaration Légale de Certificat.", "isCorrect": False, "key": "C"},
-                        {"text": "Date de Lancement Commercial.", "isCorrect": False, "key": "D"}
+                        {"text": "Salmonelle", "isCorrect": True},
+                        {"text": "Listéria", "isCorrect": False},
+                        {"text": "Staphylocoque doré", "isCorrect": False},
+                        {"text": "Clostridium perfringens", "isCorrect": False}
                     ],
-                    "correction": "La DLC est la date au-delà de laquelle le produit est considéré comme impropre à la consommation et ne doit plus être vendu."
+                    "correction": "Les salmonelles se trouvent naturellement dans le tube digestif des volailles. La cuisson complète (supérieure à 63°C) ou l'utilisation d'œufs pasteurisés permet d'éliminer ce risque."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel principe d'organisation du travail vise à séparer les zones propres et les zones sales ?",
+                    "question": "Dans une enceinte réfrigérée, où doit-on stocker les produits finis ou cuits par rapport aux produits crus ?",
                     "answerOptions": [
-                        {"text": "La marche en avant.", "isCorrect": True, "key": "A"},
-                        {"text": "Le système de rotation des équipes.", "isCorrect": False, "key": "B"},
-                        {"text": "Le Plan de Maîtrise Sanitaire.", "isCorrect": False, "key": "C"},
-                        {"text": "Le FIFO (First In, First Out).", "isCorrect": False, "key": "D"}
+                        {"text": "Au dessus", "isCorrect": True},
+                        {"text": "En dessous", "isCorrect": False},
+                        {"text": "Au même niveau", "isCorrect": False},
+                        {"text": "Sur le sol", "isCorrect": False}
                     ],
-                    "correction": "La marche en avant (dans l'espace ou dans le temps) empêche la contamination des produits finis par les produits bruts ou les déchets."
+                    "correction": "Les produits cuits doivent être placés au-dessus des produits crus pour éviter qu'ils ne soient contaminés par des exsudats ou de la terre tombant des produits bruts."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Qu'est-ce qu'une contamination croisée en cuisine ?",
+                    "question": "Quel est le délai maximum autorisé pour refroidir un plat cuisiné de +63°C à +10°C ?",
                     "answerOptions": [
-                        {"text": "Le transfert de germes d'un produit contaminé vers un produit sain.", "isCorrect": True, "key": "A"},
-                        {"text": "Le mélange accidentel de deux plats différents au moment du dressage.", "isCorrect": False, "key": "B"},
-                        {"text": "L'utilisation de deux types d'huiles de cuisson différentes.", "isCorrect": False, "key": "C"},
-                        {"text": "Une cuisson trop rapide des aliments à haute température.", "isCorrect": False, "key": "D"}
+                        {"text": "2 heures", "isCorrect": True},
+                        {"text": "4 heures", "isCorrect": False},
+                        {"text": "6 heures", "isCorrect": False},
+                        {"text": "12 heures", "isCorrect": False}
                     ],
-                    "correction": "La contamination croisée se produit par contact (mains, ustensiles, planches) ou indirectement (gouttes, air)."
+                    "correction": "Le refroidissement rapide est critique. Il doit s'effectuer en moins de 2 heures à l'aide d'une cellule de refroidissement pour traverser rapidement la zone de danger microbiologique."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quelle est la principale mesure de prévention contre la contamination manuportée (par les mains) ?",
+                    "question": "Quelle est la durée légale de conservation des plats témoins en restauration collective ?",
                     "answerOptions": [
-                        {"text": "Lavage et désinfection fréquents des mains et avant-bras.", "isCorrect": True, "key": "A"},
-                        {"text": "L'utilisation de gants en permanence et le gel hydroalcoolique.", "isCorrect": False, "key": "B"},
-                        {"text": "Le port d'un tablier jetable pendant les tâches longues.", "isCorrect": False, "key": "C"},
-                        {"text": "La cuisson à très haute température de tous les ingrédients.", "isCorrect": False, "key": "D"}
+                        {"text": "5 jours", "isCorrect": True},
+                        {"text": "24 heures", "isCorrect": False},
+                        {"text": "3 jours", "isCorrect": False},
+                        {"text": "1 semaine", "isCorrect": False}
                     ],
-                    "correction": "Le lavage régulier et méticuleux des mains reste la mesure d'hygiène la plus efficace."
+                    "correction": "Les plats témoins doivent être conservés au froid positif (+3°C) pendant 5 jours minimum après la consommation, pour permettre des analyses en cas de TIAC."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quelle est la température interne minimale de sécurité pour la cuisson de la volaille afin de détruire les bactéries pathogènes ?",
+                    "question": "Comment appelle-t-on la flore microbienne présente naturellement sur la peau et les muqueuses du cuisinier ?",
                     "answerOptions": [
-                        {"text": "+74°C à cœur.", "isCorrect": True, "key": "A"},
-                        {"text": "+60°C à cœur (pour obtenir un cœur rosé).", "isCorrect": False, "key": "B"},
-                        {"text": "+80°C à cœur, en utilisant un thermomètre à sonde.", "isCorrect": False, "key": "C"},
-                        {"text": "+95°C à cœur.", "isCorrect": False, "key": "D"}
+                        {"text": "Flore résidente", "isCorrect": True},
+                        {"text": "Flore transitoire", "isCorrect": False},
+                        {"text": "Flore pathogène", "isCorrect": False},
+                        {"text": "Flore d'altération", "isCorrect": False}
                     ],
-                    "correction": "La volaille nécessite une cuisson plus complète que la viande rouge, souvent mesurée à +74°C à cœur pour garantir la sécurité sanitaire."
+                    "correction": "La flore résidente (ou commensale) vit sur l'hôte sain. Elle se distingue de la flore transitoire, issue des contaminations extérieures, qui s'élimine par le lavage des mains."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Qu'est-ce que le Plan de Maîtrise Sanitaire (PMS) ?",
+                    "question": "Quel document regroupe l'ensemble des procédures d'hygiène et de sécurité d'un établissement ?",
                     "answerOptions": [
-                        {"text": "L'ensemble des procédures d'hygiène et de sécurité sanitaire (méthode HACCP).", "isCorrect": True, "key": "A"},
-                        {"text": "Un calendrier détaillé pour le nettoyage des locaux et du matériel.", "isCorrect": False, "key": "B"},
-                        {"text": "Un document répertoriant les allergènes majeurs (LAL) et leur gestion.", "isCorrect": False, "key": "C"},
-                        {"text": "La liste des fournisseurs agrées et les fiches techniques des produits.", "isCorrect": False, "key": "D"}
+                        {"text": "Le PMS", "isCorrect": True},
+                        {"text": "Le Kbis", "isCorrect": False},
+                        {"text": "Le DUER", "isCorrect": False},
+                        {"text": "La fiche technique", "isCorrect": False}
                     ],
-                    "correction": "Le PMS est la base de l'application de l'HACCP, comprenant le GBPH, la traçabilité et le plan de nettoyage/désinfection."
+                    "correction": "Le Plan de Maîtrise Sanitaire (PMS) est le document obligatoire décrivant les mesures prises pour assurer l'hygiène (HACCP, traçabilité, bonnes pratiques)."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Quelle est la bonne méthode pour la décongélation des denrées alimentaires en cuisine ?",
+                    "question": "Quelle action mécanique est indispensable lors du nettoyage d'une surface pour décoller les souillures ?",
                     "answerOptions": [
-                        {"text": "Au réfrigérateur (chambre froide positive).", "isCorrect": True, "key": "A"},
-                        {"text": "À température ambiante sur un plan de travail en inox.", "isCorrect": False, "key": "B"},
-                        {"text": "Au four micro-ondes sur le cycle le plus doux pour éviter la cuisson.", "isCorrect": False, "key": "C"},
-                        {"text": "Sous un filet d'eau chaude.", "isCorrect": False, "key": "D"}
+                        {"text": "Frotter", "isCorrect": True},
+                        {"text": "Rincer", "isCorrect": False},
+                        {"text": "Sécher", "isCorrect": False},
+                        {"text": "Désinfecter", "isCorrect": False}
                     ],
-                    "correction": "La décongélation doit être lente et maintenue à basse température pour éviter que l'extérieur de l'aliment n'entre dans la zone de danger."
+                    "correction": "Le TACT (Température, Action mécanique, Chimie, Temps) définit le nettoyage. L'action mécanique (frotter) est indispensable pour déstructurer le biofilm avant la désinfection."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Quelle est la première étape d'une procédure de nettoyage et de désinfection (méthode H.A.C.C.P.) ?",
+                    "question": "Quel produit utilise-t-on obligatoirement pour la décontamination des légumes bruts ?",
                     "answerOptions": [
-                        {"text": "Le débarrassage et le pré-nettoyage.", "isCorrect": True, "key": "A"},
-                        {"text": "La désinfection chimique à l'aide d'un produit homologué.", "isCorrect": False, "key": "B"},
-                        {"text": "Le rinçage final à l'eau potable chaude.", "isCorrect": False, "key": "C"},
-                        {"text": "L'application du détergent.", "isCorrect": False, "key": "D"}
+                        {"text": "Eau javellisée", "isCorrect": True},
+                        {"text": "Vinaigre blanc", "isCorrect": False},
+                        {"text": "Liquide vaisselle", "isCorrect": False},
+                        {"text": "Eau bouillante", "isCorrect": False}
                     ],
-                    "correction": "Le pré-nettoyage est essentiel pour éliminer la saleté visible avant d'appliquer les produits chimiques (détergent puis désinfectant)."
+                    "correction": "Les légumes terreux doivent être décontaminés avec des pastilles de chlore ou de l'eau javellisée dosée, suivis d'un rinçage abondant à l'eau claire."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quel risque majeur est lié à l'utilisation de planches à découper non différenciées (sans code couleur) ?",
+                    "question": "Quelle est la principale source de contamination par le Staphylocoque doré ?",
                     "answerOptions": [
-                        {"text": "Le transfert de bactéries entre produits crus et produits cuits.", "isCorrect": True, "key": "A"},
-                        {"text": "La détérioration rapide de la planche elle-même et l'usure prématurée des couteaux.", "isCorrect": False, "key": "B"},
-                        {"text": "Une mauvaise coupe des aliments due au glissement sur le matériau.", "isCorrect": False, "key": "C"},
-                        {"text": "Le développement de moisissures non dangereuses en surface.", "isCorrect": False, "key": "D"}
+                        {"text": "Le manipulateur", "isCorrect": True},
+                        {"text": "Les légumes terreux", "isCorrect": False},
+                        {"text": "Les conserves bombées", "isCorrect": False},
+                        {"text": "L'eau du réseau", "isCorrect": False}
                     ],
-                    "correction": "L'utilisation de planches distinctes est la méthode la plus simple pour éviter de transférer des bactéries d'un produit brut (poulet cru) à un aliment fini (salade)."
+                    "correction": "Le Staphylocoque doré est une bactérie portée par l'homme (nez, bouche, plaies infectées). La contamination est manuportée, d'où l'importance du port du masque en cas de rhume et des gants sur plaies."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quelle doit être la température minimale d'un plat chaud servi au client ?",
+                    "question": "Quel terme désigne le cheminement des produits empêchant le croisement entre le propre et le sale ?",
                     "answerOptions": [
-                        {"text": "Au moins +63°C.", "isCorrect": True, "key": "A"},
-                        {"text": "Au moins +55°C pour conserver les saveurs du plat.", "isCorrect": False, "key": "B"},
-                        {"text": "Au moins +70°C, pour compenser la perte de chaleur durant le service.", "isCorrect": False, "key": "C"},
-                        {"text": "Au moins +80°C.", "isCorrect": False, "key": "D"}
+                        {"text": "La marche en avant", "isCorrect": True},
+                        {"text": "La méthode FIFO", "isCorrect": False},
+                        {"text": "Le plan de nettoyage", "isCorrect": False},
+                        {"text": "La traçabilité descendante", "isCorrect": False}
                     ],
-                    "correction": "Le maintien en température des plats chauds doit se faire à +63°C minimum pour rester hors de la zone de danger."
+                    "correction": "La marche en avant (dans l'espace ou dans le temps) garantit qu'un produit sain ne croise jamais un circuit souillé (déchets, vaisselle sale) pour éviter les contaminations croisées."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Que doit-on faire de la tenue de travail (veste, pantalon) en sortant du laboratoire ?",
+                    "question": "Que doit-on vérifier obligatoirement à la réception des marchandises réfrigérées ?",
                     "answerOptions": [
-                        {"text": "La retirer ou la recouvrir.", "isCorrect": True, "key": "A"},
-                        {"text": "La laver immédiatement dans la machine de l'établissement.", "isCorrect": False, "key": "B"},
-                        {"text": "La laisser sur le plan de travail, loin des aliments.", "isCorrect": False, "key": "C"},
-                        {"text": "La plier dans le sac de transport pour le lavage à la maison.", "isCorrect": False, "key": "D"}
+                        {"text": "Température à cœur", "isCorrect": True},
+                        {"text": "Prix des produits", "isCorrect": False},
+                        {"text": "Marque du fournisseur", "isCorrect": False},
+                        {"text": "Poids des palettes", "isCorrect": False}
                     ],
-                    "correction": "La tenue doit être strictement réservée à l'espace de travail pour éviter d'importer des germes de l'extérieur ou de contaminer les zones 'propres'."
+                    "correction": "Le contrôle de la température à cœur (ou entre deux conditionnements) est impératif à la réception pour valider que la chaîne du froid n'a pas été rompue durant le transport."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quelle est la principale maladie bactérienne associée à la consommation d'œufs crus ou mal cuits ?",
+                    "question": "Quelle est la définition exacte de la désinfection ?",
                     "answerOptions": [
-                        {"text": "La Salmonellose.", "isCorrect": True, "key": "A"},
-                        {"text": "La Listériose, présente dans les produits laitiers non pasteurisés.", "isCorrect": False, "key": "B"},
-                        {"text": "Le Botulisme, lié aux conserves mal stérilisées.", "isCorrect": False, "key": "C"},
-                        {"text": "L'Hépatite A.", "isCorrect": False, "key": "D"}
+                        {"text": "Élimination des micro-organismes", "isCorrect": True},
+                        {"text": "Élimination des souillures visibles", "isCorrect": False},
+                        {"text": "Élimination des déchets d'emballage", "isCorrect": False},
+                        {"text": "Élimination des mauvaises odeurs", "isCorrect": False}
                     ],
-                    "correction": "Les salmonelles sont souvent présentes sur la coquille de l'œuf et peuvent contaminer les préparations non cuites."
+                    "correction": "Le nettoyage enlève la saleté visible. La désinfection, qui vient après, a pour but de tuer ou d'inactiver momentanément les micro-organismes indésirables sur une surface propre."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Qu'est-ce qu'un Point Critique pour la Maîtrise (CCP) selon la méthode HACCP ?",
+                    "question": "Quel est le seul bijou toléré en cuisine selon les bonnes pratiques d'hygiène ?",
                     "answerOptions": [
-                        {"text": "Une étape où l'on peut prévenir, éliminer ou réduire un danger.", "isCorrect": True, "key": "A"},
-                        {"text": "Une étape où une erreur est fréquente dans le processus de production.", "isCorrect": False, "key": "B"},
-                        {"text": "Le moment de la réception des marchandises et le contrôle des DLC.", "isCorrect": False, "key": "C"},
-                        {"text": "La vaisselle sale après le service.", "isCorrect": False, "key": "D"}
+                        {"text": "Alliance lisse", "isCorrect": True},
+                        {"text": "Montre étanche", "isCorrect": False},
+                        {"text": "Boucles d'oreilles", "isCorrect": False},
+                        {"text": "Bracelet en cuivre", "isCorrect": False}
                     ],
-                    "correction": "La pasteurisation, la cuisson, ou le refroidissement sont des exemples de CCP où la maîtrise de la température est vitale."
+                    "correction": "Seule l'alliance lisse est tolérée car elle présente peu d'aspérités retenant les bactéries. Tout autre bijou (montres, bagues avec pierres) est interdit."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Quel type de couteau doit-on utiliser pour découper une volaille entière crue ?",
+                    "question": "Quelle méthode de décongélation est strictement interdite en cuisine professionnelle ?",
                     "answerOptions": [
-                        {"text": "Le couteau d'office ou le couteau à désosser.", "isCorrect": True, "key": "A"},
-                        {"text": "Le couteau éminceur (chef) ou le couteau à pain, avec une lame dentelée.", "isCorrect": False, "key": "B"},
-                        {"text": "Le couteau à poisson.", "isCorrect": False, "key": "C"},
-                        {"text": "Le couteau à légumes, pour une coupe de précision.", "isCorrect": False, "key": "D"}
+                        {"text": "À température ambiante", "isCorrect": True},
+                        {"text": "En enceinte réfrigérée", "isCorrect": False},
+                        {"text": "Au four micro-ondes", "isCorrect": False},
+                        {"text": "Par cuisson directe", "isCorrect": False}
                     ],
-                    "correction": "Le couteau à désosser, avec sa lame fine et rigide, est idéal pour les découpes de précision sur la viande crue."
+                    "correction": "La décongélation à température ambiante favorise une prolifération microbienne explosive. On doit décongeler au froid (+3°C), au micro-ondes (si cuisson immédiate) ou par cuisson directe."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quelle est la fréquence recommandée pour le nettoyage complet d'une friteuse ?",
+                    "question": "Quelle huile d'origine animale est impropre à la friture profonde en raison de son point de fumée bas ?",
                     "answerOptions": [
-                        {"text": "Chaque jour ou dès que nécessaire (après le service).", "isCorrect": True, "key": "A"},
-                        {"text": "Une fois par semaine, à l'aide d'un dégraissant puissant.", "isCorrect": False, "key": "B"},
-                        {"text": "Une fois par mois.", "isCorrect": False, "key": "C"},
-                        {"text": "Deux fois par mois, lors de l'inventaire.", "isCorrect": False, "key": "D"}
+                        {"text": "Beurre", "isCorrect": True},
+                        {"text": "Graisse de bœuf", "isCorrect": False},
+                        {"text": "Saindoux", "isCorrect": False},
+                        {"text": "Graisse de canard", "isCorrect": False}
                     ],
-                    "correction": "L'huile de friture (et la friteuse) doit être nettoyée et changée régulièrement, souvent quotidiennement, pour des raisons d'hygiène et de qualité."
+                    "correction": "Le beurre non clarifié brûle à environ 130°C (caséine). Il ne supporte pas les températures de friture (170°C-180°C). Les graisses comme le blanc de bœuf sont adaptées."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Que doit-on faire avant de goûter un plat ou un fond en cuisine ?",
+                    "question": "Que doit-on faire immédiatement après avoir cassé des œufs coquille pour une préparation ?",
                     "answerOptions": [
-                        {"text": "Utiliser une cuillère propre et la changer après chaque dégustation.", "isCorrect": True, "key": "A"},
-                        {"text": "Utiliser une cuillère personnelle et la rincer sous l'eau chaude après chaque usage.", "isCorrect": False, "key": "B"},
-                        {"text": "Goûter directement avec le couteau ou l'ustensile de cuisson.", "isCorrect": False, "key": "C"},
-                        {"text": "Goûter directement avec le doigt.", "isCorrect": False, "key": "D"}
+                        {"text": "Se laver les mains", "isCorrect": True},
+                        {"text": "Mettre au frigo", "isCorrect": False},
+                        {"text": "Battre les œufs", "isCorrect": False},
+                        {"text": "Ajouter le sucre", "isCorrect": False}
                     ],
-                    "correction": "Le protocole de dégustation est essentiel pour éviter toute contamination de la bouche vers l'aliment. On utilise une cuillère propre par essai."
+                    "correction": "La coquille de l'œuf peut être porteuse de salmonelles. Il faut impérativement se laver les mains après le cassage pour ne pas contaminer l'appareil ou le matériel."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quelle est la température maximale légale pour le stockage des produits surgelés ?",
+                    "question": "Quel parasite peut-on retrouver dans les poissons sauvages consommés crus nécessitant une congélation préalable ?",
                     "answerOptions": [
-                        {"text": "-18°C.", "isCorrect": True, "key": "A"},
-                        {"text": "-10°C, pour les glaces et sorbets uniquement.", "isCorrect": False, "key": "B"},
-                        {"text": "-5°C.", "isCorrect": False, "key": "C"},
-                        {"text": "-12°C.", "isCorrect": False, "key": "D"}
+                        {"text": "Anisakis", "isCorrect": True},
+                        {"text": "Ténia", "isCorrect": False},
+                        {"text": "Ascaris", "isCorrect": False},
+                        {"text": "Douve", "isCorrect": False}
                     ],
-                    "correction": "La température de -18°C (ou inférieure) est le standard pour la conservation des produits surgelés afin de garantir la qualité et la sécurité."
-                }
+                    "correction": "L'Anisakis est un parasite fréquent chez les poissons sauvages. La réglementation impose une congélation à -20°C pendant 24h pour les poissons servis crus afin de tuer ce parasite."
+                },
             ]
         },
-        # THÈME 2
+        # =========================================================================
+        # THÈME 2 : TECHNOLOGIE DU MATÉRIEL ET DES LOCAUX (Questions 21 à 40)
+        # =========================================================================
         2: {
-            "name": "Fonds, Sauces et Liaisons",
+            "name": "THÈME 2 : TECHNOLOGIE DU MATÉRIEL ET DES LOCAUX (Questions 21 à 40)",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quelle est la base du fond brun de veau, juste avant l'ajout d'eau ?",
+                    "question": "Quel ustensile de cuisson cylindrique à parois verticales et deux poignées latérales utilise-t-on pour rissoler ou sauter des aliments ?",
                     "answerOptions": [
-                        {"text": "Les os de veau rôtis avec la garniture aromatique.", "isCorrect": True, "key": "A"},
-                        {"text": "Les arêtes de poisson blanchies à l'eau froide et écumées.", "isCorrect": False, "key": "B"},
-                        {"text": "Les légumes et l'eau froide sans os.", "isCorrect": False, "key": "C"},
-                        {"text": "Les sucs de viande déglacés au vin rouge et réduits.", "isCorrect": False, "key": "D"}
+                        {"text": "Le sautoir", "isCorrect": True},
+                        {"text": "La sauteuse", "isCorrect": False},
+                        {"text": "La poêle lyonnaise", "isCorrect": False},
+                        {"text": "Le wok asiatique", "isCorrect": False}
                     ],
-                    "correction": "Les os sont rôtis au four jusqu'à ce qu'ils soient bruns, ce qui donne la couleur et la saveur caractéristiques du fond brun."
+                    "correction": "Le sautoir a des bords droits (verticaux) et sert à sauter les aliments. La sauteuse, elle, a des bords évasés (inclinés). C'est une distinction fondamentale au CAP."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Comment s'appelle l'ingrédient principal utilisé pour lier une sauce mère de type Velouté ?",
+                    "question": "Quel petit matériel souple, généralement en caoutchouc ou silicone avec un manche, sert à racler parfaitement l'intérieur d'un récipient ?",
                     "answerOptions": [
-                        {"text": "Le roux blanc (mélange beurre et farine).", "isCorrect": True, "key": "A"},
-                        {"text": "L'amidon de maïs (Maïzena) pur, délayé dans l'eau.", "isCorrect": False, "key": "B"},
-                        {"text": "Le beurre manié, incorporé en fin de cuisson.", "isCorrect": False, "key": "C"},
-                        {"text": "La crème fraîche.", "isCorrect": False, "key": "D"}
+                        {"text": "La maryse", "isCorrect": True},
+                        {"text": "La corne", "isCorrect": False},
+                        {"text": "Le pinceau", "isCorrect": False},
+                        {"text": "La spatule en bois", "isCorrect": False}
                     ],
-                    "correction": "Le Velouté est une sauce mère liée par un roux blanc, sur lequel on verse un fond (volaille, veau ou poisson) et que l'on fait cuire."
+                    "correction": "La maryse (ou spatule souple) permet de 'corner' (nettoyer) les culs-de-poule sans perte. La corne, elle, est une pièce de plastique rigide sans manche, utilisée pour manipuler les pâtes."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quel est le nom de la sauce mère émulsionnée chaude, à base de jaunes d'œufs, de beurre clarifié et de réduction acide ?",
+                    "question": "À quoi sert principalement une salamandre en cuisine professionnelle ?",
                     "answerOptions": [
-                        {"text": "La sauce Hollandaise.", "isCorrect": True, "key": "A"},
-                        {"text": "La sauce Béchamel (à base de lait).", "isCorrect": False, "key": "B"},
-                        {"text": "La sauce Mayonnaise (une émulsion froide).", "isCorrect": False, "key": "C"},
-                        {"text": "La sauce Espagnole.", "isCorrect": False, "key": "D"}
+                        {"text": "Gratiner", "isCorrect": True},
+                        {"text": "Bouillir", "isCorrect": False},
+                        {"text": "Frire", "isCorrect": False},
+                        {"text": "Émulsionner", "isCorrect": False}
                     ],
-                    "correction": "La sauce Hollandaise est une émulsion chaude. Si on ajoute de l'estragon et du poivre, on obtient la sauce Béarnaise."
+                    "correction": "La salamandre est un appareil de cuisson par rayonnement (voûte chauffante) servant à gratiner (colorer le dessus d'un plat), glacer ou maintenir au chaud une assiette avant l'envoi."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quelle est la principale différence entre un fond blanc et un fond brun ?",
+                    "question": "Quel type de four permet de combiner la chaleur sèche et la vapeur pour limiter le dessèchement des produits ?",
                     "answerOptions": [
-                        {"text": "Les os sont rôtis (brun) ou non (blanc) avant le mouillage.", "isCorrect": True, "key": "A"},
-                        {"text": "Le fond brun est toujours lié à la farine (roux), le fond blanc jamais.", "isCorrect": False, "key": "B"},
-                        {"text": "Le fond blanc cuit toujours plus longtemps que le fond brun pour en extraire le collagène.", "isCorrect": False, "key": "C"},
-                        {"text": "Le fond brun n'utilise que de l'eau, le fond blanc du lait.", "isCorrect": False, "key": "D"}
+                        {"text": "Four mixte", "isCorrect": True},
+                        {"text": "Four à convection", "isCorrect": False},
+                        {"text": "Four à sole", "isCorrect": False},
+                        {"text": "Four à micro-ondes", "isCorrect": False}
                     ],
-                    "correction": "Le rôtissage des éléments (os et garniture) donne la couleur et la profondeur aromatique aux fonds bruns."
+                    "correction": "Le four mixte combine l'air pulsé (chaleur sèche) et l'injection de vapeur. Cela permet des cuissons plus rapides et moins desséchantes que la convection classique."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Qu'est-ce que le 'singer' une préparation ?",
+                    "question": "Quel est le rôle exact du fusil lors de l'entretien d'un couteau ?",
                     "answerOptions": [
-                        {"text": "Saupoudrer de farine une garniture suée.", "isCorrect": True, "key": "A"},
-                        {"text": "Assaisonner très fortement une sauce juste avant de servir.", "isCorrect": False, "key": "B"},
-                        {"text": "Faire bouillir vivement un bouillon pour le concentrer (réduire).", "isCorrect": False, "key": "C"},
-                        {"text": "Ajouter du beurre en fin de cuisson.", "isCorrect": False, "key": "D"}
+                        {"text": "Redresser le fil", "isCorrect": True},
+                        {"text": "Créer un nouveau tranchant en enlevant beaucoup de matière métallique", "isCorrect": False},
+                        {"text": "Polir le manche du couteau pour une meilleure hygiène", "isCorrect": False},
+                        {"text": "Désinfecter la lame", "isCorrect": False}
                     ],
-                    "correction": "Singer est une méthode de liaison. La farine enrobant les aliments forme un roux lors du mouillage, qui épaissit la sauce."
+                    "correction": "Le fusil sert à l'affilage : il redresse le 'fil' (le bord fin) de la lame qui se tord à l'usage. Pour aiguiser (créer le tranchant) quand le couteau ne coupe plus, on utilise une pierre à aiguiser."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Comment s'appelle l'écume qui se forme à la surface d'un fond ou d'un bouillon en début de cuisson et qu'il faut enlever ?",
+                    "question": "Quelle est la particularité physique d'une sauteuse par rapport à un sautoir ?",
                     "answerOptions": [
-                        {"text": "L'écume ou les impuretés (albumine coagulée).", "isCorrect": True, "key": "A"},
-                        {"text": "Le dépôt.", "isCorrect": False, "key": "B"},
-                        {"text": "Le roux.", "isCorrect": False, "key": "C"},
-                        {"text": "La glace.", "isCorrect": False, "key": "D"}
+                        {"text": "Bords évasés", "isCorrect": True},
+                        {"text": "Bords droits", "isCorrect": False},
+                        {"text": "Fond bombé", "isCorrect": False},
+                        {"text": "Absence de queue", "isCorrect": False}
                     ],
-                    "correction": "L'écumage est l'opération consistant à retirer ces impuretés pour obtenir un fond limpide et sans amertume."
+                    "correction": "La sauteuse possède des bords évasés (inclinés vers l'extérieur), ce qui facilite l'évaporation et permet de monter des sauces plus aisément qu'avec un sautoir aux bords droits."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quel ingrédient est ajouté au roux pour réaliser une sauce Béchamel ?",
+                    "question": "Comment appelle-t-on la passoire conique à grille très fine utilisée pour filtrer les sauces et les fonds sans laisser passer de particules ?",
                     "answerOptions": [
-                        {"text": "Du lait froid (ou tiède) versé sur le roux chaud.", "isCorrect": True, "key": "A"},
-                        {"text": "Du fond blanc de volaille.", "isCorrect": False, "key": "B"},
-                        {"text": "De la crème fraîche liquide et des jaunes d'œufs.", "isCorrect": False, "key": "C"},
-                        {"text": "Un bouillon de légumes.", "isCorrect": False, "key": "D"}
+                        {"text": "Chinois étamine", "isCorrect": True},
+                        {"text": "Chinois piston", "isCorrect": False},
+                        {"text": "Passoire à queue", "isCorrect": False},
+                        {"text": "Panier de friteuse", "isCorrect": False}
                     ],
-                    "correction": "La Béchamel est un Velouté de lait (une des sauces mères), liée par un roux blanc et cuite pour éliminer le goût de la farine."
+                    "correction": "Le chinois étamine possède une grille métallique très fine (comme un tissu). Le chinois classique (perforé) laisse passer plus de matière. On 'passe au chinois étamine' pour une finition parfaite."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Quelle est la température du beurre clarifié pour réussir une sauce Hollandaise ?",
+                    "question": "Quelle est la fonction d'une araignée en cuisine ?",
                     "answerOptions": [
-                        {"text": "Il doit être chaud (environ 60-70°C).", "isCorrect": True, "key": "A"},
-                        {"text": "Il doit être froid (sorti du réfrigérateur) pour créer un choc thermique.", "isCorrect": False, "key": "B"},
-                        {"text": "Il doit être glacé.", "isCorrect": False, "key": "C"},
-                        {"text": "Il doit être à température ambiante pour une incorporation progressive.", "isCorrect": False, "key": "D"}
+                        {"text": "Retirer des aliments d'un liquide chaud", "isCorrect": True},
+                        {"text": "Écraser les légumes pour la purée", "isCorrect": False},
+                        {"text": "Fouetter les blancs en neige", "isCorrect": False},
+                        {"text": "Ouvrir les boîtes de conserve", "isCorrect": False}
                     ],
-                    "correction": "Le beurre clarifié chaud est versé lentement sur les jaunes d'œufs montés (sabayon) pour créer une émulsion stable et épaisse."
+                    "correction": "L'araignée est une écumoire à fils de fer espacés (ressemblant à une toile). Elle sert à sortir les aliments de la friture ou de l'eau bouillante en les égouttant instantanément."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Comment appelle-t-on le procédé qui consiste à concentrer un fond par ébullition pour intensifier sa saveur ?",
+                    "question": "Quel couteau de petite taille (lame 7-10 cm) est utilisé pour éplucher et tourner les légumes ?",
                     "answerOptions": [
-                        {"text": "La réduction.", "isCorrect": True, "key": "A"},
-                        {"text": "Le dégraissage, qui retire le gras en surface.", "isCorrect": False, "key": "B"},
-                        {"text": "Le chinoisage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le blanchissage.", "isCorrect": False, "key": "D"}
+                        {"text": "L'office", "isCorrect": True},
+                        {"text": "L'éminceur", "isCorrect": False},
+                        {"text": "Le filet de sole", "isCorrect": False},
+                        {"text": "Le désosseur", "isCorrect": False}
                     ],
-                    "correction": "La réduction permet d'obtenir un fond plus concentré et sirupeux, souvent utilisé comme base pour les sauces ou les glaces de viande."
+                    "correction": "Le couteau d'office est le prolongement de la main du cuisinier pour les travaux de précision : éplucher, tourner, équeuter. L'éminceur est le grand couteau 'chef'."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Quel est l'élément qui lie une Mayonnaise ?",
+                    "question": "Que désigne le terme 'Gastronorme' (GN) ?",
                     "answerOptions": [
-                        {"text": "La lécithine contenue dans le jaune d'œuf.", "isCorrect": True, "key": "A"},
-                        {"text": "L'eau du vinaigre ajouté au début de l'émulsion.", "isCorrect": False, "key": "B"},
-                        {"text": "La moutarde, ajoutée pour son rôle d'agent stabilisateur.", "isCorrect": False, "key": "C"},
-                        {"text": "La coagulation de la farine.", "isCorrect": False, "key": "D"}
+                        {"text": "Une norme dimensionnelle standardisée", "isCorrect": True},
+                        {"text": "Une marque de four professionnel", "isCorrect": False},
+                        {"text": "Un label de qualité alimentaire", "isCorrect": False},
+                        {"text": "Une technique de cuisson sous vide", "isCorrect": False}
                     ],
-                    "correction": "La mayonnaise est une émulsion froide et stable de deux liquides non miscibles (l'huile et le vinaigre) stabilisée par la lécithine des jaunes d'œufs."
+                    "correction": "Le format Gastronorme (GN 1/1, GN 1/2, etc.) standardise les dimensions des bacs, grilles et échelles pour qu'ils soient compatibles avec tous les matériels (fours, chariots, frigos)."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Comment appelle-t-on la liaison réalisée avec des œufs entiers ou des jaunes et de la crème ajoutés en fin de cuisson ?",
+                    "question": "Quel matériau est indispensable pour utiliser une batterie de cuisine sur une plaque à induction ?",
                     "answerOptions": [
-                        {"text": "La liaison à la crème et aux jaunes (liaison française).", "isCorrect": True, "key": "A"},
-                        {"text": "Le roux clair, à base de beurre et de farine cuits sans coloration.", "isCorrect": False, "key": "B"},
-                        {"text": "Le beurre manié, incorporé à la sauce en morceaux.", "isCorrect": False, "key": "C"},
-                        {"text": "La gélatine.", "isCorrect": False, "key": "D"}
+                        {"text": "Métal ferromagnétique", "isCorrect": True},
+                        {"text": "Cuivre pur", "isCorrect": False},
+                        {"text": "Aluminium pur", "isCorrect": False},
+                        {"text": "Verre trempé", "isCorrect": False}
                     ],
-                    "correction": "Cette liaison (crème et jaunes) doit être ajoutée hors du feu ou à feu très doux pour éviter la coagulation des œufs (effet 'grainé')."
+                    "correction": "L'induction fonctionne par champ magnétique. Le récipient doit contenir du fer (fonte, acier émaillé, inox ferritique) pour chauffer. Le cuivre ou l'alu seuls ne fonctionnent pas."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quel est l'élément principal ajouté au fond brun pour obtenir une sauce Espagnole, l'une des sauces mères classiques ?",
+                    "question": "Quel appareil permet de maintenir les préparations à température de service (+63°C) sans poursuivre la cuisson ?",
                     "answerOptions": [
-                        {"text": "Du roux brun (beurre et farine colorés).", "isCorrect": True, "key": "A"},
-                        {"text": "De la crème fraîche épaisse et une pointe de jus de citron.", "isCorrect": False, "key": "B"},
-                        {"text": "Du beurre manié.", "isCorrect": False, "key": "C"},
-                        {"text": "De la fécule de maïs.", "isCorrect": False, "key": "D"}
+                        {"text": "Le bain-marie", "isCorrect": True},
+                        {"text": "La cellule de refroidissement", "isCorrect": False},
+                        {"text": "Le cutter", "isCorrect": False},
+                        {"text": "La sauteuse basculante", "isCorrect": False}
                     ],
-                    "correction": "La sauce Espagnole est réalisée en mouillant un roux brun avec un fond brun lié. C'est la base de nombreuses sauces dérivées."
+                    "correction": "Le bain-marie (électrique ou à eau) est conçu pour le maintien en température. Il chauffe doucement sans agresser le produit, contrairement à une plaque de cuisson directe."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quel est l'utilité du concentré de tomate dans la préparation du fond brun lié ?",
+                    "question": "Quel est le nom du récipient hémisphérique utilisé pour fouetter les appareils ou monter les blancs, facilitant le mouvement du fouet ?",
                     "answerOptions": [
-                        {"text": "Il apporte de l'acidité et contribue à la coloration et au goût.", "isCorrect": True, "key": "A"},
-                        {"text": "Il sert d'agent de liaison et d'épaississant.", "isCorrect": False, "key": "B"},
-                        {"text": "Il épaissit immédiatement la sauce.", "isCorrect": False, "key": "C"},
-                        {"text": "Il remplace les os de veau.", "isCorrect": False, "key": "D"}
+                        {"text": "Cul-de-poule", "isCorrect": True},
+                        {"text": "Calotte", "isCorrect": False},
+                        {"text": "Bassine à confiture", "isCorrect": False},
+                        {"text": "Gastronorme", "isCorrect": False}
                     ],
-                    "correction": "Le concentré de tomate (ou la tomate fraîche) est souvent ajouté au début de la cuisson du fond brun après le rôtissage, on le pince (cuisson)."
+                    "correction": "Le cul-de-poule a un fond rond (sphérique), idéal pour que le fouet atteigne toute la préparation. La calotte a un fond plat."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Comment appelle-t-on l'opération qui consiste à passer un fond, une sauce ou une soupe dans un chinois ?",
+                    "question": "Sur un fourneau, qu'appelle-t-on le 'coup de feu' ?",
                     "answerOptions": [
-                        {"text": "Chinoiser ou passer (au chinois étamine).", "isCorrect": True, "key": "A"},
-                        {"text": "Écumer, pour retirer la mousse en surface.", "isCorrect": False, "key": "B"},
-                        {"text": "Liaisonner.", "isCorrect": False, "key": "C"},
-                        {"text": "Réduire.", "isCorrect": False, "key": "D"}
+                        {"text": "La plaque centrale à chaleur dégressive", "isCorrect": True},
+                        {"text": "Le moment où le service est intense", "isCorrect": False},
+                        {"text": "L'allumage automatique du four", "isCorrect": False},
+                        {"text": "La hotte aspirante", "isCorrect": False}
                     ],
-                    "correction": "Chinoiser permet de retirer les impuretés, les os et la garniture aromatique pour obtenir un liquide pur et lisse."
+                    "correction": "Techniquement, la 'plaque coup de feu' est une plaque en fonte massive chauffée par un brûleur central puissant. La chaleur diminue à mesure qu'on s'éloigne du centre, permettant de gérer plusieurs cuissons en déplaçant les casseroles."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quel est le nom de la liaison réalisée en fin de cuisson par l'ajout de beurre manié ou de fécule délayée ?",
+                    "question": "Quel instrument de mesure utilise-t-on pour vérifier la densité d'un sirop de sucre ?",
                     "answerOptions": [
-                        {"text": "La liaison à la fécule ou au beurre manié.", "isCorrect": True, "key": "A"},
-                        {"text": "Le roux roux.", "isCorrect": False, "key": "B"},
-                        {"text": "Le déglaçage à l'alcool.", "isCorrect": False, "key": "C"},
-                        {"text": "Le sabayon.", "isCorrect": False, "key": "D"}
+                        {"text": "Le pèse-sirop", "isCorrect": True},
+                        {"text": "Le thermomètre sonde", "isCorrect": False},
+                        {"text": "Le chronomètre", "isCorrect": False},
+                        {"text": "Le verre doseur", "isCorrect": False}
                     ],
-                    "correction": "Le beurre manié (beurre + farine crue) ou la fécule est utilisé pour lier rapidement et à chaud des fonds ou des jus."
+                    "correction": "Bien que le thermomètre soit souvent utilisé pour la cuisson du sucre, le pèse-sirop (densimètre) mesure spécifiquement la densité (concentration en sucre) d'un sirop froid ou tiède."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Quel est le rôle du vin blanc ou d'un alcool lors du déglaçage ?",
+                    "question": "Quelle est l'utilité principale d'une mandoline ?",
                     "answerOptions": [
-                        {"text": "Dissoudre les sucs de cuisson et les décoller du fond du récipient.", "isCorrect": True, "key": "A"},
-                        {"text": "Lier la sauce en fin de cuisson.", "isCorrect": False, "key": "B"},
-                        {"text": "Assaisonner le plat.", "isCorrect": False, "key": "C"},
-                        {"text": "Accélérer la cuisson des légumes.", "isCorrect": False, "key": "D"}
+                        {"text": "Tailler des tranches régulières", "isCorrect": True},
+                        {"text": "Aiguiser les couteaux rapidement", "isCorrect": False},
+                        {"text": "Hacher la viande finement", "isCorrect": False},
+                        {"text": "Éplucher les pommes de terre", "isCorrect": False}
                     ],
-                    "correction": "Le déglaçage est l'opération qui consiste à récupérer les sucs (particules caramélisées et aromatiques) formés au fond de la poêle après cuisson."
+                    "correction": "La mandoline est un coupe-légumes manuel qui assure une épaisseur de tranche parfaitement constante et permet des tailles spécifiques (gaufrettes, juliennes fines)."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Comment appelle-t-on la sauce obtenue par réduction d'un fond brun de veau, concentrée et très riche ?",
+                    "question": "Quel nom donne-t-on à la grande casserole haute, munie d'une queue, utilisée pour cuire de grandes quantités de liquides ou potages ?",
                     "answerOptions": [
-                        {"text": "La demi-glace ou glace de viande.", "isCorrect": True, "key": "A"},
-                        {"text": "La Béchamel, qui est une sauce mère liée au lait.", "isCorrect": False, "key": "B"},
-                        {"text": "La Hollandaise, une émulsion chaude aux jaunes d'œufs.", "isCorrect": False, "key": "C"},
-                        {"text": "Le roux noir.", "isCorrect": False, "key": "D"}
+                        {"text": "La russe", "isCorrect étonnée": True},
+                        {"text": "Le rondeau", "isCorrect": False},
+                        {"text": "La braisière", "isCorrect": False},
+                        {"text": "La plaque à rôtir", "isCorrect": False}
                     ],
-                    "correction": "La demi-glace est une sauce de base souvent utilisée pour les finitions ou comme base pour d'autres sauces."
+                    "correction": "La russe est la casserole 'classique' de cuisine professionnelle : cylindrique, haute, avec une queue. Le rondeau est bas avec deux poignées."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Quel est l'utilité du mirepoix dans la préparation d'un fond de cuisine ?",
+                    "question": "Quel matériel est spécifiquement conçu pour abaisser très rapidement la température des plats de +63°C à +10°C ?",
                     "answerOptions": [
-                        {"text": "Apporter les arômes de base (oignons, carottes, céleri) au fond.", "isCorrect": True, "key": "A"},
-                        {"text": "Lier le bouillon.", "isCorrect": False, "key": "B"},
-                        {"text": "Assurer la coloration des os.", "isCorrect": False, "key": "C"},
-                        {"text": "Accélérer le temps de cuisson.", "isCorrect": False, "key": "D"}
+                        {"text": "La cellule de refroidissement", "isCorrect": True},
+                        {"text": "Le congélateur coffre", "isCorrect": False},
+                        {"text": "La chambre froide positive", "isCorrect": False},
+                        {"text": "L'armoire à boissons", "isCorrect": False}
                     ],
-                    "correction": "Le mirepoix (garniture aromatique) est la base de saveur des fonds. Il est coupé en gros dés et ajouté à la cuisson des os."
+                    "correction": "Seule la cellule de refroidissement est assez puissante pour respecter le délai légal (moins de 2h). Un frigo classique ou un congélateur ne sont pas conçus pour refroidir du chaud massivement."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quel ingrédient est utilisé pour réaliser un fumet de poisson (fond de poisson) ?",
+                    "question": "Pour quelle tâche utilise-t-on un couteau 'filet de sole' ?",
                     "answerOptions": [
-                        {"text": "Les arêtes, parures et têtes de poissons blancs, non rincées.", "isCorrect": True, "key": "A"},
-                        {"text": "Les os de bœuf et de l'eau.", "isCorrect": False, "key": "B"},
-                        {"text": "Les coquilles de crustacés rôtis.", "isCorrect": False, "key": "C"},
-                        {"text": "Des légumes uniquement, sans poisson.", "isCorrect": False, "key": "D"}
+                        {"text": "Lever les filets de poisson", "isCorrect": True},
+                        {"text": "Désosser une épaule d'agneau", "isCorrect": False},
+                        {"text": "Couper du pain", "isCorrect": False},
+                        {"text": "Émincer des oignons", "isCorrect": False}
                     ],
-                    "correction": "Le fumet de poisson est réalisé rapidement avec des arêtes et une garniture aromatique. Le poisson est généralement blanchi au préalable."
+                    "correction": "Le filet de sole possède une lame longue, fine et flexible, permettant de glisser le long de l'arête centrale du poisson plat pour détacher le filet sans perte de chair."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Comment appelle-t-on l'opération qui consiste à incorporer du beurre froid à la fin dans une sauce, hors du feu, en fouettant ?",
+                    "question": "En technologie des locaux, à quoi sert le siphon de sol ?",
                     "answerOptions": [
-                        {"text": "Monter au beurre (ou beurrer).", "isCorrect": True, "key": "A"},
-                        {"text": "Sauter.", "isCorrect": False, "key": "B"},
-                        {"text": "Émulsionner à froid.", "isCorrect": False, "key": "D"},
-                        {"text": "Réduire.", "isCorrect": False, "key": "C"}
+                        {"text": "Évacuer les eaux de lavage", "isCorrect": True},
+                        {"text": "Ventiler la pièce", "isCorrect": False},
+                        {"text": "Distribuer le gaz", "isCorrect": False},
+                        {"text": "Filtrer l'eau du robinet", "isCorrect": False}
                     ],
-                    "correction": "Monter au beurre (ou 'monter à la noisette' si le beurre est chauffé) permet d'épaissir légèrement la sauce et de lui donner du brillant et de la richesse."
-                }
+                    "correction": "Les siphons de sol (avec panier et cloche) permettent d'évacuer les eaux lors du nettoyage à grande eau des sols carrelés, tout en empêchant les remontées d'odeurs des égouts."
+                },
             ]
         },
-        # THÈME 3
+        # =========================================================================
+        # THÈME 3 : CONNAISSANCE DES PRODUITS (LES DENRÉES) (Questions 41 à 60)
+        # =========================================================================
         3: {
-            "name": "Techniques de Cuisson et Taillage",
+            "name": "THÈME 3 : CONNAISSANCE DES PRODUITS (LES DENRÉES) (Questions 41 à 60)",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel est le taillage d'un légume en fins bâtonnets de 1 à 2 mm de côté ?",
+                    "question": "À quelle famille de légumes appartient le haricot vert ?",
                     "answerOptions": [
-                        {"text": "La julienne.", "isCorrect": True, "key": "A"},
-                        {"text": "La brunoise (en petits cubes).", "isCorrect": False, "key": "B"},
-                        {"text": "La macédoine.", "isCorrect": False, "key": "C"},
-                        {"text": "La mirepoix (en dés moyens).", "isCorrect": False, "key": "D"}
+                        {"text": "Légumes graines", "isCorrect": True},
+                        {"text": "Légumes racines", "isCorrect": False},
+                        {"text": "Légumes feuilles", "isCorrect": False},
+                        {"text": "Légumes tubercules", "isCorrect": False}
                     ],
-                    "correction": "La julienne est le taillage le plus fin en bâtonnets (allumettes). Elle est utilisée pour les garnitures et les soupes fines."
+                    "correction": "Bien que mangé frais, le haricot vert est botaniquement un légume graine (légumineuse), dont on consomme la gousse avant maturité complète des graines."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Comment appelle-t-on le taillage d'un légume en petits cubes de 2 à 3 mm de côté ?",
+                    "question": "Quelle variété de pomme de terre à chair farineuse est idéale pour réaliser une purée ou des frites ?",
                     "answerOptions": [
-                        {"text": "La brunoise.", "isCorrect": True, "key": "A"},
-                        {"text": "La chiffonnade (pour les feuilles).", "isCorrect": False, "key": "B"},
-                        {"text": "La paysanne.", "isCorrect": False, "key": "C"},
-                        {"text": "La matignon.", "isCorrect": False, "key": "D"}
+                        {"text": "Bintje", "isCorrect": True},
+                        {"text": "Charlotte", "isCorrect": False},
+                        {"text": "Belle de Fontenay", "isCorrect": False},
+                        {"text": "Roseval", "isCorrect": False}
                     ],
-                    "correction": "La brunoise est un taillage en dés fins. Elle est souvent réalisée à partir de la julienne pour obtenir les dés."
+                    "correction": "La Bintje (ou l'Agria) a une chair farineuse qui se délite à la cuisson, parfaite pour les potages, purées et frites. Les autres citées sont à chair ferme (vapeur, sautées)."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Quelle technique consiste à cuire un aliment dans un corps gras chaud (huile, beurre) en remuant sans coloration importante ?",
+                    "question": "Quel morceau du bœuf est classé en première catégorie et destiné aux cuissons rapides comme le rôtissage ?",
                     "answerOptions": [
-                        {"text": "Le suage ou l'étuvage.", "isCorrect": True, "key": "A"},
-                        {"text": "Le rôtissage (cuisson à chaleur sèche et vive).", "isCorrect": False, "key": "B"},
-                        {"text": "La friture.", "isCorrect": False, "key": "C"},
-                        {"text": "Le grillage.", "isCorrect": False, "key": "D"}
+                        {"text": "Le rumsteak", "isCorrect": True},
+                        {"text": "Le paleron", "isCorrect": False},
+                        {"text": "Le jumeau", "isCorrect": False},
+                        {"text": "Le collier", "isCorrect": False}
                     ],
-                    "correction": "Le suage permet de faire ressortir l'eau des légumes et de les rendre fondants. C'est souvent la base d'une garniture aromatique."
+                    "correction": "Les morceaux de 1ère catégorie (aloyau, cuisse) sont des muscles pauvres en collagène. Ils sont tendres et destinés aux cuissons rapides (griller, rôtir, sauter), contrairement aux morceaux de 2ème ou 3ème catégorie qui nécessitent des cuissons longues (braiser, bouillir)."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quel type de cuisson est le rôtissage ?",
+                    "question": "Quelle est la teneur minimale en matière grasse du beurre standard ?",
                     "answerOptions": [
-                        {"text": "Une cuisson par concentration à chaleur sèche et vive.", "isCorrect": True, "key": "A"},
-                        {"text": "Une cuisson par expansion dans un liquide (pochage ou bouillir).", "isCorrect": False, "key": "B"},
-                        {"text": "Une cuisson par friture dans un bain d'huile bouillant.", "isCorrect": False, "key": "C"},
-                        {"text": "Une cuisson lente dans un récipient fermé, après avoir rissolé la pièce.", "isCorrect": False, "key": "D"}
+                        {"text": "82 pour cent", "isCorrect": True},
+                        {"text": "40 pour cent", "isCorrect": False},
+                        {"text": "60 pour cent", "isCorrect": False},
+                        {"text": "99 pour cent", "isCorrect": False}
                     ],
-                    "correction": "Le rôtissage est une cuisson sans ajout de liquide, souvent pour les grosses pièces de viande et volaille."
+                    "correction": "L'appellation 'beurre' est réservée à un produit contenant au minimum 82% de matière grasse butyrique (80% pour le beurre demi-sel). En dessous, ce sont des matières grasses allégées."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Comment appelle-t-on l'opération qui consiste à retirer la peau des amandes ou des tomates par trempage dans de l'eau bouillante ?",
+                    "question": "Que signifie le chiffre 0 imprimé sur la coquille d'un œuf ?",
                     "answerOptions": [
-                        {"text": "Monder.", "isCorrect": True, "key": "A"},
-                        {"text": "Blanchir.", "isCorrect": False, "key": "B"},
-                        {"text": "Émincer.", "isCorrect": False, "key": "C"},
-                        {"text": "Concasser.", "isCorrect": False, "key": "D"}
+                        {"text": "Élevage biologique", "isCorrect": True},
+                        {"text": "Élevage en plein air", "isCorrect": False},
+                        {"text": "Élevage au sol", "isCorrect": False},
+                        {"text": "Élevage en cage", "isCorrect": False}
                     ],
-                    "correction": "Monder consiste à tremper brièvement (quelques secondes) un aliment dans l'eau bouillante puis dans l'eau glacée pour faciliter l'enlèvement de la peau."
+                    "correction": "Le code est strict : 0 = Bio, 1 = Plein air, 2 = Sol, 3 = Cage. C'est un point de contrôle fréquent à la réception des marchandises."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Quel est le nom de la technique de cuisson lente d'un aliment dans son propre jus ou avec peu de liquide, à couvert ?",
+                    "question": "Dans la classification des poissons, quel est l'exemple type d'un poisson plat ?",
                     "answerOptions": [
-                        {"text": "L'étuvage.", "isCorrect": True, "key": "A"},
-                        {"text": "Le griller.", "isCorrect": False, "key": "B"},
-                        {"text": "Le pocher au grand bouillon, à 100°C.", "isCorrect": False, "key": "C"},
-                        {"text": "Le faire frire.", "isCorrect": False, "key": "D"}
+                        {"text": "La sole", "isCorrect": True},
+                        {"text": "Le bar", "isCorrect": False},
+                        {"text": "Le saumon", "isCorrect": False},
+                        {"text": "Le cabillaud", "isCorrect": False}
                     ],
-                    "correction": "L'étuvage est une cuisson lente à chaleur humide, souvent utilisée pour les légumes comme les poireaux ou les oignons (étuvée de poireaux)."
+                    "correction": "Les poissons plats (pleuronectiformes) comme la sole, le turbot ou la barbue ont les deux yeux du même côté et vivent sur le fond. Les autres cités sont des poissons ronds ou fusiformes."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Quelle est la coupe des oignons en fines lamelles pour les soupes ou les garnitures ?",
+                    "question": "Quel label de qualité garantit une qualité gustative supérieure par rapport aux produits standards similaires ?",
                     "answerOptions": [
-                        {"text": "Ciseler ou émincer.", "isCorrect": True, "key": "A"},
-                        {"text": "Tourner (pour les légumes d'accompagnement).", "isCorrect": False, "key": "B"},
-                        {"text": "Hacher.", "isCorrect": False, "key": "C"},
-                        {"text": "Parer.", "isCorrect": False, "key": "D"}
+                        {"text": "Label Rouge", "isCorrect": True},
+                        {"text": "Agriculture Biologique", "isCorrect": False},
+                        {"text": "Appellation d'Origine Protégée", "isCorrect": False},
+                        {"text": "Indication Géographique Protégée", "isCorrect": False}
                     ],
-                    "correction": "Ciseler s'applique principalement aux oignons et aux échalotes. Émincer s'applique à la coupe fine de divers légumes."
+                    "correction": "Le Label Rouge est le seul signe officiel français qui atteste d'une qualité organoleptique supérieure (goût), validée par des tests sensoriels. L'AOP/IGP garantissent l'origine."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Comment appelle-t-on la cuisson d'un aliment dans un liquide frémissant (jamais bouillant), idéal pour les œufs ou les quenelles ?",
+                    "question": "Quel abat correspond au thymus du veau ?",
                     "answerOptions": [
-                        {"text": "Le pochage ou pocher.", "isCorrect": True, "key": "A"},
-                        {"text": "Le bouillir.", "isCorrect": False, "key": "B"},
-                        {"text": "Le braisage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le rissoler.", "isCorrect": False, "key": "D"}
+                        {"text": "Le ris", "isCorrect": True},
+                        {"text": "Le foie", "isCorrect": False},
+                        {"text": "La rognonnade", "isCorrect": False},
+                        {"text": "Le mou", "isCorrect": False}
                     ],
-                    "correction": "Le pochage se fait à une température sous l'ébullition (environ 80-90°C), permettant une cuisson douce et uniforme."
+                    "correction": "Le ris de veau est une glande (le thymus) située à l'entrée de la poitrine. C'est un abat blanc très recherché en gastronomie."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Quel est le nom de l'opération qui consiste à couper des fines herbes en lanières sans les hacher trop finement ?",
+                    "question": "Comment reconnaît-on un poisson frais en observant ses branchies ?",
                     "answerOptions": [
-                        {"text": "La chiffonnade.", "isCorrect": True, "key": "A"},
-                        {"text": "Le ciseler.", "isCorrect": False, "key": "B"},
-                        {"text": "L'émincer.", "isCorrect": False, "key": "C"},
-                        {"text": "Le concasser.", "isCorrect": False, "key": "D"}
+                        {"text": "Rouges et humides", "isCorrect": True},
+                        {"text": "Brunes et sèches", "isCorrect": False},
+                        {"text": "Grises et gluantes", "isCorrect": False},
+                        {"text": "Jaunâtres et odorantes", "isCorrect": False}
                     ],
-                    "correction": "La chiffonnade s'applique principalement aux feuilles (laitue, oseille, basilic) que l'on roule avant de couper en fines lanières."
+                    "correction": "Les critères de fraîcheur sont stricts : l'œil doit être bombé et vif, et les branchies doivent être d'un rouge vif ou rosé, sans mucus excessif ni odeur ammoniaquée."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Quel est l'objectif du 'tournage' des légumes (carottes, pommes de terre) ?",
+                    "question": "De quel animal provient le jambon ?",
                     "answerOptions": [
-                        {"text": "Améliorer l'esthétique du plat et uniformiser la cuisson.", "isCorrect": True, "key": "A"},
-                        {"text": "Conserver plus longtemps le légume après sa coupe.", "isCorrect": False, "key": "B"},
-                        {"text": "Rendre le légume plus tendre.", "isCorrect": False, "key": "C"},
-                        {"text": "Augmenter la quantité de légume.", "isCorrect": False, "key": "D"}
+                        {"text": "Le porc", "isCorrect": True},
+                        {"text": "Le bœuf", "isCorrect": False},
+                        {"text": "Le mouton", "isCorrect": False},
+                        {"text": "Le veau", "isCorrect": False}
                     ],
-                    "correction": "Le tournage (donner une forme régulière et homogène) est une technique classique pour la présentation et pour s'assurer que toutes les pièces cuisent de la même manière."
+                    "correction": "Le jambon est la cuisse (membre postérieur) du porc. C'est la pièce la plus noble de l'animal, utilisée pour le jambon cuit ou le jambon sec."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Comment appelle-t-on le taillage de la garniture aromatique (carottes, céleri, oignons) en dés moyens pour les fonds et les bouillons ?",
+                    "question": "Quelle est la définition exacte de l'Appellation d'Origine Protégée ?",
                     "answerOptions": [
-                        {"text": "La mirepoix (ou matignon pour un usage spécifique).", "isCorrect": True, "key": "A"},
-                        {"text": "La brunoise.", "isCorrect": False, "key": "B"},
-                        {"text": "La paysanne.", "isCorrect": False, "key": "C"},
-                        {"text": "La julienne.", "isCorrect": False, "key": "D"}
+                        {"text": "Lien fort au terroir", "isCorrect": True},
+                        {"text": "Produit issu de l'agriculture respectueuse de l'environnement sans pesticides", "isCorrect": False},
+                        {"text": "Garantie que le produit possède une réputation liée à son origine géographique", "isCorrect": False},
+                        {"text": "Certification attestant que le produit respecte des normes internationales de commerce", "isCorrect": False}
                     ],
-                    "correction": "Le mirepoix est la coupe en dés moyens, généralement 1 cm de côté, utilisée pour les fonds et les cuissons longues."
+                    "correction": "L'AOP (logo rouge et jaune) garantit que toutes les étapes de fabrication (production, transformation, élaboration) ont lieu dans la zone géographique selon un savoir-faire reconnu."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quelle est la technique pour retirer les impuretés du beurre par fonte douce et décantation ?",
+                    "question": "Quelle partie de la volaille est la plus sujette au dessèchement lors d'une cuisson rôtie ?",
                     "answerOptions": [
-                        {"text": "Clarifier le beurre.", "isCorrect": True, "key": "A"},
-                        {"text": "Beurrer.", "isCorrect": False, "key": "B"},
-                        {"text": "Monter au beurre.", "isCorrect": False, "key": "C"},
-                        {"text": "Manié.", "isCorrect": False, "key": "D"}
+                        {"text": "Le filet", "isCorrect": True},
+                        {"text": "La cuisse", "isCorrect": False},
+                        {"text": "Le pilon", "isCorrect": False},
+                        {"text": "Le sot-l'y-laisse", "isCorrect": False}
                     ],
-                    "correction": "Le beurre clarifié est le beurre dont on a retiré l'eau et la caséine (protéines), ce qui augmente son point de fumée et sa stabilité à la cuisson."
+                    "correction": "Le filet (ou blanc) est une viande maigre qui sèche très vite. La cuisse, plus grasse et irriguée, supporte mieux les cuissons prolongées."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quel est le nom de la technique de cuisson mixte (saisie puis mijotage) utilisée pour les grosses pièces de viande (joues, épaules) ?",
+                    "question": "Quel riz est spécifiquement recommandé pour la réalisation d'un risotto ?",
                     "answerOptions": [
-                        {"text": "Le braisage.", "isCorrect": True, "key": "A"},
-                        {"text": "Le rôtissage (à chaleur sèche).", "isCorrect": False, "key": "B"},
-                        {"text": "Le griller.", "isCorrect": False, "key": "C"},
-                        {"text": "Le sauter.", "isCorrect": False, "key": "D"}
+                        {"text": "Arborio", "isCorrect": True},
+                        {"text": "Basmati", "isCorrect": False},
+                        {"text": "Thaï", "isCorrect": False},
+                        {"text": "Complet", "isCorrect": False}
                     ],
-                    "correction": "Le braisage est une cuisson lente et longue, dans un liquide aromatisé, au four ou sur le feu, après avoir fait rissoler la pièce de viande."
+                    "correction": "Pour le risotto, on utilise des riz riches en amidon qui ne s'effritent pas mais deviennent crémeux, comme l'Arborio ou le Carnaroli. Les riz longs (Basmati) ne lient pas."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quelle est la coupe en fines tranches très fines, souvent utilisée pour les champignons ou les truffes ?",
+                    "question": "Quelle épice est issue du pistil d'une fleur de crocus ?",
                     "answerOptions": [
-                        {"text": "Émincer.", "isCorrect": True, "key": "A"},
-                        {"text": "Hacher.", "isCorrect": False, "key": "B"},
-                        {"text": "Concasser.", "isCorrect": False, "key": "C"},
-                        {"text": "Tourner.", "isCorrect": False, "key": "D"}
+                        {"text": "Safran", "isCorrect": True},
+                        {"text": "Curcuma", "isCorrect": False},
+                        {"text": "Cumin", "isCorrect": False},
+                        {"text": "Paprika", "isCorrect": False}
                     ],
-                    "correction": "Émincer est le terme général pour couper en fines tranches, appliqué notamment aux oignons, au chou ou aux champignons."
+                    "correction": "Le safran est l'épice la plus chère au monde car elle provient des stigmates (pistils) séchés de la fleur de Crocus sativus, récoltés à la main."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quel est l'objectif du 'blanchiment' des légumes verts (plongeon rapide dans l'eau bouillante) ?",
+                    "question": "Comment appelle-t-on la partie coraillée rouge présente dans une coquille Saint-Jacques ?",
                     "answerOptions": [
-                        {"text": "Fixer leur couleur, éliminer l'amertume ou les rendre plus digestes.", "isCorrect": True, "key": "A"},
-                        {"text": "Assurer la cuisson complète.", "isCorrect": False, "key": "B"},
-                        {"text": "Les rendre croquants par choc thermique.", "isCorrect": False, "key": "C"},
-                        {"text": "Rendre la peau plus épaisse.", "isCorrect": False, "key": "D"}
+                        {"text": "Le corail", "isCorrect": True},
+                        {"text": "La barde", "isCorrect": False},
+                        {"text": "Le manteau", "isCorrect": False},
+                        {"text": "La noix", "isCorrect": False}
                     ],
-                    "correction": "Le blanchiment est un pré-traitement. L'eau bouillante détruit une enzyme qui oxyde le légume, fixant ainsi le vert."
+                    "correction": "La Saint-Jacques est composée de la noix (muscle blanc) et du corail (glande génitale, orange pour la partie femelle, blanche pour la partie mâle)."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quelle est la technique de cuisson qui consiste à faire dorer et cuire rapidement de petits morceaux d'aliments à feu vif dans un peu de matière grasse ?",
+                    "question": "Quel produit laitier obtient-on par coagulation du lait puis égouttage du caillé ?",
                     "answerOptions": [
-                        {"text": "Sauter ou rissoler.", "isCorrect": True, "key": "A"},
-                        {"text": "Pocher (cuisson lente dans un liquide frémissant).", "isCorrect": False, "key": "B"},
-                        {"text": "Braiser (cuisson longue à l'étouffée).", "isCorrect": False, "key": "C"},
-                        {"text": "Frémir.", "isCorrect": False, "key": "D"}
+                        {"text": "Le fromage", "isCorrect": True},
+                        {"text": "Le beurre", "isCorrect": False},
+                        {"text": "La crème fleurette", "isCorrect": False},
+                        {"text": "Le lait concentré", "isCorrect": False}
                     ],
-                    "correction": "Sauter implique de remuer l'aliment pour une cuisson uniforme et rapide. Cela concentre les saveurs par caramélisation superficielle."
+                    "correction": "La fabrication du fromage repose sur la coagulation (par présure ou ferments) qui sépare le caillé (solide) du petit-lait (liquide), suivi de l'égouttage et de l'affinage."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Comment appelle-t-on la coupe de légumes en carrés de 5 mm de côté, souvent utilisée pour les garnitures de potages ?",
+                    "question": "Quelle catégorie de fruits inclut les noix, noisettes et amandes ?",
                     "answerOptions": [
-                        {"text": "La macédoine.", "isCorrect": True, "key": "A"},
-                        {"text": "Le concassé.", "isCorrect": False, "key": "B"},
-                        {"text": "La brunoise.", "isCorrect": False, "key": "C"},
-                        {"text": "La paysanne.", "isCorrect": False, "key": "D"}
+                        {"text": "Fruits secs", "isCorrect": True},
+                        {"text": "Fruits rouges", "isCorrect": False},
+                        {"text": "Fruits à pépins", "isCorrect": False},
+                        {"text": "Agrumes", "isCorrect": False}
                     ],
-                    "correction": "La macédoine est une coupe en cubes de taille moyenne. La brunoise est en très petits cubes, et la paysanne en petits carrés ou triangles fins."
+                    "correction": "Ce sont des fruits à coque ou fruits secs oléagineux. Ils se conservent longtemps en économat sec et sont riches en lipides."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quel est l'effet de l'assaisonnement (sel) d'un aliment (viande, poisson) trop tôt avant la cuisson ?",
+                    "question": "Quelle est la température de conservation réglementaire de la viande hachée fraîche non surgelée ?",
                     "answerOptions": [
-                        {"text": "Le sel déshydrate le produit et nuit au rôtissage (perte d'eau).", "isCorrect": True, "key": "A"},
-                        {"text": "L'assaisonnement est parfait si on sale 1 heure à l'avance pour que la saveur pénètre.", "isCorrect": False, "key": "B"},
-                        {"text": "Le sel caramélise la surface du produit, créant une croûte immédiate.", "isCorrect": False, "key": "C"},
-                        {"text": "Le sel augmente le pouvoir de liaison de la viande, la rendant plus élastique.", "isCorrect": False, "key": "D"}
+                        {"text": "2 degrés", "isCorrect": True},
+                        {"text": "4 degrés", "isCorrect": False},
+                        {"text": "8 degrés", "isCorrect": False},
+                        {"text": "0 degré", "isCorrect": False}
                     ],
-                    "correction": "Le sel a un pouvoir osmotique : il attire l'eau en surface. Il est souvent conseillé de saler juste avant ou juste après la cuisson pour éviter la perte d'eau."
+                    "correction": "La viande hachée est un produit ultra-sensible. La réglementation impose une conservation entre 0°C et +2°C (souvent +2°C max retenu) et une consommation très rapide."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Quelle est la technique pour préparer les tomates en retirant la peau, les pépins, puis en les coupant en morceaux ?",
+                    "question": "Quel ingrédient est un allergène majeur à déclaration obligatoire sur les cartes de restaurant ?",
                     "answerOptions": [
-                        {"text": "Monder, épépiner, concasser.", "isCorrect": True, "key": "A"},
-                        {"text": "Émincer, monder, sauter les morceaux.", "isCorrect": False, "key": "B"},
-                        {"text": "Blanchir, braiser, glacer la tomate.", "isCorrect": False, "key": "C"},
-                        {"text": "Tourner, hacher, déglacer.", "isCorrect": False, "key": "D"}
+                        {"text": "Arachide", "isCorrect": True},
+                        {"text": "Huile de tournesol", "isCorrect": False},
+                        {"text": "Sel fin", "isCorrect": False},
+                        {"text": "Poivre noir", "isCorrect": False}
                     ],
-                    "correction": "Concasser la tomate fait référence au taillage en morceaux irréguliers après avoir retiré la peau (monder) et les pépins."
+                    "correction": "L'arachide fait partie des 14 allergènes à déclaration obligatoire (INCO), tout comme le gluten, les crustacés, les œufs, le poisson, le soja, le lait, les fruits à coque, le céleri, la moutarde, le sésame, les sulfites, le lupin et les mollusques."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Comment appelle-t-on le fait de cuire un aliment à l'eau bouillante et à gros bouillons ?",
+                    "question": "Quel morceau de l'agneau correspond au membre postérieur entier ?",
                     "answerOptions": [
-                        {"text": "Bouillir.", "isCorrect": True, "key": "A"},
-                        {"text": "Pocher (dans un liquide frémissant).", "isCorrect": False, "key": "B"},
-                        {"text": "Frémir (juste sous l'ébullition).", "isCorrect": False, "key": "C"},
-                        {"text": "Braiser.", "isCorrect": False, "key": "D"}
+                        {"text": "Le gigot", "isCorrect": True},
+                        {"text": "L'épaule", "isCorrect": False},
+                        {"text": "Le carré", "isCorrect": False},
+                        {"text": "La selle", "isCorrect": False}
                     ],
-                    "correction": "Bouillir est une cuisson forte, généralement pour les légumes ou les pâtes. Pocher ou frémir sont des cuissons plus douces."
-                }
+                    "correction": "Le gigot est la cuisse arrière de l'agneau. L'épaule est le membre avant. La selle et le carré sont des morceaux du dos."
+                },
             ]
         },
-        # THÈME 4
+        # =========================================================================
+        # THÈME 4 : TECHNIQUES CULINAIRES DE BASE (PRÉPARATIONS ET SAUCES) (Questions 61 à 80)
+        # =========================================================================
         4: {
-            "name": "Préparations de Base et Appareils",
+            "name": "THÈME 4 : TECHNIQUES CULINAIRES DE BASE (PRÉPARATIONS ET SAUCES) (Questions 61 à 80)",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel est le nom de l'appareil à base de chair de poisson ou de volaille, de panade et d'œufs, mixé pour obtenir une consistance lisse ?",
+                    "question": "Quelles sont les dimensions théoriques d'un taillage en brunoise ?",
                     "answerOptions": [
-                        {"text": "La farce fine (ou mousseline).", "isCorrect": True, "key": "A"},
-                        {"text": "La panade sèche, à base de pain dur et de bouillon.", "isCorrect": False, "key": "B"},
-                        {"text": "Le mirepoix mixé pour servir de liaison.", "isCorrect": False, "key": "C"},
-                        {"text": "Le sabayon.", "isCorrect": False, "key": "D"}
+                        {"text": "Des dés de 2 millimètres", "isCorrect": True},
+                        {"text": "Des bâtonnets de 5 centimètres", "isCorrect": False},
+                        {"text": "Des tranches de 1 centimètre", "isCorrect": False},
+                        {"text": "Des carrés de 4 centimètres", "isCorrect": False}
                     ],
-                    "correction": "La farce fine est une base très lisse, utilisée pour les quenelles, les pâtés ou les terrines."
+                    "correction": "La brunoise est un taillage de précision : de très petits dés de 1 à 2 mm de section. Elle sert de garniture dans les potages, farces ou sauces."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quel ingrédient permet de faire monter un blanc d'œuf pour une mousse ou une meringue ?",
+                    "question": "Quels sont les deux ingrédients de base pour réaliser un roux ?",
                     "answerOptions": [
-                        {"text": "La protéine albumine (protéine de l'œuf).", "isCorrect": True, "key": "A"},
-                        {"text": "L'amidon de maïs, ajouté au début pour stabiliser la mousse.", "isCorrect": False, "key": "B"},
-                        {"text": "Le sel fin, qui doit être ajouté juste avant de fouetter.", "isCorrect": False, "key": "C"},
-                        {"text": "Le vinaigre blanc pur (un acide).", "isCorrect": False, "key": "D"}
+                        {"text": "Beurre et farine", "isCorrect": True},
+                        {"text": "Huile et maïzena", "isCorrect": False},
+                        {"text": "Crème et jaune d'œuf", "isCorrect": False},
+                        {"text": "Lait et fécule", "isCorrect": False}
                     ],
-                    "correction": "Le fouettage force l'air à se mélanger aux protéines. Le sucre ou un acide peut stabiliser cette mousse."
+                    "correction": "Le roux est un liant obtenu par la cuisson d'un mélange tant pour tant (poids égal) de matière grasse (généralement du beurre) et de farine. Il sert de base aux grandes sauces."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Comment appelle-t-on la méthode pour paner un aliment en trois étapes (farine, œuf battu, chapelure) ?",
+                    "question": "Quelle sauce mère obtient-on en mouillant un roux blanc avec du lait ?",
                     "answerOptions": [
-                        {"text": "Paner à l'anglaise.", "isCorrect": True, "key": "A"},
-                        {"text": "Paner à la romaine (uniquement avec de l'œuf et du parmesan).", "isCorrect": False, "key": "B"},
-                        {"text": "Paner à la française.", "isCorrect": False, "key": "C"},
-                        {"text": "Paner à la milanaise (avec des épices).", "isCorrect": False, "key": "D"}
+                        {"text": "La béchamel", "isCorrect": True},
+                        {"text": "La velouté", "isCorrect": False},
+                        {"text": "La tomate", "isCorrect": False},
+                        {"text": "La hollandaise", "isCorrect": False}
                     ],
-                    "correction": "La panure à l'anglaise est la technique standard pour les escalopes ou les poissons, assurant une belle croûte croustillante à la friture ou au sauter."
+                    "correction": "La béchamel est une sauce mère blanche. Si l'on mouille un roux blanc avec un fond (volaille, veau), on obtient un velouté, pas une béchamel."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quel est le nom du mélange de beurre et de farine cuit, utilisé comme base de liaison pour les sauces, fonds et potages ?",
+                    "question": "Que signifie le terme 'singer' lors de la réalisation d'un ragoût ?",
                     "answerOptions": [
-                        {"text": "Le roux (blanc, blond ou brun).", "isCorrect": True, "key": "A"},
-                        {"text": "Le beurre manié (mélange cru).", "isCorrect": False, "key": "B"},
-                        {"text": "Le sabayon.", "isCorrect": False, "key": "C"},
-                        {"text": "La panade.", "isCorrect": False, "key": "D"}
+                        {"text": "Saupoudrer de farine", "isCorrect": True},
+                        {"text": "Ajouter du vin rouge", "isCorrect": False},
+                        {"text": "Saler la viande", "isCorrect": False},
+                        {"text": "Flamber à l'alcool", "isCorrect": False}
                     ],
-                    "correction": "Le roux (roux cuit) est la liaison la plus courante. Sa couleur dépend du temps de cuisson."
+                    "correction": "Singer consiste à saupoudrer les morceaux de viande revenus de farine avant de mouiller. Cela permet de créer la liaison de la sauce directement pendant la cuisson."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est le nom de la pâte de base pour les sauces comme la Béchamel, composée de mie de pain ou de riz et de lait ou de bouillon ?",
+                    "question": "Quelle est la composition classique de la mirepoix aromatique ?",
                     "answerOptions": [
-                        {"text": "La panade.", "isCorrect": True, "key": "A"},
-                        {"text": "La liaison.", "isCorrect": False, "key": "B"},
-                        {"text": "La farce.", "isCorrect": False, "key": "C"},
-                        {"text": "La rouille (sauce à l'huile d'olive).", "isCorrect": False, "key": "D"}
+                        {"text": "Carotte oignon céleri", "isCorrect": True},
+                        {"text": "Tomate poivron ail", "isCorrect": False},
+                        {"text": "Navet poireau chou", "isCorrect": False},
+                        {"text": "Courgette aubergine thym", "isCorrect": False}
                     ],
-                    "correction": "La panade est une préparation à base de féculents (farine, mie de pain) mélangée à un liquide, utilisée pour lier les farces ou les boulettes."
+                    "correction": "La mirepoix est une garniture aromatique taillée en dés grossiers (carottes, oignons, parfois céleri) utilisée pour parfumer les fonds, les rôtis et les sauces."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Quel est l'appareil à base d'œufs, de crème ou de lait et d'assaisonnement, utilisé pour les quiches ou les gratins ?",
+                    "question": "Comment appelle-t-on l'opération consistant à dissoudre les sucs de cuisson attachés au fond d'un récipient avec un liquide ?",
                     "answerOptions": [
-                        {"text": "L'appareil à quiche (ou migaine).", "isCorrect": True, "key": "A"},
-                        {"text": "L'appareil à soufflé (plus épais, lié à la Béchamel).", "isCorrect": False, "key": "B"},
-                        {"text": "La sauce tomate.", "isCorrect": False, "key": "C"},
-                        {"text": "Le fond brun.", "isCorrect": False, "key": "D"}
+                        {"text": "Déglacer", "isCorrect": True},
+                        {"text": "Mouiller", "isCorrect": False},
+                        {"text": "Blanchir", "isCorrect": False},
+                        {"text": "Réduire", "isCorrect": False}
                     ],
-                    "correction": "L'appareil à quiche (ou migaine) est l'appareil de base pour tous les plats à base de garniture liquide cuite."
+                    "correction": "Déglacer permet de récupérer les sucs caramélisés (les protéines et glucides) au fond du sautoir pour donner du goût à la sauce. On utilise souvent de l'eau, du vin ou un fond."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Comment appelle-t-on le mélange de jaunes d'œufs, de sucre et de vin blanc fouetté au bain-marie jusqu'à consistance mousseuse ?",
+                    "question": "Quelle technique consiste à cuire des légumes dans un mélange d'eau, de beurre, de sucre et de sel jusqu'à évaporation complète du liquide ?",
                     "answerOptions": [
-                        {"text": "Le sabayon.", "isCorrect": True, "key": "A"},
-                        {"text": "La Chantilly.", "isCorrect": False, "key": "B"},
-                        {"text": "L'appareil à bombe (à base de jaunes d'œufs et de sirop).", "isCorrect": False, "key": "C"},
-                        {"text": "La panade.", "isCorrect": False, "key": "D"}
+                        {"text": "Glacer à blanc", "isCorrect": True},
+                        {"text": "Cuire à l'anglaise", "isCorrect": False},
+                        {"text": "Sauter à cru", "isCorrect": False},
+                        {"text": "Frire à l'huile", "isCorrect": False}
                     ],
-                    "correction": "Le sabayon est une préparation sucrée ou salée, cuite et montée au fouet, souvent servie chaude."
+                    "correction": "Glacer (à blanc ou à brun) permet d'enrober le légume d'une pellicule brillante et savoureuse grâce au mélange beurre/sucre, tout en le cuisant."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quel ingrédient peut être utilisé pour renforcer la liaison d'une farce fine et lui donner une meilleure tenue ?",
+                    "question": "Quelle est la base liquide d'une sauce mayonnaise ?",
                     "answerOptions": [
-                        {"text": "L'ajout d'une panade (mie de pain, riz) ou d'un peu de blanc d'œuf.", "isCorrect": True, "key": "A"},
-                        {"text": "Du jus de citron.", "isCorrect": False, "key": "B"},
-                        {"text": "Du sel uniquement.", "isCorrect": False, "key": "C"},
-                        {"text": "De l'huile d'olive.", "isCorrect": False, "key": "D"}
+                        {"text": "Jaune d'œuf et huile", "isCorrect": True},
+                        {"text": "Blanc d'œuf et moutarde", "isCorrect": False},
+                        {"text": "Lait et vinaigre", "isCorrect": False},
+                        {"text": "Crème liquide et citron", "isCorrect": False}
                     ],
-                    "correction": "La panade et les œufs sont les liants classiques des farces. Le sel est aussi essentiel pour extraire les protéines et lier la farce."
+                    "correction": "La mayonnaise est une émulsion froide stable. L'huile est dispersée en fines gouttelettes dans l'eau contenue dans le jaune d'œuf, stabilisée par la lécithine du jaune."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel est le nom du taillage des fines herbes pour l'assaisonnement des plats (persil, ciboulette) ?",
+                    "question": "Quel nom porte le taillage des pommes de terre en forme de gros bâtonnets de 1 cm de section pour la friture ?",
                     "answerOptions": [
-                        {"text": "Le hacher finement (ou ciseler pour les oignons).", "isCorrect": True, "key": "A"},
-                        {"text": "Le concasser.", "isCorrect": False, "key": "B"},
-                        {"text": "Le parer.", "isCorrect": False, "key": "C"},
-                        {"text": "Le piquer.", "isCorrect": False, "key": "D"}
+                        {"text": "Pont Neuf", "isCorrect": True},
+                        {"text": "Paille", "isCorrect": False},
+                        {"text": "Allumette", "isCorrect": False},
+                        {"text": "Mignongnette", "isCorrect": False}
                     ],
-                    "correction": "Hacher permet d'obtenir des morceaux très fins. Le terme 'ciseler' est plus souvent utilisé pour les herbes en fines rondelles comme la ciboulette."
+                    "correction": "La Pomme Pont-Neuf est la frite classique épaisse (1cm x 1cm). L'Allumette est plus fine (0,5cm), et la Paille est très fine."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Quel est l'ingrédient principal utilisé pour 'lisser' et rendre brillante une purée de pommes de terre ?",
+                    "question": "Quelle préparation à base de champignons hachés et d'échalotes séchés à la poêle sert à farcir ou aromatiser ?",
                     "answerOptions": [
-                        {"text": "Le beurre frais et le lait chaud.", "isCorrect": True, "key": "A"},
-                        {"text": "Le sel fin.", "isCorrect": False, "key": "B"},
-                        {"text": "L'eau froide (pour la détendre).", "isCorrect": False, "key": "C"},
-                        {"text": "Le sucre glace.", "isCorrect": False, "key": "D"}
+                        {"text": "La duxelles", "isCorrect": True},
+                        {"text": "La persillade", "isCorrect": False},
+                        {"text": "La matignon", "isCorrect": False},
+                        {"text": "La julienne", "isCorrect": False}
                     ],
-                    "correction": "Le beurre et le lait (ou la crème) apportent la richesse et l'onctuosité. Ils doivent être ajoutés chauds pour maintenir la température de la purée."
+                    "correction": "La duxelles de champignons est une préparation sèche : on fait évaporer toute l'eau de végétation des champignons hachés pour concentrer le goût."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Comment appelle-t-on le procédé de préparation des escargots avant leur cuisson (ajout de sel, vinaigre) ?",
+                    "question": "Pour réaliser une pâte à choux, que doit-on faire impérativement après avoir incorporé la farine dans le liquide bouillant ?",
                     "answerOptions": [
-                        {"text": "Débavement.", "isCorrect": True, "key": "A"},
-                        {"text": "Blanchiment.", "isCorrect": False, "key": "B"},
-                        {"text": "Dégraissage.", "isCorrect": False, "key": "C"},
-                        {"text": "Parer.", "isCorrect": False, "key": "D"}
+                        {"text": "Dessécher la panade", "isCorrect": True},
+                        {"text": "Ajouter le sucre glace", "isCorrect": False},
+                        {"text": "Laisser reposer une heure", "isCorrect": False},
+                        {"text": "Mettre au frigo", "isCorrect": False}
                     ],
-                    "correction": "Le débavement permet de nettoyer les escargots de leur bave et de les préparer pour la cuisson au court-bouillon."
+                    "correction": "Il faut 'dessécher' la panade sur le feu en remuant énergiquement pour évacuer l'humidité excédentaire avant d'incorporer les œufs, sinon la pâte ne montera pas."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Quel est l'appareil utilisé pour réaliser des crêpes salées ou sucrées ?",
+                    "question": "Qu'est-ce qu'un 'fond blanc' ?",
                     "answerOptions": [
-                        {"text": "La pâte à crêpes (mélange œuf, lait, farine, sucre).", "isCorrect": True, "key": "A"},
-                        {"text": "Le sabayon.", "isCorrect": False, "key": "B"},
-                        {"text": "La Béchamel.", "isCorrect": False, "key": "C"},
-                        {"text": "Le biscuit de Savoie.", "isCorrect": False, "key": "D"}
+                        {"text": "Un bouillon réalisé sans coloration des os", "isCorrect": True},
+                        {"text": "Une sauce à base de fromage blanc", "isCorrect": False},
+                        {"text": "Un fond de tarte cuit à blanc", "isCorrect": False},
+                        {"text": "Une réduction de vin blanc sec", "isCorrect": False}
                     ],
-                    "correction": "La pâte à crêpes est l'appareil liquide de base. Le temps de repos est important pour l'hydratation de la farine."
+                    "correction": "Le fond blanc est réalisé en plongeant des os et parures (veau, volaille) directement dans l'eau froide avec garniture, sans les faire rissoler, pour obtenir un bouillon clair."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Comment doit-on préparer une tête de poisson (pour un fumet) avant de la mettre à cuire ?",
+                    "question": "Quelle sauce émulsionnée chaude accompagne traditionnellement le poisson poché ?",
                     "answerOptions": [
-                        {"text": "Enlever les ouïes et les yeux pour éviter l'amertume et le goût fort.", "isCorrect": True, "key": "A"},
-                        {"text": "La couper en brunoise.", "isCorrect": False, "key": "B"},
-                        {"text": "La rôtir au four à 200°C.", "isCorrect": False, "key": "C"},
-                        {"text": "La saler et la poivrer fortement.", "isCorrect": False, "key": "D"}
+                        {"text": "La sauce hollandaise", "isCorrect": True},
+                        {"text": "La sauce tartare", "isCorrect": False},
+                        {"text": "La sauce gribiche", "isCorrect": False},
+                        {"text": "La sauce vinaigrette", "isCorrect": False}
                     ],
-                    "correction": "Les ouïes et les yeux du poisson sont sources d'impuretés et peuvent donner un goût désagréable au fumet."
+                    "correction": "La hollandaise (jaunes d'œufs + beurre clarifié + réduction vinaigrée) est une émulsion chaude instable/semi-stable, classique des poissons."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quel ingrédient est ajouté au pain rassis pour réaliser la chapelure sèche ?",
+                    "question": "Quelle est la définition du terme 'monder' une tomate ?",
                     "answerOptions": [
-                        {"text": "Rien, la chapelure est du pain séché et broyé uniquement.", "isCorrect": True, "key": "A"},
-                        {"text": "Du sel et du poivre.", "isCorrect": False, "key": "B"},
-                        {"text": "De la farine et de l'œuf pour la lier.", "isCorrect": False, "key": "C"},
-                        {"text": "De l'huile d'olive.", "isCorrect": False, "key": "D"}
+                        {"text": "Retirer la peau après ébouillantage", "isCorrect": True},
+                        {"text": "Retirer les pépins à la cuillère", "isCorrect": False},
+                        {"text": "Couper la tomate en rondelles", "isCorrect": False},
+                        {"text": "Mixer la tomate en purée", "isCorrect": False}
                     ],
-                    "correction": "La chapelure est simplement du pain sec (souvent sans croûte) réduit en poudre et utilisé pour la panure."
+                    "correction": "Monder (ou émonder) consiste à retirer la peau de la tomate. On incise la peau, on plonge la tomate 10 secondes dans l'eau bouillante puis dans la glace : la peau part toute seule."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quel est le rôle du persil haché dans le beurre composé pour les escargots ?",
+                    "question": "Quelle herbe aromatique est l'élément principal d'une sauce béarnaise ?",
                     "answerOptions": [
-                        {"text": "Apporter de la couleur et une saveur fraîche.", "isCorrect": True, "key": "A"},
-                        {"text": "Assurer la liaison du beurre.", "isCorrect": False, "key": "B"},
-                        {"text": "Stabiliser le beurre fondu.", "isCorrect": False, "key": "C"},
-                        {"text": "Saler le plat.", "isCorrect": False, "key": "D"}
+                        {"text": "Estragon", "isCorrect": True},
+                        {"text": "Basilic", "isCorrect": False},
+                        {"text": "Menthe", "isCorrect": False},
+                        {"text": "Origan", "isCorrect": False}
                     ],
-                    "correction": "Le beurre d'escargot est un beurre composé d'ail, de persil, d'échalotes et d'assaisonnement."
+                    "correction": "La béarnaise est une dérivée de la hollandaise, mais avec une réduction d'échalotes et de vinaigre fortement parfumée à l'estragon et au cerfeuil."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Comment appelle-t-on le procédé pour préparer la viande en retirant les parties inutiles (graisse, aponévroses) ?",
+                    "question": "Lors de la confection d'une pâte brisée, quelle est la méthode consistant à frotter le beurre et la farine entre les mains ?",
                     "answerOptions": [
-                        {"text": "Parer la viande.", "isCorrect": True, "key": "A"},
-                        {"text": "Émonder la viande.", "isCorrect": False, "key": "B"},
-                        {"text": "Hacher la viande.", "isCorrect": False, "key": "C"},
-                        {"text": "Pocher la viande.", "isCorrect": False, "key": "D"}
+                        {"text": "Le sablage", "isCorrect": True},
+                        {"text": "Le pétrissage", "isCorrect": False},
+                        {"text": "Le fouettage", "isCorrect": False},
+                        {"text": "Le tourage", "isCorrect": False}
                     ],
-                    "correction": "Parer est l'opération de nettoyage et d'habillage des viandes et poissons pour les rendre présentables et utilisables."
+                    "correction": "Le sablage permet d'enrober les particules de farine de matière grasse, ce qui imperméabilise en partie le gluten et donne la texture friable ('brisée') après cuisson."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quel ingrédient permet de réaliser une marinade 'cuite' (comme pour le civet ou le bœuf bourguignon) ?",
+                    "question": "Quel est le but principal de l'opération 'tourner' un légume (pomme de terre, carotte) ?",
                     "answerOptions": [
-                        {"text": "Le vin rouge (souvent avec une garniture aromatique et des aromates).", "isCorrect": True, "key": "A"},
-                        {"text": "De la crème fraîche épaisse et du citron.", "isCorrect": False, "key": "B"},
-                        {"text": "Du jus de citron uniquement.", "isCorrect": False, "key": "C"},
-                        {"text": "Du lait entier.", "isCorrect": False, "key": "D"}
+                        {"text": "Esthétique et cuisson régulière", "isCorrect": True},
+                        {"text": "Retirer le goût amer de la peau", "isCorrect": False},
+                        {"text": "Augmenter le poids du légume", "isCorrect": False},
+                        {"text": "Rendre le légume plus croustillant", "isCorrect": False}
                     ],
-                    "correction": "La marinade au vin rouge (ou blanc) est la base des braisés et des plats mijotés. Elle est dite 'cuite' si le liquide a été porté à ébullition avant d'être versé sur la viande."
+                    "correction": "Tourner consiste à donner une forme régulière (généralement allongée à 7 faces) pour que la présentation soit élégante et que tous les légumes cuisent à la même vitesse."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Quel est l'utilité du papier sulfurisé beurré et découpé (appelé 'rond de papier') sur un fond ou une soupe qui mijote ?",
+                    "question": "Quelle est la composition standard du bouquet garni ?",
                     "answerOptions": [
-                        {"text": "Éviter la formation d'une pellicule (ou croûte) à la surface.", "isCorrect": True, "key": "A"},
-                        {"text": "Accélérer l'évaporation du liquide en capturant l'humidité.", "isCorrect": False, "key": "B"},
-                        {"text": "Assurer la coloration du fond en retenant la chaleur.", "isCorrect": False, "key": "C"},
-                        {"text": "Rendre la sauce plus liquide.", "isCorrect": False, "key": "D"}
+                        {"text": "Queues de persil thym et laurier", "isCorrect": True},
+                        {"text": "Romarin ciboulette et coriandre", "isCorrect": False},
+                        {"text": "Menthe sauge et aneth", "isCorrect": False},
+                        {"text": "Oignon clous de girofle et ail", "isCorrect": False}
                     ],
-                    "correction": "Le rond de papier (ou papier sulfurisé au contact) empêche le contact de la surface avec l'air, évitant ainsi le dessèchement superficiel."
+                    "correction": "Le bouquet garni classique (ficelé pour être retiré facilement) comporte des queues de persil, une branche de thym et une feuille de laurier. Le vert de poireau sert souvent d'enveloppe."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel est le nom de l'appareil qui sert de base à la fabrication des soufflés, liant les œufs et le liquide ?",
+                    "question": "Comment appelle-t-on le mélange de jaunes d'œufs et de crème utilisé pour lier et enrichir un velouté en fin de cuisson ?",
                     "answerOptions": [
-                        {"text": "L'appareil à soufflé (panade ou Béchamel épaisse).", "isCorrect": True, "key": "A"},
-                        {"text": "La glace de viande, utilisée pour l'assaisonnement.", "isCorrect": False, "key": "B"},
-                        {"text": "L'émulsion froide (type mayonnaise) pour la liaison.", "isCorrect": False, "key": "C"},
-                        {"text": "Le roux brun.", "isCorrect": False, "key": "D"}
+                        {"text": "La liaison finale", "isCorrect": True},
+                        {"text": "Le beurre manié", "isCorrect": False},
+                        {"text": "La fécule délayée", "isCorrect": False},
+                        {"text": "Le lait caillé", "isCorrect": False}
                     ],
-                    "correction": "L'appareil à soufflé est enrichi des jaunes d'œufs et des blancs montés sont incorporés pour l'aérer et lui donner son volume à la cuisson."
+                    "correction": "C'est une liaison 'au jaune et à la crème'. Elle s'ajoute hors du feu (ou à feu très doux) pour ne pas cuire le jaune (coagulation à 85°C), ce qui apporterait des grains."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Comment appelle-t-on l'opération qui consiste à badigeonner de beurre fondu la surface d'une volaille en rôtissage ?",
+                    "question": "Pour réaliser des œufs à la neige, quelle préparation utilise-t-on ?",
                     "answerOptions": [
-                        {"text": "Arroser la volaille.", "isCorrect": True, "key": "A"},
-                        {"text": "Barder la volaille (couvrir de gras).", "isCorrect": False, "key": "B"},
-                        {"text": "Piquer la volaille.", "isCorrect": False, "key": "C"},
-                        {"text": "Brider la volaille.", "isCorrect": False, "key": "D"}
+                        {"text": "Une meringue française", "isCorrect": True},
+                        {"text": "Une pâte à génoise", "isCorrect": False},
+                        {"text": "Une crème chantilly", "isCorrect": False},
+                        {"text": "Une pâte à bombe", "isCorrect": False}
                     ],
-                    "correction": "Arroser la volaille assure le maintien de son moelleux et contribue à sa belle coloration."
-                }
+                    "correction": "Les œufs à la neige sont des blancs montés serrés avec du sucre (meringue française), pochés dans du lait (ou cuits au four), puis servis sur une crème anglaise."
+                },
             ]
         },
-        # THÈME 5
+        # =========================================================================
+        # THÈME 5 : LES MODES DE CUISSON ET L'ORGANISATION (Questions 81 à 100)
+        # =========================================================================
         5: {
-            "name": "Connaissance des Produits (Légumes, Viandes, Poissons)",
+            "name": "THÈME 5 : LES MODES DE CUISSON ET L'ORGANISATION (Questions 81 à 100)",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel type de légume est la betterave ?",
+                    "question": "À quelle grande famille de cuisson appartient la technique 'Rôtir' ?",
                     "answerOptions": [
-                        {"text": "Un légume racine.", "isCorrect": True, "key": "A"},
-                        {"text": "Un légume feuille.", "isCorrect": False, "key": "B"},
-                        {"text": "Un légume fruit.", "isCorrect": False, "key": "C"},
-                        {"text": "Un légume graine.", "isCorrect": False, "key": "D"}
+                        {"text": "La concentration", "isCorrect": True},
+                        {"text": "L'expansion", "isCorrect": False},
+                        {"text": "La cuisson mixte", "isCorrect": False},
+                        {"text": "La cuisson sous vide", "isCorrect": False}
                     ],
-                    "correction": "La betterave est le légume formé par la racine de la plante, comme la carotte et le navet."
+                    "correction": "La concentration (par chaleur sèche) vise à saisir l'aliment brusquement. La croûte formée en surface emprisonne les éléments nutritifs et les saveurs à l'intérieur."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Quel est le nom du morceau de bœuf situé sur la cuisse, souvent utilisé pour les steaks et la fondue ?",
+                    "question": "Quel est le principe physico-chimique de la cuisson par 'Expansion' ?",
                     "answerOptions": [
-                        {"text": "Le rumsteak ou la poire.", "isCorrect": True, "key": "A"},
-                        {"text": "La bavette.", "isCorrect": False, "key": "B"},
-                        {"text": "Le paleron (pour les cuissons longues).", "isCorrect": False, "key": "C"},
-                        {"text": "Le flanchet.", "isCorrect": False, "key": "D"}
+                        {"text": "Échange de saveurs entre l'aliment et le liquide", "isCorrect": True},
+                        {"text": "Formation d'une croûte protectrice immédiate", "isCorrect": False},
+                        {"text": "Caramélisation des sucs en surface", "isCorrect": False},
+                        {"text": "Coagulation rapide des protéines externes", "isCorrect": False}
                     ],
-                    "correction": "Le rumsteak est une pièce de la cuisse arrière, tendre et peu grasse. La poire est un petit morceau très tendre de l'arrière-train."
+                    "correction": "L'expansion (ex: pocher départ froid) ouvre les pores. Les sucs sortent de l'aliment pour parfumer le liquide (bouillon), et le liquide pénètre l'aliment (échange osmotique)."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Comment appelle-t-on le poisson dont l'œil est sur le côté et qui vit à plat (comme la sole) ?",
+                    "question": "Quelle technique est un exemple type de cuisson mixte ?",
                     "answerOptions": [
-                        {"text": "Un poisson plat.", "isCorrect": True, "key": "A"},
-                        {"text": "Un poisson rond.", "isCorrect": False, "key": "B"},
-                        {"text": "Un poisson bleu.", "isCorrect": False, "key": "C"},
-                        {"text": "Un poisson blanc.", "isCorrect": False, "key": "D"}
+                        {"text": "Le braisage", "isCorrect": True},
+                        {"text": "La friture", "isCorrect": False},
+                        {"text": "La vapeur", "isCorrect": False},
+                        {"text": "La grillade", "isCorrect": False}
                     ],
-                    "correction": "Les poissons plats (sole, turbot, plie) ont une forme asymétrique et vivent sur le fond marin."
+                    "correction": "Le braisage est mixte car il combine deux phases : une concentration (rissolage de la viande) suivie d'une expansion (cuisson longue dans un liquide aromatique à couvert)."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Quel ingrédient est naturellement utilisé pour attendrir la viande et la rendre plus tendre ?",
+                    "question": "Qu'est-ce que la réaction de Maillard ?",
                     "answerOptions": [
-                        {"text": "Les acides (vinaigre, vin, citron) ou les enzymes.", "isCorrect": True, "key": "A"},
-                        {"text": "Le sel fin, en le frottant énergiquement sur la viande avant la marinade.", "isCorrect": False, "key": "B"},
-                        {"text": "La fécule de maïs, ajoutée au début de la cuisson lente pour lier les sucs.", "isCorrect": False, "key": "C"},
-                        {"text": "Le sucre en poudre.", "isCorrect": False, "key": "D"}
+                        {"text": "Le brunissement des protéines et des sucres à la chaleur", "isCorrect": True},
+                        {"text": "L'évaporation de l'eau contenue dans les légumes", "isCorrect": False},
+                        {"text": "La fermentation des levures dans une pâte", "isCorrect": False},
+                        {"text": "La solidification de la matière grasse au froid", "isCorrect": False}
                     ],
-                    "correction": "Les acides aident à décomposer les fibres musculaires. La maturation (temps de repos) a également un effet important."
+                    "correction": "C'est la réaction chimique complexe qui se produit lors d'une cuisson vive (sauter, rôtir), créant la couleur brune, la croûte et les arômes caractéristiques du 'rôti'."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Quelle est la caractéristique d'une pomme de terre à chair ferme, idéale pour les salades et la cuisson à l'eau ?",
+                    "question": "Pourquoi laisse-t-on reposer une viande rouge après une cuisson rôtie ?",
                     "answerOptions": [
-                        {"text": "Elle se tient bien à la cuisson et ne s'écrase pas.", "isCorrect": True, "key": "A"},
-                        {"text": "Elle s'effrite et est farineuse (adaptée pour les purées).", "isCorrect": False, "key": "B"},
-                        {"text": "Elle devient transparente à la cuisson.", "isCorrect": False, "key": "C"},
-                        {"text": "Elle est très riche en matière grasse.", "isCorrect": False, "key": "D"}
+                        {"text": "Pour répartir les sucs et détendre les fibres", "isCorrect": True},
+                        {"text": "Pour refroidir la viande avant de la servir", "isCorrect": False},
+                        {"text": "Pour faire évaporer le surplus de graisse", "isCorrect": False},
+                        {"text": "Pour que la croûte devienne plus dure", "isCorrect": False}
                     ],
-                    "correction": "Les variétés à chair ferme (Charlotte, Ratte, Amandine) sont faibles en amidon et conservent leur forme. Les farineuses sont riches en amidon."
+                    "correction": "À la cuisson, les sucs se concentrent au centre de la pièce. Le repos permet à ces sucs de refluer vers l'extérieur (détente), rendant la viande uniformément tendre et juteuse."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Quel morceau de la volaille est considéré comme le plus maigre ?",
+                    "question": "Quelle est l'utilité principale d'une fiche technique en cuisine ?",
                     "answerOptions": [
-                        {"text": "Le blanc (poitrine ou filet).", "isCorrect": True, "key": "A"},
-                        {"text": "La cuisse.", "isCorrect": False, "key": "B"},
-                        {"text": "L'aile.", "isCorrect": False, "key": "C"},
-                        {"text": "Le pilon.", "isCorrect": False, "key": "D"}
+                        {"text": "Calculer le coût et garantir la régularité", "isCorrect": True},
+                        {"text": "Faire joli dans le classeur du chef", "isCorrect": False},
+                        {"text": "Contrôler les horaires des employés", "isCorrect": False},
+                        {"text": "Remplacer le bon de commande fournisseur", "isCorrect": False}
                     ],
-                    "correction": "Le blanc de volaille (poulet, dinde) est la partie la plus riche en protéines et la plus pauvre en graisses."
+                    "correction": "La fiche technique est l'outil de gestion central. Elle standardise la recette (ingrédients, progression) et permet de chiffrer précisément le coût matière par portion."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Quel est le nom du fruit de mer à coquille bivalve, noir, souvent cuit à la marinière ?",
+                    "question": "Que signifie 'suer' des légumes lors d'une mise en place ?",
                     "answerOptions": [
-                        {"text": "La moule.", "isCorrect": True, "key": "A"},
-                        {"text": "L'huître (un bivalve qui se mange souvent cru).", "isCorrect": False, "key": "B"},
-                        {"text": "La palourde.", "isCorrect": False, "key": "C"},
-                        {"text": "La Saint-Jacques (un bivalve plus gros).", "isCorrect": False, "key": "D"}
+                        {"text": "Éliminer l'eau de végétation sans coloration", "isCorrect": True},
+                        {"text": "Faire brunir fortement les oignons", "isCorrect": False},
+                        {"text": "Cuire dans une grande quantité d'eau", "isCorrect": False},
+                        {"text": "Frire à haute température", "isCorrect": False}
                     ],
-                    "correction": "La moule est un bivalve très courant. Elle est généralement cuite à la vapeur ou à la marinière (vin blanc, échalotes, persil)."
+                    "correction": "Suer consiste à chauffer doucement des légumes (oignons, poireaux) dans un corps gras pour faire sortir leur eau naturelle et concentrer les saveurs, sans les laisser brunir."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Quel est le nom du légume fruit de couleur verte, souvent consommé cru en salade ou cuit en farce ?",
+                    "question": "Dans le calcul des coûts, comment obtient-on la 'Marge Brute' ?",
                     "answerOptions": [
-                        {"text": "Le concombre ou la courgette.", "isCorrect": True, "key": "A"},
-                        {"text": "Le chou-fleur (légume fleur).", "isCorrect": False, "key": "B"},
-                        {"text": "Le céleri-rave (légume racine).", "isCorrect": False, "key": "C"},
-                        {"text": "Le poireau (légume feuille).", "isCorrect": False, "key": "D"}
+                        {"text": "Chiffre d'Affaires moins Coût Matière", "isCorrect": True},
+                        {"text": "Prix d'achat plus TVA", "isCorrect": False},
+                        {"text": "Total des factures fournisseurs divisé par deux", "isCorrect": False},
+                        {"text": "Coût personnel plus loyer", "isCorrect": False}
                     ],
-                    "correction": "Le concombre et la courgette sont botaniquement des fruits (ils contiennent les graines) mais sont consommés comme des légumes."
+                    "correction": "La Marge Brute est l'argent qui reste au restaurateur une fois la nourriture payée. Elle doit servir à payer tout le reste (salaires, loyer, énergie, bénéfice)."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Quelle est la caractéristique principale d'une viande de gibier par rapport à une viande d'élevage ?",
+                    "question": "Quelle méthode de gestion de stock impose d'utiliser les produits les plus anciens en premier ?",
                     "answerOptions": [
-                        {"text": "Un goût plus fort et une chair souvent plus ferme et moins grasse.", "isCorrect": True, "key": "A"},
-                        {"text": "Un goût plus sucré et très tendre.", "isCorrect": False, "key": "B"},
-                        {"text": "Elle ne nécessite pas d'assaisonnement.", "isCorrect": False, "key": "C"},
-                        {"text": "Elle doit toujours être braisée.", "isCorrect": False, "key": "D"}
+                        {"text": "Le FIFO", "isCorrect": True},
+                        {"text": "Le HACCP", "isCorrect": False},
+                        {"text": "Le PMS", "isCorrect": False},
+                        {"text": "Le GBPH", "isCorrect": False}
                     ],
-                    "correction": "Le gibier (sanglier, chevreuil) a un goût plus prononcé dû à son alimentation sauvage et nécessite souvent une marinade avant cuisson."
+                    "correction": "FIFO signifie 'First In, First Out' (Premier Entré, Premier Sorti). C'est la règle d'or pour éviter les pertes et les dates de péremption dépassées."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Quel est le nom du poisson rond, à chair blanche et délicate, souvent cuit à la vapeur ou poché (ex : cabillaud) ?",
+                    "question": "Pour fixer un prix de vente rapide, on multiplie le coût matière par un chiffre. Comment appelle-t-on ce chiffre ?",
                     "answerOptions": [
-                        {"text": "Un poisson blanc (ou poisson maigre).", "isCorrect": True, "key": "A"},
-                        {"text": "Un poisson gras (ou poisson bleu).", "isCorrect": False, "key": "B"},
-                        {"text": "Un poisson d'eau douce.", "isCorrect": False, "key": "C"},
-                        {"text": "Un crustacé.", "isCorrect": False, "key": "D"}
+                        {"text": "Le coefficient multiplicateur", "isCorrect": True},
+                        {"text": "Le taux de marque", "isCorrect": False},
+                        {"text": "L'indice de consommation", "isCorrect": False},
+                        {"text": "Le dividende brut", "isCorrect": False}
                     ],
-                    "correction": "Les poissons blancs sont généralement les plus maigres et possèdent une chair qui se détache en flocons à la cuisson."
+                    "correction": "Si un plat coûte 5€ à produire et que le coefficient est de 4, on le vendra 20€. C'est une méthode empirique simple très utilisée en restauration."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quelle est la différence principale entre une huître creuse et une huître plate ?",
+                    "question": "Lors d'une cuisson 'à l'anglaise' de légumes verts, quelle précaution préserve la chlorophylle (couleur verte) ?",
                     "answerOptions": [
-                        {"text": "La plate est ronde et possède une saveur plus iodée et fine.", "isCorrect": True, "key": "A"},
-                        {"text": "La creuse est considérée comme plus luxueuse que la plate.", "isCorrect": False, "key": "B"},
-                        {"text": "La plate est beaucoup plus grosse que la creuse.", "isCorrect": False, "key": "C"},
-                        {"text": "La creuse se mange crue et la plate se mange cuite.", "isCorrect": False, "key": "D"}
+                        {"text": "Cuire à découvert dans l'eau bouillante salée", "isCorrect": True},
+                        {"text": "Cuire avec un couvercle dans l'eau froide", "isCorrect": False},
+                        {"text": "Ajouter du vinaigre dans l'eau de cuisson", "isCorrect": False},
+                        {"text": "Cuire très lentement à feu doux", "isCorrect": False}
                     ],
-                    "correction": "L'huître plate (Belon, Marennes) est ronde et recherchée pour sa saveur noisetée. La creuse (fines de claire) est la plus courante."
+                    "correction": "Les acides volatils détruisent la chlorophylle. Cuire sans couvercle permet à ces acides de s'échapper avec la vapeur. Le refroidissement immédiat (glçante) fixe la couleur."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est le nom du légume tubercule riche en amidon, utilisé pour les frites et les purées ?",
+                    "question": "Que signifie l'expression 'Marquer en cuisson' ?",
                     "answerOptions": [
-                        {"text": "La pomme de terre.", "isCorrect": True, "key": "A"},
-                        {"text": "Le radis.", "isCorrect": False, "key": "B"},
-                        {"text": "L'artichaut.", "isCorrect": False, "key": "C"},
-                        {"text": "L'oignon.", "isCorrect": False, "key": "D"}
+                        {"text": "Démarrer la cuisson d'une préparation", "isCorrect": True},
+                        {"text": "Écrire le nom du plat sur une ardoise", "isCorrect": False},
+                        {"text": "Faire des marques de grillade sur une viande", "isCorrect": False},
+                        {"text": "Vérifier la température du four", "isCorrect": False}
                     ],
-                    "correction": "La pomme de terre est le tubercule le plus consommé. Sa teneur en amidon détermine si elle est à chair ferme ou farineuse."
+                    "correction": "C'est le terme professionnel pour dire 'lancer' la cuisson (assembler les éléments dans le récipient et débuter le processus thermique)."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Quel morceau de bœuf est idéal pour les cuissons longues et mijotées (bourguignon) en raison de sa teneur en collagène ?",
+                    "question": "Quel document vérifie-t-on impérativement par rapport au bon de livraison lors de la réception des marchandises ?",
                     "answerOptions": [
-                        {"text": "Le paleron, la joue ou le gîte.", "isCorrect": True, "key": "A"},
-                        {"text": "Le filet (tenderloin).", "isCorrect": False, "key": "B"},
-                        {"text": "L'entrecôte.", "isCorrect": False, "key": "C"},
-                        {"text": "La bavette.", "isCorrect": False, "key": "D"}
+                        {"text": "Le bon de commande", "isCorrect": True},
+                        {"text": "La facture d'électricité", "isCorrect": False},
+                        {"text": "Le menu du jour", "isCorrect": False},
+                        {"text": "La fiche de poste", "isCorrect": False}
                     ],
-                    "correction": "Ces morceaux sont riches en tissus conjonctifs (collagène) qui, sous l'effet d'une cuisson lente et humide, se transforment en gélatine, rendant la viande fondante."
+                    "correction": "On doit toujours comparer ce qui est livré (Bon de Livraison) avec ce qu'on a commandé (Bon de Commande) pour repérer les erreurs, oublis ou substitutions non désirées."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Comment s'appelle l'organe (sorte de petite poche) qu'il faut retirer de la crevette avant de la consommer ou de la cuire ?",
+                    "question": "Quelle cuisson convient le mieux aux morceaux de viande de 2ème et 3ème catégorie (riches en collagène) ?",
                     "answerOptions": [
-                        {"text": "Le boyau ou veine (tube digestif).", "isCorrect": True, "key": "A"},
-                        {"text": "La nageoire.", "isCorrect": False, "key": "B"},
-                        {"text": "Le corail.", "isCorrect": False, "key": "C"},
-                        {"text": "La carapace.", "isCorrect": False, "key": "D"}
+                        {"text": "Le braisage long", "isCorrect": True},
+                        {"text": "La grillade minute", "isCorrect": False},
+                        {"text": "Le rôtissage vif", "isCorrect": False},
+                        {"text": "La friture profonde", "isCorrect": False}
                     ],
-                    "correction": "Le tube digestif de la crevette doit être retiré car il peut contenir du sable et donner un mauvais goût."
+                    "correction": "Le collagène est dur. Il a besoin d'une cuisson longue en milieu humide (comme le braisage ou le ragoût) pour se transformer en gélatine et rendre la viande fondante."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quelle technique de préparation préliminaire doit être effectuée sur un poisson rond avant de le fileter ?",
+                    "question": "Qu'est-ce qu'une cuisson 'à blanc' pour un fond de tarte ?",
                     "answerOptions": [
-                        {"text": "Écailler, vider et rincer.", "isCorrect": True, "key": "A"},
-                        {"text": "Faire tremper dans de l'eau chaude pendant 10 minutes.", "isCorrect": False, "key": "B"},
-                        {"text": "Le saler fortement.", "isCorrect": False, "key": "C"},
-                        {"text": "Le cuire à la vapeur.", "isCorrect": False, "key": "D"}
+                        {"text": "Cuire la pâte sans garniture liquide", "isCorrect": True},
+                        {"text": "Cuire avec une crème blanche", "isCorrect": False},
+                        {"text": "Cuire au micro-ondes", "isCorrect": False},
+                        {"text": "Ne pas cuire la pâte du tout", "isCorrect": False}
                     ],
-                    "correction": "Écailler et vider sont des étapes essentielles pour nettoyer le poisson avant toute préparation (filetage, cuisson entière)."
+                    "correction": "On cuit 'à blanc' une pâte (souvent avec des billes de cuisson) quand la garniture ne supporte pas la cuisson (ex: tarte aux fraises fraîches) ou cuit très vite."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Quel est le nom de la coupe du chou ou des feuilles en fines lanières ?",
+                    "question": "En gestion, qu'est-ce qu'un inventaire physique ?",
                     "answerOptions": [
-                        {"text": "La chiffonnade (ou émincer).", "isCorrect": True, "key": "A"},
-                        {"text": "La mirepoix.", "isCorrect": False, "key": "B"},
-                        {"text": "La parisienne.", "isCorrect": False, "key": "C"},
-                        {"text": "Le tournage.", "isCorrect": False, "key": "D"}
+                        {"text": "Le comptage réel des marchandises en stock", "isCorrect": True},
+                        {"text": "La liste des recettes du restaurant", "isCorrect": False},
+                        {"text": "Le nettoyage complet de la cuisine", "isCorrect": False},
+                        {"text": "La vérification des extincteurs", "isCorrect": False}
                     ],
-                    "correction": "La chiffonnade est la coupe en fines lanières, souvent après avoir roulé la feuille sur elle-même."
+                    "correction": "L'inventaire est l'acte de compter physiquement chaque produit dans les frigos et l'économat pour valoriser le stock réel et calculer le coût matière du mois (Stock initial + Achats - Stock final)."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quelle est la différence principale entre un bouquet garni et un sachet d'épices (pour les fonds) ?",
+                    "question": "Quelle technique consiste à cuire un aliment dans de la graisse (huile ou graisse animale) à basse température, sans coloration ?",
                     "answerOptions": [
-                        {"text": "Le bouquet garni est ficelé et contient des aromates frais.", "isCorrect": True, "key": "A"},
-                        {"text": "Le sachet d'épices contient des herbes séchées uniquement et doit être ajouté à la fin.", "isCorrect": False, "key": "B"},
-                        {"text": "Le bouquet garni est ajouté uniquement en fin de cuisson pour lier la sauce.", "isCorrect": False, "key": "C"},
-                        {"text": "Le bouquet garni est utilisé pour la garniture des plats finis.", "isCorrect": False, "key": "D"}
+                        {"text": "Confire", "isCorrect": True},
+                        {"text": "Frire", "isCorrect": False},
+                        {"text": "Sauter", "isCorrect": False},
+                        {"text": "Griller", "isCorrect": False}
                     ],
-                    "correction": "Le bouquet garni (frais) est ficelé pour être retiré facilement. Le sachet d'épices (épices et graines) est mis dans un petit sachet de mousseline."
+                    "correction": "Confire (ex: confit de canard), c'est cuire longtemps, doucement, immergé dans la graisse. Cela attendrit et conserve. Frire implique une haute température (180°C)."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Quelle est la principale source de gélatine dans un fond de veau ou de volaille longuement mijoté ?",
+                    "question": "Quel est l'intérêt de la cuisson sous-vide à basse température ?",
                     "answerOptions": [
-                        {"text": "Le collagène des os, des cartilages et des tendons.", "isCorrect": True, "key": "A"},
-                        {"text": "La graisse de la viande.", "isCorrect": False, "key": "B"},
-                        {"text": "Le sel et le poivre.", "isCorrect": False, "key": "C"},
-                        {"text": "L'amidon des légumes.", "isCorrect": False, "key": "D"}
+                        {"text": "Précision de cuisson et tendreté", "isCorrect": True},
+                        {"text": "Rapidité d'exécution du service", "isCorrect": False},
+                        {"text": "Obtention d'une croûte croustillante", "isCorrect": False},
+                        {"text": "Économie de sacs plastiques", "isCorrect": False}
                     ],
-                    "correction": "La gélatine provient de la transformation lente du collagène pendant la cuisson. C'est elle qui donne l'aspect 'tremblant' au fond refroidi."
+                    "correction": "Le sous-vide permet une cuisson au degré près, préservant les textures, les poids (moins de perte d'eau) et les saveurs, mais ne permet pas de griller (il faut marquer après)."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Quel est le nom du morceau de porc très maigre, idéal pour les rôtis et les cuissons courtes ?",
+                    "question": "Comment appelle-t-on l'ensemble des opérations de préparation avant le service (épluchage, pesée, taillage) ?",
                     "answerOptions": [
-                        {"text": "Le filet mignon ou la longe.", "isCorrect": True, "key": "A"},
-                        {"text": "L'échine (très grasse).", "isCorrect": False, "key": "B"},
-                        {"text": "Le travers (côtes).", "isCorrect": False, "key": "C"},
-                        {"text": "Le jarret.", "isCorrect": False, "key": "D"}
+                        {"text": "La mise en place", "isCorrect": True},
+                        {"text": "Le coup de feu", "isCorrect": False},
+                        {"text": "Le nettoyage", "isCorrect": False},
+                        {"text": "La plonge", "isCorrect": False}
                     ],
-                    "correction": "Le filet mignon est le morceau le plus tendre et le plus cher du porc, et il est très peu gras."
+                    "correction": "'La mise en place est la moitié du service'. C'est l'organisation préalable indispensable pour pouvoir envoyer les plats rapidement au moment de la commande client."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quel est l'assaisonnement de base, après le sel, le plus couramment utilisé pour relever le goût de presque tous les plats ?",
+                    "question": "Dans un ragoût à brun, quelle étape vient juste après avoir fait revenir la viande et la garniture aromatique ?",
                     "answerOptions": [
-                        {"text": "Le poivre (blanc ou noir).", "isCorrect": True, "key": "A"},
-                        {"text": "Le piment d'Espelette.", "isCorrect": False, "key": "B"},
-                        {"text": "Le paprika.", "isCorrect": False, "key": "C"},
-                        {"text": "Le cumin.", "isCorrect": False, "key": "D"}
+                        {"text": "Le singeage", "isCorrect": True},
+                        {"text": "Le service", "isCorrect": False},
+                        {"text": "Le découpage", "isCorrect": False},
+                        {"text": "La liaison finale", "isCorrect": False}
                     ],
-                    "correction": "Le sel et le poivre sont les deux assaisonnements fondamentaux et universels de la cuisine."
+                    "correction": "Dans l'ordre chronologique d'un ragoût (ex: bœuf bourguignon) : rissoler la viande, ajouter la garniture, singer (farine), torréfier la farine, puis mouiller avec le liquide."
                 }
             ]
         }

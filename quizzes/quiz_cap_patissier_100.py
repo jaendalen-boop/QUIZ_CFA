@@ -1,5 +1,5 @@
 quiz_data = {
-    "title": "Quiz CAP Pâtissier : Technologie, Fabrication, Hygiène, Sciences et Gestion (100 Questions)",
+    "title": "Quiz CAP Pâtissier : Technologie, Fabrication, Hygiène et Gestion (100 Questions)",
     "themes": {
         # =========================================================================
         # THÈME 1 : TECHNOLOGIE DES MATIÈRES PREMIÈRES (Questions 1 à 20)
@@ -218,7 +218,7 @@ quiz_data = {
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quel sucre a le pouvoir sucrant le plus faible ?",
+                    "question": "Quel sucre a le pouvoir sucrant le plus faible (16) ?",
                     "answerOptions": [
                         {"text": "Le lactose", "isCorrect": True},
                         {"text": "Le saccharose", "isCorrect": False},
@@ -226,7 +226,7 @@ quiz_data = {
                         {"text": "Le sucre inverti", "isCorrect": False}
                     ],
                     "correction": "Le lactose (sucre du lait) sucre très peu. Le saccharose est la référence (100). Le fructose sucre plus fort (environ 130)."
-                }
+                },
             ]
         },
         # =========================================================================
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "Génoise au beurre", "isCorrect": False},
                         {"text": "Pâte sablée émiettée", "isCorrect": False}
                     ],
-                    "correction": "C'est un biscuit moelleux (souvent amande ou noisette) réalisé en incorporant les poudres délicatement dans des blancs montés."
+                    "correction": "C'est un biscuit meringué (souvent amande ou noisette) réalisé en incorporant les poudres délicatement dans des blancs montés."
                 },
                 {
                     "questionNumber": 30,
@@ -454,14 +454,14 @@ quiz_data = {
                         {"text": "Imbiber le biscuit", "isCorrect": False}
                     ],
                     "correction": "On masque à la spatule pour lisser les imperfections avant le glaçage final."
-                }
+                },
             ]
         },
         # =========================================================================
-        # THÈME 3 : HYGIÈNE ET SÉCURITÉ (Questions 41 à 60)
+        # THÈME 3 : HYGIÈNE ET SÉCURITÉ ALIMENTAIRE (Questions 41 à 60)
         # =========================================================================
         3: {
-            "name": "THÈME 3 : HYGIÈNE ET SÉCURITÉ (Questions 41 à 60)",
+            "name": "THÈME 3 : HYGIÈNE ET SÉCURITÉ ALIMENTAIRE (Questions 41 à 60)",
             "questions": [
                 {
                     "questionNumber": 41,
@@ -686,459 +686,459 @@ quiz_data = {
             ]
         },
         # =========================================================================
-        # THÈME 4 : SCIENCES APPLIQUÉES (Questions 61 à 80)
+        # THÈME 4 : SCIENCES APPLIQUÉES À L'ALIMENTATION (Questions 61 à 80)
         # =========================================================================
         4: {
-            "name": "THÈME 4 : SCIENCES APPLIQUÉES (Questions 61 à 80)",
+            "name": "THÈME 4 : SCIENCES APPLIQUÉES À L'ALIMENTATION (Questions 61 à 80)",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Les glucides fournissent principalement :",
+                    "question": "Quel est le rôle principal des glucides dans l'organisme ?",
                     "answerOptions": [
-                        {"text": "De l'énergie", "isCorrect": True},
-                        {"text": "Des vitamines", "isCorrect": False},
-                        {"text": "Du calcium", "isCorrect": False},
-                        {"text": "Des fibres", "isCorrect": False}
+                        {"text": "Fournir de l'énergie rapidement disponible", "isCorrect": True},
+                        {"text": "Construire les muscles", "isCorrect": False},
+                        {"text": "Transporter les vitamines", "isCorrect": False},
+                        {"text": "Renforcer les os", "isCorrect": False}
                     ],
-                    "correction": "C'est le 'carburant' du corps. 1g de glucides = 17 kJ d'énergie."
+                    "correction": "Les glucides (sucres lents et rapides) sont le principal carburant de l'organisme."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Les lipides sont constitués d'acides gras et de :",
+                    "question": "Comment appelle-t-on la dégradation des lipides (matières grasses) qui produit une odeur et un goût désagréables (rancissement) ?",
                     "answerOptions": [
-                        {"text": "Glycérol", "isCorrect": True},
-                        {"text": "Glucose", "isCorrect": False},
-                        {"text": "Gluten", "isCorrect": False},
-                        {"text": "Glace", "isCorrect": False}
+                        {"text": "L'oxydation", "isCorrect": True},
+                        {"text": "La fermentation", "isCorrect": False},
+                        {"text": "L'hydrolyse", "isCorrect": False},
+                        {"text": "La caramélisation", "isCorrect": False}
                     ],
-                    "correction": "Structure chimique de base des triglycérides (graisses)."
+                    "correction": "L'oxydation est la réaction chimique de l'oxygène de l'air sur les acides gras insaturés (dans le beurre ou les huiles), causant l'altération et le rancissement."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Une vitamine liposoluble est soluble dans :",
+                    "question": "Quelle est la température idéale pour le stockage du chocolat noir tempéré avant utilisation ?",
                     "answerOptions": [
-                        {"text": "Les graisses", "isCorrect": True},
-                        {"text": "L'eau", "isCorrect": False},
-                        {"text": "L'alcool", "isCorrect": False},
-                        {"text": "Le vinaigre", "isCorrect": False}
+                        {"text": "16°C à 18°C", "isCorrect": True},
+                        {"text": "25°C à 28°C", "isCorrect": False},
+                        {"text": "4°C à 6°C", "isCorrect": False},
+                        {"text": "30°C à 32°C", "isCorrect": False}
                     ],
-                    "correction": "Les vitamines A, D, E, K se trouvent dans les aliments gras (beurre, huiles)."
+                    "correction": "Après tempérage, le chocolat doit être utilisé à sa température de travail (ex: 31-32°C pour le noir). Mais pour le stocker une fois cristallisé (en moule ou en tablette), la température ambiante idéale est fraîche et stable (16-18°C), à l'abri de l'humidité."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "La réaction de Maillard provoque :",
+                    "question": "Quelle réaction chimique donne la couleur brune aux gâteaux et aux croûtes de pain ?",
                     "answerOptions": [
-                        {"text": "Le brunissement et le développement d'arômes à la cuisson", "isCorrect": True},
-                        {"text": "La levée de la pâte", "isCorrect": False},
-                        {"text": "L'acidité du levain", "isCorrect": False},
-                        {"text": "La fonte du sucre", "isCorrect": False}
+                        {"text": "La réaction de Maillard", "isCorrect": True},
+                        {"text": "La fermentation lactique", "isCorrect": False},
+                        {"text": "La coagulation des protéines", "isCorrect": False},
+                        {"text": "L'hydrolyse de l'amidon", "isCorrect": False}
                     ],
-                    "correction": "Réaction complexe entre sucres et protéines qui donne la croûte dorée et le goût de 'cuit'."
+                    "correction": "La réaction de Maillard est une réaction chimique complexe entre les sucres et les protéines sous l'effet de la chaleur, produisant des pigments bruns (mélanoïdines) et des arômes de grillé/rôti."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "L'eau potable doit être exempte de :",
+                    "question": "L'eau potable doit être :",
                     "answerOptions": [
-                        {"text": "Germes pathogènes", "isCorrect": True},
-                        {"text": "Sels minéraux", "isCorrect": False},
-                        {"text": "Calcium", "isCorrect": False},
-                        {"text": "Chlore", "isCorrect": False}
+                        {"text": "Incolore, inodore et sans germes pathogènes", "isCorrect": True},
+                        {"text": "Riche en bactéries", "isCorrect": False},
+                        {"text": "Légèrement trouble", "isCorrect": False},
+                        {"text": "Distillée", "isCorrect": False}
                     ],
-                    "correction": "Elle ne doit contenir aucun micro-organisme capable de provoquer une maladie."
+                    "correction": "L'eau potable ('eau destinée à la consommation humaine') doit respecter des critères organoleptiques (claire, sans odeur), physico-chimiques (pH, nitrates...) et microbiologiques (absence de parasites et bactéries pathogènes)."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Le pH neutre est à :",
+                    "question": "Quel est le pH neutre ?",
                     "answerOptions": [
                         {"text": "7", "isCorrect": True},
                         {"text": "1", "isCorrect": False},
                         {"text": "14", "isCorrect": False},
-                        {"text": "5", "isCorrect": False}
+                        {"text": "4.5", "isCorrect": False}
                     ],
-                    "correction": "C'est le pH de l'eau pure."
+                    "correction": "L'échelle de pH va de 0 à 14. Un pH de 7 est neutre (eau pure). En dessous de 7, le milieu est acide (citron). Au-dessus de 7, il est basique ou alcalin (eau de Javel)."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "La pasteurisation est un traitement thermique :",
+                    "question": "La pasteurisation est un traitement thermique qui :",
                     "answerOptions": [
-                        {"text": "Inférieur à 100°C", "isCorrect": True},
-                        {"text": "Supérieur à 120°C", "isCorrect": False},
-                        {"text": "Par le froid", "isCorrect": False},
-                        {"text": "Par séchage", "isCorrect": False}
+                        {"text": "Détruit les formes végétatives des micro-organismes pathogènes (< 100°C)", "isCorrect": True},
+                        {"text": "Stérilise totalement le produit (> 120°C)", "isCorrect": False},
+                        {"text": "Congèle le produit", "isCorrect": False},
+                        {"text": "Déshydrate le produit", "isCorrect": False}
                     ],
-                    "correction": "Elle détruit les formes végétatives des microbes sans stériliser complètement, préservant mieux le goût."
+                    "correction": "La pasteurisation chauffe l'aliment entre 60°C et 100°C pour tuer les pathogènes non sporulés et réduire la flore totale, tout en préservant les qualités organoleptiques du produit."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "L'activité de l'eau (Aw) mesure :",
+                    "question": "Quel est le principal nutriment des fruits à coque (amande, noisette) ?",
                     "answerOptions": [
-                        {"text": "L'eau libre disponible pour les micro-organismes", "isCorrect": True},
-                        {"text": "La quantité totale d'eau", "isCorrect": False},
-                        {"text": "L'évaporation", "isCorrect": False},
-                        {"text": "La pression de l'eau", "isCorrect": False}
+                        {"text": "Les lipides (matières grasses)", "isCorrect": True},
+                        {"text": "Les protéines", "isCorrect": False},
+                        {"text": "Les vitamines", "isCorrect": False},
+                        {"text": "Les glucides rapides", "isCorrect": False}
                     ],
-                    "correction": "Plus l'Aw est basse (produit sec ou très sucré), moins les bactéries peuvent se développer."
+                    "correction": "Les fruits à coque sont très riches en lipides (acides gras insaturés) et en protéines, ce qui en fait des aliments très énergétiques."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Les protides sont la seule source :",
+                    "question": "Le gluten, réseau élastique, se développe grâce à l'association de :",
                     "answerOptions": [
-                        {"text": "D'azote", "isCorrect": True},
-                        {"text": "De carbone", "isCorrect": False},
-                        {"text": "D'oxygène", "isCorrect": False},
-                        {"text": "D'hydrogène", "isCorrect": False}
+                        {"text": "Protéines (Gluténines et Gliadines) + Eau + Action mécanique", "isCorrect": True},
+                        {"text": "Lipides + Farine + Air", "isCorrect": False},
+                        {"text": "Sucre + Eau + Chaleur", "isCorrect": False},
+                        {"text": "Amidon + Sel + Levure", "isCorrect": False}
                     ],
-                    "correction": "L'azote est indispensable à la construction des cellules (rôle bâtisseur des protéines)."
+                    "correction": "Le gluten est la combinaison des protéines de la farine (glutenine et gliadine) qui, en s'hydratant (eau) et par l'action du pétrissage (action mécanique), forment un réseau viscoélastique."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "La fermentation du boulanger est de type :",
+                    "question": "La fermentation panaire est une fermentation :",
                     "answerOptions": [
                         {"text": "Alcoolique", "isCorrect": True},
                         {"text": "Lactique", "isCorrect": False},
                         {"text": "Acétique", "isCorrect": False},
-                        {"text": "Malolactique", "isCorrect": False}
+                        {"text": "Butyrique", "isCorrect": False}
                     ],
-                    "correction": "Production de CO2 et d'éthanol (alcool) par les levures."
+                    "correction": "La levure transforme les sucres en alcool (éthanol) et en gaz carbonique (CO2). C'est donc une fermentation alcoolique. L'alcool s'évapore à la cuisson, le gaz fait lever la pâte."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "'Cariogène' signifie qui favorise :",
+                    "question": "Un aliment cariogène est un aliment qui :",
                     "answerOptions": [
-                        {"text": "Les caries dentaires", "isCorrect": True},
-                        {"text": "La digestion", "isCorrect": False},
-                        {"text": "Le sommeil", "isCorrect": False},
-                        {"text": "La croissance", "isCorrect": False}
+                        {"text": "Favorise l'apparition des caries dentaires (sucré et collant)", "isCorrect": True},
+                        {"text": "Protège les dents", "isCorrect": False},
+                        {"text": "Contient beaucoup de calcium", "isCorrect": False},
+                        {"text": "Est très acide", "isCorrect": False}
                     ],
-                    "correction": "Le sucre est l'ennemi des dents car il nourrit les bactéries qui attaquent l'émail."
+                    "correction": "Les produits de pâtisserie, riches en saccharose et souvent collants, sont cariogènes. Les bactéries de la bouche transforment ces sucres en acides qui attaquent l'émail des dents."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Les qualités organoleptiques concernent :",
+                    "question": "Que signifie 'organoleptique' ?",
                     "answerOptions": [
-                        {"text": "La perception sensorielle (goût, vue, odorat)", "isCorrect": True},
-                        {"text": "La valeur nutritionnelle", "isCorrect": False},
-                        {"text": "Le prix de revient", "isCorrect": False},
-                        {"text": "La sécurité alimentaire", "isCorrect": False}
+                        {"text": "Qui se rapporte aux sens (goût, odeur, aspect, texture)", "isCorrect": True},
+                        {"text": "Qui est biologique", "isCorrect": False},
+                        {"text": "Qui est organisé", "isCorrect": False},
+                        {"text": "Qui est toxique", "isCorrect": False}
                     ],
-                    "correction": "C'est l'ensemble des plaisirs procurés par la dégustation."
+                    "correction": "Les qualités organoleptiques d'une pâtisserie sont celles perçues par nos sens : la vue (couleur, forme), l'odorat (arôme), le goût (saveur) et le toucher (texture en bouche)."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "La maladie cœliaque est une intolérance au :",
+                    "question": "Le gluten est dangereux pour les personnes atteintes de :",
                     "answerOptions": [
-                        {"text": "Gluten", "isCorrect": True},
-                        {"text": "Lactose", "isCorrect": False},
-                        {"text": "Sucre", "isCorrect": False},
-                        {"text": "Gras", "isCorrect": False}
+                        {"text": "La maladie cœliaque", "isCorrect": True},
+                        {"text": "Diabète", "isCorrect": False},
+                        {"text": "Cholestérol", "isCorrect": False},
+                        {"text": "Hypertension", "isCorrect": False}
                     ],
-                    "correction": "Maladie chronique de l'intestin déclenchée par l'ingestion de gluten."
+                    "correction": "La maladie cœliaque est une affection auto-immune qui rend l'ingestion de gluten néfaste pour la paroi intestinale. Les pâtissiers doivent savoir identifier les ingrédients sans gluten."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Le réfractomètre mesure :",
+                    "question": "Quelle est la principale cause d'une coloration trop pâle sur une croûte de tarte ou de biscuit ?",
                     "answerOptions": [
-                        {"text": "La concentration en sucre d'un sirop", "isCorrect": True},
-                        {"text": "La température du four", "isCorrect": False},
-                        {"text": "L'acidité", "isCorrect": False},
-                        {"text": "L'humidité de l'air", "isCorrect": False}
+                        {"text": "Un manque de sucre (ou une cuisson pas assez chaude)", "isCorrect": True},
+                        {"text": "Trop de levure chimique", "isCorrect": False},
+                        {"text": "Trop de sel", "isCorrect": False},
+                        {"text": "Trop d'eau dans la pâte", "isCorrect": False}
                     ],
-                    "correction": "Il utilise la réfraction de la lumière pour donner le taux de sucre (Brix)."
+                    "correction": "La coloration dorée résulte de la caramélisation et de la réaction de Maillard (sucre + protéines). Un manque de sucre ou une température de cuisson trop basse (ne dépassant pas 140°C-150°C) ne permet pas à ces réactions de se produire correctement."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "À pression normale, l'eau bout à :",
+                    "question": "L'étuvage d'une pâte levée (ex: croissant) a pour but de :",
                     "answerOptions": [
-                        {"text": "100°C", "isCorrect": True},
-                        {"text": "90°C", "isCorrect": False},
-                        {"text": "80°C", "isCorrect": False},
-                        {"text": "120°C", "isCorrect": False}
+                        {"text": "Activer la levure pour faire lever la pâte", "isCorrect": True},
+                        {"text": "Bloquer la levée pour l'étaler plus facilement", "isCorrect": False},
+                        {"text": "Sécher la pâte pour la rendre plus croustillante", "isCorrect": False},
+                        {"text": "La cuire entièrement", "isCorrect": False}
                     ],
-                    "correction": "Point d'ébullition standard."
+                    "correction": "L'étuvage (chambre de pousse) permet de mettre la pâte dans des conditions de chaleur et d'humidité optimales pour que la levure produise du gaz carbonique, faisant gonfler la pâte (pousse ou apprêt)."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Les fibres alimentaires facilitent :",
+                    "question": "Les fibres alimentaires sont importantes pour :",
                     "answerOptions": [
                         {"text": "Le transit intestinal", "isCorrect": True},
-                        {"text": "La vision", "isCorrect": False},
-                        {"text": "L'ouïe", "isCorrect": False},
-                        {"text": "La force", "isCorrect": False}
+                        {"text": "La vision nocturne", "isCorrect": False},
+                        {"text": "La force musculaire", "isCorrect": False},
+                        {"text": "L'audition", "isCorrect": False}
                     ],
-                    "correction": "Elles agissent comme un 'balai' dans l'intestin."
+                    "correction": "Les fibres (cellulose, pectine...) ne sont pas digérées mais facilitent le transit intestinal et régulent l'absorption des sucres et des graisses. On les trouve dans les fruits, légumes et céréales complètes."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Un antioxydant protège contre :",
+                    "question": "Quel est le rôle des antioxydants (comme la vitamine E ou C) ?",
                     "answerOptions": [
-                        {"text": "Le rancissement des graisses", "isCorrect": True},
-                        {"text": "La moisissure", "isCorrect": False},
-                        {"text": "Les insectes", "isCorrect": False},
-                        {"text": "Le dessèchement", "isCorrect": False}
+                        {"text": "Lutter contre le vieillissement cellulaire et l'oxydation des graisses", "isCorrect": True},
+                        {"text": "Donner de l'énergie", "isCorrect": False},
+                        {"text": "Faire dormir", "isCorrect": False},
+                        {"text": "Colorer les aliments", "isCorrect": False}
                     ],
-                    "correction": "Il empêche l'oxygène de dégrader le produit (goût rance, changement de couleur)."
+                    "correction": "Les antioxydants protègent les cellules des radicaux libres. En pâtisserie, ils évitent aussi le rancissement des matières grasses (oxydation des lipides)."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Une émulsion est un mélange de deux liquides :",
+                    "question": "L'émulsion est un mélange physique de :",
                     "answerOptions": [
-                        {"text": "Non miscibles", "isCorrect": True},
-                        {"text": "Compatibles", "isCorrect": False},
-                        {"text": "Solides", "isCorrect": False},
-                        {"text": "Gazeux", "isCorrect": False}
+                        {"text": "Deux liquides non miscibles (comme l'eau et l'huile)", "isCorrect": True},
+                        {"text": "Un solide et un gaz", "isCorrect": False},
+                        {"text": "Deux solides", "isCorrect": False},
+                        {"text": "Un gaz et un liquide", "isCorrect": False}
                     ],
-                    "correction": "Comme l'huile et l'eau, qu'on force à se mélanger en fines gouttelettes."
+                    "correction": "Une émulsion est la dispersion de gouttelettes d'un liquide dans un autre liquide avec lequel il ne se mélange pas naturellement. La ganache et la mayonnaise sont des émulsions."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "1 kcal équivaut environ à :",
+                    "question": "Quelle est l'unité de mesure de l'énergie alimentaire ?",
                     "answerOptions": [
-                        {"text": "4,18 kJ", "isCorrect": True},
-                        {"text": "1000 Joules", "isCorrect": False},
-                        {"text": "1 Watt", "isCorrect": False},
-                        {"text": "10 Volts", "isCorrect": False}
+                        {"text": "La kilocalorie (kcal) ou le kilojoule (kJ)", "isCorrect": True},
+                        {"text": "Le watt", "isCorrect": False},
+                        {"text": "Le volt", "isCorrect": False},
+                        {"text": "Le décibel", "isCorrect": False}
                     ],
-                    "correction": "Facteur de conversion entre les deux unités d'énergie."
+                    "correction": "La valeur énergétique est exprimée en kilocalories (kcal) ou en kilojoules (kJ) sur les étiquettes nutritionnelles."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "La gélatine provient du :",
+                    "question": "Quel est le phénomène responsable du durcissement du pain ou des viennoiseries après quelques heures ?",
                     "answerOptions": [
-                        {"text": "Collagène animal", "isCorrect": True},
-                        {"text": "Gluten de blé", "isCorrect": False},
-                        {"text": "Sucre de betterave", "isCorrect": False},
-                        {"text": "Lait de vache", "isCorrect": False}
+                        {"text": "La rétrogradation de l'amidon", "isCorrect": True},
+                        {"text": "La fermentation", "isCorrect": False},
+                        {"text": "Le séchage complet", "isCorrect": False},
+                        {"text": "L'oxydation du gluten", "isCorrect": False}
                     ],
-                    "correction": "Issue de la peau et des os de porc ou bœuf."
-                }
+                    "correction": "La rétrogradation de l'amidon est le réalignement des molécules d'amidon (amylose et amylopectine) après refroidissement, ce qui expulse l'eau et rend la mie dure. C'est le phénomène de rassissement."
+                },
             ]
         },
         # =========================================================================
-        # THÈME 5 : GESTION ET ENVIRONNEMENT (Questions 81 à 100)
+        # THÈME 5 : GESTION, RÉGLEMENTATION ET ÉQUIPEMENT (Questions 81 à 100)
         # =========================================================================
         5: {
-            "name": "THÈME 5 : GESTION ET ENVIRONNEMENT (Questions 81 à 100)",
+            "name": "THÈME 5 : GESTION, RÉGLEMENTATION ET ÉQUIPEMENT (Questions 81 à 100)",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "La fiche technique permet de calculer :",
+                    "question": "Quel est l'objectif principal de l'établissement d'une fiche technique de fabrication ?",
                     "answerOptions": [
-                        {"text": "Le coût matière prévisionnel", "isCorrect": True},
-                        {"text": "Le chiffre d'affaires total", "isCorrect": False},
-                        {"text": "Les impôts", "isCorrect": False},
-                        {"text": "L'électricité", "isCorrect": False}
+                        {"text": "Garantir la régularité du produit et calculer le coût matière pour fixer le prix de vente", "isCorrect": True},
+                        {"text": "Servir de brouillon", "isCorrect": False},
+                        {"text": "Décorer le laboratoire", "isCorrect": False},
+                        {"text": "Raconter l'histoire de la recette", "isCorrect": False}
                     ],
-                    "correction": "Outil de gestion de base pour connaître le coût de revient d'une recette."
+                    "correction": "La fiche technique est l'outil de base de la gestion. Elle assure la régularité de la production (recette fixe) et permet de calculer le coût matière pour fixer le prix de vente."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Le coût matière est :",
+                    "question": "Comment calcule-t-on le 'Coût Matière' d'un gâteau ?",
                     "answerOptions": [
-                        {"text": "La somme des achats consommés pour la recette", "isCorrect": True},
-                        {"text": "Le prix de vente", "isCorrect": False},
-                        {"text": "Le bénéfice", "isCorrect": False},
-                        {"text": "Les charges fixes", "isCorrect": False}
+                        {"text": "Somme des prix des ingrédients utilisés (Quantité x Prix unitaire)", "isCorrect": True},
+                        {"text": "Prix de vente moins la TVA", "isCorrect": False},
+                        {"text": "Total des factures d'électricité", "isCorrect": False},
+                        {"text": "Le prix de la farine uniquement", "isCorrect": False}
                     ],
-                    "correction": "Prix de la farine + beurre + sucre + etc. utilisés pour faire le gâteau."
+                    "correction": "Le coût matière correspond à la valeur monétaire de toutes les matières premières consommées pour réaliser la recette. C'est le premier indicateur pour calculer la marge."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Le prix TTC inclut :",
+                    "question": "Que signifie le sigle 'TTC' ?",
                     "answerOptions": [
-                        {"text": "La TVA", "isCorrect": True},
-                        {"text": "Le transport", "isCorrect": False},
-                        {"text": "La marge seule", "isCorrect": False},
-                        {"text": "Le coût matière seul", "isCorrect": False}
+                        {"text": "Toutes Taxes Comprises", "isCorrect": True},
+                        {"text": "Tout Travail Compté", "isCorrect": False},
+                        {"text": "Tarif Très Correct", "isCorrect": False},
+                        {"text": "Taxe Technique Commerçante", "isCorrect": False}
                     ],
-                    "correction": "Taxe sur la Valeur Ajoutée, collectée par le commerçant pour l'État."
+                    "correction": "Un prix TTC inclut le prix Hors Taxe (HT) + la Taxe sur la Valeur Ajoutée (TVA). C'est le prix que paie le client final en boutique."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "La marge brute sert à payer :",
+                    "question": "Quelle est la définition de la 'Marge Brute' ?",
                     "answerOptions": [
-                        {"text": "Les charges de l'entreprise (salaires, loyers...)", "isCorrect": True},
-                        {"text": "Les fournisseurs de matière première", "isCorrect": False},
-                        {"text": "La TVA uniquement", "isCorrect": False},
-                        {"text": "Rien", "isCorrect": False}
+                        {"text": "Chiffre d'Affaires (HT) - Coût Matière", "isCorrect": True},
+                        {"text": "Le bénéfice net de l'entreprise", "isCorrect": False},
+                        {"text": "Le salaire du patron", "isCorrect": False},
+                        {"text": "Le montant de la caisse", "isCorrect": False}
                     ],
-                    "correction": "C'est l'argent qui reste une fois la matière payée. Il doit couvrir tout le reste."
+                    "correction": "La marge brute est ce qu'il reste du prix de vente une fois les ingrédients payés. Elle sert à couvrir les charges (salaires, loyers, électricité) avant de dégager un bénéfice net."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Le laminoir sert à :",
+                    "question": "Quelle est la réglementation concernant l'affichage des allergènes en pâtisserie ?",
                     "answerOptions": [
-                        {"text": "Abaisser la pâte régulièrement", "isCorrect": True},
-                        {"text": "Couper la pâte", "isCorrect": False},
-                        {"text": "Cuire la pâte", "isCorrect": False},
-                        {"text": "Peser la pâte", "isCorrect": False}
+                        {"text": "La liste des 14 allergènes majeurs doit être clairement indiquée et accessible au client pour tous les produits non emballés", "isCorrect": True},
+                        {"text": "C'est facultatif", "isCorrect": False},
+                        {"text": "Il suffit de dire 'peut contenir des traces'", "isCorrect": False},
+                        {"text": "Seuls les produits à base de fruits doivent être étiquetés", "isCorrect": False}
                     ],
-                    "correction": "Indispensable pour un feuilletage régulier."
+                    "correction": "La réglementation INCO impose l'information obligatoire des consommateurs sur la présence des 14 allergènes majeurs (gluten, œufs, lait, fruits à coque, etc.) dans les produits non préemballés."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Sur une étiquette, les allergènes doivent être :",
+                    "question": "Qu'est-ce qu'une DLC (Date Limite de Consommation) ?",
                     "answerOptions": [
-                        {"text": "Mis en évidence (gras, italique...)", "isCorrect": True},
-                        {"text": "Cachés", "isCorrect": False},
-                        {"text": "Écrits en tout petit", "isCorrect": False},
-                        {"text": "Supprimés", "isCorrect": False}
+                        {"text": "La date maximale après laquelle le produit est considéré comme dangereux pour la santé", "isCorrect": True},
+                        {"text": "La date de production", "isCorrect": False},
+                        {"text": "La date avant laquelle il est préférable de consommer le produit (DDM)", "isCorrect": False},
+                        {"text": "La date d'achat du produit", "isCorrect": False}
                     ],
-                    "correction": "Obligation légale pour la sécurité des consommateurs allergiques."
+                    "correction": "La DLC est une obligation de sécurité. Dépassée, la denrée devient impropre à la consommation car la prolifération microbienne peut atteindre un seuil limite."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "L'inventaire consiste à :",
+                    "question": "En gestion des stocks, que signifie faire un 'inventaire' ?",
                     "answerOptions": [
-                        {"text": "Compter le stock réel", "isCorrect": True},
+                        {"text": "Compter physiquement les marchandises présentes en stock à une date donnée", "isCorrect": True},
+                        {"text": "Commander des produits", "isCorrect": False},
                         {"text": "Ranger le laboratoire", "isCorrect": False},
-                        {"text": "Passer une commande", "isCorrect": False},
-                        {"text": "Faire le ménage", "isCorrect": False}
+                        {"text": "Jeter les produits périmés", "isCorrect": False}
                     ],
-                    "correction": "Vérification physique de la valeur des marchandises en stock."
+                    "correction": "L'inventaire est le comptage exhaustif des stocks réels. Il permet de vérifier la valeur du stock, de calculer les pertes et de valider les comptes de l'entreprise en fin d'exercice."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Le taux de TVA réduit (pain, viennoiserie) est de :",
+                    "question": "Quel est le taux de TVA réduit applicable à la majorité des produits de boulangerie-pâtisserie en France (vente à emporter) ?",
                     "answerOptions": [
-                        {"text": "5,5%", "isCorrect": True},
-                        {"text": "20%", "isCorrect": False},
-                        {"text": "10%", "isCorrect": False},
-                        {"text": "2,1%", "isCorrect": False}
+                        {"text": "5,5 %", "isCorrect": True},
+                        {"text": "20 %", "isCorrect": False},
+                        {"text": "10 %", "isCorrect": False},
+                        {"text": "2,1 %", "isCorrect": False}
                     ],
-                    "correction": "Taux appliqué aux produits de première nécessité."
+                    "correction": "Les denrées alimentaires destinées à une consommation différée (pain, viennoiseries, gâteaux) bénéficient du taux réduit de 5,5%."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "On contrôle la livraison avec :",
+                    "question": "Qu'est-ce qu'un 'bon de livraison' ?",
                     "answerOptions": [
-                        {"text": "Le bon de livraison", "isCorrect": True},
-                        {"text": "La facture", "isCorrect": False},
-                        {"text": "Le menu", "isCorrect": False},
-                        {"text": "Le chèque", "isCorrect": False}
+                        {"text": "Le document remis par le fournisseur qui accompagne la marchandise", "isCorrect": True},
+                        {"text": "Le document pour payer la marchandise", "isCorrect": False},
+                        {"text": "La liste des courses", "isCorrect": False},
+                        {"text": "Un bon de réduction", "isCorrect": False}
                     ],
-                    "correction": "Document remis par le chauffeur détaillant ce qui est livré."
+                    "correction": "Le bon de livraison (BL) permet de vérifier que la marchandise reçue correspond bien à ce qui a été commandé (quantité, qualité) avant de signer et d'accepter la livraison."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "La diviseuse permet de :",
+                    "question": "Quel équipement utilise-t-on pour cristalliser le sucre et réaliser des décors de pièces artistiques ?",
                     "answerOptions": [
-                        {"text": "Découper la pâte en pâtons de poids égal", "isCorrect": True},
-                        {"text": "Pétrir", "isCorrect": False},
-                        {"text": "Façonner des baguettes", "isCorrect": False},
-                        {"text": "Cuire", "isCorrect": False}
+                        {"text": "Un rechaud au gaz", "isCorrect": True},
+                        {"text": "Un four à micro-ondes", "isCorrect": False},
+                        {"text": "Une batte de cuisine", "isCorrect": False},
+                        {"text": "Un tamis à farine", "isCorrect": False}
                     ],
-                    "correction": "Gain de temps et régularité pour le détaillage des pains."
+                    "correction": "Le sucre est cuit à très haute température (grand cassé) puis versé sur une surface froide (feuille de silicone) et travaillé à l'aide d'un réchaud au gaz (soufflage, tirage, coulage)."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "La traçabilité permet de :",
+                    "question": "Dans un four de pâtisserie, que permet le fonctionnement en 'Sole et Voûte' ?",
                     "answerOptions": [
-                        {"text": "Retrouver l'origine d'un produit", "isCorrect": True},
-                        {"text": "Suivre les clients", "isCorrect": False},
-                        {"text": "Tracer des lignes", "isCorrect": False},
-                        {"text": "Surveiller les employés", "isCorrect": False}
+                        {"text": "Une cuisson par rayonnement à chaleur sèche, idéale pour les pâtes et les fonds de tarte", "isCorrect": True},
+                        {"text": "Une cuisson par convection (air brassé)", "isCorrect": False},
+                        {"text": "Une cuisson vapeur", "isCorrect": False},
+                        {"text": "Une cuisson par induction", "isCorrect": False}
                     ],
-                    "correction": "Indispensable pour les retraits/rappels de produits défectueux."
+                    "correction": "Le mode Sole et Voûte (résistances en haut et en bas) est un mode de cuisson traditionnel par rayonnement. Il est parfait pour cuire les pâtes qui ont besoin d'une chaleur venant de la base (la sole)."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Le bénéfice se calcule dans :",
+                    "question": "Quel est le document comptable qui résume les produits (ventes) et les charges (dépenses) sur une année ?",
                     "answerOptions": [
                         {"text": "Le Compte de Résultat", "isCorrect": True},
                         {"text": "Le Bilan", "isCorrect": False},
-                        {"text": "Le Journal des ventes", "isCorrect": False},
-                        {"text": "Le bon de commande", "isCorrect": False}
+                        {"text": "Le devis", "isCorrect": False},
+                        {"text": "La facture", "isCorrect": False}
                     ],
-                    "correction": "Différence entre Produits (Ventes) et Charges (Dépenses)."
+                    "correction": "Le Compte de Résultat est le 'film' de l'année. Il liste tout ce qu'on a gagné et tout ce qu'on a dépensé. La différence donne le résultat net (bénéfice ou perte)."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "On utilise la 'feuille' du batteur pour :",
+                    "question": "Dans un batteur-mélangeur, quel outil utilise-t-on pour une pâte brisée ou sablée ?",
                     "answerOptions": [
-                        {"text": "Les pâtes friables et crèmes au beurre", "isCorrect": True},
-                        {"text": "Monter les blancs", "isCorrect": False},
-                        {"text": "Pétrir le pain", "isCorrect": False},
-                        {"text": "Les jus de fruits", "isCorrect": False}
+                        {"text": "La feuille (ou palette)", "isCorrect": True},
+                        {"text": "Le fouet", "isCorrect": False},
+                        {"text": "Le crochet", "isCorrect": False},
+                        {"text": "La maryse", "isCorrect": False}
                     ],
-                    "correction": "Outil polyvalent pour mélanger sans émulsionner ni pétrir fort."
+                    "correction": "La feuille (outil plat) est utilisée pour les pâtes friables, les crèmes au beurre ou les appareils à cakes. Le fouet sert aux émulsions (œufs), le crochet aux pâtes levées (brioche)."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "La perte au feu est due à :",
+                    "question": "Qu'est-ce que la 'perte au feu' ?",
                     "answerOptions": [
-                        {"text": "L'évaporation de l'eau", "isCorrect": True},
-                        {"text": "La combustion du sucre", "isCorrect": False},
-                        {"text": "La perte de farine", "isCorrect": False},
-                        {"text": "La fonte du beurre", "isCorrect": False}
+                        {"text": "La perte de poids d'un produit lors de la cuisson (évaporation de l'eau)", "isCorrect": True},
+                        {"text": "Un gâteau qui a brûlé", "isCorrect": False},
+                        {"text": "Jeter des ingrédients", "isCorrect": False},
+                        {"text": "La perte de goût", "isCorrect": False}
                     ],
-                    "correction": "Le produit est plus léger à la sortie du four qu'à l'entrée."
+                    "correction": "La perte au feu est la diminution de masse ou de volume (en général par évaporation de l'eau) que subit un produit pendant sa cuisson. Elle doit être prise en compte dans le calcul des coûts."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Un détergent sert à :",
+                    "question": "Quel est l'outil utilisé pour affûter ou maintenir le fil d'un couteau ?",
                     "answerOptions": [
-                        {"text": "Éliminer les graisses et souillures", "isCorrect": True},
-                        {"text": "Tuer les microbes", "isCorrect": False},
-                        {"text": "Faire briller", "isCorrect": False},
-                        {"text": "Parfumer", "isCorrect": False}
+                        {"text": "Le fusil", "isCorrect": True},
+                        {"text": "La meuleuse", "isCorrect": False},
+                        {"text": "Le rouleau", "isCorrect": False},
+                        {"text": "La mandoline", "isCorrect": False}
                     ],
-                    "correction": "Action chimique de nettoyage."
+                    "correction": "Le fusil (tige métallique abrasive) est l'outil d'entretien courant des couteaux, il redresse le fil de la lame. L'affûtage profond (meule) est un travail plus intensif."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Le prix affiché doit être :",
+                    "question": "Dans quel type de four la chaleur est-elle brassée par une turbine pour une cuisson rapide et homogène ?",
                     "answerOptions": [
-                        {"text": "TTC", "isCorrect": True},
-                        {"text": "HT", "isCorrect": False},
-                        {"text": "En dollars", "isCorrect": False},
-                        {"text": "Négociable", "isCorrect": False}
+                        {"text": "Le four à convection (chaleur tournante)", "isCorrect": True},
+                        {"text": "Le four à sole (statique)", "isCorrect": False},
+                        {"text": "Le four à micro-ondes", "isCorrect": False},
+                        {"text": "Le four à bois", "isCorrect": False}
                     ],
-                    "correction": "Le consommateur final paie la taxe, il doit connaître le montant total."
+                    "correction": "Le four à convection (chaleur tournante) utilise une turbine pour distribuer l'air chaud de manière uniforme, permettant de cuire plusieurs plaques en même temps avec une bonne homogénéité."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Une chambre de pousse contrôle :",
+                    "question": "Qu'est-ce qu'une 'chambre de pousse' ?",
                     "answerOptions": [
-                        {"text": "Température et humidité", "isCorrect": True},
-                        {"text": "La lumière", "isCorrect": False},
-                        {"text": "La pression atmosphérique", "isCorrect": False},
-                        {"text": "Le bruit", "isCorrect": False}
+                        {"text": "Une enceinte qui contrôle la température et l'humidité pour la levée des pâtes", "isCorrect": True},
+                        {"text": "Un endroit pour stocker la farine", "isCorrect": False},
+                        {"text": "Un four à basse température", "isCorrect": False},
+                        {"text": "Une chambre froide négative", "isCorrect": False}
                     ],
-                    "correction": "Pour une fermentation régulière sans croûtage."
+                    "correction": "La chambre de pousse permet de maîtriser la fermentation (apprêt) des pâtes levées (brioches, croissants) en gérant la chaleur (pour activer la levure) et l'hygrométrie (pour éviter le croûtage)."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Rompre la chaîne du froid entraîne :",
+                    "question": "Le respect de la chaîne du froid concerne :",
                     "answerOptions": [
-                        {"text": "Un risque sanitaire (prolifération microbienne)", "isCorrect": True},
-                        {"text": "Une meilleure saveur", "isCorrect": False},
-                        {"text": "Une économie d'énergie", "isCorrect": False},
-                        {"text": "Une meilleure coloration", "isCorrect": False}
+                        {"text": "Le maintien constant des aliments aux températures réglementaires de la production à la consommation", "isCorrect": True},
+                        {"text": "Uniquement le transport en camion", "isCorrect": False},
+                        {"text": "Uniquement le congélateur", "isCorrect": False},
+                        {"text": "Le fait de travailler en hiver", "isCorrect": False}
                     ],
-                    "correction": "C'est la cause majeure des intoxications alimentaires."
+                    "correction": "La chaîne du froid ne doit jamais être interrompue. Une rupture entraîne une accélération de la croissance microbienne et réduit la durée de vie du produit, voire le rend dangereux."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Sur un feu électrique, on utilise un extincteur :",
+                    "question": "Quel extincteur utilise-t-on préférentiellement sur un feu d'origine électrique ou de gaz ?",
                     "answerOptions": [
-                        {"text": "CO2", "isCorrect": True},
-                        {"text": "Eau", "isCorrect": False},
-                        {"text": "Poudre", "isCorrect": False},
-                        {"text": "Sable", "isCorrect": False}
+                        {"text": "Extincteur CO2 (Dioxide de carbone)", "isCorrect": True},
+                        {"text": "Extincteur à eau", "isCorrect": False},
+                        {"text": "Un seau d'eau", "isCorrect": False},
+                        {"text": "Une couverture", "isCorrect": False}
                     ],
-                    "correction": "Le CO2 ne conduit pas l'électricité et n'endommage pas les circuits."
+                    "correction": "Le CO2 étouffe le feu en privant les flammes d'oxygène et ne laisse pas de résidus, ce qui préserve les installations électriques, contrairement à l'eau qui est conductrice (danger d'électrocution)."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Le Label Rouge garantit :",
+                    "question": "Le 'Label Rouge' garantit :",
                     "answerOptions": [
-                        {"text": "Une qualité organoleptique supérieure", "isCorrect": True},
-                        {"text": "Une origine locale", "isCorrect": False},
-                        {"text": "Un produit fermier", "isCorrect": False},
-                        {"text": "Un prix bas", "isCorrect": False}
+                        {"text": "Une qualité supérieure à la moyenne des produits courants similaires", "isCorrect": True},
+                        {"text": "Une origine géographique précise", "isCorrect": False},
+                        {"text": "Un produit biologique", "isCorrect": False},
+                        {"text": "Un produit fabriqué en France", "isCorrect": False}
                     ],
-                    "correction": "Seul signe officiel de qualité gustative supérieure en France."
-                }
+                    "correction": "Le Label Rouge est un signe national français qui atteste que le produit possède des caractéristiques organoleptiques et de production supérieures au produit standard courant (ex: Farine Label Rouge)."
+                },
             ]
         }
     }

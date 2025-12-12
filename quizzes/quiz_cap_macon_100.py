@@ -1,1146 +1,1144 @@
-# Fichier : quiz_cap_macon_100.py
-
 quiz_data = {
-    "title": "Quiz CAP Maçon : Révisions Complètes (100 Questions)",
+    "title": "Quiz CAP Maçon : Technologie, Techniques, Sécurité et Calculs (100 Questions)",
     "themes": {
         # =========================================================================
-        # THÈME 1 : LECTURE DE PLAN ET IMPLANTATION (Q. 1-20)
+        # THÈME 1 : TECHNOLOGIE DES MATÉRIAUX ET DU BÉTON ARMÉ (Questions 1 à 20)
         # =========================================================================
         1: {
-            "name": "1. Lecture de Plan et Implantation (Q. 1-20)",
+            "name": "THÈME 1 : TECHNOLOGIE DES MATÉRIAUX ET DU BÉTON ARMÉ",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quel plan indique la disposition et les dimensions des pièces d'un bâtiment coupé horizontalement (vue de dessus) ?",
+                    "question": "Quel composant principal confère au béton armé sa résistance aux efforts de traction ?",
                     "answerOptions": [
-                        {"text": "Le plan de façade.", "isCorrect": False},
-                        {"text": "Le Plan de Coupe (coupe verticale).", "isCorrect": False},
-                        {"text": "Le Plan de Masse.", "isCorrect": False},
-                        {"text": "Le **Plan de Niveau (ou Plan d'étage)**.", "isCorrect": True}
+                        {"text": "L'acier", "isCorrect": True},
+                        {"text": "Le gravier", "isCorrect": False},
+                        {"text": "Le ciment", "isCorrect": False},
+                        {"text": "Le sable", "isCorrect": False}
                     ],
-                    "correction": "Le **Plan de Niveau** est la vue principale utilisée par le maçon."
+                    "correction": "Le béton résiste très bien à la compression mais très mal à la traction. On y intègre des armatures en acier pour reprendre ces efforts de traction et éviter la rupture de l'ouvrage."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quelle est l'échelle la plus courante pour un plan d'exécution de maçonnerie ?",
+                    "question": "Quelle est la définition exacte du clinker dans la fabrication du ciment ?",
                     "answerOptions": [
-                        {"text": "1/1000e.", "isCorrect": False},
-                        {"text": "1/500e.", "isCorrect": False},
-                        {"text": "**1/50e ou 1/20e**.", "isCorrect": True},
-                        {"text": "1/1e (taille réelle).", "isCorrect": False}
+                        {"text": "Un constituant semi-fini obtenu par cuisson", "isCorrect": True},
+                        {"text": "Une poudre finale prête à l'emploi sur le chantier", "isCorrect": False},
+                        {"text": "Un adjuvant liquide ajouté dans la bétonnière", "isCorrect": False},
+                        {"text": "Un granulat d'origine volcanique très léger", "isCorrect": False}
                     ],
-                    "correction": "L'échelle **1/50e** ($2 \text{ cm}$ pour $1 \text{ m}$) permet une bonne précision des détails pour la mise en œuvre."
+                    "correction": "Le clinker est le produit de la cuisson d'un mélange de calcaire et d'argile à très haute température (1450°C). C'est le constituant de base hydraulique qui, après broyage avec du gypse, donnera le ciment."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Comment appelle-t-on le point de référence altimétrique (verticale) sur un chantier, souvent matérialisé par un piquet ou un trait, à partir duquel toutes les cotes de niveau sont mesurées ?",
+                    "question": "Quel est l'effet principal d'un adjuvant hydrofuge sur un mortier ?",
                     "answerOptions": [
-                        {"text": "Le point $\text{A}$.", "isCorrect": False},
-                        {"text": "Le **Niveau de Référence (NR)** ou le **Repère de Niveau (RN)**.", "isCorrect": True},
-                        {"text": "Le point zéro.", "isCorrect": False},
-                        {"text": "Le point de fuite.", "isCorrect": False}
+                        {"text": "Imperméabiliser", "isCorrect": True},
+                        {"text": "Fluidifier", "isCorrect": False},
+                        {"text": "Retarder", "isCorrect": False},
+                        {"text": "Accélérer", "isCorrect": False}
                     ],
-                    "correction": "Le **RN** est indispensable pour vérifier les hauteurs de dalles, seuils, et arases."
+                    "correction": "L'hydrofuge de masse réduit la perméabilité du béton ou du mortier en obstruant les capillaires, ce qui empêche l'eau de pénétrer à l'intérieur du matériau."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Quel outil permet de vérifier la **verticalité** d'un mur ou d'un pilier ?",
+                    "question": "Pourquoi est-il indispensable de respecter l'enrobage minimal des aciers dans une poutre en béton armé ?",
                     "answerOptions": [
-                        {"text": "Le niveau à bulle.", "isCorrect": False},
-                        {"text": "Le cordeau à tracer.", "isCorrect": False},
-                        {"text": "Le **Fil à Plomb** ou le **Niveau Laser** (fonction 'aplomb').", "isCorrect": True},
-                        {"text": "Le décamètre.", "isCorrect": False}
+                        {"text": "Pour protéger les armatures de la corrosion", "isCorrect": True},
+                        {"text": "Pour économiser la quantité de béton utilisée", "isCorrect": False},
+                        {"text": "Pour permettre de voir les aciers après le décoffrage", "isCorrect": False},
+                        {"text": "Pour augmenter la vitesse de séchage du béton", "isCorrect": False}
                     ],
-                    "correction": "Le **Fil à Plomb** reste l'outil traditionnel pour vérifier l'aplomb (verticalité)."
+                    "correction": "L'enrobage (généralement 2,5 à 3 cm) crée une barrière physique et chimique qui empêche l'oxygène et l'humidité d'atteindre l'acier, évitant ainsi qu'il ne rouille et ne fasse éclater le béton."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Lors de l'implantation d'une fondation rectangulaire, quel contrôle permet de vérifier que l'angle est bien à $90^\circ$ ?",
+                    "question": "Comment appelle-t-on le phénomène de séparation des constituants du béton frais lors d'une mauvaise mise en œuvre ?",
                     "answerOptions": [
-                        {"text": "Le contrôle du niveau.", "isCorrect": False},
-                        {"text": "Le Théorème de Pythagore (méthode $3-4-5 \text{ m}$ ou mesure des diagonales).", "isCorrect": True},
-                        {"text": "Le contrôle de l'aplomb.", "isCorrect": False},
-                        {"text": "Le contrôle de la longueur.", "isCorrect": False}
+                        {"text": "La ségrégation", "isCorrect": True},
+                        {"text": "La carbonatation", "isCorrect": False},
+                        {"text": "La vibration", "isCorrect": False},
+                        {"text": "La dessiccation", "isCorrect": False}
                     ],
-                    "correction": "La méthode du **$3-4-5$** ($3^2 + 4^2 = 5^2$) assure un angle droit parfait."
+                    "correction": "La ségrégation est le défaut d'homogénéité du béton où les gros granulats descendent au fond et la laitance remonte en surface, souvent causé par un excès d'eau ou une vibration excessive."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Quelle est la fonction d'une **ligne de référence (LR)** ou d'une **chaîne d'implantation** sur le plan ?",
+                    "question": "Quelle est la densité moyenne approximative d'un béton armé courant ?",
                     "answerOptions": [
-                        {"text": "Indiquer le type de béton.", "isCorrect": False},
-                        {"text": "Servir de point de départ pour le traçage des axes principaux des murs, poutres et poteaux sur le terrain.", "isCorrect": True},
-                        {"text": "Délimiter les zones de stockage.", "isCorrect": False},
-                        {"text": "Indiquer la hauteur des fenêtres.", "isCorrect": False}
+                        {"text": "2500 kg/m3", "isCorrect": True},
+                        {"text": "1000 kg/m3", "isCorrect": False},
+                        {"text": "1500 kg/m3", "isCorrect": False},
+                        {"text": "4000 kg/m3", "isCorrect": False}
                     ],
-                    "correction": "La **Ligne de Référence** est souvent une limite de propriété ou un axe existant."
+                    "correction": "La masse volumique du béton armé est généralement comprise entre 2400 et 2500 kg/m3 (2,4 à 2,5 tonnes par mètre cube), en tenant compte du poids des aciers."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quelle est l'unité de mesure standard utilisée pour les dimensions des ouvrages sur les plans de construction ?",
+                    "question": "À quoi sert l'essai au cône d'Abrams sur un chantier de maçonnerie ?",
                     "answerOptions": [
-                        {"text": "Le centimètre (cm).", "isCorrect": False},
-                        {"text": "Le **millimètre (mm)**.", "isCorrect": True},
-                        {"text": "Le mètre (m).", "isCorrect": False},
-                        {"text": "Le pouce (inch).", "isCorrect": False}
+                        {"text": "Mesurer la consistance", "isCorrect": True},
+                        {"text": "Vérifier la température", "isCorrect": False},
+                        {"text": "Peser les granulats", "isCorrect": False},
+                        {"text": "Calculer le ferraillage", "isCorrect": False}
                     ],
-                    "correction": "Le **Millimètre** est l'unité de précision dans le $\text{BTP}$ (ex : $1000 \text{ mm} = 1 \text{ m}$)."
+                    "correction": "L'essai au cône d'Abrams (ou Slump test) permet de mesurer l'affaissement du béton frais pour déterminer sa classe de consistance (de ferme à très fluide) et sa maniabilité."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "À quoi sert un **Cavalier d'implantation** (ou Chèvre) ?",
+                    "question": "Quelle précaution est impérative lors du stockage des sacs de ciment sur le chantier ?",
                     "answerOptions": [
-                        {"text": "À monter les murs.", "isCorrect": False},
-                        {"text": "À matérialiser et maintenir les axes d'implantation sur le terrain pendant les travaux de terrassement et de fondation, en dehors de la zone de fouille.", "isCorrect": True},
-                        {"text": "À transporter le mortier.", "isCorrect": False},
-                        {"text": "À vérifier l'aplomb.", "isCorrect": False}
+                        {"text": "Les stocker sur palette dans un lieu sec", "isCorrect": True},
+                        {"text": "Les laisser directement sur le sol naturel", "isCorrect": False},
+                        {"text": "Les ouvrir à l'avance pour gagner du temps", "isCorrect": False},
+                        {"text": "Les arroser régulièrement pour les nettoyer", "isCorrect": False}
                     ],
-                    "correction": "Les **Cavaliers** sont des repères fixes qui permettent de retendre les cordeaux d'alignement."
+                    "correction": "Le ciment est un liant hydraulique qui réagit à l'humidité. Il doit être impérativement stocké surélevé (palette) et à l'abri des intempéries pour éviter qu'il ne durcisse avant utilisation (éventage)."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Dans le dessin technique, que représente la ligne de trait fin, continu, qui se termine par une flèche et qui est utilisée pour **dimensionner** (donner une cote) un élément ?",
+                    "question": "Quel granulat utilise-t-on spécifiquement pour réaliser la couche de finition d'un enduit traditionnel ?",
                     "answerOptions": [
-                        {"text": "La ligne d'axe.", "isCorrect": False},
-                        {"text": "La ligne de coupe.", "isCorrect": False},
-                        {"text": "La **Ligne de Cote**.", "isCorrect": True},
-                        {"text": "La ligne invisible.", "isCorrect": False}
+                        {"text": "Le sablon", "isCorrect": True},
+                        {"text": "Le gravillon", "isCorrect": False},
+                        {"text": "Le caillou", "isCorrect": False},
+                        {"text": "Le ballast", "isCorrect": False}
                     ],
-                    "correction": "La **Ligne de Cote** indique la mesure entre deux lignes d'attache."
+                    "correction": "Pour la finition (ou couche de parement), on utilise un sable très fin appelé sablon (grain 0/2 ou moins) afin d'obtenir un aspect lisse et soigné."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Quel est le but principal de l'étape de **traçage** avant l'exécution d'un ouvrage (fondation, mur) ?",
+                    "question": "Quel est le rôle principal de la vibration lors du coulage du béton ?",
                     "answerOptions": [
-                        {"text": "Calculer le prix.", "isCorrect": False},
-                        {"text": "Matérialiser au sol ou sur le support les contours, les emplacements des murs, poteaux et ouvertures selon les dimensions du plan, pour garantir l'exactitude de la construction.", "isCorrect": True},
-                        {"text": "Préparer le mortier.", "isCorrect": False},
-                        {"text": "Vérifier la résistance des matériaux.", "isCorrect": False}
+                        {"text": "Chasser l'air", "isCorrect": True},
+                        {"text": "Ajouter de l'eau", "isCorrect": False},
+                        {"text": "Tiédir le mélange", "isCorrect": False},
+                        {"text": "Trier les cailloux", "isCorrect": False}
                     ],
-                    "correction": "Le **Traçage** est l'étape qui transfère le dessin à la réalité du chantier."
+                    "correction": "La vibration permet de serrer le béton en expulsant les bulles d'air emprisonnées, ce qui augmente sa compacité, sa résistance mécanique et son esthétique (parement lisse)."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Comment appelle-t-on la **différence de niveau** entre un point donné et le niveau de référence (RN) ?",
+                    "question": "Quelle est la conséquence directe d'un excès d'eau de gâchage dans le béton ?",
                     "answerOptions": [
-                        {"text": "La diagonale.", "isCorrect": False},
-                        {"text": "L'**Altitude (ou Cote)**.", "isCorrect": True},
-                        {"text": "La largeur.", "isCorrect": False},
-                        {"text": "Le décalage.", "isCorrect": False}
+                        {"text": "Une chute de la résistance", "isCorrect": True},
+                        {"text": "Une meilleure durabilité", "isCorrect": False},
+                        {"text": "Une prise plus rapide", "isCorrect": False},
+                        {"text": "Une couleur plus foncée", "isCorrect": False}
                     ],
-                    "correction": "La **Cote** peut être absolue (par rapport au $\text{NGF}$) ou relative (par rapport au RN du chantier)."
+                    "correction": "Le surdosage en eau augmente la porosité du béton après évaporation. Cela entraîne inévitablement une baisse significative de sa résistance mécanique (loi de Féret) et augmente le risque de fissuration par retrait."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quel document de travail donne le détail des armatures métalliques à mettre en place dans le béton armé ?",
+                    "question": "Que signifie la désignation CEM II sur un sac de ciment ?",
                     "answerOptions": [
-                        {"text": "Le plan d'architecte.", "isCorrect": False},
-                        {"text": "Le **Plan de Ferraillage** (ou Plan d'armatures).", "isCorrect": True},
-                        {"text": "Le plan électrique.", "isCorrect": False},
-                        {"text": "Le plan des réseaux.", "isCorrect": False}
+                        {"text": "Ciment composé", "isCorrect": True},
+                        {"text": "Ciment prompt", "isCorrect": False},
+                        {"text": "Ciment fondu", "isCorrect": False},
+                        {"text": "Ciment blanc", "isCorrect": False}
                     ],
-                    "correction": "Le **Plan de Ferraillage** est indispensable pour les ouvrages en béton armé (semelles, poteaux, poutres)."
+                    "correction": "CEM II désigne un ciment Portland composé, qui contient au moins 65% de clinker et d'autres constituants (comme du calcaire ou des cendres volantes), couramment utilisé pour les travaux de maçonnerie usuels."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quel instrument permet de matérialiser un plan horizontal parfait sur le chantier (pour les niveaux de dalle, arases, etc.) ?",
+                    "question": "Quel adjuvant doit-on utiliser pour bétonner par temps froid afin d'éviter le gel de l'eau libre ?",
                     "answerOptions": [
-                        {"text": "Le mètre ruban.", "isCorrect": False},
-                        {"text": "Le **Niveau Optique ou le Niveau Laser Rotatif**.", "isCorrect": True},
-                        {"text": "Le fil à plomb.", "isCorrect": False},
-                        {"text": "L'équerre.", "isCorrect": False}
+                        {"text": "Un accélérateur de prise", "isCorrect": True},
+                        {"text": "Un retardateur de prise", "isCorrect": False},
+                        {"text": "Un plastifiant réducteur", "isCorrect": False},
+                        {"text": "Un hydrofuge de surface", "isCorrect": False}
                     ],
-                    "correction": "Le **Niveau Laser** est l'outil moderne pour établir des niveaux de référence précis sur de grandes surfaces."
+                    "correction": "L'accélérateur de prise permet au béton de durcir plus vite. Cela dégage de la chaleur (réaction exothermique) plus rapidement et réduit le temps pendant lequel le béton est vulnérable au gel."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Lors de la vérification de la **planéité** d'une surface (chape, dalle), quel outil utilise-t-on en maçonnerie ?",
+                    "question": "Quelle est la différence fondamentale entre un mortier et un béton ?",
                     "answerOptions": [
-                        {"text": "La truelle.", "isCorrect": False},
-                        {"text": "La **Règle de Maçon** (ou la Règle en aluminium) et le niveau à bulle.", "isCorrect": True},
-                        {"text": "Le mètre pliant.", "isCorrect": False},
-                        {"text": "Le cordeau.", "isCorrect": False}
+                        {"text": "La présence de gravillons", "isCorrect": True},
+                        {"text": "La couleur du mélange", "isCorrect": False},
+                        {"text": "La nature du liant", "isCorrect": False},
+                        {"text": "Le type d'adjuvant", "isCorrect": False}
                     ],
-                    "correction": "La **Règle** permet de vérifier que la surface est bien plane et sans défaut."
+                    "correction": "La différence technique majeure est la taille des granulats. Le béton contient des gravillons (gros granulats > 5mm) pour la structure, tandis que le mortier ne contient que du sable."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Sur un plan, que représente un **trait mixte fin** (alternance de tirets longs et courts) ?",
+                    "question": "Pourquoi utilise-t-on un produit de cure sur une dalle béton fraîchement coulée en été ?",
                     "answerOptions": [
-                        {"text": "Un mur existant.", "isCorrect": False},
-                        {"text": "L'**Axe de Symétrie** ou l'axe d'un ouvrage (ex : axe de mur, axe de poteau).", "isCorrect": True},
-                        {"text": "Un conduit de ventilation.", "isCorrect": False},
-                        {"text": "Une ligne de coupe.", "isCorrect": False}
+                        {"text": "Pour limiter l'évaporation trop rapide de l'eau", "isCorrect": True},
+                        {"text": "Pour donner une couleur rouge à la surface", "isCorrect": False},
+                        {"text": "Pour rendre le béton totalement incombustible", "isCorrect": False},
+                        {"text": "Pour empêcher les insectes de se poser dessus", "isCorrect": False}
                     ],
-                    "correction": "Les **Axes** sont des lignes d'implantation cruciales (Lignes de Référence)."
+                    "correction": "La cure consiste à protéger le béton frais contre une dessiccation précoce due au soleil ou au vent. Sans cela, l'eau s'évapore avant d'avoir hydraté le ciment, provoquant des fissures de retrait plastique."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Comment s'appelle l'outil qui permet de tracer des lignes droites colorées sur le sol pour l'implantation ?",
+                    "question": "Quelle propriété la chaux apporte-t-elle spécifiquement aux mortiers de restauration ?",
                     "answerOptions": [
-                        {"text": "Le pistolet à colle.", "isCorrect": False},
-                        {"text": "Le **Cordeau à Tracer** (ou cordeau traceur, rempli de poudre de craie).", "isCorrect": True},
-                        {"text": "La ficelle.", "isCorrect": False},
-                        {"text": "Le niveau à bulle.", "isCorrect": False}
+                        {"text": "La perméabilité à la vapeur d'eau", "isCorrect": True},
+                        {"text": "Une résistance mécanique extrême", "isCorrect": False},
+                        {"text": "Une étanchéité totale à l'air", "isCorrect": False},
+                        {"text": "Une prise instantanée sous l'eau", "isCorrect": False}
                     ],
-                    "correction": "Le **Cordeau à Tracer** est rapide et précis pour le marquage des limites."
+                    "correction": "La chaux permet aux murs anciens de 'respirer'. Elle laisse passer la vapeur d'eau de l'intérieur vers l'extérieur, évitant ainsi l'accumulation d'humidité dans les murs en pierre ou en terre."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Lors du traçage d'un mur, quelle épaisseur doit-on prendre en compte pour marquer l'ouverture d'une porte ?",
+                    "question": "Que représente le dosage '350 kg/m3' pour un béton ?",
                     "answerOptions": [
-                        {"text": "La largeur du mur.", "isCorrect": False},
-                        {"text": "La **Largeur du Dormant de la Menuiserie** (ou tableau de l'ouverture) plus les jeux de pose.", "isCorrect": True},
-                        {"text": "La largeur de la maçonnerie.", "isCorrect": False},
-                        {"text": "La largeur de la fondation.", "isCorrect": False}
+                        {"text": "La quantité de ciment", "isCorrect": True},
+                        {"text": "Le poids total du béton", "isCorrect": False},
+                        {"text": "Le volume de sable sec", "isCorrect": False},
+                        {"text": "La masse de graviers", "isCorrect": False}
                     ],
-                    "correction": "L'ouverture (le 'tableau') doit correspondre à la taille de la menuiserie à poser."
+                    "correction": "Le dosage exprime la masse de liant (ciment) par mètre cube de béton en place. Un dosage à 350 kg/m3 est le standard pour le béton armé courant (dalles, poutres, poteaux)."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quel type de plan est essentiel pour l'implantation des fondations et des réseaux enterrés ?",
+                    "question": "Quel est l'unité de mesure de la résistance à la compression du béton ?",
                     "answerOptions": [
-                        {"text": "Le plan de charpente.", "isCorrect": False},
-                        {"text": "Le **Plan d'Infrastructure (ou Plan de Sous-sol/Fondation)**.", "isCorrect": True},
-                        {"text": "Le plan de toiture.", "isCorrect": False},
-                        {"text": "Le plan de plomberie.", "isCorrect": False}
+                        {"text": "Le Mégapascal", "isCorrect": True},
+                        {"text": "Le Kilogramme", "isCorrect": False},
+                        {"text": "Le Newton", "isCorrect": False},
+                        {"text": "Le Joule", "isCorrect": False}
                     ],
-                    "correction": "Le **Plan d'Infrastructure** montre les semelles, les longrines et les conduits."
+                    "correction": "La résistance du béton se mesure en Mégapascals (MPa). Par exemple, un béton C25/30 a une résistance caractéristique à la compression de 25 MPa sur cylindre à 28 jours."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Que signifie la cote **'$\text{H} + 1.00$'** sur un plan de construction ?",
+                    "question": "Dans quel cas utilise-t-on un retardateur de prise ?",
                     "answerOptions": [
-                        {"text": "Une hauteur de $1$ mètre au-dessus du sol extérieur.", "isCorrect": False},
-                        {"text": "Une **Cote mesurée à $1 \text{ mètre}$ au-dessus du Niveau de Référence (NR)** du bâtiment.", "isCorrect": True},
-                        {"text": "Une hauteur totale de $1 \text{ mètre}$.", "isCorrect": False},
-                        {"text": "Une profondeur de $1 \text{ mètre}$.", "isCorrect": False}
+                        {"text": "Par temps très chaud", "isCorrect": True},
+                        {"text": "Par temps de gel", "isCorrect": False},
+                        {"text": "Pour un scellement", "isCorrect": False},
+                        {"text": "Pour une petite gâche", "isCorrect": False}
                     ],
-                    "correction": "Les cotes sont souvent exprimées par rapport à un **RN** (par exemple, le niveau du sol fini du rez-de-chaussée)."
+                    "correction": "Par temps chaud, le béton tire trop vite. Le retardateur permet de conserver la maniabilité du béton plus longtemps, laissant le temps aux maçons de le mettre en œuvre correctement avant qu'il ne durcisse."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quel est le terme technique désignant la **remise à niveau** d'une surface pour la rendre horizontale ?",
+                    "question": "À quoi sert l'essai d'équivalent de sable lors de l'analyse des granulats ?",
                     "answerOptions": [
-                        {"text": "Le dressage.", "isCorrect": False},
-                        {"text": "Le calepinage.", "isCorrect": False},
-                        {"text": "L'**Arasage** (pour les murs) ou la mise à niveau.", "isCorrect": True},
-                        {"text": "Le jointoiement.", "isCorrect": False}
+                        {"text": "Vérifier la propreté", "isCorrect": True},
+                        {"text": "Mesurer la dureté", "isCorrect": False},
+                        {"text": "Peser la densité", "isCorrect": False},
+                        {"text": "Trier la taille", "isCorrect": False}
                     ],
-                    "correction": "L'**Arase** est essentielle pour que le mur soit parfaitement de niveau avant l'élévation des éléments suivants."
+                    "correction": "Cet essai permet de déterminer la proportion d'éléments fins argileux dans le sable. Un sable trop 'sale' (riche en argile) nuit à l'adhérence du ciment et à la qualité du béton."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 2 : MATÉRIAUX, MORTIERS ET BÉTONS (Q. 21-40)
+        # THÈME 2 : LECTURE DE PLANS, IMPLANTATION ET MATHÉMATIQUES DE CHANTIER (Questions 21 à 40)
         # =========================================================================
         2: {
-            "name": "2. Matériaux, Mortiers et Bétons (Q. 21-40)",
+            "name": "THÈME 2 : LECTURE DE PLANS, IMPLANTATION ET MATHÉMATIQUES DE CHANTIER",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quels sont les trois composants principaux d'un **mortier** de maçonnerie ?",
+                    "question": "Sur un plan à l'échelle 1/50, un mur mesure 10 cm sur le papier. Quelle est sa longueur réelle ?",
                     "answerOptions": [
-                        {"text": "Ciment, Eau, Acier.", "isCorrect": False},
-                        {"text": "**Liant (Ciment ou Chaux), Sable, Eau**.", "isCorrect": True},
-                        {"text": "Gravier, Sable, Ciment.", "isCorrect": False},
-                        {"text": "Acier, Eau, Gravier.", "isCorrect": False}
+                        {"text": "5 mètres", "isCorrect": True},
+                        {"text": "50 mètres", "isCorrect": False},
+                        {"text": "500 mètres", "isCorrect": False},
+                        {"text": "1 mètre", "isCorrect": False}
                     ],
-                    "correction": "Le **Mortier** est utilisé pour lier les éléments (briques, parpaings) et pour les enduits/chapes."
+                    "correction": "L'échelle 1/50 signifie que 1 cm sur le plan égale 50 cm en réalité. Donc 10 cm x 50 = 500 cm, soit 5 mètres."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Quels sont les quatre composants principaux d'un **béton** courant ?",
+                    "question": "Que signifie le sigle N.G.F. souvent indiqué sur les plans de masse ?",
                     "answerOptions": [
-                        {"text": "Sable, Eau, Chaux, Acier.", "isCorrect": False},
-                        {"text": "**Ciment (Liant), Sable (Granulat fin), Gravier (Granulat gros), Eau**.", "isCorrect": True},
-                        {"text": "Brique, Ciment, Eau, Plastique.", "isCorrect": False},
-                        {"text": "Bois, Gravier, Sable, Ciment.", "isCorrect": False}
+                        {"text": "Nivellement Général de la France", "isCorrect": True},
+                        {"text": "Norme Géographique Française", "isCorrect": False},
+                        {"text": "Niveau Global des Fondations", "isCorrect": False},
+                        {"text": "Nouvelle Géométrie de Façade", "isCorrect": False}
                     ],
-                    "correction": "Le **Béton** est plus résistant que le mortier car il contient du gravier."
+                    "correction": "Le N.G.F. est le système de référence altimétrique officiel en France (le 'niveau zéro' étant le niveau moyen de la mer à Marseille), permettant de situer l'altitude des ouvrages."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quel est le rôle du **ciment** dans la composition des mortiers et bétons ?",
+                    "question": "Quelle règle mathématique utilise-t-on sur chantier pour vérifier un angle droit avec la méthode '3-4-5' ?",
                     "answerOptions": [
-                        {"text": "Donner la couleur.", "isCorrect": False},
-                        {"text": "Le **Liant** : il durcit par hydratation (réaction avec l'eau) et assure la cohésion et la résistance mécanique du mélange.", "isCorrect": True},
-                        {"text": "Rendre le mélange liquide.", "isCorrect": False},
-                        {"text": "Servir de gravier.", "isCorrect": False}
+                        {"text": "Le théorème de Pythagore", "isCorrect": True},
+                        {"text": "Le théorème de Thalès", "isCorrect": False},
+                        {"text": "La règle de trois", "isCorrect": False},
+                        {"text": "Le calcul de l'aire du cercle", "isCorrect": False}
                     ],
-                    "correction": "Le **Ciment** est l'ingrédient actif qui permet la prise et le durcissement (l'hydratation)."
+                    "correction": "Le théorème de Pythagore permet de créer un angle droit. Si on mesure 3m d'un côté et 4m de l'autre, la diagonale (l'hypoténuse) doit mesurer exactement 5m."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Comment appelle-t-on le type de parpaing le plus courant, souvent utilisé pour les murs porteurs, caractérisé par des alvéoles verticales ?",
+                    "question": "À quelle hauteur par rapport au sol fini est théoriquement réalisée la coupe horizontale pour obtenir une 'vue en plan' ?",
                     "answerOptions": [
-                        {"text": "La brique monomur.", "isCorrect": False},
-                        {"text": "Le **Bloc de Béton Creux** (ou Parpaing de type $\text{B}$).", "isCorrect": True},
-                        {"text": "Le béton cellulaire.", "isCorrect": False},
-                        {"text": "La brique de terre cuite.", "isCorrect": False}
+                        {"text": "1 mètre", "isCorrect": True},
+                        {"text": "3 mètres", "isCorrect": False},
+                        {"text": "10 centimètres", "isCorrect": False},
+                        {"text": "Au niveau de la toiture", "isCorrect": False}
                     ],
-                    "correction": "Le **Parpaing Creux** est standard pour le gros œuvre non apparent."
+                    "correction": "Par convention, une vue en plan est une coupe horizontale fictive du bâtiment réalisée à 1 mètre au-dessus du sol fini, ce qui permet de voir les ouvertures (portes et fenêtres)."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quel est l'outil utilisé par le maçon pour mélanger de grandes quantités de mortier ou de béton sur le chantier ?",
+                    "question": "Quel volume de béton faut-il pour couler une semelle filante de 10 m de long, 0,50 m de large et 0,40 m de haut ?",
                     "answerOptions": [
-                        {"text": "La brouette.", "isCorrect": False},
-                        {"text": "La **Bétonnière** (ou Malaxeur).", "isCorrect": True},
-                        {"text": "La truelle.", "isCorrect": False},
-                        {"text": "Le seau.", "isCorrect": False}
+                        {"text": "2 m3", "isCorrect": True},
+                        {"text": "20 m3", "isCorrect": False},
+                        {"text": "0,2 m3", "isCorrect": False},
+                        {"text": "5 m3", "isCorrect": False}
                     ],
-                    "correction": "La **Bétonnière** assure l'homogénéité du mélange."
+                    "correction": "Le volume se calcule par la formule Longueur x Largeur x Hauteur. Ici : 10 x 0,50 x 0,40 = 2 mètres cubes."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Qu'est-ce que le **Temps de Prise** d'un mortier ou d'un béton ?",
+                    "question": "Quel type de trait est utilisé en dessin technique pour représenter les axes de symétrie ou les files de murs ?",
                     "answerOptions": [
-                        {"text": "Le temps de séchage.", "isCorrect": False},
-                        {"text": "Le **Délai** pendant lequel le mélange perd sa plasticité (il durcit) et ne peut plus être travaillé ou mis en œuvre (en moyenne $2$ à $4$ heures après le gâchage).", "isCorrect": True},
-                        {"text": "Le temps de transport.", "isCorrect": False},
-                        {"text": "Le temps de la commande.", "isCorrect": False}
+                        {"text": "Un trait mixte fin", "isCorrect": True},
+                        {"text": "Un trait continu fort", "isCorrect": False},
+                        {"text": "Un trait interrompu court", "isCorrect": False},
+                        {"text": "Un trait continu fin ondulé", "isCorrect": False}
                     ],
-                    "correction": "Il est crucial de respecter le **Temps de Prise** pour que le mélange ne soit pas altéré (ne jamais rajouter d'eau après le début de la prise)."
+                    "correction": "Le trait mixte fin (une alternance de traits longs et de points ou traits courts) est la norme conventionnelle pour représenter les axes et les plans de symétrie."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quelle est la principale caractéristique de la **chaux** par rapport au ciment dans la composition des mortiers (notamment pour la rénovation de vieux bâtis) ?",
+                    "question": "Sur un chantier, à quoi correspond généralement le 'trait de niveau' tracé par le maçon ?",
                     "answerOptions": [
-                        {"text": "Elle est plus chère.", "isCorrect": False},
-                        {"text": "**Elle est plus souple, plus respirante** (perméable à la vapeur d'eau), et moins résistante que le ciment, permettant au mur de 'respirer'.", "isCorrect": True},
-                        {"text": "Elle est plus lourde.", "isCorrect": False},
-                        {"text": "Elle sèche plus vite.", "isCorrect": False}
+                        {"text": "Un repère à un mètre du sol fini", "isCorrect": True},
+                        {"text": "La limite basse des fondations profondes", "isCorrect": False},
+                        {"text": "Le sommet de la future toiture", "isCorrect": False},
+                        {"text": "La position des canalisations enterrées", "isCorrect": False}
                     ],
-                    "correction": "La **Chaux** est préférée pour les enduits et les maçonneries anciennes (patrimoine)."
+                    "correction": "Le trait de niveau est un repère horizontal tracé sur les murs, servant de référence constante pour toutes les hauteurs. Il est conventionnellement situé à 1,00 m au-dessus du sol fini."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Comment appelle-t-on la **partie supérieure d'un mur** sur laquelle s'appuient une poutre, un plancher ou une charpente ?",
+                    "question": "Que représentent les hachures sur une coupe verticale d'un plan d'exécution ?",
                     "answerOptions": [
-                        {"text": "La semelle.", "isCorrect": False},
-                        {"text": "L'**Arase** (surface plane et horizontale) ou le Chaînage Haut.", "isCorrect": True},
-                        {"text": "La fondation.", "isCorrect": False},
-                        {"text": "Le linteau.", "isCorrect": False}
+                        {"text": "La nature des matériaux coupés", "isCorrect": True},
+                        {"text": "L'intensité de la lumière", "isCorrect": False},
+                        {"text": "Les zones interdites au public", "isCorrect": False},
+                        {"text": "Les parties à démolir plus tard", "isCorrect": False}
                     ],
-                    "correction": "L'**Arase** est un niveau de référence horizontal."
+                    "correction": "Les hachures sont des motifs graphiques normalisés (traits obliques, croisés, points...) qui indiquent quel matériau compose la paroi sectionnée (béton, brique, isolant, etc.)."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel est le rôle d'un **Adjuvant** dans la fabrication du béton (ex : fluidifiant, hydrofuge, accélérateur) ?",
+                    "question": "À quoi servent les 'chaises d'implantation' installées avant le terrassement ?",
                     "answerOptions": [
-                        {"text": "Augmenter le prix.", "isCorrect": False},
-                        {"text": "Modifier les propriétés du béton frais ou durci (plasticité, résistance au gel, étanchéité) en fonction des besoins spécifiques de l'ouvrage.", "isCorrect": True},
-                        {"text": "Donner la couleur.", "isCorrect": False},
-                        {"text": "Remplacer le ciment.", "isCorrect": False}
+                        {"text": "Matérialiser les axes des murs", "isCorrect": True},
+                        {"text": "Permettre aux maçons de s'asseoir", "isCorrect": False},
+                        {"text": "Stocker les outils à l'abri", "isCorrect": False},
+                        {"text": "Soutenir les banches de coffrage", "isCorrect": False}
                     ],
-                    "correction": "Les **Adjuvants** permettent de personnaliser les performances du béton."
+                    "correction": "Les chaises sont des cadres en bois plantés à l'extérieur de l'emprise du bâtiment. On y fixe des pointes et des cordeaux pour visualiser les axes des fondations et des murs sans être gêné par les trous."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Comment appelle-t-on le phénomène d'**évaporation trop rapide** de l'eau du béton frais, qui peut entraîner des fissures et affaiblir sa résistance ?",
+                    "question": "Quelle information principale donne le 'Plan de Masse' ?",
                     "answerOptions": [
-                        {"text": "La fissuration.", "isCorrect": False},
-                        {"text": "Le **Dessèchement** (ou 'cracking'). Pour l'éviter, on réalise un 'cure' (arrosage régulier).", "isCorrect": True},
-                        {"text": "La ségrégation.", "isCorrect": False},
-                        {"text": "Le retrait.", "isCorrect": False}
+                        {"text": "La position de la construction sur le terrain", "isCorrect": True},
+                        {"text": "La disposition des meubles dans les pièces", "isCorrect": False},
+                        {"text": "Le détail du ferraillage des poutres", "isCorrect": False},
+                        {"text": "La couleur des peintures intérieures", "isCorrect": False}
                     ],
-                    "correction": "Le **Cure** est essentiel, surtout par temps chaud, pour assurer une bonne hydratation du ciment."
+                    "correction": "Le plan de masse est une vue de dessus de l'ensemble de la parcelle. Il indique l'orientation, les accès, les raccordements et la position précise du bâtiment par rapport aux limites de propriété."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Quelle est l'utilité du **Dosage** d'un mortier (ex : $350 \text{ kg}$ de ciment par $\text{m}^3$ de sable) ?",
+                    "question": "Comment exprime-t-on une pente de 2 centimètres par mètre en pourcentage ?",
                     "answerOptions": [
-                        {"text": "Déterminer la couleur.", "isCorrect": False},
-                        {"text": "Déterminer la **Résistance Mécanique** finale de l'ouvrage (plus le dosage en liant est élevé, plus la résistance est forte).", "isCorrect": True},
-                        {"text": "Déterminer la quantité d'eau.", "isCorrect": False},
-                        {"text": "Déterminer la quantité de sable.", "isCorrect": False}
+                        {"text": "2 %", "isCorrect": True},
+                        {"text": "20 %", "isCorrect": False},
+                        {"text": "0,2 %", "isCorrect": False},
+                        {"text": "200 %", "isCorrect": False}
                     ],
-                    "correction": "Le **Dosage** est la recette qui garantit les performances demandées (ex : béton de propreté, béton armé, chape)."
+                    "correction": "Une pente de x cm par mètre correspond directement à x %. Si on monte de 2 cm sur une longueur de 100 cm (1m), la pente est de 2/100, soit 2 %."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quel terme désigne la **face visible** d'un élément de maçonnerie (pierre, brique, parpaing) ?",
+                    "question": "Que permet de vérifier la mesure des diagonales lors de l'implantation d'un bâtiment rectangulaire ?",
                     "answerOptions": [
-                        {"text": "Le parement intérieur.", "isCorrect": False},
-                        {"text": "Le **Parement** (ou face extérieure) qui sera le plus souvent celui visible après achèvement.", "isCorrect": True},
-                        {"text": "L'arase.", "isCorrect": False},
-                        {"text": "Le talon.", "isCorrect": False}
+                        {"text": "L'équerrage des angles", "isCorrect": True},
+                        {"text": "La planéité du sol", "isCorrect": False},
+                        {"text": "La hauteur des murs", "isCorrect": False},
+                        {"text": "La résistance du sol", "isCorrect": False}
                     ],
-                    "correction": "Le **Parement** demande un soin particulier au niveau de l'aspect (alignement, propreté des joints)."
+                    "correction": "Si les deux diagonales d'un quadrilatère sont de longueur égale, alors c'est un rectangle parfait. Cela permet de s'assurer que les angles sont bien à 90 degrés (équerrage)."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quelle est la principale différence entre la **brique de terre cuite** et le **bloc de béton** ?",
+                    "question": "Quelle est l'équivalence exacte de 1 mètre cube en litres ?",
                     "answerOptions": [
-                        {"text": "La brique est plus lourde.", "isCorrect": False},
-                        {"text": "La **Brique** offre généralement une meilleure **Isolation Thermique** et une inertie plus forte que le bloc de béton standard.", "isCorrect": True},
-                        {"text": "La brique est moins chère.", "isCorrect": False},
-                        {"text": "Le bloc de béton est plus esthétique.", "isCorrect": False}
+                        {"text": "1000 litres", "isCorrect": True},
+                        {"text": "100 litres", "isCorrect": False},
+                        {"text": "10 litres", "isCorrect": False},
+                        {"text": "10000 litres", "isCorrect": False}
                     ],
-                    "correction": "La **Brique Monomur** est très utilisée pour ses qualités d'isolation intrinsèque."
+                    "correction": "C'est une conversion fondamentale pour les dosages. Un cube de 1m x 1m x 1m contient 1000 litres d'eau."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Quelle est l'utilité d'un **Mortier-colle** ?",
+                    "question": "Sur un plan, que désigne le terme 'nu intérieur' ?",
                     "answerOptions": [
-                        {"text": "Réaliser des enduits.", "isCorrect": False},
-                        {"text": "Assembler des éléments (ex : béton cellulaire, briques rectifiées, carrelages) avec un joint très fin (souvent de l'ordre de $1 \text{ à } 3 \text{ mm}$).", "isCorrect": True},
-                        {"text": "Fabriquer des bétons.", "isCorrect": False},
-                        {"text": "Réaliser des finitions rugueuses.", "isCorrect": False}
+                        {"text": "La face verticale intérieure du mur", "isCorrect": True},
+                        {"text": "L'épaisseur totale du mur brut", "isCorrect": False},
+                        {"text": "L'isolation placée au centre du mur", "isCorrect": False},
+                        {"text": "La surface au sol de la pièce", "isCorrect": False}
                     ],
-                    "correction": "Le **Mortier-colle** permet un assemblage précis et rapide des matériaux rectifiés."
+                    "correction": "Le 'nu' désigne la surface d'une paroi. Le nu intérieur est la face du mur située côté pièce, par opposition au nu extérieur (côté façade)."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Comment appelle-t-on le matériau dont la fonction est d'**empêcher les remontées d'humidité** du sol dans les murs (souvent une membrane ou un mortier hydrofuge en pied de mur) ?",
+                    "question": "Quel instrument optique permet de réaliser des relevés de niveaux de haute précision sur de grandes distances ?",
                     "answerOptions": [
-                        {"text": "La fondation.", "isCorrect": False},
-                        {"text": "L'**Arase Étanchée** (ou Couche d'Arase Étanchée : $\text{CAE}$).", "isCorrect": True},
-                        {"text": "Le chaînage.", "isCorrect": False},
-                        {"text": "L'enduit de façade.", "isCorrect": False}
+                        {"text": "La lunette de chantier", "isCorrect": True},
+                        {"text": "Le niveau à bulle", "isCorrect": False},
+                        {"text": "Le fil à plomb", "isCorrect": False},
+                        {"text": "Le télémètre laser simple", "isCorrect": False}
                     ],
-                    "correction": "L'**Arase Étanchée** est obligatoire au niveau du soubassement (pied de mur)."
+                    "correction": "La lunette de chantier (ou niveau optique), utilisée avec une mire, permet de viser à l'horizontale sur de longues distances pour déterminer des différences d'altitude avec précision."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Quel est le risque d'utiliser **trop d'eau** dans le gâchage du béton ?",
+                    "question": "Dans un métré, comment calcule-t-on la surface d'un pignon triangulaire de base 8m et de hauteur 3m ?",
                     "answerOptions": [
-                        {"text": "Augmenter la résistance.", "isCorrect": False},
-                        {"text": "**Réduire sa résistance mécanique** finale (rapport $\text{E}/\text{C}$ trop élevé) et provoquer la ségrégation (séparation des granulats).", "isCorrect": True},
-                        {"text": "Accélérer la prise.", "isCorrect": False},
-                        {"text": "Le rendre plus lourd.", "isCorrect": False}
+                        {"text": "12 m2", "isCorrect": True},
+                        {"text": "24 m2", "isCorrect": False},
+                        {"text": "11 m2", "isCorrect": False},
+                        {"text": "48 m2", "isCorrect": False}
                     ],
-                    "correction": "L'eau doit être dosée précisément pour garantir la performance du béton."
+                    "correction": "La surface d'un triangle est (Base x Hauteur) / 2. Ici : (8 x 3) / 2 = 24 / 2 = 12 m2."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Quel type de sable est généralement utilisé pour les mortiers de pose (liant les éléments de maçonnerie) ?",
+                    "question": "Que représente un trait continu fort sur un dessin d'architecture ?",
                     "answerOptions": [
-                        {"text": "Le sable très fin (ex : sable de plage).", "isCorrect": False},
-                        {"text": "Le **Sable $0/4 \text{ mm}$** (granulométrie courante).", "isCorrect": True},
-                        {"text": "Le sable à béton ($0/20 \text{ mm}$).", "isCorrect": False},
-                        {"text": "Le gravier seul.", "isCorrect": False}
+                        {"text": "Les arêtes vues et contours", "isCorrect": True},
+                        {"text": "Les parties cachées", "isCorrect": False},
+                        {"text": "Les cotes et les attaches", "isCorrect": False},
+                        {"text": "Les axes de symétrie", "isCorrect": False}
                     ],
-                    "correction": "La granulométrie **$0/4 \text{ mm}$** est la norme pour les mortiers de joint et de pose."
+                    "correction": "Le trait fort est utilisé pour tout ce qui est visible au premier plan et les contours définitifs de l'objet, afin de les faire ressortir par rapport aux traits de construction ou de cotation."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Comment s'appelle l'outil qui permet d'appliquer et de lisser les mortiers et enduits sur les murs ?",
+                    "question": "Sur un plan de fondation, comment est généralement représentée une semelle isolée sous un poteau ?",
                     "answerOptions": [
-                        {"text": "Le marteau.", "isCorrect": False},
-                        {"text": "La **Truelle et la Taloche** (ou platoir).", "isCorrect": True},
-                        {"text": "Le niveau.", "isCorrect": False},
-                        {"text": "Le mètre.", "isCorrect": False}
+                        {"text": "Par un carré ou un rectangle hachuré", "isCorrect": True},
+                        {"text": "Par deux traits parallèles continus", "isCorrect": False},
+                        {"text": "Par un cercle avec une croix au centre", "isCorrect": False},
+                        {"text": "Par une ligne en zigzag", "isCorrect": False}
                     ],
-                    "correction": "La **Truelle** sert à prélever et étaler ; la **Taloche** sert à aplanir et finir."
+                    "correction": "La semelle isolée, qui supporte une charge ponctuelle (poteau), est représentée en vue de dessus par un carré ou un rectangle aux dimensions de la fondation, souvent avec des hachures ou un grisés."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Qu'est-ce qu'un **Enduit monocouche** ?",
+                    "question": "Si un point A est à l'altitude 12.50 m et un point B à 11.20 m, quelle est la différence de niveau ?",
                     "answerOptions": [
-                        {"text": "Un enduit appliqué en une seule fois (pour les finitions).", "isCorrect": False},
-                        {"text": "Un **Enduit (à base de chaux ou de ciment)** qui assure à la fois l'étanchéité, le dégrossi et la finition, appliqué en deux passes 'frais sur frais'.", "isCorrect": True},
-                        {"text": "Un enduit pour l'intérieur.", "isCorrect": False},
-                        {"text": "Un enduit très fin.", "isCorrect": False}
+                        {"text": "1,30 m", "isCorrect": True},
+                        {"text": "1,70 m", "isCorrect": False},
+                        {"text": "0,30 m", "isCorrect": False},
+                        {"text": "23,70 m", "isCorrect": False}
                     ],
-                    "correction": "L'**Enduit Monocouche** est courant sur les murs neufs pour sa rapidité d'exécution."
+                    "correction": "La différence de niveau (dénivelée) est une simple soustraction : 12,50 - 11,20 = 1,30 mètre."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quel type de parpaing est spécifiquement conçu pour les **angles de mur** ?",
+                    "question": "Quelle flèche indique le Nord sur un plan d'architecture ?",
                     "answerOptions": [
-                        {"text": "Le parpaing creux.", "isCorrect": False},
-                        {"text": "Le **Bloc Poteau** (ou Bloc d'Angle) qui permet de ferrailler et couler les chaînages verticaux.", "isCorrect": True},
-                        {"text": "Le parpaing linteau.", "isCorrect": False},
-                        {"text": "Le parpaing isolant.", "isCorrect": False}
+                        {"text": "La rose des vents", "isCorrect": True},
+                        {"text": "La cotation cumulée", "isCorrect": False},
+                        {"text": "La ligne de cote", "isCorrect": False},
+                        {"text": "Le cartouche technique", "isCorrect": False}
                     ],
-                    "correction": "Le **Bloc Poteau** (en $\text{U}$ ou à parois minces) est utilisé pour réaliser le **Chaînage Vertical** aux intersections."
+                    "correction": "La rose des vents ou une flèche spécifique indique l'orientation géographique (le Nord) pour permettre de situer l'ensoleillement et l'exposition du bâtiment."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 3 : MAÇONNERIE DE PETITS ÉLÉMENTS ET FINITIONS (Q. 41-60)
+        # THÈME 3 : TECHNIQUES DE MAÇONNERIE ET MISE EN ŒUVRE (GROS ŒUVRE) (Questions 41 à 60)
         # =========================================================================
         3: {
-            "name": "3. Maçonnerie de Petits Éléments et Finitions (Q. 41-60)",
+            "name": "THÈME 3 : TECHNIQUES DE MAÇONNERIE ET MISE EN ŒUVRE (GROS ŒUVRE)",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quelle est la règle essentielle pour l'assemblage des éléments de maçonnerie (parpaings, briques) entre deux assises successives ?",
+                    "question": "Quelle est la fonction principale d'un linteau au-dessus d'une ouverture ?",
                     "answerOptions": [
-                        {"text": "Les aligner parfaitement.", "isCorrect": False},
-                        {"text": "**Le Calepinage** : croiser les joints verticaux d'une rangée à l'autre (sauf pour les joints minces) pour assurer la stabilité et la bonne répartition des charges.", "isCorrect": True},
-                        {"text": "Utiliser un mortier sec.", "isCorrect": False},
-                        {"text": "Les couper tous à la même taille.", "isCorrect": False}
+                        {"text": "Supporter les charges supérieures", "isCorrect": True},
+                        {"text": "Décorer la façade du bâtiment", "isCorrect": False},
+                        {"text": "Isoler thermiquement la fenêtre", "isCorrect": False},
+                        {"text": "Empêcher les intrusions par la baie", "isCorrect": False}
                     ],
-                    "correction": "Le **Croisement des Joints** (décalage d'un demi-bloc) est indispensable pour la solidité et l'équilibre du mur."
+                    "correction": "Le linteau est une poutre (en béton armé, bois ou acier) située au-dessus d'une baie. Son rôle structurel est de reprendre le poids du mur et du plancher situés au-dessus pour le transmettre aux jambages."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Comment s'appelle l'élément préfabriqué ou coulé en place qui sert à soutenir la maçonnerie au-dessus d'une ouverture (fenêtre, porte) ?",
+                    "question": "Quelle est l'épaisseur moyenne standard d'un joint de mortier traditionnel pour le montage de parpaings ?",
                     "answerOptions": [
-                        {"text": "Le poteau.", "isCorrect": False},
-                        {"text": "Le **Linteau**.", "isCorrect": True},
-                        {"text": "Le chaînage.", "isCorrect": False},
-                        {"text": "La semelle.", "isCorrect": False}
+                        {"text": "10 à 15 millimètres", "isCorrect": True},
+                        {"text": "1 à 3 millimètres", "isCorrect": False},
+                        {"text": "30 à 40 millimètres", "isCorrect": False},
+                        {"text": "50 à 60 millimètres", "isCorrect": False}
                     ],
-                    "correction": "Le **Linteau** est une poutre horizontale qui reprend la charge du mur supérieur."
+                    "correction": "Pour une maçonnerie traditionnelle d'éléments creux, l'épaisseur du joint doit permettre de rattraper les tolérances dimensionnelles des blocs, soit généralement entre 1 cm et 1,5 cm."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Quelle est la fonction d'un **Chaînage** horizontal ou vertical dans une construction en maçonnerie ?",
+                    "question": "Quel outil le maçon utilise-t-il pour vérifier la verticalité parfaite d'un mur ?",
                     "answerOptions": [
-                        {"text": "Rendre la maison jolie.", "isCorrect": False},
-                        {"text": "Assurer la **Rigidité de la Structure** et sa résistance aux efforts horizontaux (vent, séismes) en reliant l'ensemble des murs entre eux (souvent réalisé en béton armé).", "isCorrect": True},
-                        {"text": "Empêcher l'eau de rentrer.", "isCorrect": False},
-                        {"text": "Isoler thermiquement.", "isCorrect": False}
+                        {"text": "Le fil à plomb", "isCorrect": True},
+                        {"text": "Le cordeau traceur", "isCorrect": False},
+                        {"text": "Le double mètre", "isCorrect": False},
+                        {"text": "L'équerre de maçon", "isCorrect": False}
                     ],
-                    "correction": "Le **Chaînage** (armatures + béton) forme le 'squelette' du bâtiment."
+                    "correction": "Le fil à plomb utilise la gravité pour indiquer la verticale absolue (l'aplomb). C'est l'outil de référence indispensable pour monter des murs droits et vérifier les angles."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quel outil permet de vérifier l'alignement **horizontal** d'une rangée de parpaings ?",
+                    "question": "Comment appelle-t-on la partie de mur située entre deux ouvertures sur une même façade ?",
                     "answerOptions": [
-                        {"text": "Le fil à plomb.", "isCorrect": False},
-                        {"text": "Le **Cordeau tendu** et le **Niveau à Bulle**.", "isCorrect": True},
-                        {"text": "Le décamètre.", "isCorrect": False},
-                        {"text": "La règle de maçon.", "isCorrect": False}
+                        {"text": "Le trumeau", "isCorrect": True},
+                        {"text": "L'allège", "isCorrect": False},
+                        {"text": "Le linteau", "isCorrect": False},
+                        {"text": "Le jambage", "isCorrect": False}
                     ],
-                    "correction": "Le **Cordeau** sert de guide et le **Niveau** vérifie la planéité."
+                    "correction": "Le vocabulaire est précis : le trumeau est le pan de mur vertical qui sépare deux fenêtres ou portes. L'allège est sous la fenêtre, le linteau au-dessus."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Comment appelle-t-on la couche de finition posée au sol, réalisée en mortier, qui doit être parfaitement plane pour recevoir un revêtement (carrelage, parquet) ?",
+                    "question": "Pourquoi applique-t-on de l'huile de décoffrage sur les banches ou les planches avant de couler le béton ?",
                     "answerOptions": [
-                        {"text": "La dalle.", "isCorrect": False},
-                        {"text": "La **Chape**.", "isCorrect": True},
-                        {"text": "La semelle.", "isCorrect": False},
-                        {"text": "L'arase.", "isCorrect": False}
+                        {"text": "Pour empêcher l'adhérence", "isCorrect": True},
+                        {"text": "Pour colorer le béton", "isCorrect": False},
+                        {"text": "Pour armer le mélange", "isCorrect": False},
+                        {"text": "Pour coller le coffrage", "isCorrect": False}
                     ],
-                    "correction": "La **Chape** est la couche de forme et de finition horizontale."
+                    "correction": "L'agent de démoulage (huile) crée un film gras qui empêche le béton de coller au coffrage lors de la prise, facilitant ainsi le retrait du moule sans abîmer l'ouvrage."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Quel est l'objectif du **Gâchage** d'un mortier ou d'un enduit ?",
+                    "question": "Quel est le recouvrement minimum obligatoire (harpage) entre deux rangs de parpaings courants ?",
                     "answerOptions": [
-                        {"text": "Laisser sécher.", "isCorrect": False},
-                        {"text": "Mélanger tous les composants (sable, liant, eau, adjuvants) jusqu'à obtention d'un mélange **Homogène** et d'une consistance adaptée à la mise en œuvre.", "isCorrect": True},
-                        {"text": "Ajouter du gravier.", "isCorrect": False},
-                        {"text": "Nettoyer les outils.", "isCorrect": False}
+                        {"text": "Le tiers de la longueur du bloc", "isCorrect": True},
+                        {"text": "Le dixième de la longueur du bloc", "isCorrect": False},
+                        {"text": "La totalité de la longueur du bloc", "isCorrect": False},
+                        {"text": "Un seul centimètre de longueur", "isCorrect": False}
                     ],
-                    "correction": "Le **Gâchage** (mélange) est l'étape de préparation avant l'utilisation."
+                    "correction": "Pour assurer la solidité et la répartition des charges, les joints verticaux doivent être décalés d'un rang à l'autre d'au moins 1/3 de la longueur de l'élément (ou minimum 10 cm pour les petits éléments)."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Lors de la pose de parpaings, quel élément est crucial à vérifier après la pose de chaque bloc (en plus de l'alignement et du niveau) ?",
+                    "question": "À quoi sert un 'rejingot' sur un appui de fenêtre ?",
                     "answerOptions": [
-                        {"text": "La couleur.", "isCorrect": False},
-                        {"text": "L'**Épaisseur et la Régularité des Joints** (horizontal et vertical) qui doivent respecter le plan et les normes ($1$ à $1.5 \text{ cm}$ en maçonnerie classique).", "isCorrect": True},
-                        {"text": "Le poids.", "isCorrect": False},
-                        {"text": "Le prix.", "isCorrect": False}
+                        {"text": "Empêcher l'eau de rentrer", "isCorrect": True},
+                        {"text": "Poser les volets battants", "isCorrect": False},
+                        {"text": "Décorer le bas de la fenêtre", "isCorrect": False},
+                        {"text": "Soutenir le poids du linteau", "isCorrect": False}
                     ],
-                    "correction": "La **Régularité du Joint** garantit la solidité et l'esthétique du mur."
+                    "correction": "Le rejingot est le relief arrière (remontée) de l'appui de fenêtre. La traverse basse de la menuiserie vient s'y appuyer pour assurer une étanchéité parfaite à l'air et à l'eau."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Comment appelle-t-on l'opération qui consiste à **projeter le mortier** sur un mur pour créer la première couche d'enduit (couche d'accrochage) ?",
+                    "question": "Quel élément métallique utilise-t-on pour soutenir temporairement un coffrage de dalle ou de linteau ?",
                     "answerOptions": [
-                        {"text": "Le lissage.", "isCorrect": False},
-                        {"text": "Le **Gobetis**.", "isCorrect": True},
-                        {"text": "Le talochage.", "isCorrect": False},
-                        {"text": "Le calepinage.", "isCorrect": False}
+                        {"text": "Un étai", "isCorrect": True},
+                        {"text": "Une serre", "isCorrect": False},
+                        {"text": "Un clou", "isCorrect": False},
+                        {"text": "Un fil", "isCorrect": False}
                     ],
-                    "correction": "Le **Gobetis** est une couche très liquide, souvent riche en ciment, pour assurer l'adhérence des couches suivantes."
+                    "correction": "L'étai est une pièce métallique télescopique réglable en hauteur, capable de supporter de lourdes charges verticales le temps que le béton atteigne sa résistance suffisante."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Quel est le rôle du **Joint creux** (ou joint en retrait) dans la finition d'une maçonnerie apparente (briques, pierres) ?",
+                    "question": "Dans quel sens doit-on poser les parpaings creux traditionnels lors du montage ?",
                     "answerOptions": [
-                        {"text": "Augmenter l'isolation.", "isCorrect": False},
-                        {"text": "Mettre en valeur l'élément de maçonnerie (pierre ou brique) en créant une ombre et en facilitant l'évacuation de l'eau.", "isCorrect": True},
-                        {"text": "Rendre le mur plus lisse.", "isCorrect": False},
-                        {"text": "Le rendre plus résistant.", "isCorrect": False}
+                        {"text": "Fond vers le haut", "isCorrect": True},
+                        {"text": "Alvéoles face latérale", "isCorrect": False},
+                        {"text": "À la verticale debout", "isCorrect": False},
+                        {"text": "Sur la tranche fine", "isCorrect": False}
                     ],
-                    "correction": "Le **Joint** est un élément d'esthétique et de durabilité de la façade."
+                    "correction": "Les parpaings se posent 'cul en l'air' (le fond plein vers le haut) pour offrir une surface plane facile à encoller pour le rang suivant, et pour que les alvéoles ne se remplissent pas de mortier (économie et isolation)."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Quelle est la **densité** (masse volumique) moyenne du béton courant, par $\text{m}^3$ ?",
+                    "question": "Qu'est-ce qu'une 'arase étanche' en bas de mur ?",
                     "answerOptions": [
-                        {"text": "Environ $1000 \text{ kg}/\text{m}^3$.", "isCorrect": False},
-                        {"text": "Environ **$2300 \text{ kg}/\text{m}^3$ à $2500 \text{ kg}/\text{m}^3$** (soit $2.3 \text{ à } 2.5 \text{ tonnes}/\text{m}^3$).", "isCorrect": True},
-                        {"text": "Environ $500 \text{ kg}/\text{m}^3$.", "isCorrect": False},
-                        {"text": "Environ $4000 \text{ kg}/\text{m}^3$.", "isCorrect": False}
+                        {"text": "Une coupure de capillarité", "isCorrect": True},
+                        {"text": "Une finition décorative", "isCorrect": False},
+                        {"text": "Une isolation phonique", "isCorrect": False},
+                        {"text": "Une couche de peinture", "isCorrect": False}
                     ],
-                    "correction": "Le **Poids** du béton est un élément clé à prendre en compte lors des calculs de charge (poids propre)."
+                    "correction": "C'est une couche de mortier richement dosé et hydrofugé (ou une bande bitumineuse) posée au niveau du plancher bas pour empêcher l'humidité du sol de remonter dans les murs par capillarité."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Quel outil est spécifiquement utilisé pour enlever l'excédent de mortier et façonner le joint entre les briques ou les pierres ?",
+                    "question": "Quelle est la fonction du chainage vertical dans une construction en maçonnerie ?",
                     "answerOptions": [
-                        {"text": "Le marteau.", "isCorrect": False},
-                        {"text": "Le **Fer à Joint**.", "isCorrect": True},
-                        {"text": "La taloche.", "isCorrect": False},
-                        {"text": "La tenaille.", "isCorrect": False}
+                        {"text": "Contreventer l'ouvrage", "isCorrect": True},
+                        {"text": "Isoler les parois", "isCorrect": False},
+                        {"text": "Porter le plancher", "isCorrect": False},
+                        {"text": "Drainer le sol", "isCorrect": False}
                     ],
-                    "correction": "Le **Fer à Joint** permet de donner la forme désirée au joint (creux, plat, biseauté)."
+                    "correction": "Les chainages verticaux (poteaux incorporés aux angles et refends) liaisonnent les fondations à la toiture. Ils empêchent les murs de s'écarter ou de se soulever, assurant la stabilité (contreventement) de la structure."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Comment s'appelle la technique de pose qui utilise un mortier ou une colle à **joint mince** pour minimiser les ponts thermiques (ex : briques rectifiées) ?",
+                    "question": "Comment nomme-t-on les faces verticales intérieures d'une ouverture de porte ou de fenêtre ?",
                     "answerOptions": [
-                        {"text": "Maçonnerie traditionnelle.", "isCorrect": False},
-                        {"text": "La **Maçonnerie à Joint Mince** (ou à Joint Collé).", "isCorrect": True},
-                        {"text": "Maçonnerie à sec.", "isCorrect": False},
-                        {"text": "Maçonnerie à pierre vue.", "isCorrect": False}
+                        {"text": "Les tableaux", "isCorrect": True},
+                        {"text": "Les plafonds", "isCorrect": False},
+                        {"text": "Les feuillures", "isCorrect": False},
+                        {"text": "Les ébrasements", "isCorrect": False}
                     ],
-                    "correction": "La **Maçonnerie à Joint Mince** améliore la performance thermique du mur."
+                    "correction": "Le tableau est la face latérale de l'ouverture visible de l'extérieur. La largeur 'tableau' est la cote de passage libre horizontale entre les deux murs."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quel élément maçonné ou préfabriqué est placé au bas de l'ouverture d'une fenêtre pour l'écoulement de l'eau ?",
+                    "question": "Que doit-on impérativement utiliser pour maintenir l'écartement constant entre deux banches de coffrage ?",
                     "answerOptions": [
-                        {"text": "Le linteau.", "isCorrect": False},
-                        {"text": "L'**Appui de Fenêtre** (ou Seuil de Fenêtre).", "isCorrect": True},
-                        {"text": "Le coffre de volet.", "isCorrect": False},
-                        {"text": "Le tableau.", "isCorrect": False}
+                        {"text": "Des entretoises", "isCorrect": True},
+                        {"text": "De la colle", "isCorrect": False},
+                        {"text": "Du scotch", "isCorrect": False},
+                        {"text": "Du sable", "isCorrect": False}
                     ],
-                    "correction": "L'**Appui** doit être posé avec une légère pente vers l'extérieur pour l'évacuation."
+                    "correction": "Les entretoises (souvent des tubes PVC ou cônes avec tiges filetées) traversent le coffrage pour garantir que l'épaisseur du mur sera exactement celle prévue, malgré la pression du béton."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quelle est la règle de base concernant l'ouverture d'un **gros trou** dans un mur porteur existant ?",
+                    "question": "Quelle est la particularité de la pose de briques à 'joints minces' (briques rectifiées) ?",
                     "answerOptions": [
-                        {"text": "On peut percer directement.", "isCorrect": False},
-                        {"text": "**Nécessité de Soutènement Temporaire (Étaiement)** et pose d'un linteau de remplacement avant de démolir la partie inférieure du mur.", "isCorrect": True},
-                        {"text": "On utilise de la mousse expansive.", "isCorrect": False},
-                        {"text": "On utilise la truelle.", "isCorrect": False}
+                        {"text": "L'utilisation d'un mortier-colle", "isCorrect": True},
+                        {"text": "L'usage de ciment prompt pur", "isCorrect": False},
+                        {"text": "L'absence totale de liant", "isCorrect": False},
+                        {"text": "L'obligation de mouiller la brique", "isCorrect": False}
                     ],
-                    "correction": "L'**Étaiement** est obligatoire pour garantir la sécurité et la stabilité du bâtiment."
+                    "correction": "Les briques rectifiées ont des dimensions très précises qui permettent un montage avec un joint très fin (1 à 3 mm) de mortier-colle appliqué au rouleau, améliorant l'isolation thermique (moins de ponts thermiques)."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quel est le risque de travailler un mortier de ciment à une température **proche de $0^\circ \text{C}$** ?",
+                    "question": "À quel moment doit-on réaliser les joints de finition sur un mur en briques apparentes ?",
                     "answerOptions": [
-                        {"text": "Il sèche trop vite.", "isCorrect": False},
-                        {"text": "Le **Gel** : l'eau du mortier gèle avant la prise du ciment, détruisant la structure et la résistance de l'ouvrage.", "isCorrect": True},
-                        {"text": "Il devient trop mou.", "isCorrect": False},
-                        {"text": "Il devient trop lourd.", "isCorrect": False}
+                        {"text": "En cours de montage ou juste après", "isCorrect": True},
+                        {"text": "Une fois le mur totalement sec", "isCorrect": False},
+                        {"text": "Avant de poser la première brique", "isCorrect": False},
+                        {"text": "Uniquement l'année suivante", "isCorrect": False}
                     ],
-                    "correction": "Il faut protéger les ouvrages contre le **Gel** (bâches, protection) ou utiliser des adjuvants antigel."
+                    "correction": "Les joints se font généralement 'à l'avancement' ou en 'rejointoiement' peu de temps après le montage, quand le mortier est encore frais mais a commencé sa prise ('tirer'), pour assurer une bonne adhérence et l'esthétique."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Comment appelle-t-on le revêtement intérieur ou extérieur (souvent plâtré ou enduit) qui permet de corriger les défauts d'un mur brut ?",
+                    "question": "Quel accessoire assure la distance réglementaire entre le coffrage et les aciers ?",
                     "answerOptions": [
-                        {"text": "La finition.", "isCorrect": False},
-                        {"text": "Le **Dressage** (application d'une couche pour obtenir la planéité souhaitée).", "isCorrect": True},
-                        {"text": "Le calepinage.", "isCorrect": False},
-                        {"text": "L'arase.", "isCorrect": False}
+                        {"text": "La cale d'enrobage", "isCorrect": True},
+                        {"text": "Le fil de ligature", "isCorrect": False},
+                        {"text": "Le clou de maçon", "isCorrect": False},
+                        {"text": "La barre de reprise", "isCorrect": False}
                     ],
-                    "correction": "Le **Dressage** précède la couche de finition (crépi, peinture)."
+                    "correction": "Les cales (en plastique ou béton) sont indispensables pour garantir que l'acier ne touchera pas le coffrage, assurant ainsi l'enrobage nécessaire pour protéger l'armature de la corrosion."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Qu'est-ce qu'une **Semelle de Fondation** ?",
+                    "question": "Qu'appelle-t-on la 'feuillure' dans un jambage de fenêtre ?",
                     "answerOptions": [
-                        {"text": "Le mur.", "isCorrect": False},
-                        {"text": "L'élément de maçonnerie de base qui **Répartit les Charges du Bâtiment** sur le sol (assise du mur).", "isCorrect": True},
-                        {"text": "Le plancher.", "isCorrect": False},
-                        {"text": "Le toit.", "isCorrect": False}
+                        {"text": "L'encoche pour recevoir la menuiserie", "isCorrect": True},
+                        {"text": "La décoration en forme de feuille", "isCorrect": False},
+                        {"text": "La fissure due au retrait", "isCorrect": False},
+                        {"text": "La partie basse de l'appui", "isCorrect": False}
                     ],
-                    "correction": "La **Semelle** est la première et la plus importante partie de l'ouvrage (ancrage)."
+                    "correction": "La feuillure est un décrochement (angle rentrant) réservé dans la maçonnerie pour y encastrer le dormant (cadre fixe) de la fenêtre ou de la porte."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quel est le risque d'une **maçonnerie à sec** (assemblage sans mortier, comme les murs en pierres sèches) ?",
+                    "question": "Quelle précaution prendre lors du coulage d'un poteau de grande hauteur ?",
                     "answerOptions": [
-                        {"text": "Isolation thermique.", "isCorrect": False},
-                        {"text": "Un manque de résistance aux mouvements de terrain ou aux charges verticales et l'absence d'étanchéité.", "isCorrect": True},
-                        {"text": "Couleur irrégulière.", "isCorrect": False},
-                        {"text": "Faible coût.", "isCorrect": False}
+                        {"text": "Couler par passes successives vibrées", "isCorrect": True},
+                        {"text": "Verser tout le béton d'un seul coup", "isCorrect": False},
+                        {"text": "Ne jamais vibrer le béton vertical", "isCorrect": False},
+                        {"text": "Ajouter beaucoup d'eau pour fluidifier", "isCorrect": False}
                     ],
-                    "correction": "La **Maçonnerie à Sec** est surtout utilisée pour les murs de soutènement non porteurs ou l'aménagement paysager."
+                    "correction": "Pour éviter la ségrégation (les cailloux tombent au fond) et les nids de graviers, on doit couler le béton par couches (volées) régulières et vibrer chaque couche sans excès."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Quel est l'outil spécifique utilisé pour couper les briques ou les parpaings avec précision (hors tronçonneuse de chantier) ?",
+                    "question": "Quel est le rôle d'une 'planelle' en rive de plancher ?",
                     "answerOptions": [
-                        {"text": "Le marteau-piqueur.", "isCorrect": False},
-                        {"text": "La **Coupeuse de Matériaux à Eau** (ou Tronçonneuse à disque diamanté).", "isCorrect": True},
-                        {"text": "La scie à bois.", "isCorrect": False},
-                        {"text": "Le burin seul.", "isCorrect": False}
+                        {"text": "Servir de coffrage perdu", "isCorrect": True},
+                        {"text": "Soutenir la dalle béton", "isCorrect": False},
+                        {"text": "Remplacer le chainage", "isCorrect": False},
+                        {"text": "Faire joli en façade", "isCorrect": False}
                     ],
-                    "correction": "La **Coupeuse à Eau** permet une coupe nette et réduit la poussière."
+                    "correction": "La planelle est un bloc de faible épaisseur (souvent 5 cm) posé en rive de mur extérieur. Elle sert de coffrage latéral pour la dalle de compression et assure la continuité du support d'enduit en façade."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quelle est la fonction d'un **Chaînage en $\text{U}$** ?",
+                    "question": "Pour réaliser un angle de mur parfait à 90°, quelle technique d'appareillage est prioritaire ?",
                     "answerOptions": [
-                        {"text": "Créer un angle.", "isCorrect": False},
-                        {"text": "Recevoir les armatures horizontales et le béton d'une arase ou d'un linteau coulé en place.", "isCorrect": True},
-                        {"text": "Créer un trou.", "isCorrect": False},
-                        {"text": "Remplir les joints.", "isCorrect": False}
+                        {"text": "Le croisement des blocs", "isCorrect": True},
+                        {"text": "La coupe en biseau", "isCorrect": False},
+                        {"text": "L'ajout de ferraille", "isCorrect": False},
+                        {"text": "Le collage simple", "isCorrect": False}
                     ],
-                    "correction": "Le **Bloc $\text{U}$** sert de coffrage permanent pour les ouvrages horizontaux (linteaux, chaînages)."
+                    "correction": "La solidité et la géométrie d'un angle reposent sur le harpage (croisement) : les blocs d'un mur doivent pénétrer dans l'autre mur alternativement à chaque rang pour 'verrouiller' l'angle."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 4 : COFFRAGE, ARMATURES ET BÉTON ARMÉ (Q. 61-80)
+        # THÈME 4 : FINITIONS, OUVRAGES HORIZONTAUX ET TRAVAUX SPÉCIFIQUES (Questions 61 à 80)
         # =========================================================================
         4: {
-            "name": "4. Coffrage, Armatures et Béton Armé (Q. 61-80)",
+            "name": "THÈME 4 : FINITIONS, OUVRAGES HORIZONTAUX ET TRAVAUX SPÉCIFIQUES",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel est le rôle du **Coffrage** dans la réalisation d'un ouvrage en béton (poteau, poutre, dalle) ?",
+                    "question": "De combien de couches se compose traditionnellement un enduit extérieur manuel ?",
                     "answerOptions": [
-                        {"text": "Accélérer la prise.", "isCorrect": False},
-                        {"text": "Former la **Structure Temporaire** qui maintient le béton frais en place et lui donne sa forme et ses dimensions finales.", "isCorrect": True},
-                        {"text": "Rendre le béton plus résistant.", "isCorrect": False},
-                        {"text": "Empêcher l'eau de sortir.", "isCorrect": False}
+                        {"text": "Trois", "isCorrect": True},
+                        {"text": "Une seule", "isCorrect": False},
+                        {"text": "Cinq ou six", "isCorrect": False},
+                        {"text": "Douze", "isCorrect": False}
                     ],
-                    "correction": "Le **Coffrage** est le moule du béton."
+                    "correction": "L'enduit traditionnel se fait en 3 couches : 1. Le gobetis (accroche), 2. Le corps d'enduit (imperméabilisation et planéité), 3. La couche de finition (aspect esthétique)."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Qu'est-ce que le **Béton Armé** ?",
+                    "question": "Quel est le rôle spécifique du gobetis dans la réalisation d'un enduit ?",
                     "answerOptions": [
-                        {"text": "Du béton mélangé à de la pierre.", "isCorrect": False},
-                        {"text": "Du **Béton dans lequel on a inséré des Armatures en Acier** (ferraillage) pour améliorer sa résistance à la traction et à la flexion (le béton résiste à la compression, l'acier à la traction).", "isCorrect": True},
-                        {"text": "Du béton très résistant au feu.", "isCorrect": False},
-                        {"text": "Du béton mélangé à du bois.", "isCorrect": False}
+                        {"text": "Assurer l'accrochage", "isCorrect": True},
+                        {"text": "Donner la couleur finale de la façade visible depuis la rue", "isCorrect": False},
+                        {"text": "Lisser parfaitement la surface du mur", "isCorrect": False},
+                        {"text": "Isoler thermiquement le bâtiment", "isCorrect": False}
                     ],
-                    "correction": "Le **Béton Armé** est le matériau structurel le plus courant dans la construction moderne."
+                    "correction": "Le gobetis est une couche mince, riche en ciment et rugueuse. Elle sert d'interface d'adhérence entre le support (maçonnerie) et le corps d'enduit qui viendra ensuite."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Quelle est la fonction de l'**Huile de Décoffrage** ?",
+                    "question": "Quelle différence technique distingue une chape d'une dalle en béton ?",
                     "answerOptions": [
-                        {"text": "Imperméabiliser le béton.", "isCorrect": False},
-                        {"text": "Empêcher le béton d'adhérer au coffrage afin de faciliter le **Décoffrage** sans abîmer le parement du béton.", "isCorrect": True},
-                        {"text": "Accélérer la prise.", "isCorrect": False},
-                        {"text": "Colorer le béton.", "isCorrect": False}
+                        {"text": "La chape est une finition", "isCorrect": True},
+                        {"text": "La chape contient du gros gravier", "isCorrect": False},
+                        {"text": "La chape est toujours armée de gros aciers", "isCorrect": False},
+                        {"text": "La chape porte les murs de la maison", "isCorrect": False}
                     ],
-                    "correction": "L'**Huile de Décoffrage** est appliquée sur la face interne du moule."
+                    "correction": "La dalle est un élément structurel porteur (béton + graviers + ferraillage). La chape est une couche de mortier (sable + ciment) coulée sur la dalle pour niveler le sol avant la pose du carrelage."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Comment appelle-t-on les **barres d'acier** qui forment le cadre d'un poteau ou d'une poutre en béton armé ?",
+                    "question": "Quelle pente minimale doit-on respecter pour une canalisation d'eaux usées ?",
                     "answerOptions": [
-                        {"text": "Les chaînages.", "isCorrect": False},
-                        {"text": "Les **Armatures (longitudinales ou transversales)**, ex : Cadres, Étriers, Épingles.", "isCorrect": True},
-                        {"text": "Les fondations.", "isCorrect": False},
-                        {"text": "Les treillis.", "isCorrect": False}
+                        {"text": "1 centimètre par mètre", "isCorrect": True},
+                        {"text": "50 centimètres par mètre", "isCorrect": False},
+                        {"text": "1 millimètre par kilomètre", "isCorrect": False},
+                        {"text": "90 degrés de pente", "isCorrect": False}
                     ],
-                    "correction": "Les **Armatures** doivent être ligaturées (attachées) ensemble selon les plans de ferraillage."
+                    "correction": "Pour assurer un bon écoulement des matières sans stagnation (bouchons) ni érosion, une pente comprise entre 1 % (1 cm/m) et 3 % est recommandée par le DTU 60.11."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est le rôle du **Vibrage** (ou vibration) du béton après son coulage dans le coffrage ?",
+                    "question": "À quoi sert un 'regard' installé sur un réseau de canalisations enterrées ?",
                     "answerOptions": [
-                        {"text": "Accélérer le séchage.", "isCorrect": False},
-                        {"text": "**Éliminer les bulles d'air** (poches d'air) pour assurer une bonne compacité, une homogénéité et une résistance optimale du béton.", "isCorrect": True},
-                        {"text": "Rendre le béton plus souple.", "isCorrect": False},
-                        {"text": "Le nettoyer.", "isCorrect": False}
+                        {"text": "Inspecter le réseau", "isCorrect": True},
+                        {"text": "Augmenter la pression de l'eau", "isCorrect": False},
+                        {"text": "Stocker l'eau de pluie pour l'été", "isCorrect": False},
+                        {"text": "Filtrer les bactéries présentes", "isCorrect": False}
                     ],
-                    "correction": "Le **Vibrage** est effectué avec une aiguille vibrante et est essentiel pour la qualité de l'ouvrage."
+                    "correction": "Le regard de visite permet d'accéder aux canalisations aux endroits stratégiques (changements de direction, jonctions) pour le contrôle, le curage et le débouchage éventuel."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Qu'est-ce que l'opération de **Régalage** du béton de la dalle ?",
+                    "question": "Quel est le rôle principal du film polyane placé sous un dallage sur terre-plein ?",
                     "answerOptions": [
-                        {"text": "Le vibrage.", "isCorrect": False},
-                        {"text": "L'action d'étaler et de mettre à niveau le béton frais entre les guides (ou règles) pour obtenir une surface régulière et plane avant le lissage.", "isCorrect": True},
-                        {"text": "Le décoffrage.", "isCorrect": False},
-                        {"text": "Le ferraillage.", "isCorrect": False}
+                        {"text": "Bloquer les remontées d'humidité", "isCorrect": True},
+                        {"text": "Améliorer l'acoustique de la pièce", "isCorrect": False},
+                        {"text": "Coller le béton au sol naturel", "isCorrect": False},
+                        {"text": "Renforcer la résistance du béton", "isCorrect": False}
                     ],
-                    "correction": "Le **Régalage** est souvent réalisé avec un râteau ou une règle à niveau."
+                    "correction": "Le film polyane (ou pare-vapeur) crée une barrière étanche qui empêche l'humidité naturelle du sol de remonter par capillarité dans la dalle en béton."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Quel est le risque de positionner les armatures **trop près du parement** (surface) du béton ?",
+                    "question": "Quelle est la hauteur maximale autorisée pour un seuil de porte accessible aux personnes handicapées (PMR) ?",
                     "answerOptions": [
-                        {"text": "Le béton sera trop résistant.", "isCorrect": False},
-                        {"text": "**La corrosion de l'acier** : le manque d'enrobage expose l'acier à l'humidité et à l'air, ce qui le fait rouiller et éclater le béton.", "isCorrect": True},
-                        {"text": "Le béton sera trop mou.", "isCorrect": False},
-                        {"text": "L'ouvrage sera trop lourd.", "isCorrect": False}
+                        {"text": "2 centimètres", "isCorrect": True},
+                        {"text": "10 centimètres", "isCorrect": False},
+                        {"text": "15 centimètres", "isCorrect": False},
+                        {"text": "20 centimètres", "isCorrect": False}
                     ],
-                    "correction": "L'**Enrobage** (épaisseur de béton autour de l'acier) est une cote essentielle à respecter (souvent $2 \text{ à } 5 \text{ cm}$)."
+                    "correction": "La réglementation sur l'accessibilité impose que les ressauts (seuils de portes-fenêtres ou d'entrée) ne dépassent pas 2 cm pour permettre le passage d'un fauteuil roulant."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Comment s'appelle la barre d'acier courte, pliée en rectangle ou en cercle, qui **entoure** les barres longitudinales dans un poteau ou une poutre ?",
+                    "question": "Qu'est-ce qu'un pont thermique dans une construction ?",
                     "answerOptions": [
-                        {"text": "Le fil de fer.", "isCorrect": False},
-                        {"text": "L'**Étrier** (ou Cadre).", "isCorrect": True},
-                        {"text": "L'armature principale.", "isCorrect": False},
-                        {"text": "Le treillis soudé.", "isCorrect": False}
+                        {"text": "Une zone de fuite de chaleur", "isCorrect": True},
+                        {"text": "Un système de chauffage par le sol très performant", "isCorrect": False},
+                        {"text": "Une passerelle reliant deux bâtiments", "isCorrect": False},
+                        {"text": "Un isolant ultra efficace", "isCorrect": False}
                     ],
-                    "correction": "L'**Étrier** reprend les efforts tranchants et empêche les barres principales de flamber (se déformer)."
+                    "correction": "Un pont thermique est une discontinuité dans l'isolation (jonction dalle/mur, angles) par laquelle la chaleur s'échappe plus vite que par le reste des parois, créant des points froids."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel type de coffrage est utilisé de manière temporaire pour couler des dalles ou des planchers ?",
+                    "question": "Quel outil manuel utilise-t-on pour réaliser la finition d'un enduit gratté ?",
                     "answerOptions": [
-                        {"text": "Le coffrage perdu.", "isCorrect": False},
-                        {"text": "Le **Coffrage Vertical (ou banche)**.", "isCorrect": False},
-                        {"text": "Le **Coffrage Horizontal (ou table)**, souvent réalisé à l'aide de poutrelles et d'étais.", "isCorrect": True},
-                        {"text": "Le coffrage en $\text{U}$.", "isCorrect": False}
+                        {"text": "Le gratton", "isCorrect": True},
+                        {"text": "La truelle", "isCorrect": False},
+                        {"text": "Le marteau", "isCorrect": False},
+                        {"text": "Le niveau", "isCorrect": False}
                     ],
-                    "correction": "Le **Coffrage Horizontal** (étaiement) est essentiel pour le plancher."
+                    "correction": "Le gratton est une planche garnie de pointes. On l'utilise quand l'enduit a commencé sa prise pour griffer la surface et obtenir l'aspect 'gratté' caractéristique."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Quel est le rôle du **Calage** (ou cale d'enrobage) dans la mise en place des armatures ?",
+                    "question": "Sur quel matériau pose-t-on des bordures de trottoir pour les sceller ?",
                     "answerOptions": [
-                        {"text": "Lier l'acier.", "isCorrect": False},
-                        {"text": "Maintenir l'acier à la **distance correcte du fond de coffrage** (garantir l'enrobage) afin que l'armature soit bien centrée dans le béton.", "isCorrect": True},
-                        {"text": "Couper l'acier.", "isCorrect": False},
-                        {"text": "Vibrer le béton.", "isCorrect": False}
+                        {"text": "Un lit de béton", "isCorrect": True},
+                        {"text": "Du sable fin sec", "isCorrect": False},
+                        {"text": "De la terre végétale", "isCorrect": False},
+                        {"text": "Des copeaux de bois", "isCorrect": False}
                     ],
-                    "correction": "Les **Cales** (souvent en plastique, en mortier ou en béton) assurent l'épaisseur d'enrobage nécessaire."
+                    "correction": "Les bordures doivent être calées au béton (lit de pose + épaulement arrière) pour résister aux chocs et à la poussée des véhicules ou de la chaussée."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Comment appelle-t-on les **tiges métalliques** ou les boulons qui traversent le coffrage et sont serrés pour maintenir deux parois de coffrage face à la pression du béton frais ?",
+                    "question": "Quelle couleur de grillage avertisseur signale une canalisation d'eau potable enterrée ?",
                     "answerOptions": [
-                        {"text": "Les étriers.", "isCorrect": False},
-                        {"text": "Les **Tiges de Serrage (ou Tiges d'Entretoise)**.", "isCorrect": True},
-                        {"text": "Les chaînages.", "isCorrect": False},
-                        {"text": "Les cales.", "isCorrect": False}
+                        {"text": "Bleu", "isCorrect": True},
+                        {"text": "Rouge", "isCorrect": False},
+                        {"text": "Jaune", "isCorrect": False},
+                        {"text": "Vert", "isCorrect": False}
                     ],
-                    "correction": "Les **Tiges de Serrage** empêchent le coffrage de s'ouvrir ou de se déformer lors du coulage."
+                    "correction": "Le code couleur normalisé est impératif : Bleu pour l'eau, Rouge pour l'électricité, Jaune pour le gaz, Vert pour les télécoms."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Qu'est-ce qu'un **Treillis Soudé** ?",
+                    "question": "Que désigne le terme 'barbotine' en maçonnerie ?",
                     "answerOptions": [
-                        {"text": "Un type de mur.", "isCorrect": False},
-                        {"text": "Un ensemble de barres d'acier croisées, **Soudées en Usine** pour former un grillage, utilisé principalement pour armer les dalles et les chapes.", "isCorrect": True},
-                        {"text": "Un échafaudage.", "isCorrect": False},
-                        {"text": "Un coffrage spécial.", "isCorrect": False}
+                        {"text": "Un mélange liquide de ciment et d'eau", "isCorrect": True},
+                        {"text": "Un béton très riche en gros cailloux", "isCorrect": False},
+                        {"text": "Une brique cassée en deux morceaux", "isCorrect": False},
+                        {"text": "Un outil pour lisser les joints", "isCorrect": False}
                     ],
-                    "correction": "Le **Treillis Soudé** est un renfort essentiel pour la résistance et la limitation des fissurations des dalles."
+                    "correction": "La barbotine est un coulis de liant pur (ciment ou chaux) et d'eau. Elle est utilisée pour coller du carrelage en pose scellée ou pour assurer l'accrochage entre deux couches de béton frais."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quel est le temps minimum de séchage avant de décoffrer un poteau ou un mur vertical non sollicité (conditions standard) ?",
+                    "question": "Quel est le but d'un joint de dilatation dans une grande dalle béton ?",
                     "answerOptions": [
-                        {"text": "1 heure.", "isCorrect": False},
-                        {"text": "Environ **24 à 48 heures** (la résistance minimale est atteinte après $24 \text{ heures}$, mais dépend du ciment et de la température).", "isCorrect": True},
-                        {"text": "28 jours.", "isCorrect": False},
-                        {"text": "1 semaine.", "isCorrect": False}
+                        {"text": "Absorber les mouvements", "isCorrect": True},
+                        {"text": "Faire joli au milieu de la pièce", "isCorrect": False},
+                        {"text": "Économiser du béton au coulage", "isCorrect": False},
+                        {"text": "Permettre le passage des câbles", "isCorrect": False}
                     ],
-                    "correction": "Le **Décoffrage** d'ouvrages verticaux peut être rapide ; celui des ouvrages horizontaux (dalles, poutres) est beaucoup plus long (plusieurs semaines)."
+                    "correction": "Les matériaux se dilatent avec la chaleur. Le joint de dilatation sectionne l'ouvrage pour permettre au béton de bouger sans provoquer de fissuration aléatoire ou de soulèvement."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quel est le risque majeur d'un **mauvais étaiement** (soutènement provisoire du coffrage) ?",
+                    "question": "À quoi sert la 'règle à dresser' lors de l'application d'un enduit ?",
                     "answerOptions": [
-                        {"text": "Le coulage sera lent.", "isCorrect": False},
-                        {"text": "**La Rupture du Coffrage** sous la pression du béton frais, entraînant l'effondrement de l'ouvrage et un grave danger pour les ouvriers.", "isCorrect": True},
-                        {"text": "Le béton sera trop sec.", "isCorrect": False},
-                        {"text": "Le béton sera trop lourd.", "isCorrect": False}
+                        {"text": "Aplanir le corps d'enduit", "isCorrect": True},
+                        {"text": "Mesurer la quantité de sable", "isCorrect": False},
+                        {"text": "Nettoyer les outils en fin de journée", "isCorrect": False},
+                        {"text": "Compter les sacs de ciment utilisés", "isCorrect": False}
                     ],
-                    "correction": "L'**Étaiement** est une question de sécurité absolue sur les planchers et poutres."
+                    "correction": "La règle en aluminium (souvent de 2m) permet de 'dresser' le mur, c'est-à-dire de couper les bosses et combler les creux pour obtenir une surface parfaitement plane."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Comment s'appelle l'outil utilisé pour **plier les barres d'armature** aux dimensions souhaitées (manuellement ou électriquement) ?",
+                    "question": "Quelle est la fonction d'un produit de ragréage autolissant ?",
                     "answerOptions": [
-                        {"text": "La cisaille.", "isCorrect": False},
-                        {"text": "La **Cintreuse** (ou Pince à cintrer).", "isCorrect": True},
-                        {"text": "Le marteau.", "isCorrect": False},
-                        {"text": "La tenaille.", "isCorrect": False}
+                        {"text": "Corriger les défauts de planéité d'un sol", "isCorrect": True},
+                        {"text": "Construire un mur en parpaings", "isCorrect": False},
+                        {"text": "Isoler les combles de la maison", "isCorrect": False},
+                        {"text": "Peindre les plafonds en blanc", "isCorrect": False}
                     ],
-                    "correction": "La **Cintreuse** permet de créer des coudes et des crochets (équerres) sur l'acier."
+                    "correction": "Le ragréage est un mortier très fluide que l'on coule sur un sol irrégulier. Il s'étale tout seul par gravité pour créer une surface parfaitement lisse et horizontale avant la pose du revêtement."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Quel est le rôle d'un **Poteau** dans la structure du bâtiment ?",
+                    "question": "Où doit-on placer le drain périphérique par rapport aux fondations ?",
                     "answerOptions": [
-                        {"text": "Soutenir le mur.", "isCorrect": False},
-                        {"text": "Transmettre les charges verticales (du toit, des planchers, des murs) aux fondations (élément vertical porteur).", "isCorrect": True},
-                        {"text": "Créer une ouverture.", "isCorrect": False},
-                        {"text": "Rendre la maison jolie.", "isCorrect": False}
+                        {"text": "Contre la semelle sans descendre plus bas", "isCorrect": True},
+                        {"text": "Au-dessus du niveau du terrain naturel", "isCorrect": False},
+                        {"text": "Juste sous la toiture du bâtiment", "isCorrect": False},
+                        {"text": "Directement dans le béton de la fondation", "isCorrect": False}
                     ],
-                    "correction": "Le **Poteau** et la Poutre forment le système porteur dans les constructions à ossature."
+                    "correction": "Le drain se pose en bas de mur, sur la cunette ou à côté de la semelle, mais jamais plus bas que la base de la fondation pour ne pas déstabiliser l'assise du bâtiment."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quelle est la principale fonction du **béton de propreté** coulé au fond de la fouille (avant les fondations principales) ?",
+                    "question": "Comment appelle-t-on le procédé consistant à compacter le sol avant de couler une dalle ?",
                     "answerOptions": [
-                        {"text": "Assurer la résistance finale.", "isCorrect": False},
-                        {"text": "Créer une **Assise Plane et Propre** (hors terre) pour le traçage et la pose des armatures de la fondation (épaisseur environ $5 \text{ cm}$).", "isCorrect": True},
-                        {"text": "Isoler thermiquement.", "isCorrect": False},
-                        {"text": "Rendre le sol étanche.", "isCorrect": False}
+                        {"text": "Le compactage", "isCorrect": True},
+                        {"text": "Le nivellement", "isCorrect": False},
+                        {"text": "Le surfaçage", "isCorrect": False},
+                        {"text": "Le pilonnage", "isCorrect": False}
                     ],
-                    "correction": "Le **Béton de Propreté** est une couche non structurelle, purement préparatoire."
+                    "correction": "Le compactage (avec une plaque vibrante ou un rouleau) est essentiel pour garantir la stabilité de l'assise et éviter le tassement futur de la dalle."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Comment s'appelle l'opération qui consiste à **lisser la surface** d'une dalle fraîchement coulée (souvent avec une taloche ou une hélice mécanique) ?",
+                    "question": "Quel est le rôle des 'couvre-joints' en façade ?",
                     "answerOptions": [
-                        {"text": "Le vibrage.", "isCorrect": False},
-                        {"text": "Le **Serrage** ou le **Talochage** (pour obtenir la planéité et une bonne cohésion de surface).", "isCorrect": True},
-                        {"text": "Le cure.", "isCorrect": False},
-                        {"text": "Le décoffrage.", "isCorrect": False}
+                        {"text": "Cacher les joints de dilatation", "isCorrect": True},
+                        {"text": "Accélérer la prise de l'enduit", "isCorrect": False},
+                        {"text": "Renforcer la maçonnerie", "isCorrect": False},
+                        {"text": "Servir de guide pour le crépi", "isCorrect": False}
                     ],
-                    "correction": "Le **Serrage** permet d'obtenir une finition de surface dense et durable."
+                    "correction": "Les couvre-joints sont des profilés (métalliques ou PVC) utilisés pour masquer l'espace libre laissé par les joints de dilatation ou de rupture tout en permettant le mouvement de la structure."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel est l'outil utilisé pour **couper les armatures** d'acier au diamètre souhaité ?",
+                    "question": "Qu'est-ce qu'une 'pente à la romaine' sur une terrasse ?",
                     "answerOptions": [
-                        {"text": "La cintreuse.", "isCorrect": False},
-                        {"text": "La **Cisaille à Acier** (ou Cisaille manuelle, ou Tronçonneuse de chantier pour les gros diamètres).", "isCorrect": True},
-                        {"text": "La scie à métaux.", "isCorrect": False},
-                        {"text": "Le marteau.", "isCorrect": False}
+                        {"text": "Une pente douce vers l'extérieur", "isCorrect": True},
+                        {"text": "Une pente très forte vers le centre", "isCorrect": False},
+                        {"text": "Une pente irrégulière et aléatoire", "isCorrect": False},
+                        {"text": "Un sol parfaitement plat", "isCorrect": False}
                     ],
-                    "correction": "La **Cisaille** est l'outil le plus courant et le plus sécurisé pour la coupe de l'acier."
+                    "correction": "La pente à la romaine (ou 'à l'italienne') consiste à donner une légère inclinaison au sol vers l'extérieur pour faciliter l'évacuation de l'eau."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Comment appelle-t-on le procédé qui permet de lier deux armatures d'acier pour qu'elles travaillent ensemble (sans soudure) ?",
+                    "question": "Quelle est la principale fonction du 'mortier de montage' pour les murs ?",
                     "answerOptions": [
-                        {"text": "Le collage.", "isCorrect": False},
-                        {"text": "La **Ligature** (assemblage avec du fil de fer recuit).", "isCorrect": True},
-                        {"text": "Le cintre.", "isCorrect": False},
-                        {"text": "Le calage.", "isCorrect": False}
+                        {"text": "Lier les éléments de maçonnerie et niveler", "isCorrect": True},
+                        {"text": "Faire l'enduit de finition", "isCorrect": False},
+                        {"text": "Isoler phoniquement le mur", "isCorrect": False},
+                        {"text": "Servir d'isolant thermique", "isCorrect": False}
                     ],
-                    "correction": "La **Ligature** maintient les armatures en place dans le coffrage avant le coulage."
+                    "correction": "Le mortier sert à coller les blocs entre eux et à assurer l'horizontalité (le niveau) de chaque rang de maçonnerie."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 5 : SANTÉ, SÉCURITÉ ET RÉGLEMENTATION (Q. 81-100)
+        # THÈME 5 : GESTION, SANTÉ ET ENVIRONNEMENT (Questions 81 à 100)
         # =========================================================================
         5: {
-            "name": "5. Santé, Sécurité et Règlementation (Q. 81-100)",
+            "name": "THÈME 5 : GESTION, SANTÉ ET ENVIRONNEMENT",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel est l'**Équipement de Protection Individuelle (EPI)** indispensable pour protéger la tête du maçon contre les chutes d'objets ou les chocs ?",
+                    "question": "Quel document liste les produits commandés par le magasin ?",
                     "answerOptions": [
-                        {"text": "Les lunettes.", "isCorrect": False},
-                        {"text": "Le **Casque de Chantier** (obligatoire sur la plupart des chantiers).", "isCorrect": True},
-                        {"text": "Le masque.", "isCorrect": False},
-                        {"text": "Les gants.", "isCorrect": False}
+                        {"text": "Le bon de commande", "isCorrect": True},
+                        {"text": "Le bon de livraison", "isCorrect": False},
+                        {"text": "La facture", "isCorrect": False},
+                        {"text": "Le ticket de caisse", "isCorrect": False}
                     ],
-                    "correction": "Le **Casque** est un $\text{EPI}$ de catégorie $3$ (protection contre les risques mortels)."
+                    "correction": "Le bon de commande est le document qui matérialise l'intention d'achat du magasin auprès du fournisseur."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Quel est le risque principal lié à l'utilisation des mortiers et bétons (ciment, chaux) pour la peau ?",
+                    "question": "Comment calcule-t-on la marge commerciale brute (en valeur) ?",
                     "answerOptions": [
-                        {"text": "Le froid.", "isCorrect": False},
-                        {"text": "Les **Brûlures Chimiques** (le ciment est très alcalin, $\text{pH}$ élevé) et les irritations, nécessitant le port de gants et de vêtements couvrants.", "isCorrect": True},
-                        {"text": "L'électricité statique.", "isCorrect": False},
-                        {"text": "Les coupures.", "isCorrect": False}
+                        {"text": "Prix de vente HT - Coût d'achat HT", "isCorrect": True},
+                        {"text": "Prix de vente TTC - Coût d'achat TTC", "isCorrect": False},
+                        {"text": "Coût d'achat + Charges fixes", "isCorrect": False},
+                        {"text": "Chiffre d'affaires / Nombre de clients", "isCorrect": False}
                     ],
-                    "correction": "Le **Ciment** frais est caustique et peut provoquer de graves brûlures."
+                    "correction": "La marge brute est le profit généré avant la déduction des charges de structure."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Quel $\text{EPI}$ est obligatoire lors de la coupe de matériaux (briques, parpaings) à la tronçonneuse ou à la meuleuse ?",
+                    "question": "Que signifie le sigle LIFO dans la gestion des stocks ?",
                     "answerOptions": [
-                        {"text": "Le casque anti-bruit.", "isCorrect": False},
-                        {"text": "Les **Lunettes de Protection** (ou Écran facial) pour protéger des projections de poussières et de fragments.", "isCorrect": True},
-                        {"text": "Les chaussures de sécurité.", "isCorrect": False},
-                        {"text": "Le gilet jaune.", "isCorrect": False}
+                        {"text": "Last In, First Out (Dernier entré, premier sorti)", "isCorrect": True},
+                        {"text": "Le produit le plus cher sort en premier", "isCorrect": False},
+                        {"text": "La méthode de sortie des produits périssables", "isCorrect": False},
+                        {"text": "Le premier entré sort en premier (FIFO)", "isCorrect": False}
                     ],
-                    "correction": "La **Protection Oculaire** est vitale contre les risques de projection."
+                    "correction": "Le LIFO est une méthode de valorisation des stocks : le coût du dernier article acheté est imputé à la première vente."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Pourquoi doit-on effectuer le **signalement** des réseaux enterrés (eau, gaz, électricité) avant de creuser une fouille ?",
+                    "question": "Quel taux de TVA s'applique aux travaux de rénovation de logements anciens (moins de 2 ans) ?",
                     "answerOptions": [
-                        {"text": "Pour respecter les plans.", "isCorrect": False},
-                        {"text": "**Pour prévenir les accidents graves** (électrocution, explosion) et les dommages aux infrastructures (application de la **DICT** : Déclaration d'Intention de Commencement de Travaux).", "isCorrect": True},
-                        {"text": "Pour aller plus vite.", "isCorrect": False},
-                        {"text": "Pour avoir une belle fondation.", "isCorrect": False}
+                        {"text": "10 %", "isCorrect": True},
+                        {"text": "20 %", "isCorrect": False},
+                        {"text": "5,5 %", "isCorrect": False},
+                        {"text": "2,1 %", "isCorrect": False}
                     ],
-                    "correction": "La **DICT** et le marquage au sol des réseaux sont une obligation légale de sécurité."
+                    "correction": "Le taux intermédiaire de 10% s'applique aux travaux d'amélioration, de transformation, d'aménagement et d'entretien."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Quel est le risque majeur lié à l'utilisation d'un **échafaudage** mal monté ou non sécurisé ?",
+                    "question": "Quelle maladie professionnelle est liée au bruit excessif des machines (bétonnière, disqueuse) ?",
                     "answerOptions": [
-                        {"text": "Un travail lent.", "isCorrect": False},
-                        {"text": "La **Chute de Hauteur** du maçon ou l'effondrement de la structure (nécessite une formation $\text{R}408$ ou $\text{R}457$).", "isCorrect": True},
-                        {"text": "Une mauvaise qualité de l'enduit.", "isCorrect": False},
-                        {"text": "Un mur pas droit.", "isCorrect": False}
+                        {"text": "La surdité", "isCorrect": True},
+                        {"text": "L'acouphène", "isCorrect": False},
+                        {"text": "La cataracte", "isCorrect": False},
+                        {"text": "L'hygroma", "isCorrect": False}
                     ],
-                    "correction": "Le travail en hauteur est la première cause d'accidents mortels dans le $\text{BTP}$. L'échafaudage doit être monté et utilisé selon les règles de l'art."
+                    "correction": "Les bruits supérieurs à 85 dB peuvent causer des dommages irréversibles à l'oreille interne (surdité, acouphènes)."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Quel $\text{EPI}$ est nécessaire lors du malaxage de mortier ou de béton dans un local fermé ou lors de travaux générant beaucoup de poussière (coupe) ?",
+                    "question": "Que désigne la 'démarque inconnue' ?",
                     "answerOptions": [
-                        {"text": "Les gants.", "isCorrect": False},
-                        {"text": "Le **Masque de Protection Respiratoire** (P$2$ ou P$3$) pour les poussières fines de silice et de ciment.", "isCorrect": True},
-                        {"text": "Le casque antibruit.", "isCorrect": False},
-                        {"text": "Le gilet réfléchissant.", "isCorrect": False}
+                        {"text": "Les pertes de stock (vol, casse, erreurs) non justifiées", "isCorrect": True},
+                        {"text": "Les invendus du magasin", "isCorrect": False},
+                        {"text": "La casse enregistrée après contrôle", "isCorrect": False},
+                        {"text": "Le manque de personnel", "isCorrect": False}
                     ],
-                    "correction": "La **Protection Respiratoire** prévient les maladies professionnelles (silicose, asthme)."
+                    "correction": "La démarque inconnue est l'écart entre le stock théorique et le stock réel, souvent causé par le vol ou des erreurs non documentées."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Comment s'appelle le document qui liste tous les risques du chantier et les mesures de prévention associées (obligatoire pour les gros chantiers) ?",
+                    "question": "Quel document doit être rédigé avant le démarrage de tout chantier par l'entreprise ?",
                     "answerOptions": [
-                        {"text": "Le permis de construire.", "isCorrect": False},
-                        {"text": "Le **PPSPS (Plan Particulier de Sécurité et de Protection de la Santé)**.", "isCorrect": True},
-                        {"text": "Le plan de masse.", "isCorrect": False},
-                        {"text": "Le $\text{DTU}$.", "isCorrect": False}
+                        {"text": "Le Plan de Prévention (si intervention sur site tiers)", "isCorrect": True},
+                        {"text": "Le Bon de Commande", "isCorrect": False},
+                        {"text": "L'Attestation d'Assurance", "isCorrect": False},
+                        {"text": "Le CCTP", "isCorrect": False}
                     ],
-                    "correction": "Le **PPSPS** organise la sécurité collective sur les chantiers."
+                    "correction": "Le Plan de Prévention (ou PPSPS sur les gros chantiers) définit les règles de sécurité spécifiques à l'environnement de travail, essentiel pour les travaux en co-activité."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Quelle est la règle de sécurité à respecter impérativement avant de commencer la démolition d'un mur ?",
+                    "question": "Comment appelle-t-on l'usure ou la dépréciation progressive du matériel (bétonnière, camion) ?",
                     "answerOptions": [
-                        {"text": "Utiliser un gros marteau.", "isCorrect": False},
-                        {"text": "**Vérifier l'absence de réseaux** (électricité, gaz, eau) et **s'assurer que le mur n'est pas porteur** (ou qu'il est correctement étayé).", "isCorrect": True},
-                        {"text": "Mettre de l'eau.", "isCorrect": False},
-                        {"text": "Utiliser une scie à bois.", "isCorrect": False}
+                        {"text": "L'amortissement", "isCorrect": True},
+                        {"text": "La fiscalité", "isCorrect": False},
+                        {"text": "Le bénéfice", "isCorrect": False},
+                        {"text": "La marge", "isCorrect": False}
                     ],
-                    "correction": "La **Sécurité Structurelle** et le contrôle des réseaux sont des étapes non négociables en démolition."
+                    "correction": "L'amortissement est la constatation comptable de la perte de valeur d'un bien due à l'usage et au temps."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Quel est le risque lié à l'utilisation d'outils vibrants (marteau-piqueur, burineur) sur une longue période ?",
+                    "question": "Quel est l'objectif principal du tri des déchets sur un chantier de maçonnerie ?",
                     "answerOptions": [
-                        {"text": "Le bruit.", "isCorrect": False},
-                        {"text": "Les **Troubles Musculo-Squelettiques (TMS)** et notamment le syndrome de Raynaud (doigts blancs) causé par la vibration.", "isCorrect": True},
-                        {"text": "Le feu.", "isCorrect": False},
-                        {"text": "Le glissement.", "isCorrect": False}
+                        {"text": "Le recyclage des matériaux inertes", "isCorrect": True},
+                        {"text": "La décoration du chantier", "isCorrect": False},
+                        {"text": "La lutte contre le bruit", "isCorrect": False},
+                        {"text": "Le gain de temps au déchargement", "isCorrect": False}
                     ],
-                    "correction": "L'utilisation d'outils vibrants est limitée dans le temps et nécessite des pauses et des gants anti-vibration."
+                    "correction": "Les déchets inertes (gravats, béton, tuiles) et les déchets non dangereux (bois, plastiques) doivent être triés pour leur valorisation et leur recyclage."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Que signifie l'acronyme **DTU** dans le $\text{BTP}$ ?",
+                    "question": "Quel taux de TVA s'applique aux travaux de construction neuve ?",
                     "answerOptions": [
-                        {"text": "Déclaration de Travaux Urgents.", "isCorrect": False},
-                        {"text": "**Document Technique Unifié** : ce sont les normes françaises de construction qui fixent les règles de l'art pour les travaux (ex : $\text{DTU}$ $20.1$ pour la maçonnerie).", "isCorrect": True},
-                        {"text": "Droit de Travail Unifié.", "isCorrect": False},
-                        {"text": "Développement Technique Urbain.", "isCorrect": False}
+                        {"text": "20 %", "isCorrect": True},
+                        {"text": "10 %", "isCorrect": False},
+                        {"text": "5,5 %", "isCorrect": False},
+                        {"text": "0 %", "isCorrect": False}
                     ],
-                    "correction": "Le respect des **$\text{DTU}$** est la garantie de la qualité et de la durabilité des ouvrages (et des assurances)."
+                    "correction": "Les travaux de construction neuve sont soumis au taux normal de 20 %."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quelle est la bonne technique pour **soulever une charge lourde** (sac de ciment, parpaing) ?",
+                    "question": "Le port du casque avec jugulaire est obligatoire pour prévenir quel risque ?",
                     "answerOptions": [
-                        {"text": "Se pencher en gardant les jambes droites.", "isCorrect": False},
-                        {"text": "**Fléchir les genoux, garder le dos droit et soulever la charge avec la force des jambes** (méthode de la $\text{PRAP}$ : Prévention des Risques liés à l'Activité Physique).", "isCorrect": True},
-                        {"text": "Tirer sur les bras.", "isCorrect": False},
-                        {"text": "Utiliser une seule main.", "isCorrect": False}
+                        {"text": "La chute d'objets ou le heurt de la tête", "isCorrect": True},
+                        {"text": "Le bruit excessif", "isCorrect": False},
+                        {"text": "Les brûlures chimiques", "isCorrect": False},
+                        {"text": "Les coupures", "isCorrect": False}
                     ],
-                    "correction": "La **Bonne Posture** prévient les lombalgies et les $\text{TMS}$."
+                    "correction": "Le casque protège la tête contre les chutes d'objets (dynamique) et les chocs directs. La jugulaire évite qu'il ne tombe lors des mouvements ou des chutes."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est le rôle du **Gilet de Haute Visibilité** (Jaune, Orange) sur un chantier ?",
+                    "question": "Quel est le risque lié au stockage de ciment périmé (éventé) sur chantier ?",
                     "answerOptions": [
-                        {"text": "Protéger du froid.", "isCorrect": False},
-                        {"text": "**Être vu par les engins de chantier** (grue, pelleteuse) ou sur les chantiers en bord de voirie (obligation légale pour la sécurité collective).", "isCorrect": True},
-                        {"text": "Protéger de la pluie.", "isCorrect": False},
-                        {"text": "Protéger des chocs.", "isCorrect": False}
+                        {"text": "Baisse drastique de la résistance mécanique du béton", "isCorrect": True},
+                        {"text": "Augmentation de la vitesse de prise du béton", "isCorrect": False},
+                        {"text": "Changement de couleur du béton au rose", "isCorrect": False},
+                        {"text": "Contamination du sable par les moisissures", "isCorrect": False}
                     ],
-                    "correction": "Le **Gilet** est essentiel pour la prévention des collisions avec les machines."
+                    "correction": "Le ciment éventé (ayant pris l'humidité de l'air) a déjà réagi et n'offre plus la résistance attendue une fois gâché avec l'eau de gâchage."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Comment appelle-t-on le risque de **chute d'un ouvrier** dans une fouille ou une tranchée non protégée ?",
+                    "question": "Quelle est la pénalité principale pour une entreprise qui ne respecte pas les délais contractuels ?",
                     "answerOptions": [
-                        {"text": "Le risque électrique.", "isCorrect": False},
-                        {"text": "Le **Risque de Chute de Plain-Pied ou de Hauteur**.", "isCorrect": True},
-                        {"text": "Le risque chimique.", "isCorrect": False},
-                        {"text": "Le risque incendie.", "isCorrect": False}
+                        {"text": "Des pénalités de retard", "isCorrect": True},
+                        {"text": "L'arrêt immédiat du chantier", "isCorrect": False},
+                        {"text": "Une amende fixe de 1000 euros", "isCorrect": False},
+                        {"text": "Le licenciement du chef de chantier", "isCorrect": False}
                     ],
-                    "correction": "Les **Tranchées** doivent être sécurisées par des garde-corps ou des blindages."
+                    "correction": "Les pénalités de retard (souvent un pourcentage du marché par jour) sont prévues dans les CCTP."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Quelle est la distance de sécurité minimale à respecter lors de la mise en place d'un échafaudage à proximité d'une **ligne électrique aérienne** ?",
+                    "question": "Quel est le risque lié au stockage de ciment périmé (éventé) sur chantier ?",
                     "answerOptions": [
-                        {"text": "50 $\text{cm}$.", "isCorrect": False},
-                        {"text": "Elle dépend du voltage, mais est généralement d'au moins **$3 \text{ mètres}$** pour le $HTA$ (Haute Tension $\text{A}$) et **$5 \text{ mètres}$** pour le $HTB$ (Haute Tension $\text{B}$).", "isCorrect": True},
-                        {"text": "10 $\text{cm}$.", "isCorrect": False},
-                        {"text": "1 $\text{ mètre}$.", "isCorrect": False}
+                        {"text": "Baisse drastique de la résistance mécanique du béton", "isCorrect": True},
+                        {"text": "Augmentation de la vitesse de prise du béton", "isCorrect": False},
+                        {"text": "Changement de couleur du béton au rose", "isCorrect": False},
+                        {"text": "Contamination du sable par les moisissures", "isCorrect": False}
                     ],
-                    "correction": "Le risque électrique est mortel ; la **Distance de Sécurité** est une mesure de prévention absolue."
+                    "correction": "Le ciment éventé (ayant pris l'humidité de l'air) a déjà réagi et n'offre plus la résistance attendue une fois gâché avec l'eau de gâchage."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quel est le $\text{EPI}$ à porter lors de la **manutention** de parpaings ou de fers à béton ?",
+                    "question": "Quel est le risque chimique principal lié à la manipulation de mortier frais ?",
                     "answerOptions": [
-                        {"text": "Le masque.", "isCorrect": False},
-                        {"text": "Les **Gants de Protection** (contre les coupures, les abrasions, les projections).", "isCorrect": True},
-                        {"text": "Les bouchons d'oreille.", "isCorrect": False},
-                        {"text": "Les bottes en caoutchouc.", "isCorrect": False}
+                        {"text": "Les brûlures basiques (alcalines) de la peau", "isCorrect": True},
+                        {"text": "L'hypothermie des mains", "isCorrect": False},
+                        {"text": "La coupe par les grains de sable", "isCorrect": False},
+                        {"text": "L'explosion de la gâchée", "isCorrect": False}
                     ],
-                    "correction": "Les **Gants** protègent des risques mécaniques et chimiques."
+                    "correction": "Le ciment est très alcalin (pH élevé). Le contact prolongé sans gants provoque des brûlures par caustification."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Comment appelle-t-on l'examen médical qui a pour but de vérifier l'aptitude d'un ouvrier à son poste de travail (obligatoire après l'embauche) ?",
+                    "question": "Quelle est la durée de validité de l'attestation d'aptitude médicale pour un salarié exposé à des risques (ex: travail en hauteur) ?",
                     "answerOptions": [
-                        {"text": "Le contrôle de l'assurance.", "isCorrect": False},
-                        {"text": "La **Visite Médicale d'Information et de Prévention (VIP)** ou d'aptitude professionnelle.", "isCorrect": True},
-                        {"text": "L'examen de passage.", "isCorrect": False},
-                        {"text": "Le test de connaissance.", "isCorrect": False}
+                        {"text": "5 ans (sauf avis contraire du médecin)", "isCorrect": True},
+                        {"text": "1 an", "isCorrect": False},
+                        {"text": "3 mois", "isCorrect": False},
+                        {"text": "10 ans", "isCorrect": False}
                     ],
-                    "correction": "La **Médecine du Travail** assure le suivi de la santé des ouvriers, notamment pour les risques liés au bruit, aux vibrations et aux produits chimiques."
+                    "correction": "La visite médicale de renouvellement est de 5 ans, mais elle peut être raccourcie selon les risques ou l'âge du travailleur."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quel est le risque à ne pas nettoyer la bétonnière immédiatement après utilisation ?",
+                    "question": "Le risque de 'choc thermique' lors du coulage du béton neuf est lié à :",
                     "answerOptions": [
-                        {"text": "Un court-circuit.", "isCorrect": False},
-                        {"text": "Le **Durcissement du Béton** à l'intérieur de la cuve, qui rend la machine inutilisable et nécessite un nettoyage long et dangereux (burinage).", "isCorrect": True},
-                        {"text": "Une fuite d'huile.", "isCorrect": False},
-                        {"text": "Le vol.", "isCorrect": False}
+                        {"text": "Une différence de température trop forte entre la reprise et le nouveau béton", "isCorrect": True},
+                        {"text": "La foudre qui tombe sur le chantier", "isCorrect": False},
+                        {"text": "L'utilisation de trop d'eau froide", "isCorrect": False},
+                        {"text": "Le chauffage excessif du coffrage", "isCorrect": False}
                     ],
-                    "correction": "L'**Entretien** du matériel est une compétence essentielle du maçon."
+                    "correction": "Un choc thermique peut provoquer des microfissures. On limite les écarts de température entre deux coulages (reprise de bétonnage) à moins de 10°C."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Que doit-on faire de l'eau utilisée pour rincer les outils ou la bétonnière après le gâchage (eau de lavage du béton) ?",
+                    "question": "Quel est le risque immédiat lié au coulage de béton sur une zone non délimitée ou sans protection latérale ?",
                     "answerOptions": [
-                        {"text": "La jeter dans le jardin.", "isCorrect": False},
-                        {"text": "**La récupérer (décantation)** ou la faire décaper dans une aire spécifique pour éviter la pollution des sols et des eaux pluviales (eau très alcaline).", "isCorrect": True},
-                        {"text": "La boire.", "isCorrect": False},
-                        {"text": "La laisser s'évaporer.", "isCorrect": False}
+                        {"text": "La projection de ciment dans les yeux des passants", "isCorrect": True},
+                        {"text": "Le tassement ultérieur du béton", "isCorrect": False},
+                        {"text": "La ségrégation du mélange", "isCorrect": False},
+                        {"text": "L'écroulement de la structure", "isCorrect": False}
                     ],
-                    "correction": "Le **Respect de l'Environnement** est un enjeu majeur du $\text{BTP}$ (gestion des déchets et des eaux usées)."
+                    "correction": "La projection de ciment (produit caustique) dans les yeux d'un passant (risque chimique) dans un chantier ouvert est le danger le plus fréquent."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Comment appelle-t-on la **barrière physique** temporaire installée en périphérie des dalles ou toitures-terrasses pour prévenir les chutes de hauteur ?",
+                    "question": "Quel est le délai de garantie légale du parfait achèvement après la réception des travaux ?",
                     "answerOptions": [
-                        {"text": "Le filet de sécurité.", "isCorrect": False},
-                        {"text": "Le **Garde-Corps Périphérique Provisoire (GCPP)**.", "isCorrect": True},
-                        {"text": "La main courante.", "isCorrect": False},
-                        {"text": "Le $\text{PPSPS}$.", "isCorrect": False}
+                        {"text": "1 an", "isCorrect": True},
+                        {"text": "2 ans", "isCorrect": False},
+                        {"text": "10 ans", "isCorrect": False},
+                        {"text": "30 jours", "isCorrect": False}
                     ],
-                    "correction": "Le **Garde-Corps** est la protection collective la plus efficace contre les chutes de bord de dalle."
+                    "correction": "Le parfait achèvement couvre les défauts signalés à la réception ou durant l'année qui suit."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quel est le rôle du **balisage** ou du ruban de signalisation sur le chantier ?",
+                    "question": "Les déchets de bois et les gravats inertes doivent être jetés dans :",
                     "answerOptions": [
-                        {"text": "Cacher les travaux.", "isCorrect": False},
-                        {"text": "**Délimiter les zones de danger** (fouilles, matériaux, zone de grutage) et interdire l'accès aux personnes non autorisées (public, ouvriers non concernés).", "isCorrect": True},
-                        {"text": "Décorer.", "isCorrect": False},
-                        {"text": "Mesurer les distances.", "isCorrect": False}
+                        {"text": "Des bennes séparées", "isCorrect": True},
+                        {"text": "La même benne (tous les déchets ensemble)", "isCorrect": False},
+                        {"text": "Un trou au fond du jardin", "isCorrect": False},
+                        {"text": "La poubelle de bureau", "isCorrect": False}
                     ],
-                    "correction": "Le **Balisage** est la première étape de la sécurisation des zones dangereuses."
-                },
+                    "correction": "Le tri sélectif est obligatoire. Le bois est un Déchet Non Dangereux (DND) valorisable, les gravats sont des Déchets Inertes. Ils ne doivent pas être mélangés."
+                }
             ]
         }
     }

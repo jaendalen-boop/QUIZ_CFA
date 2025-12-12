@@ -34,6 +34,7 @@ from quizzes.quiz_cap_sanitaire_100 import quiz_data as quiz_sanitaire_data
 from quizzes.quiz_cap_serrurier_metallier_100 import quiz_data as quiz_serrurier_data
 from quizzes.quiz_cap_thermique_100 import quiz_data as quiz_thermique_data
 from quizzes.quiz_cap_carreleur_100 import quiz_data as quiz_carreleur_data
+from quizzes.quiz_cap_chcr_100 import quiz_data as quiz_chcr_data
 
 QUIZZES = {
     "cap_boucher_100": {
@@ -176,6 +177,13 @@ QUIZZES = {
     "data": quiz_carreleur_data,
     "icon": "🧱",
     "color": "#2ecc71",
+    },
+"quiz_cap_chcr_100": {
+    "title": "CAP Commercialisation et Services en Hôtel-Café-Restaurant",
+    "description": "Révisions complètes CAP Commercialisation et Services en Hôtel-Café-Restaurant.",
+    "data": quiz_chcr_data,
+    "icon": "👨‍🍳",
+    "color": "#e67e22",
     },
 }
 
