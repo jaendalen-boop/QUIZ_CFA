@@ -1,1131 +1,1143 @@
-# Fichier : quiz_cap_serrurier_metallier_100_CORRIGE.py
-# Base de données Python pour un quiz sur le CAP Serrurier-Métallier (100 questions)
-
 quiz_data = {
-    "title": "Quiz CAP Serrurier-Métallier : Révisions Complètes (100 Questions)",
+    "title": "Quiz CAP Métallier (100 Questions)",
     "themes": {
+        # =========================================================================
+        # THÈME 1 : LECTURE DE PLANS, DESSIN TECHNIQUE ET SYMBOLES (Questions 1 à 20)
+        # =========================================================================
         1: {
-            "name": "1. Lecture de Plan et Traçage (Q. 1-20)",
+            "name": "THÈME 1 : LECTURE DE PLANS, DESSIN TECHNIQUE ET SYMBOLES",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quelle est l'unité de mesure standard utilisée pour les cotations des plans en métallerie ?",
+                    "question": "Quel type de trait est utilisé pour représenter les arêtes et contours vus d'une pièce ?",
                     "answerOptions": [
-                        {"text": "Le centimètre (cm).", "isCorrect": False, "key": "A"},
-                        {"text": "Le millimètre (mm).", "isCorrect": True, "key": "B"},
-                        {"text": "Le mètre (m).", "isCorrect": False, "key": "C"},
-                        {"text": "Le pouce (inch).", "isCorrect": False, "key": "D"}
+                        {"text": "Continu fort", "isCorrect": True},
+                        {"text": "Interrompu court fin", "isCorrect": False},
+                        {"text": "Mixte fin à deux tirets", "isCorrect": False},
+                        {"text": "Continu fin à main levée", "isCorrect": False}
                     ],
-                    "correction": "Le millimètre est l'unité de précision pour les fabrications métalliques."
+                    "correction": "Le trait continu fort (épaisseur 0,5 ou 0,7 mm) est normalisé pour représenter tout ce qui est visible sur la pièce (contours et arêtes)."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Sur un plan, que représente une ligne de trait fin, interrompue par des traits longs et courts (trait mixte) ?",
+                    "question": "Que signifie l'indication 'Échelle 1:10' inscrite dans le cartouche d'un plan ?",
                     "answerOptions": [
-                        {"text": "Une arête vue.", "isCorrect": False, "key": "A"},
-                        {"text": "Une arête cachée.", "isCorrect": False, "key": "B"},
-                        {"text": "L'Axe de Symétrie (ou axe d'un trou, d'un profilé).", "isCorrect": True, "key": "C"},
-                        {"text": "Une ligne de coupe.", "isCorrect": False, "key": "D"}
+                        {"text": "Réduction", "isCorrect": True},
+                        {"text": "Agrandissement", "isCorrect": False},
+                        {"text": "Vraie grandeur", "isCorrect": False},
+                        {"text": "Échelle naturelle", "isCorrect": False}
                     ],
-                    "correction": "L'Axe de Symétrie est crucial pour le positionnement des perçages."
+                    "correction": "L'échelle 1:10 indique que 1 cm sur le dessin représente 10 cm dans la réalité. C'est donc une réduction car le dessin est plus petit que l'objet réel."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quel est le rôle du Plan d'ensemble dans la réalisation d'un escalier métallique ?",
+                    "question": "Dans la méthode de projection européenne, où se place la vue de gauche par rapport à la vue de face ?",
                     "answerOptions": [
-                        {"text": "Donner les détails de soudure.", "isCorrect": False, "key": "A"},
-                        {"text": "Montrer la totalité de l'ouvrage (l'escalier) avec ses dimensions hors-tout et son implantation.", "isCorrect": True, "key": "B"},
-                        {"text": "Lister les outils nécessaires.", "isCorrect": False, "key": "C"},
-                        {"text": "Indiquer le type d'acier.", "isCorrect": False, "key": "D"}
+                        {"text": "À droite", "isCorrect": True},
+                        {"text": "À gauche", "isCorrect": False},
+                        {"text": "Au-dessus", "isCorrect": False},
+                        {"text": "En dessous", "isCorrect": False}
                     ],
-                    "correction": "Le Plan d'ensemble donne une vue globale de l'ouvrage."
+                    "correction": "En projection européenne, la vue est placée à l'opposé de la direction d'observation. Si on regarde la pièce depuis la gauche, on dessine ce qu'on voit à droite de la vue de face."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Lors du traçage d'un angle droit sur une tôle, quel outil doit être utilisé en complément de la règle pour vérifier la perpendicularité ?",
+                    "question": "Sur un symbole de soudure, que désigne la lettre 'a' placée devant la dimension ?",
                     "answerOptions": [
-                        {"text": "Le pied à coulisse.", "isCorrect": False, "key": "A"},
-                        {"text": "Le compas.", "isCorrect": False, "key": "B"},
-                        {"text": "L'Équerre (ou Équerre à combinaison).", "isCorrect": True, "key": "C"},
-                        {"text": "Le niveau à bulle.", "isCorrect": False, "key": "D"}
+                        {"text": "Gorge", "isCorrect": True},
+                        {"text": "Longueur", "isCorrect": False},
+                        {"text": "Pénétration", "isCorrect": False},
+                        {"text": "Espacement", "isCorrect": False}
                     ],
-                    "correction": "L'Équerre assure la vérification de l'angle à 90°."
+                    "correction": "La lettre 'a' désigne l'épaisseur de gorge nominale d'une soudure d'angle, qui est la hauteur du plus grand triangle isocèle inscriptible dans la section."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Comment appelle-t-on l'opération qui consiste à reporter les dimensions d'un plan sur la matière première (tôle ou profilé) ?",
+                    "question": "Quelle est la différence fondamentale entre une coupe et une section ?",
                     "answerOptions": [
-                        {"text": "Le cisaillage.", "isCorrect": False, "key": "A"},
-                        {"text": "Le soudage.", "isCorrect": False, "key": "B"},
-                        {"text": "Le Traçage.", "isCorrect": True, "key": "C"},
-                        {"text": "Le pliage.", "isCorrect": False, "key": "D"}
+                        {"text": "La coupe montre l'arrière-plan", "isCorrect": True},
+                        {"text": "La section représente toujours la totalité de la pièce coupée avec tous les détails cachés", "isCorrect": False},
+                        {"text": "La section dessine impérativement les contours situés en arrière du plan de coupe", "isCorrect": False},
+                        {"text": "La section projette l'intégralité du volume de la pièce situé derrière le plan de sécante", "isCorrect": False}
                     ],
-                    "correction": "Le Traçage est la première étape de fabrication."
+                    "correction": "Une coupe montre la surface coupée + ce qu'on voit en arrière-plan. Une section ne représente que la partie de la matière située dans le plan de coupe."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Quelle est la fonction principale d'un gabarit dans le traçage et la fabrication ?",
+                    "question": "Quel symbole graphique représente une soudure effectuée 'sur tout le pourtour' de la pièce ?",
                     "answerOptions": [
-                        {"text": "Sonder le métal.", "isCorrect": False, "key": "A"},
-                        {"text": "Reproduire avec précision et rapidité une même forme ou une pièce complexe en série.", "isCorrect": True, "key": "B"},
-                        {"text": "Mesurer l'épaisseur.", "isCorrect": False, "key": "C"},
-                        {"text": "Vérifier la température.", "isCorrect": False, "key": "D"}
+                        {"text": "Cercle", "isCorrect": True},
+                        {"text": "Drapeau", "isCorrect": False},
+                        {"text": "Triangle", "isCorrect": False},
+                        {"text": "Carré", "isCorrect": False}
                     ],
-                    "correction": "Le Gabarit assure l'uniformité des pièces et le gain de temps."
+                    "correction": "Un petit cercle situé à l'intersection de la ligne de référence et de la ligne de flèche indique que la soudure doit être réalisée sur tout le périmètre."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Comment matérialise-t-on l'emplacement exact d'un perçage sur un profilé avant de forer ?",
+                    "question": "Les hachures sur un dessin technique servent principalement à :",
                     "answerOptions": [
-                        {"text": "Avec un marqueur.", "isCorrect": False, "key": "A"},
-                        {"text": "Avec la Pointe à Tracer et le Poinçon (ou Poinçonnage) pour créer une marque qui guide le foret.", "isCorrect": True, "key": "B"},
-                        {"text": "Avec une craie.", "isCorrect": False, "key": "C"},
-                        {"text": "Avec une règle.", "isCorrect": False, "key": "D"}
+                        {"text": "Identifier la matière coupée", "isCorrect": True},
+                        {"text": "Indiquer les zones de soudure à effectuer", "isCorrect": False},
+                        {"text": "Décorer le dessin pour le rendre lisible", "isCorrect": False},
+                        {"text": "Représenter les surfaces peintes ou vernies", "isCorrect": False}
                     ],
-                    "correction": "Le Poinçonnage évite que le foret ne dévie au démarrage."
+                    "correction": "Les hachures matérialisent les zones où la matière a été 'sciée' par le plan de coupe imaginaire. Leur motif peut indiquer le type de matériau (ex: traits parallèles pour les métaux)."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Que représente la cote de référence Zéro (0) sur un plan de niveau ou de façade ?",
+                    "question": "Quel format de papier correspond à une feuille A4 pliée en deux ?",
                     "answerOptions": [
-                        {"text": "Le niveau du sol extérieur.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Niveau de Référence (NR), souvent le niveau du sol fini à partir duquel toutes les cotes altimétriques sont mesurées.", "isCorrect": True, "key": "B"},
-                        {"text": "La hauteur totale de l'ouvrage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le point de soudure.", "isCorrect": False, "key": "D"}
+                        {"text": "A5", "isCorrect": True},
+                        {"text": "A3", "isCorrect": False},
+                        {"text": "A2", "isCorrect": False},
+                        {"text": "A1", "isCorrect": False}
                     ],
-                    "correction": "Le NR est le point de départ de toutes les hauteurs pour la pose."
+                    "correction": "Un A4 (210x297) plié en deux donne un A5 (148x210)."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Quel instrument permet de mesurer des dimensions avec une précision allant jusqu'au dixième ou au centième de millimètre ?",
+                    "question": "Sur une ligne de cote, quel élément se termine par des flèches ?",
                     "answerOptions": [
-                        {"text": "Le mètre ruban.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Pied à Coulisse (ou le Micromètre).", "isCorrect": True, "key": "B"},
-                        {"text": "L'équerre.", "isCorrect": False, "key": "C"},
-                        {"text": "Le rapporteur d'angle.", "isCorrect": False, "key": "D"}
+                        {"text": "Ligne de cote", "isCorrect": True},
+                        {"text": "Ligne d'attache", "isCorrect": False},
+                        {"text": "Ligne de repère", "isCorrect": False},
+                        {"text": "Ligne d'extension", "isCorrect": False}
                     ],
-                    "correction": "Le Pied à Coulisse est essentiel pour vérifier les dimensions critiques."
+                    "correction": "La ligne de cote est la ligne (droite ou courbe) parallèle à la dimension à mesurer, qui porte les flèches à ses extrémités."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Dans le traçage sur tôle, quel outil est utilisé pour tracer des arcs de cercle ou reporter des rayons ?",
+                    "question": "Que représente un trait mixte fin (trait long, point, trait long) ?",
                     "answerOptions": [
-                        {"text": "Le rapporteur.", "isCorrect": False, "key": "A"},
-                        {"text": "L'équerre.", "isCorrect": False, "key": "B"},
-                        {"text": "Le Compas à pointes sèches.", "isCorrect": True, "key": "C"},
-                        {"text": "Le cordeau.", "isCorrect": False, "key": "D"}
+                        {"text": "Axes de symétrie", "isCorrect": True},
+                        {"text": "Arêtes cachées", "isCorrect": False},
+                        {"text": "Contours vus", "isCorrect": False},
+                        {"text": "Limites de rupture", "isCorrect": False}
                     ],
-                    "correction": "Le Compas permet le traçage de formes courbes."
+                    "correction": "Le trait mixte fin est utilisé pour matérialiser les axes de symétrie, les plans de symétrie et les trajectoires."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Que signifie la mention '$\pm 1 \text{ mm}$' sur une cote ?",
+                    "question": "Dans un assemblage boulonné représenté en coupe, les vis et les écrous pleins sont-ils hachurés ?",
                     "answerOptions": [
-                        {"text": "La pièce est trop longue de $1 \text{ mm}$.", "isCorrect": False, "key": "A"},
-                        {"text": "La Tolérance : la dimension réelle doit être comprise entre la cote nominale moins $1 \text{ mm}$ et plus $1 \text{ mm}$.", "isCorrect": True, "key": "B"},
-                        {"text": "La cote est incertaine.", "isCorrect": False, "key": "C"},
-                        {"text": "La pièce sera peinte.", "isCorrect": False, "key": "D"}
+                        {"text": "Jamais", "isCorrect": True},
+                        {"text": "Toujours", "isCorrect": False},
+                        {"text": "Parfois", "isCorrect": False},
+                        {"text": "Souvent", "isCorrect": False}
                     ],
-                    "correction": "La Tolérance est la plage de variation acceptable."
+                    "correction": "C'est une règle conventionnelle absolue : on ne hachure jamais les pièces pleines normalisées (vis, écrous, rivets, billes) ni les nervures lorsqu'elles sont coupées dans le sens de la longueur."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quel est le rôle du Plan d'implantation d'un ouvrage (garde-corps, escalier) ?",
+                    "question": "Quelle est la fonction du 'cartouche' sur un plan technique ?",
                     "answerOptions": [
-                        {"text": "Indiquer le poids.", "isCorrect": False, "key": "A"},
-                        {"text": "Montrer où et comment l'ouvrage doit être fixé ou encastré dans le gros œuvre en spécifiant les axes et les niveaux.", "isCorrect": True, "key": "B"},
-                        {"text": "Indiquer le prix.", "isCorrect": False, "key": "C"},
-                        {"text": "Indiquer le type de soudure.", "isCorrect": False, "key": "D"}
+                        {"text": "Identifier le document", "isCorrect": True},
+                        {"text": "Dessiner la perspective", "isCorrect": False},
+                        {"text": "Calculer le poids total", "isCorrect": False},
+                        {"text": "Lister les outils nécessaires", "isCorrect": False}
                     ],
-                    "correction": "Le Plan d'implantation est essentiel pour la pose sur site."
+                    "correction": "Le cartouche est la carte d'identité du plan. Il contient le titre, l'échelle, le nom du dessinateur, la date et le numéro du plan."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Comment représente-t-on une arête cachée (non visible depuis la vue principale) sur un dessin technique ?",
+                    "question": "Si une cote de 50 mm est inscrite sur un plan à l'échelle 1:2, quelle est la longueur réelle de la pièce ?",
                     "answerOptions": [
-                        {"text": "Par un trait continu fin.", "isCorrect": False, "key": "A"},
-                        {"text": "Par un trait mixte (axe).", "isCorrect": False, "key": "B"},
-                        {"text": "Par un trait interrompu (pointillé).", "isCorrect": True, "key": "C"},
-                        {"text": "Par un trait fort.", "isCorrect": False, "key": "D"}
+                        {"text": "50 mm", "isCorrect": True},
+                        {"text": "100 mm", "isCorrect": False},
+                        {"text": "25 mm", "isCorrect": False},
+                        {"text": "200 mm", "isCorrect": False}
                     ],
-                    "correction": "Le Trait interrompu permet de comprendre la forme interne de la pièce."
+                    "correction": "La cote inscrite (chiffre) indique TOUJOURS la dimension réelle de la pièce (valeur nominale), quelle que soit l'échelle du dessin."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Quel est le terme technique pour l'action de chanfreiner une pièce avant soudage ?",
+                    "question": "Que signifie le symbole d'un 'drapeau' sur la ligne de repère d'une soudure ?",
                     "answerOptions": [
-                        {"text": "Poncer.", "isCorrect": False, "key": "A"},
-                        {"text": "Couper le métal en biais pour créer une surface inclinée (un Biseau) afin de préparer les bords à recevoir le métal d'apport.", "isCorrect": True, "key": "B"},
-                        {"text": "Dégraisser.", "isCorrect": False, "key": "C"},
-                        {"text": "Peindre.", "isCorrect": False, "key": "D"}
+                        {"text": "Soudure chantier", "isCorrect": True},
+                        {"text": "Soudure périphérique", "isCorrect": False},
+                        {"text": "Soudure meulée", "isCorrect": False},
+                        {"text": "Soudure bouchon", "isCorrect": False}
                     ],
-                    "correction": "Le Chanfrein est indispensable sur les pièces épaisses pour garantir une soudure pénétrante."
+                    "correction": "Le petit drapeau signale que l'opération de soudage ne se fait pas en atelier mais directement sur le lieu de montage (chantier)."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Dans le traçage, à quoi sert le Bleu de traçage ?",
+                    "question": "Quel terme désigne une vue qui représente une partie limitée de la pièce à une échelle agrandie pour montrer un détail ?",
                     "answerOptions": [
-                        {"text": "Dégraisser le métal.", "isCorrect": False, "key": "A"},
-                        {"text": "Améliorer le contraste : un colorant qui permet de rendre les lignes de traçage plus visibles.", "isCorrect": True, "key": "B"},
-                        {"text": "Protéger contre la rouille.", "isCorrect": False, "key": "C"},
-                        {"text": "Servir d'isolant.", "isCorrect": False, "key": "D"}
+                        {"text": "Vue de détail", "isCorrect": True},
+                        {"text": "Vue auxiliaire", "isCorrect": False},
+                        {"text": "Vue locale", "isCorrect": False},
+                        {"text": "Vue interrompue", "isCorrect": False}
                     ],
-                    "correction": "Le Bleu de traçage est indispensable pour la précision du marquage."
+                    "correction": "La vue de détail est une représentation à part, souvent agrandie (zoom), d'une zone complexe de la pièce, repérée par un cercle et une lettre sur la vue principale."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Comment appelle-t-on la distance entre l'axe du trou et le bord de la tôle ?",
+                    "question": "En cotation, comment appelle-t-on les lignes fines perpendiculaires à la ligne de cote qui délimitent la dimension ?",
                     "answerOptions": [
-                        {"text": "Le diamètre.", "isCorrect": False, "key": "A"},
-                        {"text": "La Distance de Sécurité (ou distance au bord), cruciale pour éviter la rupture de la tôle.", "isCorrect": True, "key": "B"},
-                        {"text": "La profondeur.", "isCorrect": False, "key": "C"},
-                        {"text": "Le pas.", "isCorrect": False, "key": "D"}
+                        {"text": "Lignes d'attache", "isCorrect": True},
+                        {"text": "Lignes de rappel", "isCorrect": False},
+                        {"text": "Lignes de mesure", "isCorrect": False},
+                        {"text": "Lignes d'extension", "isCorrect": False}
                     ],
-                    "correction": "La Distance au Bord doit être suffisante pour que le trou ne fragilise pas la pièce."
+                    "correction": "Les lignes d'attache partent du contour de la pièce et servent de butées aux extrémités de la ligne de cote."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Dans une vue en coupe, que représente le hachurage sur le métal ?",
+                    "question": "Quelle indication donne une tolérance dimensionnelle écrite '20 ± 0,1' ?",
                     "answerOptions": [
-                        {"text": "La partie non coupée.", "isCorrect": False, "key": "A"},
-                        {"text": "La Matière Coupée (la partie pleine du profilé traversée par le plan de coupe).", "isCorrect": True, "key": "B"},
-                        {"text": "L'air.", "isCorrect": False, "key": "C"},
-                        {"text": "Le vide.", "isCorrect": False, "key": "D"}
+                        {"text": "Intervalle", "isCorrect": True},
+                        {"text": "Ajustement", "isCorrect": False},
+                        {"text": "Rugosité", "isCorrect": False},
+                        {"text": "Planéité", "isCorrect": False}
                     ],
-                    "correction": "Les Hachures indiquent clairement les contours et la nature de la matière."
+                    "correction": "Cela définit un intervalle de tolérance. La pièce est conforme si sa mesure réelle est comprise entre 19,9 mm et 20,1 mm."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quel est l'objectif du traçage en l'air (ou épure) ?",
+                    "question": "Dans une représentation graphique normalisée, si la réponse A doit être expliquée longuement, quelle règle s'applique souvent aux mauvaises réponses pour brouiller les pistes ?",
                     "answerOptions": [
-                        {"text": "Travailler directement sur la pièce.", "isCorrect": False, "key": "A"},
-                        {"text": "Créer un dessin à l'échelle $1/1$ pour vérifier les cotes, les angles, et servir de gabarit de montage et de soudage.", "isCorrect": True, "key": "B"},
-                        {"text": "Dessiner en perspective.", "isCorrect": False, "key": "C"},
-                        {"text": "Calculer le poids.", "isCorrect": False, "key": "D"}
+                        {"text": "Complexité accrue", "isCorrect": True},
+                        {"text": "Simplicité totale", "isCorrect": False},
+                        {"text": "Brièveté absolue", "isCorrect": False},
+                        {"text": "Clarté maximale", "isCorrect": False}
                     ],
-                    "correction": "L'Épure est une méthode traditionnelle de vérification des assemblages complexes."
+                    "correction": "Si une réponse technique est complexe, les leurres doivent présenter une complexité technique apparente supérieure ou une formulation plus alambiquée pour tester la précision de lecture."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel terme technique est utilisé pour désigner la longueur développée d'une tôle qui doit être pliée ?",
+                    "question": "Quel est le symbole de soudure élémentaire pour une soudure en 'V' ?",
                     "answerOptions": [
-                        {"text": "La longueur finie.", "isCorrect": False, "key": "A"},
-                        {"text": "La côte totale.", "isCorrect": False, "key": "B"},
-                        {"text": "La Ligne Neutre (ou développé théorique), en tenant compte du retrait du métal dans le pliage.", "isCorrect": True, "key": "C"},
-                        {"text": "La largeur de la tôle.", "isCorrect": False, "key": "D"}
+                        {"text": "V", "isCorrect": True},
+                        {"text": "II", "isCorrect": False},
+                        {"text": "Y", "isCorrect": False},
+                        {"text": "U", "isCorrect": False}
                     ],
-                    "correction": "La Ligne Neutre est la fibre qui ne subit ni extension ni compression lors du pliage."
+                    "correction": "Le symbole graphique reprend la forme géométrique de la préparation des bords. Une préparation en V est symbolisée par un V."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quel outil permet de mesurer la profondeur d'un alésage ou d'un épaulement ?",
+                    "question": "Sur un plan d'ensemble, qu'est-ce que la 'nomenclature' ?",
                     "answerOptions": [
-                        {"text": "Le mètre ruban.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Pied à Coulisse (avec sa jauge de profondeur) ou la Jauge de profondeur.", "isCorrect": True, "key": "B"},
-                        {"text": "Le micromètre.", "isCorrect": False, "key": "C"},
-                        {"text": "Le compas.", "isCorrect": False, "key": "D"}
+                        {"text": "Liste des pièces", "isCorrect": True},
+                        {"text": "Liste des vues", "isCorrect": False},
+                        {"text": "Liste des cotes", "isCorrect": False},
+                        {"text": "Liste des clients", "isCorrect": False}
                     ],
-                    "correction": "Le Pied à Coulisse est polyvalent pour les mesures externes, internes et de profondeur."
+                    "correction": "La nomenclature est le tableau (généralement au-dessus du cartouche) qui répertorie tous les éléments constitutifs de l'ensemble (repère, nombre, désignation, matière)."
                 },
             ]
         },
+        # =========================================================================
+        # THÈME 2 : TECHNOLOGIE DES MATÉRIAUX ET CONSOMMABLES (Questions 21 à 40)
+        # =========================================================================
         2: {
-            "name": "2. Technologie des Matériaux et Profilés (Q. 21-40)",
+            "name": "THÈME 2 : TECHNOLOGIE DES MATÉRIAUX ET CONSOMMABLES",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quel est le matériau principal utilisé par le serrurier-métallier pour la construction de structures et d'ouvrages courants ?",
+                    "question": "Dans la désignation normalisée 'S235', que désigne la lettre S ?",
                     "answerOptions": [
-                        {"text": "L'aluminium.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Fer et l'Acier (alliage de fer et de carbone).", "isCorrect": True, "key": "B"},
-                        {"text": "Le bois.", "isCorrect": False, "key": "C"},
-                        {"text": "Le cuivre.", "isCorrect": False, "key": "D"}
+                        {"text": "Aciers de construction", "isCorrect": True},
+                        {"text": "Aciers inoxydables", "isCorrect": False},
+                        {"text": "Aciers à béton", "isCorrect": False},
+                        {"text": "Aciers rapides", "isCorrect": False}
                     ],
-                    "correction": "L'Acier (ex : S235 ou S355) est le matériau de base."
+                    "correction": "La lettre S (pour Structural) désigne les aciers d'usage général utilisés en construction métallique. Le nombre 235 indique la limite élastique en MPa."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Que signifie la désignation S235 pour un acier ?",
+                    "question": "Quel est le principal avantage de l'aluminium par rapport à l'acier ?",
                     "answerOptions": [
-                        {"text": "Son épaisseur est de $235 \text{ mm}$.", "isCorrect": False, "key": "A"},
-                        {"text": "Sa Limite Élastique Minimale est de $235 \text{ MPa}$ : c'est sa résistance mécanique avant déformation permanente.", "isCorrect": True, "key": "B"},
-                        {"text": "Il est composé de $235$ atomes de carbone.", "isCorrect": False, "key": "C"},
-                        {"text": "Il est fabriqué à $235 \text{ degrés}$.", "isCorrect": False, "key": "D"}
+                        {"text": "Légèreté", "isCorrect": True},
+                        {"text": "Magnétisme", "isCorrect": False},
+                        {"text": "Dureté", "isCorrect": False},
+                        {"text": "Soudabilité", "isCorrect": False}
                     ],
-                    "correction": "La Limite Élastique est l'information clé pour le calcul de structure."
+                    "correction": "La densité de l'aluminium (2,7) est environ trois fois inférieure à celle de l'acier (7,85), ce qui permet des ouvrages beaucoup plus légers."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quel est le nom du profilé métallique de section carrée ou rectangulaire, souvent utilisé pour les lisses de garde-corps ou les châssis ?",
+                    "question": "Comment se nomme un profilé dont la section a la forme d'un I et dont les ailes sont à faces parallèles ?",
                     "answerOptions": [
-                        {"text": "Le Poutre HEA.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Tube (ou Profilé Creux) Carré ou Rectangulaire (ou TRC/TRR).", "isCorrect": True, "key": "B"},
-                        {"text": "Le fer plat.", "isCorrect": False, "key": "C"},
-                        {"text": "La cornière.", "isCorrect": False, "key": "D"}
+                        {"text": "IPE", "isCorrect": True},
+                        {"text": "IPN", "isCorrect": False},
+                        {"text": "UPN", "isCorrect": False},
+                        {"text": "HEA", "isCorrect": False}
                     ],
-                    "correction": "Les Tubes sont légers et rigides pour les ossatures."
+                    "correction": "L'IPE (I à Profil Européen) possède des ailes à faces parallèles et d'épaisseur constante, contrairement à l'IPN dont les ailes sont inclinées (pente de 14%)."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quel traitement de surface est réalisé par immersion dans un bain de zinc en fusion et offre la meilleure protection contre la corrosion de l'acier ?",
+                    "question": "Quel élément chimique ajoute-t-on principalement à l'acier pour le rendre 'inoxydable' ?",
                     "answerOptions": [
-                        {"text": "La peinture.", "isCorrect": False, "key": "A"},
-                        {"text": "La Galvanisation à Chaud.", "isCorrect": True, "key": "B"},
-                        {"text": "L'anodisation.", "isCorrect": False, "key": "C"},
-                        {"text": "La métallisation.", "isCorrect": False, "key": "D"}
+                        {"text": "Chrome", "isCorrect": True},
+                        {"text": "Plomb", "isCorrect": False},
+                        {"text": "Soufre", "isCorrect": False},
+                        {"text": "Hydrogène", "isCorrect": False}
                     ],
-                    "correction": "La Galvanisation à Chaud crée une couche de zinc très épaisse et durable."
+                    "correction": "C'est le Chrome (à hauteur de plus de 10,5%) qui permet la formation d'une couche passive protectrice rendant l'acier inoxydable."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Comment appelle-t-on le profilé de section en L (deux ailes perpendiculaires) utilisé pour des cadres ou des renforts d'angle ?",
+                    "question": "Qu'est-ce qu'une 'cornière' ?",
                     "answerOptions": [
-                        {"text": "Le T.", "isCorrect": False, "key": "A"},
-                        {"text": "La Cornière.", "isCorrect": True, "key": "B"},
-                        {"text": "Le U.", "isCorrect": False, "key": "C"},
-                        {"text": "Le I.", "isCorrect": False, "key": "D"}
+                        {"text": "Profilé en L", "isCorrect": True},
+                        {"text": "Profilé en U", "isCorrect": False},
+                        {"text": "Profilé en T", "isCorrect": False},
+                        {"text": "Profilé en I", "isCorrect": False}
                     ],
-                    "correction": "La Cornière est très polyvalente dans l'assemblage et les renforts."
+                    "correction": "La cornière est un profilé dont la section forme un angle droit (L), avec des ailes qui peuvent être égales ou inégales."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Quelle est la principale caractéristique de l'Acier Inoxydable (Inox) par rapport à l'acier carbone ?",
+                    "question": "Quelle propriété mécanique désigne la capacité d'un métal à se déformer sans se rompre (comme pour faire un fil de fer) ?",
                     "answerOptions": [
-                        {"text": "Il est plus léger.", "isCorrect": False, "key": "A"},
-                        {"text": "Sa forte résistance à la Corrosion (grâce à l'ajout de chrome et de nickel) et son aspect esthétique.", "isCorrect": True, "key": "B"},
-                        {"text": "Il est plus facile à souder.", "isCorrect": False, "key": "C"},
-                        {"text": "Il est moins cher.", "isCorrect": False, "key": "D"}
+                        {"text": "Ductilité", "isCorrect": True},
+                        {"text": "Fragilité", "isCorrect": False},
+                        {"text": "Trempabilité", "isCorrect": False},
+                        {"text": "Dureté", "isCorrect": False}
                     ],
-                    "correction": "L'Inox est utilisé pour les ouvrages extérieurs nécessitant une excellente durabilité."
+                    "correction": "La ductilité est la capacité à subir de grandes déformations plastiques sans rompre. L'inverse est la fragilité (comme le verre ou la fonte)."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quel type de tôle présente des motifs en relief (larmes ou grains de riz) pour améliorer l'adhérence (ex : plateformes, marches) ?",
+                    "question": "Que signifie 'M10' pour une vis ?",
                     "answerOptions": [
-                        {"text": "La tôle perforée.", "isCorrect": False, "key": "A"},
-                        {"text": "La Tôle Larmée (ou Tôle à Plancher).", "isCorrect": True, "key": "B"},
-                        {"text": "La tôle galvanisée.", "isCorrect": False, "key": "C"},
-                        {"text": "La tôle étirée.", "isCorrect": False, "key": "D"}
+                        {"text": "Filetage métrique diamètre 10", "isCorrect": True},
+                        {"text": "Longueur totale de 10 millimètres", "isCorrect": False},
+                        {"text": "Résistance à la traction de 10 mégapascals", "isCorrect": False},
+                        {"text": "Tête de vis de hauteur 10 millimètres", "isCorrect": False}
                     ],
-                    "correction": "La Tôle Larmée est antidérapante."
+                    "correction": "Le M désigne un pas métrique (ISO) et le chiffre qui suit indique le diamètre nominal de la vis en millimètres."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Comment appelle-t-on la déformation permanente d'un métal au-delà de sa limite élastique (ex : pliage) ?",
+                    "question": "Quelle est la particularité d'une vis 'Tête H' ?",
                     "answerOptions": [
-                        {"text": "La rupture.", "isCorrect": False, "key": "A"},
-                        {"text": "La Déformation Plastique.", "isCorrect": True, "key": "B"},
-                        {"text": "L'allongement.", "isCorrect": False, "key": "C"},
-                        {"text": "La fragilité.", "isCorrect": False, "key": "D"}
+                        {"text": "Tête hexagonale", "isCorrect": True},
+                        {"text": "Tête carrée", "isCorrect": False},
+                        {"text": "Tête fraisée", "isCorrect": False},
+                        {"text": "Tête cylindrique", "isCorrect": False}
                     ],
-                    "correction": "La Déformation Plastique est recherchée lors du formage."
+                    "correction": "La vis H possède une tête à 6 pans (hexagonale), serrable avec une clé plate, à pipe ou à douille."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel profilé est couramment utilisé comme limon d'escalier ou comme poteau dans une structure de petite charpente ?",
+                    "question": "Quel traitement de surface consiste à plonger l'acier dans un bain de zinc en fusion à 450°C ?",
                     "answerOptions": [
-                        {"text": "Le fer plat.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Poutrelle IPE ou HEA (profilés en I ou en H).", "isCorrect": True, "key": "B"},
-                        {"text": "Le tube rond.", "isCorrect": False, "key": "C"},
-                        {"text": "Le rond plein.", "isCorrect": False, "key": "D"}
+                        {"text": "Galvanisation à chaud", "isCorrect": True},
+                        {"text": "Électrozingage", "isCorrect": False},
+                        {"text": "Anodisation sulfurique", "isCorrect": False},
+                        {"text": "Thermolaquage poudre", "isCorrect": False}
                     ],
-                    "correction": "Les Poutrelles offrent une grande résistance à la flexion."
+                    "correction": "La galvanisation à chaud est le procédé le plus efficace pour la protection anticorrosion longue durée des ouvrages extérieurs en acier."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Que représente le symbole Ra suivi d'un nombre (ex : Ra 3.2) sur un plan ?",
+                    "question": "Quel est le rôle principal d'une rondelle plate sous un écrou ?",
                     "answerOptions": [
-                        {"text": "La résistance de l'acier.", "isCorrect": False, "key": "A"},
-                        {"text": "L'État de Surface : la rugosité moyenne de la pièce (important pour les finitions).", "isCorrect": True, "key": "B"},
-                        {"text": "La dureté du métal.", "isCorrect": False, "key": "C"},
-                        {"text": "Le rayon de pliage.", "isCorrect": False, "key": "D"}
+                        {"text": "Répartir la pression", "isCorrect": True},
+                        {"text": "Freiner le desserrage", "isCorrect": False},
+                        {"text": "Assurer l'étanchéité", "isCorrect": False},
+                        {"text": "Isoler électriquement", "isCorrect": False}
                     ],
-                    "correction": "L'État de Surface définit si la pièce doit être laissée brute, meulée, ou rectifiée."
+                    "correction": "La rondelle plate (M ou L) sert à augmenter la surface d'appui pour éviter de marquer la pièce et répartir l'effort de serrage."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Comment appelle-t-on le phénomène de rétrécissement du métal après soudage, qui peut entraîner des déformations de la structure ?",
+                    "question": "Dans la désignation d'une vis de classe 8.8, que signifient ces chiffres ?",
                     "answerOptions": [
-                        {"text": "La flexion.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Retrait (ou Rétraction) dû à la Chaleur.", "isCorrect": True, "key": "B"},
-                        {"text": "La dilatation.", "isCorrect": False, "key": "C"},
-                        {"text": "Le flambage.", "isCorrect": False, "key": "D"}
+                        {"text": "Résistance rupture et limite élastique", "isCorrect": True},
+                        {"text": "Diamètre de la tête et longueur de la tige", "isCorrect": False},
+                        {"text": "Composition chimique et pourcentage de carbone", "isCorrect": False},
+                        {"text": "Tolérance de fabrication et rugosité", "isCorrect": False}
                     ],
-                    "correction": "Le Retrait est compensé par un bridage ou un pré-cambrage des pièces."
+                    "correction": "Le 1er chiffre (8) x 100 = Résistance rupture (800 MPa). Le 2ème chiffre (8) indique que la limite élastique est 80% de la rupture."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quelle est l'épaisseur minimale que doit posséder un fer plat pour être considéré comme une platine de fixation structurelle ?",
+                    "question": "Le laiton est un alliage composé majoritairement de cuivre et de :",
                     "answerOptions": [
-                        {"text": "Moins de $1 \text{ mm}$.", "isCorrect": False, "key": "A"},
-                        {"text": "Elle dépend du calcul, mais en général, $6 \text{ à } 10 \text{ mm}$ minimum.", "isCorrect": True, "key": "B"},
-                        {"text": "Plus de $50 \text{ mm}$.", "isCorrect": False, "key": "C"},
-                        {"text": "Elle n'a pas d'importance.", "isCorrect": False, "key": "D"}
+                        {"text": "Zinc", "isCorrect": True},
+                        {"text": "Étain", "isCorrect": False},
+                        {"text": "Fer", "isCorrect": False},
+                        {"text": "Plomb", "isCorrect": False}
                     ],
-                    "correction": "Les Platines sont les interfaces entre l'acier et le gros œuvre ; elles doivent être rigides."
+                    "correction": "Le laiton est un alliage Cuivre + Zinc (jaune). À ne pas confondre avec le Bronze (Cuivre + Étain)."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quel est le principal inconvénient de l'aluminium par rapport à l'acier dans la construction métallique ?",
+                    "question": "Quel type de tube est souvent utilisé pour les mains courantes en raison de son confort de préhension ?",
                     "answerOptions": [
-                        {"text": "Il rouille.", "isCorrect": False, "key": "A"},
-                        {"text": "Sa Faible Rigidité et Résistance Mécanique (en particulier à la chaleur et à l'incendie), bien qu'il soit plus léger et résistant à la corrosion.", "isCorrect": True, "key": "B"},
-                        {"text": "Il est plus lourd.", "isCorrect": False, "key": "C"},
-                        {"text": "Il est plus difficile à peindre.", "isCorrect": False, "key": "D"}
+                        {"text": "Tube rond", "isCorrect": True},
+                        {"text": "Tube carré", "isCorrect": False},
+                        {"text": "Tube rectangulaire", "isCorrect": False},
+                        {"text": "Tube profilé à ailettes", "isCorrect": False}
                     ],
-                    "correction": "L'Aluminium est léger mais moins résistant aux efforts structuraux que l'acier."
+                    "correction": "Le tube rond (souvent de diamètre 42,4 mm en serrurerie) est le standard ergonomique pour les rampes et mains courantes."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Comment appelle-t-on l'opération qui consiste à enlever l'ébarbure (le morfil) des bords d'une tôle après la découpe ?",
+                    "question": "Comment appelle-t-on la partie centrale d'une électrode enrobée ?",
                     "answerOptions": [
-                        {"text": "Le polissage.", "isCorrect": False, "key": "A"},
-                        {"text": "L'Ébavurage (souvent réalisé à la meuleuse, à la lime ou à la ponceuse).", "isCorrect": True, "key": "B"},
-                        {"text": "Le cisaillage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le traçage.", "isCorrect": False, "key": "D"}
+                        {"text": "Âme", "isCorrect": True},
+                        {"text": "Flux", "isCorrect": False},
+                        {"text": "Gaine", "isCorrect": False},
+                        {"text": "Laitier", "isCorrect": False}
                     ],
-                    "correction": "L'Ébavurage est une opération de sécurité et de préparation."
+                    "correction": "L'électrode est composée d'une tige métallique centrale appelée l'âme (qui fond pour apporter le métal) et d'un enrobage extérieur."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quel type d'acier est préconisé pour des ouvrages nécessitant des efforts dynamiques importants (ex : pièces de machine, véhicules) ?",
+                    "question": "Quel matériau est le plus riche en carbone ?",
                     "answerOptions": [
-                        {"text": "Le S235.", "isCorrect": False, "key": "A"},
-                        {"text": "Les Aciers à haute Limite Élastique (ex : S355 et au-delà), plus résistants.", "isCorrect": True, "key": "B"},
-                        {"text": "L'Inox.", "isCorrect": False, "key": "C"},
-                        {"text": "Le Fer forgé.", "isCorrect": False, "key": "D"}
+                        {"text": "Fonte", "isCorrect": True},
+                        {"text": "Acier", "isCorrect": False},
+                        {"text": "Fer pur", "isCorrect": False},
+                        {"text": "Aluminium", "isCorrect": False}
                     ],
-                    "correction": "La résistance aux chocs et aux déformations est augmentée par la limite élastique."
+                    "correction": "La fonte contient entre 2,1% et 6,67% de carbone, tandis que l'acier en contient moins de 2%. C'est ce carbone qui rend la fonte cassante."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Que signifie le terme Passivation dans le traitement de l'acier inoxydable ?",
+                    "question": "À quoi sert un scellement chimique ?",
                     "answerOptions": [
-                        {"text": "Le rendre plus souple.", "isCorrect": False, "key": "A"},
-                        {"text": "Créer une couche protectrice naturelle d'oxyde de chrome sur la surface du métal, assurant sa résistance à la corrosion.", "isCorrect": True, "key": "B"},
-                        {"text": "Le rendre plus brillant.", "isCorrect": False, "key": "C"},
-                        {"text": "Le rendre mat.", "isCorrect": False, "key": "D"}
+                        {"text": "Fixer dans des matériaux creux ou pleins", "isCorrect": True},
+                        {"text": "Coller deux plaques d'acier entre elles", "isCorrect": False},
+                        {"text": "Réaliser une étanchéité à l'eau de pluie", "isCorrect": False},
+                        {"text": "Protéger les vis contre la corrosion saline", "isCorrect": False}
                     ],
-                    "correction": "La Passivation est la raison de la résistance à la rouille de l'inox."
+                    "correction": "Le scellement chimique (résine + durcisseur) permet de créer un ancrage très résistant sans contrainte d'expansion mécanique, idéal dans la brique creuse ou le parpaing."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Quel est l'outil utilisé pour mesurer l'épaisseur de tôle avec une très grande précision (au centième de millimètre) ?",
+                    "question": "Quelle est la forme de la section d'un fer 'Té' ?",
                     "answerOptions": [
-                        {"text": "Le mètre ruban.", "isCorrect": False, "key": "A"},
-                        {"text": "Le pied à coulisse.", "isCorrect": False, "key": "B"},
-                        {"text": "Le Micromètre (ou palmer).", "isCorrect": True, "key": "C"},
-                        {"text": "Le rapporteur.", "isCorrect": False, "key": "D"}
+                        {"text": "T", "isCorrect": True},
+                        {"text": "L", "isCorrect": False},
+                        {"text": "U", "isCorrect": False},
+                        {"text": "I", "isCorrect": False}
                     ],
-                    "correction": "Le Micromètre est l'outil de mesure de précision par excellence."
+                    "correction": "Comme son nom l'indique, la section transversale a la forme de la lettre T majuscule."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Comment appelle-t-on le profilé rond, non creux, souvent utilisé pour les barreaux de garde-corps ou pour le ferrage ?",
+                    "question": "Quel gaz est couramment utilisé comme gaz actif pour le soudage MAG des aciers ?",
                     "answerOptions": [
-                        {"text": "Le tube.", "isCorrect": False, "key": "A"},
-                        {"text": "Le U.", "isCorrect": False, "key": "B"},
-                        {"text": "Le Rond Plein.", "isCorrect": True, "key": "C"},
-                        {"text": "Le fer plat.", "isCorrect": False, "key": "D"}
+                        {"text": "Argon et CO2", "isCorrect": True},
+                        {"text": "Argon pur", "isCorrect": False},
+                        {"text": "Hélium pur", "isCorrect": False},
+                        {"text": "Azote liquide", "isCorrect": False}
                     ],
-                    "correction": "Le Rond Plein est très résistant et facile à forger."
+                    "correction": "Pour le MAG (Metal Active Gas), on utilise un mélange oxydant, généralement Argon + CO2 (souvent 82%/18% ou 92%/8%)."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quel est le risque de souder une tôle trop fine avec une intensité trop élevée ?",
+                    "question": "Qu'est-ce que le 'métal déployé' ?",
                     "answerOptions": [
-                        {"text": "Une soudure trop résistante.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Perçage (ou Pénétration Totale) de la tôle, formant un trou ou un cordon de soudure dégradé.", "isCorrect": True, "key": "B"},
-                        {"text": "Un retrait trop important.", "isCorrect": False, "key": "C"},
-                        {"text": "Une couleur incorrecte.", "isCorrect": False, "key": "D"}
+                        {"text": "Treillis rigide obtenu par découpe et étirage", "isCorrect": True},
+                        {"text": "Tôle fine laminée à froid pour carrosserie", "isCorrect": False},
+                        {"text": "Bloc d'acier forgé pour augmenter sa densité", "isCorrect": False},
+                        {"text": "Poudre métallique projetée à haute pression", "isCorrect": False}
                     ],
-                    "correction": "L'Intensité du poste est toujours ajustée à l'épaisseur de la pièce."
+                    "correction": "Le métal déployé est fabriqué à partir d'une tôle incisée puis étirée pour former des mailles losanges, utilisé pour des passerelles ou du remplissage."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quel profilé métallique est caractérisé par une section en U et est souvent utilisé pour les rails, les renforts de rive ou les platelages ?",
+                    "question": "Quel outil permet de réaliser un filetage intérieur (dans un trou) ?",
                     "answerOptions": [
-                        {"text": "La cornière.", "isCorrect": False, "key": "A"},
-                        {"text": "Le tube carré.", "isCorrect": False, "key": "B"},
-                        {"text": "Le UPN (ou UPE, profilés en U).", "isCorrect": True, "key": "C"},
-                        {"text": "Le fer plat.", "isCorrect": False, "key": "D"}
+                        {"text": "Taraud", "isCorrect": True},
+                        {"text": "Filière", "isCorrect": False},
+                        {"text": "Foret", "isCorrect": False},
+                        {"text": "Alésoir", "isCorrect": False}
                     ],
-                    "correction": "Le UPN est très courant dans les structures légères et le renforcement."
+                    "correction": "Le taraud sert à créer le filetage interne (écrou), tandis que la filière sert à créer le filetage externe (vis)."
                 },
             ]
         },
+        # =========================================================================
+        # THÈME 3 : PROCÉDÉS DE DÉBIT ET DE FORMAGE (Questions 41 à 60)
+        # =========================================================================
         3: {
-            "name": "3. Procédés de Fabrication (Q. 41-60)",
+            "name": "THÈME 3 : PROCÉDÉS DE DÉBIT ET DE FORMAGE",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel est l'outil principal utilisé pour la coupe droite de tôle mince (jusqu'à $6 \text{ mm}$ d'épaisseur) de manière rapide et propre ?",
+                    "question": "Quel outil manuel utilise-t-on pour marquer un trait fin et précis sur une tôle en acier ?",
                     "answerOptions": [
-                        {"text": "Le chalumeau.", "isCorrect": False, "key": "A"},
-                        {"text": "La Cisaille (Guillotine ou Cisaille à levier).", "isCorrect": True, "key": "B"},
-                        {"text": "La meuleuse.", "isCorrect": False, "key": "C"},
-                        {"text": "Le poste plasma.", "isCorrect": False, "key": "D"}
+                        {"text": "Pointe à tracer", "isCorrect": True},
+                        {"text": "Crayon de maçon", "isCorrect": False},
+                        {"text": "Feutre tubulaire", "isCorrect": False},
+                        {"text": "Craie industrielle", "isCorrect": False}
                     ],
-                    "correction": "La Cisaille permet une coupe nette et rapide."
+                    "correction": "La pointe à tracer, en acier trempé ou au carbure, permet de rayer la surface du métal pour obtenir un tracé fin, précis et indélébile."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Comment appelle-t-on l'opération qui consiste à enlever de la matière (copeaux) pour former un trou ou un lamage ?",
+                    "question": "Quelle est la formule correcte pour calculer la fréquence de rotation N (en tr/min) d'un foret ?",
                     "answerOptions": [
-                        {"text": "Le traçage.", "isCorrect": False, "key": "A"},
-                        {"text": "L'Usinage (Perçage, Alésage, Taraudage).", "isCorrect": True, "key": "B"},
-                        {"text": "Le cisaillage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le pliage.", "isCorrect": False, "key": "D"}
+                        {"text": "1000 fois Vc divisé par Pi fois D", "isCorrect": True},
+                        {"text": "Pi fois D divisé par 1000 fois Vc", "isCorrect": False},
+                        {"text": "100 fois Vc divisé par Pi fois rayon", "isCorrect": False},
+                        {"text": "Vc divisé par 60 fois Pi fois D", "isCorrect": False}
                     ],
-                    "correction": "L'Usinage regroupe toutes les techniques d'enlèvement de matière."
+                    "correction": "La formule est N = (1000 x Vc) / (π x D), où Vc est la vitesse de coupe (m/min) et D le diamètre de l'outil (mm)."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Quel est le rôle du Lubrifiant (Huile de Coupe) lors du perçage de l'acier ?",
+                    "question": "Sur une cisaille guillotine, quelle pièce maintient fermement la tôle contre la table avant la descente de la lame ?",
                     "answerOptions": [
-                        {"text": "Nettoyer la pièce.", "isCorrect": False, "key": "A"},
-                        {"text": "Refroidir l'outil et la pièce et faciliter l'évacuation des copeaux.", "isCorrect": True, "key": "B"},
-                        {"text": "Rendre l'outil plus résistant.", "isCorrect": False, "key": "C"},
-                        {"text": "Réduire la vitesse de coupe.", "isCorrect": False, "key": "D"}
+                        {"text": "Serre-flan", "isCorrect": True},
+                        {"text": "Butée arrière", "isCorrect": False},
+                        {"text": "Lame mobile", "isCorrect": False},
+                        {"text": "Pédale de commande", "isCorrect": False}
                     ],
-                    "correction": "Le Lubrifiant est essentiel pour la durée de vie de l'outil et la qualité du perçage."
+                    "correction": "Le serre-flan est un vérin qui vient plaquer la tôle pour l'empêcher de bouger ou de se soulever au moment de l'impact de la coupe."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Comment appelle-t-on le procédé qui permet de créer un filetage interne dans un trou (pour y visser un boulon) ?",
+                    "question": "Lors du pliage d'une tôle, comment appelle-t-on la zone centrale de l'épaisseur qui ne subit ni allongement ni raccourcissement ?",
                     "answerOptions": [
-                        {"text": "L'alésage.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Taraudage.", "isCorrect": True, "key": "B"},
-                        {"text": "Le fraisage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le perçage.", "isCorrect": False, "key": "D"}
+                        {"text": "Fibre neutre", "isCorrect": True},
+                        {"text": "Fibre tendue", "isCorrect": False},
+                        {"text": "Fibre comprimée", "isCorrect": False},
+                        {"text": "Fibre moyenne", "isCorrect": False}
                     ],
-                    "correction": "Le Taraudage nécessite de percer un trou d'un diamètre légèrement inférieur."
+                    "correction": "La fibre neutre est la ligne théorique située au cœur de l'épaisseur dont la longueur ne change pas après pliage."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Quelle machine utilise une matrice (V) et un poinçon pour déformer le métal sur un angle précis ?",
+                    "question": "Quel est l'angle d'affûtage standard de la pointe d'un foret pour percer de l'acier courant ?",
                     "answerOptions": [
-                        {"text": "La rouleuse.", "isCorrect": False, "key": "A"},
-                        {"text": "La cisaille.", "isCorrect": False, "key": "B"},
-                        {"text": "La Presse-Plieuse (ou Plieuse à commande numérique).", "isCorrect": True, "key": "C"},
-                        {"text": "La poinçonneuse.", "isCorrect": False, "key": "D"}
+                        {"text": "118 degrés", "isCorrect": True},
+                        {"text": "90 degrés", "isCorrect": False},
+                        {"text": "60 degrés", "isCorrect": False},
+                        {"text": "45 degrés", "isCorrect": False}
                     ],
-                    "correction": "La Presse-Plieuse est la machine de base de la chaudronnerie et de la métallerie."
+                    "correction": "Pour les aciers d'usage général, l'angle de pointe est normalisé à 118°."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Quel est l'outil utilisé pour couper des profilés épais (poutrelles, cornières) de manière précise et en angle (coupe d'onglet) ?",
+                    "question": "À quoi sert 'l'avoyage' des dents d'une lame de scie à ruban ?",
                     "answerOptions": [
-                        {"text": "La cisaille.", "isCorrect": False, "key": "A"},
-                        {"text": "La Scie à Ruban (ou la Scie alternative).", "isCorrect": True, "key": "B"},
-                        {"text": "Le chalumeau.", "isCorrect": False, "key": "C"},
-                        {"text": "La meuleuse.", "isCorrect": False, "key": "D"}
+                        {"text": "Éviter le coincement de la lame", "isCorrect": True},
+                        {"text": "Augmenter la vitesse de rotation du volant", "isCorrect": False},
+                        {"text": "Refroidir automatiquement les dents de la scie", "isCorrect": False},
+                        {"text": "Polir les faces coupées pour une finition miroir", "isCorrect": False}
                     ],
-                    "correction": "La Scie à Ruban est l'outil d'atelier pour les coupes de profilés."
+                    "correction": "L'avoyage consiste à incliner les dents alternativement à gauche et à droite pour créer un trait de scie plus large que la lame."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Comment appelle-t-on l'opération qui consiste à couper un profilé selon un angle oblique (pour l'assemblage d'un cadre à $90^\circ$ ou $45^\circ$) ?",
+                    "question": "Quel outil permet de réaliser un chambrage conique à l'entrée d'un perçage pour noyer une tête de vis FHC ?",
                     "answerOptions": [
-                        {"text": "La coupe droite.", "isCorrect": False, "key": "A"},
-                        {"text": "La Coupe d'Onglet.", "isCorrect": True, "key": "B"},
-                        {"text": "Le cisaillage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le tronçonnage.", "isCorrect": False, "key": "D"}
+                        {"text": "Fraise", "isCorrect": True},
+                        {"text": "Foret", "isCorrect": False},
+                        {"text": "Alésoir", "isCorrect": False},
+                        {"text": "Taraud", "isCorrect": False}
                     ],
-                    "correction": "La Coupe d'Onglet est essentielle pour les cadres de porte, fenêtre ou portail."
+                    "correction": "Le fraisage (avec une fraise conique à 90°) permet d'élargir l'entrée du trou pour que la tête de la vis fraisée ne dépasse pas de la surface."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quel est l'outil utilisé pour créer des trous de grand diamètre dans la tôle, en travaillant par enlèvement de matière autour du bord ?",
+                    "question": "Quel est le risque principal si l'on perce une tôle fine avec un foret de grand diamètre sans précaution particulière ?",
                     "answerOptions": [
-                        {"text": "Le foret simple.", "isCorrect": False, "key": "A"},
-                        {"text": "La scie sauteuse.", "isCorrect": False, "key": "B"},
-                        {"text": "La Scie Cloche ou la Mèche à étager.", "isCorrect": True, "key": "C"},
-                        {"text": "Le poinçon.", "isCorrect": False, "key": "D"}
+                        {"text": "Trou triangulaire", "isCorrect": True},
+                        {"text": "Trou trop petit", "isCorrect": False},
+                        {"text": "Foret qui fond", "isCorrect": False},
+                        {"text": "Copeau trop long", "isCorrect": False}
                     ],
-                    "correction": "La Scie Cloche est idéale pour les grands diamètres (ex : passage de gaines)."
+                    "correction": "Dans la tôle fine, le foret a tendance à 'brouter' et à produire un trou de forme triangulaire ('en trèfle')."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Quel procédé de fabrication est utilisé pour rouler une tôle plane en une forme cylindrique ou conique (ex : tube, cuve) ?",
+                    "question": "Pour pointer l'emplacement d'un perçage précis, quel angle doit avoir le pointeau ?",
                     "answerOptions": [
-                        {"text": "Le pliage.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Roulage (ou Cintrâge à trois/quatre rouleaux).", "isCorrect": True, "key": "B"},
-                        {"text": "Le poinçonnage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le formage.", "isCorrect": False, "key": "D"}
+                        {"text": "90 degrés", "isCorrect": True},
+                        {"text": "60 degrés", "isCorrect": False},
+                        {"text": "120 degrés", "isCorrect": False},
+                        {"text": "30 degrés", "isCorrect": False}
                     ],
-                    "correction": "Le Roulage est utilisé pour les ouvrages courbes."
+                    "correction": "Le pointeau à 90° est utilisé pour guider la pointe du foret."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Quel est le rôle de la Rainure de Matrice (le V) sur une presse-plieuse ?",
+                    "question": "Quelle opération consiste à découper une forme complexe à l'intérieur d'une tôle sans déboucher sur les bords ?",
                     "answerOptions": [
-                        {"text": "Accrocher le métal.", "isCorrect": False, "key": "A"},
-                        {"text": "Déterminer l'angle de pliage et la zone de déformation du métal. La largeur du V est choisie en fonction de l'épaisseur de la tôle.", "isCorrect": True, "key": "B"},
-                        {"text": "Refroidir la tôle.", "isCorrect": False, "key": "C"},
-                        {"text": "Maintenir la tôle.", "isCorrect": False, "key": "D"}
+                        {"text": "Poinçonnage", "isCorrect": True},
+                        {"text": "Cisaillage", "isCorrect": False},
+                        {"text": "Tronçonnage", "isCorrect": False},
+                        {"text": "Ébavurage", "isCorrect": False}
                     ],
-                    "correction": "La Matrice est la partie basse de l'outil de pliage."
+                    "correction": "Le poinçonnage utilise un poinçon et une matrice pour découper une forme (rond, carré, oblong) en pleine tôle par cisaillement direct."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Comment appelle-t-on l'opération qui consiste à donner une forme conique ou évasée à l'entrée d'un trou (pour y loger une tête de vis fraisée) ?",
+                    "question": "Quel paramètre doit-on régler sur une presse plieuse pour obtenir un angle de pliage précis ?",
                     "answerOptions": [
-                        {"text": "Le perçage.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Fraisage (ou Chambrage).", "isCorrect": True, "key": "B"},
-                        {"text": "L'alésage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le taraudage.", "isCorrect": False, "key": "D"}
+                        {"text": "Descente du coulisseau", "isCorrect": True},
+                        {"text": "Vitesse du moteur", "isCorrect": False},
+                        {"text": "Pression hydraulique", "isCorrect": False},
+                        {"text": "Température de l'huile", "isCorrect": False}
                     ],
-                    "correction": "Le Fraisage permet d'avoir la tête de vis affleurante avec la surface."
+                    "correction": "C'est la profondeur de pénétration du poinçon dans le Vé (la course du coulisseau) qui détermine l'angle de pliage en l'air."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quel est le risque de percer l'acier sans utiliser un poinçon au préalable ?",
+                    "question": "Pourquoi utilise-t-on de l'huile de coupe lors du taraudage manuel ?",
                     "answerOptions": [
-                        {"text": "Le foret se casse.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Glissement (ou déviation) du foret à cause d'un mauvais centrage, ce qui rend le trou imprécis.", "isCorrect": True, "key": "B"},
-                        {"text": "Le trou est trop petit.", "isCorrect": False, "key": "C"},
-                        {"text": "Le métal rouille.", "isCorrect": False, "key": "D"}
+                        {"text": "Lubrifier", "isCorrect": True},
+                        {"text": "Décaper", "isCorrect": False},
+                        {"text": "Coller", "isCorrect": False},
+                        {"text": "Sécher", "isCorrect": False}
                     ],
-                    "correction": "Le Poinçon crée un point d'amorçage précis pour le foret."
+                    "correction": "L'huile est indispensable pour réduire les frottements importants, éviter la casse du taraud et obtenir un filet propre."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quel est le rôle de la Poinçonneuse-Cisaille (ou Poinçonneuse-Cintrage) ?",
+                    "question": "Quel outil de frappe utilise-t-on pour former le métal à chaud ou à froid sur l'enclume ?",
                     "answerOptions": [
-                        {"text": "Souder des pièces.", "isCorrect": False, "key": "A"},
-                        {"text": "Réaliser simultanément des opérations de Poinçonnage (trous) et de Cisaillage (coupe) sur des tôles et profilés, permettant une fabrication rapide.", "isCorrect": True, "key": "B"},
-                        {"text": "Plier des tôles.", "isCorrect": False, "key": "C"},
-                        {"text": "Nettoyer des soudures.", "isCorrect": False, "key": "D"}
+                        {"text": "Marteau", "isCorrect": True},
+                        {"text": "Maillet", "isCorrect": False},
+                        {"text": "Massette", "isCorrect": False},
+                        {"text": "Batte", "isCorrect": False}
                     ],
-                    "correction": "La Poinçonneuse-Cisaille est une machine polyvalente d'atelier."
+                    "correction": "Le marteau de métallier (ou rivoir) est l'outil de base."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Comment appelle-t-on l'outil utilisé pour couper des profilés creux (tubes) en suivant un contour courbe (préparation avant soudage d'un tube sur un autre) ?",
+                    "question": "Quelle machine utilise un jet de gaz ionisé à très haute température pour découper des métaux conducteurs ?",
                     "answerOptions": [
-                        {"text": "La tronçonneuse.", "isCorrect": False, "key": "A"},
-                        {"text": "Le chalumeau.", "isCorrect": False, "key": "B"},
-                        {"text": "La Grignoteuse ou la Scie à contour (travail de 'coupe de poisson').", "isCorrect": True, "key": "C"},
-                        {"text": "Le TIG.", "isCorrect": False, "key": "D"}
+                        {"text": "Découpeur plasma", "isCorrect": True},
+                        {"text": "Chalumeau oxyacétylénique", "isCorrect": False},
+                        {"text": "Scie circulaire carbure", "isCorrect": False},
+                        {"text": "Cisaille à levier manuel", "isCorrect": False}
                     ],
-                    "correction": "La Coupe de Poisson est la coupe spécifique des tubes pour qu'ils s'emboîtent parfaitement."
+                    "correction": "Le procédé plasma utilise un arc électrique constricté qui transforme le gaz en plasma pour fondre et chasser le métal."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quel est le risque de ne pas nettoyer et dégraisser une pièce avant de la souder ?",
+                    "question": "Comment appelle-t-on l'opération qui consiste à enlever les arêtes tranchantes après une coupe ?",
                     "answerOptions": [
-                        {"text": "La soudure est trop brillante.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Défaut de Pénétration et la Porosité du cordon de soudure, car l'huile et la rouille empêchent le métal d'apport de s'allier correctement.", "isCorrect": True, "key": "B"},
-                        {"text": "La pièce se refroidit trop vite.", "isCorrect": False, "key": "C"},
-                        {"text": "Le retrait est trop faible.", "isCorrect": False, "key": "D"}
+                        {"text": "Ébavurage", "isCorrect": True},
+                        {"text": "Polissage", "isCorrect": False},
+                        {"text": "Surfaçage", "isCorrect": False},
+                        {"text": "Rectification", "isCorrect": False}
                     ],
-                    "correction": "La Propreté des bords à souder est la base d'une soudure de qualité."
+                    "correction": "L'ébavurage est une étape de sécurité obligatoire (avec une lime ou une meuleuse) pour éliminer les bavures coupantes."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quelle technique de coupe utilise un arc électrique confiné et très chaud pour vaporiser le métal (souvent pour la tôle) ?",
+                    "question": "Quel est l'effet d'une ouverture de Vé plus large lors du pliage d'une même épaisseur de tôle ?",
                     "answerOptions": [
-                        {"text": "Le chalumeau oxycoupeur.", "isCorrect": False, "key": "A"},
-                        {"text": "La Découpe Plasma.", "isCorrect": True, "key": "B"},
-                        {"text": "La scie à métaux.", "isCorrect": False, "key": "C"},
-                        {"text": "Le TIG.", "isCorrect": False, "key": "D"}
+                        {"text": "Rayon plus grand", "isCorrect": True},
+                        {"text": "Rayon plus petit", "isCorrect": False},
+                        {"text": "Force nécessaire plus grande", "isCorrect": False},
+                        {"text": "Risque de fissure accru", "isCorrect": False}
                     ],
-                    "correction": "La Découpe Plasma est rapide et permet des formes complexes."
+                    "correction": "Plus le Vé est large, plus le rayon intérieur de pliage sera grand, et moins l'effort nécessaire au pliage sera important."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Comment s'appelle l'outil utilisé pour enlever le métal en excès (cordon de soudure trop épais, bavure) avant la finition (ponçage) ?",
+                    "question": "Pour cintrer un tube sans qu'il ne s'écrase, quelle pièce insère-t-on parfois à l'intérieur ?",
                     "answerOptions": [
-                        {"text": "Le burin.", "isCorrect": False, "key": "A"},
-                        {"text": "La Meuleuse d'Angle (avec disque ébarbeur) ou la Tronçonneuse de chantier.", "isCorrect": True, "key": "B"},
-                        {"text": "Le marteau.", "isCorrect": False, "key": "C"},
-                        {"text": "Le cintreur.", "isCorrect": False, "key": "D"}
+                        {"text": "Mandrin", "isCorrect": True},
+                        {"text": "Vérin", "isCorrect": False},
+                        {"text": "Foret", "isCorrect": False},
+                        {"text": "Galet", "isCorrect": False}
                     ],
-                    "correction": "L'Ébarbage à la meuleuse est courant après soudage."
+                    "correction": "Le mandrin (ou une âme flexible, ou du sable tassé) soutient les parois internes du tube pour éviter l'ovalisation ou le pincement."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quel est l'objectif du Roulage de bord (ou de la bordure) sur une tôle (ex : dessus de table ou de plan de travail) ?",
+                    "question": "Quelle scie est la plus adaptée pour couper des profilés pleins de forte section ?",
                     "answerOptions": [
-                        {"text": "Faciliter le pliage.", "isCorrect": False, "key": "A"},
-                        {"text": "Améliorer la rigidité et la sécurité (éviter les arêtes vives) de l'ouvrage.", "isCorrect": True, "key": "B"},
-                        {"text": "Réduire la corrosion.", "isCorrect": False, "key": "C"},
-                        {"text": "Faciliter le traçage.", "isCorrect": False, "key": "D"}
+                        {"text": "Scie à ruban", "isCorrect": True},
+                        {"text": "Scie sauteuse", "isCorrect": False},
+                        {"text": "Meuleuse d'angle", "isCorrect": False},
+                        {"text": "Cisaille à main", "isCorrect": False}
                     ],
-                    "correction": "Le Roulage de bord crée une finition propre et sécurisée."
+                    "correction": "La scie à ruban horizontale est conçue pour couper de fortes sections avec précision et refroidissement."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Quel procédé de mise en forme est utilisé par le Forgeron-Serrurier pour déformer le métal à chaud (ex : volutes, pointes de lance) ?",
+                    "question": "Que désigne le terme 'mors' sur un étau ?",
                     "answerOptions": [
-                        {"text": "Le pliage à froid.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Forgeage et le Cintrâge à Chaud (Travail du Fer Forgé).", "isCorrect": True, "key": "B"},
-                        {"text": "Le soudage MIG en série.", "isCorrect": False, "key": "C"},
-                        {"text": "La découpe laser.", "isCorrect": False, "key": "D"}
+                        {"text": "Mâchoires de serrage", "isCorrect": True},
+                        {"text": "Vis de manœuvre", "isCorrect": False},
+                        {"text": "Socle de fixation", "isCorrect": False},
+                        {"text": "Levier de blocage", "isCorrect": False}
                     ],
-                    "correction": "Le Forgeage permet de donner des formes complexes et esthétiques au métal."
+                    "correction": "Les mors sont les parties (souvent interchangeables et striées) qui entrent directement en contact avec la pièce pour la maintenir."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quelle est la règle de sécurité à respecter lors de l'utilisation d'une perceuse à colonne ?",
+                    "question": "Si l'on doit percer un trou de diamètre 8,5 mm avant de tarauder à M10, c'est parce que :",
                     "answerOptions": [
-                        {"text": "Laisser la pièce libre.", "isCorrect": False, "key": "A"},
-                        {"text": "Toujours brider (serrer) solidement la pièce sur la table de la machine pour éviter qu'elle ne s'arrache et ne blesse l'opérateur.", "isCorrect": True, "key": "B"},
-                        {"text": "Ne pas utiliser d'huile.", "isCorrect": False, "key": "C"},
-                        {"text": "Travailler très vite.", "isCorrect": False, "key": "D"}
+                        {"text": "Le diamètre de perçage est égal au diamètre nominal moins le pas", "isCorrect": True},
+                        {"text": "Le diamètre de perçage doit être strictement identique au diamètre nominal de la vis", "isCorrect": False},
+                        {"text": "Le perçage doit toujours être réalisé à la moitié du diamètre final du taraudage", "isCorrect": False},
+                        {"text": "La matière va se rétracter naturellement après le passage du taraud ébaucheur", "isCorrect": False}
                     ],
-                    "correction": "Le Bridage est une mesure de sécurité essentielle lors du perçage."
+                    "correction": "Règle approximative standard : Diamètre de perçage = Diamètre nominal (10) - Pas (1,5 pour du M10 standard) = 8,5 mm."
                 },
             ]
         },
+        # =========================================================================
+        # THÈME 4 : TECHNIQUES D'ASSEMBLAGE ET DE SOUDAGE (Questions 61 à 80)
+        # =========================================================================
         4: {
-            "name": "4. Soudage et Assemblages Fixes (Q. 61-80)",
+            "name": "THÈME 4 : TECHNIQUES D'ASSEMBLAGE ET DE SOUDAGE",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel est le procédé de soudage le plus couramment utilisé en atelier pour l'assemblage de pièces métalliques, utilisant un fil continu et un gaz de protection (MIG/MAG) ?",
+                    "question": "En soudage à l'arc à l'électrode enrobée, à quoi sert principalement l'enrobage ?",
                     "answerOptions": [
-                        {"text": "Le TIG (Tungsten Inert Gas).", "isCorrect": False, "key": "A"},
-                        {"text": "Le MIG/MAG (Metal Inert/Active Gas).", "isCorrect": True, "key": "B"},
-                        {"text": "Le soudage à l'arc à électrode enrobée (MMA).", "isCorrect": False, "key": "C"},
-                        {"text": "Le soudage autogène.", "isCorrect": False, "key": "D"}
+                        {"text": "Protéger le bain", "isCorrect": True},
+                        {"text": "Refroidir la pièce", "isCorrect": False},
+                        {"text": "Faire joli", "isCorrect": False},
+                        {"text": "Économiser l'énergie", "isCorrect": False}
                     ],
-                    "correction": "Le MIG/MAG est rapide, productif et polyvalent."
+                    "correction": "L'enrobage fond et forme un gaz protecteur ainsi qu'un laitier qui isole le bain de fusion de l'oxygène de l'air, évitant l'oxydation."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quel est le rôle du Gaz de Protection (ex : Argon ou $\text{Argon}+\text{CO}_2$) dans le soudage MIG/MAG et TIG ?",
+                    "question": "Quelle est la différence principale entre le soudage MIG et le soudage MAG ?",
                     "answerOptions": [
-                        {"text": "Accélérer la soudure.", "isCorrect": False, "key": "A"},
-                        {"text": "Protéger le métal d'apport et le bain de fusion de l'oxydation et de la contamination par l'air.", "isCorrect": True, "key": "B"},
-                        {"text": "Refroidir la torche.", "isCorrect": False, "key": "C"},
-                        {"text": "Nettoyer la pièce.", "isCorrect": False, "key": "D"}
+                        {"text": "La nature du gaz", "isCorrect": True},
+                        {"text": "Le diamètre du fil", "isCorrect": False},
+                        {"text": "La couleur de la torche", "isCorrect": False},
+                        {"text": "La longueur du câble", "isCorrect": False}
                     ],
-                    "correction": "La Protection Gazeuse est essentielle pour obtenir un cordon de soudure sain."
+                    "correction": "MIG = Metal Inert Gas (gaz inerte). MAG = Metal Active Gas (gaz actif)."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Comment appelle-t-on le type de soudure réalisé sans métal d'apport (le plus souvent en TIG sur tôle mince ou inox) ?",
+                    "question": "En soudage TIG, l'électrode est fabriquée en :",
                     "answerOptions": [
-                        {"text": "Le soudage MAG.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Soudage Autogène.", "isCorrect": True, "key": "B"},
-                        {"text": "Le soudage à l'arc.", "isCorrect": False, "key": "C"},
-                        {"text": "Le soudage par points.", "isCorrect": False, "key": "D"}
+                        {"text": "Tungstène", "isCorrect": True},
+                        {"text": "Aluminium", "isCorrect": False},
+                        {"text": "Cuivre", "isCorrect": False},
+                        {"text": "Titane", "isCorrect": False}
                     ],
-                    "correction": "Le Soudage Autogène utilise uniquement la fusion des bords des pièces à assembler."
+                    "correction": "L'électrode TIG est 'réfractaire' (non fusible), elle est en Tungstène pour résister à la température de l'arc sans fondre."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quel EPI est absolument obligatoire pour le soudeur afin de protéger ses yeux et son visage de l'arc électrique et des UV/IR ?",
+                    "question": "Avant de réaliser un cordon de soudure complet, quelle opération est indispensable pour maintenir les pièces en position ?",
                     "answerOptions": [
-                        {"text": "Le casque anti-bruit.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Masque (ou Casque) de Soudage à Oculaires Filtrants (passifs ou automatiques).", "isCorrect": True, "key": "B"},
-                        {"text": "Les gants fins.", "isCorrect": False, "key": "C"},
-                        {"text": "Les lunettes de soleil.", "isCorrect": False, "key": "D"}
+                        {"text": "Le pointage", "isCorrect": True},
+                        {"text": "Le meulage", "isCorrect": False},
+                        {"text": "Le polissage", "isCorrect": False},
+                        {"text": "Le graissage", "isCorrect": False}
                     ],
-                    "correction": "La Protection de la Vue est essentielle pour éviter l'ophtalmie (coup d'arc) et les brûlures graves."
+                    "correction": "Le pointage consiste à réaliser de petits points de soudure régulièrement espacés pour fixer l'assemblage."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quelle est la principale différence entre le soudage TIG et le MIG/MAG ?",
+                    "question": "Comment appelle-t-on le dépôt vitrifié qui recouvre le cordon de soudure après refroidissement (électrode enrobée) ?",
                     "answerOptions": [
-                        {"text": "Le TIG est plus rapide.", "isCorrect": False, "key": "A"},
-                        {"text": "Le TIG est plus lent et plus précis, utilisant une électrode de Tungstène non consommable (idéal pour l'inox et les faibles épaisseurs).", "isCorrect": True, "key": "B"},
-                        {"text": "Le TIG utilise plus de gaz.", "isCorrect": False, "key": "C"},
-                        {"text": "Le MIG/MAG n'utilise pas de métal d'apport.", "isCorrect": False, "key": "D"}
+                        {"text": "Laitier", "isCorrect": True},
+                        {"text": "Verre", "isCorrect": False},
+                        {"text": "Calamine", "isCorrect": False},
+                        {"text": "Rouille", "isCorrect": False}
                     ],
-                    "correction": "Le TIG offre la meilleure qualité de finition mais est moins productif que le MAG."
+                    "correction": "Le laitier est le résidu solide de l'enrobage fondu qui remonte à la surface pour protéger le métal chaud."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Comment appelle-t-on le type d'assemblage non soudé, réalisé par des vis, des boulons ou des rivets, qui permet un démontage ultérieur ?",
+                    "question": "Quel défaut se caractérise par des bulles de gaz emprisonnées dans la soudure ?",
                     "answerOptions": [
-                        {"text": "L'assemblage permanent.", "isCorrect": False, "key": "A"},
-                        {"text": "L'Assemblage Démontable (ou Assemblage Mécanique).", "isCorrect": True, "key": "B"},
-                        {"text": "L'assemblage par collage.", "isCorrect": False, "key": "C"},
-                        {"text": "L'assemblage par encastrement.", "isCorrect": False, "key": "D"}
+                        {"text": "Soufflures", "isCorrect": True},
+                        {"text": "Caniveaux", "isCorrect": False},
+                        {"text": "Fissures", "isCorrect": False},
+                        {"text": "Collages", "isCorrect": False}
                     ],
-                    "correction": "Les Assemblages Boulonnés sont souvent utilisés pour les structures livrées en kit."
+                    "correction": "Les soufflures (porosités) sont des cavités dues à un gaz qui n'a pas pu s'échapper avant la solidification."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Quelle est la fonction d'un Pointage (ou point de soudure) ?",
+                    "question": "En soudage MAG, si j'augmente la vitesse de dévidage du fil, qu'est-ce qui augmente proportionnellement ?",
                     "answerOptions": [
-                        {"text": "Réaliser la soudure définitive.", "isCorrect": False, "key": "A"},
-                        {"text": "Maintenir temporairement les pièces en position et garantir l'alignement et la géométrie de l'assemblage avant de souder complètement.", "isCorrect": True, "key": "B"},
-                        {"text": "Nettoyer la pièce.", "isCorrect": False, "key": "C"},
-                        {"text": "Plier le métal.", "isCorrect": False, "key": "D"}
+                        {"text": "L'intensité du courant", "isCorrect": True},
+                        {"text": "La tension à vide", "isCorrect": False},
+                        {"text": "Le débit de gaz", "isCorrect": False},
+                        {"text": "La fréquence du réseau", "isCorrect": False}
                     ],
-                    "correction": "Le Pointage est une étape essentielle pour éviter les déformations dues au retrait."
+                    "correction": "Sur un poste semi-automatique, l'intensité (Ampérage) est directement liée à la vitesse de fil."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Qu'est-ce qu'un Rivet Pop (ou Rivet Aveugle) ?",
+                    "question": "Quelle préparation est nécessaire pour souder bout à bout deux tôles d'acier de 10 mm d'épaisseur ?",
                     "answerOptions": [
-                        {"text": "Un type de soudure.", "isCorrect": False, "key": "A"},
-                        {"text": "Un Système d'Assemblage Rapide et Démontable, utilisé souvent pour fixer des tôles fines dans des zones d'accès limité.", "isCorrect": True, "key": "B"},
-                        {"text": "Un type de boulon.", "isCorrect": False, "key": "C"},
-                        {"text": "Un écrou de serrage.", "isCorrect": False, "key": "D"}
+                        {"text": "Chanfrein", "isCorrect": True},
+                        {"text": "Ponçage", "isCorrect": False},
+                        {"text": "Dégraissage", "isCorrect": False},
+                        {"text": "Vernissage", "isCorrect": False}
                     ],
-                    "correction": "Le Rivet Pop est posé avec une pince à riveter."
+                    "correction": "Au-delà de 3-4 mm d'épaisseur, il faut réaliser un chanfrein (bords taillés en biseau, souvent en V) pour permettre la pénétration."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Que représente le symbole d'un triangle ($\Delta$) sur une ligne de référence de soudage ?",
+                    "question": "Qu'est-ce qu'un 'caniveau' en défaut de soudure ?",
                     "answerOptions": [
-                        {"text": "La position de la soudure.", "isCorrect": False, "key": "A"},
-                        {"text": "Un Cordon de Soudure d'Angle (le plus courant, utilisé pour les assemblages en T, à recouvrement ou en angle).", "isCorrect": True, "key": "B"},
-                        {"text": "Le type de préparation.", "isCorrect": False, "key": "C"},
-                        {"text": "La longueur de la soudure.", "isCorrect": False, "key": "D"}
+                        {"text": "Un creux sur les bords du cordon", "isCorrect": True},
+                        {"text": "Une bosse au milieu du cordon", "isCorrect": False},
+                        {"text": "Un trou traversant la pièce", "isCorrect": False},
+                        {"text": "Une inclusion de laitier interne", "isCorrect": False}
                     ],
-                    "correction": "Le Triangle indique la soudure d'angle ; un V indique une soudure bout à bout avec chanfrein."
+                    "correction": "Le caniveau est un manque de matière le long de la ligne de raccordement, souvent dû à une intensité trop forte."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Comment appelle-t-on la couche de résidus (oxydes, silicates) qui se forme à la surface du cordon de soudure à l'arc à électrode enrobée (MMA) et qu'il faut enlever ?",
+                    "question": "Pour limiter les déformations lors du soudage d'une grande longueur, quelle technique utilise-t-on ?",
                     "answerOptions": [
-                        {"text": "Le lait.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Laitier (ou Scorie), enlevé avec un marteau à piquer et une brosse métallique.", "isCorrect": True, "key": "B"},
-                        {"text": "La rouille.", "isCorrect": False, "key": "C"},
-                        {"text": "Le TIG.", "isCorrect": False, "key": "D"}
+                        {"text": "Le pas de pèlerin", "isCorrect": True},
+                        {"text": "Le soudage en continu à très haute intensité sans pause", "isCorrect": False},
+                        {"text": "Le soudage simultané par quatre soudeurs alignés", "isCorrect": False},
+                        {"text": "Le préchauffage de la pièce à la température de fusion", "isCorrect": False}
                     ],
-                    "correction": "Le Laitier protège la soudure pendant son refroidissement mais doit être retiré."
+                    "correction": "Le pas de pèlerin consiste à souder 'à l'envers' par petits tronçons successifs pour mieux répartir la chaleur."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Quelle est la principale fonction d'une Entretoise dans un assemblage (ex : entre deux lisses de garde-corps) ?",
+                    "question": "En soudage TIG, quel métal d'apport utilise-t-on généralement ?",
                     "answerOptions": [
-                        {"text": "Lier les pièces.", "isCorrect": False, "key": "A"},
-                        {"text": "Maintenir un écartement précis et constant entre deux éléments parallèles et garantir la rigidité latérale de l'ouvrage.", "isCorrect": True, "key": "B"},
-                        {"text": "Servir de décoration.", "isCorrect": False, "key": "C"},
-                        {"text": "Faciliter le soudage.", "isCorrect": False, "key": "D"}
+                        {"text": "Baguette dressée tenue à la main", "isCorrect": True},
+                        {"text": "Bobine de fil motorisée automatique", "isCorrect": False},
+                        {"text": "Électrode enrobée standard", "isCorrect": False},
+                        {"text": "Poudre métallique projetée", "isCorrect": False}
                     ],
-                    "correction": "L'Entretoise est un élément d'espacement et de rigidité."
+                    "correction": "En TIG manuel, le soudeur tient la torche d'une main et apporte le métal (baguette) de l'autre main."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Quel est le risque si la vitesse de soudage est trop rapide en MAG ?",
+                    "question": "Que signifie l'acronyme E.P.I. indispensable au soudeur ?",
                     "answerOptions": [
-                        {"text": "Un retrait excessif.", "isCorrect": False, "key": "A"},
-                        {"text": "Un Manque de Pénétration (le cordon n'est qu'en surface) et une forme de cordon irrégulière.", "isCorrect": True, "key": "B"},
-                        {"text": "Un excès de pénétration.", "isCorrect": False, "key": "C"},
-                        {"text": "Un trou dans la tôle.", "isCorrect": False, "key": "D"}
+                        {"text": "Équipement de Protection Individuelle", "isCorrect": True},
+                        {"text": "Éléments Pour l'Industrie", "isCorrect": False},
+                        {"text": "Étude Pratique Informatique", "isCorrect": False},
+                        {"text": "Électricien Professionnel Indépendant", "isCorrect": False}
                     ],
-                    "correction": "Une Vitesse Lente est nécessaire pour que le bain de fusion ait le temps de pénétrer la racine."
+                    "correction": "Les EPI du soudeur incluent la cagoule, les gants cuir, le tablier, les chaussures de sécurité, etc."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Comment appelle-t-on le procédé d'assemblage qui utilise la chaleur par friction (sans arc électrique) pour lier le métal (ex : soudure de goujons) ?",
+                    "question": "Quelle position de soudage est codifiée 'PC' ou 'corniche' ?",
                     "answerOptions": [
-                        {"text": "Le soudage par points.", "isCorrect": False, "key": "A"},
-                        {"text": "Le MIG.", "isCorrect": False, "key": "B"},
-                        {"text": "Le Soudage par Friction (ou par résistance).", "isCorrect": True, "key": "C"},
-                        {"text": "Le soudage TIG.", "isCorrect": False, "key": "D"}
+                        {"text": "Horizontale sur paroi verticale", "isCorrect": True},
+                        {"text": "À plat au sol", "isCorrect": False},
+                        {"text": "Au plafond", "isCorrect": False},
+                        {"text": "Verticale montante", "isCorrect": False}
                     ],
-                    "correction": "Le Soudage par Friction est courant pour la pose de goujons filetés sur tôle mince."
+                    "correction": "La soudure en corniche se fait sur un plan vertical, mais le cordon lui-même est horizontal."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quelle est la fonction d'une Rondelle Frein (ou rondelle grower) dans un assemblage boulonné ?",
+                    "question": "Quelle position de soudage est codifiée 'PC' ou 'corniche' ?",
                     "answerOptions": [
-                        {"text": "Répartir l'effort.", "isCorrect": False, "key": "A"},
-                        {"text": "Empêcher le dévissage accidentel du boulon ou de l'écrou sous l'effet des vibrations.", "isCorrect": True, "key": "B"},
-                        {"text": "Faciliter le serrage.", "isCorrect": False, "key": "C"},
-                        {"text": "Rendre l'assemblage étanche.", "isCorrect": False, "key": "D"}
+                        {"text": "Soudure chantier", "isCorrect": True},
+                        {"text": "Soudure périphérique", "isCorrect": False},
+                        {"text": "Soudure meulée", "isCorrect": False},
+                        {"text": "Soudure bouchon", "isCorrect": False}
                     ],
-                    "correction": "Le Freinage est crucial pour la sécurité des ouvrages sous contrainte."
+                    "correction": "Le petit drapeau signale que l'opération de soudage ne se fait pas en atelier mais directement sur le lieu de montage (chantier)."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quel est l'outil utilisé pour enlever l'oxydation (la 'calamine') et les impuretés avant le soudage ou avant l'application d'une peinture ?",
+                    "question": "Quel est la fonction du 'manodétendeur' sur la bouteille de gaz ?",
                     "answerOptions": [
-                        {"text": "Le chiffon.", "isCorrect": False, "key": "A"},
-                        {"text": "La Brosse Métallique (ou le Disque à lamelles) monté sur meuleuse ou perceuse.", "isCorrect": True, "key": "B"},
-                        {"text": "La brosse à dents.", "isCorrect": False, "key": "C"},
-                        {"text": "La pointe à tracer.", "isCorrect": False, "key": "D"}
+                        {"text": "Réduire la pression et régler le débit", "isCorrect": True},
+                        {"text": "Augmenter la pression de la bouteille", "isCorrect": False},
+                        {"text": "Mélanger les différents gaz entre eux", "isCorrect": False},
+                        {"text": "Filtrer les impuretés de l'air ambiant", "isCorrect": False}
                     ],
-                    "correction": "Le Brossage (ou décapage) est une préparation de surface essentielle."
+                    "correction": "Le manodétendeur abaisse la haute pression de la bouteille à une valeur utilisable et permet de régler le débit."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Comment appelle-t-on la déformation de la soudure (renflement, goutte) en dessous de la surface de la pièce soudée ?",
+                    "question": "En soudage semi-automatique (MAG), si le fil 'tape' au fond du bain (sensation de pic-vert), c'est que :",
                     "answerOptions": [
-                        {"text": "Le cordon.", "isCorrect": False, "key": "A"},
-                        {"text": "La Pénétration (ou L'Envers de Cordon).", "isCorrect": True, "key": "B"},
-                        {"text": "Le retrait.", "isCorrect": False, "key": "C"},
-                        {"text": "La porosité.", "isCorrect": False, "key": "D"}
+                        {"text": "La vitesse de fil est trop élevée par rapport à la tension", "isCorrect": True},
+                        {"text": "La bouteille de gaz est complètement vide", "isCorrect": False},
+                        {"text": "Le tube contact est d'un diamètre trop grand", "isCorrect": False},
+                        {"text": "La pince de masse est mal branchée sur la table", "isCorrect": False}
                     ],
-                    "correction": "La Pénétration est la profondeur à laquelle le métal d'apport s'est allié à la racine du joint."
+                    "correction": "Si le fil arrive trop vite et n'a pas le temps de fondre, il heurte la pièce solide. Il faut réduire la vitesse de fil ou augmenter la tension."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quelle est la principale caractéristique d'une vis autoforeuse ?",
+                    "question": "Quel est le risque principal pour les yeux lors du soudage à l'arc sans protection ?",
                     "answerOptions": [
-                        {"text": "Elle ne rouille pas.", "isCorrect": False, "key": "A"},
-                        {"text": "Elle perce elle-même le trou de réception dans la tôle mince (souvent utilisée pour la fixation de bardage ou de tôles de couverture).", "isCorrect": True, "key": "B"},
-                        {"text": "Elle est démontable.", "isCorrect": False, "key": "C"},
-                        {"text": "Elle est très résistante.", "isCorrect": False, "key": "D"}
+                        {"text": "Coup d'arc", "isCorrect": True},
+                        {"text": "Coup de soleil", "isCorrect": False},
+                        {"text": "Coup de chaleur", "isCorrect": False},
+                        {"text": "Coup de vent", "isCorrect": False}
                     ],
-                    "correction": "La Vis Autoforeuse permet un gain de temps considérable sur la pose."
+                    "correction": "Le 'coup d'arc' est une brûlure de la cornée due aux rayonnements ultraviolets (UV)."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Quel est le risque de laisser un mouillage (angle de contact) trop faible sur un cordon de soudure d'angle ?",
+                    "question": "Qu'appelle-t-on la 'Zone Affectée Thermiquement' (ZAT) ?",
                     "answerOptions": [
-                        {"text": "Le cordon est trop lisse.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Manque de Fusion sur les Bords : le cordon se détache ou présente une faiblesse à la racine, réduisant la résistance mécanique du joint.", "isCorrect": True, "key": "B"},
-                        {"text": "Le cordon est trop large.", "isCorrect": False, "key": "C"},
-                        {"text": "Le gaz est insuffisant.", "isCorrect": False, "key": "D"}
+                        {"text": "La zone du métal de base chauffée mais non fondue", "isCorrect": True},
+                        {"text": "La zone où le métal a totalement fondu et s'est mélangé", "isCorrect": False},
+                        {"text": "La zone recouverte par le laitier protecteur", "isCorrect": False},
+                        {"text": "La zone située à plus de 50 cm de la soudure", "isCorrect": False}
                     ],
-                    "correction": "Le Mouillage est la fusion des bords de la tôle par le métal d'apport."
+                    "correction": "La ZAT est la bande de métal adjacente à la soudure qui a subi des modifications de structure à cause de la chaleur."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Comment appelle-t-on l'opération qui consiste à insérer un boulon dans un trou non aligné ou trop petit, souvent à l'aide d'une broche ?",
+                    "question": "En soudage TIG, quel gaz est exclusivement utilisé pour protéger l'électrode et le bain ?",
                     "answerOptions": [
-                        {"text": "Le bridage.", "isCorrect": False, "key": "A"},
-                        {"text": "Le Mèche à Aléser (ou Broche de Reprise) pour aligner les trous de deux pièces avant de passer le boulon.", "isCorrect": True, "key": "B"},
-                        {"text": "Le chanfrein.", "isCorrect": False, "key": "C"},
-                        {"text": "Le serrage.", "isCorrect": False, "key": "D"}
+                        {"text": "Gaz inerte", "isCorrect": True},
+                        {"text": "Gaz actif", "isCorrect": False},
+                        {"text": "Gaz oxydant", "isCorrect": False},
+                        {"text": "Gaz naturel", "isCorrect": False}
                     ],
-                    "correction": "L'Alésage est une opération de rectification de la position des trous."
+                    "correction": "L'électrode Tungstène brûlerait instantanément en présence d'oxygène. Il faut impérativement un gaz inerte (Argon ou Hélium)."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Quel est le type de soudure utilisé pour les assemblages de pièces épaisses nécessitant une pénétration totale ?",
+                    "question": "Pour assembler deux tubes perpendiculaires (piquage), quelle opération de découpe est nécessaire sur le tube aboutissant ?",
                     "answerOptions": [
-                        {"text": "La soudure d'angle.", "isCorrect": False, "key": "A"},
-                        {"text": "La Soudure Bout à Bout (avec chanfrein en V ou en U) réalisée en plusieurs passes.", "isCorrect": True, "key": "B"},
-                        {"text": "Le pointage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le rechargement.", "isCorrect": False, "key": "D"}
+                        {"text": "Gueule de loup", "isCorrect": True},
+                        {"text": "Coupe droite", "isCorrect": False},
+                        {"text": "Coupe biaise", "isCorrect": False},
+                        {"text": "Coupe sifflet", "isCorrect": False}
                     ],
-                    "correction": "La Soudure Bout à Bout est la plus résistante, car elle permet une pénétration maximale."
+                    "correction": "La découpe en 'gueule de loup' épouse la forme cylindrique du tube porteur pour un ajustement parfait."
                 },
             ]
         },
+        # =========================================================================
+        # THÈME 5 : POSE, MAINTENANCE ET PRÉVENTION SANTÉ ENVIRONNEMENT (PSE) (Questions 81 à 100)
+        # =========================================================================
         5: {
-            "name": "5. Santé, Sécurité et Réglementation (Q. 81-100)",
+            "name": "THÈME 5 : POSE, MAINTENANCE ET PRÉVENTION SANTÉ ENVIRONNEMENT (PSE)",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel est l'Équipement de Protection Individuelle (EPI) indispensable pour prévenir les blessures graves aux pieds (chute de charge, perforation) ?",
+                    "question": "Pour fixer une charge lourde dans une dalle en béton plein non fissuré, quel élément de fixation mécanique est le plus adapté ?",
                     "answerOptions": [
-                        {"text": "Les baskets.", "isCorrect": False, "key": "A"},
-                        {"text": "Les Chaussures de Sécurité (coque de protection et semelle anti-perforation) S3.", "isCorrect": True, "key": "B"},
-                        {"text": "Les bottes en caoutchouc.", "isCorrect": False, "key": "C"},
-                        {"text": "Les sandales.", "isCorrect": False, "key": "D"}
+                        {"text": "Goujon", "isCorrect": True},
+                        {"text": "Cheville nylon universelle à expansion", "isCorrect": False},
+                        {"text": "Vis à bois à tête fraisée", "isCorrect": False},
+                        {"text": "Clou en acier trempé strié", "isCorrect": False}
                     ],
-                    "correction": "Les Chaussures S3 sont la norme pour le BTP et la métallerie."
+                    "correction": "Le goujon d'ancrage est conçu pour supporter des charges lourdes dans le béton plein grâce à sa bague qui s'expanse fortement."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Quel est le risque principal lié à l'utilisation de la meuleuse d'angle (disque à tronçonner/ébarbeur) ?",
+                    "question": "Selon le code couleur international, quelle est la Charge Maximale d'Utilisation (CMU) d'une élingue textile violette ?",
                     "answerOptions": [
-                        {"text": "Le bruit.", "isCorrect": False, "key": "A"},
-                        {"text": "La Projection de fragments (étincelles, métal chaud) et la Rupture du Disque (doit être monté et protégé correctement).", "isCorrect": True, "key": "B"},
-                        {"text": "La corrosion.", "isCorrect": False, "key": "C"},
-                        {"text": "Le froid.", "isCorrect": False, "key": "D"}
+                        {"text": "1 tonne", "isCorrect": True},
+                        {"text": "2 tonnes", "isCorrect": False},
+                        {"text": "3 tonnes", "isCorrect": False},
+                        {"text": "5 tonnes", "isCorrect": False}
                     ],
-                    "correction": "La Meuleuse est l'outil le plus accidentogène ; le port de EPI est crucial."
+                    "correction": "Code couleur des élingues plates : Violet = 1T, Vert = 2T, Jaune = 3T, Gris = 4T, Rouge = 5T."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Pourquoi doit-on obligatoirement utiliser un extracteur de fumées ou travailler en extérieur lors du soudage ?",
+                    "question": "À partir de quel niveau sonore le port de protections auditives (casque ou bouchons) devient-il obligatoire selon la réglementation ?",
                     "answerOptions": [
-                        {"text": "Pour le confort.", "isCorrect": False, "key": "A"},
-                        {"text": "Les Fumées de Soudage contiennent des particules et des gaz toxiques (oxydes de métaux lourds, ozone, CO) qui sont cancérogènes et irritants pour les poumons.", "isCorrect": True, "key": "B"},
-                        {"text": "Pour éviter le retrait.", "isCorrect": False, "key": "C"},
-                        {"text": "Pour un meilleur cordon.", "isCorrect": False, "key": "D"}
+                        {"text": "85 décibels", "isCorrect": True},
+                        {"text": "50 décibels", "isCorrect": False},
+                        {"text": "120 décibels", "isCorrect": False},
+                        {"text": "140 décibels", "isCorrect": False}
                     ],
-                    "correction": "La Ventilation/Aspiration est essentielle pour la santé du soudeur."
+                    "correction": "Le seuil d'action déclenchant l'obligation de port est de 85 dB(A)."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Quel est le risque lié à l'utilisation d'une presse-plieuse ou d'une cisaille ?",
+                    "question": "Pour effectuer des travaux de meulage ou d'ébarbage, quelle protection oculaire est impérative ?",
                     "answerOptions": [
-                        {"text": "Le bruit.", "isCorrect": False, "key": "A"},
-                        {"text": "L'Écrasement et la Cisaille des Mains par les outils ; les machines doivent être équipées de barrières immatérielles ou de protections.", "isCorrect": True, "key": "B"},
-                        {"text": "Le choc électrique.", "isCorrect": False, "key": "C"},
-                        {"text": "La projection.", "isCorrect": False, "key": "D"}
+                        {"text": "Lunettes à coques", "isCorrect": True},
+                        {"text": "Masque chirurgical", "isCorrect": False},
+                        {"text": "Lunettes de soleil", "isCorrect": False},
+                        {"text": "Lentilles de contact", "isCorrect": False}
                     ],
-                    "correction": "Le Risque Mécanique (coupure, écrasement) est très élevé sur les machines à commande."
+                    "correction": "Il faut impérativement des lunettes de sécurité avec protections latérales (coques) ou une visière faciale."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Comment sécurise-t-on un poste de travail en hauteur (sur une plateforme ou un échafaudage) ?",
+                    "question": "Quelle est la position correcte pour soulever une charge lourde au sol afin de protéger sa colonne vertébrale ?",
                     "answerOptions": [
-                        {"text": "Avec une échelle.", "isCorrect": False, "key": "A"},
-                        {"text": "Par la mise en place de Protections Collectives (garde-corps complets) ou de Harnais (protection individuelle) si la protection collective est impossible.", "isCorrect": True, "key": "B"},
-                        {"text": "En attachant l'outil.", "isCorrect": False, "key": "C"},
-                        {"text": "En travaillant vite.", "isCorrect": False, "key": "D"}
+                        {"text": "Dos droit et jambes pliées", "isCorrect": True},
+                        {"text": "Dos rond et jambes tendues", "isCorrect": False},
+                        {"text": "Jambes croisées et dos penché", "isCorrect": False},
+                        {"text": "Bras tendus et dos courbé vers l'avant", "isCorrect": False}
                     ],
-                    "correction": "La Protection Collective est toujours prioritaire sur la Protection Individuelle (harnais)."
+                    "correction": "Il faut garder le dos plat et utiliser la force des cuisses pour se relever."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Que signifie le marquage NF sur un produit ou un équipement de serrurerie ?",
+                    "question": "Quel type de fixation est particulièrement recommandé pour un ancrage solide dans un matériau creux (parpaing, brique creuse) ?",
                     "answerOptions": [
-                        {"text": "Nouveau Format.", "isCorrect": False, "key": "A"},
-                        {"text": "Norme Française : atteste que le produit ou service est conforme aux normes de qualité, de sécurité et de fiabilité définies en France.", "isCorrect": True, "key": "B"},
-                        {"text": "Non Fonctionnel.", "isCorrect": False, "key": "C"},
-                        {"text": "Notice Fournie.", "isCorrect": False, "key": "D"}
+                        {"text": "Scellement chimique", "isCorrect": True},
+                        {"text": "Goujon à frapper", "isCorrect": False},
+                        {"text": "Vis à béton sans cheville", "isCorrect": False},
+                        {"text": "Clou lisse standard", "isCorrect": False}
                     ],
-                    "correction": "La Norme NF est un gage de qualité et de conformité."
+                    "correction": "Le scellement chimique (tamis + résine) crée un bouchon de matière qui verrouille la fixation sans contrainte d'écartement."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Quelle est la règle de sécurité à respecter lors de la manutention d'une charge lourde (ex : poutre métallique) ?",
+                    "question": "Que signifie le pictogramme de sécurité représentant une tête de mort sur un bidon de produit chimique ?",
                     "answerOptions": [
-                        {"text": "Soulever seul.", "isCorrect": False, "key": "A"},
-                        {"text": "Utiliser des Moyens Mécaniques Appropriés (chariot élévateur, grue, palan) ou travailler à plusieurs pour respecter les limites de charge individuelle (PRAP).", "isCorrect": True, "key": "B"},
-                        {"text": "Utiliser de l'huile.", "isCorrect": False, "key": "C"},
-                        {"text": "Travailler sans gants.", "isCorrect": False, "key": "D"}
+                        {"text": "Toxique", "isCorrect": True},
+                        {"text": "Corrosif", "isCorrect": False},
+                        {"text": "Inflammable", "isCorrect": False},
+                        {"text": "Explosif", "isCorrect": False}
                     ],
-                    "correction": "L'utilisation de la Mécanique (ou de l'assistance humaine) prévient les TMS."
+                    "correction": "Ce symbole indique que le produit est toxique ou mortel par inhalation, ingestion ou contact cutané."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Quel EPI est conseillé lors de la manipulation de pièces fraîchement découpées ou de fers à béton (risque de coupure) ?",
+                    "question": "Quel type d'extincteur doit-on privilégier pour éteindre un début d'incendie sur une armoire électrique sous tension ?",
                     "answerOptions": [
-                        {"text": "Le casque.", "isCorrect": False, "key": "A"},
-                        {"text": "Les Gants de Protection Anti-Coupure (norme EN 388).", "isCorrect": True, "key": "B"},
-                        {"text": "Les bouchons d'oreille.", "isCorrect": False, "key": "C"},
-                        {"text": "Le gilet jaune.", "isCorrect": False, "key": "D"}
+                        {"text": "CO2", "isCorrect": True},
+                        {"text": "Eau", "isCorrect": False},
+                        {"text": "Mousse", "isCorrect": False},
+                        {"text": "Sable", "isCorrect": False}
                     ],
-                    "correction": "Les Gants anti-coupure sont essentiels pour manipuler les bords vifs."
+                    "correction": "Le dioxyde de carbone (CO2) est un gaz inerte qui étouffe le feu sans conduire l'électricité et sans laisser de résidus."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Quelle est la distance de sécurité minimale entre le poste de soudage et tout matériau inflammable (cartons, bois, solvants) ?",
+                    "question": "Quelle norme européenne régit les gants de protection contre les risques mécaniques (coupure, déchirure, abrasion) ?",
                     "answerOptions": [
-                        {"text": "10 cm.", "isCorrect": False, "key": "A"},
-                        {"text": "Au moins $5 \text{ mètres}$ (ou protection par écran anti-feu) pour éviter le départ de feu par les projections de métal en fusion (étincelles).", "isCorrect": True, "key": "B"},
-                        {"text": "50 cm.", "isCorrect": False, "key": "C"},
-                        {"text": "1 mètre.", "isCorrect": False, "key": "D"}
+                        {"text": "EN 388", "isCorrect": True},
+                        {"text": "EN 166", "isCorrect": False},
+                        {"text": "EN 374", "isCorrect": False},
+                        {"text": "EN 407", "isCorrect": False}
                     ],
-                    "correction": "Le Risque Incendie est majeur en soudage ; les consignes de sécurité sont très strictes."
+                    "correction": "La norme EN 388 est marquée sur les gants avec un pictogramme 'marteau/bouclier'."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Que signifie le sigle A2P (Assurance Prévention Protection) pour une serrure ?",
+                    "question": "Lors de l'utilisation d'une perceuse à colonne, le port des gants est :",
                     "answerOptions": [
-                        {"text": "Acier à $2$ Passages.", "isCorrect": False, "key": "A"},
-                        {"text": "Certification de Résistance à l'Effraction : plus le nombre d'étoiles est élevé, plus la serrure résiste longtemps à une tentative d'ouverture par la force.", "isCorrect": True, "key": "B"},
-                        {"text": "Aluminium $2$ Pièces.", "isCorrect": False, "key": "C"},
-                        {"text": "Axe $2$ Pênes.", "isCorrect": False, "key": "D"}
+                        {"text": "Interdit", "isCorrect": True},
+                        {"text": "Obligatoire", "isCorrect": False},
+                        {"text": "Conseillé", "isCorrect": False},
+                        {"text": "Indifférent", "isCorrect": False}
                     ],
-                    "correction": "La Certification A2P est un élément clé de la serrurerie de sécurité."
+                    "correction": "Les gants sont strictement interdits avec les machines rotatives car le tissu risque d'être happé par le foret."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quel est le risque de laisser des bouteilles de gaz de soudage (Argon, $\text{O}_2$) debout sans chaînette ou support ?",
+                    "question": "Sur un chantier, quel équipement mobile permet de travailler en hauteur en sécurité individuelle sans avoir besoin de s'attacher ?",
                     "answerOptions": [
-                        {"text": "Fuite de gaz.", "isCorrect": False, "key": "A"},
-                        {"text": "La Chute de la Bouteille qui peut casser le robinet, entraînant la projection violente de la bouteille (effet de roquette) et un risque mortel.", "isCorrect": True, "key": "B"},
-                        {"text": "Explosion.", "isCorrect": False, "key": "C"},
-                        {"text": "Corrosion.", "isCorrect": False, "key": "D"}
+                        {"text": "PIRL", "isCorrect": True},
+                        {"text": "Échelle", "isCorrect": False},
+                        {"text": "Escabeau", "isCorrect": False},
+                        {"text": "Chaise", "isCorrect": False}
                     ],
-                    "correction": "Les Bouteilles de Gaz doivent toujours être solidement chaînées ou rangées dans un râtelier."
+                    "correction": "La Plate-forme Individuelle Roulante Légère (PIRL) possède des garde-corps intégrés et des plinthes."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est le EPI essentiel à porter lors de travaux bruyants (meulage intensif, découpe plasma) ?",
+                    "question": "Que signifie l'acronyme CMU inscrit sur les appareils de levage ?",
                     "answerOptions": [
-                        {"text": "Les lunettes.", "isCorrect": False, "key": "A"},
-                        {"text": "Les Protections Auditives (Bouchons d'oreille ou Casque anti-bruit) pour prévenir la surdité professionnelle.", "isCorrect": True, "key": "B"},
-                        {"text": "Le gilet jaune.", "isCorrect": False, "key": "C"},
-                        {"text": "Le masque P3.", "isCorrect": False, "key": "D"}
+                        {"text": "Charge Maximale d'Utilisation", "isCorrect": True},
+                        {"text": "Charge Moyenne Usuelle", "isCorrect": False},
+                        {"text": "Capacité Mécanique Universelle", "isCorrect": False},
+                        {"text": "Coefficient Minimum d'Usure", "isCorrect": False}
                     ],
-                    "correction": "La Protection Auditive est obligatoire au-delà de $80 \text{ dB}$."
+                    "correction": "La CMU est la charge maximale que le matériel peut soulever en conditions normales de sécurité."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Comment doit être stocké le matériau découpé (profilés) en atelier ?",
+                    "question": "Quel est l'effet de l'augmentation de l'angle entre les brins d'une élingue lors d'un levage ?",
                     "answerOptions": [
-                        {"text": "Empilé n'importe comment.", "isCorrect": False, "key": "A"},
-                        {"text": "Rangés par Type et Longueur dans des râteliers métalliques appropriés, afin d'éviter les chutes et de faciliter l'accès et l'inventaire.", "isCorrect": True, "key": "B"},
-                        {"text": "Au milieu de l'atelier.", "isCorrect": False, "key": "C"},
-                        {"text": "À l'extérieur sans protection.", "isCorrect": False, "key": "D"}
+                        {"text": "Augmente la tension dans les brins", "isCorrect": True},
+                        {"text": "Diminue la tension globale supportée par les câbles de levage", "isCorrect": False},
+                        {"text": "Ne change absolument rien à la répartition des forces", "isCorrect": False},
+                        {"text": "Divise le poids de la charge par deux automatiquement", "isCorrect": False}
                     ],
-                    "correction": "Le Rangement est un facteur de productivité et de sécurité."
+                    "correction": "Plus l'angle au sommet est grand (ouvert), plus la tension dans chaque brin augmente considérablement."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Quel est le rôle du DTU (Document Technique Unifié) dans la pose d'ouvrages métalliques ?",
+                    "question": "Que faire si une élingue textile présente une coupure ou une déchirure importante ?",
                     "answerOptions": [
-                        {"text": "Déterminer le prix.", "isCorrect": False, "key": "A"},
-                        {"text": "Définir les Règles de l'Art pour la conception, la fabrication et la pose, notamment les tolérances, les fixations et les types d'acier à utiliser.", "isCorrect": True, "key": "B"},
-                        {"text": "Créer le plan.", "isCorrect": False, "key": "C"},
-                        {"text": "Déterminer la couleur.", "isCorrect": False, "key": "D"}
+                        {"text": "Rebut", "isCorrect": True},
+                        {"text": "Couture", "isCorrect": False},
+                        {"text": "Scotch", "isCorrect": False},
+                        {"text": "Collage", "isCorrect": False}
                     ],
-                    "correction": "Le respect des DTU garantit la solidité et la conformité aux normes."
+                    "correction": "Aucune réparation n'est autorisée. Il faut détruire et jeter l'élingue (mise au rebut)."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quelle est la principale mesure de prévention contre l'incendie en atelier de métallerie ?",
+                    "question": "Quelle est la conduite à tenir immédiate en cas de brûlure thermique simple ?",
                     "answerOptions": [
-                        {"text": "Ne pas souder.", "isCorrect": False, "key": "A"},
-                        {"text": "Avoir des extincteurs appropriés (Poudre ABC), bien rangés, accessibles, vérifiés, et isoler toute source de chaleur des matériaux combustibles.", "isCorrect": True, "key": "B"},
-                        {"text": "Aérer l'atelier.", "isCorrect": False, "key": "C"},
-                        {"text": "Travailler la nuit.", "isCorrect": False, "key": "D"}
+                        {"text": "Arroser", "isCorrect": True},
+                        {"text": "Graisser", "isCorrect": False},
+                        {"text": "Percer", "isCorrect": False},
+                        {"text": "Bandages", "isCorrect": False}
                     ],
-                    "correction": "Le Contrôle du feu (extincteurs et isolation) est primordial."
+                    "correction": "Arroser à l'eau tempérée pendant 15 minutes pour stopper la propagation de la chaleur."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Comment doit être rangé le chiffon imbibé d'huile ou de solvant après le nettoyage des pièces ?",
+                    "question": "Lequel de ces métaux dégage des fumées particulièrement toxiques causant la 'fièvre des fondeurs' s'il est soudé sans protection ?",
                     "answerOptions": [
-                        {"text": "Jeté par terre.", "isCorrect": False, "key": "A"},
-                        {"text": "Placé dans un conteneur métallique fermé (boîte hermétique) pour éviter tout risque d'auto-combustion ou de départ de feu.", "isCorrect": True, "key": "B"},
-                        {"text": "Jeté dans la poubelle normale.", "isCorrect": False, "key": "C"},
-                        {"text": "Lavé.", "isCorrect": False, "key": "D"}
+                        {"text": "Zinc", "isCorrect": True},
+                        {"text": "Fer", "isCorrect": False},
+                        {"text": "Or", "isCorrect": False},
+                        {"text": "Titane", "isCorrect": False}
                     ],
-                    "correction": "Les chiffons gras sont des déchets dangereux avec un risque d'Auto-Combustion."
+                    "correction": "Le soudage de l'acier galvanisé (recouvert de Zinc) dégage des fumées d'oxyde de zinc très irritantes."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quel est le risque de manipuler des pièces d'acier inoxydable (Inox) avec des outils ayant servi à de l'acier carbone ?",
+                    "question": "Pour protéger les voies respiratoires des fumées de soudage, quelle est la protection collective prioritaire ?",
                     "answerOptions": [
-                        {"text": "La pièce est moins brillante.", "isCorrect": False, "key": "A"},
-                        {"text": "La Contamination par des Particules d'Acier Carbone qui vont créer des points de rouille (rouille superficielle) sur l'inox. Il faut utiliser des outils et des brosses spécifiques à l'inox.", "isCorrect": True, "key": "B"},
-                        {"text": "La pièce est plus lourde.", "isCorrect": False, "key": "C"},
-                        {"text": "Le soudage est impossible.", "isCorrect": False, "key": "D"}
+                        {"text": "Aspiration à la source", "isCorrect": True},
+                        {"text": "Port du masque FFP2 jetable", "isCorrect": False},
+                        {"text": "Consommation de lait", "isCorrect": False},
+                        {"text": "Ouverture des portes", "isCorrect": False}
                     ],
-                    "correction": "Le Risque de Contamination est la première cause de corrosion de l'inox."
+                    "correction": "La protection collective (torche aspirante ou bras d'aspiration) prime toujours sur la protection individuelle."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Quel est le principal danger lié à l'utilisation du chalumeau oxycoupeur (coupe au gaz) ?",
+                    "question": "Quel symbole indique qu'un outil électroportatif est à 'double isolation' (Classe II) et ne nécessite pas de mise à la terre ?",
                     "answerOptions": [
-                        {"text": "Le froid.", "isCorrect": False, "key": "A"},
-                        {"text": "L'Explosion des bouteilles de gaz ($\text{O}_2$, Acétylène) et le risque de brûlures graves dues à la projection de métal en fusion (étincelles, laitier).", "isCorrect": True, "key": "B"},
-                        {"text": "Le bruit.", "isCorrect": False, "key": "C"},
-                        {"text": "La fumée.", "isCorrect": False, "key": "D"}
+                        {"text": "Double carré", "isCorrect": True},
+                        {"text": "Double cercle", "isCorrect": False},
+                        {"text": "Éclair rouge", "isCorrect": False},
+                        {"text": "Triangle noir", "isCorrect": False}
                     ],
-                    "correction": "L'Oxycoupage nécessite une formation spécifique et le respect des règles de raccordement des bouteilles."
+                    "correction": "Le symbole de deux carrés l'un dans l'autre indique que l'appareil possède une isolation renforcée."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Comment appelle-t-on le document qui liste tous les risques du chantier et les mesures de prévention (obligatoire pour les gros chantiers) ?",
+                    "question": "L'acier est un matériau qui est :",
                     "answerOptions": [
-                        {"text": "Le DTU.", "isCorrect": False, "key": "A"},
-                        {"text": "Le PPSPS (Plan Particulier de Sécurité et de Protection de la Santé).", "isCorrect": True, "key": "B"},
-                        {"text": "Le plan d'ensemble.", "isCorrect": False, "key": "C"},
-                        {"text": "Le permis de construire.", "isCorrect": False, "key": "D"}
+                        {"text": "Recyclable à l'infini", "isCorrect": True},
+                        {"text": "Recyclable une seule fois", "isCorrect": False},
+                        {"text": "Non valorisable en fin de vie", "isCorrect": False},
+                        {"text": "Dégradable biologiquement", "isCorrect": False}
                     ],
-                    "correction": "Le PPSPS organise la sécurité collective sur les chantiers."
+                    "correction": "L'acier peut être refondu et réutilisé indéfiniment sans perte de ses propriétés mécaniques."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quelle est la principale précaution à prendre lors de l'utilisation d'une échelle ?",
+                    "question": "Quelle est la principale fonction d'une 'lisse' (ou main courante) sur un garde-corps ?",
                     "answerOptions": [
-                        {"text": "La laisser libre.", "isCorrect": False, "key": "A"},
-                        {"text": "L'Échelle doit être solidement calée ou fixée en haut et en bas, et doit dépasser l'appui supérieur d'au moins $1 \text{ mètre}$ ($3$ barreaux).", "isCorrect": True, "key": "B"},
-                        {"text": "Utiliser un seul pied.", "isCorrect": False, "key": "C"},
-                        {"text": "Monter avec les outils à la main.", "isCorrect": False, "key": "D"}
+                        {"text": "Empêcher la chute", "isCorrect": True},
+                        {"text": "Décorer l'escalier", "isCorrect": False},
+                        {"text": "Poser des objets", "isCorrect": False},
+                        {"text": "Rigidifier le sol", "isCorrect": False}
                     ],
-                    "correction": "L'Échelle est un poste de travail provisoire et doit être sécurisée pour prévenir la chute."
+                    "correction": "La fonction réglementaire du garde-corps est la protection contre les chutes de hauteur."
                 },
             ]
         }

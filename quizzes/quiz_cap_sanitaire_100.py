@@ -1,1146 +1,1144 @@
-# Fichier : quiz_cap_sanitaire_100.py
-
 quiz_data = {
-    "title": "Quiz CAP Monteur en Installations Sanitaires : Révisions Complètes (100 Questions)",
+    "title": "Quiz CAP Monteur en Installations Sanitaires (100 Questions)",
     "themes": {
         # =========================================================================
-        # THÈME 1 : SÉCURITÉ, OUTILS ET MATÉRIAUX (Q. 1-20)
+        # THÈME 1 : TECHNOLOGIE DES MATÉRIAUX ET FAÇONNAGE (Questions 1 à 20)
         # =========================================================================
         1: {
-            "name": "1. Sécurité, Outillage et Matériaux (Q. 1-20)",
+            "name": "THÈME 1 : TECHNOLOGIE DES MATÉRIAUX ET FAÇONNAGE",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quel Équipement de Protection Individuelle (EPI) est strictement requis lors de l'utilisation d'une meuleuse ou d'une perceuse ?",
+                    "question": "Sous quel état le cuivre est-il généralement vendu lorsqu'il est conditionné en couronnes ?",
                     "answerOptions": [
-                        {"text": "Le casque de chantier.", "isCorrect": False},
-                        {"text": "Les gants en latex.", "isCorrect": False},
-                        {"text": "Les lunettes de protection (ou visière) et les chaussures de sécurité (coquées).", "isCorrect": True},
-                        {"text": "Le gilet haute visibilité.", "isCorrect": False}
+                        {"text": "Recuit", "isCorrect": True},
+                        {"text": "Écroui", "isCorrect": False},
+                        {"text": "Galvanisé", "isCorrect": False},
+                        {"text": "Inoxydable", "isCorrect": False}
                     ],
-                    "correction": "Les **lunettes** protègent des projections de débris et les **chaussures** protègent des chutes d'outils ou de matériaux."
+                    "correction": "Le cuivre en couronne est 'recuit' (traité thermiquement), ce qui le rend malléable et permet de le dérouler et de le cintrer à la main. Le cuivre en barre est 'écroui' (rigide)."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quel outil est spécifiquement utilisé pour créer un évasement (collet battu) à l'extrémité d'un tube de cuivre pour un raccordement (dit 'américain' ou 'à olive' sans olive) ?",
+                    "question": "Quel outil spécifique utilise-t-on pour réaliser un filetage extérieur sur un tube en acier galvanisé ?",
                     "answerOptions": [
-                        {"text": "La cintreuse.", "isCorrect": False},
-                        {"text": "La Pince à évasement (ou Évaseur / Outil à collet battu).", "isCorrect": True},
-                        {"text": "Le coupe-tube.", "isCorrect": False},
-                        {"text": "La filière.", "isCorrect": False}
+                        {"text": "Filière", "isCorrect": True},
+                        {"text": "Taraud", "isCorrect": False},
+                        {"text": "Coupe-tube", "isCorrect": False},
+                        {"text": "Alésoir", "isCorrect": False}
                     ],
-                    "correction": "L'**Évaseur** déforme le cuivre pour créer une surface d'étanchéité conique (sans brasure)."
+                    "correction": "La filière (manuelle ou électrique) est l'outil qui permet d'usiner les filets sur la surface extérieure du tube pour permettre le vissage des raccords."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quelle est la température minimale (en °C) pour réaliser une **Brasure Forte** sur le cuivre (obligatoire pour le gaz et certains usages sous haute pression) ?",
+                    "question": "Quelle est la méthode d'assemblage standard pour les tubes d'évacuation en PVC gris ?",
                     "answerOptions": [
-                        {"text": "Inférieure à 350 °C (Brasure tendre).", "isCorrect": False},
-                        {"text": "Inférieure à 450 °C.", "isCorrect": False},
-                        {"text": "Supérieure ou égale à 450 °C.", "isCorrect": True},
-                        {"text": "Supérieure à 600 °C.", "isCorrect": False}
+                        {"text": "Collage à froid", "isCorrect": True},
+                        {"text": "Soudure autogène", "isCorrect": False},
+                        {"text": "Sertissage radial", "isCorrect": False},
+                        {"text": "Vissage conique", "isCorrect": False}
                     ],
-                    "correction": "La **Brasure forte** (> 450 °C) est plus résistante que la brasure tendre (< 450 °C) qui utilise de l'étain."
+                    "correction": "Le PVC s'assemble par emboîtement et collage à froid (soudure chimique) après avoir décapé les surfaces. On ne chauffe jamais le PVC d'évacuation."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Que représente le sigle **PVC** utilisé pour les tuyaux d'évacuation ?",
+                    "question": "Pourquoi est-il indispensable d'ébavurer l'intérieur d'un tube de cuivre après l'avoir coupé ?",
                     "answerOptions": [
-                        {"text": "Plastique Vert Comprimé.", "isCorrect": False},
-                        {"text": "Polyéthylène à Ventilation Contrôlée.", "isCorrect": False},
-                        {"text": "Polychlorure de Vinyle (tube le plus courant pour les évacuations des eaux usées et pluviales).", "isCorrect": True},
-                        {"text": "Polypropylène de Visserie Cuivrée.", "isCorrect": False}
+                        {"text": "Éviter les perturbations hydrauliques et bruits", "isCorrect": True},
+                        {"text": "Faciliter le passage de la clé de serrage", "isCorrect": False},
+                        {"text": "Modifier la structure chimique du métal coupé", "isCorrect": False},
+                        {"text": "Augmenter l'épaisseur de la paroi du tube", "isCorrect": False}
                     ],
-                    "correction": "Le **PVC** est léger, facile à coller et résistant à la corrosion."
+                    "correction": "La bavure réduit le diamètre intérieur, crée des turbulences (pertes de charge) et favorise l'érosion du tube ainsi que les sifflements lors de l'écoulement."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel est le rôle du **Décapant (Flux)** dans le processus de brasure du cuivre ?",
+                    "question": "Quel est le composant responsable de la barrière anti-oxygène dans un tube multicouche ?",
                     "answerOptions": [
-                        {"text": "Fournir la chaleur nécessaire.", "isCorrect": False},
-                        {"text": "Nettoyer et protéger de l'oxydation la surface à braser pour garantir la capillarité et l'adhérence du métal d'apport.", "isCorrect": True},
-                        {"text": "Refroidir le raccord rapidement.", "isCorrect": False},
-                        {"text": "Servir de joint mécanique.", "isCorrect": False}
+                        {"text": "Aluminium", "isCorrect": True},
+                        {"text": "Polyéthylène", "isCorrect": False},
+                        {"text": "Mousse", "isCorrect": False},
+                        {"text": "Résine", "isCorrect": False}
                     ],
-                    "correction": "Le **Flux** est indispensable pour que le métal d'apport (baguette) coule correctement par capillarité."
+                    "correction": "Le tube multicouche est composé de PEX/Alu/PEX. La couche centrale en aluminium empêche l'oxygène de pénétrer, évitant ainsi la formation de boues dans les réseaux de chauffage."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Quel est l'outil utilisé pour nettoyer et s'assurer que le tube PER ou Multicouche conserve une forme parfaitement ronde avant le sertissage ?",
+                    "question": "Quel phénomène physique permet au métal d'apport de pénétrer dans l'emboîture lors d'une soudure à l'étain ?",
                     "answerOptions": [
-                        {"text": "La lime.", "isCorrect": False},
-                        {"text": "Le Calibreur-Ébavureur.", "isCorrect": True},
-                        {"text": "Le chalumeau.", "isCorrect": False},
-                        {"text": "Le mètre ruban.", "isCorrect": False}
+                        {"text": "Capillarité", "isCorrect": True},
+                        {"text": "Gravité", "isCorrect": False},
+                        {"text": "Électrolyse", "isCorrect": False},
+                        {"text": "Condensation", "isCorrect": False}
                     ],
-                    "correction": "Le **Calibreur** garantit un bon emboîtement et donc l'étanchéité du joint torique à l'intérieur du raccord à sertir."
+                    "correction": "Lorsque le métal est à bonne température et décapé, le métal d'apport liquide est 'aspiré' dans le fin espace entre le tube et le raccord par capillarité."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Dans le cas d'une brasure forte (cuivre) ou d'une soudure (acier), pourquoi est-il dangereux de travailler sans système de ventilation adéquat ?",
+                    "question": "Comment identifie-t-on visuellement une bouteille d'acétylène sur un poste à souder oxyacétylénique ?",
                     "answerOptions": [
-                        {"text": "Le raccord chaufferait trop.", "isCorrect": False},
-                        {"text": "Les fumées générées (oxydes métalliques, gaz brûlés) sont toxiques et peuvent entraîner des problèmes respiratoires graves.", "isCorrect": True},
-                        {"text": "La flamme s'éteindrait.", "isCorrect": False},
-                        {"text": "Le tube gèlerait.", "isCorrect": False}
+                        {"text": "Ogive marron", "isCorrect": True},
+                        {"text": "Ogive blanche", "isCorrect": False},
+                        {"text": "Ogive verte", "isCorrect": False},
+                        {"text": "Ogive grise", "isCorrect": False}
                     ],
-                    "correction": "Une **bonne ventilation** et l'utilisation de masques adaptés sont essentielles en soudure et brasure."
+                    "correction": "Selon le code couleur normalisé des gaz, l'ogive (haut de la bouteille) de l'acétylène est couleur marron (chocolat). L'oxygène est blanc."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quel est l'inconvénient principal des raccords à compression (bicône ou olive) sur le cuivre par rapport à la brasure ?",
+                    "question": "Quel outil permet de serrer l'écrou d'un robinet situé dans un endroit très difficile d'accès sous un lavabo ?",
                     "answerOptions": [
-                        {"text": "Ils sont plus jolis.", "isCorrect": False},
-                        {"text": "Ils sont moins résistants aux vibrations, sont plus sensibles au couple de serrage et ne peuvent pas être noyés dans la dalle/cloison (non encastrables).", "isCorrect": True},
-                        {"text": "Ils sont trop légers.", "isCorrect": False},
-                        {"text": "Ils ne peuvent pas supporter l'eau chaude.", "isCorrect": False}
+                        {"text": "Clé lavabo", "isCorrect": True},
+                        {"text": "Clé à griffe type Stillson", "isCorrect": False},
+                        {"text": "Pince multiprise à verrouillage", "isCorrect": False},
+                        {"text": "Clé dynamométrique de précision", "isCorrect": False}
                     ],
-                    "correction": "Les **Raccords à compression** sont démontables et ne doivent pas être cachés."
+                    "correction": "La clé lavabo possède une tête pivotante montée sur un long manche, spécialement conçue pour atteindre les écrous de fixation des mitigeurs sous la céramique."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Quel type de tube est caractérisé par une âme interne en aluminium, pris en sandwich entre deux couches de Polyéthylène Réticulé ?",
+                    "question": "Quelle est la température approximative de fusion du métal d'apport pour une brasure forte (Cuivre/Phosphore) ?",
                     "answerOptions": [
-                        {"text": "Le tube PVC.", "isCorrect": False},
-                        {"text": "Le Tube Multicouche.", "isCorrect": True},
-                        {"text": "Le tube Cuivre.", "isCorrect": False},
-                        {"text": "Le tube PER.", "isCorrect": False}
+                        {"text": "700 degrés Celsius", "isCorrect": True},
+                        {"text": "200 degrés Celsius", "isCorrect": False},
+                        {"text": "1500 degrés Celsius", "isCorrect": False},
+                        {"text": "100 degrés Celsius", "isCorrect": False}
                     ],
-                    "correction": "Le **Multicouche** combine la flexibilité du PER et la stabilité/barrière anti-oxygène de l'aluminium."
+                    "correction": "La brasure forte nécessite une température de chauffe entre 700°C et 800°C, contrairement à la brasure tendre (étain) qui fond vers 230°C."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Lors du raccordement d'un tube PVC (évacuation), quel est le rôle de la **colle PVC** ?",
+                    "question": "Quel matériau d'étanchéité est traditionnellement utilisé avec la pâte à joint sur les raccords filetés en acier ?",
                     "answerOptions": [
-                        {"text": "Rendre le raccord démontable.", "isCorrect": False},
-                        {"text": "Créer une soudure chimique (fusion) entre les surfaces du tube et du manchon pour garantir l'étanchéité absolue du raccord.", "isCorrect": True},
-                        {"text": "Nettoyer le PVC.", "isCorrect": False},
-                        {"text": "Réduire le bruit.", "isCorrect": False}
+                        {"text": "Filasse", "isCorrect": True},
+                        {"text": "Téflon", "isCorrect": False},
+                        {"text": "Résine", "isCorrect": False},
+                        {"text": "Silicone", "isCorrect": False}
                     ],
-                    "correction": "La **Colle PVC** est un ciment solvant qui rend le raccord permanent et étanche."
+                    "correction": "La filasse (chanvre) associée à la pâte à joint reste la référence pour l'étanchéité des réseaux acier et chauffage, car elle permet un léger réajustement (dévissage) sans fuite."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Quel est l'outil utilisé pour cintrer les tubes de cuivre ou d'acier de grand diamètre (en plomberie industrielle) ?",
+                    "question": "Quel type de tube plastique nécessite l'utilisation d'une pince à glissement ou à sertir pour l'assemblage ?",
                     "answerOptions": [
-                        {"text": "La cintreuse manuelle à ressort.", "isCorrect": False},
-                        {"text": "La Cintreuse hydraulique ou électrique (à matrice et patin).", "isCorrect": True},
-                        {"text": "La pince à sertir.", "isCorrect": False},
-                        {"text": "La filière.", "isCorrect": False}
+                        {"text": "PER", "isCorrect": True},
+                        {"text": "PVC", "isCorrect": False},
+                        {"text": "PEHD", "isCorrect": False},
+                        {"text": "ABS", "isCorrect": False}
                     ],
-                    "correction": "Les **Cintreuses hydrauliques** sont nécessaires pour appliquer la force requise sur les gros diamètres sans écraser le tube."
+                    "correction": "Le PER (Polyéthylène Réticulé) s'assemble mécaniquement via des raccords à glissement (bague qu'on fait glisser) ou à sertir (écrasement par pince). Il ne se colle pas."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quelle doit être la largeur de la **Bande de désolidarisation** périphérique dans un logement (pour un plancher chauffant ou une chape de bain) ?",
+                    "question": "Quelle précaution faut-il prendre avant de cintrer un tube de cuivre écroui ?",
                     "answerOptions": [
-                        {"text": "1 mm.", "isCorrect": False},
-                        {"text": "Au moins 5 mm (pour absorber la dilatation de la chape ou de la dalle lors des variations thermiques).", "isCorrect": True},
-                        {"text": "10 cm.", "isCorrect": False},
-                        {"text": "2 cm.", "isCorrect": False}
+                        {"text": "Le recuire en le chauffant au rouge", "isCorrect": True},
+                        {"text": "Le graisser abondamment avec de l'huile", "isCorrect": False},
+                        {"text": "Le remplir de sable fin humide et tassé", "isCorrect": False},
+                        {"text": "Le refroidir au congélateur pendant une heure", "isCorrect": False}
                     ],
-                    "correction": "La **Bande de désolidarisation** est vitale pour éviter les fissures de la chape."
+                    "correction": "Le cuivre écroui est trop rigide et casserait ou s'aplatirait au cintrage. Il faut le recuire (chauffer) localement pour lui redonner sa malléabilité."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quel est l'outil utilisé pour créer un filetage (pas de vis) à l'extrémité d'un tube en acier galvanisé ?",
+                    "question": "Que signifie le chiffre '1' dans la désignation d'un raccord en laiton 15x21 ?",
                     "answerOptions": [
-                        {"text": "La meuleuse.", "isCorrect": False},
-                        {"text": "La Filière (ou Machine à fileter).", "isCorrect": True},
-                        {"text": "Le chalumeau.", "isCorrect": False},
-                        {"text": "Le coupe-tube.", "isCorrect": False}
+                        {"text": "Demi pouce", "isCorrect": True},
+                        {"text": "Trois quarts de pouce", "isCorrect": False},
+                        {"text": "Un pouce", "isCorrect": False},
+                        {"text": "Un quart de pouce", "isCorrect": False}
                     ],
-                    "correction": "La **Filière** est indispensable pour les raccordements vissés (raccord unions, manchons, etc.) sur acier."
+                    "correction": "Dans la correspondance pouce/mm : 12x17 = 3/8', 15x21 = 1/2' (demi-pouce), 20x27 = 3/4'."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Quel est l'avantage du tube en **Cuivre** par rapport au PER ou Multicouche ?",
+                    "question": "Quel est le principal risque si l'on raccorde directement du cuivre sur de l'acier galvanisé dans le sens de l'écoulement ?",
                     "answerOptions": [
-                        {"text": "Il est plus facile à installer.", "isCorrect": False},
-                        {"text": "Il a une meilleure résistance au feu, est entièrement recyclable et a une grande rigidité (auto-portance).", "isCorrect": True},
-                        {"text": "Il est moins cher.", "isCorrect": False},
-                        {"text": "Il ne conduit pas la chaleur.", "isCorrect": False}
+                        {"text": "Corrosion galvanique", "isCorrect": True},
+                        {"text": "Dilatation thermique excessive", "isCorrect": False},
+                        {"text": "Rupture mécanique immédiate", "isCorrect": False},
+                        {"text": "Formation de calcaire rapide", "isCorrect": False}
                     ],
-                    "correction": "Le **Cuivre** reste un matériau de référence pour sa longévité et sa résistance."
+                    "correction": "Le couple électrolytique Cuivre/Acier provoque une corrosion rapide de l'acier (effet de pile). Il faut utiliser un raccord diélectrique pour isoler les deux métaux."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quel est le risque de ne pas utiliser le bon **lubrifiant** lors de l'emboîtement des tubes PVC (raccords à joint) ?",
+                    "question": "Pour quel usage le PVC-C (sur-chloré) est-il spécifiquement conçu par rapport au PVC classique ?",
                     "answerOptions": [
-                        {"text": "Le raccord va coller.", "isCorrect": False},
-                        {"text": "Le joint en caoutchouc risque de se tordre ou de se déchirer lors de l'emboîtement, entraînant une fuite.", "isCorrect": True},
-                        {"text": "Le tube va fondre.", "isCorrect": False},
-                        {"text": "La colle ne tiendra pas.", "isCorrect": False}
+                        {"text": "Évacuations chaudes", "isCorrect": True},
+                        {"text": "Alimentation eau potable", "isCorrect": False},
+                        {"text": "Protection des câbles", "isCorrect": False},
+                        {"text": "Ventilation primaire", "isCorrect": False}
                     ],
-                    "correction": "Le **Lubrifiant** (souvent de l'eau savonneuse ou un produit spécifique) facilite le glissement du joint."
+                    "correction": "Le PVC-C résiste à des températures plus élevées (jusqu'à 80°C voire plus), ce qui le rend adapté aux vidanges de machines à laver ou cuisines collectives."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Quel est le rôle du **Manchon isolant (calorifugeage)** sur les tubes d'Eau Chaude Sanitaire (ECS) ?",
+                    "question": "Quel est le rôle du flux décapant appliqué avant la soudure ?",
                     "answerOptions": [
-                        {"text": "Protéger contre le gel uniquement.", "isCorrect": False},
-                        {"text": "Limiter au maximum les déperditions de chaleur et éviter le refroidissement de l'eau dans les tuyaux.", "isCorrect": True},
-                        {"text": "Réduire la pression.", "isCorrect": False},
-                        {"text": "Assurer l'étanchéité.", "isCorrect": False}
+                        {"text": "Nettoyer l'oxyde et favoriser l'accroche", "isCorrect": True},
+                        {"text": "Refroidir le métal pour éviter la percé", "isCorrect": False},
+                        {"text": "Remplacer le métal d'apport manquant", "isCorrect": False},
+                        {"text": "Faire briller le cuivre après chauffe", "isCorrect": False}
                     ],
-                    "correction": "Le **Calorifugeage** est essentiel pour l'économie d'énergie et le confort."
+                    "correction": "Le flux (pâte ou liquide) dissout les oxydes présents en surface et protège le métal de l'oxydation pendant la chauffe, garantissant le mouillage de la soudure."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Qu'est-ce qu'une **Vanve d'arrêt 1/4 de tour** par rapport à une vanne à volant ?",
+                    "question": "Avec quel outil coupe-t-on un tube PER pour garantir une coupe nette sans écrasement ?",
                     "answerOptions": [
-                        {"text": "Elle prend plus de place.", "isCorrect": False},
-                        {"text": "Elle permet une ouverture/fermeture rapide (90 degrés) et est souvent plus fiable que la vanne à clapet ou à tête, et plus simple à manipuler.", "isCorrect": True},
-                        {"text": "Elle ne peut être utilisée que sur l'eau chaude.", "isCorrect": False},
-                        {"text": "Elle est réservée à la haute pression.", "isCorrect": False}
+                        {"text": "Pince coupe-gaine", "isCorrect": True},
+                        {"text": "Scie à métaux", "isCorrect": False},
+                        {"text": "Meuleuse d'angle", "isCorrect": False},
+                        {"text": "Ciseau à bois", "isCorrect": False}
                     ],
-                    "correction": "La **Vanne 1/4 de tour** (ou vanne à boisseau sphérique) est la plus courante en plomberie moderne."
+                    "correction": "La pince coupe-tube (ou coupe-gaine) possède une lame triangulaire tranchante qui tranche le plastique sans le déformer, contrairement à la scie qui fait des bavures."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Lors d'une soudure/brasure, quel est le risque d'appliquer la flamme directement sur le métal d'apport (baguette) au lieu du tube et du raccord ?",
+                    "question": "Quelle est la particularité d'un raccord 'bi-cône' ou raccord olive ?",
                     "answerOptions": [
-                        {"text": "Le tube va se déformer.", "isCorrect": False},
-                        {"text": "Le métal d'apport va fondre prématurément sans que le raccord soit à bonne température, il ne pourra pas pénétrer par capillarité (mauvaise soudure).", "isCorrect": True},
-                        {"text": "Le raccord va geler.", "isCorrect": False},
-                        {"text": "Le métal d'apport va coller.", "isCorrect": False}
+                        {"text": "Étanchéité par compression d'une bague laiton", "isCorrect": True},
+                        {"text": "Nécessité absolue de réaliser une soudure", "isCorrect": False},
+                        {"text": "Utilisation exclusive sur les tubes en plastique", "isCorrect": False},
+                        {"text": "Obligation de faire un collet battu au marteau", "isCorrect": False}
                     ],
-                    "correction": "Le tube doit être à la **température de fusion** du métal d'apport pour que la capillarité fonctionne."
+                    "correction": "Le raccord bi-cône possède une bague (olive) qui se déforme et mord le tube de cuivre lors du serrage de l'écrou, assurant l'étanchéité sans soudure."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel est le type de joint souvent utilisé pour les raccordements de gros diamètre (fonte ou PVC) qui permet une certaine flexibilité et un assemblage rapide ?",
+                    "question": "Parmi ces matériaux, lequel possède le coefficient de dilatation thermique le plus élevé ?",
                     "answerOptions": [
-                        {"text": "Le joint Téflon.", "isCorrect": False},
-                        {"text": "Le Joint à lèvre ou Joint à collerette (caoutchouc).", "isCorrect": True},
-                        {"text": "Le joint chanvre.", "isCorrect": False},
-                        {"text": "Le joint soudé.", "isCorrect": False}
+                        {"text": "PER", "isCorrect": True},
+                        {"text": "Cuivre", "isCorrect": False},
+                        {"text": "Acier", "isCorrect": False},
+                        {"text": "Fonte", "isCorrect": False}
                     ],
-                    "correction": "Le **Joint à lèvre** est très utilisé dans les évacuations pour faciliter l'assemblage."
+                    "correction": "Les matériaux de synthèse comme le PER se dilatent beaucoup plus que les métaux. Il faut prévoir cette dilatation (lyres, libre passage) lors de la pose."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quelle est la principale caractéristique des tubes **Hydrocablés** (ou gainés) en PER ou Multicouche ?",
+                    "question": "À quoi sert une 'cintreuse arbalète' ?",
                     "answerOptions": [
-                        {"text": "Ils sont plus rigides.", "isCorrect": False},
-                        {"text": "Ils sont protégés par une gaine (souvent rouge pour l'eau chaude et bleue pour l'eau froide) et peuvent être changés sans casser la dalle/cloison (non encastrables).", "isCorrect": True},
-                        {"text": "Ils ne transportent que l'eau froide.", "isCorrect": False},
-                        {"text": "Ils sont plus légers.", "isCorrect": False}
+                        {"text": "Cintrer des tubes rigides de gros diamètre", "isCorrect": True},
+                        {"text": "Couper les tubes en acier de forte épaisseur", "isCorrect": False},
+                        {"text": "Visser les raccords de grand diamètre", "isCorrect": False},
+                        {"text": "Souder les tubes sans apport de gaz", "isCorrect": False}
                     ],
-                    "correction": "La **Gaine** rend le tube remplaçable et le protège du contact direct avec la chape."
+                    "correction": "La cintreuse arbalète utilise un vérin hydraulique ou mécanique et des formes pour cintrer les tubes de cuivre écroui ou multicouche de gros diamètre sans effort."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 2 : DISTRIBUTION D'EAU POTABLE (AEP) (Q. 21-40)
+        # THÈME 2 : APPAREILS SANITAIRES, PRODUCTION D'EAU CHAUDE ET ROBINETTERIE (Questions 21 à 40)
         # =========================================================================
         2: {
-            "name": "2. Distribution d'Eau Potable (AEP) et Raccordements (Q. 21-40)",
+            "name": "THÈME 2 : APPAREILS SANITAIRES, PRODUCTION D'EAU CHAUDE ET ROBINETTERIE",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Comment appelle-t-on le dispositif qui limite la pression d'eau froide à l'entrée de l'habitation pour protéger les appareils (chaudière, chauffe-eau, etc.) ?",
+                    "question": "Quelle est la hauteur standard de pose d'un lavabo par rapport au sol fini (niveau de la plage de robinetterie) ?",
                     "answerOptions": [
-                        {"text": "Le manomètre.", "isCorrect": False},
-                        {"text": "Le Détendeur-réducteur de pression.", "isCorrect": True},
-                        {"text": "Le compteur d'eau.", "isCorrect": False},
-                        {"text": "Le filtre à tamis.", "isCorrect": False}
+                        {"text": "85 centimètres", "isCorrect": True},
+                        {"text": "105 centimètres", "isCorrect": False},
+                        {"text": "60 centimètres", "isCorrect": False},
+                        {"text": "45 centimètres", "isCorrect": False}
                     ],
-                    "correction": "Le **Détendeur** est essentiel si la pression du réseau public est supérieure à 3-4 bars."
+                    "correction": "La norme PMR et l'usage standard fixent la hauteur du plan de vasque ou du lavabo entre 85 cm et 90 cm pour une ergonomie optimale."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Quel est le rôle du **Disconnecteur (ou Clapet anti-retour)** installé après le compteur d'eau et avant le remplissage du circuit de chauffage ?",
+                    "question": "Quel est le rôle précis de la 'garde d'eau' contenue dans un siphon ?",
                     "answerOptions": [
-                        {"text": "Filtrer le calcaire.", "isCorrect": False},
-                        {"text": "Empêcher le retour d'eau du réseau privé (potentiellement contaminée) vers le réseau public d'eau potable.", "isCorrect": True},
-                        {"text": "Réguler le débit.", "isCorrect": False},
-                        {"text": "Vidanger le circuit.", "isCorrect": False}
+                        {"text": "Empêcher la remontée des mauvaises odeurs", "isCorrect": True},
+                        {"text": "Refroidir l'eau avant son arrivée à l'égout", "isCorrect": False},
+                        {"text": "Filtrer les cheveux et les gros déchets solides", "isCorrect": False},
+                        {"text": "Réguler la pression atmosphérique dans le tuyau", "isCorrect": False}
                     ],
-                    "correction": "Le **Disconnecteur** est une sécurité sanitaire obligatoire."
+                    "correction": "La garde d'eau (généralement 50 mm) est le bouchon hydraulique permanent qui bloque le passage de l'air vicié des égouts vers l'habitation."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quelle est la règle de pose à respecter concernant les croisements entre les tubes d'eau froide (EF) et les tubes d'eau chaude (EC) ?",
+                    "question": "Quelle est la pression de tarage standard de la soupape d'un groupe de sécurité pour chauffe-eau électrique ?",
                     "answerOptions": [
-                        {"text": "L'eau froide doit toujours passer au-dessus de l'eau chaude (et isoler les deux).", "isCorrect": True},
-                        {"text": "L'eau chaude doit toujours passer au-dessus de l'eau froide.", "isCorrect": False},
-                        {"text": "Ils peuvent se toucher sans isolation.", "isCorrect": False},
-                        {"text": "Ils ne doivent jamais se croiser.", "isCorrect": False}
+                        {"text": "7 bars", "isCorrect": True},
+                        {"text": "3 bars", "isCorrect": False},
+                        {"text": "10 bars", "isCorrect": False},
+                        {"text": "1 bar", "isCorrect": False}
                     ],
-                    "correction": "L'**EF au-dessus de l'EC** et l'**isolation** sont nécessaires pour éviter les transferts thermiques et la surchauffe de l'EF (risque de légionellose)."
+                    "correction": "La soupape s'ouvre automatiquement dès que la pression dans la cuve dépasse 7 bars (due à la dilatation de l'eau chauffée) pour évacuer le surplus."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quel est le rôle de la **Fibre de chanvre** (avec de la pâte à joint) ou du **Téflon (PTFE)** sur un raccordement fileté ?",
+                    "question": "Quelle est la différence majeure entre une résistance blindée et une résistance stéatite ?",
                     "answerOptions": [
-                        {"text": "Transporter l'eau.", "isCorrect": False},
-                        {"text": "Assurer l'étanchéité du raccord vissé en comblant les filets de vis et en résistant à la pression.", "isCorrect": True},
-                        {"text": "Isoler thermiquement.", "isCorrect": False},
-                        {"text": "Réduire le bruit.", "isCorrect": False}
+                        {"text": "La stéatite est protégée du calcaire par un fourreau", "isCorrect": True},
+                        {"text": "La blindée consomme trois fois moins d'électricité", "isCorrect": False},
+                        {"text": "La stéatite est obligatoirement immergée dans l'eau", "isCorrect": False},
+                        {"text": "La blindée est fabriquée en céramique pure fragile", "isCorrect": False}
                     ],
-                    "correction": "Le **Chanvre** et le **Téflon** sont des matériaux d'étanchéité standards, appliqués dans le sens du vissage."
+                    "correction": "La résistance stéatite est insérée dans un fourreau émaillé (doigt de gant), elle n'est jamais en contact direct avec l'eau, ce qui la protège du tartre et permet son remplacement sans vidanger la cuve."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quel est le rôle du **Collecteur (ou Nourrice)** dans une distribution en Pieuvre (PER/Multicouche) ?",
+                    "question": "Quel diamètre extérieur de tube PVC utilise-t-on généralement pour l'évacuation d'un WC standard ?",
                     "answerOptions": [
-                        {"text": "Stocker l'eau.", "isCorrect": False},
-                        {"text": "Distribuer l'eau (EF et EC) vers chaque point de puisage (robinet, WC, douche) via un tube dédié (sans raccord caché).", "isCorrect": True},
-                        {"text": "Filtrer l'eau.", "isCorrect": False},
-                        {"text": "Réguler la pression.", "isCorrect": False}
+                        {"text": "100 mm", "isCorrect": True},
+                        {"text": "32 mm", "isCorrect": False},
+                        {"text": "40 mm", "isCorrect": False},
+                        {"text": "50 mm", "isCorrect": False}
                     ],
-                    "correction": "Le **Collecteur** centralise les départs et les vannes d'arrêt pour une maintenance facile. "
+                    "correction": "L'évacuation des eaux vannes (WC) nécessite un diamètre minimal de 100 mm pour éviter les bouchons et assurer un écoulement correct."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Comment appelle-t-on le phénomène physique qui génère un bruit violent (coup de bélier) dans la tuyauterie lorsque l'on ferme rapidement un robinet (mitigeur) ?",
+                    "question": "Comment appelle-t-on le mécanisme qui permet de remplir le réservoir de chasse d'eau et de s'arrêter au niveau souhaité ?",
                     "answerOptions": [
-                        {"text": "La cavitation.", "isCorrect": False},
-                        {"text": "Le Coup de bélier (augmentation brutale de la pression due à l'arrêt soudain de la vitesse de l'eau).", "isCorrect": True},
-                        {"text": "La dilatation.", "isCorrect": False},
-                        {"text": "L'osmose.", "isCorrect": False}
+                        {"text": "Robinet flotteur", "isCorrect": True},
+                        {"text": "Mécanisme de vidage", "isCorrect": False},
+                        {"text": "Soupape de décharge", "isCorrect": False},
+                        {"text": "Clapet anti-retour", "isCorrect": False}
                     ],
-                    "correction": "Le **Coup de bélier** est atténué par un réducteur de pression ou par un antibélier."
+                    "correction": "Le robinet flotteur détecte la montée de l'eau grâce à un flotteur (en polystyrène ou plastique) et ferme l'arrivée d'eau une fois le niveau réglé atteint."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quelle est la fonction d'un **Clapet anti-pollution (NF)** ?",
+                    "question": "Quelle est la température minimale de stockage de l'eau chaude sanitaire pour prévenir le développement des légionelles ?",
                     "answerOptions": [
-                        {"text": "Empêcher le calcaire.", "isCorrect": False},
-                        {"text": "Protèger le réseau d'eau potable contre les retours d'eau contaminée depuis un appareil (ex : machine à laver, robinet de jardin immergé).", "isCorrect": True},
-                        {"text": "Isoler le circuit.", "isCorrect": False},
-                        {"text": "Réguler la température.", "isCorrect": False}
+                        {"text": "55 degrés", "isCorrect": True},
+                        {"text": "25 degrés", "isCorrect": False},
+                        {"text": "90 degrés", "isCorrect": False},
+                        {"text": "35 degrés", "isCorrect": False}
                     ],
-                    "correction": "Le **Clapet anti-pollution** est une sécurité sanitaire essentielle."
+                    "correction": "La bactérie Legionella prolifère dans les eaux tièdes. Il est obligatoire de maintenir l'eau chaude à au moins 55°C (souvent 60°C) pour stopper son développement."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Quel est le diamètre intérieur (ou nominal) minimum généralement requis pour l'alimentation d'une colonne montante principale d'habitation (selon DTU) ?",
+                    "question": "Quelle est la fonction principale d'un mitigeur thermostatique ?",
                     "answerOptions": [
-                        {"text": "8 mm.", "isCorrect": False},
-                        {"text": "12 mm.", "isCorrect": False},
-                        {"text": "Au moins 16 mm (1/2 pouce) ou 20 mm (3/4 pouce) pour garantir un débit suffisant aux usages simultanés.", "isCorrect": True},
-                        {"text": "32 mm.", "isCorrect": False}
+                        {"text": "Maintenir une température de sortie constante", "isCorrect": True},
+                        {"text": "Augmenter le débit de l'eau dans la douche", "isCorrect": False},
+                        {"text": "Produire de l'eau chaude instantanément", "isCorrect": False},
+                        {"text": "Filtrer le calcaire présent dans l'eau froide", "isCorrect": False}
                     ],
-                    "correction": "Un diamètre trop petit entraînerait une chute de pression et des débits insuffisants lors de plusieurs puisages simultanés."
+                    "correction": "Le mitigeur thermostatique compense automatiquement les variations de débit ou de température des alimentations pour délivrer une eau à la température exacte choisie par l'utilisateur."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel est le risque de ne pas effectuer l'**ébavurage** (intérieur et extérieur) après la coupe d'un tube métallique ou synthétique ?",
+                    "question": "Quel élément protège la cuve en acier émaillé d'un chauffe-eau contre la corrosion ?",
                     "answerOptions": [
-                        {"text": "Le tube va se cintrér.", "isCorrect": False},
-                        {"text": "Les bavures peuvent entraîner une perte de charge, endommager les joints toriques lors du montage, ou se décrocher pour obstruer les appareils (mitigeurs).", "isCorrect": True},
-                        {"text": "L'eau va geler.", "isCorrect": False},
-                        {"text": "La colle ne tiendra pas.", "isCorrect": False}
+                        {"text": "Anode", "isCorrect": True},
+                        {"text": "Cathode", "isCorrect": False},
+                        {"text": "Diode", "isCorrect": False},
+                        {"text": "Sonde", "isCorrect": False}
                     ],
-                    "correction": "L'**Ébavurage** est une étape obligatoire pour la qualité de l'installation."
+                    "correction": "L'anode (en magnésium ou titane) 'se sacrifie' ou impose un courant protecteur pour empêcher la corrosion de percer la cuve en acier."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Quel est le rôle du **Robinet de puisage (ou Robinet de vidange)** placé au point bas de l'installation ?",
+                    "question": "Sur un groupe de sécurité, à quoi sert le robinet quart de tour (souvent à manette noire ou rouge) intégré ?",
                     "answerOptions": [
-                        {"text": "Mesurer le débit.", "isCorrect": False},
-                        {"text": "Permettre la vidange complète et facile de l'ensemble du réseau (en cas de gel ou d'intervention lourde).", "isCorrect": True},
-                        {"text": "Réguler la pression.", "isCorrect": False},
-                        {"text": "Purger l'air.", "isCorrect": False}
+                        {"text": "Fermer l'arrivée d'eau froide du ballon", "isCorrect": True},
+                        {"text": "Vidanger totalement la cuve en urgence", "isCorrect": False},
+                        {"text": "Régler la température de l'eau chaude", "isCorrect": False},
+                        {"text": "Couper l'alimentation électrique du cumulus", "isCorrect": False}
                     ],
-                    "correction": "Le **Robinet de vidange** est crucial pour la maintenance et la protection contre le gel."
+                    "correction": "Ce robinet d'arrêt intégré permet d'isoler le chauffe-eau du réseau d'eau froide pour effectuer des travaux de maintenance ou le remplacement du groupe."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Comment appelle-t-on le raccord utilisé pour dériver un tube (créer un angle de 90°) dans une distribution en ligne ?",
+                    "question": "Quel type de bâti-support est impératif si le mur d'adossement est une cloison légère en plaque de plâtre ?",
                     "answerOptions": [
-                        {"text": "Le manchon.", "isCorrect": False},
-                        {"text": "Le Coude (ou Coude à 90°, Coude à 45°).", "isCorrect": True},
-                        {"text": "Le té.", "isCorrect": False},
-                        {"text": "Le bouchon.", "isCorrect": False}
+                        {"text": "Autoportant", "isCorrect": True},
+                        {"text": "Mural", "isCorrect": False},
+                        {"text": "Suspendu", "isCorrect": False},
+                        {"text": "Encastré", "isCorrect": False}
                     ],
-                    "correction": "Le **Coude** est le raccord de base pour les changements de direction."
+                    "correction": "Le bâti-support 'autoportant' possède des pieds renforcés qui reposent sur le sol béton, car la cloison légère ne peut pas supporter le poids de la cuvette et de l'utilisateur."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quel est le risque de ne pas laisser de **jeu de dilatation** suffisant (colliers trop serrés) sur une longue ligne droite de tube PER/Multicouche ?",
+                    "question": "Qu'est-ce qu'une 'bonde' dans un appareil sanitaire ?",
                     "answerOptions": [
-                        {"text": "Le tube va rouiller.", "isCorrect": False},
-                        {"text": "Le tube se déforme, ondule ou, en cas de confinement, peut générer des bruits de claquement lors des variations de température.", "isCorrect": True},
-                        {"text": "Le tube gèle.", "isCorrect": False},
-                        {"text": "Le tube fuit.", "isCorrect": False}
+                        {"text": "La pièce métallique fixée à l'orifice d'écoulement", "isCorrect": True},
+                        {"text": "Le tuyau souple qui raccorde le siphon au mur", "isCorrect": False},
+                        {"text": "La manette qui actionne l'ouverture du bouchon", "isCorrect": False},
+                        {"text": "Le joint d'étanchéité entre le robinet et l'évier", "isCorrect": False}
                     ],
-                    "correction": "Les tubes plastiques ont un coefficient de dilatation élevé. Il faut laisser les tubes 'glisser'."
+                    "correction": "La bonde est l'élément traversant scellé au fond du lavabo ou de la douche, sur lequel on visse le siphon par-dessous."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quel est le risque majeur de laisser un raccord non bradé ou non serti, noyé dans la dalle ou la cloison ?",
+                    "question": "Quelle pièce doit être installée obligatoirement sur l'arrivée d'eau froide d'un chauffe-eau si la pression du réseau dépasse 3 bars ?",
                     "answerOptions": [
-                        {"text": "Le raccord gèle.", "isCorrect": False},
-                        {"text": "Un risque de fuite inaccessible et non réparable sans casser le revêtement ou la structure.", "isCorrect": True},
-                        {"text": "Le raccord rouille.", "isCorrect": False},
-                        {"text": "Le raccord fait du bruit.", "isCorrect": False}
+                        {"text": "Réducteur de pression", "isCorrect": True},
+                        {"text": "Surpresseur domestique", "isCorrect": False},
+                        {"text": "Filtre à sédiments", "isCorrect": False},
+                        {"text": "Compteur divisionnaire", "isCorrect": False}
                     ],
-                    "correction": "Seuls les **raccords soudés ou sertis NF** peuvent être encastrés. Les raccords mécaniques (compression, bicône, à visser) sont interdits."
+                    "correction": "Si la pression réseau est trop forte, le groupe de sécurité va fuir en permanence. Le réducteur de pression (placé après le compteur) protège l'installation."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Quel est le rôle d'un **Joint plat (fibre ou caoutchouc)** dans un raccord de vidange (ex : siphon, raccord WC) ?",
+                    "question": "Quelle est la particularité d'un chauffe-eau 'thermodynamique' ?",
                     "answerOptions": [
-                        {"text": "Filtrer les impuretés.", "isCorrect": False},
-                        {"text": "Créer l'étanchéité entre deux surfaces plates (raccords démontables) par simple compression mécanique (serrage).", "isCorrect": True},
-                        {"text": "Réguler la pression.", "isCorrect": False},
-                        {"text": "Isoler thermiquement.", "isCorrect": False}
+                        {"text": "Il intègre une pompe à chaleur", "isCorrect": True},
+                        {"text": "Il fonctionne au gaz de ville", "isCorrect": False},
+                        {"text": "Il chauffe l'eau avec des bûches", "isCorrect": False},
+                        {"text": "Il utilise des panneaux solaires", "isCorrect": False}
                     ],
-                    "correction": "Le **Joint plat** est idéal pour les raccords qui doivent pouvoir être démontés facilement."
+                    "correction": "Le chauffe-eau thermodynamique récupère les calories de l'air ambiant ou extérieur grâce à une petite pompe à chaleur intégrée pour chauffer l'eau, économisant l'électricité."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Comment doit-on serrer un raccord fileté étanché avec du chanvre ?",
+                    "question": "Dans une salle de bains, que désigne le 'Volume 0' selon la norme électrique ?",
                     "answerOptions": [
-                        {"text": "Serrer à la main.", "isCorrect": False},
-                        {"text": "Serrer fermement avec des clés (clé à molette, clé à griffe) pour compresser le chanvre, sans forcer excessivement pour ne pas fendre le raccord.", "isCorrect": True},
-                        {"text": "Serrer au couplemètre.", "isCorrect": False},
-                        {"text": "Serrer puis desserrer d'un quart de tour.", "isCorrect": False}
+                        {"text": "L'intérieur de la baignoire ou du receveur", "isCorrect": True},
+                        {"text": "L'espace situé sous la baignoire maçonné", "isCorrect": False},
+                        {"text": "La zone située à plus de 3 mètres de la douche", "isCorrect": False},
+                        {"text": "Le plafond situé au-dessus de la douche", "isCorrect": False}
                     ],
-                    "correction": "Le **Chanvre** nécessite une bonne compression pour garantir l'étanchéité."
+                    "correction": "Le Volume 0 est le volume intérieur direct de la baignoire ou du receveur de douche, où tout appareillage électrique est strictement interdit (sauf très basse tension spécifique)."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Quel est le raccord utilisé pour connecter un tube en cuivre à un tube en acier (raccordement hétérogène) tout en évitant la corrosion (phénomène de couple galvanique) ?",
+                    "question": "À quoi sert le 'trop-plein' sur un lavabo ou une baignoire ?",
                     "answerOptions": [
-                        {"text": "Un té normal.", "isCorrect": False},
-                        {"text": "Un Raccord diélectrique (ou Raccord isolant).", "isCorrect": True},
-                        {"text": "Un manchon en PVC.", "isCorrect": False},
-                        {"text": "Un raccord soudé.", "isCorrect": False}
+                        {"text": "Éviter le débordement accidentel de l'eau", "isCorrect": True},
+                        {"text": "Permettre une ventilation de la colonne", "isCorrect": False},
+                        {"text": "Faire joli sur la céramique sanitaire", "isCorrect": False},
+                        {"text": "Fixer la chaînette du bouchon", "isCorrect": False}
                     ],
-                    "correction": "Le **Raccord diélectrique** sépare électriquement les deux métaux pour éviter l'oxydation rapide de l'acier au contact du cuivre."
+                    "correction": "Le trop-plein est un orifice de sécurité relié à la vidange qui permet d'évacuer l'eau si l'utilisateur oublie de fermer le robinet avec la bonde fermée."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Quelle est l'exigence de la norme DTU concernant l'isolation acoustique des tuyauteries dans les bâtiments collectifs ?",
+                    "question": "Quel est l'avantage d'un robinet 'mitigeur' par rapport à un 'mélangeur' ?",
                     "answerOptions": [
-                        {"text": "Il n'y a aucune exigence.", "isCorrect": False},
-                        {"text": "Les tuyaux doivent être isolés pour prévenir la transmission du bruit (eau qui coule, coup de bélier) à travers les planchers et les murs.", "isCorrect": True},
-                        {"text": "Seuls les tubes ECS sont concernés.", "isCorrect": False},
-                        {"text": "Les tubes doivent être rigides.", "isCorrect": False}
+                        {"text": "Une seule commande pour le débit et la température", "isCorrect": True},
+                        {"text": "Deux têtes séparées pour l'eau chaude et l'eau froide", "isCorrect": False},
+                        {"text": "Une résistance accrue au gel en extérieur", "isCorrect": False},
+                        {"text": "Un débit d'eau beaucoup plus important", "isCorrect": False}
                     ],
-                    "correction": "L'**Isolation phonique** est cruciale (utilisation de colliers isophoniques, gainage) pour le confort des occupants."
+                    "correction": "Le mitigeur se manipule d'une seule main (levier), ce qui est plus pratique et plus économique qu'un mélangeur à deux têtes."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Que signifie le marquage **AC S** sur un raccord, un robinet ou un flexible de plomberie ?",
+                    "question": "Quel gaz rare est souvent injecté dans le double vitrage ou utilisé dans certaines soudures, mais sans rapport avec le chauffe-eau gaz ?",
                     "answerOptions": [
-                        {"text": "Anti-Calcaire Sécurité.", "isCorrect": False},
-                        {"text": "Attestation de Conformité Sanitaire (garantie que le matériau n'altère pas la qualité de l'eau potable).", "isCorrect": True},
-                        {"text": "Acier et Cuivre Standard.", "isCorrect": False},
-                        {"text": "Aller-Retour Séparé.", "isCorrect": False}
+                        {"text": "Argon", "isCorrect": True},
+                        {"text": "Butane", "isCorrect": False},
+                        {"text": "Propane", "isCorrect": False},
+                        {"text": "Méthane", "isCorrect": False}
                     ],
-                    "correction": "L'**ACS** est un label obligatoire pour tout produit en contact avec l'eau potable en France."
+                    "correction": "Question piège de culture technique : les chauffe-eaux gaz fonctionnent au Butane, Propane ou Gaz Naturel (Méthane). L'Argon est un gaz inerte de soudure/vitrage."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quel est le risque de couper un tube de cuivre avec une **scie à métaux** plutôt qu'un coupe-tube ?",
+                    "question": "Quelle pièce d'usure assure l'étanchéité à l'intérieur d'un mécanisme de tête de robinet 'à clapet' ?",
                     "answerOptions": [
-                        {"text": "Le tube est moins brillant.", "isCorrect": False},
-                        {"text": "La scie déforme le tube et laisse un important bord intérieur (bavure) difficile à ébavurer et source de perte de charge.", "isCorrect": True},
-                        {"text": "Le tube sera trop chaud.", "isCorrect": False},
-                        {"text": "Le tube sera trop long.", "isCorrect": False}
+                        {"text": "Joint noir en caoutchouc", "isCorrect": True},
+                        {"text": "Disque céramique dur", "isCorrect": False},
+                        {"text": "Bille en acier inoxydable", "isCorrect": False},
+                        {"text": "Ressort en cuivre", "isCorrect": False}
                     ],
-                    "correction": "Le **Coupe-tube** assure une coupe perpendiculaire et une bavure minimale."
+                    "correction": "Dans un robinet classique (mélangeur à clapet), c'est un joint plat en caoutchouc qui vient s'écraser sur le siège pour couper l'eau. Il s'use et doit être changé."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Comment appelle-t-on le dispositif qui permet de raccorder l'eau au WC ou au lave-linge, qui intègre un robinet d'arrêt et un clapet anti-retour ?",
+                    "question": "Quel dispositif est obligatoire à la sortie d'un chauffe-eau pour éviter la corrosion galvanique si la tuyauterie est en cuivre ?",
                     "answerOptions": [
-                        {"text": "La vanne d'arrêt principale.", "isCorrect": False},
-                        {"text": "Le Robinet d'équerre avec raccord union (ou Robinet de machine/WC).", "isCorrect": True},
-                        {"text": "Le détendeur.", "isCorrect": False},
-                        {"text": "Le manomètre.", "isCorrect": False}
+                        {"text": "Raccord diélectrique", "isCorrect": True},
+                        {"text": "Raccord union laiton", "isCorrect": False},
+                        {"text": "Manchon en PVC pression", "isCorrect": False},
+                        {"text": "Flexible en inox tressé", "isCorrect": False}
                     ],
-                    "correction": "Le **Robinet d'équerre** est le point de raccordement final et permet d'isoler l'appareil facilement."
+                    "correction": "Le raccord diélectrique (souvent fourni) isole électriquement la sortie eau chaude (acier) du tube de distribution (cuivre) pour empêcher l'effet de pile qui percerait la cuve."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 3 : APPAREILS SANITAIRES ET ROBINETTERIE (Q. 41-60)
+        # THÈME 3 : HYDRAULIQUE, RÉSEAUX D'ALIMENTATION ET D'ÉVACUATION (Questions 41 à 60)
         # =========================================================================
         3: {
-            "name": "3. Appareils Sanitaires et Robinetterie (Q. 41-60)",
+            "name": "THÈME 3 : HYDRAULIQUE, RÉSEAUX D'ALIMENTATION ET D'ÉVACUATION",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel est le rôle du **Mousseur/Aérateur** situé à l'extrémité d'un robinet ?",
+                    "question": "Quelle est la pente minimale recommandée pour une canalisation d'évacuation d'eaux usées en PVC afin d'assurer l'autocurage ?",
                     "answerOptions": [
-                        {"text": "Augmenter la pression.", "isCorrect": False},
-                        {"text": "Mélanger l'eau et l'air pour un jet doux, et réduire le débit d'eau sans impacter la sensation de jet (économies d'eau).", "isCorrect": True},
-                        {"text": "Filtrer les impuretés.", "isCorrect": False},
-                        {"text": "Arrêter le débit.", "isCorrect": False}
+                        {"text": "1 à 2 cm par mètre", "isCorrect": True},
+                        {"text": "10 cm par mètre", "isCorrect": False},
+                        {"text": "5 millimètres par mètre", "isCorrect": False},
+                        {"text": "45 degrés d'angle constant", "isCorrect": False}
                     ],
-                    "correction": "Le **Mousseur** est un élément d'économie d'eau et de confort."
+                    "correction": "Une pente comprise entre 1% et 3% (1 à 3 cm/m) permet l'écoulement des liquides tout en entraînant les matières solides (autocurage). Une pente trop forte laisse les matières sur place (l'eau va trop vite)."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Quel est l'avantage principal d'un **WC suspendu** par rapport à un WC à poser ?",
+                    "question": "Quel phénomène hydraulique bruyant se produit lors de la fermeture brutale d'un robinet ?",
                     "answerOptions": [
-                        {"text": "Il consomme moins d'eau.", "isCorrect": False},
-                        {"text": "Il facilite le nettoyage au sol (pas de pied) et dissimule la chasse d'eau et la tuyauterie (esthétique).", "isCorrect": True},
-                        {"text": "Il est moins cher à l'achat.", "isCorrect": False},
-                        {"text": "Il est plus rapide à installer.", "isCorrect": False}
+                        {"text": "Coup de bélier", "isCorrect": True},
+                        {"text": "Cavitation", "isCorrect": False},
+                        {"text": "Laminage", "isCorrect": False},
+                        {"text": "Siphonnage", "isCorrect": False}
                     ],
-                    "correction": "Le **WC suspendu** est monté sur un bâti-support, nécessitant une installation plus complexe mais offrant une finition supérieure."
+                    "correction": "L'arrêt brusque de la colonne d'eau en mouvement crée une onde de choc surpressionnaire appelée 'coup de bélier', qui peut endommager les canalisations."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Quelle est la principale fonction d'un **Mitigeur Thermostatique (douche/baignoire)** ?",
+                    "question": "Quel appareil installe-t-on pour absorber l'onde de choc provoquée par la fermeture rapide des vannes ?",
                     "answerOptions": [
-                        {"text": "Réguler le débit.", "isCorrect": False},
-                        {"text": "Maintenir la température de l'eau demandée constante, quelles que soient les variations de pression ou de température du réseau EF/EC.", "isCorrect": True},
-                        {"text": "Filtrer l'eau.", "isCorrect": False},
-                        {"text": "Empêcher le calcaire.", "isCorrect": False}
+                        {"text": "Anti-bélier", "isCorrect": True},
+                        {"text": "Réducteur de pression", "isCorrect": False},
+                        {"text": "Clapet anti-retour", "isCorrect": False},
+                        {"text": "Disconnecteur", "isCorrect": False}
                     ],
-                    "correction": "Le **Thermostatique** offre un grand confort et une sécurité (butée anti-brûlure à 38°C)."
+                    "correction": "L'anti-bélier (à ressort ou à membrane) possède un petit réservoir d'air ou un piston qui absorbe l'énergie de l'onde de choc hydraulique."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Comment appelle-t-on la hauteur minimale de protection (en mm) entre le niveau maximal de l'eau et le bord d'un appareil sanitaire (ex : un lavabo ou une chasse de WC) ?",
+                    "question": "Que désignent spécifiquement les 'Eaux Vannes' (EV) dans un réseau d'évacuation ?",
                     "answerOptions": [
-                        {"text": "La hauteur utile.", "isCorrect": False},
-                        {"text": "La Garde d'air (ou protection contre le refoulement).", "isCorrect": True},
-                        {"text": "La hauteur de pose.", "isCorrect": False},
-                        {"text": "Le niveau de sécurité.", "isCorrect": False}
+                        {"text": "Eaux issues des WC", "isCorrect": True},
+                        {"text": "Eaux issues des cuisines", "isCorrect": False},
+                        {"text": "Eaux de pluie", "isCorrect": False},
+                        {"text": "Eaux de vidange chauffage", "isCorrect": False}
                     ],
-                    "correction": "La **Garde d'air** prévient la pollution de l'eau potable par un reflux d'eau contaminée de l'appareil."
+                    "correction": "On distingue les Eaux Usées (EU) venant des éviers/lavabos/douches, et les Eaux Vannes (EV) provenant exclusivement des toilettes."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Quel est le rôle du **Flotteur** dans le mécanisme de chasse d'eau d'un WC ?",
+                    "question": "À quoi correspond une pression de 1 bar en hauteur de colonne d'eau (environ) ?",
                     "answerOptions": [
-                        {"text": "Déclencher la chasse.", "isCorrect": False},
-                        {"text": "Contrôler le niveau de remplissage de la cuve et couper l'arrivée d'eau lorsqu'il est atteint (soupape à flotteur).", "isCorrect": True},
-                        {"text": "Empêcher le bruit.", "isCorrect": False},
-                        {"text": "Évacuer l'eau.", "isCorrect": False}
+                        {"text": "10 mètres", "isCorrect": True},
+                        {"text": "100 mètres", "isCorrect": False},
+                        {"text": "1 mètre", "isCorrect": False},
+                        {"text": "1 kilomètre", "isCorrect": False}
                     ],
-                    "correction": "Le **Flotteur** régule l'arrivée d'eau dans le réservoir."
+                    "correction": "1 bar équivaut approximativement à la pression exercée par une colonne d'eau de 10 mètres de hauteur (10 mCE)."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Quel est le risque de ne pas respecter l'**alignement horizontal** lors de la pose d'un mitigeur mural (ex : dans une douche) ?",
+                    "question": "Quel est le rôle de la 'ventilation primaire' sur une chute d'eaux usées ?",
                     "answerOptions": [
-                        {"text": "L'eau sera trop chaude.", "isCorrect": False},
-                        {"text": "Le raccordement avec le mitigeur sera difficile voire impossible, ou le mitigeur ne sera pas droit (esthétique et étanchéité compromises).", "isCorrect": True},
-                        {"text": "La pression baisse.", "isCorrect": False},
-                        {"text": "Le flexible fuit.", "isCorrect": False}
+                        {"text": "Éviter le désiphonnage", "isCorrect": True},
+                        {"text": "Aérer la salle de bains", "isCorrect": False},
+                        {"text": "Refroidir les tuyaux", "isCorrect": False},
+                        {"text": "Filtrer les odeurs", "isCorrect": False}
                     ],
-                    "correction": "Le respect du **niveau et de l'entraxe** (distance entre les deux arrivées EF/EC) est essentiel pour la robinetterie murale."
+                    "correction": "La ventilation primaire (sortie en toiture) permet de maintenir la pression atmosphérique dans la colonne pour éviter que l'aspiration créée par une chasse d'eau ne vide les siphons voisins."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Comment appelle-t-on le dispositif situé sous l'évier qui permet de filtrer et retenir les graisses et les gros déchets (utilisé en restauration) ?",
+                    "question": "Quel appareil est obligatoire sur l'alimentation d'eau froide générale pour protéger le réseau public contre la pollution ?",
                     "answerOptions": [
-                        {"text": "Le siphon.", "isCorrect": False},
-                        {"text": "Le Bac dégraisseur (ou Séparateur de graisses).", "isCorrect": True},
-                        {"text": "Le té de visite.", "isCorrect": False},
-                        {"text": "Le détendeur.", "isCorrect": False}
+                        {"text": "Disconnecteur ou clapet EA", "isCorrect": True},
+                        {"text": "Compteur divisionnaire", "isCorrect": False},
+                        {"text": "Vanne d'arrêt sphérique", "isCorrect": False},
+                        {"text": "Vase d'expansion sanitaire", "isCorrect": False}
                     ],
-                    "correction": "Le **Bac dégraisseur** est un regard essentiel pour le prétraitement des eaux usées de cuisine avant rejet."
+                    "correction": "Le clapet anti-pollution (type EA) ou le disconnecteur empêche l'eau de l'habitation (potentiellement polluée) de retourner vers le réseau public de distribution."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quelle est la hauteur standard recommandée (en France) pour l'alimentation en eau d'un lavabo (mitigeur sur plage) ?",
+                    "question": "Comment appelle-t-on la perte de pression due au frottement de l'eau contre les parois du tuyau ?",
                     "answerOptions": [
-                        {"text": "30 cm du sol fini.", "isCorrect": False},
-                        {"text": "Entre 50 cm et 60 cm (pour la partie EF/EC), l'appareil étant posé à 85-90 cm.", "isCorrect": True},
-                        {"text": "120 cm du sol fini.", "isCorrect": False},
-                        {"text": "10 cm du sol fini.", "isCorrect": False}
+                        {"text": "Perte de charge", "isCorrect": True},
+                        {"text": "Débit massique", "isCorrect": False},
+                        {"text": "Pression statique", "isCorrect": False},
+                        {"text": "Hauteur manométrique", "isCorrect": False}
                     ],
-                    "correction": "La **Hauteur d'alimentation** varie selon le type d'appareil (lavabo, douche, évier, etc.)."
+                    "correction": "Les 'pertes de charge' sont les diminutions de pression causées par la longueur des tuyaux, la rugosité du matériau et les accidents de parcours (coudes, tés)."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Quel est le rôle du **Té de visite (ou tampon de visite)** sur une colonne de chute (évacuation) ?",
+                    "question": "Quelle est l'unité de mesure de la dureté de l'eau (teneur en calcaire) ?",
                     "answerOptions": [
-                        {"text": "Réguler le débit.", "isCorrect": False},
-                        {"text": "Permettre l'accès à la canalisation (ouverture) pour l'inspection, le débouchage ou le curage en cas d'obstruction.", "isCorrect": True},
-                        {"text": "Purger l'air.", "isCorrect": False},
-                        {"text": "Réduire la pente.", "isCorrect": False}
+                        {"text": "Degré français", "isCorrect": True},
+                        {"text": "Degré Celsius", "isCorrect": False},
+                        {"text": "Pascal", "isCorrect": False},
+                        {"text": "pH", "isCorrect": False}
                     ],
-                    "correction": "Le **Té de visite** est obligatoire à des intervalles réguliers sur les longues colonnes."
+                    "correction": "Le Titre Hydrotimétrique (TH) s'exprime en degrés français (°f). Une eau est dite 'dure' (calcaire) au-dessus de 15°f ou 20°f."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Quelle est la cause la plus fréquente d'une **fuite** au niveau du raccordement d'un flexible de douche ?",
+                    "question": "Quel dispositif permet de réduire la pression du réseau public (souvent 5 ou 6 bars) à 3 bars dans la maison ?",
                     "answerOptions": [
-                        {"text": "Le flexible est trop long.", "isCorrect": False},
-                        {"text": "Le joint caoutchouc plat (situé à l'intérieur de l'écrou) est manquant, endommagé ou mal positionné.", "isCorrect": True},
-                        {"text": "La pression est trop basse.", "isCorrect": False},
-                        {"text": "L'eau est trop chaude.", "isCorrect": False}
+                        {"text": "Réducteur de pression", "isCorrect": True},
+                        {"text": "Surpresseur", "isCorrect": False},
+                        {"text": "Manomètre", "isCorrect": False},
+                        {"text": "Compteur", "isCorrect": False}
                     ],
-                    "correction": "Pour un flexible, c'est le **joint plat** qui assure l'étanchéité, pas le serrage du filetage lui-même."
+                    "correction": "Le réducteur de pression se place juste après le compteur général pour protéger toute l'installation domestique des surpressions du réseau de ville."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Quel est l'élément qui permet d'ajuster le niveau d'une baignoire ou d'un receveur de douche sur un sol irrégulier ?",
+                    "question": "Dans quel réseau les eaux pluviales et les eaux usées sont-elles évacuées dans la même canalisation ?",
                     "answerOptions": [
-                        {"text": "La colle.", "isCorrect": False},
-                        {"text": "Les Pieds réglables (ou Vérins).", "isCorrect": True},
-                        {"text": "Le siphon.", "isCorrect": False},
-                        {"text": "Le mastic.", "isCorrect": False}
+                        {"text": "Réseau unitaire", "isCorrect": True},
+                        {"text": "Réseau séparatif", "isCorrect": False},
+                        {"text": "Réseau autonome", "isCorrect": False},
+                        {"text": "Réseau épandage", "isCorrect": False}
                     ],
-                    "correction": "Les **Pieds réglables** sont essentiels pour l'horizontalité et la bonne évacuation de l'eau."
+                    "correction": "Le système 'unitaire' collecte tout (pluie + usées) dans un seul tuyau, contrairement au système 'séparatif' qui impose deux collecteurs distincts."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Comment appelle-t-on le type de raccordement utilisé pour un lavabo mural sans colonne, où la tuyauterie est cachée derrière une cloison (ou un cache) ?",
+                    "question": "Quelle est la vitesse maximale conseillée de l'eau dans les tuyaux pour éviter les nuisances sonores ?",
                     "answerOptions": [
-                        {"text": "Raccordement apparent.", "isCorrect": False},
-                        {"text": "Raccordement encastré (ou dissimulé).", "isCorrect": True},
-                        {"text": "Raccordement à visser.", "isCorrect": False},
-                        {"text": "Raccordement par capillarité.", "isCorrect": False}
+                        {"text": "1,5 mètre par seconde", "isCorrect": True},
+                        {"text": "10 mètres par seconde", "isCorrect": False},
+                        {"text": "50 kilomètres par heure", "isCorrect": False},
+                        {"text": "20 millimètres par minute", "isCorrect": False}
                     ],
-                    "correction": "Le **Raccordement encastré** offre une finition esthétique mais impose l'utilisation de raccords certifiés pour être noyés."
+                    "correction": "Au-delà de 1,5 à 2 m/s, la circulation de l'eau génère des bruits d'écoulement et de sifflement désagréables pour les occupants."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quel est le risque de ne pas installer un **Clapet anti-retour** sur la pompe de relevage des eaux usées ?",
+                    "question": "Quel est l'organe qui permet de distribuer l'eau vers plusieurs appareils à partir d'un point central ?",
                     "answerOptions": [
-                        {"text": "La pompe chauffe.", "isCorrect": False},
-                        {"text": "L'eau relevée redescend dans la cuve lorsque la pompe s'arrête, ce qui la fait redémarrer inutilement (risque de surchauffe/casse).", "isCorrect": True},
-                        {"text": "L'eau gèle.", "isCorrect": False},
-                        {"text": "L'eau déborde.", "isCorrect": False}
+                        {"text": "Nourrice", "isCorrect": True},
+                        {"text": "Siphon", "isCorrect": False},
+                        {"text": "Purgeur", "isCorrect": False},
+                        {"text": "Bouchon", "isCorrect": False}
                     ],
-                    "correction": "Le **Clapet anti-retour** empêche le reflux et protège la pompe."
+                    "correction": "La nourrice (ou clarinette/collecteur) reçoit l'alimentation principale et la divise en plusieurs départs individuels vers chaque équipement (lavabo, WC, douche)."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Comment s'appelle l'ouverture située sur le receveur de douche ou la baignoire qui permet l'évacuation d'urgence de l'eau en cas de siphon bouché (pour éviter le débordement) ?",
+                    "question": "Que mesure un manomètre ?",
                     "answerOptions": [
-                        {"text": "La bonde.", "isCorrect": False},
-                        {"text": "Le Trop-plein.", "isCorrect": True},
-                        {"text": "La grille.", "isCorrect": False},
-                        {"text": "L'aérateur.", "isCorrect": False}
+                        {"text": "La pression", "isCorrect": True},
+                        {"text": "Le débit", "isCorrect": False},
+                        {"text": "La température", "isCorrect": False},
+                        {"text": "L'humidité", "isCorrect": False}
                     ],
-                    "correction": "Le **Trop-plein** est une sécurité obligatoire sur la plupart des appareils sanitaires."
+                    "correction": "Le manomètre est l'instrument à cadran qui affiche la pression du fluide dans le réseau, généralement gradué en bars."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quel est le type de joint souvent utilisé pour assurer l'étanchéité entre la baignoire/receveur et la faïence murale ?",
+                    "question": "Pourquoi utilise-t-on un vase d'expansion sanitaire (souvent blanc) sur l'arrivée d'eau froide d'un chauffe-eau ?",
                     "answerOptions": [
-                        {"text": "Joint Téflon.", "isCorrect": False},
-                        {"text": "Joint silicone (mastic d'étanchéité souple, résistant à l'eau et à la moisissure).", "isCorrect": True},
-                        {"text": "Joint chanvre.", "isCorrect": False},
-                        {"text": "Joint soudé.", "isCorrect": False}
+                        {"text": "Absorber la dilatation et économiser l'eau", "isCorrect": True},
+                        {"text": "Purifier l'eau avant qu'elle ne chauffe", "isCorrect": False},
+                        {"text": "Augmenter la pression de l'eau chaude", "isCorrect": False},
+                        {"text": "Refroidir le groupe de sécurité", "isCorrect": False}
                     ],
-                    "correction": "Le **Joint silicone** est flexible et étanche, mais il doit être refait régulièrement."
+                    "correction": "Le vase absorbe le volume d'eau qui se dilate lors de la chauffe. Cela évite l'ouverture de la soupape du groupe de sécurité et donc la perte d'eau à l'égout."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quel est le risque principal d'utiliser des **Flexibles de raccordement** trop longs et vrillés (tordus) ?",
+                    "question": "Quel est le diamètre nominal (DN) intérieur minimum pour l'alimentation d'une baignoire en cuivre ?",
                     "answerOptions": [
-                        {"text": "Ils font du bruit.", "isCorrect": False},
-                        {"text": "Ils réduisent le débit (perte de charge), augmentent le risque de fuite et de rupture à long terme.", "isCorrect": True},
-                        {"text": "Ils rouillent.", "isCorrect": False},
-                        {"text": "Ils attirent les impuretés.", "isCorrect": False}
+                        {"text": "14 mm", "isCorrect": True},
+                        {"text": "10 mm", "isCorrect": False},
+                        {"text": "8 mm", "isCorrect": False},
+                        {"text": "32 mm", "isCorrect": False}
                     ],
-                    "correction": "Les **Flexibles** doivent être montés sans torsion et avec une courbe de cintrage naturelle."
+                    "correction": "Pour assurer un débit suffisant et un remplissage rapide, une baignoire doit être alimentée par du cuivre de diamètre intérieur minimum 13 ou 14 mm (Cuivre 14/16)."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Comment s'appelle le robinet qui mélange l'eau chaude et l'eau froide avec une seule commande (manette) et qui est le plus courant aujourd'hui ?",
+                    "question": "Quel est l'effet d'une réduction de diamètre sur la vitesse de l'eau, à débit constant ?",
                     "answerOptions": [
-                        {"text": "Le robinet simple.", "isCorrect": False},
-                        {"text": "Le Mitigeur (ou Mitigeur simple commande).", "isCorrect": True},
-                        {"text": "Le mélangeur.", "isCorrect": False},
-                        {"text": "Le thermostatique.", "isCorrect": False}
+                        {"text": "La vitesse augmente", "isCorrect": True},
+                        {"text": "La vitesse diminue", "isCorrect": False},
+                        {"text": "La vitesse reste identique", "isCorrect": False},
+                        {"text": "La vitesse s'annule", "isCorrect": False}
                     ],
-                    "correction": "Le **Mitigeur** est simple d'utilisation et est souvent équipé d'une cartouche céramique pour le contrôle du débit et de la température."
+                    "correction": "Selon l'effet Venturi : si le tuyau rétrécit et que le débit reste le même, l'eau est obligée d'accélérer pour passer (Vitesse augmente, Pression diminue)."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quel est le rôle du **Clapet anti-vide (ou Aérateur à membrane)** sur la colonne de chute des évacuations ?",
+                    "question": "Comment appelle-t-on le test consistant à mettre le réseau sous pression pour vérifier l'absence de fuites ?",
                     "answerOptions": [
-                        {"text": "Empêcher le bruit.", "isCorrect": False},
-                        {"text": "Faire entrer l'air pour compenser une dépression et éviter le désiphonnage des appareils sanitaires (l'aspiration des gardes d'eau).", "isCorrect": True},
-                        {"text": "Empêcher l'eau de couler.", "isCorrect": False},
-                        {"text": "Réguler la pente.", "isCorrect": False}
+                        {"text": "Épreuve d'étanchéité", "isCorrect": True},
+                        {"text": "Vidange curative", "isCorrect": False},
+                        {"text": "Mise en eau dynamique", "isCorrect": False},
+                        {"text": "Purge des radiateurs", "isCorrect": False}
                     ],
-                    "correction": "L'**Aérateur à membrane** permet une ventilation de la colonne sans sortie en toiture (sous conditions strictes)."
+                    "correction": "L'épreuve d'étanchéité se fait souvent à une pression supérieure à la pression de service (ex: 6 à 10 bars) avant de refermer les cloisons ou les tranchées."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Quelle est l'exigence de la norme NF C 15-100 concernant la protection électrique dans la salle de bain (volumes de sécurité) ?",
+                    "question": "Qu'est-ce qu'un 'clapet anti-retour' ?",
                     "answerOptions": [
-                        {"text": "Les prises peuvent être partout.", "isCorrect": False},
-                        {"text": "La salle de bain est divisée en volumes (0, 1, 2, 3), et l'installation de prises ou d'appareils électriques (chauffe-eau, chauffage) est strictement réglementée pour éviter les risques d'électrocution.", "isCorrect": True},
-                        {"text": "Seul le volume 0 est dangereux.", "isCorrect": False},
-                        {"text": "Tous les appareils doivent être sur batterie.", "isCorrect": False}
+                        {"text": "Un dispositif imposant un sens unique de circulation", "isCorrect": True},
+                        {"text": "Une vanne pour couper l'eau manuellement", "isCorrect": False},
+                        {"text": "Un bouchon de visite pour déboucher les tuyaux", "isCorrect": False},
+                        {"text": "Une grille de filtration des impuretés", "isCorrect": False}
                     ],
-                    "correction": "Le **respect des volumes** est fondamental pour la sécurité de l'installation électrique et sanitaire."
+                    "correction": "Le clapet anti-retour (à battant ou à ressort) s'ouvre dans le sens du flux et se bloque si l'eau tente de revenir en arrière."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Comment s'appelle l'élément qui permet de raccorder l'évacuation d'une douche/baignoire au siphon ?",
+                    "question": "Quelle est la conséquence principale d'une eau trop douce (TH inférieur à 10°f) ?",
                     "answerOptions": [
-                        {"text": "Le trop-plein.", "isCorrect": False},
-                        {"text": "La Bonde (avec ou sans clapet, à grille, ou siphon de sol).", "isCorrect": True},
-                        {"text": "Le té de visite.", "isCorrect": False},
-                        {"text": "Le réducteur.", "isCorrect": False}
+                        {"text": "Corrosion des métaux", "isCorrect": True},
+                        {"text": "Entartrage rapide des tuyaux", "isCorrect": False},
+                        {"text": "Dépôt de calcaire sur les résistances", "isCorrect": False},
+                        {"text": "Mauvaise odeur de l'eau", "isCorrect": False}
                     ],
-                    "correction": "La **Bonde** est l'interface entre l'appareil et le siphon."
+                    "correction": "Une eau trop douce est 'agressive' : elle n'a plus de couche calcaire protectrice et attaque chimiquement les parois métalliques (corrosion, fuites)."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 4 : ÉVACUATION ET VENTILATION (Q. 61-80)
+        # THÈME 4 : LECTURE DE PLANS, DESSIN TECHNIQUE ET IMPLANTATION (Questions 61 à 80)
         # =========================================================================
         4: {
-            "name": "4. Évacuation des Eaux Usées et Ventilation (Q. 61-80)",
+            "name": "THÈME 4 : LECTURE DE PLANS, DESSIN TECHNIQUE ET IMPLANTATION",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel est le rôle du **Siphon** dans une installation d'évacuation ?",
+                    "question": "Quelle longueur réelle représente un trait de 10 centimètres sur un plan à l'échelle 1/50 ?",
                     "answerOptions": [
-                        {"text": "Accélérer l'écoulement.", "isCorrect": False},
-                        {"text": "Maintenir en permanence une 'garde d'eau' (niveau d'eau stagnant) pour empêcher la remontée des odeurs nauséabondes (gaz d'égout) dans l'habitation.", "isCorrect": True},
-                        {"text": "Filtrer les graisses.", "isCorrect": False},
-                        {"text": "Réguler la pression.", "isCorrect": False}
+                        {"text": "5 mètres", "isCorrect": True},
+                        {"text": "50 centimètres", "isCorrect": False},
+                        {"text": "10 mètres", "isCorrect": False},
+                        {"text": "1 mètre", "isCorrect": False}
                     ],
-                    "correction": "Le **Siphon** (en P, S, ou bouteille) est l'organe essentiel de l'évacuation sanitaire. "
+                    "correction": "L'échelle 1/50 signifie que 1 cm sur le papier vaut 50 cm en réalité. Donc 10 cm x 50 = 500 cm, soit 5 mètres."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quelle est la **pente minimale (en %)** à respecter pour l'évacuation des eaux usées horizontales (eaux vannes et eaux grises) ?",
+                    "question": "Que signifie l'abréviation 'ECS' sur un schéma de principe hydraulique ?",
                     "answerOptions": [
-                        {"text": "0,5% (5 mm/m).", "isCorrect": False},
-                        {"text": "1% (1 cm/m) à 3% (3 cm/m).", "isCorrect": True},
-                        {"text": "5% (5 cm/m).", "isCorrect": False},
-                        {"text": "10% (10 cm/m).", "isCorrect": False}
+                        {"text": "Eau Chaude Sanitaire", "isCorrect": True},
+                        {"text": "Eau Courante Standard", "isCorrect": False},
+                        {"text": "Écoulement Canalisation Sortie", "isCorrect": False},
+                        {"text": "Ensemble Chauffage Sol", "isCorrect": False}
                     ],
-                    "correction": "Une pente de **1 à 3%** est nécessaire pour garantir l'écoulement et l'auto-nettoyage de la canalisation."
+                    "correction": "L'ECS désigne le réseau d'eau potable qui a été chauffée (par un cumulus ou une chaudière) pour les besoins sanitaires (douche, lavabo)."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Comment appelle-t-on le dispositif qui assure le renouvellement permanent de l'air dans les pièces humides (cuisine, salle de bain, WC) ?",
+                    "question": "Quel type de trait est utilisé en dessin technique pour représenter une canalisation cachée ou encastrée ?",
                     "answerOptions": [
-                        {"text": "Le climatiseur.", "isCorrect": False},
-                        {"text": "La VMC (Ventilation Mécanique Contrôlée).", "isCorrect": True},
-                        {"text": "Le déshumidificateur.", "isCorrect": False},
-                        {"text": "Le radiateur.", "isCorrect": False}
+                        {"text": "Trait interrompu court", "isCorrect": True},
+                        {"text": "Trait continu fort", "isCorrect": False},
+                        {"text": "Trait mixte fin", "isCorrect": False},
+                        {"text": "Trait ondulé", "isCorrect": False}
                     ],
-                    "correction": "La **VMC** est obligatoire pour l'hygiène et la conservation du bâtiment (lutte contre l'humidité et les moisissures)."
+                    "correction": "Les éléments invisibles (car derrière un mur, dans une dalle ou un coffrage) sont conventionnellement représentés en pointillés (trait interrompu)."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quel est le diamètre minimal généralement requis pour l'évacuation d'une douche ou d'un lavabo (eaux grises) ?",
+                    "question": "Quelle est la définition exacte d'une 'vue en plan' ?",
                     "answerOptions": [
-                        {"text": "20 mm.", "isCorrect": False},
-                        {"text": "32 mm (lavabo, bidet) ou 40 mm (douche, baignoire).", "isCorrect": True},
-                        {"text": "80 mm.", "isCorrect": False},
-                        {"text": "100 mm.", "isCorrect": False}
+                        {"text": "Une vue de dessus horizontale coupée à un mètre du sol", "isCorrect": True},
+                        {"text": "Une vue de face des façades extérieures du bâtiment", "isCorrect": False},
+                        {"text": "Une vue verticale tranchant le bâtiment en deux", "isCorrect": False},
+                        {"text": "Une vue en perspective artistique du projet fini", "isCorrect": False}
                     ],
-                    "correction": "Les diamètres varient selon l'appareil : 32/40 mm (eaux grises), 100 mm (eaux vannes/WC)."
+                    "correction": "La vue en plan est une coupe horizontale virtuelle réalisée à 1 mètre de hauteur, permettant de visualiser l'agencement des pièces et l'épaisseur des murs."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est le rôle du **Regard de visite (ou de branchement)** sur le réseau extérieur d'évacuation ?",
+                    "question": "Que symbolise le signe 'Ø' placé devant un chiffre sur un plan de plomberie ?",
                     "answerOptions": [
-                        {"text": "Stocker les eaux.", "isCorrect": False},
-                        {"text": "Permettre le changement de direction des canalisations, la jonction avec le réseau public et l'accès pour l'inspection/débouchage.", "isCorrect": True},
-                        {"text": "Filtrer l'eau.", "isCorrect": False},
-                        {"text": "Réguler la pression.", "isCorrect": False}
+                        {"text": "Diamètre", "isCorrect": True},
+                        {"text": "Rayon", "isCorrect": False},
+                        {"text": "Périmètre", "isCorrect": False},
+                        {"text": "Volume", "isCorrect": False}
                     ],
-                    "correction": "Le **Regard** est un accès crucial pour l'entretien des canalisations enterrées."
+                    "correction": "Ce symbole universel indique que la cote correspond au diamètre (extérieur ou nominal) du tube ou de l'accessoire circulaire."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Comment appelle-t-on le tube d'évacuation vertical qui reçoit les eaux usées de plusieurs niveaux (WC, salle de bain, cuisine) ?",
+                    "question": "Quel instrument de mesure moderne permet de tracer un trait de niveau sur tous les murs d'une pièce simultanément ?",
                     "answerOptions": [
-                        {"text": "La dérivation.", "isCorrect": False},
-                        {"text": "La Colonne de chute (ou Chute des eaux usées).", "isCorrect": True},
-                        {"text": "Le siphon.", "isCorrect": False},
-                        {"text": "Le collecteur.", "isCorrect": False}
+                        {"text": "Niveau laser rotatif", "isCorrect": True},
+                        {"text": "Mètre ruban souple", "isCorrect": False},
+                        {"text": "Fil à plomb", "isCorrect": False},
+                        {"text": "Règle en aluminium", "isCorrect": False}
                     ],
-                    "correction": "La **Colonne de chute** doit avoir un diamètre adapté (souvent 100 mm pour les eaux vannes)."
+                    "correction": "Le niveau laser projette un faisceau lumineux horizontal à 360°, ce qui permet d'implanter les fixations à la même hauteur partout sans déplacer l'outil."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Que risque-t-il de se passer si la pente des évacuations est **trop forte** (ex : 10%) ?",
+                    "question": "En dessin isométrique de tuyauterie, quel est l'angle des axes fuyants par rapport à l'horizontale ?",
                     "answerOptions": [
-                        {"text": "Le siphon gèle.", "isCorrect": False},
-                        {"text": "L'eau s'écoule trop vite, laissant les matières solides s'accumuler et créer un bouchon (non-auto-nettoyage).", "isCorrect": True},
-                        {"text": "Le tube fuit.", "isCorrect": False},
-                        {"text": "Le tube fait du bruit.", "isCorrect": False}
+                        {"text": "30 degrés", "isCorrect": True},
+                        {"text": "45 degrés", "isCorrect": False},
+                        {"text": "90 degrés", "isCorrect": False},
+                        {"text": "10 degrés", "isCorrect": False}
                     ],
-                    "correction": "Une pente excessive est aussi nuisible qu'une pente insuffisante (DTU : 1% à 3%)."
+                    "correction": "L'isométrie, très utilisée en tuyauterie industrielle et plomberie pour visualiser les réseaux 3D, utilise des axes inclinés à 30° par rapport à l'horizontale."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quelle est la particularité d'une **VMC Hygroréglable** par rapport à une VMC standard ?",
+                    "question": "Quelle couleur est conventionnellement utilisée pour tracer les réseaux d'eau froide sur un plan ?",
                     "answerOptions": [
-                        {"text": "Elle filtre l'air.", "isCorrect": False},
-                        {"text": "Son débit d'air est ajusté automatiquement en fonction du taux d'humidité de l'air extrait (économie d'énergie).", "isCorrect": True},
-                        {"text": "Elle est plus bruyante.", "isCorrect": False},
-                        {"text": "Elle ne fonctionne que la nuit.", "isCorrect": False}
+                        {"text": "Bleu", "isCorrect": True},
+                        {"text": "Rouge", "isCorrect": False},
+                        {"text": "Vert", "isCorrect": False},
+                        {"text": "Jaune", "isCorrect": False}
                     ],
-                    "correction": "La **VMC Hygroréglable** est plus économe car elle ne ventile qu'en cas de besoin (douche, cuisine)."
+                    "correction": "La convention internationale de repérage des fluides attribue la couleur bleue à l'eau froide et le rouge à l'eau chaude ou au chauffage départ."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Comment appelle-t-on l'évacuation des eaux de pluie (EP) sur un toit ?",
+                    "question": "Que signifie le terme 'Allège' noté sous une fenêtre sur un plan d'architecte ?",
                     "answerOptions": [
-                        {"text": "Les égouts.", "isCorrect": False},
-                        {"text": "La Gouttière et la Descente d'eaux pluviales (DEP).", "isCorrect": True},
-                        {"text": "Le siphon de sol.", "isCorrect": False},
-                        {"text": "Le regard de visite.", "isCorrect": False}
+                        {"text": "La hauteur du mur sous la fenêtre", "isCorrect": True},
+                        {"text": "La largeur totale de la fenêtre", "isCorrect": False},
+                        {"text": "L'épaisseur du vitrage isolant", "isCorrect": False},
+                        {"text": "Le poids total de la maçonnerie", "isCorrect": False}
                     ],
-                    "correction": "Les **Eaux pluviales** sont évacuées vers le réseau EP, séparément des eaux usées (EU) ou eaux vannes (EV)."
+                    "correction": "L'allège est la partie maçonnée située entre le sol fini et le rebord bas de la fenêtre. C'est une cote verticale importante pour placer les radiateurs."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Quel est le risque de raccorder un appareil (ex : machine à laver) directement sur une évacuation de WC (eaux vannes) ?",
+                    "question": "Qu'est-ce qu'une 'réservation' sur un plan de coffrage béton ?",
                     "answerOptions": [
-                        {"text": "Le raccord fuira.", "isCorrect": False},
-                        {"text": "Les bactéries et les odeurs des eaux vannes pourraient remonter dans la machine, créant un risque sanitaire et olfactif (raccordement interdit).", "isCorrect": True},
-                        {"text": "L'eau sera trop froide.", "isCorrect": False},
-                        {"text": "La pression baisse.", "isCorrect": False}
+                        {"text": "Un trou prévu pour le passage des tuyaux", "isCorrect": True},
+                        {"text": "Un espace de stockage pour le plombier", "isCorrect": False},
+                        {"text": "Une commande de matériel à l'avance", "isCorrect": False},
+                        {"text": "Un local technique fermé à clé", "isCorrect": False}
                     ],
-                    "correction": "Les **Eaux usées** (eaux grises : cuisine, douche, lave-linge) doivent être raccordées séparément ou après la colonne de chute des eaux vannes."
+                    "correction": "Une réservation est une trémie ou un fourreau positionné avant le coulage du béton pour éviter d'avoir à percer la dalle ou le mur par la suite."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Quel est l'élément essentiel à vérifier dans la **garde d'eau** d'un siphon pour s'assurer de sa bonne efficacité (anti-odeur) ?",
+                    "question": "Quel symbole graphique représente généralement une vanne d'arrêt ou un robinet sur un schéma ?",
                     "answerOptions": [
-                        {"text": "La température de l'eau.", "isCorrect": False},
-                        {"text": "La Hauteur d'eau (qui doit être suffisante pour bloquer les gaz) et l'absence de fuite.", "isCorrect": True},
-                        {"text": "Le débit d'eau.", "isCorrect": False},
-                        {"text": "La couleur de l'eau.", "isCorrect": False}
+                        {"text": "Deux triangles opposés par la pointe", "isCorrect": True},
+                        {"text": "Un carré barré d'une croix", "isCorrect": False},
+                        {"text": "Un cercle vide simple", "isCorrect": False},
+                        {"text": "Une ligne en zigzag", "isCorrect": False}
                     ],
-                    "correction": "Le siphon doit toujours contenir une quantité d'eau suffisante (garde d'eau)."
+                    "correction": "Le symbole 'papillon' (deux triangles se touchant par la pointe) représente l'organe de coupure ou de réglage (vanne) sur la ligne de tuyauterie."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Comment s'appelle l'opération qui consiste à nettoyer et à déboucher une canalisation en utilisant un jet d'eau sous haute pression ?",
+                    "question": "Que signifie l'indication 'NGF' associée à une cote d'altitude ?",
                     "answerOptions": [
-                        {"text": "Le désembouage.", "isCorrect": False},
-                        {"text": "Le Curage (ou Hydrocurage).", "isCorrect": True},
-                        {"text": "Le détartrage.", "isCorrect": False},
-                        {"text": "Le siphonnage.", "isCorrect": False}
+                        {"text": "Nivellement Général de la France", "isCorrect": True},
+                        {"text": "Norme Gaz de France", "isCorrect": False},
+                        {"text": "Niveau Global de Finition", "isCorrect": False},
+                        {"text": "Nouvelle Garantie Fabricant", "isCorrect": False}
                     ],
-                    "correction": "Le **Curage** est une méthode de maintenance préventive et curative des réseaux."
+                    "correction": "Le NGF est le système d'altitude de référence en France (niveau zéro de la mer à Marseille). Il permet de caler les hauteurs absolues du bâtiment."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quel est le rôle de la **Ventilation Primaire** sur une colonne de chute ?",
+                    "question": "Quelle échelle offre le plus de détails visuels pour dessiner une salle de bains ?",
                     "answerOptions": [
-                        {"text": "Réchauffer l'air.", "isCorrect": False},
-                        {"text": "Évacuer en toiture les gaz nauséabonds (odeurs d'égout) et maintenir une pression atmosphérique dans la colonne pour éviter le désiphonnage.", "isCorrect": True},
-                        {"text": "Filtrer les eaux usées.", "isCorrect": False},
-                        {"text": "Réduire le bruit.", "isCorrect": False}
+                        {"text": "1/20", "isCorrect": True},
+                        {"text": "1/50", "isCorrect": False},
+                        {"text": "1/100", "isCorrect": False},
+                        {"text": "1/200", "isCorrect": False}
                     ],
-                    "correction": "La **Ventilation primaire** est la prolongation de la colonne de chute jusqu'à l'air libre (toiture)."
+                    "correction": "L'échelle 1/20 est plus 'grande' que 1/100. Elle permet de voir les détails des raccordements et l'emplacement précis des appareils sanitaires."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quel est le risque de ne pas respecter la **nature du tube** lors d'un raccordement d'évacuation (ex : coller du PVC sur du Polypropylène) ?",
+                    "question": "Que désigne le terme 'calepinage' lors de la préparation du chantier ?",
                     "answerOptions": [
-                        {"text": "Le tube fait du bruit.", "isCorrect": False},
-                        {"text": "La colle PVC ne garantit pas une soudure chimique étanche et durable avec un autre matériau (fuite à court/moyen terme).", "isCorrect": True},
-                        {"text": "Le tube rouille.", "isCorrect": False},
-                        {"text": "Le tube gèle.", "isCorrect": False}
+                        {"text": "Le dessin de disposition précise des éléments", "isCorrect": True},
+                        {"text": "Le calcul du salaire des ouvriers", "isCorrect": False},
+                        {"text": "La liste des outils manquants", "isCorrect": False},
+                        {"text": "Le nettoyage final des sols", "isCorrect": False}
                     ],
-                    "correction": "Il faut utiliser les **raccords de transition** adaptés (à joint, mécanique) pour les changements de matériaux."
+                    "correction": "En plomberie (comme en carrelage), le calepinage consiste à dessiner l'implantation exacte des tuyaux et appareils pour optimiser les coupes et l'esthétique."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Comment appelle-t-on la **sortie** d'un siphon (partie qui relie l'appareil à la canalisation principale) ?",
+                    "question": "Sur un plan, comment repère-t-on l'orientation géographique du bâtiment ?",
                     "answerOptions": [
-                        {"text": "L'entrée.", "isCorrect": False},
-                        {"text": "La garde d'eau.", "isCorrect": False},
-                        {"text": "La Culotte (ou Décharge).", "isCorrect": True},
-                        {"text": "La bonde.", "isCorrect": False}
+                        {"text": "Par la flèche indiquant le Nord", "isCorrect": True},
+                        {"text": "Par la position de la porte d'entrée", "isCorrect": False},
+                        {"text": "Par la couleur des murs extérieurs", "isCorrect": False},
+                        {"text": "Par l'échelle graphique en bas", "isCorrect": False}
                     ],
-                    "correction": "La **Culotte** ou décharge du siphon renvoie l'eau vers l'évacuation."
+                    "correction": "La rose des vents ou une flèche marquée 'N' indique le Nord, ce qui est crucial pour positionner les capteurs solaires ou les sorties de toiture."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Quel est le risque de réaliser des angles de raccordement (dérivation) trop vifs (90°) sur des évacuations horizontales ?",
+                    "question": "Dans la désignation d'un tube cuivre '14x16', à quoi correspond le chiffre 16 ?",
                     "answerOptions": [
-                        {"text": "Le siphon se vide.", "isCorrect": False},
-                        {"text": "Un risque de bouchon car les matières solides s'accumulent plus facilement dans les coudes à angle droit (privilégier les coudes à grand rayon ou deux coudes à 45°).", "isCorrect": True},
-                        {"text": "Le tube fuit.", "isCorrect": False},
-                        {"text": "Le tube gèle.", "isCorrect": False}
+                        {"text": "Au diamètre extérieur en millimètres", "isCorrect": True},
+                        {"text": "Au diamètre intérieur en millimètres", "isCorrect": False},
+                        {"text": "À l'épaisseur du tube en dixièmes", "isCorrect": False},
+                        {"text": "À la pression maximale admissible", "isCorrect": False}
                     ],
-                    "correction": "Les **angles vifs** sont à proscrire sur les évacuations pour favoriser l'écoulement."
+                    "correction": "Pour le cuivre courant, '14/16' (ou 16x1) désigne le diamètre extérieur de 16 mm et le diamètre intérieur de 14 mm (épaisseur de 1 mm)."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quel est le rôle du **Manchon de dilatation** sur les longues sections de PVC (en aérien ou enterré) ?",
+                    "question": "Que représente un trait mixte fin (trait long, point, trait long) sur un dessin ?",
                     "answerOptions": [
-                        {"text": "Réguler le bruit.", "isCorrect": False},
-                        {"text": "Absorber la dilatation/contraction thermique du PVC (qui est élevée) pour éviter que les raccords ne se déboîtent ou que les colles ne lâchent.", "isCorrect": True},
-                        {"text": "Filtrer l'eau.", "isCorrect": False},
-                        {"text": "Maintenir la pente.", "isCorrect": False}
+                        {"text": "Un axe de symétrie ou de tube", "isCorrect": True},
+                        {"text": "Une arête visible de l'objet", "isCorrect": False},
+                        {"text": "Une hachure de coupe", "isCorrect": False},
+                        {"text": "Une cotation de longueur", "isCorrect": False}
                     ],
-                    "correction": "Le **PVC** est très sensible aux variations de température ; le manchon de dilatation est souvent requis en extérieur ou sur les grandes longueurs."
+                    "correction": "Le trait mixte fin matérialise les axes (axe de symétrie d'une pièce, axe central d'une canalisation) pour faciliter la lecture et le cotation."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Comment appelle-t-on le dispositif (souvent un coude ou un T) qui permet de dévier l'eau vers le bas lors d'une chute (ex : sous une baignoire) ?",
+                    "question": "Qu'est-ce qu'un 'schéma unifilaire' ?",
                     "answerOptions": [
-                        {"text": "La bonde.", "isCorrect": False},
-                        {"text": "La Culotte de raccordement.", "isCorrect": True},
-                        {"text": "Le manchon.", "isCorrect": False},
-                        {"text": "Le siphon.", "isCorrect": False}
+                        {"text": "Un dessin où le tuyau est représenté par un seul trait", "isCorrect": True},
+                        {"text": "Un dessin où l'on voit l'épaisseur réelle du tuyau", "isCorrect": False},
+                        {"text": "Un dessin en 3D avec ombrages et lumières réalistes", "isCorrect": False},
+                        {"text": "Un dessin artistique fait à la main levée", "isCorrect": False}
                     ],
-                    "correction": "La **Culotte** permet la jonction d'un écoulement horizontal à un écoulement vertical."
+                    "correction": "Pour simplifier la représentation des réseaux, on dessine l'axe du tube par un trait unique (unifilaire) sur lequel on appose des symboles normalisés."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel est le principal inconvénient d'une **VMC Simple Flux** par rapport à une VMC Double Flux ?",
+                    "question": "Quelle information donne une 'coupe verticale' d'un bâtiment ?",
                     "answerOptions": [
-                        {"text": "Elle fait plus de bruit.", "isCorrect": False},
-                        {"text": "Elle génère des pertes calorifiques importantes en évacuant l'air chaud directement à l'extérieur (pas de récupération de chaleur).", "isCorrect": True},
-                        {"text": "Elle n'extrait que les odeurs.", "isCorrect": False},
-                        {"text": "Elle est plus chère à installer.", "isCorrect": False}
+                        {"text": "Les hauteurs sous plafond et épaisseurs de dalles", "isCorrect": True},
+                        {"text": "La surface habitable en mètres carrés au sol", "isCorrect": False},
+                        {"text": "L'orientation du soleil par rapport aux fenêtres", "isCorrect": False},
+                        {"text": "Le plan de masse du terrain complet", "isCorrect": False}
                     ],
-                    "correction": "La **VMC Simple Flux** est moins performante sur le plan énergétique (contrairement à la Double Flux)."
+                    "correction": "La coupe verticale permet de voir ce qui se passe en hauteur : passage des colonnes montantes, réservations dans les planchers, hauteurs des attentes."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Comment appelle-t-on la partie de la colonne de chute des eaux vannes (WC) qui se prolonge en toiture et est ouverte à l'air libre ?",
+                    "question": "Que signifie le sigle 'EU' sur un plan de réseau d'assainissement ?",
                     "answerOptions": [
-                        {"text": "La ventilation secondaire.", "isCorrect": False},
-                        {"text": "La Ventilation primaire (pour évacuer les gaz et éviter le désiphonnage par aspiration).", "isCorrect": True},
-                        {"text": "Le chapeau de toiture.", "isCorrect": False},
-                        {"text": "La cheminée.", "isCorrect": False}
+                        {"text": "Eaux Usées", "isCorrect": True},
+                        {"text": "Eaux Uniques", "isCorrect": False},
+                        {"text": "Eaux Utiles", "isCorrect": False},
+                        {"text": "États Unis", "isCorrect": False}
                     ],
-                    "correction": "La **Ventilation primaire** est essentielle pour le bon fonctionnement des siphons."
+                    "correction": "EU désigne les 'Eaux Usées' (ménagères : cuisine, salle de bain), à distinguer des EV (Eaux Vannes : WC) et EP (Eaux Pluviales)."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 5 : PRODUCTION ET SÉCURITÉ ECS (Q. 81-100)
+        # THÈME 5 : SANTÉ, SÉCURITÉ ET MAINTENANCE (Questions 81 à 100)
         # =========================================================================
         5: {
-            "name": "5. Production et Sécurité ECS (Eau Chaude Sanitaire) (Q. 81-100)",
+            "name": "THÈME 5 : SANTÉ, SÉCURITÉ ET MAINTENANCE",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel est le rôle du **Groupe de Sécurité** sur un chauffe-eau à accumulation (ballon ECS) ?",
+                    "question": "Quelle habilitation électrique minimale doit posséder un plombier pour remplacer un chauffe-eau ou raccorder un circulateur (hors tension) ?",
                     "answerOptions": [
-                        {"text": "Chauffer l'eau.", "isCorrect": False},
-                        {"text": "Maintenir la pression interne à 3 bars maximum (soupape) et évacuer l'excès de volume (dilatation de l'eau chauffée).", "isCorrect": True},
-                        {"text": "Filtrer l'eau.", "isCorrect": False},
-                        {"text": "Réguler le débit.", "isCorrect": False}
+                        {"text": "BS", "isCorrect": True},
+                        {"text": "B2V", "isCorrect": False},
+                        {"text": "BR", "isCorrect": False},
+                        {"text": "H0V", "isCorrect": False}
                     ],
-                    "correction": "Le **Groupe de Sécurité** est un organe de sécurité essentiel, branché sur l'arrivée d'eau froide. "
+                    "correction": "L'habilitation BS (Basse Tension - Chargé d'intervention élémentaire) est destinée aux non-électriciens (plombiers, peintres) devant effectuer des manœuvres simples de raccordement ou de remplacement à l'identique."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Quelle est la principale exigence concernant la température de stockage de l'Eau Chaude Sanitaire (ECS) pour éviter la prolifération de la bactérie **Legionella** ?",
+                    "question": "Quel dispositif de sécurité est obligatoire sur les tuyaux d'un poste à souder oxyacétylénique pour éviter l'explosion des bouteilles ?",
                     "answerOptions": [
-                        {"text": "L'eau doit être stockée à 40 °C.", "isCorrect": False},
-                        {"text": "L'eau doit être stockée à une température minimale d'environ 55 °C et le ballon doit être chauffé régulièrement au-delà de 60 °C (choc thermique).", "isCorrect": True},
-                        {"text": "L'eau doit être stockée à 80 °C.", "isCorrect": False},
-                        {"text": "La température n'a pas d'importance.", "isCorrect": False}
+                        {"text": "Clapet anti-retour pare-flamme", "isCorrect": True},
+                        {"text": "Manodétendeur haute pression", "isCorrect": False},
+                        {"text": "Économiseur de gaz automatique", "isCorrect": False},
+                        {"text": "Filtre à charbon actif", "isCorrect": False}
                     ],
-                    "correction": "Le risque de **Légionellose** est critique entre 25 °C et 45 °C."
+                    "correction": "Les clapets anti-retour pare-flamme (ARPF), placés près du chalumeau ou des détendeurs, empêchent la flamme de remonter dans les tuyaux jusqu'aux bouteilles en cas de retour de feu."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Quel est le rôle de l'**Anode** (magnésium ou titane) à l'intérieur de la cuve d'un chauffe-eau ?",
+                    "question": "Quelle maladie professionnelle grave est historiquement liée à l'inhalation de poussières lors de la dépose de vieilles calorifugeations ?",
                     "answerOptions": [
-                        {"text": "Chauffer l'eau.", "isCorrect": False},
-                        {"text": "Protéger la cuve en acier contre la corrosion (rouille) en s'oxydant elle-même (protection cathodique).", "isCorrect": True},
-                        {"text": "Filtrer le calcaire.", "isCorrect": False},
-                        {"text": "Mesurer la température.", "isCorrect": False}
+                        {"text": "Asbestose", "isCorrect": True},
+                        {"text": "Saturnisme", "isCorrect": False},
+                        {"text": "Légionellose", "isCorrect": False},
+                        {"text": "Tétanos", "isCorrect": False}
                     ],
-                    "correction": "L'**Anode** est la pièce 'sacrificielle' qui garantit la longévité de la cuve émaillée."
+                    "correction": "L'asbestose (et les cancers associés) est causée par l'inhalation de fibres d'amiante, matériau souvent utilisé autrefois pour isoler (calorifuger) les tuyaux de chauffage."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Comment appelle-t-on l'opération de maintenance qui consiste à retirer le calcaire accumulé sur la résistance et au fond du ballon d'eau chaude ?",
+                    "question": "Quelle est la procédure sécurisée pour détecter une fuite de gaz sur une installation ?",
                     "answerOptions": [
-                        {"text": "La vidange.", "isCorrect": False},
-                        {"text": "Le Détartrage (généralement après la vidange et le démontage de la résistance).", "isCorrect": True},
-                        {"text": "Le désembouage.", "isCorrect": False},
-                        {"text": "La purge.", "isCorrect": False}
+                        {"text": "Utiliser un produit moussant détecteur", "isCorrect": True},
+                        {"text": "Passer la flamme d'un briquet sur les raccords", "isCorrect": False},
+                        {"text": "Écouter le bruit du gaz à l'oreille nue", "isCorrect": False},
+                        {"text": "Sentir les odeurs en s'approchant très près", "isCorrect": False}
                     ],
-                    "correction": "Le **Détartrage** est nécessaire pour maintenir le rendement et éviter la surchauffe de la résistance."
+                    "correction": "Il est strictement interdit d'utiliser une flamme. On utilise une bombe aérosol moussante (mille-bulles) qui forme des bulles à l'endroit précis de la fuite."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Quel est l'élément qui permet de transformer l'énergie électrique en chaleur (effet Joule) dans un chauffe-eau électrique ?",
+                    "question": "Que doit faire le plombier s'il intervient sur une canalisation en plomb (intervention aujourd'hui rare mais possible en rénovation) ?",
                     "answerOptions": [
-                        {"text": "Le thermostat.", "isCorrect": False},
-                        {"text": "La Résistance électrique (Blindée ou Stéatite).", "isCorrect": True},
-                        {"text": "L'anode.", "isCorrect": False},
-                        {"text": "Le groupe de sécurité.", "isCorrect": False}
+                        {"text": "Porter des gants et se laver soigneusement les mains", "isCorrect": True},
+                        {"text": "Faire fondre le plomb sans ventilation pour aller vite", "isCorrect": False},
+                        {"text": "Manger son sandwich sur le poste de travail", "isCorrect": False},
+                        {"text": "Poncer le plomb à sec pour faire de la poussière", "isCorrect": False}
                     ],
-                    "correction": "La **Résistance** est l'élément chauffant du ballon."
+                    "correction": "Le plomb est toxique par ingestion et inhalation (Saturnisme). L'hygiène des mains est primordiale avant de manger, et le port d'EPI est obligatoire."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Quel est l'inconvénient principal d'un **Chauffe-eau instantané (gaz ou électrique)** ?",
+                    "question": "Quel document écrit est obligatoire pour effectuer des travaux de soudure dans un établissement recevant du public ou une entreprise en activité ?",
                     "answerOptions": [
-                        {"text": "Il est trop grand.", "isCorrect": False},
-                        {"text": "Il peut ne pas fournir un débit suffisant à la température souhaitée lors de puisages multiples et simultanés.", "isCorrect": True},
-                        {"text": "Il rouille facilement.", "isCorrect": False},
-                        {"text": "Il est trop froid.", "isCorrect": False}
+                        {"text": "Permis de feu", "isCorrect": True},
+                        {"text": "Permis de construire", "isCorrect": False},
+                        {"text": "Bon de commande", "isCorrect": False},
+                        {"text": "Facture acquittée", "isCorrect": False}
                     ],
-                    "correction": "Le **Chauffe-eau instantané** est limité par sa puissance de chauffe maximale."
+                    "correction": "Le 'Permis de feu' est un document de prévention qui analyse les risques d'incendie liés aux points chauds (soudure, meulage) et fixe les mesures de sécurité."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Quel est le rôle du **Limiteur thermostatique de température (ou Mitigeur de sécurité)** sur la sortie d'ECS ?",
+                    "question": "Quelle est la première action à effectuer en cas de brûlure thermique superficielle sur la main ?",
                     "answerOptions": [
-                        {"text": "Augmenter la pression.", "isCorrect": False},
-                        {"text": "Maintenir la température de l'eau distribuée aux points de puisage à un maximum de sécurité (souvent 50 °C) pour prévenir les brûlures, notamment pour les enfants.", "isCorrect": True},
-                        {"text": "Filtrer l'eau.", "isCorrect": False},
-                        {"text": "Assurer l'étanchéité.", "isCorrect": False}
+                        {"text": "Faire ruisseler de l'eau tempérée sur la zone", "isCorrect": True},
+                        {"text": "Appliquer immédiatement de la glace pilée", "isCorrect": False},
+                        {"text": "Percer les cloques avec une aiguille", "isCorrect": False},
+                        {"text": "Mettre du beurre ou de l'huile grasse", "isCorrect": False}
                     ],
-                    "correction": "Le **Limiteur de température** est essentiel si le ballon stocke à plus de 55 °C (prévention de la Légionellose)."
+                    "correction": "La règle des '15-15-15' préconise de refroidir la brûlure à l'eau tempérée (15°C) pendant 15 minutes à 15 cm de distance pour stopper la propagation de la chaleur dans les tissus."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Comment appelle-t-on le dispositif qui permet de faire circuler l'ECS en permanence dans une boucle fermée pour réduire le temps d'attente au robinet ?",
+                    "question": "Pourquoi réalise-t-on une 'liaison équipotentielle' en reliant les tuyaux métalliques à la terre ?",
                     "answerOptions": [
-                        {"text": "Le bouclage de chauffage.", "isCorrect": False},
-                        {"text": "Le Bouclage d'Eau Chaude Sanitaire (avec son circulateur et sa régulation).", "isCorrect": True},
-                        {"text": "Le monotube ECS.", "isCorrect": False},
-                        {"text": "Le circuit aller-retour.", "isCorrect": False}
+                        {"text": "Pour éviter l'électrisation par contact indirect", "isCorrect": True},
+                        {"text": "Pour empêcher le calcaire de se déposer", "isCorrect": False},
+                        {"text": "Pour améliorer le débit de l'eau potable", "isCorrect": False},
+                        {"text": "Pour chauffer l'eau gratuitement par le sol", "isCorrect": False}
                     ],
-                    "correction": "Le **Bouclage ECS** apporte un confort immédiat, mais doit être parfaitement isolé pour éviter les pertes thermiques."
+                    "correction": "La liaison équipotentielle met toutes les masses métalliques (tuyaux cuivre, baignoire fonte) au même potentiel que la terre pour protéger les personnes si un fil électrique touche un tuyau."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Quel est le rôle du **Thermostat** dans un chauffe-eau électrique ?",
+                    "question": "Quelle maintenance préventive simple permet d'éviter le blocage d'un groupe de sécurité calcaire ?",
                     "answerOptions": [
-                        {"text": "Vidanger le ballon.", "isCorrect": False},
-                        {"text": "Réguler la température de l'eau et assurer la coupure de l'alimentation électrique si la température souhaitée est atteinte (sécurité et régulation).", "isCorrect": True},
-                        {"text": "Purger l'air.", "isCorrect": False},
-                        {"text": "Réguler la pression.", "isCorrect": False}
+                        {"text": "Manœuvrer la soupape une fois par mois", "isCorrect": True},
+                        {"text": "Démonter le groupe entièrement chaque semaine", "isCorrect": False},
+                        {"text": "Verser de l'acide pur dans le siphon", "isCorrect": False},
+                        {"text": "Graisser le mécanisme avec de l'huile moteur", "isCorrect": False}
                     ],
-                    "correction": "Le **Thermostat** gère le cycle de chauffe et intègre souvent une sécurité anti-surchauffe."
+                    "correction": "Il est recommandé de tourner la molette de vidange du groupe de sécurité une fois par mois pour chasser les petits dépôts de tartre qui pourraient bloquer le clapet."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Pourquoi doit-on obligatoirement installer le **Groupe de Sécurité** du chauffe-eau à l'arrivée d'eau froide (EF) et non sur le départ d'eau chaude (EC) ?",
+                    "question": "Lors du débouchage chimique d'un évier avec un produit à base d'acide sulfurique, quel est le risque majeur ?",
                     "answerOptions": [
-                        {"text": "Pour faciliter l'entretien.", "isCorrect": False},
-                        {"text": "Le groupe de sécurité doit absorber la dilatation de l'eau froide au fur et à mesure de la chauffe ; il ne doit pas être soumis à l'eau chaude stagnante pour éviter l'entartrage et le dysfonctionnement.", "isCorrect": True},
-                        {"text": "Pour des raisons esthétiques.", "isCorrect": False},
-                        {"text": "Pour réguler le débit.", "isCorrect": False}
+                        {"text": "Projection corrosive et réaction thermique violente", "isCorrect": True},
+                        {"text": "Gel immédiat de la canalisation d'évacuation", "isCorrect": False},
+                        {"text": "Coloration indélébile de la céramique en rose", "isCorrect": False},
+                        {"text": "Émission d'un gaz hilarant inoffensif", "isCorrect": False}
                     ],
-                    "correction": "Le **Groupe de Sécurité** doit être sur l'EF. Sa soupape est conçue pour l'eau froide."
+                    "correction": "Les déboucheurs acides sont très agressifs. Au contact de l'eau, ils provoquent une réaction exothermique (chaleur) et des projections qui peuvent gravement brûler la peau et les yeux."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quel est le risque de ne pas nettoyer régulièrement le **siphon du groupe de sécurité** ?",
+                    "question": "Quel EPI est indispensable pour utiliser une meuleuse d'angle, en plus des gants ?",
                     "answerOptions": [
-                        {"text": "Le ballon explose.", "isCorrect": False},
-                        {"text": "Le calcaire ou les impuretés peuvent obstruer la vidange, empêchant l'évacuation du trop-plein et annulant l'action de la soupape (risque de surpression).", "isCorrect": True},
-                        {"text": "Le ballon rouille.", "isCorrect": False},
-                        {"text": "L'eau refroidit.", "isCorrect": False}
+                        {"text": "Lunettes de protection", "isCorrect": True},
+                        {"text": "Chaussures de ville", "isCorrect": False},
+                        {"text": "Casquette en tissu", "isCorrect": False},
+                        {"text": "Écharpe en laine", "isCorrect": False}
                     ],
-                    "correction": "L'**entretien** (manœuvre régulière de la soupape) est vital pour la sécurité du groupe."
+                    "correction": "Les projections de limaille de fer ou d'éclats de disque sont fréquentes et très rapides. Les lunettes (ou visière) sont obligatoires pour éviter la cécité."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est l'élément d'un chauffe-eau solaire (CESI) qui permet de transférer la chaleur des panneaux solaires au ballon ECS ?",
+                    "question": "Quelle est la cause la plus fréquente d'une mauvaise odeur provenant d'un siphon de sol peu utilisé ?",
                     "answerOptions": [
-                        {"text": "Le régulateur.", "isCorrect": False},
-                        {"text": "L'Échangeur (ou serpentin) thermique (souvent en cuivre) situé à l'intérieur du ballon.", "isCorrect": True},
-                        {"text": "Le groupe de sécurité.", "isCorrect": False},
-                        {"text": "L'anode.", "isCorrect": False}
+                        {"text": "L'évaporation de la garde d'eau", "isCorrect": True},
+                        {"text": "La présence de rats dans le tuyau", "isCorrect": False},
+                        {"text": "La décomposition du plastique", "isCorrect": False},
+                        {"text": "La surpression du réseau public", "isCorrect": False}
                     ],
-                    "correction": "L'**Échangeur** permet le transfert thermique sans mélange des fluides (circuit primaire glycolé vs. ECS)."
+                    "correction": "Si un appareil n'est pas utilisé (chaufferie, buanderie), l'eau du siphon s'évapore. Le bouchon hydraulique disparaît et laisse passer l'air vicié des égouts."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Quel est le risque de surchauffer le PER ou Multicouche lors de la brasure d'un raccord cuivre voisin ?",
+                    "question": "Sur un échafaudage roulant, que doit-on impérativement faire avant de monter dessus ?",
                     "answerOptions": [
-                        {"text": "Le tube devient trop rigide.", "isCorrect": False},
-                        {"text": "Le tube plastique fond ou se déforme (ramollissement), entraînant une défaillance du raccordement ou une fuite immédiate.", "isCorrect": True},
-                        {"text": "Le tube gèle.", "isCorrect": False},
-                        {"text": "Le tube rétrécit.", "isCorrect": False}
+                        {"text": "Bloquer les roues et mettre les stabilisateurs", "isCorrect": True},
+                        {"text": "Demander à un collègue de tenir l'échelle", "isCorrect": False},
+                        {"text": "Vérifier la pression des pneus à la main", "isCorrect": False},
+                        {"text": "Graisser les montants verticaux", "isCorrect": False}
                     ],
-                    "correction": "Il faut protéger les **matériaux plastiques** de toute chaleur excessive lors des travaux de brasure (écran thermique)."
+                    "correction": "La stabilité est primordiale. Il faut bloquer les freins des roues et déployer les stabilisateurs latéraux pour éviter le basculement."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Comment appelle-t-on le dispositif qui permet de réinjecter de l'air dans un tube d'eau froide avant un changement de pression (pour éviter le coup de bélier) ?",
+                    "question": "Quel type de raccord est interdit pour le gaz à l'intérieur des habitations (sauf exception très encadrée) ?",
                     "answerOptions": [
-                        {"text": "Le manomètre.", "isCorrect": False},
-                        {"text": "L'Antibélier (à ressort, à air, ou à membrane).", "isCorrect": True},
-                        {"text": "Le détendeur.", "isCorrect": False},
-                        {"text": "Le circulateur.", "isCorrect": False}
+                        {"text": "Raccord à olive", "isCorrect": True},
+                        {"text": "Raccord à braser", "isCorrect": False},
+                        {"text": "Raccord à sertir gaz", "isCorrect": False},
+                        {"text": "Raccord vissé conique", "isCorrect": False}
                     ],
-                    "correction": "L'**Antibélier** amortit les variations brutales de pression."
+                    "correction": "Les raccords mécaniques type 'bicône' ou 'olive' sont généralement interdits pour le gaz en intérieur car le risque de fuite par déserrage ou vibration est jugé trop important (se référer au référentiel gaz en vigueur)."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quelle est la cause la plus fréquente de la **baisse de pression (débit)** au niveau d'un robinet mitigeur ?",
+                    "question": "Quelle est la posture correcte pour utiliser une clé à molette afin d'éviter de se blesser en cas de ripage ?",
                     "answerOptions": [
-                        {"text": "Le siphon est bouché.", "isCorrect": False},
-                        {"text": "L'entartrage du mousseur/aérateur ou de la cartouche du mitigeur (calcaire).", "isCorrect": True},
-                        {"text": "Le groupe de sécurité fuit.", "isCorrect": False},
-                        {"text": "Le chauffe-eau est vide.", "isCorrect": False}
+                        {"text": "Tirer la clé vers soi", "isCorrect": True},
+                        {"text": "Pousser la clé avec la paume", "isCorrect": False},
+                        {"text": "Frapper sur la clé avec un marteau", "isCorrect": False},
+                        {"text": "Utiliser un tube de rallonge", "isCorrect": False}
                     ],
-                    "correction": "Le **Calcaire** est la cause principale des problèmes de débit et de fuite sur la robinetterie."
+                    "correction": "Il faut toujours 'tirer' la clé vers soi. Si on 'pousse' et que la clé ripe (glisse), la main part violemment vers l'avant et risque de heurter un obstacle blessant."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Dans le cas d'un chauffe-eau à **résistance stéatite**, quel est l'avantage principal de ce type de résistance ?",
+                    "question": "Que doit-on vérifier avant de percer un mur dans une salle de bains rénovée ?",
                     "answerOptions": [
-                        {"text": "Elle est plus petite.", "isCorrect": False},
-                        {"text": "Elle n'est pas en contact direct avec l'eau (protégée par un fourreau), ce qui facilite l'entretien (pas besoin de vidanger le ballon pour la changer) et limite l'entartrage.", "isCorrect": True},
-                        {"text": "Elle consomme moins.", "isCorrect": False},
-                        {"text": "Elle chauffe plus vite.", "isCorrect": False}
+                        {"text": "L'absence de canalisations encastrées", "isCorrect": True},
+                        {"text": "La marque de la peinture murale", "isCorrect": False},
+                        {"text": "La température de la pièce", "isCorrect": False},
+                        {"text": "L'épaisseur exacte de la faïence", "isCorrect": False}
                     ],
-                    "correction": "La **Résistance Stéatite** est plus pratique pour la maintenance que la résistance blindée."
+                    "correction": "Il faut utiliser un détecteur de métaux/matériaux pour éviter de percer une conduite d'eau ou une gaine électrique invisible noyée dans le mur."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quel est le risque de ne pas raccorder le tube de vidange du groupe de sécurité du chauffe-eau à l'air libre (avec garde d'air) ?",
+                    "question": "À quoi sert le 'thermocouple' sur un vieil appareil à gaz ?",
                     "answerOptions": [
-                        {"text": "Le groupe de sécurité ne fonctionne pas.", "isCorrect": False},
-                        {"text": "Risque de refoulement ou d'aspiration des eaux usées (contamination sanitaire) dans le circuit d'eau potable.", "isCorrect": True},
-                        {"text": "L'eau gèle.", "isCorrect": False},
-                        {"text": "Le bruit est trop fort.", "isCorrect": False}
+                        {"text": "Couper le gaz si la veilleuse s'éteint", "isCorrect": True},
+                        {"text": "Allumer le gaz automatiquement à distance", "isCorrect": False},
+                        {"text": "Mesurer la consommation de gaz", "isCorrect": False},
+                        {"text": "Filtrer les impuretés du gaz", "isCorrect": False}
                     ],
-                    "correction": "La **Garde d'air** (ou siphon adapté) est nécessaire entre la vidange de sécurité et le réseau d'évacuation."
+                    "correction": "Le thermocouple est une sécurité par flamme. Si la veilleuse s'éteint (courant d'air), le thermocouple refroidit et coupe l'arrivée de gaz pour éviter l'accumulation explosive."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Quel est le rôle du **Vase d'expansion sanitaire** (différent du Vex chauffage) ?",
+                    "question": "Comment doit-on stocker les bouteilles de gaz (oxygène/acétylène) dans le véhicule ou l'atelier ?",
                     "answerOptions": [
-                        {"text": "Augmenter la pression.", "isCorrect": False},
-                        {"text": "Absorber la dilatation de l'ECS lors de la chauffe pour éviter les fuites constantes au groupe de sécurité (économie d'eau).", "isCorrect": True},
-                        {"text": "Réguler la température.", "isCorrect": False},
-                        {"text": "Filtrer l'eau.", "isCorrect": False}
+                        {"text": "Verticalement et arrimées solidement", "isCorrect": True},
+                        {"text": "Couchées à plat sur le sol", "isCorrect": False},
+                        {"text": "La tête en bas pour la pression", "isCorrect": False},
+                        {"text": "En vrac les unes sur les autres", "isCorrect": False}
                     ],
-                    "correction": "Le **Vase d'expansion sanitaire** est souvent installé en cas de forte pression réseau pour soulager le groupe de sécurité (moins d'écoulement à l'égout)."
+                    "correction": "Les bouteilles doivent être stockées debout (verticalement) et attachées pour éviter qu'elles ne tombent et n'endommagent leurs robinets ('risque bouteille fusée')."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Comment appelle-t-on le dispositif qui permet de raccorder l'arrivée d'eau au compteur d'eau (la liaison entre le réseau public et le réseau privé) ?",
+                    "question": "Quel est le symbole de danger représenté par un losange rouge contenant une flamme noire ?",
                     "answerOptions": [
-                        {"text": "Le regard de visite.", "isCorrect": False},
-                        {"text": "Le Raccord Union (à bride) ou la Cloche de branchement.", "isCorrect": True},
-                        {"text": "La vanne d'arrêt.", "isCorrect": False},
-                        {"text": "Le siphon.", "isCorrect": False}
+                        {"text": "Inflammable", "isCorrect": True},
+                        {"text": "Toxique", "isCorrect": False},
+                        {"text": "Corrosif", "isCorrect": False},
+                        {"text": "Explosif", "isCorrect": False}
                     ],
-                    "correction": "Le **Raccord Union** permet un raccordement étanche et démontable pour la maintenance du compteur."
+                    "correction": "Ce pictogramme (SGH02) indique que le produit (colle, solvant, gaz) peut s'enflammer facilement au contact d'une étincelle ou de la chaleur."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quel est le risque de serrer **trop fort** un raccord laiton ou plastique sur un tube en PER/Multicouche (serrage à la clé) ?",
+                    "question": "En cas d'accident électrique (personne collée au fil), que faire en priorité absolue ?",
                     "answerOptions": [
-                        {"text": "Le raccord fuira.", "isCorrect": False},
-                        {"text": "L'écrasement ou la déformation du tube, ou la rupture du joint torique, entraînant un défaut d'étanchéité immédiat ou à terme.", "isCorrect": True},
-                        {"text": "Le tube gèle.", "isCorrect": False},
-                        {"text": "Le tube rouille.", "isCorrect": False}
+                        {"text": "Couper le courant au disjoncteur", "isCorrect": True},
+                        {"text": "Toucher la personne pour la rassurer", "isCorrect": False},
+                        {"text": "Tirer la personne par les vêtements", "isCorrect": False},
+                        {"text": "Appeler les pompiers avant tout", "isCorrect": False}
                     ],
-                    "correction": "Le **serrage modéré et contrôlé** est la clé de l'étanchéité des raccords mécaniques."
-                },
+                    "correction": "Il ne faut surtout pas toucher la victime tant qu'elle est sous tension (risque de sur-accident). La priorité est de couper l'énergie (disjoncteur ou arrêt d'urgence)."
+                }
             ]
         }
     }

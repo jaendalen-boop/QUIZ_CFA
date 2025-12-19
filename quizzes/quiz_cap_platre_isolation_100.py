@@ -1,1136 +1,1143 @@
 quiz_data = {
-    "title": "CAP Métiers du Plâtre et de l'Isolation - Base de Données Complète (100 Questions) - Corrigée V1",
-    
-    "description": "Base de données de 100 questions pour le CAP Métiers du Plâtre et de l'Isolation. Les longueurs des réponses ont été uniformisées pour éviter tout biais.",
-    
+    "title": "Quiz CAP Métiers du Plâtre et de l'Isolation (100 Questions)",
     "themes": {
-        # THÈME 1
+        # =========================================================================
+        # THÈME 1 : TECHNOLOGIE DES MATÉRIAUX ET OUTILLAGE (Questions 1 à 20)
+        # =========================================================================
         1: {
-            "name": "Hygiène, Sécurité et Réglementation (HSR)",
+            "name": "THÈME 1 : TECHNOLOGIE DES MATÉRIAUX ET OUTILLAGE",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quel est l'équipement de protection respiratoire indispensable lors de la coupe des plaques de plâtre ou de l'application d'enduits ?",
+                    "question": "Quelle est la roche naturelle dont est issu le plâtre utilisé dans le bâtiment ?",
                     "answerOptions": [
-                        {"text": "Le masque de type FFP3 pour filtrer les poussières fines de plâtre et de silice cristalline.", "isCorrect": True, "key": "A"},
-                        {"text": "Le casque antibruit pour l'atténuation des ondes sonores aiguës et la protection des tympans.", "isCorrect": False, "key": "B"},
-                        {"text": "Les bouchons d'oreille en mousse, uniquement pour les travaux de perçage du béton armé.", "isCorrect": False, "key": "C"},
-                        {"text": "Le harnais de sécurité pour le travail sur échafaudage roulant à faible hauteur (moins de 2 mètres).", "isCorrect": False, "key": "D"}
+                        {"text": "Gypse", "isCorrect": True},
+                        {"text": "Calcaire", "isCorrect": False},
+                        {"text": "Argile", "isCorrect": False},
+                        {"text": "Silice", "isCorrect": False}
                     ],
-                    "correction": "Les poussières de plâtre, de laine minérale et de matériaux associés sont irritantes pour les voies respiratoires. Le port d'un masque FFP3 est obligatoire."
+                    "correction": "Le plâtre est obtenu par la cuisson et le broyage d'une roche sédimentaire appelée le gypse (sulfate de calcium dihydraté)."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quel est le risque majeur lié à la manipulation et à la pose des laines minérales (laine de verre ou de roche) sans équipement adéquat ?",
+                    "question": "Que signifie l'abréviation 'BA' dans la désignation d'une plaque de plâtre BA13 ?",
                     "answerOptions": [
-                        {"text": "Les irritations cutanées, oculaires et respiratoires dues aux micro-fibres de verre ou de roche.", "isCorrect": True, "key": "A"},
-                        {"text": "Le risque de brûlure chimique grave sur la peau lors de la pose des panneaux rigides isolants.", "isCorrect": False, "key": "B"},
-                        {"text": "Le risque d'électrocution dû à une humidité excessive dans l'air ambiant de la pièce isolée.", "isCorrect": False, "key": "C"},
-                        {"text": "Le risque de Troubles Musculo-Squelettiques (TMS) au niveau des épaules et des bras de l'ouvrier.", "isCorrect": False, "key": "D"}
+                        {"text": "Bords amincis", "isCorrect": True},
+                        {"text": "Bords arrondis", "isCorrect": False},
+                        {"text": "Bords angulaires", "isCorrect": False},
+                        {"text": "Bords alvéolés", "isCorrect": False}
                     ],
-                    "correction": "Le port de gants, de lunettes et d'une combinaison de protection est nécessaire lors de la manipulation des laines minérales."
+                    "correction": "BA signifie 'Bords Amincis'. Ces bords permettent de loger la bande à joint et l'enduit pour obtenir une surface plane après finition."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quelle est la règle de sécurité fondamentale pour la coupe des plaques de plâtre au cutter (méthode de 'rayure-cassure') ?",
+                    "question": "Quelle est la couleur du parement d'une plaque de plâtre hydrofuge ?",
                     "answerOptions": [
-                        {"text": "Couper toujours en s'éloignant du corps et de la main qui tient la règle, avec une lame neuve.", "isCorrect": True, "key": "A"},
-                        {"text": "Couper le carton des deux côtés avant de rompre la plaque par un coup sec et rapide au sol.", "isCorrect": False, "key": "B"},
-                        {"text": "Couper la plaque en deux fois, d'abord sur la face, puis en repassant sur l'arrière, sans règle.", "isCorrect": False, "key": "C"},
-                        {"text": "Couper en tirant la lame vers soi, le plus rapidement possible, en utilisant la main libre comme guide.", "isCorrect": False, "key": "D"}
+                        {"text": "Verte", "isCorrect": True},
+                        {"text": "Rose", "isCorrect": False},
+                        {"text": "Bleue", "isCorrect": False},
+                        {"text": "Grise", "isCorrect": False}
                     ],
-                    "correction": "La coupe au cutter est une cause fréquente d'accidents. Il faut toujours couper en poussant la lame, jamais en la tirant vers soi."
+                    "correction": "Les plaques hydrofuges (résistantes à l'humidité), destinées aux pièces humides, sont identifiables par leur parement de couleur verte."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Que doit-on faire obligatoirement avant d'installer un échafaudage roulant ou fixe sur un chantier ?",
+                    "question": "Quel profilé métallique se fixe au sol et au plafond pour constituer l'ossature horizontale d'une cloison ?",
                     "answerOptions": [
-                        {"text": "Vérifier la stabilité, la planéité du sol, le blocage des roues et la présence de garde-corps.", "isCorrect": True, "key": "A"},
-                        {"text": "Appliquer un produit imperméabilisant sur toutes les pièces métalliques pour éviter la corrosion rapide.", "isCorrect": False, "key": "B"},
-                        {"text": "Démonter le système de blocage des roues afin de le déplacer plus facilement au cours de la journée.", "isCorrect": False, "key": "C"},
-                        {"text": "Lubrifier les goupilles de sécurité avec une huile minérale spéciale et le laisser en place.", "isCorrect": False, "key": "D"}
+                        {"text": "Rail", "isCorrect": True},
+                        {"text": "Montant", "isCorrect": False},
+                        {"text": "Fourrure", "isCorrect": False},
+                        {"text": "Cornière", "isCorrect": False}
                     ],
-                    "correction": "Le travail en hauteur est réglementé. L'échafaudage doit être monté selon les règles de l'art et vérifié avant chaque utilisation."
+                    "correction": "Le rail est le profilé en U qui se fixe horizontalement au sol et au plafond pour guider et maintenir les montants verticaux."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel est le risque lié au stockage des plaques de plâtre à la verticale, sans cale ou support adéquat, sur un chantier ?",
+                    "question": "Quel outil est spécifiquement conçu pour raboter les chants des plaques de plâtre ?",
                     "answerOptions": [
-                        {"text": "Le risque de chute des plaques sur l'ouvrier ou sur un tiers, pouvant entraîner un accident grave.", "isCorrect": True, "key": "A"},
-                        {"text": "Le risque d'absorption de l'humidité du sol par la plaque, ce qui cause son décollement du carton.", "isCorrect": False, "key": "B"},
-                        {"text": "Le risque d'électrocution par contact avec des câbles électriques situés dans la zone de stockage.", "isCorrect": False, "key": "C"},
-                        {"text": "Le risque de déformation (flambage) de la plaque, même après une pose parfaitement réalisée.", "isCorrect": False, "key": "D"}
+                        {"text": "Rabot râpe", "isCorrect": True},
+                        {"text": "Ciseau à bois", "isCorrect": False},
+                        {"text": "Ponceuse vibrante", "isCorrect": False},
+                        {"text": "Lime à métaux", "isCorrect": False}
                     ],
-                    "correction": "Les plaques sont lourdes et instables. Elles doivent être stockées à plat ou, si verticalement, de manière sécurisée (cale et appui stable)."
+                    "correction": "Le rabot râpe (ou rabot à placo) sert à ajuster et dresser les bords de découpe des plaques de plâtre pour qu'ils soient nets."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Qu'est-ce que le 'DTU 25.41' pour les métiers du plâtre et de l'isolation ?",
+                    "question": "Quelle vis est utilisée pour fixer une plaque de plâtre sur une ossature métallique standard ?",
                     "answerOptions": [
-                        {"text": "C'est la référence des règles de l'art pour la pose des ouvrages en plaques de plâtre (BA13, BA15, etc.).", "isCorrect": True, "key": "A"},
-                        {"text": "C'est l'indice de performance thermique minimal requis pour les isolants en laine minérale.", "isCorrect": False, "key": "B"},
-                        {"text": "C'est l'indice de classement UPEC des enduits de finition pour les sols et les murs extérieurs.", "isCorrect": False, "key": "C"},
-                        {"text": "C'est la norme qui définit la largeur minimale des ossatures métalliques et des montants.", "isCorrect": False, "key": "D"}
+                        {"text": "TTPC", "isCorrect": True},
+                        {"text": "TRPF", "isCorrect": False},
+                        {"text": "TRCC", "isCorrect": False},
+                        {"text": "VBA", "isCorrect": False}
                     ],
-                    "correction": "Le DTU 25.41 est le document technique unifié qui régit la mise en œuvre des ouvrages en plaques de plâtre à parements cartonnés."
+                    "correction": "La vis TTPC (Tête Trompette Pointe Clou) est conçue pour ne pas déchirer le carton de la plaque tout en perçant le métal fin de l'ossature."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quel est le risque si l'on ne respecte pas le temps de séchage entre deux passes d'enduit (enduit de jointoiement ou lissage) ?",
+                    "question": "Comment doit-on stocker les sacs de plâtre poudre sur un chantier ?",
                     "answerOptions": [
-                        {"text": "Le risque de fissuration, de retrait excessif ou de mauvaise adhérence des couches supérieures.", "isCorrect": True, "key": "A"},
-                        {"text": "Le risque d'intoxication aux vapeurs de plâtre, même après l'ouverture des fenêtres du chantier.", "isCorrect": False, "key": "B"},
-                        {"text": "Le risque de déformation (voilement) des plaques de plâtre dû à une humidité excessive.", "isCorrect": False, "key": "C"},
-                        {"text": "Le risque de corrosion rapide des montants métalliques de l'ossature par l'eau du mélange.", "isCorrect": False, "key": "D"}
+                        {"text": "Sur une palette dans un endroit sec", "isCorrect": True},
+                        {"text": "À même le sol dans un local ventilé", "isCorrect": False},
+                        {"text": "À l'extérieur sous une simple bâche plastique", "isCorrect": False},
+                        {"text": "Dans un conteneur métallique hermétiquement clos et chauffé", "isCorrect": False}
                     ],
-                    "correction": "Chaque passe d'enduit doit être parfaitement sèche pour que la suivante puisse adhérer et ne pas fissurer en séchant."
+                    "correction": "Le plâtre est très sensible à l'humidité (hygroscopique). Il faut impérativement l'isoler du sol (palette) et le stocker à l'abri de l'eau et de l'air humide."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Pourquoi doit-on s'assurer de couper l'alimentation électrique avant de percer près de boîtiers encastrés ?",
+                    "question": "Quelle est la largeur standard d'une plaque de plâtre en France ?",
                     "answerOptions": [
-                        {"text": "Pour éviter le risque d'électrocution ou de court-circuit en cas de contact avec les conducteurs.", "isCorrect": True, "key": "A"},
-                        {"text": "Pour éviter d'endommager la mèche du foret lors de la pénétration dans la gaine isolante.", "isCorrect": False, "key": "B"},
-                        {"text": "Pour éviter une surcharge du réseau électrique dû à l'utilisation simultanée du perforateur.", "isCorrect": False, "key": "C"},
-                        {"text": "Pour améliorer l'adhérence du plâtre sur les boîtiers en plastique (isolant) de la pièce.", "isCorrect": False, "key": "D"}
+                        {"text": "120 cm", "isCorrect": True},
+                        {"text": "60 cm", "isCorrect": False},
+                        {"text": "90 cm", "isCorrect": False},
+                        {"text": "250 cm", "isCorrect": False}
                     ],
-                    "correction": "La sécurité électrique est primordiale. Il faut toujours vérifier et consigner l'alimentation avant d'intervenir sur des murs ou plafonds."
+                    "correction": "La largeur standard est de 120 cm (1200 mm), ce qui correspond à l'entraxe classique des ossatures (40 ou 60 cm)."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Que doit-on faire des chutes de plaques de plâtre et des déchets d'isolants en fin de journée de travail ?",
+                    "question": "Quel est le rôle principal d'une fourrure dans la réalisation d'un plafond ?",
                     "answerOptions": [
-                        {"text": "Les collecter et les trier pour les évacuer vers une benne DIB ou un centre de recyclage agréé.", "isCorrect": True, "key": "A"},
-                        {"text": "Les laisser sur place pour qu'ils servent de protection de chantier pour le revêtement de sol.", "isCorrect": False, "key": "B"},
-                        {"text": "Les brûler directement sur place, en faisant attention à la fumée toxique dégagée par la céramique.", "isCorrect": False, "key": "C"},
-                        {"text": "Les réutiliser immédiatement pour réaliser le mélange de gâchage de l'enduit de finition.", "isCorrect": False, "key": "D"}
+                        {"text": "Servir de support de vissage aux plaques", "isCorrect": True},
+                        {"text": "Assurer la liaison entre le rail et le montant", "isCorrect": False},
+                        {"text": "Protéger les angles sortants des cloisons", "isCorrect": False},
+                        {"text": "Renforcer l'isolation acoustique au sol", "isCorrect": False}
                     ],
-                    "correction": "Le plâtre, le métal et les isolants doivent être triés et évacués dans les filières appropriées (obligations légales et environnementales)."
+                    "correction": "La fourrure est le profilé sur lequel on vient visser les plaques de plâtre lors de la réalisation de plafonds suspendus ou de doublages."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Quel est le risque de travailler sur un plancher ou un support non stable (échafaudage mal fixé, tréteaux) ?",
+                    "question": "Quel outil permet de découper proprement et rapidement les ossatures métalliques ?",
                     "answerOptions": [
-                        {"text": "Le risque de chute de hauteur avec des conséquences graves (fractures ou décès).", "isCorrect": True, "key": "A"},
-                        {"text": "Le risque de déformation (voilement) des plaques en phase de vissage final.", "isCorrect": False, "key": "B"},
-                        {"text": "Le risque de corrosion des montants de l'ossature métallique par l'humidité du sol.", "isCorrect": False, "key": "C"},
-                        {"text": "Le risque d'intoxication due aux poussières fines générées par les vibrations de la machine.", "isCorrect": False, "key": "D"}
+                        {"text": "Grignoteuse", "isCorrect": True},
+                        {"text": "Scie égoïne", "isCorrect": False},
+                        {"text": "Marteau", "isCorrect": False},
+                        {"text": "Cutter", "isCorrect": False}
                     ],
-                    "correction": "L'instabilité du poste de travail est une cause majeure d'accident. Il faut toujours sécuriser le lieu avant de commencer."
+                    "correction": "La grignoteuse (ou la cisaille à tôle) permet de couper les rails et montants sans déformer le métal et sans étincelles."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Comment doit-on manipuler et transporter les montants et rails métalliques de l'ossature sur le chantier ?",
+                    "question": "Quelle plaque de plâtre est spécifiquement préconisée pour la protection contre les incendies ?",
                     "answerOptions": [
-                        {"text": "Avec des gants anti-coupure pour éviter les blessures dues aux bords très tranchants du métal.", "isCorrect": True, "key": "A"},
-                        {"text": "Sans gants, mais en les faisant traîner au sol pour éviter les efforts inutiles sur le dos.", "isCorrect": False, "key": "B"},
-                        {"text": "Avec un harnais de levage pour prévenir les Troubles Musculo-Squelettiques (TMS) dans le bras.", "isCorrect": False, "key": "C"},
-                        {"text": "En utilisant des machines électriques (perforateurs, visseuses) pour les soulever du sol.", "isCorrect": False, "key": "D"}
+                        {"text": "Placoflam", "isCorrect": True},
+                        {"text": "Placophonique", "isCorrect": False},
+                        {"text": "Placomarine", "isCorrect": False},
+                        {"text": "Placodur", "isCorrect": False}
                     ],
-                    "correction": "Les bords des profilés métalliques sont extrêmement coupants. Les gants adaptés sont essentiels."
+                    "correction": "Les plaques de type 'Feu' (souvent roses, type Placoflam) sont renforcées par de la vermiculite et de la fibre de verre pour résister plus longtemps au feu."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Que signifie l'obligation de 'porter des lunettes de protection' pour les travaux de perçage ou de démolition ?",
+                    "question": "Quelle est la fonction d'une bande armée ?",
                     "answerOptions": [
-                        {"text": "Protéger les yeux contre les projections de poussière, de débris ou de corps étrangers.", "isCorrect": True, "key": "A"},
-                        {"text": "Réguler l'humidité dans les yeux pour éviter les problèmes de vision (sécheresse oculaire).", "isCorrect": False, "key": "B"},
-                        {"text": "Améliorer la visibilité des lignes de traçage sous forte luminosité artificielle.", "isCorrect": False, "key": "C"},
-                        {"text": "Éviter l'inhalation des fines particules de plâtre au moment de la découpe finale.", "isCorrect": False, "key": "D"}
+                        {"text": "Renforcer les angles sortants", "isCorrect": True},
+                        {"text": "Jointer deux plaques à bords amincis", "isCorrect": False},
+                        {"text": "Réparer un trou dans une cloison", "isCorrect": False},
+                        {"text": "Assurer l'étanchéité à l'air", "isCorrect": False}
                     ],
-                    "correction": "Les projections de petits fragments (métal, plâtre, bois) peuvent causer des lésions irréversibles de l'œil."
+                    "correction": "La bande armée, munie de deux feuillards métalliques flexibles, sert à protéger et renforcer les angles saillants (sortants) des chocs."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quel est le risque en cas de non-respect de la consigne d'utiliser la machine (visseuse, malaxeur) pour l'usage prévu ?",
+                    "question": "Quel est le composant majoritaire d'un enduit de lissage ?",
                     "answerOptions": [
-                        {"text": "Le risque de panne, de dysfonctionnement ou de blessure de l'utilisateur par l'outil.", "isCorrect": True, "key": "A"},
-                        {"text": "Le risque d'une déformation rapide et irréversible des plaques de plâtre posées au plafond.", "isCorrect": False, "key": "B"},
-                        {"text": "Le risque de corrosion des pièces métalliques de l'ossature par l'humidité de l'air ambiant.", "isCorrect": False, "key": "C"},
-                        {"text": "Le risque de perte des propriétés acoustiques de l'isolant par frottement du moteur.", "isCorrect": False, "key": "D"}
+                        {"text": "Carbonate de calcium", "isCorrect": True},
+                        {"text": "Ciment prompt", "isCorrect": False},
+                        {"text": "Sable de rivière", "isCorrect": False},
+                        {"text": "Chaux hydraulique", "isCorrect": False}
                     ],
-                    "correction": "La mauvaise utilisation des machines est une cause majeure d'accidents. Il faut respecter les notices du fabricant."
+                    "correction": "Les enduits de lissage sont principalement composés de carbonate de calcium (craie), mélangé à des liants et des résines."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Quelles sont les conditions de température à respecter pour l'application des enduits de jointoiement ou de lissage ?",
+                    "question": "Lors du gâchage manuel du plâtre, quelle est la procédure correcte ?",
                     "answerOptions": [
-                        {"text": "La température du support et de l'air doit être comprise entre +5°C et +30°C pour une prise optimale.", "isCorrect": True, "key": "A"},
-                        {"text": "La température doit être la plus basse possible (proche de 0°C) pour ralentir la prise du plâtre.", "isCorrect": False, "key": "B"},
-                        {"text": "Il n'y a pas de contrainte de température, sauf en cas de gel intense pour l'ouvrage.", "isCorrect": False, "key": "C"},
-                        {"text": "La température idéale est supérieure à 40°C pour accélérer le séchage de l'eau contenue dans le plâtre.", "isCorrect": False, "key": "D"}
+                        {"text": "Saupoudrer le plâtre dans l'eau", "isCorrect": True},
+                        {"text": "Verser l'eau sur le tas de plâtre", "isCorrect": False},
+                        {"text": "Mettre le plâtre et l'eau en même temps", "isCorrect": False},
+                        {"text": "Mélanger le plâtre à sec avant de mouiller", "isCorrect": False}
                     ],
-                    "correction": "Les produits à base de plâtre (liant aérien) et d'eau nécessitent une température minimale pour leur prise et leur séchage."
+                    "correction": "Il faut toujours saupoudrer le plâtre dans l'eau (et non l'inverse) pour éviter les grumeaux et assurer une bonne saturation de la poudre."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quel est l'objectif du 'Cahier de Prescriptions Techniques' (CPT) dans la construction ?",
+                    "question": "À quoi sert une suspente dans un plafond suspendu ?",
                     "answerOptions": [
-                        {"text": "Il définit les spécifications techniques à respecter pour les produits et les techniques de mise en œuvre.", "isCorrect": True, "key": "A"},
-                        {"text": "Il fixe uniquement le calendrier de livraison des matériaux et l'organisation du stockage.", "isCorrect": False, "key": "B"},
-                        {"text": "Il sert de base de calcul pour l'évaluation des coûts de main d'œuvre et des primes de risque.", "isCorrect": False, "key": "C"},
-                        {"text": "Il répertorie la liste complète des qualifications professionnelles de chaque ouvrier présent.", "isCorrect": False, "key": "D"}
+                        {"text": "Relier l'ossature au support porteur", "isCorrect": True},
+                        {"text": "Fixer les plaques de plâtre entre elles", "isCorrect": False},
+                        {"text": "Réaliser la jonction entre le mur et le plafond", "isCorrect": False},
+                        {"text": "Créer une lame d'air ventilée sous le plancher", "isCorrect": False}
                     ],
-                    "correction": "Les CPT complètent les DTU en spécifiant les conditions d'emploi des produits non traditionnels ou nouveaux."
+                    "correction": "La suspente est l'accessoire de fixation qui se fixe dans le support (dalle, charpente) et qui tient la fourrure."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Quel est l'outil indispensable pour vérifier l'alignement et l'aplomb des montants d'une cloison ?",
+                    "question": "Quel est l'usage principal de la batte de plâtrier ?",
                     "answerOptions": [
-                        {"text": "Le niveau à bulle (long) ou le niveau laser (vertical et horizontal).", "isCorrect": True, "key": "A"},
-                        {"text": "Le cordeau à poudre (utilisé pour tracer les lignes de référence au sol).", "isCorrect": False, "key": "B"},
-                        {"text": "Le mètre ruban, pour mesurer la longueur exacte de chaque montant fixé.", "isCorrect": False, "key": "C"},
-                        {"text": "Le malaxeur électrique, pour vérifier l'homogénéité du gâchage du plâtre.", "isCorrect": False, "key": "D"}
+                        {"text": "Dresser et aplanir une cloison en briques", "isCorrect": True},
+                        {"text": "Mélanger le plâtre dans l'auge", "isCorrect": False},
+                        {"text": "Couper les carreaux de plâtre", "isCorrect": False},
+                        {"text": "Lisser l'enduit de finition", "isCorrect": False}
                     ],
-                    "correction": "L'aplomb et l'alignement sont critiques pour que la pose des plaques de plâtre soit parfaitement plane."
+                    "correction": "La batte est une règle en bois ou en alu munie d'une poignée, utilisée pour frapper et aligner les briques plâtrières ou les carreaux lors du montage."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Que doit-on faire si un support présente des traces d'humidité ou de moisissure avant la pose d'isolant ?",
+                    "question": "Quelle vis est utilisée pour assembler deux profilés métalliques entre eux ?",
                     "answerOptions": [
-                        {"text": "Traiter et assécher le support (murs) pour éviter l'emprisonnement de l'humidité et les problèmes futurs.", "isCorrect": True, "key": "A"},
-                        {"text": "Utiliser un isolant hydrofuge (polystyrène ou polyuréthane) sans traitement préalable du mur.", "isCorrect": False, "key": "B"},
-                        {"text": "Appliquer une peinture de finition sur le support humide pour bloquer la moisissure.", "isCorrect": False, "key": "C"},
-                        {"text": "Percer des trous dans l'isolant pour créer un pont d'adhérence vertical et ventiler.", "isCorrect": False, "key": "D"}
+                        {"text": "TRPF", "isCorrect": True},
+                        {"text": "TTPC", "isCorrect": False},
+                        {"text": "Tête fraisée", "isCorrect": False},
+                        {"text": "Tire-fond", "isCorrect": False}
                     ],
-                    "correction": "L'humidité doit être traitée à la source (drainage, étanchéité) et le mur asséché avant de réaliser une isolation (risque de développement de champignons)."
+                    "correction": "La vis TRPF (Tête Ronde Pointe Foret) est conçue pour le vissage 'métal sur métal' (exemple : fixer un montant sur un rail ou une suspente)."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quel est le risque si l'on ne réalise pas de raccordement étanche entre la membrane pare-vapeur et les murs adjacents ?",
+                    "question": "Qu'est-ce que le 'temps de prise' du plâtre ?",
                     "answerOptions": [
-                        {"text": "Le risque de condensation dans l'isolant (pont thermique) et la perte de performance thermique.", "isCorrect": True, "key": "A"},
-                        {"text": "Le risque de tassement de l'isolant sous l'effet du temps et de la gravité.", "isCorrect": False, "key": "B"},
-                        {"text": "Le risque de fissuration des plaques de plâtre due à un mouvement du support.", "isCorrect": False, "key": "C"},
-                        {"text": "Le risque d'intoxication aux vapeurs de colle et de produits d'étanchéité toxiques.", "isCorrect": False, "key": "D"}
+                        {"text": "La durée pendant laquelle le produit reste ouvrable", "isCorrect": True},
+                        {"text": "Le moment où le plâtre devient totalement imperméable", "isCorrect": False},
+                        {"text": "L'intervalle nécessaire pour le séchage complet à coeur", "isCorrect": False},
+                        {"text": "La période de stockage maximale avant utilisation", "isCorrect": False}
                     ],
-                    "correction": "La membrane pare-vapeur doit être continue et étanche à l'air (collée aux murs) pour éviter que la vapeur d'eau n'atteigne le point de rosée dans l'isolant."
+                    "correction": "Le temps de prise (ou DPU : Durée Pratique d'Utilisation) est le laps de temps entre le gâchage et le début du durcissement, pendant lequel le plâtrier peut travailler la matière."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel est l'objectif du 'Guide de la bonne exécution' pour le plâtrier et l'isolateur ?",
+                    "question": "Quel outil spécifique utilise-t-on pour réaliser des gorges ou des moulures en plâtre ?",
                     "answerOptions": [
-                        {"text": "Fournir les recommandations professionnelles et les méthodes pour un travail de qualité.", "isCorrect": True, "key": "A"},
-                        {"text": "Fixer le prix de la main d'œuvre horaire pour les travaux de plâtrerie et d'isolation.", "isCorrect": False, "key": "B"},
-                        {"text": "Promouvoir les nouveaux modèles de plaques de plâtre et les tendances du marché.", "isCorrect": False, "key": "C"},
-                        {"text": "Documenter l'historique des techniques de pose anciennes et non utilisées aujourd'hui.", "isCorrect": False, "key": "D"}
+                        {"text": "Traîneau", "isCorrect": True},
+                        {"text": "Taloche", "isCorrect": False},
+                        {"text": "Riflard", "isCorrect": False},
+                        {"text": "Berthelet", "isCorrect": False}
                     ],
-                    "correction": "Les guides de bonne exécution complètent les normes (DTU) en précisant les gestes professionnels."
+                    "correction": "Le traîneau est l'outil gabarit qui coulisse sur des règles pour donner sa forme au profilé en plâtre (corniche, moulure)."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quel est le risque lié à une exposition prolongée au bruit intense des machines (perforateur, visseuse à choc) ?",
+                    "question": "Quelle est la particularité d'une plaque de plâtre à 'haute dureté' ?",
                     "answerOptions": [
-                        {"text": "Des lésions irréversibles de l'oreille interne (surdité) si le casque antibruit n'est pas porté.", "isCorrect": True, "key": "A"},
-                        {"text": "Un risque accru de tendinites et de Troubles Musculo-Squelettiques de l'avant-bras.", "isCorrect": False, "key": "B"},
-                        {"text": "L'apparition rapide de vertiges et de nausées, dues aux vibrations du moteur électrique.", "isCorrect": False, "key": "C"},
-                        {"text": "Une coloration anormale de la peau exposée aux ondes acoustiques du moteur électrique.", "isCorrect": False, "key": "D"}
+                        {"text": "Elle possède une densité plus élevée pour résister aux chocs", "isCorrect": True},
+                        {"text": "Elle est composée exclusivement de ciment et de fibres de verre", "isCorrect": False},
+                        {"text": "Elle est deux fois plus légère qu'une plaque standard normale", "isCorrect": False},
+                        {"text": "Elle ne nécessite aucun jointoiement ni enduit de finition", "isCorrect": False}
                     ],
-                    "correction": "Le port d'un casque de protection auditive est obligatoire lors de l'utilisation d'outils bruyants (85 dB et plus)."
-                }
+                    "correction": "Les plaques Haute Dureté (souvent jaunes) ont une densité de plâtre supérieure et un carton renforcé pour résister aux impacts dans les lieux de passage (écoles, couloirs)."
+                },
             ]
         },
-        # THÈME 2
+        # =========================================================================
+        # THÈME 2 : LECTURE DE PLANS, MÉTRÉS ET IMPLANTATION (Questions 21 à 40)
+        # =========================================================================
         2: {
-            "name": "Matériaux et Produits (Plaques, Enduits, Isolants)",
+            "name": "THÈME 2 : LECTURE DE PLANS, MÉTRÉS ET IMPLANTATION",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quelle est la principale caractéristique de la plaque de plâtre hydrofuge (de couleur verte) ?",
+                    "question": "À quelle hauteur par rapport au sol fini le 'trait de niveau' de référence est-il généralement tracé sur un chantier ?",
                     "answerOptions": [
-                        {"text": "Elle résiste à l'humidité ambiante et est utilisée dans les pièces humides (salle de bain, cuisine).", "isCorrect": True, "key": "A"},
-                        {"text": "Elle résiste au feu pendant un temps donné et est utilisée dans les gaines techniques.", "isCorrect": False, "key": "B"},
-                        {"text": "Elle a un cœur haute densité, ce qui lui confère des propriétés d'isolation acoustique renforcée.", "isCorrect": False, "key": "C"},
-                        {"text": "Elle est utilisée uniquement pour les doublages sur ossature métallique avec parement en bois.", "isCorrect": False, "key": "D"}
+                        {"text": "1 mètre", "isCorrect": True},
+                        {"text": "50 centimètres", "isCorrect": False},
+                        {"text": "1,50 mètre", "isCorrect": False},
+                        {"text": "2 mètres", "isCorrect": False}
                     ],
-                    "correction": "La plaque hydrofuge (H) est obligatoire dans les pièces où le taux d'humidité est élevé (salles d'eau, douches)."
+                    "correction": "La convention sur les chantiers de bâtiment fixe le trait de niveau de référence à 1,00 m du sol fini, permettant de reporter les cotes de hauteur uniformément."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Quel est l'intérêt principal d'utiliser une plaque de plâtre à très haute performance acoustique (phonique, couleur bleue) ?",
+                    "question": "Quelle est la surface d'une cloison rectangulaire mesurant 5 mètres de longueur et 2,50 mètres de hauteur ?",
                     "answerOptions": [
-                        {"text": "Améliorer l'isolement aux bruits aériens entre deux pièces (cloison séparative).", "isCorrect": True, "key": "A"},
-                        {"text": "Permettre la pose directe de carrelage sans préparation de la plaque (plaque en ciment).", "isCorrect": False, "key": "B"},
-                        {"text": "Réduire le temps de séchage de l'enduit de jointoiement sur les surfaces non visibles.", "isCorrect": False, "key": "C"},
-                        {"text": "Résister au feu sans enduit supplémentaire pendant un temps donné (plaque coupe-feu).", "isCorrect": False, "key": "D"}
+                        {"text": "12,50 m²", "isCorrect": True},
+                        {"text": "15,00 m²", "isCorrect": False},
+                        {"text": "7,50 m²", "isCorrect": False},
+                        {"text": "10,50 m²", "isCorrect": False}
                     ],
-                    "correction": "La plaque phonique a une densité plus importante et est essentielle dans les constructions mitoyennes ou les locaux bruyants."
+                    "correction": "La surface se calcule en multipliant la longueur par la hauteur (S = L x H). Ici : 5 x 2,50 = 12,50 m²."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quel est le nom du produit utilisé pour lier les plaques de plâtre entre elles au niveau des bords amincis ?",
+                    "question": "Sur un plan d'architecte, que signifie l'abréviation 'HSP' ?",
                     "answerOptions": [
-                        {"text": "L'enduit de jointoiement (ou enduit à joint) pour la première passe et le lissage.", "isCorrect": True, "key": "A"},
-                        {"text": "Le mortier-colle à prise rapide pour la fixation des montants métalliques au sol.", "isCorrect": False, "key": "B"},
-                        {"text": "Le primaire d'accrochage à base de résine synthétique (pour le plâtre brut).", "isCorrect": False, "key": "C"},
-                        {"text": "La barbotine (mélange de ciment et d'eau), utilisée pour l'adhérence en surface du support.", "isCorrect": False, "key": "D"}
+                        {"text": "Hauteur Sous Plafond", "isCorrect": True},
+                        {"text": "Hauteur Sans Plinthe", "isCorrect": False},
+                        {"text": "Horizontalité Sur Plan", "isCorrect": False},
+                        {"text": "Haute Sécurité Prioritaire", "isCorrect": False}
                     ],
-                    "correction": "L'enduit à joint (en poudre ou en pâte) est le seul à garantir la continuité de l'ouvrage et l'esthétique finale."
+                    "correction": "HSP indique la 'Hauteur Sous Plafond', c'est-à-dire la distance libre entre le sol fini et le plafond fini."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quelle est la principale fonction de la membrane pare-vapeur dans un système d'isolation ?",
+                    "question": "Quel outil manuel simple permet de vérifier la verticalité d'un montant lors de l'implantation ?",
                     "answerOptions": [
-                        {"text": "Empêcher la migration de la vapeur d'eau de l'intérieur vers l'isolant (condensation interne).", "isCorrect": True, "key": "A"},
-                        {"text": "Réguler la température de l'air ambiant dans la pièce grâce à un film très rigide en polymère.", "isCorrect": False, "key": "B"},
-                        {"text": "Servir de couche de finition esthétique, sans nécessiter d'être recouvert ensuite par la plaque.", "isCorrect": False, "key": "C"},
-                        {"text": "Renforcer la résistance mécanique des cloisons face aux chocs ou aux vibrations.", "isCorrect": False, "key": "D"}
+                        {"text": "Fil à plomb", "isCorrect": True},
+                        {"text": "Cordeau traceur", "isCorrect": False},
+                        {"text": "Niveau à eau", "isCorrect": False},
+                        {"text": "Équerre de maçon", "isCorrect": False}
                     ],
-                    "correction": "Le pare-vapeur (ou frein-vapeur) doit être posé du côté chaud de l'isolant (intérieur) et doit être continu et étanche à l'air."
+                    "correction": "Le fil à plomb utilise la gravité pour indiquer une ligne parfaitement verticale, indispensable pour implanter les cloisons."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quel est l'avantage d'utiliser un enduit de jointoiement en poudre à prise rapide (J ou G) par rapport à un enduit en pâte (P) ?",
+                    "question": "Que représente une 'coupe' sur un dossier de plans ?",
                     "answerOptions": [
-                        {"text": "Un temps de séchage et de recouvrement très court, ce qui permet de gagner du temps sur le chantier.", "isCorrect": True, "key": "A"},
-                        {"text": "Une meilleure résistance mécanique du joint, même avant la prise totale de l'ensemble de l'ouvrage.", "isCorrect": False, "key": "B"},
-                        {"text": "La possibilité de l'appliquer en une seule passe, sans bande de renfort papier ou grillagée.", "isCorrect": False, "key": "C"},
-                        {"text": "Une meilleure adhérence sur les plaques de plâtre hydrofuges (couleur verte) utilisées en pièces humides.", "isCorrect": False, "key": "D"}
+                        {"text": "Une vue verticale de l'intérieur de la construction", "isCorrect": True},
+                        {"text": "Une vue de dessus de la toiture du bâtiment", "isCorrect": False},
+                        {"text": "Une vue de face des façades extérieures", "isCorrect": False},
+                        {"text": "Une vue en perspective cavalière de la pièce", "isCorrect": False}
                     ],
-                    "correction": "Les enduits à prise rapide sont souvent utilisés pour la première passe ou les petites réparations, mais nécessitent de travailler vite (temps ouvert court)."
+                    "correction": "Une coupe est une représentation graphique obtenue en tranchant verticalement le bâtiment pour voir les épaisseurs de planchers et les hauteurs."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Quel type d'isolant doit être privilégié pour l'isolation extérieure sous enduit (ITE) en raison de sa résistance mécanique ?",
+                    "question": "Quelle longueur représente 2 centimètres sur un plan à l'échelle 1/50 ?",
                     "answerOptions": [
-                        {"text": "Le polystyrène expansé ou extrudé (PSE ou XPS) ou les panneaux de fibre de bois rigide.", "isCorrect": True, "key": "A"},
-                        {"text": "La laine de verre en rouleau (très souple et très légère, facile à tasser et à rouler).", "isCorrect": False, "key": "B"},
-                        {"text": "La laine de roche soufflée (utilisée pour les combles perdus ou les caissons de doublage).", "isCorrect": False, "key": "C"},
-                        {"text": "Le polyuréthane projeté (mousse isolante) qui ne peut pas être recouvert d'un enduit lourd.", "isCorrect": False, "key": "D"}
+                        {"text": "100 cm", "isCorrect": True},
+                        {"text": "50 cm", "isCorrect": False},
+                        {"text": "200 cm", "isCorrect": False},
+                        {"text": "25 cm", "isCorrect": False}
                     ],
-                    "correction": "L'ITE nécessite des isolants rigides et résistants au poinçonnement pour supporter l'enduit de parement (finition)."
+                    "correction": "À l'échelle 1/50, 1 cm sur le plan vaut 50 cm en réalité. Donc 2 cm valent 100 cm (ou 1 mètre)."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quel est l'élément qui permet de fixer les montants métalliques (M) aux rails (R) sans vis ni rivet (par simple pliage) ?",
+                    "question": "Quel est l'outil le plus adapté pour tracer une ligne bleue horizontale sur un mur sur une grande longueur ?",
                     "answerOptions": [
-                        {"text": "La pince à sertir (ou pince à déformer) qui crée un lien mécanique par poinçonnement.", "isCorrect": True, "key": "A"},
-                        {"text": "La vis auto-foreuse TTPC pour les plaques de plâtre sur les montants métalliques.", "isCorrect": False, "key": "B"},
-                        {"text": "La cheville métallique à expansion (Molly) utilisée pour fixer le rail au mur ou au plafond.", "isCorrect": False, "key": "C"},
-                        {"text": "Le cordeau à poudre, utilisé pour tracer les lignes de référence de l'ouvrage au sol.", "isCorrect": False, "key": "D"}
+                        {"text": "Cordeau à poudre", "isCorrect": True},
+                        {"text": "Crayon de charpentier", "isCorrect": False},
+                        {"text": "Règle en aluminium", "isCorrect": False},
+                        {"text": "Marqueur indélébile", "isCorrect": False}
                     ],
-                    "correction": "La pince à sertir est la méthode la plus rapide et la plus utilisée pour assembler l'ossature métallique de la cloison ou du doublage."
+                    "correction": "Le cordeau à poudre (ou cordeau traceur) permet de 'battre' un trait rectiligne visible sur de grandes longueurs en claquant la cordelette encrée contre la paroi."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Quel est le nom de l'isolant à base de roche volcanique fondue, réputé pour sa très bonne résistance au feu (incombustible) ?",
+                    "question": "Dans le calcul des matériaux, combien de rails de 3 mètres faut-il commander pour réaliser le sol et le plafond d'une cloison de 6 mètres de long ?",
                     "answerOptions": [
-                        {"text": "La laine de roche (isolant minéral) pour les ouvrages coupe-feu (cloison ou gaine).", "isCorrect": True, "key": "A"},
-                        {"text": "La laine de verre (isolant minéral) pour les ouvrages avec une faible résistance thermique.", "isCorrect": False, "key": "B"},
-                        {"text": "Le polystyrène extrudé (isolant synthétique) pour les isolations en sous-sol humide.", "isCorrect": False, "key": "C"},
-                        {"text": "Le chanvre ou la paille (isolants biosourcés) pour les ouvrages en ossature bois.", "isCorrect": False, "key": "D"}
+                        {"text": "4", "isCorrect": True},
+                        {"text": "2", "isCorrect": False},
+                        {"text": "6", "isCorrect": False},
+                        {"text": "3", "isCorrect": False}
                     ],
-                    "correction": "La laine de roche est incombustible et possède d'excellentes propriétés thermiques, acoustiques et de résistance au feu."
+                    "correction": "Il faut équiper le sol (6m) et le plafond (6m), soit 12 mètres linéaires de rails. Avec des barres de 3m : 12 ÷ 3 = 4 rails."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel est le rôle de la bande à joint (papier ou grillagée) dans le système de jointoiement ?",
+                    "question": "Qu'appelle-t-on le 'calepinage' dans les métiers du plâtre ?",
                     "answerOptions": [
-                        {"text": "Éviter la fissuration du joint de plâtre par la dilatation ou le mouvement du support.", "isCorrect": True, "key": "A"},
-                        {"text": "Réguler l'humidité ambiante de la pièce, évitant ainsi le décollement de la plaque.", "isCorrect": False, "key": "B"},
-                        {"text": "Servir de surface antidérapante provisoire pour pouvoir marcher sur l'ouvrage réalisé.", "isCorrect": False, "key": "C"},
-                        {"text": "Accélérer le temps de séchage de l'enduit de jointoiement en phase de finition.", "isCorrect": False, "key": "D"}
+                        {"text": "Le dessin prévoyant la disposition économique des plaques", "isCorrect": True},
+                        {"text": "Le calcul des déperditions thermiques de la paroi", "isCorrect": False},
+                        {"text": "La technique de mélange des différents types d'enduits", "isCorrect": False},
+                        {"text": "L'organisation du nettoyage final du chantier", "isCorrect": False}
                     ],
-                    "correction": "La bande est le renfort mécanique qui absorbe les tensions entre les plaques de plâtre. La bande papier est la plus utilisée."
+                    "correction": "Le calepinage consiste à dessiner ou calculer l'agencement des éléments (plaques, dalles) pour minimiser les chutes et aligner les joints."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Quelle est la caractéristique principale d'une plaque de plâtre de type 'A' (Standard) ?",
+                    "question": "Quelle méthode géométrique simple (règle 3-4-5) permet de tracer un angle droit au sol sans équerre ?",
                     "answerOptions": [
-                        {"text": "Une plaque standard avec un parement cartonné et un cœur en plâtre (pour les pièces sèches).", "isCorrect": True, "key": "A"},
-                        {"text": "Une plaque hydrofuge (H) avec un parement vert, destinée aux locaux humides (salle de bain).", "isCorrect": False, "key": "B"},
-                        {"text": "Une plaque à très haute densité (P), destinée à recevoir un carrelage lourd ou un enduit épais.", "isCorrect": False, "key": "C"},
-                        {"text": "Une plaque à isolation thermique intégrée (ITI), avec un isolant collé au dos de la plaque.", "isCorrect": False, "key": "D"}
+                        {"text": "Théorème de Pythagore", "isCorrect": True},
+                        {"text": "Théorème de Thalès", "isCorrect": False},
+                        {"text": "Règle de trois", "isCorrect": False},
+                        {"text": "Loi d'Ohm", "isCorrect": False}
                     ],
-                    "correction": "Le type A est la plaque standard (souvent BA13) utilisée pour les cloisons et plafonds dans les locaux ne présentant pas de contraintes particulières."
+                    "correction": "La méthode 3-4-5 (côtés de 3m, 4m et diagonale de 5m) utilise la réciproque du théorème de Pythagore pour garantir un angle parfait de 90°."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Qu'est-ce que le 'R' (résistance thermique) et comment se calcule-t-il (unité) ?",
+                    "question": "Que désigne le terme 'allège' sur un plan ?",
                     "answerOptions": [
-                        {"text": "C'est la résistance de l'isolant au passage de la chaleur, exprimée en m².K/W.", "isCorrect": True, "key": "A"},
-                        {"text": "C'est l'épaisseur de l'isolant en mètre (m) divisée par sa masse volumique (kg/m³).", "isCorrect": False, "key": "B"},
-                        {"text": "C'est le pouvoir isolant (lambda) multiplié par la surface isolée (m²).", "isCorrect": False, "key": "C"},
-                        {"text": "C'est l'inverse de la conductivité thermique (lambda), sans tenir compte de l'épaisseur.", "isCorrect": False, "key": "D"}
+                        {"text": "La partie du mur située sous une fenêtre", "isCorrect": True},
+                        {"text": "La poutre porteuse au-dessus d'une ouverture", "isCorrect": False},
+                        {"text": "L'épaisseur de l'isolant ajouté au mur", "isCorrect": False},
+                        {"text": "La largeur de passage d'une porte intérieure", "isCorrect": False}
                     ],
-                    "correction": "Le R dépend de l'épaisseur (e) et du lambda (λ) : R = e/λ. Plus R est grand, plus l'isolant est performant."
+                    "correction": "L'allège est la portion de mur maçonné ou vitré comprise entre le sol fini et l'appui de la fenêtre."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quel est le nom de l'enduit utilisé pour créer une surface parfaitement lisse (finition) avant la peinture ?",
+                    "question": "Si vous devez doubler un mur de 10 m² avec des plaques faisant 2,5 m², combien de plaques sont théoriquement nécessaires ?",
                     "answerOptions": [
-                        {"text": "L'enduit de lissage (ou de finition) pour masquer les défauts de la plaque et de la première passe.", "isCorrect": True, "key": "A"},
-                        {"text": "L'enduit de jointoiement, réservé uniquement au traitement de la bande entre les plaques.", "isCorrect": False, "key": "B"},
-                        {"text": "Le mortier-colle pour la fixation des plaques sur un mur irrégulier (doublage collé).", "isCorrect": False, "key": "C"},
-                        {"text": "L'enduit de rebouchage à séchage rapide pour le rattrapage des trous profonds.", "isCorrect": False, "key": "D"}
+                        {"text": "4", "isCorrect": True},
+                        {"text": "5", "isCorrect": False},
+                        {"text": "3", "isCorrect": False},
+                        {"text": "6", "isCorrect": False}
                     ],
-                    "correction": "L'enduit de lissage est appliqué en très fine couche (1 à 2 mm) sur l'ensemble de la surface pour la préparation finale du support avant peinture."
+                    "correction": "10 m² (surface à couvrir) divisé par 2,5 m² (surface d'une plaque) est égal à 4 plaques."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quelle est la fonction principale du primaire d'accrochage sur un mur très absorbant (plâtre ou brique) avant la pose d'enduit ?",
+                    "question": "Quel type de trait est conventionnellement utilisé sur un plan pour représenter les axes d'implantation ?",
                     "answerOptions": [
-                        {"text": "Réguler l'absorption du support et améliorer l'adhérence du plâtre ou de l'enduit.", "isCorrect": True, "key": "A"},
-                        {"text": "Servir de couche de finition décorative, sans nécessiter d'être recouvert ensuite.", "isCorrect": False, "key": "B"},
-                        {"text": "Créer une surface parfaitement plane (rattrapage de niveau) pour l'ossature métallique.", "isCorrect": False, "key": "C"},
-                        {"text": "Remplacer la membrane pare-vapeur pour les pièces humides (salle de bain).", "isCorrect": False, "key": "D"}
+                        {"text": "Trait mixte fin", "isCorrect": True},
+                        {"text": "Trait continu fort", "isCorrect": False},
+                        {"text": "Trait interrompu court", "isCorrect": False},
+                        {"text": "Trait continu fin", "isCorrect": False}
                     ],
-                    "correction": "Le primaire est indispensable pour bloquer la porosité du support et éviter que le plâtre ne se dessèche trop rapidement."
+                    "correction": "Le trait mixte fin (alternance de traits longs et points) est normalisé pour représenter les axes de symétrie et les axes d'implantation."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Quel est le nom de la plaque de plâtre utilisée dans les ouvrages nécessitant une haute résistance au feu (gaine technique) ?",
+                    "question": "Quel est le but principal d'un 'métré quantitatif' avant le début du chantier ?",
                     "answerOptions": [
-                        {"text": "La plaque de plâtre ignifugée (de couleur rose), de type F, avec de la fibre de verre.", "isCorrect": True, "key": "A"},
-                        {"text": "La plaque de plâtre standard (A), sans traitement particulier.", "isCorrect": False, "key": "B"},
-                        {"text": "La plaque de plâtre hydrofuge (H), de couleur verte, sans résistance au feu renforcée.", "isCorrect": False, "key": "C"},
-                        {"text": "La plaque de plâtre de très haute densité (P), de couleur bleue pour l'acoustique.", "isCorrect": False, "key": "D"}
+                        {"text": "Lister et chiffrer les matériaux nécessaires aux travaux", "isCorrect": True},
+                        {"text": "Vérifier la conformité des travaux avec les normes de sécurité", "isCorrect": False},
+                        {"text": "Établir le planning précis des congés des ouvriers", "isCorrect": False},
+                        {"text": "Organiser le repliement des bennes à déchets en fin de chantier", "isCorrect": False}
                     ],
-                    "correction": "Le plâtre contient de l'eau cristallisée. La plaque rose contient des fibres de verre pour améliorer la cohésion du plâtre sous l'effet de la chaleur."
+                    "correction": "Le métré quantitatif sert à calculer les quantités exactes d'ouvrages pour commander les matériaux et établir le devis."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quel est le nom de l'ossature verticale (profilés) qui supporte la plaque de plâtre dans une cloison ?",
+                    "question": "Sur un plan, quelle information donne une cote de niveau indiquée par un cercle divisé en quarts noirs et blancs ?",
                     "answerOptions": [
-                        {"text": "Le montant (M), qui est inséré dans les rails (R) fixés au sol et au plafond.", "isCorrect": True, "key": "A"},
-                        {"text": "Le rail (R), qui est fixé au sol et au plafond pour guider les montants.", "isCorrect": False, "key": "B"},
-                        {"text": "Le tasseau de bois (fixé horizontalement pour la reprise de charge).", "isCorrect": False, "key": "C"},
-                        {"text": "La suspente (fixée au plafond pour soutenir les fourrures dans un plafond suspendu).", "isCorrect": False, "key": "D"}
+                        {"text": "L'altitude par rapport à une origine", "isCorrect": True},
+                        {"text": "L'orientation magnétique du bâtiment", "isCorrect": False},
+                        {"text": "La résistance du sol à la compression", "isCorrect": False},
+                        {"text": "Le point de raccordement électrique", "isCorrect": False}
                     ],
-                    "correction": "Les montants (M) sont les éléments porteurs de la plaque. Les rails (R) définissent l'épaisseur et la position de la cloison."
+                    "correction": "Ce symbole (ngf ou niveau relatif) indique l'altitude altimétrique d'un plancher ou d'un sol par rapport au niveau zéro du projet."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Quel est l'outil utilisé pour étaler l'enduit de jointoiement ou de lissage de manière uniforme sur la bande ?",
+                    "question": "Quelle est l'unité de mesure utilisée par défaut pour les cotes sur un plan d'architecte 'vue en plan' ?",
                     "answerOptions": [
-                        {"text": "Le couteau à enduire (large et plat) ou le platoir à joint lisse.", "isCorrect": True, "key": "A"},
-                        {"text": "La truelle de carreleur (cœur de pigeon), pour le prélèvement de la colle.", "isCorrect": False, "key": "B"},
-                        {"text": "La lisseuse (ou taloche) en plastique pour la mise en œuvre de l'enduit de façade.", "isCorrect": False, "key": "C"},
-                        {"text": "La spatule crantée (ou peigne) pour l'application d'un mortier-colle en doublage.", "isCorrect": False, "key": "D"}
+                        {"text": "Centimètre", "isCorrect": True},
+                        {"text": "Millimètre", "isCorrect": False},
+                        {"text": "Décimètre", "isCorrect": False},
+                        {"text": "Kilomètre", "isCorrect": False}
                     ],
-                    "correction": "Le couteau à enduire (de 15 à 30 cm) est l'outil de base pour l'application et le lissage de l'enduit sur les joints."
+                    "correction": "En bâtiment, les cotes sur les plans d'exécution (vues en plan) sont très généralement exprimées en centimètres (ex: 350 pour 3,50m)."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Qu'est-ce que le coefficient 'lambda' (λ) pour un isolant thermique ?",
+                    "question": "Que désigne le terme 'portée' dans le contexte d'un plafond ?",
                     "answerOptions": [
-                        {"text": "C'est la conductivité thermique (pouvoir isolant intrinsèque du matériau), en W/(m.K).", "isCorrect": True, "key": "A"},
-                        {"text": "C'est la résistance thermique (R) multipliée par l'épaisseur de l'isolant (e).", "isCorrect": False, "key": "B"},
-                        {"text": "C'est la densité (masse volumique) du matériau, exprimée en kg/m³.", "isCorrect": False, "key": "C"},
-                        {"text": "C'est l'épaisseur minimale réglementaire de l'isolant (en mm) pour atteindre la RT 2020.", "isCorrect": False, "key": "D"}
+                        {"text": "La distance horizontale mesurée entre deux murs vis-à-vis", "isCorrect": True},
+                        {"text": "Le rampant", "isCorrect": False},
+                        {"text": "L'arêtier", "isCorrect": False},
+                        {"text": "Le giron", "isCorrect": False}
                     ],
-                    "correction": "Plus le lambda est faible, plus le matériau est isolant pour une même épaisseur. Le lambda est une propriété fixe du matériau."
+                    "correction": "Dans le contexte d'un plafond ou d'un plancher, la portée est la distance libre entre les appuis porteurs (les murs)."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Comment doit-on préparer l'enduit de jointoiement en poudre avant l'application ?",
+                    "question": "Quel appareil moderne permet de tracer un niveau sur tous les murs d'une pièce simultanément sans déplacement ?",
                     "answerOptions": [
-                        {"text": "Verser la poudre dans l'eau (jamais l'inverse) et malaxer jusqu'à obtenir une pâte homogène.", "isCorrect": True, "key": "A"},
-                        {"text": "Verser l'eau dans la poudre rapidement, puis laisser reposer 30 minutes sans mélanger.", "isCorrect": False, "key": "B"},
-                        {"text": "Mélanger à sec avec un outil non électrique pendant plusieurs minutes pour une bonne homogénéité.", "isCorrect": False, "key": "C"},
-                        {"text": "Mélanger une première fois, puis ajouter de la poudre jusqu'à obtenir la consistance désirée.", "isCorrect": False, "key": "D"}
+                        {"text": "Niveau laser rotatif", "isCorrect": True},
+                        {"text": "Niveau à bulle aimanté", "isCorrect": False},
+                        {"text": "Théodolite de géomètre", "isCorrect": False},
+                        {"text": "Mètre ruban électronique", "isCorrect": False}
                     ],
-                    "correction": "L'eau doit toujours être versée en premier dans le seau pour faciliter le mélange et éviter les grumeaux (respecter le dosage)."
+                    "correction": "Le niveau laser rotatif projette un faisceau lumineux horizontal à 360°, créant une ligne de référence horizontale sur toutes les parois en même temps."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quel est le nom des petites fixations métalliques utilisées pour lier une fourrure à une suspente dans un plafond suspendu ?",
+                    "question": "Sur un plan de pose de plafond, que signifie le terme 'entraxe' ?",
                     "answerOptions": [
-                        {"text": "Les éclisses, qui permettent de relier et d'ajuster les éléments d'ossature métallique.", "isCorrect": True, "key": "A"},
-                        {"text": "Les chevilles à expansion (type Molly) pour la fixation au mur ou au plafond béton.", "isCorrect": False, "key": "B"},
-                        {"text": "Les vis TTPC (Tête Trompette Pointe Clou), réservées à la fixation des plaques sur les montants.", "isCorrect": False, "key": "C"},
-                        {"text": "Les vis auto-foreuses pour fixer les montants dans les rails au sol et au plafond.", "isCorrect": False, "key": "D"}
+                        {"text": "La distance d'axe en axe entre deux fourrures", "isCorrect": True},
+                        {"text": "La longueur totale des suspentes déployées", "isCorrect": False},
+                        {"text": "L'espace vide laissé entre le mur et le premier rail", "isCorrect": False},
+                        {"text": "L'épaisseur totale du complexe isolant plus plaque", "isCorrect": False}
                     ],
-                    "correction": "Les éclisses (ou cavaliers) sont les pièces de connexion entre les éléments de l'ossature."
+                    "correction": "L'entraxe est la distance mesurée du centre d'un profilé au centre du profilé suivant (généralement 50 ou 60 cm pour les plafonds)."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quel est le risque si l'on utilise des montants métalliques trop fins pour une cloison de grande hauteur (plus de 2,50 m) ?",
+                    "question": "Quelle est la définition précise du 'nu' d'un mur en lecture de plan ?",
                     "answerOptions": [
-                        {"text": "La déformation (flambage) de la cloison sous les charges et un risque de fissuration des joints.", "isCorrect": True, "key": "A"},
-                        {"text": "Le risque d'une isolation acoustique trop importante, qui nuirait à la transmission du son.", "isCorrect": False, "key": "B"},
-                        {"text": "Le risque de corrosion rapide des montants par l'humidité de l'air ambiant de la pièce.", "isCorrect": False, "key": "C"},
-                        {"text": "Le risque d'intoxication due à la présence de métaux lourds dans le profilé mince.", "isCorrect": False, "key": "D"}
+                        {"text": "La surface de parement finie et visible d'une paroi verticale", "isCorrect": True},
+                        {"text": "L'épaisseur totale de la structure porteuse brute avant l'isolation", "isCorrect": False},
+                        {"text": "La partie enterrée des fondations supportant le bâtiment", "isCorrect": False},
+                        {"text": "L'espace résiduel entre le doublage et le mur maçonné existant", "isCorrect": False}
                     ],
-                    "correction": "L'épaisseur des profilés (48, 70 ou 98 mm) et l'entraxe des montants sont déterminés par la hauteur de la cloison (DTU 25.41)."
-                }
+                    "correction": "Le 'nu' désigne la surface extérieure d'un mur. On parle de cote 'nu à nu' pour mesurer l'espace net entre deux murs finis."
+                },
             ]
         },
-        # THÈME 3
+        # =========================================================================
+        # THÈME 3 : MISE EN ŒUVRE DES SYSTÈMES DE PLAQUES ET ISOLATION (Questions 41 à 60)
+        # =========================================================================
         3: {
-            "name": "Techniques de Pose (Ossatures, Plaques, Doublages)",
+            "name": "THÈME 3 : MISE EN ŒUVRE DES SYSTÈMES DE PLAQUES ET ISOLATION",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel est l'outil utilisé pour couper les profilés métalliques (rails et montants) d'une ossature ?",
+                    "question": "Quelle opération permet de solidariser un montant et un rail sans utiliser de vis ?",
                     "answerOptions": [
-                        {"text": "La cisaille à tôle (ou grignoteuse) ou la disqueuse (meuleuse d'angle) avec disque fin.", "isCorrect": True, "key": "A"},
-                        {"text": "La scie égoïne (scie à bois) pour une coupe nette et rapide.", "isCorrect": False, "key": "B"},
-                        {"text": "Le couteau de plâtrier pour une coupe à la volée des profilés d'acier galvanisé.", "isCorrect": False, "key": "C"},
-                        {"text": "Le perforateur pour les fixations mécaniques au sol ou au plafond de la pièce.", "isCorrect": False, "key": "D"}
+                        {"text": "Sertissage", "isCorrect": True},
+                        {"text": "Boulonnage", "isCorrect": False},
+                        {"text": "Soudure", "isCorrect": False},
+                        {"text": "Collage", "isCorrect": False}
                     ],
-                    "correction": "La cisaille à tôle ou la grignoteuse (pour les coupes plus complexes) sont les outils les plus adaptés. La disqueuse génère des étincelles (risque d'incendie)."
+                    "correction": "Le sertissage consiste à poinçonner mécaniquement les deux épaisseurs de métal (rail et montant) à l'aide d'une pince à sertir pour les maintenir ensemble avant la pose des plaques."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Quelle est la principale technique de pose des plaques de plâtre sur une cloison simple ossature (M48/R48) ?",
+                    "question": "Quel est l'espacement maximum standard entre deux vis sur une plaque de plâtre en cloison ?",
                     "answerOptions": [
-                        {"text": "Fixation par vissage (vis TTPC) sur les montants et les rails, sans enduit sur la tête de la vis.", "isCorrect": True, "key": "A"},
-                        {"text": "Fixation par collage (mortier-colle) sur les montants métalliques, sans vis ni rivet.", "isCorrect": False, "key": "B"},
-                        {"text": "Fixation par cloutage (pointes), en utilisant un marteau et un burin léger.", "isCorrect": False, "key": "C"},
-                        {"text": "Fixation par sertissage (pince à sertir) de la plaque sur les montants (profilés).", "isCorrect": False, "key": "D"}
+                        {"text": "30 cm", "isCorrect": True},
+                        {"text": "60 cm", "isCorrect": False},
+                        {"text": "10 cm", "isCorrect": False},
+                        {"text": "90 cm", "isCorrect": False}
                     ],
-                    "correction": "Le vissage est la seule méthode reconnue. Les vis doivent être légèrement encastrées dans la plaque (sans déchirer le carton) et recouvertes d'enduit."
+                    "correction": "Selon le DTU 25.41, les vis doivent être espacées au maximum de 30 cm sur les montants verticaux pour assurer la tenue mécanique de la plaque."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Dans une cloison, les joints de plaques doivent-ils être alignés sur le même montant ou décalés (croisés) ?",
+                    "question": "De quel côté de l'isolant le pare-vapeur doit-il être orienté lors de la pose ?",
                     "answerOptions": [
-                        {"text": "Les joints verticaux doivent être décalés (croisés) d'un montant à l'autre pour éviter les fissures.", "isCorrect": True, "key": "A"},
-                        {"text": "Les joints horizontaux doivent être systématiquement alignés à la même hauteur (à la moitié de la plaque).", "isCorrect": False, "key": "B"},
-                        {"text": "Les joints doivent être alignés avec le montant central, uniquement pour les cloisons de faible hauteur.", "isCorrect": False, "key": "C"},
-                        {"text": "Le joint horizontal peut être réalisé sans montant si la plaque est très épaisse (BA18 ou plus).", "isCorrect": False, "key": "D"}
+                        {"text": "Côté chaud", "isCorrect": True},
+                        {"text": "Côté froid", "isCorrect": False},
+                        {"text": "Côté extérieur", "isCorrect": False},
+                        {"text": "Côté lame d'air", "isCorrect": False}
                     ],
-                    "correction": "Le croisement des joints (décalage d'au moins 50 cm) est indispensable pour la solidité et la pérennité de l'ouvrage (contre la fissuration)."
+                    "correction": "Le pare-vapeur doit toujours être placé du côté chauffé de la pièce (côté chaud) pour empêcher l'humidité intérieure de migrer et de condenser dans l'isolant."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quel est le nom de la technique de pose d'un complexe isolant (plaque de plâtre + isolant) par collage direct au mur (sans ossature) ?",
+                    "question": "Quelle est la première étape obligatoire lors de la réalisation d'un joint entre deux plaques ?",
                     "answerOptions": [
-                        {"text": "Le doublage collé (ou pose de panneaux de doublage) avec mortier-colle.", "isCorrect": True, "key": "A"},
-                        {"text": "Le doublage sur ossature (DSO) pour l'isolation intérieure par l'intérieur (ITI).", "isCorrect": False, "key": "B"},
-                        {"text": "Le doublage en applique (ITE) pour l'isolation thermique par l'extérieur.", "isCorrect": False, "key": "C"},
-                        {"text": "La pose de la plaque en plein (sur toute la surface du mur) avec un rail R48.", "isCorrect": False, "key": "D"}
+                        {"text": "Garnir le fond du joint", "isCorrect": True},
+                        {"text": "Poser la bande sèche", "isCorrect": False},
+                        {"text": "Poncer les bords amincis", "isCorrect": False},
+                        {"text": "Mouiller le carton", "isCorrect": False}
                     ],
-                    "correction": "Le doublage collé est rapide mais nécessite un mur relativement plan. La colle (mastic) est appliquée par plots ou boudins."
+                    "correction": "Il faut d'abord déposer de l'enduit au fond de l'amincissement (garnissage) avant de venir y serrer la bande papier."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Comment doit-on traiter le joint de liaison entre le mur et une plaque (joint périphérique) ?",
+                    "question": "Quel principe physique permet aux cloisons en plaques de plâtre d'avoir une bonne isolation acoustique ?",
                     "answerOptions": [
-                        {"text": "Par un joint souple (mastic acrylique ou silicone) et non par un enduit rigide, pour absorber les mouvements.", "isCorrect": True, "key": "A"},
-                        {"text": "Par la pose d'une bande à joint papier collée avec un enduit de jointoiement dur.", "isCorrect": False, "key": "B"},
-                        {"text": "Par un enduit de rebouchage à prise très rapide sans renfort mécanique (mastic silicone rigide).", "isCorrect": False, "key": "C"},
-                        {"text": "Par une plaque de polystyrène expansé (PSE) recouverte d'une plaque de carton.", "isCorrect": False, "key": "D"}
+                        {"text": "Masse Ressort Masse", "isCorrect": True},
+                        {"text": "Masse Masse Ressort", "isCorrect": False},
+                        {"text": "Vide Ressort Vide", "isCorrect": False},
+                        {"text": "Masse Vide Masse", "isCorrect": False}
                     ],
-                    "correction": "Les joints périphériques (angles rentrants et sortants) doivent être souples (mastic ou bande armée) pour gérer les dilatations des matériaux."
+                    "correction": "Le principe 'Masse-Ressort-Masse' utilise deux parements (Masse) séparés par un isolant ou de l'air qui absorbe les vibrations (Ressort)."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Quelle est l'entraxe standard à respecter entre les montants (M) dans une cloison en plaque de plâtre standard (BA13) ?",
+                    "question": "Quelle est la technique correcte pour couper une plaque de plâtre droite ?",
                     "answerOptions": [
-                        {"text": "60 cm (ou 40 cm pour une meilleure résistance mécanique de l'ouvrage).", "isCorrect": True, "key": "A"},
-                        {"text": "120 cm, pour correspondre à la largeur standard d'une plaque de plâtre.", "isCorrect": False, "key": "B"},
-                        {"text": "30 cm (ou 20 cm pour une isolation acoustique renforcée).", "isCorrect": False, "key": "C"},
-                        {"text": "90 cm (pour une plaque de plâtre de faible hauteur, moins de 2 mètres).", "isCorrect": False, "key": "D"}
+                        {"text": "Inciser le parement et casser la plaque", "isCorrect": True},
+                        {"text": "Scier le dos de la plaque avec une égoïne", "isCorrect": False},
+                        {"text": "Mouiller la plaque avant de la découper au cutter", "isCorrect": False},
+                        {"text": "Utiliser obligatoirement une meuleuse d'angle", "isCorrect": False}
                     ],
-                    "correction": "L'entraxe de 60 cm est standard. La plaque (120 cm de large) se fixe sur 3 montants (bords de plaque et montant central) pour garantir la solidité de l'ouvrage."
+                    "correction": "On coupe le carton de face au cutter, on casse le noyau de plâtre d'un coup sec, puis on coupe le carton de dos."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Comment doit-on traiter l'angle sortant (coin de mur) d'une cloison en plaque de plâtre ?",
+                    "question": "Quel est l'entraxe standard des fourrures pour un plafond en plaques BA13 vissées perpendiculairement ?",
                     "answerOptions": [
-                        {"text": "Par la pose d'une bande d'angle métallique ou d'une corniche pour la protection mécanique.", "isCorrect": True, "key": "A"},
-                        {"text": "Par la pose d'un enduit de jointoiement armé d'une bande papier ou grillagée.", "isCorrect": False, "key": "B"},
-                        {"text": "Par la réalisation d'un joint souple (mastic silicone) qui absorbe les chocs quotidiens.", "isCorrect": False, "key": "C"},
-                        {"text": "Par la pose de deux plaques bord à bord, avec une coupe à 45° pour une finition nette.", "isCorrect": False, "key": "D"}
+                        {"text": "50 ou 60 cm", "isCorrect": True},
+                        {"text": "80 ou 90 cm", "isCorrect": False},
+                        {"text": "100 ou 110 cm", "isCorrect": False},
+                        {"text": "20 ou 30 cm", "isCorrect": False}
                     ],
-                    "correction": "L'angle sortant est très exposé aux chocs. La pose d'une corniche (bande métallique) noyée dans l'enduit est essentielle pour sa protection."
+                    "correction": "L'entraxe courant est de 60 cm (ou 50 cm selon le poids de l'isolant et le type de plaque), afin de respecter la rigidité de l'ouvrage."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quel est le nom de l'outil utilisé pour relever et transférer le niveau de référence (le point zéro) sur l'ensemble des murs de la pièce ?",
+                    "question": "Lors d'un doublage sur ossature, comment fixe-t-on le rail au sol ?",
                     "answerOptions": [
-                        {"text": "Le niveau laser rotatif (ou le niveau à eau) pour la mise en place de la ligne d'implantation.", "isCorrect": True, "key": "A"},
-                        {"text": "Le cordeau à poudre, pour le traçage des lignes de référence au sol (uniquement horizontal).", "isCorrect": False, "key": "B"},
-                        {"text": "Le mètre ruban pour la mesure de la distance entre deux montants (entraxe à 60 cm).", "isCorrect": False, "key": "C"},
-                        {"text": "Le fil à plomb pour la vérification de la verticalité des montants de l'ossature.", "isCorrect": False, "key": "D"}
+                        {"text": "Avec des vis et chevilles adaptées tous les 60 cm", "isCorrect": True},
+                        {"text": "Avec de la colle néoprène uniquement aux extrémités", "isCorrect": False},
+                        {"text": "En le coinçant simplement sous les plaques de plâtre", "isCorrect": False},
+                        {"text": "Avec du mortier adhésif disposé en plots réguliers", "isCorrect": False}
                     ],
-                    "correction": "Le transfert du niveau (laser ou à eau) est la première étape du traçage pour l'implantation au sol."
+                    "correction": "Les rails doivent être fixés mécaniquement au gros œuvre (dalle béton, plancher bois) avec des fixations adaptées réparties environ tous les 60 cm."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Comment s'appelle la technique de pose de l'isolant par soufflage (laine en flocons) dans les combles perdus non aménagés ?",
+                    "question": "Quelle précaution faut-il prendre lors de la pose de l'isolant en laine minérale entre les montants ?",
                     "answerOptions": [
-                        {"text": "L'isolation par soufflage (ou insufflation) pour une couverture totale et sans pont thermique.", "isCorrect": True, "key": "A"},
-                        {"text": "L'isolation par projection (mousse polyuréthane) pour les zones à forte humidité.", "isCorrect": False, "key": "B"},
-                        {"text": "L'isolation par panneaux rigides (fibre de bois ou polystyrène extrudé) pour le sol.", "isCorrect": False, "key": "C"},
-                        {"text": "L'isolation par rouleaux de laine de verre (avec pare-vapeur) pour les plafonds suspendus.", "isCorrect": False, "key": "D"}
+                        {"text": "Assurer la continuité de l'isolant sans tassage", "isCorrect": True},
+                        {"text": "Compresser l'isolant au maximum pour gagner de la place", "isCorrect": False},
+                        {"text": "Laisser une lame d'air de 5 cm entre chaque lé", "isCorrect": False},
+                        {"text": "Humidifier l'isolant pour qu'il colle aux montants", "isCorrect": False}
                     ],
-                    "correction": "Le soufflage est le moyen le plus efficace pour isoler les combles irréguliers (perditions) en créant une couverture homogène de l'isolant."
+                    "correction": "L'isolant doit remplir tout l'espace sans être écrasé (ce qui lui ferait perdre ses propriétés) et les lés doivent être jointifs pour éviter les ponts thermiques."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Quel est le rôle de la 'bande résiliente' (en mousse) placée sous les rails de l'ossature métallique ?",
+                    "question": "Comment appelle-t-on l'espace vide laissé volontairement entre le sol fini et le bas de la plaque de plâtre ?",
                     "answerOptions": [
-                        {"text": "Assurer l'étanchéité à l'air de la cloison et améliorer l'isolation acoustique (rupture du pont phonique).", "isCorrect": True, "key": "A"},
-                        {"text": "Régler l'aplomb et la verticalité des montants sur les murs irréguliers (rattrapage de niveau).", "isCorrect": False, "key": "B"},
-                        {"text": "Empêcher le risque d'électrocution en cas de contact du rail métallique avec un conducteur.", "isCorrect": False, "key": "C"},
-                        {"text": "Accélérer le temps de séchage de l'enduit de jointoiement sur les bandes en papier.", "isCorrect": False, "key": "D"}
+                        {"text": "Le détalonnage", "isCorrect": True},
+                        {"text": "Le calfeutrement", "isCorrect": False},
+                        {"text": "Le pont thermique", "isCorrect": False},
+                        {"text": "La feuillure", "isCorrect": False}
                     ],
-                    "correction": "La bande résiliente est un élément essentiel pour l'étanchéité à l'air de la construction et pour réduire la transmission du bruit (vibrations)."
+                    "correction": "Le détalonnage (environ 1 cm) évite les remontées d'humidité par capillarité depuis le sol vers la plaque de plâtre."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Comment s'appelle la technique de fixation d'un rail (R) au sol ou au plafond en béton ?",
+                    "question": "Dans une cloison à double parement (deux plaques par côté), comment doit-on poser les plaques de la deuxième couche ?",
                     "answerOptions": [
-                        {"text": "Fixation par chevilles à frapper ou par vis à béton, après perçage du support au perforateur.", "isCorrect": True, "key": "A"},
-                        {"text": "Fixation par vis TTPC auto-foreuses, sans perçage préalable du support béton ou métal.", "isCorrect": False, "key": "B"},
-                        {"text": "Fixation par simple collage (mortier-colle) du rail au sol et au plafond, sans perçage.", "isCorrect": False, "key": "C"},
-                        {"text": "Fixation par sertissage (pince à sertir) du rail au support rigide (béton armé).", "isCorrect": False, "key": "D"}
+                        {"text": "À joints décalés", "isCorrect": True},
+                        {"text": "À joints alignés", "isCorrect": False},
+                        {"text": "À l'horizontale", "isCorrect": False},
+                        {"text": "À l'envers", "isCorrect": False}
                     ],
-                    "correction": "Le rail doit être solidement ancré au support pour garantir la stabilité de la cloison (chevillage)."
+                    "correction": "Il faut décaler les joints de la deuxième 'peau' par rapport à la première pour améliorer la solidité mécanique et la performance acoustique."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quel est l'objectif principal de la pose de l'isolant dans l'ossature métallique d'une cloison ?",
+                    "question": "Quelle est la tolérance de planéité finale requise pour une cloison en plaques de plâtre ?",
                     "answerOptions": [
-                        {"text": "Améliorer l'isolation thermique et l'affaiblissement acoustique de la cloison (masse-ressort-masse).", "isCorrect": True, "key": "A"},
-                        {"text": "Servir de renfort mécanique à la cloison en cas de chocs ou de vibrations importantes.", "isCorrect": False, "key": "B"},
-                        {"text": "Réguler l'humidité ambiante dans l'air de la pièce et éviter le risque de moisissure rapide.", "isCorrect": False, "key": "C"},
-                        {"text": "Remplacer la membrane pare-vapeur pour les pièces humides (salle de bain) par une couche rigide.", "isCorrect": False, "key": "D"}
+                        {"text": "5 mm sous la règle de 2 m", "isCorrect": True},
+                        {"text": "1 cm sous la règle de 2 m", "isCorrect": False},
+                        {"text": "2 mm sous la règle de 10 m", "isCorrect": False},
+                        {"text": "Zéro défaut toléré absolu", "isCorrect": False}
                     ],
-                    "correction": "L'isolant (laine minérale ou autre) sert de 'ressort' dans le système acoustique et de barrière pour la chaleur."
+                    "correction": "La norme autorise un écart maximal de 5 mm sous une règle de 2 mètres posée sur la surface finie."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Comment doit-on positionner la plaque de plâtre par rapport aux montants (M) de l'ossature ?",
+                    "question": "Pour fixer un objet lourd (plus de 30 kg) sur une cloison en plaque de plâtre, que faut-il prévoir ?",
                     "answerOptions": [
-                        {"text": "Les bords amincis de la plaque doivent toujours reposer sur un montant pour le jointoiement.", "isCorrect": True, "key": "A"},
-                        {"text": "La plaque doit être fixée au centre de l'ossature, sans contact avec les montants pour l'acoustique.", "isCorrect": False, "key": "B"},
-                        {"text": "La plaque doit être posée en laissant un espace de 5 cm entre elle et le montant métallique.", "isCorrect": False, "key": "C"},
-                        {"text": "Les bords coupés (non amincis) doivent être joints entre eux sans support arrière (montant).", "isCorrect": False, "key": "D"}
+                        {"text": "Un renfort intégré dans l'ossature", "isCorrect": True},
+                        {"text": "Une cheville plastique standard", "isCorrect": False},
+                        {"text": "Une simple vis à bois longue", "isCorrect": False},
+                        {"text": "Un point de colle mastic fort", "isCorrect": False}
                     ],
-                    "correction": "La jonction des plaques (joints) doit obligatoirement se faire sur un montant pour garantir la solidité du joint et éviter les fissurations."
+                    "correction": "Pour les charges lourdes (chauffe-eau, meuble haut), il est impératif de prévoir des renforts (bois ou métal) vissés dans l'ossature avant de fermer la cloison."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quel est le nom du système pour créer un plafond suspendu (faux-plafond) en plaques de plâtre ?",
+                    "question": "À quoi sert une éclisse dans le montage d'un plafond ?",
                     "answerOptions": [
-                        {"text": "La fixation par suspentes (tiges) au plafond existant, pour soutenir les fourrures métalliques.", "isCorrect": True, "key": "A"},
-                        {"text": "Le doublage collé directement sur le plafond béton avec un mortier-colle standard.", "isCorrect": False, "key": "B"},
-                        {"text": "La pose d'un rail R70 au sol, pour maintenir les plaques à la bonne hauteur pour le vissage.", "isCorrect": False, "key": "C"},
-                        {"text": "La pose d'un isolant par soufflage (laine en vrac) dans l'espace disponible (plénum) du plafond.", "isCorrect": False, "key": "D"}
+                        {"text": "Raccorder deux fourrures bout à bout", "isCorrect": True},
+                        {"text": "Fixer la fourrure sur la suspente", "isCorrect": False},
+                        {"text": "Terminer le plafond contre le mur", "isCorrect": False},
+                        {"text": "Suspendre le rail au plafond béton", "isCorrect": False}
                     ],
-                    "correction": "Le plafond suspendu nécessite des suspentes (fixées au plafond porteur) et des fourrures (lisses métalliques) pour recevoir les plaques."
+                    "correction": "L'éclisse est la pièce de liaison qui permet d'assembler deux fourrures dans le sens de la longueur pour couvrir de grandes distances."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quel est l'objectif du 'bande-armé' (grillagée ou métallique) utilisé dans les angles rentrants d'une cloison ?",
+                    "question": "Quelle est la définition d'un 'pont thermique' qu'il faut éviter lors de l'isolation ?",
                     "answerOptions": [
-                        {"text": "Renforcer l'angle contre la fissuration et le choc, tout en assurant une finition esthétique.", "isCorrect": True, "key": "A"},
-                        {"text": "Régler l'aplomb des montants sur les murs irréguliers (rattrapage de niveau).", "isCorrect": False, "key": "B"},
-                        {"text": "Servir de surface antidérapante provisoire pour pouvoir marcher sur l'ouvrage.", "isCorrect": False, "key": "C"},
-                        {"text": "Faciliter l'incorporation de pigments colorés dans la colle avant le malaxage de l'ensemble.", "isCorrect": False, "key": "D"}
+                        {"text": "Une zone de rupture de la barrière isolante", "isCorrect": True},
+                        {"text": "Un système de chauffage par le sol électrique", "isCorrect": False},
+                        {"text": "Une méthode de ventilation naturelle du local", "isCorrect": False},
+                        {"text": "Une technique de collage des plaques au mur", "isCorrect": False}
                     ],
-                    "correction": "La bande armée (métallique pour les angles sortants, papier pré-plié pour les angles rentrants) est indispensable pour la résistance des angles."
+                    "correction": "Un pont thermique est une rupture dans la barrière isolante (souvent à la jonction mur/fenêtre) par où la chaleur s'échappe, créant des points froids propices à la condensation."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quel est le nom de l'outil pour réaliser des trous circulaires dans une plaque de plâtre (pour les boîtes électriques) ?",
+                    "question": "Quel enduit utilise-t-on spécifiquement pour coller des plaques de plâtre directement sur un mur maçonné (doublage collé) ?",
                     "answerOptions": [
-                        {"text": "La scie cloche (ou trépan) adaptée au diamètre de la boîte électrique (67 mm ou 80 mm).", "isCorrect": True, "key": "A"},
-                        {"text": "La scie égoïne pour une coupe nette et rapide de la plaque de plâtre.", "isCorrect": False, "key": "B"},
-                        {"text": "La cisaille à tôle, pour une coupe en angle droit des bords amincis.", "isCorrect": False, "key": "C"},
-                        {"text": "La pince à sertir pour fixer les montants dans les rails (liaison mécanique).", "isCorrect": False, "key": "D"}
+                        {"text": "MAP", "isCorrect": True},
+                        {"text": "Enduit de lissage", "isCorrect": False},
+                        {"text": "Plâtre de Paris", "isCorrect": False},
+                        {"text": "Mortier bâtard", "isCorrect": False}
                     ],
-                    "correction": "La scie cloche (trépan) est l'outil spécifique pour les découpes circulaires et les boîtes d'encastrement électriques."
+                    "correction": "Le MAP (Mortier Adhésif Placoplâtre) est spécialement formulé pour coller les plaques ou les complexes isolants par plots sur les murs bruts."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Quel est le risque si l'on ne laisse pas de jeu (espace) de quelques millimètres entre le bas de la plaque et le sol fini ?",
+                    "question": "Lors du vissage d'une plaque, comment doit être positionnée la tête de la vis ?",
                     "answerOptions": [
-                        {"text": "Le risque de fissuration des joints par la remontée d'humidité (capillarité) ou le mouvement du sol.", "isCorrect": True, "key": "A"},
-                        {"text": "Le risque de corrosion rapide des vis de fixation de la plaque sur les montants métalliques.", "isCorrect": False, "key": "B"},
-                        {"text": "Le risque d'une isolation acoustique trop importante, qui nuirait à la transmission du son.", "isCorrect": False, "key": "C"},
-                        {"text": "Le risque d'intoxication due aux poussières fines générées par les vibrations de la machine.", "isCorrect": False, "key": "D"}
+                        {"text": "À fleur du parement sans déchirer le carton", "isCorrect": True},
+                        {"text": "Enfoncée de 5 millimètres dans le plâtre", "isCorrect": False},
+                        {"text": "Dépassant de 2 millimètres de la surface", "isCorrect": False},
+                        {"text": "Traversant totalement l'épaisseur de la plaque", "isCorrect": False}
                     ],
-                    "correction": "La plaque de plâtre doit être légèrement décollée du sol (environ 1 cm) pour éviter l'absorption d'humidité et les tensions mécaniques."
+                    "correction": "La tête de vis doit affleurer la surface (être 'à fleur') pour pouvoir être masquée par l'enduit, mais sans déchirer le carton qui maintient le plâtre."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Comment s'appelle l'opération qui consiste à percer les plaques de plâtre et le doublage pour l'évacuation de l'air (VMC) ?",
+                    "question": "Quelle bande utilise-t-on pour traiter un angle saillant (sortant) exposé aux chocs ?",
                     "answerOptions": [
-                        {"text": "La traversée de paroi (ou passage de gaine), réalisée avec une scie cloche.", "isCorrect": True, "key": "A"},
-                        {"text": "Le calepinage de la pièce pour déterminer le sens de pose.", "isCorrect": False, "key": "B"},
-                        {"text": "Le doublage collé des plaques sur un mur irrégulier (rattrapage de niveau).", "isCorrect": False, "key": "C"},
-                        {"text": "Le jointoiement des carreaux après le séchage de la colle (métiers du carrelage).", "isCorrect": False, "key": "D"}
+                        {"text": "Bande armée", "isCorrect": True},
+                        {"text": "Bande papier simple", "isCorrect": False},
+                        {"text": "Bande grillagée", "isCorrect": False},
+                        {"text": "Bande résiliente", "isCorrect": False}
                     ],
-                    "correction": "La traversée de paroi doit être réalisée de manière étanche à l'air (mastic) pour ne pas créer de pont thermique."
+                    "correction": "La bande armée (renforcée par deux feuillards métalliques) est indispensable pour protéger les angles sortants contre les impacts quotidiens."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Quel est l'outil de base pour vérifier la planéité de la surface après l'application de l'enduit de lissage ?",
+                    "question": "Pourquoi faut-il attendre le séchage complet de l'enduit entre deux passes (charge et finition) ?",
                     "answerOptions": [
-                        {"text": "La règle à lisser (ou règle à niveler) pour un contrôle visuel et tactile.", "isCorrect": True, "key": "A"},
-                        {"text": "Le cordeau à poudre (cordeau traceur) pour marquer les axes de référence.", "isCorrect": False, "key": "B"},
-                        {"text": "Le niveau laser de chantier (lignes verticales uniquement).", "isCorrect": False, "key": "C"},
-                        {"text": "Le mètre ruban pour la mesure de la distance entre les montants métalliques.", "isCorrect": False, "key": "D"}
+                        {"text": "Pour éviter le retrait et la fissuration", "isCorrect": True},
+                        {"text": "Pour économiser la quantité d'enduit", "isCorrect": False},
+                        {"text": "Pour changer de type d'outil à main", "isCorrect": False},
+                        {"text": "Pour permettre de poncer immédiatement", "isCorrect": False}
                     ],
-                    "correction": "La règle à lisser permet d'identifier les creux et les bosses (défauts de planéité) avant le ponçage final."
+                    "correction": "Si l'on recouvre un enduit non sec, l'évaporation de l'eau va provoquer un retrait (creusement) du joint et potentiellement des fissures."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quel est le risque de ne pas respecter l'entraxe de 60 cm entre les montants (entraxe trop grand) ?",
+                    "question": "Quel accessoire assure la liaison entre une suspente et une fourrure ?",
                     "answerOptions": [
-                        {"text": "La plaque de plâtre pourrait fléchir entre les montants, ce qui causerait une fissuration des joints.", "isCorrect": True, "key": "A"},
-                        {"text": "L'isolant va tomber de l'ossature métallique et l'isolation sera inefficace.", "isCorrect": False, "key": "B"},
-                        {"text": "La vis TTPC va traverser la plaque sans s'encastrer dans le cœur de plâtre.", "isCorrect": False, "key": "C"},
-                        {"text": "Le temps de séchage de l'enduit de jointoiement sera beaucoup trop long (plus de 7 jours).", "isCorrect": False, "key": "D"}
+                        {"text": "Le clipsage de la tête de suspente", "isCorrect": True},
+                        {"text": "Un boulon de diamètre 8 mm", "isCorrect": False},
+                        {"text": "Un fil de fer recuit torsadé", "isCorrect": False},
+                        {"text": "Une soudure à froid chimique", "isCorrect": False}
                     ],
-                    "correction": "L'entraxe standard est basé sur la résistance mécanique du BA13. Un espacement trop grand entraîne une déformation sous la charge."
-                }
+                    "correction": "La fourrure se 'clipse' mécaniquement sur la tête de la suspente. On doit entendre un 'clic' garantissant le verrouillage."
+                },
             ]
         },
-        # THÈME 4
+        # =========================================================================
+        # THÈME 4 : PLÂTRERIE TRADITIONNELLE, BRIQUES ET FINITIONS (Questions 61 à 80)
+        # =========================================================================
         4: {
-            "name": "Lecture de Plans et Représentation (Traçage, Implantation)",
+            "name": "THÈME 4 : PLÂTRERIE TRADITIONNELLE, BRIQUES ET FINITIONS",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel est le rôle principal d'une légende sur un plan de construction ?",
+                    "question": "Quel est le liant utilisé pour monter une cloison en carreaux de plâtre ?",
                     "answerOptions": [
-                        {"text": "Expliquer la signification des symboles, des hachures et des abréviations utilisés sur le dessin.", "isCorrect": True, "key": "A"},
-                        {"text": "Indiquer l'échelle du plan (par exemple 1/50ème) et l'orientation (Nord) du bâtiment.", "isCorrect": False, "key": "B"},
-                        {"text": "Répertorier la liste complète des matériaux (plaques, isolants, enduits) à commander sur le chantier.", "isCorrect": False, "key": "C"},
-                        {"text": "Définir les règles de sécurité et les EPI (Équipements de Protection Individuelle) obligatoires.", "isCorrect": False, "key": "D"}
+                        {"text": "Colle à base de plâtre", "isCorrect": True},
+                        {"text": "Mortier de ciment gris", "isCorrect": False},
+                        {"text": "Mousse polyuréthane expansive", "isCorrect": False},
+                        {"text": "Silicone sanitaire translucide", "isCorrect": False}
                     ],
-                    "correction": "La légende est la clé de lecture du plan, elle permet d'identifier les matériaux et les éléments représentés."
+                    "correction": "L'assemblage des carreaux de plâtre se fait impérativement avec une colle spécifique à base de plâtre (souvent appelée 'colle carreaux') qui assure l'homogénéité de la paroi."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Que représente une ligne en trait plein fort (continu) sur un plan de coupe (section du bâtiment) ?",
+                    "question": "Quelle est l'épaisseur standard courante d'une brique plâtrière rouge traditionnelle ?",
                     "answerOptions": [
-                        {"text": "Le contour d'un élément coupé et visible dans le plan de section (ex : le mur porteur).", "isCorrect": True, "key": "A"},
-                        {"text": "Le contour d'un élément caché (non visible) derrière le plan de coupe (ex : la canalisation).", "isCorrect": False, "key": "B"},
-                        {"text": "La ligne de repère utilisée pour le traçage et l'implantation au sol (axe central).", "isCorrect": False, "key": "C"},
-                        {"text": "La limite de propriété du terrain (borne) ou la limite de l'intervention du plâtrier.", "isCorrect": False, "key": "D"}
+                        {"text": "5 centimètres", "isCorrect": True},
+                        {"text": "15 centimètres", "isCorrect": False},
+                        {"text": "20 centimètres", "isCorrect": False},
+                        {"text": "2 millimètres", "isCorrect": False}
                     ],
-                    "correction": "Le trait fort indique la coupe. L'épaisseur du trait est normalisée pour différencier les éléments."
+                    "correction": "La brique plâtrière standard utilisée pour les cloisons de distribution fait généralement 5 cm ou 7 cm d'épaisseur (plus l'épaisseur des enduits de chaque côté)."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Sur un plan d'exécution à l'échelle 1/50ème, quelle est la dimension réelle pour une mesure de 4 cm sur le papier ?",
+                    "question": "Comment appelle-t-on la forme spécifique des bords des carreaux de plâtre permettant leur emboîtement ?",
                     "answerOptions": [
-                        {"text": "2,00 mètres réels (4 cm x 50).", "isCorrect": True, "key": "A"},
-                        {"text": "40 cm réels.", "isCorrect": False, "key": "B"},
-                        {"text": "0,80 mètre réel.", "isCorrect": False, "key": "C"},
-                        {"text": "20 mètres réels.", "isCorrect": False, "key": "D"}
+                        {"text": "Rainure et languette", "isCorrect": True},
+                        {"text": "Mâle et femelle", "isCorrect": False},
+                        {"text": "Pic et creux", "isCorrect": False},
+                        {"text": "Tenon et mortaise bois", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 4 cm x 50 = 200 cm, soit 2,00 mètres (1/50ème signifie 1 cm sur le plan = 50 cm en réalité)."
+                    "correction": "Les carreaux possèdent une 'languette' sur deux chants et une 'rainure' sur les deux autres pour assurer le guidage et la solidité de l'assemblage (système R/L)."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Comment appelle-t-on le traçage qui consiste à reporter l'implantation d'une cloison (position des rails et montants) sur le support ?",
+                    "question": "Quelle précaution est indispensable avant d'enduire un mur en béton banché trop lisse ?",
                     "answerOptions": [
-                        {"text": "Le calepinage (traçage des axes de référence) pour la mise en place de la cloison.", "isCorrect": True, "key": "A"},
-                        {"text": "Le ragréage du support pour corriger la planéité du sol avant le doublage.", "isCorrect": False, "key": "B"},
-                        {"text": "Le jointoiement des plaques après le vissage sur les montants métalliques.", "isCorrect": False, "key": "C"},
-                        {"text": "Le ponçage de la plaque à l'aide d'une ponceuse électrique orbitale.", "isCorrect": False, "key": "D"}
+                        {"text": "Appliquer un primaire d'accrochage", "isCorrect": True},
+                        {"text": "Mouiller le mur jusqu'au ruissellement", "isCorrect": False},
+                        {"text": "Chauffer la paroi au chalumeau", "isCorrect": False},
+                        {"text": "Poncer le béton au papier de verre fin", "isCorrect": False}
                     ],
-                    "correction": "Le calepinage (ou traçage d'implantation) est l'étape initiale et critique pour garantir les dimensions de la pièce."
+                    "correction": "Sur un support fermé et lisse (béton), le plâtre n'adhère pas mécaniquement. Il faut appliquer un primaire (produit d'interposition) pour créer l'adhérence."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est l'outil utilisé pour tracer un angle droit (90°) parfait au sol pour l'implantation d'une cloison perpendiculaire ?",
+                    "question": "Dans le langage du plâtrier, que signifie l'action de 'couper' le plâtre lors de l'enduisage ?",
                     "answerOptions": [
-                        {"text": "L'équerre de maçon (ou la méthode du 3-4-5) pour un traçage précis.", "isCorrect": True, "key": "A"},
-                        {"text": "Le niveau à bulle, pour contrôler uniquement les aplombs verticaux du mur.", "isCorrect": False, "key": "B"},
-                        {"text": "Le fil à plomb, pour tracer les lignes de référence de l'ouvrage au sol.", "isCorrect": False, "key": "C"},
-                        {"text": "Le mètre ruban, afin de mesurer la périphérie exacte de la pièce en cours de travail.", "isCorrect": False, "key": "D"}
+                        {"text": "Enlever l'excédent de matière à la règle", "isCorrect": True},
+                        {"text": "Arrêter le travail pour la pause déjeuner", "isCorrect": False},
+                        {"text": "Mélanger la poudre avec un couteau", "isCorrect": False},
+                        {"text": "Scier un carreau en deux morceaux égaux", "isCorrect": False}
                     ],
-                    "correction": "L'équerre (ou le théorème de Pythagore : 3² + 4² = 5²) est indispensable pour garantir l'angle droit (90°) de la cloison."
+                    "correction": "Couper signifie passer la règle (bertelée ou lisse) sur l'enduit frais pour racler les bosses et dresser la surface plane."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Sur un plan, que symbolise l'abréviation 'CF' dans la désignation d'une cloison ?",
+                    "question": "Quel accessoire utilise-t-on pour solidariser une huisserie (cadre de porte) avec une cloison en briques ?",
                     "answerOptions": [
-                        {"text": "Coupe-feu (résistance au feu de la cloison pendant un temps donné, ex : CF 1h).", "isCorrect": True, "key": "A"},
-                        {"text": "Chantier en finition (pour le revêtement de sol et la peinture des murs).", "isCorrect": False, "key": "B"},
-                        {"text": "Cloison fourrure (pour le plafond suspendu et la pose de l'isolant).", "isCorrect": False, "key": "C"},
-                        {"text": "Cloison en Fibre de bois (pour l'isolation thermique naturelle de l'ouvrage).", "isCorrect": False, "key": "D"}
+                        {"text": "Patte de scellement", "isCorrect": True},
+                        {"text": "Vis à bois simple", "isCorrect": False},
+                        {"text": "Cheville nylon", "isCorrect": False},
+                        {"text": "Ruban adhésif double face", "isCorrect": False}
                     ],
-                    "correction": "La résistance au feu (CF pour coupe-feu ou REI pour résistance-étanchéité-isolation) est une information cruciale pour le choix des matériaux."
+                    "correction": "Les huisseries sont fixées mécaniquement à l'aide de pattes de scellement métalliques qui sont ensuite noyées dans le liant ou le plâtre lors du montage."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Quel est le nom de l'échelle utilisée sur les plans d'ensemble (plans de masse) où le bâtiment est représenté dans son environnement ?",
+                    "question": "Quelle est la conséquence d'un gâchage avec une trop grande quantité d'eau ?",
                     "answerOptions": [
-                        {"text": "L'échelle 1/200ème ou 1/500ème (échelle de réduction) pour une vue globale.", "isCorrect": True, "key": "A"},
-                        {"text": "L'échelle 1/5ème ou 1/10ème (échelle d'agrandissement) pour les détails de jonction.", "isCorrect": False, "key": "B"},
-                        {"text": "L'échelle 1/50ème (échelle de travail) pour les plans d'exécution de la pièce.", "isCorrect": False, "key": "C"},
-                        {"text": "L'échelle 1/1ème (grandeur nature) pour la reproduction des éléments très fins.", "isCorrect": False, "key": "D"}
+                        {"text": "Un plâtre poreux et peu résistant", "isCorrect": True},
+                        {"text": "Un plâtre impossible à lisser", "isCorrect": False},
+                        {"text": "Un plâtre de couleur très foncée", "isCorrect": False},
+                        {"text": "Un plâtre qui durcit instantanément", "isCorrect": False}
                     ],
-                    "correction": "L'échelle 1/200ème ou 1/500ème permet de visualiser le bâtiment et ses abords (parking, limites de terrain)."
+                    "correction": "L'excès d'eau (le plâtre est 'noyé') crée de la porosité après évaporation, ce qui fragilise la structure cristalline et rend le plâtre 'mort' (tendre et friable)."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Comment appelle-t-on le plan qui représente la structure du bâtiment vue du dessus, après la coupe horizontale des murs ?",
+                    "question": "Quel est l'avantage principal d'un carreau de plâtre alvéolé par rapport à un carreau plein ?",
                     "answerOptions": [
-                        {"text": "Le plan de coupe horizontale (ou plan de masse), pour l'aménagement de l'intérieur de la pièce.", "isCorrect": True, "key": "A"},
-                        {"text": "Le plan de façade (ou élévation), pour la vision esthétique des murs extérieurs.", "isCorrect": False, "key": "B"},
-                        {"text": "Le plan de détail (ou schéma), pour les jonctions et les angles rentrants.", "isCorrect": False, "key": "C"},
-                        {"text": "Le plan de repérage (ou de localisation) pour situer l'intervention du plâtrier dans le bâtiment.", "isCorrect": False, "key": "D"}
+                        {"text": "Plus léger", "isCorrect": True},
+                        {"text": "Plus solide", "isCorrect": False},
+                        {"text": "Plus étanche", "isCorrect": False},
+                        {"text": "Plus dur", "isCorrect": False}
                     ],
-                    "correction": "Le plan de masse permet de visualiser la répartition des pièces, l'épaisseur des murs et l'emplacement des ouvertures."
+                    "correction": "Les alvéoles (trous) à l'intérieur du carreau réduisent sa masse, ce qui facilite la manutention et diminue la charge sur le plancher, tout en gardant une bonne rigidité."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel est le sens de pose à privilégier pour les plaques de plâtre sur une cloison de grande longueur ?",
+                    "question": "Comment réalise-t-on la jonction entre le haut d'une cloison en briques et le plafond ?",
                     "answerOptions": [
-                        {"text": "Horizontalement (joints horizontaux) ou verticalement, en fonction de la hauteur du plafond.", "isCorrect": True, "key": "A"},
-                        {"text": "En chevrons (ou à bâtons rompus) pour une meilleure accroche de la faïence.", "isCorrect": False, "key": "B"},
-                        {"text": "En spirale (du centre vers l'extérieur du mur) pour une pose plus rapide.", "isCorrect": False, "key": "C"},
-                        {"text": "En oblique (à 45°), pour masquer les différences de planéité du support existant.", "isCorrect": False, "key": "D"}
+                        {"text": "Par un bourrage au plâtre et filasse", "isCorrect": True},
+                        {"text": "Avec de la mousse expansive seule", "isCorrect": False},
+                        {"text": "En laissant un vide d'air libre", "isCorrect": False},
+                        {"text": "Avec une simple bande de papier collée", "isCorrect": False}
                     ],
-                    "correction": "La pose verticale (plaque sur toute la hauteur) est souvent préférée pour minimiser le nombre de joints horizontaux (joints de rabout)."
+                    "correction": "Le 'clavage' ou 'bourrage' final assure la stabilité de la cloison. On utilise un mélange de plâtre et de filasse (fibres végétales) pour combler fermement l'espace résiduel."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Que représente une ligne en traits d'axe (un point, un trait long, un point, un trait long) sur un plan de construction ?",
+                    "question": "Quel outil spécifique, dentelé d'un côté et lisse de l'autre, est utilisé pour gratter et dresser les plâtres traditionnels ?",
                     "answerOptions": [
-                        {"text": "L'axe de symétrie de la construction ou le centre d'une ouverture (fenêtre, porte).", "isCorrect": True, "key": "A"},
-                        {"text": "La limite de propriété du terrain (borne) ou la limite de l'intervention du plâtrier.", "isCorrect": False, "key": "B"},
-                        {"text": "Le contour d'un élément caché (non visible) derrière le plan de coupe (la gaine VMC).", "isCorrect": False, "key": "C"},
-                        {"text": "La ligne de référence utilisée pour le traçage et l'implantation au sol (point de départ).", "isCorrect": False, "key": "D"}
+                        {"text": "Le berthelet", "isCorrect": True},
+                        {"text": "La truelle langue de chat", "isCorrect": False},
+                        {"text": "Le platoir flamand", "isCorrect": False},
+                        {"text": "Le guillaume", "isCorrect": False}
                     ],
-                    "correction": "Les traits d'axe (ou de symétrie) sont cruciaux pour l'implantation et la vérification des distances égales sur le chantier."
+                    "correction": "Le berthelet est l'outil emblématique du plâtrier. Le côté denté sert à dresser (gratter les bosses) et le côté lisse à serrer ou lisser la matière."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Quel est le rôle du 'calepinage' dans la pose d'un plafond suspendu en plaques de plâtre ?",
+                    "question": "Quelle couleur permet d'identifier les carreaux de plâtre hydrofuges ?",
                     "answerOptions": [
-                        {"text": "Déterminer la position des fourrures et des plaques pour l'équilibre des coupes (autour de la pièce).", "isCorrect": True, "key": "A"},
-                        {"text": "Déterminer l'entraxe des montants (M) pour la fixation de l'ossature métallique.", "isCorrect": False, "key": "B"},
-                        {"text": "Calculer la surface totale de la pièce pour l'achat de l'enduit de jointoiement.", "isCorrect": False, "key": "C"},
-                        {"text": "Vérifier la planéité du support existant (le plafond en béton) avant la pose des suspentes.", "isCorrect": False, "key": "D"}
+                        {"text": "Bleu", "isCorrect": True},
+                        {"text": "Rouge", "isCorrect": False},
+                        {"text": "Jaune", "isCorrect": False},
+                        {"text": "Noir", "isCorrect": False}
                     ],
-                    "correction": "Le calepinage permet d'éviter les coupes fines (moins de 15 cm) autour du plafond (esthétique)."
+                    "correction": "Comme pour les plaques, les carreaux de plâtre destinés aux pièces humides sont teintés dans la masse, généralement en bleu (parfois vert selon les fabricants)."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Quel est le nom de l'échelle utilisée pour les plans de détails (jonctions entre deux matériaux différents) ?",
+                    "question": "Qu'est-ce que le 'staff' ?",
                     "answerOptions": [
-                        {"text": "L'échelle 1/2ème, 1/5ème ou 1/10ème (échelle d'agrandissement) pour une vue très précise.", "isCorrect": True, "key": "A"},
-                        {"text": "L'échelle 1/50ème (échelle de travail) pour les plans d'exécution de la pièce.", "isCorrect": False, "key": "B"},
-                        {"text": "L'échelle 1/200ème ou 1/500ème (échelle de réduction) pour une vue globale du bâtiment.", "isCorrect": False, "key": "C"},
-                        {"text": "L'échelle 1/1ème (grandeur nature) pour la reproduction des éléments très fins et visibles.", "isCorrect": False, "key": "D"}
+                        {"text": "Un ouvrage moulé en plâtre armé de filasse", "isCorrect": True},
+                        {"text": "Un enduit extérieur à base de chaux aérienne", "isCorrect": False},
+                        {"text": "Un isolant thermique en laine de roche volcanique", "isCorrect": False},
+                        {"text": "Une technique de peinture décorative à l'éponge", "isCorrect": False}
                     ],
-                    "correction": "L'agrandissement est essentiel pour comprendre les assemblages et les jonctions entre les matériaux."
+                    "correction": "Le staff est un matériau composite constitué de plâtre de moulage armé de fibres (filasse ou toile de verre), utilisé pour créer des éléments décoratifs (corniches, rosaces)."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quel est l'outil utilisé pour transférer la position d'une ouverture (porte ou fenêtre) du sol au plafond pour le traçage des rails ?",
+                    "question": "À quoi sert une 'semelle résiliente' (bande de liège ou plastique) posée au sol avant de monter une cloison en carreaux ?",
                     "answerOptions": [
-                        {"text": "Le fil à plomb (ou le niveau laser vertical) pour le report de la ligne (aplomb).", "isCorrect": True, "key": "A"},
-                        {"text": "Le cordeau à poudre (cordeau traceur) pour marquer les axes de référence.", "isCorrect": False, "key": "B"},
-                        {"text": "La règle de maçon pour vérifier la planéité et le niveau de la dalle de béton.", "isCorrect": False, "key": "C"},
-                        {"text": "Le mètre ruban pour la mesure de la distance entre deux montants (entraxe à 60 cm).", "isCorrect": False, "key": "D"}
+                        {"text": "Désolidariser la cloison du sol", "isCorrect": True},
+                        {"text": "Coller la cloison au carrelage", "isCorrect": False},
+                        {"text": "Décorer le bas de la cloison", "isCorrect": False},
+                        {"text": "Empêcher les insectes de passer", "isCorrect": False}
                     ],
-                    "correction": "Le fil à plomb ou le laser garantit que le rail du haut est parfaitement aligné (verticalement) avec le rail du bas."
+                    "correction": "Cette semelle évite les remontées d'humidité par capillarité et assure une coupure acoustique en empêchant la transmission directe des vibrations au sol."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Que symbolise une hachure régulière et inclinée (à 45°) sur un plan de coupe ?",
+                    "question": "Lors du montage des briques plâtrières, pourquoi faut-il croiser les joints verticaux ?",
                     "answerOptions": [
-                        {"text": "Le matériau coupé par le plan de section (béton, bois, isolant, ou plâtre), selon sa densité.", "isCorrect": True, "key": "A"},
-                        {"text": "La zone où l'isolant acoustique est absent (pont thermique ou pont phonique).", "isCorrect": False, "key": "B"},
-                        {"text": "La zone où le plâtrier a réalisé des travaux de rebouchage ou de lissage (rattrapage de niveau).", "isCorrect": False, "key": "C"},
-                        {"text": "La zone de circulation (chemin de fer) ou la zone de stockage des matériaux lourds.", "isCorrect": False, "key": "D"}
+                        {"text": "Pour assurer la solidité de l'ouvrage", "isCorrect": True},
+                        {"text": "Pour faire joli avant l'enduit", "isCorrect": False},
+                        {"text": "Pour utiliser plus de colle", "isCorrect": False},
+                        {"text": "Pour ventiler l'intérieur du mur", "isCorrect": False}
                     ],
-                    "correction": "Les hachures sont codifiées (norme ISO) et permettent d'identifier le matériau des éléments coupés."
+                    "correction": "Le croisement des joints ('coup de sabre') est une règle fondamentale de maçonnerie pour répartir les charges et éviter qu'une fissure ne traverse tout le mur verticalement."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quel est le nom du point de référence (altitude) à partir duquel sont mesurées toutes les hauteurs sur un plan d'exécution ?",
+                    "question": "Quel terme désigne le récipient rectangulaire utilisé pour transporter le mortier ou le plâtre ?",
                     "answerOptions": [
-                        {"text": "Le Niveau de Référence (NR) ou le Niveau de la Dalle Finie (NF), pour toutes les mesures.", "isCorrect": True, "key": "A"},
-                        {"text": "L'Axe de Symétrie (AS) du bâtiment (centre du plan).", "isCorrect": False, "key": "B"},
-                        {"text": "Le Point de Départ (PD) du traçage, pour l'implantation au sol.", "isCorrect": False, "key": "C"},
-                        {"text": "L'Échelle d'Agrandissement (EA) du plan de détail.", "isCorrect": False, "key": "D"}
+                        {"text": "Auge", "isCorrect": True},
+                        {"text": "Seau", "isCorrect": False},
+                        {"text": "Gamate", "isCorrect": False},
+                        {"text": "Brouette", "isCorrect": False}
                     ],
-                    "correction": "Toutes les hauteurs (planchers, plafonds, fenêtres) sont mesurées à partir d'un niveau zéro (NR ou NF) défini par l'architecte."
+                    "correction": "L'auge (souvent en plastique ou caoutchouc) est le contenant adapté pour préparer ou transporter de petites quantités de matière sur l'échafaudage."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Dans le traçage des rails de sol et de plafond, quelle est la tolérance de verticalité (aplomb) à respecter pour une cloison standard ?",
+                    "question": "Quelle est la finition obtenue en passant une éponge humide sur un enduit plâtre en fin de prise ?",
                     "answerOptions": [
-                        {"text": "2 à 5 mm de tolérance sur toute la hauteur de la cloison (DTU 25.41).", "isCorrect": True, "key": "A"},
-                        {"text": "2 cm de tolérance (tolérance large) pour les cloisons non porteuses.", "isCorrect": False, "key": "B"},
-                        {"text": "0 mm de tolérance (perfection), ce qui est irréalisable sur un chantier standard.", "isCorrect": False, "key": "C"},
-                        {"text": "10 mm de tolérance (1 cm) pour les cloisons de grande hauteur (plus de 3 mètres).", "isCorrect": False, "key": "D"}
+                        {"text": "Finition feutrée", "isCorrect": True},
+                        {"text": "Finition glacée", "isCorrect": False},
+                        {"text": "Finition grattée", "isCorrect": False},
+                        {"text": "Finition rustique", "isCorrect": False}
                     ],
-                    "correction": "Une tolérance est toujours admise, mais l'aplomb doit être le plus parfait possible pour garantir la planéité de l'ouvrage."
+                    "correction": "Le feutrage (passage de l'éponge) permet de gommer les petites traces de platoir et de faire ressortir le grain fin pour obtenir une surface unie et mate."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Que signifie la cotation '± 0,00' sur un plan de niveau (au sol) ?",
+                    "question": "Que doit-on faire si le plâtre commence à prendre dans l'auge avant d'être appliqué ?",
                     "answerOptions": [
-                        {"text": "Le Niveau de Référence (NR) du sol fini (le point zéro de toutes les mesures de hauteur).", "isCorrect": True, "key": "A"},
-                        {"text": "Le Niveau le plus bas (le trou le plus profond) de la dalle de béton.", "isCorrect": False, "key": "B"},
-                        {"text": "Le Niveau du Plafond Suspendu (NPS) fini, après la pose des plaques de plâtre.", "isCorrect": False, "key": "C"},
-                        {"text": "L'épaisseur de la plaque de plâtre BA13 (13 mm) pour le doublage collé.", "isCorrect": False, "key": "D"}
+                        {"text": "Le jeter car il est inutilisable", "isCorrect": True},
+                        {"text": "Rajouter de l'eau et remuer fort", "isCorrect": False},
+                        {"text": "Le chauffer pour le ramollir un peu", "isCorrect": False},
+                        {"text": "Le mélanger avec du plâtre neuf", "isCorrect": False}
                     ],
-                    "correction": "Le +0,00 est le point de référence (sol fini) pour le travail du plâtrier et des autres corps de métier."
+                    "correction": "Un plâtre qui a commencé sa prise est 'mort'. Si on rajoute de l'eau (rebattage), on casse la structure cristalline : le plâtre ne durcira jamais correctement et s'effritera."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Quel est l'outil le plus précis pour vérifier l'équerrage (l'angle droit) des coins d'une pièce ?",
+                    "question": "Comment appelle-t-on la première couche d'enduit projetée grossièrement sur une maçonnerie pour préparer l'accroche ?",
                     "answerOptions": [
-                        {"text": "Le niveau laser (croix) ou l'équerre optique (ou la méthode du 3-4-5).", "isCorrect": True, "key": "A"},
-                        {"text": "Le cordeau à poudre (cordeau traceur) pour marquer l'axe central.", "isCorrect": False, "key": "B"},
-                        {"text": "La truelle de carreleur pour le prélèvement de l'enduit de jointoiement.", "isCorrect": False, "key": "C"},
-                        {"text": "La règle de maçon pour vérifier la planéité et les défauts de niveau.", "isCorrect": False, "key": "D"}
+                        {"text": "Le gobetis", "isCorrect": True},
+                        {"text": "La finition", "isCorrect": False},
+                        {"text": "Le lissage", "isCorrect": False},
+                        {"text": "Le badigeon", "isCorrect": False}
                     ],
-                    "correction": "L'équerre est essentielle pour garantir que la cloison ou le plafond sera parfaitement d'équerre avec le mur adjacent."
+                    "correction": "Le gobetis est une couche d'accrochage rugueuse et fine, riche en liant, qui sert de base au corps d'enduit."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel est le risque de ne pas respecter le Niveau de Référence (NR) pour la pose des rails au sol ?",
+                    "question": "Quel outil permet de projeter le plâtre manuellement sur le mur ?",
                     "answerOptions": [
-                        {"text": "Le risque de non-planéité du sol fini et la difficulté d'aligner les plaques avec d'autres ouvrages.", "isCorrect": True, "key": "A"},
-                        {"text": "Le risque d'une isolation acoustique trop importante, qui nuirait à la transmission du son.", "isCorrect": False, "key": "B"},
-                        {"text": "Le risque de corrosion rapide des montants par l'humidité de l'air ambiant de la pièce.", "isCorrect": False, "key": "C"},
-                        {"text": "Le risque d'intoxication due aux poussières fines générées par les vibrations de la machine.", "isCorrect": False, "key": "D"}
+                        {"text": "La truelle", "isCorrect": True},
+                        {"text": "Le platoir", "isCorrect": False},
+                        {"text": "La taloche", "isCorrect": False},
+                        {"text": "Le couteau", "isCorrect": False}
                     ],
-                    "correction": "Le respect du niveau est critique pour les raccords avec les menuiseries, le sol et les autres cloisons."
+                    "correction": "Le plâtre ou le mortier se jette 'au jeté truelle' d'un coup sec du poignet pour qu'il adhère au support par impact, avant d'être dressé."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Quel est le nom de l'échelle utilisée pour les plans de détails des boîtes de dérivation électrique (détails de jonction) ?",
+                    "question": "Pour réaliser un enduit plâtre manuel, dans quel ordre procède-t-on ?",
                     "answerOptions": [
-                        {"text": "L'échelle 1/2ème (ou plus grande), pour une lecture très précise des assemblages.", "isCorrect": True, "key": "A"},
-                        {"text": "L'échelle 1/50ème (échelle de travail) pour les plans d'exécution de la pièce.", "isCorrect": False, "key": "B"},
-                        {"text": "L'échelle 1/200ème ou 1/500ème (échelle de réduction) pour une vue globale du bâtiment.", "isCorrect": False, "key": "C"},
-                        {"text": "L'échelle 1/1ème (grandeur nature) pour la reproduction des éléments très fins et visibles.", "isCorrect": False, "key": "D"}
+                        {"text": "Jeté puis dressage puis serrage", "isCorrect": True},
+                        {"text": "Serrage puis jeté puis dressage", "isCorrect": False},
+                        {"text": "Lissage puis grattage puis jeté", "isCorrect": False},
+                        {"text": "Ponçage puis peinture puis enduit", "isCorrect": False}
                     ],
-                    "correction": "Les détails d'assemblage (boîtiers, gaines, jonctions) nécessitent une échelle d'agrandissement pour être compris."
-                }
+                    "correction": "On projette d'abord la matière (jeté), on la met à niveau avec la règle (dressage), puis on affine et on densifie la surface (serrage/lissage) au fur et à mesure de la prise."
+                },
             ]
         },
-        # THÈME 5
+        # =========================================================================
+        # THÈME 5 : SANTÉ, SÉCURITÉ ET ENVIRONNEMENT (HSE) (Questions 81 à 100)
+        # =========================================================================
         5: {
-            "name": "Calculs et Métrés",
+            "name": "THÈME 5 : SANTÉ, SÉCURITÉ ET ENVIRONNEMENT (HSE)",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quelle formule simple permet de calculer la surface d'une cloison rectangulaire (métré) ?",
+                    "question": "Que signifie le sigle EPC dans le domaine de la sécurité sur chantier ?",
                     "answerOptions": [
-                        {"text": "Longueur mesurée de la cloison multipliée par la hauteur mesurée (L x h).", "isCorrect": True, "key": "A"},
-                        {"text": "Longueur ajoutée à la hauteur, multipliée par deux ((L + h) x 2).", "isCorrect": False, "key": "B"},
-                        {"text": "Périmètre total de la cloison, divisé par l'épaisseur du doublage isolant.", "isCorrect": False, "key": "C"},
-                        {"text": "Nombre de montants utilisés multiplié par l'entraxe standard de 60 cm.", "isCorrect": False, "key": "D"}
+                        {"text": "Équipement de Protection Collective", "isCorrect": True},
+                        {"text": "Équipement de Prévention Contrôlée", "isCorrect": False},
+                        {"text": "Ensemble de Protection Corporelle", "isCorrect": False},
+                        {"text": "Élément de Précaution Constructive", "isCorrect": False}
                     ],
-                    "correction": "L'aire (surface) se calcule en mètres carrés (m²) : Longueur (m) x Hauteur (m)."
+                    "correction": "Les EPC (garde-corps, filets, échafaudages) sont prioritaires sur les EPI car ils protègent l'ensemble du personnel présent dans la zone de danger."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Si une cloison mesure 6,00 m de long et 2,50 m de haut, quelle est sa surface totale à revêtir en plaques de plâtre ?",
+                    "question": "Quelle est la règle de sécurité fondamentale concernant l'utilisation d'une échelle simple ?",
                     "answerOptions": [
-                        {"text": "15,00 m² (surface brute), sans déduction des ouvertures (portes ou fenêtres).", "isCorrect": True, "key": "A"},
-                        {"text": "8,50 m².", "isCorrect": False, "key": "B"},
-                        {"text": "12,00 m².", "isCorrect": False, "key": "C"},
-                        {"text": "16,00 m².", "isCorrect": False, "key": "D"}
+                        {"text": "Elle est un moyen d'accès et non un poste de travail", "isCorrect": True},
+                        {"text": "Elle doit être tenue par un collègue pendant les travaux", "isCorrect": False},
+                        {"text": "Elle permet de travailler jusqu'à trois mètres de hauteur", "isCorrect": False},
+                        {"text": "Elle doit être fixée au sol par des chevilles métalliques", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 6,00 m x 2,50 m = 15,00 m². Il faudra ensuite déduire la surface des ouvertures (portes, fenêtres)."
+                    "correction": "Le Code du travail interdit d'utiliser une échelle comme poste de travail (risque de chute important). Elle sert uniquement à accéder à un niveau supérieur. Pour travailler, il faut une plate-forme sécurisée (PIRL)."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Quel pourcentage de plaques de plâtre supplémentaires doit-on prévoir au minimum pour compenser les pertes (coupes et casses) sur une cloison simple ?",
+                    "question": "Pour manipuler de la laine de verre ou de roche, quel type de masque respiratoire est recommandé ?",
                     "answerOptions": [
-                        {"text": "5 à 10% de surface supplémentaire, selon la complexité des coupes à réaliser.", "isCorrect": True, "key": "A"},
-                        {"text": "15% de surface supplémentaire, quel que soit le type de pose (droit ou diagonale).", "isCorrect": False, "key": "B"},
-                        {"text": "20% de surface supplémentaire, uniquement pour les cloisons coupe-feu (plaques roses).", "isCorrect": False, "key": "C"},
-                        {"text": "Aucun surplus n'est nécessaire si l'on est très précautionneux avec le matériel.", "isCorrect": False, "key": "D"}
+                        {"text": "Masque jetable FFP2 ou P3", "isCorrect": True},
+                        {"text": "Masque chirurgical bleu", "isCorrect": False},
+                        {"text": "Masque à cartouche gaz", "isCorrect": False},
+                        {"text": "Masque de soudeur ventilé", "isCorrect": False}
                     ],
-                    "correction": "Le surplus permet de couvrir les pertes dues aux découpes (portes, fenêtres, raccords) et aux casses accidentelles."
+                    "correction": "Les masques FFP2 ou P3 filtrent efficacement les poussières fines et les fibres irritantes émises lors de la manipulation des isolants minéraux."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Quelle est la longueur totale de rails (R) à prévoir pour une cloison simple de 8,00 m de long (rails sol et plafond) ?",
+                    "question": "Quels sont les trois éléments obligatoires qui composent un garde-corps de sécurité réglementaire ?",
                     "answerOptions": [
-                        {"text": "16,00 mètres linéaires (ml) (8m au sol + 8m au plafond).", "isCorrect": True, "key": "A"},
-                        {"text": "8,00 mètres linéaires (ml).", "isCorrect": False, "key": "B"},
-                        {"text": "32,00 mètres linéaires (ml).", "isCorrect": False, "key": "C"},
-                        {"text": "4,00 mètres linéaires (ml).", "isCorrect": False, "key": "D"}
+                        {"text": "Lisse et sous-lisse et plinthe", "isCorrect": True},
+                        {"text": "Main courante et montant et diagonale", "isCorrect": False},
+                        {"text": "Tube supérieur et filet et chaîne", "isCorrect": False},
+                        {"text": "Potelet et traverse et butée", "isCorrect": False}
                     ],
-                    "correction": "Calcul : Longueur totale des rails = 8,00 m (sol) + 8,00 m (plafond) = 16,00 ml."
+                    "correction": "Pour empêcher la chute des hommes et des objets, un garde-corps doit comporter une lisse (haute), une sous-lisse (intermédiaire) et une plinthe (basse)."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Une plaque de plâtre standard (BA13) mesure 1,20 m par 2,50 m. Quelle est sa surface en mètres carrés (m²) ?",
+                    "question": "Quelle est la position ergonomique correcte pour soulever une charge lourde au sol ?",
                     "answerOptions": [
-                        {"text": "3,00 m² (1,20 m x 2,50 m).", "isCorrect": True, "key": "A"},
-                        {"text": "30,00 m².", "isCorrect": False, "key": "B"},
-                        {"text": "3,70 m².", "isCorrect": False, "key": "C"},
-                        {"text": "300,00 m².", "isCorrect": False, "key": "D"}
+                        {"text": "Dos droit et jambes fléchies", "isCorrect": True},
+                        {"text": "Dos rond et jambes tendues", "isCorrect": False},
+                        {"text": "Dos cambré et bras tendus", "isCorrect": False},
+                        {"text": "Buste penché en avant et jambes raides", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 1,20 m x 2,50 m = 3,00 m². C'est l'unité de base pour le calcul des surfaces à couvrir."
+                    "correction": "Il faut utiliser la force des cuisses (quadriceps) en gardant la colonne vertébrale droite pour éviter les lésions lombaires."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Combien de plaques de plâtre de 3,00 m² faut-il pour couvrir une surface totale de 45 m² ?",
+                    "question": "Sur un chantier, que signifie un panneau de signalisation rond à fond bleu avec un symbole blanc ?",
                     "answerOptions": [
-                        {"text": "15 plaques (45 m² / 3 m² par plaque).", "isCorrect": True, "key": "A"},
-                        {"text": "10 plaques.", "isCorrect": False, "key": "B"},
-                        {"text": "20 plaques.", "isCorrect": False, "key": "C"},
-                        {"text": "50 plaques.", "isCorrect": False, "key": "D"}
+                        {"text": "Une obligation", "isCorrect": True},
+                        {"text": "Une interdiction", "isCorrect": False},
+                        {"text": "Un avertissement", "isCorrect": False},
+                        {"text": "Une indication", "isCorrect": False}
                     ],
-                    "correction": "Calcul : Nombre de plaques = 45 / 3 = 15 plaques."
+                    "correction": "La signalisation bleue (ex: port du casque, chaussures de sécurité) impose une obligation, contrairement au rouge (interdiction) ou au jaune (danger)."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "L'entraxe des montants (M) est de 0,60 m. Combien de montants sont nécessaires pour une cloison de 4,00 m de long (un montant de départ inclus) ?",
+                    "question": "Dans quelle benne doit-on jeter les chutes de rails et de montants métalliques ?",
                     "answerOptions": [
-                        {"text": "8 montants (4 m / 0,60 m = 6,66, soit 7 intervalles + 1 de départ).", "isCorrect": True, "key": "A"},
-                        {"text": "4 montants.", "isCorrect": False, "key": "B"},
-                        {"text": "6 montants.", "isCorrect": False, "key": "C"},
-                        {"text": "10 montants.", "isCorrect": False, "key": "D"}
+                        {"text": "Déchets industriels banals ou ferraille", "isCorrect": True},
+                        {"text": "Déchets inertes avec les gravats", "isCorrect": False},
+                        {"text": "Déchets dangereux avec les pots de colle", "isCorrect": False},
+                        {"text": "Déchets ménagers avec les emballages repas", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 4,00 / 0,60 = 6,66. Il faut 7 intervalles, donc 8 montants (y compris le montant de départ/fin)."
+                    "correction": "Les ossatures métalliques sont des déchets recyclables (non dangereux et non inertes) qui doivent être dirigés vers la filière métaux/ferraille ou DIB."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "La consommation moyenne d'enduit de jointoiement est de 0,3 kg/m² de plaque. Combien de kg sont nécessaires pour jointer une surface de 60 m² ?",
+                    "question": "Quel est le risque principal lié au ponçage des bandes à joints sans aspiration ?",
                     "answerOptions": [
-                        {"text": "18 kg d'enduit (60 m² x 0,3 kg/m²).", "isCorrect": True, "key": "A"},
-                        {"text": "30 kg d'enduit.", "isCorrect": False, "key": "B"},
-                        {"text": "20 kg d'enduit.", "isCorrect": False, "key": "C"},
-                        {"text": "6 kg d'enduit.", "isCorrect": False, "key": "D"}
+                        {"text": "Inhalation de poussières fines", "isCorrect": True},
+                        {"text": "Risque de coupure aux doigts", "isCorrect": False},
+                        {"text": "Électrocution par la ponceuse", "isCorrect": False},
+                        {"text": "Inflammation spontanée du papier", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 60 x 0,3 = 18 kg. Il faut toujours arrondir à l'unité de vente supérieure (sac de 25 kg par exemple)."
+                    "correction": "La poussière d'enduit est très fine et peut pénétrer profondément dans les voies respiratoires, d'où la nécessité de l'aspiration à la source et du port du masque."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Quel est le nom de l'indice qui mesure la performance de l'isolation acoustique d'une cloison (en décibels, dB) ?",
+                    "question": "Que doit-on faire impérativement avant de changer le disque ou la lame d'un outil électroportatif ?",
                     "answerOptions": [
-                        {"text": "Le coefficient Rw (indice d'affaiblissement acoustique) en décibels (dB).", "isCorrect": True, "key": "A"},
-                        {"text": "Le coefficient R (résistance thermique) en m².K/W.", "isCorrect": False, "key": "B"},
-                        {"text": "Le coefficient lambda (λ) en W/(m.K) pour la conductivité thermique.", "isCorrect": False, "key": "C"},
-                        {"text": "Le coefficient U (déperdition thermique) en W/(m².K).", "isCorrect": False, "key": "D"}
+                        {"text": "Débrancher l'alimentation électrique", "isCorrect": True},
+                        {"text": "Mettre des gants de protection en cuir", "isCorrect": False},
+                        {"text": "Vérifier la date de péremption du disque", "isCorrect": False},
+                        {"text": "Nettoyer le carter de protection à l'eau", "isCorrect": False}
                     ],
-                    "correction": "Plus le Rw est élevé, plus la cloison est isolante aux bruits aériens (ex : Rw 42 dB)."
+                    "correction": "Pour éviter tout démarrage accidentel pendant la manipulation, la déconnexion physique de la source d'énergie (prise ou batterie) est obligatoire."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Quel est le nombre minimum de vis TTPC (Tête Trompette) à prévoir par mètre carré de plaque pour une fixation standard (DTU 25.41) ?",
+                    "question": "Quelle est la charge maximale qu'un travailleur peut porter occasionnellement selon la recommandation du Code du travail ?",
                     "answerOptions": [
-                        {"text": "Environ 13 à 14 vis par m² (vis tous les 30 cm en bord de plaque et sur le montant).", "isCorrect": True, "key": "A"},
-                        {"text": "5 à 6 vis par m² (fixation légère uniquement pour les plafonds).", "isCorrect": False, "key": "B"},
-                        {"text": "30 vis par m² (fixation très renforcée, doublement des montants).", "isCorrect": False, "key": "C"},
-                        {"text": "40 vis par m² (fixation tous les 10 cm, même en plein de la plaque).", "isCorrect": False, "key": "D"}
+                        {"text": "55 kg", "isCorrect": True},
+                        {"text": "25 kg", "isCorrect": False},
+                        {"text": "80 kg", "isCorrect": False},
+                        {"text": "100 kg", "isCorrect": False}
                     ],
-                    "correction": "Le DTU impose un espacement maximal de 30 cm pour les vis sur les montants de la plaque."
+                    "correction": "Bien que le port de charges lourdes soit à limiter au maximum, la norme recommande de ne pas dépasser 55 kg pour un homme (valeur limite occasionnelle)."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Si un rouleau de bande à joint mesure 150 mètres linéaires, combien de rouleaux faut-il pour 600 ml de joints à traiter ?",
+                    "question": "Est-il autorisé de déplacer un échafaudage roulant lorsqu'une personne se trouve dessus ?",
                     "answerOptions": [
-                        {"text": "4 rouleaux (600 ml / 150 ml par rouleau).", "isCorrect": True, "key": "A"},
-                        {"text": "2 rouleaux.", "isCorrect": False, "key": "B"},
-                        {"text": "5 rouleaux.", "isCorrect": False, "key": "C"},
-                        {"text": "10 rouleaux.", "isCorrect": False, "key": "D"}
+                        {"text": "Non jamais", "isCorrect": True},
+                        {"text": "Oui si les roues sont débloquées", "isCorrect": False},
+                        {"text": "Oui si la personne se tient bien", "isCorrect": False},
+                        {"text": "Oui si le sol est parfaitement plat", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 600 / 150 = 4 rouleaux."
+                    "correction": "C'est une interdiction formelle. Le risque de basculement ou de chute de la personne par effet de balancier est trop important."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est le volume d'air (plénum) entre un plafond suspendu (2,40 m) et le plafond existant (2,80 m) pour une pièce de 10 m² ?",
+                    "question": "Que signifie le sigle 'PIRL' souvent utilisé par les plaquistes ?",
                     "answerOptions": [
-                        {"text": "4,00 m³ (Volume = Surface x Épaisseur du vide : 10 m² x 0,40 m).", "isCorrect": True, "key": "A"},
-                        {"text": "2,40 m³.", "isCorrect": False, "key": "B"},
-                        {"text": "28,00 m³.", "isCorrect": False, "key": "C"},
-                        {"text": "10,00 m³.", "isCorrect": False, "key": "D"}
+                        {"text": "Plate-forme Individuelle Roulante Légère", "isCorrect": True},
+                        {"text": "Passerelle Intérieure Rapide et Large", "isCorrect": False},
+                        {"text": "Protection Individuelle Réglementée Légale", "isCorrect": False},
+                        {"text": "Poste Incendie Rapide Localisé", "isCorrect": False}
                     ],
-                    "correction": "Calcul : Épaisseur du vide = 2,80 - 2,40 = 0,40 m. Volume = 10 m² x 0,40 m = 4,00 m³."
+                    "correction": "La PIRL est l'équipement de travail en hauteur privilégié pour le second œuvre, car elle offre un garde-corps sécurisé contrairement à l'escabeau."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Pour un doublage collé, il faut prévoir 5 kg de colle (mortier) par m². Combien de kg sont nécessaires pour une surface de 25 m² ?",
+                    "question": "En cas d'accident sur un chantier, quelle est la première action de la séquence 'PAS' ?",
                     "answerOptions": [
-                        {"text": "125 kg de colle (25 m² x 5 kg/m²).", "isCorrect": True, "key": "A"},
-                        {"text": "50 kg de colle.", "isCorrect": False, "key": "B"},
-                        {"text": "5 kg de colle.", "isCorrect": False, "key": "C"},
-                        {"text": "100 kg de colle.", "isCorrect": False, "key": "D"}
+                        {"text": "Protéger", "isCorrect": True},
+                        {"text": "Alerter", "isCorrect": False},
+                        {"text": "Secourir", "isCorrect": False},
+                        {"text": "Soigner", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 25 m² x 5 kg/m² = 125 kg. Il faudra ensuite déterminer le nombre de sacs de 25 kg nécessaires."
+                    "correction": "La chronologie du sauveteur est P.A.S : Protéger (éviter le sur-accident), Alerter (les secours), Secourir (la victime)."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Comment s'appelle l'étape de vérification des quantités de matériaux (plaques, montants, isolants) sur le chantier ?",
+                    "question": "Quel risque prévient-on en maintenant le chantier rangé et propre (nettoyage au fur et à mesure) ?",
                     "answerOptions": [
-                        {"text": "L'inventaire ou le contrôle de réception des matériaux (comparaison avec le devis).", "isCorrect": True, "key": "A"},
-                        {"text": "Le calepinage du support (traçage des axes et des lignes de référence).", "isCorrect": False, "key": "B"},
-                        {"text": "Le ragréage de la dalle (lissage de la surface pour la planéité).", "isCorrect": False, "key": "C"},
-                        {"text": "La pose à joints croisés (décalage de l'alignement des plaques).", "isCorrect": False, "key": "D"}
+                        {"text": "Chute de plain-pied", "isCorrect": True},
+                        {"text": "Risque chimique", "isCorrect": False},
+                        {"text": "Risque électrique", "isCorrect": False},
+                        {"text": "Nuisance sonore", "isCorrect": False}
                     ],
-                    "correction": "Il est essentiel de s'assurer que les quantités livrées correspondent au métré et au surplus commandé."
+                    "correction": "Les chutes de plain-pied (trébucher sur des gravats, glisser sur des chutes) représentent une part majeure des accidents du travail dans le BTP."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Si l'on estime la perte (chutes) d'isolant à 10% pour une surface de 80 m², quelle est la surface totale d'isolant à commander ?",
+                    "question": "Pourquoi est-il interdit de jeter les chutes de plâtre mélangées avec les gravats de béton (inertes) ?",
                     "answerOptions": [
-                        {"text": "88 m² (80 m² + 10% de 80 m²).", "isCorrect": True, "key": "A"},
-                        {"text": "80 m² (pas de perte nécessaire).", "isCorrect": False, "key": "B"},
-                        {"text": "72 m² (déduction de la perte de 10% de la surface).", "isCorrect": False, "key": "C"},
-                        {"text": "90 m² (arrondi à la dizaine supérieure).", "isCorrect": False, "key": "D"}
+                        {"text": "Le plâtre génère des sulfates polluants", "isCorrect": True},
+                        {"text": "Le plâtre est trop léger et s'envole", "isCorrect": False},
+                        {"text": "Le béton va durcir trop vite au contact", "isCorrect": False},
+                        {"text": "Les décharges refusent la couleur blanche", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 80 x 1,10 = 88 m². Le pourcentage de perte s'ajoute à la surface nette."
+                    "correction": "Le plâtre (sulfate de calcium) peut réagir chimiquement avec l'eau et les matières organiques dans les décharges de classe 3 (inertes), créant des gaz malodorants (H2S)."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Un pot d'enduit de lissage de 20 kg couvre 100 m² en une passe. Combien de pots sont nécessaires pour 250 m² en deux passes (deux couches) ?",
+                    "question": "Que doit vérifier l'ouvrier avant de monter sur un échafaudage fixe chaque matin ?",
                     "answerOptions": [
-                        {"text": "5 pots (250 m² x 2 passes = 500 m² / 100 m² par pot).", "isCorrect": True, "key": "A"},
-                        {"text": "2 pots (insuffisant).", "isCorrect": False, "key": "B"},
-                        {"text": "4 pots.", "isCorrect": False, "key": "C"},
-                        {"text": "6 pots.", "isCorrect": False, "key": "D"}
+                        {"text": "La présence de l'affiche de réception verte", "isCorrect": True},
+                        {"text": "La marque du fabricant de l'échafaudage", "isCorrect": False},
+                        {"text": "La propreté des tubes métalliques", "isCorrect": False},
+                        {"text": "La météo prévue pour le lendemain", "isCorrect": False}
                     ],
-                    "correction": "Calcul : Surface totale à couvrir = 250 m² x 2 = 500 m². Nombre de pots = 500 / 100 = 5 pots."
+                    "correction": "L'échafaudage doit avoir été réceptionné (vérifié) et porter une fiche (généralement verte) indiquant qu'il est conforme et utilisable en sécurité."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quel est le nom du coefficient qui mesure la déperdition thermique (perte de chaleur) d'une paroi (mur, plafond) ?",
+                    "question": "Quel EPI est spécifique pour protéger les genoux du carreleur ou du plaquiste lors des travaux au sol ?",
                     "answerOptions": [
-                        {"text": "Le coefficient U (Déperdition ou Transmission Thermique) en W/(m².K).", "isCorrect": True, "key": "A"},
-                        {"text": "Le coefficient R (Résistance Thermique) en m².K/W.", "isCorrect": False, "key": "B"},
-                        {"text": "Le coefficient lambda (λ) en W/(m.K) pour la conductivité thermique.", "isCorrect": False, "key": "C"},
-                        {"text": "Le coefficient Rw (Affaiblissement Acoustique) en dB.", "isCorrect": False, "key": "D"}
+                        {"text": "Genouillères", "isCorrect": True},
+                        {"text": "Guêtres", "isCorrect": False},
+                        {"text": "Jambières", "isCorrect": False},
+                        {"text": "Cuissardes", "isCorrect": False}
                     ],
-                    "correction": "Le coefficient U est l'inverse de R. Plus le U est faible, plus la paroi est isolante."
+                    "correction": "Les genouillères (intégrées au pantalon ou externes) protègent l'articulation (hygroma du genou) et améliorent le confort lors des positions à genoux prolongées."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Quelle est la longueur totale de rails et de montants pour une cloison de 5,00 m de long, avec des montants tous les 0,60 m ?",
+                    "question": "Quelle classe de chaussures de sécurité est recommandée sur un chantier de construction (semelle anti-perforation) ?",
                     "answerOptions": [
-                        {"text": "2 montants = 10 (2 R x 5) + 10 montants = 25 (10 M x 2,5) = 35 ml (environ).", "isCorrect": True, "key": "A"},
-                        {"text": "30 mètres linéaires.", "isCorrect": False, "key": "B"},
-                        {"text": "15 mètres linéaires.", "isCorrect": False, "key": "C"},
-                        {"text": "50 mètres linéaires.", "isCorrect": False, "key": "D"}
+                        {"text": "S3 ou S1P", "isCorrect": True},
+                        {"text": "S1", "isCorrect": False},
+                        {"text": "SB", "isCorrect": False},
+                        {"text": "OB", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 2 Rails de 5m = 10 ml. 5m/0,60 = 8,33 soit 9 montants + 1 (pour l'ouverture) = 10 montants de 2,5m = 25 ml. Total : 10 + 25 = 35 ml."
+                    "correction": "La norme S3 (ou S1P pour milieu sec) garantit une coque de protection, une semelle anti-perforation et une semelle à crampons, indispensables face aux clous et vis au sol."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Pour une cloison de 10 m², avec un doublage double peau (2 plaques de plâtre BA13 de chaque côté), quelle est la surface totale de plaques à commander (hors surplus) ?",
+                    "question": "Quel est le niveau sonore à partir duquel l'employeur doit fournir des protections auditives ?",
                     "answerOptions": [
-                        {"text": "40 m² (10 m² x 4 couches de plaques).", "isCorrect": True, "key": "A"},
-                        {"text": "20 m² (10 m² x 2 couches).", "isCorrect": False, "key": "B"},
-                        {"text": "10 m² (surface brute).", "isCorrect": False, "key": "C"},
-                        {"text": "50 m².", "isCorrect": False, "key": "D"}
+                        {"text": "80 dB", "isCorrect": True},
+                        {"text": "120 dB", "isCorrect": False},
+                        {"text": "50 dB", "isCorrect": False},
+                        {"text": "100 dB", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 10 m² (face A) x 2 couches + 10 m² (face B) x 2 couches = 40 m²."
+                    "correction": "Dès 80 dB(A), l'employeur doit mettre des protections à disposition. Le port devient obligatoire pour le salarié à partir de 85 dB(A)."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quel est l'outil le plus précis pour vérifier la planéité et le niveau d'un rail de plafond pour l'implantation ?",
+                    "question": "Que doit-on utiliser pour travailler en hauteur au-dessus d'une trémie d'escalier ouverte ?",
                     "answerOptions": [
-                        {"text": "Le niveau laser rotatif ou le niveau à bulle (long) sur la règle à maçon.", "isCorrect": True, "key": "A"},
-                        {"text": "Le cordeau à poudre, utilisé uniquement pour le traçage horizontal.", "isCorrect": False, "key": "B"},
-                        {"text": "La règle de maçon pour vérifier la planéité et les défauts de niveau au sol.", "isCorrect": False, "key": "C"},
-                        {"text": "La truelle de carreleur pour le prélèvement de l'enduit de jointoiement.", "isCorrect": False, "key": "D"}
+                        {"text": "Un plancher provisoire jointif et sécurisé", "isCorrect": True},
+                        {"text": "Une simple planche de bois posée en travers", "isCorrect": False},
+                        {"text": "Une échelle appuyée sur le mur opposé", "isCorrect": False},
+                        {"text": "Une corde nouée à la charpente", "isCorrect": False}
                     ],
-                    "correction": "Le niveau laser ou la règle et le niveau sont essentiels pour garantir que le rail est parfaitement horizontal avant la fixation."
+                    "correction": "Les trémies (trous) doivent être impérativement obturées par un plancher provisoire fixé et résistant ou sécurisées par des garde-corps périphériques pour éviter la chute de grande hauteur."
                 }
             ]
         }

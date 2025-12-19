@@ -1,1143 +1,1143 @@
 quiz_data = {
-    "title": "Quiz CAP Peinture en Carrosserie : Révisions Complètes (100 Questions)",
+    "title": "Quiz CAP Peinture en Carrosserie (100 Questions)",
     "themes": {
         # =========================================================================
-        # THÈME 1 : PRÉPARATION DES SURFACES ET DÉGRAISSAGE (Q. 1-20)
+        # THÈME 1 : PRÉPARATION DES FONDS ET DES SURFACES (Questions 1 à 20)
         # =========================================================================
         1: {
-            "name": "1. Préparation des Surfaces et Dégraissage (Q. 1-20)",
+            "name": "THÈME 1 : PRÉPARATION DES FONDS ET DES SURFACES",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quelle est la principale fonction du mastic polyester bi-composant dans le processus de carrosserie ?",
+                    "question": "Quel abrasif est généralement recommandé pour le dégrossissage d'un mastic polyester ?",
                     "answerOptions": [
-                        {"text": "Assurer la protection anti-corrosion du métal nu.", "isCorrect": False},
-                        {"text": "Rendre la surface du métal brillante avant l'apprêt.", "isCorrect": False},
-                        {"text": "Reboucher des enfoncements importants et corriger des défauts de planéité.", "isCorrect": True},
-                        {"text": "Servir de couche de finition directement avant le vernis.", "isCorrect": False}
+                        {"text": "P80", "isCorrect": True},
+                        {"text": "P240", "isCorrect": False},
+                        {"text": "P400", "isCorrect": False},
+                        {"text": "P800", "isCorrect": False}
                     ],
-                    "correction": "Le **mastic polyester** (avec durcisseur) est essentiel pour **rattraper les creux et les déformations profondes** (jusqu'à plusieurs millimètres) de la tôle, car il sèche rapidement et offre une épaisseur importante. Il doit toujours être recouvert d'un apprêt."
+                    "correction": "Le grain P80 est agressif pour la mise en forme initiale."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Pour le ponçage d'un mastic polyester, quelle granulométrie est généralement utilisée pour l'étape de dégrossissage (avant l'affinement) ?",
+                    "question": "Quelle est la fonction principale d'un apprêt garnissant appliqué sur un élément réparé ?",
                     "answerOptions": [
-                        {"text": "P1000 à P2000 (Très fin)", "isCorrect": False},
-                        {"text": "P400 à P600 (Finition apprêt)", "isCorrect": False},
-                        {"text": "P80 à P150 (Dégrossissage)", "isCorrect": True},
-                        {"text": "P30 à P60 (Très grossier, réservé au décapage)", "isCorrect": False}
+                        {"text": "Combler les rayures de ponçage", "isCorrect": True},
+                        {"text": "Assurer la protection anticorrosion de la tôle nue", "isCorrect": False},
+                        {"text": "Donner la teinte finale du véhicule", "isCorrect": False},
+                        {"text": "Rendre la surface brillante avant vernissage", "isCorrect": False}
                     ],
-                    "correction": "Le dégrossissage du mastic doit se faire avec des abrasifs de faible granulométrie (ex: **P80 à P150**) pour retirer rapidement l'excédent de matière. On progresse ensuite vers P240/P320 pour préparer la pose de l'apprêt."
+                    "correction": "Il remplit les micro-rayures et uniformise le fond."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quel est le rôle principal de l'apprêt garnissant (ou « filler ») dans le cycle de peinture ?",
+                    "question": "Quel produit doit impérativement être appliqué sur une tôle en acier mise à nu pour éviter l'oxydation immédiate ?",
                     "answerOptions": [
-                        {"text": "Remplacer la couche de base colorée.", "isCorrect": False},
-                        {"text": "Combler les micro-rayures de ponçage et isoler le support.", "isCorrect": True},
-                        {"text": "Fournir la brillance finale.", "isCorrect": False},
-                        {"text": "Accélérer le séchage de la peinture de finition.", "isCorrect": False}
+                        {"text": "Impression phosphatante", "isCorrect": True},
+                        {"text": "Mastic de finition", "isCorrect": False},
+                        {"text": "Vernis bi-composant", "isCorrect": False},
+                        {"text": "Diluant de nettoyage", "isCorrect": False}
                     ],
-                    "correction": "L'**apprêt garnissant** est appliqué après le mastic pour **\"garnir\"** les petites imperfections, les porosités du mastic et les fines rayures laissées par le ponçage précédent. Il crée une surface lisse et uniforme pour la peinture de finition."
+                    "correction": "L'impression phosphatante assure la protection chimique anticorrosion."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Avant d'appliquer un primaire ou un apprêt sur une zone de métal nu, quelle étape est cruciale pour prévenir la corrosion ?",
+                    "question": "Quelle étape précède immédiatement l'application du mastic sur une zone redressée ?",
                     "answerOptions": [
-                        {"text": "L'application d'un diluant de nettoyage.", "isCorrect": False},
-                        {"text": "Le ponçage à l'eau de la zone.", "isCorrect": False},
-                        {"text": "L'application d'un primaire d'adhérence époxy ou phosphatant (Wash Primer).", "isCorrect": True},
-                        {"text": "Le lustrage de la zone.", "isCorrect": False}
+                        {"text": "Dégraissage", "isCorrect": True},
+                        {"text": "Mouillage", "isCorrect": False},
+                        {"text": "Lustrage", "isCorrect": False},
+                        {"text": "Vernissage", "isCorrect": False}
                     ],
-                    "correction": "Sur le métal nu, il est impératif d'appliquer un **primaire anti-corrosion** (souvent phosphatant ou époxy, dit 'Wash Primer') pour garantir l'adhérence des couches suivantes et **protéger le support** contre l'oxydation."
+                    "correction": "Le dégraissage élimine les contaminants pour l'adhérence."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "L'opération de décrochage (ou déglacage) consiste à :",
+                    "question": "Quel est le risque principal d'un ponçage à l'eau sur un mastic polyester standard ?",
                     "answerOptions": [
-                        {"text": "Retirer totalement l'ancienne peinture jusqu'à la tôle.", "isCorrect": False},
-                        {"text": "Matifier et créer une micro-rugosité sur l'ancienne peinture intacte.", "isCorrect": True},
-                        {"text": "Appliquer un produit chimique pour faire 'friser' l'ancien revêtement.", "isCorrect": False},
-                        {"text": "Nettoyer la surface avec de l'eau savonneuse.", "isCorrect": False}
+                        {"text": "Absorption d'humidité", "isCorrect": True},
+                        {"text": "Durcissement excessif", "isCorrect": False},
+                        {"text": "Changement de couleur", "isCorrect": False},
+                        {"text": "Échauffement de la tôle", "isCorrect": False}
                     ],
-                    "correction": "Le **décrochage** se fait par ponçage fin (ex: P600 à P1000) ou avec des pâtes matifiantes. Il permet de **casser le brillant de l'ancienne peinture** pour offrir une accroche mécanique parfaite aux nouvelles couches."
+                    "correction": "Le mastic est hygroscopique et absorbe l'eau (risque de cloques)."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Quel type d'abrasif est le mieux adapté pour le ponçage de l'apprêt avant l'application de la base mate (couche de couleur) ?",
+                    "question": "Pour identifier un pare-chocs en polypropylène avant réparation, quel code matière recherche-t-on ?",
                     "answerOptions": [
-                        {"text": "P40 à P80.", "isCorrect": False},
-                        {"text": "P220 à P320.", "isCorrect": False},
-                        {"text": "P400 à P800 (selon le type de peinture).", "isCorrect": True},
-                        {"text": "P1500 à P3000.", "isCorrect": False}
+                        {"text": "PP", "isCorrect": True},
+                        {"text": "ABS", "isCorrect": False},
+                        {"text": "PUR", "isCorrect": False},
+                        {"text": "GRP", "isCorrect": False}
                     ],
-                    "correction": "L'apprêt doit être poncé très finement, généralement entre **P400 et P800 (à sec ou à l'eau)**. Si la surface est trop rugueuse, les rayures (appelées 'repasse') seront visibles à travers la couche de finition."
+                    "correction": "PP désigne le Polypropylène."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quel outil ou produit est le plus efficace pour vérifier la planéité d'une surface mastiquée ou apprêtée ?",
+                    "question": "Quel outil est utilisé pour vérifier la planéité d'une surface mastiquée au cours du ponçage ?",
                     "answerOptions": [
-                        {"text": "Un mètre ruban standard.", "isCorrect": False},
-                        {"text": "Un pèse-personne.", "isCorrect": False},
-                        {"text": "Une brosse métallique.", "isCorrect": False},
-                        {"text": "Une cale à poncer longue et/ou un guide de ponçage (poudre ou bombe).", "isCorrect": True}
+                        {"text": "Guide de ponçage", "isCorrect": True},
+                        {"text": "Lampe infrarouge", "isCorrect": False},
+                        {"text": "Viscosimètre", "isCorrect": False},
+                        {"text": "Hygromètre", "isCorrect": False}
                     ],
-                    "correction": "Une **cale à poncer longue et rigide** permet de suivre les courbes et de détecter les creux/bosses. L'utilisation d'un **guide de ponçage** (produit teinté) révèle immédiatement les zones non poncées (creux)."
+                    "correction": "La poudre guide révèle les creux et bosses."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Le dégraissage d'une surface avant la peinture est primordial car il élimine :",
+                    "question": "Quelle est la conséquence d'un catalyseur mal dosé (excès) dans un mastic polyester ?",
                     "answerOptions": [
-                        {"text": "Les grosses saletés et la rouille.", "isCorrect": False},
-                        {"text": "Les rayures profondes dues au ponçage.", "isCorrect": False},
-                        {"text": "Les corps gras, silicones et cires qui provoquent des cratères (siliconage).", "isCorrect": True},
-                        {"text": "La couleur d'origine du véhicule.", "isCorrect": False}
+                        {"text": "Apparition de taches", "isCorrect": True},
+                        {"text": "Absence de séchage", "isCorrect": False},
+                        {"text": "Coulures importantes", "isCorrect": False},
+                        {"text": "Manque de garnissant", "isCorrect": False}
                     ],
-                    "correction": "Les **silicones et les corps gras** sont les ennemis de la peinture car ils repoussent le produit. Le dégraissage (avec un dégraissant anti-silicone) est l'étape finale avant l'application pour éviter les **cratères** (défaut de siliconage)."
+                    "correction": "L'excès de durcisseur provoque des taches (saignement) dans la finition."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Que se passe-t-il si l'on applique directement un mastic polyester sur de l'ancienne peinture thermoplastique (sensible aux solvants) ?",
+                    "question": "Quel type de ponceuse est le plus adapté pour la finition des apprêts avant peinture ?",
                     "answerOptions": [
-                        {"text": "Le mastic sèche plus vite que d'habitude.", "isCorrect": False},
-                        {"text": "Le temps de séchage n'est pas affecté.", "isCorrect": False},
-                        {"text": "La qualité de l'adhérence est améliorée.", "isCorrect": False},
-                        {"text": "La peinture ancienne se soulève (frise) sous l'effet des solvants du mastic.", "isCorrect": True}
+                        {"text": "Orbitale", "isCorrect": True},
+                        {"text": "À bande", "isCorrect": False},
+                        {"text": "Circulaire", "isCorrect": False},
+                        {"text": "Vibrante linéaire", "isCorrect": False}
                     ],
-                    "correction": "Le mastic est très concentré en solvants forts. S'il est appliqué sur un ancien revêtement non compatible, les solvants vont 'attaquer' et faire **friser ou soulever** (cloquage) l'ancienne peinture."
+                    "correction": "L'orbitale évite les rayures profondes et orientées."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Quelle est la principale différence entre un mastic standard et un mastic de finition (ou fin) ?",
+                    "question": "Lors du marouflage, quel accessoire permet d'éviter la formation d'une arête de vernis lors d'un raccord ?",
                     "answerOptions": [
-                        {"text": "Le mastic standard ne contient pas de durcisseur.", "isCorrect": False},
-                        {"text": "Le mastic standard est moins cher.", "isCorrect": False},
-                        {"text": "Le mastic de finition a une granulométrie plus fine pour les petites imperfections.", "isCorrect": True},
-                        {"text": "Le mastic de finition est appliqué directement sur le vernis.", "isCorrect": False}
+                        {"text": "Ruban mousse", "isCorrect": True},
+                        {"text": "Papier kraft", "isCorrect": False},
+                        {"text": "Film polyéthylène", "isCorrect": False},
+                        {"text": "Adhésif aluminium", "isCorrect": False}
                     ],
-                    "correction": "Le **mastic de finition** est plus crémeux et contient des charges plus fines, permettant de **boucher les micro-pores** ou les rayures très légères laissées par le ponçage du mastic standard, avant l'apprêt."
+                    "correction": "Le ruban mousse crée une transition douce du brouillard."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "La fonction de la bande cache (ruban adhésif) en carrosserie est de :",
+                    "question": "Sur un élément en aluminium, quel type de mastic spécifique est recommandé pour garantir l'adhérence ?",
                     "answerOptions": [
-                        {"text": "Séparer les couches de base et le vernis.", "isCorrect": False},
-                        {"text": "Maintenir le papier de ponçage sur la cale.", "isCorrect": False},
-                        {"text": "Délimiter la zone à peindre et protéger les pièces adjacentes.", "isCorrect": True},
-                        {"text": "Accélérer le séchage des produits.", "isCorrect": False}
+                        {"text": "Mastic alu", "isCorrect": True},
+                        {"text": "Mastic fibre", "isCorrect": False},
+                        {"text": "Mastic universel", "isCorrect": False},
+                        {"text": "Mastic étain", "isCorrect": False}
                     ],
-                    "correction": "Le masquage (ou **bande cache**) est essentiel pour créer des lignes de peinture nettes, protéger les joints, les vitres et les pièces qui ne doivent pas recevoir de projection de peinture ou d'apprêt."
+                    "correction": "Formulé spécifiquement pour l'adhérence sur alu."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quel est l'intérêt d'utiliser un primaire anticorrosion époxy par rapport à un primaire phosphatant (Wash Primer) ?",
+                    "question": "Quelle précaution est primordiale lors du ponçage des bords d'une zone de réparation (dégradé) ?",
                     "answerOptions": [
-                        {"text": "Il est moins cher.", "isCorrect": False},
-                        {"text": "Il sèche instantanément.", "isCorrect": False},
-                        {"text": "Il offre une meilleure isolation chimique et une meilleure épaisseur (garnissage léger).", "isCorrect": True},
-                        {"text": "Il est monocouche et ne nécessite pas d'apprêt.", "isCorrect": False}
+                        {"text": "Affiner le grain", "isCorrect": True},
+                        {"text": "Appuyer fort", "isCorrect": False},
+                        {"text": "Utiliser de l'eau", "isCorrect": False},
+                        {"text": "Chauffer la zone", "isCorrect": False}
                     ],
-                    "correction": "L'époxy (bi-composant) offre une **barrière plus épaisse et plus imperméable** entre le métal nu et l'humidité, offrant une protection anticorrosion supérieure, avec parfois un léger pouvoir garnissant."
+                    "correction": "Affiner le grain en périphérie évite les rayures visibles."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Après le ponçage final d'un apprêt à P600, comment doit se présenter le support pour recevoir la base mate ?",
+                    "question": "Quel est le grain de finition standard à sec pour un apprêt avant l'application d'une base hydrodiluable ?",
                     "answerOptions": [
-                        {"text": "Complètement brillant et lustré.", "isCorrect": False},
-                        {"text": "Légèrement rouillé.", "isCorrect": False},
-                        {"text": "Mat, sans rayure visible et parfaitement lisse au toucher.", "isCorrect": True},
-                        {"text": "Avec de fines particules de poussière de ponçage.", "isCorrect": False}
+                        {"text": "P500", "isCorrect": True},
+                        {"text": "P120", "isCorrect": False},
+                        {"text": "P240", "isCorrect": False},
+                        {"text": "P800", "isCorrect": False}
                     ],
-                    "correction": "Le support doit être **parfaitement mat** (décroché) pour l'accroche. Il doit être **lisse** (pas de rayures visibles ou senties) pour que la couche de base, très fine, ne révèle pas les défauts de ponçage."
+                    "correction": "P500 est le standard pour éviter les spectres tout en assurant l'accroche."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Lors du ponçage à l'eau, pourquoi est-il important d'utiliser beaucoup d'eau ?",
+                    "question": "Pourquoi utilise-t-on un dégraissant antisilicone avant chaque étape de ponçage ?",
                     "answerOptions": [
-                        {"text": "Pour diluer la peinture restante.", "isCorrect": False},
-                        {"text": "Pour faire briller la surface.", "isCorrect": False},
-                        {"text": "Pour éviter l'encrassement de l'abrasif et réduire l'échauffement.", "isCorrect": True},
-                        {"text": "Pour faciliter l'adhérence de l'apprêt.", "isCorrect": False}
+                        {"text": "Éviter l'encrassement", "isCorrect": True},
+                        {"text": "Ramollir le vernis", "isCorrect": False},
+                        {"text": "Accélérer le séchage", "isCorrect": False},
+                        {"text": "Polir la surface", "isCorrect": False}
                     ],
-                    "correction": "L'eau agit comme un **lubrifiant** et un **nettoyant**. Elle évacue les résidus de ponçage (boue), empêchant l'abrasif de se saturer et de créer des rayures profondes par échauffement."
+                    "correction": "Pour ne pas incruster les contaminants dans les rayures de ponçage."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quel produit est spécifiquement utilisé pour isoler la peinture existante et masquer une éventuelle sensibilité aux solvants ?",
+                    "question": "Quelle technique de ponçage utilise-t-on pour dresser une grande surface plane mastiquée ?",
                     "answerOptions": [
-                        {"text": "Le vernis bi-composant.", "isCorrect": False},
-                        {"text": "Le dégraissant.", "isCorrect": False},
-                        {"text": "L'eau.", "isCorrect": False},
-                        {"text": "Un isolant (ou Scellant).", "isCorrect": True}
+                        {"text": "Ponçage à la cale longue", "isCorrect": True},
+                        {"text": "Ponçage à la main libre", "isCorrect": False},
+                        {"text": "Ponçage avec une mousse", "isCorrect": False},
+                        {"text": "Ponçage au disque sur chant", "isCorrect": False}
                     ],
-                    "correction": "Un **isolant** (souvent un primaire ou apprêt spécial) est appliqué pour **'isoler'** une ancienne peinture réactive (souvent thermoplastique ou très ancienne) des solvants puissants des nouvelles peintures et apprêts, prévenant ainsi le frisure/soulèvement."
+                    "correction": "La cale longue permet de 'lire' la forme et d'araser les bosses."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Que signifie l'acronyme P.A.O. dans le contexte des produits de peinture ?",
+                    "question": "Quel est l'inconvénient majeur des décapants chimiques modernes par rapport aux méthodes mécaniques ?",
                     "answerOptions": [
-                        {"text": "Produit Adhérent d'Origine.", "isCorrect": False},
-                        {"text": "Peinture Anti-Oxydation.", "isCorrect": False},
-                        {"text": "Poids et Adhérence Optimisés.", "isCorrect": False},
-                        {"text": "Pot-Life (ou Durée de vie en Pot) Après l'ajout du Durcisseur.", "isCorrect": True}
+                        {"text": "Action lente", "isCorrect": True},
+                        {"text": "Poussière excessive", "isCorrect": False},
+                        {"text": "Déformation du métal", "isCorrect": False},
+                        {"text": "Bruit important", "isCorrect": False}
                     ],
-                    "correction": "Le **P.A.O.** est un critère essentiel pour les produits bi-composants (mastic, apprêt, vernis). C'est la **durée** pendant laquelle le produit mélangé (avec son durcisseur) reste utilisable avant de durcir."
+                    "correction": "Action lente, surtout sur peintures d'origine."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Pourquoi est-il interdit d'utiliser de l'alcool à brûler ou de l'essence comme dégraissant de surface ?",
+                    "question": "Quel nom donne-t-on à la couche appliquée sur les plastiques nus pour permettre l'accroche de la peinture ?",
                     "answerOptions": [
-                        {"text": "Ils sont trop chers.", "isCorrect": False},
-                        {"text": "Ils provoquent un séchage trop rapide.", "isCorrect": False},
-                        {"text": "Ils sont trop lents.", "isCorrect": False},
-                        {"text": "Ils laissent des résidus gras ou des traces invisibles qui nuisent à l'adhérence de la peinture.", "isCorrect": True}
+                        {"text": "Primaire d'adhérence", "isCorrect": True},
+                        {"text": "Assouplissant", "isCorrect": False},
+                        {"text": "Promoteur de brillance", "isCorrect": False},
+                        {"text": "Vernis structuré", "isCorrect": False}
                     ],
-                    "correction": "Seul un **dégraissant spécifique anti-silicone** formulé pour la carrosserie garantit une surface exempte de contaminants (corps gras, cires) qui pourraient provoquer des défauts de peinture (cratères)."
+                    "correction": "Crée une liaison chimique sur le support inerte."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Si le ponçage d'un apprêt est incomplet et laisse des creux, quelle sera la conséquence après l'application du vernis ?",
+                    "question": "Que faut-il faire si l'on perce l'apprêt jusqu'à la tôle lors du ponçage de finition ?",
                     "answerOptions": [
-                        {"text": "Le vernis sera plus brillant.", "isCorrect": False},
-                        {"text": "Les creux vont se remplir tout seuls.", "isCorrect": False},
-                        {"text": "La couleur sera plus foncée.", "isCorrect": False},
-                        {"text": "Les défauts (creux/vagues) resteront visibles et seront mis en évidence par le brillant de la finition.", "isCorrect": True}
+                        {"text": "Isoler la zone", "isCorrect": True},
+                        {"text": "Charger en vernis", "isCorrect": False},
+                        {"text": "Appliquer une base", "isCorrect": False},
+                        {"text": "Mettre du polish", "isCorrect": False}
                     ],
-                    "correction": "Le vernis (ou la finition) ne comble pas les défauts de planéité. Si le support n'est pas plat après l'apprêt, le défaut de **planéité** sera d'autant plus visible sous la lumière (effet loupe du brillant)."
+                    "correction": "Isoler avec un wash-primer pour éviter la corrosion et les auréoles."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel est le principal risque si l'on applique l'apprêt sur une zone de ponçage où la poussière n'a pas été parfaitement retirée ?",
+                    "question": "Quelle est l'utilité d'un guide de ponçage en poudre sèche par rapport à un guide en aérosol ?",
                     "answerOptions": [
-                        {"text": "La couleur sera faussée.", "isCorrect": False},
-                        {"text": "Le séchage sera accéléré.", "isCorrect": False},
-                        {"text": "La formation d'une texture rugueuse et granuleuse (gros grains de poussière incrustés).", "isCorrect": True},
-                        {"text": "La brillance sera excessive.", "isCorrect": False}
+                        {"text": "Pas de temps de séchage", "isCorrect": True},
+                        {"text": "Meilleure résistance à l'eau", "isCorrect": False},
+                        {"text": "Couleur plus vive", "isCorrect": False},
+                        {"text": "Protection antirouille", "isCorrect": False}
                     ],
-                    "correction": "La poussière non retirée se mélange au produit lors de l'application, créant une texture rugueuse, appelée **poussière de cabine** (ou empoussiérage). L'utilisation d'une **lingette d'essuyage** (chiffon poisseux) est essentielle avant l'application."
+                    "correction": "Application immédiate sans solvant à évaporer."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quel est le rôle du durcisseur dans les produits bi-composants (mastic, apprêt, vernis) ?",
+                    "question": "Lors de la préparation d'un élément neuf en cataphorèse non poncée, quel tampon abrasif utilise-t-on généralement ?",
                     "answerOptions": [
-                        {"text": "Agir comme un diluant pour fluidifier.", "isCorrect": False},
-                        {"text": "Améliorer la brillance.", "isCorrect": False},
-                        {"text": "Provoquer la réaction chimique de polymérisation pour le séchage dur et définitif.", "isCorrect": True},
-                        {"text": "Fournir la pigmentation.", "isCorrect": False}
+                        {"text": "Rouge", "isCorrect": True},
+                        {"text": "Vert", "isCorrect": False},
+                        {"text": "Gris", "isCorrect": False},
+                        {"text": "Or", "isCorrect": False}
                     ],
-                    "correction": "Les produits 2K (**bi-composants**) ne sèchent pas par simple évaporation mais par **réaction chimique** (polymérisation) initiée par le durcisseur. Cette réaction garantit la résistance mécanique et chimique du revêtement."
+                    "correction": "Le tampon rouge (eq. P400) est utilisé pour le dépolissage avant apprêt mouillé/mouillé."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 2 : SYSTÈMES DE PEINTURE ET COLORIMÉTRIE (Q. 21-40)
+        # THÈME 2 : TECHNOLOGIE DES PRODUITS ET COLORIMÉTRIE (Questions 21 à 40)
         # =========================================================================
         2: {
-            "name": "2. Systèmes de Peinture et Colorimétrie (Q. 21-40)",
+            "name": "THÈME 2 : TECHNOLOGIE DES PRODUITS ET COLORIMÉTRIE",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quel est le principal avantage de la peinture à base d'eau (Hydro) par rapport à la peinture solvantée ?",
+                    "question": "Quel composant de la peinture est responsable de la formation du film solide après séchage ?",
                     "answerOptions": [
-                        {"text": "Un coût d'achat inférieur.", "isCorrect": False},
-                        {"text": "Une réduction significative des Composés Organiques Volatils (COV) pour l'environnement.", "isCorrect": True},
-                        {"text": "Un séchage plus rapide à l'air libre.", "isCorrect": False},
-                        {"text": "Une meilleure résistance aux rayures.", "isCorrect": False}
+                        {"text": "Liant", "isCorrect": True},
+                        {"text": "Pigment", "isCorrect": False},
+                        {"text": "Solvant", "isCorrect": False},
+                        {"text": "Diluant", "isCorrect": False}
                     ],
-                    "correction": "Les peintures **hydrodiluables (à base d'eau)** sont devenues la norme en Europe car elles respectent les normes environnementales strictes en matière d'émissions de **COV** (Composés Organiques Volatils)."
+                    "correction": "Le liant est l'élément filmogène."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Le système de peinture le plus courant sur les véhicules modernes est le système bi-couche. De quelles couches est-il composé ?",
+                    "question": "Sur le cercle chromatique, quelle est la couleur complémentaire du rouge ?",
                     "answerOptions": [
-                        {"text": "Primaire anticorrosion + Apprêt.", "isCorrect": False},
-                        {"text": "Apprêt + Laque brillante.", "isCorrect": False},
-                        {"text": "Base mate colorée + Vernis transparent.", "isCorrect": True},
-                        {"text": "Base mate + Vernis mat.", "isCorrect": False}
+                        {"text": "Le vert", "isCorrect": True},
+                        {"text": "Le bleu", "isCorrect": False},
+                        {"text": "Le jaune", "isCorrect": False},
+                        {"text": "Le violet", "isCorrect": False}
                     ],
-                    "correction": "Le système **bi-couche** est composé de la **Base mate** (qui donne la couleur) et du **Vernis transparent** (qui apporte la brillance, la protection UV et la résistance). La base mate seule n'est pas brillante."
+                    "correction": "Le vert est l'opposé du rouge sur le cercle."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Dans le processus de colorimétrie, qu'appelle-t-on le 'rendu' d'une teinte ?",
+                    "question": "Comment évolue la viscosité d'une peinture lorsque sa température augmente ?",
                     "answerOptions": [
-                        {"text": "Le temps de séchage.", "isCorrect": False},
-                        {"text": "Le taux de COV.", "isCorrect": False},
-                        {"text": "La capacité d'une couleur à couvrir le fond en peu de couches.", "isCorrect": True},
-                        {"text": "La résistance aux produits chimiques.", "isCorrect": False}
+                        {"text": "Elle diminue", "isCorrect": True},
+                        {"text": "Elle augmente", "isCorrect": False},
+                        {"text": "Elle stagne", "isCorrect": False},
+                        {"text": "Elle coagule", "isCorrect": False}
                     ],
-                    "correction": "Le **rendu** (ou pouvoir couvrant) d'une teinte est sa faculté à cacher la couleur du support. Un faible rendu nécessite plus de couches de base, augmentant le risque de défauts."
+                    "correction": "La chaleur fluidifie la peinture (viscosité baisse)."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quel outil est indispensable pour l'identification précise d'une teinte sur un véhicule d'occasion avant d'effectuer la retouche ?",
+                    "question": "Quel phénomène optique désigne le fait qu'une même teinte paraisse différente sous deux éclairages distincts ?",
                     "answerOptions": [
-                        {"text": "Le pistolet à peinture.", "isCorrect": False},
-                        {"text": "Le viscosimètre.", "isCorrect": False},
-                        {"text": "Le spectrophotomètre.", "isCorrect": True},
-                        {"text": "La règle de dilution.", "isCorrect": False}
+                        {"text": "Le métamérisme", "isCorrect": True},
+                        {"text": "La réfraction", "isCorrect": False},
+                        {"text": "Le poudrage", "isCorrect": False},
+                        {"text": "L'opacité", "isCorrect": False}
                     ],
-                    "correction": "Le **spectrophotomètre** est un appareil électronique qui analyse la couleur en mesurant la réflexion de la lumière sous différents angles, permettant de trouver la formule la plus proche de la teinte réelle du véhicule (souvent altérée par l'âge/UV)."
+                    "correction": "Différence de perception selon la source lumineuse."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quel est le rôle principal de la couche de vernis (ou laque transparente) dans le système bi-couche ?",
+                    "question": "Quel est le rôle principal des solvants dans une peinture ?",
                     "answerOptions": [
-                        {"text": "Fournir l'adhérence sur l'apprêt.", "isCorrect": False},
-                        {"text": "Apporter la pigmentation colorée.", "isCorrect": False},
-                        {"text": "Assurer la protection mécanique, chimique et anti-UV de la base mate.", "isCorrect": True},
-                        {"text": "Masquer les défauts de ponçage.", "isCorrect": False}
+                        {"text": "Rendre le produit applicable", "isCorrect": True},
+                        {"text": "Donner la couleur finale", "isCorrect": False},
+                        {"text": "Protéger contre la rouille", "isCorrect": False},
+                        {"text": "Accélérer la polymérisation", "isCorrect": False}
                     ],
-                    "correction": "Le **vernis** est la couche sacrificielle. Il protège la base mate (couleur), très fragile, contre les agressions extérieures (rayures, essence, fientes d'oiseaux) et garantit la brillance."
+                    "correction": "Dissoudre le liant pour permettre l'application."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Que signifie le terme 'teinte métalisée' (ou nacrée) dans le vocabulaire de la peinture automobile ?",
+                    "question": "En synthèse soustractive (peinture), quelles sont les trois couleurs primaires ?",
                     "answerOptions": [
-                        {"text": "Une teinte qui contient une couleur très foncée.", "isCorrect": False},
-                        {"text": "Une teinte qui contient des particules d'aluminium ou de mica pour créer un effet de scintillement.", "isCorrect": True},
-                        {"text": "Une teinte qui doit être appliquée uniquement sur des pièces en métal.", "isCorrect": False},
-                        {"text": "Une teinte dont la base est directement incorporée dans le vernis.", "isCorrect": False}
+                        {"text": "Cyan Magenta Jaune", "isCorrect": True},
+                        {"text": "Rouge Vert Bleu", "isCorrect": False},
+                        {"text": "Noir Blanc Gris", "isCorrect": False},
+                        {"text": "Orange Violet Vert", "isCorrect": False}
                     ],
-                    "correction": "Les teintes **métallisées** (flakes d'aluminium) et **nacrées** (flakes de mica) sont des pigments à effet. Elles nécessitent un vernis pour exister et leur rendu est fortement impacté par l'angle de vision (**angle de réflexion**)."
+                    "correction": "CMJ sont les primaires en matière/peinture."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Pour éviter l'effet de 'nappage' lors de la pulvérisation, le peintre doit veiller à :",
+                    "question": "Que signifie le terme 'Extrait Sec' sur une fiche technique de vernis ?",
                     "answerOptions": [
-                        {"text": "Utiliser une base mate plus diluée.", "isCorrect": False},
-                        {"text": "Respecter un recouvrement d'environ 50% entre chaque passe.", "isCorrect": True},
-                        {"text": "Augmenter la pression d'air au maximum.", "isCorrect": False},
-                        {"text": "Poncer la base mate avant de vernir.", "isCorrect": False}
+                        {"text": "La quantité de matière restante après évaporation", "isCorrect": True},
+                        {"text": "La durée de conservation du produit dans son emballage", "isCorrect": False},
+                        {"text": "Le temps nécessaire pour que la surface soit hors poussière", "isCorrect": False},
+                        {"text": "La quantité de solvant nécessaire pour le nettoyage des outils", "isCorrect": False}
                     ],
-                    "correction": "Le **nappage** est l'effet de marbrure ou de bande (zébrures) dû à un recouvrement insuffisant entre les passes de peinture. Le recouvrement idéal doit être d'environ la moitié du jet du pistolet (50%)."
+                    "correction": "Ce qui reste sur la carrosserie une fois sec."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "La technique de la 'raccord noyé' (ou 'fumé') est utilisée principalement pour :",
+                    "question": "Pour éclaircir une teinte métallisée lors de l'application, quelle action peut-on effectuer ?",
                     "answerOptions": [
-                        {"text": "Peindre des pièces neuves sans couleur.", "isCorrect": False},
-                        {"text": "Éviter une différence de couleur visible en faisant fondre la nouvelle peinture dans l'ancienne.", "isCorrect": True},
-                        {"text": "Appliquer un mastic de finition.", "isCorrect": False},
-                        {"text": "Retirer le vernis sans abîmer la base mate.", "isCorrect": False}
+                        {"text": "Augmenter la distance de projection", "isCorrect": True},
+                        {"text": "Réduire la pression d'air", "isCorrect": False},
+                        {"text": "Utiliser un diluant lent", "isCorrect": False},
+                        {"text": "Charger davantage la couche", "isCorrect": False}
                     ],
-                    "correction": "Le **raccord noyé** est indispensable sur des teintes complexes (métallisées, nacrées). Il consiste à pulvériser progressivement la couleur sur l'ancienne peinture pour **dissimuler la différence** de teinte (le mariage) et la rendre invisible à l'œil."
+                    "correction": "Une application plus sèche/lointaine place l'alu à plat (plus clair)."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel est le risque majeur d'appliquer une couche de vernis trop épaisse sans respecter le temps de désolvatation ?",
+                    "question": "Quel appareil électronique permet de mesurer une teinte sur un véhicule pour trouver sa formule ?",
                     "answerOptions": [
-                        {"text": "Une perte totale de brillance.", "isCorrect": False},
-                        {"text": "Un séchage très rapide.", "isCorrect": False},
-                        {"text": "Une base mate qui se soulève.", "isCorrect": False},
-                        {"text": "L'apparition de 'coulures' et un risque de micro-bulles (piqûres).", "isCorrect": True}
+                        {"text": "Spectrophotomètre", "isCorrect": True},
+                        {"text": "Brillancemètre", "isCorrect": False},
+                        {"text": "Épaissimètre", "isCorrect": False},
+                        {"text": "Colorimètre", "isCorrect": False}
                     ],
-                    "correction": "Appliquer une couche trop épaisse (mouillée) ou ne pas laisser les solvants s'évaporer (désolvatation) avant la couche suivante mène directement aux **coulures**. La désolvatation est le temps de pause obligatoire."
+                    "correction": "Analyse la lumière réfléchie pour identifier la formule."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Si le carrossier constate une incompatibilité entre le vernis et la base mate, quel défaut de surface peut apparaître ?",
+                    "question": "Quelle est la fonction d'un diluant 'raccordeur' utilisé en fin de réparation ?",
                     "answerOptions": [
-                        {"text": "Une corrosion rapide.", "isCorrect": False},
-                        {"text": "Un frisure ou un soulèvement de la couche inférieure.", "isCorrect": True},
-                        {"text": "Une mauvaise planéité.", "isCorrect": False},
-                        {"text": "Une perte de l'effet métallisé.", "isCorrect": False}
+                        {"text": "Fondre le brouillard de vernis", "isCorrect": True},
+                        {"text": "Accélérer le séchage à cœur", "isCorrect": False},
+                        {"text": "Nettoyer le pistolet rapidement", "isCorrect": False},
+                        {"text": "Colorer la zone de transition", "isCorrect": False}
                     ],
-                    "correction": "L'incompatibilité chimique (souvent liée à des solvants trop agressifs) se traduit par une **attaque** de la couche du dessous, provoquant une **frisure** (surface plissée) ou un **soulèvement** (cloques)."
+                    "correction": "Il fusionne le nouveau vernis avec l'ancien."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Quel est le rôle des diluants (ou solvants) dans la préparation de la peinture ?",
+                    "question": "Dans une peinture hydrodiluable, quel est le constituant majoritaire servant de véhicule aux pigments ?",
                     "answerOptions": [
-                        {"text": "Servir d'agent anticorrosion.", "isCorrect": False},
-                        {"text": "Accélérer la polymérisation.", "isCorrect": False},
-                        {"text": "Ajuster la viscosité du produit pour une bonne pulvérisation et tension.", "isCorrect": True},
-                        {"text": "Donner la couleur finale.", "isCorrect": False}
+                        {"text": "L'eau", "isCorrect": True},
+                        {"text": "L'acétone", "isCorrect": False},
+                        {"text": "Le xylène", "isCorrect": False},
+                        {"text": "Le white spirit", "isCorrect": False}
                     ],
-                    "correction": "Les **diluants** permettent d'amener la peinture à la **viscosité** (fluidité) nécessaire pour qu'elle puisse être correctement pulvérisée en fines gouttelettes par le pistolet. Ils s'évaporent au séchage."
+                    "correction": "L'eau remplace les solvants organiques comme vecteur principal."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "L'ajout d'un matant à un vernis standard a pour effet de :",
+                    "question": "Que se passe-t-il si l'on ajoute du blanc dans une teinte pure ?",
                     "answerOptions": [
-                        {"text": "Rendre le vernis plus résistant aux chocs.", "isCorrect": False},
-                        {"text": "Augmenter le temps de séchage.", "isCorrect": False},
-                        {"text": "Réduire le niveau de brillance (Gloss) pour obtenir une finition satinée ou mate.", "isCorrect": True},
-                        {"text": "Accélérer la vitesse de la base mate.", "isCorrect": False}
+                        {"text": "On la dénature", "isCorrect": True},
+                        {"text": "On la sature", "isCorrect": False},
+                        {"text": "On la rompt", "isCorrect": False},
+                        {"text": "On la rabat", "isCorrect": False}
                     ],
-                    "correction": "Les **matants** sont des charges qui diffusent la lumière et réduisent l'effet miroir. Ils permettent de reproduire des **finitions mates ou satinées**, qui sont de plus en plus courantes sur les véhicules haut de gamme."
+                    "correction": "Dénaturer (ou laver) signifie diminuer la saturation."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Lors de la préparation d'une formule de peinture, pourquoi est-il important de mélanger les pots de base (teintométriques) très soigneusement ?",
+                    "question": "Quel est l'effet de l'ajout de 'Flop Control' (additif d'effet) dans une base métallisée ?",
                     "answerOptions": [
-                        {"text": "Pour créer de nouvelles couleurs.", "isCorrect": False},
-                        {"text": "Pour remettre en suspension les pigments et les effets métallisés qui se déposent au fond.", "isCorrect": True},
-                        {"text": "Pour augmenter la viscosité.", "isCorrect": False},
-                        {"text": "Pour éviter la rouille.", "isCorrect": False}
+                        {"text": "Orienter les particules d'aluminium", "isCorrect": True},
+                        {"text": "Augmenter la brillance du vernis", "isCorrect": False},
+                        {"text": "Réduire le temps de séchage", "isCorrect": False},
+                        {"text": "Changer la couleur des pigments", "isCorrect": False}
                     ],
-                    "correction": "Les pigments (couleur) et les particules d'effet (alu, mica) sont lourds et **sédimentent** (se déposent) au fond du pot. Un mélange insuffisant entraînerait une couleur faussée car certains pigments seraient manquants."
+                    "correction": "Favorise l'orientation des paillettes (effet flip-flop)."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Que mesure un viscosimètre (ex: Godet Ford ou DIN) ?",
+                    "question": "Comment appelle-t-on la durée pendant laquelle un mélange peinture/durcisseur est utilisable ?",
                     "answerOptions": [
-                        {"text": "La quantité de vernis restante.", "isCorrect": False},
-                        {"text": "Le taux d'humidité de la cabine.", "isCorrect": False},
-                        {"text": "La fluidité (viscosité) du produit après dilution.", "isCorrect": True},
-                        {"text": "La pression d'air du pistolet.", "isCorrect": False}
+                        {"text": "Pot life", "isCorrect": True},
+                        {"text": "Flash off", "isCorrect": False},
+                        {"text": "Dust free", "isCorrect": False},
+                        {"text": "Tack free", "isCorrect": False}
                     ],
-                    "correction": "Le **viscosimètre** est un outil qui mesure le temps d'écoulement d'un volume donné de produit à travers un orifice calibré. Ce temps (en secondes) indique si la peinture est suffisamment diluée pour être pulvérisée."
+                    "correction": "Vie en pot (durée avant gélification)."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Qu'est-ce qu'un « Tri-couche » ou « Teinte à effet spécial » ?",
+                    "question": "Quel type de pigments offre le meilleur pouvoir couvrant (opacité) ?",
                     "answerOptions": [
-                        {"text": "Une base mate + deux couches de vernis.", "isCorrect": False},
-                        {"text": "Un apprêt + une base mate + un vernis.", "isCorrect": False},
-                        {"text": "Une Base Opacifiante (fond) + une Couche Intermédiaire (effet) + un Vernis Transparent.", "isCorrect": True},
-                        {"text": "Une peinture qui ne nécessite pas d'apprêt.", "isCorrect": False}
+                        {"text": "Minéraux", "isCorrect": True},
+                        {"text": "Organiques", "isCorrect": False},
+                        {"text": "Transparents", "isCorrect": False},
+                        {"text": "Nacrés", "isCorrect": False}
                     ],
-                    "correction": "Les systèmes **Tri-couche** sont utilisés pour les couleurs complexes (nacrés intenses, candy, teintes irisées). Ils nécessitent l'application d'un **fond coloré** (souvent blanc ou gris) pour que la couche intermédiaire puisse développer son effet."
+                    "correction": "Les pigments minéraux sont plus opaques."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Pour un vernis bi-composant 2K, quelle est la principale fonction du catalyseur (ou durcisseur) ?",
+                    "question": "Quelle étape est indispensable avant d'appliquer une teinte sur un élément de carrosserie ?",
                     "answerOptions": [
-                        {"text": "Ralentir le séchage en cas de forte chaleur.", "isCorrect": False},
-                        {"text": "Améliorer la résistance aux rayures avant le séchage.", "isCorrect": False},
-                        {"text": "Provoquer une réaction chimique pour durcir et rendre le film résistant.", "isCorrect": True},
-                        {"text": "Éclaircir la couleur finale.", "isCorrect": False}
+                        {"text": "Réaliser une plaquette test", "isCorrect": True},
+                        {"text": "Chauffer la cabine à 60 degrés", "isCorrect": False},
+                        {"text": "Filtrer la peinture deux fois", "isCorrect": False},
+                        {"text": "Ajouter du vernis dans la base", "isCorrect": False}
                     ],
-                    "correction": "Le catalyseur est le **durcisseur** d'un vernis 2K. Il est essentiel pour la **polymérisation**, transformant le produit liquide en un film solide, durable et résistant aux agressions."
+                    "correction": "Valider la colorimétrie par une touche d'essai."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "En cas de réparation localisée (spot repair), pourquoi doit-on utiliser un diluant de raccord (ou diluant de fondu) ?",
+                    "question": "Pour obtenir une teinte grise neutre, que doit-on mélanger ?",
                     "answerOptions": [
-                        {"text": "Pour rendre le vernis plus mat.", "isCorrect": False},
-                        {"text": "Pour nettoyer la zone à peindre.", "isCorrect": False},
-                        {"text": "Pour faire fondre le bord du vernis neuf dans l'ancien vernis, évitant ainsi une démarcation visible.", "isCorrect": True},
-                        {"text": "Pour accélérer le séchage du vernis.", "isCorrect": False}
+                        {"text": "Noir et Blanc", "isCorrect": True},
+                        {"text": "Bleu et Orange", "isCorrect": False},
+                        {"text": "Rouge et Vert", "isCorrect": False},
+                        {"text": "Jaune et Violet", "isCorrect": False}
                     ],
-                    "correction": "Le **diluant de raccord** est un solvant très fin pulvérisé sur le bord de la zone vernie. Il 'ramollit' et **fait fondre le brouillard** (le bord) du vernis frais avec l'ancien vernis, rendant la transition optiquement invisible."
+                    "correction": "Noir + Blanc = Gris achromatique neutre."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "La viscosité d'une peinture est généralement ajustée par le peintre en fonction de :",
+                    "question": "Qu'indique le temps de 'désolvatation' entre deux couches ?",
                     "answerOptions": [
-                        {"text": "La couleur de la peinture.", "isCorrect": False},
-                        {"text": "La marque de la voiture.", "isCorrect": False},
-                        {"text": "La température de l'atelier/cabine et le type de pistolet.", "isCorrect": True},
-                        {"text": "Le type d'apprêt utilisé.", "isCorrect": False}
+                        {"text": "L'évaporation des solvants", "isCorrect": True},
+                        {"text": "La polymérisation chimique", "isCorrect": False},
+                        {"text": "L'absorption par le support", "isCorrect": False},
+                        {"text": "La fusion des pigments", "isCorrect": False}
                     ],
-                    "correction": "La **température** est le facteur clé. Par temps chaud, on utilise des diluants **lents** pour éviter un séchage trop rapide. Par temps froid, des diluants **rapides** ou moyens sont privilégiés pour garantir une bonne tension du film."
+                    "correction": "Temps d'attente pour l'évaporation (Flash-off)."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quelle est la conséquence d'une pression d'air trop faible lors de la pulvérisation ?",
+                    "question": "Les vernis dits 'UHS' se caractérisent par :",
                     "answerOptions": [
-                        {"text": "La peinture sèche plus vite.", "isCorrect": False},
-                        {"text": "L'effet métallisé est accentué.", "isCorrect": False},
-                        {"text": "Une pulvérisation grossière (peau d'orange) et des risques de projections.", "isCorrect": True},
-                        {"text": "Une consommation excessive de produit.", "isCorrect": False}
+                        {"text": "Une faible teneur en solvants", "isCorrect": True},
+                        {"text": "Une faible résistance aux rayures", "isCorrect": False},
+                        {"text": "Une viscosité très liquide", "isCorrect": False},
+                        {"text": "Un séchage instantané à l'air", "isCorrect": False}
                     ],
-                    "correction": "Une pression trop basse empêche l'atomisation (pulvérisation fine) de la peinture. Le jet est grossier, ce qui entraîne un mauvais tendu du film et l'apparition de la **'peau d'orange'**."
+                    "correction": "Ultra High Solid = Beaucoup de matière, peu de solvant."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Que représentent les codes alphanumériques (ex: 475, P01A, KTH) que l'on trouve sur les véhicules ?",
+                    "question": "Quel solvant ne doit JAMAIS être utilisé pour diluer une peinture polyuréthane 2K ?",
                     "answerOptions": [
-                        {"text": "Le numéro de série du moteur.", "isCorrect": False},
-                        {"text": "La référence du pare-chocs.", "isCorrect": False},
-                        {"text": "Le code de la teinte constructeur.", "isCorrect": True},
-                        {"text": "Le code du modèle de carrosserie.", "isCorrect": False}
+                        {"text": "White Spirit", "isCorrect": True},
+                        {"text": "Diluant universel", "isCorrect": False},
+                        {"text": "Diluant lent", "isCorrect": False},
+                        {"text": "Diluant rapide", "isCorrect": False}
                     ],
-                    "correction": "Le **code couleur** (ou code teinte) est l'identifiant unique de la peinture d'origine du véhicule. Il est généralement situé sur une plaque ou une étiquette (porte, coffre, compartiment moteur) et est le point de départ pour la recherche de la formule."
+                    "correction": "Le White Spirit est incompatible et gras."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 3 : MATÉRIEL, CABINE DE PEINTURE ET APPLICATION (Q. 41-60)
+        # THÈME 3 : MATÉRIELS ET ÉQUIPEMENTS D'APPLICATION (Questions 41 à 60)
         # =========================================================================
         3: {
-            "name": "3. Matériel, Cabine de Peinture et Application (Q. 41-60)",
+            "name": "THÈME 3 : MATÉRIELS ET ÉQUIPEMENTS D'APPLICATION",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel type de pistolet à peinture est reconnu pour son excellent rendement (transfert de produit) et est souvent exigé par les normes environnementales ?",
+                    "question": "Où se situe le réservoir de peinture sur un pistolet standard moderne ?",
                     "answerOptions": [
-                        {"text": "Pistolet Haute Pression (HP)", "isCorrect": False},
-                        {"text": "Pistolet Bas Volume (BV)", "isCorrect": False},
-                        {"text": "Pistolet Haute Volume Basse Pression (HVLP)", "isCorrect": True},
-                        {"text": "Pistolet Électrostatique (ES)", "isCorrect": False}
+                        {"text": "Au-dessus", "isCorrect": True},
+                        {"text": "En dessous", "isCorrect": False},
+                        {"text": "Sur le côté", "isCorrect": False},
+                        {"text": "À distance", "isCorrect": False}
                     ],
-                    "correction": "Le pistolet **HVLP (High Volume Low Pressure)** utilise un grand volume d'air à basse pression. Il permet un taux de transfert de produit (efficacité) supérieur à 65%, ce qui réduit la consommation et la pollution atmosphérique (brouillard)."
+                    "correction": "Pistolet par gravité (godet dessus)."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Quel est le rôle principal du manomètre (ou régulateur) fixé sur le pistolet ?",
+                    "question": "Quelle est la caractéristique principale de la technologie HVLP ?",
                     "answerOptions": [
-                        {"text": "Mesurer la quantité de peinture dans le godet.", "isCorrect": False},
-                        {"text": "Contrôler la pression d'air exacte au niveau de l'entrée du pistolet.", "isCorrect": True},
-                        {"text": "Régler le débit de produit.", "isCorrect": False},
-                        {"text": "Mesurer la température de la cabine.", "isCorrect": False}
+                        {"text": "Basse pression", "isCorrect": True},
+                        {"text": "Haute pression", "isCorrect": False},
+                        {"text": "Jet crayon", "isCorrect": False},
+                        {"text": "Séchage rapide", "isCorrect": False}
                     ],
-                    "correction": "Le **manomètre** permet d'ajuster avec précision la pression de pulvérisation, qui est cruciale pour l'atomisation et la qualité du jet. Cette pression est généralement différente de celle de la ligne d'air principale."
+                    "correction": "High Volume Low Pressure (fort volume, basse pression)."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Quelle est la fonction du filtre de ligne d'air (ou séparateur d'eau et d'huile) dans l'installation de l'atelier ?",
+                    "question": "Quel diamètre de buse est le plus couramment utilisé pour l'application des bases et vernis en carrosserie automobile ?",
                     "answerOptions": [
-                        {"text": "Filtrer la peinture avant de la mettre dans le godet.", "isCorrect": False},
-                        {"text": "Éliminer l'eau, l'huile et les impuretés de l'air comprimé avant qu'il n'atteigne le pistolet.", "isCorrect": True},
-                        {"text": "Réguler la température de l'air.", "isCorrect": False},
-                        {"text": "Accélérer le débit d'air.", "isCorrect": False}
+                        {"text": "1,3 mm", "isCorrect": True},
+                        {"text": "1,8 mm", "isCorrect": False},
+                        {"text": "2,5 mm", "isCorrect": False},
+                        {"text": "0,8 mm", "isCorrect": False}
                     ],
-                    "correction": "L'air comprimé contient de l'humidité et des vapeurs d'huile du compresseur. Ces contaminants provoquent des défauts (cratères, piqûres) dans la peinture. Le **filtre déshydrateur** est une barrière essentielle."
+                    "correction": "Standard finition 1.2 à 1.4 mm."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Comment peut-on identifier si le jet d'un pistolet est correctement réglé et équilibré ?",
+                    "question": "Quelle opération de maintenance doit être effectuée quotidiennement sur le compresseur d'air ?",
                     "answerOptions": [
-                        {"text": "L'éventail est rond.", "isCorrect": False},
-                        {"text": "L'éventail est uniforme, régulier et ovale, sans concentration de produit aux extrémités.", "isCorrect": True},
-                        {"text": "Le débit de peinture est maximal.", "isCorrect": False},
-                        {"text": "Le jet est fin et pointu.", "isCorrect": False}
+                        {"text": "Purger la cuve", "isCorrect": True},
+                        {"text": "Changer les courroies", "isCorrect": False},
+                        {"text": "Remplacer le moteur", "isCorrect": False},
+                        {"text": "Repeindre le châssis", "isCorrect": False}
                     ],
-                    "correction": "Un jet (ou **éventail**) bien réglé doit être **uniforme** et **symétrique** (souvent ovale), permettant une dépose égale de produit. Un jet mal équilibré laisse plus de produit sur les bords, provoquant des traces."
+                    "correction": "Évacuer l'eau de condensation."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Dans la cabine de peinture, la phase d'étuvage (ou cuisson) est réalisée pour :",
+                    "question": "À quoi sert le réglage de la 'largeur de jet' sur un pistolet ?",
                     "answerOptions": [
-                        {"text": "Nettoyer la cabine après la peinture.", "isCorrect": False},
-                        {"text": "Appliquer la couche de vernis.", "isCorrect": False},
-                        {"text": "Accélérer la polymérisation (durcissement) du produit 2K à une température élevée (ex : 60°C).", "isCorrect": True},
-                        {"text": "Refroidir le véhicule.", "isCorrect": False}
+                        {"text": "Aplatir le cône de pulvérisation", "isCorrect": True},
+                        {"text": "Augmenter le débit de produit", "isCorrect": False},
+                        {"text": "Modifier la pression d'entrée", "isCorrect": False},
+                        {"text": "Changer la teinte de la peinture", "isCorrect": False}
                     ],
-                    "correction": "L'**étuvage** est l'étape où la température de la cabine est élevée (souvent 60°C à cœur) pour garantir un séchage rapide et complet des produits bi-composants (apprêts, vernis), assurant leur dureté et résistance finales."
+                    "correction": "Crée un jet plat (éventail) via les cornes du chapeau."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Quelle est la conséquence si la distance de pulvérisation entre le pistolet et la pièce est trop grande ?",
+                    "question": "Quel accessoire utilise-t-on pour mesurer précisément la viscosité d'une peinture avant application ?",
                     "answerOptions": [
-                        {"text": "L'apparition de coulures.", "isCorrect": False},
-                        {"text": "Un manque de mouillé, un effet 'poudré' et un risque de 'peau d'orange'.", "isCorrect": True},
-                        {"text": "Une consommation moindre de produit.", "isCorrect": False},
-                        {"text": "Un film de peinture trop épais.", "isCorrect": False}
+                        {"text": "Coupe Ford", "isCorrect": True},
+                        {"text": "Balance de précision", "isCorrect": False},
+                        {"text": "Règle de mélange", "isCorrect": False},
+                        {"text": "Thermomètre laser", "isCorrect": False}
                     ],
-                    "correction": "Si le pistolet est trop loin, les gouttelettes sèchent avant d'atteindre la pièce (**séchage dans l'air**). Le film manque de **tension** (manque de 'mouillé'), ce qui donne un aspect rugueux et peu brillant (effet poudré ou peau d'orange)."
+                    "correction": "Mesure le temps d'écoulement."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Quel élément de la cabine de peinture est crucial pour capturer le brouillard de peinture et garantir l'évacuation des solvants ?",
+                    "question": "Quelle pression règne à l'intérieur d'une cabine de peinture en fonctionnement ?",
                     "answerOptions": [
-                        {"text": "Les lampes d'éclairage.", "isCorrect": False},
-                        {"text": "Le manomètre.", "isCorrect": False},
-                        {"text": "L'arrivée d'air frais (plénum).", "isCorrect": False},
-                        {"text": "Les filtres d'extraction (ou filtres de sol).", "isCorrect": True}
+                        {"text": "Légère surpression", "isCorrect": True},
+                        {"text": "Forte dépression", "isCorrect": False},
+                        {"text": "Vide partiel", "isCorrect": False},
+                        {"text": "Pression atmosphérique nulle", "isCorrect": False}
                     ],
-                    "correction": "Les **filtres d'extraction** (situés dans le sol ou en bas des parois) piègent les particules de peinture non déposées (brouillard) et assurent le renouvellement d'air constant (tirage) dans la cabine."
+                    "correction": "Empêche l'entrée des poussières extérieures."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quel est le mouvement idéal du pistolet lors de l'application de la peinture ?",
+                    "question": "Quel est le rôle des filtres au sol dans une cabine de peinture ?",
                     "answerOptions": [
-                        {"text": "Un mouvement circulaire très rapide.", "isCorrect": False},
-                        {"text": "Un mouvement de balayage avec un arc de cercle.", "isCorrect": False},
-                        {"text": "Un mouvement parallèle et perpendiculaire à la surface, à vitesse constante.", "isCorrect": True},
-                        {"text": "Un mouvement uniquement par le poignet.", "isCorrect": False}
+                        {"text": "Retenir le brouillard de peinture", "isCorrect": True},
+                        {"text": "Filtrer l'air entrant du plafond", "isCorrect": False},
+                        {"text": "Chauffer l'air de la cabine", "isCorrect": False},
+                        {"text": "Diffuser la lumière uniformément", "isCorrect": False}
                     ],
-                    "correction": "Le bras doit guider le pistolet pour qu'il reste **parallèle et à distance constante** de la pièce. Un mouvement en arc de cercle (par le poignet) entraînerait un dépôt inégal aux extrémités."
+                    "correction": "Piègent l'overspray (particules solides)."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "À quoi sert le détendeur (ou régulateur de pression) sur la sortie du compresseur ?",
+                    "question": "Comment doit-on nettoyer les orifices du chapeau d'air s'ils sont bouchés ?",
                     "answerOptions": [
-                        {"text": "À augmenter la pression d'air au maximum.", "isCorrect": False},
-                        {"text": "À abaisser et stabiliser la pression d'air fournie à l'atelier.", "isCorrect": True},
-                        {"text": "À contrôler la viscosité de la peinture.", "isCorrect": False},
-                        {"text": "À filtrer l'air.", "isCorrect": False}
+                        {"text": "Avec des brosses et aiguilles souples fournies", "isCorrect": True},
+                        {"text": "Avec un foret métallique monté sur perceuse", "isCorrect": False},
+                        {"text": "Avec un fil de fer rigide et pointu", "isCorrect": False},
+                        {"text": "En trempant le pistolet entier dans l'acide", "isCorrect": False}
                     ],
-                    "correction": "Le détendeur prend l'air à haute pression du réservoir et le ramène à une pression de travail utilisable et constante (ex : 6 bars), assurant un **débit stable** aux outils pneumatiques (ponceuse, pistolet)."
+                    "correction": "Ne jamais utiliser de métal dur pour ne pas déformer les trous."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Avant de commencer à peindre, quelle précaution doit prendre le carrossier-peintre concernant son Équipement de Protection Individuelle (EPI) ?",
+                    "question": "Où doit se placer le manomètre pour régler la pression d'application réglementaire ?",
                     "answerOptions": [
-                        {"text": "Mettre uniquement des gants en tissu.", "isCorrect": False},
-                        {"text": "Porter un masque à adduction d'air ou un demi-masque filtrant (A2P3) et une combinaison anti-peluche.", "isCorrect": True},
-                        {"text": "Simplement mettre des lunettes de sécurité.", "isCorrect": False},
-                        {"text": "Ne rien porter du tout.", "isCorrect": False}
+                        {"text": "Au pied du pistolet", "isCorrect": True},
+                        {"text": "À la sortie du compresseur", "isCorrect": False},
+                        {"text": "Sur le mur de la cabine", "isCorrect": False},
+                        {"text": "À l'entrée du filtre épurateur", "isCorrect": False}
                     ],
-                    "correction": "La peinture émet des **vapeurs toxiques (COV)** et des brouillards fins. Le masque (à adduction d'air ou cartouches A2P3) est **obligatoire** pour protéger les voies respiratoires. La combinaison évite la contamination de la peinture par les fibres des vêtements."
+                    "correction": "Pression dynamique mesurée à l'entrée du pistolet."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Quel est l'effet d'une pression d'air trop élevée sur la pulvérisation ?",
+                    "question": "Quel équipement permet d'accélérer le séchage d'une peinture hydrodiluable en forçant l'évaporation de l'eau ?",
                     "answerOptions": [
-                        {"text": "Un risque de coulure élevé.", "isCorrect": False},
-                        {"text": "Augmentation du brouillard (overspray), surconsommation, et perte d'effet métallisé.", "isCorrect": True},
-                        {"text": "Un film de peinture trop épais.", "isCorrect": False},
-                        {"text": "Un mauvais tendu du vernis.", "isCorrect": False}
+                        {"text": "Venturi", "isCorrect": True},
+                        {"text": "Infrarouge court", "isCorrect": False},
+                        {"text": "Décapeur thermique", "isCorrect": False},
+                        {"text": "Chalumeau à gaz", "isCorrect": False}
                     ],
-                    "correction": "Trop de pression crée un jet trop fin et un énorme nuage de peinture (brouillard), réduisant le taux de transfert (gaspillage) et rendant difficile la pose de l'effet métallisé."
+                    "correction": "Le venturi brasse l'air pour évaporer l'eau."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Que doit-on utiliser pour retirer les poussières fines de ponçage de l'apprêt juste avant l'application de la base mate ?",
+                    "question": "Quelle est la couleur normalisée de la bague des filtres respiratoires protégeant contre les gaz et vapeurs organiques ?",
                     "answerOptions": [
-                        {"text": "Un chiffon sec et propre.", "isCorrect": False},
-                        {"text": "Une brosse métallique.", "isCorrect": False},
-                        {"text": "De l'eau savonneuse.", "isCorrect": False},
-                        {"text": "Une lingette d'essuyage (chiffon poisseux ou tack-rag).", "isCorrect": True}
+                        {"text": "Marron", "isCorrect": True},
+                        {"text": "Blanc", "isCorrect": False},
+                        {"text": "Jaune", "isCorrect": False},
+                        {"text": "Vert", "isCorrect": False}
                     ],
-                    "correction": "La **lingette d'essuyage (ou chiffon poisseux)** est légèrement adhésive. Elle est spécifiquement conçue pour capturer les micro-poussières statiques sans laisser de résidus (contrairement à l'air comprimé) juste avant l'application du produit."
+                    "correction": "Type A = Marron (gaz organiques/solvants)."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Dans une cabine de peinture, la surpression (légère pression positive) permet de :",
+                    "question": "Quel défaut de jet obtient-on si le chapeau d'air est sale ou partiellement bouché d'un seul côté ?",
                     "answerOptions": [
-                        {"text": "Augmenter le temps de séchage.", "isCorrect": False},
-                        {"text": "Empêcher les poussières extérieures d'entrer dans la zone de peinture.", "isCorrect": True},
-                        {"text": "Diminuer le débit d'air.", "isCorrect": False},
-                        {"text": "Augmenter la température d'étuvage.", "isCorrect": False}
+                        {"text": "Jet en banane", "isCorrect": True},
+                        {"text": "Jet intermittent", "isCorrect": False},
+                        {"text": "Jet trop large", "isCorrect": False},
+                        {"text": "Jet trop chargé", "isCorrect": False}
                     ],
-                    "correction": "La **surpression** est créée par le fait que le ventilateur d'arrivée d'air est plus puissant que celui d'extraction. Cela garantit que l'air **sorte** toujours de la zone de travail, empêchant la poussière de l'atelier de contaminer la peinture fraîche."
+                    "correction": "Déséquilibre de pression d'air = jet incurvé."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Le diamètre de la buse d'un pistolet à peinture est choisi principalement en fonction de :",
+                    "question": "Quelle est la fonction principale du groupe de traitement d'air (FRL) en cabine ?",
                     "answerOptions": [
-                        {"text": "La taille de la pièce à peindre.", "isCorrect": False},
-                        {"text": "La viscosité du produit à pulvériser (apprêt, base ou vernis).", "isCorrect": True},
-                        {"text": "La couleur de la peinture.", "isCorrect": False},
-                        {"text": "La pression d'air disponible.", "isCorrect": False}
+                        {"text": "Filtrer et réguler l'air", "isCorrect": True},
+                        {"text": "Produire de l'air comprimé", "isCorrect": False},
+                        {"text": "Mélanger la peinture", "isCorrect": False},
+                        {"text": "Refroidir le pistolet", "isCorrect": False}
                     ],
-                    "correction": "Plus le produit est **visqueux** et épais (comme l'apprêt ou les mastics liquides), plus la **buse** doit être large (ex : 1.7 à 2.0 mm). Pour les bases mates et vernis, une buse plus fine (ex : 1.2 à 1.4 mm) est utilisée."
+                    "correction": "Filtre l'eau/huile et régule la pression."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Qu'est-ce qui caractérise la technique d'application en couches croisées ?",
+                    "question": "Quelle est l'orbite (excentricité) recommandée pour une ponceuse de finition avant lustrage ?",
                     "answerOptions": [
-                        {"text": "Appliquer la peinture uniquement de haut en bas.", "isCorrect": False},
-                        {"text": "Appliquer la peinture de gauche à droite uniquement.", "isCorrect": False},
-                        {"text": "Appliquer deux couches sans temps de séchage intermédiaire.", "isCorrect": False},
-                        {"text": "Appliquer une première passe horizontale, puis une deuxième passe verticale (ou inversement).", "isCorrect": True}
+                        {"text": "2,5 mm", "isCorrect": True},
+                        {"text": "5,0 mm", "isCorrect": False},
+                        {"text": "7,0 mm", "isCorrect": False},
+                        {"text": "10 mm", "isCorrect": False}
                     ],
-                    "correction": "Les **couches croisées** (horizontal/vertical) sont utilisées pour assurer un **recouvrement optimal** et une épaisseur uniforme sur toute la surface, garantissant l'absence de zones moins couvertes ou de traces d'application."
+                    "correction": "Petite orbite pour des rayures très fines."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Si une petite saleté (mouche, poussière) se dépose dans le vernis frais, que doit faire le peintre avant l'étuvage ?",
+                    "question": "Lors de la phase d'étuvage (cuisson), comment fonctionne la ventilation de la cabine ?",
                     "answerOptions": [
-                        {"text": "Retirer la saleté avec le doigt.", "isCorrect": False},
-                        {"text": "La laisser sécher et la poncer plus tard.", "isCorrect": False},
-                        {"text": "Appliquer immédiatement une couche de vernis supplémentaire.", "isCorrect": False},
-                        {"text": "Retirer délicatement la saleté avec une pince fine (si elle n'a pas coulé) et lisser la zone si possible.", "isCorrect": True}
+                        {"text": "En recyclage d'air", "isCorrect": True},
+                        {"text": "En tout air neuf", "isCorrect": False},
+                        {"text": "En extraction seule", "isCorrect": False},
+                        {"text": "À l'arrêt complet", "isCorrect": False}
                     ],
-                    "correction": "Une saleté doit être retirée immédiatement si elle est visible et n'a pas ruiné la couche. Si possible, un pinceau fin ou une aiguille peut l'extraire. Si le vernis a déjà coulé, il faudra le laisser sécher, puis poncer et lustrer la zone après l'étuvage."
+                    "correction": "Recyclage à 90% pour économiser l'énergie."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "L'entretien régulier du pistolet à peinture est indispensable pour éviter :",
+                    "question": "Quelle est la conséquence de l'utilisation d'un tuyau d'air de diamètre intérieur trop petit (ex : 6mm) ?",
                     "answerOptions": [
-                        {"text": "La corrosion du compresseur.", "isCorrect": False},
-                        {"text": "Une consommation d'air excessive.", "isCorrect": False},
-                        {"text": "La déformation du jet (éventail) due au produit séché dans la buse ou le corps.", "isCorrect": True},
-                        {"text": "L'usure des filtres de cabine.", "isCorrect": False}
+                        {"text": "Perte de charge importante", "isCorrect": True},
+                        {"text": "Augmentation de la pression", "isCorrect": False},
+                        {"text": "Amélioration du débit", "isCorrect": False},
+                        {"text": "Meilleure atomisation", "isCorrect": False}
                     ],
-                    "correction": "Un pistolet mal nettoyé présente des **résidus secs** dans les canaux d'air et de produit. Ces résidus modifient la forme du jet, entraînant des projections irrégulières, des traces et un mauvais tendu."
+                    "correction": "Chute de pression dynamique (perte de charge)."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Qu'est-ce que le temps de désolvatation (ou temps d'attente) entre deux couches de peinture ou entre la base et le vernis ?",
+                    "question": "Quel appareil de séchage permet de chauffer la matière depuis la tôle vers l'extérieur ?",
                     "answerOptions": [
-                        {"text": "Le temps nécessaire pour nettoyer le pistolet.", "isCorrect": False},
-                        {"text": "Le temps de séchage final du vernis.", "isCorrect": False},
-                        {"text": "Le temps d'attente nécessaire pour l'évaporation des solvants (ou de l'eau) avant l'application de la couche suivante.", "isCorrect": True},
-                        {"text": "La durée de vie en pot du mélange.", "isCorrect": False}
+                        {"text": "Infrarouge ondes courtes", "isCorrect": True},
+                        {"text": "Panneau radiant gaz", "isCorrect": False},
+                        {"text": "Veine d'air gaz", "isCorrect": False},
+                        {"text": "Résistance électrique", "isCorrect": False}
                     ],
-                    "correction": "La **désolvatation** est le temps de pause où les solvants migrent hors du film de peinture fraîche. Ne pas respecter ce temps (surtout avec l'hydro) peut entraîner des défauts comme des bulles ou des piqûres lorsque la couche suivante est appliquée."
+                    "correction": "Les IR courts traversent la peinture et chauffent le support."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Quel est le risque si l'on applique une base mate (couche de couleur) sur une épaisseur excessive ?",
+                    "question": "Quel est le risque si l'on ne remplace pas régulièrement le filtre coalescent (submicronique) du circuit d'air ?",
                     "answerOptions": [
-                        {"text": "La couleur sera trop claire.", "isCorrect": False},
-                        {"text": "Un effet de marbrure (nuages) visible, surtout sur les teintes métallisées.", "isCorrect": True},
-                        {"text": "Une mauvaise adhérence du vernis.", "isCorrect": False},
-                        {"text": "Un temps de désolvatation très court.", "isCorrect": False}
+                        {"text": "Contamination par l'huile", "isCorrect": True},
+                        {"text": "Baisse de température", "isCorrect": False},
+                        {"text": "Augmentation du bruit", "isCorrect": False},
+                        {"text": "Arrêt du compresseur", "isCorrect": False}
                     ],
-                    "correction": "Appliquer une couche trop épaisse ou trop mouillée (**chargée**) empêche l'orientation correcte des particules métalliques, ce qui crée des **marbrures ou des nuages** visibles à l'œil. La base doit être appliquée uniformément et 'sèche' en surface."
+                    "correction": "Risque de passage de vapeurs d'huile (cratères)."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quel équipement est utilisé pour chauffer la peinture (ou le vernis) avant l'application pour améliorer sa viscosité et son tendu ?",
+                    "question": "Quel mouvement de pistolet est proscrit car il entraîne une épaisseur irrégulière ?",
                     "answerOptions": [
-                        {"text": "Le four de l'étuve.", "isCorrect": False},
-                        {"text": "Un réchauffeur de produit (ou Hotcoat).", "isCorrect": True},
-                        {"text": "Un pistolet à air chaud.", "isCorrect": False},
-                        {"text": "La plaque chauffante de l'atelier.", "isCorrect": False}
+                        {"text": "Mouvement de poignet en arc", "isCorrect": True},
+                        {"text": "Mouvement parallèle à la surface", "isCorrect": False},
+                        {"text": "Chevauchement de 50 pour cent", "isCorrect": False},
+                        {"text": "Déplacement à vitesse constante", "isCorrect": False}
                     ],
-                    "correction": "Le **réchauffeur de produit** (utilisé sur la ligne ou le pot) chauffe la peinture à une température idéale (environ 25-30°C). Peindre à chaud réduit la viscosité sans ajouter trop de diluant, améliorant le tendu et réduisant les coulures."
+                    "correction": "Le poignet cassé modifie la distance de pulvérisation."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 4 : HYGIÈNE, SÉCURITÉ, ENVIRONNEMENT ET ORGANISATION (Q. 61-80)
+        # THÈME 4 : TECHNIQUES D'APPLICATION ET MISE EN PEINTURE (Questions 61 à 80)
         # =========================================================================
         4: {
-            "name": "4. Hygiène, Sécurité, Environnement et Organisation (Q. 61-80)",
+            "name": "THÈME 4 : TECHNIQUES D'APPLICATION ET MISE EN PEINTURE",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Que signifie l'acronyme EPI et pourquoi est-il crucial en peinture carrosserie ?",
+                    "question": "Quelle est la distance optimale de pulvérisation pour l'application d'un vernis avec un pistolet standard ?",
                     "answerOptions": [
-                        {"text": "Évaluation Préalable des Instructions.", "isCorrect": False},
-                        {"text": "Énergie de Protection Incendie.", "isCorrect": False},
-                        {"text": "Équipement de Protection Individuelle, pour protéger le peintre des risques chimiques et physiques.", "isCorrect": True},
-                        {"text": "Évaporation des Particules Isolantes.", "isCorrect": False}
+                        {"text": "20 cm", "isCorrect": True},
+                        {"text": "5 cm", "isCorrect": False},
+                        {"text": "50 cm", "isCorrect": False},
+                        {"text": "1 mètre", "isCorrect": False}
                     ],
-                    "correction": "L'**EPI** regroupe tous les équipements (masques, gants, combinaisons, lunettes) destinés à **protéger la santé** du peintre des produits toxiques (solvants, isocyanates) et des poussières fines."
+                    "correction": "Entre 15 et 20 cm."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quel gaz nocif, présent dans les vernis et les apprêts bi-composants, nécessite impérativement le port d'un masque à adduction d'air ou P3 ?",
+                    "question": "Quel est l'angle idéal que doit former le jet du pistolet par rapport à la surface à peindre ?",
                     "answerOptions": [
-                        {"text": "Le dioxyde de carbone (CO2).", "isCorrect": False},
-                        {"text": "Le monoxyde de carbone (CO).", "isCorrect": False},
-                        {"text": "Les Isocyanates, très toxiques pour le système respiratoire.", "isCorrect": True},
-                        {"text": "L'oxygène (O2).", "isCorrect": False}
+                        {"text": "90 degrés", "isCorrect": True},
+                        {"text": "45 degrés", "isCorrect": False},
+                        {"text": "180 degrés", "isCorrect": False},
+                        {"text": "30 degrés", "isCorrect": False}
                     ],
-                    "correction": "Les **Isocyanates** sont les composants chimiques des durcisseurs 2K, très volatils et irritants. Une exposition chronique peut causer de l'asthme ou des maladies pulmonaires graves. Le masque filtrant doit être de classe P3 (particules) ou A2P3 (vapeurs et particules)."
+                    "correction": "Toujours perpendiculaire à la surface."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Où doivent être stockés les chiffons souillés par des produits inflammables (solvants, diluants, dégraissants) ?",
+                    "question": "Lors de l'application d'une base métallisée, quel est le but de la dernière couche appelée 'voile de placement' ?",
                     "answerOptions": [
-                        {"text": "Jetés directement dans la poubelle d'atelier.", "isCorrect": False},
-                        {"text": "Dans un récipient métallique fermé et dédié au stockage des déchets dangereux inflammables.", "isCorrect": True},
-                        {"text": "Mis à sécher à l'air libre.", "isCorrect": False},
-                        {"text": "Dans le même conteneur que les papiers de masquage.", "isCorrect": False}
+                        {"text": "Homogénéiser la teinte", "isCorrect": True},
+                        {"text": "Donner du brillant", "isCorrect": False},
+                        {"text": "Protéger des UV", "isCorrect": False},
+                        {"text": "Boucher les pores", "isCorrect": False}
                     ],
-                    "correction": "Les chiffons imbibés de solvants/peinture peuvent s'auto-enflammer par réaction chimique (oxydation) en présence d'air (**combustion spontanée**). Ils doivent être isolés dans un conteneur hermétique et ignifuge."
+                    "correction": "Uniformiser les particules et éviter les ombres."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quel est le risque majeur lié à la mauvaise gestion des Déchets Dangereux Spéciaux (DDS) comme les restes de peinture et de solvants ?",
+                    "question": "Quel signe visuel indique qu'une base hydrodiluable est sèche et prête à être vernie ?",
                     "answerOptions": [
-                        {"text": "Une augmentation du temps de séchage.", "isCorrect": False},
-                        {"text": "Une mauvaise couleur.", "isCorrect": False},
-                        {"text": "Une pollution des sols et de l'eau en cas d'élimination inappropriée, et non-conformité légale.", "isCorrect": True},
-                        {"text": "Un encrassement du pistolet.", "isCorrect": False}
+                        {"text": "La matité complète", "isCorrect": True},
+                        {"text": "Un aspect brillant", "isCorrect": False},
+                        {"text": "Un toucher collant", "isCorrect": False},
+                        {"text": "Une couleur blanche", "isCorrect": False}
                     ],
-                    "correction": "Les DDS (peinture, solvants, diluants usagés) sont très polluants. Ils doivent être collectés par des **organismes agréés** et suivre une traçabilité obligatoire (Bordereau de Suivi des Déchets - BSD) pour un traitement spécialisé."
+                    "correction": "Elle devient mate en séchant."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "La Fiche de Données de Sécurité (FDS) d'un produit chimique (ex : un apprêt) fournit principalement des informations sur :",
+                    "question": "Quel est le taux de recouvrement recommandé entre deux passes de pistolet pour assurer une épaisseur régulière ?",
                     "answerOptions": [
-                        {"text": "Le prix du produit et sa quantité disponible.", "isCorrect": False},
-                        {"text": "Les dangers, les mesures de premiers secours, l'EPI requis et la gestion des déchets.", "isCorrect": True},
-                        {"text": "La couleur exacte du produit appliqué.", "isCorrect": False},
-                        {"text": "Les réglages optimaux du pistolet.", "isCorrect": False}
+                        {"text": "50 pour cent", "isCorrect": True},
+                        {"text": "10 pour cent", "isCorrect": False},
+                        {"text": "90 pour cent", "isCorrect": False},
+                        {"text": "100 pour cent", "isCorrect": False}
                     ],
-                    "correction": "La **FDS** est un document légal obligatoire. Elle détaille les risques chimiques (**pictogrammes de danger**), les mesures à prendre en cas d'accident et les conditions de manipulation et de stockage sécurisé."
+                    "correction": "Recouvrement de moitié (50%)."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Quelle est la conséquence d'une mauvaise isolation électrique ou d'un défaut de terre dans un environnement riche en solvants inflammables ?",
+                    "question": "Comment doit-on commencer et finir un mouvement de peinture sur un panneau ?",
                     "answerOptions": [
-                        {"text": "Un séchage ralenti.", "isCorrect": False},
-                        {"text": "Un risque d'étincelle (arc électrique) pouvant provoquer une explosion.", "isCorrect": True},
-                        {"text": "Une mauvaise adhésion de la peinture.", "isCorrect": False},
-                        {"text": "Une surconsommation de peinture.", "isCorrect": False}
+                        {"text": "Hors du panneau", "isCorrect": True},
+                        {"text": "Au centre de la pièce", "isCorrect": False},
+                        {"text": "Sur les arêtes vives", "isCorrect": False},
+                        {"text": "En bas de l'élément", "isCorrect": False}
                     ],
-                    "correction": "Les vapeurs de solvants sont inflammables. Le matériel électrique de la cabine/atelier doit être classé **ATEX** (Atmosphères Explosibles) pour éviter toute étincelle qui pourrait mettre le feu ou causer une explosion."
+                    "correction": "Déclencher et relâcher à l'extérieur pour éviter les surcharges."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Que doit faire le peintre s'il subit un contact cutané important avec un produit chimique (ex : durcisseur ou solvant) ?",
+                    "question": "Quelle technique permet de peindre un élément neuf sans avoir à le poncer après l'application de l'apprêt ?",
                     "answerOptions": [
-                        {"text": "Continuer à travailler et nettoyer plus tard.", "isCorrect": False},
-                        {"text": "Essuyer la zone avec un chiffon sec.", "isCorrect": False},
-                        {"text": "Rincer immédiatement et abondamment à l'eau pendant au moins 15 minutes, et consulter la FDS.", "isCorrect": True},
-                        {"text": "Appliquer un pansement sur la zone contaminée.", "isCorrect": False}
+                        {"text": "Le mouillé sur mouillé", "isCorrect": True},
+                        {"text": "Le poli lustré", "isCorrect": False},
+                        {"text": "Le séchage infrarouge", "isCorrect": False},
+                        {"text": "Le ponçage à l'eau", "isCorrect": False}
                     ],
-                    "correction": "La première mesure de sécurité est d'**éliminer le produit** par rinçage (douche de sécurité si nécessaire) pour limiter l'absorption cutanée et les irritations, conformément aux instructions de la FDS."
+                    "correction": "Application de la laque directement après désolvatation de l'apprêt."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quel est le rôle des Composés Organiques Volatils (COV) dans la peinture et pourquoi sont-ils réglementés ?",
+                    "question": "Pour réaliser un raccord noyé invisible sur une base métallisée, où doit-on arrêter l'application de la base ?",
                     "answerOptions": [
-                        {"text": "Ils servent de pigment coloré.", "isCorrect": False},
-                        {"text": "Ce sont des solvants qui s'évaporent, polluent l'air et sont nocifs pour la santé.", "isCorrect": True},
-                        {"text": "Ils sont responsables du durcissement.", "isCorrect": False},
-                        {"text": "Ils améliorent la résistance mécanique.", "isCorrect": False}
+                        {"text": "En dégradé dans la zone préparée", "isCorrect": True},
+                        {"text": "Sur le bord du scotch de masquage", "isCorrect": False},
+                        {"text": "Exactement sur la rayure réparée", "isCorrect": False},
+                        {"text": "Sur l'élément de carrosserie voisin", "isCorrect": False}
                     ],
-                    "correction": "Les **COV** sont les solvants qui s'évaporent lors du séchage. Ils contribuent à la formation de l'ozone au niveau du sol et sont toxiques. La législation fixe des seuils maximaux d'émission par litre de produit (Directive COV 2004/42/CE)."
+                    "correction": "En fondu à l'intérieur de l'élément."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel est le type d'extincteur le plus adapté pour éteindre un feu de solvants ou de peinture (feux de classe B) ?",
+                    "question": "Quel geste technique permet de gérer les bords et les arêtes d'un élément avant de peindre les grandes surfaces ?",
                     "answerOptions": [
-                        {"text": "Extincteur à eau.", "isCorrect": False},
-                        {"text": "Extincteur à mousse.", "isCorrect": False},
-                        {"text": "Extincteur à poudre (BC ou ABC) ou au CO2.", "isCorrect": True},
-                        {"text": "Extincteur à sable.", "isCorrect": False}
+                        {"text": "Le détourage", "isCorrect": True},
+                        {"text": "Le marouflage", "isCorrect": False},
+                        {"text": "Le dépolissage", "isCorrect": False},
+                        {"text": "Le dégraissage", "isCorrect": False}
                     ],
-                    "correction": "Les feux de solvants (liquides inflammables - classe B) sont dangereux à éteindre avec de l'eau car elle peut propager le liquide enflammé. Les extincteurs à **poudre ou CO2** sont conçus pour étouffer ces types de feux sans les disperser."
+                    "correction": "Peindre les bords avant les 'pleins'."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Pour optimiser l'organisation de l'atelier, la zone de préparation (ponçage, masticage) doit idéalement être :",
+                    "question": "Que risque-t-on si la vitesse de déplacement du pistolet est trop lente ?",
                     "answerOptions": [
-                        {"text": "Dans la cabine de peinture.", "isCorrect": False},
-                        {"text": "Dans la zone de réception client.", "isCorrect": False},
-                        {"text": "Séparée et dotée d'un système d'aspiration pour limiter la dispersion des poussières fines.", "isCorrect": True},
-                        {"text": "À l'extérieur de l'atelier.", "isCorrect": False}
+                        {"text": "Une coulure", "isCorrect": True},
+                        {"text": "Un manque de produit", "isCorrect": False},
+                        {"text": "Une peau d'orange", "isCorrect": False},
+                        {"text": "Un brouillard sec", "isCorrect": False}
                     ],
-                    "correction": "La poussière de ponçage est l'ennemi de la peinture. La zone de préparation doit être **isolée et équipée d'une aspiration puissante** (ponceuses aspirantes, centrale d'aspiration) pour éviter la contamination des zones de peinture."
+                    "correction": "Surcharge locale entraînant une coulure."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Que permet l'utilisation des systèmes de mélange de peinture informatiques et automatisés ?",
+                    "question": "Dans une peinture tri-couche, quelle est la fonction de la deuxième couche appliquée ?",
                     "answerOptions": [
-                        {"text": "Remplacer totalement le peintre.", "isCorrect": False},
-                        {"text": "Assurer la traçabilité des formules et une précision de pesée pour la colorimétrie.", "isCorrect": True},
-                        {"text": "Réduire le temps d'étuvage.", "isCorrect": False},
-                        {"text": "Éliminer tous les COV.", "isCorrect": False}
+                        {"text": "Apporter l'effet nacré transparent", "isCorrect": True},
+                        {"text": "Donner la couleur de fond opaque", "isCorrect": False},
+                        {"text": "Assurer la protection mécanique", "isCorrect": False},
+                        {"text": "Isoler la tôle de la corrosion", "isCorrect": False}
                     ],
-                    "correction": "Les balances électroniques de précision et le logiciel garantissent que la formule de la teinte est respectée au **gramme près**. Le système enregistre également les lots pour la traçabilité des réparations."
+                    "correction": "La couche intermédiaire donne l'effet nacre."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Lors du levage d'un véhicule sur un pont élévateur, quelle précaution de sécurité est essentielle ?",
+                    "question": "Lors de l'application d'un vernis UHS, quelle méthode est souvent préconisée par les fabricants ?",
                     "answerOptions": [
-                        {"text": "Laisser les portes ouvertes.", "isCorrect": False},
-                        {"text": "S'assurer que les patins sont positionnés aux points de levage indiqués par le constructeur.", "isCorrect": True},
-                        {"text": "Laisser le moteur en marche.", "isCorrect": False},
-                        {"text": "Laisser les roues dévissées.", "isCorrect": False}
+                        {"text": "Une demi couche puis une couche pleine", "isCorrect": True},
+                        {"text": "Trois couches très fines et sèches", "isCorrect": False},
+                        {"text": "Cinq couches épaisses successives", "isCorrect": False},
+                        {"text": "Une seule couche très rapide", "isCorrect": False}
                     ],
-                    "correction": "Les **points de levage** sont des zones renforcées. Un mauvais positionnement des patins du pont peut endommager le châssis, la caisse ou provoquer une chute du véhicule (risque d'accident mortel)."
+                    "correction": "Méthode 1/2 + 1 (fine fermée + pleine)."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quel est le principal risque lié au brouillard de peinture (overspray) pour l'environnement extérieur ?",
+                    "question": "Quel accessoire utilise-t-on juste avant de peindre pour ramasser les dernières poussières ?",
                     "answerOptions": [
-                        {"text": "L'augmentation de la consommation d'électricité.", "isCorrect": False},
-                        {"text": "La dispersion de particules et de solvants dans l'atmosphère, nécessitant des filtres.", "isCorrect": True},
-                        {"text": "Le durcissement prématuré des produits.", "isCorrect": False},
-                        {"text": "Le ralentissement du débit d'air.", "isCorrect": False}
+                        {"text": "Tampon d'essuyage", "isCorrect": True},
+                        {"text": "Chiffon microfibre sec", "isCorrect": False},
+                        {"text": "Papier absorbant", "isCorrect": False},
+                        {"text": "Soufflette à air", "isCorrect": False}
                     ],
-                    "correction": "Le brouillard de peinture est composé de fines gouttelettes de produit et de solvants. Les **filtres d'extraction** de la cabine sont obligatoires pour capter ces particules avant le rejet de l'air."
+                    "correction": "Tack rag (chiffon gras/collant)."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Les gants de protection en nitrile ou latex sont obligatoires pour manipuler des produits chimiques. Que faut-il éviter avant de les retirer ?",
+                    "question": "Pourquoi est-il déconseillé de peindre une pièce posée à plat horizontalement si elle doit être montée verticalement ?",
                     "answerOptions": [
-                        {"text": "De peindre une autre pièce.", "isCorrect": False},
-                        {"text": "De prendre une pause.", "isCorrect": False},
-                        {"text": "De toucher son visage ou des surfaces propres (téléphone, poignées de porte).", "isCorrect": True},
-                        {"text": "De nettoyer le pistolet.", "isCorrect": False}
+                        {"text": "La teinte peut varier", "isCorrect": True},
+                        {"text": "Le séchage est plus lent", "isCorrect": False},
+                        {"text": "La poussière colle moins", "isCorrect": False},
+                        {"text": "Le vernis coule plus vite", "isCorrect": False}
                     ],
-                    "correction": "Les gants empêchent les produits de contaminer la peau, mais ils sont eux-mêmes contaminés. Toucher des surfaces ou le visage avec des gants souillés risque de transférer les produits toxiques."
+                    "correction": "L'orientation des particules change avec la gravité."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quel est l'objectif principal du nettoyage régulier des parois intérieures d'une cabine de peinture ?",
+                    "question": "Quelle est la cause technique principale d'un 'nuage' ou d'une marbrure sur un gris métallisé ?",
                     "answerOptions": [
-                        {"text": "Faire briller la cabine.", "isCorrect": False},
-                        {"text": "Empêcher la formation de poussière et le décollement de vieilles particules sur la peinture fraîche.", "isCorrect": True},
-                        {"text": "Maintenir une température constante.", "isCorrect": False},
-                        {"text": "Économiser l'électricité.", "isCorrect": False}
+                        {"text": "Une application irrégulière", "isCorrect": True},
+                        {"text": "Un durcisseur périmé", "isCorrect": False},
+                        {"text": "Un ponçage trop fin", "isCorrect": False},
+                        {"text": "Un nettoyage excessif", "isCorrect": False}
                     ],
-                    "correction": "Les parois de la cabine accumulent du brouillard et des particules. Un nettoyage régulier, souvent avec des produits **anti-adhérents**, évite que ces vieux contaminants ne se décrochent pendant la pulvérisation et ne se déposent sur la pièce en cours."
+                    "correction": "Mauvais recouvrement ou orientation anarchique des paillettes."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Que représente le pictogramme de danger en forme de flamme (sur fond blanc) ?",
+                    "question": "Lors d'un raccord de vernis, quel produit applique-t-on sur la zone de transition entre l'ancien et le nouveau vernis ?",
                     "answerOptions": [
-                        {"text": "Produit toxique.", "isCorrect": False},
-                        {"text": "Produit corrosif.", "isCorrect": False},
-                        {"text": "Produit Inflammable ou Hautement inflammable.", "isCorrect": True},
-                        {"text": "Danger pour l'environnement.", "isCorrect": False}
+                        {"text": "Un diluant raccordeur", "isCorrect": True},
+                        {"text": "Une base mate", "isCorrect": False},
+                        {"text": "Un apprêt garnissant", "isCorrect": False},
+                        {"text": "Un promoteur plastique", "isCorrect": False}
                     ],
-                    "correction": "Le pictogramme de la **flamme** indique un risque d'incendie (liquide ou gaz). Il est présent sur les bidons de diluants, de solvants, et certains aérosols."
+                    "correction": "Pour fondre les brouillards."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "En cas de déversement accidentel d'un solvant important sur le sol de l'atelier, que doit-on utiliser en priorité ?",
+                    "question": "Si l'on applique une couche de base trop épaisse en une seule fois, quel défaut risque d'apparaître ?",
                     "answerOptions": [
-                        {"text": "De l'eau et un balai-brosse.", "isCorrect": False},
-                        {"text": "Du papier absorbant standard.", "isCorrect": False},
-                        {"text": "Un pistolet à air chaud.", "isCorrect": False},
-                        {"text": "Un absorbant inerte et granulaire (type sciure ou granulés spécialisés), puis ventiler.", "isCorrect": True}
+                        {"text": "Le pommelage", "isCorrect": True},
+                        {"text": "La rouille", "isCorrect": False},
+                        {"text": "Le craquelage", "isCorrect": False},
+                        {"text": "Le jaunissement", "isCorrect": False}
                     ],
-                    "correction": "L'**absorbant** permet de contenir et de récupérer le produit sans risquer de le propager. L'eau ne doit pas être utilisée car elle peut diluer le produit et le disperser dans le réseau d'eaux usées."
+                    "correction": "Les pigments 'nagent' et créent un aspect pommelé."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Quel est le rôle d'un système de gestion de la qualité dans un atelier de carrosserie-peinture ?",
+                    "question": "Quelle est l'utilité de porter une combinaison de peinture en nylon lors de l'application ?",
                     "answerOptions": [
-                        {"text": "Gérer uniquement la comptabilité.", "isCorrect": False},
-                        {"text": "Contrôler uniquement les stocks de peinture.", "isCorrect": False},
-                        {"text": "Standardiser les processus de travail pour garantir la constance et la conformité des réparations.", "isCorrect": True},
-                        {"text": "Rendre la cabine plus belle.", "isCorrect": False}
+                        {"text": "Éviter les peluches", "isCorrect": True},
+                        {"text": "Tenir chaud en cabine", "isCorrect": False},
+                        {"text": "Résister aux acides", "isCorrect": False},
+                        {"text": "Améliorer la visibilité", "isCorrect": False}
                     ],
-                    "correction": "Un système de qualité (souvent basé sur des normes ISO ou des fiches de travail) vise à s'assurer que **chaque réparation est effectuée de la même manière** et selon les spécifications, réduisant les erreurs et les retouches."
+                    "correction": "Non-pelucheuse et antistatique."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel est l'objectif d'utiliser une combinaison de peinture antistatique ?",
+                    "question": "Quelle action permet d'éviter la différence de teinte lors du remplacement d'une porte au milieu d'un côté ?",
                     "answerOptions": [
-                        {"text": "Améliorer la résistance aux déchirures.", "isCorrect": False},
-                        {"text": "Éviter que les poussières et les fibres ne soient attirées par la combinaison (charge électrostatique) puis déposées sur la peinture.", "isCorrect": True},
-                        {"text": "Protèger contre le froid.", "isCorrect": False},
-                        {"text": "Être plus visible dans l'atelier.", "isCorrect": False}
+                        {"text": "Le raccord noyé sur éléments adjacents", "isCorrect": True},
+                        {"text": "Le polissage des éléments voisins", "isCorrect": False},
+                        {"text": "L'application de vernis teinté", "isCorrect": False},
+                        {"text": "L'augmentation de la pression", "isCorrect": False}
                     ],
-                    "correction": "La charge électrostatique attire les poussières. Les combinaisons antistatiques dispersent cette charge, garantissant que le porteur ne soit pas une **source de contamination** pour la peinture fraîche."
+                    "correction": "Dégrader la teinte sur les ailes (fondu) pour leurrer l'œil."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Pourquoi est-il essentiel de laisser le temps de désolvatation avant la mise à l'étuve (cuisson) ?",
+                    "question": "Que doit faire le peintre systématiquement sur un papier masqué en cabine avant d'attaquer la voiture ?",
                     "answerOptions": [
-                        {"text": "Pour économiser de l'énergie.", "isCorrect": False},
-                        {"text": "Pour que les solvants s'échappent progressivement ; sinon, ils formeraient des bulles et des piqûres sous la peau du vernis cuit.", "isCorrect": True},
-                        {"text": "Pour que le vernis sèche plus lentement.", "isCorrect": False},
-                        {"text": "Pour que l'apprêt adhère mieux.", "isCorrect": False}
+                        {"text": "Un test de jet", "isCorrect": True},
+                        {"text": "Un nettoyage au solvant", "isCorrect": False},
+                        {"text": "Une mesure d'épaisseur", "isCorrect": False},
+                        {"text": "Un ponçage de contrôle", "isCorrect": False}
                     ],
-                    "correction": "Si le produit est cuit trop tôt, les solvants, piégés sous la couche durcie, tenteront de s'échapper, créant des **piqûres** (petits trous) ou des **bulles** dans le film de peinture. La désolvatation est une phase de séchage à température ambiante ou légèrement augmentée."
+                    "correction": "Vérifier la forme du jet et le débit."
                 },
             ]
         },
         # =========================================================================
-        # THÈME 5 : DÉFAUTS DE PEINTURE, RECTIFICATION ET FINITION (Q. 81-100)
+        # THÈME 5 : DÉFAUTS DE PEINTURE, QUALITÉ ET HSE (Questions 81 à 100)
         # =========================================================================
         5: {
-            "name": "5. Défauts de Peinture, Rectification et Finition (Q. 81-100)",
+            "name": "THÈME 5 : DÉFAUTS DE PEINTURE, QUALITÉ ET HSE",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel est le nom du défaut de peinture qui se manifeste par un aspect de surface bosselée similaire à la peau d'un agrume ?",
+                    "question": "Quel nom donne-t-on aux petits cratères circulaires causés par une contamination de silicone ?",
                     "answerOptions": [
-                        {"text": "Frisure", "isCorrect": False},
-                        {"text": "Bullage", "isCorrect": False},
-                        {"text": "Peau d'orange", "isCorrect": True},
-                        {"text": "Cratérisation", "isCorrect": False}
+                        {"text": "Yeux de poisson", "isCorrect": True},
+                        {"text": "Peau d'orange", "isCorrect": False},
+                        {"text": "Piqures d'épingle", "isCorrect": False},
+                        {"text": "Microbullage", "isCorrect": False}
                     ],
-                    "correction": "La **peau d'orange** est causée par un manque de **tendu** du vernis ou de la laque. Elle résulte d'une mauvaise viscosité (trop épais), d'une pression d'air trop faible, ou d'une distance de pulvérisation trop grande (séchage prématuré)."
+                    "correction": "Contamination par corps gras/silicone."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "La présence de petits cratères en forme de trou d'épingle dans le film de peinture (souvent jusqu'à l'apprêt) est généralement causée par :",
+                    "question": "Quelle est la cause principale d'un effet 'peau d'orange' prononcé sur un vernis ?",
                     "answerOptions": [
-                        {"text": "Un vernis trop dilué.", "isCorrect": False},
-                        {"text": "Une mauvaise couleur.", "isCorrect": False},
-                        {"text": "Une contamination par des silicones ou des corps gras (défaut de siliconage).", "isCorrect": True},
-                        {"text": "Un ponçage trop fin.", "isCorrect": False}
+                        {"text": "Viscosité trop élevée", "isCorrect": True},
+                        {"text": "Pression trop forte", "isCorrect": False},
+                        {"text": "Diluant trop rapide", "isCorrect": False},
+                        {"text": "Cabine trop chaude", "isCorrect": False}
                     ],
-                    "correction": "Les **silicones** et les graisses sont des contaminants qui repoussent la peinture lors de l'application, créant des zones non mouillées (**cratères**). Ce défaut est évité par un dégraissage rigoureux et l'utilisation de dégraissants anti-silicone."
+                    "correction": "Le vernis trop épais ne se tend pas."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Que doit faire le carrossier-peintre pour corriger une coulure importante (excès de peinture) après son durcissement complet ?",
+                    "question": "Comment rectifie-t-on une petite poussière incrustée dans un vernis sec ?",
                     "answerOptions": [
-                        {"text": "Retirer la coulure avec un diluant.", "isCorrect": False},
-                        {"text": "Égaliser le niveau par ponçage humide (bloc à poncer) et la lustrer.", "isCorrect": True},
-                        {"text": "Appliquer une autre couche de peinture.", "isCorrect": False},
-                        {"text": "Laisser sécher à l'air libre.", "isCorrect": False}
+                        {"text": "Égrenage et lustrage", "isCorrect": True},
+                        {"text": "Ponçage et revernissage", "isCorrect": False},
+                        {"text": "Application de stylo retouche", "isCorrect": False},
+                        {"text": "Chauffage thermique localisé", "isCorrect": False}
                     ],
-                    "correction": "Une coulure séchée est un excès de matière. Elle doit être **aplanie délicatement** (souvent avec un bloc à poncer et des abrasifs très fins, ex : P1500 à P2500) jusqu'à ce que le niveau soit égal à la surface environnante, puis **polie et lustrée**."
+                    "correction": "Araser le défaut et polir."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Quel type de défaut apparaît lorsque les solvants d'une couche inférieure (non compatible) attaquent et font rider (plisser) la couche fraîchement appliquée ?",
+                    "question": "Quel type de protection respiratoire est le plus sûr pour l'application de produits isocyanates en cabine ?",
                     "answerOptions": [
-                        {"text": "La piqûre", "isCorrect": False},
-                        {"text": "La frisure (ou cloquage)", "isCorrect": True},
-                        {"text": "Le dégraissage", "isCorrect": False},
-                        {"text": "Le voile", "isCorrect": False}
+                        {"text": "Cagoule à adduction d'air", "isCorrect": True},
+                        {"text": "Masque jetable papier", "isCorrect": False},
+                        {"text": "Demi-masque à cartouche", "isCorrect": False},
+                        {"text": "Masque chirurgical simple", "isCorrect": False}
                     ],
-                    "correction": "La **frisure** se produit lorsque les solvants forts de la nouvelle couche (ex : un apprêt ou un mastic) ramollissent et décollent l'ancienne peinture sensible. Il est impératif d'isoler les anciennes peintures sensibles avant toute application."
+                    "correction": "Isole totalement de l'air de la cabine."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Quel est le nom du défaut lié à la présence de fines particules de poussière (ou de brouillard) dans le vernis frais, lui donnant un aspect rugueux ?",
+                    "question": "Dans quelle catégorie de déchets classe-t-on les chiffons souillés de solvants ?",
                     "answerOptions": [
-                        {"text": "Le décollement", "isCorrect": False},
-                        {"text": "Le farinage", "isCorrect": False},
-                        {"text": "Le siliconage", "isCorrect": False},
-                        {"text": "L'empoussiérage (ou poussière de cabine)", "isCorrect": True}
+                        {"text": "DID", "isCorrect": True},
+                        {"text": "DIB", "isCorrect": False},
+                        {"text": "OM", "isCorrect": False},
+                        {"text": "DB", "isCorrect": False}
                     ],
-                    "correction": "L'**empoussiérage** résulte d'un support mal essuyé, d'une cabine sale, ou d'un flux d'air (tirage) insuffisant. Le défaut se corrige par un ponçage fin du vernis suivi d'un lustrage."
+                    "correction": "Déchets Industriels Dangereux."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Lors de la rectification d'un défaut de vernis par ponçage, quel abrasif très fin est généralement utilisé pour retirer la peau d'orange ou les saletés après étuvage ?",
+                    "question": "Quel phénomène se produit si l'on emprisonne de l'humidité sous une couche de peinture ?",
                     "answerOptions": [
-                        {"text": "P80", "isCorrect": False},
-                        {"text": "P400", "isCorrect": False},
-                        {"text": "P1500 à P3000 (à l'eau)", "isCorrect": True},
-                        {"text": "P6000", "isCorrect": False}
+                        {"text": "Cloquage", "isCorrect": True},
+                        {"text": "Farinage", "isCorrect": False},
+                        {"text": "Craquelage", "isCorrect": False},
+                        {"text": "Jaunissement", "isCorrect": False}
                     ],
-                    "correction": "Le ponçage de finition du vernis (souvent appelé **grainage**) doit être fait avec des abrasifs extrêmement fins (ex : **P1500, P2000, P3000** à l'eau) pour éviter de créer des rayures trop profondes que le lustrage ne pourrait pas retirer."
+                    "correction": "Pression de vapeur créant des cloques."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Dans le processus de lustrage, quelle est la première étape pour retirer les rayures de ponçage les plus fines (la « passe de matage ») ?",
+                    "question": "Quelle est la cause technique la plus fréquente d'une coulure de vernis ?",
                     "answerOptions": [
-                        {"text": "L'application d'une cire de protection.", "isCorrect": False},
-                        {"text": "Le nettoyage à l'eau chaude.", "isCorrect": False},
-                        {"text": "L'application d'une pâte à polir (compound) à coupe forte (abrasive).", "isCorrect": True},
-                        {"text": "Le séchage au four.", "isCorrect": False}
+                        {"text": "Distance trop faible", "isCorrect": True},
+                        {"text": "Cabine trop ventilée", "isCorrect": False},
+                        {"text": "Durcisseur trop rapide", "isCorrect": False},
+                        {"text": "Pression trop élevée", "isCorrect": False}
                     ],
-                    "correction": "Le **lustrage** se fait en plusieurs étapes. Le **compound à coupe forte** est le plus abrasif et sert à **'gommer'** les traces laissées par le ponçage P2000/P3000. On passe ensuite à des pâtes plus fines pour la brillance."
+                    "correction": "Trop de produit déposé au même endroit."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Quel est le risque si le polissage (lustrage) est effectué trop rapidement ou avec une pression excessive ?",
+                    "question": "Que signifie l'acronyme COV présent sur les étiquettes de produits ?",
                     "answerOptions": [
-                        {"text": "Le vernis devient mat.", "isCorrect": False},
-                        {"text": "La couleur change.", "isCorrect": False},
-                        {"text": "Un échauffement excessif du vernis, pouvant le ramollir ou le décoller (brûlure).", "isCorrect": True},
-                        {"text": "La pâte à polir ne fonctionne plus.", "isCorrect": False}
+                        {"text": "Composés Organiques Volatils", "isCorrect": True},
+                        {"text": "Carbone Oxydé et Vapeur", "isCorrect": False},
+                        {"text": "Capacité Organique Visuelle", "isCorrect": False},
+                        {"text": "Composants d'Origine Végétale", "isCorrect": False}
                     ],
-                    "correction": "L'échauffement généré par la machine à polir, s'il est trop important, peut endommager ou **'brûler'** le vernis frais. Il faut toujours travailler à vitesse modérée et contrôler la température de surface."
+                    "correction": "Substances polluantes s'évaporant facilement."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Que signifie le défaut de 'farinage' (ou craquellement) d'une ancienne peinture ?",
+                    "question": "Quelle maladie professionnelle est spécifiquement liée à l'exposition aux durcisseurs isocyanates ?",
                     "answerOptions": [
-                        {"text": "L'apparition de fines poussières.", "isCorrect": False},
-                        {"text": "La dégradation de la surface du vernis sous l'effet des UV et de l'oxydation, lui donnant un aspect crayeux et terne.", "isCorrect": True},
-                        {"text": "Un défaut de séchage.", "isCorrect": False},
-                        {"text": "Un manque de diluant.", "isCorrect": False}
+                        {"text": "Asthme", "isCorrect": True},
+                        {"text": "Surdité", "isCorrect": False},
+                        {"text": "Lombalgie", "isCorrect": False},
+                        {"text": "Silicose", "isCorrect": False}
                     ],
-                    "correction": "Le **farinage** est l'usure de la peinture (souvent monocouche ou vieux vernis) causée par l'exposition aux UV et aux intempéries. La surface devient poudreuse et perd sa brillance. Elle nécessite une rectification par polissage ou une nouvelle peinture."
+                    "correction": "Sensibilisation respiratoire (asthme)."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Le voile de pulvérisation (ou brouillard sec) est un dépôt fin de peinture séchée aux abords de la zone peinte. Comment l'éviter ou le corriger ?",
+                    "question": "Comment appelle-t-on le défaut où les traces de ponçage du mastic réapparaissent sous la laque après séchage ?",
                     "answerOptions": [
-                        {"text": "Peindre avec plus de distance.", "isCorrect": False},
-                        {"text": "Utiliser la technique du raccord noyé ou un diluant de fondu, et/ou polir le bord après séchage.", "isCorrect": True},
-                        {"text": "Utiliser une brosse.", "isCorrect": False},
-                        {"text": "Augmenter la pression du pistolet.", "isCorrect": False}
+                        {"text": "Spectres", "isCorrect": True},
+                        {"text": "Auréoles", "isCorrect": False},
+                        {"text": "Nuages", "isCorrect": False},
+                        {"text": "Comètes", "isCorrect": False}
                     ],
-                    "correction": "Le voile est dû au brouillard de peinture/vernis qui sèche avant d'atteindre la surface. Pour les raccords, on utilise un **diluant de fondu** pour 'ramollir' ce bord. Un léger voile sec peut être retiré par un lustrage."
+                    "correction": "Enterrement du vernis dans les rayures."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Lors de la vérification finale de la teinte, quel type d'éclairage est le plus adapté pour révéler les différences de couleur et l'effet métallisé ?",
+                    "question": "Quelle est la cause du 'piquage' ou 'micro-bullage' (trous d'épingle) en surface ?",
                     "answerOptions": [
-                        {"text": "Une lumière tamisée.", "isCorrect": False},
-                        {"text": "Une lampe à incandescence jaune.", "isCorrect": False},
-                        {"text": "Un éclairage à spectre lumineux large (lumière du jour ou lampe LED dédiée) sous différents angles.", "isCorrect": True},
-                        {"text": "La lumière des phares du véhicule.", "isCorrect": False}
+                        {"text": "Ébullition de solvant", "isCorrect": True},
+                        {"text": "Manque de vernis", "isCorrect": False},
+                        {"text": "Poussière de ponçage", "isCorrect": False},
+                        {"text": "Mauvaise couleur", "isCorrect": False}
                     ],
-                    "correction": "La lumière naturelle (ou simulée par des lampes spéciales) est essentielle. Il faut observer la couleur sous différents angles (**angle de réflexion**) pour garantir que la base mate et l'effet métallisé (flip-flop) correspondent à l'original."
+                    "correction": "Solvant piégé traversant le film en surface."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est le rôle de la cire de protection (ou du traitement céramique) appliqué en phase finale ?",
+                    "question": "Qu'est-ce qui provoque le 'frisage' (la peinture se plisse comme une vieille peau) ?",
                     "answerOptions": [
-                        {"text": "Égaliser les couches de peinture.", "isCorrect": False},
-                        {"text": "Retirer les défauts de surface.", "isCorrect": False},
-                        {"text": "Accélérer la vitesse de la voiture.", "isCorrect": False},
-                        {"text": "Offrir une protection supplémentaire contre les micro-rayures, les UV, et faciliter le nettoyage.", "isCorrect": True}
+                        {"text": "Incompatibilité des fonds", "isCorrect": True},
+                        {"text": "Excès de pression d'air au pistolet", "isCorrect": False},
+                        {"text": "Température de cabine trop basse", "isCorrect": False},
+                        {"text": "Utilisation d'un vernis périmé", "isCorrect": False}
                     ],
-                    "correction": "Après le polissage, la **cire** ou les **traitements céramiques** créent une couche de protection (hydrophobe et anti-UV) qui prolonge la durée de vie et l'éclat du vernis."
+                    "correction": "Réaction solvant fort sur fond ancien fragile."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Que faut-il utiliser en priorité si l'on remarque de fines micros-rayures circulaires (hologrammes) sur la finition après le lustrage ?",
+                    "question": "Pour vérifier la conformité d'une teinte, sous quelle lumière doit-on idéalement se placer ?",
                     "answerOptions": [
-                        {"text": "Reprendre le ponçage à P400.", "isCorrect": False},
-                        {"text": "Appliquer une autre couche de vernis.", "isCorrect": False},
-                        {"text": "Utiliser une pâte de finition (anti-hologramme) et une mousse souple.", "isCorrect": True},
-                        {"text": "Laver la voiture.", "isCorrect": False}
+                        {"text": "Lumière du jour", "isCorrect": True},
+                        {"text": "Néon fluorescent", "isCorrect": False},
+                        {"text": "Lampe à sodium", "isCorrect": False},
+                        {"text": "Lampe halogène", "isCorrect": False}
                     ],
-                    "correction": "Les **hologrammes** (ou marques circulaires) sont des micro-rayures laissées par la pâte à polir agressive ou la mousse de lustrage. Elles se retirent avec une **pâte de finition ultra-fine** (anti-hologramme) et un tampon de lustrage doux."
+                    "correction": "Spectre complet, évite le métamérisme."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Quel est le principal danger lors du démontage des éléments (poignées, rétroviseurs) avant la peinture ?",
+                    "question": "Quelle matière de gants jetables offre la meilleure résistance aux solvants de carrosserie ?",
                     "answerOptions": [
-                        {"text": "La difficulté à les peindre.", "isCorrect": False},
-                        {"text": "Le risque d'incompatibilité des produits.", "isCorrect": False},
-                        {"text": "Le risque d'endommager les fixations, les clips ou le câblage électrique (airbags, capteurs).", "isCorrect": True},
-                        {"text": "Le risque de contamination.", "isCorrect": False}
+                        {"text": "Nitrile", "isCorrect": True},
+                        {"text": "Latex", "isCorrect": False},
+                        {"text": "Vinyle", "isCorrect": False},
+                        {"text": "Coton", "isCorrect": False}
                     ],
-                    "correction": "Le démontage doit être précis pour éviter de casser des éléments de fixation fragiles (clips) ou d'endommager des capteurs et câbles modernes, ce qui pourrait engendrer des coûts supplémentaires."
+                    "correction": "Le nitrile résiste aux hydrocarbures."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Après le ponçage de l'apprêt et avant l'application de la base, si des rayures profondes apparaissent à travers l'apprêt, quel défaut a été commis ?",
+                    "question": "Comment nomme-t-on le défaut où le pigment rouge d'un durcisseur mastic remonte dans la finition blanche ?",
                     "answerOptions": [
-                        {"text": "Le vernis était trop épais.", "isCorrect": False},
-                        {"text": "La peinture était trop chaude.", "isCorrect": False},
-                        {"text": "Un dégrossissage au mastic insuffisant ou un ponçage de l'apprêt trop agressif (trop bas en granulométrie).", "isCorrect": True},
-                        {"text": "Le temps de désolvatation était trop long.", "isCorrect": False}
+                        {"text": "Saignement", "isCorrect": True},
+                        {"text": "Oxydation", "isCorrect": False},
+                        {"text": "Corrosion", "isCorrect": False},
+                        {"text": "Saturation", "isCorrect": False}
                     ],
-                    "correction": "C'est le défaut de **repasse**. Les rayures du ponçage précédent (ex : P180 ou P240) n'ont pas été totalement comblées par l'apprêt, ou l'apprêt a été poncé trop bas, exposant le support rayé."
+                    "correction": "Migration du peroxyde (bleeding)."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Que signifie le terme TTP (Température, Temps, Pression) dans le contexte du séchage et de l'étuvage ?",
+                    "question": "Où trouve-t-on les informations de sécurité et de premiers secours concernant un produit chimique ?",
                     "answerOptions": [
-                        {"text": "Les réglages du pistolet.", "isCorrect": False},
-                        {"text": "Les trois paramètres fondamentaux à respecter (fiche technique) pour le durcissement du vernis et de l'apprêt.", "isCorrect": True},
-                        {"text": "La formule de la couleur.", "isCorrect": False},
-                        {"text": "Le coût des produits.", "isCorrect": False}
+                        {"text": "FDS", "isCorrect": True},
+                        {"text": "OR", "isCorrect": False},
+                        {"text": "RTA", "isCorrect": False},
+                        {"text": "VIN", "isCorrect": False}
                     ],
-                    "correction": "Le **TTP** (Température, Temps, Pression ou Taux d'humidité) représente l'ensemble des conditions nécessaires pour que les produits 2K durcissent correctement et développent leur résistance finale. Ces paramètres sont fournis par le fabricant."
+                    "correction": "Fiche de Données de Sécurité."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Si la zone de raccord noyé (fumé) du vernis devient visible après quelques semaines, le défaut est probablement dû à :",
+                    "question": "Quels sont les trois éléments du triangle du feu nécessaires pour un incendie ?",
                     "answerOptions": [
-                        {"text": "Un vernis trop lent.", "isCorrect": False},
-                        {"text": "Un mauvais masquage.", "isCorrect": False},
-                        {"text": "Un raccord noyé trop restreint ou une mauvaise utilisation du diluant de fondu.", "isCorrect": True},
-                        {"text": "Une base mate trop fine.", "isCorrect": False}
+                        {"text": "Combustible Comburant Énergie", "isCorrect": True},
+                        {"text": "Essence Oxygène Azote", "isCorrect": False},
+                        {"text": "Chaleur Flamme Fumée", "isCorrect": False},
+                        {"text": "Gaz Liquide Solide", "isCorrect": False}
                     ],
-                    "correction": "Si le bord du raccord noyé est visible, c'est que la transition n'a pas été suffisamment étalée ou que le diluant de fondu n'a pas été appliqué correctement pour adoucir le bord du vernis neuf."
+                    "correction": "Combustible + Oxygène + Chaleur/Étincelle."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Quel est le rôle principal de la lampe chauffante infrarouge utilisée en carrosserie ?",
+                    "question": "Quel défaut visuel se caractérise par une peinture terne, blanchâtre et sans éclat ?",
                     "answerOptions": [
-                        {"text": "Remplacer le soleil.", "isCorrect": False},
-                        {"text": "Sécher des petites zones de mastic ou d'apprêt rapidement et localement.", "isCorrect": True},
-                        {"text": "Lustrer la peinture.", "isCorrect": False},
-                        {"text": "Nettoyer les surfaces.", "isCorrect": False}
+                        {"text": "Le blanchiment", "isCorrect": True},
+                        {"text": "Le métallisé", "isCorrect": False},
+                        {"text": "Le nacré", "isCorrect": False},
+                        {"text": "Le laqué", "isCorrect": False}
                     ],
-                    "correction": "Les lampes **infrarouges** accélèrent le séchage des produits 2K en chauffant directement la matière (à cœur) sans chauffer l'air, ce qui est idéal pour les petites réparations (spot repair) hors cabine."
+                    "correction": "Voile dû à l'humidité ambiante."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Quel est le principal avantage de l'utilisation d'un système de ponçage à sec (avec aspiration) par rapport au ponçage à l'eau ?",
+                    "question": "Pourquoi l'électricité statique est-elle l'ennemie du peintre ?",
                     "answerOptions": [
-                        {"text": "Le coût des abrasifs est plus faible.", "isCorrect": False},
-                        {"text": "On obtient un meilleur brillant.", "isCorrect": False},
-                        {"text": "Le travail est plus rapide, plus propre et sans risque de rouille (sur métal nu).", "isCorrect": True},
-                        {"text": "Il n'y a pas besoin de masque.", "isCorrect": False}
+                        {"text": "Elle attire les poussières", "isCorrect": True},
+                        {"text": "Elle change la couleur", "isCorrect": False},
+                        {"text": "Elle bouche le pistolet", "isCorrect": False},
+                        {"text": "Elle refroidit la pièce", "isCorrect": False}
                     ],
-                    "correction": "Le ponçage à sec moderne (avec aspiration) évacue immédiatement la poussière, est plus rapide et **élimine le risque d'oxydation** (rouille) ou d'introduction d'humidité, notamment sur le métal nu."
+                    "correction": "Attraction magnétique des contaminants."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Après une réparation importante, quel élément est crucial à vérifier avant la livraison au client pour garantir la qualité de la finition ?",
+                    "question": "Quelle est la règle primordiale lors de la manipulation de diluants pour éviter les risques d'incendie ?",
                     "answerOptions": [
-                        {"text": "La couleur du pistolet.", "isCorrect": False},
-                        {"text": "La température de l'atelier.", "isCorrect": False},
-                        {"text": "L'absence de coulures, d'empoussiérage, et la conformité de la brillance (absence d'hologrammes).", "isCorrect": True},
-                        {"text": "La pression des pneus.", "isCorrect": False}
+                        {"text": "Mise à la terre des bidons", "isCorrect": True},
+                        {"text": "Travailler dans le noir", "isCorrect": False},
+                        {"text": "Ajouter de l'eau au solvant", "isCorrect": False},
+                        {"text": "Chauffer le produit avant usage", "isCorrect": False}
                     ],
-                    "correction": "La vérification finale sous une lumière adaptée doit confirmer que la **surface est parfaite** (pas de défauts majeurs) et que le **lustrage** a éliminé toute trace de ponçage ou d'hologramme, assurant un niveau de qualité professionnel."
+                    "correction": "Équipotentialité pour éviter l'étincelle statique."
                 },
             ]
         }

@@ -1,1136 +1,1143 @@
 quiz_data = {
-    "title": "CAP Commercialisation et Services en Hôtel-Café-Restaurant (CSHCR) - Base de Données Complète (100 Questions) - Corrigée V1",
-    
-    "description": "Base de données de 100 questions pour le CAP CSHCR. Les longueurs des réponses ont été uniformisées pour éviter tout biais lors d'un test.",
-    
+    "title": "Quiz CAP Commercialisation et Services en HCR (100 Questions)",
     "themes": {
-        # THÈME 1
+        # =========================================================================
+        # THÈME 1 : ORGANISATION, MISE EN PLACE ET APPROVISIONNEMENT (Q1 à Q20)
+        # =========================================================================
         1: {
-            "name": "Hygiène, Sécurité, Environnement (HSE) et Législation (HACCP)",
+            "name": "THÈME 1 : ORGANISATION, MISE EN PLACE ET APPROVISIONNEMENT",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quelle est la 'zone de danger' (ou 'Temperature Danger Zone - TDZ') où la prolifération des bactéries est maximale en cuisine ?",
+                    "question": "Quelle méthode de gestion des stocks consiste à utiliser les produits livrés en premier avant ceux livrés récemment ?",
                     "answerOptions": [
-                        {"text": "La zone des températures positives : entre +15°C et +20°C (température ambiante) pour le pointage des pâtes.", "isCorrect": False, "key": "A"},
-                        {"text": "La zone comprise entre +8°C et +63°C, qui favorise la multiplication rapide des micro-organismes (toxines) dans les aliments.", "isCorrect": True, "key": "B"},
-                        {"text": "La zone des très hautes températures (supérieure à +100°C), pour la stérilisation (appertisation).", "isCorrect": False, "key": "C"},
-                        {"text": "La zone des températures négatives : entre -5°C et -18°C (congélation) pour la conservation longue durée.", "isCorrect": False, "key": "D"}
+                        {"text": "PEPS (Premier Entré, Premier Sorti)", "isCorrect": True},
+                        {"text": "La méthode LIFO", "isCorrect": False},
+                        {"text": "Le système de réassort automatique journalier", "isCorrect": False},
+                        {"text": "Le stockage par ordre alphabétique des fournisseurs", "isCorrect": False}
                     ],
-                    "correction": "Les aliments doivent être maintenus à une température inférieure à 8°C (réfrigération) ou supérieure à 63°C (maintien au chaud)."
+                    "correction": "PEPS (ou FIFO en anglais) est la règle d'or en restauration pour éviter les pertes et garantir la fraîcheur en utilisant les stocks les plus anciens en priorité."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quelle est la température maximale de conservation des produits 'Très Périssables' (viandes, poissons, produits laitiers) en enceinte froide ?",
+                    "question": "Quel est le nom du tissu épais placé sous la nappe pour protéger la table et étouffer le bruit ?",
                     "answerOptions": [
-                        {"text": "Une température de conservation de +4°C maximum (réglementation européenne pour les produits sensibles).", "isCorrect": True, "key": "A"},
-                        {"text": "La zone des températures positives : entre +15°C et +20°C (température ambiante) pour le stockage des œufs frais.", "isCorrect": False, "key": "B"},
-                        {"text": "La zone des très hautes températures (supérieure à +100°C), pour la stérilisation (appertisation).", "isCorrect": False, "key": "C"},
-                        {"text": "Une température de conservation de -18°C pour les produits frais (faux, c'est pour la congélation ou surgélation).", "isCorrect": False, "key": "D"}
+                        {"text": "Le molleton", "isCorrect": True},
+                        {"text": "Le napperon", "isCorrect": False},
+                        {"text": "Le chemin de table", "isCorrect": False},
+                        {"text": "La serviette de service", "isCorrect": False}
                     ],
-                    "correction": "Les produits très périssables sont généralement conservés à +4°C maximum. La viande hachée est à +2°C maximum."
+                    "correction": "Le molleton assure le confort du client, protège le plateau de la chaleur et absorbe les bruits de vaisselle."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quelle est la principale mesure d'hygiène à respecter avant de prendre son poste en salle ou en cuisine ?",
+                    "question": "Dans quel ordre logique doit-on effectuer le nettoyage d'une surface selon le principe de la marche en avant ?",
                     "answerOptions": [
-                        {"text": "Se laver et se désinfecter les mains de manière rigoureuse (procédure de lavage) et enfiler la tenue de travail propre.", "isCorrect": True, "key": "A"},
-                        {"text": "Vérifier la température du four pour s'assurer que les produits seront enfournés à chaud dans la zone de danger (faux).", "isCorrect": False, "key": "B"},
-                        {"text": "Protéger les vitres, les pièces en plastique/caoutchouc et les réservoirs d'essence à proximité des étincelles (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "S'assurer que l'eau utilisée pour le pétrissage est à une température maximale de 10°C (faux, concerne la boulangerie).", "isCorrect": False, "key": "D"}
+                        {"text": "Du plus propre vers le plus sale", "isCorrect": True},
+                        {"text": "Du plus sale vers le plus propre", "isCorrect": False},
+                        {"text": "Du bas vers le haut pour éviter les coulures", "isCorrect": False},
+                        {"text": "De manière aléatoire selon le temps disponible", "isCorrect": False}
                     ],
-                    "correction": "Le lavage des mains et la tenue propre sont les 'Points Critiques pour la Maîtrise' (CCP) de l'hygiène personnelle."
+                    "correction": "On commence par les zones les moins contaminées pour finir par les plus sales afin de ne pas déplacer les bactéries."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Quelle est la procédure correcte pour la gestion des Huiles Alimentaires Usagées (HAU) après une friture ?",
+                    "question": "Que signifie la DLC sur un emballage alimentaire ?",
                     "answerOptions": [
-                        {"text": "Les jeter directement dans les poubelles (ordures ménagères) sans possibilité de réutilisation (interdit).", "isCorrect": False, "key": "A"},
-                        {"text": "Les stocker séparément, identifier la nature du déchet et les confier à des entreprises spécialisées (collecte et recyclage).", "isCorrect": True, "key": "B"},
-                        {"text": "Les recongeler pour une revente ultérieure à un prix réduit dans les prochaines 48 heures (interdit).", "isCorrect": False, "key": "C"},
-                        {"text": "Les réintroduire (une partie) dans la prochaine fournée de pâte fraîche (interdit).", "isCorrect": False, "key": "D"}
+                        {"text": "Date Limite de Consommation", "isCorrect": True},
+                        {"text": "Délai de Livraison Commande", "isCorrect": False},
+                        {"text": "Date de Liaison Culinaire", "isCorrect": False},
+                        {"text": "Détail Logistique Client", "isCorrect": False}
                     ],
-                    "correction": "Les HAU sont un déchet polluant. Leur recyclage (biocarburant) est soumis à une réglementation environnementale stricte."
+                    "correction": "La DLC est impérative pour les denrées périssables ; au-delà de cette date, le produit peut présenter un danger pour la santé."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel est le risque lié à la présence de bijoux (bagues, bracelets) ou de montres sur l'opérateur en cuisine ou en salle ?",
+                    "question": "Comment appelle-t-on l'action d'essuyer les verres et les couverts pour les rendre brillants ?",
                     "answerOptions": [
-                        {"text": "Le risque de corrosion accélérée des pièces métalliques du hachoir et du poussoir (acidité des bijoux).", "isCorrect": False, "key": "A"},
-                        {"text": "La rupture de la chaîne du froid dans le réfrigérateur suite au choc thermique (faux).", "isCorrect": False, "key": "B"},
-                        {"text": "Le risque de contamination microbienne (nids à bactéries) et de contamination physique (chute du bijou dans l'assiette).", "isCorrect": True, "key": "C"},
-                        {"text": "L'augmentation rapide de la viscosité de la pâte lors de l'incorporation de la lécithine (émulsifiant).", "isCorrect": False, "key": "D"}
+                        {"text": "Le litonnage (ou essuyage)", "isCorrect": True},
+                        {"text": "Le dressage", "isCorrect": False},
+                        {"text": "Le débarrassage", "isCorrect": False},
+                        {"text": "Le nappage", "isCorrect": False}
                     ],
-                    "correction": "Les bijoux (particulièrement les bagues) sont interdits en cuisine et souvent fortement déconseillés en salle (réglementation)."
+                    "correction": "Le litonnage s'effectue avec un liteau propre, souvent au-dessus d'une source de vapeur (eau chaude)."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Quel est le risque de remettre une préparation chaude directement au réfrigérateur (grand volume) sans refroidissement rapide ?",
+                    "question": "Où se place l'assiette à pain dans une mise en place classique ?",
                     "answerOptions": [
-                        {"text": "L'augmentation excessive du taux d'humidité de la pâte en cours de préparation (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le risque de 'remontée en température' des autres aliments stockés (rupture de la chaîne du froid) et de prolifération bactérienne.", "isCorrect": True, "key": "B"},
-                        {"text": "Le risque de prolifération d'organismes thermophiles sur le pain cuit (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "La corrosion accélérée des pièces métalliques du pétrin et du fournil (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "À gauche de la fourchette", "isCorrect": True},
+                        {"text": "À droite du couteau", "isCorrect": False},
+                        {"text": "Au centre de l'assiette de base", "isCorrect": False},
+                        {"text": "Derrière les verres", "isCorrect": False}
                     ],
-                    "correction": "Le refroidissement doit être rapide (de +63°C à +10°C en moins de deux heures) à l'aide d'une cellule de refroidissement (blast chiller)."
+                    "correction": "L'assiette à pain se place en haut à gauche, alignée sur le haut de l'assiette principale."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quelle est l'importance du 'sens de la marche' (flux en avant) dans l'organisation du restaurant et de la cuisine (HACCP) ?",
+                    "question": "Quel couvert se place traditionnellement à droite de l'assiette ?",
                     "answerOptions": [
-                        {"text": "Garantir l'image de marque de la boutique, sans aucun lien avec l'hygiène alimentaire (HACCP).", "isCorrect": False, "key": "A"},
-                        {"text": "Éviter la contamination croisée en séparant les zones 'sales' (matières premières/déchets) des zones 'propres' (produit fini/service).", "isCorrect": True, "key": "B"},
-                        {"text": "Assurer uniquement la protection contre les brûlures des mains et des avant-bras de l'opérateur (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Permettre au boulanger de travailler sans être soumis aux variations de température du fournil (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le couteau de table", "isCorrect": True},
+                        {"text": "La fourchette de table", "isCorrect": False},
+                        {"text": "La serviette de table", "isCorrect": False},
+                        {"text": "L'assiette à pain", "isCorrect": False}
                     ],
-                    "correction": "Le produit doit toujours avancer dans le processus (de la réception au service), sans jamais croiser les flux de déchets ou de vaisselle sale."
+                    "correction": "Les couteaux et la cuillère à potage se placent à droite de l'assiette."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quel est le danger principal pour le personnel de salle lié à la manipulation de poids lourds (caisse de bouteilles, pile d'assiettes) ?",
+                    "question": "À quoi sert un 'ménage' en restauration ?",
                     "answerOptions": [
-                        {"text": "Le risque d'intoxication aux poussières de farine dues à une rupture du sac lors du transport (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le risque de Troubles Musculo-Squelettiques (TMS), notamment le mal de dos (lumbago, hernie) ou les douleurs articulaires.", "isCorrect": True, "key": "B"},
-                        {"text": "Le risque de brûlure chimique sur la peau lors de l'incorporation de la farine dans le pétrin (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le risque d'explosion (ATEX) en cas de choc du sac sur le sol du laboratoire (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Regrouper les condiments (sel, poivre, huile, vinaigre)", "isCorrect": True},
+                        {"text": "Laver le sol du restaurant", "isCorrect": False},
+                        {"text": "Nettoyer les vitres de la salle", "isCorrect": False},
+                        {"text": "Ranger les vestiaires", "isCorrect": False}
                     ],
-                    "correction": "Le port de charges lourdes doit être sécurisé (chariot, dos droit) pour prévenir les maladies professionnelles (TMS)."
+                    "correction": "Le terme 'ménage' désigne le support comportant les éléments d'assaisonnement à disposition du client."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Quel est le risque si l'on ne nettoie pas correctement les plans de travail ou le matériel (couteaux, assiettes) entre deux utilisations ?",
+                    "question": "Quel est le meuble de service utilisé par le serveur pour stocker son matériel en salle ?",
                     "answerOptions": [
-                        {"text": "La diminution du temps de pétrissage pour la deuxième pâte (gain de temps, faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le risque de contamination croisée entre un allergène (fruits à coque) et une autre préparation (risque client).", "isCorrect": True, "key": "B"},
-                        {"text": "La contamination des fonds de peinture ou de la cabine, entraînant des défauts (poussières, cratères, faux).", "isCorrect": False, "key": "C"},
-                        {"text": "L'altération des propriétés de la levure par contact avec l'eau froide (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "La console", "isCorrect": True},
+                        {"text": "Le guéridon", "isCorrect": False},
+                        {"text": "Le bar", "isCorrect": False},
+                        {"text": "Le buffet", "isCorrect": False}
                     ],
-                    "correction": "La gestion des allergènes (gluten, œufs, lait, fruits à coque) est obligatoire. Elle passe par un nettoyage et une désinfection stricts."
+                    "correction": "La console permet d'avoir à portée de main les couverts, assiettes et verres de secours pendant le service."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Que signifie la 'DLUO' (Date Limite d'Utilisation Optimale) sur un ingrédient non périssable (épices séchées) ?",
+                    "question": "Que doit-on vérifier lors de la réception des marchandises ?",
                     "answerOptions": [
-                        {"text": "Elle indique la date après laquelle l'ingrédient ne peut plus être consommé (danger bactériologique).", "isCorrect": False, "key": "A"},
-                        {"text": "Elle indique la date après laquelle les qualités organoleptiques (goût, arôme, texture) ne sont plus garanties (sans risque sanitaire immédiat).", "isCorrect": True, "key": "B"},
-                        {"text": "Elle indique la température maximale de conservation pour l'ingrédient (+4°C).", "isCorrect": False, "key": "C"},
-                        {"text": "Elle indique la zone de danger bactériologique (entre +8°C et +63°C).", "isCorrect": False, "key": "D"}
+                        {"text": "La température, les dates et l'état des emballages", "isCorrect": True},
+                        {"text": "Uniquement le prix unitaire", "isCorrect": False},
+                        {"text": "Le nom du chauffeur", "isCorrect": False},
+                        {"text": "La couleur du camion", "isCorrect": False}
                     ],
-                    "correction": "La DLUO (remplacée par le DDM : Date de Durabilité Minimale) n'est pas une date limite de consommation (DLC) sanitaire."
+                    "correction": "Le contrôle qualitatif et quantitatif est indispensable pour garantir la sécurité alimentaire."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Quel est le document obligatoire qui décrit toutes les mesures prises par l'établissement pour assurer l'hygiène et la sécurité des aliments ?",
+                    "question": "Quel verre est placé le plus à droite lors d'une mise en place ?",
                     "answerOptions": [
-                        {"text": "La 'Fiche Technique de Vente' (FTV) qui détaille l'argumentaire client (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'Plan de Maîtrise Sanitaire' (PMS) qui inclut les procédures HACCP, de traçabilité et de nettoyage.", "isCorrect": True, "key": "B"},
-                        {"text": "Le 'Bilan de Compétences' du personnel de cuisine (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le 'Rapport de Mise en Conformité' du matériel électrique (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le verre à vin blanc", "isCorrect": True},
+                        {"text": "Le verre à eau", "isCorrect": False},
+                        {"text": "Le verre à vin rouge", "isCorrect": False},
+                        {"text": "La flûte à champagne", "isCorrect": False}
                     ],
-                    "correction": "Le PMS (basé sur l'HACCP) est un document obligatoire qui rassemble toutes les procédures de l'entreprise (hygiène, contrôles, traçabilité)."
+                    "correction": "Les verres sont placés par taille décroissante de gauche à droite : eau, vin rouge, vin blanc."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Comment doit-on gérer un produit ayant atteint sa Date Limite de Consommation (DLC) ?",
+                    "question": "Comment appelle-t-on le petit nappe qui recouvre la nappe principale ?",
                     "answerOptions": [
-                        {"text": "Le remettre immédiatement en rayon avec une réduction de prix pour éviter la perte (interdit).", "isCorrect": False, "key": "A"},
-                        {"text": "Le retirer immédiatement de la vente, le détruire ou le jeter (risque sanitaire avéré).", "isCorrect": True, "key": "B"},
-                        {"text": "Le stocker dans une zone sèche (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le recongeler pour prolonger sa durée de vie (interdit).", "isCorrect": False, "key": "D"}
+                        {"text": "Le napperon", "isCorrect": True},
+                        {"text": "Le molleton", "isCorrect": False},
+                        {"text": "Le liteau", "isCorrect": False},
+                        {"text": "Le chemin de table", "isCorrect": False}
                     ],
-                    "correction": "La DLC est la date après laquelle l'aliment est considéré comme dangereux (risques sanitaires). Le produit doit être impérativement retiré."
+                    "correction": "Le napperon protège la nappe et permet un changement plus rapide entre deux clients."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quelle est l'attitude à adopter en cas de coupure (blessure) légère sur un poste de travail en cuisine ou en salle ?",
+                    "question": "Dans un office, à quoi sert le 'chauffe-assiettes' ?",
                     "answerOptions": [
-                        {"text": "Continuer le service ou la préparation après avoir essuyé la coupure (risque de contamination immédiat).", "isCorrect": False, "key": "A"},
-                        {"text": "Nettoyer, désinfecter la plaie et la recouvrir d'un pansement étanche de couleur vive (bleu) pour être visible.", "isCorrect": True, "key": "B"},
-                        {"text": "Appliquer de la farine pour stopper le saignement (méthode de grand-mère non hygiénique).", "isCorrect": False, "key": "C"},
-                        {"text": "Démissionner sur le champ (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Maintenir la température des assiettes avant le service", "isCorrect": True},
+                        {"text": "Cuire les légumes", "isCorrect": False},
+                        {"text": "Sécher les verres", "isCorrect": False},
+                        {"text": "Désinfecter les couverts", "isCorrect": False}
                     ],
-                    "correction": "Le pansement étanche de couleur vive (souvent bleu en cuisine) est obligatoire pour signaler la présence d'une blessure et éviter la contamination des aliments."
+                    "correction": "Servir dans des assiettes chaudes garantit que le plat ne refroidit pas trop vite devant le client."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Quel est le risque de contamination des aliments si un employé est malade (rhume, gastro-entérite) ?",
+                    "question": "Quel document récapitule les entrées et sorties de marchandises dans la réserve ?",
                     "answerOptions": [
-                        {"text": "Le risque de 'remontée en température' des autres aliments stockés (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le risque de contamination par voie directe (postillons) ou indirecte (mains) et de propagation de l'infection aux clients.", "isCorrect": True, "key": "B"},
-                        {"text": "La corrosion accélérée des pièces métalliques du pétrin (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "La diminution du taux de cendres (T) de la farine utilisée (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "La fiche de stock", "isCorrect": True},
+                        {"text": "La carte des vins", "isCorrect": False},
+                        {"text": "Le menu du jour", "isCorrect": False},
+                        {"text": "Le carnet de bord", "isCorrect": False}
                     ],
-                    "correction": "L'employé malade doit signaler son état et, si nécessaire, être affecté à un poste sans contact avec les aliments (ou se reposer)."
+                    "correction": "La fiche de stock permet de connaître en temps réel les quantités disponibles et de déclencher les commandes."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Que doit-on faire si l'on constate une infestation de nuisibles (rongeurs, insectes) dans la zone de stockage des ingrédients ?",
+                    "question": "Comment appelle-t-on l'action d'enlever les miettes de pain avant le dessert ?",
                     "answerOptions": [
-                        {"text": "Augmenter la température du fournil pour chasser les nuisibles par la chaleur excessive (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Contacter immédiatement une entreprise de lutte antiparasitaire et jeter toutes les marchandises contaminées (risque sanitaire).", "isCorrect": True, "key": "B"},
-                        {"text": "Ajouter plus de sel dans la pâte pour désinfecter la farine contaminée par les excréments (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Les laisser pour la fin de la production, car le four brûlera tous les corps étrangers (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le ramassage des miettes", "isCorrect": True},
+                        {"text": "Le brossage de table", "isCorrect": False},
+                        {"text": "Le dépoussiérage", "isCorrect": False},
+                        {"text": "Le déblayage", "isCorrect": False}
                     ],
-                    "correction": "Les nuisibles sont des vecteurs de maladies (Salmonella). Les produits contaminés doivent être détruits. La dératisation est vitale."
+                    "correction": "On utilise une ramasse-miettes ou une serviette avec une assiette plate."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Quel est l'objectif principal de la 'traçabilité' des produits alimentaires (ticket, fiche de production) ?",
+                    "question": "Quelle est la règle pour placer les verres ?",
                     "answerOptions": [
-                        {"text": "Assurer la sécurité du véhicule pour l'utilisateur et la conformité avec la réglementation routière (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Permettre d'identifier l'origine des matières, la date de fabrication, le numéro de lot et la DLC (en cas de rappel produit).", "isCorrect": True, "key": "B"},
-                        {"text": "Ajouter un additif (émulsifiant) dans la pâte pour neutraliser le corps étranger (sans effet, faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Mesurer la teneur en gluten (W) de la farine utilisée pour le pétrissage (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Dans l'ordre décroissant de hauteur de gauche à droite", "isCorrect": True},
+                        {"text": "Dans n'importe quel ordre", "isCorrect": False},
+                        {"text": "Le plus petit à gauche", "isCorrect": False},
+                        {"text": "Alignés verticalement", "isCorrect": False}
                     ],
-                    "correction": "La traçabilité est la capacité de retrouver l'historique d'un produit (du champ à l'assiette) et elle est obligatoire (sécurité)."
+                    "correction": "L'alignement se fait traditionnellement sur une ligne oblique ou droite partant du couteau."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Que doit-on faire si l'on constate une différence de température anormale dans une chambre froide (+10°C) ?",
+                    "question": "Quelle est la définition d'un 'amuse-bouche' ?",
                     "answerOptions": [
-                        {"text": "Laisser la porte ouverte pour aérer (mauvaise solution).", "isCorrect": False, "key": "A"},
-                        {"text": "Isoler les aliments, alerter la maintenance et enregistrer la rupture de la chaîne du froid sur le registre (action corrective).", "isCorrect": True, "key": "B"},
-                        {"text": "Couper immédiatement le courant pour économiser l'énergie (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Ne rien faire et attendre que la température redescende seule (risqué).", "isCorrect": False, "key": "D"}
+                        {"text": "Une petite préparation servie à l'apéritif", "isCorrect": True},
+                        {"text": "Un gâteau de fin de repas", "isCorrect": False},
+                        {"text": "Une boisson alcoolisée", "isCorrect": False},
+                        {"text": "Un type de couvert", "isCorrect": False}
                     ],
-                    "correction": "Une rupture de la chaîne du froid (> +8°C) est un CCP. Les aliments doivent être jetés (si la durée est trop longue) ou isolés (si courte)."
+                    "correction": "L'amuse-bouche est offert pour faire patienter le client avant l'entrée."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quel est le risque si un produit (plat cuisiné) est maintenu au chaud en dessous de 63°C pendant une longue durée ?",
+                    "question": "À quoi sert un 'limonadier' ?",
                     "answerOptions": [
-                        {"text": "Le risque d'intoxication alimentaire (Salmonella, Listeria) due à la multiplication rapide des bactéries dans la 'zone de danger'.", "isCorrect": True, "key": "A"},
-                        {"text": "Le risque de 'brûlure' des micro-organismes (faux).", "isCorrect": False, "key": "B"},
-                        {"text": "La diminution du temps de pétrissage pour la deuxième pâte (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "La zone des températures ambiantes (entre +15°C et +20°C) pour le stockage (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "À déboucher les bouteilles (tire-bouchon, décapsuleur)", "isCorrect": True},
+                        {"text": "À fabriquer de la limonade", "isCorrect": False},
+                        {"text": "À presser des citrons", "isCorrect": False},
+                        {"text": "À porter les boissons gazeuses", "isCorrect": False}
                     ],
-                    "correction": "Le maintien au chaud (CCP) doit être supérieur à 63°C pour garantir la sécurité. La durée maximale est réglementée (souvent 4 heures)."
+                    "correction": "C'est l'outil polyvalent indispensable du serveur et du barman."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel est le rôle du 'Désinfectant' (biocide) dans le protocole de nettoyage-désinfection ?",
+                    "question": "Que signifie 'décanter' un vin ?",
                     "answerOptions": [
-                        {"text": "Il sert uniquement à enlever la saleté visible (débris alimentaires, graisse).", "isCorrect": False, "key": "A"},
-                        {"text": "Il détruit les micro-organismes (bactéries, virus, levures) qui restent après le nettoyage (action chimique).", "isCorrect": True, "key": "B"},
-                        {"text": "Il sert d'agent de blanchiment de la mie du pain (aspect très blanc, faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Il augmente la viscosité de la pâte lors de l'incorporation de la lécithine (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Transvaser le vin dans une carafe pour éliminer le dépôt", "isCorrect": True},
+                        {"text": "Mettre le vin au frais", "isCorrect": False},
+                        {"text": "Ajouter de l'eau dans le vin", "isCorrect": False},
+                        {"text": "Goûter le vin devant le client", "isCorrect": False}
                     ],
-                    "correction": "Le protocole 'Nettoyage-Désinfection' est la base de l'HACCP pour éliminer les résidus (nettoyage) et les micro-organismes (désinfection)."
+                    "correction": "La décantation concerne surtout les vieux vins rouges ayant un dépôt solide."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quelle est l'attitude à adopter par le personnel de salle en cas d'incendie dans l'établissement ?",
+                    "question": "Qu'est-ce qu'un 'mise en place' ?",
                     "answerOptions": [
-                        {"text": "Tenter d'éteindre le feu par ses propres moyens (sauf feu naissant maîtrisé) sans alerter (mauvais).", "isCorrect": False, "key": "A"},
-                        {"text": "Alerter, couper les énergies (si possible), évacuer les clients et le personnel vers le point de rassemblement, sans paniquer (PSSI).", "isCorrect": True, "key": "B"},
-                        {"text": "Courir chercher un verre d'eau pour éteindre le feu sur une friteuse (dangereux).", "isCorrect": False, "key": "C"},
-                        {"text": "Continuer le service en attendant l'arrivée des secours (dangereux).", "isCorrect": False, "key": "D"}
+                        {"text": "L'ensemble des travaux préparatoires avant l'arrivée des clients", "isCorrect": True},
+                        {"text": "Le moment où on encaisse l'argent", "isCorrect": False},
+                        {"text": "La décoration extérieure du restaurant", "isCorrect": False},
+                        {"text": "Le rangement après le service", "isCorrect": False}
                     ],
-                    "correction": "Le Plan de Sécurité et de Sûreté Incendie (PSSI) doit être maîtrisé : priorité à l'alerte et à l'évacuation des personnes."
+                    "correction": "Une bonne mise en place garantit la fluidité du service."
                 }
             ]
         },
-        # THÈME 2
+        # =========================================================================
+        # THÈME 2 : ACCUEIL, VENTE ET SERVICE (Q21 à Q40)
+        # =========================================================================
         2: {
-            "name": "Techniques de Service en Restauration et Boissons",
+            "name": "THÈME 2 : ACCUEIL, VENTE ET SERVICE",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quel est le principe du 'Service à la Française' pour un plat (mise en place) ?",
+                    "question": "Quelle est la règle d'or pour servir les assiettes prêtes ?",
                     "answerOptions": [
-                        {"text": "Le client se sert lui-même directement dans le plat de présentation (présenté à gauche), à l'aide de couverts de service.", "isCorrect": True, "key": "A"},
-                        {"text": "Le serveur apporte l'assiette dressée de la cuisine et la dépose devant le client (service le plus rapide).", "isCorrect": False, "key": "B"},
-                        {"text": "Le serveur effectue la découpe ou le flambage devant le client à l'aide d'un chariot de service (guéridon).", "isCorrect": False, "key": "C"},
-                        {"text": "Le serveur sert le client directement à la cuillère et à la fourchette, sans que le client ne touche le plat (service le plus formel).", "isCorrect": False, "key": "D"}
+                        {"text": "Servir par la droite du client", "isCorrect": True},
+                        {"text": "Servir par la gauche du client", "isCorrect": False},
+                        {"text": "Servir par-dessus l'épaule du client", "isCorrect": False},
+                        {"text": "Demander au client de prendre son assiette", "isCorrect": False}
                     ],
-                    "correction": "Le Service à la Française (présentation du plat) est peu utilisé en restaurant, mais plus pour les buffets ou les plats familiaux (convivialité)."
+                    "correction": "Le service à l'assiette se fait toujours par la droite du convive."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Quel est le côté de service et de desserte (débarrassage) conventionnel pour le plat principal du client ?",
+                    "question": "Qu'est-ce qu'une vente suggestive ?",
                     "answerOptions": [
-                        {"text": "Le service se fait toujours à gauche du client, et la desserte se fait toujours à droite du client (selon la convention classique).", "isCorrect": False, "key": "A"},
-                        {"text": "Le service (plat, assiette, sauce) se fait toujours à droite du client, et la desserte (assiette sale) se fait toujours à droite.", "isCorrect": True, "key": "B"},
-                        {"text": "Le service (plat, assiette, sauce) se fait toujours à gauche du client, et la desserte se fait toujours à droite.", "isCorrect": False, "key": "C"},
-                        {"text": "Le service se fait toujours en face du client (service au passe), et la desserte se fait toujours à gauche.", "isCorrect": False, "key": "D"}
+                        {"text": "Conseiller un produit complémentaire (ex: apéritif, café)", "isCorrect": True},
+                        {"text": "Forcer le client à manger plus", "isCorrect": False},
+                        {"text": "Réduire le prix pour le client", "isCorrect": False},
+                        {"text": "Donner l'addition rapidement", "isCorrect": False}
                     ],
-                    "correction": "La convention classique est : service à droite (plat) et desserte à droite (assiette sale). Exceptions : service à la française et pain (gauche)."
+                    "correction": "La vente suggestive augmente le ticket moyen tout en apportant un conseil au client."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quel est le rôle du 'sommelier' ou du personnel en charge du service du vin ?",
+                    "question": "Par qui doit-on commencer le service à une table ?",
                     "answerOptions": [
-                        {"text": "Resserrer le réseau de gluten (ténacité) et incorporer l'air (pour le volume) lors du pétrissage intensif (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Conseiller le client sur les accords mets et vins, prendre la commande, préparer le vin (chambrer/rafraîchir) et le servir (dégustation).", "isCorrect": True, "key": "B"},
-                        {"text": "Accélérer l'activité des bactéries lactiques pour obtenir une pâte plus acide et aromatique (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Les dames et les personnes âgées", "isCorrect": True},
+                        {"text": "L'hôte qui invite", "isCorrect": False},
+                        {"text": "Les enfants uniquement", "isCorrect": False},
+                        {"text": "Dans l'ordre des places assises", "isCorrect": False}
                     ],
-                    "correction": "Le sommelier est le garant de la cave, de l'accord mets et vins, et de la bonne exécution du service du vin (température, verrerie)."
+                    "correction": "Le protocole de courtoisie impose de servir les femmes en premier, puis les hommes, et l'hôte en dernier."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Comment appelle-t-on le fait de servir le plat (viande, poisson) à l'aide d'une cuillère et d'une fourchette (servies à la main) ?",
+                    "question": "Quelle attitude non-verbale est recommandée lors de l'accueil ?",
                     "answerOptions": [
-                        {"text": "Le service à la russe (ou au plat) : le serveur prend l'aliment du plat de service et le dépose sur l'assiette du client.", "isCorrect": False, "key": "A"},
-                        {"text": "Le service à l'anglaise (ou 'à la cuillère') : le serveur effectue le service directement de la cuillère à la fourchette (à gauche du client).", "isCorrect": True, "key": "B"},
-                        {"text": "Le service à la française (le client se sert lui-même) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le service au guéridon (le serveur découpe devant le client) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Sourire, regard franc et tenue irréprochable", "isCorrect": True},
+                        {"text": "Croiser les bras", "isCorrect": False},
+                        {"text": "Regarder sa montre", "isCorrect": False},
+                        {"text": "Mâcher un chewing-gum", "isCorrect": False}
                     ],
-                    "correction": "Le Service à l'Anglaise est le service le plus formel et le plus technique. Il est effectué à la gauche du client."
+                    "correction": "La première impression est déterminante pour la suite de l'expérience client."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quel est le rôle du 'Guéridon' dans le service en salle (service haut de gamme) ?",
+                    "question": "Comment présente-t-on la carte au client ?",
                     "answerOptions": [
-                        {"text": "Contrôler la déchirure de la croûte pendant la cuisson (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Il sert de table d'appoint ou de poste de travail pour les préparations devant le client (découpe, flambage, préparation de salades).", "isCorrect": True, "key": "B"},
-                        {"text": "Accélérer l'activité de la levure et augmenter la production d'acide lactique (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Ouverte, par la droite du client", "isCorrect": True},
+                        {"text": "Fermée, par la gauche du client", "isCorrect": False},
+                        {"text": "Posée sur la table sans rien dire", "isCorrect": False},
+                        {"text": "Donnée uniquement si le client le demande", "isCorrect": False}
                     ],
-                    "correction": "Le guéridon (petite table mobile) est essentiel pour les services de 'show cooking' (démonstration) qui nécessitent des gestes techniques."
+                    "correction": "On présente la carte ouverte pour faciliter la lecture immédiate du client."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Quel est l'élément qui permet de 'refroidir' une bouteille de vin blanc ou de Champagne en salle ?",
+                    "question": "Que signifie 'débarrasser à l'assiette' ?",
                     "answerOptions": [
-                        {"text": "Un bain-marie (eau chaude) pour maintenir la température (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le seau à glace (ou seau à vin) rempli d'eau et de glace, et une serviette (liteau) pour le service (température idéale).", "isCorrect": True, "key": "B"},
-                        {"text": "Le congélateur (dangereux, casse le vin) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le four à convection (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Prendre les assiettes sales par la droite une par une", "isCorrect": True},
+                        {"text": "Empiler les assiettes sur la table", "isCorrect": False},
+                        {"text": "Laisser le client empiler ses assiettes", "isCorrect": False},
+                        {"text": "Jeter les restes en salle", "isCorrect": False}
                     ],
-                    "correction": "Le seau à glace (avec eau) est le moyen le plus rapide et le plus élégant pour maintenir la température de service des vins blancs et mousseux."
+                    "correction": "On ne doit jamais empiler les assiettes devant le client (bruit et esthétique)."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quel est le nom de la serviette (en tissu ou en coton) utilisée par le serveur pour le service du vin ou le transport de plats chauds ?",
+                    "question": "Quel service consiste à présenter le plat à gauche et à servir le client ?",
                     "answerOptions": [
-                        {"text": "Le liteau (serviette de service) pour porter les assiettes chaudes et essuyer les bouteilles (propreté).", "isCorrect": True, "key": "A"},
-                        {"text": "Le torchon (chiffon) utilisé pour le nettoyage des sols (jamais pour le service, contamination).", "isCorrect": False, "key": "B"},
-                        {"text": "La serviette de table (napperon) du client (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le tablier de cuisine (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le service à l'anglaise", "isCorrect": True},
+                        {"text": "Le service à la russe", "isCorrect": False},
+                        {"text": "Le service à la française", "isCorrect": False},
+                        {"text": "Le buffet", "isCorrect": False}
                     ],
-                    "correction": "Le liteau est l'outil indispensable du serveur (port des assiettes chaudes, essuyage, présentation des vins, etc.)."
+                    "correction": "Le serveur utilise une pince (cuillère + fourchette) pour servir le client depuis le plat."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Comment appelle-t-on le fait de 'décanter' (ou carafer) un vin rouge ancien (en cave) ?",
+                    "question": "Quelle est la définition du 'Ticket Moyen' ?",
                     "answerOptions": [
-                        {"text": "Il active la levure et accélère la fermentation (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "C'est l'action de transvaser le vin dans une carafe pour le séparer de son dépôt (lie) et l'aérer légèrement (développement des arômes).", "isCorrect": True, "key": "B"},
-                        {"text": "Il sert d'agent de blanchiment de la mie du pain (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Il sert uniquement à colorer la croûte du pain lors de la cuisson finale (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Chiffre d'Affaires divisé par le nombre de couverts", "isCorrect": True},
+                        {"text": "Prix du menu du jour", "isCorrect": False},
+                        {"text": "Montant du pourboire moyen", "isCorrect": False},
+                        {"text": "Coût de revient d'un plat", "isCorrect": False}
                     ],
-                    "correction": "La décantation (dans une carafe étroite) est utilisée pour les vieux vins (dépôts). L'aération (dans une carafe large) est pour les vins jeunes."
+                    "correction": "C'est un indicateur de performance qui mesure la dépense moyenne par client."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel est le rôle du 'Ménage de service' (poivre, sel, moutarde, huile/vinaigre) dans le dressage de la table ?",
+                    "question": "Quand apporte-t-on l'addition ?",
                     "answerOptions": [
-                        {"text": "Elle assouplit la pâte, augmente le volume du produit et améliore la saveur (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Il permet au client d'ajuster l'assaisonnement du plat à son goût (personnalisation) ou d'accompagner certains plats (salades).", "isCorrect": True, "key": "B"},
-                        {"text": "Elle rend la pâte trop ferme (ténace) et difficile à travailler au laminoir (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Elle sert uniquement à colorer la mie du produit (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "À la demande du client, présentée dans un porte-addition", "isCorrect": True},
+                        {"text": "Dès que le client a fini son dessert", "isCorrect": False},
+                        {"text": "En même temps que le café", "isCorrect": False},
+                        {"text": "Juste après l'entrée", "isCorrect": False}
                     ],
-                    "correction": "Le ménage (set de condiments) doit être propre et complet avant le service. Il doit être retiré après le plat principal (sauf demande)."
+                    "correction": "L'addition ne doit pas être imposée, sauf en cas de service rapide ou si le client est pressé."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Quel est le nom du couvert de service (souvent en bois ou en plastique) utilisé pour servir le pain aux clients ?",
+                    "question": "Qu'est-ce qu'un 'digestif' ?",
                     "answerOptions": [
-                        {"text": "Les pinces à pain (ou pince de service) pour éviter tout contact direct des mains avec l'aliment (hygiène).", "isCorrect": True, "key": "A"},
-                        {"text": "Le poussoir hydraulique (ou à manivelle) pour introduire la farce sous pression (faux).", "isCorrect": False, "key": "B"},
-                        {"text": "L'amylase, qui transforme l'amidon en sucres (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le colorant (curcuma) pour donner une couleur jaune à la mie des pains spéciaux (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Une boisson alcoolisée servie en fin de repas", "isCorrect": True},
+                        {"text": "Un médicament pour l'estomac", "isCorrect": False},
+                        {"text": "Un type de fromage", "isCorrect": False},
+                        {"text": "Un café décaféiné", "isCorrect": False}
                     ],
-                    "correction": "L'hygiène des mains est primordiale. Les pinces sont obligatoires pour le service du pain (au lieu des doigts)."
+                    "correction": "Exemples : Cognac, Armagnac, Calvados ou liqueurs."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Quel est l'ordre chronologique des plats (service classique) lors d'un repas complet ?",
+                    "question": "Comment appelle-t-on le service où le serveur prépare le plat sur un guéridon devant le client ?",
                     "answerOptions": [
-                        {"text": "Plat Principal, Dessert, Entrée, Boissons (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Potage, Entrée (froide/chaude), Poisson, Viande, Fromage, Dessert (ordre classique).", "isCorrect": True, "key": "B"},
-                        {"text": "Fromage, Entrée, Dessert, Viande (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Dessert, Potage, Entrée, Plat Principal (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le service à la russe", "isCorrect": True},
+                        {"text": "Le service au comptoir", "isCorrect": False},
+                        {"text": "Le service à l'anglaise", "isCorrect": False},
+                        {"text": "Le room-service", "isCorrect": False}
                     ],
-                    "correction": "L'ordre des plats est codifié. Il vise une progression gustative (léger au lourd) et une logique de service."
+                    "correction": "C'est un service de luxe impliquant des découpes ou des flambages en salle."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quelle est la principale difficulté lors du 'Service au Plateau' (plateaux chauds ou froids) ?",
+                    "question": "Que doit-on faire si un verre est ébréché ?",
                     "answerOptions": [
-                        {"text": "Elle dégrade l'amidon en sucres simples (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le maintien de l'équilibre et du poids du plateau (force, bras tendu) et la gestion de la température (choc thermique).", "isCorrect": True, "key": "B"},
-                        {"text": "Elle régule l'acidité (pH) de la pâte et assure la bonne conservation du produit fini (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Elle sert uniquement à blanchir la mie du pain et à réduire l'activité des lactobacilles (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le retirer immédiatement et le jeter", "isCorrect": True},
+                        {"text": "Le laisser s'il n'est pas trop cassé", "isCorrect": False},
+                        {"text": "Le donner au personnel", "isCorrect": False},
+                        {"text": "Cacher l'éclat avec le liteau", "isCorrect": False}
                     ],
-                    "correction": "Le service au plateau nécessite de la force, de l'équilibre, de la coordination et le port d'un liteau (sécurité/hygiène)."
+                    "correction": "La sécurité et l'hygiène du client sont primordiales (risque de coupure)."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quel est le risque d'une 'prise de commande' (méthode manuelle) sans la répéter au client ?",
+                    "question": "Quelle boisson est servie dans une flûte ?",
                     "answerOptions": [
-                        {"text": "Elle rend la pâte plus ferme (ténace) et plus difficile à travailler (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le risque d'erreur dans la transmission (cuisine) ou de malentendu sur les accompagnements (perte de temps, mécontentement client).", "isCorrect": True, "key": "B"},
-                        {"text": "Elle n'a aucun impact sur la pâte, mais elle accélère la corrosion des machines du fournil (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Elle diminue le taux de cendres de la farine (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le champagne ou vin effervescent", "isCorrect": True},
+                        {"text": "Le vin blanc sec", "isCorrect": False},
+                        {"text": "Le café liégeois", "isCorrect": False},
+                        {"text": "L'eau minérale gazeuse", "isCorrect": False}
                     ],
-                    "correction": "La répétition de la commande permet de s'assurer de la bonne compréhension et de rassurer le client (professionnalisme)."
+                    "correction": "La flûte permet de conserver les bulles et les arômes délicats."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Quel est le rôle du 'Marquage' (ou 'Annonce') en cuisine (transmission de la commande) ?",
+                    "question": "Que signifie 'faire l'appel' ou 'aboyer' ?",
                     "answerOptions": [
-                        {"text": "Il apporte une valeur nutritive, de la couleur, du liant et améliore la conservation du produit fini (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Il permet de lancer la préparation des plats (mise en route) et de synchroniser le service de la table (rapidité et qualité).", "isCorrect": True, "key": "B"},
-                        {"text": "Il renforce le réseau de gluten (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Il sert d'agent de blanchiment de la mie du pain (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Anoncer les bons de commande à la cuisine", "isCorrect": True},
+                        {"text": "Crier sur les serveurs", "isCorrect": False},
+                        {"text": "Appeler les clients dans la rue", "isCorrect": False},
+                        {"text": "Vérifier la présence du personnel", "isCorrect": False}
                     ],
-                    "correction": "Le marquage (annonce verbale ou bon de commande) est l'outil de communication entre la salle et la cuisine (efficacité)."
+                    "correction": "L'aboyeur coordonne le rythme entre la salle et la cuisine."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quel est le nom de l'élément de la table qui permet au client de nettoyer sa bouche (après le service du poisson par exemple) ?",
+                    "question": "Comment appelle-t-on le client qui mange régulièrement dans l'établissement ?",
                     "answerOptions": [
-                        {"text": "Le rince-doigts (ou bol d'eau tiède/citron) pour le nettoyage des mains (après crustacés, fruits de mer).", "isCorrect": False, "key": "A"},
-                        {"text": "La panade (mélange de pain trempé ou de farine/lait/œuf) pour l'apport d'amidon (faux).", "isCorrect": False, "key": "B"},
-                        {"text": "La serviette de table (ou napperon) en tissu, qui est changée entre les plats (hygiène).", "isCorrect": True, "key": "C"},
-                        {"text": "La levure de surface (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Un habitué", "isCorrect": True},
+                        {"text": "Un touriste", "isCorrect": False},
+                        {"text": "Un prospect", "isCorrect": False},
+                        {"text": "Un gastronome", "isCorrect": False}
                     ],
-                    "correction": "La serviette de table est l'élément d'hygiène personnel du client. Elle est souvent repliée ou changée (haut de gamme)."
+                    "correction": "La fidélisation est essentielle pour la pérennité du restaurant."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Quel est le nom de la technique qui consiste à chauffer une bouteille de vin rouge pour le servir à température ambiante ('chambrer') ?",
+                    "question": "Quel est le rôle du maître d'hôtel ?",
                     "answerOptions": [
-                        {"text": "L'étuvage (ou 'séchage') pour la maturation du produit avant le séchage final (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'Chambrage' (montée lente en température) pour les vins rouges (température de service idéale : 16°C à 18°C).", "isCorrect": True, "key": "B"},
-                        {"text": "Le pétrissage intensif (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "L'autolyse (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Accueillir les clients et coordonner le service en salle", "isCorrect": True},
+                        {"text": "Cuisiner les plats", "isCorrect": False},
+                        {"text": "Faire la plonge", "isCorrect": False},
+                        {"text": "Gérer uniquement les stocks", "isCorrect": False}
                     ],
-                    "correction": "Le chambrage (mettre à température) est essentiel pour le vin rouge (ouverture des arômes). Attention : la température ambiante de la salle est souvent trop chaude."
+                    "correction": "Il est le chef d'orchestre de la salle."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Quel est l'outil indispensable (type de couteau) pour la découpe de la viande (ou d'un rôti) devant le client au guéridon ?",
+                    "question": "Que doit-on dire en servant une assiette ?",
                     "answerOptions": [
-                        {"text": "Le couteau à pain (dentelé) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le couteau de tranche (ou 'tranchant') et la fourchette à découper, souvent accompagnés d'une planche à découper (technique).", "isCorrect": True, "key": "B"},
-                        {"text": "Le coupe-ongle (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le ciseau de cuisine (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Annoncer l'intitulé exact du plat", "isCorrect": True},
+                        {"text": "Dire 'Attention c'est chaud' uniquement", "isCorrect": False},
+                        {"text": "Ne rien dire", "isCorrect": False},
+                        {"text": "Donner le prix du plat", "isCorrect": False}
                     ],
-                    "correction": "La découpe au guéridon est un 'show' technique qui nécessite un matériel adapté (couteau très aiguisé, planche, pinces)."
+                    "correction": "Le client doit savoir ce qu'il va déguster pour valider sa commande."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Quel est le rôle du 'Remplissage des Verreries' (eau ou vin) lors du service à table ?",
+                    "question": "À quoi sert un 'ramasse-miettes' ?",
                     "answerOptions": [
-                        {"text": "Il sert de nourriture à la levure et participe à la coloration de la croûte (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Il s'agit d'assurer le service des boissons et de maintenir les verres à un niveau correct (entre le tiers et la moitié du verre).", "isCorrect": True, "key": "B"},
-                        {"text": "Il ralentit la fermentation et augmente le taux de cendres de la farine (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Il sert uniquement à blanchir la mie du pain et à réduire l'activité des lactobacilles (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Nettoyer la table entre le fromage et le dessert", "isCorrect": True},
+                        {"text": "Débarrasser les assiettes", "isCorrect": False},
+                        {"text": "Changer les cendriers", "isCorrect": False},
+                        {"text": "Porter le pain", "isCorrect": False}
                     ],
-                    "correction": "Le serveur doit veiller à ce que les clients ne manquent de rien (eau, vin) sans trop remplir les verres (élégance)."
+                    "correction": "Cela garantit une table propre pour la fin du repas."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quel est le nom de la technique qui consiste à cuire un dessert (crêpes Suzette) devant le client avec de l'alcool enflammé ?",
+                    "question": "Comment se nomme la serviette utilisée par le serveur ?",
                     "answerOptions": [
-                        {"text": "L'autolyse (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le Flambage (cuisson/caramélisation) pour une expérience visuelle et gustative (service au guéridon).", "isCorrect": True, "key": "B"},
-                        {"text": "Le bassinage (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le pointage (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le liteau", "isCorrect": True},
+                        {"text": "Le torchon", "isCorrect": False},
+                        {"text": "Le napperon", "isCorrect": False},
+                        {"text": "La serviette de table", "isCorrect": False}
                     ],
-                    "correction": "Le flambage (alcool chaud) est une technique spectaculaire qui nécessite une grande prudence et une maîtrise parfaite (sécurité)."
+                    "correction": "Il doit toujours être propre et plié sur le bras gauche ou tenu à la main."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quel est l'objectif du 'Vérification de la satisfaction' (feedback) du client après le service du plat ?",
+                    "question": "Qu'est-ce qu'une réclamation ?",
                     "answerOptions": [
-                        {"text": "Le sucre freine l'activité de la levure (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "S'assurer que le client est satisfait (qualité du plat, température) et intercepter un problème avant qu'il ne devienne une réclamation (pro-activité).", "isCorrect": True, "key": "B"},
-                        {"text": "Le sucre détruit les bactéries lactiques du levain (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le sucre rend la pâte plus ferme (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "L'expression d'une insatisfaction par le client", "isCorrect": True},
+                        {"text": "Une commande de vin", "isCorrect": False},
+                        {"text": "Un compliment sur la cuisine", "isCorrect": False},
+                        {"text": "Le paiement de la facture", "isCorrect": False}
                     ],
-                    "correction": "La vérification (discrète) est une étape de la relation client essentielle pour le service et la gestion des problèmes."
+                    "correction": "Une réclamation doit être traitée avec calme et professionnalisme."
                 }
             ]
         },
-        # THÈME 3
+        # =========================================================================
+        # THÈME 3 : PRODUITS, BOISSONS ET CULTURE PROFESSIONNELLE (Q41 à Q60)
+        # =========================================================================
         3: {
-            "name": "Connaissance des Produits (Boissons, Vins, Aliments)",
+            "name": "THÈME 3 : PRODUITS, BOISSONS ET CULTURE PROFESSIONNELLE",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel est le principal cépage blanc utilisé pour la production des vins de la région de Bourgogne (Chablis, Montrachet) ?",
+                    "question": "Lequel de ces fromages est une Pâte Pressée Cuite ?",
                     "answerOptions": [
-                        {"text": "Le Pinot Noir, cépage rouge utilisé en Bourgogne (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le Chardonnay, cépage blanc international par excellence (minéralité et finesse).", "isCorrect": True, "key": "B"},
-                        {"text": "Le Cabernet Sauvignon, cépage rouge de Bordeaux (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le Merlot, cépage rouge de Bordeaux (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le Comté", "isCorrect": True},
+                        {"text": "Le Camembert", "isCorrect": False},
+                        {"text": "Le Roquefort", "isCorrect": False},
+                        {"text": "Le Reblochon", "isCorrect": False}
                     ],
-                    "correction": "Le Chardonnay est le cépage roi de la Bourgogne pour les blancs, et le Pinot Noir est pour les rouges."
+                    "correction": "Le Comté est chauffé lors de sa fabrication, contrairement au Reblochon (non cuite) ou au Camembert (pâte molle)."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Quel est le nom de l'alcool (spiritueux) produit à partir de la canne à sucre (rhum) et utilisé dans de nombreux cocktails ?",
+                    "question": "Quel ingrédient de base compose la bière en plus de l'eau et de la levure ?",
                     "answerOptions": [
-                        {"text": "Le Whisky (céréales, malt) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le Rhum (ou la cachaça au Brésil), issu de la fermentation et de la distillation du jus ou de la mélasse de canne à sucre.", "isCorrect": True, "key": "B"},
-                        {"text": "La Tequila (agave) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le Gin (baies de genièvre) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le malt d'orge et le houblon", "isCorrect": True},
+                        {"text": "Le raisin et le sucre", "isCorrect": False},
+                        {"text": "La pomme de terre", "isCorrect": False},
+                        {"text": "Le maïs uniquement", "isCorrect": False}
                     ],
-                    "correction": "Le Rhum (agricole ou traditionnel) est la base de nombreux cocktails (Mojito, Ti-Punch) et est produit dans les régions tropicales."
+                    "correction": "Le houblon apporte l'amertume et le malt la couleur et le sucre fermentescible."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Comment appelle-t-on le mode de cuisson de la viande qui consiste à la cuire lentement dans un liquide (fond, bouillon) après l'avoir saisie (marquée) ?",
+                    "question": "Quelle est la boisson chaude obtenue par percolation ?",
                     "answerOptions": [
-                        {"text": "Le rôtissage (cuisson au four à sec) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le Braisage (cuisson lente à couvert, dans un fond aromatisé, pour des pièces peu tendres).", "isCorrect": True, "key": "B"},
-                        {"text": "Le grillage (cuisson sur grille à feu vif) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le Pochage (cuisson dans un liquide à basse température) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le café expresso", "isCorrect": True},
+                        {"text": "Le thé noir", "isCorrect": False},
+                        {"text": "Le chocolat chaud", "isCorrect": False},
+                        {"text": "L'infusion", "isCorrect": False}
                     ],
-                    "correction": "Le Braisage (bœuf bourguignon, pot-au-feu) est une cuisson qui rend la viande moelleuse et le jus (sauce) concentré."
+                    "correction": "L'eau passe sous pression à travers le café moulu pour en extraire les arômes."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quel est le nom du vin effervescent (Champagne) produit en France dans la région de la Champagne (méthode traditionnelle) ?",
+                    "question": "D'où provient le vin ?",
                     "answerOptions": [
-                        {"text": "Le Crémant (vin effervescent d'autres régions françaises) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le Champagne (vin d'appellation d'origine contrôlée, AOC, produit selon la méthode Champenoise).", "isCorrect": True, "key": "B"},
-                        {"text": "Le Prosecco (vin effervescent italien) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le Cava (vin effervescent espagnol) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "De la fermentation du jus de raisin", "isCorrect": True},
+                        {"text": "De la distillation de pommes", "isCorrect": False},
+                        {"text": "Du mélange d'alcool et de sucre", "isCorrect": False},
+                        {"text": "De la macération d'herbes", "isCorrect": False}
                     ],
-                    "correction": "Le Champagne est un vin de prestige (assemblage) qui est protégé par son AOC (région, méthode)."
+                    "correction": "Le vin est un produit naturel issu de la vigne."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Quel est le cépage rouge principal utilisé pour les vins de Bordeaux (Médoc, Pauillac, Saint-Estèphe) ?",
+                    "question": "Qu'est-ce qu'un vin 'Tranquille' ?",
                     "answerOptions": [
-                        {"text": "Le Gamay (cépage du Beaujolais) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le Cabernet Sauvignon (tannins, structure), souvent assemblé au Merlot (rondeur, fruit).", "isCorrect": True, "key": "B"},
-                        {"text": "Le Syrah (cépage de la Vallée du Rhône) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le Pinot Noir (cépage de la Bourgogne) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Un vin qui ne contient pas de gaz (pas de bulles)", "isCorrect": True},
+                        {"text": "Un vin qui ne rend pas ivre", "isCorrect": False},
+                        {"text": "Un vin blanc sec", "isCorrect": False},
+                        {"text": "Un vin très vieux", "isCorrect": False}
                     ],
-                    "correction": "Le Cabernet Sauvignon domine les assemblages sur la rive gauche de Bordeaux. Le Merlot domine sur la rive droite (Saint-Émilion)."
+                    "correction": "La majorité des vins (Bordeaux, Bourgogne, etc.) sont des vins tranquilles."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Quel est le nom de l'outil utilisé pour ouvrir une bouteille de vin (tire-bouchon) en service professionnel ?",
+                    "question": "Lequel est un apéritif à base d'anis ?",
                     "answerOptions": [
-                        {"text": "La vrille électrique (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'Limonadier' (tire-bouchon à levier) qui intègre un couteau (coupe-capsule) et un décapsuleur.", "isCorrect": True, "key": "B"},
-                        {"text": "Le pistolet à air chaud (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le marteau et le clou (dangereux) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le Pastis", "isCorrect": True},
+                        {"text": "Le Martini", "isCorrect": False},
+                        {"text": "Le Porto", "isCorrect": False},
+                        {"text": "Le Kir", "isCorrect": False}
                     ],
-                    "correction": "Le limonadier (ou sommelier) est l'outil indispensable. Il permet d'ouvrir le vin avec élégance et sans briser le bouchon."
+                    "correction": "Le Pastis se trouble au contact de l'eau (phénomène de louche)."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Quel est le nom du produit (sauce) de base (roux + liquide) utilisé pour lier les sauces chaudes (Béchamel, Velouté) ?",
+                    "question": "Quel fruit utilise-t-on pour fabriquer le Calvados ?",
                     "answerOptions": [
-                        {"text": "La Vinaigrette (sauce froide) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le Roux (mélange de beurre et de farine) qui sert d'agent de liaison pour les liquides (amidon).", "isCorrect": True, "key": "B"},
-                        {"text": "La Mayonnaise (émulsion) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le Coulis (jus de fruits ou de légumes) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "La pomme", "isCorrect": True},
+                        {"text": "Le raisin", "isCorrect": False},
+                        {"text": "La poire", "isCorrect": False},
+                        {"text": "La prune", "isCorrect": False}
                     ],
-                    "correction": "Le Roux (blanc, blond ou brun) est la base de l'épaississement des sauces chaudes classiques (cuisine française)."
+                    "correction": "Le Calvados est une eau-de-vie de cidre normande."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quel est l'accompagnement (légume) classique de la viande de gibier (cerf, sanglier, lièvre) en saison ?",
+                    "question": "Comment appelle-t-on le jus de fruit qui contient encore sa pulpe ?",
                     "answerOptions": [
-                        {"text": "Les frites (plus pour le steak ou les moules) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "La purée de céleri, les champignons des bois, la sauce grand veneur (épicée et fruitée).", "isCorrect": True, "key": "B"},
-                        {"text": "Les pâtes à la carbonara (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le riz blanc (plus pour le poisson) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Un nectar", "isCorrect": True},
+                        {"text": "Un pur jus", "isCorrect": False},
+                        {"text": "Un sirop", "isCorrect": False},
+                        {"text": "Un soda", "isCorrect": False}
                     ],
-                    "correction": "Le gibier est une viande forte (chasse) qui est généralement accompagnée de saveurs terreuses, sucrées/acides (fruits rouges)."
+                    "correction": "Le nectar contient du fruit, de l'eau et souvent du sucre ajouté."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Quel est le nom du cépage blanc (très parfumé et aromatique) utilisé pour la production de vins secs dans la région de l'Alsace ?",
+                    "question": "Le Roquefort est un fromage fabriqué à partir de lait de :",
                     "answerOptions": [
-                        {"text": "Le Merlot (rouge, faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le Gewurztraminer (cépage alsacien, épicé, lychee) ou le Riesling (sec, minéral).", "isCorrect": True, "key": "B"},
-                        {"text": "Le Cabernet Franc (rouge, faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le Syrah (rouge, faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Brebis", "isCorrect": True},
+                        {"text": "Vache", "isCorrect": False},
+                        {"text": "Chèvre", "isCorrect": False},
+                        {"text": "Bison", "isCorrect": False}
                     ],
-                    "correction": "L'Alsace produit principalement des vins blancs (mono-cépages). Le Gewurztraminer est l'un des plus reconnaissables."
+                    "correction": "C'est un fromage à pâte persillée bénéficiant d'une AOP."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Quelle est la principale différence entre le Café Expresso (court) et le Café Allongé (long) ?",
+                    "question": "Quelle est la température idéale de service d'un vin blanc sec ?",
                     "answerOptions": [
-                        {"text": "Le café allongé (lungo) est fait avec deux fois plus de mouture que l'espresso (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le café allongé est un espresso avec l'ajout d'eau chaude (moins concentré) ; l'espresso est très court et concentré.", "isCorrect": True, "key": "B"},
-                        {"text": "L'espresso est moins cher que le café allongé (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "L'espresso est fait avec de la poudre de cacao (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "8 °C à 10 °C", "isCorrect": True},
+                        {"text": "18 °C", "isCorrect": False},
+                        {"text": "0 °C", "isCorrect": False},
+                        {"text": "25 °C", "isCorrect": False}
                     ],
-                    "correction": "Le Lungo (allongé) est un espresso dilué. Le Ristretto est un espresso encore plus court et plus concentré."
+                    "correction": "Trop froid, les arômes sont bloqués ; trop chaud, l'alcool ressort trop."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Quel est le nom du type de verre (verre à pied, tulipe) utilisé pour le service des vins effervescents (Champagne, Crémant) ?",
+                    "question": "Qu'est-ce que l'infusion ?",
                     "answerOptions": [
-                        {"text": "Le verre 'Ballon' (pour le Cognac ou l'Armagnac) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "La Flûte (ou la coupe), qui permet de conserver les bulles (effervescence) et de sublimer le cordon (Bulles fines).", "isCorrect": True, "key": "B"},
-                        {"text": "Le verre 'Tumbler' (pour les cocktails, les jus) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le verre à bière (choppe, pinte) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Verser de l'eau bouillante sur des plantes et laisser reposer", "isCorrect": True},
+                        {"text": "Faire bouillir des feuilles dans l'eau pendant 1 heure", "isCorrect": False},
+                        {"text": "Mélanger du sirop et de l'eau gazeuse", "isCorrect": False},
+                        {"text": "Presser un fruit frais", "isCorrect": False}
                     ],
-                    "correction": "La Flûte (ou I.T.T. : International Tasting Tulip) est le verre idéal pour la dégustation des vins mousseux."
+                    "correction": "C'est la méthode de préparation du thé et des tisanes."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quel est l'outil utilisé pour ouvrir les huîtres, les crustacés ou les coquillages (fruits de mer) ?",
+                    "question": "Le Cognac est une eau-de-vie issue de la distillation de :",
                     "answerOptions": [
-                        {"text": "La mandoline (pour la découpe des légumes) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le couteau à huîtres (lame courte et robuste) et le couteau à crustacés (pour les pinces).", "isCorrect": True, "key": "B"},
-                        {"text": "La corne (ou raclette) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le banneton (pour la pousse des pains ronds) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Vin", "isCorrect": True},
+                        {"text": "Cidre", "isCorrect": False},
+                        {"text": "Bière", "isCorrect": False},
+                        {"text": "Poire", "isCorrect": False}
                     ],
-                    "correction": "L'ouverture des huîtres (l'écaillage) est une technique délicate et dangereuse qui nécessite des EPI (gants, couteau adapté)."
+                    "correction": "Le Cognac est produit dans la région de Charente à partir de vin blanc."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quel est le nom du processus d'assemblage des ingrédients (alcools, jus de fruits) pour créer une boisson mélangée ?",
+                    "question": "Quel est le constituant principal du thé ?",
                     "answerOptions": [
-                        {"text": "Le collage structurel (méthode de soudure) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'Mixage' (ou l'assemblage) pour la création de Cocktails ou de Long Drinks (équilibre des saveurs).", "isCorrect": True, "key": "B"},
-                        {"text": "L'autolyse (repos de la farine et de l'eau) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le rafraîchi (pour le levain) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "La théine (caféine)", "isCorrect": True},
+                        {"text": "La vitamine C uniquement", "isCorrect": False},
+                        {"text": "Le sel", "isCorrect": False},
+                        {"text": "Le sucre", "isCorrect": False}
                     ],
-                    "correction": "Le Barman (mixologue) est le professionnel en charge de l'assemblage (shaker, verre à mélange) et de la décoration des cocktails."
+                    "correction": "La théine a un effet stimulant sur l'organisme."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quel est l'impact d'une mauvaise 'température de service' sur un vin rouge (trop froid ou trop chaud) ?",
+                    "question": "Comment appelle-t-on le vin issu d'un seul cépage ?",
                     "answerOptions": [
-                        {"text": "Le vin rouge trop froid (inférieur à 12°C) sera 'fermé' (arômes bloqués) ; trop chaud (supérieur à 20°C) sera 'lourd' (alcool dominant).", "isCorrect": True, "key": "A"},
-                        {"text": "Le pain va s'étaler (faux).", "isCorrect": False, "key": "B"},
-                        {"text": "La buée (vapeur) sera excessive (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "L'activité de la levure sera bloquée (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Un vin de monocépage", "isCorrect": True},
+                        {"text": "Un vin d'assemblage", "isCorrect": False},
+                        {"text": "Un vin de garde", "isCorrect": False},
+                        {"text": "Un vin primeur", "isCorrect": False}
                     ],
-                    "correction": "La température de service (14°C à 18°C pour les rouges) est cruciale pour l'expression des arômes et le plaisir de la dégustation."
+                    "correction": "Exemple : Un Chardonnay de Bourgogne."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quel est le nom de la coupe (ou du plat) de service utilisé pour présenter une salade de fruits ou des glaces ?",
+                    "question": "Lequel de ces spiritueux est fabriqué à base de canne à sucre ?",
                     "answerOptions": [
-                        {"text": "La marmite (pour la soupe) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "La 'Coupe' (à glace, ou à fruits), souvent sur pied, ou un petit bol (présentation du dessert).", "isCorrect": True, "key": "B"},
-                        {"text": "La planche à découper (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le poêlon (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le Rhum", "isCorrect": True},
+                        {"text": "La Vodka", "isCorrect": False},
+                        {"text": "Le Whisky", "isCorrect": False},
+                        {"text": "Le Gin", "isCorrect": False}
                     ],
-                    "correction": "Le choix du contenant (verrerie, céramique) est essentiel pour la mise en valeur esthétique du dessert."
+                    "correction": "On distingue le rhum agricole du rhum industriel (mélasse)."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quel est le nom de l'assiette (petite) réservée au service du pain et du beurre (à la gauche du client) ?",
+                    "question": "Quelle est l'origine du café Arabica ?",
                     "answerOptions": [
-                        {"text": "L'assiette de présentation (plus grande, sous l'assiette plate) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "L'assiette à pain (ou 'Moutardier'), souvent ronde ou carrée, placée en haut à gauche des couverts.", "isCorrect": True, "key": "B"},
-                        {"text": "La soupière (pour le potage) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le plat de service (plus grand, pour le service à la russe) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Éthiopie / Afrique de l'Est", "isCorrect": True},
+                        {"text": "Brésil uniquement", "isCorrect": False},
+                        {"text": "Italie", "isCorrect": False},
+                        {"text": "Vietnam", "isCorrect": False}
                     ],
-                    "correction": "L'assiette à pain est un standard du dressage de la table pour le service du pain (au début du repas)."
+                    "correction": "L'Arabica est réputé pour sa finesse par rapport au Robusta."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Comment appelle-t-on l'action de 'découper et de servir' une volaille entière (canard, poulet) devant le client ?",
+                    "question": "Que signifie le sigle AOC ?",
                     "answerOptions": [
-                        {"text": "L'abaisse (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'Tronçonnage' (ou la découpe) au guéridon, qui nécessite une grande maîtrise et un couteau adapté (couteau de tranche).", "isCorrect": True, "key": "B"},
-                        {"text": "Le rafraîchi (pour le levain) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le chanfreinage (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Appellation d'Origine Contrôlée", "isCorrect": True},
+                        {"text": "Association des Ouvriers de Cuisine", "isCorrect": False},
+                        {"text": "Alimentation d'Origine Certifiée", "isCorrect": False},
+                        {"text": "Accord Officiel de Consommation", "isCorrect": False}
                     ],
-                    "correction": "Le tronçonnage (découpe) est un service rare, réservé aux établissements de prestige (maîtrise des techniques de découpe)."
+                    "correction": "Il garantit l'origine et le respect d'un savoir-faire traditionnel."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quel est le but du 'Maintien au chaud' (bain-marie, vitrine chauffante) des plats traiteur (au-delà de 2 heures) ?",
+                    "question": "Quelle est la boisson obtenue par fermentation de pommes ?",
                     "answerOptions": [
-                        {"text": "Avoir une consistance (plasticité) similaire à celle de la pâte (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Maintenir impérativement la température à cœur du produit au-dessus de 63°C (hors zone de danger bactériologique).", "isCorrect": True, "key": "B"},
-                        {"text": "Accélérer la production de gaz carbonique (CO₂) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le cidre", "isCorrect": True},
+                        {"text": "Le poiré", "isCorrect": False},
+                        {"text": "L'hydromel", "isCorrect": False},
+                        {"text": "Le chouchen", "isCorrect": False}
                     ],
-                    "correction": "Le maintien au chaud (supérieur à 63°C) est un CCP pour la sécurité alimentaire. La durée maximale est réglementée (souvent 4 heures)."
+                    "correction": "Le poiré est issu des poires, le cidre des pommes."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Quel est le nom de l'action qui consiste à 'servir une boisson' (bière, cocktail) sans débordement ni mousse excessive ?",
+                    "question": "Lequel est un vin 'Moelleux' ?",
                     "answerOptions": [
-                        {"text": "La dorure (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'Tirage' (ou le service 'au fût') pour la bière, ou l'utilisation d'une cuillère (cocktails) pour éviter le mélange excessif.", "isCorrect": True, "key": "B"},
-                        {"text": "La buée (vapeur d'eau) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le pointage (première fermentation) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Un vin blanc riche en sucre résiduel", "isCorrect": True},
+                        {"text": "Un vin rouge très vieux", "isCorrect": False},
+                        {"text": "Un vin qui pétille", "isCorrect": False},
+                        {"text": "Un vin très acide", "isCorrect": False}
                     ],
-                    "correction": "Le tirage (bière pression) est une technique précise (angle du verre, pression, temps) pour une mousse idéale et un niveau correct."
+                    "correction": "Exemple : Sauternes ou Monbazillac."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quel est le rôle du 'Marquage des Couverts' (mise en place) avant l'arrivée du client ?",
+                    "question": "Quel est le rôle du sommelier ?",
                     "answerOptions": [
-                        {"text": "Permettre au réseau de gluten de se relâcher (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le marquage des couverts correspond aux plats commandés : il sert à préparer la table pour les plats à venir (fluidité du service).", "isCorrect": True, "key": "B"},
-                        {"text": "Ajouter du sel dans la pâte pour freiner la fermentation (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Gérer la cave et conseiller les vins", "isCorrect": True},
+                        {"text": "Cuisiner les viandes", "isCorrect": False},
+                        {"text": "Accueillir les clients à la porte", "isCorrect": False},
+                        {"text": "Faire la plonge", "isCorrect": False}
                     ],
-                    "correction": "Le marquage (couverts ajoutés) est un signe de service professionnel et de fluidité. Il est fait discrètement pendant le service."
+                    "correction": "C'est l'expert des vins et spiritueux en salle."
                 }
             ]
         },
-        # THÈME 4
+        # =========================================================================
+        # THÈME 4 : HYGIÈNE, SÉCURITÉ ET MAINTENANCE (Q61 à Q80)
+        # =========================================================================
         4: {
-            "name": "Techniques de Commercialisation, Vente et Communication Professionnelle",
+            "name": "THÈME 4 : HYGIÈNE, SÉCURITÉ ET MAINTENANCE",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel est le but de la 'Vente Additionnelle' (ou 'Upselling') en restauration (salle) ?",
+                    "question": "Quelle est la température maximale réglementaire de stockage des produits frais (viandes, laitages) ?",
                     "answerOptions": [
-                        {"text": "Elle est très enrichie en œufs, en sucre et en matière grasse (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "C'est l'action de proposer des produits complémentaires (apéritif, vin, dessert, café) pour augmenter le panier moyen et le chiffre d'affaires.", "isCorrect": True, "key": "B"},
-                        {"text": "Elle est très peu hydratée (moins de 50% d'eau) pour une conservation très longue (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Elle est fabriquée sans sel, pour un goût plus doux et un pétrissage très court (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "+ 4 °C", "isCorrect": True},
+                        {"text": "+ 10 °C", "isCorrect": False},
+                        {"text": "0 °C", "isCorrect": False},
+                        {"text": "+ 15 °C", "isCorrect": False}
                     ],
-                    "correction": "La vente additionnelle (suggérer un dessert ou un vin) est une technique de commercialisation essentielle pour la rentabilité."
+                    "correction": "Le froid positif ralentit la multiplication des bactéries."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quel est le rôle de 'l'Argumentaire de Vente' (salle) lors de la proposition d'un plat du jour ou d'une suggestion ?",
+                    "question": "À quoi sert la méthode HACCP ?",
                     "answerOptions": [
-                        {"text": "Le mastic polyester (bi-composant) pour combler les défauts de surface (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Présenter le plat avec passion (descriptions, ingrédients, mode de cuisson) pour susciter l'intérêt et déclencher l'achat (convaincre).", "isCorrect": True, "key": "B"},
-                        {"text": "La farine de maïs (sans gluten) avec une poudre à lever (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "La farine de blé (T150) avec une faible hydratation (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Identifier et maîtriser les dangers sanitaires", "isCorrect": True},
+                        {"text": "Apprendre à dresser les tables", "isCorrect": False},
+                        {"text": "Calculer le prix de vente", "isCorrect": False},
+                        {"text": "Gérer les plannings", "isCorrect": False}
                     ],
-                    "correction": "L'argumentaire de vente doit être court, enthousiaste et se concentrer sur les avantages pour le client (goût, nouveauté)."
+                    "correction": "C'est un système de prévention obligatoire pour la sécurité alimentaire."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Quelle est la principale caractéristique de 'l'Accueil' du client (première impression) dans l'établissement ?",
+                    "question": "Pourquoi est-il interdit de porter des bijoux en service ?",
                     "answerOptions": [
-                        {"text": "Il se conserve beaucoup plus longtemps (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Il doit être chaleureux, immédiat, avec un contact visuel et un sourire (professionnalisme, convivialité).", "isCorrect": True, "key": "B"},
-                        {"text": "Il doit être consommé dans les 24 heures (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Il contient des additifs (conservateurs) qui prolongent sa durée de vie (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Nids à microbes et risque de chute dans les plats", "isCorrect": True},
+                        {"text": "Pour ne pas rendre les clients jaloux", "isCorrect": False},
+                        {"text": "Parce que c'est trop lourd", "isCorrect": False},
+                        {"text": "Car cela raye les verres", "isCorrect": False}
                     ],
-                    "correction": "L'accueil (le sourire, le bonjour, l'installation) est le premier point de contact qui détermine l'expérience du client."
+                    "correction": "L'hygiène corporelle doit être irréprochable en restauration."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quel est le rôle de la 'fiche de poste' (ou descriptif de fonction) pour le personnel de salle ?",
+                    "question": "Quelle est la durée de validité d'un produit après ouverture (si non précisé) ?",
                     "answerOptions": [
-                        {"text": "L'incorporation de la matière grasse (beurre de tourage) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Elle détaille les missions, les responsabilités, les horaires et les procédures à suivre (organisation et clarté).", "isCorrect": True, "key": "B"},
-                        {"text": "L'utilisation de farine de seigle (T130) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "La cuisson à haute température (plus de 300°C) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "24 à 48 heures au frais", "isCorrect": True},
+                        {"text": "1 mois", "isCorrect": False},
+                        {"text": "Illimitée", "isCorrect": False},
+                        {"text": "1 semaine", "isCorrect": False}
                     ],
-                    "correction": "La fiche de poste clarifie les attentes. Elle est essentielle pour l'intégration et l'évaluation du personnel."
+                    "correction": "Il faut toujours étiqueter les produits ouverts avec la date d'ouverture."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est le but de 'suggérer le vin' au verre (vs la bouteille) lors du service à table ?",
+                    "question": "Comment appelle-t-on une intoxication alimentaire touchant au moins 2 personnes ?",
                     "answerOptions": [
-                        {"text": "La cuisson sur sole (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Proposer des accords mets et vins différents pour chaque plat et augmenter la rentabilité (marge sur le verre plus élevée).", "isCorrect": True, "key": "B"},
-                        {"text": "La cuisson par injection de vapeur (buée) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "La surgélation de la pâte (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Une TIAC", "isCorrect": True},
+                        {"text": "Une grippe", "isCorrect": False},
+                        {"text": "Une allergie", "isCorrect": False},
+                        {"text": "Un empoisonnement", "isCorrect": False}
                     ],
-                    "correction": "Le vin au verre permet au client de varier les plaisirs et à l'établissement de réaliser une marge plus importante."
+                    "correction": "TIAC : Toxi-Infection Alimentaire Collective."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Quel est le risque de sécher un saucisson sec (maturation) dans une pièce trop chaude et trop humide ?",
+                    "question": "Quel est le but du lavage des mains ?",
                     "answerOptions": [
-                        {"text": "Elle n'utilise pas de levure ni de levain (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "L'écoute active du client, la prise en compte de l'insatisfaction (empathie) et la proposition rapide d'une solution (geste commercial).", "isCorrect": True, "key": "B"},
-                        {"text": "Elle est fabriquée avec une farine de seigle (T130) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Elle nécessite un pétrissage très long (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Éliminer les micro-organismes transitoires", "isCorrect": True},
+                        {"text": "Avoir la peau douce", "isCorrect": False},
+                        {"text": "Parfumer ses mains", "isCorrect": False},
+                        {"text": "Utiliser le savon du restaurant", "isCorrect": False}
                     ],
-                    "correction": "La gestion des réclamations est cruciale. L'écoute et la rapidité à trouver une solution sauvent la relation client."
+                    "correction": "Le lavage doit durer au moins 30 secondes, avec brossage des ongles."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Quelle est l'attitude à adopter par le personnel de salle pour 'vendre' un dessert après le plat principal ?",
+                    "question": "Que signifie la DLC ?",
                     "answerOptions": [
-                        {"text": "Le risque de 'brûler' les micro-organismes (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Retirer les assiettes (débarrassage) puis présenter immédiatement la carte des desserts ou l'assiette du jour (visuel et tentation).", "isCorrect": True, "key": "B"},
-                        {"text": "La diminution du taux de cendres (T) de la farine utilisée (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "L'augmentation de la force (W) de la farine de rafraîchi (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Date Limite de Consommation", "isCorrect": True},
+                        {"text": "Délai de Livraison Court", "isCorrect": False},
+                        {"text": "Détail de la Commande", "isCorrect": False},
+                        {"text": "Date de Liaison Culinaire", "isCorrect": False}
                     ],
-                    "correction": "Le dessert est une vente très rentable. La présentation visuelle (chariot, assiette de dégustation) est l'outil le plus efficace."
+                    "correction": "Au-delà de cette date, le produit est impropre à la consommation et dangereux."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quel est le rôle de la 'communication non verbale' (posture, gestes) du serveur en salle ?",
+                    "question": "Dans quelle zone du réfrigérateur range-t-on les viandes crues ?",
                     "answerOptions": [
-                        {"text": "La peau d'orange (surface irrégulière) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Elle transmet la confiance, le professionnalisme, et l'attention sans avoir besoin de parler (regard, sourire, gestes calmes).", "isCorrect": True, "key": "B"},
-                        {"text": "Le pain de seigle (T130) qui contient des pentosanes (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le pain complet (T150) qui nécessite un temps de pétrissage très long (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "La zone la plus froide (en bas, au-dessus du bac à légumes)", "isCorrect": True},
+                        {"text": "Dans la porte", "isCorrect": False},
+                        {"text": "Tout en haut", "isCorrect": False},
+                        {"text": "Au milieu avec les laitages", "isCorrect": False}
                     ],
-                    "correction": "La communication non verbale est essentielle. Le serveur doit être attentif et disponible (regard) sans être envahissant."
+                    "correction": "La température doit y être comprise entre 0 et +2 °C."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel est le but d'utiliser des 'Formules de Politesse' (Monsieur, Madame) et un langage soutenu (voussoiement) avec le client ?",
+                    "question": "Pourquoi utilise-t-on des produits d'entretien différents pour le sol et les surfaces alimentaires ?",
                     "answerOptions": [
-                        {"text": "La dorure (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Maintenir un niveau de professionnalisme et de respect, adapté au standing de l'établissement (image de marque).", "isCorrect": True, "key": "B"},
-                        {"text": "La buée (vapeur d'eau) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le pointage (première fermentation) en masse (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Pour respecter les normes de contact alimentaire", "isCorrect": True},
+                        {"text": "Pour faire plus de ménage", "isCorrect": False},
+                        {"text": "Parce que c'est moins cher", "isCorrect": False},
+                        {"text": "C'est uniquement marketing", "isCorrect": False}
                     ],
-                    "correction": "Le voussoiement est la base de la communication professionnelle en salle (sauf exception décidée par le client)."
+                    "correction": "Un produit 'contact alimentaire' ne doit pas laisser de résidus toxiques après rinçage."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Quel est le nom de l'action qui consiste à 'suggérer un produit plus cher ou une meilleure qualité' que celui demandé par le client ?",
+                    "question": "Quelle est la procédure si un serveur se coupe au doigt ?",
                     "answerOptions": [
-                        {"text": "Obtenir une mie très blanche, très aérée (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'Montée en Gamme' (Upgrading) : passer d'un vin de table à un vin de région ou d'un plat du jour à la carte (marge).", "isCorrect": True, "key": "B"},
-                        {"text": "Fabriquer un pain très acide (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Utiliser uniquement de la farine de seigle (T130) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Désinfecter, mettre un pansement bleu et un gant", "isCorrect": True},
+                        {"text": "Mettre juste un peu d'eau", "isCorrect": False},
+                        {"text": "Cacher sa main derrière son dos", "isCorrect": False},
+                        {"text": "Rentrer chez lui", "isCorrect": False}
                     ],
-                    "correction": "L'Upgrading (montée en gamme) est une technique de vente subtile qui se fait par la suggestion de valeur (meilleur produit)."
+                    "correction": "Le bleu est utilisé car il n'existe pas d'aliment naturellement bleu, ce qui permet de repérer le pansement s'il tombe."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Quel est le rôle du 'thermo-plongeur' ou 'cuiseur sous vide' (thermo-sonde) pour la cuisson des produits traiteur (contrôle précis de la température) ?",
+                    "question": "À quoi sert un plan de nettoyage et de désinfection (PND) ?",
                     "answerOptions": [
-                        {"text": "Le spectro-photomètre (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Écouter attentivement la plainte (reformuler), s'excuser (même si non responsable) et proposer une solution rapide et honnête (satisfaction).", "isCorrect": True, "key": "B"},
-                        {"text": "Le pain de mie (carré, cuit en moule fermé) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le croissant (pâte levée feuilletée) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Définir qui nettoie quoi, quand, comment et avec quel produit", "isCorrect": True},
+                        {"text": "Lister les employés en vacances", "isCorrect": False},
+                        {"text": "Ranger les factures", "isCorrect": False},
+                        {"text": "Décorer la cuisine", "isCorrect": False}
                     ],
-                    "correction": "Le traitement de la réclamation doit être rapide et efficace. L'empathie est la clé (le client veut être écouté)."
+                    "correction": "C'est un outil de traçabilité et d'organisation."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Quel est le danger de laisser un croissant (pâte crue) dans une chambre de pousse trop chaude et trop humide ?",
+                    "question": "Quel est le risque de la rupture de la chaîne du froid ?",
                     "answerOptions": [
-                        {"text": "Le beurre va fondre et s'incorporer à la pâte (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "S'excuser immédiatement, offrir un geste commercial (boisson, café) et demander au client le plat de remplacement ou le délai d'attente.", "isCorrect": True, "key": "B"},
-                        {"text": "L'activité de la levure sera bloquée (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "La croûte sera épaisse et dure (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Multiplication rapide des bactéries pathogènes", "isCorrect": True},
+                        {"text": "Le produit devient trop dur", "isCorrect": False},
+                        {"text": "Le réfrigérateur consomme moins", "isCorrect": False},
+                        {"text": "La couleur devient plus vive", "isCorrect": False}
                     ],
-                    "correction": "Un geste commercial (café offert) est une manière de s'excuser et de rassurer le client sur la qualité du service."
+                    "correction": "Cela peut provoquer de graves intoxications alimentaires."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quel est le nom de l'étape qui consiste à réactiver le levain naturel (ajout d'eau et de farine) pour augmenter sa population de micro-organismes ?",
+                    "question": "Où doit-on jeter les huiles de friture usagées ?",
                     "answerOptions": [
-                        {"text": "Le rafraîchi (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "La 'Saisie de la réservation' (téléphone, logiciel) en notant le nom, l'heure, le nombre de personnes et les demandes spéciales (organisation).", "isCorrect": True, "key": "B"},
-                        {"text": "Le bassinage (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le pointage (ou pointage en masse) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Dans un bac de récupération spécifique (filière de recyclage)", "isCorrect": True},
+                        {"text": "Dans l'évier", "isCorrect": False},
+                        {"text": "Dans les égouts", "isCorrect": False},
+                        {"text": "Dans la poubelle grise", "isCorrect": False}
                     ],
-                    "correction": "La gestion des réservations est essentielle pour le plan de salle et l'organisation de l'équipe (flux de clients)."
+                    "correction": "Les huiles polluent l'eau et bouchent les canalisations."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quel est le rôle du 'pâté fermentée' (ancienne pâte réintroduite) dans la fabrication du pain (méthode indirecte) ?",
+                    "question": "Qu'est-ce qu'une 'marche en avant' dans le temps ?",
                     "answerOptions": [
-                        {"text": "Améliorer le goût, la conservation et la force (W) de la pâte fraîche (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "La 'Reconnaissance des Habitudes' (client régulier) pour personnaliser l'accueil et le service (fidélisation).", "isCorrect": True, "key": "B"},
-                        {"text": "Réguler l'acidité (pH) de la pâte (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Servir uniquement à nettoyer le pétrin et les outils après le pointage final (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Utiliser les mêmes locaux pour le propre et le sale à des moments différents", "isCorrect": True},
+                        {"text": "Courir pour servir plus vite", "isCorrect": False},
+                        {"text": "Ne jamais regarder en arrière", "isCorrect": False},
+                        {"text": "Faire le ménage uniquement le matin", "isCorrect": False}
                     ],
-                    "correction": "La fidélisation passe par la reconnaissance. Se souvenir des préférences d'un client (café, table) est une preuve d'attention."
+                    "correction": "C'est une alternative quand les locaux ne permettent pas une séparation physique."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quel est le nom de la technique pour cuire des petits pains ronds (pains au lait, hamburgers) sur une plaque (grille) sans la sole du four ?",
+                    "question": "Quel est le danger du monoxyde de carbone (CO) en salle ou cuisine ?",
                     "answerOptions": [
-                        {"text": "La cuisson sur plaque (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "La 'Communication avec la Cuisine' (bon de commande, annonce verbale) pour fluidifier les échanges et éviter les erreurs (efficacité).", "isCorrect": True, "key": "B"},
-                        {"text": "La cuisson par injection de vapeur (buée) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "La surgélation de la pâte (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "C'est un gaz mortel, inodore et invisible issu d'une mauvaise combustion", "isCorrect": True},
+                        {"text": "Il fait pleurer les yeux", "isCorrect": False},
+                        {"text": "Il sent très mauvais", "isCorrect": False},
+                        {"text": "Il rend la viande plus rouge", "isCorrect": False}
                     ],
-                    "correction": "Le rôle du chef de rang (ou du commis) est de faire le lien entre la salle (besoin) et la cuisine (production)."
+                    "correction": "Il faut vérifier régulièrement les conduits d'aération et les appareils à gaz."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Quel est l'ingrédient principal utilisé dans les pains sans gluten (pour les personnes intolérantes) ?",
+                    "question": "À quelle température doit-on maintenir les plats chauds pendant le service ?",
                     "answerOptions": [
-                        {"text": "Des farines de céréales (maïs, riz, sarrasin) et l'ajout d'une gomme (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "La 'Prise d'initiative' (autonomie) pour gérer un problème mineur sans l'intervention immédiate du supérieur (responsabilité).", "isCorrect": True, "key": "B"},
-                        {"text": "De la farine de seigle (T130) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "De la farine de blé (T150) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "+ 63 °C minimum", "isCorrect": True},
+                        {"text": "+ 40 °C", "isCorrect": False},
+                        {"text": "+ 100 °C", "isCorrect": False},
+                        {"text": "+ 50 °C", "isCorrect": False}
                     ],
-                    "correction": "L'autonomie est une qualité recherchée. Le personnel doit pouvoir résoudre les petits problèmes (boisson renversée, assiette sale) seul."
+                    "correction": "C'est la température de sécurité pour empêcher le développement bactérien."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quel est le risque d'utiliser une quantité trop importante de levain chef (trop de bactéries lactiques) dans la pâte à pain ?",
+                    "question": "Que doit-on vérifier lors de la réception des marchandises ?",
                     "answerOptions": [
-                        {"text": "Un pain trop acide (goût de vinaigre) (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "La 'Gestion du Stress' et de la pression (coup de feu) pour maintenir le calme et la qualité du service (sang-froid).", "isCorrect": True, "key": "B"},
-                        {"text": "La non-levée de la pâte (pas de CO₂) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "L'augmentation de la force (W) de la farine de rafraîchi (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "La température, les dates (DLC) et l'état des emballages", "isCorrect": True},
+                        {"text": "Le nom du chauffeur uniquement", "isCorrect": False},
+                        {"text": "La couleur du camion", "isCorrect": False},
+                        {"text": "L'heure exacte", "isCorrect": False}
                     ],
-                    "correction": "La gestion du stress (particulièrement pendant le coup de feu) est une compétence essentielle en restauration (rapidité, sourire, calme)."
+                    "correction": "Tout produit non conforme doit être refusé."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Quelle est l'étape qui permet de donner une couleur très foncée (caramélisation) et un goût prononcé aux pains spéciaux (pain au seigle, pain noir) ?",
+                    "question": "Quel est le risque de fumer dans un établissement de restauration ?",
                     "answerOptions": [
-                        {"text": "L'ajout de malt torréfié ou de poudre de cacao (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "L'utilisation de la 'Terminologie Professionnelle' (à la place de l'argot) pour le service (clarté des commandes, vocabulaire technique).", "isCorrect": True, "key": "B"},
-                        {"text": "L'incorporation de la matière grasse (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "La surgélation de la pâte (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Sanitaire (cendres), incendie et légal (interdiction)", "isCorrect": True},
+                        {"text": "Uniquement pour le prix du tabac", "isCorrect": False},
+                        {"text": "Cela donne faim", "isCorrect": False},
+                        {"text": "Aucun risque", "isCorrect": False}
                     ],
-                    "correction": "Le vocabulaire professionnel (en cuisine comme en salle) est le gage d'une bonne communication et d'une exécution précise (langage commun)."
+                    "correction": "Il est strictement interdit de fumer dans tous les lieux publics fermés."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel est le but d'un 'pointage très long' (pousse lente de plusieurs heures) pour la pâte de tradition ?",
+                    "question": "Comment éteindre un feu d'huile de friture ?",
                     "answerOptions": [
-                        {"text": "Développer une meilleure complexité aromatique (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'Feedback Positif' (compliment) pour le client (l'encourager à revenir et le fidéliser) (reconnaissance).", "isCorrect": True, "key": "B"},
-                        {"text": "La 'maturation' (affinage) des produits secs (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Accélérer la production de gaz carbonique (CO₂) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Couvrir avec un couvercle ou une couverture anti-feu", "isCorrect": True},
+                        {"text": "Jeter de l'eau dessus", "isCorrect": False},
+                        {"text": "Souffler fort", "isCorrect": False},
+                        {"text": "Utiliser un ventilateur", "isCorrect": False}
                     ],
-                    "correction": "Le compliment sincère est une technique de vente (le client est flatté) et de fidélisation (il associe le restaurant à une expérience agréable)."
+                    "correction": "Jeter de l'eau sur de l'huile bouillante provoque une explosion de feu."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Quelle est la principale caractéristique de la farine de maïs (polenta, pain de maïs) utilisée en panification ?",
+                    "question": "À quoi sert un bac à graisse ?",
                     "answerOptions": [
-                        {"text": "Elle est naturellement sans gluten (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "La 'Revente' des produits d'épicerie fine ou des boissons à emporter (diversification du chiffre d'affaires) (commerce).", "isCorrect": True, "key": "B"},
-                        {"text": "Elle est très riche en sel (minéraux) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Elle sert uniquement à colorer la croûte du pain (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Séparer les graisses des eaux usées avant rejet aux égouts", "isCorrect": True},
+                        {"text": "Stocker le beurre", "isCorrect": False},
+                        {"text": "Nettoyer les frites", "isCorrect": False},
+                        {"text": "Faire briller le bar", "isCorrect": False}
                     ],
-                    "correction": "La commercialisation (vente des produits du restaurant) est une source de revenus complémentaires importante pour le CA (chiffre d'affaires)."
+                    "correction": "Il doit être vidé et nettoyé régulièrement pour rester efficace."
                 }
             ]
         },
-        # THÈME 5
+        # =========================================================================
+        # THÈME 5 : HÉBERGEMENT ET ENTRETIEN DES LOCAUX (Q81 à Q100)
+        # =========================================================================
         5: {
-            "name": "Gestion, Coûts (Fiches Techniques, Inventaires) et Mathématiques Appliquées",
+            "name": "THÈME 5 : HÉBERGEMENT ET ENTRETIEN DES LOCAUX",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel est le nom du document qui détaille la recette, les étapes, la quantité des ingrédients et le coût des matières premières pour un plat ?",
+                    "question": "Comment appelle-t-on le nettoyage complet d'une chambre après le départ du client ?",
                     "answerOptions": [
-                        {"text": "Le tableau de 'la formule du boulanger' (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "La 'Fiche Technique de Fabrication' (FTF) qui permet la standardisation et le calcul du coût (rentabilité).", "isCorrect": True, "key": "B"},
-                        {"text": "Le coefficient d'hydratation (H) de la farine (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le plan de production et le planning des employés (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "La remise en état (ou blanc)", "isCorrect": True},
+                        {"text": "Le recouche", "isCorrect": False},
+                        {"text": "Le dépoussiérage rapide", "isCorrect": False},
+                        {"text": "Le check-out", "isCorrect": False}
                     ],
-                    "correction": "La FTF est le document de base pour la standardisation de la production et le calcul du coût (Matières Premières) en cuisine et au bar."
+                    "correction": "Cela comprend le changement complet du linge et le nettoyage approfondi."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Si le coût matière d'un plat est de 5,00 € (CMV) et que le prix de vente HT est de 20,00 €, quel est le coefficient multiplicateur appliqué ?",
+                    "question": "Quelle est la fonction d'un 'chariot d'étage' ?",
                     "answerOptions": [
-                        {"text": "1,20 (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "4,0 (20,00 € / 5,00 €) : le prix de vente est quatre fois le coût matière (marge brute de 75%).", "isCorrect": True, "key": "B"},
-                        {"text": "70,0 (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "1,4 (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Transporter le linge propre, le linge sale et les produits d'accueil", "isCorrect": True},
+                        {"text": "Servir le petit-déjeuner en chambre", "isCorrect": False},
+                        {"text": "Ranger les valises des clients", "isCorrect": False},
+                        {"text": "Nettoyer les vitres extérieures", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 20,00 € / 5,00 € = 4.0. Le coefficient (souvent entre 3 et 5 en restauration) est un indicateur de rentabilité rapide."
+                    "correction": "Il doit être organisé de manière ergonomique pour faciliter le travail du valet/femme de chambre."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Si la matière première (CMV) coûte 6,00 € pour une Salade César et que l'on vise un coût matière de 25% du prix de vente HT, quel est le prix de vente HT minimum (en €) ?",
+                    "question": "Que signifie le terme 'Recouche' ?",
                     "answerOptions": [
-                        {"text": "18,00 € HT (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "24,00 € HT (6,00 € / 0,25).", "isCorrect": True, "key": "B"},
-                        {"text": "9,00 € HT (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "18,00 € HT (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Nettoyage quotidien d'une chambre occupée par le même client", "isCorrect": True},
+                        {"text": "Refaire le lit après une sieste", "isCorrect": False},
+                        {"text": "Une chambre qui reste vide toute la nuit", "isCorrect": False},
+                        {"text": "Un type de matelas", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 6,00 € / 0,25 = 24,00 € HT. Le coût matière (ou 'food cost') est la base de la rentabilité. Un CMV de 25% est courant."
+                    "correction": "Le nettoyage est moins long que lors d'un départ."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Quel est le rôle du 'Coefficient de Perte' (ou déchet) dans le calcul du coût d'une matière première (épluchage de légumes, arêtes de poisson) ?",
+                    "question": "Dans quel ordre doit-on nettoyer une chambre d'hôtel ?",
                     "answerOptions": [
-                        {"text": "Calculer le coût total de production (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Il permet de calculer la quantité de matière première brute (déchets inclus) à commander pour obtenir la quantité nette utilisable (PN).", "isCorrect": True, "key": "B"},
-                        {"text": "Mesurer la force de la farine (W) à l'alvéographe (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Vérifier la bonne exécution du nettoyage (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Aérer, faire le lit, nettoyer les sanitaires, aspirer et laver le sol", "isCorrect": True},
+                        {"text": "Laver le sol en premier", "isCorrect": False},
+                        {"text": "Faire la poussière après avoir passé l'aspirateur", "isCorrect": False},
+                        {"text": "Nettoyer les sanitaires avant d'aérer", "isCorrect": False}
                     ],
-                    "correction": "Le coefficient de perte (ex : 30% de déchets sur un poisson entier) permet de calculer le coût réel de la matière première nette utilisée."
+                    "correction": "On commence toujours par le plus propre (chambre) pour finir par le plus sale (sanitaires) et du haut vers le bas."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Quel est le rôle de 'l'inventaire' (comptage) dans la gestion des stocks du restaurant (cave et cuisine) ?",
+                    "question": "Quel est le nom du document listant l'état de propreté et les défauts d'une chambre ?",
                     "answerOptions": [
-                        {"text": "Identifier les dommages visibles et cachés (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Il permet de connaître la valeur des stocks (valorisation) et de s'assurer qu'il n'y a pas de vol ou de perte excessive (gestion).", "isCorrect": True, "key": "B"},
-                        {"text": "40°C (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "20°C (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "La fiche de contrôle (ou check-list)", "isCorrect": True},
+                        {"text": "La facture du client", "isCorrect": False},
+                        {"text": "Le journal local", "isCorrect": False},
+                        {"text": "Le planning de réservation", "isCorrect": False}
                     ],
-                    "correction": "L'inventaire (mensuel ou annuel) est indispensable pour calculer le coût réel des marchandises vendues (CMV) et la démarque (pertes)."
+                    "correction": "Elle permet à la gouvernante de valider la remise en vente de la chambre."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Quel est le nom de la règle de gestion des stocks qui garantit l'utilisation en priorité des produits ayant la DLC la plus courte ?",
+                    "question": "Comment doit-on manipuler le linge sale pour éviter la dispersion des microbes ?",
                     "answerOptions": [
-                        {"text": "La valise de diagnostic (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'FIFO' (First In, First Out) : le premier entré (acheté) est le premier sorti (utilisé ou vendu) pour éviter la péremption.", "isCorrect": True, "key": "B"},
-                        {"text": "Le thermomètre sonde (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "L'hydromètre (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le rouler sans le secouer et le mettre immédiatement en sac", "isCorrect": True},
+                        {"text": "Le secouer par la fenêtre", "isCorrect": False},
+                        {"text": "Le poser sur le tapis de la chambre", "isCorrect": False},
+                        {"text": "Le mélanger avec les serviettes propres", "isCorrect": False}
                     ],
-                    "correction": "Le FIFO est obligatoire pour les produits alimentaires (DLC) afin d'éviter la péremption et les pertes (gestion des stocks)."
+                    "correction": "Il ne faut jamais mettre le linge sale en contact avec sa propre tenue."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Si vous avez un stock initial de 100 bouteilles de vin et un stock final de 40 bouteilles après un mois (sans achat), combien de bouteilles ont été vendues ?",
+                    "question": "Qu'est-ce qu'un 'produit d'accueil' ?",
                     "answerOptions": [
-                        {"text": "66,67 % (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "60 bouteilles (100 - 40 = 60).", "isCorrect": True, "key": "B"},
-                        {"text": "25% de perte (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "80% de perte (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Petit savon, shampooing ou cadeau offert au client en chambre", "isCorrect": True},
+                        {"text": "La carte d'identité du client", "isCorrect": False},
+                        {"text": "Le cocktail de bienvenue au bar", "isCorrect": False},
+                        {"text": "Le tapis devant la porte", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 100 - 40 = 60. Le calcul du stock (initial + achats - final) est la base du calcul du CMV."
+                    "correction": "Ils participent à l'image de marque de l'hôtel."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Quel est le coût qui doit être inclus dans le prix de revient (en plus des matières premières) pour couvrir les salaires, les charges sociales et l'amortissement ?",
+                    "question": "Quelle est la température de lavage recommandée pour le linge de lit en collectivité ?",
                     "answerOptions": [
-                        {"text": "Elle contient environ 70% d'eau (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'Coût de Revient' (CR) qui inclut les Coûts Matières (CMV), les Coûts de Main d'Œuvre (CMO) et les Charges Indirectes (CI).", "isCorrect": True, "key": "B"},
-                        {"text": "Elle ne contient pas d'eau (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Elle a le même dosage que le levain naturel (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "60 °C minimum (pour l'action bactéricide)", "isCorrect": True},
+                        {"text": "30 °C pour économiser l'eau", "isCorrect": False},
+                        {"text": "À froid", "isCorrect": False},
+                        {"text": "100 °C", "isCorrect": False}
                     ],
-                    "correction": "Le Coût de Revient (CR) est le coût total réel de fabrication d'un plat. Il sert de base à la fixation du prix de vente (marge)."
+                    "correction": "Une température élevée est nécessaire pour garantir l'hygiène."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Quelle est la marge commerciale à réaliser sur un plat (en pourcentage du prix de vente) pour être rentable en restauration (fortes charges) ?",
+                    "question": "Que doit-on vérifier lors de l'inspection des sanitaires ?",
                     "answerOptions": [
-                        {"text": "Plus de 20% à 50% de marge brute sur les coûts (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Plus de 60% à 75% de marge brute sur le prix de vente (taux moyen en restauration).", "isCorrect": True, "key": "B"},
-                        {"text": "La marge est toujours négative (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "10% de marge brute (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "L'absence de cheveux, de traces de calcaire et le réapprovisionnement des consommables", "isCorrect": True},
+                        {"text": "La couleur du carrelage uniquement", "isCorrect": False},
+                        {"text": "Si le miroir est grand", "isCorrect": False},
+                        {"text": "Si l'eau est très froide", "isCorrect": False}
                     ],
-                    "correction": "La restauration a des charges élevées (personnel, loyer). Les marges brutes sur les ventes doivent être importantes (faible CMV)."
+                    "correction": "Les sanitaires doivent être d'une propreté absolue."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Quel est le nom du coût qui varie directement en fonction de la quantité produite (farine, eau, levure, sel) ?",
+                    "question": "Quelle est la fonction d'un 'alèse' ?",
                     "answerOptions": [
-                        {"text": "Le coût de la main d'œuvre (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Les charges variables (ou coûts directs) : matières premières, emballages, énergie consommée (proportionnel à la production).", "isCorrect": True, "key": "B"},
-                        {"text": "Le coût des charges fixes (loyer, assurance, électricité) uniquement (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le coût de la logistique (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Protéger le matelas contre l'humidité et les taches", "isCorrect": True},
+                        {"text": "Décorer le dessus du lit", "isCorrect": False},
+                        {"text": "Remplacer l'oreiller", "isCorrect": False},
+                        {"text": "Cacher les pieds du lit", "isCorrect": False}
                     ],
-                    "correction": "Les charges variables (matières premières, CMV) sont directement liées à la quantité produite ou vendue (si je vends plus, je dépense plus de matières)."
+                    "correction": "Elle se place entre le matelas et le drap-housse."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Si le prix d'achat HT d'une bouteille de vin est de 8,00 € et que le taux de TVA est de 20%, quel est le prix TTC payé au fournisseur (en €) ?",
+                    "question": "Que signifie le terme 'couette à l'allemande' ?",
                     "answerOptions": [
-                        {"text": "35,3 kg de pâte crue (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "9,60 € (8,00 € x 1,20).", "isCorrect": True, "key": "B"},
-                        {"text": "25,5 kg de pâte crue (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "40,0 kg de pâte crue (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Une couette glissée dans une housse sans drap de dessus", "isCorrect": True},
+                        {"text": "Un lit fait avec 4 couvertures", "isCorrect": False},
+                        {"text": "Un lit sans matelas", "isCorrect": False},
+                        {"text": "Une technique de pliage en triangle", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 8,00 € x 1,20 = 9,60 €. La TVA (Taxe sur la Valeur Ajoutée) est appliquée au prix HT pour obtenir le prix TTC."
+                    "correction": "C'est la méthode la plus rapide et la plus hygiénique aujourd'hui."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Quel est le nom de la propriété de la farine qui indique le pourcentage d'eau qu'elle peut absorber (hydratation maximale) ?",
+                    "question": "Quel produit utilise-t-on pour désinfecter les poignées de portes et télécommandes ?",
                     "answerOptions": [
-                        {"text": "L'absorption d'eau (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le 'Seuil de Rentabilité' (SR) : le montant de chiffre d'affaires à réaliser pour couvrir toutes les charges (fixes et variables) (bénéfice nul).", "isCorrect": True, "key": "B"},
-                        {"text": "Le rapport P/L (ténacité/extensibilité) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le pH (potentiel Hydrogène) de la farine (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Un détergent-désinfectant (virucide)", "isCorrect": True},
+                        {"text": "De l'eau pure", "isCorrect": False},
+                        {"text": "Du lustrant pour meubles", "isCorrect": False},
+                        {"text": "Un produit pour vitres", "isCorrect": False}
                     ],
-                    "correction": "Le SR (ou 'point mort') est le seuil à atteindre pour commencer à générer du bénéfice. Il est crucial pour la survie de l'entreprise."
+                    "correction": "Ce sont des points de contact fréquents (zones critiques)."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Si vous devez préparer 80 cocktails qui utilisent chacun 4 cL de Rhum, quelle quantité totale de Rhum (en Litres) faut-il prévoir ?",
+                    "question": "Comment appelle-t-on l'action de retourner les coins du drap de dessus en forme d'enveloppe ?",
                     "answerOptions": [
-                        {"text": "4,00 € HT (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "3,2 Litres (80 cocktails x 0,04 L/cocktail).", "isCorrect": True, "key": "B"},
-                        {"text": "2,00 € HT (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "1,00 € HT (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Faire le pli au carré (ou l'angle)", "isCorrect": True},
+                        {"text": "Faire un nœud", "isCorrect": False},
+                        {"text": "Le froissage", "isCorrect": False},
+                        {"text": "Le bordage", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 80 x 4 cL = 320 cL. 320 cL = 3,2 Litres. Le dosage (cl) est essentiel pour le coût et la qualité du cocktail."
+                    "correction": "Cela donne un aspect net et professionnel au lit."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Quel est le rôle de la 'fiche technique' (fiche recette) dans la production de la boulangerie ?",
+                    "question": "À quoi sert la 'ventilation' de la chambre ?",
                     "answerOptions": [
-                        {"text": "Garantir la constance de la qualité du produit, sa traçabilité et le calcul de son prix de revient (quantité et coût).", "isCorrect": True, "key": "A"},
-                        {"text": "Déterminer la température de base de la pâte (T° de base) (faux).", "isCorrect": False, "key": "B"},
-                        {"text": "Mesurer la force de la farine (W) à l'alvéographe (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Vérifier la bonne exécution du nettoyage (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Renouveler l'air et évacuer les odeurs et l'humidité", "isCorrect": True},
+                        {"text": "Refroidir la chambre en hiver", "isCorrect": False},
+                        {"text": "Faire entrer les insectes", "isCorrect": False},
+                        {"text": "C'est inutile avec la clim", "isCorrect": False}
                     ],
-                    "correction": "La fiche technique (FTF) est le document de référence (norme de l'entreprise) pour la fabrication et la gestion (standardisation)."
+                    "correction": "L'aération doit durer pendant tout le temps du nettoyage de la chambre."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quel est le mode de calcul qui permet de répartir les coûts (loyer, électricité, assurance) sur l'ensemble de la production ?",
+                    "question": "Que doit faire le personnel s'il trouve un objet de valeur oublié par un client ?",
                     "answerOptions": [
-                        {"text": "Le calcul des charges indirectes (ou frais généraux), réparties par unité de production ou par heure de travail (pour le coût de revient).", "isCorrect": True, "key": "A"},
-                        {"text": "Le calcul du coût des matières premières (faux).", "isCorrect": False, "key": "B"},
-                        {"text": "Le calcul du prix de vente HT uniquement (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le calcul du taux de perte à la cuisson (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Le remettre immédiatement à la gouvernante ou à la réception", "isCorrect": True},
+                        {"text": "Le garder pour lui", "isCorrect": False},
+                        {"text": "Le laisser sur la table", "isCorrect": False},
+                        {"text": "Le jeter à la poubelle", "isCorrect": False}
                     ],
-                    "correction": "Les charges indirectes (fixes) doivent être incluses dans le prix de revient (par un coefficient) pour ne pas être déficitaires."
+                    "correction": "L'objet doit être enregistré (date, lieu, description) dans le registre des objets trouvés."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Si le taux de TVA applicable à la 'restauration sur place' (service en salle) est de 10%, quel est le montant de la TVA pour un plat à 15,00 € HT ?",
+                    "question": "Quelle est la définition d'un 'lit fait au carré' ?",
                     "answerOptions": [
-                        {"text": "75,0 kg de farine (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "1,50 € (15,00 € x 0,10).", "isCorrect": True, "key": "B"},
-                        {"text": "100,0 kg de farine (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "50,0 kg de farine (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Un lit dont les draps sont parfaitement tendus et bordés", "isCorrect": True},
+                        {"text": "Un lit de forme carrée", "isCorrect": False},
+                        {"text": "Un lit avec 4 oreillers carrés", "isCorrect": False},
+                        {"text": "Un lit pour une seule personne", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 15,00 € x 0,10 = 1,50 €. Le prix TTC sera de 16,50 € (15,00 € + 1,50 €)."
+                    "correction": "C'est la base de la technique en hôtellerie."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quel est le but du 'Poids Net' (PN) d'un ingrédient dans la fiche technique ?",
+                    "question": "Pourquoi les chaussures à talons hauts ou bruyants sont-elles déconseillées ?",
                     "answerOptions": [
-                        {"text": "Le poids de l'ingrédient tel qu'il est ajouté à la formule (sans les emballages, les déchets ou les impuretés).", "isCorrect": True, "key": "A"},
-                        {"text": "Le prix de vente HT du produit fini (sans les taxes ni les charges) (faux).", "isCorrect": False, "key": "B"},
-                        {"text": "Le coût total de la main d'œuvre (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le taux de perte à la cuisson (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Nuisances sonores pour les clients et fatigue du personnel", "isCorrect": True},
+                        {"text": "Parce que c'est interdit par la loi", "isCorrect": False},
+                        {"text": "Car elles coûtent trop cher", "isCorrect": False},
+                        {"text": "Elles sont jolies mais inutiles", "isCorrect": False}
                     ],
-                    "correction": "Le poids net est la base du calcul du coût des matières premières (uniquement le produit utilisé, pas la tare)."
+                    "correction": "Des chaussures silencieuses et confortables sont obligatoires."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Comment calcule-t-on le 'Prix TTC' (Toutes Taxes Comprises) à partir du Prix HT (Hors Taxe) et du taux de TVA (en %) ?",
+                    "question": "Que doit-on vérifier systématiquement lors du contrôle du minibar lors d'un départ ?",
                     "answerOptions": [
-                        {"text": "Les charges variables (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Prix HT x (1 + Taux de TVA en décimal : ex. : 1,10 pour 10% de TVA).", "isCorrect": True, "key": "B"},
-                        {"text": "Le coût de la main d'œuvre (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le prix de vente HT du produit fini (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Si les scellés des bouteilles sont intacts", "isCorrect": True},
+                        {"text": "Si la lumière du frigo fonctionne", "isCorrect": False},
+                        {"text": "Si la marque du frigo est visible", "isCorrect": False},
+                        {"text": "Si les bouteilles sont classées par couleur", "isCorrect": False}
                     ],
-                    "correction": "Calcul : Prix TTC = Prix HT x (1 + t). Cette formule est essentielle pour la facturation et l'encaissement."
+                    "correction": "Certains clients boivent le contenu et remplissent la bouteille avec un autre liquide."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Comment s'appelle l'opération qui consiste à vérifier la force de la farine (W, P/L) à l'aide d'un appareil ?",
+                    "question": "Quel est l'ordre logique de nettoyage des sanitaires pour éviter les contaminations ?",
                     "answerOptions": [
-                        {"text": "Le test d'alvéographe (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "L'inventaire : le dénombrement (comptage) physique des stocks (matières premières et produits finis) pour ajuster les comptes.", "isCorrect": True, "key": "B"},
-                        {"text": "Le test de DLC (Date Limite de Consommation) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le test de température de la pâte (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Lavabo, douche, puis toilettes en dernier", "isCorrect": True},
+                        {"text": "Toilettes, lavabo, puis douche", "isCorrect": False},
+                        {"text": "Toilettes, douche, puis miroir", "isCorrect": False},
+                        {"text": "Tout en même temps avec la même éponge", "isCorrect": False}
                     ],
-                    "correction": "L'inventaire (souvent annuel) permet de valoriser les stocks et de calculer le coût réel (écart entre la théorie et la réalité) des pertes."
+                    "correction": "On va toujours du plus propre vers le plus sale (WC en dernier)."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quel est le taux de TVA (Taxe sur la Valeur Ajoutée) applicable aux boissons alcoolisées servies en salle (consommation immédiate) en France ?",
+                    "question": "Quelle attitude adopter si un client a apposé le panonceau 'Ne pas déranger' ?",
                     "answerOptions": [
-                        {"text": "Le taux réduit de 5,5% (faux).", "isCorrect": False, "key": "A"},
-                        {"text": "Le taux normal de 20% (applicable aux boissons alcoolisées, aux pièces, aux fournitures et à la main d'œuvre).", "isCorrect": True, "key": "B"},
-                        {"text": "Le taux standard de 10% (pour la restauration sur place non alcoolisée) (faux).", "isCorrect": False, "key": "C"},
-                        {"text": "Le taux standard de 0% (exonération totale) (faux).", "isCorrect": False, "key": "D"}
+                        {"text": "Ne pas entrer et repasser plus tard", "isCorrect": True},
+                        {"text": "Frapper fort et entrer quand même pour nettoyer", "isCorrect": False},
+                        {"text": "Appeler la réception pour faire expulser le client", "isCorrect": False},
+                        {"text": "Attendre devant la porte", "isCorrect": False}
                     ],
-                    "correction": "Le taux de TVA de 20% s'applique à la vente de boissons alcoolisées dans les cafés, restaurants, bars."
+                    "correction": "Le respect de l'intimité du client est fondamental."
                 }
             ]
         }

@@ -1,0 +1,718 @@
+=============================================================================
+BASE DE DONNÉES QUIZ - BP MAÇON (100 QUESTIONS)
+Règle : La réponse A est TOUJOURS la bonne réponse.
+=============================================================================
+
+### THÈME 1 : ANALYSE TECHNIQUE ET PRÉPARATION DE CHANTIER
+-----------------------------------------------------------------------------
+Question 1 : Quelle est la distance réelle représentée par un trait de 2 centimètres sur un plan à l'échelle 1/50 ?
+A. 1 mètre
+B. 10 mètres
+C. 100 millimètres
+D. 500 centimètres
+Rappel de Cours : L'échelle 1/50 signifie que 1 cm sur le plan vaut 50 cm en réalité. Donc 2 cm valent 100 cm, soit 1 mètre.
+
+Question 2 : Que signifie l'acronyme CCTP dans un dossier de marché ?
+A. Cahier des Clauses Techniques Particulières
+B. Cahier des Charges de Travaux Publics
+C. Certificat de Conformité Technique Provisoire
+D. Contrôle de Construction Technique et Physique
+Rappel de Cours : Le CCTP est la pièce écrite contractuelle qui décrit les dispositions techniques de chaque lot (matériaux, mise en œuvre, normes).
+
+Question 3 : Sur un plan de coffrage, que désigne une cote indiquée "entre nus bruts" ?
+A. La dimension de la paroi sans les enduits ni les revêtements
+B. La distance totale incluant l'épaisseur de l'isolation et du doublage
+C. La mesure prise entre les axes des murs porteurs
+D. La hauteur sous plafond une fois le sol fini posé
+Rappel de Cours : Une cote brute en maçonnerie correspond à la dimension de l'élément porteur seul (béton ou maçonnerie), avant l'application des finitions (enduits, isolation).
+
+Question 4 : Quel trait est normalisé pour représenter les axes de symétrie ou les files de construction ?
+A. Mixte fin
+B. Continu fort
+C. Interrompu fin
+D. Continu fin
+Rappel de Cours : Le trait mixte fin (une alternance de traits longs et courts) est utilisé pour les axes, les plans de symétrie et les trajectoires.
+
+Question 5 : Quel instrument est indispensable pour vérifier la planéité horizontale d'une dalle sur une grande surface ?
+A. Niveau optique
+B. Équerre de maçon
+C. Fil à plomb
+D. Décamètre
+Rappel de Cours : Le niveau optique (ou niveau de chantier) permet de réaliser des visées horizontales précises sur de longues distances pour contrôler l'altimétrie et la planéité.
+
+Question 6 : Dans le système NGF, que matérialise le "point zéro" de référence ?
+A. Le niveau moyen de la mer à Marseille
+B. Le niveau du sol naturel du chantier
+C. Le point le plus haut du bâtiment
+D. Le seuil de la porte d'entrée principale
+Rappel de Cours : Le Nivellement Général de la France (NGF) a pour origine le marégraphe de Marseille, qui définit l'altitude zéro de référence.
+
+Question 7 : Comment se nomme l'augmentation de volume d'une terre foisonnée après son extraction ?
+A. Le foisonnement
+B. La compacité
+C. La densité
+D. La porosité
+Rappel de Cours : Lorsqu'on excave de la terre, elle perd sa cohésion et occupe plus de volume qu'en place. Ce phénomène est le foisonnement.
+
+Question 8 : Quelle méthode empirique permet de vérifier rapidement l'angle droit d'une implantation sur le terrain ?
+A. 3 4 5
+B. 1 2 3
+C. Pi R 2
+D. A B C
+Rappel de Cours : La règle du "3-4-5" (théorème de Pythagore) permet de créer un angle droit : un triangle dont les côtés mesurent 3m, 4m et 5m possède obligatoirement un angle droit.
+
+Question 9 : Que représente le Plan d'Installation de Chantier (PIC) ?
+A. Un plan définissant les zones de stockage, les accès et les moyens de levage
+B. Un document détaillant exclusivement le ferraillage des ouvrages en béton armé
+C. Une coupe technique montrant la composition des planchers et des murs
+D. Un planning financier des décomptes mensuels des travaux
+Rappel de Cours : Le PIC organise la logistique du chantier (clôture, grue, base vie, réseaux, circulations) pour assurer la sécurité et l'efficacité avant le démarrage.
+
+Question 10 : Quelle est l'unité de mesure conventionnelle pour quantifier des fondations en rigole dans un devis ?
+A. Mètre cube
+B. Mètre carré
+C. Mètre linéaire
+D. Forfait
+Rappel de Cours : Les fouilles et le béton de fondations (semelles filantes) se quantifient généralement au volume, donc en mètres cubes (m3).
+
+Question 11 : Sur une coupe verticale, comment appelle-t-on la partie de maçonnerie située sous la fenêtre ?
+A. Allège
+B. Linteau
+C. Jambage
+D. Imposte
+Rappel de Cours : L'allège est le mur d'appui situé entre le sol fini et la pièce d'appui de la fenêtre.
+
+Question 12 : Quelle est la fonction principale d'une "chaise d'implantation" ?
+A. Matérialiser les axes et les nus des murs hors de la zone de terrassement
+B. Servir de support pour le stockage des palettes de parpaings
+C. Permettre le repos des ouvriers lors des pauses réglementaires
+D. Soutenir les banches de coffrage lors du coulage du béton
+Rappel de Cours : Les chaises sont des chevalets en bois plantés à l'extérieur de l'emprise du bâtiment pour tendre les cordeaux d'alignement sans être gênés par les travaux.
+
+Question 13 : Quel document spécifique doit être établi pour coordonner la sécurité lorsque plusieurs entreprises interviennent ?
+A. Le PPSPS
+B. Le DUK
+C. Le RIB
+D. Le DOE
+Rappel de Cours : Le Plan Particulier de Sécurité et de Protection de la Santé (PPSPS) analyse les risques spécifiques au chantier et les mesures de prévention adoptées.
+
+Question 14 : Que signifie l'abréviation "TN" sur un plan de masse ou de terrassement ?
+A. Terrain Naturel
+B. Trait de Niveau
+C. Terre Nettoyée
+D. Travaux Neufs
+Rappel de Cours : TN désigne le niveau du sol existant avant toute intervention ou modification par l'entreprise.
+
+Question 15 : Pour calculer la surface d'un pignon triangulaire, quelle formule utilise-t-on ?
+A. Base fois hauteur divisé par deux
+B. Côté fois côté fois côté
+C. Longueur plus largeur fois deux
+D. Base fois hauteur fois épaisseur
+Rappel de Cours : Un pignon a une forme de triangle. L'aire d'un triangle est (Base x Hauteur) / 2.
+
+Question 16 : Quel est le rôle principal du "calepinage" en maçonnerie ?
+A. Prévoir l'agencement précis des éléments pour limiter les coupes et soigner l'esthétique
+B. Calculer le poids total des aciers nécessaires pour la commande fournisseur
+C. Définir le dosage en eau et en ciment pour la fabrication du mortier
+D. Organiser le planning des congés payés de l'équipe de chantier
+Rappel de Cours : Le calepinage est le dessin à l'échelle de la disposition des éléments (briques, blocs, carrelage) pour optimiser la pose et éviter les coupes disgracieuses.
+
+Question 17 : Quelle information détermine la profondeur hors-gel des fondations ?
+A. La zone climatique et l'altitude du lieu de construction
+B. La hauteur totale du bâtiment à construire
+C. La nature esthétique du revêtement de façade
+D. Le type de chauffage choisi par le client
+Rappel de Cours : La profondeur hors-gel dépend de la région (carte des zones de gel) et de l'altitude, pour éviter que le sol ne gonfle sous les fondations en gelant.
+
+Question 18 : Qu'est-ce qu'une "rotation de banches" dans l'organisation de chantier ?
+A. L'organisation cyclique journalière de l'utilisation des coffrages verticaux
+B. Le mouvement rotatif de la grue pour distribuer le béton
+C. Le remplacement des équipes de maçons toutes les deux semaines
+D. Le nettoyage des bétonnières à la fin de la journée
+Rappel de Cours : La rotation correspond au cycle quotidien d'utilisation du matériel de coffrage (ferraillage, fermeture, coulage, décoffrage, nettoyage, déplacement).
+
+Question 19 : Sur un plan d'armatures, que signifie le symbole "HA" ?
+A. Haute Adhérence
+B. Haute Altitude
+C. Haute Amplitude
+D. Haute Activité
+Rappel de Cours : Les aciers HA (Haute Adhérence) possèdent des reliefs (verrous) pour mieux adhérer au béton, contrairement aux ronds lisses.
+
+Question 20 : À quoi sert le "trait de niveau" tracé généralement à 1 mètre du sol fini sur les murs bruts ?
+A. Servir de référence altimétrique unique pour tous les corps d'état
+B. Décorer provisoirement les murs avant la peinture
+C. Indiquer la limite de remplissage du béton
+D. Marquer l'emplacement des futures prises électriques
+Rappel de Cours : Le trait de niveau (souvent à +1.00m sol fini) est la référence commune pour que le maçon, le menuisier, le plombier et l'électricien positionnent leurs ouvrages à la bonne hauteur.
+
+
+### THÈME 2 : TECHNOLOGIE DES MATÉRIAUX ET DU BÉTON
+-----------------------------------------------------------------------------
+Question 21 : Quel est le constituant principal du ciment Portland (CEM I) obtenu après cuisson du calcaire et de l'argile ?
+A. Le clinker
+B. Le laitier de haut fourneau
+C. La pouzzolane naturelle
+D. Le gypse de carrière
+Rappel de Cours : Le clinker est le produit semi-fini obtenu par la cuisson (clinkérisation) à 1450°C d'un mélange de calcaire (80%) et d'argile (20%), base du ciment Portland.
+
+Question 22 : Quel adjuvant permet d'augmenter la fluidité du béton sans ajouter d'eau ?
+A. Superplastifiant
+B. Accélérateur de prise
+C. Retardateur de prise
+D. Entraîneur d'air
+Rappel de Cours : Les plastifiants et superplastifiants réduisent les forces de frottement entre les grains, permettant de rendre le béton plus fluide ou de réduire la quantité d'eau de gâchage.
+
+Question 23 : Que désigne la classe d'exposition "XF1" pour un béton ?
+A. Gel faible
+B. Attaque chimique forte
+C. Corrosion par chlorures
+D. Carbonatation modérée
+Rappel de Cours : La classe XF concerne les attaques par le gel/dégel. XF1 correspond à une saturation faible en eau sans agent de déverglaçage (gel faible ou modéré).
+
+Question 24 : Quel essai de chantier permet de mesurer la consistance (ouvrabilité) du béton frais ?
+A. Le cône d'Abrams
+B. L'essai vicat
+C. L'essai au bleu
+D. L'équivalent de sable
+Rappel de Cours : L'essai d'affaissement au cône d'Abrams (Slump test) mesure la plasticité du béton frais en cm d'affaissement.
+
+Question 25 : Quelle est la masse volumique moyenne d'un béton armé courant ?
+A. 2500 kg par mètre cube
+B. 1800 kg par mètre cube
+C. 3200 kg par mètre cube
+D. 1200 kg par mètre cube
+Rappel de Cours : On retient généralement 2500 kg/m³ (2,5 t/m³) pour le béton armé, contre environ 2300-2400 kg/m³ pour un béton non armé.
+
+Question 26 : Pourquoi ajoute-t-on une petite quantité de gypse au clinker lors du broyage final du ciment ?
+A. Réguler la prise
+B. Changer la couleur
+C. Augmenter la densité
+D. Réduire le coût
+Rappel de Cours : Sans gypse, le ciment ferait une "prise éclair" immédiate au contact de l'eau. Le gypse sert de régulateur pour permettre le transport et la mise en œuvre.
+
+Question 27 : Que signifie la notation "52.5" sur un sac de ciment ?
+A. La résistance minimale à la compression en mégapascals à 28 jours
+B. La proportion de clinker contenue dans le mélange en pourcentage
+C. Le temps de début de prise exprimé en minutes à vingt degrés
+D. La finesse de broyage mesurée selon la méthode de Blaine
+Rappel de Cours : Le nombre (32.5, 42.5, 52.5) indique la classe de résistance normalisée : c'est la résistance minimale en compression (MPa) obtenue à 28 jours sur éprouvette normalisée.
+
+Question 28 : Quel phénomène risque de se produire si l'on vibre trop longtemps le béton ?
+A. La ségrégation
+B. La carbonatation
+C. L'hydratation
+D. La traction
+Rappel de Cours : La ségrégation est la séparation des constituants du béton : les gros granulats descendent au fond et la laitance remonte en surface, affaiblissant l'ouvrage.
+
+Question 29 : Quelle caractéristique des granulats est mise en évidence par l'essai "Los Angeles" ?
+A. La résistance à la fragmentation par chocs
+B. La propreté des sables et des graviers
+C. La forme plus ou moins aplatie des grains
+D. La teneur en eau superficielle des matériaux
+Rappel de Cours : L'essai Los Angeles mesure la résistance des granulats aux chocs et à l'attrition (frottement réciproque) dans un tambour rotatif contenant des boulets d'acier.
+
+Question 30 : Comment appelle-t-on l'eau contenue dans les pores des granulats qui ne participe pas à l'hydratation du ciment ?
+A. Eau absorbée
+B. Eau efficace
+C. Eau totale
+D. Eau libre
+Rappel de Cours : L'eau absorbée est celle qui pénètre dans la porosité du granulat. L'eau "efficace" est celle qui reste disponible pour hydrater le ciment et lubrifier le mélange.
+
+Question 31 : Quel est le rôle principal de la "cure" du béton après le coulage ?
+A. Empêcher l'évaporation trop rapide de l'eau pour éviter la fissuration
+B. Accélérer le séchage du béton pour pouvoir décoffrer plus vite
+C. Nettoyer la surface du béton pour améliorer l'esthétique finale
+D. Refroidir le béton pour limiter la montée en température du cœur
+Rappel de Cours : La cure protège le béton frais contre la dessiccation (séchage précoce) due au vent ou au soleil, garantissant une bonne hydratation et limitant le retrait plastique.
+
+Question 32 : Dans la désignation des bétons, que signifie "C25/30" ?
+A. Résistance caractéristique en compression sur cylindre et sur cube
+B. Dosage en ciment compris entre 250 et 300 kilogrammes
+C. Consistance du béton mesurée entre 25 et 30 centimètres
+D. Durée de vie estimée de l'ouvrage en années
+Rappel de Cours : C25/30 indique une résistance caractéristique à la compression de 25 MPa mesurée sur éprouvette cylindrique et 30 MPa sur éprouvette cubique.
+
+Question 33 : Quel matériau isolant est d'origine minérale ?
+A. Laine de verre
+B. Polystyrène expansé
+C. Ouate de cellulose
+D. Polyuréthane projeté
+Rappel de Cours : La laine de verre est fabriquée à partir de sable et de verre recyclé (calcin), c'est un isolant minéral, contrairement aux isolants synthétiques (pétrole) ou biosourcés (végétaux).
+
+Question 34 : Qu'est-ce que la "laitance" qui remonte à la surface d'un béton frais ?
+A. Un mélange d'eau et de ciment sans résistance mécanique
+B. Un excédent de résine de cure appliqué trop tôt
+C. La remontée des granulats les plus fins du sable
+D. Une réaction chimique due au gel du béton
+Rappel de Cours : La laitance est une pellicule superficielle fragile composée d'eau de ressuage et de particules fines de ciment, qu'il faut souvent éliminer avant une reprise de bétonnage.
+
+Question 35 : Quel est l'effet d'un excès d'eau de gâchage sur les performances du béton durci ?
+A. Chute de la résistance et augmentation de la porosité
+B. Amélioration de la durabilité face au gel
+C. Augmentation significative de la résistance à la traction
+D. Meilleure protection des aciers contre la rouille
+Rappel de Cours : Trop d'eau augmente la porosité du béton après évaporation de l'excédent. Plus un béton est poreux, moins il est résistant mécaniquement et moins il protège les aciers.
+
+Question 36 : À quoi sert l'essai au "Scléromètre" sur un ouvrage existant ?
+A. Estimer la résistance superficielle du béton par rebond
+B. Mesurer la profondeur de carbonatation du béton
+C. Détecter la position des armatures dans le mur
+D. Calculer le taux d'humidité à cœur du matériau
+Rappel de Cours : Le scléromètre projette une masse sur le béton et mesure la valeur du rebond. C'est un essai non destructif qui donne une indication sur la dureté de surface.
+
+Question 37 : Quel ciment est le plus adapté pour des travaux à la mer ou en milieu agressif ?
+A. PM
+B. CP
+C. CE
+D. NF
+Rappel de Cours : La notation "PM" signifie "Prise Mer". Ces ciments ont une composition chimique limitée en aluminates pour résister aux attaques des sulfates présents dans l'eau de mer.
+
+Question 38 : Quelle est la granulométrie approximative d'un sable standard utilisé en béton ?
+A. 0 à 4 mm
+B. 5 à 12 mm
+C. 15 à 25 mm
+D. 40 à 80 mm
+Rappel de Cours : Le sable pour béton est un granulat fin dont la dimension des grains est généralement comprise entre 0 et 4 mm (0/4). Au-delà, on parle de gravillons.
+
+Question 39 : Quel est le principe du "Béton Autoplaçant" (BAP) ?
+A. Il se met en place sous son propre poids sans vibration
+B. Il durcit instantanément au contact de l'air ambiant
+C. Il contient des fibres métalliques remplaçant les armatures
+D. Il est fabriqué directement sur le chantier sans centrale
+Rappel de Cours : Grâce à des superplastifiants et une formulation spécifique, le BAP est très fluide et homogène, remplissant les coffrages complexes sans nécessiter de vibration mécanique.
+
+Question 40 : En thermique du bâtiment, que mesure le coefficient Lambda (λ) ?
+A. La conductivité thermique
+B. La résistance thermique
+C. La capacité thermique
+D. L'inertie thermique
+Rappel de Cours : Le lambda (λ) définit la capacité intrinsèque d'un matériau à conduire la chaleur. Plus le lambda est petit, plus le matériau est isolant.
+
+
+### THÈME 3 : TECHNIQUES DE MISE EN ŒUVRE (MAÇONNERIE ET GROS ŒUVRE)
+-----------------------------------------------------------------------------
+Question 41 : Comment appelle-t-on le décalage vertical des joints entre deux rangées de parpaings superposées ?
+A. Le harpage
+B. Le calfeutrement
+C. Le ragréage
+D. Le dressage
+Rappel de Cours : Le harpage (ou croisement des joints) est essentiel pour la solidité du mur. Le recouvrement doit être au minimum du tiers de la longueur de l'élément (ou la moitié pour une résistance optimale).
+
+Question 42 : Quelle disposition est obligatoire en pied de mur pour éviter les remontées d'humidité du sol ?
+A. La coupure de capillarité
+B. Le joint de dilatation
+C. La bande de redressement
+D. Le chainage horizontal
+Rappel de Cours : La coupure de capillarité (ou arase étanche) bloque l'ascension de l'eau dans la maçonnerie poreuse. Elle se réalise avec un mortier hydrofugé ou une bande bitumineuse.
+
+Question 43 : Quelle est la première couche d'un enduit traditionnel monocouche ou multicouche ?
+A. Le gobetis
+B. Le corps d'enduit
+C. La couche de finition
+D. Le dégrossi
+Rappel de Cours : Le gobetis est une couche mince et liquide, fortement dosée en liant, projetée pour créer une surface rugueuse d'accrochage pour le corps d'enduit.
+
+Question 44 : Sur un plancher poutrelles-hourdis, quelle opération doit être réalisée avant de couler la table de compression ?
+A. La pose des étais sous les poutrelles
+B. Le ponçage de la sous-face des entrevous
+C. L'application d'un primaire d'accrochage chimique
+D. La mise en peinture des aciers de chapeau
+Rappel de Cours : Les poutrelles préfabriquées ne sont généralement pas autoportantes sur de grandes portées avant le durcissement du béton. L'étaiement prévient leur rupture ou une flèche excessive.
+
+Question 45 : Quelle est la fonction précise du "rejingot" sur un appui de fenêtre ?
+A. Empêcher l'eau de remonter sous la traverse basse de la menuiserie et assurer l'étanchéité
+B. Servir uniquement de butée provisoire pour le calage de la fenêtre lors de la pose
+C. Renforcer la résistance mécanique de l'allège pour supporter le poids du linteau
+D. Créer une rupture de pont thermique entre le tableau extérieur et le doublage intérieur
+Rappel de Cours : Le rejingot est le relief arrière de l'appui (remontée de béton). Il forme une barrière physique contre l'eau poussée par le vent sous la fenêtre.
+
+Question 46 : Quelle est la couleur normalisée du grillage avertisseur à poser au-dessus d'une canalisation d'eau potable ?
+A. Bleu
+B. Rouge
+C. Jaune
+D. Vert
+Rappel de Cours : Le code couleur des réseaux enterrés est strict : Bleu pour l'eau, Rouge pour l'électricité, Jaune pour le gaz, Vert pour les télécoms/vidéo.
+
+Question 47 : Quel ouvrage réalise-t-on au fond d'une fouille avant de couler la semelle de fondation ?
+A. Un béton de propreté
+B. Un radier général
+C. Une chape liquide
+D. Un hérisson ventilé
+Rappel de Cours : Le béton de propreté (dosé faiblement) évite que le béton de fondation ne soit souillé par la terre et garantit un enrobage correct des aciers inférieurs.
+
+Question 48 : À quoi sert un "joint de fractionnement" dans une grande surface bétonnée ?
+A. Limiter la fissuration aléatoire due au retrait du béton
+B. Séparer deux bâtiments de structures différentes
+C. Isoler thermiquement la dalle du terre-plein
+D. Empêcher les infiltrations d'eau souterraine
+Rappel de Cours : Le béton se rétracte en durcissant. Le joint de fractionnement (scié ou profilé) crée une zone de faiblesse où la fissure se produira de manière contrôlée et rectiligne.
+
+Question 49 : Quelle est l'épaisseur habituelle d'un joint de mortier pour le montage de parpaings traditionnels ?
+A. 10 à 15 millimètres
+B. 1 à 3 millimètres
+C. 20 à 30 millimètres
+D. 40 à 50 millimètres
+Rappel de Cours : Pour la maçonnerie à joints épais traditionnels, l'épaisseur standard se situe entre 1 cm et 1,5 cm pour rattraper les tolérances dimensionnelles des blocs.
+
+Question 50 : Dans la maçonnerie à "joints minces" (colle), quel outil spécifique utilise-t-on pour déposer le mortier ?
+A. Le rouleau applicateur ou la pelle crantée
+B. La truelle ronde et la taloche plastique
+C. La pompe à béton stationnaire
+D. Le pulvérisateur à pression manuelle
+Rappel de Cours : Le joint mince (1 à 3 mm) nécessite un dosage précis et régulier, obtenu grâce à un rouleau ou un sabot (pelle) adapté à la largeur de la brique.
+
+Question 51 : Où se situe généralement le pont thermique le plus courant dans une structure en maçonnerie sans rupteurs ?
+A. À la jonction plancher-façade
+B. Au milieu des murs de refend
+C. Sous les cloisons de distribution
+D. Au centre de la dalle de compression
+Rappel de Cours : Le nez de dalle en béton traverse l'isolation intérieure et touche le mur extérieur, créant une fuite de calories appelée pont thermique.
+
+Question 52 : Quel est le rôle du géotextile placé autour d'un drain et des graviers ?
+A. Filtrer les fines particules de terre pour ne pas colmater le drain
+B. Assurer l'étanchéité totale de la paroi enterrée contre l'eau
+C. Renforcer la résistance mécanique du remblai contre le tassement
+D. Isoler thermiquement les fondations contre le gel profond
+Rappel de Cours : Le géotextile est un feutre perméable qui laisse passer l'eau mais retient la terre (les fines), empêchant ainsi le drain de se boucher.
+
+Question 53 : Quelle formule permet de vérifier le confort d'un escalier (relation entre hauteur de marche h et giron g) ?
+A. 2 h + g
+B. h + 2 g
+C. h x g
+D. h - g
+Rappel de Cours : C'est la relation de Blondel. Pour un escalier confortable, 2 hauteurs de marche + 1 giron doit être compris entre 60 et 64 cm (longueur du pas).
+
+Question 54 : Quelle est la longueur d'appui minimale standard d'un linteau sur la maçonnerie (hors calcul spécifique) ?
+A. 20 cm
+B. 5 cm
+C. 50 cm
+D. 10 cm
+Rappel de Cours : Par convention et sécurité (DTU 20.1), l'appui minimal est de 20 cm de chaque côté pour bien répartir les charges sur les jambages.
+
+Question 55 : Quel est le rôle structurel principal d'un chaînage horizontal en béton armé ?
+A. Ceinturer la maçonnerie pour s'opposer aux efforts de traction et stabiliser l'ouvrage
+B. Servir uniquement de support décoratif pour la fixation des corniches de toiture
+C. Permettre le passage des gaines électriques horizontales sans saigner les murs
+D. Remplacer les fondations lorsque le sol est de trop mauvaise qualité portante
+Rappel de Cours : La maçonnerie résiste bien à la compression mais mal à la traction. Les chaînages (ferraillés) reprennent les efforts de traction et solidarisent les murs.
+
+Question 56 : Pour réaliser une coupe propre de pavés autobloquants en béton, quel matériel est le plus adapté ?
+A. La guillotine à pavés
+B. La scie égoïne
+C. Le marteau piqueur
+D. La cisaille à métaux
+Rappel de Cours : La guillotine à pavés (ou casse-pavés) permet une coupe nette par pression mécanique, sans poussière ni bruit excessif, contrairement à la disqueuse.
+
+Question 57 : Quelle pente minimale doit-on respecter pour un balcon ou une terrasse extérieure afin d'évacuer l'eau ?
+A. 1 à 2 % vers l'extérieur
+B. 5 à 10 % vers l'intérieur
+C. 0 % (parfaitement plat)
+D. 15 % vers l'extérieur
+Rappel de Cours : Une pente d'au moins 1 à 1,5 cm par mètre (1-2%) est nécessaire pour éviter la stagnation de l'eau (flaches) et les infiltrations.
+
+Question 58 : Dans quel cas l'utilisation de blocs de béton cellulaire est-elle particulièrement pertinente ?
+A. Pour améliorer l'isolation thermique du mur porteur
+B. Pour construire des murs immergés en permanence
+C. Pour réaliser des ouvrages phoniques très lourds
+D. Pour les fondations profondes en terrain argileux
+Rappel de Cours : Le béton cellulaire contient des millions de bulles d'air, ce qui lui confère d'excellentes propriétés d'isolation thermique par rapport au béton lourd.
+
+Question 59 : Que doit-on faire obligatoirement avant d'appliquer un enduit sur un support très sec et chaud ?
+A. Humidifier le support à refus
+B. Chauffer le support au chalumeau
+C. Appliquer une couche d'huile de décoffrage
+D. Poncer le support au gros grain
+Rappel de Cours : Si le support est sec et chaud, il va "boire" l'eau du mortier trop vite, empêchant la prise chimique (phénomène de grillage de l'enduit). Il faut l'humidifier.
+
+Question 60 : Quel élément est indispensable pour assurer la ventilation du vide sanitaire ?
+A. Des courettes d'aération grillagées
+B. Un système de climatisation réversible
+C. Une membrane étanche sous la dalle
+D. Un drain périphérique intérieur
+Rappel de Cours : Le vide sanitaire doit être ventilé pour éviter l'accumulation d'humidité et de gaz (radon). On utilise des bouches d'aération ou courettes réparties sur les façades opposées.
+
+
+### THÈME 4 : OUVRAGES COMPLEXES ET BÉTON ARMÉ
+-----------------------------------------------------------------------------
+Question 61 : Quel élément consommable détermine l'épaisseur précise d'un voile béton coulé entre deux banches ?
+A. L'entretoise
+B. La tige filetée de serrage
+C. Le cône de rebouchage
+D. La serrure de liaison
+Rappel de Cours : L'entretoise est un tube (souvent en plastique) coupé à la longueur exacte de l'épaisseur du mur. La tige de serrage passe à travers et vient plaquer les banches contre cette butée.
+
+Question 62 : Comment se nomme la dalle inclinée en béton armé qui supporte les marches d'un escalier ?
+A. La paillasse
+B. Le limon central
+C. La crémaillère
+D. Le giron
+Rappel de Cours : La paillasse est la dalle porteuse armée qui forme la pente de l'escalier, sur laquelle sont coulées ou posées les marches.
+
+Question 63 : Quelle est la fonction mécanique des "cadres" et des "étriers" dans une poutre en béton armé ?
+A. Reprendre l'effort tranchant pour éviter les fissures obliques
+B. Augmenter la résistance du béton à la compression pure
+C. Faciliter le coulage du béton entre les barres longitudinales
+D. Servir uniquement de support pour les aciers principaux
+Rappel de Cours : Les armatures transversales (cadres, étriers, épingles) s'opposent au cisaillement (effort tranchant) qui tend à faire glisser les couches de béton et provoquer des fissures à 45°.
+
+Question 64 : Quelle est la première action de sécurité à effectuer avant d'ouvrir une baie dans un mur porteur existant ?
+A. Étayer
+B. Démolir
+C. Percer
+D. Tracer
+Rappel de Cours : Il est impératif de mettre en place un étaiement (souvent avec des chevalets et des bastaings) pour reprendre les charges descendantes avant de toucher à la structure du mur.
+
+Question 65 : Que signifie l'acronyme E.L.U. dans les notes de calcul de béton armé ?
+A. État Limite Ultime
+B. Essai Longueur Unitaire
+C. Étude de Liaison Usuelle
+D. Écart Limite d'Usure
+Rappel de Cours : L'État Limite Ultime (ELU) correspond à la limite au-delà de laquelle la structure risque la ruine (effondrement), par opposition à l'ELS (État Limite de Service) qui concerne les fissures ou la flèche nuisibles.
+
+Question 66 : Quel accessoire de ferraillage garantit que les aciers ne touchent pas le coffrage ?
+A. La cale
+B. Le fil
+C. Le clou
+D. Le coin
+Rappel de Cours : Les cales à béton (ou distanciers), en plastique ou en béton, maintiennent l'acier à distance du coffrage pour respecter l'épaisseur d'enrobage réglementaire.
+
+Question 67 : Pour un mur en béton armé exposé aux intempéries, quel est l'enrobage minimal des aciers selon la norme ?
+A. 3 cm
+B. 1 cm
+C. 5 cm
+D. 7 cm
+Rappel de Cours : Pour les parois exposées à la pluie ou au gel (extérieur), l'enrobage doit être d'au moins 3 cm pour protéger les aciers de la corrosion. Il est de 1 cm en intérieur sec.
+
+Question 68 : Quelle opération permet de solidariser deux panneaux préfabriqués posés côte à côte ?
+A. Le clavetage
+B. Le platelage
+C. Le ragréage
+D. Le talochage
+Rappel de Cours : Le clavetage consiste à couler du béton ou du mortier dans l'espace laissé entre deux éléments préfabriqués (contenant des aciers de liaison) pour assurer la continuité mécanique.
+
+Question 69 : Dans le ferraillage d'un angle de mur, pourquoi ne doit-on jamais plier les aciers horizontaux à angle droit à l'intérieur ?
+A. La poussée au vide ferait éclater le béton de l'angle
+B. Cela gênerait le passage de l'aiguille vibrante
+C. L'acier risquerait de casser lors du pliage
+D. Cela augmenterait inutilement la quantité d'acier
+Rappel de Cours : Une barre tendue à l'intérieur d'un angle crée une force résultante vers l'extérieur (poussée au vide) qui casse le coin de béton. On doit croiser les fils ou utiliser des équerres.
+
+Question 70 : Quel phénomène physique utilise le béton précontraint pour augmenter sa résistance ?
+A. La compression
+B. La dilatation
+C. La flexion
+D. La torsion
+Rappel de Cours : La précontrainte consiste à comprimer artificiellement le béton (via des câbles tendus) avant sa mise en service. Comme le béton résiste très bien à la compression, cela compense les futures tractions.
+
+Question 71 : Lors du coulage d'un voile de grande hauteur, quel facteur augmente le plus la pression sur le coffrage ?
+A. La vitesse de remplissage élevée
+B. La température extérieure très basse
+C. La présence importante d'armatures
+D. L'utilisation d'un béton autoplaçant
+Rappel de Cours : Plus on coule vite (vitesse ascensionnelle), moins le béton du bas a le temps de "prendre" et de se tenir, donc plus il exerce une pression hydrostatique forte sur les banches (risque d'éclatement).
+
+Question 72 : Comment appelle-t-on les réservations cylindriques laissées dans les voiles pour passer des réseaux ?
+A. Fourreaux
+B. Mannequins
+C. Boitiers
+D. Huisseries
+Rappel de Cours : Un fourreau est un tube (souvent PVC) noyé dans le béton ou traversant le mur pour permettre le passage ultérieur de câbles ou de tuyaux. (Note : Le mannequin sert pour les baies carrées/rectangulaires).
+
+Question 73 : Quelle est la règle d'or pour l'utilisation de l'aiguille vibrante ?
+A. Plonger rapidement et remonter lentement
+B. Plonger lentement et remonter rapidement
+C. Laisser vibrer au moins une minute par zone
+D. Toucher systématiquement les armatures
+Rappel de Cours : On plonge l'aiguille rapidement pour ne pas ségréguer le dessus, et on remonte lentement pour laisser les bulles d'air s'échapper et le béton se refermer derrière l'aiguille.
+
+Question 74 : Qu'est-ce qu'une "attente" en béton armé ?
+A. Une barre d'acier laissée en dépassement pour une reprise ultérieure
+B. Une pause obligatoire entre deux rotations de banches
+C. Une zone de stockage pour les treillis soudés
+D. Un retard de livraison de la centrale à béton
+Rappel de Cours : Les attentes (ou aciers de reprise) sont les longueurs de ferraillage qui dépassent d'un ouvrage bétonné pour assurer le recouvrement avec la partie suivante (poteau, voile ou dalle).
+
+Question 75 : Sur un plan de pose de prédalles, que signifie la présence d'étais "sans file centrale" ?
+A. La prédalle est précontrainte et autoportante sur toute la portée
+B. Le maçon a oublié de commander le matériel d'étaiement
+C. La dalle de compression sera coulée en plusieurs fois
+D. Les murs porteurs sont trop fragiles pour supporter les étais
+Rappel de Cours : Certaines prédalles précontraintes sont calculées pour supporter leur propre poids et celui du béton frais sans nécessiter de file d'étais provisoire au milieu de la pièce.
+
+Question 76 : Pour réaliser un arc de cercle en maçonnerie, quel support provisoire utilise-t-on ?
+A. Un cintre
+B. Un étai
+C. Une poutrelle
+D. Une banche
+Rappel de Cours : Le cintre est le coffrage (souvent en bois ou métal) qui épouse la forme courbe de la voûte ou de l'arcade et supporte les éléments jusqu'à la prise du mortier.
+
+Question 77 : Quelle pièce de bois verticale soutient les filières sous un coffrage de dalle traditionnel ?
+A. La chandelle
+B. Le bastaing
+C. Le chevron
+D. La volige
+Rappel de Cours : Dans le langage de chantier traditionnel, la "chandelle" désigne l'étai (ou la pièce de bois verticale) qui supporte directement les poutres primaires (filières).
+
+Question 78 : Pourquoi doit-on nettoyer les huiles de décoffrage sur le béton avant d'appliquer un enduit ?
+A. Pour permettre l'adhérence
+B. Pour éviter les mauvaises odeurs
+C. Pour vérifier la planéité du mur
+D. Pour ignifuger la paroi
+Rappel de Cours : Les huiles sont des corps gras conçus pour empêcher l'adhérence. Si on ne les élimine pas (lavage HP), l'enduit ou la peinture n'accrochera pas sur le support.
+
+Question 79 : Qu'est-ce qu'un "voile par passes" ?
+A. Un mur coulé en plusieurs hauteurs successives
+B. Un mur construit par plusieurs équipes différentes
+C. Un voile dont l'épaisseur varie selon la hauteur
+D. Une paroi réalisée sans coffrage métallique
+Rappel de Cours : Lorsque la hauteur du mur dépasse la hauteur des banches disponibles ou la capacité de résistance du coffrage, on le coule en plusieurs phases verticales superposées (passes).
+
+Question 80 : Dans quel but réalise-t-on un "ragréage" sur un sol en béton ?
+A. Parfaire la planéité et l'état de surface avant la pose du revêtement
+B. Augmenter l'épaisseur de la dalle pour renforcer sa solidité
+C. Imperméabiliser totalement le sol contre les remontées d'eau
+D. Changer la teinte du béton pour des raisons esthétiques
+Rappel de Cours : Le ragréage est un enduit de sol (souvent autolissant) de faible épaisseur destiné à éliminer les défauts de surface (creux, bosses) pour obtenir un support parfaitement lisse.
+
+
+### THÈME 5 : ORGANISATION, GESTION ET SÉCURITÉ (HSE)
+-----------------------------------------------------------------------------
+Question 81 : Que signifie l'acronyme PPSPS, document obligatoire pour la sécurité ?
+A. Plan Particulier de Sécurité et de Protection de la Santé
+B. Plan Prévisionnel de Suivi et de Planification des Sols
+C. Programme Prioritaire de Surveillance de la Production sur Site
+D. Protocole Préventif de Sécurisation des Personnels Salariés
+Rappel de Cours : Le PPSPS est rédigé par l'entreprise intervenante. Il analyse les risques spécifiques au chantier et définit les mesures de prévention pour protéger la santé des travailleurs.
+
+Question 82 : Dans la hiérarchie de la prévention, quelle mesure est prioritaire sur toutes les autres ?
+A. La protection collective
+B. La protection individuelle
+C. La formation du personnel
+D. La signalisation du danger
+Rappel de Cours : Le Code du Travail impose de privilégier la protection collective (ex: garde-corps) qui protège tout le monde, par rapport à la protection individuelle (ex: harnais) qui ne protège que le porteur.
+
+Question 83 : Selon la recommandation R408, qui est habilité à monter et démonter un échafaudage de pied ?
+A. Une personne formée et titulaire d'une attestation de compétence
+B. N'importe quel ouvrier présent sur le chantier depuis un an
+C. Uniquement le chef d'entreprise ou le conducteur de travaux
+D. Le loueur de matériel lors de la livraison sur le site
+Rappel de Cours : Le montage, le démontage et la modification des échafaudages ne peuvent être effectués que par des agents ayant reçu une formation spécifique (théorique et pratique).
+
+Question 84 : Dans la gestion des déchets de chantier, à quelle catégorie appartiennent les emballages plastiques, cartons et bois non traités ?
+A. DIB
+B. DIS
+C. DID
+D. DIP
+Rappel de Cours : Les Déchets Industriels Banals (DIB) sont des déchets non dangereux qui peuvent être traités comme des ordures ménagères (tri, recyclage), contrairement aux déchets dangereux (amiante, solvants).
+
+Question 85 : Sur un diagramme de GANTT, comment identifie-t-on le "chemin critique" ?
+A. C'est la suite de tâches sans marge de manœuvre dont le retard décale la fin du chantier
+B. C'est la liste des tâches les plus coûteuses en main-d'œuvre et en matériaux
+C. C'est le tracé rouge qui indique les jours d'intempéries prévisibles
+D. C'est la période où le plus grand nombre d'entreprises sont présentes simultanément
+Rappel de Cours : Le chemin critique relie les tâches qui n'ont aucune "marge libre". Si l'une de ces tâches prend du retard, la date de livraison finale du chantier est repoussée d'autant.
+
+Question 86 : Quelle est la distance minimale de sécurité à respecter pour un engin travaillant à proximité d'une ligne électrique aérienne de moins de 50 000 V ?
+A. 3 mètres
+B. 50 centimètres
+C. 1 mètre
+D. 10 mètres
+Rappel de Cours : Il faut respecter une distance de 3 mètres pour les lignes < 50 kV et de 5 mètres pour les lignes > 50 kV afin d'éviter tout risque d'amorçage (arc électrique) avec l'engin.
+
+Question 87 : Lors de l'élingage d'une charge, que se passe-t-il si l'angle entre les élingues augmente (s'écarte) ?
+A. La charge maximale utile (CMU) diminue fortement
+B. La charge maximale utile (CMU) augmente légèrement
+C. La stabilité de la charge est compromise par le vent
+D. Le poids propre de la pièce soulevée diminue
+Rappel de Cours : Plus l'angle au sommet est grand (élingues écartées), plus la tension dans chaque élingue augmente pour un même poids à lever. On perd donc en capacité de levage.
+
+Question 88 : À quelle profondeur de fouille en tranchée le blindage devient-il obligatoire selon la réglementation (si les parois sont verticales) ?
+A. 1,30 m
+B. 0,50 m
+C. 2,50 m
+D. 3,00 m
+Rappel de Cours : Pour toute tranchée à parois verticales d'une profondeur supérieure à 1,30 m, un blindage est obligatoire pour éviter l'ensevelissement des ouvriers (sauf talutage stable).
+
+Question 89 : Que désigne le terme "quart d'heure sécurité" ou "causerie" ?
+A. Une réunion courte et régulière sur le terrain pour rappeler une consigne précise
+B. Le temps de pause obligatoire accordé toutes les quatre heures de travail
+C. La durée moyenne d'intervention des pompiers en cas d'accident
+D. Le temps nécessaire pour remplir le registre d'infirmerie
+Rappel de Cours : C'est un outil de management participatif : 10-15 minutes d'échange direct entre le chef d'équipe et les compagnons sur un thème sécurité précis (EPI, risque chute, etc.).
+
+Question 90 : Dans le cadre de la démarche LEAN Construction, que cherche-t-on à éliminer prioritairement ?
+A. Les gaspillages
+B. Les sous-traitants
+C. Les pauses déjeuner
+D. Les contrôles qualité
+Rappel de Cours : Le LEAN vise l'efficacité en chassant les "muda" (gaspillages) : temps d'attente, transports inutiles, surproduction, défauts, stocks excessifs, etc.
+
+Question 91 : Que signifie le pictogramme représentant un rond bleu avec un symbole blanc à l'intérieur ?
+A. Une obligation
+B. Une interdiction
+C. Un avertissement
+D. Un sauvetage
+Rappel de Cours : Rond Bleu = Obligation (ex: port du casque). Rond Rouge barré = Interdiction. Triangle Jaune = Danger. Carré Vert = Secours.
+
+Question 92 : Avant de commencer des travaux de terrassement sur la voie publique, quelle déclaration l'entreprise doit-elle envoyer aux concessionnaires de réseaux ?
+A. La DICT
+B. Le permis de construire
+C. La déclaration d'ouverture de chantier
+D. Le constat d'huissier
+Rappel de Cours : La Déclaration d'Intention de Commencement de Travaux (DICT) permet de localiser les réseaux existants (gaz, élec, eau) pour ne pas les endommager.
+
+Question 93 : Quel document de gestion permet de pointer quotidiennement les heures du personnel et l'avancement des tâches ?
+A. Le rapport de chantier
+B. Le devis quantitatif
+C. La facture proforma
+D. Le bon de commande
+Rappel de Cours : Le rapport journalier de chantier compile les ressources utilisées (heures hommes, matériel), les travaux réalisés et les aléas (météo), servant de base à la gestion financière.
+
+Question 94 : Quelle est la règle de base pour le stockage des produits chimiques (ciment, adjuvants, huiles) ?
+A. Disposer d'une fiche de données de sécurité (FDS) et d'un bac de rétention
+B. Les stocker directement au soleil pour éviter qu'ils ne gèlent en hiver
+C. Les mélanger dans un même conteneur pour gagner de la place
+D. Les laisser dans les véhicules pour éviter le vol la nuit
+Rappel de Cours : Les produits dangereux doivent être identifiés (FDS accessible), et stockés sur rétention pour empêcher toute pollution du sol en cas de fuite du bidon.
+
+Question 95 : En cas d'accident du travail, dans quel délai l'employeur doit-il faire la déclaration à la CPAM ?
+A. 48 heures
+B. 7 jours
+C. 24 heures
+D. 1 mois
+Rappel de Cours : La Déclaration d'Accident du Travail (DAT) doit être envoyée par lettre recommandée avec AR à la caisse d'assurance maladie dans les 48h (jours ouvrables).
+
+Question 96 : Qu'appelle-t-on le "repli de chantier" ?
+A. Le démontage des installations, le nettoyage et la remise en état des lieux
+B. L'abandon du chantier suite à la faillite de l'entreprise principale
+C. La réunion hebdomadaire qui se tient dans le bureau du client
+D. Le retour des ouvriers au dépôt à la fin de chaque journée
+Rappel de Cours : C'est la phase finale où l'on retire la grue, la base vie, les clôtures et où l'on nettoie le site pour la réception des travaux.
+
+Question 97 : Quelle vérification est indispensable avant d'installer une grue à tour mobile ou fixe ?
+A. La portance du sol
+B. La pression des pneus
+C. La couleur de la flèche
+D. La marque du moteur
+Rappel de Cours : Le sol doit être capable de supporter la pression exercée par les patins de la grue. Une étude de sol et une plateforme stable sont requises pour éviter le renversement.
+
+Question 98 : Que contrôle-t-on lors de la "réception des échafaudages" avant leur première utilisation ?
+A. La conformité du montage, la présence des garde-corps, la stabilité et les ancrages
+B. Le prix de la location par rapport au devis initial signé par le patron
+C. La propreté des planchers et l'absence de poussière sur les montants
+D. La couleur de la peinture des tubes pour l'esthétique de la façade
+Rappel de Cours : C'est un examen réglementaire strict qui vérifie que l'échafaudage est sûr, bien ancré, et complet (lisses, sous-lisses, plinthes, accès) avant d'autoriser l'accès aux ouvriers.
+
+Question 99 : Quel est le risque principal lié à l'utilisation d'une tronçonneuse à disque thermique dans un local fermé ?
+A. L'intoxication au monoxyde de carbone
+B. L'électrisation par contact indirect
+C. Le refroidissement rapide du moteur
+D. L'usure prématurée du disque diamant
+Rappel de Cours : Les moteurs thermiques rejettent du CO (inodore et incolore). En espace confiné ou mal ventilé, cela peut être mortel très rapidement (asphyxie).
+
+Question 100 : Quelle est l'utilité d'une "fiche d'autocontrôle" pour un chef d'équipe ?
+A. Valider la qualité de son propre travail avant de passer à la suite
+B. Calculer sa prime de fin d'année en fonction du rendement
+C. Noter les heures d'absence des ouvriers intérimaires
+D. Commander les repas pour l'équipe le midi
+Rappel de Cours : L'autocontrôle responsabilise l'équipe. Il permet de vérifier les points clés (aplomb, niveau, cotes) et de corriger les défauts immédiatement, évitant les malfaçons finales.

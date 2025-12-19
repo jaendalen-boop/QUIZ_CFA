@@ -1,1143 +1,1143 @@
 quiz_data = {
-    "title": "Quiz CAP Boucher : Technologie, Techniques, Hygiène et Gestion (100 Questions)",
+    "title": "Quiz CAP Boucher (100 Questions)",
     "themes": {
         # =========================================================================
-        # THÈME 1 : TECHNOLOGIE DES VIANDES ET MATIÈRES PREMIÈRES (Questions 1 à 20)
+        # THÈME 1 : CONNAISSANCE DES MATIÈRES PREMIÈRES ET ANATOMIE (Questions 1 à 20)
         # =========================================================================
         1: {
-            "name": "THÈME 1 : TECHNOLOGIE DES VIANDES ET MATIÈRES PREMIÈRES (Questions 1 à 20)",
+            "name": "THÈME 1 : CONNAISSANCE DES MATIÈRES PREMIÈRES ET ANATOMIE",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quelle race bovine est considérée comme une race 'à viande' par excellence ?",
+                    "question": "Quelle est la dénomination exacte de la femelle de l'espèce bovine qui a déjà vêlé ?",
                     "answerOptions": [
-                        {"text": "La Limousine", "isCorrect": True},
-                        {"text": "La Prim'Holstein", "isCorrect": False},
-                        {"text": "La Jersiaise", "isCorrect": False},
-                        {"text": "La Bretonne Pie Noir", "isCorrect": False}
+                        {"text": "Vache", "isCorrect": True},
+                        {"text": "Génisse de plus de trente mois", "isCorrect": False},
+                        {"text": "Jeune bovin femelle", "isCorrect": False},
+                        {"text": "Taureillon femelle", "isCorrect": False}
                     ],
-                    "correction": "La Limousine (comme la Charolaise ou la Blonde d'Aquitaine) est une race allaitante sélectionnée pour sa conformation musculaire et la qualité de sa viande, contrairement à la Prim'Holstein qui est une race laitière."
+                    "correction": "La vache est la femelle adulte de l'espèce bovine ayant mis bas au moins une fois, contrairement à la génisse qui n'a pas encore vêlé."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Jusqu'à quel âge un bovin mâle est-il classé dans la catégorie 'Jeune Bovin' (taurillon) ?",
+                    "question": "Quel os constitue la base osseuse de la région de la cuisse chez le bœuf ?",
                     "answerOptions": [
-                        {"text": "24 mois", "isCorrect": True},
-                        {"text": "12 mois seulement", "isCorrect": False},
-                        {"text": "36 mois", "isCorrect": False},
-                        {"text": "8 mois", "isCorrect": False}
+                        {"text": "Le fémur", "isCorrect": True},
+                        {"text": "Le tibia et le péroné", "isCorrect": False},
+                        {"text": "La ceinture pelvienne", "isCorrect": False},
+                        {"text": "La colonne vertébrale", "isCorrect": False}
                     ],
-                    "correction": "Le Jeune Bovin (JB) est un mâle non castré âgé de plus de 12 mois et de moins de 24 mois."
+                    "correction": "Le fémur est l'os unique de la cuisse, s'articulant en haut avec l'os iliaque et en bas avec le tibia."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Dans la découpe du bœuf, à quelle catégorie de cuisson appartient le 'Gîte à la noix' ?",
+                    "question": "Dans la grille de classement EUROP, quelle lettre désigne une conformation supérieure avec un développement musculaire exceptionnel ?",
                     "answerOptions": [
-                        {"text": "Catégorie 1 (à rôtir ou griller)", "isCorrect": True},
-                        {"text": "Catégorie 2 (à braiser)", "isCorrect": False},
-                        {"text": "Catégorie 3 (à bouillir)", "isCorrect": False},
-                        {"text": "Catégorie 4 (haché uniquement)", "isCorrect": False}
+                        {"text": "E", "isCorrect": True},
+                        {"text": "U", "isCorrect": False},
+                        {"text": "R", "isCorrect": False},
+                        {"text": "O", "isCorrect": False}
                     ],
-                    "correction": "Le Gîte à la noix, situé dans la cuisse, est un morceau tendre (Catégorie 1) destiné aux rôtis ou aux steaks, contrairement au gîte avant ou gîte arrière (jarret) qui sont de catégorie 3."
+                    "correction": "La grille EUROP classe la conformation de E (Excellente, profil convexe) à P (Médiocre, profil concave)."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Quelle est la couleur idéale de la graisse de couverture d'une carcasse de bœuf de qualité ?",
+                    "question": "Où se situe précisément le morceau appelé 'araignée' dans une carcasse de bœuf ?",
                     "answerOptions": [
-                        {"text": "Blanche à blanc-crème", "isCorrect": True},
-                        {"text": "Jaune foncé très prononcé", "isCorrect": False},
-                        {"text": "Translucide et grise", "isCorrect": False},
-                        {"text": "Rougeâtre", "isCorrect": False}
+                        {"text": "Dans le creux de l'os iliaque (bassin)", "isCorrect": True},
+                        {"text": "Le long des vertèbres cervicales", "isCorrect": False},
+                        {"text": "Sur la face externe de l'épaule", "isCorrect": False},
+                        {"text": "À l'intérieur de la cage thoracique", "isCorrect": False}
                     ],
-                    "correction": "Une graisse blanche ou blanc-crème et ferme est un signe de jeunesse et de bonne alimentation. Une graisse trop jaune peut indiquer un animal très âgé ou une alimentation spécifique (herbe) parfois moins appréciée visuellement par le consommateur standard."
+                    "correction": "L'araignée est un muscle 'boucher' très tendre situé dans la cavité pelvienne, au niveau du bassin."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel morceau de l'agneau comprend les côtes premières et secondes ?",
+                    "question": "Quelle race bovine est réputée pour sa robe froment et sa grande finesse de grain de viande ?",
                     "answerOptions": [
-                        {"text": "Le carré couvert", "isCorrect": True},
-                        {"text": "Le gigot raccourci", "isCorrect": False},
-                        {"text": "L'épaule désossée", "isCorrect": False},
-                        {"text": "Le collier", "isCorrect": False}
+                        {"text": "Limousine", "isCorrect": True},
+                        {"text": "Charolaise", "isCorrect": False},
+                        {"text": "Prim'Holstein", "isCorrect": False},
+                        {"text": "Normande", "isCorrect": False}
                     ],
-                    "correction": "Le carré est l'ensemble des côtes (premières, secondes, découvertes) qui, une fois préparé, forme une pièce à rôtir noble."
+                    "correction": "La Limousine est une race allaitante rustique, célèbre pour son rendement en viande noble et sa tendreté."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Le 'ris' de veau correspond à quelle glande ?",
+                    "question": "Quel terme désigne la partie supérieure du thorax, située entre le collier et la côte ?",
                     "answerOptions": [
-                        {"text": "Le thymus", "isCorrect": True},
-                        {"text": "Le foie", "isCorrect": False},
-                        {"text": "Le pancréas", "isCorrect": False},
-                        {"text": "La thyroïde", "isCorrect": False}
+                        {"text": "Basses côtes", "isCorrect": True},
+                        {"text": "Faux-filet", "isCorrect": False},
+                        {"text": "Plat de côtes", "isCorrect": False},
+                        {"text": "Flanchet", "isCorrect": False}
                     ],
-                    "correction": "Le ris est le thymus du veau (glande de croissance située à l'entrée de la poitrine). C'est un abat rouge très recherché gastronomiquement."
+                    "correction": "Les basses côtes sont situées à l'avant de l'animal, faisant suite au collier. C'est une viande savoureuse à griller ou à mijoter."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Comment appelle-t-on le tissu conjonctif blanc nacré qui entoure les muscles et doit souvent être retiré ?",
+                    "question": "Combien de paires de côtes possède une carcasse de bœuf ?",
                     "answerOptions": [
-                        {"text": "L'aponévrose", "isCorrect": True},
-                        {"text": "Le périoste", "isCorrect": False},
-                        {"text": "La myoglobine", "isCorrect": False},
-                        {"text": "Le collagène soluble", "isCorrect": False}
+                        {"text": "13 paires", "isCorrect": True},
+                        {"text": "10 paires", "isCorrect": False},
+                        {"text": "15 paires", "isCorrect": False},
+                        {"text": "12 paires", "isCorrect": False}
                     ],
-                    "correction": "L'aponévrose est cette membrane fibreuse (souvent appelée 'nerf' par les clients, à tort) qu'il faut parer (éplucher) pour rendre la viande tendre à la mastication."
+                    "correction": "L'anatomie bovine classique comporte 13 paires de côtes, qui permettent de séparer le quartier avant du quartier arrière."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quelle est la température réglementaire maximale de réception des carcasses de viande fraîche ?",
+                    "question": "Quel morceau du bœuf est considéré comme le plus tendre ?",
                     "answerOptions": [
-                        {"text": "+7°C", "isCorrect": True},
-                        {"text": "+2°C", "isCorrect": False},
-                        {"text": "+10°C", "isCorrect": False},
-                        {"text": "-18°C", "isCorrect": False}
+                        {"text": "Filet", "isCorrect": True},
+                        {"text": "Gîte", "isCorrect": False},
+                        {"text": "Giron", "isCorrect": False},
+                        {"text": "Bavette", "isCorrect": False}
                     ],
-                    "correction": "La réglementation impose que les carcasses de grands animaux (bovins, porcs, ovins) soient à cœur à une température maximale de +7°C lors de la livraison."
+                    "correction": "Le filet est un muscle interne peu sollicité, ce qui lui confère une tendreté exceptionnelle."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Quelle pièce du porc est utilisée pour fabriquer le 'Jambon de Paris' (jambon cuit) ?",
+                    "question": "Dans le porc, comment appelle-t-on le morceau situé sur le haut de l'épaule utilisé pour le sauté ?",
                     "answerOptions": [
-                        {"text": "La cuisse (le jambon)", "isCorrect": True},
-                        {"text": "L'épaule entière désossée", "isCorrect": False},
-                        {"text": "La poitrine parée", "isCorrect": False},
-                        {"text": "L'échine sans os", "isCorrect": False}
+                        {"text": "Échine", "isCorrect": True},
+                        {"text": "Jambon", "isCorrect": False},
+                        {"text": "Pointe", "isCorrect": False},
+                        {"text": "Filet mignon", "isCorrect": False}
                     ],
-                    "correction": "Seule la cuisse arrière du porc a droit à l'appellation 'Jambon'. Si on utilise l'épaule, le produit fini doit s'appeler 'épaule cuite'."
+                    "correction": "L'échine est la partie supérieure du cou du porc, entrelardée de gras, idéale pour les rôtis ou les grillades."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "La transformation du muscle en viande après l'abattage s'appelle :",
+                    "question": "Comment appelle-t-on la couche de graisse superficielle qui recouvre la carcasse ?",
                     "answerOptions": [
-                        {"text": "La maturation", "isCorrect": True},
-                        {"text": "La putréfaction", "isCorrect": False},
-                        {"text": "La fermentation lactique rapide", "isCorrect": False},
-                        {"text": "L'oxydation", "isCorrect": False}
+                        {"text": "Le gras de couverture", "isCorrect": True},
+                        {"text": "Le persillé", "isCorrect": False},
+                        {"text": "Le gras de dépôt", "isCorrect": False},
+                        {"text": "La bardière", "isCorrect": False}
                     ],
-                    "correction": "La maturation est le processus enzymatique naturel qui attendrit la viande et développe ses arômes après la rigor mortis."
+                    "correction": "Le gras de couverture est évalué lors du classement de la carcasse (note de 1 à 5). Il protège la viande du dessèchement."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Quel label garantit une qualité supérieure liée à des conditions de production strictes (goût, élevage) ?",
+                    "question": "Quel nom porte la vertèbre atlas dans la colonne vertébrale ?",
                     "answerOptions": [
-                        {"text": "Label Rouge", "isCorrect": True},
-                        {"text": "Marque Repère", "isCorrect": False},
-                        {"text": "Produit de l'année", "isCorrect": False},
-                        {"text": "Viande de France", "isCorrect": False}
+                        {"text": "La première cervicale", "isCorrect": True},
+                        {"text": "La dernière lombaire", "isCorrect": False},
+                        {"text": "La première sacrée", "isCorrect": False},
+                        {"text": "La vertèbre du garrot", "isCorrect": False}
                     ],
-                    "correction": "Le Label Rouge est le seul signe officiel national qui atteste qu'un produit possède un niveau de qualité organoleptique supérieur au produit courant similaire."
+                    "correction": "L'atlas (C1) est la première vertèbre cervicale, située juste après le crâne."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Dans le bœuf, où se situe la 'Bavette d'aloyau' ?",
+                    "question": "Lequel de ces morceaux appartient à la catégorie des 'morceaux à cuisson rapide' ?",
                     "answerOptions": [
-                        {"text": "Au niveau du flanc, près de la cuisse", "isCorrect": True},
-                        {"text": "Dans l'épaule, sous la palette", "isCorrect": False},
-                        {"text": "Dans le collier", "isCorrect": False},
-                        {"text": "Sur les côtes, près du vertèbre", "isCorrect": False}
+                        {"text": "Le faux-filet", "isCorrect": True},
+                        {"text": "Le collier", "isCorrect": False},
+                        {"text": "Le jarret", "isCorrect": False},
+                        {"text": "Le flanchet", "isCorrect": False}
                     ],
-                    "correction": "La bavette d'aloyau est un muscle de l'abdomen (flanc). C'est un morceau à fibres longues, très gouteux, classé en catégorie 1 (à griller)."
+                    "correction": "Le faux-filet fait partie de l'aloyau, destiné à être grillé ou rôti."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Le 'Sot-l'y-laisse' se trouve sur quelle volaille ?",
+                    "question": "Dans l'agneau, quel morceau correspond à la cuisse ?",
                     "answerOptions": [
-                        {"text": "Le poulet", "isCorrect": True},
-                        {"text": "Le canard uniquement", "isCorrect": False},
-                        {"text": "Le porc", "isCorrect": False},
-                        {"text": "L'agneau", "isCorrect": False}
+                        {"text": "Gigot", "isCorrect": True},
+                        {"text": "Épaule", "isCorrect": False},
+                        {"text": "Baron", "isCorrect": False},
+                        {"text": "Selle", "isCorrect": False}
                     ],
-                    "correction": "C'est un petit morceau de chair très tendre situé de chaque côté de la colonne vertébrale (carcasse) du poulet, au-dessus des cuisses."
+                    "correction": "Le gigot est le membre postérieur de l'agneau, pièce de prédilection pour le rôtissage."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Quel est le pH ultime moyen d'une viande de bœuf normale après 24h ?",
+                    "question": "Qu'est-ce que le persillé dans la viande ?",
                     "answerOptions": [
-                        {"text": "Entre 5,4 et 5,7", "isCorrect": True},
-                        {"text": "Supérieur à 7", "isCorrect": False},
-                        {"text": "Environ 4,5", "isCorrect": False},
-                        {"text": "Exactement 6,5", "isCorrect": False}
+                        {"text": "Le gras intramusculaire", "isCorrect": True},
+                        {"text": "Le gras autour du muscle", "isCorrect": False},
+                        {"text": "Un assaisonnement au persil", "isCorrect": False},
+                        {"text": "Une maladie de la peau", "isCorrect": False}
                     ],
-                    "correction": "Après l'abattage, l'acidification du muscle fait chuter le pH (qui est neutre autour de 7 sur le vivant) vers 5,5. Un pH trop élevé (>6) donne une viande sombre et sèche (DFD)."
+                    "correction": "Le persillé désigne les fines infiltrations de graisse à l'intérieur des fibres musculaires, signe de goût et de qualité."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quelle race de porc est célèbre pour sa viande persillée utilisée pour le jambon ibérique ?",
+                    "question": "Quel os doit être retiré pour obtenir une escalope de veau ?",
                     "answerOptions": [
-                        {"text": "Le Porc Noir Ibérique", "isCorrect": True},
-                        {"text": "Le Large White", "isCorrect": False},
-                        {"text": "Le Landrace", "isCorrect": False},
-                        {"text": "Le Piétrain", "isCorrect": False}
+                        {"text": "Le fémur", "isCorrect": True},
+                        {"text": "L'humérus", "isCorrect": False},
+                        {"text": "L'omoplate", "isCorrect": False},
+                        {"text": "Le sternum", "isCorrect": False}
                     ],
-                    "correction": "Le Porc Noir (Pata Negra) a la particularité génétique de stocker de la graisse intramusculaire, donnant un goût exceptionnel. Les autres sont des races industrielles classiques."
+                    "correction": "L'escalope est prélevée dans la cuisse (noix, sous-noix ou noix pâtissière), articulée autour du fémur."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Qu'est-ce qu'un 'Agneau de lait' ?",
+                    "question": "À quel âge un bovin mâle devient-il un 'taureau' ?",
                     "answerOptions": [
-                        {"text": "Un agneau non sevré nourri exclusivement au lait maternel", "isCorrect": True},
-                        {"text": "Un agneau nourri au lait en poudre et à l'herbe", "isCorrect": False},
-                        {"text": "Un agneau de plus de 6 mois", "isCorrect": False},
-                        {"text": "Une race spécifique d'ovins", "isCorrect": False}
+                        {"text": "Après maturité sexuelle", "isCorrect": True},
+                        {"text": "Dès sa naissance", "isCorrect": False},
+                        {"text": "À 12 mois", "isCorrect": False},
+                        {"text": "S'il est castré", "isCorrect": False}
                     ],
-                    "correction": "L'agneau de lait est abattu très jeune (entre 30 et 45 jours environ), il n'a mangé que du lait, ce qui donne une chair très pâle et un goût très doux."
+                    "correction": "Le taureau est un mâle entier adulte utilisé pour la reproduction."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Dans quelle partie du bœuf trouve-t-on le 'Jumeau' ?",
+                    "question": "Quelle est la base osseuse de l'épaule ?",
                     "answerOptions": [
-                        {"text": "Dans l'épaule", "isCorrect": True},
-                        {"text": "Dans la cuisse", "isCorrect": False},
-                        {"text": "Dans l'aloyau", "isCorrect": False},
-                        {"text": "Dans la poitrine", "isCorrect": False}
+                        {"text": "La scapula (omoplate)", "isCorrect": True},
+                        {"text": "Le bassin", "isCorrect": False},
+                        {"text": "Le radius", "isCorrect": False},
+                        {"text": "Le péroné", "isCorrect": False}
                     ],
-                    "correction": "Le jumeau à bifteck et le jumeau à pot-au-feu sont situés dans l'épaule (membre antérieur)."
+                    "correction": "La scapula est l'os plat en forme de triangle qui soutient les muscles de l'épaule."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "La viande de cheval est caractérisée par :",
+                    "question": "Quel morceau est utilisé pour faire les paupiettes de veau ?",
                     "answerOptions": [
-                        {"text": "Une forte teneur en fer et une couleur rouge sombre", "isCorrect": True},
-                        {"text": "Une graisse très jaune et abondante", "isCorrect": False},
-                        {"text": "Une chair blanche comme le veau", "isCorrect": False},
-                        {"text": "Une absence totale de glycogène", "isCorrect": False}
+                        {"text": "La sous-noix", "isCorrect": True},
+                        {"text": "Le jarret", "isCorrect": False},
+                        {"text": "La tête", "isCorrect": False},
+                        {"text": "Le ris de veau", "isCorrect": False}
                     ],
-                    "correction": "La viande chevaline est très rouge (riche en myoglobine/fer) et légèrement sucrée car elle contient beaucoup de glycogène musculaire."
+                    "correction": "On utilise de larges tranches fines prélevées dans la cuisse (sous-noix ou noix)."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Comment appelle-t-on la graisse située autour des reins ?",
+                    "question": "L'onglet est un morceau appartenant à quelle catégorie ?",
                     "answerOptions": [
-                        {"text": "La rognonnade", "isCorrect": True},
-                        {"text": "La barde", "isCorrect": False},
-                        {"text": "Le saindoux", "isCorrect": False},
-                        {"text": "La couenne", "isCorrect": False}
+                        {"text": "Les abats rouges", "isCorrect": True},
+                        {"text": "Les pièces nobles", "isCorrect": False},
+                        {"text": "Les bas morceaux", "isCorrect": False},
+                        {"text": "Les abats blancs", "isCorrect": False}
                     ],
-                    "correction": "La graisse qui enveloppe le rein s'appelle la graisse de rognon. Sur un carré de veau ou d'agneau, cette partie s'appelle la rognonnade."
+                    "correction": "L'onglet et l'araignée sont techniquement classés parmi les abats rouges bien qu'ils soient des muscles rouges."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Une viande dite 'persillée' contient :",
+                    "question": "De quel côté de la carcasse doit-on vérifier la présence de la 'manicle' ?",
                     "answerOptions": [
-                        {"text": "De fins filaments de graisse à l'intérieur du muscle", "isCorrect": True},
-                        {"text": "Beaucoup de persil haché", "isCorrect": False},
-                        {"text": "Une épaisse couche de gras autour du muscle", "isCorrect": False},
-                        {"text": "Beaucoup d'eau", "isCorrect": False}
+                        {"text": "Côté droit", "isCorrect": True},
+                        {"text": "Côté gauche", "isCorrect": False},
+                        {"text": "Sur les deux côtés", "isCorrect": False},
+                        {"text": "Uniquement sur le quartier avant", "isCorrect": False}
                     ],
-                    "correction": "Le persillé est la présence de gras intramusculaire (visible à la coupe). Il fond à la cuisson, nourrissant la viande et lui donnant goût et tendreté."
-                }
+                    "correction": "La manicle est une petite partie musculaire liée à la saignée, située uniquement sur le demi-droit."
+                },
             ]
         },
         # =========================================================================
-        # THÈME 2 : TECHNIQUES PROFESSIONNELLES (Questions 21 à 40)
+        # THÈME 2 : HYGIÈNE ET SÉCURITÉ ALIMENTAIRE (Questions 21 à 40)
         # =========================================================================
         2: {
-            "name": "THÈME 2 : TECHNIQUES PROFESSIONNELLES (Questions 21 à 40)",
+            "name": "THÈME 2 : HYGIÈNE ET SÉCURITÉ ALIMENTAIRE",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "L'action de séparer la viande des os s'appelle :",
+                    "question": "Quelle est la température maximale légale de conservation des viandes fraîches de boucherie ?",
                     "answerOptions": [
-                        {"text": "Désosser", "isCorrect": True},
-                        {"text": "Parer", "isCorrect": False},
-                        {"text": "Éplucher", "isCorrect": False},
-                        {"text": "Piécer", "isCorrect": False}
+                        {"text": "7 °C", "isCorrect": True},
+                        {"text": "10 °C", "isCorrect": False},
+                        {"text": "3 °C", "isCorrect": False},
+                        {"text": "0 °C", "isCorrect": False}
                     ],
-                    "correction": "Le désossage est l'opération technique de base du boucher consistant à extraire le squelette osseux de la carcasse ou du morceau de gros sans abîmer la viande."
+                    "correction": "Pour la viande fraîche (bœuf, veau, agneau, porc), la température réglementaire est de +7 °C maximum, bien que l'idéal soit entre 0 et 4 °C."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Quel couteau utilise-t-on pour retirer les aponévroses (nerfs) sans entamer la chair ?",
+                    "question": "Quelle bactérie pathogène est particulièrement redoutée car elle peut se multiplier au froid ?",
                     "answerOptions": [
-                        {"text": "Le couteau à désosser (désosseur)", "isCorrect": True},
-                        {"text": "Le couteau scie", "isCorrect": False},
-                        {"text": "La feuille", "isCorrect": False},
-                        {"text": "Le couteau à steak", "isCorrect": False}
+                        {"text": "Listeria monocytogenes", "isCorrect": True},
+                        {"text": "Staphylocoque doré", "isCorrect": False},
+                        {"text": "Salmonelle", "isCorrect": False},
+                        {"text": "Bacillus cereus", "isCorrect": False}
                     ],
-                    "correction": "Le désosseur, avec sa lame rigide, étroite et courte (ou le couteau à parer plus souple), permet de glisser sous l'aponévrose pour 'éplucher' le muscle avec précision."
+                    "correction": "Listeria est une bactérie psychrotrophe, capable de survivre et de se multiplier lentement entre 0 et 4 °C."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Que signifie 'Piécer' ?",
+                    "question": "Comment appelle-t-on le document qui consigne le nettoyage quotidien de l'atelier ?",
                     "answerOptions": [
-                        {"text": "Découper la viande en portions individuelles (steaks, escalopes)", "isCorrect": True},
-                        {"text": "Mettre la viande en chambre froide", "isCorrect": False},
-                        {"text": "Attacher un rôti avec de la ficelle", "isCorrect": False},
-                        {"text": "Peser la viande", "isCorrect": False}
+                        {"text": "Le plan de nettoyage et de désinfection", "isCorrect": True},
+                        {"text": "Le registre du personnel", "isCorrect": False},
+                        {"text": "La fiche de stock", "isCorrect": False},
+                        {"text": "Le carnet de bord", "isCorrect": False}
                     ],
-                    "correction": "Le piéçage est l'action de trancher un muscle paré en parts individuelles prêtes à la vente ou à la cuisson (biftecks, tournedos, pavés)."
+                    "correction": "Ce document fait partie du PMS (Plan de Maîtrise Sanitaire) obligatoire pour la traçabilité de l'hygiène."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Pour obtenir un steak tendre, il faut impérativement couper :",
+                    "question": "À partir de quelle température l'eau des stérilisateurs à couteaux doit-elle être maintenue ?",
                     "answerOptions": [
-                        {"text": "Perpendiculairement au sens des fibres musculaires", "isCorrect": True},
-                        {"text": "Dans le sens exact des fibres", "isCorrect": False},
-                        {"text": "En diagonale à 45 degrés", "isCorrect": False},
-                        {"text": "Sans faire attention au sens", "isCorrect": False}
+                        {"text": "82 °C", "isCorrect": True},
+                        {"text": "63 °C", "isCorrect": False},
+                        {"text": "100 °C", "isCorrect": False},
+                        {"text": "45 °C", "isCorrect": False}
                     ],
-                    "correction": "Couper 'en travers' des fibres permet de les raccourcir. Si on coupe dans le sens du fil, la viande sera immangeable et filandreuse, même si le morceau est noble."
+                    "correction": "Une eau à 82 °C minimum garantit la destruction efficace des micro-organismes sur les lames."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quel nœud est utilisé pour commencer le ficelage d'un rôti ?",
+                    "question": "Que signifie le sigle PMS ?",
                     "answerOptions": [
-                        {"text": "Le nœud de départ ou nœud de boucher", "isCorrect": True},
-                        {"text": "Le nœud marin", "isCorrect": False},
-                        {"text": "Le nœud coulant simple", "isCorrect": False},
-                        {"text": "Le nœud de chaise", "isCorrect": False}
+                        {"text": "Plan de Maîtrise Sanitaire", "isCorrect": True},
+                        {"text": "Protection de la Matière Sèche", "isCorrect": False},
+                        {"text": "Produit Médical Spécifique", "isCorrect": False},
+                        {"text": "Poids Moyen des Saucisses", "isCorrect": False}
                     ],
-                    "correction": "Le boucher utilise un nœud d'arrêt spécifique qui permet de serrer la ficelle sans qu'elle ne se relâche pendant qu'il prépare la boucle suivante."
+                    "correction": "Le PMS regroupe l'HACCP, les bonnes pratiques d'hygiène et la gestion de la traçabilité."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "'Habiller' une volaille signifie :",
+                    "question": "Où se situe le réservoir principal de bactéries sur un manipulateur ?",
                     "answerOptions": [
-                        {"text": "La préparer entièrement (étirer, flamber, vider, brider)", "isCorrect": True},
-                        {"text": "Lui mettre une barde de lard sur le dos", "isCorrect": False},
-                        {"text": "L'emballer dans du papier boucherie", "isCorrect": False},
-                        {"text": "La couper en morceaux", "isCorrect": False}
+                        {"text": "Les mains et les cheveux", "isCorrect": True},
+                        {"text": "Les pieds", "isCorrect": False},
+                        {"text": "Le dos", "isCorrect": False},
+                        {"text": "Les vêtements de ville", "isCorrect": False}
                     ],
-                    "correction": "L'habillage regroupe toutes les opérations de préparation d'une volaille brute pour la rendre prête à cuire (PAC) : éviscération, brûlage des plumes restantes, ablation des pattes/tête, bridage."
+                    "correction": "Les mains sont le principal vecteur de contamination croisée (manuportage)."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quelle technique permet d'attendrir mécaniquement une tranche de viande un peu ferme ?",
+                    "question": "Quel est le pH idéal d'une viande saine après maturation ?",
                     "answerOptions": [
-                        {"text": "Passer au 'attendrisseur' (machine à aiguilles ou rouleau)", "isCorrect": True},
-                        {"text": "La congeler puis la décongeler", "isCorrect": False},
-                        {"text": "La cuire très longtemps à vif", "isCorrect": False},
-                        {"text": "La laisser au soleil", "isCorrect": False}
+                        {"text": "Entre 5,4 et 5,8", "isCorrect": True},
+                        {"text": "Au-dessus de 7", "isCorrect": False},
+                        {"text": "Exactement 4,2", "isCorrect": False},
+                        {"text": "Moins de 3", "isCorrect": False}
                     ],
-                    "correction": "L'attendrisseur mécanique sectionne ou écrase partiellement les fibres musculaires et les tissus conjonctifs, rendant la mâche plus facile (souvent utilisé pour les escalopes panées)."
+                    "correction": "L'acidification (baisse du pH) protège la viande contre les bactéries de putréfaction."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Le 'Talonnage' est un défaut qui consiste à :",
+                    "question": "Que signifie la marche en avant en boucherie ?",
                     "answerOptions": [
-                        {"text": "Laisser trop de viande sur l'os lors du désossage", "isCorrect": True},
-                        {"text": "Couper la viande de travers", "isCorrect": False},
-                        {"text": "Mal aiguiser son couteau au talon", "isCorrect": False},
-                        {"text": "Laisser des traces de couteau sur le muscle", "isCorrect": False}
+                        {"text": "Les produits propres ne croisent jamais les produits sales", "isCorrect": True},
+                        {"text": "Le boucher doit toujours marcher face à lui", "isCorrect": False},
+                        {"text": "Le client circule dans un seul sens dans la boutique", "isCorrect": False},
+                        {"text": "La découpe se fait de l'avant vers l'arrière", "isCorrect": False}
                     ],
-                    "correction": "Talonner, c'est mal raser l'os et y laisser de la chair précieuse. C'est une faute technique qui entraîne une perte financière (manque à gagner)."
+                    "correction": "C'est un principe d'organisation spatiale ou temporelle pour éviter les contaminations."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel outil utilise-t-on pour couper les vertèbres ou les gros os ?",
+                    "question": "Quelle est la durée de validité d'une DLC ?",
                     "answerOptions": [
-                        {"text": "La scie (américaine ou électrique)", "isCorrect": True},
-                        {"text": "Le couteau éminceur", "isCorrect": False},
-                        {"text": "Le couteau à désosser", "isCorrect": False},
-                        {"text": "Le fusil", "isCorrect": False}
+                        {"text": "Fixée par le fabricant après tests", "isCorrect": True},
+                        {"text": "Toujours 1 an", "isCorrect": False},
+                        {"text": "Illimitée si c'est au froid", "isCorrect": False},
+                        {"text": "10 jours maximum", "isCorrect": False}
                     ],
-                    "correction": "Pour les os durs, on utilise une scie pour obtenir une coupe nette sans éclats d'os (contrairement à la feuille qui peut faire des éclats, 'esquilles')."
+                    "correction": "La Date Limite de Consommation est déterminée par des analyses microbiologiques."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "'Bardes' un rôti consiste à :",
+                    "question": "Dans le cercle de Sinner, quel facteur correspond au brossage ?",
                     "answerOptions": [
-                        {"text": "L'entourer d'une fine tranche de lard gras", "isCorrect": True},
-                        {"text": "Le piquer avec de l'ail", "isCorrect": False},
-                        {"text": "Le saupoudrer d'épices", "isCorrect": False},
-                        {"text": "Le ficeler très serré sans gras", "isCorrect": False}
+                        {"text": "Action mécanique", "isCorrect": True},
+                        {"text": "Action chimique", "isCorrect": False},
+                        {"text": "Température", "isCorrect": False},
+                        {"text": "Temps d'action", "isCorrect": False}
                     ],
-                    "correction": "La barde (gras de porc) protège la viande du dessèchement durant la cuisson au four et nourrit les chairs maigres (comme le rôti de veau ou certaines volailles)."
+                    "correction": "Le frottement (brosse) est l'énergie mécanique indispensable pour décoller les souillures."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "L'aloyau est un ensemble de morceaux comprenant :",
+                    "question": "Qu'est-ce qu'une TIAC ?",
                     "answerOptions": [
-                        {"text": "Le filet, le faux-filet et le rumsteck", "isCorrect": True},
-                        {"text": "Le collier et les basses-côtes", "isCorrect": False},
-                        {"text": "L'épaule et le jarret", "isCorrect": False},
-                        {"text": "La poitrine et le flanchet", "isCorrect": False}
+                        {"text": "Toxi-Infection Alimentaire Collective", "isCorrect": True},
+                        {"text": "Taux d'Infection Alimentaire Critique", "isCorrect": False},
+                        {"text": "Traitement Interdit après Cuisson", "isCorrect": False},
+                        {"text": "Tension Inter-Artérielle Capillaire", "isCorrect": False}
                     ],
-                    "correction": "L'aloyau correspond à la partie lombaire et sacrée du bœuf, regroupant les morceaux les plus nobles à griller (Filet, Contre-filet/Faux-filet, Rumsteck)."
+                    "correction": "C'est l'apparition de symptômes digestifs chez au moins 2 personnes ayant mangé le même aliment."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quelle est la différence entre une 'côte de bœuf' et une 'entrecôte' ?",
+                    "question": "Quel est le rôle du détergent ?",
                     "answerOptions": [
-                        {"text": "La côte a son os, l'entrecôte est la même viande désossée", "isCorrect": True},
-                        {"text": "L'entrecôte vient de la cuisse", "isCorrect": False},
-                        {"text": "La côte est moins grasse", "isCorrect": False},
-                        {"text": "C'est exactement la même chose", "isCorrect": False}
+                        {"text": "Nettoyer (enlever le gras)", "isCorrect": True},
+                        {"text": "Tuer les bactéries", "isCorrect": False},
+                        {"text": "Faire briller les couteaux", "isCorrect": False},
+                        {"text": "Parfumer le laboratoire", "isCorrect": False}
                     ],
-                    "correction": "Anatomiquement, c'est le même muscle (le long dorsal). La côte de bœuf est servie avec l'os de la vertèbre/côte, l'entrecôte est la chair située 'entre les côtes' (ou la côte désossée)."
+                    "correction": "Un détergent retire la saleté visible. Pour tuer les microbes, il faut un désinfectant."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Le 'Poussoir' est une machine utilisée pour :",
+                    "question": "Peut-on congeler une viande qui a été décongelée ?",
                     "answerOptions": [
-                        {"text": "Mettre la chair à saucisse dans les boyaux", "isCorrect": True},
-                        {"text": "Couper les os", "isCorrect": False},
-                        {"text": "Hacher la viande", "isCorrect": False},
-                        {"text": "Emballer sous vide", "isCorrect": False}
+                        {"text": "Non jamais", "isCorrect": True},
+                        {"text": "Oui si c'est rapide", "isCorrect": False},
+                        {"text": "Uniquement si on la cuit d'abord", "isCorrect": False},
+                        {"text": "Si le client est d'accord", "isCorrect": False}
                     ],
-                    "correction": "Après avoir haché et assaisonné la viande (mêlée), on utilise le poussoir (hydraulique ou manuel) pour embosser la préparation dans des boyaux naturels."
+                    "correction": "La recongélation d'un produit décongelé favorise une prolifération bactérienne dangereuse."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Comment prépare-t-on une 'Paupiette' ?",
+                    "question": "Quelle est la température de conservation des abats ?",
                     "answerOptions": [
-                        {"text": "Une fine escalope farcie, roulée et bardée", "isCorrect": True},
-                        {"text": "Un cube de viande hachée", "isCorrect": False},
-                        {"text": "Une tranche de gigot avec os", "isCorrect": False},
-                        {"text": "Une saucisse plate", "isCorrect": False}
+                        {"text": "3 °C maximum", "isCorrect": True},
+                        {"text": "10 °C", "isCorrect": False},
+                        {"text": "7 °C", "isCorrect": False},
+                        {"text": "0 °C", "isCorrect": False}
                     ],
-                    "correction": "La paupiette (ou alouette sans tête) est une spécialité bouchère : une fine tranche de viande (veau souvent) garnie de farce, roulée sur elle-même et maintenue par une barde et de la ficelle."
+                    "correction": "Les abats sont des produits très périssables, la norme est de +3 °C."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "'Déjointer' signifie :",
+                    "question": "Quel parasite est cherché dans le muscle de porc à l'abattoir ?",
                     "answerOptions": [
-                        {"text": "Séparer deux os au niveau de leur articulation", "isCorrect": True},
-                        {"text": "Casser un os en deux", "isCorrect": False},
-                        {"text": "Enlever la graisse", "isCorrect": False},
-                        {"text": "Couper les tendons", "isCorrect": False}
+                        {"text": "La trichine", "isCorrect": True},
+                        {"text": "Le ténia", "isCorrect": False},
+                        {"text": "Le varroa", "isCorrect": False},
+                        {"text": "La listeria", "isCorrect": False}
                     ],
-                    "correction": "C'est l'art de passer la lame du couteau exactement dans l'espace articulaire (jointure) pour séparer les os sans forcer et sans faire d'éclats osseux."
+                    "correction": "La trichine est un ver parasite. Un contrôle vétérinaire systématique est effectué sur les porcs et sangliers."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Pour réaliser un steak haché, on utilise généralement :",
+                    "question": "À quoi sert un protocole d'hygiène ?",
                     "answerOptions": [
-                        {"text": "Les morceaux de l'avant (épaule, collier, caparaçon)", "isCorrect": True},
-                        {"text": "Le filet mignon", "isCorrect": False},
-                        {"text": "Le rumsteck uniquement", "isCorrect": False},
-                        {"text": "Les os broyés", "isCorrect": False}
+                        {"text": "Uniformiser les méthodes de travail et garantir la sécurité", "isCorrect": True},
+                        {"text": "Calculer le temps de pause", "isCorrect": False},
+                        {"text": "Ranger les outils décoratifs", "isCorrect": False},
+                        {"text": "Choisir la couleur de la tenue", "isCorrect": False}
                     ],
-                    "correction": "Pour des raisons de coût et de texture, on utilise des viandes de 2ème ou 3ème catégorie (plus grasses et gouteuses) situées sur l'avant, que l'on pare soigneusement avant hachage."
+                    "correction": "Il définit 'Qui fait quoi, comment et quand' pour garantir la salubrité."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Le geste d'aiguiser le couteau sur le fusil s'appelle :",
+                    "question": "Qu'est-ce que le 'ressemelage' des mains ?",
                     "answerOptions": [
-                        {"text": "L'affilage", "isCorrect": True},
-                        {"text": "Le meulage", "isCorrect": False},
-                        {"text": "L'émouture", "isCorrect": False},
-                        {"text": "Le polissage", "isCorrect": False}
+                        {"text": "Le lavage et la désinfection systématique des mains", "isCorrect": True},
+                        {"text": "Le port de nouvelles chaussures de sécurité", "isCorrect": False},
+                        {"text": "L'utilisation de gants en laine", "isCorrect": False},
+                        {"text": "Une technique de massage des articulations", "isCorrect": False}
                     ],
-                    "correction": "L'affilage sur le fusil permet de redresser le 'fil' (le tranchant) de la lame qui se tord microscopiquement pendant la coupe. L'aiguisage (sur meule) refait le tranchant quand il est usé."
+                    "correction": "Il s'agit du processus rigoureux de nettoyage des mains entre deux tâches."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Quelle pièce est utilisée pour faire de l'Osso Buco ?",
+                    "question": "Comment décongeler une viande en sécurité ?",
                     "answerOptions": [
-                        {"text": "Le jarret (coupé en rouelles avec os)", "isCorrect": True},
-                        {"text": "L'épaule désossée", "isCorrect": False},
-                        {"text": "Le collier", "isCorrect": False},
-                        {"text": "La noix de veau", "isCorrect": False}
+                        {"text": "Au réfrigérateur entre 0 et 4 degrés", "isCorrect": True},
+                        {"text": "À température ambiante", "isCorrect": False},
+                        {"text": "Dans de l'eau tiède", "isCorrect": False},
+                        {"text": "Sous le soleil", "isCorrect": False}
                     ],
-                    "correction": "L'Osso Buco ('os à trou') est une tranche de jarret de veau non désossée, comportant la viande autour et l'os à moelle au centre."
+                    "correction": "La décongélation lente au froid positif limite le réveil bactérien."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Le 'Ficelage en rôti' se fait traditionnellement avec une ficelle :",
+                    "question": "Quelle est la zone de danger pour les bactéries ?",
                     "answerOptions": [
-                        {"text": "En rayonne ou coton alimentaire", "isCorrect": True},
-                        {"text": "En plastique bleu", "isCorrect": False},
-                        {"text": "En métal", "isCorrect": False},
-                        {"text": "En laine", "isCorrect": False}
+                        {"text": "De 10 à 63 degrés", "isCorrect": True},
+                        {"text": "Moins de 0 degré", "isCorrect": False},
+                        {"text": "Au-dessus de 100 degrés", "isCorrect": False},
+                        {"text": "Entre 0 et 4 degrés", "isCorrect": False}
                     ],
-                    "correction": "La ficelle doit être apte au contact alimentaire et supporter la cuisson (souvent blanche et rouge pour le bœuf, blanche pour le veau/porc, mais surtout en matière naturelle ou synthétique agréée)."
+                    "correction": "C'est dans cette plage de température tiède que les bactéries se divisent le plus vite."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quel est le but du 'Parage' ?",
+                    "question": "Quelle information est capitale pour assurer la traçabilité ?",
                     "answerOptions": [
-                        {"text": "Améliorer la présentation et la comestibilité en retirant les déchets", "isCorrect": True},
-                        {"text": "Peser la viande", "isCorrect": False},
-                        {"text": "Saler la viande", "isCorrect": False},
-                        {"text": "Cuire la viande", "isCorrect": False}
+                        {"text": "Le numéro de lot", "isCorrect": True},
+                        {"text": "Le prix de vente", "isCorrect": False},
+                        {"text": "La marque du couteau", "isCorrect": False},
+                        {"text": "L'adresse du client", "isCorrect": False}
                     ],
-                    "correction": "Le parage est l'étape de finition cruciale : on enlève le gras excédentaire, les aponévroses, les parties sanguinolentes ou souillées pour ne garder que le 'net' vendable."
-                }
+                    "correction": "Le numéro de lot permet de remonter jusqu'à l'animal et à l'abattoir en cas d'alerte sanitaire."
+                },
             ]
         },
         # =========================================================================
-        # THÈME 3 : HYGIÈNE, SÉCURITÉ ET RÉGLEMENTATION (Questions 41 à 60)
+        # THÈME 3 : PRÉPARATIONS BOUCHÈRES ET CHARCUTIÈRES (Questions 41 à 60)
         # =========================================================================
         3: {
-            "name": "THÈME 3 : HYGIÈNE, SÉCURITÉ ET RÉGLEMENTATION (Questions 41 à 60)",
+            "name": "THÈME 3 : PRÉPARATIONS BOUCHÈRES ET CHARCUTIÈRES",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quelle est la température maximale de conservation de la viande hachée préparée à l'avance ?",
+                    "question": "Quel est le liant principal utilisé dans la fabrication d'une terrine de campagne ?",
                     "answerOptions": [
-                        {"text": "+2°C", "isCorrect": True},
-                        {"text": "+4°C", "isCorrect": False},
-                        {"text": "+8°C", "isCorrect": False},
-                        {"text": "0°C strictement", "isCorrect": False}
+                        {"text": "L'œuf et la gorge de porc hachée", "isCorrect": True},
+                        {"text": "La farine de blé pure", "isCorrect": False},
+                        {"text": "L'amidon de maïs", "isCorrect": False},
+                        {"text": "La chapelure blonde", "isCorrect": False}
                     ],
-                    "correction": "La viande hachée est un produit très fragile car la surface de contact avec l'air est énorme. La réglementation impose une conservation entre 0°C et +2°C."
+                    "correction": "La liaison est assurée par la coagulation des protéines de l'œuf et l'émulsion du gras (gorge) à la cuisson."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Quel équipement de protection individuelle (EPI) est obligatoire pour la main qui ne tient pas le couteau lors du désossage ?",
+                    "question": "Quelle est la proportion habituelle de sel nitrité pour une farce à pâté fine ?",
                     "answerOptions": [
-                        {"text": "Le gant en cotte de mailles", "isCorrect": True},
-                        {"text": "Un gant en latex", "isCorrect": False},
-                        {"text": "Un gant en tissu", "isCorrect": False},
-                        {"text": "Aucun gant n'est obligatoire", "isCorrect": False}
+                        {"text": "15 à 18 grammes par kilo", "isCorrect": True},
+                        {"text": "50 grammes par kilo", "isCorrect": False},
+                        {"text": "2 grammes par kilo", "isCorrect": False},
+                        {"text": "100 grammes par kilo", "isCorrect": False}
                     ],
-                    "correction": "Pour éviter les coupures graves en cas de dérapage du couteau vers la main qui tient la viande, le gant métallique (cotte de mailles) est strictement obligatoire."
+                    "correction": "L'assaisonnement standard en sel se situe entre 15 et 20g/kg selon les goûts et les recettes."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Que signifie le sigle INCO sur une étiquette ?",
+                    "question": "À quoi sert le bardage d'un rôti de bœuf ?",
                     "answerOptions": [
-                        {"text": "INformation du COnsommateur", "isCorrect": True},
-                        {"text": "INdustrie et COmmerce", "isCorrect": False},
-                        {"text": "INspecteur COntrôleur", "isCorrect": False},
-                        {"text": "INternational COoperation", "isCorrect": False}
+                        {"text": "Protéger la viande du dessèchement à la cuisson", "isCorrect": True},
+                        {"text": "Augmenter le poids de vente", "isCorrect": False},
+                        {"text": "Saler la viande à cœur", "isCorrect": False},
+                        {"text": "Donner une couleur rouge", "isCorrect": False}
                     ],
-                    "correction": "Le règlement INCO impose l'étiquetage précis des denrées alimentaires (origine, prix, allergènes, dénomination) pour informer le client."
+                    "correction": "La barde (gras de porc) isole la viande de la chaleur directe du four et l'arrose de gras fondant."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quelle est la durée de validité de la traçabilité d'un lot de viande bovine (conservation des étiquettes) ?",
+                    "question": "Quel boyau utilise-t-on pour fabriquer des chipolatas ?",
                     "answerOptions": [
-                        {"text": "5 ans", "isCorrect": True},
-                        {"text": "1 mois", "isCorrect": False},
-                        {"text": "6 mois", "isCorrect": False},
-                        {"text": "1 an", "isCorrect": False}
+                        {"text": "Menu de mouton", "isCorrect": True},
+                        {"text": "Chaudin de porc", "isCorrect": False},
+                        {"text": "Baudruche de bœuf", "isCorrect": False},
+                        {"text": "Menu de porc", "isCorrect": False}
                     ],
-                    "correction": "Le boucher doit pouvoir prouver l'origine de ses viandes en cas de contrôle ou de crise sanitaire. Les documents de traçabilité (étiquettes, factures) doivent être gardés 5 ans."
+                    "correction": "Le menu de mouton est de petit diamètre (20/22 ou 22/24), parfait pour les chipos et les merguez."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "En boucherie, quelle couleur de planche à découper est généralement réservée à la viande crue ?",
+                    "question": "Comment appelle-t-on l'action d'envelopper un morceau de viande avec des tranches de lard ?",
                     "answerOptions": [
-                        {"text": "Rouge", "isCorrect": True},
-                        {"text": "Vert (légumes)", "isCorrect": False},
-                        {"text": "Bleu (poissons)", "isCorrect": False},
-                        {"text": "Jaune (volaille)", "isCorrect": False}
+                        {"text": "Le bardage", "isCorrect": True},
+                        {"text": "Le lardage", "isCorrect": False},
+                        {"text": "Le ficelage", "isCorrect": False},
+                        {"text": "Le crépinnage", "isCorrect": False}
                     ],
-                    "correction": "Bien que non réglementaire (c'est une bonne pratique), le code couleur HACCP suggère le rouge pour la viande crue, le jaune pour la volaille, le vert pour les légumes, etc., pour éviter les contaminations croisées."
+                    "correction": "Le bardage consiste à recouvrir la surface. Le lardage consiste à insérer des bâtonnets de gras à l'intérieur du muscle."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Le nettoyage d'un laboratoire de boucherie doit se faire selon le principe :",
+                    "question": "Quelle est la base d'une farce mousseline ?",
                     "answerOptions": [
-                        {"text": "Nettoyage puis Désinfection", "isCorrect": True},
-                        {"text": "Désinfection puis Nettoyage", "isCorrect": False},
-                        {"text": "Rinçage à l'eau froide uniquement", "isCorrect": False},
-                        {"text": "Tout mélanger en une fois", "isCorrect": False}
+                        {"text": "Chair maigre hachée très fin et crème", "isCorrect": True},
+                        {"text": "Morceaux de viande rissolés", "isCorrect": False},
+                        {"text": "Gras de porc et oignons", "isCorrect": False},
+                        {"text": "Sang de bœuf et épices", "isCorrect": False}
                     ],
-                    "correction": "On ne désinfecte que ce qui est propre. Il faut d'abord éliminer les souillures visibles (détergent/action mécanique), rincer, puis appliquer le désinfectant pour tuer les bactéries."
+                    "correction": "La farce mousseline est une préparation fine, légère et onctueuse montée à la crème liquide."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Quel est le risque principal lié à la consommation de porc mal cuit ?",
+                    "question": "Quel ingrédient est spécifique au boudin noir ?",
                     "answerOptions": [
-                        {"text": "Le Ténia (ver solitaire)", "isCorrect": True},
-                        {"text": "La grippe", "isCorrect": False},
-                        {"text": "Le scorbut", "isCorrect": False},
-                        {"text": "La rage", "isCorrect": False}
+                        {"text": "Le sang", "isCorrect": True},
+                        {"text": "Le foie", "isCorrect": False},
+                        {"text": "Le ris", "isCorrect": False},
+                        {"text": "La cervelle", "isCorrect": False}
                     ],
-                    "correction": "Le porc peut être porteur de parasites comme le Taenia solium. Une cuisson à cœur est recommandée pour éliminer ce risque."
+                    "correction": "Le boudin noir est un mélange de sang, de gras (panne ou gorge) et d'oignons."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Pour l'étiquetage de la viande bovine, quelles mentions sont obligatoires ?",
+                    "question": "Que contient une 'crépine' ?",
                     "answerOptions": [
-                        {"text": "Nom du morceau, Poids, Prix, Origine (Né/Élevé/Abattu), Catégorie", "isCorrect": True},
-                        {"text": "Juste le prix et le poids", "isCorrect": False},
-                        {"text": "Le nom de l'éleveur et sa photo", "isCorrect": False},
-                        {"text": "La date de naissance de la vache", "isCorrect": False}
+                        {"text": "Une membrane graisseuse de l'abdomen", "isCorrect": True},
+                        {"text": "Le tissu de la gorge", "isCorrect": False},
+                        {"text": "La peau du dos", "isCorrect": False},
+                        {"text": "Les intestins grêles", "isCorrect": False}
                     ],
-                    "correction": "Depuis la crise de la vache folle, l'origine précise (Pays de naissance, d'élevage et d'abattage) est obligatoire en plus des mentions commerciales classiques."
+                    "correction": "Aussi appelée coiffe, la crépine sert à maintenir les crépinettes et les pâtés lors de la cuisson."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Un 'Tablier métallique' (ou boléro) sert à protéger :",
+                    "question": "Quelle est la température de cuisson à cœur d'un jambon cuit ?",
                     "answerOptions": [
-                        {"text": "Le thorax et l'abdomen contre les coups de couteau accidentels", "isCorrect": True},
-                        {"text": "Les vêtements contre les taches de sang", "isCorrect": False},
-                        {"text": "Le boucher contre le froid", "isCorrect": False},
-                        {"text": "La viande contre les microbes du boucher", "isCorrect": False}
+                        {"text": "68 °C à 70 °C", "isCorrect": True},
+                        {"text": "100 °C", "isCorrect": False},
+                        {"text": "45 °C", "isCorrect": False},
+                        {"text": "85 °C", "isCorrect": False}
                     ],
-                    "correction": "C'est un EPI anticoupure essentiel. Lors du désossage, le couteau peut riper vers le corps. La cotte de mailles du tablier stoppe la lame."
+                    "correction": "Une cuisson lente à juste température garantit le moelleux et la sécurité sanitaire."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Les déchets d'os et de suif (gras) impropres à la consommation sont stockés dans :",
+                    "question": "À quoi sert le sucre dans les salaisons (saucissons) ?",
                     "answerOptions": [
-                        {"text": "Le bac d'équarrissage (C3) en chambre froide", "isCorrect": True},
-                        {"text": "La poubelle normale dans la rue", "isCorrect": False},
-                        {"text": "Un sac plastique dans le laboratoire", "isCorrect": False},
-                        {"text": "Les égouts", "isCorrect": False}
+                        {"text": "Nourrir les ferments lactiques", "isCorrect": True},
+                        {"text": "Sucrer le goût de la viande", "isCorrect": False},
+                        {"text": "Empêcher le séchage", "isCorrect": False},
+                        {"text": "Changer la couleur en bleu", "isCorrect": False}
                     ],
-                    "correction": "Ces sous-produits animaux (catégorie 3) doivent être stockés au froid dans des bacs spécifiques identifiés et collectés par une entreprise agréée d'équarrissage."
+                    "correction": "Le sucre (dextrose) est transformé par les ferments en acide lactique, ce qui acidifie et conserve le produit."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Le lavage des mains est obligatoire :",
+                    "question": "Qu'est-ce qu'une marinade ?",
                     "answerOptions": [
-                        {"text": "À la prise de poste, après les toilettes, après manipulation de déchets, et régulièrement", "isCorrect": True},
-                        {"text": "Une fois le matin", "isCorrect": False},
-                        {"text": "Uniquement si elles sont visiblement sales", "isCorrect": False},
-                        {"text": "Avant de partir le soir", "isCorrect": False}
+                        {"text": "Un liquide aromatique pour attendrir et parfumer", "isCorrect": True},
+                        {"text": "Une technique de découpe en mer", "isCorrect": False},
+                        {"text": "Une sauce pour napper les frites", "isCorrect": False},
+                        {"text": "Un mode de cuisson à la vapeur", "isCorrect": False}
                     ],
-                    "correction": "Les mains sont le premier vecteur de contamination. Le lavage doit être fréquent, avec du savon bactéricide et un séchage unique (papier)."
+                    "correction": "La marinade (acide + aromates + huile) commence une pré-cuisson chimique qui attendrit les fibres."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Qu'est-ce que la 'Marche en avant' dans l'espace ?",
+                    "question": "Quel est le but du ficelage ?",
                     "answerOptions": [
-                        {"text": "Concevoir les locaux pour que le circuit sale ne croise jamais le circuit propre", "isCorrect": True},
-                        {"text": "Toujours marcher vers le client", "isCorrect": False},
-                        {"text": "Ranger la viande de la plus vieille à la plus récente", "isCorrect": False},
-                        {"text": "Une méthode de découpe", "isCorrect": False}
+                        {"text": "Maintenir la forme à la cuisson", "isCorrect": True},
+                        {"text": "Calculer la longueur du rôti", "isCorrect": False},
+                        {"text": "Transporter la viande plus facilement", "isCorrect": False},
+                        {"text": "Empêcher le client d'ouvrir le paquet", "isCorrect": False}
                     ],
-                    "correction": "Le flux de travail doit aller du plus sale (réception carcasse) vers le plus propre (produit fini/vente) sans retour en arrière pour éviter de recontaminer la viande saine."
+                    "correction": "Le ficelage assure une cuisson uniforme en évitant que le morceau ne s'affaisse."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "La viande hachée doit être préparée :",
+                    "question": "Qu'est-ce que l'opération de 'poussage' ?",
                     "answerOptions": [
-                        {"text": "À la demande du client (sauf agrément spécifique)", "isCorrect": True},
-                        {"text": "3 jours à l'avance", "isCorrect": False},
-                        {"text": "Avec les restes de la semaine", "isCorrect": False},
-                        {"text": "Avec de la viande périmée", "isCorrect": False}
+                        {"text": "Mettre la farce dans le boyau", "isCorrect": True},
+                        {"text": "Vendre un produit plus cher", "isCorrect": False},
+                        {"text": "Installer les carcasses dans le frigo", "isCorrect": False},
+                        {"text": "Augmenter la vitesse du hachoir", "isCorrect": False}
                     ],
-                    "correction": "En boucherie artisanale classique (sans agrément sanitaire spécifique pour la production à l'avance), le hachage se fait 'à la vue et à la demande du client'."
+                    "correction": "On utilise un poussoir hydraulique ou manuel pour remplir les boyaux de farce."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quelle bactérie pathogène, pouvant causer le Syndrome Hémolytique et Urémique (SHU), est redoutée dans la viande hachée de bœuf ?",
+                    "question": "Qu'est-ce que la 'fleur' sur un saucisson ?",
                     "answerOptions": [
-                        {"text": "Escherichia coli (E. coli)", "isCorrect": True},
-                        {"text": "La levure chimique", "isCorrect": False},
-                        {"text": "Le Lactobacillus", "isCorrect": False},
-                        {"text": "Le Penicillium", "isCorrect": False}
+                        {"text": "Une moisissure noble de surface", "isCorrect": True},
+                        {"text": "Un décor gravé au couteau", "isCorrect": False},
+                        {"text": "Une infusion de plantes", "isCorrect": False},
+                        {"text": "Une maladie du boyau", "isCorrect": False}
                     ],
-                    "correction": "Les souches d'E. coli entérohémorragiques peuvent contaminer la viande lors de l'abattage. C'est pourquoi on recommande de bien cuire le steak haché pour les enfants et personnes fragiles."
+                    "correction": "La fleur (pénicillium) protège le saucisson et développe ses arômes."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quelle est la température de conservation des viandes de volailles ?",
+                    "question": "Pourquoi dégraisse-t-on les jambons ?",
                     "answerOptions": [
-                        {"text": "Entre 0°C et +4°C", "isCorrect": True},
-                        {"text": "+8°C", "isCorrect": False},
-                        {"text": "Température ambiante", "isCorrect": False},
-                        {"text": "-10°C", "isCorrect": False}
+                        {"text": "Pour respecter les critères de santé et d'esthétique", "isCorrect": True},
+                        {"text": "Pour cacher la provenance", "isCorrect": False},
+                        {"text": "Pour que le jambon soit plus lourd", "isCorrect": False},
+                        {"text": "Parce que le gras est interdit en France", "isCorrect": False}
                     ],
-                    "correction": "Comme pour la plupart des viandes fraîches, la conservation se fait au froid positif, idéalement vers +2°C/+4°C maximum."
+                    "correction": "On retire l'excès de gras superficiel (couenne et sous-cutané) pour un produit fini équilibré."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Un couteau tombé au sol doit être :",
+                    "question": "Quelle est la particularité d'un jambon sec par rapport à un jambon cuit ?",
                     "answerOptions": [
-                        {"text": "Immédiatement lavé et désinfecté avant réutilisation", "isCorrect": True},
-                        {"text": "Essuyé sur le tablier", "isCorrect": False},
-                        {"text": "Ramassé et réutilisé tel quel", "isCorrect": False},
-                        {"text": "Jeté à la poubelle", "isCorrect": False}
+                        {"text": "Il n'est pas cuit à la chaleur", "isCorrect": True},
+                        {"text": "Il contient plus d'eau", "isCorrect": False},
+                        {"text": "Il est fabriqué avec du bœuf", "isCorrect": False},
+                        {"text": "Il se garde moins longtemps", "isCorrect": False}
                     ],
-                    "correction": "Le sol est la zone la plus contaminée. Réutiliser le couteau sans désinfection entraîne une contamination directe de la viande."
+                    "correction": "Le jambon sec est conservé par le sel et la déshydratation lente (séchage)."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "En cas de coupure, le boucher doit :",
+                    "question": "Qu'est-ce que le 'parage' d'un muscle ?",
                     "answerOptions": [
-                        {"text": "Protéger la plaie avec un pansement étanche et mettre un gant/doigtier", "isCorrect": True},
-                        {"text": "Mettre juste un pansement tissu", "isCorrect": False},
-                        {"text": "Continuer à travailler si ça ne saigne pas trop", "isCorrect": False},
-                        {"text": "Mettre de la sciure dessus", "isCorrect": False}
+                        {"text": "Retirer les parties non nobles (gras, nerfs)", "isCorrect": True},
+                        {"text": "Compter les morceaux avant la vente", "isCorrect": False},
+                        {"text": "Mesurer l'épaisseur des tranches", "isCorrect": False},
+                        {"text": "Mettre le morceau en vitrine", "isCorrect": False}
                     ],
-                    "correction": "Le staphylocoque doré est présent sur la peau et les plaies. Il faut impérativement isoler la plaie de la viande pour éviter l'infection alimentaire du client."
+                    "correction": "Le parage rend le morceau présentable et prêt à la consommation."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "L'agrément sanitaire est obligatoire pour :",
+                    "question": "Qu'est-ce qu'une farce ?",
                     "answerOptions": [
-                        {"text": "Vendre de la viande à des collectivités ou d'autres revendeurs (commerce de gros)", "isCorrect": True},
-                        {"text": "Vendre de la viande aux particuliers", "isCorrect": False},
-                        {"text": "Acheter de la viande", "isCorrect": False},
-                        {"text": "Avoir un apprenti", "isCorrect": False}
+                        {"text": "Un mélange haché de viandes et d'aromates", "isCorrect": True},
+                        {"text": "Une blague faite entre collègues", "isCorrect": False},
+                        {"text": "Une sauce très épaisse", "isCorrect": False},
+                        {"text": "Une technique de décoration", "isCorrect": False}
                     ],
-                    "correction": "Une boucherie qui ne vend qu'au consommateur final n'a pas besoin d'agrément (juste une déclaration). Si elle vend à un restaurant scolaire ou une épicerie (intermédiaires), l'agrément préfectoral est requis."
+                    "correction": "La farce sert de base aux terrines, pâtés et saucisses."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "La sciure de bois au sol est-elle autorisée en laboratoire de boucherie ?",
+                    "question": "Comment appelle-t-on le gras utilisé en charcuterie venant du ventre du porc ?",
                     "answerOptions": [
-                        {"text": "Non, elle est interdite car c'est un nid à microbes", "isCorrect": True},
-                        {"text": "Oui, pour absorber le sang", "isCorrect": False},
-                        {"text": "Oui, pour ne pas glisser", "isCorrect": False},
-                        {"text": "Oui, si elle est propre", "isCorrect": False}
+                        {"text": "La panne", "isCorrect": True},
+                        {"text": "La bardière", "isCorrect": False},
+                        {"text": "La couenne", "isCorrect": False},
+                        {"text": "Le suif", "isCorrect": False}
                     ],
-                    "correction": "Autrefois courante, la sciure est aujourd'hui interdite car elle diffuse des poussières contaminées dans l'air et empêche un nettoyage efficace du sol."
+                    "correction": "La panne est un gras mou situé dans la cavité abdominale, idéal pour faire du saindoux."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quelle est la signification du logo 'VBF' ?",
+                    "question": "Pourquoi utilise-t-on de la glace pilée dans le cutter lors du hachage fin ?",
                     "answerOptions": [
-                        {"text": "Viande Bovine Française (Né, Élevé, Abattu en France)", "isCorrect": True},
-                        {"text": "Viande Basse France", "isCorrect": False},
-                        {"text": "Viande Bien Fraîche", "isCorrect": False},
-                        {"text": "Vente Boucherie Finale", "isCorrect": False}
+                        {"text": "Pour éviter l'échauffement de la farce", "isCorrect": True},
+                        {"text": "Pour laver la viande", "isCorrect": False},
+                        {"text": "Pour augmenter le sel", "isCorrect": False},
+                        {"text": "Pour changer la couleur", "isCorrect": False}
                     ],
-                    "correction": "Le logo VBF certifie l'origine 100% française de la viande bovine, assurant une traçabilité complète sur le territoire national."
-                }
+                    "correction": "Le frottement des lames chauffe la farce, ce qui pourrait faire fondre le gras et gâcher l'émulsion."
+                },
             ]
         },
         # =========================================================================
-        # THÈME 4 : ÉQUIPEMENT ET ENVIRONNEMENT PROFESSIONNEL (Questions 61 à 80)
+        # THÈME 4 : OUTILLAGE ET TECHNOLOGIE DES ÉQUIPEMENTS (Questions 61 à 80)
         # =========================================================================
         4: {
-            "name": "THÈME 4 : ÉQUIPEMENT ET ENVIRONNEMENT PROFESSIONNEL (Questions 61 à 80)",
+            "name": "THÈME 4 : OUTILLAGE ET TECHNOLOGIE DES ÉQUIPEMENTS",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel outil est appelé 'Feuille' ou 'Couperet' ?",
+                    "question": "À quoi sert le fusil en boucherie ?",
                     "answerOptions": [
-                        {"text": "Un gros couteau lourd et rectangulaire pour aplatir ou fendre", "isCorrect": True},
-                        {"text": "Un couteau fin et flexible", "isCorrect": False},
-                        {"text": "Une scie à main", "isCorrect": False},
-                        {"text": "Une machine à trancher", "isCorrect": False}
+                        {"text": "Entretenir le fil du couteau", "isCorrect": True},
+                        {"text": "Affûter une lame très émoussée", "isCorrect": False},
+                        {"text": "Découper les os de la carcasse", "isCorrect": False},
+                        {"text": "Mesurer l'épaisseur du gras", "isCorrect": False}
                     ],
-                    "correction": "La feuille est lourde. Elle sert à aplatir les viandes (côté plat) ou à casser de petits os (côté tranchant), bien que l'usage de la scie soit préféré pour les os pour éviter les éclats."
+                    "correction": "Le fusil sert à redresser le 'morailles' (le fil) de la lame. Pour un affûtage profond, on utilise une meule."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Le billot de boucher moderne est généralement en :",
+                    "question": "Quelle est la fonction d'un 'cutter' en boucherie-charcuterie ?",
                     "answerOptions": [
-                        {"text": "Polyéthylène haute densité (plastique alimentaire)", "isCorrect": True},
-                        {"text": "Bois de charme debout (de moins en moins courant pour raisons sanitaires strictes)", "isCorrect": False},
-                        {"text": "Marbre", "isCorrect": False},
-                        {"text": "Inox pur", "isCorrect": False}
+                        {"text": "Hacher et émulsionner finement les farces", "isCorrect": True},
+                        {"text": "Trancher le jambon en lamelles", "isCorrect": False},
+                        {"text": "Scier les quartiers de bœuf", "isCorrect": False},
+                        {"text": "Vider les abats de volaille", "isCorrect": False}
                     ],
-                    "correction": "Bien que le billot en bois 'bout debout' soit traditionnel, le polyéthylène est le standard actuel car il est imputrescible, rabotable et lavable facilement."
+                    "correction": "Le cutter possède des couteaux tournant à haute vitesse dans une cuve rotative pour obtenir des pâtes fines."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "À quoi sert une 'Machine à piquer' (ou attendrisseur mécanique) ?",
+                    "question": "Comment appelle-t-on le couteau à lame courte et rigide utilisé pour le désossage ?",
                     "answerOptions": [
-                        {"text": "À sectionner les nerfs superficiels pour attendrir la viande", "isCorrect": True},
-                        {"text": "À injecter de la saumure", "isCorrect": False},
-                        {"text": "À coudre les rôtis", "isCorrect": False},
-                        {"text": "À tuer les bactéries", "isCorrect": False}
+                        {"text": "Désosseur", "isCorrect": True},
+                        {"text": "Tranchelard", "isCorrect": False},
+                        {"text": "Cimeterre", "isCorrect": False},
+                        {"text": "Feuille", "isCorrect": False}
                     ],
-                    "correction": "Composée de centaines de petites lames ou aiguilles, elle perfore la viande pour briser les fibres dures (collagène), rendant les steaks de 2ème catégorie plus tendres."
+                    "correction": "Le désosseur permet une précision maximale pour suivre les os et délier les muscles."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Sur un hachoir réfrigéré, quelle pièce pousse la viande vers la vis sans fin ?",
+                    "question": "Quel outil est utilisé pour fendre une carcasse en deux à l'abattoir ?",
                     "answerOptions": [
-                        {"text": "Le pilon (ou poussoir de sécurité)", "isCorrect": True},
-                        {"text": "La main du boucher", "isCorrect": False},
-                        {"text": "Une fourchette", "isCorrect": False},
-                        {"text": "Le couteau", "isCorrect": False}
+                        {"text": "Scie à fendre", "isCorrect": True},
+                        {"text": "Couteau de chef", "isCorrect": False},
+                        {"text": "Feuille de boucher", "isCorrect": False},
+                        {"text": "Éplucheur", "isCorrect": False}
                     ],
-                    "correction": "Il est strictement interdit de pousser la viande avec la main. Le pilon est l'outil de sécurité conçu pour cela, empêchant les doigts d'atteindre la vis sans fin."
+                    "correction": "La scie (souvent électrique) permet de couper la colonne vertébrale proprement en deux demi-carcasses."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est le rôle de la vitrine réfrigérée ?",
+                    "question": "À quoi sert la 'pince à dénerver' ?",
                     "answerOptions": [
-                        {"text": "Présenter les produits à la vente tout en les maintenant à température réglementaire", "isCorrect": True},
-                        {"text": "Congeler les produits", "isCorrect": False},
-                        {"text": "Cuire les produits lentement", "isCorrect": False},
-                        {"text": "Stocker les cartons", "isCorrect": False}
+                        {"text": "Retirer les tendons difficiles d'accès", "isCorrect": True},
+                        {"text": "Attacher les rôtis", "isCorrect": False},
+                        {"text": "Soulever les quartiers", "isCorrect": False},
+                        {"text": "Aplatir les escalopes", "isCorrect": False}
                     ],
-                    "correction": "C'est l'outil de vente principal. Elle doit maintenir une température entre 0°C et +4°C (ou +7°C selon produits) et doit être nettoyée quotidiennement."
+                    "correction": "Elle permet de saisir fermement les nerfs et aponévroses pour les extraire proprement."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "L'inox (Acier Inoxydable) est utilisé pour les tables de travail car :",
+                    "question": "Quel équipement protège le boucher contre les coups de couteau au ventre ?",
                     "answerOptions": [
-                        {"text": "Il est inerte, lisse et facile à désinfecter", "isCorrect": True},
-                        {"text": "Il est moins cher que le plastique", "isCorrect": False},
-                        {"text": "Il ne coupe pas", "isCorrect": False},
-                        {"text": "Il est chaud au toucher", "isCorrect": False}
+                        {"text": "Tablier métallique (cotte de mailles)", "isCorrect": True},
+                        {"text": "Gilet de sauvetage", "isCorrect": False},
+                        {"text": "Tablier en coton blanc", "isCorrect": False},
+                        {"text": "Veste de cuisine", "isCorrect": False}
                     ],
-                    "correction": "L'inox alimentaire (souvent type 18/10) ne rouille pas, résiste aux acides de la viande et aux détergents, et ne retient pas les bactéries dans des pores."
+                    "correction": "Le tablier en anneaux d'inox est un EPI indispensable lors du désossage et du parage."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Qu'est-ce qu'une 'chambre de maturation' ?",
+                    "question": "Comment entretenir une planche à découper en polyéthylène ?",
                     "answerOptions": [
-                        {"text": "Une chambre froide spécifique avec contrôle de l'humidité et de la ventilation pour faire rassir la viande", "isCorrect": True},
-                        {"text": "Une étuve chaude", "isCorrect": False},
-                        {"text": "Un congélateur", "isCorrect": False},
-                        {"text": "Une salle de repos", "isCorrect": False}
+                        {"text": "Raclage et désinfection quotidienne", "isCorrect": True},
+                        {"text": "Peinture annuelle", "isCorrect": False},
+                        {"text": "Trempage dans l'huile d'olive", "isCorrect": False},
+                        {"text": "La laisser sécher au soleil", "isCorrect": False}
                     ],
-                    "correction": "Pour obtenir des viandes d'exception (Dry Aged), on les stocke plusieurs semaines dans une chambre où l'air circule pour sécher la surface et concentrer les goûts sans pourrir."
+                    "correction": "Le racloir permet d'enlever les micro-rayures où se logent les bactéries."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "La 'Trancheuse à jambon' doit être équipée :",
+                    "question": "À quoi sert l'aiguille à larder ?",
                     "answerOptions": [
-                        {"text": "De protections de lame et d'un système de sécurité électrique", "isCorrect": True},
-                        {"text": "D'un moteur thermique", "isCorrect": False},
-                        {"text": "D'une lame en plastique", "isCorrect": False},
-                        {"text": "D'un laser", "isCorrect": False}
+                        {"text": "Introduire des bâtonnets de gras dans un muscle", "isCorrect": True},
+                        {"text": "Coudre les sacs de transport", "isCorrect": False},
+                        {"text": "Vérifier la température du frigo", "isCorrect": False},
+                        {"text": "Nettoyer les os de moelle", "isCorrect": False}
                     ],
-                    "correction": "C'est une machine dangereuse. Elle possède des carters de protection, un affûteur intégré et des arrêts d'urgence. Le nettoyage se fait machine débranchée et lame fermée (épaisseur 0)."
+                    "correction": "Elle traverse la viande pour y déposer du lard afin de la nourrir de l'intérieur."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Quel thermomètre permet de vérifier la température sans toucher le produit (en surface) ?",
+                    "question": "Quel appareil est utilisé pour maintenir la viande sous vide ?",
                     "answerOptions": [
-                        {"text": "Le thermomètre infrarouge (pistolet)", "isCorrect": True},
-                        {"text": "La sonde à cœur", "isCorrect": False},
-                        {"text": "Le thermomètre à mercure", "isCorrect": False},
-                        {"text": "Le baromètre", "isCorrect": False}
+                        {"text": "Machine à cloche", "isCorrect": True},
+                        {"text": "Batteur mélangeur", "isCorrect": False},
+                        {"text": "Autoclave", "isCorrect": False},
+                        {"text": "Four à convection", "isCorrect": False}
                     ],
-                    "correction": "Pratique pour un contrôle rapide à la réception, l'infrarouge ne mesure que la température de surface. Pour une mesure précise et légale, la sonde à cœur (pénétrante) est nécessaire."
+                    "correction": "La machine à cloche extrait l'air du sachet et le soude hermétiquement."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Une 'Scie à ruban' sert principalement à :",
+                    "question": "Qu'est-ce qu'une 'feuille' en boucherie ?",
                     "answerOptions": [
-                        {"text": "Découper les carcasses et les gros morceaux avec os congelés ou frais", "isCorrect": True},
-                        {"text": "Couper le jambon en chiffonnade", "isCorrect": False},
-                        {"text": "Hacher le persil", "isCorrect": False},
-                        {"text": "Aiguiser les couteaux", "isCorrect": False}
+                        {"text": "Un couteau large et lourd pour fendre ou concasser", "isCorrect": True},
+                        {"text": "Un papier pour emballer les biftecks", "isCorrect": False},
+                        {"text": "Une partie fine de l'oreille du porc", "isCorrect": False},
+                        {"text": "Un outil pour écrire les prix", "isCorrect": False}
                     ],
-                    "correction": "C'est une scie électrique verticale puissante. Le boucher pousse la viande vers la lame. L'utilisation du poussoir de sécurité en fin de coupe est impérative."
+                    "correction": "La feuille permet de trancher les os ou de fendre de petites pièces grâce à son poids et son inertie."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "À quelle fréquence les évaporateurs (ventilateurs) des chambres froides doivent-ils être nettoyés ?",
+                    "question": "À quoi sert le 'poussoir' ?",
                     "answerOptions": [
-                        {"text": "Régulièrement, pour éviter l'accumulation de poussières et moisissures", "isCorrect": True},
-                        {"text": "Jamais", "isCorrect": False},
-                        {"text": "Une fois tous les 10 ans", "isCorrect": False},
-                        {"text": "Uniquement s'ils tombent en panne", "isCorrect": False}
+                        {"text": "Embosser les saucisses et boudins", "isCorrect": True},
+                        {"text": "Pousser les chariots de viande", "isCorrect": False},
+                        {"text": "Fermer la porte de la chambre froide", "isCorrect": False},
+                        {"text": "Appuyer sur le bouton d'urgence", "isCorrect": False}
                     ],
-                    "correction": "Des évaporateurs sales projettent des spores de moisissures sur les carcasses. Un entretien régulier est une exigence sanitaire."
+                    "correction": "Le poussoir injecte la farce dans le boyau de manière régulière."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Le 'Crochet' ou 'S' sert à :",
+                    "question": "Quel est le risque de passer un couteau au lave-vaisselle ?",
                     "answerOptions": [
-                        {"text": "Suspendre les carcasses sur les rails (penderie)", "isCorrect": True},
-                        {"text": "Pêcher", "isCorrect": False},
-                        {"text": "Fermer la porte", "isCorrect": False},
-                        {"text": "Attacher le tablier", "isCorrect": False}
+                        {"text": "Détremper l'acier et abîmer le manche", "isCorrect": True},
+                        {"text": "Changer la couleur de la lame en rose", "isCorrect": False},
+                        {"text": "Le rendre trop coupant et dangereux", "isCorrect": False},
+                        {"text": "Raccourcir la longueur de la lame", "isCorrect": False}
                     ],
-                    "correction": "La viande ne doit jamais toucher le sol. Les quartiers sont suspendus à des crochets roulant sur un réseau de rails aériens."
+                    "correction": "La chaleur et les détergents agressifs endommagent le fil de la lame et les matériaux du manche."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quel est l'éclairage préconisé dans une vitrine de boucherie ?",
+                    "question": "Comment désinfecter un hachoir électrique ?",
                     "answerOptions": [
-                        {"text": "Un éclairage type LED 'rose/alimentaire' qui ne chauffe pas la viande", "isCorrect": True},
-                        {"text": "Des lampes halogènes très chaudes", "isCorrect": False},
-                        {"text": "Des néons bleus", "isCorrect": False},
-                        {"text": "Des bougies", "isCorrect": False}
+                        {"text": "Démontage complet et nettoyage de chaque pièce", "isCorrect": True},
+                        {"text": "Passer un chiffon humide sur l'extérieur uniquement", "isCorrect": False},
+                        {"text": "Faire passer de l'eau savonneuse dedans en marche", "isCorrect": False},
+                        {"text": "Le mettre entier dans une cuve de désinfectant", "isCorrect": False}
                     ],
-                    "correction": "L'éclairage doit mettre en valeur la couleur rouge de la viande sans émettre de chaleur (UV/IR) qui oxyderait la surface (brunissement) et favoriserait les bactéries."
+                    "correction": "Le hachage favorise la contamination. Le démontage est la seule garantie de propreté."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Un 'Lardoir' est une aiguille creuse servant à :",
+                    "question": "Qu'est-ce qu'une 'bascule' en boucherie ?",
                     "answerOptions": [
-                        {"text": "Insérer des lanières de gras (lardons) à l'intérieur d'une pièce de viande", "isCorrect": True},
-                        {"text": "Coudre la peau", "isCorrect": False},
-                        {"text": "Injecter de l'eau", "isCorrect": False},
-                        {"text": "Faire des prélèvements", "isCorrect": False}
+                        {"text": "Une balance pour peser les grosses pièces", "isCorrect": True},
+                        {"text": "Un rail de transport suspendu", "isCorrect": False},
+                        {"text": "Une technique pour retourner un bœuf", "isCorrect": False},
+                        {"text": "Un type de crochet à viande", "isCorrect": False}
                     ],
-                    "correction": "Le lardage (interne) est différent du bardage (externe). On utilise le lardoir pour piquer un rôti de bœuf sec avec du gras pour le rendre moelleux."
+                    "correction": "Elle permet de peser les carcasses à l'arrivée des livraisons."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Pourquoi utilise-t-on des chaussures de sécurité à semelles antidérapantes ?",
+                    "question": "À quoi servent les crochets 'esse' ?",
                     "answerOptions": [
-                        {"text": "Pour éviter les chutes sur les sols souvent gras et humides", "isCorrect": True},
-                        {"text": "Pour courir vite", "isCorrect": False},
-                        {"text": "Pour faire joli", "isCorrect": False},
-                        {"text": "Pour ne pas avoir froid", "isCorrect": False}
+                        {"text": "Suspendre la viande aux rails", "isCorrect": True},
+                        {"text": "Attacher les étiquettes de prix", "isCorrect": False},
+                        {"text": "Nettoyer les recoins du hachoir", "isCorrect": False},
+                        {"text": "Ficeler les rôtis de veau", "isCorrect": False}
                     ],
-                    "correction": "Les glissades sont la cause n°1 des accidents en cuisine/boucherie. Les chaussures doivent aussi avoir un embout renforcé (coqué) contre la chute d'objets lourds/tranchants."
+                    "correction": "En forme de S, ils sont en inox pour l'hygiène."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "La 'Mélangeuse' est utilisée en charcuterie pour :",
+                    "question": "Quelle est l'utilité d'une 'cellule de refroidissement rapide' ?",
                     "answerOptions": [
-                        {"text": "Pétrir les chairs à saucisse et farces de manière homogène", "isCorrect": True},
-                        {"text": "Mélanger des liquides", "isCorrect": False},
-                        {"text": "Faire de la purée", "isCorrect": False},
-                        {"text": "Cuire les pâtés", "isCorrect": False}
+                        {"text": "Traverser la zone de danger microbien le plus vite possible", "isCorrect": True},
+                        {"text": "Stocker la viande pendant un mois", "isCorrect": False},
+                        {"text": "Congeler les produits instantanément", "isCorrect": False},
+                        {"text": "Chauffer les pâtés avant la vente", "isCorrect": False}
                     ],
-                    "correction": "Elle remplace le mélange manuel, assurant une meilleure répartition des épices et du gras dans la maigre, tout en gardant la viande froide (moins de manipulation humaine)."
+                    "correction": "Elle permet de descendre de 63°C à 10°C en moins de 2 heures."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Les couteaux à manche en bois sont-ils autorisés en laboratoire professionnel ?",
+                    "question": "Quel matériau est privilégié pour les plans de travail en boucherie ?",
                     "answerOptions": [
-                        {"text": "Non, car le bois est poreux et difficile à désinfecter", "isCorrect": True},
-                        {"text": "Oui, c'est traditionnel", "isCorrect": False},
-                        {"text": "Oui, si le bois est vernis", "isCorrect": False},
-                        {"text": "Uniquement pour le patron", "isCorrect": False}
+                        {"text": "Inox ou polyéthylène", "isCorrect": True},
+                        {"text": "Bois de chêne", "isCorrect": False},
+                        {"text": "Aluminium brut", "isCorrect": False},
+                        {"text": "Marbre de Carrare", "isCorrect": False}
                     ],
-                    "correction": "Les manches doivent être en matière plastique (polypropylène) imputrescible, moulés sans interstice avec la lame pour l'hygiène absolue."
+                    "correction": "Ces matériaux sont lisses, non poreux et faciles à désinfecter."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "L'appareil 'Tue-mouches' électrique doit être placé :",
+                    "question": "À quoi sert un 'viscosimètre' (rare mais possible en industrie charcutière) ?",
                     "answerOptions": [
-                        {"text": "En hauteur, loin des zones de préparation directe", "isCorrect": True},
-                        {"text": "Juste au-dessus de la table de découpe", "isCorrect": False},
-                        {"text": "Dans la vitrine", "isCorrect": False},
-                        {"text": "Dehors", "isCorrect": False}
+                        {"text": "Mesurer l'épaisseur d'une sauce ou d'une saumure", "isCorrect": True},
+                        {"text": "Peser les épices au gramme près", "isCorrect": False},
+                        {"text": "Calculer la vitesse du hachoir", "isCorrect": False},
+                        {"text": "Vérifier le taux de sel", "isCorrect": False}
                     ],
-                    "correction": "Il attire les insectes volants et les électrocute. S'il est au-dessus de la viande, les insectes morts tombent dedans. Il doit donc être décalé."
+                    "correction": "Il mesure la résistance à l'écoulement d'un liquide."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Qu'est-ce qu'une 'Rotissoire' ?",
+                    "question": "Comment appelle-t-on l'appareil qui retire la couenne du porc mécaniquement ?",
                     "answerOptions": [
-                        {"text": "Un appareil de cuisson par rayonnement pour rôtir les volailles ou viandes", "isCorrect": True},
-                        {"text": "Une machine à couper", "isCorrect": False},
-                        {"text": "Une table roulante", "isCorrect": False},
-                        {"text": "Un type de couteau", "isCorrect": False}
+                        {"text": "Une couenneuse", "isCorrect": True},
+                        {"text": "Une plumeuse", "isCorrect": False},
+                        {"text": "Une ponceuse", "isCorrect": False},
+                        {"text": "Une trancheuse", "isCorrect": False}
                     ],
-                    "correction": "Souvent placée en zone client, elle permet la cuisson et la vente chaude (traiteur). Elle nécessite une extraction des fumées efficace."
+                    "correction": "Elle sépare la peau du gras de manière rapide et régulière."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Le stérilisateur à couteaux (bain d'eau chaude à 82°C+) sert à :",
+                    "question": "Quel est le rôle du 'poussoir sous vide' ?",
                     "answerOptions": [
-                        {"text": "Désinfecter les couteaux en cours de travail", "isCorrect": True},
-                        {"text": "Les laver", "isCorrect": False},
-                        {"text": "Les aiguiser", "isCorrect": False},
-                        {"text": "Les ranger le soir", "isCorrect": False}
+                        {"text": "Éviter les bulles d'air dans les saucissons", "isCorrect": True},
+                        {"text": "Augmenter le poids de la farce", "isCorrect": False},
+                        {"text": "Chauffer le produit pendant l'embossage", "isCorrect": False},
+                        {"text": "Vendre les produits à distance", "isCorrect": False}
                     ],
-                    "correction": "Placé près du poste de travail, il permet de tremper la lame quelques secondes pour tuer les germes instantanément entre deux tâches, sans produit chimique."
-                }
+                    "correction": "L'absence d'air limite l'oxydation et améliore la conservation et l'esthétique."
+                },
             ]
         },
         # =========================================================================
-        # THÈME 5 : SCIENCES APPLIQUÉES, VENTE ET CALCULS (Questions 81 à 100)
+        # THÈME 5 : GESTION, COMMERCIALISATION ET RÉGLEMENTATION (Questions 81 à 100)
         # =========================================================================
         5: {
-            "name": "THÈME 5 : SCIENCES APPLIQUÉES, VENTE ET CALCULS (Questions 81 à 100)",
+            "name": "THÈME 5 : GESTION, COMMERCIALISATION ET RÉGLEMENTATION",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Pour une pièce de bœuf riche en collagène (ex: macreuse, jarret), quel mode de cuisson conseillez-vous ?",
+                    "question": "Quelle mention d'origine est obligatoire pour la viande bovine en France ?",
                     "answerOptions": [
-                        {"text": "Une cuisson longue et humide (braiser ou bouillir)", "isCorrect": True},
-                        {"text": "Une cuisson très rapide à la poêle (griller)", "isCorrect": False},
-                        {"text": "Une cuisson au micro-ondes", "isCorrect": False},
-                        {"text": "Manger cru en tartare", "isCorrect": False}
+                        {"text": "Lieu de naissance, d'élevage et d'abattage", "isCorrect": True},
+                        {"text": "Nom de l'éleveur uniquement", "isCorrect": False},
+                        {"text": "Prix au kilo seulement", "isCorrect": False},
+                        {"text": "Date de naissance de l'animal", "isCorrect": False}
                     ],
-                    "correction": "Le collagène est dur. Il a besoin de temps et d'eau (environ 80°C pendant des heures) pour se transformer en gélatine fondante. Une cuisson rapide rendrait la viande dure comme de la semelle."
+                    "correction": "La traçabilité bovine impose d'indiquer tout le parcours de l'animal."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Un client veut 800g de viande. Vous pesez 0,820 kg. Si le prix est de 20 €/kg, combien paiera-t-il ?",
+                    "question": "Que signifie le sigle 'VBF' ?",
                     "answerOptions": [
-                        {"text": "16,40 €", "isCorrect": True},
-                        {"text": "16,00 €", "isCorrect": False},
-                        {"text": "20,00 €", "isCorrect": False},
-                        {"text": "15,80 €", "isCorrect": False}
+                        {"text": "Viande Bovine Française", "isCorrect": True},
+                        {"text": "Veau Blanc de France", "isCorrect": False},
+                        {"text": "Vente de Boucherie Fine", "isCorrect": False},
+                        {"text": "Viande de Boeuf Fermier", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 0,820 (kg) x 20 (€) = 16,40 €. En boucherie, on paie au poids exact pesé."
+                    "correction": "Ce logo garantit que l'animal est né, a été élevé et abattu en France."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Quel est le nutriment principal apporté par la viande rouge ?",
+                    "question": "Quelle est la définition de la 'démarque inconnue' ?",
                     "answerOptions": [
-                        {"text": "Les protéines de haute qualité et le fer héminique", "isCorrect": True},
-                        {"text": "Les glucides (sucres lents)", "isCorrect": False},
-                        {"text": "La vitamine C", "isCorrect": False},
-                        {"text": "Les fibres", "isCorrect": False}
+                        {"text": "La différence entre le stock théorique et le stock réel (vols, erreurs)", "isCorrect": True},
+                        {"text": "La viande que le boucher ne connaît pas", "isCorrect": False},
+                        {"text": "Les invendus de la semaine", "isCorrect": False},
+                        {"text": "Les cadeaux faits aux clients", "isCorrect": False}
                     ],
-                    "correction": "La viande est une source majeure de protéines (bâtisseurs du corps) et de fer héminique (le fer le mieux assimilé par l'organisme)."
+                    "correction": "C'est une perte financière qu'il faut limiter."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Comment calcule-t-on le 'rendement' d'une carcasse ?",
+                    "question": "Quel est le taux de TVA sur la viande transformée (ex: pâté fabriqué par le boucher) ?",
                     "answerOptions": [
-                        {"text": "(Poids de la viande nette commercialisable / Poids de la carcasse initiale) x 100", "isCorrect": True},
-                        {"text": "Poids des os / Poids de la viande", "isCorrect": False},
-                        {"text": "Prix de vente - Prix d'achat", "isCorrect": False},
-                        {"text": "Poids de la graisse x 100", "isCorrect": False}
-                    ],
-                    "correction": "Le rendement permet de savoir quel pourcentage de la carcasse sera réellement vendu après avoir retiré les os et le gras (la perte). Un bon boucher cherche à maximiser ce rendement par une découpe précise."
-                },
-                {
-                    "questionNumber": 85,
-                    "question": "Que signifie cuire 'Bleu' ?",
-                    "answerOptions": [
-                        {"text": "L'extérieur est saisi, l'intérieur est tiède et très rouge (quasi cru)", "isCorrect": True},
-                        {"text": "L'intérieur est rose", "isCorrect": False},
-                        {"text": "La viande est bien cuite", "isCorrect": False},
-                        {"text": "La viande est froide", "isCorrect": False}
-                    ],
-                    "correction": "C'est le stade de cuisson le plus faible pour le bœuf. Juste un aller-retour rapide. Température à cœur : environ 45-50°C."
-                },
-                {
-                    "questionNumber": 86,
-                    "question": "Quelle quantité de viande (hors os) prévoit-on généralement par personne pour un repas standard ?",
-                    "answerOptions": [
-                        {"text": "150 g à 200 g", "isCorrect": True},
-                        {"text": "50 g", "isCorrect": False},
-                        {"text": "500 g", "isCorrect": False},
-                        {"text": "1 kg", "isCorrect": False}
-                    ],
-                    "correction": "Pour une portion adulte normale sans os (steak, rôti), on compte 150-200g. Avec os (côte de bœuf), on compte plutôt 350-400g par personne."
-                },
-                {
-                    "questionNumber": 87,
-                    "question": "Un client vous demande une viande maigre pour un régime. Que proposez-vous ?",
-                    "answerOptions": [
-                        {"text": "De la dinde, du poulet ou du filet de bœuf paré", "isCorrect": True},
-                        {"text": "De l'échine de porc", "isCorrect": False},
-                        {"text": "Une côte de bœuf", "isCorrect": False},
-                        {"text": "De l'agneau (côtelettes)", "isCorrect": False}
-                    ],
-                    "correction": "Les volailles (sans la peau) et certains morceaux de bœuf (tende de tranche, filet) sont très pauvres en lipides (< 5%), contrairement au porc ou à l'agneau souvent plus gras."
-                },
-                {
-                    "questionNumber": 88,
-                    "question": "Le 'Coût matière' d'un produit correspond à :",
-                    "answerOptions": [
-                        {"text": "La valeur d'achat des ingrédients utilisés", "isCorrect": True},
-                        {"text": "Le prix de vente", "isCorrect": False},
-                        {"text": "Le salaire du boucher", "isCorrect": False},
-                        {"text": "L'électricité", "isCorrect": False}
-                    ],
-                    "correction": "C'est la base du calcul de marge. Si j'achète ma viande 10€ et que j'ai 2€ de perte (os), mon coût matière réel pour 1kg de viande nette est supérieur à 10€."
-                },
-                {
-                    "questionNumber": 89,
-                    "question": "Quelle est l'action de la chaleur sur les protéines musculaires lors de la cuisson ?",
-                    "answerOptions": [
-                        {"text": "La coagulation", "isCorrect": True},
-                        {"text": "La fonte", "isCorrect": False},
-                        {"text": "L'évaporation", "isCorrect": False},
-                        {"text": "La fermentation", "isCorrect": False}
-                    ],
-                    "correction": "Sous l'effet de la chaleur, les protéines coagulent (durcissent et changent de couleur), l'eau est expulsée. C'est ce qui fait passer la viande du 'cru' au 'cuit'."
-                },
-                {
-                    "questionNumber": 90,
-                    "question": "Un client hésite pour un Pot-au-feu. Quels morceaux suggérez-vous ?",
-                    "answerOptions": [
-                        {"text": "Macreuse, Plat-de-côtes, Jarret, Queue", "isCorrect": True},
-                        {"text": "Filet, Rumsteck, Tende de tranche", "isCorrect": False},
-                        {"text": "Gigot, Épaule d'agneau", "isCorrect": False},
-                        {"text": "Escalopes de veau", "isCorrect": False}
-                    ],
-                    "correction": "Le Pot-au-feu nécessite des morceaux gélatineux et gras de catégorie 3 (bouilli) pour donner du goût au bouillon et rester moelleux après une longue cuisson."
-                },
-                {
-                    "questionNumber": 91,
-                    "question": "La TVA sur la viande brute en France est généralement de :",
-                    "answerOptions": [
-                        {"text": "5,5 %", "isCorrect": True},
+                        {"text": "5,5 % (produit alimentaire)", "isCorrect": True},
                         {"text": "20 %", "isCorrect": False},
                         {"text": "10 %", "isCorrect": False},
                         {"text": "2,1 %", "isCorrect": False}
                     ],
-                    "correction": "Taux réduit pour les produits alimentaires de première nécessité."
+                    "correction": "Les produits alimentaires vendus à emporter sont au taux réduit de 5,5%."
+                },
+                {
+                    "questionNumber": 85,
+                    "question": "Comment calcule-t-on la marge brute ?",
+                    "answerOptions": [
+                        {"text": "Prix de vente HT - Coût d'achat HT", "isCorrect": True},
+                        {"text": "Chiffre d'affaires - Salaires", "isCorrect": False},
+                        {"text": "Total de la caisse - TVA", "isCorrect": False},
+                        {"text": "Prix d'achat + Bénéfice", "isCorrect": False}
+                    ],
+                    "correction": "La marge brute permet de payer les charges fixes et de dégager un bénéfice."
+                },
+                {
+                    "questionNumber": 86,
+                    "question": "Que signifie le label 'Label Rouge' ?",
+                    "answerOptions": [
+                        {"text": "Une qualité supérieure par rapport au produit courant", "isCorrect": True},
+                        {"text": "Une viande de couleur très rouge", "isCorrect": False},
+                        {"text": "Une origine régionale uniquement", "isCorrect": False},
+                        {"text": "Un produit issu de l'agriculture biologique", "isCorrect": False}
+                    ],
+                    "correction": "Il repose sur un cahier des charges strict validé par l'INAO."
+                },
+                {
+                    "questionNumber": 87,
+                    "question": "À quoi sert le 'ticket de pesée' ?",
+                    "answerOptions": [
+                        {"text": "Justifier le prix et le poids au client", "isCorrect": True},
+                        {"text": "Décorer l'emballage", "isCorrect": False},
+                        {"text": "Donner la recette du plat", "isCorrect": False},
+                        {"text": "Calculer l'âge du boucher", "isCorrect": False}
+                    ],
+                    "correction": "C'est un document obligatoire pour la transparence commerciale."
+                },
+                {
+                    "questionNumber": 88,
+                    "question": "Qu'est-ce qu'une fiche de réception ?",
+                    "answerOptions": [
+                        {"text": "Un contrôle des marchandises à la livraison (poids, température)", "isCorrect": True},
+                        {"text": "Une lettre de remerciement au fournisseur", "isCorrect": False},
+                        {"text": "Le menu du jour", "isCorrect": False},
+                        {"text": "La liste des clients fidèles", "isCorrect": False}
+                    ],
+                    "correction": "Elle garantit que les produits entrant respectent les normes."
+                },
+                {
+                    "questionNumber": 89,
+                    "question": "Quelle est la règle d'affichage des prix en vitrine ?",
+                    "answerOptions": [
+                        {"text": "Le prix doit être au kilo ou à la pièce, visible de l'extérieur", "isCorrect": True},
+                        {"text": "Le prix est facultatif si le boucher est sympa", "isCorrect": False},
+                        {"text": "Uniquement les promotions doivent être affichées", "isCorrect": False},
+                        {"text": "Les prix doivent être écrits en petit", "isCorrect": False}
+                    ],
+                    "correction": "C'est une obligation légale vis-à-vis du code de la consommation."
+                },
+                {
+                    "questionNumber": 90,
+                    "question": "Qu'est-ce que l'inventaire ?",
+                    "answerOptions": [
+                        {"text": "Compter physiquement tout le stock à une date précise", "isCorrect": True},
+                        {"text": "Faire le ménage dans les tiroirs", "isCorrect": False},
+                        {"text": "Demander au fournisseur ce qu'il lui reste", "isCorrect": False},
+                        {"text": "Imaginer ce que l'on va vendre demain", "isCorrect": False}
+                    ],
+                    "correction": "L'inventaire est obligatoire pour établir le bilan annuel de l'entreprise."
+                },
+                {
+                    "questionNumber": 91,
+                    "question": "Quel est le rôle de la 'fiche de stock' ?",
+                    "answerOptions": [
+                        {"text": "Suivre les entrées et sorties de marchandises", "isCorrect": True},
+                        {"text": "Noter le nom des employés", "isCorrect": False},
+                        {"text": "Écrire les recettes de cuisine", "isCorrect": False},
+                        {"text": "Calculer la TVA", "isCorrect": False}
+                    ],
+                    "correction": "Elle permet une gestion rigoureuse et évite les ruptures de stock."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Pour fidéliser un client, le boucher doit avant tout :",
+                    "question": "Que signifie le sigle 'AOC' ?",
                     "answerOptions": [
-                        {"text": "Lui donner des conseils de préparation et de cuisson adaptés", "isCorrect": True},
-                        {"text": "Lui raconter sa vie", "isCorrect": False},
-                        {"text": "Vendre le moins cher possible", "isCorrect": False},
-                        {"text": "Lui donner des os pour le chien", "isCorrect": False}
+                        {"text": "Appellation d'Origine Contrôlée", "isCorrect": True},
+                        {"text": "Achat Organisé en Commun", "isCorrect": False},
+                        {"text": "Alimentation d'Origine Certifiée", "isCorrect": False},
+                        {"text": "Accord de Qualité Supérieure", "isCorrect": False}
                     ],
-                    "correction": "La valeur ajoutée de l'artisan boucher réside dans le conseil. Savoir expliquer comment cuire le morceau acheté garantit la satisfaction gustative du client."
+                    "correction": "Il garantit un lien entre le produit, le terroir et le savoir-faire."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "1 kg de viande désossée donne environ combien de steaks de 150g ?",
+                    "question": "Qu'est-ce que le 'coefficient multiplicateur' ?",
                     "answerOptions": [
-                        {"text": "6 steaks (et il reste un peu)", "isCorrect": True},
-                        {"text": "10 steaks", "isCorrect": False},
-                        {"text": "4 steaks", "isCorrect": False},
-                        {"text": "8 steaks", "isCorrect": False}
+                        {"text": "Le chiffre par lequel on multiplie le prix d'achat pour obtenir le prix de vente", "isCorrect": True},
+                        {"text": "Le nombre d'enfants du patron", "isCorrect": False},
+                        {"text": "Le poids d'une carcasse divisé par 10", "isCorrect": False},
+                        {"text": "La remise accordée par le fournisseur", "isCorrect": False}
                     ],
-                    "correction": "1000g / 150g = 6,66. On peut donc tailler 6 beaux steaks et il restera une 'entame' ou une chute d'environ 100g."
+                    "correction": "Il inclut la marge et la TVA."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Quelle est la différence nutritionnelle majeure entre le bœuf et le veau ?",
+                    "question": "Quel document accompagne obligatoirement une livraison ?",
                     "answerOptions": [
-                        {"text": "Le veau est généralement moins gras et moins riche en fer (viande blanche)", "isCorrect": True},
-                        {"text": "Le veau est plus gras", "isCorrect": False},
-                        {"text": "Le veau contient plus de sucre", "isCorrect": False},
-                        {"text": "C'est exactement pareil", "isCorrect": False}
+                        {"text": "Le bon de livraison", "isCorrect": True},
+                        {"text": "Le journal intime du chauffeur", "isCorrect": False},
+                        {"text": "La photo de l'abattoir", "isCorrect": False},
+                        {"text": "Le règlement intérieur du garage", "isCorrect": False}
                     ],
-                    "correction": "Le veau est une viande jeune, pauvre en myoglobine (d'où la couleur pâle) et souvent plus maigre (sauf si engraissé intensivement), idéale pour les digestions légères."
+                    "correction": "Il doit être signé après vérification de la marchandise."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Si vous achetez une carcasse 5 €/kg et que vous avez 30% de déchets (os/gras), quel est votre coût de revient au kg de viande nette ?",
+                    "question": "Qu'est-ce que la 'fidélisation' ?",
                     "answerOptions": [
-                        {"text": "Environ 7,14 €/kg", "isCorrect": True},
-                        {"text": "5 €/kg", "isCorrect": False},
-                        {"text": "3,50 €/kg", "isCorrect": False},
-                        {"text": "6 €/kg", "isCorrect": False}
+                        {"text": "L'ensemble des actions pour que le client revienne", "isCorrect": True},
+                        {"text": "Obliger le client à acheter 10 kg de viande", "isCorrect": False},
+                        {"text": "Offrir toute la marchandise gratuitement", "isCorrect": False},
+                        {"text": "Fermer la boutique pour rester seul", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 5 € / (1 - 0,30) = 5 / 0,7 = 7,14 €. Le prix de revient augmente car on a jeté 30% du poids acheté mais on a payé la totalité."
+                    "correction": "Un client fidèle est plus rentable qu'un nouveau client."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Que se passe-t-il si on sale la viande crue trop longtemps avant la cuisson ?",
+                    "question": "Quel pictogramme de danger sur un produit de nettoyage indique qu'il brûle la peau ?",
                     "answerOptions": [
-                        {"text": "Le sel attire l'eau hors des cellules (osmose) et dessèche la viande", "isCorrect": True},
-                        {"text": "La viande devient bleue", "isCorrect": False},
-                        {"text": "La viande cuit toute seule", "isCorrect": False},
-                        {"text": "Rien, c'est conseillé", "isCorrect": False}
+                        {"text": "Un flacon qui verse sur une main (corrosif)", "isCorrect": True},
+                        {"text": "Une flamme", "isCorrect": False},
+                        {"text": "Une tête de mort", "isCorrect": False},
+                        {"text": "Un point d'exclamation", "isCorrect": False}
                     ],
-                    "correction": "Il est conseillé de saler juste avant la cuisson ou après le saisissement pour éviter que la viande ne 'rende son jus' et ne bouille dans sa poêle au lieu de griller."
+                    "correction": "Il faut porter des gants et parfois des lunettes de protection."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Le 'Ticket de caisse' est obligatoire pour le client :",
+                    "question": "Quelle est la durée légale du travail hebdomadaire pour un apprenti mineur ?",
                     "answerOptions": [
-                        {"text": "Au-delà d'un certain montant (25€ TTC) ou si le client le demande", "isCorrect": True},
-                        {"text": "Jamais", "isCorrect": False},
-                        {"text": "Toujours, même pour 1 centime", "isCorrect": False},
-                        {"text": "Uniquement pour les professionnels", "isCorrect": False}
+                        {"text": "35 heures", "isCorrect": True},
+                        {"text": "45 heures", "isCorrect": False},
+                        {"text": "20 heures", "isCorrect": False},
+                        {"text": "Illimitée", "isCorrect": False}
                     ],
-                    "correction": "La réglementation impose la remise d'une note pour toute prestation de service ou vente supérieure à 25€, ou à la demande du client quel que soit le montant."
+                    "correction": "Des dérogations sont possibles sous conditions, mais la base est de 35h."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Comment appelle-t-on la perte de poids naturelle de la viande stockée en frigo (évaporation) ?",
+                    "question": "Qu'est-ce qu'une 'vente additionnelle' ?",
                     "answerOptions": [
-                        {"text": "La freinte", "isCorrect": True},
-                        {"text": "La perte au feu", "isCorrect": False},
-                        {"text": "La démarque inconnue", "isCorrect": False},
-                        {"text": "L'usure", "isCorrect": False}
+                        {"text": "Proposer un produit complémentaire (ex: sauce avec le rôti)", "isCorrect": True},
+                        {"text": "Vendre deux fois le même produit par erreur", "isCorrect": False},
+                        {"text": "Additionner tous les prix sur la calculette", "isCorrect": False},
+                        {"text": "Rendre la monnaie au client", "isCorrect": False}
                     ],
-                    "correction": "L'eau s'évapore naturellement de la carcasse ventilée. Cette perte de poids (freinte) est une perte financière directe pour le boucher (il achète lourd et vend plus léger)."
+                    "correction": "Elle permet d'augmenter le panier moyen et de mieux conseiller le client."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Pour un rôti de bœuf saignant, quel temps de cuisson au four (environ 200°C) compte-t-on par livre (500g) ?",
+                    "question": "Que signifie le logo 'Agriculture Biologique' (AB) ?",
                     "answerOptions": [
-                        {"text": "12 à 15 minutes", "isCorrect": True},
-                        {"text": "45 minutes", "isCorrect": False},
-                        {"text": "30 minutes", "isCorrect": False},
-                        {"text": "5 minutes", "isCorrect": False}
+                        {"text": "Respect de l'environnement et du bien-être animal", "isCorrect": True},
+                        {"text": "Produit fabriqué uniquement en Bretagne", "isCorrect": False},
+                        {"text": "Produit sans aucune calorie", "isCorrect": False},
+                        {"text": "Viande garantie sans aucun os", "isCorrect": False}
                     ],
-                    "correction": "C'est la règle empirique classique. 15 min par 500g pour saignant. 20-25 min pour à point."
+                    "correction": "L'élevage bio limite les traitements chimiques et privilégie l'espace pour les animaux."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quelle est l'origine du mot 'Boucher' ?",
+                    "question": "Quel est le but d'un 'bon de commande' ?",
                     "answerOptions": [
-                        {"text": "De 'Bouc' (car ils tuaient les boucs au Moyen-Âge)", "isCorrect": True},
-                        {"text": "De 'Bouche' (nourrir la bouche)", "isCorrect": False},
-                        {"text": "De 'Bois' (le billot)", "isCorrect": False},
-                        {"text": "De 'Bouchon'", "isCorrect": False}
+                        {"text": "Commander officiellement des produits au fournisseur", "isCorrect": True},
+                        {"text": "Noter les vacances du boucher", "isCorrect": False},
+                        {"text": "Calculer le poids du bœuf", "isCorrect": False},
+                        {"text": "Faire plaisir au banquier", "isCorrect": False}
                     ],
-                    "correction": "Historiquement, les bouchers étaient ceux qui abattaient les boucs (viande courante au Moyen-Âge), d'où le nom de la corporation."
+                    "correction": "C'est la preuve de la commande en cas de litige sur la livraison."
                 }
             ]
         }
