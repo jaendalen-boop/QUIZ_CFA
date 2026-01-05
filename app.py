@@ -743,6 +743,23 @@ def show_quiz_list_for_bp():
         for key in quiz_keys:
             render_quiz_card(key)
 
+def show_quiz_list_for_bacpro():
+    st.subheader("BAC PRO – Choisissez un quiz")
+
+    if st.button("⬅️ Retour aux niveaux"):
+        st.session_state.selected_level = None
+        st.session_state.selected_quiz_key = None
+        st.session_state.current_theme = None
+        st.rerun()
+
+    quiz_keys = get_sorted_quiz_keys(BACPRO_QUIZZES)
+
+    if not quiz_keys:
+        st.info("Aucun quiz BAC PRO disponible pour le moment.")
+    else:
+        for key in quiz_keys:
+            render_quiz_card(key)
+
 
 def show_quiz_list_for_bts():
     st.subheader("BTS – Choisissez un quiz")
