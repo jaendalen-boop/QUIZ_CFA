@@ -12,42 +12,63 @@ st.set_page_config(
 # IMPORT DES QUIZ DISPONIBLES
 # -----------------------
 
-from quizzes.quiz_bp_arts_de_la_cuisine_100 import quiz_data as quiz_bp_arts_cuisine_data
-from quizzes.quiz_bp_boucher_100 import quiz_data as quiz_bp_boucher_data
-from quizzes.quiz_bp_coiffure_100 import quiz_data as quiz_bp_coiffure_data
-from quizzes.quiz_bp_macon_100 import quiz_data as quiz_bp_macon_data
-from quizzes.quiz_bp_migcs_100 import quiz_data as quiz_bp_migcs_data
+# BP
+from quizzes.quiz_bp_metiers.quiz_bp_arts_de_la_cuisine_100 import quiz_data as quiz_bp_arts_cuisine_data
+from quizzes.quiz_bp_metiers.quiz_bp_boucher_100 import quiz_data as quiz_bp_boucher_data
+from quizzes.quiz_bp_metiers.quiz_bp_coiffure_100 import quiz_data as quiz_bp_coiffure_data
+from quizzes.quiz_bp_metiers.quiz_bp_macon_100 import quiz_data as quiz_bp_macon_data
+from quizzes.quiz_bp_metiers.quiz_bp_migcs_100 import quiz_data as quiz_bp_migcs_data
 
-from quizzes.quiz_bts_meca_vp_100 import quiz_data as quiz_bts_meca_vp_data
+# BTS
+from quizzes.quiz_bts_metiers.quiz_bts_meca_vp_100 import quiz_data as quiz_bts_meca_vp_data
 
-from quizzes.quiz_bacpro_mva_100 import quiz_data as quiz_bacpro_mva_data
-from quizzes.quiz_bacpro_mcva_100 import quiz_data as quiz_bacpro_mcva_data
-from quizzes.quiz_bacpro_mcvb_100 import quiz_data as quiz_bacpro_mcvb_data
+# BAC PRO
+from quizzes.quiz_bacpro_metiers.quiz_bacpro_mva_100 import quiz_data as quiz_bacpro_mva_data
+from quizzes.quiz_bacpro_metiers.quiz_bacpro_mcva_100 import quiz_data as quiz_bacpro_mcva_data
+from quizzes.quiz_bacpro_metiers.quiz_bacpro_mcvb_100 import quiz_data as quiz_bacpro_mcvb_data
 
-from quizzes.quiz_cap_boucher_100 import quiz_data as quiz_cap_boucher_data
-from quizzes.quiz_cap_boulanger_100 import quiz_data as quiz_cap_boulanger_data
-from quizzes.quiz_cap_carreleur_mosaïste import quiz_data as quiz_cap_carreleur_data
-from quizzes.quiz_cap_carrosserie_automobile_100 import quiz_data as quiz_cap_carrosserie_data
-from quizzes.quiz_cap_charcutier_traiteur_100 import quiz_data as quiz_cap_charcutier_traiteur_data
-from quizzes.quiz_cap_chcr_100 import quiz_data as quiz_cap_chcr_data
-from quizzes.quiz_cap_coiffure_100 import quiz_data as quiz_cap_coiffure_data
-from quizzes.quiz_cap_couvreur_100 import quiz_data as quiz_cap_couvreur_data
-from quizzes.quiz_cap_cuisine_100 import quiz_data as quiz_cap_cuisine_data
-from quizzes.quiz_cap_electricien_100 import quiz_data as quiz_cap_electricien_data
-from quizzes.quiz_cap_employe_polyvalent_commerce_100 import quiz_data as quiz_cap_epc_data
-from quizzes.quiz_cap_macon_100 import quiz_data as quiz_cap_macon_data
-from quizzes.quiz_cap_meca_vp_100 import quiz_data as quiz_cap_meca_vp_data
-from quizzes.quiz_cap_menuisier_fabricant_100 import quiz_data as quiz_cap_menuisier_fabricant_data
-from quizzes.quiz_cap_menuisier_installateur_100 import quiz_data as quiz_cap_menuisier_installateur_data
-from quizzes.quiz_cap_patissier_100 import quiz_data as quiz_cap_patissier_data
-from quizzes.quiz_cap_peintre_100 import quiz_data as quiz_cap_peintre_data
-from quizzes.quiz_cap_peinture_carrosserie_100 import quiz_data as quiz_cap_peinture_carrosserie_data
-from quizzes.quiz_cap_platre_isolation_100 import quiz_data as quiz_cap_platre_isolation_data
-from quizzes.quiz_cap_sanitaire_100 import quiz_data as quiz_cap_sanitaire_data
-from quizzes.quiz_cap_serrurier_metallier_100 import quiz_data as quiz_cap_serrurier_metallier_data
-from quizzes.quiz_cap_thermique_100 import quiz_data as quiz_cap_thermique_data
+# CAP métiers
+from quizzes.quiz_cap_metiers.quiz_cap_boucher_100 import quiz_data as quiz_cap_boucher_data
+from quizzes.quiz_cap_metiers.quiz_cap_boulanger_100 import quiz_data as quiz_cap_boulanger_data
+from quizzes.quiz_cap_metiers.quiz_cap_carreleur_mosaiste_100 import quiz_data as quiz_cap_carreleur_data
+from quizzes.quiz_cap_metiers.quiz_cap_carrosserie_automobile_100 import quiz_data as quiz_cap_carrosserie_data
+from quizzes.quiz_cap_metiers.quiz_cap_charcutier_traiteur_100 import quiz_data as quiz_cap_charcutier_traiteur_data
+from quizzes.quiz_cap_metiers.quiz_cap_chcr_100 import quiz_data as quiz_cap_chcr_data
+from quizzes.quiz_cap_metiers.quiz_cap_coiffure_100 import quiz_data as quiz_cap_coiffure_data
+from quizzes.quiz_cap_metiers.quiz_cap_couvreur_100 import quiz_data as quiz_cap_couvreur_data
+from quizzes.quiz_cap_metiers.quiz_cap_cuisine_100 import quiz_data as quiz_cap_cuisine_data
+from quizzes.quiz_cap_metiers.quiz_cap_electricien_100 import quiz_data as quiz_cap_electricien_data
+from quizzes.quiz_cap_metiers.quiz_cap_employe_polyvalent_commerce_100 import quiz_data as quiz_cap_epc_data
+from quizzes.quiz_cap_metiers.quiz_cap_macon_100 import quiz_data as quiz_cap_macon_data
+from quizzes.quiz_cap_metiers.quiz_cap_meca_vp_100 import quiz_data as quiz_cap_meca_vp_data
+from quizzes.quiz_cap_metiers.quiz_cap_menuisier_fabricant_100 import quiz_data as quiz_cap_menuisier_fabricant_data
+from quizzes.quiz_cap_metiers.quiz_cap_menuisier_installateur_100 import quiz_data as quiz_cap_menuisier_installateur_data
+from quizzes.quiz_cap_metiers.quiz_cap_patissier_100 import quiz_data as quiz_cap_patissier_data
+from quizzes.quiz_cap_metiers.quiz_cap_peintre_100 import quiz_data as quiz_cap_peintre_data
+from quizzes.quiz_cap_metiers.quiz_cap_peinture_carrosserie_100 import quiz_data as quiz_cap_peinture_carrosserie_data
+from quizzes.quiz_cap_metiers.quiz_cap_platre_isolation_100 import quiz_data as quiz_cap_platre_isolation_data
+from quizzes.quiz_cap_metiers.quiz_cap_sanitaire_100 import quiz_data as quiz_cap_sanitaire_data
+from quizzes.quiz_cap_metiers.quiz_cap_serrurier_metallier_100 import quiz_data as quiz_cap_serrurier_metallier_data
+from quizzes.quiz_cap_metiers.quiz_cap_thermique_100 import quiz_data as quiz_cap_thermique_data
 
-from quizzes.quiz_cs_coiffure_coupe_couleur_100 import quiz_data as quiz_cs_coiffure_coupe_couleur_data
+# CAP matières générales (nouveaux)
+from quizzes.quiz_cap_generaux.quiz_cap_anglais_1 import quiz_data as quiz_cap_anglais_1_data
+from quizzes.quiz_cap_generaux.quiz_cap_anglais_2 import quiz_data as quiz_cap_anglais_2_data
+from quizzes.quiz_cap_generaux.quiz_cap_espagnol_1 import quiz_data as quiz_cap_espagnol_1_data
+from quizzes.quiz_cap_generaux.quiz_cap_espagnol_2 import quiz_data as quiz_cap_espagnol_2_data
+from quizzes.quiz_cap_generaux.quiz_cap_francais_1 import quiz_data as quiz_cap_francais_1_data
+from quizzes.quiz_cap_generaux.quiz_cap_francais_2 import quiz_data as quiz_cap_francais_2_data
+from quizzes.quiz_cap_generaux.quiz_cap_histoire_geographie_1 import quiz_data as quiz_cap_histoire_geographie_1_data
+from quizzes.quiz_cap_generaux.quiz_cap_histoire_geographie_2 import quiz_data as quiz_cap_histoire_geographie_2_data
+from quizzes.quiz_cap_generaux.quiz_cap_mathematique_1 import quiz_data as quiz_cap_mathematique_1_data
+from quizzes.quiz_cap_generaux.quiz_cap_mathematique_2 import quiz_data as quiz_cap_mathematique_2_data
+from quizzes.quiz_cap_generaux.quiz_cap_pse_1 import quiz_data as quiz_cap_pse_1_data
+from quizzes.quiz_cap_generaux.quiz_cap_pse_2 import quiz_data as quiz_cap_pse_2_data
+from quizzes.quiz_cap_generaux.quiz_cap_science_physique_1 import quiz_data as quiz_cap_science_physique_1_data
+from quizzes.quiz_cap_generaux.quiz_cap_science_physique_2 import quiz_data as quiz_cap_science_physique_2_data
+
+# CS
+from quizzes.quiz_cs_metiers.quiz_cs_coiffure_coupe_couleur_100 import quiz_data as quiz_cs_coiffure_coupe_couleur_data
 
 
 # -----------------------
@@ -280,6 +301,106 @@ QUIZZES = {
         "color": "#e74c3c",
     },
 
+    # ----- CAP Matières générales -----
+    "cap_anglais_1": {
+        "title": "CAP Matières générales – Anglais (quiz 1)",
+        "description": "Révisions d’anglais – série 1.",
+        "data": quiz_cap_anglais_1_data,
+        "icon": "🇬🇧",
+        "color": "#3b82f6",
+    },
+    "cap_anglais_2": {
+        "title": "CAP Matières générales – Anglais (quiz 2)",
+        "description": "Révisions d’anglais – série 2.",
+        "data": quiz_cap_anglais_2_data,
+        "icon": "🇬🇧",
+        "color": "#2563eb",
+    },
+    "cap_espagnol_1": {
+        "title": "CAP Matières générales – Espagnol (quiz 1)",
+        "description": "Révisions d’espagnol – série 1.",
+        "data": quiz_cap_espagnol_1_data,
+        "icon": "🇪🇸",
+        "color": "#f97316",
+    },
+    "cap_espagnol_2": {
+        "title": "CAP Matières générales – Espagnol (quiz 2)",
+        "description": "Révisions d’espagnol – série 2.",
+        "data": quiz_cap_espagnol_2_data,
+        "icon": "🇪🇸",
+        "color": "#ea580c",
+    },
+    "cap_francais_1": {
+        "title": "CAP Matières générales – Français (quiz 1)",
+        "description": "Révisions de français – série 1.",
+        "data": quiz_cap_francais_1_data,
+        "icon": "📘",
+        "color": "#10b981",
+    },
+    "cap_francais_2": {
+        "title": "CAP Matières générales – Français (quiz 2)",
+        "description": "Révisions de français – série 2.",
+        "data": quiz_cap_francais_2_data,
+        "icon": "📗",
+        "color": "#059669",
+    },
+    "cap_histoire_geographie_1": {
+        "title": "CAP Matières générales – Histoire-Géographie (quiz 1)",
+        "description": "Révisions d’histoire-géographie – série 1.",
+        "data": quiz_cap_histoire_geographie_1_data,
+        "icon": "🌍",
+        "color": "#facc15",
+    },
+    "cap_histoire_geographie_2": {
+        "title": "CAP Matières générales – Histoire-Géographie (quiz 2)",
+        "description": "Révisions d’histoire-géographie – série 2.",
+        "data": quiz_cap_histoire_geographie_2_data,
+        "icon": "🗺️",
+        "color": "#eab308",
+    },
+    "cap_mathematique_1": {
+        "title": "CAP Matières générales – Mathématiques (quiz 1)",
+        "description": "Révisions de mathématiques – série 1.",
+        "data": quiz_cap_mathematique_1_data,
+        "icon": "➗",
+        "color": "#6366f1",
+    },
+    "cap_mathematique_2": {
+        "title": "CAP Matières générales – Mathématiques (quiz 2)",
+        "description": "Révisions de mathématiques – série 2.",
+        "data": quiz_cap_mathematique_2_data,
+        "icon": "✖️",
+        "color": "#4f46e5",
+    },
+    "cap_pse_1": {
+        "title": "CAP Matières générales – PSE (quiz 1)",
+        "description": "Révisions de Prévention Santé Environnement – série 1.",
+        "data": quiz_cap_pse_1_data,
+        "icon": "🩺",
+        "color": "#22c55e",
+    },
+    "cap_pse_2": {
+        "title": "CAP Matières générales – PSE (quiz 2)",
+        "description": "Révisions de Prévention Santé Environnement – série 2.",
+        "data": quiz_cap_pse_2_data,
+        "icon": "🏥",
+        "color": "#16a34a",
+    },
+    "cap_science_physique_1": {
+        "title": "CAP Matières générales – Sciences physiques (quiz 1)",
+        "description": "Révisions de sciences physiques – série 1.",
+        "data": quiz_cap_science_physique_1_data,
+        "icon": "🔬",
+        "color": "#0ea5e9",
+    },
+    "cap_science_physique_2": {
+        "title": "CAP Matières générales – Sciences physiques (quiz 2)",
+        "description": "Révisions de sciences physiques – série 2.",
+        "data": quiz_cap_science_physique_2_data,
+        "icon": "⚗️",
+        "color": "#0284c7",
+    },
+
     # ----- CS -----
     "cs_coiffure_coupe_couleur_100": {
         "title": "Certificat de spécialisation coiffure – coupe couleur",
@@ -345,6 +466,7 @@ def reset_quiz_state_for_selected_quiz():
     st.session_state.show_correction = False
     st.session_state.last_is_correct = None
     st.session_state.shuffled_questions = None
+    st.session_state.shuffled_answers = {}
 
     if st.session_state.theme_scores is None or not isinstance(st.session_state.theme_scores, dict):
         st.session_state.theme_scores = {}
@@ -373,6 +495,12 @@ def start_theme(theme_number: int):
     st.session_state.show_correction = False
     st.session_state.last_is_correct = None
     st.session_state.shuffled_questions = shuffled
+    st.session_state.shuffled_answers = {}
+    
+    # Compteur pour forcer le renouvellement des widgets à chaque tentative
+    if "theme_attempt_counter" not in st.session_state:
+        st.session_state.theme_attempt_counter = 0
+    st.session_state.theme_attempt_counter += 1
 
 
 def go_back_to_main_menu():
@@ -383,6 +511,7 @@ def go_back_to_main_menu():
     st.session_state.show_correction = False
     st.session_state.last_is_correct = None
     st.session_state.shuffled_questions = None
+    st.session_state.shuffled_answers = {}
 
 
 def get_current_question():
@@ -451,6 +580,7 @@ def generate_score_summary():
 # -----------------------
 
 CAP_FAMILIES = {
+    "Matières générales": [],
     "Métiers de bouche": [
         "cap_boucher_100",
         "cap_boulanger_100",
@@ -466,6 +596,7 @@ CAP_FAMILIES = {
     ],
     "Bâtiment": [
         "cap_carreleur_mosaiste_100",
+        "cap_couvreur_100",
         "cap_electricien_100",
         "cap_macon_100",
         "cap_menuisier_fabricant_100",
@@ -482,12 +613,43 @@ CAP_FAMILIES = {
     ],
 }
 
+# Matières générales CAP : matière -> icône + liste de quiz
+CAP_GENERAL_SUBJECTS = {
+    "Anglais": {
+        "icon": "🇬🇧",
+        "quizzes": ["cap_anglais_1", "cap_anglais_2"],
+    },
+    "Espagnol": {
+        "icon": "🇪🇸",
+        "quizzes": ["cap_espagnol_1", "cap_espagnol_2"],
+    },
+    "Français": {
+        "icon": "📘",
+        "quizzes": ["cap_francais_1", "cap_francais_2"],
+    },
+    "Histoire-Géographie": {
+        "icon": "🌍",
+        "quizzes": ["cap_histoire_geographie_1", "cap_histoire_geographie_2"],
+    },
+    "Mathématiques": {
+        "icon": "➗",
+        "quizzes": ["cap_mathematique_1", "cap_mathematique_2"],
+    },
+    "PSE": {
+        "icon": "🩺",
+        "quizzes": ["cap_pse_1", "cap_pse_2"],
+    },
+    "Sciences physiques": {
+        "icon": "🔬",
+        "quizzes": ["cap_science_physique_1", "cap_science_physique_2"],
+    },
+}
+
 BACPRO_QUIZZES = [
     "bacpro_mcvb_100",
     "bacpro_mcva_100",
     "bacpro_mva_100",
 ]
-
 BP_QUIZZES = [
     "bp_arts_de_la_cuisine_100",
     "bp_boucher_100",
@@ -495,27 +657,23 @@ BP_QUIZZES = [
     "bp_macon_100",
     "bp_migcs_100",
 ]
-
 BTS_QUIZZES = [
     "bts_meca_vp_100",
 ]
-
 CS_QUIZZES = [
     "cs_coiffure_coupe_couleur_100",
 ]
-
 LEVELS = ["CAP", "BAC PRO", "BP", "BTS", "CS"]
-
 
 # -----------------------
 # STATE SPÉCIFIQUE À LA NAVIGATION
 # -----------------------
-
 if "selected_level" not in st.session_state:
     st.session_state.selected_level = None
-
 if "selected_cap_family" not in st.session_state:
     st.session_state.selected_cap_family = None
+if "selected_cap_general_subject" not in st.session_state:
+    st.session_state.selected_cap_general_subject = None
 
 
 # -----------------------
@@ -602,28 +760,28 @@ def show_level_selector():
 # -----------------------
 
 def show_cap_families():
-    st.subheader("CAP – Choisissez une famille de métiers")
+    st.subheader("CAP – Choisissez une famille")
 
     if st.button("⬅️ Retour aux niveaux"):
         st.session_state.selected_level = None
         st.session_state.selected_cap_family = None
+        st.session_state.selected_cap_general_subject = None
         st.session_state.selected_quiz_key = None
         st.session_state.current_theme = None
         st.rerun()
 
     family_icons = {
+        "Matières générales": "📚",
         "Métiers de bouche": "🍽️",
         "Auto": "🚗",
         "Bâtiment": "🏗️",
         "Service": "🤝",
     }
 
-    for family_name, quiz_keys in CAP_FAMILIES.items():
-        sorted_keys = get_sorted_quiz_keys(quiz_keys)
-        has_quiz = len(sorted_keys) > 0
+    for family_name in CAP_FAMILIES.keys():
         icon = family_icons.get(family_name, "📚")
-        color = "#4f46e5" if has_quiz else "#9ca3af"
-        bg = "#eef2ff" if has_quiz else "#f3f4f6"
+        color = "#4f46e5"   # toutes les familles sont actives
+        bg = "#eef2ff"
 
         # Carte visuelle
         st.markdown(
@@ -644,18 +802,11 @@ def show_cap_families():
             unsafe_allow_html=True,
         )
 
-        # Bouton fonctionnel
-        label = (
-            f"{icon} {family_name}"
-            if has_quiz
-            else f"{icon} {family_name} (bientôt disponible)"
-        )
-        if st.button(
-            label,
-            key=f"btn_cap_family_{family_name}",
-            disabled=not has_quiz,
-        ):
+        # Bouton toujours actif (plus de "bientôt disponible")
+        label = f"{icon} {family_name}"
+        if st.button(label, key=f"btn_cap_family_{family_name}"):
             st.session_state.selected_cap_family = family_name
+            st.session_state.selected_cap_general_subject = None
             st.session_state.selected_quiz_key = None
             st.session_state.current_theme = None
             st.rerun()
@@ -706,24 +857,75 @@ def render_quiz_card(key):
         st.markdown("</div>", unsafe_allow_html=True)
 
 
-def show_quiz_list_for_cap_family():
-    family = st.session_state.selected_cap_family
-    if not family or family not in CAP_FAMILIES:
-        st.error("Famille CAP inconnue.")
-        return
-
-    st.subheader(f"CAP – {family}")
+def show_cap_general_subjects():
+    """Écran : choix de la matière générale CAP."""
+    st.subheader("CAP – Matières générales")
 
     if st.button("⬅️ Retour aux familles CAP"):
-        st.session_state.selected_quiz_key = None
-        st.session_state.current_theme = None
         st.session_state.selected_cap_family = None
+        st.session_state.selected_cap_general_subject = None
         st.rerun()
 
-    quiz_keys = get_sorted_quiz_keys(CAP_FAMILIES[family])
+    cols = st.columns(3)
+    for i, (subject, info) in enumerate(CAP_GENERAL_SUBJECTS.items()):
+        col = cols[i % 3]
+        with col:
+            if st.button(f"{info['icon']} {subject}", key=f"cap_gen_subject_{subject}"):
+                st.session_state.selected_cap_general_subject = subject
+                st.rerun()
 
-    for key in quiz_keys:
-        render_quiz_card(key)
+
+def show_cap_general_quizzes_for_subject():
+    """Écran : liste des quiz (1, 2, ...) pour une matière générale CAP."""
+    subject = st.session_state.selected_cap_general_subject
+    if not subject or subject not in CAP_GENERAL_SUBJECTS:
+        st.warning("Aucune matière sélectionnée.")
+        return
+
+    info = CAP_GENERAL_SUBJECTS[subject]
+    quizzes = info["quizzes"]
+
+    st.subheader(f"CAP – {subject}")
+
+    if st.button("⬅️ Retour aux matières générales"):
+        st.session_state.selected_cap_general_subject = None
+        st.rerun()
+
+    for idx, key in enumerate(quizzes, start=1):
+        quiz_info = QUIZZES[key]
+        label = f"Quiz {idx}"
+        if st.button(label, key=f"{subject}_quiz_{idx}"):
+            st.session_state.selected_quiz_key = key
+            reset_quiz_state_for_selected_quiz()
+            st.rerun()
+
+
+def show_quiz_list_for_cap_family():
+    """Écran : liste des quiz d'une famille CAP (dont cas particulier Matières générales)."""
+    family = st.session_state.selected_cap_family
+
+    if st.button("⬅️ Retour aux niveaux"):
+        st.session_state.selected_level = None
+        st.session_state.selected_cap_family = None
+        st.session_state.selected_cap_general_subject = None
+        st.rerun()
+
+    # Cas particulier : Matières générales → matières puis quiz
+    if family == "Matières générales":
+        if st.session_state.selected_cap_general_subject is None:
+            show_cap_general_subjects()
+        else:
+            show_cap_general_quizzes_for_subject()
+        return
+
+    # Cas normal : autres familles (Métiers de bouche, Auto, etc.)
+    quiz_keys = get_sorted_quiz_keys(CAP_FAMILIES.get(family, []))
+
+    if not quiz_keys:
+        st.info(f"Aucun quiz CAP disponible pour la famille « {family} » pour le moment.")
+    else:
+        for key in quiz_keys:
+            render_quiz_card(key)
 
 
 def show_quiz_list_for_bp():
@@ -922,11 +1124,13 @@ def show_question_screen():
             st.rerun()
         return
 
+    # Initialisation du stockage des réponses mélangées
     if "shuffled_answers" not in st.session_state:
         st.session_state.shuffled_answers = {}
 
     q_id = f"{theme_number}_{idx}"
 
+    # Mélange des réponses pour cette question (si pas déjà fait pour cet affichage)
     if q_id not in st.session_state.shuffled_answers:
         options = [opt.copy() for opt in q["answerOptions"]]
         random.shuffle(options)
@@ -945,11 +1149,13 @@ def show_question_screen():
     st.write(q["question"])
 
     if not st.session_state.answer_locked:
+        widget_key = f"q_{theme_number}_{idx}_{hash(q['question'])}"
         selected = st.radio(
             "Choisissez une réponse :",
             options=options_text,
-            key=f"q_{theme_number}_{idx}",
+            key=widget_key,
         )
+
         st.session_state.selected_answer = selected
 
         col1, col2 = st.columns(2)
@@ -1031,6 +1237,7 @@ def show_question_screen():
             st.session_state.answer_locked = False
             st.session_state.selected_answer = None
 
+            # On supprime les réponses mélangées de la question précédente
             if q_id in st.session_state.shuffled_answers:
                 del st.session_state.shuffled_answers[q_id]
 
