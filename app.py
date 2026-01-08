@@ -2,11 +2,7 @@ import streamlit as st
 import random
 from datetime import datetime
 
-st.set_page_config(
-    page_title="Quiz CFA",
-    page_icon="🎓",
-    layout="centered"
-)
+st.set_page_config(page_title="Quiz CFA", page_icon="🎓", layout="centered")
 
 # -----------------------
 # IMPORT DES QUIZ DISPONIBLES
@@ -51,7 +47,7 @@ from quizzes.quiz_cap_metiers.quiz_cap_sanitaire_100 import quiz_data as quiz_ca
 from quizzes.quiz_cap_metiers.quiz_cap_serrurier_metallier_100 import quiz_data as quiz_cap_serrurier_metallier_data
 from quizzes.quiz_cap_metiers.quiz_cap_thermique_100 import quiz_data as quiz_cap_thermique_data
 
-# CAP matières générales (nouveaux)
+# CAP matières générales
 from quizzes.quiz_cap_generaux.quiz_cap_anglais_1 import quiz_data as quiz_cap_anglais_1_data
 from quizzes.quiz_cap_generaux.quiz_cap_anglais_2 import quiz_data as quiz_cap_anglais_2_data
 from quizzes.quiz_cap_generaux.quiz_cap_espagnol_1 import quiz_data as quiz_cap_espagnol_1_data
@@ -70,30 +66,29 @@ from quizzes.quiz_cap_generaux.quiz_cap_science_physique_2 import quiz_data as q
 # CS
 from quizzes.quiz_cs_metiers.quiz_cs_coiffure_coupe_couleur_100 import quiz_data as quiz_cs_coiffure_coupe_couleur_data
 
-
 # -----------------------
-# DÉFINITION DES QUIZ (TRIÉS ALPHABÉTIQUEMENT PAR CLÉ)
+# QUIZZES
 # -----------------------
 
 QUIZZES = {
     # ----- BAC PRO -----
     "bacpro_mcvb_100": {
-        "title": "Bac Pro Métiers du commerce et de la vente option B – prospection et valorisation de l’offre commerciale",
+        "title": "Bac Pro Métiers du commerce et de la vente option B (prospection et valorisation de l'offre commerciale)",
         "description": "Révisions complètes Bac Pro MCV option B.",
         "data": quiz_bacpro_mcvb_data,
         "icon": "🛍️",
         "color": "#1abc9c",
     },
     "bacpro_mcva_100": {
-        "title": "Bac Pro Métiers du commerce et de la vente option A – animation et gestion de l’espace commercial",
+        "title": "Bac Pro Métiers du commerce et de la vente option A (animation et gestion de l'espace commercial)",
         "description": "Révisions complètes Bac Pro MCV option A.",
         "data": quiz_bacpro_mcva_data,
         "icon": "🏬",
         "color": "#27ae60",
     },
     "bacpro_mva_100": {
-        "title": "Bac Pro Maintenance des véhicules option A – voitures particulières",
-        "description": "Révisions complètes Bac Pro Maintenance des véhicules (option A – VP).",
+        "title": "Bac Pro Maintenance des véhicules option A (voitures particulières)",
+        "description": "Révisions complètes Bac Pro Maintenance des véhicules option A (VP).",
         "data": quiz_bacpro_mva_data,
         "icon": "🚗",
         "color": "#2980b9",
@@ -129,7 +124,7 @@ QUIZZES = {
         "color": "#7f8c8d",
     },
     "bp_migcs_100": {
-        "title": "BP Métiers de l’industrie graphique – communication et services",
+        "title": "BP Métiers de l'industrie graphique (communication et services)",
         "description": "Révisions complètes BP MIGCS.",
         "data": quiz_bp_migcs_data,
         "icon": "🖨️",
@@ -138,14 +133,14 @@ QUIZZES = {
 
     # ----- BTS -----
     "bts_meca_vp_100": {
-        "title": "BTS Maintenance des véhicules, option A – voitures particulières",
-        "description": "Révisions complètes BTS Maintenance des véhicules (option A – VP).",
+        "title": "BTS Maintenance des véhicules, option A (voitures particulières)",
+        "description": "Révisions complètes BTS Maintenance des véhicules option A (VP).",
         "data": quiz_bts_meca_vp_data,
-        "icon": "🚗",
+        "icon": "🔧",
         "color": "#2980b9",
     },
 
-    # ----- CAP -----
+    # ----- CAP métiers -----
     "cap_boucher_100": {
         "title": "CAP Boucher",
         "description": "Révisions complètes CAP Boucher.",
@@ -164,14 +159,14 @@ QUIZZES = {
         "title": "CAP Carreleur-mosaïste",
         "description": "Révisions complètes CAP Carreleur-mosaïste.",
         "data": quiz_cap_carreleur_data,
-        "icon": "🧱",
+        "icon": "🔲",
         "color": "#2ecc71",
     },
     "cap_carrosserie_automobile_100": {
         "title": "CAP Réparation des carrosseries",
         "description": "Révisions complètes CAP Réparation des carrosseries.",
         "data": quiz_cap_carrosserie_data,
-        "icon": "🔧",
+        "icon": "🚙",
         "color": "#34495e",
     },
     "cap_charcutier_traiteur_100": {
@@ -185,7 +180,7 @@ QUIZZES = {
         "title": "CAP Commercialisation et services en hôtel-café-restaurant",
         "description": "Révisions complètes CAP Commercialisation et services en hôtel-café-restaurant.",
         "data": quiz_cap_chcr_data,
-        "icon": "🍽️",
+        "icon": "☕",
         "color": "#e67e22",
     },
     "cap_coiffure_100": {
@@ -231,10 +226,10 @@ QUIZZES = {
         "color": "#95a5a6",
     },
     "cap_meca_vp_100": {
-        "title": "CAP Maintenance des véhicules, option A – voitures particulières",
-        "description": "Révisions complètes CAP Maintenance des véhicules (option voitures particulières).",
+        "title": "CAP Maintenance des véhicules, option A (voitures particulières)",
+        "description": "Révisions complètes CAP Maintenance des véhicules option voitures particulières.",
         "data": quiz_cap_meca_vp_data,
-        "icon": "🚗",
+        "icon": "🔧",
         "color": "#34495e",
     },
     "cap_menuisier_fabricant_100": {
@@ -248,14 +243,14 @@ QUIZZES = {
         "title": "CAP Menuisier installateur",
         "description": "Révisions complètes CAP Menuisier installateur.",
         "data": quiz_cap_menuisier_installateur_data,
-        "icon": "🪛",
+        "icon": "🔨",
         "color": "#a0522d",
     },
     "cap_patissier_100": {
         "title": "CAP Pâtissier",
         "description": "Révisions complètes CAP Pâtissier.",
         "data": quiz_cap_patissier_data,
-        "icon": "🍰",
+        "icon": "🧁",
         "color": "#e91e63",
     },
     "cap_peintre_100": {
@@ -273,10 +268,10 @@ QUIZZES = {
         "color": "#3498db",
     },
     "cap_platre_isolation_100": {
-        "title": "CAP Métiers du plâtre et de l’isolation",
-        "description": "Révisions complètes CAP Métiers du plâtre et de l’isolation.",
+        "title": "CAP Métiers du plâtre et de l'isolation",
+        "description": "Révisions complètes CAP Métiers du plâtre et de l'isolation.",
         "data": quiz_cap_platre_isolation_data,
-        "icon": "🏗️",
+        "icon": "🧱",
         "color": "#bdc3c7",
     },
     "cap_sanitaire_100": {
@@ -290,7 +285,7 @@ QUIZZES = {
         "title": "CAP Serrurier-métallier",
         "description": "Révisions complètes CAP Serrurier-métallier.",
         "data": quiz_cap_serrurier_metallier_data,
-        "icon": "🔑",
+        "icon": "🔐",
         "color": "#7f8c8d",
     },
     "cap_thermique_100": {
@@ -304,28 +299,28 @@ QUIZZES = {
     # ----- CAP Matières générales -----
     "cap_anglais_1": {
         "title": "CAP Matières générales – Anglais (quiz 1)",
-        "description": "Révisions d’anglais – série 1.",
+        "description": "Révisions d'anglais – série 1.",
         "data": quiz_cap_anglais_1_data,
         "icon": "🇬🇧",
         "color": "#3b82f6",
     },
     "cap_anglais_2": {
         "title": "CAP Matières générales – Anglais (quiz 2)",
-        "description": "Révisions d’anglais – série 2.",
+        "description": "Révisions d'anglais – série 2.",
         "data": quiz_cap_anglais_2_data,
         "icon": "🇬🇧",
         "color": "#2563eb",
     },
     "cap_espagnol_1": {
         "title": "CAP Matières générales – Espagnol (quiz 1)",
-        "description": "Révisions d’espagnol – série 1.",
+        "description": "Révisions d'espagnol – série 1.",
         "data": quiz_cap_espagnol_1_data,
         "icon": "🇪🇸",
         "color": "#f97316",
     },
     "cap_espagnol_2": {
         "title": "CAP Matières générales – Espagnol (quiz 2)",
-        "description": "Révisions d’espagnol – série 2.",
+        "description": "Révisions d'espagnol – série 2.",
         "data": quiz_cap_espagnol_2_data,
         "icon": "🇪🇸",
         "color": "#ea580c",
@@ -346,14 +341,14 @@ QUIZZES = {
     },
     "cap_histoire_geographie_1": {
         "title": "CAP Matières générales – Histoire-Géographie (quiz 1)",
-        "description": "Révisions d’histoire-géographie – série 1.",
+        "description": "Révisions d'histoire-géographie – série 1.",
         "data": quiz_cap_histoire_geographie_1_data,
         "icon": "🌍",
         "color": "#facc15",
     },
     "cap_histoire_geographie_2": {
         "title": "CAP Matières générales – Histoire-Géographie (quiz 2)",
-        "description": "Révisions d’histoire-géographie – série 2.",
+        "description": "Révisions d'histoire-géographie – série 2.",
         "data": quiz_cap_histoire_geographie_2_data,
         "icon": "🗺️",
         "color": "#eab308",
@@ -403,25 +398,120 @@ QUIZZES = {
 
     # ----- CS -----
     "cs_coiffure_coupe_couleur_100": {
-        "title": "Certificat de spécialisation coiffure – coupe couleur",
+        "title": "Certificat de spécialisation coiffure coupe couleur",
         "description": "Révisions complètes CS Coiffure coupe couleur.",
         "data": quiz_cs_coiffure_coupe_couleur_data,
-        "icon": "✂️",
+        "icon": "💇",
         "color": "#e84393",
     },
 }
+# -----------------------
+# COULEURS PAR THÈME
+# -----------------------
 
-# Couleurs par numéro de thème
 THEME_COLORS = {
-    1: "#4f46e5",  # bleu/violet
+    1: "#4f46e5",  # bleu-violet
     2: "#16a34a",  # vert
     3: "#ea580c",  # orange
     4: "#0ea5e9",  # bleu clair
-    5: "#e11d48",  # rose/rouge
+    5: "#e11d48",  # rose-rouge
 }
 
 # -----------------------
-# STATE GLOBAL
+# CATALOGUE DES QUIZ PAR NIVEAU / FAMILLE
+# -----------------------
+
+CAP_FAMILIES = {
+    "Matières générales": [],
+    "Métiers de bouche": [
+        "cap_boucher_100",
+        "cap_boulanger_100",
+        "cap_patissier_100",
+        "cap_charcutier_traiteur_100",
+        "cap_chcr_100",
+        "cap_cuisine_100",
+    ],
+    "Auto": [
+        "cap_carrosserie_automobile_100",
+        "cap_peinture_carrosserie_100",
+        "cap_meca_vp_100",
+    ],
+    "Bâtiment": [
+        "cap_carreleur_mosaiste_100",
+        "cap_couvreur_100",
+        "cap_electricien_100",
+        "cap_macon_100",
+        "cap_menuisier_fabricant_100",
+        "cap_menuisier_installateur_100",
+        "cap_platre_isolation_100",
+        "cap_peintre_100",
+        "cap_serrurier_metallier_100",
+        "cap_sanitaire_100",
+        "cap_thermique_100",
+    ],
+    "Service": [
+        "cap_coiffure_100",
+        "cap_equipier_polyvalent_commerce_100",
+    ],
+}
+
+CAP_GENERAL_SUBJECTS = {
+    "Anglais": {
+        "icon": "🇬🇧",
+        "quizzes": ["cap_anglais_1", "cap_anglais_2"],
+    },
+    "Espagnol": {
+        "icon": "🇪🇸",
+        "quizzes": ["cap_espagnol_1", "cap_espagnol_2"],
+    },
+    "Français": {
+        "icon": "📘",
+        "quizzes": ["cap_francais_1", "cap_francais_2"],
+    },
+    "Histoire-Géographie": {
+        "icon": "🌍",
+        "quizzes": ["cap_histoire_geographie_1", "cap_histoire_geographie_2"],
+    },
+    "Mathématiques": {
+        "icon": "➗",
+        "quizzes": ["cap_mathematique_1", "cap_mathematique_2"],
+    },
+    "PSE": {
+        "icon": "🩺",
+        "quizzes": ["cap_pse_1", "cap_pse_2"],
+    },
+    "Sciences physiques": {
+        "icon": "🔬",
+        "quizzes": ["cap_science_physique_1", "cap_science_physique_2"],
+    },
+}
+
+BACPRO_QUIZZES = [
+    "bacpro_mcvb_100",
+    "bacpro_mcva_100",
+    "bacpro_mva_100",
+]
+
+BP_QUIZZES = [
+    "bp_arts_de_la_cuisine_100",
+    "bp_boucher_100",
+    "bp_coiffure_100",
+    "bp_macon_100",
+    "bp_migcs_100",
+]
+
+BTS_QUIZZES = [
+    "bts_meca_vp_100",
+]
+
+CS_QUIZZES = [
+    "cs_coiffure_coupe_couleur_100",
+]
+
+LEVELS = ["CAP", "BAC PRO", "BP", "BTS", "CS"]
+
+# -----------------------
+# STATE SPÉCIFIQUE À LA NAVIGATION
 # -----------------------
 
 if "selected_quiz_key" not in st.session_state:
@@ -440,6 +530,19 @@ if "last_is_correct" not in st.session_state:
     st.session_state.last_is_correct = None
 if "shuffled_questions" not in st.session_state:
     st.session_state.shuffled_questions = None
+if "selected_level" not in st.session_state:
+    st.session_state.selected_level = None
+if "selected_cap_family" not in st.session_state:
+    st.session_state.selected_cap_family = None
+if "selected_cap_general_subject" not in st.session_state:
+    st.session_state.selected_cap_general_subject = None
+# -----------------------
+# FONCTIONS UTILITAIRES
+# -----------------------
+
+def get_sorted_quiz_keys(keys):
+    existing = [k for k in keys if k in QUIZZES]
+    return sorted(existing, key=lambda k: QUIZZES[k]["title"])
 
 
 # -----------------------
@@ -485,7 +588,6 @@ def start_theme(theme_number: int):
     theme = quiz_data["themes"][theme_number]
     questions = theme["questions"]
     
-    # Créer une copie mélangée des questions
     shuffled = questions.copy()
     random.shuffle(shuffled)
     
@@ -496,8 +598,8 @@ def start_theme(theme_number: int):
     st.session_state.last_is_correct = None
     st.session_state.shuffled_questions = shuffled
     st.session_state.shuffled_answers = {}
+    st.session_state.question_results = []
     
-    # Compteur pour forcer le renouvellement des widgets à chaque tentative
     if "theme_attempt_counter" not in st.session_state:
         st.session_state.theme_attempt_counter = 0
     st.session_state.theme_attempt_counter += 1
@@ -573,125 +675,43 @@ def generate_score_summary():
     lines.append("=" * 50)
     
     return "\n".join(lines)
-
-
 # -----------------------
-# CATALOGUE DES QUIZ PAR NIVEAU / FAMILLE
-# -----------------------
-
-CAP_FAMILIES = {
-    "Matières générales": [],
-    "Métiers de bouche": [
-        "cap_boucher_100",
-        "cap_boulanger_100",
-        "cap_patissier_100",
-        "cap_charcutier_traiteur_100",
-        "cap_chcr_100",
-        "cap_cuisine_100",
-    ],
-    "Auto": [
-        "cap_carrosserie_automobile_100",
-        "cap_peinture_carrosserie_100",
-        "cap_meca_vp_100",
-    ],
-    "Bâtiment": [
-        "cap_carreleur_mosaiste_100",
-        "cap_couvreur_100",
-        "cap_electricien_100",
-        "cap_macon_100",
-        "cap_menuisier_fabricant_100",
-        "cap_menuisier_installateur_100",
-        "cap_platre_isolation_100",
-        "cap_peintre_100",
-        "cap_serrurier_metallier_100",
-        "cap_sanitaire_100",
-        "cap_thermique_100",
-    ],
-    "Service": [
-        "cap_coiffure_100",
-        "cap_equipier_polyvalent_commerce_100",
-    ],
-}
-
-# Matières générales CAP : matière -> icône + liste de quiz
-CAP_GENERAL_SUBJECTS = {
-    "Anglais": {
-        "icon": "🇬🇧",
-        "quizzes": ["cap_anglais_1", "cap_anglais_2"],
-    },
-    "Espagnol": {
-        "icon": "🇪🇸",
-        "quizzes": ["cap_espagnol_1", "cap_espagnol_2"],
-    },
-    "Français": {
-        "icon": "📘",
-        "quizzes": ["cap_francais_1", "cap_francais_2"],
-    },
-    "Histoire-Géographie": {
-        "icon": "🌍",
-        "quizzes": ["cap_histoire_geographie_1", "cap_histoire_geographie_2"],
-    },
-    "Mathématiques": {
-        "icon": "➗",
-        "quizzes": ["cap_mathematique_1", "cap_mathematique_2"],
-    },
-    "PSE": {
-        "icon": "🩺",
-        "quizzes": ["cap_pse_1", "cap_pse_2"],
-    },
-    "Sciences physiques": {
-        "icon": "🔬",
-        "quizzes": ["cap_science_physique_1", "cap_science_physique_2"],
-    },
-}
-
-BACPRO_QUIZZES = [
-    "bacpro_mcvb_100",
-    "bacpro_mcva_100",
-    "bacpro_mva_100",
-]
-BP_QUIZZES = [
-    "bp_arts_de_la_cuisine_100",
-    "bp_boucher_100",
-    "bp_coiffure_100",
-    "bp_macon_100",
-    "bp_migcs_100",
-]
-BTS_QUIZZES = [
-    "bts_meca_vp_100",
-]
-CS_QUIZZES = [
-    "cs_coiffure_coupe_couleur_100",
-]
-LEVELS = ["CAP", "BAC PRO", "BP", "BTS", "CS"]
-
-# -----------------------
-# STATE SPÉCIFIQUE À LA NAVIGATION
-# -----------------------
-if "selected_level" not in st.session_state:
-    st.session_state.selected_level = None
-if "selected_cap_family" not in st.session_state:
-    st.session_state.selected_cap_family = None
-if "selected_cap_general_subject" not in st.session_state:
-    st.session_state.selected_cap_general_subject = None
-
-
-# -----------------------
-# OUTILS D’ORDRE ALPHABÉTIQUE
-# -----------------------
-
-def get_sorted_quiz_keys(keys):
-    existing = [k for k in keys if k in QUIZZES]
-    return sorted(existing, key=lambda k: QUIZZES[k]["title"])
-
-
-# -----------------------
-# INTERFACE : NIVEAU DE FORMATION
+# INTERFACE : SÉLECTEUR DE NIVEAU
 # -----------------------
 
 def show_level_selector():
-    st.title("Quiz CFA – Centre de Foix")
-    st.subheader("Choisissez un niveau de formation")
+    st.markdown(
+        """
+        <div style='
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem 1rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        '>
+            <h1 style='
+                font-size: 2.8rem;
+                margin: 0;
+                color: #ffffff;
+                font-weight: 800;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            '>Quiz CFA</h1>
+            <p style='
+                font-size: 1.2rem;
+                color: #f0f0f0;
+                margin: 0.5rem 0 0 0;
+                font-weight: 400;
+            '>Centre de Foix</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    
+    st.markdown(
+        "<h2 style='text-align:center;margin-bottom:2rem;color:#374151;font-size:1.8rem;'>Choisissez un niveau de formation</h2>",
+        unsafe_allow_html=True
+    )
 
     level_colors = {
         "CAP": "#4f46e5",
@@ -700,59 +720,63 @@ def show_level_selector():
         "BTS": "#0ea5e9",
         "CS": "#e11d48",
     }
+    
     level_icons = {
         "CAP": "🎓",
-        "BP": "🎓",
-        "BAC PRO": "📘",
-        "BTS": "📙",
+        "BP": "📘",
+        "BAC PRO": "🏆",
+        "BTS": "🎯",
         "CS": "⭐",
     }
 
+    st.markdown("<div style='max-width:900px;margin:0 auto;'>", unsafe_allow_html=True)
+    
     cols = st.columns(len(LEVELS))
-
+    
     for i, level in enumerate(LEVELS):
         color = level_colors.get(level, "#6b7280")
-        icon = level_icons.get(level, "❓")
+        icon = level_icons.get(level, "📚")
         enabled = level in ["CAP", "BP", "BAC PRO", "BTS", "CS"]
-
+        
         with cols[i]:
-            # Carte visuelle
             st.markdown(
                 f"""
                 <div style="
-                    border-radius: 12px;
-                    padding: 0.8rem;
-                    margin-bottom: 0.5rem;
-                    background: {'#eef2ff' if enabled else '#f3f4f6'};
-                    border: 2px solid {color};
+                    background: linear-gradient(135deg, {color}15 0%, {color}05 100%);
+                    border: 3px solid {color};
+                    border-radius: 16px;
+                    padding: 1.5rem 1rem 0.5rem 1rem;
                     text-align: center;
+                    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+                    min-height: 160px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 0.8rem;
                 ">
-                    <span style="font-size:2rem;">{icon}</span><br/>
-                    <strong>{level}</strong><br/>
-                    <span style="font-size:0.8rem;color:#4b5563;">
-                        {"Cliquez pour continuer" if enabled else "Bientôt disponible"}
-                    </span>
+                    <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">{icon}</div>
+                    <div style="font-size: 1.4rem; font-weight: 700; color: {color}; margin-bottom: 0.3rem;">{level}</div>
                 </div>
                 """,
                 unsafe_allow_html=True,
             )
-
-            # Bouton fonctionnel
-            label = (
-                f"{icon} {level}"
-                if enabled
-                else f"{icon} {level} (bientôt disponible)"
-            )
-            if st.button(
-                label,
-                key=f"btn_level_{level}",
-                disabled=not enabled,
-            ):
-                st.session_state.selected_level = level
-                st.session_state.selected_cap_family = None
-                st.session_state.selected_quiz_key = None
-                st.session_state.current_theme = None
-                st.rerun()
+            
+            if enabled:
+                if st.button(f"Accéder au {level}", key=f"btn_level_{level}", type="primary", use_container_width=True):
+                    st.session_state.selected_level = level
+                    st.session_state.selected_cap_family = None
+                    st.session_state.selected_cap_general_subject = None
+                    st.session_state.selected_quiz_key = None
+                    st.session_state.current_theme = None
+                    st.rerun()
+            else:
+                st.markdown(
+                    f"<p style='text-align:center;color:#9ca3af;font-size:0.9rem;margin-top:-0.5rem;'>Bientôt disponible</p>",
+                    unsafe_allow_html=True
+                )
+    
+    st.markdown("</div>", unsafe_allow_html=True)
 
 
 # -----------------------
@@ -760,9 +784,12 @@ def show_level_selector():
 # -----------------------
 
 def show_cap_families():
-    st.subheader("CAP – Choisissez une famille")
+    st.markdown(
+        "<h2 style='text-align:center;margin-bottom:2rem;color:#374151;font-size:1.8rem;'>CAP – Choisissez une famille</h2>",
+        unsafe_allow_html=True
+    )
 
-    if st.button("⬅️ Retour aux niveaux"):
+    if st.button("⬅️ Retour aux niveaux", key="back_to_levels"):
         st.session_state.selected_level = None
         st.session_state.selected_cap_family = None
         st.session_state.selected_cap_general_subject = None
@@ -770,91 +797,61 @@ def show_cap_families():
         st.session_state.current_theme = None
         st.rerun()
 
-    family_icons = {
-        "Matières générales": "📚",
-        "Métiers de bouche": "🍽️",
-        "Auto": "🚗",
-        "Bâtiment": "🏗️",
-        "Service": "🤝",
+    family_config = {
+        "Matières générales": {"icon": "📚", "color": "#4f46e5"},
+        "Métiers de bouche": {"icon": "🍽️", "color": "#f97316"},
+        "Auto": {"icon": "🚗", "color": "#64748b"},
+        "Bâtiment": {"icon": "🏗️", "color": "#92400e"},
+        "Service": {"icon": "🤝", "color": "#10b981"},
     }
 
-    for family_name in CAP_FAMILIES.keys():
-        icon = family_icons.get(family_name, "📚")
-        color = "#4f46e5"   # toutes les familles sont actives
-        bg = "#eef2ff"
+    st.markdown("<div style='max-width:800px;margin:0 auto;'>", unsafe_allow_html=True)
 
-        # Carte visuelle
-        st.markdown(
-            f"""
-            <div style="
-                border: 2px solid {color};
-                border-radius: 12px;
-                padding: 0.8rem 1rem;
-                margin: 0.5rem 0;
-                background: {bg};
-                display: flex;
-                align-items: center;
-            ">
-                <span style="font-size:1.8rem;margin-right:0.7rem;">{icon}</span>
-                <strong>{family_name}</strong>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
-        # Bouton toujours actif (plus de "bientôt disponible")
-        label = f"{icon} {family_name}"
-        if st.button(label, key=f"btn_cap_family_{family_name}"):
-            st.session_state.selected_cap_family = family_name
-            st.session_state.selected_cap_general_subject = None
-            st.session_state.selected_quiz_key = None
-            st.session_state.current_theme = None
-            st.rerun()
-
-# -----------------------
-# INTERFACE : LISTE DES QUIZ (CAP, BP, BTS, CS)
-# -----------------------
-
-def render_quiz_card(key):
-    info = QUIZZES[key]
-    color = info.get("color", "#666")
-
-    st.markdown(
-        f"""
-        <style>
-        .quiz-card-{key} {{
-            background: linear-gradient(135deg, {color}15, {color}05);
-            border-left: 5px solid {color};
-            border-radius: 10px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }}
-        .quiz-card-{key}:hover {{
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-    with st.container():
-        st.markdown(f'<div class="quiz-card-{key}">', unsafe_allow_html=True)
-        cols = st.columns([1, 5])
-        with cols[0]:
-            st.markdown(
-                f"<h1 style='font-size:3rem;margin:0;'>{info.get('icon', '')}</h1>",
-                unsafe_allow_html=True,
-            )
-        with cols[1]:
-            st.markdown(f"**{info['title']}**")
-            st.write(info["description"])
-            if st.button("Lancer ce quiz", key=f"select_quiz_{key}"):
-                st.session_state.selected_quiz_key = key
-                reset_quiz_state_for_selected_quiz()
-                st.rerun()
-        st.markdown("</div>", unsafe_allow_html=True)
+    for idx, family_name in enumerate(family_config.keys()):
+        if idx % 2 == 0:
+            cols = st.columns(2)
+        
+        col = cols[idx % 2]
+        config = family_config[family_name]
+        
+        with col:
+            icon = config["icon"]
+            color = config["color"]
+            
+            if family_name == "Matières générales":
+                quiz_count = sum(len(info["quizzes"]) for info in CAP_GENERAL_SUBJECTS.values())
+                badge = f"{quiz_count} quiz"
+            else:
+                quiz_keys = CAP_FAMILIES.get(family_name, [])
+                quiz_count = len(quiz_keys)
+                badge = None
+            
+            has_quiz = quiz_count > 0
+            
+            badge_html = ""
+            if badge:
+                badge_html = f'<div style="position:absolute;top:10px;right:10px;background:{color};color:white;padding:0.3rem 0.6rem;border-radius:20px;font-size:0.75rem;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.15);">{badge}</div>'
+            
+            card_html = f"""
+<div style="position:relative;background:linear-gradient(135deg, {color}15 0%, {color}05 100%);border:3px solid {color};border-radius:16px;padding:1.5rem;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.12);min-height:140px;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:1rem;opacity:{'1' if has_quiz else '0.5'};">
+{badge_html}
+<div style="font-size:3rem;margin-bottom:0.5rem;">{icon}</div>
+<div style="font-size:1.3rem;font-weight:700;color:{color};">{family_name}</div>
+</div>
+"""
+            st.markdown(card_html, unsafe_allow_html=True)
+            
+            if has_quiz:
+                if st.button(f"Accéder", key=f"btn_family_{family_name}", type="primary", use_container_width=True):
+                    st.session_state.selected_cap_family = family_name
+                    st.session_state.selected_cap_general_subject = None
+                    st.session_state.selected_quiz_key = None
+                    st.session_state.current_theme = None
+                    st.rerun()
+            else:
+                st.markdown("<p style='text-align:center;color:#9ca3af;font-size:0.9rem;'>Bientôt disponible</p>", unsafe_allow_html=True)
+    
+    st.markdown("</div>", unsafe_allow_html=True)
 
 
 def show_cap_general_subjects():
@@ -900,6 +897,51 @@ def show_cap_general_quizzes_for_subject():
             st.rerun()
 
 
+def render_quiz_card(key):
+    info = QUIZZES[key]
+    color = info.get("color", "#666")
+
+    st.markdown(
+        f"""
+        <style>
+        .quiz-card-{key} {{
+            background: linear-gradient(135deg, {color}15, {color}05);
+            border-left: 5px solid {color};
+            border-radius: 10px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }}
+        .quiz-card-{key}:hover {{
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    with st.container():
+        st.markdown(f'<div class="quiz-card-{key}">', unsafe_allow_html=True)
+        cols = st.columns([1, 5])
+        with cols[0]:
+            st.markdown(
+                f"<h1 style='font-size:3rem;margin:0;'>{info.get('icon', '')}</h1>",
+                unsafe_allow_html=True,
+            )
+        with cols[1]:
+            st.markdown(f"**{info['title']}**")
+            st.write(info["description"])
+            if st.button("Lancer ce quiz", key=f"select_quiz_{key}"):
+                st.session_state.selected_quiz_key = key
+                reset_quiz_state_for_selected_quiz()
+                st.rerun()
+        
+        st.markdown("</div>", unsafe_allow_html=True)
+# -----------------------
+# INTERFACE : LISTE DES QUIZ CAP
+# -----------------------
+
 def show_quiz_list_for_cap_family():
     """Écran : liste des quiz d'une famille CAP (dont cas particulier Matières générales)."""
     family = st.session_state.selected_cap_family
@@ -910,7 +952,6 @@ def show_quiz_list_for_cap_family():
         st.session_state.selected_cap_general_subject = None
         st.rerun()
 
-    # Cas particulier : Matières générales → matières puis quiz
     if family == "Matières générales":
         if st.session_state.selected_cap_general_subject is None:
             show_cap_general_subjects()
@@ -918,7 +959,6 @@ def show_quiz_list_for_cap_family():
             show_cap_general_quizzes_for_subject()
         return
 
-    # Cas normal : autres familles (Métiers de bouche, Auto, etc.)
     quiz_keys = get_sorted_quiz_keys(CAP_FAMILIES.get(family, []))
 
     if not quiz_keys:
@@ -944,6 +984,7 @@ def show_quiz_list_for_bp():
     else:
         for key in quiz_keys:
             render_quiz_card(key)
+
 
 def show_quiz_list_for_bacpro():
     st.subheader("BAC PRO – Choisissez un quiz")
@@ -998,6 +1039,7 @@ def show_quiz_list_for_cs():
         for key in quiz_keys:
             render_quiz_card(key)
 
+
 # -----------------------
 # INTERFACE : SÉLECTEUR DE QUIZ (HUB)
 # -----------------------
@@ -1022,9 +1064,6 @@ def show_quiz_selector():
         show_quiz_list_for_cs()
     else:
         show_level_selector()
-
-
-
 # -----------------------
 # INTERFACE : MENU DES THÈMES (POUR LE QUIZ COURANT)
 # -----------------------
@@ -1112,9 +1151,38 @@ def show_question_screen():
         unsafe_allow_html=True,
     )
 
-    progress = (idx + 1) / total_questions
-    st.progress(progress)
-    st.write(f"Question {idx + 1} / {total_questions}")
+    progress_percent = ((idx + 1) / total_questions) * 100
+    st.markdown(
+        f"""
+        <div style="
+            width:100%;
+            background:#e5e7eb;
+            border-radius:12px;
+            height:24px;
+            position:relative;
+            margin-bottom:0.5rem;
+            overflow:hidden;
+        ">
+            <div style="
+                width:{progress_percent}%;
+                background:linear-gradient(90deg, {color} 0%, {color}dd 100%);
+                height:100%;
+                border-radius:12px;
+                transition:width 0.4s ease;
+            "></div>
+            <span style="
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform:translate(-50%, -50%);
+                font-weight:600;
+                font-size:0.85rem;
+                color:#1f2937;
+            ">Question {idx + 1} / {total_questions}</span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
     q = get_current_question()
     if q is None:
@@ -1124,13 +1192,11 @@ def show_question_screen():
             st.rerun()
         return
 
-    # Initialisation du stockage des réponses mélangées
     if "shuffled_answers" not in st.session_state:
         st.session_state.shuffled_answers = {}
 
     q_id = f"{theme_number}_{idx}"
 
-    # Mélange des réponses pour cette question (si pas déjà fait pour cet affichage)
     if q_id not in st.session_state.shuffled_answers:
         options = [opt.copy() for opt in q["answerOptions"]]
         random.shuffle(options)
@@ -1139,29 +1205,56 @@ def show_question_screen():
         st.session_state.shuffled_answers[q_id] = options
 
     answer_options = st.session_state.shuffled_answers[q_id]
-    options_text = [opt["text"] for opt in answer_options]
 
     if "answer_locked" not in st.session_state:
         st.session_state.answer_locked = False
     if "selected_answer" not in st.session_state:
         st.session_state.selected_answer = None
+    if "theme_attempt_counter" not in st.session_state:
+        st.session_state.theme_attempt_counter = 0
 
-    st.write(q["question"])
+    st.markdown(f"<h3 style='margin:1rem 0;'>{q['question']}</h3>", unsafe_allow_html=True)
 
     if not st.session_state.answer_locked:
-        widget_key = f"q_{theme_number}_{idx}_{hash(q['question'])}"
-        selected = st.radio(
-            "Choisissez une réponse :",
-            options=options_text,
-            key=widget_key,
+        st.markdown("<p style='font-weight:600;margin-bottom:0.5rem;'>Choisissez une réponse :</p>", unsafe_allow_html=True)
+
+        st.markdown(
+            f"""
+            <style>
+            div[data-testid="stButton"] > button {{
+                width: 100%;
+                text-align: left;
+                padding: 1rem;
+                border-radius: 12px;
+                border: 2px solid #d1d5db;
+                background: #ffffff;
+                color: #1f2937;
+                font-size: 1rem;
+                transition: all 0.2s ease;
+                margin-bottom: 0.8rem;
+                min-height: 60px;
+            }}
+            </style>
+            """,
+            unsafe_allow_html=True,
         )
 
-        st.session_state.selected_answer = selected
+        for opt in answer_options:
+            opt_text = opt["text"]
+            opt_key = opt["key"]
+            is_selected = (st.session_state.selected_answer == opt_text)
 
+            button_label = f"{'✓ ' if is_selected else ''}{opt_key}. {opt_text}"
+
+            if st.button(button_label, key=f"opt_{theme_number}_{idx}_{opt_key}_{st.session_state.theme_attempt_counter}", use_container_width=True):
+                st.session_state.selected_answer = opt_text
+                st.rerun()
+
+        st.markdown("<div style='margin-top:1.5rem;'></div>", unsafe_allow_html=True)
         col1, col2 = st.columns(2)
 
         with col1:
-            if st.button("Valider la réponse"):
+            if st.button("✅ Valider", use_container_width=True, type="primary"):
                 if not st.session_state.selected_answer:
                     st.warning("Veuillez sélectionner une réponse.")
                 else:
@@ -1177,42 +1270,94 @@ def show_question_screen():
                     st.session_state.answer_locked = True
                     if is_correct:
                         st.session_state.score += 1
+                    
+                    if "question_results" not in st.session_state:
+                        st.session_state.question_results = []
+                    st.session_state.question_results.append(is_correct)
+                    
                     st.rerun()
 
         with col2:
-            if st.button("Retour au menu des thèmes"):
+            if st.button("⬅️ Retour", use_container_width=True):
                 go_back_to_main_menu()
                 st.rerun()
 
     else:
-        st.write(f"Votre réponse : {st.session_state.selected_answer}")
+        st.markdown(f"<p style='font-weight:600;margin:1rem 0;'>Votre réponse : <strong>{st.session_state.selected_answer}</strong></p>", unsafe_allow_html=True)
 
-        col1, col2 = st.columns(2)
+        for opt in answer_options:
+            opt_text = opt["text"]
+            opt_key = opt["key"]
+            is_correct_answer = opt["isCorrect"]
+            is_user_answer = (st.session_state.selected_answer == opt_text)
 
-        with col2:
-            if st.button("Retour au menu des thèmes"):
-                go_back_to_main_menu()
-                st.rerun()
+            if is_correct_answer:
+                border_color = "#22c55e"
+                bg_color = "#d4edda"
+                icon = "✅"
+            elif is_user_answer and not is_correct_answer:
+                border_color = "#dc3545"
+                bg_color = "#f8d7da"
+                icon = "❌"
+            else:
+                border_color = "#d1d5db"
+                bg_color = "#f9fafb"
+                icon = ""
 
-        if st.session_state.show_correction:
-            correct_option = next(
-                (opt for opt in answer_options if opt["isCorrect"]), None
+            st.markdown(
+                f"""
+                <div style="
+                    border:2px solid {border_color};
+                    border-radius:12px;
+                    padding:1rem;
+                    margin-bottom:0.8rem;
+                    background:{bg_color};
+                    animation:fadeIn 0.3s ease-in;
+                ">
+                    {icon} <strong>{opt_key}.</strong> {opt_text}
+                </div>
+                <style>
+                @keyframes fadeIn {{
+                    from {{ opacity: 0; transform: translateY(-10px); }}
+                    to {{ opacity: 1; transform: translateY(0); }}
+                }}
+                </style>
+                """,
+                unsafe_allow_html=True,
             )
 
+        if st.session_state.show_correction:
             if st.session_state.last_is_correct is True:
                 st.markdown(
                     """
-                    <div style='background-color:#d4edda;border-left:5px solid #28a745;padding:1rem;border-radius:8px;margin:1rem 0;'>
-                        <h3 style='color:#155724;margin:0;'>✅ Bonne réponse !</h3>
+                    <div style='
+                        background:#d4edda;
+                        border-left:6px solid #28a745;
+                        padding:1.2rem;
+                        border-radius:12px;
+                        margin:1.5rem 0;
+                        animation:fadeIn 0.3s ease-in;
+                    '>
+                        <h3 style='color:#155724;margin:0;font-size:1.3rem;'>✅ Bonne réponse !</h3>
                     </div>
                     """,
                     unsafe_allow_html=True,
                 )
             elif st.session_state.last_is_correct is False:
+                correct_option = next(
+                    (opt for opt in answer_options if opt["isCorrect"]), None
+                )
                 st.markdown(
                     f"""
-                    <div style='background-color:#f8d7da;border-left:5px solid #dc3545;padding:1rem;border-radius:8px;margin:1rem 0;'>
-                        <h3 style='color:#721c24;margin:0 0 0.5rem 0;'>❌ Mauvaise réponse</h3>
+                    <div style='
+                        background:#f8d7da;
+                        border-left:6px solid #dc3545;
+                        padding:1.2rem;
+                        border-radius:12px;
+                        margin:1.5rem 0;
+                        animation:fadeIn 0.3s ease-in;
+                    '>
+                        <h3 style='color:#721c24;margin:0 0 0.5rem 0;font-size:1.3rem;'>❌ Mauvaise réponse</h3>
                         <p style='margin:0;color:#721c24;'><strong>La bonne réponse était :</strong> {correct_option['text'] if correct_option else 'N/A'}</p>
                     </div>
                     """,
@@ -1222,33 +1367,48 @@ def show_question_screen():
             if "correction" in q and q["correction"]:
                 st.markdown(
                     f"""
-                    <div style='background-color:#d1ecf1;border-left:5px solid #17a2b8;padding:1rem;border-radius:8px;margin:1rem 0;'>
-                        <h4 style='color:#0c5460;margin:0 0 0.5rem 0;'>📚 Cours</h4>
-                        <div style='color:#0c5460;'>{q['correction']}</div>
+                    <div style='
+                        background:linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+                        border-left:6px solid #0097a7;
+                        padding:1.5rem;
+                        border-radius:12px;
+                        margin:1.5rem 0;
+                        box-shadow:0 4px 12px rgba(0,0,0,0.1);
+                        animation:fadeIn 0.4s ease-in;
+                    '>
+                        <h4 style='color:#006064;margin:0 0 0.8rem 0;font-size:1.2rem;display:flex;align-items:center;'>
+                            <span style='font-size:1.5rem;margin-right:0.5rem;'>📚</span> Cours
+                        </h4>
+                        <div style='color:#00363a;line-height:1.6;'>{q['correction']}</div>
                     </div>
                     """,
                     unsafe_allow_html=True,
                 )
 
-        if st.button("Question suivante ➡️"):
-            st.session_state.show_correction = False
-            st.session_state.last_is_correct = None
-            st.session_state.current_question_index += 1
-            st.session_state.answer_locked = False
-            st.session_state.selected_answer = None
+        col1, col2 = st.columns(2)
 
-            # On supprime les réponses mélangées de la question précédente
-            if q_id in st.session_state.shuffled_answers:
-                del st.session_state.shuffled_answers[q_id]
-
-            if st.session_state.current_question_index >= total_questions:
-                show_theme_result()
-            else:
+        with col1:
+            if st.button("⬅️ Retour", use_container_width=True):
+                go_back_to_main_menu()
                 st.rerun()
 
+        with col2:
+            if st.button("➡️ Question suivante", use_container_width=True, type="primary"):
+                st.session_state.show_correction = False
+                st.session_state.last_is_correct = None
+                st.session_state.current_question_index += 1
+                st.session_state.answer_locked = False
+                st.session_state.selected_answer = None
 
+                if q_id in st.session_state.shuffled_answers:
+                    del st.session_state.shuffled_answers[q_id]
+
+                if st.session_state.current_question_index >= total_questions:
+                    show_theme_result()
+                else:
+                    st.rerun()
 # -----------------------
-# INTERFACE : RÉSULTAT DU THÈME
+# INTERFACE : ÉCRAN DE RÉSULTAT
 # -----------------------
 
 def show_theme_result():
@@ -1259,56 +1419,122 @@ def show_theme_result():
     theme_name = theme["name"]
     total_questions = len(theme["questions"])
     score = st.session_state.score
-
-    st.title(f"Résultat : {theme_name}")
-
     percentage = (score / total_questions) * 100
+
+    color = THEME_COLORS.get(theme_number, "#4f46e5")
+
+    st.markdown(
+        f"<h1 style='text-align:center;color:{color};margin-bottom:1.5rem;'>📊 Résultat : {theme_name}</h1>",
+        unsafe_allow_html=True
+    )
+
+    st.markdown(
+        f"""
+        <div style="text-align:center;margin:2rem 0;">
+            <div style="display:inline-block;position:relative;width:200px;height:200px;">
+                <svg width="200" height="200" style="transform:rotate(-90deg);">
+                    ircle cx="100" cy="100" r="85" fill="none" stroke="#e5e7eb" stroke-width="12"/>
+                    ircle cx="100" cy="100" r="85" fill="none" stroke="{color}" stroke-width="12" stroke-dasharray="{percentage * 5.34} 534" stroke-linecap="round"/>
+                </svg>
+                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
+                    <div style="font-size:3rem;font-weight:800;color:{color};">{score}/{total_questions}</div>
+                    <div style="font-size:1.2rem;color:#6b7280;font-weight:600;">{percentage:.0f}%</div>
+                </div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     if percentage == 100:
         st.balloons()
-        st.success(
-            f"🎉 Parfait ! Votre score : {score}/{total_questions} ({percentage:.0f}%)"
+        st.markdown(
+            f"""
+            <div style="background:linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);border-left:6px solid #28a745;padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#155724;margin:0;font-size:2rem;">🎉 Parfait !</h2>
+                <p style="color:#155724;margin:0.5rem 0 0 0;font-size:1.1rem;">Score parfait : {score}/{total_questions} ({percentage:.0f}%)</p>
+            </div>
+            """,
+            unsafe_allow_html=True
         )
     elif percentage >= 75:
-        st.success(
-            f"👍 Très bien ! Votre score : {score}/{total_questions} ({percentage:.0f}%)"
+        st.markdown(
+            f"""
+            <div style="background:linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);border-left:6px solid #28a745;padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#155724;margin:0;font-size:2rem;">✨ Très bien !</h2>
+                <p style="color:#155724;margin:0.5rem 0 0 0;font-size:1.1rem;">Score : {score}/{total_questions} ({percentage:.0f}%)</p>
+            </div>
+            """,
+            unsafe_allow_html=True
         )
     elif percentage >= 50:
-        st.info(
-            f"🆗 Pas mal ! Votre score : {score}/{total_questions} ({percentage:.0f}%)"
+        st.markdown(
+            f"""
+            <div style="background:linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);border-left:6px solid #17a2b8;padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#0c5460;margin:0;font-size:2rem;">👍 Pas mal !</h2>
+                <p style="color:#0c5460;margin:0.5rem 0 0 0;font-size:1.1rem;">Score : {score}/{total_questions} ({percentage:.0f}%)</p>
+            </div>
+            """,
+            unsafe_allow_html=True
         )
     else:
-        st.warning(
-            f"📚 Votre score : {score}/{total_questions} ({percentage:.0f}%) - Révise encore ce thème !"
+        st.markdown(
+            f"""
+            <div style="background:linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);border-left:6px solid #dc3545;padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#721c24;margin:0;font-size:2rem;">💪 Continue tes efforts !</h2>
+                <p style="color:#721c24;margin:0.5rem 0 0 0;font-size:1.1rem;">Score : {score}/{total_questions} ({percentage:.0f}%) - Révise encore ce thème !</p>
+            </div>
+            """,
+            unsafe_allow_html=True
         )
+
+    st.markdown("<h3 style='text-align:center;margin:2rem 0 1rem 0;color:#374151;'>Détail de tes réponses</h3>", unsafe_allow_html=True)
+    
+    results = st.session_state.get("question_results", [])
+    
+    if len(results) == total_questions:
+        result_icons = "".join([
+            f"<span style='font-size:1.8rem;margin:0.3rem;display:inline-block;'>{'✅' if r else '❌'}</span>"
+            for r in results
+        ])
+        
+        st.markdown(
+            f"""
+            <div style="text-align:center;background:#f9fafb;padding:1.5rem;border-radius:12px;border:2px solid #e5e7eb;line-height:2.5rem;max-width:600px;margin:0 auto;">
+                {result_icons}
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    else:
+        st.info("Le détail des réponses n'est pas disponible pour cette session.")
 
     if quiz_key not in st.session_state.theme_scores:
         st.session_state.theme_scores[quiz_key] = {}
     st.session_state.theme_scores[quiz_key][theme_number] = f"{score}/{total_questions}"
 
+    st.markdown("<div style='margin-top:2rem;'></div>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
 
     with col1:
-        if st.button("🔙 Revenir au menu des thèmes"):
+        if st.button("⬅️ Revenir au menu des thèmes", use_container_width=True):
             go_back_to_main_menu()
             st.rerun()
 
     with col2:
-        if st.button("🔄 Refaire ce thème"):
+        if st.button("🔄 Refaire ce thème", use_container_width=True, type="primary"):
             start_theme(theme_number)
             st.rerun()
 
-    st.write("")
-
+    st.markdown("<div style='margin-top:1.5rem;'></div>", unsafe_allow_html=True)
     summary_text = generate_score_summary()
     st.download_button(
-        label="📄 Télécharger le récapitulatif complet",
+        label="📥 Télécharger le récapitulatif complet",
         data=summary_text,
         file_name=f"recap_quiz_{quiz_key}_{datetime.now().strftime('%Y%m%d_%H%M')}.txt",
         mime="text/plain",
+        use_container_width=True
     )
-
-
 # -----------------------
 # FONCTION PRINCIPALE
 # -----------------------
