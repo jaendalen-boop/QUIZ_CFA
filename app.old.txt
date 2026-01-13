@@ -1,86 +1,8 @@
 import streamlit as st
 import random
 from datetime import datetime
-from auth_persistence import (
-    create_user,
-    login_user,
-    get_user_info,
-    get_user_stats,
-    save_user_scores,
-    load_user_scores,
-)
 
 st.set_page_config(page_title="Quiz CFA", page_icon="🎓", layout="centered")
-if "auth_stage" not in st.session_state:
-    # "entry" = écran d’entrée (sans compte / créer un compte / se connecter)
-    # "logged_in" = utilisateur connecté
-    st.session_state.auth_stage = "entry"
-
-if "username" not in st.session_state:
-    st.session_state.username = None
-
-def show_entry_screen():
-    st.markdown("""
-    <div style="
-        padding: 2rem;
-        border-radius: 20px;
-        background: linear-gradient(135deg, #6A11CB, #2575FC);
-        color: white;
-        text-align: center;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-        max-width: 700px;
-        margin: 2rem auto;
-    ">
-        <h1 style="margin-bottom: 0.5rem;">Plateforme de révision CFA CMAR</h1>
-        <p style="font-size: 1.1rem; opacity: 0.9;">
-            Révisez par niveau, métier et matières générales, et suivez votre progression.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.subheader("Accès rapide")
-        st.markdown(
-            "Utilisez l'application immédiatement **sans compte**.\n\n"
-            "Les scores seront gardés uniquement pour cette session."
-        )
-        if st.button("🚀 Entrer sans compte", use_container_width=True):
-            st.session_state.auth_stage = "guest"
-            st.session_state.username = None
-            st.rerun()
-
-    with col2:
-        st.subheader("Créer ou utiliser un compte")
-        tabs = st.tabs(["Se connecter", "Créer un compte"])
-
-        # Onglet connexion
-        with tabs[0]:
-            login_username = st.text_input("Nom d'utilisateur", key="login_username")
-            login_password = st.text_input("Mot de passe", type="password", key="login_password")
-            if st.button("🔐 Se connecter", use_container_width=True, key="login_btn"):
-                success, msg = login_user(login_username, login_password)
-                if success:
-                    st.success(msg)
-                    st.session_state.auth_stage = "logged_in"
-                    st.session_state.username = login_username.strip().lower()
-                    st.rerun()
-                else:
-                    st.error(msg)
-
-        # Onglet création
-        with tabs[1]:
-            new_username = st.text_input("Nom d'utilisateur", key="new_username")
-            new_email = st.text_input("Email", key="new_email")
-            new_password = st.text_input("Mot de passe", type="password", key="new_password")
-            if st.button("🆕 Créer mon compte", use_container_width=True, key="create_btn"):
-                success, msg = create_user(new_username, new_email, new_password)
-                if success:
-                    st.success(msg + " Vous pouvez maintenant vous connecter.")
-                else:
-                    st.error(msg)
-
 
 # -----------------------
 # IMPORT DES QUIZ DISPONIBLES
@@ -614,70 +536,6 @@ if "selected_cap_family" not in st.session_state:
     st.session_state.selected_cap_family = None
 if "selected_cap_general_subject" not in st.session_state:
     st.session_state.selected_cap_general_subject = None
-def show_entry_screen():
-    st.markdown("""
-    <div style="
-        padding: 2rem;
-        border-radius: 20px;
-        background: linear-gradient(135deg, #6A11CB, #2575FC);
-        color: white;
-        text-align: center;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-        max-width: 700px;
-        margin: 2rem auto;
-    ">
-        <h1 style="margin-bottom: 0.5rem;">Plateforme de révision CFA CMAR</h1>
-        <p style="font-size: 1.1rem; opacity: 0.9;">
-            Révisez par niveau, métier et matières générales, et suivez votre progression.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    col1, col2 = st.columns(2)
-
-    # Bouton "Entrer sans compte"
-    with col1:
-        st.subheader("Accès rapide")
-        st.markdown(
-            "Utilisez l'application immédiatement **sans compte**.\n\n"
-            "Les scores seront gardés uniquement pour cette session."
-        )
-        if st.button("🚀 Entrer sans compte", use_container_width=True):
-            st.session_state.auth_stage = "guest"
-            st.session_state.username = None
-            st.rerun()
-
-    # Onglets Se connecter / Créer un compte
-    with col2:
-        st.subheader("Créer ou utiliser un compte")
-        tabs = st.tabs(["Se connecter", "Créer un compte"])
-
-        # Onglet connexion
-        with tabs[0]:
-            login_username = st.text_input("Nom d'utilisateur", key="login_username")
-            login_password = st.text_input("Mot de passe", type="password", key="login_password")
-            if st.button("🔐 Se connecter", use_container_width=True, key="login_btn"):
-                success, msg = login_user(login_username, login_password)
-                if success:
-                    st.success(msg)
-                    st.session_state.auth_stage = "logged_in"
-                    st.session_state.username = login_username.strip().lower()
-                    st.rerun()
-                else:
-                    st.error(msg)
-
-        # Onglet création
-        with tabs[1]:
-            new_username = st.text_input("Nom d'utilisateur", key="new_username")
-            new_email = st.text_input("Email", key="new_email")
-            new_password = st.text_input("Mot de passe", type="password", key="new_password")
-            if st.button("🆕 Créer mon compte", use_container_width=True, key="create_btn"):
-                success, msg = create_user(new_username, new_email, new_password)
-                if success:
-                    st.success(msg + " Vous pouvez maintenant vous connecter.")
-                else:
-                    st.error(msg)
-
 # -----------------------
 # FONCTIONS UTILITAIRES
 # -----------------------
@@ -1700,10 +1558,4 @@ def main():
 
 
 if __name__ == "__main__":
-    if st.session_state.auth_stage in ("guest", "logged_in"):
-        # Utilisateur déjà dans l’application (avec ou sans compte)
-        main()
-    else:
-        # Premier écran : choix "entrer sans compte" ou "créer/se connecter"
-        show_entry_screen()
-
+    main()
