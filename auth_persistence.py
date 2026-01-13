@@ -204,7 +204,7 @@ def get_user_stats(username: str) -> dict:
     """
     user_scores = load_user_scores(username)
     quizzes = user_scores.get("quizzes", {})
-    
+
     stats = {
         "total_quizzes": len(quizzes),
         "total_themes": 0,
@@ -212,13 +212,15 @@ def get_user_stats(username: str) -> dict:
         "total_correct": 0,
         "average_percentage": 0,
     }
-    
+
     for quiz_key, quiz_data in quizzes.items():
         scores = quiz_data.get("scores", {})
         stats["total_themes"] += len(scores)
-        
+
         for theme_num, score_str in scores.items():
             try:
+                if not score_str:
+                    continue  # ignore None ou chaîne vide
                 parts = score_str.split("/")
                 correct = int(parts[0])
                 total = int(parts[1])
@@ -226,13 +228,14 @@ def get_user_stats(username: str) -> dict:
                 stats["total_correct"] += correct
             except (ValueError, IndexError):
                 pass
-    
+
     if stats["total_questions"] > 0:
         stats["average_percentage"] = round(
             (stats["total_correct"] / stats["total_questions"]) * 100, 1
         )
-    
+
     return stats
+
 
 # ===================== DATA EXPORT =====================
 
