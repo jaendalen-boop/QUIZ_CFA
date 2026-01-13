@@ -614,6 +614,9 @@ if "selected_cap_family" not in st.session_state:
     st.session_state.selected_cap_family = None
 if "selected_cap_general_subject" not in st.session_state:
     st.session_state.selected_cap_general_subject = None
+if "ui_mode" not in st.session_state:
+    # "app" = interface quiz, "profile" = page profil
+    st.session_state.ui_mode = "app"
 def show_entry_screen():
     st.markdown("""
     <div style="
@@ -817,6 +820,76 @@ def generate_score_summary():
     lines.append("=" * 50)
     
     return "\n".join(lines)
+
+# -----------------------
+# INTERFACE : PROFIL
+# -----------------------
+
+def show_profile_page():
+    if st.session_state.get("auth_stage") != "logged_in" or not st.session_state.get("username"):
+        st.info("Connectez-vous pour accéder à votre profil.")
+        return
+
+    username = st.session_state.username
+
+    # Infos de base
+    user_info = get_user_info(username)
+    stats = get_user_stats(username)
+    user_scores = load_user_scores(username)
+
+    st.markdown(
+        f"<h1 style='text-align:center;margin-bottom:1rem;'>👤 Profil de {username}</h1>",
+        unsafe_allow_html=True,
+    )
+
+    # Carte info compte
+    st.markdown(
+        f"""
+        <div style="
+            max-width: 700px;
+            margin: 0 auto 1.5rem auto;
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+        ">
+            <p style="margin:0.2rem 0;"><strong>Email :</strong> {user_info.get('email', 'Non renseigné')}</p>
+            <p style="margin:0.2rem 0;"><strong>Compte créé le :</strong> {user_info.get('created_at', 'N/A')}</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # Stats globales
+    st.subheader("Progression globale")
+
+    col1, col2, col3, col4 = st.columns(4)
+    col1.metric("Quiz différents", stats.get("total_quizzes", 0))
+    col2.metric("Thèmes joués", stats.get("total_themes", 0))
+    col3.metric("Questions totales", stats.get("total_questions", 0))
+    col4.metric("Réussite moyenne", f"{stats.get('average_percentage', 0)} %")
+
+    st.markdown("---")
+    st.subheader("Détail par quiz")
+
+    quizzes = user_scores.get("quizzes", {})
+    if not quizzes:
+        st.info("Aucun quiz complété pour le moment.")
+        return
+
+    for quiz_key, quiz_data in quizzes.items():
+        quiz_info = QUIZZES.get(quiz_key, {})
+        quiz_title = quiz_info.get("title", quiz_key)
+        last_updated = quiz_data.get("last_updated", "")
+
+        with st.expander(quiz_title):
+            if last_updated:
+                st.caption(f"Dernière mise à jour : {last_updated}")
+            scores = quiz_data.get("scores", {})
+            for theme_num, score_str in scores.items():
+                st.write(f"- Thème {theme_num} : {score_str}")
+
+
 # -----------------------
 # INTERFACE : SÉLECTEUR DE NIVEAU
 # -----------------------
@@ -1655,6 +1728,20 @@ def show_theme_result():
         st.session_state.theme_scores[quiz_key] = {}
     st.session_state.theme_scores[quiz_key][theme_number] = f"{score}/{total_questions}"
 
+    # Sauvegarde persistante pour les utilisateurs connectés
+    if (
+        st.session_state.get("auth_stage") == "logged_in"
+        and st.session_state.get("username")
+    ):
+        # thème_scores = scores de tous les thèmes de ce quiz dans la session
+        theme_scores = st.session_state.theme_scores[quiz_key]
+        # quiz_key est déjà une bonne clé (cap_boucher_100, bts_meca_vp_100, etc.)
+        save_user_scores(
+            st.session_state.username,
+            quiz_key,
+            theme_scores
+        )
+
     st.markdown("<div style='margin-top:2rem;'></div>", unsafe_allow_html=True)
     col1, col2 = st.columns(2)
 
@@ -1682,6 +1769,25 @@ def show_theme_result():
 # -----------------------
 
 def main():
+    # Sidebar : navigation profil / quiz
+    with st.sidebar:
+        st.markdown("### Navigation")
+        if st.session_state.get("auth_stage") == "logged_in":
+            if st.button("👤 Mon profil", use_container_width=True):
+                st.session_state.ui_mode = "profile"
+            if st.button("🏠 Quiz", use_container_width=True):
+                st.session_state.ui_mode = "app"
+            st.markdown("---")
+            st.caption(f"Connecté en tant que {st.session_state.username}")
+        else:
+            st.info("Connectez-vous pour accéder au profil.")
+
+    # Si on est en mode profil, on n’affiche pas l’interface de quiz
+    if st.session_state.ui_mode == "profile":
+        show_profile_page()
+        return
+
+    # --- LOGIQUE EXISTANTE DU QUIZ ---
     if st.session_state.selected_quiz_key is None:
         show_quiz_selector()
         return
@@ -1697,6 +1803,7 @@ def main():
         show_theme_result()
     else:
         show_question_screen()
+
 
 
 if __name__ == "__main__":
