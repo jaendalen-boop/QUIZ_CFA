@@ -10,6 +10,38 @@ from auth_persistence import (
     load_user_scores,
 )
 
+# ===================== INJECT CUSTOM PASSWORD MANAGER HOOK =====================
+
+def init_password_manager():
+    """
+    Injecte un script qui force le navigateur à mémoriser les identifiants.
+    Cela contourne les restrictions de Streamlit en tant que formulaire natif.
+    """
+    st.markdown("""
+    <script>
+    // Script pour forcer l'enregistrement des identifiants
+    window.addEventListener('load', function() {
+        // Cherche les inputs de password
+        const passwordInputs = document.querySelectorAll('input[type="password"]');
+        passwordInputs.forEach(input => {
+            // Ajoute des événements de gestion
+            input.addEventListener('change', function() {
+                // Force la détection du formulaire de connexion/inscription
+                const form = input.closest('form');
+                if (!form) {
+                    // Si pas de form parent, crée une wrapper invisible
+                    const hiddenForm = document.createElement('form');
+                    hiddenForm.style.display = 'none';
+                    input.parentElement.appendChild(hiddenForm);
+                }
+            });
+        });
+    });
+    </script>
+    """, unsafe_allow_html=True)
+
+init_password_manager()
+
 st.set_page_config(page_title="Quiz CFA", page_icon="🎓", layout="centered")
 if "auth_stage" not in st.session_state:
     # "entry" = écran d’entrée (sans compte / créer un compte / se connecter)
@@ -55,70 +87,148 @@ def show_entry_screen():
         st.subheader("Créer ou utiliser un compte")
         tabs = st.tabs(["Se connecter", "Créer un compte"])
 
+        # === TAB CONNEXION ===
         with tabs[0]:
-            with st.form("login_form", clear_on_submit=False):
-                login_username = st.text_input(
-                    "Nom d'utilisateur",
-                    key="login_username_input",
-                    autocomplete="username"
-                )
-                login_password = st.text_input(
-                    "Mot de passe",
-                    type="password",
-                    key="login_password_input",
-                    autocomplete="current-password"  # ✅ Connexion existante
-                )
-
-                submitted = st.form_submit_button("Se connecter", use_container_width=True)
-
-                if submitted:
-                    success, msg = login_user(login_username, login_password)
-                    if success:
-                        st.success(msg)
-                        st.session_state.auth_stage = "logged_in"
-                        st.session_state.username = login_username.strip().lower()
-                        st.rerun()
-                    else:
-                        st.error(msg)
-
-        with tabs[1]:
-            with st.form("signup_form", clear_on_submit=False):
-                signup_username = st.text_input(
-                    "Nom d'utilisateur",
-                    key="signup_username_input",
-                    autocomplete="username"
-                )
-                signup_email = st.text_input(
-                    "Email",
-                    key="signup_email_input",
-                    autocomplete="email"
-                )
-                signup_password = st.text_input(
-                    "Mot de passe (min. 6 caractères)",
-                    type="password",
-                    key="signup_password_input",
-                    autocomplete="new-password"  # ✅ Nouveau mot de passe
-                )
-                signup_confirm = st.text_input(
-                    "Confirmer le mot de passe",
-                    type="password",
-                    key="signup_confirm_input",
-                    autocomplete="new-password"
-                )
-
-                submitted = st.form_submit_button("Créer mon compte", use_container_width=True)
-
-                if submitted:
-                    if signup_password != signup_confirm:
-                        st.error("❌ Les mots de passe ne correspondent pas.")
-                    else:
-                        success, msg = create_user(signup_username, signup_email, signup_password)
+            st.markdown("#### 🔐 Connexion")
+            
+            # Wrapper form invisible pour recognition du navigateur
+            st.markdown("""
+            <form id="login-wrapper" style="display:none;">
+                <input type="text" name="username" />
+                <input type="password" name="password" />
+            </form>
+            """, unsafe_allow_html=True)
+            
+            login_username = st.text_input(
+                "👤 Nom d'utilisateur",
+                key="login_username",
+                placeholder="Entrez votre nom d'utilisateur"
+            )
+            login_password = st.text_input(
+                "🔑 Mot de passe",
+                type="password",
+                key="login_password",
+                placeholder="Entrez votre mot de passe"
+            )
+            
+            col_login_1, col_login_2 = st.columns([3, 1])
+            with col_login_1:
+                if st.button("🔓 Se connecter", use_container_width=True, key="login_btn"):
+                    if login_username and login_password:
+                        success, msg = login_user(login_username, login_password)
                         if success:
                             st.success(msg)
-                            st.session_state.auth_stage = "login"
+                            st.session_state.auth_stage = "logged_in"
+                            st.session_state.username = login_username.strip().lower()
+                            # IMPORTANT: Inject script pour sauver les credentials
+                            st.markdown("""
+                            <script>
+                            // Force le navigateur à mémoriser les identifiants après connexion réussie
+                            const form = document.createElement('form');
+                            form.method = 'POST';
+                            form.onsubmit = () => false;
+                            
+                            const usernameInput = document.createElement('input');
+                            usernameInput.type = 'text';
+                            usernameInput.name = 'username';
+                            usernameInput.value = '%s';
+                            usernameInput.style.display = 'none';
+                            
+                            const passwordInput = document.createElement('input');
+                            passwordInput.type = 'password';
+                            passwordInput.name = 'password';
+                            passwordInput.value = '%s';
+                            passwordInput.style.display = 'none';
+                            
+                            form.appendChild(usernameInput);
+                            form.appendChild(passwordInput);
+                            document.body.appendChild(form);
+                            
+                            // Trigger save
+                            form.submit();
+                            </script>
+                            """ % (login_username, login_password), unsafe_allow_html=True)
                             st.rerun()
                         else:
                             st.error(msg)
+                    else:
+                        st.warning("⚠️ Veuillez remplir tous les champs")
+
+        # === TAB INSCRIPTION ===
+        with tabs[1]:
+            st.markdown("#### 📝 Créer un compte")
+            
+            # Wrapper form invisible pour recognition du navigateur
+            st.markdown("""
+            <form id="signup-wrapper" style="display:none;">
+                <input type="email" name="email" />
+                <input type="password" name="password" />
+                <input type="password" name="password-confirm" />
+            </form>
+            """, unsafe_allow_html=True)
+            
+            signup_username = st.text_input(
+                "👤 Nom d'utilisateur",
+                key="signup_username",
+                placeholder="Choisissez un nom d'utilisateur"
+            )
+            signup_email = st.text_input(
+                "📧 Email",
+                key="signup_email",
+                placeholder="Votre adresse email"
+            )
+            signup_password = st.text_input(
+                "🔑 Mot de passe (min. 6 caractères)",
+                type="password",
+                key="signup_password",
+                placeholder="Créez un mot de passe sécurisé"
+            )
+            signup_confirm = st.text_input(
+                "🔐 Confirmer le mot de passe",
+                type="password",
+                key="signup_confirm",
+                placeholder="Confirmez votre mot de passe"
+            )
+            
+            if st.button("✨ Créer mon compte", use_container_width=True, key="create_btn"):
+                if not signup_username or not signup_email or not signup_password or not signup_confirm:
+                    st.warning("⚠️ Veuillez remplir tous les champs")
+                elif signup_password != signup_confirm:
+                    st.error("❌ Les mots de passe ne correspondent pas.")
+                else:
+                    success, msg = create_user(signup_username, signup_email, signup_password)
+                    if success:
+                        st.success(msg + " ✅ Vous pouvez maintenant vous connecter.")
+                        # IMPORTANT: Inject script pour sauver les credentials
+                        st.markdown("""
+                        <script>
+                        const form = document.createElement('form');
+                        form.method = 'POST';
+                        form.onsubmit = () => false;
+                        
+                        const emailInput = document.createElement('input');
+                        emailInput.type = 'email';
+                        emailInput.name = 'email';
+                        emailInput.value = '%s';
+                        emailInput.style.display = 'none';
+                        
+                        const passwordInput = document.createElement('input');
+                        passwordInput.type = 'password';
+                        passwordInput.name = 'password';
+                        passwordInput.value = '%s';
+                        passwordInput.style.display = 'none';
+                        
+                        form.appendChild(emailInput);
+                        form.appendChild(passwordInput);
+                        document.body.appendChild(form);
+                        
+                        form.submit();
+                        </script>
+                        """ % (signup_email, signup_password), unsafe_allow_html=True)
+                        st.session_state.auth_stage = "login"
+                        st.rerun()
+                    else:
+                        st.error(msg)
 
 
 # -----------------------
