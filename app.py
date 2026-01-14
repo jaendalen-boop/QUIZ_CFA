@@ -1621,7 +1621,7 @@ def show_main_menu_for_current_quiz():
 
 
 # -----------------------
-# INTERFACE : ÉCRAN DE QUESTION 
+# INTERFACE : ÉCRAN DE QUESTION (FINAL - TOUS LES FIXES)
 # -----------------------
 
 def show_question_screen():
@@ -1640,9 +1640,10 @@ def show_question_screen():
 
     color = THEME_COLORS.get(theme_number, "#4f46e5")
 
+    # 🔴 AMÉLIORÉ : Intitulé du thème réduit en taille pour gagner de la place
     st.markdown(
-        f"<h2 style='margin-bottom:0.2rem;'>{theme_name}</h2>"
-        f"<div style='height:4px;border-radius:999px;background:{color};margin-bottom:0.8rem;'></div>",
+        f"<h3 style='margin:0.2rem 0;font-size:1.1rem;'>{theme_name}</h3>"
+        f"<div style='height:4px;border-radius:999px;background:{color};margin-bottom:0.5rem;'></div>",
         unsafe_allow_html=True,
     )
 
@@ -1708,37 +1709,27 @@ def show_question_screen():
     if "theme_attempt_counter" not in st.session_state:
         st.session_state.theme_attempt_counter = 0
 
-    # 🔴 FIX 1 (AMÉLIORÉ) : Anchor invisible pour scroll mobile vers la question
-    # Augmenté scroll-margin-top pour un meilleur retour
-    st.markdown('<div id="question-anchor" style="scroll-margin-top: 120px;"></div>', unsafe_allow_html=True)
-    
-    st.markdown(f"<h3 style='margin:1rem 0;'>{q['question']}</h3>", unsafe_allow_html=True)
-
-    # 🔴 FIX 1 (AMÉLIORÉ) : Script pour scroll vers la question (mobile)
-    # Scroll plus agressif et avec plus de délai pour S.O.
+    # 🔴 FIX 1 (FINAL) : Scroll agressif vers le haut de la page
+    # Permet de voir la question depuis le début
     st.markdown("""
     <script>
+    // Scroll au très haut de la page (position 0)
     setTimeout(function() {
-        const anchor = document.getElementById('question-anchor');
-        if (anchor) {
-            anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            // Deuxième tentative après 300ms pour les S.O. lents
-            setTimeout(function() {
-                anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 300);
-        }
-    }, 100);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
     </script>
     """, unsafe_allow_html=True)
+    
+    st.markdown(f"<h3 style='margin:1rem 0;font-weight:700;'>{q['question']}</h3>", unsafe_allow_html=True)
 
     if not st.session_state.answer_locked:
         st.markdown("<p style='font-weight:600;margin-bottom:0.5rem;'>Choisissez une réponse :</p>", unsafe_allow_html=True)
 
-        # 🔴 FIX 2 + FIX 3 (COMPLÈTEMENT AMÉLIORÉ) : Empêcher scroll de déclencher boutons + texte lisible en sélection
+        # 🔴 FIX 2 + FIX 3 (FINAL) : Bloquer COMPLÈTEMENT le scroll lors du touch sur les boutons
         st.markdown(
             f"""
             <style>
-            /* FIX 2 : Empêche le scroll de déclencher les boutons accidentellement */
+            /* FIX 2 (DRASTIQUE) : Bloquer TOUS les événements tactiles sauf le click direct */
             div[data-testid="stButton"] > button {{
                 width: 100%;
                 text-align: left;
@@ -1748,28 +1739,28 @@ def show_question_screen():
                 background: #ffffff;
                 color: #1f2937;
                 font-size: 1rem;
-                transition: background-color 0.2s ease, border-color 0.2s ease;
+                transition: none !important;
                 margin-bottom: 0.8rem;
                 min-height: 60px;
-                touch-action: pan-y !important;
+                touch-action: none !important;
                 user-select: none;
                 -webkit-user-select: none;
                 -webkit-touch-callout: none;
                 pointer-events: auto;
+                -webkit-tap-highlight-color: transparent;
             }}
             
-            /* FIX 2 : Bloquer les interactions au scroll - permet UNIQUEMENT le scroll vertical */
+            /* FIX 2 : Autoriser UNIQUEMENT le scroll vertical en dehors des boutons */
             div[data-testid="stVerticalBlock"] {{
                 touch-action: pan-y !important;
                 -webkit-user-select: none;
             }}
             
-            /* FIX 3 (AMÉLIORÉ) : Couleur de sélection lisible avec texte blanc */
+            /* FIX 3 (FINAL) : Couleur active UNIQUEMENT lors du vrai click */
             div[data-testid="stButton"] > button:active {{
                 background: #{color[1:]} !important;
                 color: #ffffff !important;
                 border-color: #{color[1:]} !important;
-                box-shadow: 0 0 8px rgba({int(color[1:3], 16)}, {int(color[3:5], 16)}, {int(color[5:7], 16)}, 0.4) !important;
             }}
             
             div[data-testid="stButton"] > button:focus {{
@@ -1777,8 +1768,8 @@ def show_question_screen():
                 outline-offset: 2px;
             }}
             
-            /* NOUVEAU FIX : Empêcher le changement de couleur lors du scroll */
-            div[data-testid="stButton"] > button:not(:active):not(:focus) {{
+            /* Forcer le style normal TOUJOURS sauf au click vrai */
+            div[data-testid="stButton"] > button {{
                 background: #ffffff !important;
                 color: #1f2937 !important;
                 border-color: #d1d5db !important;
@@ -1982,6 +1973,7 @@ def show_question_screen():
             if st.button("❌ Non, continuer", use_container_width=True, key="cancel_quit"):
                 st.session_state.show_quit_confirmation = False
                 st.rerun()
+
 # -----------------------
 # FONCTION PRINCIPALE
 # -----------------------
