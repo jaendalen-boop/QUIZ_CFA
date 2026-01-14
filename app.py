@@ -1713,6 +1713,32 @@ def show_question_screen():
     if "theme_attempt_counter" not in st.session_state:
         st.session_state.theme_attempt_counter = 0
 
+    st.markdown("""
+    <style>
+    /* Réduire le padding du conteneur app (haut/bas) */
+    [data-testid="stAppViewContainer"] {
+        padding-top: 0.3rem !important;
+        padding-bottom: 0.3rem !important;
+    }
+    
+    /* Réduire le padding de la section principale */
+    [data-testid="stElementContainer"] {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+    /* Réduire le gap entre les éléments verticaux */
+    [data-testid="stVerticalBlockBorderWrapper"] {
+        gap: 0.2rem !important;
+    }
+    
+    /* Réduire les marges des blocks individuels */
+    .stVerticalBlock {
+        gap: 0.2rem !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
     # 🔴 FIX 1 : Scroll au très haut de la page
     st.markdown("""
     <script>
@@ -1825,7 +1851,7 @@ def show_question_screen():
                 st.rerun()
 
     else:
-        st.markdown(f"<p style='font-weight:600;margin:1rem 0;'>Votre réponse : <strong>{st.session_state.selected_answer}</strong></p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-weight:600;margin:0.3rem 0;'>Votre réponse : <strong>{st.session_state.selected_answer}</strong></p>", unsafe_allow_html=True)
 
         # 🔴 FIX 3 : Couleurs lisibles pour les réponses (contraste amélioré)
         for opt in answer_options:
@@ -1855,14 +1881,15 @@ def show_question_screen():
                 <div style="
                     border:2px solid {border_color};
                     border-radius:12px;
-                    padding:1rem;
-                    margin-bottom:0.8rem;
+                    padding:0.6rem;
+                    margin-bottom:0.3rem;
                     background:{bg_color};
                     color:{text_color};
                     animation:fadeIn 0.3s ease-in;
                 ">
                     {icon} <strong>{opt_key}.</strong> {opt_text}
                 </div>
+
                 <style>
                 @keyframes fadeIn {{
                     from {{ opacity: 0; transform: translateY(-10px); }}
@@ -1875,69 +1902,73 @@ def show_question_screen():
 
         if st.session_state.show_correction:
             if st.session_state.last_is_correct is True:
-                st.markdown(
+                                st.markdown(
                     """
                     <div style='
                         background:#d4edda;
                         border-left:6px solid #28a745;
-                        padding:1.2rem;
+                        padding:0.8rem;
                         border-radius:12px;
-                        margin:1.5rem 0;
+                        margin:0.6rem 0;
                         color:#155724;
                         animation:fadeIn 0.3s ease-in;
                     '>
-                        <h3 style='color:#155724;margin:0;font-size:1.3rem;'>✅ Bonne réponse !</h3>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-            elif st.session_state.last_is_correct is False:
-                correct_option = next(
-                    (opt for opt in answer_options if opt["isCorrect"]), None
-                )
-                st.markdown(
-                    f"""
-                    <div style='
-                        background:#f8d7da;
-                        border-left:6px solid #dc3545;
-                        padding:1.2rem;
-                        border-radius:12px;
-                        margin:1.5rem 0;
-                        color:#721c24;
-                        animation:fadeIn 0.3s ease-in;
-                    '>
-                        <h3 style='color:#721c24;margin:0 0 0.5rem 0;font-size:1.3rem;'>❌ Mauvaise réponse</h3>
-                        <p style='margin:0;color:#721c24;'><strong>La bonne réponse était :</strong> {correct_option['text'] if correct_option else 'N/A'}</p>
+                        <h3 style='color:#155724;margin:0;font-size:1.1rem;'>✅ Bonne réponse !</h3>
                     </div>
                     """,
                     unsafe_allow_html=True,
                 )
 
-            if "correction" in q and q["correction"]:
+            elif st.session_state.last_is_correct is False:
+                correct_option = next(
+                    (opt for opt in answer_options if opt["isCorrect"]), None
+                )
+                                st.markdown(
+                    f"""
+                    <div style='
+                        background:#f8d7da;
+                        border-left:6px solid #dc3545;
+                        padding:0.8rem;
+                        border-radius:12px;
+                        margin:0.6rem 0;
+                        color:#721c24;
+                        animation:fadeIn 0.3s ease-in;
+                    '>
+                        <h3 style='color:#721c24;margin:0 0 0.3rem 0;font-size:1.1rem;'>❌ Mauvaise réponse</h3>
+                        <p style='margin:0;color:#721c24;font-size:0.95rem;'><strong>La bonne réponse était :</strong> {correct_option['text'] if correct_option else 'N/A'}</p>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+
+
+                        if "correction" in q and q["correction"]:
                 st.markdown(
                     f"""
                     <div style='
                         background:linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
                         border-left:6px solid #0097a7;
-                        padding:1.5rem;
+                        padding:1rem;
                         border-radius:12px;
-                        margin:1.5rem 0;
+                        margin:0.8rem 0;
                         box-shadow:0 4px 12px rgba(0,0,0,0.1);
                         color:#006064;
                         animation:fadeIn 0.4s ease-in;
                     '>
-                        <h4 style='color:#006064;margin:0 0 0.8rem 0;font-size:1.2rem;display:flex;align-items:center;'>
-                            <span style='font-size:1.5rem;margin-right:0.5rem;'>📚</span> Cours
+                        <h4 style='color:#006064;margin:0 0 0.5rem 0;font-size:1rem;display:flex;align-items:center;'>
+                            <span style='font-size:1.2rem;margin-right:0.5rem;'>📚</span> Cours
                         </h4>
-                        <div style='color:#00363a;line-height:1.6;'>{q['correction']}</div>
+                        <div style='color:#00363a;line-height:1.5;font-size:0.95rem;'>{q['correction']}</div>
                     </div>
                     """,
                     unsafe_allow_html=True,
                 )
 
-        st.markdown("<div style='margin-top:1.5rem;'></div>", unsafe_allow_html=True)
+
+                st.markdown("<div style='margin-top:0.6rem;'></div>", unsafe_allow_html=True)
         
-        col1, col2 = st.columns(2)
+        col1, col2 = st.columns(2, gap="small")
+
 
         with col1:
             if st.button("➡️ Question suivante", use_container_width=True, type="primary", key="next_question_btn"):
