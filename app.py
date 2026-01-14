@@ -1558,6 +1558,7 @@ def show_quiz_selector():
         show_quiz_list_for_cs()
     else:
         show_level_selector()
+
 # -----------------------
 # INTERFACE : MENU DES THÈMES (POUR LE QUIZ COURANT)
 # -----------------------
@@ -1620,7 +1621,7 @@ def show_main_menu_for_current_quiz():
 
 
 # -----------------------
-# INTERFACE : ÉCRAN DE QUESTION
+# INTERFACE : ÉCRAN DE QUESTION 
 # -----------------------
 
 def show_question_screen():
@@ -1707,18 +1708,24 @@ def show_question_screen():
     if "theme_attempt_counter" not in st.session_state:
         st.session_state.theme_attempt_counter = 0
 
-    # 🔴 FIX 1 : Anchor invisible pour scroll mobile vers la question
-    st.markdown('<div id="question-anchor" style="scroll-margin-top: 60px;"></div>', unsafe_allow_html=True)
+    # 🔴 FIX 1 (AMÉLIORÉ) : Anchor invisible pour scroll mobile vers la question
+    # Augmenté scroll-margin-top pour un meilleur retour
+    st.markdown('<div id="question-anchor" style="scroll-margin-top: 120px;"></div>', unsafe_allow_html=True)
     
     st.markdown(f"<h3 style='margin:1rem 0;'>{q['question']}</h3>", unsafe_allow_html=True)
 
-    # 🔴 FIX 1 : Script pour scroll vers la question (mobile)
+    # 🔴 FIX 1 (AMÉLIORÉ) : Script pour scroll vers la question (mobile)
+    # Scroll plus agressif et avec plus de délai pour S.O.
     st.markdown("""
     <script>
     setTimeout(function() {
         const anchor = document.getElementById('question-anchor');
         if (anchor) {
             anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Deuxième tentative après 300ms pour les S.O. lents
+            setTimeout(function() {
+                anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 300);
         }
     }, 100);
     </script>
@@ -1727,7 +1734,7 @@ def show_question_screen():
     if not st.session_state.answer_locked:
         st.markdown("<p style='font-weight:600;margin-bottom:0.5rem;'>Choisissez une réponse :</p>", unsafe_allow_html=True)
 
-        # 🔴 FIX 2 + FIX 3 : CSS pour empêcher scroll de déclencher boutons + améliorer contraste des réponses
+        # 🔴 FIX 2 + FIX 3 (COMPLÈTEMENT AMÉLIORÉ) : Empêcher scroll de déclencher boutons + texte lisible en sélection
         st.markdown(
             f"""
             <style>
@@ -1741,30 +1748,40 @@ def show_question_screen():
                 background: #ffffff;
                 color: #1f2937;
                 font-size: 1rem;
-                transition: all 0.2s ease;
+                transition: background-color 0.2s ease, border-color 0.2s ease;
                 margin-bottom: 0.8rem;
                 min-height: 60px;
-                touch-action: manipulation;
+                touch-action: pan-y !important;
                 user-select: none;
                 -webkit-user-select: none;
                 -webkit-touch-callout: none;
+                pointer-events: auto;
             }}
             
-            /* FIX 2 : Autorise scroll vertical, bloque autres interactions */
+            /* FIX 2 : Bloquer les interactions au scroll - permet UNIQUEMENT le scroll vertical */
             div[data-testid="stVerticalBlock"] {{
-                touch-action: pan-y;
+                touch-action: pan-y !important;
+                -webkit-user-select: none;
             }}
             
-            /* FIX 3 : Couleur de sélection lisible (au lieu de blanc) */
+            /* FIX 3 (AMÉLIORÉ) : Couleur de sélection lisible avec texte blanc */
             div[data-testid="stButton"] > button:active {{
                 background: #{color[1:]} !important;
-                color: white !important;
+                color: #ffffff !important;
                 border-color: #{color[1:]} !important;
+                box-shadow: 0 0 8px rgba({int(color[1:3], 16)}, {int(color[3:5], 16)}, {int(color[5:7], 16)}, 0.4) !important;
             }}
             
             div[data-testid="stButton"] > button:focus {{
                 outline: 2px solid #{color[1:]};
                 outline-offset: 2px;
+            }}
+            
+            /* NOUVEAU FIX : Empêcher le changement de couleur lors du scroll */
+            div[data-testid="stButton"] > button:not(:active):not(:focus) {{
+                background: #ffffff !important;
+                color: #1f2937 !important;
+                border-color: #d1d5db !important;
             }}
             </style>
             """,
@@ -1811,7 +1828,6 @@ def show_question_screen():
 
         with col2:
             if st.button("⬅️ Retour", use_container_width=True):
-                # 🔴 FIX 5 : Confirmation avant quitter (voir fonction ci-dessous)
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
 
@@ -1926,8 +1942,6 @@ def show_question_screen():
                     unsafe_allow_html=True,
                 )
 
-        # 🔴 FIX 4 : Réorganiser les boutons + ajouter espace entre eux
-        # Le bouton "Retour" passe en DEUXIÈME position, "Question suivante" est PRIMARY
         st.markdown("<div style='margin-top:1.5rem;'></div>", unsafe_allow_html=True)
         
         col1, col2 = st.columns(2)
@@ -1950,7 +1964,6 @@ def show_question_screen():
 
         with col2:
             if st.button("⬅️ Quitter le thème", use_container_width=True, key="exit_theme_btn"):
-                # 🔴 FIX 5 : Confirmation avant quitter
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
 
@@ -1968,148 +1981,7 @@ def show_question_screen():
         with col_confirm_2:
             if st.button("❌ Non, continuer", use_container_width=True, key="cancel_quit"):
                 st.session_state.show_quit_confirmation = False
-                st.rerun()# -----------------------
-# INTERFACE : ÉCRAN DE RÉSULTAT
-# -----------------------
-
-def show_theme_result():
-    quiz_data = get_current_quiz_data()
-    quiz_key = st.session_state.selected_quiz_key
-    theme_number = st.session_state.current_theme
-    theme = quiz_data["themes"][theme_number]
-    theme_name = theme["name"]
-    total_questions = len(theme["questions"])
-    score = st.session_state.score
-    percentage = (score / total_questions) * 100
-
-    color = THEME_COLORS.get(theme_number, "#4f46e5")
-
-    st.markdown(
-        f"<h1 style='text-align:center;color:{color};margin-bottom:1.5rem;'>📊 Résultat : {theme_name}</h1>",
-        unsafe_allow_html=True
-    )
-
-    st.markdown(
-        f"""
-        <div style="text-align:center;margin:2rem 0;">
-            <div style="display:inline-block;position:relative;width:200px;height:200px;">
-                <svg width="200" height="200" style="transform:rotate(-90deg);">
-                    ircle cx="100" cy="100" r="85" fill="none" stroke="#e5e7eb" stroke-width="12"/>
-                    ircle cx="100" cy="100" r="85" fill="none" stroke="{color}" stroke-width="12" stroke-dasharray="{percentage * 5.34} 534" stroke-linecap="round"/>
-                </svg>
-                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
-                    <div style="font-size:3rem;font-weight:800;color:{color};">{score}/{total_questions}</div>
-                    <div style="font-size:1.2rem;color:#6b7280;font-weight:600;">{percentage:.0f}%</div>
-                </div>
-            </div>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
-
-    if percentage == 100:
-        st.balloons()
-        st.markdown(
-            f"""
-            <div style="background:linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);border-left:6px solid #28a745;padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-                <h2 style="color:#155724;margin:0;font-size:2rem;">🎉 Parfait !</h2>
-                <p style="color:#155724;margin:0.5rem 0 0 0;font-size:1.1rem;">Score parfait : {score}/{total_questions} ({percentage:.0f}%)</p>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-    elif percentage >= 75:
-        st.markdown(
-            f"""
-            <div style="background:linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);border-left:6px solid #28a745;padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-                <h2 style="color:#155724;margin:0;font-size:2rem;">✨ Très bien !</h2>
-                <p style="color:#155724;margin:0.5rem 0 0 0;font-size:1.1rem;">Score : {score}/{total_questions} ({percentage:.0f}%)</p>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-    elif percentage >= 50:
-        st.markdown(
-            f"""
-            <div style="background:linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);border-left:6px solid #17a2b8;padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-                <h2 style="color:#0c5460;margin:0;font-size:2rem;">👍 Pas mal !</h2>
-                <p style="color:#0c5460;margin:0.5rem 0 0 0;font-size:1.1rem;">Score : {score}/{total_questions} ({percentage:.0f}%)</p>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-    else:
-        st.markdown(
-            f"""
-            <div style="background:linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);border-left:6px solid #dc3545;padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
-                <h2 style="color:#721c24;margin:0;font-size:2rem;">💪 Continue tes efforts !</h2>
-                <p style="color:#721c24;margin:0.5rem 0 0 0;font-size:1.1rem;">Score : {score}/{total_questions} ({percentage:.0f}%) - Révise encore ce thème !</p>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-
-    st.markdown("<h3 style='text-align:center;margin:2rem 0 1rem 0;color:#374151;'>Détail de tes réponses</h3>", unsafe_allow_html=True)
-    
-    results = st.session_state.get("question_results", [])
-    
-    if len(results) == total_questions:
-        result_icons = "".join([
-            f"<span style='font-size:1.8rem;margin:0.3rem;display:inline-block;'>{'✅' if r else '❌'}</span>"
-            for r in results
-        ])
-        
-        st.markdown(
-            f"""
-            <div style="text-align:center;background:#f9fafb;padding:1.5rem;border-radius:12px;border:2px solid #e5e7eb;line-height:2.5rem;max-width:600px;margin:0 auto;">
-                {result_icons}
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
-    else:
-        st.info("Le détail des réponses n'est pas disponible pour cette session.")
-
-    if quiz_key not in st.session_state.theme_scores:
-        st.session_state.theme_scores[quiz_key] = {}
-    st.session_state.theme_scores[quiz_key][theme_number] = f"{score}/{total_questions}"
-
-    # Sauvegarde persistante pour les utilisateurs connectés
-    if (
-        st.session_state.get("auth_stage") == "logged_in"
-        and st.session_state.get("username")
-    ):
-        # thème_scores = scores de tous les thèmes de ce quiz dans la session
-        theme_scores = st.session_state.theme_scores[quiz_key]
-        # quiz_key est déjà une bonne clé (cap_boucher_100, bts_meca_vp_100, etc.)
-        save_user_scores(
-            st.session_state.username,
-            quiz_key,
-            theme_scores
-        )
-
-    st.markdown("<div style='margin-top:2rem;'></div>", unsafe_allow_html=True)
-    col1, col2 = st.columns(2)
-
-    with col1:
-        if st.button("⬅️ Revenir au menu des thèmes", use_container_width=True):
-            go_back_to_main_menu()
-            st.rerun()
-
-    with col2:
-        if st.button("🔄 Refaire ce thème", use_container_width=True, type="primary"):
-            start_theme(theme_number)
-            st.rerun()
-
-    st.markdown("<div style='margin-top:1.5rem;'></div>", unsafe_allow_html=True)
-    summary_text = generate_score_summary()
-    st.download_button(
-        label="📥 Télécharger le récapitulatif complet",
-        data=summary_text,
-        file_name=f"recap_quiz_{quiz_key}_{datetime.now().strftime('%Y%m%d_%H%M')}.txt",
-        mime="text/plain",
-        use_container_width=True
-    )
+                st.rerun()
 # -----------------------
 # FONCTION PRINCIPALE
 # -----------------------
