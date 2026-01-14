@@ -218,16 +218,18 @@ def get_user_stats(username: str) -> dict:
         stats["total_themes"] += len(scores)
 
         for theme_num, score_str in scores.items():
+            # On ne traite que les chaînes de type "8/10"
+            if not isinstance(score_str, str):
+                continue
             try:
-                if not score_str:
-                    continue  # ignore None ou chaîne vide
                 parts = score_str.split("/")
                 correct = int(parts[0])
                 total = int(parts[1])
                 stats["total_questions"] += total
                 stats["total_correct"] += correct
             except (ValueError, IndexError):
-                pass
+                # Ignore les formats invalides
+                continue
 
     if stats["total_questions"] > 0:
         stats["average_percentage"] = round(
@@ -235,6 +237,7 @@ def get_user_stats(username: str) -> dict:
         )
 
     return stats
+
 
 
 # ===================== DATA EXPORT =====================

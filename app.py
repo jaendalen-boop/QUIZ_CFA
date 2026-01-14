@@ -55,31 +55,70 @@ def show_entry_screen():
         st.subheader("Créer ou utiliser un compte")
         tabs = st.tabs(["Se connecter", "Créer un compte"])
 
-        # Onglet connexion
         with tabs[0]:
-            login_username = st.text_input("Nom d'utilisateur", key="login_username")
-            login_password = st.text_input("Mot de passe", type="password", key="login_password")
-            if st.button("🔐 Se connecter", use_container_width=True, key="login_btn"):
-                success, msg = login_user(login_username, login_password)
-                if success:
-                    st.success(msg)
-                    st.session_state.auth_stage = "logged_in"
-                    st.session_state.username = login_username.strip().lower()
-                    st.rerun()
-                else:
-                    st.error(msg)
+            with st.form("login_form", clear_on_submit=False):
+                login_username = st.text_input(
+                    "Nom d'utilisateur",
+                    key="login_username_input",
+                    autocomplete="username"
+                )
+                login_password = st.text_input(
+                    "Mot de passe",
+                    type="password",
+                    key="login_password_input",
+                    autocomplete="current-password"  # ✅ Connexion existante
+                )
 
-        # Onglet création
+                submitted = st.form_submit_button("Se connecter", use_container_width=True)
+
+                if submitted:
+                    success, msg = login_user(login_username, login_password)
+                    if success:
+                        st.success(msg)
+                        st.session_state.auth_stage = "logged_in"
+                        st.session_state.username = login_username.strip().lower()
+                        st.rerun()
+                    else:
+                        st.error(msg)
+
         with tabs[1]:
-            new_username = st.text_input("Nom d'utilisateur", key="new_username")
-            new_email = st.text_input("Email", key="new_email")
-            new_password = st.text_input("Mot de passe", type="password", key="new_password")
-            if st.button("🆕 Créer mon compte", use_container_width=True, key="create_btn"):
-                success, msg = create_user(new_username, new_email, new_password)
-                if success:
-                    st.success(msg + " Vous pouvez maintenant vous connecter.")
-                else:
-                    st.error(msg)
+            with st.form("signup_form", clear_on_submit=False):
+                signup_username = st.text_input(
+                    "Nom d'utilisateur",
+                    key="signup_username_input",
+                    autocomplete="username"
+                )
+                signup_email = st.text_input(
+                    "Email",
+                    key="signup_email_input",
+                    autocomplete="email"
+                )
+                signup_password = st.text_input(
+                    "Mot de passe (min. 6 caractères)",
+                    type="password",
+                    key="signup_password_input",
+                    autocomplete="new-password"  # ✅ Nouveau mot de passe
+                )
+                signup_confirm = st.text_input(
+                    "Confirmer le mot de passe",
+                    type="password",
+                    key="signup_confirm_input",
+                    autocomplete="new-password"
+                )
+
+                submitted = st.form_submit_button("Créer mon compte", use_container_width=True)
+
+                if submitted:
+                    if signup_password != signup_confirm:
+                        st.error("❌ Les mots de passe ne correspondent pas.")
+                    else:
+                        success, msg = create_user(signup_username, signup_email, signup_password)
+                        if success:
+                            st.success(msg)
+                            st.session_state.auth_stage = "login"
+                            st.rerun()
+                        else:
+                            st.error(msg)
 
 
 # -----------------------
@@ -860,9 +899,10 @@ def show_profile_page():
         all_themes_completed = True
 
         for score_str in scores.values():
+            # On ne traite que les chaînes "8/10"
+            if not isinstance(score_str, str):
+                continue
             try:
-                if not score_str:
-                    continue
                 correct, total = map(int, score_str.split("/"))
                 total_correct += correct
                 total_questions += total
@@ -876,7 +916,6 @@ def show_profile_page():
         if all_themes_completed and percentage >= 70:
             validated_quiz_count += 1
 
-            # Répartition par niveau grâce au préfixe
             if quiz_key.startswith("cap_"):
                 validated_cap += 1
             elif quiz_key.startswith("bacpro_"):
