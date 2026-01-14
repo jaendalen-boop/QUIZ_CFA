@@ -1621,7 +1621,7 @@ def show_main_menu_for_current_quiz():
 
 
 # -----------------------
-# INTERFACE : ÉCRAN DE QUESTION (FINAL - TOUS LES FIXES)
+# INTERFACE : ÉCRAN DE QUESTION 
 # -----------------------
 
 def show_question_screen():
@@ -1709,11 +1709,9 @@ def show_question_screen():
     if "theme_attempt_counter" not in st.session_state:
         st.session_state.theme_attempt_counter = 0
 
-    # 🔴 FIX 1 (FINAL) : Scroll agressif vers le haut de la page
-    # Permet de voir la question depuis le début
+    # 🔴 FIX 1 : Scroll au très haut de la page
     st.markdown("""
     <script>
-    // Scroll au très haut de la page (position 0)
     setTimeout(function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 50);
@@ -1725,11 +1723,11 @@ def show_question_screen():
     if not st.session_state.answer_locked:
         st.markdown("<p style='font-weight:600;margin-bottom:0.5rem;'>Choisissez une réponse :</p>", unsafe_allow_html=True)
 
-        # 🔴 FIX 2 + FIX 3 (FINAL) : Bloquer COMPLÈTEMENT le scroll lors du touch sur les boutons
+        # 🔴 FIX 2 + FIX 3 (ÉQUILIBRE) : Permettre le scroll MAIS pas de changement de couleur au scroll
         st.markdown(
             f"""
             <style>
-            /* FIX 2 (DRASTIQUE) : Bloquer TOUS les événements tactiles sauf le click direct */
+            /* FIX 2 : Permettre le scroll vertical sur les boutons */
             div[data-testid="stButton"] > button {{
                 width: 100%;
                 text-align: left;
@@ -1742,7 +1740,7 @@ def show_question_screen():
                 transition: none !important;
                 margin-bottom: 0.8rem;
                 min-height: 60px;
-                touch-action: none !important;
+                touch-action: pan-y !important;
                 user-select: none;
                 -webkit-user-select: none;
                 -webkit-touch-callout: none;
@@ -1750,13 +1748,13 @@ def show_question_screen():
                 -webkit-tap-highlight-color: transparent;
             }}
             
-            /* FIX 2 : Autoriser UNIQUEMENT le scroll vertical en dehors des boutons */
+            /* FIX 2 : Permettre le scroll vertical partout */
             div[data-testid="stVerticalBlock"] {{
                 touch-action: pan-y !important;
                 -webkit-user-select: none;
             }}
             
-            /* FIX 3 (FINAL) : Couleur active UNIQUEMENT lors du vrai click */
+            /* FIX 3 : Couleur active UNIQUEMENT lors du vrai click (pointerdown) */
             div[data-testid="stButton"] > button:active {{
                 background: #{color[1:]} !important;
                 color: #ffffff !important;
@@ -1766,13 +1764,6 @@ def show_question_screen():
             div[data-testid="stButton"] > button:focus {{
                 outline: 2px solid #{color[1:]};
                 outline-offset: 2px;
-            }}
-            
-            /* Forcer le style normal TOUJOURS sauf au click vrai */
-            div[data-testid="stButton"] > button {{
-                background: #ffffff !important;
-                color: #1f2937 !important;
-                border-color: #d1d5db !important;
             }}
             </style>
             """,
