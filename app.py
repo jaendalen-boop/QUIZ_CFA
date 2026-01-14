@@ -763,9 +763,13 @@ if "selected_cap_family" not in st.session_state:
     st.session_state.selected_cap_family = None
 if "selected_cap_general_subject" not in st.session_state:
     st.session_state.selected_cap_general_subject = None
+if "show_quit_confirmation" not in st.session_state:
+    st.session_state.show_quit_confirmation = False
 if "ui_mode" not in st.session_state:
     # "app" = interface quiz, "profile" = page profil
     st.session_state.ui_mode = "app"
+
+
 def show_entry_screen():
     st.markdown("""
     <div style="
@@ -1703,14 +1707,31 @@ def show_question_screen():
     if "theme_attempt_counter" not in st.session_state:
         st.session_state.theme_attempt_counter = 0
 
+    # 🔴 FIX 1 : Anchor invisible pour scroll mobile vers la question
+    st.markdown('<div id="question-anchor" style="scroll-margin-top: 60px;"></div>', unsafe_allow_html=True)
+    
     st.markdown(f"<h3 style='margin:1rem 0;'>{q['question']}</h3>", unsafe_allow_html=True)
+
+    # 🔴 FIX 1 : Script pour scroll vers la question (mobile)
+    st.markdown("""
+    <script>
+    setTimeout(function() {
+        const anchor = document.getElementById('question-anchor');
+        if (anchor) {
+            anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }, 100);
+    </script>
+    """, unsafe_allow_html=True)
 
     if not st.session_state.answer_locked:
         st.markdown("<p style='font-weight:600;margin-bottom:0.5rem;'>Choisissez une réponse :</p>", unsafe_allow_html=True)
 
+        # 🔴 FIX 2 + FIX 3 : CSS pour empêcher scroll de déclencher boutons + améliorer contraste des réponses
         st.markdown(
             f"""
             <style>
+            /* FIX 2 : Empêche le scroll de déclencher les boutons accidentellement */
             div[data-testid="stButton"] > button {{
                 width: 100%;
                 text-align: left;
@@ -1723,6 +1744,27 @@ def show_question_screen():
                 transition: all 0.2s ease;
                 margin-bottom: 0.8rem;
                 min-height: 60px;
+                touch-action: manipulation;
+                user-select: none;
+                -webkit-user-select: none;
+                -webkit-touch-callout: none;
+            }}
+            
+            /* FIX 2 : Autorise scroll vertical, bloque autres interactions */
+            div[data-testid="stVerticalBlock"] {{
+                touch-action: pan-y;
+            }}
+            
+            /* FIX 3 : Couleur de sélection lisible (au lieu de blanc) */
+            div[data-testid="stButton"] > button:active {{
+                background: #{color[1:]} !important;
+                color: white !important;
+                border-color: #{color[1:]} !important;
+            }}
+            
+            div[data-testid="stButton"] > button:focus {{
+                outline: 2px solid #{color[1:]};
+                outline-offset: 2px;
             }}
             </style>
             """,
@@ -1769,12 +1811,14 @@ def show_question_screen():
 
         with col2:
             if st.button("⬅️ Retour", use_container_width=True):
-                go_back_to_main_menu()
+                # 🔴 FIX 5 : Confirmation avant quitter (voir fonction ci-dessous)
+                st.session_state.show_quit_confirmation = True
                 st.rerun()
 
     else:
         st.markdown(f"<p style='font-weight:600;margin:1rem 0;'>Votre réponse : <strong>{st.session_state.selected_answer}</strong></p>", unsafe_allow_html=True)
 
+        # 🔴 FIX 3 : Couleurs lisibles pour les réponses (contraste amélioré)
         for opt in answer_options:
             opt_text = opt["text"]
             opt_key = opt["key"]
@@ -1784,14 +1828,17 @@ def show_question_screen():
             if is_correct_answer:
                 border_color = "#22c55e"
                 bg_color = "#d4edda"
+                text_color = "#155724"  # Texte vert foncé = lisible
                 icon = "✅"
             elif is_user_answer and not is_correct_answer:
                 border_color = "#dc3545"
                 bg_color = "#f8d7da"
+                text_color = "#721c24"  # Texte rouge foncé = lisible
                 icon = "❌"
             else:
                 border_color = "#d1d5db"
                 bg_color = "#f9fafb"
+                text_color = "#1f2937"  # Texte gris foncé = lisible
                 icon = ""
 
             st.markdown(
@@ -1802,6 +1849,7 @@ def show_question_screen():
                     padding:1rem;
                     margin-bottom:0.8rem;
                     background:{bg_color};
+                    color:{text_color};
                     animation:fadeIn 0.3s ease-in;
                 ">
                     {icon} <strong>{opt_key}.</strong> {opt_text}
@@ -1826,6 +1874,7 @@ def show_question_screen():
                         padding:1.2rem;
                         border-radius:12px;
                         margin:1.5rem 0;
+                        color:#155724;
                         animation:fadeIn 0.3s ease-in;
                     '>
                         <h3 style='color:#155724;margin:0;font-size:1.3rem;'>✅ Bonne réponse !</h3>
@@ -1845,6 +1894,7 @@ def show_question_screen():
                         padding:1.2rem;
                         border-radius:12px;
                         margin:1.5rem 0;
+                        color:#721c24;
                         animation:fadeIn 0.3s ease-in;
                     '>
                         <h3 style='color:#721c24;margin:0 0 0.5rem 0;font-size:1.3rem;'>❌ Mauvaise réponse</h3>
@@ -1864,6 +1914,7 @@ def show_question_screen():
                         border-radius:12px;
                         margin:1.5rem 0;
                         box-shadow:0 4px 12px rgba(0,0,0,0.1);
+                        color:#006064;
                         animation:fadeIn 0.4s ease-in;
                     '>
                         <h4 style='color:#006064;margin:0 0 0.8rem 0;font-size:1.2rem;display:flex;align-items:center;'>
@@ -1875,15 +1926,14 @@ def show_question_screen():
                     unsafe_allow_html=True,
                 )
 
+        # 🔴 FIX 4 : Réorganiser les boutons + ajouter espace entre eux
+        # Le bouton "Retour" passe en DEUXIÈME position, "Question suivante" est PRIMARY
+        st.markdown("<div style='margin-top:1.5rem;'></div>", unsafe_allow_html=True)
+        
         col1, col2 = st.columns(2)
 
         with col1:
-            if st.button("⬅️ Retour", use_container_width=True):
-                go_back_to_main_menu()
-                st.rerun()
-
-        with col2:
-            if st.button("➡️ Question suivante", use_container_width=True, type="primary"):
+            if st.button("➡️ Question suivante", use_container_width=True, type="primary", key="next_question_btn"):
                 st.session_state.show_correction = False
                 st.session_state.last_is_correct = None
                 st.session_state.current_question_index += 1
@@ -1897,7 +1947,28 @@ def show_question_screen():
                     show_theme_result()
                 else:
                     st.rerun()
-# -----------------------
+
+        with col2:
+            if st.button("⬅️ Quitter le thème", use_container_width=True, key="exit_theme_btn"):
+                # 🔴 FIX 5 : Confirmation avant quitter
+                st.session_state.show_quit_confirmation = True
+                st.rerun()
+
+    # 🔴 FIX 5 : Dialog de confirmation avant quitter
+    if st.session_state.get("show_quit_confirmation", False):
+        st.warning("⚠️ **Attention !** Si vous quittez maintenant, la progression du thème en cours ne sera **pas conservée**.")
+        col_confirm_1, col_confirm_2 = st.columns(2)
+        
+        with col_confirm_1:
+            if st.button("✅ Oui, quitter le thème", use_container_width=True, key="confirm_quit"):
+                st.session_state.show_quit_confirmation = False
+                go_back_to_main_menu()
+                st.rerun()
+        
+        with col_confirm_2:
+            if st.button("❌ Non, continuer", use_container_width=True, key="cancel_quit"):
+                st.session_state.show_quit_confirmation = False
+                st.rerun()# -----------------------
 # INTERFACE : ÉCRAN DE RÉSULTAT
 # -----------------------
 
