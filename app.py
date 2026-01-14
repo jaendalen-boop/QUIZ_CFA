@@ -1621,7 +1621,7 @@ def show_main_menu_for_current_quiz():
 
 
 # -----------------------
-# INTERFACE : ÉCRAN DE QUESTION 
+# INTERFACE : ÉCRAN DE QUESTION (ÉQUILIBRE : SCROLL + PAS DE COULEUR AU SCROLL)
 # -----------------------
 
 def show_question_screen():
@@ -1642,39 +1642,43 @@ def show_question_screen():
 
     # 🔴 AMÉLIORÉ : Intitulé du thème réduit en taille pour gagner de la place
     st.markdown(
-        f"<h3 style='margin:0.2rem 0;font-size:1.1rem;'>{theme_name}</h3>"
-        f"<div style='height:4px;border-radius:999px;background:{color};margin-bottom:0.5rem;'></div>",
+        f"""
+        <div style='margin:0.3rem 0;'>
+            <h4 style='margin:0;font-size:0.9rem;'>{theme_name}</h4>
+            <div style='height:3px;border-radius:999px;background:{color};margin:0.2rem 0;'></div>
+        </div>
+        """,
         unsafe_allow_html=True,
     )
 
     progress_percent = ((idx + 1) / total_questions) * 100
     st.markdown(
         f"""
-        <div style="
+        <div style='
             width:100%;
             background:#e5e7eb;
-            border-radius:12px;
-            height:24px;
+            border-radius:8px;
+            height:20px;
             position:relative;
-            margin-bottom:0.5rem;
+            margin:0.3rem 0 0.5rem 0;
             overflow:hidden;
-        ">
-            <div style="
+        '>
+            <div style='
                 width:{progress_percent}%;
                 background:linear-gradient(90deg, {color} 0%, {color}dd 100%);
                 height:100%;
-                border-radius:12px;
+                border-radius:8px;
                 transition:width 0.4s ease;
-            "></div>
-            <span style="
+            '></div>
+            <span style='
                 position:absolute;
                 top:50%;
                 left:50%;
                 transform:translate(-50%, -50%);
                 font-weight:600;
-                font-size:0.85rem;
+                font-size:0.7rem;
                 color:#1f2937;
-            ">Question {idx + 1} / {total_questions}</span>
+            '>{idx + 1}/{total_questions}</span>
         </div>
         """,
         unsafe_allow_html=True,
@@ -1718,28 +1722,30 @@ def show_question_screen():
     </script>
     """, unsafe_allow_html=True)
     
-    st.markdown(f"<h3 style='margin:1rem 0;font-weight:700;'>{q['question']}</h3>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='margin:0.5rem 0;font-size:1.1rem;font-weight:700;line-height:1.3;'>{q['question']}</h3>", unsafe_allow_html=True)
 
     if not st.session_state.answer_locked:
-        st.markdown("<p style='font-weight:600;margin-bottom:0.5rem;'>Choisissez une réponse :</p>", unsafe_allow_html=True)
+        st.markdown("<p style='font-size:0.85rem;font-weight:600;margin:0.3rem 0;'>Réponses :</p>", unsafe_allow_html=True)
 
         # 🔴 FIX 2 + FIX 3 (ÉQUILIBRE) : Permettre le scroll MAIS pas de changement de couleur au scroll
         st.markdown(
             f"""
             <style>
-            /* FIX 2 : Permettre le scroll vertical sur les boutons */
+            /* Boutons de réponse COMPACTS */
             div[data-testid="stButton"] > button {{
                 width: 100%;
                 text-align: left;
-                padding: 1rem;
-                border-radius: 12px;
+                padding: 0.6rem 0.8rem;
+                border-radius: 8px;
                 border: 2px solid #d1d5db;
-                background: #ffffff;
-                color: #1f2937;
-                font-size: 1rem;
+                background: #ffffff !important;
+                color: #1f2937 !important;
+                font-size: 0.95rem;
                 transition: none !important;
-                margin-bottom: 0.8rem;
-                min-height: 60px;
+                margin-bottom: 0.4rem;
+                min-height: 48px;
+                display: flex;
+                align-items: center;
                 touch-action: pan-y !important;
                 user-select: none;
                 -webkit-user-select: none;
@@ -1748,13 +1754,12 @@ def show_question_screen():
                 -webkit-tap-highlight-color: transparent;
             }}
             
-            /* FIX 2 : Permettre le scroll vertical partout */
             div[data-testid="stVerticalBlock"] {{
                 touch-action: pan-y !important;
                 -webkit-user-select: none;
             }}
             
-            /* FIX 3 : Couleur active UNIQUEMENT lors du vrai click (pointerdown) */
+            /* Couleur active UNIQUEMENT lors du click */
             div[data-testid="stButton"] > button:active {{
                 background: #{color[1:]} !important;
                 color: #ffffff !important;
@@ -1763,7 +1768,13 @@ def show_question_screen():
             
             div[data-testid="stButton"] > button:focus {{
                 outline: 2px solid #{color[1:]};
-                outline-offset: 2px;
+                outline-offset: 1px;
+            }}
+            
+            /* Compresser les colonnes */
+            div[data-testid="stColumn"] {{
+                padding-left: 0.2rem !important;
+                padding-right: 0.2rem !important;
             }}
             </style>
             """,
@@ -1775,14 +1786,14 @@ def show_question_screen():
             opt_key = opt["key"]
             is_selected = (st.session_state.selected_answer == opt_text)
 
-            button_label = f"{'✓ ' if is_selected else ''}{opt_key}. {opt_text}"
+            button_label = f"{'✓ ' if is_selected else ''}{opt_key}. {opt_text}"  # Texte complet
 
             if st.button(button_label, key=f"opt_{theme_number}_{idx}_{opt_key}_{st.session_state.theme_attempt_counter}", use_container_width=True):
                 st.session_state.selected_answer = opt_text
                 st.rerun()
 
-        st.markdown("<div style='margin-top:1.5rem;'></div>", unsafe_allow_html=True)
-        col1, col2 = st.columns(2)
+        st.markdown("<div style='margin-top:0.4rem;'></div>", unsafe_allow_html=True)
+        col1, col2 = st.columns(2, gap="small")
 
         with col1:
             if st.button("✅ Valider", use_container_width=True, type="primary"):
