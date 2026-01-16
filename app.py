@@ -1640,10 +1640,9 @@ def show_question_screen():
 
     color = THEME_COLORS.get(theme_number, "#4f46e5")
 
-    # 🔴 AMÉLIORÉ : Intitulé du thème réduit en taille pour gagner de la place
     st.markdown(
         f"""
-        <div style='margin:0.3rem 0;'>
+        <div class='theme-header'>
             <h4 style='margin:0;font-size:0.9rem;'>{theme_name}</h4>
             <div style='height:3px;border-radius:999px;background:{color};margin:0.2rem 0;'></div>
         </div>
@@ -1715,49 +1714,72 @@ def show_question_screen():
 
     st.markdown("""
     <style>
-    /* Réduire le padding du conteneur app (haut/bas) */
-    [data-testid="stAppViewContainer"] {
-        padding-top: 0.3rem !important;
-        padding-bottom: 0.3rem !important;
+    @media (max-width: 768px) {
+        [data-testid="stAppViewContainer"] {
+            padding-top: 0.3rem !important;
+            padding-bottom: 0.3rem !important;
+        }
+        
+        [data-testid="stElementContainer"] {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        
+        [data-testid="stVerticalBlockBorderWrapper"] {
+            gap: 0.2rem !important;
+        }
+        
+        .stVerticalBlock {
+            gap: 0.2rem !important;
+        }
+        
+        .theme-header {
+            margin: 0.3rem 0 0.8rem 0 !important;
+        }
+        
+        .question-spacing {
+            margin: 0.3rem 0 1rem 0 !important;
+        }
     }
     
-    /* Réduire le padding de la section principale */
-    [data-testid="stElementContainer"] {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
-    
-    /* Réduire le gap entre les éléments verticaux */
-    [data-testid="stVerticalBlockBorderWrapper"] {
-        gap: 0.2rem !important;
-    }
-    
-    /* Réduire les marges des blocks individuels */
-    .stVerticalBlock {
-        gap: 0.2rem !important;
+    @media (min-width: 769px) {
+        [data-testid="stAppViewContainer"] {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+        
+        [data-testid="stElementContainer"] {
+            padding-top: 0.5rem !important;
+            padding-bottom: 0.5rem !important;
+        }
+        
+        [data-testid="stVerticalBlockBorderWrapper"] {
+            gap: 0.5rem !important;
+        }
+        
+        .stVerticalBlock {
+            gap: 0.5rem !important;
+        }
+        
+        .theme-header {
+            margin: 0.5rem 0 1.2rem 0 !important;
+        }
+        
+        .question-spacing {
+            margin: 0.5rem 0 1.5rem 0 !important;
+        }
     }
     </style>
-    """, unsafe_allow_html=True)
-
-    # 🔴 FIX 1 : Scroll au très haut de la page
-    st.markdown("""
-    <script>
-    setTimeout(function() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 50);
-    </script>
     """, unsafe_allow_html=True)
     
     st.markdown(f"<h3 style='margin:0.5rem 0;font-size:1.1rem;font-weight:700;line-height:1.3;'>{q['question']}</h3>", unsafe_allow_html=True)
 
-    if not st.session_state.answer_locked:
-        st.markdown("<p style='font-size:0.85rem;font-weight:600;margin:0.3rem 0;'>Réponses :</p>", unsafe_allow_html=True)
 
-        # 🔴 FIX 2 + FIX 3 (ÉQUILIBRE) : Permettre le scroll MAIS pas de changement de couleur au scroll
+    if not st.session_state.answer_locked:
+
         st.markdown(
             f"""
             <style>
-            /* Boutons de réponse COMPACTS */
             div[data-testid="stButton"] > button {{
                 width: 100%;
                 text-align: left;
@@ -1785,7 +1807,6 @@ def show_question_screen():
                 -webkit-user-select: none;
             }}
             
-            /* Couleur active UNIQUEMENT lors du click */
             div[data-testid="stButton"] > button:active {{
                 background: #{color[1:]} !important;
                 color: #ffffff !important;
@@ -1797,7 +1818,6 @@ def show_question_screen():
                 outline-offset: 1px;
             }}
             
-            /* Compresser les colonnes */
             div[data-testid="stColumn"] {{
                 padding-left: 0.2rem !important;
                 padding-right: 0.2rem !important;
@@ -1812,7 +1832,7 @@ def show_question_screen():
             opt_key = opt["key"]
             is_selected = (st.session_state.selected_answer == opt_text)
 
-            button_label = f"{'✓ ' if is_selected else ''}{opt_key}. {opt_text}"  # Texte complet
+            button_label = f"{'✓ ' if is_selected else ''}{opt_key}. {opt_text}"
 
             if st.button(button_label, key=f"opt_{theme_number}_{idx}_{opt_key}_{st.session_state.theme_attempt_counter}", use_container_width=True):
                 st.session_state.selected_answer = opt_text
@@ -1851,9 +1871,8 @@ def show_question_screen():
                 st.rerun()
 
     else:
-        st.markdown(f"<p style='font-weight:600;margin:0.3rem 0 1rem 0;'>Votre réponse : <strong>{st.session_state.selected_answer}</strong></p>", unsafe_allow_html=True)
+        st.markdown("<div class='question-spacing'></div>", unsafe_allow_html=True)
 
-        # 🔴 FIX 3 : Couleurs lisibles pour les réponses (contraste amélioré)
         for opt in answer_options:
             opt_text = opt["text"]
             opt_key = opt["key"]
@@ -1863,17 +1882,17 @@ def show_question_screen():
             if is_correct_answer:
                 border_color = "#22c55e"
                 bg_color = "#d4edda"
-                text_color = "#155724"  # Texte vert foncé = lisible
+                text_color = "#155724"
                 icon = "✅"
             elif is_user_answer and not is_correct_answer:
                 border_color = "#dc3545"
                 bg_color = "#f8d7da"
-                text_color = "#721c24"  # Texte rouge foncé = lisible
+                text_color = "#721c24"
                 icon = "❌"
             else:
                 border_color = "#d1d5db"
                 bg_color = "#f9fafb"
-                text_color = "#1f2937"  # Texte gris foncé = lisible
+                text_color = "#1f2937"
                 icon = ""
 
             st.markdown(
@@ -1941,32 +1960,31 @@ def show_question_screen():
                     unsafe_allow_html=True,
                 )
 
-                if "correction" in q and q["correction"]:
-                    st.markdown(
-                        f"""
-                        <div style='
-                            background:linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
-                            border-left:6px solid #0097a7;
-                            padding:1rem;
-                            border-radius:12px;
-                            margin:0.8rem 0;
-                            box-shadow:0 4px 12px rgba(0,0,0,0.1);
-                            color:#006064;
-                            animation:fadeIn 0.4s ease-in;
-                        '>
-                            <h4 style='color:#006064;margin:0 0 0.5rem 0;font-size:1rem;display:flex;align-items:center;'>
-                                <span style='font-size:1.2rem;margin-right:0.5rem;'>📚</span> Cours
-                            </h4>
-                            <div style='color:#00363a;line-height:1.5;font-size:0.95rem;'>{q['correction']}</div>
-                        </div>
-                        """,
-                        unsafe_allow_html=True,
-                    )
+            if "correction" in q and q["correction"]:
+                st.markdown(
+                    f"""
+                    <div style='
+                        background:linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+                        border-left:6px solid #0097a7;
+                        padding:1rem;
+                        border-radius:12px;
+                        margin:0.8rem 0;
+                        box-shadow:0 4px 12px rgba(0,0,0,0.1);
+                        color:#006064;
+                        animation:fadeIn 0.4s ease-in;
+                    '>
+                        <h4 style='color:#006064;margin:0 0 0.5rem 0;font-size:1rem;display:flex;align-items:center;'>
+                            <span style='font-size:1.2rem;margin-right:0.5rem;'>📚</span> Cours
+                        </h4>
+                        <div style='color:#00363a;line-height:1.5;font-size:0.95rem;'>{q['correction']}</div>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
 
             st.markdown("<div style='margin-top:0.6rem;'></div>", unsafe_allow_html=True)
         
         col1, col2 = st.columns(2, gap="small")
-
 
         with col1:
             if st.button("➡️ Question suivante", use_container_width=True, type="primary", key="next_question_btn"):
@@ -1989,7 +2007,6 @@ def show_question_screen():
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
 
-    # 🔴 FIX 5 : Dialog de confirmation avant quitter
     if st.session_state.get("show_quit_confirmation", False):
         st.warning("⚠️ **Attention !** Si vous quittez maintenant, la progression du thème en cours ne sera **pas conservée**.")
         col_confirm_1, col_confirm_2 = st.columns(2)
