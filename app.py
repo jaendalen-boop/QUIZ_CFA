@@ -1621,7 +1621,7 @@ def show_main_menu_for_current_quiz():
 
 
 # -----------------------
-# INTERFACE : ÉCRAN DE QUESTION (ÉQUILIBRE : SCROLL + PAS DE COULEUR AU SCROLL)
+# INTERFACE : ÉCRAN DE QUESTION
 # -----------------------
 
 def show_question_screen():
@@ -1851,7 +1851,7 @@ def show_question_screen():
                 st.rerun()
 
     else:
-        st.markdown(f"<p style='font-weight:600;margin:0.3rem 0;'>Votre réponse : <strong>{st.session_state.selected_answer}</strong></p>", unsafe_allow_html=True)
+        st.markdown(f"<p style='font-weight:600;margin:0.3rem 0 1rem 0;'>Votre réponse : <strong>{st.session_state.selected_answer}</strong></p>", unsafe_allow_html=True)
 
         # 🔴 FIX 3 : Couleurs lisibles pour les réponses (contraste amélioré)
         for opt in answer_options:
@@ -1902,7 +1902,7 @@ def show_question_screen():
 
         if st.session_state.show_correction:
             if st.session_state.last_is_correct is True:
-                                st.markdown(
+                st.markdown(
                     """
                     <div style='
                         background:#d4edda;
@@ -1923,7 +1923,7 @@ def show_question_screen():
                 correct_option = next(
                     (opt for opt in answer_options if opt["isCorrect"]), None
                 )
-                                st.markdown(
+                st.markdown(
                     f"""
                     <div style='
                         background:#f8d7da;
@@ -1941,31 +1941,29 @@ def show_question_screen():
                     unsafe_allow_html=True,
                 )
 
+                if "correction" in q and q["correction"]:
+                    st.markdown(
+                        f"""
+                        <div style='
+                            background:linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+                            border-left:6px solid #0097a7;
+                            padding:1rem;
+                            border-radius:12px;
+                            margin:0.8rem 0;
+                            box-shadow:0 4px 12px rgba(0,0,0,0.1);
+                            color:#006064;
+                            animation:fadeIn 0.4s ease-in;
+                        '>
+                            <h4 style='color:#006064;margin:0 0 0.5rem 0;font-size:1rem;display:flex;align-items:center;'>
+                                <span style='font-size:1.2rem;margin-right:0.5rem;'>📚</span> Cours
+                            </h4>
+                            <div style='color:#00363a;line-height:1.5;font-size:0.95rem;'>{q['correction']}</div>
+                        </div>
+                        """,
+                        unsafe_allow_html=True,
+                    )
 
-                        if "correction" in q and q["correction"]:
-                st.markdown(
-                    f"""
-                    <div style='
-                        background:linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
-                        border-left:6px solid #0097a7;
-                        padding:1rem;
-                        border-radius:12px;
-                        margin:0.8rem 0;
-                        box-shadow:0 4px 12px rgba(0,0,0,0.1);
-                        color:#006064;
-                        animation:fadeIn 0.4s ease-in;
-                    '>
-                        <h4 style='color:#006064;margin:0 0 0.5rem 0;font-size:1rem;display:flex;align-items:center;'>
-                            <span style='font-size:1.2rem;margin-right:0.5rem;'>📚</span> Cours
-                        </h4>
-                        <div style='color:#00363a;line-height:1.5;font-size:0.95rem;'>{q['correction']}</div>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-
-
-                st.markdown("<div style='margin-top:0.6rem;'></div>", unsafe_allow_html=True)
+            st.markdown("<div style='margin-top:0.6rem;'></div>", unsafe_allow_html=True)
         
         col1, col2 = st.columns(2, gap="small")
 
