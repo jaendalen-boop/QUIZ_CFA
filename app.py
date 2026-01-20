@@ -1998,9 +1998,10 @@ def show_question_screen():
                     del st.session_state.shuffled_answers[q_id]
 
                 if st.session_state.current_question_index >= total_questions:
-                    show_theme_result()
+                    showthemeresult()
                 else:
                     st.rerun()
+
 
         with col2:
             if st.button("⬅️ Quitter le thème", use_container_width=True, key="exit_theme_btn"):

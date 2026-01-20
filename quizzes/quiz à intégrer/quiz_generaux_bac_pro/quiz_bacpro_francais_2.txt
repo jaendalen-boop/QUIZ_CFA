@@ -1,0 +1,721 @@
+=============================================================================
+BASE DE DONNÉES : QUIZ FRANÇAIS BAC PRO - NIVEAU 2 (APPROFONDISSEMENT)
+=============================================================================
+THÈME 1 : LA POÉSIE ET LE LYRISME
+=============================================================================
+
+Question 1 : En versification française, combien de syllabes compte un alexandrin ?
+A. Douze
+B. Dix
+C. Huit
+D. Quatorze
+Rappel de Cours : L'alexandrin est le vers noble composé de douze syllabes.
+
+Question 2 : De quelle manière un sonnet classique est-il obligatoirement composé ?
+A. Deux quatrains et deux tercets
+B. Trois quatrains et un distique final
+C. Une seule strophe longue de quatorze vers sans séparation
+D. Quatre tercets suivis par un envoi de deux vers rimés
+Rappel de Cours : Le sonnet comporte 14 vers répartis en deux quatrains et deux tercets.
+
+Question 3 : Quelle figure de style désigne la répétition d'un même son consonnantique dans un vers ?
+A. Une allitération
+B. Une assonance
+C. Une diérèse
+D. Une métaphore
+Rappel de Cours : L'allitération est la répétition de consonnes.
+
+Question 4 : Quel est le registre littéraire qui privilégie l'expression des sentiments personnels comme l'amour, la fuite du temps ou la mélancolie ?
+A. Le lyrisme
+B. Le pathétique
+C. Le tragique
+D. L'épique
+Rappel de Cours : Le registre lyrique permet au poète d'exprimer son "Moi" et ses émotions intimes.
+
+Question 5 : Comment appelle-t-on la coupe principale qui sépare un alexandrin en deux parties égales ?
+A. La césure
+B. L'enjambement
+C. La rime
+D. Le rejet
+Rappel de Cours : La césure divise l'alexandrin en deux hémistiches de 6 syllabes.
+
+Question 6 : Dans le décompte des syllabes, quand le "e" muet doit-il être prononcé et compté ?
+A. Devant une consonne
+B. Devant une voyelle
+C. En fin de vers
+D. Devant un h muet
+Rappel de Cours : Le "e" muet compte s'il est suivi d'une consonne. Il s'élide devant une voyelle.
+
+Question 7 : Qui est l'auteur du célèbre recueil "Les Fleurs du Mal" condamné pour outrage aux bonnes mœurs en 1857 ?
+A. Charles Baudelaire
+B. Arthur Rimbaud
+C. Paul Verlaine
+D. Victor Hugo
+Rappel de Cours : Baudelaire a révolutionné la poésie en extrayant la beauté du mal.
+
+Question 8 : Quelle figure de style établit un rapprochement entre deux éléments sans utiliser de mot de liaison ?
+A. La métaphore
+B. La comparaison
+C. L'allégorie
+D. La personnification
+Rappel de Cours : La métaphore est une image implicite sans "comme" ou "tel".
+
+Question 9 : Quel nom donne-t-on à une strophe composée de quatre vers ?
+A. Un quatrain
+B. Un tercet
+C. Un distique
+D. Un quintil
+Rappel de Cours : Le quatrain est une strophe de 4 vers.
+
+Question 10 : Dans le schéma de rimes ABAB, comment qualifie-t-on les rimes ?
+A. Croisées
+B. Embrassées
+C. Suivies
+D. Plates
+Rappel de Cours : Les rimes croisées alternent (A-B-A-B).
+
+Question 11 : Quel poète du XVIe siècle, membre de la Pléiade, a écrit "Quand vous serez bien vieille, au soir, à la chandelle" ?
+A. Pierre de Ronsard
+B. Joachim du Bellay
+C. François Rabelais
+D. Clément Marot
+Rappel de Cours : Ronsard invite à profiter de la vie (Carpe Diem) dans ces sonnets pour Hélène.
+
+Question 12 : Qu'est-ce qu'une "diérèse" en versification ?
+A. La prononciation en deux syllabes de deux voyelles consécutives
+B. La suppression d'une syllabe pour respecter le rythme du vers
+C. La répétition d'un même mot au début de chaque vers
+D. La pause obligatoire à la fin de chaque strophe
+Rappel de Cours : La diérèse dissocie deux voyelles (ex: pas-si-on) pour le rythme.
+
+Question 13 : Le "Spleen" chez Baudelaire désigne :
+A. Une angoisse existentielle profonde et mélancolique
+B. Une maladie pulmonaire très répandue au XIXe siècle
+C. Un sentiment de joie intense face à la nature
+D. Une technique de versification très complexe
+Rappel de Cours : Le Spleen symbolise l'ennui profond et le dégoût de la vie.
+
+Question 14 : Quelle est la particularité du "vers libre" ?
+A. Il ne respecte ni le décompte des syllabes ni la rime
+B. Il doit obligatoirement être écrit par un enfant
+C. Il contient toujours des rimes mais pas de rythme
+D. Il est toujours composé de dix syllabes exactement
+Rappel de Cours : Le vers libre s'affranchit des règles classiques de métrique.
+
+Question 15 : Comment appelle-t-on le procédé qui consiste à attribuer des caractéristiques humaines à un objet ou un animal ?
+A. La personnification
+B. L'antithèse
+C. L'hyperbole
+D. L'euphémisme
+Rappel de Cours : La personnification donne vie à l'inanimé.
+
+Question 16 : Arthur Rimbaud a écrit un célèbre poème décrivant un soldat mort dans l'herbe, intitulé :
+A. Le Dormeur du val
+B. Le Bateau ivre
+C. Voyelles
+D. Ma Bohème
+Rappel de Cours : Ce sonnet révèle brutalement la mort du soldat à la fin.
+
+Question 17 : Qu'est-ce qu'une rime "pauvre" ?
+A. Une rime qui n'a qu'un seul son commun
+B. Une rime écrite par un poète sans argent
+C. Une rime qui a deux sons communs
+D. Une rime qui a trois sons communs ou plus
+Rappel de Cours : Une rime pauvre n'a qu'un seul son homophone (ex: ami/parti).
+
+Question 18 : Quel mouvement littéraire du XIXe siècle cherche à suggérer les sensations par la musicalité et les symboles plutôt que de les décrire ?
+A. Le Symbolisme
+B. Le Romantisme
+C. Le Naturalisme
+D. L'Humanisme
+Rappel de Cours : Le Symbolisme préfère la suggestion et le rêve à la description.
+
+Question 19 : Dans un poème, qu'est-ce qu'un "rejet" ?
+A. Un élément bref placé au début d'un vers qui termine la phrase du vers précédent
+B. Un poème refusé par l'éditeur car il contient trop de fautes
+C. Une rime qui ne correspond pas au schéma habituel de la strophe
+D. Un vers très long qui dépasse la marge de la page imprimée
+Rappel de Cours : Le rejet met en valeur un mot en débordant sur le vers suivant.
+
+Question 20 : Francis Ponge est connu pour son recueil "Le Parti pris des choses" où il décrit :
+A. Des objets du quotidien
+B. Des batailles historiques
+C. Des sentiments amoureux
+D. Des paysages exotiques
+Rappel de Cours : Ponge pratique une poésie de l'objet (pain, galet) par une description précise.
+
+=============================================================================
+THÈME 2 : L'ARGUMENTATION ET LE COMBAT DES LUMIÈRES
+=============================================================================
+
+Question 21 : À quel siècle correspond la période historique et culturelle dite des "Lumières" ?
+A. XVIIIe siècle
+B. XVIIe siècle
+C. XIXe siècle
+D. XVIe siècle
+Rappel de Cours : Le siècle des Lumières (1715-1789) prône la Raison contre l'obscurantisme.
+
+Question 22 : Quels sont les deux philosophes qui ont dirigé la rédaction de l'Encyclopédie ?
+A. Diderot et D'Alembert
+B. Voltaire et Rousseau
+C. Montesquieu et Marivaux
+D. Hugo et Zola
+Rappel de Cours : Diderot et D'Alembert ont dirigé cette œuvre majeure du savoir.
+
+Question 23 : Dans le vocabulaire de l'argumentation, que signifie le verbe "délibérer" ?
+A. Peser le pour et le contre avant de prendre une décision
+B. Essayer de tromper son adversaire par des mensonges
+C. Parler très fort pour empêcher les autres de s'exprimer
+D. Apprendre un texte par cœur pour le réciter sans faute
+Rappel de Cours : Délibérer consiste à examiner différents aspects d'une question avant de trancher.
+
+Question 24 : Quelle figure de style est l'arme principale de l'ironie, consistant à dire le contraire de ce que l'on pense ?
+A. L'antiphrase
+B. La métonymie
+C. L'anaphore
+D. Le pléonasme
+Rappel de Cours : L'antiphrase permet de se moquer en disant l'inverse de la pensée.
+
+Question 25 : Quel célèbre conte philosophique de Voltaire se termine par "Il faut cultiver notre jardin" ?
+A. Candide
+B. Zadig
+C. Micromégas
+D. L'Ingénu
+Rappel de Cours : Candide invite à l'action concrète plutôt qu'à la théorie métaphysique.
+
+Question 26 : Quelle grande cause judiciaire Voltaire a-t-il défendue pour lutter contre le fanatisme religieux ?
+A. L'affaire Calas
+B. L'affaire Dreyfus
+C. L'affaire du collier de la Reine
+D. L'affaire des Poisons
+Rappel de Cours : Voltaire a réhabilité Jean Calas, injustement accusé par fanatisme.
+
+Question 27 : Dans les "Lettres persanes" de Montesquieu, quelle technique l'auteur utilise-t-il pour critiquer la société française ?
+A. Le regard étranger
+B. Le monologue intérieur
+C. Le journal intime
+D. La science-fiction
+Rappel de Cours : Le regard faussement naïf de Persans permet de critiquer les mœurs françaises.
+
+Question 28 : Qu'est-ce qu'un "argument d'autorité" ?
+A. Invoquer une personne célèbre ou experte pour valider son propos
+B. Attaquer physiquement son adversaire pour le faire taire définitivement
+C. Utiliser des chiffres précis pour prouver une vérité mathématique absolue et incontestable
+D. Raconter une histoire triste pour faire pleurer le public dans la salle
+Rappel de Cours : L'argument d'autorité s'appuie sur le prestige d'un expert ou d'un auteur.
+
+Question 29 : Olympe de Gouges est célèbre pour avoir rédigé en 1791 :
+A. La Déclaration des droits de la femme et de la citoyenne
+B. Le Code civil des Français
+C. La Constitution de la Ve République
+D. Le Manifeste du Parti communiste
+Rappel de Cours : Elle réclamait l'égalité juridique et sociale pour les femmes.
+
+Question 30 : Quel connecteur logique permet d'introduire une opposition ou une concession ?
+A. Cependant
+B. Donc
+C. De plus
+D. En effet
+Rappel de Cours : "Cependant" marque une rupture ou une nuance.
+
+Question 31 : Quelle est la définition d'un "pamphlet" ?
+A. Un texte court et violent qui attaque une personne ou une institution
+B. Un long roman d'amour qui se termine bien pour les héros
+C. Une pièce de théâtre destinée à faire rire les enfants le dimanche
+D. Un discours officiel prononcé par le roi lors des cérémonies religieuses très solennelles
+Rappel de Cours : Le pamphlet est un écrit de combat violent (registre polémique).
+
+Question 32 : Que signifie étymologiquement le mot "Utopie" inventé par Thomas More ?
+A. Lieu qui n'existe pas
+B. Monde merveilleux
+C. Cité du soleil
+D. Jardin secret
+Rappel de Cours : Du grec u-topos (non-lieu), décrivant une société idéale.
+
+Question 33 : Dans "Le Mariage de Figaro", quel privilège de la noblesse Beaumarchais dénonce-t-il à travers le monologue de Figaro ?
+A. Le privilège de la naissance
+B. Le droit de chasse
+C. L'exemption d'impôts
+D. Le port de l'épée
+Rappel de Cours : Il dénonce une société où le rang social prime sur le mérite.
+
+Question 34 : Quel type de raisonnement part d'une loi générale pour en tirer une conclusion sur un cas particulier ?
+A. La déduction
+B. L'induction
+C. L'absurde
+D. L'analogie
+Rappel de Cours : La déduction (syllogisme) applique une règle générale à un cas précis.
+
+Question 35 : Quel écrivain a publié la célèbre lettre ouverte "J'accuse...!" dans le journal L'Aurore en 1898 ?
+A. Émile Zola
+B. Victor Hugo
+C. Alphonse de Lamartine
+D. Gustave Flaubert
+Rappel de Cours : Zola s'engage pour défendre Dreyfus, marquant la naissance de l'intellectuel engagé.
+
+Question 36 : Qu'est-ce qu'un "apologue" ?
+A. Un court récit plaisant porteur d'une morale
+B. Une longue démonstration scientifique ennuyeuse
+C. Une insulte prononcée sous le coup de la colère
+D. Un poème sans rimes ni ponctuation
+Rappel de Cours : L'apologue (fable, conte) utilise une fiction pour transmettre un enseignement.
+
+Question 37 : Quel est le but principal du registre "didactique" ?
+A. Enseigner et transmettre un savoir
+B. Faire pleurer le lecteur
+C. Faire peur au spectateur
+D. Exprimer sa colère
+Rappel de Cours : Le discours didactique vise à instruire le destinataire.
+
+Question 38 : Quelle idée centrale Jean-Jacques Rousseau défend-il dans ses œuvres politiques ?
+A. L'homme naît bon mais la société le corrompt
+B. La monarchie absolue est le meilleur régime politique
+C. L'argent est la seule valeur qui compte réellement
+D. La science va sauver l'humanité de tous ses problèmes
+Rappel de Cours : Rousseau soutient que l'état de nature est bon, mais que la société crée les vices.
+
+Question 39 : Diderot a écrit "Supplément au voyage de Bougainville" pour :
+A. Critiquer la colonisation et faire l'éloge de la vie naturelle
+B. Raconter le récit détaillé d'une expédition scientifique au pôle Nord
+C. Faire l'apologie de l'esclavage comme système économique nécessaire
+D. Faire une description technique de la construction des navires
+Rappel de Cours : Il oppose la liberté des mœurs tahitiennes aux contraintes européennes.
+
+Question 40 : Quel verbe modal est le plus utilisé pour exprimer l'obligation ou le devoir moral dans un texte argumentatif ?
+A. Devoir
+B. Pouvoir
+C. Vouloir
+D. Savoir
+Rappel de Cours : "Il faut", "On doit" marquent la nécessité et l'injonction.
+
+=============================================================================
+THÈME 3 : RÉALISME, NATURALISME ET SOCIÉTÉ
+=============================================================================
+
+Question 41 : Quelle célèbre définition Stendhal donne-t-il du roman dans "Le Rouge et le Noir" ?
+A. Un miroir
+B. Une épée
+C. Une fleur
+D. Un marteau
+Rappel de Cours : "Un roman, c'est un miroir que l'on promène le long d'un chemin".
+
+Question 42 : Comment appelle-t-on le type de personnage, fréquent chez Balzac ou Maupassant, qui cherche à grimper l'échelle sociale par tous les moyens ?
+A. Un arriviste
+B. Un fataliste
+C. Un humaniste
+D. Un utopiste
+Rappel de Cours : L'arriviste est prêt à tout pour conquérir la gloire et l'argent.
+
+Question 43 : Quel milieu social Émile Zola décrit-il minutieusement dans son roman "Germinal" ?
+A. La mine
+B. La banque
+C. Le théâtre
+D. L'armée
+Rappel de Cours : Germinal décrit la vie effroyable des mineurs et leurs grèves.
+
+Question 44 : Quelle innovation majeure le Naturalisme ajoute-t-il au Réalisme classique ?
+A. L'explication scientifique des comportements humains par l'hérédité et le milieu
+B. L'interdiction totale de décrire des scènes violentes ou choquantes pour le lecteur
+C. L'obligation d'écrire uniquement des poèmes en vers sur la nature et les oiseaux
+D. La volonté de ne raconter que des histoires se déroulant dans l'Antiquité grecque
+Rappel de Cours : Le Naturalisme veut expliquer scientifiquement l'influence des gènes et du milieu.
+
+Question 45 : Dans "Bel-Ami" de Maupassant, quel métier permet au héros Georges Duroy de s'enrichir et de devenir puissant ?
+A. Journaliste
+B. Médecin
+C. Avocat
+D. Soldat
+Rappel de Cours : Duroy utilise le journalisme et ses relations pour accéder au pouvoir.
+
+Question 46 : Qu'est-ce que le "bovarysme", concept tiré du personnage d'Emma Bovary ?
+A. Un état d'insatisfaction affective dû à un décalage entre rêve et réalité
+B. Une passion démesurée pour l'élevage des animaux dans les fermes normandes
+C. Une technique médicale utilisée au XIXe siècle pour soigner les nerfs
+D. Un style vestimentaire très à la mode dans la bourgeoisie de province
+Rappel de Cours : Le bovarysme est la souffrance de celui qui ne supporte pas la médiocrité du réel.
+
+Question 47 : Quel peintre français est considéré comme le chef de file du mouvement réaliste en peinture ?
+A. Gustave Courbet
+B. Claude Monet
+C. Pablo Picasso
+D. Léonard de Vinci
+Rappel de Cours : Courbet peint la réalité crue, influençant les écrivains réalistes.
+
+Question 48 : Quelle est la source d'inspiration principale de Stendhal pour l'intrigue du "Rouge et le Noir" ?
+A. Un fait divers
+B. Une légende
+C. Un rêve
+D. Un mythe
+Rappel de Cours : Stendhal s'est inspiré de l'affaire Berthet, un fait divers réel.
+
+Question 49 : Quelle classe sociale fait une entrée massive en littérature grâce aux romans d'Émile Zola ?
+A. Le prolétariat ouvrier
+B. La haute noblesse
+C. Le clergé religieux
+D. La royauté étrangère
+Rappel de Cours : Zola donne le premier rôle tragique au peuple ouvrier.
+
+Question 50 : Dans l'esthétique réaliste, quelle est la fonction principale de la description détaillée ?
+A. Ancrer le récit dans la réalité matérielle
+B. Remplir les pages pour faire un livre plus gros
+C. Perdre le lecteur dans des détails inutiles
+D. Montrer que l'auteur connaît beaucoup de mots
+Rappel de Cours : La description a une valeur informative et symbolique.
+
+Question 51 : Quelle particularité de langage caractérise le roman "L'Assommoir" de Zola ?
+A. L'utilisation de l'argot populaire
+B. L'usage exclusif du latin d'église
+C. L'absence totale de verbes conjugués
+D. L'écriture en vers alexandrins classiques
+Rappel de Cours : Zola fait parler ses personnages avec l'argot du peuple.
+
+Question 52 : Qui est le médecin dont les travaux sur la méthode expérimentale ont inspiré la démarche littéraire de Zola ?
+A. Claude Bernard
+B. Louis Pasteur
+C. Marie Curie
+D. Sigmund Freud
+Rappel de Cours : Zola a transposé la méthode de Claude Bernard à la littérature.
+
+Question 53 : Quel est le nom du héros central de "L'Éducation sentimentale" de Flaubert ?
+A. Frédéric Moreau
+B. Julien Sorel
+C. Étienne Lantier
+D. Jean Valjean
+Rappel de Cours : Frédéric Moreau est un anti-héros passif et indécis.
+
+Question 54 : Comment définit-on le "déterminisme" dans le roman naturaliste ?
+A. Une théorie selon laquelle les actions humaines sont dictées par l'hérédité et le milieu social
+B. Une façon d'écrire très vite sans jamais faire de plan pour laisser libre cours à l'imagination
+C. Un genre littéraire où l'auteur intervient à chaque page pour donner son avis personnel
+D. Une règle grammaticale qui oblige à accorder le participe passé avec le sujet du verbe
+Rappel de Cours : L'homme est le résultat de son hérédité et de son milieu, niant le libre-arbitre.
+
+Question 55 : Quel roman raconte la vie d'une femme depuis sa sortie du couvent jusqu'à la vieillesse, décrivant la désillusion ?
+A. Une vie
+B. Bel-Ami
+C. Nana
+D. Germinal
+Rappel de Cours : Ce roman de Maupassant raconte la destruction des illusions de Jeanne.
+
+Question 56 : Quel rôle joue l'argent dans "La Comédie humaine" de Balzac ?
+A. Le moteur principal des actions humaines
+B. Un détail sans aucune importance narrative
+C. Une source de bonheur spirituel et religieux
+D. Un sujet tabou dont on ne parle jamais
+Rappel de Cours : L'argent est le nouveau dieu qui fait et défait les destins bourgeois.
+
+Question 57 : Quelle attitude le narrateur adopte-t-il généralement dans les romans de Flaubert ?
+A. Impassible
+B. Jugementale
+C. Moralisatrice
+D. Sentimentale
+Rappel de Cours : Flaubert prône l'impassibilité : l'auteur doit être invisible.
+
+Question 58 : Quel thème moderne et technique est au cœur de "La Bête humaine" de Zola ?
+A. Le chemin de fer
+B. L'aviation militaire
+C. L'exploration spatiale
+D. L'informatique de gestion
+Rappel de Cours : Le roman lie la modernité (locomotive) aux pulsions meurtrières.
+
+Question 59 : Quelle est la différence majeure entre le Romantisme et le Réalisme ?
+A. Le Réalisme rejette l'idéalisation du monde pour montrer la vérité brute
+B. Le Réalisme s'intéresse uniquement aux histoires de fantômes et de vampires
+C. Le Romantisme est un mouvement scientifique basé sur des statistiques
+D. Le Romantisme refuse de parler des sentiments personnels de l'auteur
+Rappel de Cours : Le Réalisme refuse d'idéaliser, contrairement au Romantisme.
+
+Question 60 : Quel procédé Balzac a-t-il inventé pour unifier ses romans et créer un monde cohérent ?
+A. Le retour des personnages
+B. La rime systématique
+C. L'écriture automatique
+D. Le plagiat intégral
+Rappel de Cours : Balzac fait réapparaître les mêmes personnages dans différents romans.
+
+=============================================================================
+THÈME 4 : SCIENCE, TECHNIQUE ET ANTICIPATION
+=============================================================================
+
+Question 61 : Quel sous-genre littéraire imagine ce que serait l'Histoire si un événement du passé s'était déroulé différemment ?
+A. L'uchronie
+B. L'utopie
+C. La fantasy
+D. Le policier
+Rappel de Cours : L'uchronie réécrit l'Histoire à partir d'un point de divergence.
+
+Question 62 : Dans le roman "1984" de George Orwell, comment se nomme le chef suprême et invisible qui surveille tout le monde ?
+A. Big Brother
+B. Little Father
+C. Iron Man
+D. Captain America
+Rappel de Cours : Big Brother incarne la surveillance de masse et le totalitarisme.
+
+Question 63 : Quelle auteure britannique est considérée comme la pionnière de la science-fiction avec son roman "Frankenstein" ?
+A. Mary Shelley
+B. George Sand
+C. Agatha Christie
+D. Virginia Woolf
+Rappel de Cours : Mary Shelley pose la question de la responsabilité du créateur scientifique.
+
+Question 64 : Dans "Le Meilleur des mondes" d'Aldous Huxley, comment les citoyens sont-ils maintenus dans un état de bonheur artificiel permanent ?
+A. Par la consommation d'une drogue appelée le soma
+B. Par la lecture obligatoire de livres de philosophie très complexes tous les soirs
+C. Par la pratique intensive du sport de compétition sept jours sur sept sans repos
+D. Par l'interdiction stricte de manger de la viande et de boire de l'alcool fort
+Rappel de Cours : Le soma est la drogue d'État pour anesthésier toute révolte.
+
+Question 65 : Isaac Asimov est célèbre pour avoir formulé les trois lois de la :
+A. Robotique
+B. Botanique
+C. Linguistique
+D. Politique
+Rappel de Cours : Ces lois visent à empêcher les robots de nuire aux humains.
+
+Question 66 : Quel roman de René Barjavel imagine la chute brutale de la civilisation technologique suite à la disparition soudaine de l'électricité ?
+A. Ravage
+B. La Nuit des temps
+C. Le Grand Secret
+D. L'Enchanteur
+Rappel de Cours : Ravage montre la fragilité d'une société dépendante de la technologie.
+
+Question 67 : Qu'est-ce que le "Cyberpunk" ?
+A. Un genre mêlant haute technologie informatique et désordre social
+B. Un mouvement musical né dans les années 80 en Angleterre
+C. Une technique de piratage des comptes bancaires en ligne
+D. Un sport extrême pratiqué avec des rollers électriques
+Rappel de Cours : Le Cyberpunk décrit un futur sombre dominé par la technologie et les hackers.
+
+Question 68 : Dans "Fahrenheit 451" de Ray Bradbury, quel est le travail paradoxal des pompiers ?
+A. Brûler les livres
+B. Éteindre les feux
+C. Arrêter les voleurs
+D. Soigner les malades
+Rappel de Cours : Dans cette dystopie, les pompiers brûlent les livres jugés dangereux.
+
+Question 69 : Quelle invention de Jules Verne dans "Vingt mille lieues sous les mers" a fini par devenir une réalité technologique ?
+A. Le sous-marin électrique
+B. La machine à voyager dans le temps
+C. Le téléporteur instantané
+D. L'ascenseur spatial
+Rappel de Cours : Le Nautilus préfigurait les sous-marins modernes.
+
+Question 70 : Quel mythe antique est souvent utilisé pour symboliser les dangers de la connaissance scientifique sans limites ?
+A. Le mythe de Prométhée
+B. Le mythe d'Orphée
+C. Le mythe de Sisyphe
+D. Le mythe de Narcisse
+Rappel de Cours : Prométhée a volé le feu aux dieux, symbole de l'audace risquée.
+
+Question 71 : Comment appelle-t-on un récit qui se déroule après la destruction de la civilisation humaine ?
+A. Post-apocalyptique
+B. Romantique
+C. Épistolaire
+D. Satirique
+Rappel de Cours : Ce genre imagine la survie dans un monde dévasté.
+
+Question 72 : Quelle question éthique fondamentale est posée par le roman "Des fleurs pour Algernon" de Daniel Keyes ?
+A. L'augmentation artificielle de l'intelligence rend-elle plus heureux
+B. La conquête de la planète Mars est-elle techniquement possible
+C. Les robots ont-ils le droit de voter aux élections présidentielles
+D. Le clonage des dinosaures est-il une bonne idée pour les parcs d'attraction
+Rappel de Cours : Le roman montre qu'intelligence ne signifie pas bonheur.
+
+Question 73 : Dans le film et l'univers de "Bienvenue à Gattaca", sur quel critère la société est-elle hiérarchisée ?
+A. Le patrimoine génétique
+B. La richesse financière
+C. La force physique
+D. Le niveau d'études
+Rappel de Cours : La société discrimine les individus selon leur perfection génétique.
+
+Question 74 : Alain Damasio est un auteur contemporain français connu pour ses romans de science-fiction politique comme :
+A. La Horde du Contrevent
+B. Les Misérables
+C. L'Étranger
+D. Le Petit Prince
+Rappel de Cours : Damasio est une figure majeure de la SF française actuelle.
+
+Question 75 : Quelle est la définition d'une "Dystopie" ?
+A. Une utopie qui vire au cauchemar
+B. Un monde où tout est parfait
+C. Un récit de voyage en mer
+D. Une maladie des yeux
+Rappel de Cours : La dystopie est une société imaginaire oppressive qui empêche le bonheur.
+
+Question 76 : Dans "La Planète des singes" de Pierre Boulle, quelle est la chute finale (dans le roman) ?
+A. Le héros découvre qu'il est revenu sur Terre
+B. Les singes et les hommes font la paix
+C. La planète explose à cause d'une bombe
+D. Le héros se réveille dans son lit
+Rappel de Cours : La chute révèle que la planète dominée par les singes est la Terre (ou a évolué pareillement).
+
+Question 77 : Le "Space Opera" est un sous-genre de la science-fiction caractérisé par :
+A. Des aventures épiques se déroulant à l'échelle interplanétaire ou galactique
+B. Des enquêtes policières très réalistes se déroulant dans le métro parisien
+C. Des histoires d'amour impossibles entre deux voisins de palier
+D. Des documentaires animaliers sur la reproduction des insectes
+Rappel de Cours : Le Space Opera met en scène des conflits à l'échelle galactique.
+
+Question 78 : Qu'est-ce que l'Eugénisme, thème fréquent dans les récits d'anticipation ?
+A. La volonté d'améliorer l'espèce humaine par la sélection génétique
+B. L'étude des pierres précieuses et des minéraux rares
+C. La peur maladive des espaces ouverts et de la foule
+D. L'art de bien parler en public devant une grande assemblée
+Rappel de Cours : L'eugénisme cherche à créer une humanité supérieure par le tri.
+
+Question 79 : Quel écrivain français du XIXe siècle est surnommé le "père de la science-fiction" pour ses voyages extraordinaires ?
+A. Jules Verne
+B. Émile Zola
+C. Guy de Maupassant
+D. Alexandre Dumas
+Rappel de Cours : Jules Verne a anticipé de nombreuses technologies.
+
+Question 80 : Dans "Le Meilleur des mondes", les bébés ne naissent plus naturellement mais sont :
+A. Cultivés en flacons
+B. Adoptés à l'étranger
+C. Trouvés dans les choux
+D. Importés de Mars
+Rappel de Cours : C'est l'ectogenèse : la reproduction est industrielle.
+
+=============================================================================
+THÈME 5 : GRAMMAIRE, ORTHOGRAPHE ET ANALYSE DE L'IMAGE
+=============================================================================
+
+Question 81 : En analyse de l'image, quel plan permet de situer l'action dans son décor et de montrer l'environnement général ?
+A. Le plan d'ensemble
+B. Le gros plan
+C. Le plan rapproché
+D. L'insert
+Rappel de Cours : Le plan d'ensemble a une fonction informative et descriptive.
+
+Question 82 : Quel est le rôle grammatical du connecteur logique "car" ?
+A. Introduire une cause
+B. Introduire une conséquence
+C. Marquer une opposition
+D. Ajouter une idée
+Rappel de Cours : "Car" justifie ce qui précède en donnant une cause.
+
+Question 83 : Comment appelle-t-on l'angle de prise de vue où la caméra est placée en dessous du sujet et regarde vers le haut ?
+A. La contre-plongée
+B. La plongée
+C. Le panoramique
+D. Le travelling
+Rappel de Cours : La contre-plongée grandit le sujet et le rend dominateur.
+
+Question 84 : Quelle est la règle d'accord du participe passé employé avec l'auxiliaire "être" ?
+A. Il s'accorde en genre et en nombre avec le sujet
+B. Il ne s'accorde jamais avec le sujet du verbe
+C. Il s'accorde uniquement si le complément est placé avant
+D. Il s'accorde toujours avec le complément d'objet direct placé après
+Rappel de Cours : Avec être, l'accord se fait systématiquement avec le sujet.
+
+Question 85 : En sémantique, qu'est-ce que la "dénotation" d'un mot ?
+A. Le sens premier et littéral du mot tel qu'il est défini dans le dictionnaire
+B. Le sens figuré et imagé qui dépend du contexte émotionnel de la phrase
+C. Le sens caché que seuls les spécialistes de la langue peuvent comprendre
+D. Le sens contraire du mot utilisé pour faire de l'ironie dans un texte
+Rappel de Cours : La dénotation est le sens objectif, contrairement à la connotation.
+
+Question 86 : En photographie, qu'est-ce que la "règle des tiers" ?
+A. Une technique de composition qui place les éléments forts sur des lignes imaginaires divisant l'image
+B. Une loi qui oblige à avoir toujours trois personnages sur une photo de presse
+C. Le fait de prendre trois photos en rafale pour être sûr d'en avoir une bonne
+D. L'obligation d'utiliser trois couleurs primaires pour équilibrer la lumière
+Rappel de Cours : On divise l'image en 9 cases pour placer les points de force.
+
+Question 87 : Dans la phrase "L'homme qui marche est mon frère", quelle est la nature de la proposition "qui marche" ?
+A. Une proposition subordonnée relative
+B. Une proposition principale
+C. Une proposition subordonnée conjonctive
+D. Une proposition indépendante coordonnée
+Rappel de Cours : Elle est introduite par un pronom relatif et complète l'antécédent.
+
+Question 88 : Quel mouvement de caméra consiste à déplacer physiquement la caméra (sur des rails ou à l'épaule) pour suivre un sujet ?
+A. Un travelling
+B. Un zoom
+C. Un panoramique
+D. Un champ-contrechamp
+Rappel de Cours : Le travelling est un déplacement physique, le zoom est optique.
+
+Question 89 : Quelle est la bonne orthographe dans la phrase : "Elle s'est ... les mains" ?
+A. Lavé
+B. Lavée
+C. Lavés
+D. Lavées
+Rappel de Cours : Pas d'accord car le COD (les mains) est placé après le verbe.
+
+Question 90 : Quelle est la valeur principale de l'imparfait de l'indicatif ?
+A. Exprimer une action habituelle ou une description dans le passé
+B. Exprimer une action brève, soudaine et unique dans le passé
+C. Donner un ordre ou un conseil de manière très directe
+D. Exprimer une action future qui va se réaliser avec certitude
+Rappel de Cours : L'imparfait est le temps de l'arrière-plan, de la description et de l'habitude.
+
+Question 91 : Au cinéma, qu'est-ce que le "hors-champ" ?
+A. Ce qui n'est pas visible dans le cadre mais qui est suggéré par le son ou le regard
+B. La zone où se trouve le réalisateur et les techniciens pendant le tournage
+C. Une scène qui a été coupée au montage car elle était trop longue
+D. Le décor naturel qui se trouve très loin derrière les acteurs
+Rappel de Cours : Le hors-champ est l'espace imaginaire hors de l'écran.
+
+Question 92 : Quel mode verbal utilise-t-on pour exprimer une hypothèse ou une condition ("Si j'étais riche, je ...") ?
+A. Le conditionnel
+B. Le subjonctif
+C. L'impératif
+D. Le futur simple
+Rappel de Cours : Le conditionnel exprime un fait soumis à une condition.
+
+Question 93 : Quel effet de lumière obtient-on en plaçant la source lumineuse derrière le sujet face à la caméra ?
+A. Le contre-jour
+B. La lumière zénithale
+C. La nuit américaine
+D. Le clair-obscur
+Rappel de Cours : Le contre-jour rend le sujet sombre sur fond clair (silhouette).
+
+Question 94 : À la voix passive, qui accomplit l'action exprimée par le verbe ?
+A. Le complément d'agent
+B. Le sujet grammatical
+C. Le complément d'objet direct
+D. L'attribut du sujet
+Rappel de Cours : Le sujet subit l'action faite par le complément d'agent.
+
+Question 95 : Qu'est-ce qu'une "ellipse" narrative dans un film ?
+A. Un saut dans le temps qui supprime une partie de l'histoire
+B. Une forme géométrique dessinée sur le sol pour placer les acteurs
+C. Un accessoire en forme de cercle utilisé pour régler la lumière
+D. Un dialogue très rapide entre deux personnages qui se disputent
+Rappel de Cours : L'ellipse permet d'accélérer le récit en ne montrant pas tout.
+
+Question 96 : Dans le symbolisme des couleurs (occidental), que connote généralement le bleu ?
+A. La froideur, le calme ou la mélancolie
+B. La passion, le danger et l'interdiction
+C. La richesse, la trahison et la maladie
+D. La pureté, l'innocence et la virginité
+Rappel de Cours : Le bleu est une couleur froide (apaisement ou tristesse).
+
+Question 97 : Que signifie le préfixe "poly" dans le mot "polysémie" ?
+A. Plusieurs
+B. Peu
+C. Unique
+D. Contraire
+Rappel de Cours : Du grec polus (nombreux).
+
+Question 98 : Quel type de phrase sert principalement à donner un ordre ou un conseil ?
+A. La phrase injonctive
+B. La phrase déclarative
+C. La phrase interrogative
+D. La phrase exclamative
+Rappel de Cours : La phrase injonctive sert à agir sur l'interlocuteur.
+
+Question 99 : Quelle est la fonction principale d'un "Gros Plan" sur un visage ?
+A. Lire une émotion ou une réaction psychologique
+B. Montrer la tenue vestimentaire complète du personnage
+C. Situer le personnage dans le paysage géographique
+D. Montrer les relations spatiales entre plusieurs personnages
+Rappel de Cours : Le gros plan met l'accent sur l'intériorité et l'émotion.
+
+Question 100 : Quel connecteur permet d'introduire une conclusion ?
+A. C'est pourquoi
+B. En revanche
+C. De plus
+D. D'abord
+Rappel de Cours : "C'est pourquoi" introduit l'aboutissement logique.
