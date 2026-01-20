@@ -1998,7 +1998,7 @@ def show_question_screen():
                     del st.session_state.shuffled_answers[q_id]
 
                 if st.session_state.current_question_index >= total_questions:
-                    showthemeresult()
+                    show_theme_result()
                 else:
                     st.rerun()
 
