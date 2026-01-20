@@ -2027,6 +2027,107 @@ def show_question_screen():
 # FONCTION PRINCIPALE
 # -----------------------
 
+def show_theme_result():
+    """Affiche le résultat d'un thème complété"""
+    quiz_data = get_current_quiz_data()
+    quiz_key = st.session_state.selected_quiz_key
+    theme_number = st.session_state.current_theme
+    theme = quiz_data["themes"][theme_number]
+    theme_name = theme["name"]
+    total_questions = len(theme["questions"])
+    score = st.session_state.score
+    percentage = (score / total_questions * 100) if total_questions > 0 else 0
+    color = THEME_COLORS.get(theme_number, "#4f46e5")
+    
+    st.markdown(
+        f"<h1 style='text-align:center;color:{color};margin-bottom:1.5rem'>Résultat {theme_name}</h1>",
+        unsafe_allow_html=True
+    )
+    
+    # Afficher le cercle de progression avec pourcentage
+    st.markdown(
+        f"""
+        <div style="text-align:center;margin:2rem 0;">
+            <div style="display:inline-block;position:relative;width:200px;height:200px;">
+                <svg width="200" height="200" style="transform:rotate(-90deg)">
+                    <circle cx="100" cy="100" r="85" fill="none" stroke="#e5e7eb" stroke-width="12"></circle>
+                    <circle cx="100" cy="100" r="85" fill="none" stroke="{color}" stroke-width="12" 
+                            stroke-dasharray="{percentage * 5.34} 534" stroke-linecap="round"></circle>
+                </svg>
+                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
+                    <div style="font-size:3rem;font-weight:800;color:{color};">{score}/{total_questions}</div>
+                    <div style="font-size:1.2rem;color:#6b7280;font-weight:600;">{percentage:.0f}%</div>
+                </div>
+            </div>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    
+    # Afficher le message selon le score
+    if percentage >= 100:
+        st.balloons()
+        st.markdown(
+            f"""
+            <div style="background:linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);border-left:6px solid #28a745;
+                        padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#155724;margin:0;font-size:2rem;">Parfait !</h2>
+                <p style="color:#155724;margin:0.5rem 0 0 0;font-size:1.1rem;">Score parfait {score}/{total_questions} - {percentage:.0f}%</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    elif percentage >= 75:
+        st.markdown(
+            f"""
+            <div style="background:linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);border-left:6px solid #28a745;
+                        padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#155724;margin:0;font-size:2rem;">Très bien !</h2>
+                <p style="color:#155724;margin:0.5rem 0 0 0;font-size:1.1rem;">Score {score}/{total_questions} - {percentage:.0f}%</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    elif percentage >= 50:
+        st.markdown(
+            f"""
+            <div style="background:linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);border-left:6px solid #17a2b8;
+                        padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#0c5460;margin:0;font-size:2rem;">Pas mal !</h2>
+                <p style="color:#0c5460;margin:0.5rem 0 0 0;font-size:1.1rem;">Score {score}/{total_questions} - {percentage:.0f}%</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    else:
+        st.markdown(
+            f"""
+            <div style="background:linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);border-left:6px solid #dc3545;
+                        padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#721c24;margin:0;font-size:2rem;">Continue tes efforts !</h2>
+                <p style="color:#721c24;margin:0.5rem 0 0 0;font-size:1.1rem;">Score {score}/{total_questions} - {percentage:.0f}% - Révise encore ce thème !</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    
+    # Sauvegarder le score du thème
+    if quiz_key not in st.session_state.theme_scores:
+        st.session_state.theme_scores[quiz_key] = {}
+    st.session_state.theme_scores[quiz_key][theme_number] = f"{score}/{total_questions}"
+    
+    # Boutons pour continuer
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("Revenir au menu des thèmes", use_container_width=True):
+            go_back_to_main_menu()
+            st.rerun()
+    with col2:
+        if st.button("Refaire ce thème", use_container_width=True, type="primary"):
+            start_theme(theme_number)
+            st.rerun()
+
+
 def main():
     # Sidebar : navigation profil / quiz
     with st.sidebar:
