@@ -620,7 +620,7 @@ quiz_data = {
                 {
                     "questionNumber": 55,
                     "question": "Quelle est l'influence majeure du numérique sur l'écrit ?",
-                    {"answerOptions": [
+                    "answerOptions": [
                         {"text": "Le développement de nouveaux supports et codes d'écriture", "isCorrect": True},
                         {"text": "L'absence totale d'impact sur les modes de communication", "isCorrect": False},
                         {"text": "L'arrêt définitif de toute forme de rédaction personnelle", "isCorrect": False},
