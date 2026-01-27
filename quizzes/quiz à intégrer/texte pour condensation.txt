@@ -1,7 +1,7 @@
 Condense moi l'ensemble du quiz dans un fichier que je peux facilement copier / coller
 
 
-Ok. Peux-tu créer un deuxième quiz sur le domaine de l'espagnole niveau CAP, tu peux changer les thèmes si tu pense cela nécessaire, le tout est surtout d'éviter d'avoir les mêmes question que dans le quiz 1.
+Ok. Peux-tu créer un deuxième quiz sur le domaine du francais niveau BACPRO, tu peux changer les thèmes si tu pense cela nécessaire, le tout est surtout d'éviter d'avoir les mêmes question que dans le quiz 1.
 Fait bien attention aux règles de conceptions (bonne réponses pas repérable par trop de parenthèses ou réponse plus longue). Prend le temps de réfléchir à chaque question, à les comparer aux datas du premier quiz.
 
 Tu doit toujours respecter le prompt de base :
@@ -9,7 +9,7 @@ Tu doit toujours respecter le prompt de base :
  PROMPT MAÎTRE : GÉNÉRATEUR DE QUIZ PÉDAGOGIQUE PAR ÉTAPES 
 
  Rôle : Tu es un Expert en Ingénierie Pédagogique et Spécialiste des 
-Examens Nationaux (CAP, BEP, Bac Pro, BTS). Tu as une connaissance 
+Examens Nationaux (Bac Pro). Tu as une connaissance 
 parfaite des référentiels officiels de l'Éducation Nationale. 
  Objectif : Créer une base de données de 100 questions (QCM) pour le domaine d'enseignement demandée, divisée en 5 thèmes de 20 questions. 
  RÈGLES D'OR DE CONCEPTION (CRITIQUES) : 
@@ -22,11 +22,11 @@ cours). 
  STRATÉGIE ANTI-BIAIS DE LONGUEUR (IMPÉRATIF) : 
  Tu dois lutter contre ton réflexe de faire une réponse A détaillée. 
 
- 40% des cas : La réponse A doit être LA PLUS COURTE (1 ou 2 mots), 
+ 30% des cas : La réponse A doit être LA PLUS COURTE (1 ou 2 mots), 
 alors que B, C et D sont des phrases complètes et techniques. 
  40% des cas : La réponse A est de longueur moyenne, similaire aux autres. 
 
- 20% des cas : La réponse A peut être longue, MAIS il faut 
+ 30% des cas : La réponse A peut être longue, MAIS il faut 
 obligatoirement qu'au moins une mauvaise réponse (B, C ou D) soit ENCORE
  PLUS LONGUE et verbeuse. 
 
@@ -62,5 +62,5 @@ vocabulaire technique réel et crédible. Pas de réponses absurdes. 
 
  Instruction de démarrage : 
 
- Je souhaite générer un quiz pour le domaine d'enseignement suivant : [Espagnol] niveau CAP 
+ Je souhaite générer un quiz pour le domaine d'enseignement suivant : [Français] niveau BACPRO 
  Commence uniquement par l'ÉTAPE 1 (Proposition des 5 thèmes). 

@@ -290,6 +290,19 @@ from quizzes.quiz_cap_generaux.quiz_cap_pse_2 import quiz_data as quiz_cap_pse_2
 from quizzes.quiz_cap_generaux.quiz_cap_science_physique_1 import quiz_data as quiz_cap_science_physique_1_data
 from quizzes.quiz_cap_generaux.quiz_cap_science_physique_2 import quiz_data as quiz_cap_science_physique_2_data
 
+# --- Quiz BAC PRO : matières générales ---
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_anglais import quiz_data as quiz_bacpro_anglais_data
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_anglais_2 import quiz_data as quiz_bacpro_anglais_2_data
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_enseignement_moral_et_civique import quiz_data as quiz_bacpro_enseignement_moral_et_civique_data
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_espagnol import quiz_data as quiz_bacpro_espagnol_data
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_espagnol_2 import quiz_data as quiz_bacpro_espagnol_2_data
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_francais import quiz_data as quiz_bacpro_francais_data
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_francais_2 import quiz_data as quiz_bacpro_francais_2_data
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_histoire_geographie import quiz_data as quiz_bacpro_histoire_geographie_data
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_histoire_geographie_2 import quiz_data as quiz_bacpro_histoire_geographie_2_data
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique import quiz_data as quiz_bacpro_mathematique_data
+from quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique_2 import quiz_data as quiz_bacpro_mathematique_2_data
+
 # CS
 from quizzes.quiz_cs_metiers.quiz_cs_coiffure_coupe_couleur_100 import quiz_data as quiz_cs_coiffure_coupe_couleur_data
 
@@ -631,7 +644,87 @@ QUIZZES = {
         "icon": "💇",
         "color": "#e84393",
     },
+
+    # ----- BAC PRO Matières générales -----
+    "bacpro_anglais": {
+        "title": "BAC PRO Matières générales – Anglais",
+        "description": "Révisions d'anglais – BAC PRO.",
+        "data": quiz_bacpro_anglais_data,
+        "icon": "🇬🇧",
+        "color": "#3b82f6",
+    },
+    "bacpro_anglais_2": {
+        "title": "BAC PRO Matières générales – Anglais (quiz 2)",
+        "description": "Révisions d'anglais – série 2 BAC PRO.",
+        "data": quiz_bacpro_anglais_2_data,
+        "icon": "🇬🇧",
+        "color": "#2563eb",
+    },
+    "bacpro_espagnol": {
+        "title": "BAC PRO Matières générales – Espagnol",
+        "description": "Révisions d'espagnol – BAC PRO.",
+        "data": quiz_bacpro_espagnol_data,
+        "icon": "🇪🇸",
+        "color": "#f97316",
+    },
+    "bacpro_espagnol_2": {
+        "title": "BAC PRO Matières générales – Espagnol (quiz 2)",
+        "description": "Révisions d'espagnol – série 2 BAC PRO.",
+        "data": quiz_bacpro_espagnol_2_data,
+        "icon": "🇪🇸",
+        "color": "#ea580c",
+    },
+    "bacpro_francais": {
+        "title": "BAC PRO Matières générales – Français",
+        "description": "Révisions de français – BAC PRO.",
+        "data": quiz_bacpro_francais_data,
+        "icon": "📘",
+        "color": "#10b981",
+    },
+    "bacpro_francais_2": {
+        "title": "BAC PRO Matières générales – Français (quiz 2)",
+        "description": "Révisions de français – série 2 BAC PRO.",
+        "data": quiz_bacpro_francais_2_data,
+        "icon": "📘",
+        "color": "#059669",
+    },
+    "bacpro_histoire_geographie": {
+        "title": "BAC PRO Matières générales – Histoire-Géographie",
+        "description": "Révisions d'histoire-géographie – BAC PRO.",
+        "data": quiz_bacpro_histoire_geographie_data,
+        "icon": "🌍",
+        "color": "#facc15",
+    },
+    "bacpro_histoire_geographie_2": {
+        "title": "BAC PRO Matières générales – Histoire-Géographie (quiz 2)",
+        "description": "Révisions d'histoire-géographie – série 2 BAC PRO.",
+        "data": quiz_bacpro_histoire_geographie_2_data,
+        "icon": "🌍",
+        "color": "#eab308",
+    },
+    "bacpro_enseignement_moral_et_civique": {
+        "title": "BAC PRO Matières générales – Enseignement moral et civique",
+        "description": "Révisions d'EMC – BAC PRO.",
+        "data": quiz_bacpro_enseignement_moral_et_civique_data,
+        "icon": "🕊️",
+        "color": "#6366f1",
+    },
+    "bacpro_mathematique": {
+        "title": "BAC PRO Matières générales – Mathématiques",
+        "description": "Révisions de mathématiques – BAC PRO.",
+        "data": quiz_bacpro_mathematique_data,
+        "icon": "📐",
+        "color": "#0ea5e9",
+    },
+    "bacpro_mathematique_2": {
+        "title": "BAC PRO Matières générales – Mathématiques (quiz 2)",
+        "description": "Révisions de mathématiques – série 2 BAC PRO.",
+        "data": quiz_bacpro_mathematique_2_data,
+        "icon": "📐",
+        "color": "#0284c7",
+    },
 }
+
 # -----------------------
 # COULEURS PAR THÈME
 # -----------------------
@@ -710,6 +803,33 @@ CAP_GENERAL_SUBJECTS = {
     "Sciences physiques": {
         "icon": "🔬",
         "quizzes": ["cap_science_physique_1", "cap_science_physique_2"],
+    },
+}
+
+BACPRO_GENERAL_SUBJECTS = {
+    "Anglais": {
+        "icon": "🇬🇧",
+        "quizzes": ["bacpro_anglais", "bacpro_anglais_2"],
+    },
+    "Espagnol": {
+        "icon": "🇪🇸",
+        "quizzes": ["bacpro_espagnol", "bacpro_espagnol_2"],
+    },
+    "Français": {
+        "icon": "📘",
+        "quizzes": ["bacpro_francais", "bacpro_francais_2"],
+    },
+    "Histoire-Géographie": {
+        "icon": "🌍",
+        "quizzes": ["bacpro_histoire_geographie", "bacpro_histoire_geographie_2"],
+    },
+    "Mathématiques": {
+        "icon": "📐",
+        "quizzes": ["bacpro_mathematique", "bacpro_mathematique_2"],
+    },
+    "Enseignement moral et civique": {
+        "icon": "🕊️",
+        "quizzes": ["bacpro_enseignement_moral_et_civique"],
     },
 }
 
@@ -1432,6 +1552,53 @@ def render_quiz_card(key):
                 st.rerun()
         
         st.markdown("</div>", unsafe_allow_html=True)
+
+# -----------------------
+# INTERFACE : BAC PRO
+# -----------------------
+
+def show_bacpro_general_subjects():
+    """Écran : choix de la matière générale BAC PRO."""
+    st.subheader("BAC PRO – Matières générales")
+
+    if st.button("⬅️ Retour aux catégories BAC PRO", key="back_to_bacpro_categories"):
+        st.session_state.selected_bacpro_family = None
+        st.session_state.selected_bacpro_general_subject = None
+        st.rerun()
+
+    cols = st.columns(3)
+    for i, (subject, info) in enumerate(BACPRO_GENERAL_SUBJECTS.items()):
+        col = cols[i % 3]
+        with col:
+            if st.button(f"{info['icon']} {subject}", key=f"bacpro_gen_subject_{subject}"):
+                st.session_state.selected_bacpro_general_subject = subject
+                st.rerun()
+
+
+def show_bacpro_general_quizzes_for_subject():
+    """Écran : liste des quiz pour une matière générale BAC PRO."""
+    subject = st.session_state.get("selected_bacpro_general_subject")
+    if not subject or subject not in BACPRO_GENERAL_SUBJECTS:
+        st.warning("Aucune matière sélectionnée.")
+        return
+
+    info = BACPRO_GENERAL_SUBJECTS[subject]
+    quizzes = info["quizzes"]
+
+    st.subheader(f"BAC PRO – {subject}")
+
+    if st.button("⬅️ Retour aux matières générales", key="back_to_bacpro_subjects"):
+        st.session_state.selected_bacpro_general_subject = None
+        st.rerun()
+
+    for idx, key in enumerate(quizzes, start=1):
+        quiz_info = QUIZZES[key]
+        label = f"Quiz {idx}" if len(quizzes) > 1 else "Quiz"
+        if st.button(label, key=f"bacpro_{subject}_quiz_{idx}"):
+            st.session_state.selected_quiz_key = key
+            reset_quiz_state_for_selected_quiz()
+            st.rerun()
+
 # -----------------------
 # INTERFACE : LISTE DES QUIZ CAP
 # -----------------------
@@ -1481,21 +1648,52 @@ def show_quiz_list_for_bp():
 
 
 def show_quiz_list_for_bacpro():
-    st.subheader("BAC PRO – Choisissez un quiz")
+    """Écran : choix entre matières générales BAC PRO et autres quiz BAC PRO."""
+    st.subheader("BAC PRO – Choisissez une catégorie")
 
     if st.button("⬅️ Retour aux niveaux"):
         st.session_state.selected_level = None
+        st.session_state.selected_bacpro_family = None
+        st.session_state.selected_bacpro_general_subject = None
         st.session_state.selected_quiz_key = None
         st.session_state.current_theme = None
         st.rerun()
 
-    quiz_keys = get_sorted_quiz_keys(BACPRO_QUIZZES)
+    # Si aucune famille n'est encore choisie, on propose deux entrées :
+    # - Matières générales (nouveaux quiz)
+    # - Autres quiz BAC PRO (ce que tu avais déjà : BACPRO_QUIZZES)
+    if st.session_state.get("selected_bacpro_family") is None:
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button("📚 Matières générales", key="bacpro_btn_general"):
+                st.session_state.selected_bacpro_family = "Matières générales"
+                st.rerun()
+        with col2:
+            if st.button("🛠️ Spécialités / Métiers", key="bacpro_btn_specialites"):
+                st.session_state.selected_bacpro_family = "Spécialités"
+                st.rerun()
+        return
 
-    if not quiz_keys:
-        st.info("Aucun quiz BAC PRO disponible pour le moment.")
-    else:
-        for key in quiz_keys:
-            render_quiz_card(key)
+    # Cas 1 : Matières générales BAC PRO
+    if st.session_state.selected_bacpro_family == "Matières générales":
+        # Si aucune matière n'est sélectionnée, on affiche la liste des matières
+        if st.session_state.get("selected_bacpro_general_subject") is None:
+            show_bacpro_general_subjects()
+        else:
+            show_bacpro_general_quizzes_for_subject()
+        return
+
+    # Cas 2 : Spécialités / anciens quiz BAC PRO
+    if st.session_state.selected_bacpro_family == "Spécialités":
+        st.subheader("BAC PRO – Quiz métiers / spécialités")
+
+        quiz_keys = get_sorted_quiz_keys(BACPRO_QUIZZES)
+
+        if not quiz_keys:
+            st.info("Aucun quiz BAC PRO disponible pour le moment.")
+        else:
+            for key in quiz_keys:
+                render_quiz_card(key)
 
 
 def show_quiz_list_for_bts():
@@ -2141,6 +2339,12 @@ def main():
             st.caption(f"Connecté en tant que {st.session_state.username}")
         else:
             st.info("Connectez-vous pour accéder au profil.")
+            if st.button("🔐 Se connecter / créer un compte", use_container_width=True):
+                # Rebasculer vers l'écran d'entrée (login / création)
+                st.session_state.auth_stage = "entry"
+                st.session_state.ui_mode = "app"
+                st.rerun()
+
 
     # Si on est en mode profil, on n’affiche pas l’interface de quiz
     if st.session_state.ui_mode == "profile":
