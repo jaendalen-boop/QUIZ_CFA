@@ -2309,10 +2309,18 @@ def show_theme_result():
             unsafe_allow_html=True
         )
     
-    # Sauvegarder le score du thème
+    # Sauvegarder le score du thème dans la session
     if quiz_key not in st.session_state.theme_scores:
         st.session_state.theme_scores[quiz_key] = {}
     st.session_state.theme_scores[quiz_key][theme_number] = f"{score}/{total_questions}"
+
+    # Sauvegarder les scores du quiz pour l'utilisateur connecté (persistance disque)
+    if st.session_state.get("auth_stage") == "logged_in" and st.session_state.get("username"):
+        save_user_scores(
+            st.session_state.username,
+            quiz_key,
+            st.session_state.theme_scores[quiz_key],
+        )
     
     # Boutons pour continuer
     col1, col2 = st.columns(2)
@@ -2345,7 +2353,6 @@ def main():
                 st.session_state.ui_mode = "app"
                 st.rerun()
 
-
     # Si on est en mode profil, on n’affiche pas l’interface de quiz
     if st.session_state.ui_mode == "profile":
         show_profile_page()
@@ -2369,7 +2376,6 @@ def main():
         show_question_screen()
 
 
-
 if __name__ == "__main__":
     if st.session_state.auth_stage in ("guest", "logged_in"):
         # Utilisateur déjà dans l’application (avec ou sans compte)
@@ -2377,4 +2383,3 @@ if __name__ == "__main__":
     else:
         # Premier écran : choix "entrer sans compte" ou "créer/se connecter"
         show_entry_screen()
-

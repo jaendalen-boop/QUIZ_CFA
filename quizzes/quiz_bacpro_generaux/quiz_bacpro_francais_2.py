@@ -458,10 +458,10 @@ quiz_data = {
             ]
         },
         # =========================================================================
-        # THÈME 3 : DÉNOUNCER LES TRAVERS DE LA SOCIÉTÉ (Q41 à Q60)
+        # THÈME 3 : DÉNONCER LES TRAVERS DE LA SOCIÉTÉ (Q41 à Q60)
         # =========================================================================
         3: {
-            "name": "THÈME 3 : DÉNOUNCER LES TRAVERS DE LA SOCIÉTÉ",
+            "name": "THÈME 3 : DÉNONCER LES TRAVERS DE LA SOCIÉTÉ",
             "questions": [
                 {
                     "questionNumber": 41,
