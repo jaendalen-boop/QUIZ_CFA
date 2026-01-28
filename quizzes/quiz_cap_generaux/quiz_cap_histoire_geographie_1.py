@@ -1,5 +1,5 @@
 quiz_data = {
-    "title": "Quiz CAP Histoire-Géographie (100 Questions)",
+    "title": "Quiz CAP Histoire-Géographie (100 Questions) - Version Optimisée",
     "themes": {
         # =========================================================================
         # THÈME 1 : LA FRANCE DE LA RÉVOLUTION À LA Ve RÉPUBLIQUE (Q1 à Q20)
@@ -11,1133 +11,1133 @@ quiz_data = {
                     "questionNumber": 1,
                     "question": "Quelle date marque la prise de la Bastille et le début symbolique de la Révolution française ?",
                     "answerOptions": [
-                        {"text": "14 juillet 1789", "isCorrect": True},
-                        {"text": "21 septembre 1792", "isCorrect": False},
-                        {"text": "2 décembre 1804", "isCorrect": False},
-                        {"text": "4 septembre 1870", "isCorrect": False}
+                        {"text": "L'événement du 14 juillet 1789", "isCorrect": True},
+                        {"text": "L'événement du 21 septembre 1792", "isCorrect": False},
+                        {"text": "L'événement du 2 décembre 1804", "isCorrect": False},
+                        {"text": "L'événement du 4 septembre 1870", "isCorrect": False}
                     ],
-                    "correction": "Le 14 juillet 1789 correspond à la prise de la Bastille, une forteresse royale. Cet événement symbolise la chute de l'arbitraire royal et l'irruption du peuple dans la vie politique française."
+                    "correction": "**Rappel de cours :** Le 14 juillet 1789, le peuple parisien s'empare de la Bastille, une prison royale qui symbolisait l'arbitraire et le pouvoir absolu du roi. Cet acte marque l'entrée du peuple sur la scène politique et le début de la fin de l'Ancien Régime."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Quel est l'hymne national de la France ?",
+                    "question": "Quel est l'hymne national de la République française ?",
                     "answerOptions": [
-                        {"text": "La Marseillaise", "isCorrect": True},
-                        {"text": "Le Chant des Partisans", "isCorrect": False},
-                        {"text": "L'Ode à la Joie", "isCorrect": False},
-                        {"text": "Le Chant du Départ", "isCorrect": False}
+                        {"text": "Le chant de la Marseillaise", "isCorrect": True},
+                        {"text": "Le chant du Départ national", "isCorrect": False},
+                        {"text": "Le chant des Partisans libres", "isCorrect": False},
+                        {"text": "Le chant de l'Ode à la Joie", "isCorrect": False}
                     ],
-                    "correction": "La Marseillaise, composée par Rouget de Lisle en 1792, est l'hymne national français. Elle symbolise la mobilisation des citoyens pour défendre la patrie."
+                    "correction": "**Rappel de cours :** Écrit par Rouget de Lisle en 1792 dans un contexte de guerre, ce chant patriotique est devenu l'hymne officiel. Il symbolise la défense des valeurs de la République et l'unité de la Nation face aux menaces."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quelle figure féminine est le symbole de la République française ?",
+                    "question": "Quel texte fondamental, adopté en 1789, proclame que 'les hommes naissent libres et égaux en droits' ?",
                     "answerOptions": [
-                        {"text": "Marianne", "isCorrect": True},
-                        {"text": "Jeanne d'Arc", "isCorrect": False},
-                        {"text": "Catherine de Médicis", "isCorrect": False},
-                        {"text": "Olympe de Gouges", "isCorrect": False}
+                        {"text": "La Déclaration des droits de l'homme et du citoyen", "isCorrect": True},
+                        {"text": "La Constitution de la première République française", "isCorrect": False},
+                        {"text": "Le Code civil des Français instauré par Napoléon", "isCorrect": False},
+                        {"text": "Le Traité de paix définitif signé à Versailles", "isCorrect": False}
                     ],
-                    "correction": "Marianne, coiffée du bonnet phrygien, incarne la République et ses valeurs : Liberté, Égalité, Fraternité. On trouve son buste dans toutes les mairies."
+                    "correction": "**Rappel de cours :** Adoptée le 26 août 1789, la DDHC est le texte pilier qui met fin à la société d'ordres et de privilèges. Elle pose les bases d'une société nouvelle fondée sur la liberté, l'égalité et la souveraineté du peuple."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "En quelle année la France a-t-elle adopté sa Constitution actuelle (Ve République) ?",
+                    "question": "Quel personnage historique s'est fait sacrer Empereur des Français en 1804 ?",
                     "answerOptions": [
-                        {"text": "1958", "isCorrect": True},
-                        {"text": "1945", "isCorrect": False},
-                        {"text": "1789", "isCorrect": False},
-                        {"text": "1848", "isCorrect": False}
+                        {"text": "Le général Napoléon Bonaparte", "isCorrect": True},
+                        {"text": "Le monarque Louis-Philippe Ier", "isCorrect": False},
+                        {"text": "Le président Louis-Napoléon", "isCorrect": False},
+                        {"text": "Le roi de France Louis XVI", "isCorrect": False}
                     ],
-                    "correction": "La Constitution de la Ve République a été adoptée par référendum en 1958, sous l'impulsion du général de Gaulle."
+                    "correction": "**Rappel de cours :** Napoléon Bonaparte, après avoir pris le pouvoir par un coup d'État en 1799, transforme la République en Empire en 1804. Il réorganise l'État avec des institutions durables (lycées, préfets, Code civil)."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel document fondamental de 1789 proclame que 'les hommes naissent et demeurent libres et égaux en droits' ?",
+                    "question": "En quelle année le suffrage universel masculin a-t-il été définitivement instauré ?",
                     "answerOptions": [
-                        {"text": "La Déclaration des droits de l'homme et du citoyen", "isCorrect": True},
-                        {"text": "Le Code Civil", "isCorrect": False},
-                        {"text": "L'Édit de Nantes", "isCorrect": False},
-                        {"text": "La Charte constitutionnelle", "isCorrect": False}
+                        {"text": "L'année de la révolution de 1848", "isCorrect": True},
+                        {"text": "L'année de la révolution de 1789", "isCorrect": False},
+                        {"text": "L'année de la proclamation de 1870", "isCorrect": False},
+                        {"text": "L'année de la libération de 1944", "isCorrect": False}
                     ],
-                    "correction": "Ce texte pose les bases d'une société nouvelle fondée sur la souveraineté de la nation et la fin des privilèges."
+                    "correction": "**Rappel de cours :** C'est sous la IIe République, en 1848, que le vote devient un droit pour tous les hommes majeurs, sans condition de richesse. C'est une étape majeure vers la démocratie, même si les femmes en restent exclues."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Qui a été le premier président de la Ve République ?",
+                    "question": "Quel droit fondamental les femmes ont-elles obtenu en 1944 ?",
                     "answerOptions": [
-                        {"text": "Charles de Gaulle", "isCorrect": True},
-                        {"text": "Georges Pompidou", "isCorrect": False},
-                        {"text": "Valéry Giscard d'Estaing", "isCorrect": False},
-                        {"text": "François Mitterrand", "isCorrect": False}
+                        {"text": "Le droit de vote et d'éligibilité", "isCorrect": True},
+                        {"text": "Le droit de travailler sans accord", "isCorrect": False},
+                        {"text": "Le droit d'ouvrir un compte bancaire", "isCorrect": False},
+                        {"text": "Le droit de divorcer par contrat", "isCorrect": False}
                     ],
-                    "correction": "Le général de Gaulle est revenu au pouvoir en 1958 pour résoudre la crise algérienne et fonder un nouveau régime politique stable."
+                    "correction": "**Rappel de cours :** À la Libération, une ordonnance du Général de Gaulle accorde enfin le droit de vote aux femmes. Elles voteront pour la première fois lors des élections municipales d'avril 1945, rattrapant ainsi un long retard démocratique."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Que célèbre-t-on lors de la fête nationale française ?",
+                    "question": "Qui a fondé la Ve République et en est devenu le premier président en 1958 ?",
                     "answerOptions": [
-                        {"text": "La prise de la Bastille et la Fête de la Fédération", "isCorrect": True},
-                        {"text": "La victoire de 1945 uniquement", "isCorrect": False},
-                        {"text": "Le couronnement de Napoléon", "isCorrect": False},
-                        {"text": "La création de l'Union européenne", "isCorrect": False}
+                        {"text": "Le général Charles de Gaulle", "isCorrect": True},
+                        {"text": "Le président Georges Pompidou", "isCorrect": False},
+                        {"text": "Le président François Mitterrand", "isCorrect": False},
+                        {"text": "Le président Jacques Chirac", "isCorrect": False}
                     ],
-                    "correction": "La loi de 1880 fixe le 14 juillet comme fête nationale en référence à 1789 mais aussi à la Fête de la Fédération de 1790 (symbole d'unité nationale)."
+                    "correction": "**Rappel de cours :** Rappelé au pouvoir lors de la crise algérienne, Charles de Gaulle fait adopter une nouvelle Constitution par référendum en 1958. Elle renforce le pouvoir exécutif et définit le régime politique actuel de la France."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quel empereur a dirigé la France au début du XIXe siècle et instauré le Code Civil ?",
-                    "answerOptions": [
-                        {"text": "Napoléon Ier", "isCorrect": True},
-                        {"text": "Louis XIV", "isCorrect": False},
-                        {"text": "Napoléon III", "isCorrect": False},
-                        {"text": "Charles X", "isCorrect": False}
-                    ],
-                    "correction": "Napoléon Bonaparte, sacré empereur en 1804, a profondément réorganisé la France par des réformes durables (Lycées, Préfets, Code Civil)."
-                },
-                {
-                    "questionNumber": 9,
-                    "question": "En quelle année les femmes françaises ont-elles obtenu le droit de vote ?",
-                    "answerOptions": [
-                        {"text": "1944", "isCorrect": True},
-                        {"text": "1789", "isCorrect": False},
-                        {"text": "1918", "isCorrect": False},
-                        {"text": "1968", "isCorrect": False}
-                    ],
-                    "correction": "Le droit de vote a été accordé aux femmes par une ordonnance du Comité français de la Libération nationale en avril 1944."
-                },
-                {
-                    "questionNumber": 10,
-                    "question": "Quelle est la devise de la République française ?",
+                    "question": "Quelle est la devise officielle de la République française ?",
                     "answerOptions": [
                         {"text": "Liberté, Égalité, Fraternité", "isCorrect": True},
                         {"text": "Travail, Famille, Patrie", "isCorrect": False},
-                        {"text": "Unité, Force, Justice", "isCorrect": False},
-                        {"text": "Paix, Progrès, Culture", "isCorrect": False}
+                        {"text": "Ordre, Progrès, Justice", "isCorrect": False},
+                        {"text": "Paix, Unité, Solidarité", "isCorrect": False}
                     ],
-                    "correction": "Inscrite sur les frontons des édifices publics, cette devise résume les valeurs héritées de la Révolution et consolidées sous la IIIe République."
+                    "correction": "**Rappel de cours :** Cette devise héritée de la Révolution française apparaît sur les bâtiments publics. La liberté et l'égalité sont des droits, tandis que la fraternité est un devoir moral qui fonde la solidarité nationale."
+                },
+                {
+                    "questionNumber": 9,
+                    "question": "Quel symbole de la République porte le bonnet phrygien ?",
+                    "answerOptions": [
+                        {"text": "Le buste nommé Marianne", "isCorrect": True},
+                        {"text": "L'emblème du coq gaulois", "isCorrect": False},
+                        {"text": "La figure de Jeanne d'Arc", "isCorrect": False},
+                        {"text": "La statue du semeur libre", "isCorrect": False}
+                    ],
+                    "correction": "**Rappel de cours :** Marianne est l'allégorie de la République française. Son buste est présent dans toutes les mairies. Le bonnet phrygien qu'elle porte était, dans l'Antiquité, le symbole des esclaves affranchis."
+                },
+                {
+                    "questionNumber": 10,
+                    "question": "En quelle année la loi de séparation des Églises et de l'État a-t-elle été votée ?",
+                    "answerOptions": [
+                        {"text": "Durant l'année 1905", "isCorrect": True},
+                        {"text": "Durant l'année 1881", "isCorrect": False},
+                        {"text": "Durant l'année 1958", "isCorrect": False},
+                        {"text": "Durant l'année 1792", "isCorrect": False}
+                    ],
+                    "correction": "**Rappel de cours :** Cette loi est le fondement de la laïcité en France. Elle garantit la liberté de conscience et le libre exercice des cultes, mais l'État ne reconnaît, ne salarie ni ne subventionne aucune religion."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Sous quelle République vivons-nous actuellement ?",
+                    "question": "Quel droit social majeur est instauré en 1945 pour protéger les citoyens ?",
                     "answerOptions": [
-                        {"text": "La Ve République", "isCorrect": True},
-                        {"text": "La IIIe République", "isCorrect": False},
-                        {"text": "La IVe République", "isCorrect": False},
-                        {"text": "La VIe République", "isCorrect": False}
+                        {"text": "Le système de la Sécurité sociale", "isCorrect": True},
+                        {"text": "Le droit aux congés payés annuels", "isCorrect": False},
+                        {"text": "La semaine de travail de 40 heures", "isCorrect": False},
+                        {"text": "Le salaire minimum inter-métiers", "isCorrect": False}
                     ],
-                    "correction": "La Ve République est un régime semi-présidentiel qui donne un rôle important au Président de la République."
+                    "correction": "**Rappel de cours :** Créée juste après la Seconde Guerre mondiale, la Sécurité sociale repose sur un principe de solidarité. Elle protège les Français contre les risques de la vie : maladie, accidents du travail, vieillesse (retraites) et charges familiales."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Qui détient le pouvoir législatif en France ?",
+                    "question": "Sous quel régime politique la France vit-elle aujourd'hui ?",
                     "answerOptions": [
-                        {"text": "Le Parlement (Assemblée nationale et Sénat)", "isCorrect": True},
-                        {"text": "Le Président de la République seul", "isCorrect": False},
-                        {"text": "Le Conseil constitutionnel", "isCorrect": False},
-                        {"text": "Le Préfet", "isCorrect": False}
+                        {"text": "Le régime de la Ve République", "isCorrect": True},
+                        {"text": "Le régime de la IVe République", "isCorrect": False},
+                        {"text": "Le régime du Second Empire", "isCorrect": False},
+                        {"text": "La Monarchie constitutionnelle", "isCorrect": False}
                     ],
-                    "correction": "Le Parlement vote les lois et contrôle l'action du gouvernement. L'Assemblée nationale a le dernier mot en cas de désaccord."
+                    "correction": "**Rappel de cours :** La Ve République est un régime parlementaire stable avec un rôle central accordé au Président de la République. Elle a été créée pour mettre fin à l'instabilité ministérielle du régime précédent."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quelle guerre a provoqué la chute de la IVe République ?",
+                    "question": "Quelle loi de 1881-1882 rend l'école gratuite, laïque et obligatoire ?",
                     "answerOptions": [
-                        {"text": "La guerre d'Algérie", "isCorrect": True},
-                        {"text": "La Seconde Guerre mondiale", "isCorrect": False},
-                        {"text": "La guerre de 1870", "isCorrect": False},
-                        {"text": "La guerre froide", "isCorrect": False}
+                        {"text": "Les lois scolaires de Jules Ferry", "isCorrect": True},
+                        {"text": "Les décrets civils de Napoléon", "isCorrect": False},
+                        {"text": "La réforme de l'édit de Nantes", "isCorrect": False},
+                        {"text": "Les accords de Matignon sociaux", "isCorrect": False}
                     ],
-                    "correction": "L'instabilité ministérielle et l'incapacité à résoudre le conflit algérien ont conduit au retour de De Gaulle et au changement de régime."
+                    "correction": "**Rappel de cours :** Jules Ferry a voulu faire de l'école le lieu d'apprentissage des valeurs républicaines. En la rendant gratuite et obligatoire, il a permis l'alphabétisation massive de la population française."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Quel est le rôle du Conseil constitutionnel ?",
+                    "question": "Comment appelle-t-on le vote où les citoyens répondent par 'Oui' ou par 'Non' ?",
                     "answerOptions": [
-                        {"text": "Vérifier que les lois respectent la Constitution", "isCorrect": True},
-                        {"text": "Commander l'armée française", "isCorrect": False},
-                        {"text": "Rédiger les traités internationaux", "isCorrect": False},
-                        {"text": "Nommer les maires des communes", "isCorrect": False}
+                        {"text": "Le scrutin par référendum", "isCorrect": True},
+                        {"text": "Le scrutin proportionnel", "isCorrect": False},
+                        {"text": "Les élections législatives", "isCorrect": False},
+                        {"text": "Le suffrage indirect", "isCorrect": False}
                     ],
-                    "correction": "Appelé les 'Sages', ils veillent à la régularité des élections et à la conformité des lois."
+                    "correction": "**Rappel de cours :** Le référendum permet au peuple d'exercer directement sa souveraineté en votant pour ou contre un texte proposé par le président. C'est un outil démocratique puissant."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quel événement de mai 1968 a marqué la société française ?",
+                    "question": "Quel texte juridique définit les droits et les devoirs du citoyen français ?",
                     "answerOptions": [
-                        {"text": "Une vaste crise sociale et étudiante", "isCorrect": True},
-                        {"text": "La fin de la Première Guerre mondiale", "isCorrect": False},
-                        {"text": "L'indépendance de l'Indochine", "isCorrect": False},
-                        {"text": "La chute du mur de Berlin", "isCorrect": False}
+                        {"text": "La Constitution de la République", "isCorrect": True},
+                        {"text": "Le règlement intérieur local", "isCorrect": False},
+                        {"text": "Le code de la route national", "isCorrect": False},
+                        {"text": "Le manuel d'histoire et géo", "isCorrect": False}
                     ],
-                    "correction": "Mai 68 a été un mouvement de contestation culturelle et sociale qui a transformé les mœurs et les relations dans le travail."
+                    "correction": "**Rappel de cours :** La Constitution est la loi suprême d'un pays. Elle organise les pouvoirs publics et garantit les libertés fondamentales. Tout citoyen doit la respecter et la connaître."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Comment appelle-t-on le chef du gouvernement sous la Ve République ?",
+                    "question": "En quelle année la peine de mort a-t-elle été abolie en France ?",
                     "answerOptions": [
-                        {"text": "Le Premier ministre", "isCorrect": True},
-                        {"text": "Le Chancelier", "isCorrect": False},
-                        {"text": "Le Président du Conseil", "isCorrect": False},
-                        {"text": "Le Ministre d'État", "isCorrect": False}
+                        {"text": "Au cours de l'année 1981", "isCorrect": True},
+                        {"text": "Au cours de l'année 1968", "isCorrect": False},
+                        {"text": "Au cours de l'année 1945", "isCorrect": False},
+                        {"text": "Au cours de l'année 2002", "isCorrect": False}
                     ],
-                    "correction": "Le Premier ministre est nommé par le Président. Il dirige l'action du gouvernement et propose les ministres."
+                    "correction": "**Rappel de cours :** L'abolition de la peine de mort a été portée par Robert Badinter, alors garde des Sceaux, sous la présidence de François Mitterrand. C'est une grande avancée humaniste pour la justice française."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Quel drapeau est le symbole de l'État français ?",
+                    "question": "Quel événement de mai 1968 a profondément transformé la société française ?",
                     "answerOptions": [
-                        {"text": "Le drapeau tricolore bleu, blanc, rouge", "isCorrect": True},
-                        {"text": "Le drapeau bleu avec des étoiles", "isCorrect": False},
-                        {"text": "Le drapeau blanc à fleurs de lys", "isCorrect": False},
-                        {"text": "Le drapeau rouge", "isCorrect": False}
+                        {"text": "La grande crise sociale et étudiante", "isCorrect": True},
+                        {"text": "La signature d'un traité européen", "isCorrect": False},
+                        {"text": "L'élection d'un nouveau député", "isCorrect": False},
+                        {"text": "La construction d'un nouveau mur", "isCorrect": False}
                     ],
-                    "correction": "Le blanc représente la royauté, le bleu et le rouge sont les couleurs de la ville de Paris. Leur union symbolise l'unité nationale."
+                    "correction": "**Rappel de cours :** Mai 68 a débuté comme une révolte étudiante avant de devenir une grève générale ouvrière. Cette crise a bousculé les traditions et a permis une libération des mœurs et un renforcement des droits syndicaux."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "En quelle année a été votée la loi de séparation des Églises et de l'État ?",
+                    "question": "Quel monument parisien symbolise les victoires de Napoléon Ier ?",
                     "answerOptions": [
-                        {"text": "1905", "isCorrect": True},
-                        {"text": "1789", "isCorrect": False},
-                        {"text": "1958", "isCorrect": False},
-                        {"text": "1881", "isCorrect": False}
+                        {"text": "L'édifice de l'Arc de Triomphe", "isCorrect": True},
+                        {"text": "La structure de la Tour Eiffel", "isCorrect": False},
+                        {"text": "La cathédrale Notre-Dame", "isCorrect": False},
+                        {"text": "L'opéra Garnier de Paris", "isCorrect": False}
                     ],
-                    "correction": "Cette loi fonde la laïcité en France : la République garantit la liberté de culte mais n'en salarie ni n'en subventionne aucun."
+                    "correction": "**Rappel de cours :** L'Arc de Triomphe a été commandé par Napoléon après sa victoire à Austerlitz en 1805. Il rend hommage à la Grande Armée et abrite aujourd'hui la tombe du Soldat inconnu."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel droit fondamental est garanti par la loi de 1881 ?",
+                    "question": "Quel est le rôle du Président de la République sous la Ve République ?",
                     "answerOptions": [
-                        {"text": "La liberté de la presse", "isCorrect": True},
-                        {"text": "Le droit de grève", "isCorrect": False},
-                        {"text": "L'école gratuite", "isCorrect": False},
-                        {"text": "La sécurité sociale", "isCorrect": False}
+                        {"text": "Il est le chef d'État et des armées", "isCorrect": True},
+                        {"text": "Il vote les lois à l'Assemblée", "isCorrect": False},
+                        {"text": "Il juge les délits au tribunal", "isCorrect": False},
+                        {"text": "Il dirige les mairies du pays", "isCorrect": False}
                     ],
-                    "correction": "Cette loi permet à chacun d'écrire et de diffuser ses idées sans censure préalable, sous réserve de respecter la loi (pas d'injure ou de diffamation)."
+                    "correction": "**Rappel de cours :** Le président est élu au suffrage universel direct pour 5 ans. Il nomme le Premier ministre, préside le Conseil des ministres et assure le respect de la Constitution."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Qui élit le Président de la République au suffrage universel direct depuis 1962 ?",
+                    "question": "Quelle couleur représente le pouvoir royal sur le drapeau tricolore ?",
                     "answerOptions": [
-                        {"text": "L'ensemble des citoyens français inscrits", "isCorrect": True},
-                        {"text": "Les députés et sénateurs uniquement", "isCorrect": False},
-                        {"text": "Les grands électeurs (maires, conseillers)", "isCorrect": False},
-                        {"text": "Le gouvernement sortant", "isCorrect": False}
+                        {"text": "La couleur blanche centrale", "isCorrect": True},
+                        {"text": "La couleur bleue latérale", "isCorrect": False},
+                        {"text": "La couleur rouge latérale", "isCorrect": False},
+                        {"text": "La couleur verte absente", "isCorrect": False}
                     ],
-                    "correction": "La réforme de 1962 a renforcé le lien direct entre le Président et le peuple."
+                    "correction": "**Rappel de cours :** Le drapeau tricolore est né de la Révolution. Le blanc est la couleur du roi, entouré par le bleu et le rouge qui sont les couleurs de la ville de Paris. Leur réunion symbolise l'union nationale."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 2 : GÉOGRAPHIE - ESPACES URBAINS ET DÉVELOPPEMENT (Q21 à Q40)
+        # THÈME 2 : ESPACES URBAINS ET DÉVELOPPEMENT DURABLE (Q21 à Q40)
         # =========================================================================
         2: {
-            "name": "THÈME 2 : GÉOGRAPHIE - ESPACES URBAINS ET DÉVELOPPEMENT",
+            "name": "THÈME 2 : ESPACES URBAINS ET DÉVELOPPEMENT DURABLE",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quel pourcentage de la population française vit aujourd'hui dans des aires urbaines ?",
+                    "question": "Comment appelle-t-on le phénomène de concentration de la population dans les villes ?",
                     "answerOptions": [
-                        {"text": "Environ 85%", "isCorrect": True},
-                        {"text": "Environ 50%", "isCorrect": False},
-                        {"text": "Moins de 20%", "isCorrect": False},
-                        {"text": "Presque 100%", "isCorrect": False}
+                        {"text": "Le processus d'urbanisation", "isCorrect": True},
+                        {"text": "Le processus de déforestation", "isCorrect": False},
+                        {"text": "Le processus d'exode rural massif", "isCorrect": True},
+                        {"text": "Le processus de mondialisation", "isCorrect": False}
                     ],
-                    "correction": "La France est un pays fortement urbanisé. La majorité des habitants vivent en ville ou dans des banlieues sous influence urbaine."
+                    "correction": "**Rappel de cours :** L'urbanisation est mondiale : aujourd'hui, plus d'un humain sur deux vit en ville. Cela s'explique par la recherche d'emploi, de services (santé, éducation) et de loisirs."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Comment appelle-t-on le déplacement quotidien des travailleurs entre leur domicile et leur lieu de travail ?",
+                    "question": "Qu'est-ce qu'une métropole au sens géographique ?",
                     "answerOptions": [
-                        {"text": "Les migrations pendulaires", "isCorrect": True},
-                        {"text": "L'exode rural", "isCorrect": False},
-                        {"text": "Le tourisme local", "isCorrect": False},
-                        {"text": "L'expatriation", "isCorrect": False}
+                        {"text": "Une ville qui exerce son influence", "isCorrect": True},
+                        {"text": "Un petit village de campagne isolé", "isCorrect": False},
+                        {"text": "Un terrain agricole cultivé", "isCorrect": False},
+                        {"text": "Une île déserte sans habitant", "isCorrect": False}
                     ],
-                    "correction": "Ces flux quotidiens créent des embouteillages et nécessitent des réseaux de transports performants."
+                    "correction": "**Rappel de cours :** Une métropole est une grande ville qui concentre les activités de commandement (politique, économique, culturel) et qui rayonne sur les territoires qui l'entourent."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Qu'est-ce qu'une métropole ?",
+                    "question": "Quel terme désigne la périphérie d'une ville qui s'étend sur la campagne ?",
                     "answerOptions": [
-                        {"text": "Une grande ville qui exerce des fonctions de commandement", "isCorrect": True},
-                        {"text": "Un village de montagne", "isCorrect": False},
-                        {"text": "Une zone industrielle abandonnée", "isCorrect": False},
-                        {"text": "Un parc naturel protégé", "isCorrect": False}
+                        {"text": "La zone périurbaine en extension", "isCorrect": True},
+                        {"text": "Le centre historique piétonnier", "isCorrect": False},
+                        {"text": "Le quartier d'affaires moderne", "isCorrect": False},
+                        {"text": "La zone industrielle délaissée", "isCorrect": False}
                     ],
-                    "correction": "Une métropole concentre les richesses, les pouvoirs politiques, économiques et culturels (ex: Paris, Lyon)."
+                    "correction": "**Rappel de cours :** La périurbanisation est l'étalement des villes. On y trouve beaucoup de maisons individuelles (lotissements). Cela augmente les temps de transport quotidiens vers les centres-villes."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Que signifie le terme 'périurbanisation' ?",
+                    "question": "Quels sont les trois piliers du développement durable ?",
                     "answerOptions": [
-                        {"text": "L'extension des villes sur les campagnes environnantes", "isCorrect": True},
-                        {"text": "La construction de gratte-ciels en centre-ville", "isCorrect": False},
-                        {"text": "Le retour des habitants vers les villages isolés", "isCorrect": False},
-                        {"text": "La création de jardins ouvriers", "isCorrect": False}
+                        {"text": "Économique, Social et Écologique", "isCorrect": True},
+                        {"text": "Sportif, Culturel et Financier", "isCorrect": False},
+                        {"text": "Militaire, Politique et Public", "isCorrect": False},
+                        {"text": "Local, National et Mondial ici", "isCorrect": False}
                     ],
-                    "correction": "Les familles s'installent de plus en plus loin du centre pour avoir une maison individuelle, créant un étalement urbain."
+                    "correction": "**Rappel de cours :** Le développement durable doit être efficace économiquement, équitable socialement et tolérable pour l'environnement afin de préserver les ressources pour les générations futures."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quelle ville est la seule métropole de rang mondial en France ?",
+                    "question": "Comment appelle-t-on le quartier qui concentre les gratte-ciel et les banques ?",
                     "answerOptions": [
-                        {"text": "Paris", "isCorrect": True},
-                        {"text": "Marseille", "isCorrect": False},
-                        {"text": "Bordeaux", "isCorrect": False},
-                        {"text": "Lille", "isCorrect": False}
+                        {"text": "Le quartier d'affaires ou CBD", "isCorrect": True},
+                        {"text": "Le centre historique ancien", "isCorrect": False},
+                        {"text": "La banlieue pavillonnaire calme", "isCorrect": False},
+                        {"text": "La zone commerciale de sortie", "isCorrect": False}
                     ],
-                    "correction": "Paris est une 'ville-monde' qui attire les investissements internationaux et les touristes du monde entier."
+                    "correction": "**Rappel de cours :** Le CBD (Central Business District) est le cœur financier de la métropole. On y trouve des tours de bureaux et des sièges sociaux d'entreprises. La Défense à Paris en est l'exemple français."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Qu'est-ce qu'un écoquartier ?",
+                    "question": "Que signifie le tri sélectif des déchets ménagers ?",
                     "answerOptions": [
-                        {"text": "Un quartier conçu pour minimiser son impact sur l'environnement", "isCorrect": True},
-                        {"text": "Un quartier où tout est peint en vert", "isCorrect": False},
-                        {"text": "Un quartier réservé aux agriculteurs", "isCorrect": False},
-                        {"text": "Un quartier sans électricité", "isCorrect": False}
+                        {"text": "Séparer pour favoriser le recyclage", "isCorrect": True},
+                        {"text": "Brûler tout au fond du jardin ici", "isCorrect": False},
+                        {"text": "Tout mettre dans la même poubelle", "isCorrect": False},
+                        {"text": "Jeter ses ordures dans la rivière", "isCorrect": False}
                     ],
-                    "correction": "Il favorise les économies d'énergie, le tri des déchets, les transports doux et la mixité sociale."
+                    "correction": "**Rappel de cours :** Le tri sélectif permet de transformer les matières usagées (verre, papier, plastique) en nouveaux objets, économisant ainsi les ressources naturelles et l'énergie."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quel est l'objectif de la mixité sociale dans une ville ?",
+                    "question": "Quel mode de transport est considéré comme 'doux' ou durable ?",
                     "answerOptions": [
-                        {"text": "Faire vivre ensemble des personnes de niveaux de revenus différents", "isCorrect": True},
-                        {"text": "Séparer les riches et les pauvres par des murs", "isCorrect": False},
-                        {"text": "Obliger tout le monde à porter les mêmes vêtements", "isCorrect": False},
-                        {"text": "Supprimer les transports en commun", "isCorrect": False}
+                        {"text": "Le vélo ou la marche à pied", "isCorrect": True},
+                        {"text": "La voiture de sport essence", "isCorrect": False},
+                        {"text": "L'avion gros porteur lointain", "isCorrect": False},
+                        {"text": "Le camion de livraison lourd", "isCorrect": False}
                     ],
-                    "correction": "La mixité évite la création de 'ghettos' et favorise la cohésion nationale."
+                    "correction": "**Rappel de cours :** Les transports doux ne rejettent pas de gaz à effet de serre. Ils sont encouragés en ville par la création de pistes cyclables et de zones piétonnes."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Comment appelle-t-on le phénomène de concentration de la population et des activités dans les grandes villes ?",
+                    "question": "Qu'est-ce qu'un 'éco-quartier' en aménagement urbain ?",
                     "answerOptions": [
-                        {"text": "La métropolisation", "isCorrect": True},
-                        {"text": "L'exode urbain", "isCorrect": False},
-                        {"text": "La désertification", "isCorrect": False},
-                        {"text": "Le nomadisme", "isCorrect": False}
+                        {"text": "Un quartier conçu pour l'écologie", "isCorrect": True},
+                        {"text": "Un quartier réservé aux très riches", "isCorrect": False},
+                        {"text": "Un quartier sans aucune habitation", "isCorrect": False},
+                        {"text": "Un quartier sans aucun éclairage", "isCorrect": False}
                     ],
-                    "correction": "Ce processus renforce le poids des grandes villes au détriment des petites villes et des zones rurales."
+                    "correction": "**Rappel de cours :** Un éco-quartier intègre dès sa construction des critères écologiques : économies d'eau et d'énergie, espaces verts, gestion des déchets et mixité sociale."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel mode de transport est considéré comme un 'transport doux' ?",
+                    "question": "Quel est le principal gaz responsable du réchauffement climatique ?",
                     "answerOptions": [
-                        {"text": "Le vélo", "isCorrect": True},
-                        {"text": "L'avion", "isCorrect": False},
-                        {"text": "Le camion semi-remorque", "isCorrect": False},
-                        {"text": "Le jet ski", "isCorrect": False}
+                        {"text": "Le dioxyde de carbone ou CO2", "isCorrect": True},
+                        {"text": "L'oxygène de l'air ambiant", "isCorrect": False},
+                        {"text": "L'azote présent dans le ciel", "isCorrect": False},
+                        {"text": "L'hélium des ballons de fête", "isCorrect": False}
                     ],
-                    "correction": "Les transports doux ne polluent pas et utilisent l'énergie humaine (marche, vélo, trottinette)."
+                    "correction": "**Rappel de cours :** Le CO2 est rejeté par la combustion des énergies fossiles (pétrole, charbon, gaz). En s'accumulant dans l'atmosphère, il retient la chaleur du soleil (effet de serre)."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Quelle est la définition d'un CBD (Central Business District) ?",
+                    "question": "Que désigne le terme 'mobilité' en géographie urbaine ?",
                     "answerOptions": [
-                        {"text": "Le quartier des affaires avec de hauts bureaux (ex: La Défense)", "isCorrect": True},
-                        {"text": "Une zone de loisirs en plein air", "isCorrect": False},
-                        {"text": "Le centre historique avec des vieilles églises", "isCorrect": False},
-                        {"text": "Une gare de triage de marchandises", "isCorrect": False}
+                        {"text": "L'ensemble des déplacements de gens", "isCorrect": True},
+                        {"text": "Le prix total de l'essence ici", "isCorrect": False},
+                        {"text": "La construction d'un nouvel immeuble", "isCorrect": False},
+                        {"text": "Le passage des saisons en année", "isCorrect": False}
                     ],
-                    "correction": "Le CBD concentre les banques, les sièges sociaux des grandes entreprises et les services financiers."
+                    "correction": "**Rappel de cours :** La mobilité concerne les trajets domicile-travail, les loisirs et les vacances. Organiser une mobilité durable est un enjeu majeur pour les villes de demain."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Qu'est-ce que le mitage du paysage ?",
+                    "question": "Qu'est-ce que l'exode rural ?",
                     "answerOptions": [
-                        {"text": "L'éparpillement de maisons individuelles dans les zones rurales", "isCorrect": True},
-                        {"text": "La plantation de haies autour des champs", "isCorrect": False},
-                        {"text": "L'installation de panneaux solaires sur les toits", "isCorrect": False},
-                        {"text": "Le nettoyage des forêts", "isCorrect": False}
+                        {"text": "Le départ des gens vers la ville", "isCorrect": True},
+                        {"text": "Le départ des citadins à la mer", "isCorrect": False},
+                        {"text": "L'arrivée des touristes en été", "isCorrect": False},
+                        {"text": "Le voyage d'un pays à un autre", "isCorrect": False}
                     ],
-                    "correction": "Le mitage consomme de l'espace agricole et augmente les coûts de raccordement (eau, électricité)."
+                    "correction": "**Rappel de cours :** Historiquement, les progrès agricoles ont libéré de la main-d'œuvre qui est partie travailler dans les usines en ville. Ce mouvement a transformé la France au XXe siècle."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Dans une métropole, où trouve-t-on généralement les populations les plus aisées ?",
+                    "question": "Quel est l'objectif du développement durable social ?",
                     "answerOptions": [
-                        {"text": "Dans le centre historique ou certaines banlieues résidentielles", "isCorrect": True},
-                        {"text": "À côté des usines polluantes", "isCorrect": False},
-                        {"text": "Sous les ponts d'autoroute", "isCorrect": False},
-                        {"text": "Dans les friches industrielles", "isCorrect": False}
+                        {"text": "Réduire les inégalités de vie", "isCorrect": True},
+                        {"text": "Augmenter le prix du pétrole brut", "isCorrect": False},
+                        {"text": "Supprimer les écoles publiques", "isCorrect": False},
+                        {"text": "Vendre plus de voitures neuves", "isCorrect": False}
                     ],
-                    "correction": "La gentrification transforme certains quartiers populaires du centre en quartiers bourgeois."
+                    "correction": "**Rappel de cours :** Le pilier social vise à garantir à tous l'accès à l'éducation, à la santé, au logement et à lutter contre la pauvreté pour assurer la cohésion de la société."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quel document définit les règles de construction dans une commune ?",
+                    "question": "Comment appelle-t-on une ville qui s'étend sans fin sur le territoire ?",
                     "answerOptions": [
-                        {"text": "Le PLU (Plan Local d'Urbanisme)", "isCorrect": True},
-                        {"text": "La carte d'identité", "isCorrect": False},
-                        {"text": "Le carnet de santé", "isCorrect": False},
-                        {"text": "Le code de la route", "isCorrect": False}
+                        {"text": "L'étalement urbain massif", "isCorrect": True},
+                        {"text": "La densification du bâti centre", "isCorrect": False},
+                        {"text": "La protection de la zone verte", "isCorrect": False},
+                        {"text": "La rénovation du vieux quartier", "isCorrect": False}
                     ],
-                    "correction": "Le PLU décide quelles zones sont constructibles et quelles sont les zones naturelles à protéger."
+                    "correction": "**Rappel de cours :** L'étalement urbain grignote les terres agricoles et les espaces naturels. Il oblige à construire de nouvelles infrastructures coûteuses et favorise l'usage de la voiture."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Qu'est-ce qu'une ville 'durable' ?",
+                    "question": "Que signifie recycler une matière première ?",
                     "answerOptions": [
-                        {"text": "Une ville qui allie croissance, bien-être social et respect de la nature", "isCorrect": True},
-                        {"text": "Une ville qui ne change jamais depuis le Moyen-Âge", "isCorrect": False},
-                        {"text": "Une ville où il est interdit de construire", "isCorrect": False},
-                        {"text": "Une ville construite uniquement en pierre", "isCorrect": False}
+                        {"text": "La transformer pour un nouvel usage", "isCorrect": True},
+                        {"text": "La jeter dans une décharge sauvage", "isCorrect": False},
+                        {"text": "La laisser pourrir au soleil ainsi", "isCorrect": False},
+                        {"text": "L'envoyer dans l'espace lointain", "isCorrect": False}
                     ],
-                    "correction": "Le concept de ville durable vise à limiter la pollution tout en offrant des services de qualité aux citoyens."
+                    "correction": "**Rappel de cours :** Le recyclage (boucle fermée) économise l'extraction de nouvelles ressources. Par exemple, recycler l'aluminium coûte beaucoup moins d'énergie que d'en produire du nouveau."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quelle est la fonction d'un 'pôle d'échanges multimodal' ?",
+                    "question": "Quel aménagement favorise la mixité sociale ?",
                     "answerOptions": [
-                        {"text": "Connecter plusieurs types de transports (train, bus, vélo, tram)", "isCorrect": True},
-                        {"text": "Vendre des tickets de loto", "isCorrect": False},
-                        {"text": "Réparer les voitures en panne", "isCorrect": False},
-                        {"text": "Organiser des repas de quartier", "isCorrect": False}
+                        {"text": "La création de logements sociaux", "isCorrect": True},
+                        {"text": "La construction de hauts murs ici", "isCorrect": False},
+                        {"text": "Le départ des familles du centre", "isCorrect": False},
+                        {"text": "La fermeture des commerces locaux", "isCorrect": False}
                     ],
-                    "correction": "Il facilite la vie des voyageurs en permettant des correspondances rapides entre différents modes de transport."
+                    "correction": "**Rappel de cours :** La mixité sociale consiste à faire cohabiter des personnes de revenus et d'origines différents dans un même quartier pour éviter la création de 'ghettos'."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Comment appelle-t-on le retrait des commerces et services des centres-villes des petites villes ?",
+                    "question": "Pourquoi préserver les espaces verts en ville ?",
                     "answerOptions": [
-                        {"text": "La dévitalisation", "isCorrect": True},
-                        {"text": "L'expansion", "isCorrect": False},
-                        {"text": "La modernisation", "isCorrect": False},
-                        {"text": "La végétalisation", "isCorrect": False}
+                        {"text": "Pour la santé et la biodiversité", "isCorrect": True},
+                        {"text": "Pour construire plus de parkings", "isCorrect": False},
+                        {"text": "Pour supprimer les trottoirs ici", "isCorrect": False},
+                        {"text": "Pour attirer les animaux sauvages", "isCorrect": False}
                     ],
-                    "correction": "La dévitalisation est un défi majeur pour les territoires ruraux et les villes moyennes."
+                    "correction": "**Rappel de cours :** Les parcs et jardins urbains servent de 'poumons' aux villes, régulent la température lors des canicules et offrent des lieux de détente essentiels aux citadins."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Quel est le rôle d'une 'ceinture verte' autour d'une ville ?",
+                    "question": "Quel est l'impact des transports sur l'environnement ?",
                     "answerOptions": [
-                        {"text": "Limiter l'étalement urbain et préserver la nature", "isCorrect": True},
-                        {"text": "Délimiter les zones de stationnement payant", "isCorrect": False},
-                        {"text": "Empêcher le vent de souffler", "isCorrect": False},
-                        {"text": "Faire payer une taxe d'entrée", "isCorrect": False}
+                        {"text": "La pollution de l'air et le bruit", "isCorrect": True},
+                        {"text": "L'amélioration de la forêt dense", "isCorrect": False},
+                        {"text": "La baisse du niveau des océans", "isCorrect": False},
+                        {"text": "La création de ressources pures", "isCorrect": False}
                     ],
-                    "correction": "Elle offre un espace de détente aux citadins et protège les zones agricoles proches."
+                    "correction": "**Rappel de cours :** Les transports routiers et aériens sont les principaux émetteurs de polluants atmosphériques et de gaz à effet de serre. Ils sont aussi une source importante de nuisances sonores."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Qu'est-ce qu'une 'aire urbaine' ?",
+                    "question": "Comment s'appelle l'unité urbaine qui regroupe la ville et ses banlieues ?",
                     "answerOptions": [
-                        {"text": "Un pôle urbain (ville) et sa couronne périurbaine", "isCorrect": True},
-                        {"text": "Une aire d'autoroute avec des arbres", "isCorrect": False},
-                        {"text": "Une ville entourée d'un mur de protection", "isCorrect": False},
-                        {"text": "Un désert avec quelques maisons", "isCorrect": False}
+                        {"text": "Une agglomération urbaine", "isCorrect": True},
+                        {"text": "Un département administratif", "isCorrect": False},
+                        {"text": "Une région géographique vaste", "isCorrect": False},
+                        {"text": "Un canton électoral local ici", "isCorrect": False}
                     ],
-                    "correction": "C'est l'unité statistique utilisée par l'INSEE pour définir l'influence réelle d'une ville."
+                    "correction": "**Rappel de cours :** Une agglomération est un ensemble de communes dont les constructions se touchent. On parle d'un pôle urbain qui centralise les services et les emplois."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quel est le risque lié à l'artificialisation des sols ?",
+                    "question": "Quel geste réduit la consommation d'énergie au domicile ?",
                     "answerOptions": [
-                        {"text": "L'augmentation des inondations et la perte de terres agricoles", "isCorrect": True},
-                        {"text": "La baisse du prix de l'immobilier", "isCorrect": False},
-                        {"text": "L'amélioration de la qualité de l'air", "isCorrect": False},
-                        {"text": "L'augmentation du nombre de fleurs", "isCorrect": False}
+                        {"text": "Isoler son logement et chauffer moins", "isCorrect": True},
+                        {"text": "Laisser les lumières allumées nuit", "isCorrect": False},
+                        {"text": "Ouvrir les fenêtres en plein hiver", "isCorrect": False},
+                        {"text": "Utiliser des appareils très vieux", "isCorrect": False}
                     ],
-                    "correction": "Le béton et l'asphalte empêchent l'eau de s'infiltrer, ce qui sature les réseaux d'égouts en cas de pluie."
+                    "correction": "**Rappel de cours :** Une bonne isolation thermique évite les déperditions de chaleur. C'est l'un des moyens les plus efficaces pour réduire ses factures et son impact écologique."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quel continent connaît l'urbanisation la plus rapide aujourd'hui ?",
+                    "question": "Que signifie le terme 'étalement urbain' ?",
                     "answerOptions": [
-                        {"text": "L'Afrique", "isCorrect": True},
-                        {"text": "L'Europe", "isCorrect": False},
-                        {"text": "L'Antarctique", "isCorrect": False},
-                        {"text": "L'Océanie", "isCorrect": False}
+                        {"text": "La ville prend plus de place au sol", "isCorrect": True},
+                        {"text": "La ville se vide de ses habitants", "isCorrect": False},
+                        {"text": "La ville devient plus haute en tours", "isCorrect": False},
+                        {"text": "La ville est détruite par la guerre", "isCorrect": False}
                     ],
-                    "correction": "L'Afrique voit ses villes grandir à une vitesse record, posant d'énormes défis d'infrastructures et de logements."
+                    "correction": "**Rappel de cours :** L'étalement urbain signifie que la ville s'étend horizontalement sur les champs. Cela fragmente les paysages naturels et rend l'usage de la voiture quasi indispensable."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 3 : HISTOIRE - GUERRES ET CONFLITS AU XXe SIÈCLE (Q41 à Q60)
+        # THÈME 3 : LA FRANCE ET L'EUROPE DANS LE MONDE (Q41 à Q60)
         # =========================================================================
         3: {
-            "name": "THÈME 3 : HISTOIRE - GUERRES ET CONFLITS AU XXe SIÈCLE",
+            "name": "THÈME 3 : LA FRANCE ET L'EUROPE DANS LE MONDE",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quelles sont les dates de la Première Guerre mondiale ?",
+                    "question": "Quel océan sépare la France métropolitaine du continent américain ?",
                     "answerOptions": [
-                        {"text": "1914-1918", "isCorrect": True},
-                        {"text": "1939-1945", "isCorrect": False},
-                        {"text": "1870-1871", "isCorrect": False},
-                        {"text": "1912-1920", "isCorrect": False}
+                        {"text": "L'océan Atlantique nord", "isCorrect": True},
+                        {"text": "L'océan Indien austral", "isCorrect": False},
+                        {"text": "L'océan Pacifique immense", "isCorrect": False},
+                        {"text": "L'océan Arctique glacial", "isCorrect": False}
                     ],
-                    "correction": "Aussi appelée la 'Grande Guerre', elle a marqué le début du XXe siècle par sa violence inédite."
+                    "correction": "**Rappel de cours :** L'Atlantique est l'espace majeur des échanges entre l'Europe et l'Amérique du Nord. C'est sur cet océan que se situent aussi les Antilles françaises et la Guyane."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Comment appelle-t-on les soldats français de la Première Guerre mondiale ?",
+                    "question": "Combien de pays sont membres de l'Union européenne actuellement ?",
                     "answerOptions": [
-                        {"text": "Les Poilus", "isCorrect": True},
-                        {"text": "Les Grognards", "isCorrect": False},
-                        {"text": "Les Mousquetaires", "isCorrect": False},
-                        {"text": "Les Résistants", "isCorrect": False}
+                        {"text": "Vingt-sept pays membres", "isCorrect": True},
+                        {"text": "Douze pays membres seulement", "isCorrect": False},
+                        {"text": "Cinquante pays membres ici", "isCorrect": False},
+                        {"text": "Quatre pays membres seulement", "isCorrect": False}
                     ],
-                    "correction": "Ce surnom affectueux évoque les conditions de vie précaires dans les tranchées, où ils ne pouvaient pas se raser."
+                    "correction": "**Rappel de cours :** Depuis le départ du Royaume-Uni (Brexit), l'UE compte 27 pays. C'est un espace de paix, de libre-échange et de solidarité politique unique au monde."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Quelle grande bataille de 1916 est devenue le symbole de l'enfer des tranchées ?",
+                    "question": "Quelle est la capitale administrative de l'Union européenne ?",
                     "answerOptions": [
-                        {"text": "La bataille de Verdun", "isCorrect": True},
-                        {"text": "La bataille de la Marne", "isCorrect": False},
-                        {"text": "La bataille d'Austerlitz", "isCorrect": False},
-                        {"text": "Le débarquement de Normandie", "isCorrect": False}
+                        {"text": "La ville de Bruxelles en Belgique", "isCorrect": True},
+                        {"text": "La ville de Paris en France", "isCorrect": False},
+                        {"text": "La ville de Berlin en Allemagne", "isCorrect": False},
+                        {"text": "La ville de Madrid en Espagne", "isCorrect": False}
                     ],
-                    "correction": "Pendant 10 mois, Français et Allemands se sont affrontés sous un déluge d'artillerie constant."
+                    "correction": "**Rappel de cours :** Bruxelles accueille la Commission européenne et le Conseil. Strasbourg est le siège du Parlement européen, où se réunissent les députés élus."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quel régime totalitaire est dirigé par Adolf Hitler en Allemagne à partir de 1933 ?",
+                    "question": "Quelle monnaie unique est utilisée par 20 pays de l'Union européenne ?",
                     "answerOptions": [
-                        {"text": "Le nazisme", "isCorrect": True},
-                        {"text": "Le fascisme", "isCorrect": False},
-                        {"text": "Le communisme", "isCorrect": False},
-                        {"text": "La démocratie", "isCorrect": False}
+                        {"text": "La monnaie de l'Euro", "isCorrect": True},
+                        {"text": "La monnaie du Dollar", "isCorrect": False},
+                        {"text": "La monnaie de la Livre", "isCorrect": False},
+                        {"text": "La monnaie du Franc", "isCorrect": False}
                     ],
-                    "correction": "Le nazisme est une idéologie raciste, antisémite et antidémocratique qui a conduit à la guerre."
+                    "correction": "**Rappel de cours :** L'euro facilite les échanges et les voyages entre les pays membres. Les pays utilisant l'euro forment ce que l'on appelle la 'Zone Euro'."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Quel événement du 6 juin 1944 a permis de libérer la France ?",
+                    "question": "Que signifie le sigle DROM en géographie française ?",
                     "answerOptions": [
-                        {"text": "Le débarquement en Normandie", "isCorrect": True},
-                        {"text": "L'armistice de 1918", "isCorrect": False},
-                        {"text": "L'appel du 18 juin", "isCorrect": False},
-                        {"text": "L'élection de De Gaulle", "isCorrect": False}
+                        {"text": "Départements et Régions d'Outre-Mer", "isCorrect": True},
+                        {"text": "Domaines Ruraux de l'Ouest Militaire", "isCorrect": False},
+                        {"text": "Directions Régionales des Objets Marins", "isCorrect": False},
+                        {"text": "Districts Républicains de l'Ouest Moderne", "isCorrect": False}
                     ],
-                    "correction": "L'opération 'Overlord' a mobilisé des milliers de navires et d'avions alliés pour briser le mur de l'Atlantique."
+                    "correction": "**Rappel de cours :** Les DROM (Guadeloupe, Guyane, Martinique, Mayotte, La Réunion) font partie intégrante de la France et de l'UE. Les lois françaises s'y appliquent comme en métropole."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Comment appelle-t-on l'extermination planifiée de 6 millions de Juifs durant la Seconde Guerre mondiale ?",
+                    "question": "Quel pays européen est la première puissance économique du continent ?",
                     "answerOptions": [
-                        {"text": "La Shoah (ou Holocauste)", "isCorrect": True},
-                        {"text": "La Résistance", "isCorrect": False},
-                        {"text": "L'Exode", "isCorrect": False},
-                        {"text": "La Collaboration", "isCorrect": False}
+                        {"text": "L'Allemagne fédérale", "isCorrect": True},
+                        {"text": "L'Italie du sud et nord", "isCorrect": False},
+                        {"text": "L'Espagne de Madrid", "isCorrect": False},
+                        {"text": "La Grèce méditerranéenne", "isCorrect": False}
                     ],
-                    "correction": "C'est un crime contre l'humanité organisé par l'État nazi à travers les centres de mise à mort (ex: Auschwitz)."
+                    "correction": "**Rappel de cours :** L'Allemagne est le moteur industriel et financier de l'Europe. Avec la France, elle forme le 'couple franco-allemand' qui mène souvent l'Union européenne."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Qui a lancé l'appel du 18 juin 1940 depuis Londres ?",
+                    "question": "Quelle chaîne de montagnes sépare la France de l'Espagne ?",
                     "answerOptions": [
-                        {"text": "Charles de Gaulle", "isCorrect": True},
-                        {"text": "Philippe Pétain", "isCorrect": False},
-                        {"text": "Jean Moulin", "isCorrect": False},
-                        {"text": "Winston Churchill", "isCorrect": False}
+                        {"text": "Le massif des Pyrénées", "isCorrect": True},
+                        {"text": "Le massif des Alpes", "isCorrect": False},
+                        {"text": "Le massif du Jura", "isCorrect": False},
+                        {"text": "Le massif des Vosges", "isCorrect": False}
                     ],
-                    "correction": "Cet appel à la radio BBC a marqué la naissance de la France Libre et le refus de la défaite face à l'Allemagne."
+                    "correction": "**Rappel de cours :** Les Pyrénées forment une frontière naturelle entre les deux pays. C'est une zone de passage mais aussi un espace naturel protégé."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Qu'est-ce que le régime de Vichy ?",
+                    "question": "Quel fleuve traverse la ville de Paris ?",
                     "answerOptions": [
-                        {"text": "Le gouvernement français qui a collaboré avec l'Allemagne nazie", "isCorrect": True},
-                        {"text": "Une boisson gazeuse célèbre", "isCorrect": False},
-                        {"text": "Une organisation de résistance secrète", "isCorrect": False},
-                        {"text": "L'armée alliée en Afrique du Nord", "isCorrect": False}
+                        {"text": "Le cours de la Seine", "isCorrect": True},
+                        {"text": "Le cours du Rhône", "isCorrect": False},
+                        {"text": "Le cours de la Loire", "isCorrect": False},
+                        {"text": "Le cours de la Garonne", "isCorrect": False}
                     ],
-                    "correction": "Dirigé par le maréchal Pétain, ce régime a supprimé les libertés et aidé l'occupant allemand."
+                    "correction": "**Rappel de cours :** La Seine est l'axe historique de développement de Paris. Elle permet le transport de marchandises et est un lieu touristique mondial majeur."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Quelle organisation internationale est créée en 1945 pour maintenir la paix dans le monde ?",
+                    "question": "Quelle mer borde le sud de la France ?",
                     "answerOptions": [
-                        {"text": "L'ONU (Organisation des Nations Unies)", "isCorrect": True},
-                        {"text": "L'Union européenne", "isCorrect": False},
-                        {"text": "La Croix-Rouge", "isCorrect": False},
-                        {"text": "L'OTAN", "isCorrect": False}
+                        {"text": "La mer Méditerranée", "isCorrect": True},
+                        {"text": "La mer du Nord froide", "isCorrect": False},
+                        {"text": "La mer Noire lointaine", "isCorrect": False},
+                        {"text": "La mer Rouge en Asie", "isCorrect": False}
                     ],
-                    "correction": "L'ONU succède à la Société des Nations (SDN) et dispose d'un Conseil de sécurité pour intervenir dans les crises."
+                    "correction": "**Rappel de cours :** La Méditerranée est un carrefour culturel et économique entre l'Europe, l'Afrique et le Moyen-Orient. C'est aussi une zone très touristique."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Comment appelle-t-on la période de tensions entre les États-Unis et l'URSS après 1945 ?",
+                    "question": "Comment appelle-t-on le drapeau de l'Union européenne ?",
                     "answerOptions": [
-                        {"text": "La guerre froide", "isCorrect": True},
-                        {"text": "La guerre de cent ans", "isCorrect": False},
-                        {"text": "La grande dépression", "isCorrect": False},
-                        {"text": "La décolonisation", "isCorrect": False}
+                        {"text": "Le drapeau aux étoiles d'or", "isCorrect": True},
+                        {"text": "Le drapeau tricolore", "isCorrect": False},
+                        {"text": "Le drapeau aux bandes rouges", "isCorrect": False},
+                        {"text": "Le drapeau à la croix verte", "isCorrect": False}
                     ],
-                    "correction": "C'est un affrontement idéologique, économique et culturel sans combat direct entre les deux superpuissances."
+                    "correction": "**Rappel de cours :** Le drapeau bleu comporte 12 étoiles d'or disposées en cercle. Le chiffre 12 symbolise la perfection et l'unité, et non le nombre de pays membres."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Quel monument symbolisait la division de l'Europe durant la guerre froide ?",
+                    "question": "Quel pays a quitté l'Union européenne en 2020 (Brexit) ?",
                     "answerOptions": [
-                        {"text": "Le mur de Berlin", "isCorrect": True},
-                        {"text": "La tour Eiffel", "isCorrect": False},
-                        {"text": "La statue de la Liberté", "isCorrect": False},
-                        {"text": "Le Colisée", "isCorrect": False}
+                        {"text": "Le pays du Royaume-Uni", "isCorrect": True},
+                        {"text": "Le pays de la Suisse", "isCorrect": False},
+                        {"text": "Le pays de la Pologne", "isCorrect": False},
+                        {"text": "Le pays de la Norvège", "isCorrect": False}
                     ],
-                    "correction": "Construit en 1961 et tombé en 1989, il séparait Berlin-Ouest (allié aux USA) de Berlin-Est (sous contrôle soviétique)."
+                    "correction": "**Rappel de cours :** Le Royaume-Uni a choisi de sortir de l'UE suite à un référendum. Cela a entraîné le rétablissement de contrôles aux frontières et de nouvelles relations commerciales."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Qu'est-ce que le 'Goulag' ?",
+                    "question": "Quelle est la langue la plus parlée au sein de l'Union européenne ?",
                     "answerOptions": [
-                        {"text": "Le système de camps de travail forcé en URSS", "isCorrect": True},
-                        {"text": "Une spécialité culinaire russe", "isCorrect": False},
-                        {"text": "Le nom du chef de l'État soviétique", "isCorrect": False},
-                        {"text": "Un type de missile nucléaire", "isCorrect": False}
+                        {"text": "La langue de l'Allemand", "isCorrect": True},
+                        {"text": "La langue du Français", "isCorrect": False},
+                        {"text": "La langue de l'Anglais", "isCorrect": False},
+                        {"text": "La langue de l'Italien", "isCorrect": False}
                     ],
-                    "correction": "C'est un instrument de terreur utilisé par Staline pour éliminer les opposants au régime communiste."
+                    "correction": "**Rappel de cours :** L'allemand est la langue maternelle la plus répandue car l'Allemagne est le pays le plus peuplé de l'Union européenne. L'anglais reste cependant la langue de communication privilégiée."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quelle arme terrifiante a été utilisée pour la première fois en 1945 à Hiroshima et Nagasaki ?",
+                    "question": "Quel massif montagneux culmine avec le Mont-Blanc ?",
                     "answerOptions": [
-                        {"text": "La bombe atomique", "isCorrect": True},
-                        {"text": "Le gaz moutarde", "isCorrect": False},
-                        {"text": "Le char d'assaut", "isCorrect": False},
-                        {"text": "Le drone de combat", "isCorrect": False}
+                        {"text": "Le massif des Alpes", "isCorrect": True},
+                        {"text": "Le massif des Pyrénées", "isCorrect": False},
+                        {"text": "Le massif du Massif central", "isCorrect": False},
+                        {"text": "Le massif du Jura", "isCorrect": False}
                     ],
-                    "correction": "L'utilisation de l'arme nucléaire par les États-Unis a entraîné la capitulation du Japon et la fin de la Seconde Guerre mondiale."
+                    "correction": "**Rappel de cours :** Le Mont-Blanc (4808 m) est le point culminant de l'Europe occidentale. Les Alpes sont une chaîne de montagnes 'jeune' aux sommets élevés et pointus."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Qui était Jean Moulin ?",
+                    "question": "Quel territoire d'outre-mer français se situe en Amérique du Sud ?",
                     "answerOptions": [
-                        {"text": "Un préfet et grand chef de la Résistance française", "isCorrect": True},
-                        {"text": "Un ministre du général de Gaulle", "isCorrect": False},
-                        {"text": "Un général allemand célèbre", "isCorrect": False},
-                        {"text": "Un écrivain pacifiste", "isCorrect": False}
+                        {"text": "Le territoire de la Guyane", "isCorrect": True},
+                        {"text": "Le territoire de la Réunion", "isCorrect": False},
+                        {"text": "Le territoire de la Guadeloupe", "isCorrect": False},
+                        {"text": "Le territoire de Mayotte", "isCorrect": False}
                     ],
-                    "correction": "Envoyé par De Gaulle, il a réussi à unifier les mouvements de Résistance au sein du CNR avant d'être arrêté et torturé par la Gestapo."
+                    "correction": "**Rappel de cours :** La Guyane est couverte à 95 % par la forêt amazonienne. Elle accueille le centre spatial de Kourou, d'où décollent les fusées européennes Ariane."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Que signifie le sigle STO durant l'occupation allemande ?",
+                    "question": "Quel est le rôle du Parlement européen ?",
                     "answerOptions": [
-                        {"text": "Service du Travail Obligatoire", "isCorrect": True},
-                        {"text": "Sécurité Totale de l'Ouest", "isCorrect": False},
-                        {"text": "Syndicat des Travailleurs Organisés", "isCorrect": False},
-                        {"text": "Société de Transport des Objets", "isCorrect": False}
+                        {"text": "Il vote les lois européennes", "isCorrect": True},
+                        {"text": "Il dirige les armées nationales", "isCorrect": False},
+                        {"text": "Il gère les mairies locales", "isCorrect": False},
+                        {"text": "Il imprime tous les billets", "isCorrect": False}
                     ],
-                    "correction": "Le STO a forcé des milliers de jeunes Français à partir travailler dans les usines en Allemagne pour soutenir l'effort de guerre nazi."
+                    "correction": "**Rappel de cours :** Les députés européens sont élus tous les 5 ans par les citoyens. Ils votent le budget et les lois (directives) qui s'appliquent ensuite dans tous les pays membres."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quel pays a été le premier à envoyer un homme dans l'espace en 1961 ?",
+                    "question": "Quelle ville est le siège du Conseil de l'Europe (droits de l'homme) ?",
                     "answerOptions": [
-                        {"text": "L'URSS (Union Soviétique)", "isCorrect": True},
-                        {"text": "Les États-Unis", "isCorrect": False},
-                        {"text": "La France", "isCorrect": False},
-                        {"text": "La Chine", "isCorrect": False}
+                        {"text": "La ville de Strasbourg", "isCorrect": True},
+                        {"text": "La ville de Genève", "isCorrect": False},
+                        {"text": "La ville de New York", "isCorrect": False},
+                        {"text": "La ville de Rome", "isCorrect": False}
                     ],
-                    "correction": "Iouri Gagarine a été le premier cosmonaute de l'histoire, marquant une victoire symbolique pour l'URSS dans la course à l'espace."
+                    "correction": "**Rappel de cours :** Strasbourg est le symbole de la réconciliation. Outre le Parlement européen, elle abrite le Conseil de l'Europe et la Cour européenne des droits de l'homme."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Qu'est-ce que l'Armistice ?",
+                    "question": "Quel espace permet de circuler sans contrôle aux frontières ?",
                     "answerOptions": [
-                        {"text": "L'arrêt des combats avant la signature d'un traité de paix", "isCorrect": True},
-                        {"text": "La déclaration de guerre officielle", "isCorrect": False},
-                        {"text": "Le défilé militaire de la victoire", "isCorrect": False},
-                        {"text": "L'élection d'un nouveau roi", "isCorrect": False}
+                        {"text": "L'espace nommé Schengen", "isCorrect": True},
+                        {"text": "L'espace nommé Atlantique", "isCorrect": False},
+                        {"text": "L'espace nommé Méditerranée", "isCorrect": False},
+                        {"text": "L'espace nommé Arctique", "isCorrect": False}
                     ],
-                    "correction": "En France, on commémore l'armistice du 11 novembre 1918 et celui du 8 mai 1945."
+                    "correction": "**Rappel de cours :** L'espace Schengen regroupe 29 pays (européens ou non) qui ont supprimé les contrôles à leurs frontières communes pour faciliter la circulation des personnes."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quelle idéologie prône une société sans classes et sans propriété privée ?",
+                    "question": "Quel pays est séparé de la France par la Manche ?",
                     "answerOptions": [
-                        {"text": "Le communisme", "isCorrect": True},
-                        {"text": "Le capitalisme", "isCorrect": False},
-                        {"text": "Le colonialisme", "isCorrect": False},
-                        {"text": "Le royalisme", "isCorrect": False}
+                        {"text": "Le pays du Royaume-Uni", "isCorrect": True},
+                        {"text": "Le pays de l'Irlande", "isCorrect": False},
+                        {"text": "Le pays de l'Islande", "isCorrect": False},
+                        {"text": "Le pays de la Belgique", "isCorrect": False}
                     ],
-                    "correction": "Portée par l'URSS de 1917 à 1991, cette idéologie s'opposait au modèle libéral des États-Unis."
+                    "correction": "**Rappel de cours :** La Manche est une mer étroite. Le tunnel sous la Manche relie aujourd'hui physiquement les deux pays par le train (Eurostar)."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Quel leader pacifiste a mené l'Inde à l'indépendance par la non-violence ?",
+                    "question": "Quel est le pays le plus vaste de l'Union européenne ?",
                     "answerOptions": [
-                        {"text": "Gandhi", "isCorrect": True},
-                        {"text": "Nelson Mandela", "isCorrect": False},
-                        {"text": "Martin Luther King", "isCorrect": False},
-                        {"text": "Mao Zedong", "isCorrect": False}
+                        {"text": "Le pays de la France", "isCorrect": True},
+                        {"text": "Le pays de l'Allemagne", "isCorrect": False},
+                        {"text": "Le pays de la Suède", "isCorrect": False},
+                        {"text": "Le pays de l'Espagne", "isCorrect": False}
                     ],
-                    "correction": "Gandhi utilisait la désobéissance civile (boycott, grèves de la faim) pour lutter contre la domination britannique."
+                    "correction": "**Rappel de cours :** La France métropolitaine est surnommée 'l'hexagone'. C'est le plus grand territoire agricole de l'Union européenne."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Quel événement marque la fin de la guerre froide en 1991 ?",
+                    "question": "Que signifie la Francophonie ?",
                     "answerOptions": [
-                        {"text": "L'éclatement et la fin de l'URSS", "isCorrect": True},
-                        {"text": "La fin de la guerre du Vietnam", "isCorrect": False},
-                        {"text": "La création de l'Euro", "isCorrect": False},
-                        {"text": "Le premier pas sur la Lune", "isCorrect": False}
+                        {"text": "Les pays qui parlent français", "isCorrect": True},
+                        {"text": "Les pays qui utilisent l'euro", "isCorrect": False},
+                        {"text": "Les pays situés en Europe", "isCorrect": False},
+                        {"text": "Les pays qui sont riches ici", "isCorrect": False}
                     ],
-                    "correction": "Après la chute du mur de Berlin et l'effondrement du bloc communiste, l'URSS disparaît au profit de 15 nouveaux États, dont la Russie."
+                    "correction": "**Rappel de cours :** La Francophonie regroupe plus de 300 millions de locuteurs sur les 5 continents. C'est un espace de coopération culturelle et linguistique."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 4 : GÉOGRAPHIE - LA FRANCE ET L'UNION EUROPÉENNE (Q61 à Q80)
+        # THÈME 4 : LA DÉMOCRATIE ET LE CITOYEN (Q61 à Q80)
         # =========================================================================
         4: {
-            "name": "THÈME 4 : GÉOGRAPHIE - LA FRANCE ET L'UNION EUROPÉENNE",
+            "name": "THÈME 4 : LA DÉMOCRATIE ET LE CITOYEN",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Combien d'États membres compte l'Union européenne aujourd'hui (après le départ du Royaume-Uni) ?",
+                    "question": "Qui détient la souveraineté dans une démocratie ?",
                     "answerOptions": [
-                        {"text": "27 États", "isCorrect": True},
-                        {"text": "12 États", "isCorrect": False},
-                        {"text": "50 États", "isCorrect": False},
-                        {"text": "6 États", "isCorrect": False}
+                        {"text": "L'ensemble du peuple citoyen", "isCorrect": True},
+                        {"text": "Un monarque héréditaire seul", "isCorrect": False},
+                        {"text": "Le chef de l'armée nationale", "isCorrect": False},
+                        {"text": "Un groupe de religieux experts", "isCorrect": False}
                     ],
-                    "correction": "Le projet européen a commencé à 6 pays en 1957. Le départ britannique (Brexit) a ramené le nombre à 27."
+                    "correction": "**Rappel de cours :** Démocratie vient du grec 'demos' (peuple) et 'kratos' (pouvoir). Le peuple exerce ce pouvoir par ses élus (élections) ou par le référendum."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quelle est la monnaie unique utilisée par 20 pays de l'Union européenne ?",
+                    "question": "À quel âge obtient-on le droit de vote en France ?",
                     "answerOptions": [
-                        {"text": "L'Euro", "isCorrect": True},
-                        {"text": "Le Franc", "isCorrect": False},
-                        {"text": "Le Dollar", "isCorrect": False},
-                        {"text": "La Livre Sterling", "isCorrect": False}
+                        {"text": "À l'âge de dix-huit ans", "isCorrect": True},
+                        {"text": "À l'âge de seize ans ici", "isCorrect": False},
+                        {"text": "À l'âge de vingt-et-un ans", "isCorrect": False},
+                        {"text": "À l'âge de vingt-cinq ans", "isCorrect": False}
                     ],
-                    "correction": "L'Euro facilite les échanges commerciaux et les voyages entre les pays de la 'zone euro'."
+                    "correction": "**Rappel de cours :** La majorité civile et politique a été abaissée de 21 à 18 ans en 1974. C'est l'âge à partir duquel on peut participer à tous les scrutins."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Où siège le Parlement européen ?",
+                    "question": "Quel pouvoir consiste à discuter et à voter les lois ?",
                     "answerOptions": [
-                        {"text": "Strasbourg", "isCorrect": True},
-                        {"text": "Paris", "isCorrect": False},
-                        {"text": "Londres", "isCorrect": False},
-                        {"text": "Berlin", "isCorrect": False}
+                        {"text": "Le pouvoir législatif exercé", "isCorrect": True},
+                        {"text": "Le pouvoir exécutif exercé", "isCorrect": False},
+                        {"text": "Le pouvoir judiciaire exercé", "isCorrect": False},
+                        {"text": "Le pouvoir médiatique exercé", "isCorrect": False}
                     ],
-                    "correction": "Strasbourg est le siège officiel où les députés européens se réunissent chaque mois pour voter les lois européennes."
+                    "correction": "**Rappel de cours :** En France, le pouvoir législatif est confié au Parlement, composé de l'Assemblée nationale et du Sénat. C'est l'un des trois pouvoirs fondamentaux séparés."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Que permet l'espace Schengen ?",
+                    "question": "Quelle institution représente les citoyens français à l'Assemblée nationale ?",
                     "answerOptions": [
-                        {"text": "La libre circulation des personnes sans contrôle aux frontières intérieures", "isCorrect": True},
-                        {"text": "La vente gratuite de produits alimentaires", "isCorrect": False},
-                        {"text": "L'accès aux chaînes de télévision de tous les pays", "isCorrect": False},
-                        {"text": "L'utilisation d'un passeport unique mondial", "isCorrect": False}
+                        {"text": "Les députés élus au suffrage", "isCorrect": True},
+                        {"text": "Les sénateurs élus au suffrage", "isCorrect": False},
+                        {"text": "Les ministres nommés par décret", "isCorrect": False},
+                        {"text": "Les maires de toutes les villes", "isCorrect": False}
                     ],
-                    "correction": "L'espace Schengen regroupe la plupart des pays de l'UE et quelques voisins comme la Suisse ou la Norvège."
+                    "correction": "**Rappel de cours :** Les 577 députés sont élus au suffrage universel direct pour 5 ans. Ils siègent au Palais Bourbon et contrôlent l'action du gouvernement."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quelle est la capitale administrative de l'Union européenne, où siège la Commission ?",
+                    "question": "Que signifie le principe de 'laïcité' en France ?",
                     "answerOptions": [
-                        {"text": "Bruxelles", "isCorrect": True},
-                        {"text": "Rome", "isCorrect": False},
-                        {"text": "Madrid", "isCorrect": False},
-                        {"text": "Lisbonne", "isCorrect": False}
+                        {"text": "L'État est neutre en religion", "isCorrect": True},
+                        {"text": "L'État impose une seule foi", "isCorrect": False},
+                        {"text": "L'État interdit de pratiquer", "isCorrect": False},
+                        {"text": "L'État gère toutes les messes", "isCorrect": False}
                     ],
-                    "correction": "Bruxelles accueille la Commission européenne qui propose les lois et veille à leur application."
+                    "correction": "**Rappel de cours :** La laïcité protège la liberté de croire ou de ne pas croire. Elle assure l'égalité de tous devant la loi, quelle que soit leur religion ou conviction spirituelle."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Qu'est-ce qu'une région ultrapériphérique (RUP) ?",
+                    "question": "Quel acte citoyen permet de choisir ses représentants ?",
                     "answerOptions": [
-                        {"text": "Un territoire français éloigné géographiquement mais faisant partie de l'UE (ex: Guadeloupe)", "isCorrect": True},
-                        {"text": "Une région située en plein milieu de l'Allemagne", "isCorrect": False},
-                        {"text": "Un pays qui veut entrer dans l'Europe", "isCorrect": False},
-                        {"text": "Une zone de montagne inhabitée", "isCorrect": False}
+                        {"text": "L'action de voter aux urnes", "isCorrect": True},
+                        {"text": "L'action de lire le journal", "isCorrect": False},
+                        {"text": "L'action de payer ses impôts", "isCorrect": False},
+                        {"text": "L'action de rester chez soi", "isCorrect": False}
                     ],
-                    "correction": "Les RUP (comme la Guyane, la Réunion ou les Canaries) reçoivent des aides spécifiques de l'Europe pour compenser leur éloignement."
+                    "correction": "**Rappel de cours :** Le vote est un droit et un devoir civique. Il permet aux citoyens de s'exprimer et de participer à la vie de la cité en choisissant ceux qui vont décider pour eux."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Quelle institution européenne gère la monnaie euro et lutte contre l'inflation ?",
+                    "question": "Quel document d'identité est nécessaire pour voter ?",
                     "answerOptions": [
-                        {"text": "La BCE (Banque Centrale Européenne)", "isCorrect": True},
-                        {"text": "Le Tribunal de Grande Instance", "isCorrect": False},
-                        {"text": "L'UNESCO", "isCorrect": False},
-                        {"text": "La mairie de Francfort", "isCorrect": False}
+                        {"text": "La carte nationale d'identité", "isCorrect": True},
+                        {"text": "Le livret scolaire de l'année", "isCorrect": False},
+                        {"text": "La carte vitale de santé ici", "isCorrect": False},
+                        {"text": "La carte de fidélité de magasin", "isCorrect": False}
                     ],
-                    "correction": "La BCE siège à Francfort (Allemagne) et définit la politique monétaire commune."
+                    "correction": "**Rappel de cours :** Pour éviter les fraudes, chaque électeur doit prouver son identité. Dans les grandes communes, une pièce d'identité avec photo est obligatoire."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quel est le principal objectif de la PAC (Politique Agricole Commune) ?",
+                    "question": "Quel est le rôle du Premier ministre ?",
                     "answerOptions": [
-                        {"text": "Soutenir les agriculteurs et garantir la sécurité alimentaire", "isCorrect": True},
-                        {"text": "Interdire la vente de viande en Europe", "isCorrect": False},
-                        {"text": "Planter des arbres dans toutes les villes", "isCorrect": False},
-                        {"text": "Remplacer les tracteurs par des robots", "isCorrect": False}
+                        {"text": "Il dirige l'action du gouvernement", "isCorrect": True},
+                        {"text": "Il écrit toutes les lois seul", "isCorrect": False},
+                        {"text": "Il commande toute l'armée seul", "isCorrect": False},
+                        {"text": "Il juge tous les criminels seul", "isCorrect": False}
                     ],
-                    "correction": "La PAC est le premier poste de dépense du budget européen. Elle aide à moderniser les exploitations."
+                    "correction": "**Rappel de cours :** Nommé par le président, le Premier ministre coordonne le travail des ministres et assure l'exécution des lois votées par le Parlement."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Comment appelle-t-on les territoires français situés en dehors du continent européen ?",
+                    "question": "Qu'est-ce qu'un syndicat dans le monde du travail ?",
                     "answerOptions": [
-                        {"text": "Les DROM-COM (Outre-mer)", "isCorrect": True},
-                        {"text": "Les pays limitrophes", "isCorrect": False},
-                        {"text": "Les régions de l'Est", "isCorrect": False},
-                        {"text": "Les colonies", "isCorrect": False}
+                        {"text": "Une organisation de défense ouvrière", "isCorrect": True},
+                        {"text": "Un club de sport professionnel", "isCorrect": False},
+                        {"text": "Une banque pour les entreprises", "isCorrect": False},
+                        {"text": "Une école pour les directeurs", "isCorrect": False}
                     ],
-                    "correction": "Ils permettent à la France d'être présente sur tous les océans du monde et de posséder la 2e zone économique maritime."
+                    "correction": "**Rappel de cours :** Les syndicats défendent les intérêts des travailleurs (salaires, conditions de travail). Ils participent au dialogue social avec les employeurs et l'État."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Quel est l'hymne de l'Union européenne ?",
+                    "question": "Que signifie la liberté d'expression ?",
                     "answerOptions": [
-                        {"text": "L'Ode à la joie (Beethoven)", "isCorrect": True},
-                        {"text": "La Marseillaise", "isCorrect": False},
-                        {"text": "God Save the King", "isCorrect": False},
-                        {"text": "Le temps des cerises", "isCorrect": False}
+                        {"text": "Le droit de dire ses opinions", "isCorrect": True},
+                        {"text": "Le droit de mentir devant un juge", "isCorrect": False},
+                        {"text": "Le droit d'insulter tout le monde", "isCorrect": False},
+                        {"text": "Le droit de se taire en classe", "isCorrect": False}
                     ],
-                    "correction": "C'est un hymne sans paroles qui célèbre les valeurs de paix et de solidarité."
+                    "correction": "**Rappel de cours :** C'est une liberté fondamentale. On peut s'exprimer librement par la parole ou l'écrit, tant que l'on ne commet pas de délit (diffamation, incitation à la haine)."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Quel symbole représente l'Union européenne ?",
+                    "question": "Comment s'appelle le texte qui régit la vie d'une commune ?",
                     "answerOptions": [
-                        {"text": "Un cercle de 12 étoiles dorées sur fond bleu", "isCorrect": True},
-                        {"text": "Un aigle noir", "isCorrect": False},
-                        {"text": "Un lion rouge", "isCorrect": False},
-                        {"text": "Une tour Eiffel avec des fleurs", "isCorrect": False}
+                        {"text": "Le budget municipal voté", "isCorrect": True},
+                        {"text": "La constitution nationale", "isCorrect": False},
+                        {"text": "Le carnet de bord du maire", "isCorrect": False},
+                        {"text": "Le plan de ville mural ici", "isCorrect": False}
                     ],
-                    "correction": "Le nombre 12 est un symbole de perfection et d'unité, il ne correspond pas au nombre de pays membres."
+                    "correction": "**Rappel de cours :** Le conseil municipal, élu par les habitants, vote les décisions locales (écoles, routes, urbanisme) et le budget de la commune."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Quelle est la principale langue diplomatique et économique utilisée au sein de l'UE ?",
+                    "question": "Quel devoir le citoyen a-t-il envers l'État pour les services publics ?",
                     "answerOptions": [
-                        {"text": "L'anglais", "isCorrect": True},
-                        {"text": "Le latin", "isCorrect": False},
-                        {"text": "Le chinois", "isCorrect": False},
-                        {"text": "Le breton", "isCorrect": False}
+                        {"text": "Le paiement de l'impôt obligatoire", "isCorrect": True},
+                        {"text": "Le travail gratuit pour la mairie", "isCorrect": False},
+                        {"text": "Le salut quotidien au drapeau", "isCorrect": False},
+                        {"text": "Le silence pendant les élections", "isCorrect": False}
                     ],
-                    "correction": "Bien qu'il y ait 24 langues officielles, l'anglais reste la langue de travail dominante."
+                    "correction": "**Rappel de cours :** L'impôt sert à financer les services dont tout le monde bénéficie : écoles, hôpitaux, police, pompiers, routes et éclairage public."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Qu'est-ce que le FEDER ?",
+                    "question": "Quelle institution surveille le respect de la Constitution ?",
                     "answerOptions": [
-                        {"text": "Le Fonds Européen de Développement Régional", "isCorrect": True},
-                        {"text": "Une fédération de sportifs européens", "isCorrect": False},
-                        {"text": "Un type de fromage fabriqué en Belgique", "isCorrect": False},
-                        {"text": "La police des frontières européennes", "isCorrect": False}
+                        {"text": "Le Conseil constitutionnel", "isCorrect": True},
+                        {"text": "Le tribunal correctionnel local", "isCorrect": False},
+                        {"text": "La gendarmerie nationale ici", "isCorrect": False},
+                        {"text": "Le ministère de l'Économie", "isCorrect": False}
                     ],
-                    "correction": "Il finance des projets pour réduire les inégalités entre les régions riches et pauvres (routes, ponts, haut débit)."
+                    "correction": "**Rappel de cours :** Il vérifie que les lois votées par le Parlement sont conformes à la Constitution. Il valide aussi les résultats de l'élection présidentielle."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quel programme européen permet aux étudiants et apprentis de partir se former à l'étranger ?",
+                    "question": "Que signifie l'égalité devant la loi ?",
                     "answerOptions": [
-                        {"text": "Erasmus+", "isCorrect": True},
-                        {"text": "Eurovision", "isCorrect": False},
-                        {"text": "Interrail", "isCorrect": False},
-                        {"text": "Europcar", "isCorrect": False}
+                        {"text": "La même règle pour tous citoyens", "isCorrect": True},
+                        {"text": "Le même salaire pour tout le monde", "isCorrect": False},
+                        {"text": "La même taille pour tous les gens", "isCorrect": False},
+                        {"text": "La même maison pour tous les gens", "isCorrect": False}
                     ],
-                    "correction": "Erasmus est l'un des succès les plus populaires de l'Europe, favorisant le sentiment d'appartenance à un même continent."
+                    "correction": "**Rappel de cours :** Peu importe la richesse ou l'origine, la loi protège ou punit de la même manière. C'est un principe essentiel de l'État de droit."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Qu'est-ce qu'une 'mégalopole' européenne ?",
+                    "question": "Quelle est la mission des forces de l'ordre ?",
                     "answerOptions": [
-                        {"text": "Une zone urbaine continue de Londres à Milan (la dorsale européenne)", "isCorrect": True},
-                        {"text": "Un magasin très grand", "isCorrect": False},
-                        {"text": "Une ville abandonnée", "isCorrect": False},
-                        {"text": "Le nom du siège de l'ONU", "isCorrect": False}
+                        {"text": "Assurer la sécurité des personnes", "isCorrect": True},
+                        {"text": "Voter les lois à l'assemblée", "isCorrect": False},
+                        {"text": "Changer le prix de l'essence ici", "isCorrect": False},
+                        {"text": "Diriger les cours de l'école", "isCorrect": False}
                     ],
-                    "correction": "C'est le cœur économique de l'Europe, où se concentrent la population, les richesses et les axes de transport."
+                    "correction": "**Rappel de cours :** La police et la gendarmerie veillent au respect de la loi et à la protection des citoyens et de leurs biens sur tout le territoire."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Quel pays a quitté l'Union européenne en 2020 ?",
+                    "question": "Quel droit permet de manifester son désaccord collectivement ?",
                     "answerOptions": [
-                        {"text": "Le Royaume-Uni", "isCorrect": True},
-                        {"text": "L'Italie", "isCorrect": False},
-                        {"text": "La Pologne", "isCorrect": False},
-                        {"text": "La Grèce", "isCorrect": False}
+                        {"text": "La liberté de manifestation", "isCorrect": True},
+                        {"text": "Le droit de rester chez soi ainsi", "isCorrect": False},
+                        {"text": "Le droit de bloquer les hôpitaux", "isCorrect": False},
+                        {"text": "Le droit de changer de prénom", "isCorrect": False}
                     ],
-                    "correction": "Le 'Brexit' est la première fois qu'un pays membre décide de sortir de l'Union."
+                    "correction": "**Rappel de cours :** Manifester est un droit démocratique. Il doit se faire de manière pacifique et être déclaré auprès de la préfecture pour assurer la sécurité."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quel est le rôle de la Cour de justice de l'Union européenne ?",
+                    "question": "Que représente le 11 novembre en France ?",
                     "answerOptions": [
-                        {"text": "Assurer que le droit européen est appliqué de la même façon partout", "isCorrect": True},
-                        {"text": "Juger les criminels de guerre", "isCorrect": False},
-                        {"text": "Fixer les prix des amendes de stationnement", "isCorrect": False},
-                        {"text": "Décider du gagnant de la coupe d'Europe de football", "isCorrect": False}
+                        {"text": "L'armistice de la Grande Guerre", "isCorrect": True},
+                        {"text": "La fête de la musique nationale", "isCorrect": False},
+                        {"text": "Le début de la révolution ici", "isCorrect": False},
+                        {"text": "La fin de la seconde guerre ici", "isCorrect": False}
                     ],
-                    "correction": "Elle tranche les litiges entre les États ou les institutions de l'Union."
+                    "correction": "**Rappel de cours :** Le 11 novembre 1918 marque la fin des combats de la Première Guerre mondiale. C'est une journée de mémoire pour tous les soldats morts pour la France."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Comment appelle-t-on le sentiment d'être à la fois citoyen de son pays et citoyen d'Europe ?",
+                    "question": "Qui élit les députés européens ?",
                     "answerOptions": [
-                        {"text": "La citoyenneté européenne", "isCorrect": True},
-                        {"text": "L'expatriation", "isCorrect": False},
-                        {"text": "Le nationalisme", "isCorrect": False},
-                        {"text": "Le multilinguisme", "isCorrect": False}
+                        {"text": "L'ensemble des citoyens de l'UE", "isCorrect": True},
+                        {"text": "Le président de chaque pays seul", "isCorrect": False},
+                        {"text": "Les maires des grandes villes", "isCorrect": False},
+                        {"text": "Les chefs de l'armée européenne", "isCorrect": False}
                     ],
-                    "correction": "Elle permet notamment de voter aux élections municipales et européennes dans n'importe quel pays de l'UE où l'on réside."
+                    "correction": "**Rappel de cours :** C'est une élection au suffrage universel direct. Tous les 5 ans, les citoyens européens choisissent leurs représentants au Parlement européen."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quel fleuve traverse 10 pays d'Europe et finit sa course en Mer Noire ?",
+                    "question": "Que signifie le terme 'citoyenneté' ?",
                     "answerOptions": [
-                        {"text": "Le Danube", "isCorrect": True},
-                        {"text": "Le Rhin", "isCorrect": False},
-                        {"text": "Le Rhône", "isCorrect": False},
-                        {"text": "La Seine", "isCorrect": False}
+                        {"text": "Avoir des droits et des devoirs", "isCorrect": True},
+                        {"text": "Avoir beaucoup d'argent en banque", "isCorrect": False},
+                        {"text": "Habiter dans une très grande ville", "isCorrect": False},
+                        {"text": "Travailler pour une entreprise", "isCorrect": False}
                     ],
-                    "correction": "Le Danube est un axe de transport et de culture majeur pour l'Europe centrale et de l'Est."
+                    "correction": "**Rappel de cours :** Être citoyen, c'est appartenir à une communauté politique. Cela donne le droit de voter mais impose aussi le respect des lois et de la solidarité."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Quelle ville accueille le siège de la BCE et la principale place financière d'Europe continentale ?",
+                    "question": "Quelle couleur symbolise la paix sur certains drapeaux internationaux ?",
                     "answerOptions": [
-                        {"text": "Francfort", "isCorrect": True},
-                        {"text": "Luxembourg", "isCorrect": False},
-                        {"text": "Amsterdam", "isCorrect": False},
-                        {"text": "Paris", "isCorrect": False}
+                        {"text": "Le blanc ou le bleu clair ici", "isCorrect": True},
+                        {"text": "Le rouge vif de la passion", "isCorrect": False},
+                        {"text": "Le noir de la nuit obscure", "isCorrect": False},
+                        {"text": "Le orange des flammes de feu", "isCorrect": False}
                     ],
-                    "correction": "Francfort est le cœur financier de l'Union européenne."
+                    "correction": "**Rappel de cours :** Le blanc est souvent utilisé comme symbole de paix et de pureté. Le drapeau blanc est d'ailleurs le signe universel de la reddition ou de la demande de cessez-le-feu."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 5 : ÉDUCATION CIVIQUE ET DÉBATS CONTEMPORAINS (Q81 à Q100)
+        # THÈME 5 : GÉOGRAPHIE MONDIALE ET ENVIRONNEMENT (Q81 à Q100)
         # =========================================================================
         5: {
-            "name": "THÈME 5 : ÉDUCATION CIVIQUE ET DÉBATS CONTEMPORAINS",
+            "name": "THÈME 5 : GÉOGRAPHIE MONDIALE ET ENVIRONNEMENT",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Qu'est-ce que la laïcité en France ?",
+                    "question": "Quel est le continent le plus peuplé au monde ?",
                     "answerOptions": [
-                        {"text": "La neutralité de l'État et la liberté de conscience pour tous", "isCorrect": True},
-                        {"text": "L'interdiction de pratiquer une religion", "isCorrect": False},
-                        {"text": "L'obligation d'aller à l'église", "isCorrect": False},
-                        {"text": "Une loi qui ne s'applique qu'aux écoles", "isCorrect": False}
+                        {"text": "Le continent de l'Asie", "isCorrect": True},
+                        {"text": "Le continent de l'Afrique", "isCorrect": False},
+                        {"text": "Le continent de l'Europe", "isCorrect": False},
+                        {"text": "Le continent de l'Amérique", "isCorrect": False}
                     ],
-                    "correction": "La laïcité protège la liberté de croire ou de ne pas croire, tout en séparant les Églises de l'État."
+                    "correction": "**Rappel de cours :** L'Asie regroupe plus de 60 % de la population mondiale, avec des géants démographiques comme la Chine et l'Inde qui dépassent chacun 1,4 milliard d'habitants."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Quel âge faut-il avoir pour voter en France ?",
+                    "question": "Comment appelle-t-on le réchauffement global de l'atmosphère ?",
                     "answerOptions": [
-                        {"text": "18 ans", "isCorrect": True},
-                        {"text": "16 ans", "isCorrect": False},
-                        {"text": "21 ans", "isCorrect": False},
-                        {"text": "15 ans", "isCorrect": False}
+                        {"text": "Le changement climatique", "isCorrect": True},
+                        {"text": "La météo saisonnière locale", "isCorrect": False},
+                        {"text": "Le cycle naturel de la lune", "isCorrect": False},
+                        {"text": "L'érosion des sols agricoles", "isCorrect": False}
                     ],
-                    "correction": "La majorité électorale est fixée à 18 ans. Il faut être de nationalité française (ou citoyen de l'UE pour les locales) et inscrit sur les listes."
+                    "correction": "**Rappel de cours :** Le changement climatique actuel est dû aux activités humaines. Il provoque une hausse des températures, la fonte des glaces et une multiplication des catastrophes naturelles."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Comment appelle-t-on le vote où l'on répond par 'Oui' ou par 'Non' à une question précise ?",
+                    "question": "Quel pays est le plus vaste du monde par sa superficie ?",
                     "answerOptions": [
-                        {"text": "Un référendum", "isCorrect": True},
-                        {"text": "Une élection présidentielle", "isCorrect": False},
-                        {"text": "Un sondage d'opinion", "isCorrect": False},
-                        {"text": "Une pétition", "isCorrect": False}
+                        {"text": "Le pays de la Russie", "isCorrect": True},
+                        {"text": "Le pays du Canada froid", "isCorrect": False},
+                        {"text": "Le pays de la Chine large", "isCorrect": False},
+                        {"text": "Le pays des États-Unis", "isCorrect": False}
                     ],
-                    "correction": "Le référendum permet au peuple d'exercer directement sa souveraineté."
+                    "correction": "**Rappel de cours :** La Russie s'étend sur deux continents (Europe et Asie). Elle couvre plus de 17 millions de km², ce qui représente environ 11 % des terres émergées du globe."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Qu'est-ce que le service national universel (SNU) ?",
+                    "question": "Qu'est-ce que la biodiversité en écologie ?",
                     "answerOptions": [
-                        {"text": "Un dispositif de citoyenneté pour les jeunes de 15 à 17 ans", "isCorrect": True},
-                        {"text": "Le retour de la guerre obligatoire", "isCorrect": False},
-                        {"text": "Un club de sport municipal", "isCorrect": False},
-                        {"text": "Une école de police", "isCorrect": False}
+                        {"text": "La variété des espèces vivantes", "isCorrect": True},
+                        {"text": "Le nombre de voitures en ville", "isCorrect": False},
+                        {"text": "La quantité de pluie en année", "isCorrect": False},
+                        {"text": "Le tri des déchets plastiques", "isCorrect": False}
                     ],
-                    "correction": "Le SNU vise à favoriser l'engagement et la mixité sociale des jeunes."
+                    "correction": "**Rappel de cours :** La biodiversité comprend tous les animaux, plantes, champignons et bactéries. Elle est indispensable à l'équilibre de la vie sur Terre et à la survie humaine."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Quelle est la définition d'un 'citoyen' ?",
+                    "question": "Quel fleuve est le plus long du monde ?",
                     "answerOptions": [
-                        {"text": "Un membre d'un État qui a des droits et des devoirs", "isCorrect": True},
-                        {"text": "Une personne qui habite en ville uniquement", "isCorrect": False},
-                        {"text": "Un étranger de passage", "isCorrect": False},
-                        {"text": "Le chef d'une entreprise", "isCorrect": False}
+                        {"text": "Le fleuve de l'Amazone", "isCorrect": True},
+                        {"text": "Le fleuve du Nil en Égypte", "isCorrect": False},
+                        {"text": "Le fleuve du Mississippi", "isCorrect": False},
+                        {"text": "Le fleuve du Yangtsé chinois", "isCorrect": False}
                     ],
-                    "correction": "Être citoyen, c'est participer à la vie de la cité par le vote et le respect des lois."
+                    "correction": "**Rappel de cours :** L'Amazone, en Amérique du Sud, possède le plus grand débit d'eau. Son bassin versant est vital pour le climat mondial grâce à la forêt tropicale qu'il traverse."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Qu'est-ce que la discrimination ?",
+                    "question": "Que signifie le terme 'énergie renouvelable' ?",
                     "answerOptions": [
-                        {"text": "Traiter différemment une personne en raison de ses origines, son sexe ou sa religion", "isCorrect": True},
-                        {"text": "Faire un choix entre deux candidats compétents", "isCorrect": False},
-                        {"text": "Récompenser les meilleurs élèves", "isCorrect": False},
-                        {"text": "Avoir des opinions politiques différentes", "isCorrect": False}
+                        {"text": "Une énergie inépuisable", "isCorrect": True},
+                        {"text": "Une énergie qui pollue fort", "isCorrect": False},
+                        {"text": "Une énergie qui coûte cher", "isCorrect": False},
+                        {"text": "Une énergie qui s'arrête vite", "isCorrect": False}
                     ],
-                    "correction": "La discrimination est interdite par la loi et punie de prison et d'amendes."
+                    "correction": "**Rappel de cours :** Ces énergies proviennent de sources naturelles qui ne s'épuisent pas : le soleil (solaire), le vent (éolien), l'eau (hydraulique) ou la chaleur de la terre (géothermie)."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Quel est le rôle d'un délégué de classe ?",
+                    "question": "Quel océan est le plus grand de la planète ?",
                     "answerOptions": [
-                        {"text": "Représenter les élèves et faire le lien avec les professeurs", "isCorrect": True},
-                        {"text": "Nettoyer le tableau à la fin du cours", "isCorrect": False},
-                        {"text": "Donner des punitions à ses camarades", "isCorrect": False},
-                        {"text": "Décider des dates de vacances", "isCorrect": False}
+                        {"text": "L'océan Pacifique immense", "isCorrect": True},
+                        {"text": "L'océan Atlantique agité", "isCorrect": False},
+                        {"text": "L'océan Indien tropical", "isCorrect": False},
+                        {"text": "L'océan Arctique glacé", "isCorrect": False}
                     ],
-                    "correction": "C'est une première étape d'apprentissage de la vie démocratique."
+                    "correction": "**Rappel de cours :** L'océan Pacifique couvre un tiers de la surface de la Terre. Il est plus grand que toutes les terres émergées réunies."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Que signifie la parité en politique ?",
+                    "question": "Comment appelle-t-on le pôle Sud ?",
                     "answerOptions": [
-                        {"text": "L'égalité du nombre d'hommes et de femmes sur les listes électorales", "isCorrect": True},
-                        {"text": "Le fait de voter deux fois", "isCorrect": False},
-                        {"text": "L'élection d'un couple à la présidence", "isCorrect": False},
-                        {"text": "L'absence totale de députés", "isCorrect": False}
+                        {"text": "Le continent Antarctique", "isCorrect": True},
+                        {"text": "Le continent Arctique nord", "isCorrect": False},
+                        {"text": "Le Groenland glacé ici", "isCorrect": False},
+                        {"text": "La Sibérie froide russe", "isCorrect": False}
                     ],
-                    "correction": "Des lois imposent la parité pour favoriser l'accès des femmes aux responsabilités politiques."
+                    "correction": "**Rappel de cours :** L'Antarctique est un continent recouvert de glace. Il n'appartient à aucun pays et est réservé à la recherche scientifique et à la protection de la nature."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Qu'est-ce qu'une 'ONG' (Organisation Non Gouvernementale) ?",
+                    "question": "Quel pays a la plus grande population au monde en 2024 ?",
                     "answerOptions": [
-                        {"text": "Une association indépendante de l'État qui agit pour l'intérêt général", "isCorrect": True},
-                        {"text": "Une branche secrète de la police", "isCorrect": False},
-                        {"text": "Une entreprise qui cherche à faire du profit", "isCorrect": False},
-                        {"text": "Le nom d'un parti politique", "isCorrect": False}
+                        {"text": "Le pays de l'Inde", "isCorrect": True},
+                        {"text": "Le pays de la Chine", "isCorrect": False},
+                        {"text": "Le pays des États-Unis", "isCorrect": False},
+                        {"text": "Le pays du Nigeria ici", "isCorrect": False}
                     ],
-                    "correction": "Exemples : Médecins sans Frontières, Greenpeace, Amnesty International."
+                    "correction": "**Rappel de cours :** L'Inde a récemment dépassé la Chine pour devenir le pays le plus peuplé. Cette population jeune est un atout économique mais pose d'immenses défis sociaux."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Quel est le but d'un syndicat ?",
+                    "question": "Qu'est-ce que l'empreinte écologique ?",
                     "answerOptions": [
-                        {"text": "Défendre les droits et les intérêts des travailleurs", "isCorrect": True},
-                        {"text": "Organiser les vacances du patron", "isCorrect": False},
-                        {"text": "Prêter de l'argent aux banques", "isCorrect": False},
-                        {"text": "Vendre des produits de luxe", "isCorrect": False}
+                        {"text": "L'impact de l'homme sur Terre", "isCorrect": True},
+                        {"text": "La trace d'un pas dans la boue", "isCorrect": False},
+                        {"text": "Le dessin d'une plante rare", "isCorrect": False},
+                        {"text": "Le prix de la viande bio ici", "isCorrect": False}
                     ],
-                    "correction": "Les syndicats négocient les salaires, les conditions de travail et assistent les salariés."
+                    "correction": "**Rappel de cours :** Elle mesure la surface de terre et d'eau nécessaire pour produire ce que nous consommons et absorber nos déchets. Si tout le monde vivait comme un Français, il faudrait presque 3 planètes."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quelle est la définition de la solidarité ?",
+                    "question": "Quel phénomène détruit la couche d'ozone ?",
                     "answerOptions": [
-                        {"text": "Le sentiment d'aide mutuelle et de responsabilité commune", "isCorrect": True},
-                        {"text": "Le fait de vivre seul dans la forêt", "isCorrect": False},
-                        {"text": "La vente d'objets inutiles", "isCorrect": False},
-                        {"text": "L'obligation de payer pour entrer au cinéma", "isCorrect": False}
+                        {"text": "Les certains gaz chimiques", "isCorrect": True},
+                        {"text": "La lumière du soleil pure", "isCorrect": False},
+                        {"text": "La pluie qui tombe souvent", "isCorrect": False},
+                        {"text": "Le vent qui souffle fort", "isCorrect": False}
                     ],
-                    "correction": "La solidarité est le fondement de la sécurité sociale et de la protection des plus faibles."
+                    "correction": "**Rappel de cours :** La couche d'ozone nous protège des rayons UV dangereux du soleil. Elle a été endommagée par des gaz (CFC) utilisés autrefois dans les frigos et les sprays."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Qu'est-ce que le pluralisme politique ?",
+                    "question": "Quelle est la forêt la plus vaste et riche en biodiversité ?",
                     "answerOptions": [
-                        {"text": "L'existence de plusieurs partis politiques différents", "isCorrect": True},
-                        {"text": "Le fait d'avoir plusieurs Présidents", "isCorrect": False},
-                        {"text": "L'absence totale d'élections", "isCorrect": False},
-                        {"text": "Le droit de voter uniquement pour un seul parti", "isCorrect": False}
+                        {"text": "La forêt de l'Amazonie", "isCorrect": True},
+                        {"text": "La forêt landaise française", "isCorrect": False},
+                        {"text": "La forêt de Brocéliande ici", "isCorrect": False},
+                        {"text": "La forêt noire allemande", "isCorrect": False}
                     ],
-                    "correction": "Le pluralisme garantit la liberté d'opinion et d'expression dans une démocratie."
+                    "correction": "**Rappel de cours :** Surnommée le 'poumon de la terre', l'Amazonie abrite des millions d'espèces. Sa déforestation menace le climat et les peuples autochtones qui y vivent."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Quel est l'impact du réchauffement climatique ?",
+                    "question": "Quel pays subit le plus de séismes au monde ?",
                     "answerOptions": [
-                        {"text": "La montée du niveau des mers et l'augmentation des catastrophes", "isCorrect": True},
-                        {"text": "Le refroidissement général de la planète", "isCorrect": False},
-                        {"text": "L'augmentation de la banquise", "isCorrect": False},
-                        {"text": "La disparition de la pluie", "isCorrect": False}
+                        {"text": "Le pays du Japon", "isCorrect": True},
+                        {"text": "Le pays de la France ici", "isCorrect": False},
+                        {"text": "Le pays du Mali en Afrique", "isCorrect": False},
+                        {"text": "Le pays de la Pologne ici", "isCorrect": False}
                     ],
-                    "correction": "C'est l'un des plus grands défis de l'humanité, causé par l'augmentation des gaz à effet de serre."
+                    "correction": "**Rappel de cours :** Le Japon est situé sur la 'ceinture de feu du Pacifique', au croisement de plusieurs plaques tectoniques. Les bâtiments y sont construits avec des normes parasismiques strictes."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Qu'est-ce que le développement durable ?",
+                    "question": "Quelle part de la Terre est couverte par les océans ?",
                     "answerOptions": [
-                        {"text": "Un développement qui respecte l'environnement, le social et l'économie", "isCorrect": True},
-                        {"text": "Le fait de construire des routes partout", "isCorrect": False},
-                        {"text": "L'augmentation illimitée de la consommation", "isCorrect": False},
-                        {"text": "Le remplacement de tous les arbres par du plastique", "isCorrect": False}
+                        {"text": "Environ soixante-dix pour cent", "isCorrect": True},
+                        {"text": "Environ vingt pour cent ici", "isCorrect": False},
+                        {"text": "Environ cinquante pour cent", "isCorrect": False},
+                        {"text": "Environ quatre-vingt-dix pour cent", "isCorrect": False}
                     ],
-                    "correction": "Il vise à répondre aux besoins du présent sans compromettre ceux des générations futures."
+                    "correction": "**Rappel de cours :** C'est pour cette raison qu'on appelle la Terre la 'planète bleue'. Les océans régulent le climat et fournissent une grande part de l'oxygène que nous respirons."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Quel est le rôle des impôts ?",
+                    "question": "Qu'est-ce qu'une 'mégapole' ?",
                     "answerOptions": [
-                        {"text": "Financer les services publics (écoles, hôpitaux, police, routes)", "isCorrect": True},
-                        {"text": "Rendre l'argent aux banques étrangères", "isCorrect": False},
-                        {"text": "Payer les vacances des ministres uniquement", "isCorrect": False},
-                        {"text": "Accumuler de l'argent dans un coffre fort", "isCorrect": False}
+                        {"text": "Une ville de plus de 10 millions", "isCorrect": True},
+                        {"text": "Une ville très ancienne ici", "isCorrect": False},
+                        {"text": "Une ville située sur une île", "isCorrect": False},
+                        {"text": "Une ville sans aucun habitant", "isCorrect": False}
                     ],
-                    "correction": "L'impôt est une contribution obligatoire de chaque citoyen au fonctionnement de la société."
+                    "correction": "**Rappel de cours :** Ces villes géantes (Tokyo, Mexico, Lagos) concentrent des populations et des problèmes immenses de transport, de logement et de pollution."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Qu'est-ce qu'une friche industrielle ?",
+                    "question": "Quel désert est le plus vaste et chaud au monde ?",
                     "answerOptions": [
-                        {"text": "Une ancienne usine abandonnée qui n'est plus utilisée", "isCorrect": True},
-                        {"text": "Un champ de blé moderne", "isCorrect": False},
-                        {"text": "Une usine de fabrication de voitures électriques", "isCorrect": False},
-                        {"text": "Une forêt vierge", "isCorrect": False}
+                        {"text": "Le désert du Sahara en Afrique", "isCorrect": True},
+                        {"text": "Le désert de Gobi en Asie", "isCorrect": False},
+                        {"text": "Le désert d'Atacama au Chili", "isCorrect": False},
+                        {"text": "Le désert du Thar en Inde", "isCorrect": False}
                     ],
-                    "correction": "La reconversion des friches est un enjeu pour ne pas gaspiller d'espace agricole."
+                    "correction": "**Rappel de cours :** Le Sahara traverse une dizaine de pays d'Afrique du Nord. C'est un espace de sable et de roche où les conditions de vie sont extrêmes."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quelle est la principale source d'énergie utilisée dans le monde aujourd'hui ?",
+                    "question": "Que signifie le terme 'développement local' ?",
                     "answerOptions": [
-                        {"text": "Les énergies fossiles (pétrole, gaz, charbon)", "isCorrect": True},
-                        {"text": "L'énergie solaire", "isCorrect": False},
-                        {"text": "L'énergie humaine uniquement", "isCorrect": False},
-                        {"text": "La géothermie", "isCorrect": False}
+                        {"text": "Améliorer la vie sur place", "isCorrect": True},
+                        {"text": "Vendre tout à l'étranger vite", "isCorrect": False},
+                        {"text": "Détruire les vieux villages", "isCorrect": False},
+                        {"text": "Fermer toutes les entreprises", "isCorrect": False}
                     ],
-                    "correction": "La transition énergétique vise à remplacer ces énergies polluantes par des énergies renouvelables."
+                    "correction": "**Rappel de cours :** C'est une démarche qui mobilise les acteurs d'un territoire (maires, citoyens, entreprises) pour créer des emplois et des services sans abîmer l'environnement local."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Qu'est-ce que l'empreinte écologique ?",
+                    "question": "Quel est le but de la COP (conférence sur le climat) ?",
                     "answerOptions": [
-                        {"text": "La surface nécessaire pour produire ce que nous consommons et absorber nos déchets", "isCorrect": True},
-                        {"text": "La trace laissée par les chaussures de randonnée", "isCorrect": False},
-                        {"text": "Le nombre d'arbres plantés chaque année par la mairie", "isCorrect": False},
-                        {"text": "La quantité de déchets plastiques ramassée", "isCorrect": False}
+                        {"text": "Trouver des accords climatiques", "isCorrect": True},
+                        {"text": "Vendre des produits de luxe ici", "isCorrect": False},
+                        {"text": "Organiser des matchs de foot", "isCorrect": False},
+                        {"text": "Faire la guerre aux voisins", "isCorrect": False}
                     ],
-                    "correction": "Si tout le monde vivait comme un Français, il faudrait presque 3 planètes Terre."
+                    "correction": "**Rappel de cours :** Ces réunions mondiales visent à engager les pays à réduire leurs émissions de CO2 pour limiter le réchauffement climatique à moins de 2 degrés."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Que signifie le terme 'biodiversité' ?",
+                    "question": "Que signifie l'érosion des sols ?",
                     "answerOptions": [
-                        {"text": "La variété des formes de vie sur Terre", "isCorrect": True},
-                        {"text": "L'ensemble des roches et des minéraux", "isCorrect": False},
-                        {"text": "La diversité des produits dans un supermarché", "isCorrect": False},
-                        {"text": "Le nombre de langues parlées dans le monde", "isCorrect": False}
+                        {"text": "L'usure de la terre par l'eau", "isCorrect": True},
+                        {"text": "La pousse rapide des plantes", "isCorrect": False},
+                        {"text": "La création de nouvelles îles", "isCorrect": False},
+                        {"text": "Le nettoyage de la poussière", "isCorrect": False}
                     ],
-                    "correction": "Sa préservation est essentielle à l'équilibre de la vie."
+                    "correction": "**Rappel de cours :** L'érosion est naturelle (vent, pluie) mais elle est aggravée par l'homme (déforestation, agriculture intensive). Cela rend les terres moins fertiles."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Comment appelle-t-on les petites actions quotidiennes pour protéger l'environnement ?",
+                    "question": "Qu'est-ce qu'un 'écogeste' au quotidien ?",
                     "answerOptions": [
-                        {"text": "Les écogestes", "isCorrect": True},
-                        {"text": "Les référendums", "isCorrect": False},
-                        {"text": "Les décrets", "isCorrect": False},
-                        {"text": "Les manifestations", "isCorrect": False}
+                        {"text": "Une action pour l'environnement", "isCorrect": True},
+                        {"text": "Une insulte envers un voisin", "isCorrect": False},
+                        {"text": "Une danse traditionnelle ici", "isCorrect": False},
+                        {"text": "Un achat compulsif en ligne", "isCorrect": False}
                     ],
-                    "correction": "Éteindre la lumière, couper l'eau ou trier ses déchets sont des exemples d'écogestes."
+                    "correction": "**Rappel de cours :** Éteindre la lumière, trier ses déchets, ne pas gaspiller l'eau ou manger local sont des exemples d'écogestes qui, multipliés, ont un impact réel."
                 }
             ]
         }

@@ -797,7 +797,7 @@ quiz_data = {
                         {"text": "Le produit du prix Hors Taxes par le taux de TVA", "isCorrect": True},
                         {"text": "La somme des prix Hors Taxes et Toutes Taxes Comprises", "isCorrect": False},
                         {"text": "Le quotient du prix Hors Taxes par le prix Toutes Taxes", "isCorrect": False},
-                        {"text": "La soustraction du prix Hors Taxes au prix Toute Taxes", "isCorrect": True}
+                        {"text": "La division du prix Hors Taxes par le taux de TVA en vigueur", "isCorrect": False}
                     ],
                     "correction": "Il y a deux façons : soit multiplier le HT par le taux (ex: HT x 0,20), soit faire la différence entre ce que paie le client et ce que garde l'entreprise (TTC - HT). Les deux méthodes donnent le même résultat monétaire."
                 },
@@ -896,7 +896,7 @@ quiz_data = {
                         {"text": "Constante car les termes restent identiques", "isCorrect": True},
                         {"text": "Nulle car les termes s'annulent au fur et à mesure", "isCorrect": False},
                         {"text": "Infinie avec des valeurs augmentant sans cesse", "isCorrect": False},
-                        {"text": "Arithmétique avec une raison égale à zéro", "isCorrect": True}
+                        {"text": "Arithmétique avec une raison égale à 1", "isCorrect": False}
                     ],
                     "correction": "Multiplier par 1 ne change pas la valeur du nombre. u(n+1) = u(n) x 1 = u(n). Tous les termes sont donc égaux au premier terme. Notez qu'une suite constante est à la fois géométrique (raison 1) et arithmétique (raison 0)."
                 },

@@ -372,7 +372,7 @@ quiz_data = {
                     "question": "Comment dit-on 'Heures supplémentaires' ?",
                     "answerOptions": [
                         {"text": "Overtime hours worked by the staff", "isCorrect": True},
-                        {"text": "Extra hours on the weekend days", "isCorrect": True},
+                        {"text": "Bonus hours on the weekend days", "isCorrect": False},
                         {"text": "Plus time for the dedicated team", "isCorrect": False},
                         {"text": "Above time for the busy manager", "isCorrect": False}
                     ],
@@ -580,7 +580,7 @@ quiz_data = {
                         {"text": "Mustn't", "isCorrect": True},
                         {"text": "Don't have to", "isCorrect": False},
                         {"text": "Shouldn't", "isCorrect": False},
-                        {"text": "Can't", "isCorrect": True}
+                        {"text": "Wouldn't", "isCorrect": False}
                     ],
                     "correction": "**Rappel de cours :** 'Mustn't' exprime une interdiction forte (interdit par la loi ou la morale). 'Can't' peut aussi exprimer l'interdiction (tu ne peux pas). Note : 'Don't have to' signifie 'ne pas être obligé de'."
                 },
@@ -590,7 +590,7 @@ quiz_data = {
                     "answerOptions": [
                         {"text": "were", "isCorrect": True},
                         {"text": "am", "isCorrect": False},
-                        {"text": "was", "isCorrect": True},
+                        {"text": "will", "isCorrect": False},
                         {"text": "be", "isCorrect": False}
                     ],
                     "correction": "**Rappel de cours :** Dans une proposition hypothétique introduite par 'if', on utilise souvent 'were' à toutes les personnes pour marquer l'irréel du présent. 'If I were rich, I would buy a boat'."
@@ -883,7 +883,7 @@ quiz_data = {
                     "question": "Traduisez : 'Une menace'.",
                     "answerOptions": [
                         {"text": "A threat for the world peace", "isCorrect": True},
-                        {"text": "A danger for the local people", "isCorrect": True},
+                        {"text": "A warning for the local people", "isCorrect": False},
                         {"text": "A fear for the young children", "isCorrect": False},
                         {"text": "A bad thing for the company", "isCorrect": False}
                     ],
@@ -1056,7 +1056,7 @@ quiz_data = {
                     "question": "Comment dit-on 'L'échelle' au sens physique ?",
                     "answerOptions": [
                         {"text": "The ladder used by builders", "isCorrect": True},
-                        {"text": "The scale on the map legend", "isCorrect": True},
+                        {"text": "The scale on the map legend", "isCorrect": False},
                         {"text": "The stairs in the main hall", "isCorrect": False},
                         {"text": "The step for the old person", "isCorrect": False}
                     ],

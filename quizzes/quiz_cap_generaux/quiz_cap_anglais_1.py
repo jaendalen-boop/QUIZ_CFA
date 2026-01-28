@@ -283,10 +283,10 @@ quiz_data = {
                     "questionNumber": 25,
                     "question": "Que signifie 'always' ?",
                     "answerOptions": [
-                        {"text": "The meaning is Always", "isCorrect": True},
-                        {"text": "The meaning is Often", "isCorrect": False},
-                        {"text": "The meaning is Sometimes", "isCorrect": False},
-                        {"text": "The meaning is Never", "isCorrect": False}
+                        {"text": "Toujours", "isCorrect": True},
+                        {"text": "Souvent", "isCorrect": False},
+                        {"text": "Parfois", "isCorrect": False},
+                        {"text": "Jamais", "isCorrect": False}
                     ],
                     "correction": "'Always' est un adverbe de fréquence qui signifie 'toujours'. Il se place généralement entre le sujet et le verbe dans une phrase affirmative au présent simple."
                 },
@@ -316,10 +316,10 @@ quiz_data = {
                     "questionNumber": 28,
                     "question": "Quelle est la traduction de 'Never' ?",
                     "answerOptions": [
-                        {"text": "The meaning is Jamais", "isCorrect": True},
-                        {"text": "The meaning is Quelquefois", "isCorrect": False},
-                        {"text": "The meaning is Rarement", "isCorrect": False},
-                        {"text": "The meaning is Bientôt", "isCorrect": False}
+                        {"text": "Jamais", "isCorrect": True},
+                        {"text": "Quelquefois", "isCorrect": False},
+                        {"text": "Rarement", "isCorrect": False},
+                        {"text": "Bientôt", "isCorrect": False}
                     ],
                     "correction": "'Never' signifie 'jamais'. C'est un adverbe de fréquence négatif. En anglais, on ne peut pas utiliser 'never' avec une autre négation dans la même proposition."
                 },
@@ -327,10 +327,10 @@ quiz_data = {
                     "questionNumber": 29,
                     "question": "Complétez : 'He ______ a new car.'",
                     "answerOptions": [
-                        {"text": "He has a car", "isCorrect": True},
-                        {"text": "He have a car", "isCorrect": False},
-                        {"text": "He having a car", "isCorrect": False},
-                        {"text": "He haves a car", "isCorrect": False}
+                        {"text": "He has a new car", "isCorrect": True},
+                        {"text": "He have a new car", "isCorrect": False},
+                        {"text": "He having a new car", "isCorrect": False},
+                        {"text": "He haves a new car", "isCorrect": False}
                     ],
                     "correction": "Le verbe avoir (to have) est irrégulier au présent simple. À la 3ème personne du singulier (he, she, it), 'have' devient 'has'."
                 },
@@ -338,10 +338,10 @@ quiz_data = {
                     "questionNumber": 30,
                     "question": "Que signifie le mot interrogatif 'When' ?",
                     "answerOptions": [
-                        {"text": "The meaning is Quand", "isCorrect": True},
-                        {"text": "The meaning is Pourquoi", "isCorrect": False},
-                        {"text": "The meaning is Qui", "isCorrect": False},
-                        {"text": "The meaning is Comment", "isCorrect": False}
+                        {"text": "Quand", "isCorrect": True},
+                        {"text": "Pourquoi", "isCorrect": False},
+                        {"text": "Qui", "isCorrect": False},
+                        {"text": "Comment", "isCorrect": False}
                     ],
                     "correction": "'When' est utilisé pour interroger sur le temps, la date ou le moment d'une action. Il est indispensable pour situer un événement dans le temps."
                 },
@@ -415,10 +415,10 @@ quiz_data = {
                     "questionNumber": 37,
                     "question": "Que signifie 'Which' ?",
                     "answerOptions": [
-                        {"text": "The meaning is Lequel", "isCorrect": True},
-                        {"text": "The meaning is Quoi", "isCorrect": False},
-                        {"text": "The meaning is Où", "isCorrect": False},
-                        {"text": "The meaning is Qui", "isCorrect": False}
+                        {"text": "Lequel", "isCorrect": True},
+                        {"text": "Quoi", "isCorrect": False},
+                        {"text": "Où", "isCorrect": False},
+                        {"text": "Qui", "isCorrect": False}
                     ],
                     "correction": "'Which' est un pronom ou adjectif interrogatif utilisé lorsqu'on demande de faire un choix parmi un nombre limité d'options bien définies."
                 },
@@ -426,10 +426,10 @@ quiz_data = {
                     "questionNumber": 38,
                     "question": "Quelle est la forme contractée de 'I am not' ?",
                     "answerOptions": [
-                        {"text": "I'm not happy", "isCorrect": True},
-                        {"text": "I amn't happy", "isCorrect": False},
-                        {"text": "I'm don't happy", "isCorrect": False},
-                        {"text": "I no am happy", "isCorrect": False}
+                        {"text": "I'm not", "isCorrect": True},
+                        {"text": "I amn't", "isCorrect": False},
+                        {"text": "I'm don't", "isCorrect": False},
+                        {"text": "I no am", "isCorrect": False}
                     ],
                     "correction": "En anglais courant, on contracte le sujet 'I' avec l'auxiliaire 'am' pour donner 'I'm'. La forme 'amn't' n'existe pas en anglais standard ; on ajoute simplement 'not' après la contraction."
                 },
@@ -446,7 +446,7 @@ quiz_data = {
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quelle est la terminaison des verbes en -ing au présent continu ?",
+                    "question": "Quelle est la terminaison des verbes au présent continu ?",
                     "answerOptions": [
                         {"text": "Verbal form with -ing", "isCorrect": True},
                         {"text": "Verbal form with -ed", "isCorrect": False},
@@ -666,7 +666,7 @@ quiz_data = {
                     "question": "Comment dit-on 'Heures supplémentaires' ?",
                     "answerOptions": [
                         {"text": "I do overtime", "isCorrect": True},
-                        {"text": "I do extra hours", "isCorrect": True},
+                        {"text": "I do bonus time", "isCorrect": False},
                         {"text": "I do more time", "isCorrect": False},
                         {"text": "I do plus time", "isCorrect": False}
                     ],
@@ -827,10 +827,10 @@ quiz_data = {
                     "questionNumber": 73,
                     "question": "Que signifie 'A receipt' ?",
                     "answerOptions": [
-                        {"text": "A shop receipt", "isCorrect": True},
-                        {"text": "A food recipe", "isCorrect": False},
-                        {"text": "A long letter", "isCorrect": False},
-                        {"text": "A small gift", "isCorrect": False}
+                        {"text": "Un ticket", "isCorrect": True},
+                        {"text": "Une recette", "isCorrect": False},
+                        {"text": "Une lettre", "isCorrect": False},
+                        {"text": "Un cadeau", "isCorrect": False}
                     ],
                     "correction": "Attention au faux-ami : 'Receipt' est le ticket de caisse ou le reçu. Une recette de cuisine se traduit par le mot 'Recipe'."
                 },
@@ -883,7 +883,7 @@ quiz_data = {
                     "question": "Comment dit-on 'Le centre-ville' ?",
                     "answerOptions": [
                         {"text": "Go to the city center", "isCorrect": True},
-                        {"text": "Go to the downtown", "isCorrect": True},
+                        {"text": "Go to the central", "isCorrect": False},
                         {"text": "Go to the middle city", "isCorrect": False},
                         {"text": "Go to the town place", "isCorrect": False}
                     ],
@@ -1099,10 +1099,10 @@ quiz_data = {
                     "questionNumber": 97,
                     "question": "Choisissez le comparatif correct : 'This machine is ______ than the old one.'",
                     "answerOptions": [
-                        {"text": "faster than before", "isCorrect": True},
-                        {"text": "more fast than before", "isCorrect": False},
-                        {"text": "fastest than before", "isCorrect": False},
-                        {"text": "as fast as before", "isCorrect": False}
+                        {"text": "faster", "isCorrect": True},
+                        {"text": "more fast", "isCorrect": False},
+                        {"text": "fastest", "isCorrect": False},
+                        {"text": "as fast", "isCorrect": False}
                     ],
                     "correction": "Pour les adjectifs courts d'une seule syllabe comme 'fast', on forme le comparatif de supériorité en ajoutant simplement la terminaison '-er'."
                 },
@@ -1110,10 +1110,10 @@ quiz_data = {
                     "questionNumber": 98,
                     "question": "Choisissez le superlatif correct : 'It is the ______ hotel in the city.'",
                     "answerOptions": [
-                        {"text": "the most expensive room", "isCorrect": True},
-                        {"text": "the more expensive room", "isCorrect": False},
-                        {"text": "the expensivest room", "isCorrect": False},
-                        {"text": "the expensive room", "isCorrect": False}
+                        {"text": "most expensive", "isCorrect": True},
+                        {"text": "more expensive", "isCorrect": False},
+                        {"text": "expensivest", "isCorrect": False},
+                        {"text": "expensive", "isCorrect": False}
                     ],
                     "correction": "Pour les adjectifs longs de plus de deux syllabes (comme expensive), on forme le superlatif en plaçant 'the most' devant l'adjectif inchangé."
                 },
@@ -1132,10 +1132,10 @@ quiz_data = {
                     "questionNumber": 100,
                     "question": "Traduisez 'Je peux vous aider ?' :",
                     "answerOptions": [
-                        {"text": "Can I help you today?", "isCorrect": True},
-                        {"text": "Do I help you today?", "isCorrect": False},
-                        {"text": "Am I help you today?", "isCorrect": False},
-                        {"text": "Will I help you today?", "isCorrect": False}
+                        {"text": "Can I help you?", "isCorrect": True},
+                        {"text": "Do I help you?", "isCorrect": False},
+                        {"text": "Am I help you?", "isCorrect": False},
+                        {"text": "Will I help you?", "isCorrect": False}
                     ],
                     "correction": "Le modal 'Can' exprime ici la capacité ou la proposition de service. C'est la phrase clé pour tout professionnel travaillant au contact du public."
                 }

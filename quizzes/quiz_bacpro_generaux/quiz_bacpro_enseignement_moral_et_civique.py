@@ -792,7 +792,7 @@ quiz_data = {
                 },
                 {
                     "questionNumber": 70,
-                    "text": "Qu'est-ce que le concept de discrimination positive ?",
+                    "question": "Qu'est-ce que le concept de discrimination positive ?",
                     "answerOptions": [
                         {"text": "Favoriser un groupe désavantagé pour rétablir l'équilibre", "isCorrect": True},
                         {"text": "Pratiquer la courtoisie et la bienveillance universelle", "isCorrect": False},

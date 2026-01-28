@@ -1008,6 +1008,17 @@ quiz_data = {
                     "correction": "**Rappel de cours :** En espagnol, on utilise 'SER' pour définir une profession ou un métier de manière permanente (Soy mecánico). 'ESTAR' s'utilise pour une situation temporaire."
                 },
                 {
+                    "questionNumber": 89,
+                    "question": "Comment exprime-t-on une action qui vient tout juste de se terminer ?",
+                    "answerOptions": [
+                        {"text": "La estructura 'acabar de' seguida del infinitivo de la acción", "isCorrect": True},
+                        {"text": "La estructura 'terminar de' seguida del gerundio de la acción", "isCorrect": False},
+                        {"text": "La estructura 'empezar a' seguida del infinitivo para comenzar", "isCorrect": False},
+                        {"text": "La estructura 'volver a' seguida del infinitivo para repetir", "isCorrect": False}
+                    ],
+                    "correction": "**Rappel de cours :** Pour traduire 'venir de' + infinitif, l'espagnol utilise 'Acabar de + infinitif'. Exemple : 'Acabo de recibir el correo' (Je viens de recevoir le mail). C'est une tournure indispensable pour le passé immédiat."
+                },
+                {
                     "questionNumber": 90,
                     "question": "Comment exprime-t-on le futur dans le passé ?",
                     "answerOptions": [
@@ -1039,6 +1050,17 @@ quiz_data = {
                         {"text": "El pronombre relativo cual que necesita un artículo previo", "isCorrect": False}
                     ],
                     "correction": "**Rappel de cours :** 'Donde' est le relatif de lieu. Il ne prend pas d'accent quand il est relatif. S'il y a un mouvement, on utilise 'Adonde' (Ex: El taller adonde voy)."
+                },
+                {
+                    "questionNumber": 93,
+                    "question": "Quel temps utilise-t-on pour décrire une action en train de se dérouler ?",
+                    "answerOptions": [
+                        {"text": "La estructura 'estar' seguida del gerundio (-ando, -iendo)", "isCorrect": True},
+                        {"text": "El tiempo pretérito perfecto para una acción ya finalizada", "isCorrect": False},
+                        {"text": "El tiempo futuro simple para un plan que ocurrirá mañana", "isCorrect": False},
+                        {"text": "La estructura 'ir a' seguida del infinitivo de la acción", "isCorrect": False}
+                    ],
+                    "correction": "**Rappel de cours :** L'action en cours se forme avec l'auxiliaire 'ESTAR' + le gérondif. Exemple : 'Estamos preparando el pedido' (Nous sommes en train de préparer la commande). C'est l'équivalent du 'be + V-ing' anglais."
                 },
                 {
                     "questionNumber": 94,
@@ -1094,6 +1116,17 @@ quiz_data = {
                         {"text": "El pronombre se que se utiliza para la reflexividad o pasiva", "isCorrect": False}
                     ],
                     "correction": "**Rappel de cours :** 'LE' est le pronom complément d'objet indirect (COI) pour 'lui' ou 'elle'. Attention, devant un pronom COD (lo/la), 'le' se transforme en 'SE' (Ex: Se lo doy)."
+                },
+                {
+                    "questionNumber": 99,
+                    "question": "Quelle est la particularité du verbe 'gustar' (aimer / plaire) ?",
+                    "answerOptions": [
+                        {"text": "El verbo concuerda con el objeto que gusta, no con la persona", "isCorrect": True},
+                        {"text": "El verbo se conjuga siempre de forma regular como 'hablar'", "isCorrect": False},
+                        {"text": "El verbo requiere obligatoriamente la preposición 'de' detrás", "isCorrect": False},
+                        {"text": "El verbo solo existe en la tercera persona del plural 'gustan'", "isCorrect": False}
+                    ],
+                    "correction": "**Rappel de cours :** Avec 'Gustar', le sujet est la chose aimée. Le verbe s'accorde donc avec elle : 'Me gusta el coche' (singulier) mais 'Me gustan los coches' (pluriel). On utilise les pronoms compléments (me, te, le, nos, os, les)."
                 },
                 {
                     "questionNumber": 100,
