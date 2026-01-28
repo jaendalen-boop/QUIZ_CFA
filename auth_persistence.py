@@ -340,3 +340,42 @@ def get_all_users_stats() -> dict:
         stats["users"][username] = user_stats
     
     return stats
+
+REPORTS_FILE = DATA_DIR / "reports.json"
+
+def save_question_report(username, quiz_key, theme_num, question_text, reason):
+    """Enregistre un signalement dans reports.json."""
+    reports = []
+    if REPORTS_FILE.exists():
+        with open(REPORTS_FILE, "r", encoding="utf-8") as f:
+            reports = json.load(f)
+    
+    new_report = {
+        "id": len(reports) + 1,
+        "date": datetime.now().isoformat(),
+        "username": username,
+        "quiz": quiz_key,
+        "theme": theme_num,
+        "question": question_text,
+        "reason": reason,
+        "status": "en_attente"
+    }
+    reports.append(new_report)
+    with open(REPORTS_FILE, "w", encoding="utf-8") as f:
+        json.dump(reports, f, indent=2, ensure_ascii=False)
+
+def get_all_reports():
+    """Récupère tous les signalements."""
+    if REPORTS_FILE.exists():
+        with open(REPORTS_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return []
+
+def delete_report(report_id):
+    """Supprime un signalement une fois traité."""
+    if REPORTS_FILE.exists():
+        with open(REPORTS_FILE, "r", encoding="utf-8") as f:
+            reports = json.load(f)
+        reports = [r for r in reports if r["id"] != report_id]
+        with open(REPORTS_FILE, "w", encoding="utf-8") as f:
+            json.dump(reports, f, indent=2, ensure_ascii=False)

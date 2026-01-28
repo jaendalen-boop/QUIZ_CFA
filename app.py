@@ -15,6 +15,9 @@ from auth_persistence import (
 class UIMode(Enum):
     APP = "app"
     PROFILE = "profile"
+    ADMIN = "admin"
+
+ADMIN_USERS = ["eral", "admin"]
 
 st.set_page_config(page_title="Quiz CFA", page_icon="🎓", layout="centered")
 
@@ -965,6 +968,31 @@ def show_profile_page():
                 for t_num, s_str in q_data.get("scores", {}).items():
                     st.write(f"- Thème {t_num} : {s_str}")
 
+def show_admin_reports_page():
+    st.title("🛠️ Signalements des Apprenants")
+    from auth_persistence import get_all_reports, delete_report
+    reports = get_all_reports()
+    
+    if not reports:
+        st.info("Aucun signalement en cours.")
+        if st.button("Retour au menu"):
+            st.session_state.ui_mode = UIMode.APP
+            st.rerun()
+        return
+
+    for r in reports:
+        with st.container():
+            st.markdown(f"""
+            <div style="border:1px solid #ddd; padding:1rem; border-radius:10px; margin-bottom:1rem; background:#f9f9f9;">
+                <p><strong>Quiz :</strong> {r['quiz']} | <strong>Thème :</strong> {r['theme']}</p>
+                <p><strong>Question :</strong> {r['question']}</p>
+                <p style="color:#e11d48;"><strong>Signalement :</strong> {r['reason']}</p>
+                <p style="font-size:0.8rem; color:#666;">Par {r['username']} le {r['date'][:10]}</p>
+            </div>
+            """, unsafe_allow_html=True)
+            if st.button(f"Marquer comme résolu", key=f"del_{r['id']}"):
+                delete_report(r['id'])
+                st.rerun()
 
 # -----------------------
 # INTERFACE : SÉLECTEUR DE NIVEAU
@@ -1512,51 +1540,12 @@ def show_question_screen():
 
     idx = st.session_state.current_question_index
     total_questions = len(questions)
-
     color = THEME_COLORS.get(theme_number, "#4f46e5")
 
-    st.markdown(
-        f"""
-        <div class='theme-header'>
-            <h4 style='margin:0;font-size:0.9rem;'>{theme_name}</h4>
-            <div style='height:3px;border-radius:999px;background:{color};margin:0.2rem 0;'></div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
+    # --- Header et Barre de progression ---
+    st.markdown(f"<div class='theme-header'><h4 style='margin:0;font-size:0.9rem;'>{theme_name}</h4><div style='height:3px;border-radius:999px;background:{color};margin:0.2rem 0;'></div></div>", unsafe_allow_html=True)
     progress_percent = ((idx + 1) / total_questions) * 100
-    st.markdown(
-        f"""
-        <div style='
-            width:100%;
-            background:#e5e7eb;
-            border-radius:8px;
-            height:20px;
-            position:relative;
-            margin:0.3rem 0 0.5rem 0;
-            overflow:hidden;
-        '>
-            <div style='
-                width:{progress_percent}%;
-                background:linear-gradient(90deg, {color} 0%, {color}dd 100%);
-                height:100%;
-                border-radius:8px;
-                transition:width 0.4s ease;
-            '></div>
-            <span style='
-                position:absolute;
-                top:50%;
-                left:50%;
-                transform:translate(-50%, -50%);
-                font-weight:600;
-                font-size:0.7rem;
-                color:#1f2937;
-            '>{idx + 1}/{total_questions}</span>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    st.markdown(f"<div style='width:100%;background:#e5e7eb;border-radius:8px;height:20px;position:relative;margin:0.3rem 0 0.5rem 0;overflow:hidden;'><div style='width:{progress_percent}%;background:linear-gradient(90deg, {color} 0%, {color}dd 100%);height:100%;border-radius:8px;transition:width 0.4s ease;'></div><span style='position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);font-weight:600;font-size:0.7rem;color:#1f2937;'>{idx + 1}/{total_questions}</span></div>", unsafe_allow_html=True)
 
     q = get_current_question()
     if q is None:
@@ -1566,11 +1555,7 @@ def show_question_screen():
             st.rerun()
         return
 
-    if "shuffled_answers" not in st.session_state:
-        st.session_state.shuffled_answers = {}
-
     q_id = f"{theme_number}_{idx}"
-
     if q_id not in st.session_state.shuffled_answers:
         options = [opt.copy() for opt in q["answerOptions"]]
         random.shuffle(options)
@@ -1579,325 +1564,99 @@ def show_question_screen():
         st.session_state.shuffled_answers[q_id] = options
 
     answer_options = st.session_state.shuffled_answers[q_id]
-
-    if "answer_locked" not in st.session_state:
-        st.session_state.answer_locked = False
-    if "selected_answer" not in st.session_state:
-        st.session_state.selected_answer = None
-    if "theme_attempt_counter" not in st.session_state:
-        st.session_state.theme_attempt_counter = 0
-
-    st.markdown("""
-    <style>
-    @media (max-width: 768px) {
-        [data-testid="stAppViewContainer"] {
-            padding-top: 0.3rem !important;
-            padding-bottom: 0.3rem !important;
-        }
-        
-        [data-testid="stElementContainer"] {
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-        }
-        
-        [data-testid="stVerticalBlockBorderWrapper"] {
-            gap: 0.2rem !important;
-        }
-        
-        .stVerticalBlock {
-            gap: 0.2rem !important;
-        }
-        
-        .theme-header {
-            margin: 0.3rem 0 0.8rem 0 !important;
-        }
-        
-        .question-spacing {
-            margin: 0.3rem 0 1rem 0 !important;
-        }
-    }
-    
-    @media (min-width: 769px) {
-        [data-testid="stAppViewContainer"] {
-            padding-top: 1rem !important;
-            padding-bottom: 1rem !important;
-        }
-        
-        [data-testid="stElementContainer"] {
-            padding-top: 0.5rem !important;
-            padding-bottom: 0.5rem !important;
-        }
-        
-        [data-testid="stVerticalBlockBorderWrapper"] {
-            gap: 0.5rem !important;
-        }
-        
-        .stVerticalBlock {
-            gap: 0.5rem !important;
-        }
-        
-        .theme-header {
-            margin: 0.5rem 0 1.2rem 0 !important;
-        }
-        
-        .question-spacing {
-            margin: 0.5rem 0 1.5rem 0 !important;
-        }
-    }
-    </style>
-    """, unsafe_allow_html=True)
-    
     st.markdown(f"<h3 style='margin:0.5rem 0;font-size:1.1rem;font-weight:700;line-height:1.3;'>{q['question']}</h3>", unsafe_allow_html=True)
 
-
+    # --- LOGIQUE D'AFFICHAGE DES RÉPONSES ---
     if not st.session_state.answer_locked:
-
-        st.markdown(
-            f"""
-            <style>
-            div[data-testid="stButton"] > button {{
-                width: 100%;
-                text-align: left;
-                padding: 0.6rem 0.8rem;
-                border-radius: 8px;
-                border: 2px solid #d1d5db;
-                background: #ffffff !important;
-                color: #1f2937 !important;
-                font-size: 0.95rem;
-                transition: none !important;
-                margin-bottom: 0.4rem;
-                min-height: 48px;
-                display: flex;
-                align-items: center;
-                touch-action: pan-y !important;
-                user-select: none;
-                -webkit-user-select: none;
-                -webkit-touch-callout: none;
-                pointer-events: auto;
-                -webkit-tap-highlight-color: transparent;
-            }}
-            
-            div[data-testid="stVerticalBlock"] {{
-                touch-action: pan-y !important;
-                -webkit-user-select: none;
-            }}
-            
-            div[data-testid="stButton"] > button:active {{
-                background: #{color[1:]} !important;
-                color: #ffffff !important;
-                border-color: #{color[1:]} !important;
-            }}
-            
-            div[data-testid="stButton"] > button:focus {{
-                outline: 2px solid #{color[1:]};
-                outline-offset: 1px;
-            }}
-            
-            div[data-testid="stColumn"] {{
-                padding-left: 0.2rem !important;
-                padding-right: 0.2rem !important;
-            }}
-            </style>
-            """,
-            unsafe_allow_html=True,
-        )
+        # ÉCRAN : CHOIX DE LA RÉPONSE
+        st.markdown(f"<style>div[data-testid='stButton'] > button {{ width: 100%; text-align: left; padding: 0.6rem 0.8rem; border-radius: 8px; border: 2px solid #d1d5db; background: #ffffff !important; color: #1f2937 !important; font-size: 0.95rem; min-height: 48px; display: flex; align-items: center; }} div[data-testid='stButton'] > button:active {{ background: #{color[1:]} !important; color: #ffffff !important; border-color: #{color[1:]} !important; }}</style>", unsafe_allow_html=True)
 
         for opt in answer_options:
-            opt_text = opt["text"]
-            opt_key = opt["key"]
-            is_selected = (st.session_state.selected_answer == opt_text)
-
-            button_label = f"{'✓ ' if is_selected else ''}{opt_key}. {opt_text}"
-
-            if st.button(button_label, key=f"opt_{theme_number}_{idx}_{opt_key}_{st.session_state.theme_attempt_counter}", use_container_width=True):
-                st.session_state.selected_answer = opt_text
+            is_selected = (st.session_state.selected_answer == opt["text"])
+            if st.button(f"{'✓ ' if is_selected else ''}{opt['key']}. {opt['text']}", key=f"opt_{q_id}_{opt['key']}_{st.session_state.get('theme_attempt_counter',0)}"):
+                st.session_state.selected_answer = opt["text"]
                 st.rerun()
 
-        st.markdown("<div style='margin-top:0.4rem;'></div>", unsafe_allow_html=True)
         col1, col2 = st.columns(2, gap="small")
-
         with col1:
             if st.button("✅ Valider", use_container_width=True, type="primary"):
                 if not st.session_state.selected_answer:
-                    st.warning("Veuillez sélectionner une réponse.")
+                    st.warning("Sélectionnez une réponse.")
                 else:
-                    correct_option = next(
-                        (opt for opt in answer_options if opt["isCorrect"]), None
-                    )
-                    is_correct = (
-                        correct_option is not None
-                        and st.session_state.selected_answer == correct_option["text"]
-                    )
+                    correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
+                    is_correct = (correct_opt and st.session_state.selected_answer == correct_opt["text"])
                     st.session_state.last_is_correct = is_correct
                     st.session_state.show_correction = True
                     st.session_state.answer_locked = True
-                    if is_correct:
-                        st.session_state.score += 1
-                    
-                    if "question_results" not in st.session_state:
-                        st.session_state.question_results = []
+                    if is_correct: st.session_state.score += 1
+                    if "question_results" not in st.session_state: st.session_state.question_results = []
                     st.session_state.question_results.append(is_correct)
-                    
                     st.rerun()
-
         with col2:
             if st.button("⬅️ Retour", use_container_width=True):
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
 
     else:
-        st.markdown("<div class='question-spacing'></div>", unsafe_allow_html=True)
-
+        # ÉCRAN : CORRECTION ET FEEDBACK
         for opt in answer_options:
-            opt_text = opt["text"]
-            opt_key = opt["key"]
             is_correct_answer = opt["isCorrect"]
-            is_user_answer = (st.session_state.selected_answer == opt_text)
+            is_user_answer = (st.session_state.selected_answer == opt["text"])
+            
+            if is_correct_answer: b_c, bg, t_c, icon = "#22c55e", "#d4edda", "#155724", "✅"
+            elif is_user_answer: b_c, bg, t_c, icon = "#dc3545", "#f8d7da", "#721c24", "❌"
+            else: b_c, bg, t_c, icon = "#d1d5db", "#f9fafb", "#1f2937", ""
 
-            if is_correct_answer:
-                border_color = "#22c55e"
-                bg_color = "#d4edda"
-                text_color = "#155724"
-                icon = "✅"
-            elif is_user_answer and not is_correct_answer:
-                border_color = "#dc3545"
-                bg_color = "#f8d7da"
-                text_color = "#721c24"
-                icon = "❌"
-            else:
-                border_color = "#d1d5db"
-                bg_color = "#f9fafb"
-                text_color = "#1f2937"
-                icon = ""
+            st.markdown(f"<div style='border:2px solid {b_c}; border-radius:12px; padding:0.6rem; margin-bottom:0.3rem; background:{bg}; color:{t_c};'>{icon} <strong>{opt['key']}.</strong> {opt['text']}</div>", unsafe_allow_html=True)
 
-            st.markdown(
-                f"""
-                <div style="
-                    border:2px solid {border_color};
-                    border-radius:12px;
-                    padding:0.6rem;
-                    margin-bottom:0.3rem;
-                    background:{bg_color};
-                    color:{text_color};
-                    animation:fadeIn 0.3s ease-in;
-                ">
-                    {icon} <strong>{opt_key}.</strong> {opt_text}
-                </div>
+        if st.session_state.last_is_correct:
+            st.success(" Bonne réponse !")
+        else:
+            correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
+            st.error(f"Mauvaise réponse. La solution était : {correct_opt['text'] if correct_opt else 'N/A'}")
 
-                <style>
-                @keyframes fadeIn {{
-                    from {{ opacity: 0; transform: translateY(-10px); }}
-                    to {{ opacity: 1; transform: translateY(0); }}
-                }}
-                </style>
-                """,
-                unsafe_allow_html=True,
-            )
+        if q.get("correction"):
+            st.info(f"**📚 Rappel de cours :** {q['correction']}")
 
-        if st.session_state.show_correction:
-            if st.session_state.last_is_correct is True:
-                st.markdown(
-                    """
-                    <div style='
-                        background:#d4edda;
-                        border-left:6px solid #28a745;
-                        padding:0.8rem;
-                        border-radius:12px;
-                        margin:0.6rem 0;
-                        color:#155724;
-                        animation:fadeIn 0.3s ease-in;
-                    '>
-                        <h3 style='color:#155724;margin:0;font-size:1.1rem;'>✅ Bonne réponse !</h3>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-
-            elif st.session_state.last_is_correct is False:
-                correct_option = next(
-                    (opt for opt in answer_options if opt["isCorrect"]), None
-                )
-                st.markdown(
-                    f"""
-                    <div style='
-                        background:#f8d7da;
-                        border-left:6px solid #dc3545;
-                        padding:0.8rem;
-                        border-radius:12px;
-                        margin:0.6rem 0;
-                        color:#721c24;
-                        animation:fadeIn 0.3s ease-in;
-                    '>
-                        <h3 style='color:#721c24;margin:0 0 0.3rem 0;font-size:1.1rem;'>❌ Mauvaise réponse</h3>
-                        <p style='margin:0;color:#721c24;font-size:0.95rem;'><strong>La bonne réponse était :</strong> {correct_option['text'] if correct_option else 'N/A'}</p>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-
-            if "correction" in q and q["correction"]:
-                st.markdown(
-                    f"""
-                    <div style='
-                        background:linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
-                        border-left:6px solid #0097a7;
-                        padding:1rem;
-                        border-radius:12px;
-                        margin:0.8rem 0;
-                        box-shadow:0 4px 12px rgba(0,0,0,0.1);
-                        color:#006064;
-                        animation:fadeIn 0.4s ease-in;
-                    '>
-                        <h4 style='color:#006064;margin:0 0 0.5rem 0;font-size:1rem;display:flex;align-items:center;'>
-                            <span style='font-size:1.2rem;margin-right:0.5rem;'>📚</span> Cours
-                        </h4>
-                        <div style='color:#00363a;line-height:1.5;font-size:0.95rem;'>{q['correction']}</div>
-                    </div>
-                    """,
-                    unsafe_allow_html=True,
-                )
-
-            st.markdown("<div style='margin-top:0.6rem;'></div>", unsafe_allow_html=True)
-        
         col1, col2 = st.columns(2, gap="small")
-
         with col1:
-            if st.button("➡️ Question suivante", use_container_width=True, type="primary", key="next_question_btn"):
+            if st.button("➡️ Suivant", use_container_width=True, type="primary"):
                 st.session_state.show_correction = False
-                st.session_state.last_is_correct = None
-                st.session_state.current_question_index += 1
                 st.session_state.answer_locked = False
                 st.session_state.selected_answer = None
-
-                if q_id in st.session_state.shuffled_answers:
-                    del st.session_state.shuffled_answers[q_id]
-
+                st.session_state.current_question_index += 1
                 if st.session_state.current_question_index >= total_questions:
                     show_theme_result()
                 else:
                     st.rerun()
-
-
         with col2:
-            if st.button("⬅️ Quitter le thème", use_container_width=True, key="exit_theme_btn"):
+            if st.button("⬅️ Quitter", use_container_width=True):
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
 
-    if st.session_state.get("show_quit_confirmation", False):
-        st.warning("⚠️ **Attention !** Si vous quittez maintenant, la progression du thème en cours ne sera **pas conservée**.")
-        col_confirm_1, col_confirm_2 = st.columns(2)
-        
-        with col_confirm_1:
-            if st.button("✅ Oui, quitter le thème", use_container_width=True, key="confirm_quit"):
-                st.session_state.show_quit_confirmation = False
-                go_back_to_main_menu()
-                st.rerun()
-        
-        with col_confirm_2:
-            if st.button("❌ Non, continuer", use_container_width=True, key="cancel_quit"):
-                st.session_state.show_quit_confirmation = False
-                st.rerun()
+    # --- LE BOUTON DE SIGNALEMENT (TOUJOURS VISIBLE, HORS DU IF/ELSE) ---
+    st.markdown("---")
+    with st.expander("🚩 Signaler un problème sur cette question"):
+        reason = st.text_area("Précisez l'erreur...", key=f"report_area_{idx}")
+        if st.button("Envoyer", key=f"rep_btn_{idx}"):
+            if reason:
+                from auth_persistence import save_question_report
+                save_question_report(st.session_state.username or "Anonyme", st.session_state.selected_quiz_key, theme_number, q['question'], reason)
+                st.success("Signalement envoyé !")
+            else:
+                st.warning("Veuillez décrire l'erreur.")
 
+    # --- Confirmation de sortie ---
+    if st.session_state.get("show_quit_confirmation"):
+        st.warning("⚠️ Quitter annulera votre progression sur ce thème.")
+        c_y, c_n = st.columns(2)
+        if c_y.button("Oui, quitter", use_container_width=True):
+            st.session_state.show_quit_confirmation = False
+            go_back_to_main_menu()
+            st.rerun()
+        if c_n.button("Non, continuer", use_container_width=True):
+            st.session_state.show_quit_confirmation = False
+            st.rerun()
 # -----------------------
 # FONCTION PRINCIPALE
 # -----------------------
@@ -2010,8 +1769,8 @@ def show_theme_result():
             start_theme(theme_number)
             st.rerun()
 
-
 def main():
+    # --- 1. SIDEBAR ---
     with st.sidebar:
         st.markdown("### Navigation")
         if st.session_state.get("auth_stage") == "logged_in":
@@ -2019,36 +1778,51 @@ def main():
                 st.session_state.ui_mode = UIMode.PROFILE
             if st.button("🏠 Quiz", use_container_width=True):
                 st.session_state.ui_mode = UIMode.APP
+            
+            # Affichage admin
+            curr_user = st.session_state.get("username", "")
+            if curr_user in ADMIN_USERS:
+                st.markdown("---")
+                if st.button("🚩 Voir les signalements", use_container_width=True):
+                    st.session_state.ui_mode = UIMode.ADMIN
+
             st.markdown("---")
-            st.caption(f"Connecté en tant que {st.session_state.username}")
+            st.caption(f"Connecté : {curr_user}")
         else:
-            if st.button("🔐 Se connecter / créer un compte", use_container_width=True):
+            if st.button("🔐 Connexion / Inscription", use_container_width=True):
                 st.session_state.auth_stage = "entry"
-                st.session_state.ui_mode = UIMode.APP
                 st.rerun()
 
-    if st.session_state.ui_mode == UIMode.PROFILE:
+    # --- 2. AIGUILLAGE DES ÉCRANS ---
+    mode = st.session_state.ui_mode
+    
+    if mode == UIMode.ADMIN:
+        show_admin_reports_page()
+    elif mode == UIMode.PROFILE:
         show_profile_page()
-        return
-
-    if st.session_state.selected_quiz_key is None:
+    elif st.session_state.selected_quiz_key is None:
         show_quiz_selector()
-        return
-
-    if st.session_state.current_theme is None:
+    elif st.session_state.current_theme is None:
         show_main_menu_for_current_quiz()
-        return
-
-    quiz_data = get_current_quiz_data()
-    theme = quiz_data["themes"][st.session_state.current_theme]
-
-    if st.session_state.current_question_index >= len(theme["questions"]):
-        show_theme_result()
     else:
-        show_question_screen()
+        # Gestion du Quiz
+        q_data = get_current_quiz_data()
+        theme_idx = st.session_state.current_theme
+        theme_questions = q_data["themes"][theme_idx]["questions"]
+        curr_idx = st.session_state.current_question_index
+        
+        if curr_idx >= len(theme_questions):
+            show_theme_result()
+        else:
+            show_question_screen()
 
+# --- 3. LANCEMENT ---
 if __name__ == "__main__":
-    if st.session_state.auth_stage in ("guest", "logged_in"):
+    if "ui_mode" not in st.session_state:
+        st.session_state.ui_mode = UIMode.APP
+        
+    auth = st.session_state.get("auth_stage")
+    if auth in ("guest", "logged_in"):
         main()
     else:
         show_entry_screen()
