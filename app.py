@@ -1,5 +1,7 @@
 import streamlit as st
 import random
+from enum import Enum
+import importlib
 from datetime import datetime
 from auth_persistence import (
     create_user,
@@ -10,37 +12,22 @@ from auth_persistence import (
     load_user_scores,
 )
 
+class UIMode(Enum):
+    APP = "app"
+    PROFILE = "profile"
+
+st.set_page_config(page_title="Quiz CFA", page_icon="🎓", layout="centered")
+
+if "auth_stage" not in st.session_state:
+    st.session_state.auth_stage = "entry"
+
+if "username" not in st.session_state:
+    st.session_state.username = None
+
+if "ui_mode" not in st.session_state:
+    st.session_state.ui_mode = UIMode.APP
+
 # ===================== INJECT CUSTOM PASSWORD MANAGER HOOK =====================
-
-def init_password_manager():
-    """
-    Injecte un script qui force le navigateur à mémoriser les identifiants.
-    Cela contourne les restrictions de Streamlit en tant que formulaire natif.
-    """
-    st.markdown("""
-    <script>
-    // Script pour forcer l'enregistrement des identifiants
-    window.addEventListener('load', function() {
-        // Cherche les inputs de password
-        const passwordInputs = document.querySelectorAll('input[type="password"]');
-        passwordInputs.forEach(input => {
-            // Ajoute des événements de gestion
-            input.addEventListener('change', function() {
-                // Force la détection du formulaire de connexion/inscription
-                const form = input.closest('form');
-                if (!form) {
-                    // Si pas de form parent, crée une wrapper invisible
-                    const hiddenForm = document.createElement('form');
-                    hiddenForm.style.display = 'none';
-                    input.parentElement.appendChild(hiddenForm);
-                }
-            });
-        });
-    });
-    </script>
-    """, unsafe_allow_html=True)
-
-init_password_manager()
 
 st.set_page_config(page_title="Quiz CFA", page_icon="🎓", layout="centered")
 if "auth_stage" not in st.session_state:
@@ -51,261 +38,6 @@ if "auth_stage" not in st.session_state:
 if "username" not in st.session_state:
     st.session_state.username = None
 
-def show_entry_screen():
-    st.markdown("""
-    <div style="
-        padding: 2rem;
-        border-radius: 20px;
-        background: linear-gradient(135deg, #6A11CB, #2575FC);
-        color: white;
-        text-align: center;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-        max-width: 700px;
-        margin: 2rem auto;
-    ">
-        <h1 style="margin-bottom: 0.5rem;">Plateforme de révision CFA CMAR</h1>
-        <p style="font-size: 1.1rem; opacity: 0.9;">
-            Révisez par niveau, métier et matières générales, et suivez votre progression.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        st.subheader("Accès rapide")
-        st.markdown(
-            "Utilisez l'application immédiatement **sans compte**.\n\n"
-            "Les scores seront gardés uniquement pour cette session."
-        )
-        if st.button("🚀 Entrer sans compte", use_container_width=True):
-            st.session_state.auth_stage = "guest"
-            st.session_state.username = None
-            st.rerun()
-
-    with col2:
-        st.subheader("Créer ou utiliser un compte")
-        tabs = st.tabs(["Se connecter", "Créer un compte"])
-
-        # === TAB CONNEXION ===
-        with tabs[0]:
-            st.markdown("#### 🔐 Connexion")
-            
-            # Wrapper form invisible pour recognition du navigateur
-            st.markdown("""
-            <form id="login-wrapper" style="display:none;">
-                <input type="text" name="username" />
-                <input type="password" name="password" />
-            </form>
-            """, unsafe_allow_html=True)
-            
-            login_username = st.text_input(
-                "👤 Nom d'utilisateur",
-                key="login_username",
-                placeholder="Entrez votre nom d'utilisateur"
-            )
-            login_password = st.text_input(
-                "🔑 Mot de passe",
-                type="password",
-                key="login_password",
-                placeholder="Entrez votre mot de passe"
-            )
-            
-            col_login_1, col_login_2 = st.columns([3, 1])
-            with col_login_1:
-                if st.button("🔓 Se connecter", use_container_width=True, key="login_btn"):
-                    if login_username and login_password:
-                        success, msg = login_user(login_username, login_password)
-                        if success:
-                            st.success(msg)
-                            st.session_state.auth_stage = "logged_in"
-                            st.session_state.username = login_username.strip().lower()
-                            # IMPORTANT: Inject script pour sauver les credentials
-                            st.markdown("""
-                            <script>
-                            // Force le navigateur à mémoriser les identifiants après connexion réussie
-                            const form = document.createElement('form');
-                            form.method = 'POST';
-                            form.onsubmit = () => false;
-                            
-                            const usernameInput = document.createElement('input');
-                            usernameInput.type = 'text';
-                            usernameInput.name = 'username';
-                            usernameInput.value = '%s';
-                            usernameInput.style.display = 'none';
-                            
-                            const passwordInput = document.createElement('input');
-                            passwordInput.type = 'password';
-                            passwordInput.name = 'password';
-                            passwordInput.value = '%s';
-                            passwordInput.style.display = 'none';
-                            
-                            form.appendChild(usernameInput);
-                            form.appendChild(passwordInput);
-                            document.body.appendChild(form);
-                            
-                            // Trigger save
-                            form.submit();
-                            </script>
-                            """ % (login_username, login_password), unsafe_allow_html=True)
-                            st.rerun()
-                        else:
-                            st.error(msg)
-                    else:
-                        st.warning("⚠️ Veuillez remplir tous les champs")
-
-        # === TAB INSCRIPTION ===
-        with tabs[1]:
-            st.markdown("#### 📝 Créer un compte")
-            
-            # Wrapper form invisible pour recognition du navigateur
-            st.markdown("""
-            <form id="signup-wrapper" style="display:none;">
-                <input type="email" name="email" />
-                <input type="password" name="password" />
-                <input type="password" name="password-confirm" />
-            </form>
-            """, unsafe_allow_html=True)
-            
-            signup_username = st.text_input(
-                "👤 Nom d'utilisateur",
-                key="signup_username",
-                placeholder="Choisissez un nom d'utilisateur"
-            )
-            signup_email = st.text_input(
-                "📧 Email",
-                key="signup_email",
-                placeholder="Votre adresse email"
-            )
-            signup_password = st.text_input(
-                "🔑 Mot de passe (min. 6 caractères)",
-                type="password",
-                key="signup_password",
-                placeholder="Créez un mot de passe sécurisé"
-            )
-            signup_confirm = st.text_input(
-                "🔐 Confirmer le mot de passe",
-                type="password",
-                key="signup_confirm",
-                placeholder="Confirmez votre mot de passe"
-            )
-            
-            if st.button("✨ Créer mon compte", use_container_width=True, key="create_btn"):
-                if not signup_username or not signup_email or not signup_password or not signup_confirm:
-                    st.warning("⚠️ Veuillez remplir tous les champs")
-                elif signup_password != signup_confirm:
-                    st.error("❌ Les mots de passe ne correspondent pas.")
-                else:
-                    success, msg = create_user(signup_username, signup_email, signup_password)
-                    if success:
-                        st.success(msg + " ✅ Vous pouvez maintenant vous connecter.")
-                        # IMPORTANT: Inject script pour sauver les credentials
-                        st.markdown("""
-                        <script>
-                        const form = document.createElement('form');
-                        form.method = 'POST';
-                        form.onsubmit = () => false;
-                        
-                        const emailInput = document.createElement('input');
-                        emailInput.type = 'email';
-                        emailInput.name = 'email';
-                        emailInput.value = '%s';
-                        emailInput.style.display = 'none';
-                        
-                        const passwordInput = document.createElement('input');
-                        passwordInput.type = 'password';
-                        passwordInput.name = 'password';
-                        passwordInput.value = '%s';
-                        passwordInput.style.display = 'none';
-                        
-                        form.appendChild(emailInput);
-                        form.appendChild(passwordInput);
-                        document.body.appendChild(form);
-                        
-                        form.submit();
-                        </script>
-                        """ % (signup_email, signup_password), unsafe_allow_html=True)
-                        st.session_state.auth_stage = "login"
-                        st.rerun()
-                    else:
-                        st.error(msg)
-
-
-# -----------------------
-# IMPORT DES QUIZ DISPONIBLES
-# -----------------------
-
-# BP
-from quizzes.quiz_bp_metiers.quiz_bp_arts_de_la_cuisine_100 import quiz_data as quiz_bp_arts_cuisine_data
-from quizzes.quiz_bp_metiers.quiz_bp_boucher_100 import quiz_data as quiz_bp_boucher_data
-from quizzes.quiz_bp_metiers.quiz_bp_coiffure_100 import quiz_data as quiz_bp_coiffure_data
-from quizzes.quiz_bp_metiers.quiz_bp_macon_100 import quiz_data as quiz_bp_macon_data
-from quizzes.quiz_bp_metiers.quiz_bp_migcs_100 import quiz_data as quiz_bp_migcs_data
-
-# BTS
-from quizzes.quiz_bts_metiers.quiz_bts_meca_vp_100 import quiz_data as quiz_bts_meca_vp_data
-
-# BAC PRO
-from quizzes.quiz_bacpro_metiers.quiz_bacpro_mva_100 import quiz_data as quiz_bacpro_mva_data
-from quizzes.quiz_bacpro_metiers.quiz_bacpro_mcva_100 import quiz_data as quiz_bacpro_mcva_data
-from quizzes.quiz_bacpro_metiers.quiz_bacpro_mcvb_100 import quiz_data as quiz_bacpro_mcvb_data
-
-# CAP métiers
-from quizzes.quiz_cap_metiers.quiz_cap_boucher_100 import quiz_data as quiz_cap_boucher_data
-from quizzes.quiz_cap_metiers.quiz_cap_boulanger_100 import quiz_data as quiz_cap_boulanger_data
-from quizzes.quiz_cap_metiers.quiz_cap_carreleur_mosaiste_100 import quiz_data as quiz_cap_carreleur_data
-from quizzes.quiz_cap_metiers.quiz_cap_carrosserie_automobile_100 import quiz_data as quiz_cap_carrosserie_data
-from quizzes.quiz_cap_metiers.quiz_cap_charcutier_traiteur_100 import quiz_data as quiz_cap_charcutier_traiteur_data
-from quizzes.quiz_cap_metiers.quiz_cap_chcr_100 import quiz_data as quiz_cap_chcr_data
-from quizzes.quiz_cap_metiers.quiz_cap_coiffure_100 import quiz_data as quiz_cap_coiffure_data
-from quizzes.quiz_cap_metiers.quiz_cap_couvreur_100 import quiz_data as quiz_cap_couvreur_data
-from quizzes.quiz_cap_metiers.quiz_cap_cuisine_100 import quiz_data as quiz_cap_cuisine_data
-from quizzes.quiz_cap_metiers.quiz_cap_electricien_100 import quiz_data as quiz_cap_electricien_data
-from quizzes.quiz_cap_metiers.quiz_cap_employe_polyvalent_commerce_100 import quiz_data as quiz_cap_epc_data
-from quizzes.quiz_cap_metiers.quiz_cap_macon_100 import quiz_data as quiz_cap_macon_data
-from quizzes.quiz_cap_metiers.quiz_cap_meca_vp_100 import quiz_data as quiz_cap_meca_vp_data
-from quizzes.quiz_cap_metiers.quiz_cap_menuisier_fabricant_100 import quiz_data as quiz_cap_menuisier_fabricant_data
-from quizzes.quiz_cap_metiers.quiz_cap_menuisier_installateur_100 import quiz_data as quiz_cap_menuisier_installateur_data
-from quizzes.quiz_cap_metiers.quiz_cap_patissier_100 import quiz_data as quiz_cap_patissier_data
-from quizzes.quiz_cap_metiers.quiz_cap_peintre_100 import quiz_data as quiz_cap_peintre_data
-from quizzes.quiz_cap_metiers.quiz_cap_peinture_carrosserie_100 import quiz_data as quiz_cap_peinture_carrosserie_data
-from quizzes.quiz_cap_metiers.quiz_cap_platre_isolation_100 import quiz_data as quiz_cap_platre_isolation_data
-from quizzes.quiz_cap_metiers.quiz_cap_sanitaire_100 import quiz_data as quiz_cap_sanitaire_data
-from quizzes.quiz_cap_metiers.quiz_cap_serrurier_metallier_100 import quiz_data as quiz_cap_serrurier_metallier_data
-from quizzes.quiz_cap_metiers.quiz_cap_thermique_100 import quiz_data as quiz_cap_thermique_data
-
-# CAP matières générales
-from quizzes.quiz_cap_generaux.quiz_cap_anglais_1 import quiz_data as quiz_cap_anglais_1_data
-from quizzes.quiz_cap_generaux.quiz_cap_anglais_2 import quiz_data as quiz_cap_anglais_2_data
-from quizzes.quiz_cap_generaux.quiz_cap_espagnol_1 import quiz_data as quiz_cap_espagnol_1_data
-from quizzes.quiz_cap_generaux.quiz_cap_espagnol_2 import quiz_data as quiz_cap_espagnol_2_data
-from quizzes.quiz_cap_generaux.quiz_cap_francais_1 import quiz_data as quiz_cap_francais_1_data
-from quizzes.quiz_cap_generaux.quiz_cap_francais_2 import quiz_data as quiz_cap_francais_2_data
-from quizzes.quiz_cap_generaux.quiz_cap_histoire_geographie_1 import quiz_data as quiz_cap_histoire_geographie_1_data
-from quizzes.quiz_cap_generaux.quiz_cap_histoire_geographie_2 import quiz_data as quiz_cap_histoire_geographie_2_data
-from quizzes.quiz_cap_generaux.quiz_cap_mathematique_1 import quiz_data as quiz_cap_mathematique_1_data
-from quizzes.quiz_cap_generaux.quiz_cap_mathematique_2 import quiz_data as quiz_cap_mathematique_2_data
-from quizzes.quiz_cap_generaux.quiz_cap_pse_1 import quiz_data as quiz_cap_pse_1_data
-from quizzes.quiz_cap_generaux.quiz_cap_pse_2 import quiz_data as quiz_cap_pse_2_data
-from quizzes.quiz_cap_generaux.quiz_cap_science_physique_1 import quiz_data as quiz_cap_science_physique_1_data
-from quizzes.quiz_cap_generaux.quiz_cap_science_physique_2 import quiz_data as quiz_cap_science_physique_2_data
-
-# --- Quiz BAC PRO : matières générales ---
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_anglais import quiz_data as quiz_bacpro_anglais_data
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_anglais_2 import quiz_data as quiz_bacpro_anglais_2_data
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_enseignement_moral_et_civique import quiz_data as quiz_bacpro_enseignement_moral_et_civique_data
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_espagnol import quiz_data as quiz_bacpro_espagnol_data
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_espagnol_2 import quiz_data as quiz_bacpro_espagnol_2_data
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_francais import quiz_data as quiz_bacpro_francais_data
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_francais_2 import quiz_data as quiz_bacpro_francais_2_data
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_histoire_geographie import quiz_data as quiz_bacpro_histoire_geographie_data
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_histoire_geographie_2 import quiz_data as quiz_bacpro_histoire_geographie_2_data
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique import quiz_data as quiz_bacpro_mathematique_data
-from quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique_2 import quiz_data as quiz_bacpro_mathematique_2_data
-
-# CS
-from quizzes.quiz_cs_metiers.quiz_cs_coiffure_coupe_couleur_100 import quiz_data as quiz_cs_coiffure_coupe_couleur_data
-
 # -----------------------
 # QUIZZES
 # -----------------------
@@ -315,21 +47,21 @@ QUIZZES = {
     "bacpro_mcvb_100": {
         "title": "Bac Pro Métiers du commerce et de la vente option B (prospection et valorisation de l'offre commerciale)",
         "description": "Révisions complètes Bac Pro MCV option B.",
-        "data": quiz_bacpro_mcvb_data,
+        "path": "quizzes.quiz_bacpro_metiers.quiz_bacpro_mcvb_100",
         "icon": "🛍️",
         "color": "#1abc9c",
     },
     "bacpro_mcva_100": {
         "title": "Bac Pro Métiers du commerce et de la vente option A (animation et gestion de l'espace commercial)",
         "description": "Révisions complètes Bac Pro MCV option A.",
-        "data": quiz_bacpro_mcva_data,
+        "path": "quizzes.quiz_bacpro_metiers.quiz_bacpro_mcva_100",
         "icon": "🏬",
         "color": "#27ae60",
     },
     "bacpro_mva_100": {
         "title": "Bac Pro Maintenance des véhicules option A (voitures particulières)",
         "description": "Révisions complètes Bac Pro Maintenance des véhicules option A (VP).",
-        "data": quiz_bacpro_mva_data,
+        "path": "quizzes.quiz_bacpro_metiers.quiz_bacpro_mva_100",
         "icon": "🚗",
         "color": "#2980b9",
     },
@@ -338,35 +70,35 @@ QUIZZES = {
     "bp_arts_de_la_cuisine_100": {
         "title": "BP Arts de la cuisine",
         "description": "Révisions complètes BP Arts de la cuisine.",
-        "data": quiz_bp_arts_cuisine_data,
+        "path": "quizzes.quiz_bp_metiers.quiz_bp_arts_de_la_cuisine_100",
         "icon": "👨‍🍳",
         "color": "#e67e22",
     },
     "bp_boucher_100": {
         "title": "BP Boucher",
         "description": "Révisions complètes BP Boucher.",
-        "data": quiz_bp_boucher_data,
+        "path": "quizzes.quiz_bp_metiers.quiz_bp_boucher_100",
         "icon": "🥩",
         "color": "#c0392b",
     },
     "bp_coiffure_100": {
         "title": "BP Coiffure",
         "description": "Révisions complètes BP Coiffure.",
-        "data": quiz_bp_coiffure_data,
+        "path": "quizzes.quiz_bp_metiers.quiz_bp_coiffure_100",
         "icon": "💇",
         "color": "#9b59b6",
     },
     "bp_macon_100": {
         "title": "BP Maçon",
         "description": "Révisions complètes BP Maçon.",
-        "data": quiz_bp_macon_data,
+        "path": "quizzes.quiz_bp_metiers.quiz_bp_macon_100",
         "icon": "🧱",
         "color": "#7f8c8d",
     },
     "bp_migcs_100": {
         "title": "BP Métiers de l'industrie graphique (communication et services)",
         "description": "Révisions complètes BP MIGCS.",
-        "data": quiz_bp_migcs_data,
+        "path": "quizzes.quiz_bp_metiers.quiz_bp_migcs_100",
         "icon": "🖨️",
         "color": "#34495e",
     },
@@ -375,7 +107,7 @@ QUIZZES = {
     "bts_meca_vp_100": {
         "title": "BTS Maintenance des véhicules, option A (voitures particulières)",
         "description": "Révisions complètes BTS Maintenance des véhicules option A (VP).",
-        "data": quiz_bts_meca_vp_data,
+        "path": "quizzes.quiz_bts_metiers.quiz_bts_meca_vp_100",
         "icon": "🔧",
         "color": "#2980b9",
     },
@@ -384,154 +116,154 @@ QUIZZES = {
     "cap_boucher_100": {
         "title": "CAP Boucher",
         "description": "Révisions complètes CAP Boucher.",
-        "data": quiz_cap_boucher_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_boucher_100",
         "icon": "🥩",
         "color": "#e74c3c",
     },
     "cap_boulanger_100": {
         "title": "CAP Boulanger",
         "description": "Révisions complètes CAP Boulanger.",
-        "data": quiz_cap_boulanger_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_boulanger_100",
         "icon": "🥖",
         "color": "#f39c12",
     },
     "cap_carreleur_mosaiste_100": {
         "title": "CAP Carreleur-mosaïste",
         "description": "Révisions complètes CAP Carreleur-mosaïste.",
-        "data": quiz_cap_carreleur_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_carreleur_mosaiste_100",
         "icon": "🔲",
         "color": "#2ecc71",
     },
     "cap_carrosserie_automobile_100": {
         "title": "CAP Réparation des carrosseries",
         "description": "Révisions complètes CAP Réparation des carrosseries.",
-        "data": quiz_cap_carrosserie_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_carrosserie_automobile_100",
         "icon": "🚙",
         "color": "#34495e",
     },
     "cap_charcutier_traiteur_100": {
         "title": "CAP Charcutier-traiteur",
         "description": "Révisions complètes CAP Charcutier-traiteur.",
-        "data": quiz_cap_charcutier_traiteur_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_charcutier_traiteur_100",
         "icon": "🍖",
         "color": "#c0392b",
     },
     "cap_chcr_100": {
         "title": "CAP Commercialisation et services en hôtel-café-restaurant",
         "description": "Révisions complètes CAP Commercialisation et services en hôtel-café-restaurant.",
-        "data": quiz_cap_chcr_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_chcr_100",
         "icon": "☕",
         "color": "#e67e22",
     },
     "cap_coiffure_100": {
         "title": "CAP Coiffure",
         "description": "Révisions complètes CAP Coiffure.",
-        "data": quiz_cap_coiffure_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_coiffure_100",
         "icon": "💇",
         "color": "#9b59b6",
     },
     "cap_couvreur_100": {
         "title": "CAP Couvreur",
         "description": "Révisions complètes CAP Couvreur.",
-        "data": quiz_cap_couvreur_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_couvreur_100",
         "icon": "🏠",
         "color": "#8e44ad",
     },
     "cap_cuisine_100": {
         "title": "CAP Cuisine",
         "description": "Révisions complètes CAP Cuisine.",
-        "data": quiz_cap_cuisine_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_cuisine_100",
         "icon": "👨‍🍳",
         "color": "#e67e22",
     },
     "cap_electricien_100": {
         "title": "CAP Électricien",
         "description": "Révisions complètes CAP Électricien.",
-        "data": quiz_cap_electricien_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_electricien_100",
         "icon": "⚡",
         "color": "#f1c40f",
     },
     "cap_equipier_polyvalent_commerce_100": {
         "title": "CAP Équipier polyvalent du commerce",
         "description": "Révisions complètes CAP Équipier polyvalent du commerce (EPC).",
-        "data": quiz_cap_epc_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_employe_polyvalent_commerce_100",
         "icon": "🛒",
         "color": "#16a085",
     },
     "cap_macon_100": {
         "title": "CAP Maçon",
         "description": "Révisions complètes CAP Maçon.",
-        "data": quiz_cap_macon_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_macon_100",
         "icon": "🧱",
         "color": "#95a5a6",
     },
     "cap_meca_vp_100": {
         "title": "CAP Maintenance des véhicules, option A (voitures particulières)",
         "description": "Révisions complètes CAP Maintenance des véhicules option voitures particulières.",
-        "data": quiz_cap_meca_vp_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_meca_vp_100",
         "icon": "🔧",
         "color": "#34495e",
     },
     "cap_menuisier_fabricant_100": {
         "title": "CAP Menuisier fabricant de menuiserie, mobilier et agencement",
         "description": "Révisions complètes CAP Menuisier fabricant.",
-        "data": quiz_cap_menuisier_fabricant_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_menuisier_fabricant_100",
         "icon": "🪚",
         "color": "#8b4513",
     },
     "cap_menuisier_installateur_100": {
         "title": "CAP Menuisier installateur",
         "description": "Révisions complètes CAP Menuisier installateur.",
-        "data": quiz_cap_menuisier_installateur_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_menuisier_installateur_100",
         "icon": "🔨",
         "color": "#a0522d",
     },
     "cap_patissier_100": {
         "title": "CAP Pâtissier",
         "description": "Révisions complètes CAP Pâtissier.",
-        "data": quiz_cap_patissier_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_patissier_100",
         "icon": "🧁",
         "color": "#e91e63",
     },
     "cap_peintre_100": {
         "title": "CAP Peintre applicateur de revêtements",
         "description": "Révisions complètes CAP Peintre applicateur de revêtements.",
-        "data": quiz_cap_peintre_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_peintre_100",
         "icon": "🎨",
         "color": "#673ab7",
     },
     "cap_peinture_carrosserie_100": {
         "title": "CAP Peintre en carrosserie",
         "description": "Révisions complètes CAP Peintre en carrosserie.",
-        "data": quiz_cap_peinture_carrosserie_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_peinture_carrosserie_100",
         "icon": "🚗",
         "color": "#3498db",
     },
     "cap_platre_isolation_100": {
         "title": "CAP Métiers du plâtre et de l'isolation",
         "description": "Révisions complètes CAP Métiers du plâtre et de l'isolation.",
-        "data": quiz_cap_platre_isolation_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_platre_isolation_100",
         "icon": "🧱",
         "color": "#bdc3c7",
     },
     "cap_sanitaire_100": {
         "title": "CAP Monteur en installations sanitaires",
         "description": "Révisions complètes CAP Monteur en installations sanitaires.",
-        "data": quiz_cap_sanitaire_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_sanitaire_100",
         "icon": "🚰",
         "color": "#3498db",
     },
     "cap_serrurier_metallier_100": {
         "title": "CAP Serrurier-métallier",
         "description": "Révisions complètes CAP Serrurier-métallier.",
-        "data": quiz_cap_serrurier_metallier_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_serrurier_metallier_100",
         "icon": "🔐",
         "color": "#7f8c8d",
     },
     "cap_thermique_100": {
         "title": "CAP Monteur en installations thermiques",
         "description": "Révisions complètes CAP Monteur en installations thermiques.",
-        "data": quiz_cap_thermique_data,
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_thermique_100",
         "icon": "🔥",
         "color": "#e74c3c",
     },
@@ -540,98 +272,98 @@ QUIZZES = {
     "cap_anglais_1": {
         "title": "CAP Matières générales – Anglais (quiz 1)",
         "description": "Révisions d'anglais – série 1.",
-        "data": quiz_cap_anglais_1_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_anglais_1",
         "icon": "🇬🇧",
         "color": "#3b82f6",
     },
     "cap_anglais_2": {
         "title": "CAP Matières générales – Anglais (quiz 2)",
         "description": "Révisions d'anglais – série 2.",
-        "data": quiz_cap_anglais_2_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_anglais_2",
         "icon": "🇬🇧",
         "color": "#2563eb",
     },
     "cap_espagnol_1": {
         "title": "CAP Matières générales – Espagnol (quiz 1)",
         "description": "Révisions d'espagnol – série 1.",
-        "data": quiz_cap_espagnol_1_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_espagnol_1",
         "icon": "🇪🇸",
         "color": "#f97316",
     },
     "cap_espagnol_2": {
         "title": "CAP Matières générales – Espagnol (quiz 2)",
         "description": "Révisions d'espagnol – série 2.",
-        "data": quiz_cap_espagnol_2_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_espagnol_2",
         "icon": "🇪🇸",
         "color": "#ea580c",
     },
     "cap_francais_1": {
         "title": "CAP Matières générales – Français (quiz 1)",
         "description": "Révisions de français – série 1.",
-        "data": quiz_cap_francais_1_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_francais_1",
         "icon": "📘",
         "color": "#10b981",
     },
     "cap_francais_2": {
         "title": "CAP Matières générales – Français (quiz 2)",
         "description": "Révisions de français – série 2.",
-        "data": quiz_cap_francais_2_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_francais_2",
         "icon": "📗",
         "color": "#059669",
     },
     "cap_histoire_geographie_1": {
         "title": "CAP Matières générales – Histoire-Géographie (quiz 1)",
         "description": "Révisions d'histoire-géographie – série 1.",
-        "data": quiz_cap_histoire_geographie_1_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_histoire_geographie_1",
         "icon": "🌍",
         "color": "#facc15",
     },
     "cap_histoire_geographie_2": {
         "title": "CAP Matières générales – Histoire-Géographie (quiz 2)",
         "description": "Révisions d'histoire-géographie – série 2.",
-        "data": quiz_cap_histoire_geographie_2_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_histoire_geographie_2",
         "icon": "🗺️",
         "color": "#eab308",
     },
     "cap_mathematique_1": {
         "title": "CAP Matières générales – Mathématiques (quiz 1)",
         "description": "Révisions de mathématiques – série 1.",
-        "data": quiz_cap_mathematique_1_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_mathematique_1",
         "icon": "➗",
         "color": "#6366f1",
     },
     "cap_mathematique_2": {
         "title": "CAP Matières générales – Mathématiques (quiz 2)",
         "description": "Révisions de mathématiques – série 2.",
-        "data": quiz_cap_mathematique_2_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_mathematique_2",
         "icon": "✖️",
         "color": "#4f46e5",
     },
     "cap_pse_1": {
         "title": "CAP Matières générales – PSE (quiz 1)",
         "description": "Révisions de Prévention Santé Environnement – série 1.",
-        "data": quiz_cap_pse_1_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_pse_1",
         "icon": "🩺",
         "color": "#22c55e",
     },
     "cap_pse_2": {
         "title": "CAP Matières générales – PSE (quiz 2)",
         "description": "Révisions de Prévention Santé Environnement – série 2.",
-        "data": quiz_cap_pse_2_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_pse_2",
         "icon": "🏥",
         "color": "#16a34a",
     },
     "cap_science_physique_1": {
         "title": "CAP Matières générales – Sciences physiques (quiz 1)",
         "description": "Révisions de sciences physiques – série 1.",
-        "data": quiz_cap_science_physique_1_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_science_physique_1",
         "icon": "🔬",
         "color": "#0ea5e9",
     },
     "cap_science_physique_2": {
         "title": "CAP Matières générales – Sciences physiques (quiz 2)",
         "description": "Révisions de sciences physiques – série 2.",
-        "data": quiz_cap_science_physique_2_data,
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_science_physique_2",
         "icon": "⚗️",
         "color": "#0284c7",
     },
@@ -640,7 +372,7 @@ QUIZZES = {
     "cs_coiffure_coupe_couleur_100": {
         "title": "Certificat de spécialisation coiffure coupe couleur",
         "description": "Révisions complètes CS Coiffure coupe couleur.",
-        "data": quiz_cs_coiffure_coupe_couleur_data,
+        "path": "quizzes.quiz_cs_metiers.quiz_cs_coiffure_coupe_couleur_100",
         "icon": "💇",
         "color": "#e84393",
     },
@@ -649,77 +381,77 @@ QUIZZES = {
     "bacpro_anglais": {
         "title": "BAC PRO Matières générales – Anglais",
         "description": "Révisions d'anglais – BAC PRO.",
-        "data": quiz_bacpro_anglais_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_anglais",
         "icon": "🇬🇧",
         "color": "#3b82f6",
     },
     "bacpro_anglais_2": {
         "title": "BAC PRO Matières générales – Anglais (quiz 2)",
         "description": "Révisions d'anglais – série 2 BAC PRO.",
-        "data": quiz_bacpro_anglais_2_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_anglais_2",
         "icon": "🇬🇧",
         "color": "#2563eb",
     },
     "bacpro_espagnol": {
         "title": "BAC PRO Matières générales – Espagnol",
         "description": "Révisions d'espagnol – BAC PRO.",
-        "data": quiz_bacpro_espagnol_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_espagnol",
         "icon": "🇪🇸",
         "color": "#f97316",
     },
     "bacpro_espagnol_2": {
         "title": "BAC PRO Matières générales – Espagnol (quiz 2)",
         "description": "Révisions d'espagnol – série 2 BAC PRO.",
-        "data": quiz_bacpro_espagnol_2_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_espagnol_2",
         "icon": "🇪🇸",
         "color": "#ea580c",
     },
     "bacpro_francais": {
         "title": "BAC PRO Matières générales – Français",
         "description": "Révisions de français – BAC PRO.",
-        "data": quiz_bacpro_francais_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_francais",
         "icon": "📘",
         "color": "#10b981",
     },
     "bacpro_francais_2": {
         "title": "BAC PRO Matières générales – Français (quiz 2)",
         "description": "Révisions de français – série 2 BAC PRO.",
-        "data": quiz_bacpro_francais_2_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_francais_2",
         "icon": "📘",
         "color": "#059669",
     },
     "bacpro_histoire_geographie": {
         "title": "BAC PRO Matières générales – Histoire-Géographie",
         "description": "Révisions d'histoire-géographie – BAC PRO.",
-        "data": quiz_bacpro_histoire_geographie_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_histoire_geographie",
         "icon": "🌍",
         "color": "#facc15",
     },
     "bacpro_histoire_geographie_2": {
         "title": "BAC PRO Matières générales – Histoire-Géographie (quiz 2)",
         "description": "Révisions d'histoire-géographie – série 2 BAC PRO.",
-        "data": quiz_bacpro_histoire_geographie_2_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_histoire_geographie_2",
         "icon": "🌍",
         "color": "#eab308",
     },
     "bacpro_enseignement_moral_et_civique": {
         "title": "BAC PRO Matières générales – Enseignement moral et civique",
         "description": "Révisions d'EMC – BAC PRO.",
-        "data": quiz_bacpro_enseignement_moral_et_civique_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_enseignement_moral_et_civique",
         "icon": "🕊️",
         "color": "#6366f1",
     },
     "bacpro_mathematique": {
         "title": "BAC PRO Matières générales – Mathématiques",
         "description": "Révisions de mathématiques – BAC PRO.",
-        "data": quiz_bacpro_mathematique_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique",
         "icon": "📐",
         "color": "#0ea5e9",
     },
     "bacpro_mathematique_2": {
         "title": "BAC PRO Matières générales – Mathématiques (quiz 2)",
         "description": "Révisions de mathématiques – série 2 BAC PRO.",
-        "data": quiz_bacpro_mathematique_2_data,
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique_2",
         "icon": "📐",
         "color": "#0284c7",
     },
@@ -886,73 +618,90 @@ if "selected_cap_general_subject" not in st.session_state:
 if "show_quit_confirmation" not in st.session_state:
     st.session_state.show_quit_confirmation = False
 if "ui_mode" not in st.session_state:
-    # "app" = interface quiz, "profile" = page profil
-    st.session_state.ui_mode = "app"
+    st.session_state.ui_mode = UIMode.APP
 
 
 def show_entry_screen():
     st.markdown("""
-    <div style="
-        padding: 2rem;
-        border-radius: 20px;
-        background: linear-gradient(135deg, #6A11CB, #2575FC);
-        color: white;
-        text-align: center;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-        max-width: 700px;
-        margin: 2rem auto;
-    ">
+    <div style="padding: 2rem; border-radius: 20px; background: linear-gradient(135deg, #6A11CB, #2575FC); color: white; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.25); max-width: 700px; margin: 2rem auto;">
         <h1 style="margin-bottom: 0.5rem;">Plateforme de révision CFA CMAR</h1>
-        <p style="font-size: 1.1rem; opacity: 0.9;">
-            Révisez par niveau, métier et matières générales, et suivez votre progression.
-        </p>
+        <p style="font-size: 1.1rem; opacity: 0.9;">Révisez par niveau, métier et matières générales, et suivez votre progression.</p>
     </div>
     """, unsafe_allow_html=True)
 
     col1, col2 = st.columns(2)
 
-    # Bouton "Entrer sans compte"
     with col1:
         st.subheader("Accès rapide")
-        st.markdown(
-            "Utilisez l'application immédiatement **sans compte**.\n\n"
-            "Les scores seront gardés uniquement pour cette session."
-        )
+        st.write("Utilisez l'application immédiatement sans compte.")
         if st.button("🚀 Entrer sans compte", use_container_width=True):
             st.session_state.auth_stage = "guest"
-            st.session_state.username = None
             st.rerun()
 
-    # Onglets Se connecter / Créer un compte
     with col2:
-        st.subheader("Créer ou utiliser un compte")
+        st.subheader("Espace Personnel")
         tabs = st.tabs(["Se connecter", "Créer un compte"])
 
-        # Onglet connexion
         with tabs[0]:
-            login_username = st.text_input("Nom d'utilisateur", key="login_username")
-            login_password = st.text_input("Mot de passe", type="password", key="login_password")
-            if st.button("🔐 Se connecter", use_container_width=True, key="login_btn"):
-                success, msg = login_user(login_username, login_password)
-                if success:
-                    st.success(msg)
-                    st.session_state.auth_stage = "logged_in"
-                    st.session_state.username = login_username.strip().lower()
-                    st.rerun()
-                else:
-                    st.error(msg)
+            # --- FORMULAIRE DE CONNEXION CACHÉ ---
+            st.markdown("""
+                <form id="login-form" style="display:none;" action="javascript:void(0);">
+                    <input type="text" id="hidden-login-user" autocomplete="username">
+                    <input type="password" id="hidden-login-pass" autocomplete="current-password">
+                    <input type="submit">
+                </form>
+            """, unsafe_allow_html=True)
+            
+            login_user_val = st.text_input("👤 Nom d'utilisateur", key="l_user")
+            login_pass_val = st.text_input("🔑 Mot de passe", type="password", key="l_pass")
+            
+            if st.button("🔓 Se connecter", use_container_width=True, type="primary"):
+                if login_user_val and login_pass_val:
+                    success, msg = login_user(login_user_val, login_pass_val)
+                    if success:
+                        st.session_state.auth_stage = "logged_in"
+                        st.session_state.username = login_user_val.strip().lower()
+                        # SCRIPT DE FORCE
+                        st.markdown(f"""
+                            <script>
+                                document.getElementById('hidden-login-user').value = '{login_user_val}';
+                                document.getElementById('hidden-login-pass').value = '{login_pass_val}';
+                                document.getElementById('login-form').dispatchEvent(new Event('submit'));
+                            </script>
+                        """, unsafe_allow_html=True)
+                        st.rerun()
+                    else:
+                        st.error(msg)
 
-        # Onglet création
         with tabs[1]:
-            new_username = st.text_input("Nom d'utilisateur", key="new_username")
-            new_email = st.text_input("Email", key="new_email")
-            new_password = st.text_input("Mot de passe", type="password", key="new_password")
-            if st.button("🆕 Créer mon compte", use_container_width=True, key="create_btn"):
-                success, msg = create_user(new_username, new_email, new_password)
-                if success:
-                    st.success(msg + " Vous pouvez maintenant vous connecter.")
-                else:
-                    st.error(msg)
+            # --- FORMULAIRE D'INSCRIPTION CACHÉ ---
+            st.markdown("""
+                <form id="signup-form" style="display:none;" action="javascript:void(0);">
+                    <input type="text" id="hidden-signup-user" autocomplete="username">
+                    <input type="password" id="hidden-signup-pass" autocomplete="new-password">
+                    <input type="submit">
+                </form>
+            """, unsafe_allow_html=True)
+            
+            new_user_val = st.text_input("Nom d'utilisateur", key="s_user")
+            new_email_val = st.text_input("Email", key="s_email")
+            new_pass_val = st.text_input("Mot de passe", type="password", key="s_pass")
+            
+            if st.button("🚀 Créer mon compte", use_container_width=True):
+                if new_user_val and new_pass_val:
+                    success, msg = create_user(new_user_val, new_email_val, new_pass_val)
+                    if success:
+                        st.success("Compte créé !")
+                        # SCRIPT DE FORCE POUR L'INSCRIPTION
+                        st.markdown(f"""
+                            <script>
+                                document.getElementById('hidden-signup-user').value = '{new_user_val}';
+                                document.getElementById('hidden-signup-pass').value = '{new_pass_val}';
+                                document.getElementById('signup-form').dispatchEvent(new Event('submit'));
+                            </script>
+                        """, unsafe_allow_html=True)
+                    else:
+                        st.error(msg)
 
 # -----------------------
 # FONCTIONS UTILITAIRES
@@ -968,11 +717,23 @@ def get_sorted_quiz_keys(keys):
 # -----------------------
 
 def get_current_quiz_data():
-    """Retourne le quiz_data du quiz sélectionné."""
-    if st.session_state.selected_quiz_key is None:
+    """Charge dynamiquement et retourne le quiz_data du quiz sélectionné."""
+    quiz_key = st.session_state.selected_quiz_key
+    if quiz_key is None:
         return None
-    return QUIZZES[st.session_state.selected_quiz_key]["data"]
-
+    
+    # On récupère le chemin enregistré dans le dictionnaire
+    quiz_path = QUIZZES[quiz_key].get("path")
+    
+    if quiz_path:
+        try:
+            # On charge le fichier seulement maintenant
+            module = importlib.import_module(quiz_path)
+            return module.quiz_data
+        except Exception as e:
+            st.error(f"Erreur de chargement du quiz : {e}")
+            return None
+    return None
 
 def reset_quiz_state_for_selected_quiz():
     """Réinitialise l'état de session pour le quiz sélectionné (sans effacer les scores globaux)."""
@@ -989,8 +750,7 @@ def reset_quiz_state_for_selected_quiz():
     st.session_state.shuffled_questions = None
     st.session_state.shuffled_answers = {}
 
-    if st.session_state.theme_scores is None or not isinstance(st.session_state.theme_scores, dict):
-        st.session_state.theme_scores = {}
+    st.session_state.theme_scores = {}
     
     if quiz_key not in st.session_state.theme_scores:
         st.session_state.theme_scores[quiz_key] = {}
@@ -1195,53 +955,67 @@ def show_profile_page():
     col3.metric("Questions totales", stats.get("total_questions", 0))
     col4.metric("Réussite moyenne", f"{stats.get('average_percentage', 0)} %")
 
+          # --- BARRES DE PROGRESSION PAR NIVEAU ---
+
+    st.markdown("### 📈 Progression par diplôme")
+    
+    # On définit un objectif (ex: 5 quiz pour remplir la barre)
+    obj = 5 
+    
+    col_p1, col_p2 = st.columns(2)
+    with col_p1:
+        st.write(f"**CAP** ({validated_cap}/{obj})")
+        st.progress(min(validated_cap / obj, 1.0))
+        
+        st.write(f"**BAC PRO** ({validated_bacpro}/{obj})")
+        st.progress(min(validated_bacpro / obj, 1.0))
+
+    with col_p2:
+        st.write(f"**BP / BTS / CS** ({validated_bp + validated_bts + validated_cs}/{obj})")
+        st.progress(min((validated_bp + validated_bts + validated_cs) / obj, 1.0))
+    
+    st.markdown("<br>", unsafe_allow_html=True)
+
     # --- Badges ---
 
     st.markdown("### Badges")
 
-    badges = []
+# --- SECTION BADGES ---
+    st.markdown("### 🏆 Vos Badges")
 
-    # Progression globale
-    if validated_quiz_count >= 1:
-        badges.append("🎯 Premier quiz validé")
-    if validated_quiz_count >= 5:
-        badges.append("🏅 5 quiz validés")
-    if stats.get("total_questions", 0) >= 100:
-        badges.append("📚 100 questions jouées")
-    if stats.get("total_questions", 0) >= 300:
-        badges.append("🧠 300 questions jouées")
-    if stats.get("average_percentage", 0) >= 80:
-        badges.append("🔥 Moyenne ≥ 80 %")
-    if stats.get("average_percentage", 0) >= 90:
-        badges.append("💎 Moyenne ≥ 90 %")
-
-    # Badges par niveau
-    if validated_cap >= 3:
-        badges.append("🏗️ Spécialiste CAP (3 quiz CAP validés)")
-    if validated_bacpro >= 2:
-        badges.append("🏬 Spécialiste BAC PRO (2 quiz BAC PRO validés)")
-    if validated_bp >= 1 and validated_bts >= 1 and validated_cs >= 1:
-        badges.append("🎓 Spécialiste supérieur (BP + BTS + CS validés)")
-
-    # Assiduité
     total_quiz_played = stats.get("total_quizzes", 0)
-    if total_quiz_played >= 10:
-        badges.append("⏱️ Fidèle au poste (10 quiz joués)")
+    
+    # Configuration des badges
+    tous_les_badges = [
+        {"nom": "🎯 Premier quiz", "cond": validated_quiz_count >= 1},
+        {"nom": "🏅 5 quiz validés", "cond": validated_quiz_count >= 5},
+        {"nom": "📚 100 questions", "cond": stats.get("total_questions", 0) >= 100},
+        {"nom": "🧠 300 questions", "cond": stats.get("total_questions", 0) >= 300},
+        {"nom": "🔥 Moyenne ≥ 80%", "cond": stats.get("average_percentage", 0) >= 80},
+        {"nom": "💎 Moyenne ≥ 90%", "cond": stats.get("average_percentage", 0) >= 90},
+        {"nom": "🏗️ Expert CAP", "cond": validated_cap >= 3},
+        {"nom": "🏬 Expert BAC PRO", "cond": validated_bacpro >= 2},
+        {"nom": "🎓 Spécialiste Sup", "cond": (validated_bp >= 1 and validated_bts >= 1)},
+        {"nom": "⏱️ Fidèle au poste", "cond": total_quiz_played >= 10},
+    ]
 
-    if badges:
-        st.markdown(
-            "<div style='display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1rem;'>"
-            + "".join(
-                f"<span style='background:#eef2ff;border-radius:999px;"
-                f"padding:0.4rem 0.8rem;border:1px solid #c7d2fe;"
-                f"font-size:0.9rem;'>{b}</span>"
-                for b in badges
-            )
-            + "</div>",
-            unsafe_allow_html=True,
-        )
-    else:
-        st.caption("Aucun badge débloqué pour le moment. Continue à jouer !")
+    # Construction de la ligne HTML
+    html_str = "<div style='display:flex; flex-wrap:wrap; gap:0.5rem;'>"
+    
+    for b in tous_les_badges:
+        if b["cond"]:
+            # Badge débloqué : Couleur indigo
+            style = "background:#eef2ff; border:1px solid #c7d2fe; color:#1f2937; opacity:1;"
+        else:
+            # Badge verrouillé : Grisé et transparent
+            style = "background:#f3f4f6; border:1px solid #d1d5db; color:#9ca3af; opacity:0.5; filter:grayscale(100%);"
+            
+        html_str += f"<span style='{style} border-radius:999px; padding:0.4rem 0.8rem; font-size:0.85rem; font-weight:500;'>{b['nom']}</span>"
+    
+    html_str += "</div>"
+
+    # IMPORTANT : C'est cette ligne qui transforme le code ci-dessus en vrais badges
+    st.markdown(html_str, unsafe_allow_html=True)
 
     # --- Détail par quiz ---
 
@@ -2335,30 +2109,25 @@ def show_theme_result():
 
 
 def main():
-    # Sidebar : navigation profil / quiz
     with st.sidebar:
         st.markdown("### Navigation")
         if st.session_state.get("auth_stage") == "logged_in":
             if st.button("👤 Mon profil", use_container_width=True):
-                st.session_state.ui_mode = "profile"
+                st.session_state.ui_mode = UIMode.PROFILE
             if st.button("🏠 Quiz", use_container_width=True):
-                st.session_state.ui_mode = "app"
+                st.session_state.ui_mode = UIMode.APP
             st.markdown("---")
             st.caption(f"Connecté en tant que {st.session_state.username}")
         else:
-            st.info("Connectez-vous pour accéder au profil.")
             if st.button("🔐 Se connecter / créer un compte", use_container_width=True):
-                # Rebasculer vers l'écran d'entrée (login / création)
                 st.session_state.auth_stage = "entry"
-                st.session_state.ui_mode = "app"
+                st.session_state.ui_mode = UIMode.APP
                 st.rerun()
 
-    # Si on est en mode profil, on n’affiche pas l’interface de quiz
-    if st.session_state.ui_mode == "profile":
+    if st.session_state.ui_mode == UIMode.PROFILE:
         show_profile_page()
         return
 
-    # --- LOGIQUE EXISTANTE DU QUIZ ---
     if st.session_state.selected_quiz_key is None:
         show_quiz_selector()
         return
@@ -2375,11 +2144,8 @@ def main():
     else:
         show_question_screen()
 
-
 if __name__ == "__main__":
     if st.session_state.auth_stage in ("guest", "logged_in"):
-        # Utilisateur déjà dans l’application (avec ou sans compte)
         main()
     else:
-        # Premier écran : choix "entrer sans compte" ou "créer/se connecter"
         show_entry_screen()

@@ -1,8 +1,8 @@
 quiz_data = {
-    "title": "Quiz Sciences-Physiques #2 - Niveau CAP (100 Questions)",
+    "title": "Quiz Sciences-Physiques #2 - Niveau CAP (100 Questions) - Version Optimisée",
     "themes": {
         # =========================================================================
-        # THÈME 1 : LA MATIÈRE ET SES TRANSFORMATIONS (APPROFONDISSEMENT)
+        # THÈME 1 : LA MATIÈRE ET SES TRANSFORMATIONS (APPROFONDISSEMENT) (Q1 à Q20)
         # =========================================================================
         1: {
             "name": "THÈME 1 : LA MATIÈRE ET SES TRANSFORMATIONS (APPROFONDISSEMENT)",
@@ -11,1133 +11,905 @@ quiz_data = {
                     "questionNumber": 1,
                     "question": "De quelles particules est composé le noyau d'un atome ?",
                     "answerOptions": [
-                        {"text": "De protons et de neutrons", "isCorrect": True},
-                        {"text": "Uniquement d'électrons", "isCorrect": False},
-                        {"text": "De molécules et d'ions", "isCorrect": False},
-                        {"text": "De couches électroniques vides", "isCorrect": False}
+                        {"text": "De protons positifs et de neutrons neutres", "isCorrect": True},
+                        {"text": "Uniquement d'électrons gravitant très vite", "isCorrect": False},
+                        {"text": "De molécules et d'ions en mouvement libre", "isCorrect": False},
+                        {"text": "De couches électroniques totalement vides", "isCorrect": False}
                     ],
-                    "correction": "Le noyau est constitué de nucléons, qui se divisent en deux catégories : les protons (chargés positivement) et les neutrons (neutres)."
+                    "correction": "**Rappel de cours :** Le noyau atomique est constitué de nucléons. On y trouve les protons, qui portent une charge électrique positive, et les neutrons, qui n'ont pas de charge (neutres). Les électrons, eux, tournent autour du noyau dans le nuage électronique."
                 },
                 {
                     "questionNumber": 2,
                     "question": "Quel réactif utilise-t-on pour détecter la présence d'ions chlorure dans une solution ?",
                     "answerOptions": [
-                        {"text": "Le nitrate d'argent", "isCorrect": True},
-                        {"text": "La soude", "isCorrect": False},
-                        {"text": "L'eau de chaux", "isCorrect": False},
-                        {"text": "L'acide chlorhydrique", "isCorrect": False}
+                        {"text": "Le nitrate d'argent formant un précipité blanc", "isCorrect": True},
+                        {"text": "La soude formant un précipité bleu turquoise", "isCorrect": False},
+                        {"text": "L'eau iodée changeant de couleur au contact", "isCorrect": False},
+                        {"text": "Le sulfate de cuivre anhydre devenant bleu", "isCorrect": False}
                     ],
-                    "correction": "Le nitrate d'argent réagit avec les ions chlorure pour former un précipité blanc caractéristique qui noircit à la lumière."
+                    "correction": "**Rappel de cours :** Pour identifier les ions chlorure (Cl-), on ajoute quelques gouttes de nitrate d'argent. Si un précipité blanc qui noircit à la lumière se forme, le test est positif. C'est un test d'identification classique en chimie minérale."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Quelle couleur de précipité obtient-on en ajoutant de la soude dans une solution contenant des ions cuivre II ?",
+                    "question": "Comment appelle-t-on la réaction chimique entre un acide et une base ?",
                     "answerOptions": [
-                        {"text": "Bleu", "isCorrect": True},
-                        {"text": "Vert", "isCorrect": False},
-                        {"text": "Rouille", "isCorrect": False},
-                        {"text": "Blanc", "isCorrect": False}
+                        {"text": "Une réaction de neutralisation du pH", "isCorrect": True},
+                        {"text": "Une réaction de combustion avec flamme", "isCorrect": False},
+                        {"text": "Une réaction de solidification du liquide", "isCorrect": False},
+                        {"text": "Une réaction de distillation thermique", "isCorrect": False}
                     ],
-                    "correction": "Les ions cuivre (Cu2+) réagissent avec l'hydroxyde de sodium (soude) pour former un précipité bleu d'hydroxyde de cuivre."
+                    "correction": "**Rappel de cours :** Lorsqu'on mélange un acide (pH < 7) et une base (pH > 7), les ions s'associent pour former de l'eau et un sel. Le pH du mélange se rapproche de 7. C'est une réaction qui libère souvent de la chaleur (exothermique)."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Comment appelle-t-on la transformation d'un liquide en solide ?",
+                    "question": "Quelle est la formule moléculaire du gaz dioxyde de carbone ?",
                     "answerOptions": [
-                        {"text": "La solidification", "isCorrect": True},
-                        {"text": "La fusion", "isCorrect": False},
-                        {"text": "La condensation", "isCorrect": False},
-                        {"text": "La sublimation", "isCorrect": False}
+                        {"text": "La formule chimique notée CO2", "isCorrect": True},
+                        {"text": "La formule chimique notée H2O", "isCorrect": False},
+                        {"text": "La formule chimique notée O2", "isCorrect": False},
+                        {"text": "La formule chimique notée CH4", "isCorrect": False}
                     ],
-                    "correction": "C'est l'inverse de la fusion. Pour l'eau pure, cela se produit à 0°C sous pression normale."
+                    "correction": "**Rappel de cours :** Le dioxyde de carbone est composé d'un atome de carbone (C) et de deux atomes d'oxygène (O). C'est le gaz produit par la respiration et les combustions, responsable de l'effet de serre."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel ion est responsable de l'acidité d'une solution ?",
+                    "question": "Que se passe-t-il lors de la fusion d'un corps pur ?",
                     "answerOptions": [
-                        {"text": "L'ion hydrogène H+", "isCorrect": True},
-                        {"text": "L'ion hydroxyde HO-", "isCorrect": False},
-                        {"text": "L'ion chlorure Cl-", "isCorrect": False},
-                        {"text": "L'ion sodium Na+", "isCorrect": False}
+                        {"text": "Il passe de l'état solide à l'état liquide", "isCorrect": True},
+                        {"text": "Il passe de l'état liquide à l'état gazeux", "isCorrect": False},
+                        {"text": "Il passe de l'état gazeux à l'état solide", "isCorrect": False},
+                        {"text": "Il disparaît totalement dans l'air ambiant", "isCorrect": False}
                     ],
-                    "correction": "Plus une solution contient d'ions H+, plus son pH est bas (donc plus elle est acide)."
+                    "correction": "**Rappel de cours :** La fusion est le changement d'état provoqué par un apport de chaleur. Pour l'eau pure, la fusion de la glace se produit à une température fixe de 0°C sous pression normale."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Qu'est-ce qu'une solution saturée ?",
+                    "question": "Quelle est l'unité légale de la masse dans le système international ?",
                     "answerOptions": [
-                        {"text": "Une solution où le soluté ne peut plus se dissoudre", "isCorrect": True},
-                        {"text": "Une solution qui contient beaucoup d'eau", "isCorrect": False},
-                        {"text": "Une solution très acide", "isCorrect": False},
-                        {"text": "Une solution bouillante", "isCorrect": False}
+                        {"text": "Le kilogramme noté kg", "isCorrect": True},
+                        {"text": "Le gramme utilisé en cuisine", "isCorrect": False},
+                        {"text": "Le Newton utilisé pour le poids", "isCorrect": False},
+                        {"text": "Le litre utilisé pour les volumes", "isCorrect": False}
                     ],
-                    "correction": "Chaque liquide a une limite de solubilité pour un solide donné à une température précise."
+                    "correction": "**Rappel de cours :** Bien que le gramme soit très courant, c'est le kilogramme (kg) qui est l'unité de base internationale. La masse mesure la quantité de matière d'un objet et ne change pas, quel que soit le lieu (Terre ou Lune)."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quelle est la formule chimique du dioxyde de carbone ?",
+                    "question": "Comment appelle-t-on le passage direct de l'état solide à l'état gazeux ?",
                     "answerOptions": [
-                        {"text": "CO2", "isCorrect": True},
-                        {"text": "CO", "isCorrect": False},
-                        {"text": "O2", "isCorrect": False},
-                        {"text": "H2O", "isCorrect": False}
+                        {"text": "Le phénomène de sublimation", "isCorrect": True},
+                        {"text": "Le phénomène de vaporisation", "isCorrect": False},
+                        {"text": "Le phénomène de liquéfaction", "isCorrect": False},
+                        {"text": "Le phénomène de condensation", "isCorrect": False}
                     ],
-                    "correction": "Il est composé d'un atome de carbone et de deux atomes d'oxygène."
+                    "correction": "**Rappel de cours :** La sublimation est un changement d'état rare à pression normale. On l'observe par exemple avec la neige carbonique (carboglace) qui se transforme en gaz sans jamais fondre ni mouiller."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quel est le pH d'une solution basique ?",
+                    "question": "Quel est le symbole chimique de l'atome de carbone ?",
                     "answerOptions": [
-                        {"text": "Supérieur à 7", "isCorrect": True},
-                        {"text": "Inférieur à 7", "isCorrect": False},
-                        {"text": "Égal à 7", "isCorrect": False},
-                        {"text": "Égal à 0", "isCorrect": False}
+                        {"text": "La lettre C majuscule seule", "isCorrect": True},
+                        {"text": "La lettre Ca pour le calcium", "isCorrect": False},
+                        {"text": "La lettre Co pour le cobalt", "isCorrect": False},
+                        {"text": "La lettre K pour le potassium", "isCorrect": False}
                     ],
-                    "correction": "Les bases (ou solutions alcalines) ont un pH compris entre 7 et 14."
+                    "correction": "**Rappel de cours :** Le carbone est l'élément de base de la chimie organique et du vivant. Son symbole est simplement C. Ca désigne le Calcium et Co le Cobalt."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Comment appelle-t-on le passage direct de l'état solide à l'état gazeux ?",
+                    "question": "Quelle est la définition d'un corps pur en chimie ?",
                     "answerOptions": [
-                        {"text": "La sublimation", "isCorrect": True},
-                        {"text": "La vaporisation", "isCorrect": False},
-                        {"text": "La liquéfaction", "isCorrect": False},
-                        {"text": "La fusion", "isCorrect": False}
+                        {"text": "Une substance composée d'une seule espèce chimique", "isCorrect": True},
+                        {"text": "Un mélange parfaitement transparent et limpide", "isCorrect": False},
+                        {"text": "Une solution qui ne contient aucun produit toxique", "isCorrect": False},
+                        {"text": "Un gaz qui ne possède aucune odeur particulière", "isCorrect": False}
                     ],
-                    "correction": "Ce phénomène est rare à pression ambiante (ex: la neige carbonique)."
+                    "correction": "**Rappel de cours :** Un corps pur n'est pas un mélange. Il ne contient qu'un seul type de molécules (ex: eau distillée) ou d'atomes (ex: fer pur). Ses caractéristiques physiques (température de fusion, ébullition) sont fixes."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Que se passe-t-il lors d'une dilution ?",
+                    "question": "Comment appelle-t-on un ion chargé négativement ?",
                     "answerOptions": [
-                        {"text": "La concentration diminue et le pH se rapproche de 7", "isCorrect": True},
-                        {"text": "La solution devient plus dangereuse", "isCorrect": False},
-                        {"text": "La couleur devient plus foncée", "isCorrect": False},
-                        {"text": "Le volume diminue", "isCorrect": False}
+                        {"text": "Un anion ayant gagné des électrons", "isCorrect": True},
+                        {"text": "Un cation ayant perdu des électrons", "isCorrect": False},
+                        {"text": "Un proton situé dans le noyau central", "isCorrect": False},
+                        {"text": "Un isotope instable de l'atome neutre", "isCorrect": False}
                     ],
-                    "correction": "Ajouter de l'eau réduit la concentration en ions et rend la solution moins agressive."
+                    "correction": "**Rappel de cours :** Un atome est neutre. S'il gagne un ou plusieurs électrons (chargés négativement), il devient un ion négatif appelé 'anion'. L'ion chlorure (Cl-) est un exemple d'anion."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Quel est le test d'identification du gaz dihydrogène (H2) ?",
+                    "question": "Que signifie le chiffre 7 sur l'échelle de pH ?",
                     "answerOptions": [
-                        {"text": "Une petite détonation ('pop') à l'approche d'une flamme", "isCorrect": True},
-                        {"text": "Il trouble l'eau de chaux", "isCorrect": False},
-                        {"text": "Il rallume une bûchette incandescente", "isCorrect": False},
-                        {"text": "Il devient bleu", "isCorrect": False}
+                        {"text": "La solution est parfaitement neutre", "isCorrect": True},
+                        {"text": "La solution est extrêmement acide", "isCorrect": False},
+                        {"text": "La solution est extrêmement basique", "isCorrect": False},
+                        {"text": "La solution est bouillante à 100 degrés", "isCorrect": False}
                     ],
-                    "correction": "Le dihydrogène est un gaz très inflammable et explosif au contact de l'air."
+                    "correction": "**Rappel de cours :** Le pH 7 est le milieu de l'échelle (qui va de 0 à 14). L'eau pure a un pH de 7. En dessous de 7, le milieu est acide. Au-dessus de 7, le milieu est basique."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quelle particule a une masse quasiment nulle par rapport aux autres ?",
+                    "question": "Quel est le constituant de l'atome qui possède une charge négative ?",
                     "answerOptions": [
-                        {"text": "L'électron", "isCorrect": True},
-                        {"text": "Le proton", "isCorrect": False},
-                        {"text": "Le neutron", "isCorrect": False},
-                        {"text": "Le noyau", "isCorrect": False}
+                        {"text": "L'électron gravitant autour du noyau", "isCorrect": True},
+                        {"text": "Le proton situé à l'intérieur du noyau", "isCorrect": False},
+                        {"text": "Le neutron situé à l'intérieur du noyau", "isCorrect": False},
+                        {"text": "La molécule composée de plusieurs atomes", "isCorrect": False}
                     ],
-                    "correction": "La masse de l'atome est concentrée presque totalement dans son noyau."
+                    "correction": "**Rappel de cours :** L'électron est une particule élémentaire très légère. C'est le déplacement des électrons dans un matériau conducteur qui crée le courant électrique."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "L'eau salée est :",
+                    "question": "Laquelle de ces substances est une solution acide courante ?",
                     "answerOptions": [
-                        {"text": "Un mélange homogène", "isCorrect": True},
-                        {"text": "Un corps pur", "isCorrect": False},
-                        {"text": "Un mélange hétérogène", "isCorrect": False},
-                        {"text": "Un métal liquide", "isCorrect": False}
+                        {"text": "Le jus de citron ou le vinaigre", "isCorrect": True},
+                        {"text": "L'eau savonneuse ou la lessive", "isCorrect": False},
+                        {"text": "L'eau distillée purifiée en flacon", "isCorrect": False},
+                        {"text": "L'huile d'olive utilisée en cuisine", "isCorrect": False}
                     ],
-                    "correction": "On ne distingue pas le sel une fois dissous dans l'eau à l'œil nu."
+                    "correction": "**Rappel de cours :** Les acides se reconnaissent souvent à leur goût piquant. Le citron contient de l'acide citrique et le vinaigre de l'acide acétique. Leur pH est inférieur à 7."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Quel est le nom de l'ion fer II ?",
+                    "question": "Quel test permet de prouver la présence de gaz dioxyde de carbone ?",
                     "answerOptions": [
-                        {"text": "Fe2+", "isCorrect": True},
-                        {"text": "Fe3+", "isCorrect": False},
-                        {"text": "Cl-", "isCorrect": False},
-                        {"text": "OH-", "isCorrect": False}
+                        {"text": "Le test à l'eau de chaux qui se trouble", "isCorrect": True},
+                        {"text": "Le test de la bûchette enflammée qui explose", "isCorrect": False},
+                        {"text": "Le test du sulfate de cuivre qui blanchit", "isCorrect": False},
+                        {"text": "Le test au papier pH qui devient bleu", "isCorrect": False}
                     ],
-                    "correction": "Le chiffre romain II indique la charge positive portée par l'ion."
+                    "correction": "**Rappel de cours :** Si on fait buller du CO2 dans de l'eau de chaux (limpide au départ), celle-ci devient laiteuse ou trouble. C'est la preuve chimique de la présence de ce gaz."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quelle est l'unité de la masse volumique ?",
+                    "question": "Dans l'air, quel gaz est indispensable à la vie et aux combustions ?",
                     "answerOptions": [
-                        {"text": "kg/m³ ou g/cm³", "isCorrect": True},
-                        {"text": "kg", "isCorrect": False},
-                        {"text": "m³", "isCorrect": False},
-                        {"text": "Newton", "isCorrect": False}
+                        {"text": "Le gaz nommé dioxygène", "isCorrect": True},
+                        {"text": "Le gaz nommé diazote", "isCorrect": False},
+                        {"text": "Le gaz nommé hélium", "isCorrect": False},
+                        {"text": "Le gaz nommé dioxyde de carbone", "isCorrect": False}
                     ],
-                    "correction": "C'est le rapport de la masse par le volume (ρ = m / V)."
+                    "correction": "**Rappel de cours :** Le dioxygène (O2) représente environ 21 % de l'air. C'est lui qui permet de brûler un combustible et c'est lui que nos poumons absorbent pour faire fonctionner nos cellules."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Pourquoi les métaux sont-ils de bons conducteurs ?",
+                    "question": "Comment appelle-t-on le mélange de deux liquides qui ne se mélangent pas ?",
                     "answerOptions": [
-                        {"text": "Car ils possèdent des électrons libres", "isCorrect": True},
-                        {"text": "Car ils sont lourds", "isCorrect": False},
-                        {"text": "Car ils brillent", "isCorrect": False},
-                        {"text": "Car ils sont solides", "isCorrect": False}
+                        {"text": "Un mélange hétérogène et non miscible", "isCorrect": True},
+                        {"text": "Un mélange homogène et très limpide", "isCorrect": False},
+                        {"text": "Une solution saturée en sels minéraux", "isCorrect": False},
+                        {"text": "Un alliage métallique solide et dur", "isCorrect": False}
                     ],
-                    "correction": "Le courant électrique est un déplacement ordonné de ces électrons libres."
+                    "correction": "**Rappel de cours :** L'eau et l'huile sont non miscibles. Après agitation, elles finissent par se séparer en deux couches distinctes (phases). Le mélange est dit hétérogène car on voit les deux constituants."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Qu'est-ce qu'une combustion ?",
+                    "question": "Quel est l'appareil utilisé pour mesurer une masse ?",
                     "answerOptions": [
-                        {"text": "Une réaction chimique exothermique (qui dégage de la chaleur)", "isCorrect": True},
-                        {"text": "Un mélange d'eau et de gaz", "isCorrect": False},
-                        {"text": "La fusion d'un métal", "isCorrect": False},
-                        {"text": "L'évaporation de l'alcool", "isCorrect": False}
+                        {"text": "Une balance de précision", "isCorrect": True},
+                        {"text": "Un dynamomètre à ressort", "isCorrect": False},
+                        {"text": "Une éprouvette graduée", "isCorrect": False},
+                        {"text": "Un thermomètre digital", "isCorrect": False}
                     ],
-                    "correction": "Elle nécessite un combustible, un comburant et une source d'énergie."
+                    "correction": "**Rappel de cours :** La balance mesure la masse (kg). Ne pas la confondre avec le dynamomètre qui mesure le poids (force en Newton). Dans la vie courante on mélange souvent les deux termes."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "L'acier est un alliage de :",
+                    "question": "Quelle est la formule chimique du sel de cuisine ?",
                     "answerOptions": [
-                        {"text": "Fer et carbone", "isCorrect": True},
-                        {"text": "Cuivre et zinc", "isCorrect": False},
-                        {"text": "Or et argent", "isCorrect": False},
-                        {"text": "Aluminium et plomb", "isCorrect": False}
+                        {"text": "Le chlorure de sodium noté NaCl", "isCorrect": True},
+                        {"text": "Le bicarbonate de soude noté NaH", "isCorrect": False},
+                        {"text": "L'hydroxyde de sodium noté NaOH", "isCorrect": False},
+                        {"text": "Le sulfate de fer noté FeS", "isCorrect": False}
                     ],
-                    "correction": "Le carbone apporte la dureté au fer."
+                    "correction": "**Rappel de cours :** Le sel est un empilement régulier d'ions sodium (Na+) et d'ions chlorure (Cl-). Sa formule statistique est NaCl."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel ion détecte-t-on avec de la soude pour obtenir un précipité vert ?",
+                    "question": "Que signifie l'ébullition pour un liquide ?",
                     "answerOptions": [
-                        {"text": "L'ion fer II (Fe2+)", "isCorrect": True},
-                        {"text": "L'ion fer III (Fe3+)", "isCorrect": False},
-                        {"text": "L'ion cuivre II", "isCorrect": False},
-                        {"text": "L'ion zinc", "isCorrect": False}
+                        {"text": "Le passage rapide à l'état de vapeur", "isCorrect": True},
+                        {"text": "Le passage lent à l'état de glace", "isCorrect": False},
+                        {"text": "La dissolution d'un sucre dans l'eau", "isCorrect": False},
+                        {"text": "Le mélange de deux couleurs d'encre", "isCorrect": False}
                     ],
-                    "correction": "L'ion fer III donne un précipité rouille, le fer II donne du vert."
+                    "correction": "**Rappel de cours :** L'ébullition se produit quand la pression de vapeur du liquide égale la pression atmosphérique. Pour l'eau pure, cela arrive à 100°C au niveau de la mer."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Un atome d'oxygène possède 8 protons. Combien possède-t-il d'électrons ?",
+                    "question": "Lequel de ces métaux est attiré par un aimant ?",
                     "answerOptions": [
-                        {"text": "8", "isCorrect": True},
-                        {"text": "16", "isCorrect": False},
-                        {"text": "0", "isCorrect": False},
-                        {"text": "2", "isCorrect": False}
+                        {"text": "Le fer et ses alliages comme l'acier", "isCorrect": True},
+                        {"text": "L'aluminium utilisé dans les canettes", "isCorrect": False},
+                        {"text": "Le cuivre utilisé dans les fils électriques", "isCorrect": False},
+                        {"text": "L'or utilisé dans la bijouterie fine", "isCorrect": False}
                     ],
-                    "correction": "L'atome étant neutre, il y a stricte égalité entre protons et électrons."
+                    "correction": "**Rappel de cours :** Le fer est un métal ferromagnétique. C'est un test simple pour distinguer le fer ou l'acier de l'aluminium ou du cuivre qui, eux, ne réagissent pas à l'aimant."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 2 : MÉCANIQUE, PRESSION ET STATIQUE (Q21 à Q40)
+        # THÈME 2 : ÉLECTRICITÉ ET ÉNERGIE (Q21 à Q40)
         # =========================================================================
         2: {
-            "name": "THÈME 2 : MÉCANIQUE, PRESSION ET STATIQUE",
+            "name": "THÈME 2 : ÉLECTRICITÉ ET ÉNERGIE",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Quelle est la différence entre la masse et le poids ?",
+                    "question": "Quel appareil mesure l'intensité du courant électrique ?",
                     "answerOptions": [
-                        {"text": "La masse est invariable, le poids est une force qui dépend du lieu", "isCorrect": True},
-                        {"text": "C'est la même chose", "isCorrect": False},
-                        {"text": "La masse se mesure en Newton", "isCorrect": False},
-                        {"text": "Le poids se mesure en kg", "isCorrect": False}
+                        {"text": "Un ampèremètre branché en série", "isCorrect": True},
+                        {"text": "Un voltmètre branché en dérivation", "isCorrect": False},
+                        {"text": "Un ohmmètre branché hors tension", "isCorrect": False},
+                        {"text": "Un wattmètre branché sur la prise", "isCorrect": False}
                     ],
-                    "correction": "La masse (kg) représente la quantité de matière. Le poids (N) est la force d'attraction de la Terre."
+                    "correction": "**Rappel de cours :** L'intensité (I) se mesure en Ampères (A). L'appareil doit être traversé par le courant, il s'insère donc dans la boucle du circuit (montage en série)."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Calculez le poids d'un objet de 50 kg sur Terre (g = 10 N/kg).",
+                    "question": "Quelle est l'unité de mesure de la puissance électrique ?",
                     "answerOptions": [
-                        {"text": "500 N", "isCorrect": True},
-                        {"text": "50 N", "isCorrect": False},
-                        {"text": "5 N", "isCorrect": False},
-                        {"text": "500 kg", "isCorrect": False}
+                        {"text": "L'unité nommée le Watt", "isCorrect": True},
+                        {"text": "L'unité nommée le Volt", "isCorrect": False},
+                        {"text": "L'unité nommée l'Ampère", "isCorrect": False},
+                        {"text": "L'unité nommée le Joule", "isCorrect": False}
                     ],
-                    "correction": "P = m × g = 50 × 10 = 500 N."
+                    "correction": "**Rappel de cours :** La puissance (P) indique la quantité d'énergie consommée ou fournie par seconde. On utilise le Watt (W). 1000 Watts = 1 kilowatt (kW)."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Unité internationale de la pression :",
+                    "question": "Dans un circuit en dérivation, la tension est-elle la même partout ?",
                     "answerOptions": [
-                        {"text": "Pascal (Pa)", "isCorrect": True},
-                        {"text": "Bar", "isCorrect": False},
-                        {"text": "Newton", "isCorrect": False},
-                        {"text": "Joule", "isCorrect": False}
+                        {"text": "Oui, elle est identique dans chaque branche", "isCorrect": True},
+                        {"text": "Non, elle s'ajoute à chaque nouveau récepteur", "isCorrect": False},
+                        {"text": "Non, elle diminue si on rajoute des lampes", "isCorrect": False},
+                        {"text": "Elle dépend uniquement de la couleur du fil", "isCorrect": False}
                     ],
-                    "correction": "Un Pascal correspond à un Newton appliqué sur un mètre carré (1 N/m²)."
+                    "correction": "**Rappel de cours :** C'est la loi d'unicité des tensions. Dans une installation domestique (en dérivation), tous les appareils reçoivent la même tension (230 V), ce qui leur permet de fonctionner normalement."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Comment varie la pression dans un liquide avec la profondeur ?",
+                    "question": "La loi d'Ohm s'écrit mathématiquement :",
                     "answerOptions": [
-                        {"text": "Elle augmente avec la profondeur", "isCorrect": True},
-                        {"text": "Elle diminue", "isCorrect": False},
-                        {"text": "Elle reste constante", "isCorrect": False},
-                        {"text": "Elle s'annule", "isCorrect": False}
+                        {"text": "U = R multiplié par I", "isCorrect": True},
+                        {"text": "P = U multiplié par I", "isCorrect": False},
+                        {"text": "E = P multiplié par t", "isCorrect": False},
+                        {"text": "R = U multiplié par I", "isCorrect": False}
                     ],
-                    "correction": "Plus on descend, plus le poids de la colonne de liquide au-dessus est important."
+                    "correction": "**Rappel de cours :** La tension (U) aux bornes d'un conducteur ohmique est proportionnelle à l'intensité (I) qui le traverse. Le coefficient de proportionnalité est la résistance (R)."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Que signifie un mouvement 'rectiligne uniforme' ?",
+                    "question": "Quel fil électrique est de couleur jaune et verte ?",
                     "answerOptions": [
-                        {"text": "Trajectoire droite et vitesse constante", "isCorrect": True},
-                        {"text": "Trajectoire courbe et vitesse constante", "isCorrect": False},
-                        {"text": "Vitesse qui augmente en ligne droite", "isCorrect": False},
-                        {"text": "Objet immobile", "isCorrect": False}
+                        {"text": "Le fil de protection nommé la terre", "isCorrect": True},
+                        {"text": "Le fil de phase transportant le courant", "isCorrect": False},
+                        {"text": "Le fil neutre de retour du courant", "isCorrect": False},
+                        {"text": "Le fil de commande de l'interrupteur", "isCorrect": False}
                     ],
-                    "correction": "L'accélération est nulle dans ce type de mouvement."
+                    "correction": "**Rappel de cours :** C'est une norme de sécurité internationale. La terre permet d'évacuer les courants de fuite vers le sol pour protéger les personnes contre l'électrocution."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Quelle est la condition d'équilibre d'un objet suspendu à un fil ?",
+                    "question": "L'énergie consommée par un appareil se calcule par :",
                     "answerOptions": [
-                        {"text": "Le poids et la tension du fil doivent être opposés et de même valeur", "isCorrect": True},
-                        {"text": "Le poids doit être plus fort", "isCorrect": False},
-                        {"text": "Le fil doit être très long", "isCorrect": False},
-                        {"text": "Il ne doit pas y avoir de gravité", "isCorrect": False}
+                        {"text": "E = Puissance multipliée par le temps", "isCorrect": True},
+                        {"text": "E = Tension divisée par l'intensité", "isCorrect": False},
+                        {"text": "E = Résistance multipliée par le temps", "isCorrect": False},
+                        {"text": "E = Puissance divisée par la tension", "isCorrect": False}
                     ],
-                    "correction": "La somme vectorielle des deux forces est nulle."
+                    "correction": "**Rappel de cours :** L'énergie (E) s'exprime en Joules (J) ou en kiloWatt-heures (kWh) sur les factures d'électricité. Plus un appareil est puissant ou plus il fonctionne longtemps, plus il consomme."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Unité de mesure du moment d'une force :",
+                    "question": "Quel est le rôle d'un fusible dans une installation ?",
                     "answerOptions": [
-                        {"text": "Newton-mètre (N.m)", "isCorrect": True},
-                        {"text": "Newton par mètre", "isCorrect": False},
-                        {"text": "Pascal", "isCorrect": False},
-                        {"text": "Watt", "isCorrect": False}
+                        {"text": "Protéger le circuit contre les surintensités", "isCorrect": True},
+                        {"text": "Augmenter la tension reçue par les lampes", "isCorrect": False},
+                        {"text": "Économiser l'énergie électrique du réseau", "isCorrect": False},
+                        {"text": "Transformer l'alternatif en courant continu", "isCorrect": False}
                     ],
-                    "correction": "Il mesure l'aptitude d'une force à faire tourner un système autour d'un axe."
+                    "correction": "**Rappel de cours :** Le fusible contient un filament qui fond si le courant devient trop fort (court-circuit ou surcharge). Cela ouvre le circuit et empêche les fils de chauffer et de causer un incendie."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Comment appelle-t-on la force exercée par un aimant sur un clou ?",
+                    "question": "Que signifie le sigle AC visible sur les transformateurs ?",
                     "answerOptions": [
-                        {"text": "Force magnétique (action à distance)", "isCorrect": True},
-                        {"text": "Force de contact", "isCorrect": False},
-                        {"text": "Poids", "isCorrect": False},
-                        {"text": "Tension", "isCorrect": False}
+                        {"text": "Un courant de type alternatif", "isCorrect": True},
+                        {"text": "Un courant de type continu", "isCorrect": False},
+                        {"text": "Un appareil de chauffage central", "isCorrect": False},
+                        {"text": "Une absence de courant électrique", "isCorrect": False}
                     ],
-                    "correction": "Il n'y a pas besoin de contact physique pour que la force s'exerce."
+                    "correction": "**Rappel de cours :** AC (Alternating Current) signifie que le courant change de sens régulièrement (50 fois par seconde en France, soit 50 Hz). C'est le courant des prises murales."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Que mesure un manomètre ?",
+                    "question": "Quelle est la tension efficace délivrée par une prise secteur en France ?",
                     "answerOptions": [
-                        {"text": "La pression d'un gaz enfermé", "isCorrect": True},
-                        {"text": "La pression atmosphérique", "isCorrect": False},
-                        {"text": "La température", "isCorrect": False},
-                        {"text": "La vitesse du vent", "isCorrect": False}
+                        {"text": "Une tension de 230 Volts", "isCorrect": True},
+                        {"text": "Une tension de 110 Volts", "isCorrect": False},
+                        {"text": "Une tension de 12 Volts", "isCorrect": False},
+                        {"text": "Une tension de 400 Volts", "isCorrect": False}
                     ],
-                    "correction": "Pour la pression atmosphérique, on utilise un baromètre."
+                    "correction": "**Rappel de cours :** C'est la tension standard pour les usages domestiques. Les appareils industriels plus puissants utilisent parfois le 400 V (triphasé)."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Si on double la force pressante sur une même surface, la pression :",
+                    "question": "Quelle énergie est produite par une éolienne ?",
                     "answerOptions": [
-                        {"text": "Double", "isCorrect": True},
-                        {"text": "Diminue de moitié", "isCorrect": False},
-                        {"text": "Reste identique", "isCorrect": False},
-                        {"text": "Est divisée par 4", "isCorrect": False}
+                        {"text": "L'énergie de type électrique", "isCorrect": True},
+                        {"text": "L'énergie de type fossile", "isCorrect": False},
+                        {"text": "L'énergie de type thermique", "isCorrect": False},
+                        {"text": "L'énergie de type nucléaire", "isCorrect": False}
                     ],
-                    "correction": "P = F / S. P et F sont proportionnels."
+                    "correction": "**Rappel de cours :** L'éolienne transforme l'énergie mécanique du vent en énergie électrique grâce à un alternateur. C'est une énergie renouvelable."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Convertir 2 bars en Pascals.",
+                    "question": "Que mesure-t-on avec un ohmmètre ?",
                     "answerOptions": [
-                        {"text": "200 000 Pa", "isCorrect": True},
-                        {"text": "2 000 Pa", "isCorrect": False},
-                        {"text": "20 Pa", "isCorrect": False},
-                        {"text": "200 Pa", "isCorrect": False}
+                        {"text": "Une résistance électrique en Ohm", "isCorrect": True},
+                        {"text": "Une puissance électrique en Watt", "isCorrect": False},
+                        {"text": "Une tension électrique en Volt", "isCorrect": False},
+                        {"text": "Une intensité électrique en Ampère", "isCorrect": False}
                     ],
-                    "correction": "1 bar = 100 000 Pa = 10^5 Pa."
+                    "correction": "**Rappel de cours :** L'ohmmètre s'utilise sur un composant débranché (hors tension). Il permet par exemple de vérifier si un fil n'est pas coupé."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quelle est la trajectoire d'une valve de pneu de vélo qui roule ?",
+                    "question": "Dans un circuit en série, si une lampe grille, que se passe-t-il ?",
                     "answerOptions": [
-                        {"text": "Circulaire (dans le référentiel de la roue)", "isCorrect": True},
-                        {"text": "Rectiligne", "isCorrect": False},
-                        {"text": "Immobile", "isCorrect": False},
-                        {"text": "Carrée", "isCorrect": False}
+                        {"text": "Toutes les autres lampes s'éteignent", "isCorrect": True},
+                        {"text": "Les autres lampes brillent plus fort", "isCorrect": False},
+                        {"text": "Rien ne change pour les autres", "isCorrect": False},
+                        {"text": "La pile explose immédiatement", "isCorrect": False}
                     ],
-                    "correction": "La forme d'un mouvement dépend toujours du point de vue (référentiel) choisi."
+                    "correction": "**Rappel de cours :** Dans un montage en série, le courant n'a qu'un seul chemin. Si une lampe grille, le circuit est ouvert : le courant s'arrête de circuler partout."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Une force est caractérisée par :",
+                    "question": "Quel dispositif coupe le courant en cas de fuite vers la terre ?",
                     "answerOptions": [
-                        {"text": "Point d'application, direction, sens, valeur", "isCorrect": True},
-                        {"text": "Poids et masse", "isCorrect": False},
-                        {"text": "Vitesse et temps", "isCorrect": False},
-                        {"text": "Couleur et forme", "isCorrect": False}
+                        {"text": "Le disjoncteur différentiel", "isCorrect": True},
+                        {"text": "Le simple interrupteur mural", "isCorrect": False},
+                        {"text": "L'ampoule LED de secours", "isCorrect": False},
+                        {"text": "Le compteur Linky électrique", "isCorrect": False}
                     ],
-                    "correction": "On la représente par un segment fléché (vecteur)."
+                    "correction": "**Rappel de cours :** Le disjoncteur différentiel compare le courant qui entre et celui qui sort. S'il y a une différence (fuite), il coupe tout pour éviter l'électrocution d'une personne."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Pourquoi les talons aiguilles s'enfoncent-ils plus dans le sol que les chaussures plates ?",
+                    "question": "Lequel de ces matériaux est un isolant électrique ?",
                     "answerOptions": [
-                        {"text": "Car la surface est plus petite, donc la pression est plus grande", "isCorrect": True},
-                        {"text": "Car ils sont plus lourds", "isCorrect": False},
-                        {"text": "À cause de la mode", "isCorrect": False},
-                        {"text": "Car le sol est mou", "isCorrect": False}
+                        {"text": "Le plastique ou le verre", "isCorrect": True},
+                        {"text": "Le fer ou l'aluminium", "isCorrect": False},
+                        {"text": "Le cuivre ou l'argent", "isCorrect": False},
+                        {"text": "L'eau salée de la mer", "isCorrect": False}
                     ],
-                    "correction": "À force égale (le poids de la personne), la pression augmente quand la surface diminue."
+                    "correction": "**Rappel de cours :** Un isolant est un matériau qui ne laisse pas passer le courant électrique car il ne possède pas de charges libres. On l'utilise pour recouvrir les fils."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quelle est la valeur de la pression atmosphérique moyenne ?",
+                    "question": "Un appareil de 1000 W utilisé pendant 1 heure consomme :",
                     "answerOptions": [
-                        {"text": "1013 hPa", "isCorrect": True},
-                        {"text": "0 Pa", "isCorrect": False},
-                        {"text": "100 bars", "isCorrect": False},
-                        {"text": "500 Pa", "isCorrect": False}
+                        {"text": "Un kiloWatt-heure d'énergie", "isCorrect": True},
+                        {"text": "Un Joule d'énergie seulement", "isCorrect": False},
+                        {"text": "Mille Joules d'énergie seulement", "isCorrect": False},
+                        {"text": "Cent kiloWatt-heures d'énergie", "isCorrect": False}
                     ],
-                    "correction": "Soit environ 1 bar."
+                    "correction": "**Rappel de cours :** 1 kWh est l'énergie consommée par un appareil de 1000 W fonctionnant pendant une heure. C'est l'unité pratique de facturation."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Dans le calcul du moment M = F × d, que représente 'd' ?",
+                    "question": "Le symbole de la tension électrique est :",
                     "answerOptions": [
-                        {"text": "Le bras de levier (distance perpendiculaire à l'axe)", "isCorrect": True},
-                        {"text": "Le diamètre du boulon", "isCorrect": False},
-                        {"text": "La durée de l'effort", "isCorrect": False},
-                        {"text": "Le poids de la clé", "isCorrect": False}
+                        {"text": "La lettre U majuscule", "isCorrect": True},
+                        {"text": "La lettre V majuscule", "isCorrect": False},
+                        {"text": "La lettre I majuscule", "isCorrect": False},
+                        {"text": "La lettre P majuscule", "isCorrect": False}
                     ],
-                    "correction": "Plus d est grand, plus le moment est élevé pour une même force."
+                    "correction": "**Rappel de cours :** Attention à ne pas confondre le symbole de la grandeur (U) et le symbole de son unité (V pour le Volt)."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "L'énergie cinétique est liée à :",
+                    "question": "Quel appareil protège contre les surcharges dans un tableau ?",
                     "answerOptions": [
-                        {"text": "La vitesse de l'objet", "isCorrect": True},
-                        {"text": "L'altitude de l'objet", "isCorrect": False},
-                        {"text": "La température de l'objet", "isCorrect": False},
-                        {"text": "La forme de l'objet", "isCorrect": False}
+                        {"text": "Le disjoncteur divisionnaire", "isCorrect": True},
+                        {"text": "La prise de courant murale", "isCorrect": False},
+                        {"text": "L'interrupteur va-et-vient", "isCorrect": False},
+                        {"text": "Le transformateur de tension", "isCorrect": False}
                     ],
-                    "correction": "Ec = 1/2 × m × v²."
+                    "correction": "**Rappel de cours :** Chaque circuit est protégé par un disjoncteur calibré (ex: 16A pour les prises). S'il y a trop d'appareils, il 'saute' pour éviter l'incendie."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Comment s'appelle l'appareil utilisé pour mesurer une force ?",
+                    "question": "Quelle est la fréquence du courant domestique en France ?",
                     "answerOptions": [
-                        {"text": "Un dynamomètre", "isCorrect": True},
-                        {"text": "Une balance", "isCorrect": False},
-                        {"text": "Un voltmètre", "isCorrect": False},
-                        {"text": "Un baromètre", "isCorrect": False}
+                        {"text": "Une fréquence de 50 Hertz", "isCorrect": True},
+                        {"text": "Une fréquence de 60 Hertz", "isCorrect": False},
+                        {"text": "Une fréquence de 230 Hertz", "isCorrect": False},
+                        {"text": "Une fréquence de 0 Hertz", "isCorrect": False}
                     ],
-                    "correction": "Il utilise généralement la déformation d'un ressort."
+                    "correction": "**Rappel de cours :** Le courant change de sens 100 fois par seconde, ce qui fait 50 cycles complets (Hertz). Aux USA, la norme est de 60 Hz."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Un objet de 2 kg tombe. Son poids est d'environ :",
+                    "question": "Un alternateur transforme l'énergie mécanique en :",
                     "answerOptions": [
-                        {"text": "20 N", "isCorrect": True},
-                        {"text": "2 N", "isCorrect": False},
-                        {"text": "200 N", "isCorrect": False},
-                        {"text": "0,2 N", "isCorrect": False}
+                        {"text": "Une énergie de type électrique", "isCorrect": True},
+                        {"text": "Une énergie de type thermique", "isCorrect": False},
+                        {"text": "Une énergie de type chimique", "isCorrect": False},
+                        {"text": "Une énergie de type solaire", "isCorrect": False}
                     ],
-                    "correction": "Calcul : 2 kg × 10 N/kg = 20 N."
+                    "correction": "**Rappel de cours :** C'est le principe utilisé dans les centrales électriques, les barrages et les voitures. On fait tourner un aimant près d'une bobine de cuivre."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quelle est la trajectoire d'un point sur une pale d'éolienne en fonctionnement ?",
+                    "question": "Que signifie la mention 60W sur une ampoule ?",
                     "answerOptions": [
-                        {"text": "Circulaire", "isCorrect": True},
-                        {"text": "Rectiligne", "isCorrect": False},
-                        {"text": "Aléatoire", "isCorrect": False},
-                        {"text": "Parabolique", "isCorrect": False}
+                        {"text": "La puissance nominale consommée", "isCorrect": True},
+                        {"text": "La tension maximale supportée", "isCorrect": False},
+                        {"text": "L'intensité du courant traversant", "isCorrect": False},
+                        {"text": "Le prix de vente en magasin", "isCorrect": False}
                     ],
-                    "correction": "Le point tourne autour d'un axe fixe."
+                    "correction": "**Rappel de cours :** C'est la puissance électrique. Plus ce chiffre est élevé, plus l'ampoule consomme d'énergie (et généralement, plus elle éclaire)."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 3 : ÉLECTRICITÉ ET LOIS DES CIRCUITS (Q41 à Q60)
+        # THÈME 3 : MÉCANIQUE, MOUVEMENTS ET FORCES (Q41 à Q60)
         # =========================================================================
         3: {
-            "name": "THÈME 3 : ÉLECTRICITÉ ET LOIS DES CIRCUITS",
+            "name": "THÈME 3 : MÉCANIQUE, MOUVEMENTS ET FORCES",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Comment appelle-t-on un circuit où les composants sont branchés les uns après les autres ?",
+                    "question": "Quelle est l'unité de mesure d'une force en physique ?",
                     "answerOptions": [
-                        {"text": "Un circuit en série", "isCorrect": True},
-                        {"text": "Un circuit en dérivation", "isCorrect": False},
-                        {"text": "Un court-circuit", "isCorrect": False},
-                        {"text": "Un circuit ouvert", "isCorrect": False}
+                        {"text": "L'unité nommée le Newton", "isCorrect": True},
+                        {"text": "L'unité nommée le Kilogramme", "isCorrect": False},
+                        {"text": "L'unité nommée le Joule", "isCorrect": False},
+                        {"text": "L'unité nommée le Pascal", "isCorrect": False}
                     ],
-                    "correction": "Dans ce circuit, il n'y a qu'une seule boucle pour le courant."
+                    "correction": "**Rappel de cours :** Une force (F) s'exprime en Newtons (N). Elle est représentée par une flèche (vecteur) qui indique sa direction, son sens et son intensité."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Dans un circuit en dérivation, si on ajoute une lampe en parallèle :",
+                    "question": "Comment appelle-t-on la force exercée par la Terre sur un objet ?",
                     "answerOptions": [
-                        {"text": "L'intensité totale fournie par le générateur augmente", "isCorrect": True},
-                        {"text": "L'intensité totale diminue", "isCorrect": False},
-                        {"text": "Les autres lampes s'éteignent", "isCorrect": False},
-                        {"text": "La tension du générateur double", "isCorrect": False}
+                        {"text": "Le poids de l'objet choisi", "isCorrect": True},
+                        {"text": "La masse de l'objet choisi", "isCorrect": False},
+                        {"text": "Le volume de l'objet choisi", "isCorrect": False},
+                        {"text": "La densité de l'objet choisi", "isCorrect": False}
                     ],
-                    "correction": "Chaque branche appelle son propre courant, le générateur doit fournir la somme des intensités."
+                    "correction": "**Rappel de cours :** Le poids (P) est une force attractive vers le centre de la Terre. Elle dépend de la masse de l'objet et de la pesanteur (g)."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Quelle est l'unité de la résistance électrique ?",
+                    "question": "Quelle est la relation entre le poids (P) et la masse (m) ?",
                     "answerOptions": [
-                        {"text": "L'Ohm (Ω)", "isCorrect": True},
-                        {"text": "Le Watt (W)", "isCorrect": False},
-                        {"text": "L'Ampère (A)", "isCorrect": False},
-                        {"text": "Le Volt (V)", "isCorrect": False}
+                        {"text": "P = m multiplié par g", "isCorrect": True},
+                        {"text": "P = m divisé par g", "isCorrect": False},
+                        {"text": "m = P multiplié par g", "isCorrect": False},
+                        {"text": "g = P multiplié par m", "isCorrect": False}
                     ],
-                    "correction": "La résistance limite le passage du courant."
+                    "correction": "**Rappel de cours :** g est l'intensité de la pesanteur. Sur Terre, g vaut environ 9,81 N/kg. Le poids se mesure avec un dynamomètre et la masse avec une balance."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "L'appareil qui mesure à la fois Tension, Intensité et Résistance s'appelle :",
+                    "question": "Un mouvement est dit 'rectiligne' si la trajectoire est :",
                     "answerOptions": [
-                        {"text": "Un multimètre", "isCorrect": True},
-                        {"text": "Un oscilloscope", "isCorrect": False},
-                        {"text": "Un wattmètre", "isCorrect": False},
-                        {"text": "Un compteur", "isCorrect": False}
+                        {"text": "Une ligne droite parfaite", "isCorrect": True},
+                        {"text": "Un cercle parfaitement fermé", "isCorrect": False},
+                        {"text": "Une courbe sans forme précise", "isCorrect": False},
+                        {"text": "Un point immobile dans l'espace", "isCorrect": False}
                     ],
-                    "correction": "Il faut choisir le bon mode et les bonnes bornes pour chaque mesure."
+                    "correction": "**Rappel de cours :** La trajectoire est l'ensemble des positions successives d'un objet. Si l'objet se déplace sur une droite, le mouvement est rectiligne."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Que se passe-t-il pour l'intensité dans un circuit en série ?",
+                    "question": "Que signifie un mouvement 'uniforme' pour un objet ?",
                     "answerOptions": [
-                        {"text": "Elle est la même en tout point du circuit", "isCorrect": True},
-                        {"text": "Elle se divise entre les composants", "isCorrect": False},
-                        {"text": "Elle augmente après chaque lampe", "isCorrect": False},
-                        {"text": "Elle est nulle au retour du générateur", "isCorrect": False}
+                        {"text": "La vitesse est strictement constante", "isCorrect": True},
+                        {"text": "La vitesse augmente sans cesse", "isCorrect": False},
+                        {"text": "La vitesse diminue sans cesse", "isCorrect": False},
+                        {"text": "La vitesse est nulle tout le temps", "isCorrect": False}
                     ],
-                    "correction": "L'intensité est unique dans une boucle simple (loi d'unicité)."
+                    "correction": "**Rappel de cours :** Dans un mouvement uniforme, l'objet parcourt des distances égales pendant des durées égales. Sa vitesse ne change pas."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Quelle est la loi des tensions dans un circuit en dérivation ?",
+                    "question": "Comment calcule-t-on la vitesse moyenne (v) ?",
                     "answerOptions": [
-                        {"text": "La tension est la même aux bornes de chaque branche", "isCorrect": True},
-                        {"text": "La tension s'additionne", "isCorrect": False},
-                        {"text": "La tension est nulle", "isCorrect": False},
-                        {"text": "La tension dépend de la couleur des fils", "isCorrect": False}
+                        {"text": "Distance divisée par le Temps", "isCorrect": True},
+                        {"text": "Temps divisé par la Distance", "isCorrect": False},
+                        {"text": "Distance multipliée par le Temps", "isCorrect": False},
+                        {"text": "Somme de la Distance et du Temps", "isCorrect": False}
                     ],
-                    "correction": "C'est pour cela que tous nos appareils ménagers reçoivent 230V."
+                    "correction": "**Rappel de cours :** v = d / t. Pour obtenir des mètres par seconde (m/s), il faut utiliser la distance en mètres et le temps en secondes."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Que signifie un 'fusible de 10 A' ?",
+                    "question": "Quelle force s'oppose au mouvement d'un objet sur le sol ?",
                     "answerOptions": [
-                        {"text": "Il fond si l'intensité dépasse 10 Ampères", "isCorrect": True},
-                        {"text": "Il fournit 10 Ampères en permanence", "isCorrect": False},
-                        {"text": "Il coûte 10 euros", "isCorrect": False},
-                        {"text": "Il transforme 10 Volts en 10 Ampères", "isCorrect": False}
+                        {"text": "La force de frottement", "isCorrect": True},
+                        {"text": "La force de pesanteur", "isCorrect": False},
+                        {"text": "La force de poussée", "isCorrect": False},
+                        {"text": "La force magnétique", "isCorrect": False}
                     ],
-                    "correction": "Le fusible est un organe de sécurité."
+                    "correction": "**Rappel de cours :** Le frottement agit toujours dans le sens contraire du mouvement. Il dépend de la nature des surfaces en contact (ex: pneu sur bitume ou sur glace)."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quel est le rôle d'une résistance dans un circuit ?",
+                    "question": "Un objet de 10 kg a un poids (P) sur Terre d'environ :",
                     "answerOptions": [
-                        {"text": "Convertir l'énergie électrique en chaleur (effet Joule)", "isCorrect": True},
-                        {"text": "Produire de l'électricité", "isCorrect": False},
-                        {"text": "Stocker de l'énergie", "isCorrect": False},
-                        {"text": "Éclairer la pièce", "isCorrect": False}
+                        {"text": "Une force de cent Newtons", "isCorrect": True},
+                        {"text": "Une force de dix Newtons", "isCorrect": False},
+                        {"text": "Une force de un Newton", "isCorrect": False},
+                        {"text": "Une force de mille Newtons", "isCorrect": False}
                     ],
-                    "correction": "Utile pour les radiateurs, fers à repasser ou grille-pains."
+                    "correction": "**Rappel de cours :** On prend souvent g = 10 N/kg pour simplifier. P = 10 kg x 10 N/kg = 100 N."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Comment branche-t-on un voltmètre ?",
+                    "question": "Quel appareil permet de mesurer une force ?",
                     "answerOptions": [
-                        {"text": "En dérivation (parallèle) aux bornes du composant", "isCorrect": True},
-                        {"text": "En série dans le circuit", "isCorrect": False},
-                        {"text": "Directement sur la pile uniquement", "isCorrect": False},
-                        {"text": "À la place du générateur", "isCorrect": False}
+                        {"text": "Un dynamomètre à ressort", "isCorrect": True},
+                        {"text": "Un baromètre à mercure", "isCorrect": False},
+                        {"text": "Un thermomètre à alcool", "isCorrect": False},
+                        {"text": "Un anémomètre à coupelles", "isCorrect": False}
                     ],
-                    "correction": "Il possède une très grande résistance pour ne pas perturber le circuit."
+                    "correction": "**Rappel de cours :** Le dynamomètre contient un ressort qui s'allonge proportionnellement à la force appliquée. On lit la valeur en Newtons sur la réglette."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "La loi des nœuds concerne :",
+                    "question": "Qu'est-ce que l'énergie cinétique ?",
                     "answerOptions": [
-                        {"text": "La répartition de l'intensité dans un circuit en dérivation", "isCorrect": True},
-                        {"text": "Le calcul de la résistance totale", "isCorrect": False},
-                        {"text": "La tension des piles en série", "isCorrect": False},
-                        {"text": "La vitesse des électrons", "isCorrect": False}
+                        {"text": "L'énergie liée au mouvement", "isCorrect": True},
+                        {"text": "L'énergie liée à la chaleur", "isCorrect": False},
+                        {"text": "L'énergie stockée dans une pile", "isCorrect": False},
+                        {"text": "L'énergie venant du soleil", "isCorrect": False}
                     ],
-                    "correction": "La somme des intensités entrant dans un nœud est égale à la somme des intensités sortantes."
+                    "correction": "**Rappel de cours :** L'énergie cinétique (Ec) dépend de la masse et surtout de la vitesse de l'objet. Si vous doublez la vitesse, l'énergie est multipliée par quatre !"
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Calculer la puissance d'un appareil de 230 V traversé par 2 A.",
+                    "question": "Un mouvement 'accéléré' signifie que :",
                     "answerOptions": [
-                        {"text": "460 W", "isCorrect": True},
-                        {"text": "115 W", "isCorrect": False},
-                        {"text": "232 W", "isCorrect": False},
-                        {"text": "460 J", "isCorrect": False}
+                        {"text": "La vitesse augmente au cours du temps", "isCorrect": True},
+                        {"text": "La vitesse diminue au cours du temps", "isCorrect": False},
+                        {"text": "La trajectoire est toujours droite", "isCorrect": False},
+                        {"text": "L'objet reste immobile tout le temps", "isCorrect": False}
                     ],
-                    "correction": "P = U × I = 230 × 2 = 460 Watts."
+                    "correction": "**Rappel de cours :** L'accélération traduit une variation de la vitesse. Dans une voiture, on accélère pour passer de 0 à 50 km/h."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Que se passe-t-il si la résistance d'un circuit diminue (sous tension constante) ?",
+                    "question": "Quel est le poids d'un objet immobile sur la Lune par rapport à la Terre ?",
                     "answerOptions": [
-                        {"text": "L'intensité augmente", "isCorrect": True},
-                        {"text": "L'intensité diminue", "isCorrect": False},
-                        {"text": "La tension augmente", "isCorrect": False},
-                        {"text": "Rien ne change", "isCorrect": False}
+                        {"text": "Six fois plus faible environ", "isCorrect": True},
+                        {"text": "Exactement le même partout", "isCorrect": False},
+                        {"text": "Deux fois plus élevé environ", "isCorrect": False},
+                        {"text": "Dix fois plus élevé environ", "isCorrect": False}
                     ],
-                    "correction": "Loi d'Ohm I = U / R. L'intensité et la résistance sont inversement proportionnelles."
+                    "correction": "**Rappel de cours :** La Lune est moins massive que la Terre, sa pesanteur est donc plus faible (g = 1,6 N/kg). Un astronaute s'y sent beaucoup plus léger."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Un kiloWatt (kW) vaut :",
+                    "question": "L'unité légale de la vitesse est :",
                     "answerOptions": [
-                        {"text": "1 000 Watts", "isCorrect": True},
-                        {"text": "100 Watts", "isCorrect": False},
-                        {"text": "10 Watts", "isCorrect": False},
-                        {"text": "0,001 Watt", "isCorrect": False}
+                        {"text": "Le mètre par seconde (m/s)", "isCorrect": True},
+                        {"text": "Le kilomètre par heure (km/h)", "isCorrect": False},
+                        {"text": "Le mètre par minute (m/min)", "isCorrect": False},
+                        {"text": "Le kilomètre par seconde (km/s)", "isCorrect": False}
                     ],
-                    "correction": "Le préfixe kilo signifie multiplier par mille."
+                    "correction": "**Rappel de cours :** Pour passer des m/s aux km/h, on multiplie par 3,6. Exemple : 10 m/s = 36 km/h."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quelle est la tension aux bornes d'un fil de connexion ?",
+                    "question": "Quelle force retient un objet posé sur une table ?",
                     "answerOptions": [
-                        {"text": "Presque 0 V", "isCorrect": True},
-                        {"text": "230 V", "isCorrect": False},
-                        {"text": "La même que le générateur", "isCorrect": False},
-                        {"text": "Variable", "isCorrect": False}
+                        {"text": "La réaction du support (table)", "isCorrect": True},
+                        {"text": "La force du vent extérieur", "isCorrect": False},
+                        {"text": "La tension d'un fil invisible", "isCorrect": False},
+                        {"text": "La force magnétique du bois", "isCorrect": False}
                     ],
-                    "correction": "Un fil parfait n'oppose aucune résistance, il n'y a donc pas de chute de tension."
+                    "correction": "**Rappel de cours :** C'est la force exercée par la table vers le haut pour compenser le poids de l'objet. Si cette force n'existait pas, l'objet s'enfoncerait dans la table."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Que signifie le sigle AC sur un appareil ?",
+                    "question": "Que se passe-t-il si la somme des forces sur un objet est nulle ?",
                     "answerOptions": [
-                        {"text": "Courant Alternatif", "isCorrect": True},
-                        {"text": "Courant Continu", "isCorrect": False},
-                        {"text": "Alimentation Coupée", "isCorrect": False},
-                        {"text": "Appareil Conforme", "isCorrect": False}
+                        {"text": "Il est immobile ou en mouvement uniforme", "isCorrect": True},
+                        {"text": "Il accélère de façon très violente", "isCorrect": False},
+                        {"text": "Il change obligatoirement de direction", "isCorrect": False},
+                        {"text": "Il explose sous l'effet des tensions", "isCorrect": False}
                     ],
-                    "correction": "Alternating Current. Le courant change de sens périodiquement."
+                    "correction": "**Rappel de cours :** C'est le principe d'inertie (première loi de Newton). Sans force globale, un objet ne change pas son état de mouvement."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Un appareil de 1000 W fonctionne pendant 2 heures. Quelle est son énergie consommée ?",
+                    "question": "Quelle est la trajectoire d'un ballon lancé vers un panier ?",
                     "answerOptions": [
-                        {"text": "2 kWh", "isCorrect": True},
-                        {"text": "2000 W", "isCorrect": False},
-                        {"text": "500 Wh", "isCorrect": False},
-                        {"text": "1002 Wh", "isCorrect": False}
+                        {"text": "Une trajectoire de type courbe", "isCorrect": True},
+                        {"text": "Une trajectoire de type droite", "isCorrect": False},
+                        {"text": "Une trajectoire de type cercle", "isCorrect": False},
+                        {"text": "Une trajectoire immobile au sol", "isCorrect": False}
                     ],
-                    "correction": "E = P × t = 1 kW × 2 h = 2 kWh."
+                    "correction": "**Rappel de cours :** Sous l'effet de la pesanteur, tout objet lancé (projectiles) décrit une courbe appelée parabole."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Le courant continu (DC) est fourni par :",
+                    "question": "Que mesure la distance de freinage ?",
                     "answerOptions": [
-                        {"text": "Les piles et batteries", "isCorrect": True},
-                        {"text": "Les prises murales", "isCorrect": False},
-                        {"text": "Les éoliennes directement", "isCorrect": False},
-                        {"text": "Le secteur", "isCorrect": False}
+                        {"text": "Le trajet entre le frein et l'arrêt", "isCorrect": True},
+                        {"text": "Le trajet durant la réflexion", "isCorrect": False},
+                        {"text": "La longueur totale de la voiture", "isCorrect": False},
+                        {"text": "Le temps de réaction du chauffeur", "isCorrect": False}
                     ],
-                    "correction": "Les électrons circulent toujours dans le même sens (de la borne - vers la borne +)."
+                    "correction": "**Rappel de cours :** La distance de freinage dépend de la vitesse, de l'état des pneus et de la route (mouillée ou sèche)."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quel est le danger principal d'une surcharge sur une multiprise ?",
+                    "question": "Quelle énergie possède un objet en hauteur ?",
                     "answerOptions": [
-                        {"text": "Échauffement des câbles et risque d'incendie", "isCorrect": True},
-                        {"text": "Explosion des ampoules", "isCorrect": False},
-                        {"text": "Augmentation de la tension", "isCorrect": False},
-                        {"text": "Panne d'internet", "isCorrect": False}
+                        {"text": "L'énergie de position ou potentielle", "isCorrect": True},
+                        {"text": "L'énergie cinétique de vitesse", "isCorrect": False},
+                        {"text": "L'énergie électrique de charge", "isCorrect": False},
+                        {"text": "L'énergie sonore de vibration", "isCorrect": False}
                     ],
-                    "correction": "Trop d'appareils demandent trop d'intensité, ce qui dépasse la capacité du câble."
+                    "correction": "**Rappel de cours :** Un objet possède de l'énergie simplement parce qu'il est en hauteur. S'il tombe, cette énergie se transforme en énergie cinétique."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Que mesure-t-on avec un ohmmètre ?",
+                    "question": "Comment s'appelle l'état d'un objet qui ne bouge pas ?",
                     "answerOptions": [
-                        {"text": "La résistance d'un dipôle hors tension", "isCorrect": True},
-                        {"text": "La tension d'une pile", "isCorrect": False},
-                        {"text": "La puissance d'un moteur", "isCorrect": False},
-                        {"text": "L'intensité d'une lampe", "isCorrect": False}
+                        {"text": "L'immobilité ou l'équilibre statique", "isCorrect": True},
+                        {"text": "Le mouvement rectiligne lent", "isCorrect": False},
+                        {"text": "La chute libre verticale", "isCorrect": False},
+                        {"text": "La rotation uniforme rapide", "isCorrect": False}
                     ],
-                    "correction": "Il ne faut jamais mesurer une résistance sur un circuit sous tension."
+                    "correction": "**Rappel de cours :** Un objet est immobile dans un référentiel donné si sa position ne change pas au cours du temps par rapport à ce référentiel."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Dans un circuit en série de deux lampes identiques branchées sur 12V :",
+                    "question": "Que signifie 100 km/h ?",
                     "answerOptions": [
-                        {"text": "Chaque lampe reçoit 6V", "isCorrect": True},
-                        {"text": "Chaque lampe reçoit 12V", "isCorrect": False},
-                        {"text": "Une lampe reçoit 12V et l'autre 0V", "isCorrect": False},
-                        {"text": "La tension totale devient 24V", "isCorrect": False}
+                        {"text": "Parcourir 100 km en une heure", "isCorrect": True},
+                        {"text": "Parcourir 1 km en 100 heures", "isCorrect": False},
+                        {"text": "Peser 100 kg sur une route", "isCorrect": False},
+                        {"text": "Rouler pendant 100 minutes", "isCorrect": False}
                     ],
-                    "correction": "La tension du générateur se partage entre les récepteurs."
+                    "correction": "**Rappel de cours :** C'est une unité de vitesse. À cette vitesse constante, vous faites le trajet Paris-Lille (200 km) en exactement 2 heures."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 4 : ÉNERGIE ET TRANSFORMATIONS (Q61 à Q80)
+        # THÈME 4 : ACOUSTIQUE ET OPTIQUE (Sons et Lumières) (Q61 à Q80)
         # =========================================================================
         4: {
-            "name": "THÈME 4 : ÉNERGIE ET TRANSFORMATIONS",
+            "name": "THÈME 4 : ACOUSTIQUE ET OPTIQUE (Sons et Lumières)",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quelle est l'unité légale du travail et de l'énergie ?",
+                    "question": "Quelle est l'unité de mesure de la fréquence d'un son ?",
                     "answerOptions": [
-                        {"text": "Joule (J)", "isCorrect": True},
-                        {"text": "Watt (W)", "isCorrect": False},
-                        {"text": "Newton (N)", "isCorrect": False},
-                        {"text": "Pascal (Pa)", "isCorrect": False}
+                        {"text": "L'unité nommée le Hertz (Hz)", "isCorrect": True},
+                        {"text": "L'unité nommée le Décibel (dB)", "isCorrect": False},
+                        {"text": "L'unité nommée le Watt (W)", "isCorrect": False},
+                        {"text": "L'unité nommée le Mètre (m)", "isCorrect": False}
                     ],
-                    "correction": "Le Joule honore le physicien James Prescott Joule pour ses travaux sur la chaleur."
+                    "correction": "**Rappel de cours :** La fréquence mesure le nombre de vibrations par seconde. Plus la fréquence est élevée, plus le son est aigu. Plus elle est basse, plus le son est grave."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Un radiateur transforme l'énergie électrique en énergie :",
+                    "question": "Comment appelle-t-on les sons que l'oreille humaine ne peut pas entendre car trop graves ?",
                     "answerOptions": [
-                        {"text": "Thermique", "isCorrect": True},
-                        {"text": "Mécanique", "isCorrect": False},
-                        {"text": "Chimique", "isCorrect": False},
-                        {"text": "Nucléaire", "isCorrect": False}
+                        {"text": "Les infrasons de basse fréquence", "isCorrect": True},
+                        {"text": "Les ultrasons de haute fréquence", "isCorrect": False},
+                        {"text": "Les sons audibles de fréquences moyennes", "isCorrect": False},
+                        {"text": "Les bruits blancs sans fréquence", "isCorrect": False}
                     ],
-                    "correction": "C'est l'application directe de l'effet Joule."
+                    "correction": "**Rappel de cours :** L'oreille humaine entend entre 20 Hz et 20 000 Hz. En dessous de 20 Hz, ce sont les infrasons (éléphants, séismes). Au-dessus de 20 000 Hz, ce sont les ultrasons (chauve-souris, échographie)."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "L'énergie 'stockée' dans l'essence est de l'énergie :",
+                    "question": "Quel appareil mesure le niveau d'intensité sonore ?",
                     "answerOptions": [
-                        {"text": "Chimique", "isCorrect": True},
-                        {"text": "Cinétique", "isCorrect": False},
-                        {"text": "Rayonnante", "isCorrect": False},
-                        {"text": "Élastique", "isCorrect": False}
+                        {"text": "Un sonomètre digital", "isCorrect": True},
+                        {"text": "Un fréquencemètre électronique", "isCorrect": False},
+                        {"text": "Un voltmètre de précision", "isCorrect": False},
+                        {"text": "Un thermomètre à laser", "isCorrect": False}
                     ],
-                    "correction": "Cette énergie est libérée lors de la combustion dans le moteur."
+                    "correction": "**Rappel de cours :** Le sonomètre donne un résultat en décibels (dB). C'est l'outil utilisé pour vérifier si le bruit au travail dépasse les limites légales."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quelle énergie possède un objet du fait de son altitude ?",
+                    "question": "À partir de quel niveau sonore (en dB) y a-t-il un risque pour l'oreille ?",
                     "answerOptions": [
-                        {"text": "Énergie potentielle de pesanteur", "isCorrect": True},
-                        {"text": "Énergie cinétique", "isCorrect": False},
-                        {"text": "Énergie électrique", "isCorrect": False},
-                        {"text": "Énergie sonore", "isCorrect": False}
+                        {"text": "Un niveau de quatre-vingt-cinq décibels", "isCorrect": True},
+                        {"text": "Un niveau de vingt décibels", "isCorrect": False},
+                        {"text": "Un niveau de cinquante décibels", "isCorrect": False},
+                        {"text": "Un niveau de dix décibels", "isCorrect": False}
                     ],
-                    "correction": "Plus l'objet est haut et lourd, plus cette énergie est grande (Epp = mgh)."
+                    "correction": "**Rappel de cours :** À 85 dB (seuil de danger), une exposition prolongée abîme les cellules de l'oreille. À 120 dB (seuil de douleur), les dégâts sont immédiats."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Le rôle d'un alternateur de centrale est de transformer l'énergie mécanique en :",
+                    "question": "Comment se déplace la lumière dans l'air ou dans le vide ?",
                     "answerOptions": [
-                        {"text": "Énergie électrique", "isCorrect": True},
-                        {"text": "Énergie thermique", "isCorrect": False},
-                        {"text": "Énergie lumineuse", "isCorrect": False},
-                        {"text": "Énergie hydraulique", "isCorrect": False}
+                        {"text": "En ligne droite uniquement", "isCorrect": True},
+                        {"text": "En suivant des courbes sinueuses", "isCorrect": False},
+                        {"text": "En faisant des cercles concentriques", "isCorrect": False},
+                        {"text": "Elle ne se déplace jamais", "isCorrect": False}
                     ],
-                    "correction": "L'alternateur est la pièce maîtresse de presque toutes les centrales électriques."
+                    "correction": "**Rappel de cours :** C'est le principe de la propagation rectiligne de la lumière. Un rayon lumineux est une droite."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "L'énergie solaire est captée par :",
+                    "question": "Quelles sont les trois couleurs primaires de la lumière (synthèse additive) ?",
                     "answerOptions": [
-                        {"text": "Des panneaux photovoltaïques", "isCorrect": True},
-                        {"text": "Des éoliennes", "isCorrect": False},
-                        {"text": "Des dynamos", "isCorrect": False},
-                        {"text": "Des batteries", "isCorrect": False}
+                        {"text": "Le Rouge, le Vert et le Bleu", "isCorrect": True},
+                        {"text": "Le Rouge, le Jaune et le Bleu", "isCorrect": False},
+                        {"text": "Le Cyan, le Magenta et le Jaune", "isCorrect": False},
+                        {"text": "Le Noir, le Blanc et le Gris", "isCorrect": False}
                     ],
-                    "correction": "Elle transforme le rayonnement en courant électrique continu."
+                    "correction": "**Rappel de cours :** En mélangeant ces trois couleurs (RVB), on peut créer toutes les autres, y compris le blanc. C'est le système utilisé par les écrans de télé et de téléphone."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Quelle est la principale source d'énergie d'une éolienne ?",
+                    "question": "Que se passe-t-il quand la lumière change de milieu (ex: passe de l'air à l'eau) ?",
                     "answerOptions": [
-                        {"text": "L'énergie mécanique du vent", "isCorrect": True},
-                        {"text": "La chaleur du soleil", "isCorrect": False},
-                        {"text": "Le mouvement des vagues", "isCorrect": False},
-                        {"text": "L'attraction de la Lune", "isCorrect": False}
+                        {"text": "Elle est déviée par réfraction", "isCorrect": True},
+                        {"text": "Elle s'arrête immédiatement", "isCorrect": False},
+                        {"text": "Elle change de couleur de base", "isCorrect": False},
+                        {"text": "Elle devient un son audible", "isCorrect": False}
                     ],
-                    "correction": "Le vent fait tourner les pales qui entraînent l'alternateur."
+                    "correction": "**Rappel de cours :** La réfraction explique pourquoi un bâton semble 'cassé' quand on le plonge dans un verre d'eau."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Qu'est-ce qu'une énergie 'fossile' ?",
+                    "question": "Lequel de ces objets est un objet diffusant pour la lumière ?",
                     "answerOptions": [
-                        {"text": "Une énergie issue de matières organiques décomposées depuis des millions d'années", "isCorrect": True},
-                        {"text": "Une énergie qui ne s'épuise jamais", "isCorrect": False},
-                        {"text": "L'énergie des volcans", "isCorrect": False},
-                        {"text": "L'énergie humaine", "isCorrect": False}
+                        {"text": "Une feuille de papier blanc", "isCorrect": True},
+                        {"text": "Le soleil brillant en été", "isCorrect": False},
+                        {"text": "Une ampoule LED allumée", "isCorrect": False},
+                        {"text": "Une flamme de bougie vive", "isCorrect": False}
                     ],
-                    "correction": "Exemples : pétrole, gaz naturel, charbon."
+                    "correction": "**Rappel de cours :** Une source primaire produit sa propre lumière (Soleil). Un objet diffusant ne fait que renvoyer la lumière qu'il reçoit."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "L'énergie thermique se mesure souvent en :",
+                    "question": "Quelle est la vitesse de la lumière (environ) ?",
                     "answerOptions": [
-                        {"text": "Degrés Celsius (°C) ou Joules (J)", "isCorrect": True},
-                        {"text": "Ampères", "isCorrect": False},
-                        {"text": "Mètres", "isCorrect": False},
-                        {"text": "Litre", "isCorrect": False}
+                        {"text": "Trois cent mille km par seconde", "isCorrect": True},
+                        {"text": "Mille deux cents km par heure", "isCorrect": False},
+                        {"text": "Trois cents mètres par seconde", "isCorrect": False},
+                        {"text": "Trois mille km par heure", "isCorrect": False}
                     ],
-                    "correction": "La température est un état, la chaleur (énergie) est un transfert."
+                    "correction": "**Rappel de cours :** Rien ne va plus vite que la lumière dans le vide. Elle met environ 8 minutes pour faire le trajet entre le Soleil et la Terre."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Un moteur électrique a un rendement de 80 %. Cela signifie :",
+                    "question": "Pourquoi voit-on un objet en couleur rouge ?",
                     "answerOptions": [
-                        {"text": "Qu'il transforme 80 % de l'énergie électrique en énergie mécanique utile", "isCorrect": True},
-                        {"text": "Qu'il perd 80 % de son énergie", "isCorrect": False},
-                        {"text": "Qu'il consomme 80 Watts", "isCorrect": False},
-                        {"text": "Qu'il coûte 80 euros", "isCorrect": False}
+                        {"text": "Il renvoie uniquement le rouge", "isCorrect": True},
+                        {"text": "Il absorbe uniquement le rouge", "isCorrect": False},
+                        {"text": "Il produit sa propre lumière rouge", "isCorrect": False},
+                        {"text": "Il est situé dans une pièce noire", "isCorrect": False}
                     ],
-                    "correction": "Le reste (20%) est perdu sous forme de chaleur."
+                    "correction": "**Rappel de cours :** Un objet coloré absorbe certaines couleurs de la lumière blanche et diffuse les autres. Une tomate rouge absorbe tout sauf le rouge qu'elle renvoie vers votre œil."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Quelle transformation a lieu dans une pile ?",
+                    "question": "Que contient une ombre propre ?",
                     "answerOptions": [
-                        {"text": "Énergie chimique vers énergie électrique", "isCorrect": True},
-                        {"text": "Énergie lumineuse vers électrique", "isCorrect": False},
-                        {"text": "Énergie nucléaire vers thermique", "isCorrect": False},
-                        {"text": "Énergie sonore vers électrique", "isCorrect": False}
+                        {"text": "La partie non éclairée de l'objet", "isCorrect": True},
+                        {"text": "L'ombre portée sur le sol noir", "isCorrect": False},
+                        {"text": "La source de lumière elle-même", "isCorrect": False},
+                        {"text": "Le reflet dans le miroir voisin", "isCorrect": False}
                     ],
-                    "correction": "Une réaction chimique à l'intérieur génère le mouvement des électrons."
+                    "correction": "**Rappel de cours :** Si vous éclairez une balle, la face qui n'est pas vers la lampe est dans l'ombre propre."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "L'énergie hydraulique utilise :",
+                    "question": "Quelle lentille permet d'agrandir un texte (loupe) ?",
                     "answerOptions": [
-                        {"text": "La force de l'eau en mouvement", "isCorrect": True},
-                        {"text": "La vapeur d'eau bouillante", "isCorrect": False},
-                        {"text": "L'hydrogène des molécules", "isCorrect": False},
-                        {"text": "La température de l'eau", "isCorrect": False}
+                        {"text": "Une lentille de type convergente", "isCorrect": True},
+                        {"text": "Une lentille de type divergente", "isCorrect": False},
+                        {"text": "Une vitre de type plane simple", "isCorrect": False},
+                        {"text": "Un morceau de carton opaque", "isCorrect": False}
                     ],
-                    "correction": "Le mouvement de l'eau fait tourner une turbine."
+                    "correction": "**Rappel de cours :** Les lentilles convergentes sont plus épaisses au centre qu'au bord. Elles font converger les rayons lumineux vers un point."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Le Joule est une toute petite unité. 1 kiloJoule (kJ) vaut :",
+                    "question": "Qu'est-ce qu'une onde sonore ?",
                     "answerOptions": [
-                        {"text": "1 000 Joules", "isCorrect": True},
-                        {"text": "100 Joules", "isCorrect": False},
-                        {"text": "10 Joules", "isCorrect": False},
-                        {"text": "0,001 Joule", "isCorrect": False}
+                        {"text": "Une vibration de la matière", "isCorrect": True},
+                        {"text": "Un jet de particules rapides", "isCorrect": False},
+                        {"text": "Un faisceau de rayons laser", "isCorrect": False},
+                        {"text": "Un courant électrique intense", "isCorrect": False}
                     ],
-                    "correction": "On utilise souvent le kJ en diététique (valeur énergétique des aliments)."
+                    "correction": "**Rappel de cours :** Le son fait vibrer les molécules de l'air. C'est pour cela que le son ne peut pas voyager dans le vide de l'espace."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "L'énergie rayonnante est transportée par :",
+                    "question": "Comment s'appelle le phénomène créant un arc-en-ciel ?",
                     "answerOptions": [
-                        {"text": "La lumière et les ondes électromagnétiques", "isCorrect": True},
-                        {"text": "Le son", "isCorrect": False},
-                        {"text": "L'eau des rivières", "isCorrect": False},
-                        {"text": "Les fils électriques", "isCorrect": False}
+                        {"text": "La dispersion de la lumière", "isCorrect": True},
+                        {"text": "La disparition de la lumière", "isCorrect": False},
+                        {"text": "La destruction de la lumière", "isCorrect": False},
+                        {"text": "La création de la lumière", "isCorrect": False}
                     ],
-                    "correction": "Le Soleil nous envoie de l'énergie rayonnante à travers le vide spatial."
+                    "correction": "**Rappel de cours :** Les gouttes de pluie décomposent la lumière blanche du soleil en sept couleurs principales."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Quelle source d'énergie est la plus polluante en CO2 ?",
+                    "question": "Lequel est un récepteur de lumière ?",
                     "answerOptions": [
-                        {"text": "Le charbon", "isCorrect": True},
-                        {"text": "Le vent", "isCorrect": False},
-                        {"text": "L'eau", "isCorrect": False},
-                        {"text": "Le soleil", "isCorrect": False}
+                        {"text": "L'œil humain ou un panneau solaire", "isCorrect": True},
+                        {"text": "La bougie ou une lampe de poche", "isCorrect": False},
+                        {"text": "Le miroir ou une plaque d'acier", "isCorrect": False},
+                        {"text": "Le projecteur de cinéma au mur", "isCorrect": False}
                     ],
-                    "correction": "Sa combustion rejette énormément de gaz à effet de serre."
+                    "correction": "**Rappel de cours :** Un récepteur reçoit l'énergie lumineuse et la transforme (en signal nerveux pour l'œil, en électricité pour le panneau)."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Que devient l'énergie perdue par un moteur qui chauffe ?",
-                    "answerOptions": [
-                        {"text": "Elle est dissipée dans l'environnement", "isCorrect": True},
-                        {"text": "Elle disparaît de l'univers", "isCorrect": False},
-                        {"text": "Elle se transforme en électricité", "isCorrect": False},
-                        {"text": "Elle augmente la vitesse", "isCorrect": False}
+                    "question": "Que signifie 100 dB par rapport à 80 dB ?",
+                    "answer:" : [
+                        {"text": "Le son est beaucoup plus intense", "isCorrect": True},
+                        {"text": "Le son est beaucoup plus aigu", "isCorrect": False},
+                        {"text": "Le son est beaucoup plus grave", "isCorrect": False},
+                        {"text": "Le son est beaucoup plus lent", "isCorrect": False}
                     ],
-                    "correction": "L'énergie est toujours conservée, mais elle n'est plus forcément sous une forme utile."
+                    "correction": "**Rappel de cours :** L'échelle des décibels n'est pas linéaire. Augmenter de 20 dB correspond à une intensité sonore multipliée par cent !"
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Quelle énergie utilise une calculatrice solaire ?",
+                    "question": "Quel est le rôle du cristallin dans l'œil ?",
                     "answerOptions": [
-                        {"text": "Énergie lumineuse", "isCorrect": True},
-                        {"text": "Énergie thermique", "isCorrect": False},
-                        {"text": "Énergie sonore", "isCorrect": False},
-                        {"text": "Énergie nucléaire", "isCorrect": False}
+                        {"text": "Il joue le rôle de lentille", "isCorrect": True},
+                        {"text": "Il joue le rôle d'écran plat", "isCorrect": False},
+                        {"text": "Il joue le rôle de lampe vive", "isCorrect": False},
+                        {"text": "Il joue le rôle de nerf optique", "isCorrect": False}
                     ],
-                    "correction": "La cellule photovoltaïque capte la lumière ambiante."
+                    "correction": "**Rappel de cours :** Le cristallin modifie sa forme pour faire la mise au point (accommodation) afin que l'image soit nette sur la rétine."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Un barrage stocke l'eau en hauteur. C'est une réserve d'énergie :",
+                    "question": "Comment se propage le son par rapport à la lumière ?",
                     "answerOptions": [
-                        {"text": "Potentielle", "isCorrect": True},
-                        {"text": "Cinétique", "isCorrect": False},
-                        {"text": "Chimique", "isCorrect": False},
-                        {"text": "Magnétique", "isCorrect": False}
+                        {"text": "Le son est beaucoup plus lent", "isCorrect": True},
+                        {"text": "Le son est beaucoup plus rapide", "isCorrect": False},
+                        {"text": "Ils vont à la même vitesse", "isCorrect": False},
+                        {"text": "Le son ne bouge jamais", "isCorrect": False}
                     ],
-                    "correction": "Cette énergie devient cinétique quand on ouvre les vannes."
+                    "correction": "**Rappel de cours :** Le son va à 340 m/s alors que la lumière va à 300 000 km/s. C'est pourquoi on voit l'éclair avant d'entendre le tonnerre."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Comment s'appelle l'unité de chaleur utilisée autrefois (1 cal ≈ 4,18 J) ?",
-                    "answerOptions": [
-                        {"text": "La calorie", "isCorrect": True},
-                        {"text": "Le degré", "isCorrect": False},
-                        {"text": "Le litre", "isCorrect": False},
-                        {"text": "Le gramme", "isCorrect": False}
-                    ],
-                    "correction": "On la retrouve encore sur les étiquettes nutritionnelles."
-                },
-                {
-                    "questionNumber": 80,
-                    "question": "Quel est le principal avantage des énergies renouvelables ?",
-                    "answerOptions": [
-                        {"text": "Elles sont inépuisables et rejettent peu de GES", "isCorrect": True},
-                        {"text": "Elles sont gratuites à l'installation", "isCorrect": False},
-                        {"text": "Elles fonctionnent 24h/24 sans exception", "isCorrect": False},
-                        {"text": "Elles ne prennent aucune place", "isCorrect": False}
-                    ],
-                    "correction": "Elles sont essentielles pour la lutte contre le changement climatique."
-                }
-            ]
-        },
-        # =========================================================================
-        # THÈME 5 : SIGNAUX ET TRANSMISSION DE L'INFORMATION (Q81 à Q100)
-        # =========================================================================
-        5: {
-            "name": "THÈME 5 : SIGNAUX ET TRANSMISSION DE L'INFORMATION",
-            "questions": [
-                {
-                    "questionNumber": 81,
-                    "question": "Qu'est-ce qu'une onde sonore ?",
-                    "answerOptions": [
-                        {"text": "Une vibration mécanique qui se propage dans un milieu", "isCorrect": True},
-                        {"text": "Un rayon de lumière", "isCorrect": False},
-                        {"text": "Un courant électrique", "isCorrect": False},
-                        {"text": "Une particule qui vole", "isCorrect": False}
-                    ],
-                    "correction": "Le son fait vibrer les molécules d'air (ou d'eau, de solide) de proche en proche."
-                },
-                {
-                    "questionNumber": 82,
-                    "question": "Comment appelle-t-on le nombre de vibrations par seconde ?",
-                    "answerOptions": [
-                        {"text": "La fréquence", "isCorrect": True},
-                        {"text": "La période", "isCorrect": False},
-                        {"text": "L'amplitude", "isCorrect": False},
-                        {"text": "La vitesse", "isCorrect": False}
-                    ],
-                    "correction": "Elle se mesure en Hertz (Hz)."
-                },
-                {
-                    "questionNumber": 83,
-                    "question": "Quelle est l'unité de la fréquence ?",
-                    "answerOptions": [
-                        {"text": "Hertz (Hz)", "isCorrect": True},
-                        {"text": "Décibel (dB)", "isCorrect": False},
-                        {"text": "Mètre", "isCorrect": False},
-                        {"text": "Seconde", "isCorrect": False}
-                    ],
-                    "correction": "1 Hz correspond à une vibration par seconde."
-                },
-                {
-                    "questionNumber": 84,
-                    "question": "Un son aigu possède une fréquence :",
-                    "answerOptions": [
-                        {"text": "Élevée", "isCorrect": True},
-                        {"text": "Basse", "isCorrect": False},
-                        {"text": "Nulle", "isCorrect": False},
-                        {"text": "Constante", "isCorrect": False}
-                    ],
-                    "correction": "Plus ça vibre vite, plus le son est aigu."
-                },
-                {
-                    "questionNumber": 85,
-                    "question": "Comment s'appelle l'appareil qui permet de visualiser une onde ?",
-                    "answerOptions": [
-                        {"text": "Un oscilloscope", "isCorrect": True},
-                        {"text": "Un voltmètre", "isCorrect": False},
-                        {"text": "Un microscope", "isCorrect": False},
-                        {"text": "Un thermomètre", "isCorrect": False}
-                    ],
-                    "correction": "Il affiche la tension ou le signal en fonction du temps."
-                },
-                {
-                    "questionNumber": 86,
-                    "question": "La période T est le temps d'un motif élémentaire. Elle s'exprime en :",
-                    "answerOptions": [
-                        {"text": "Secondes (s)", "isCorrect": True},
-                        {"text": "Hertz", "isCorrect": False},
-                        {"text": "Mètres", "isCorrect": False},
-                        {"text": "Degrés", "isCorrect": False}
-                    ],
-                    "correction": "C'est la durée avant que le signal ne se répète à l'identique."
-                },
-                {
-                    "questionNumber": 87,
-                    "question": "Quelle est la relation entre Fréquence (f) et Période (T) ?",
-                    "answerOptions": [
-                        {"text": "f = 1 / T", "isCorrect": True},
-                        {"text": "f = T", "isCorrect": False},
-                        {"text": "f = T × 2", "isCorrect": False},
-                        {"text": "f = T / 10", "isCorrect": False}
-                    ],
-                    "correction": "Elles sont inverses l'une de l'autre."
-                },
-                {
-                    "questionNumber": 88,
-                    "question": "Quel signal est utilisé par la télécommande de télévision ?",
-                    "answerOptions": [
-                        {"text": "Un signal infrarouge", "isCorrect": True},
-                        {"text": "Un signal sonore", "isCorrect": False},
-                        {"text": "Un rayon X", "isCorrect": False},
-                        {"text": "Un laser rouge visible", "isCorrect": False}
-                    ],
-                    "correction": "C'est une onde électromagnétique invisible pour l'œil humain."
-                },
-                {
-                    "questionNumber": 89,
-                    "question": "Qu'est-ce qu'une fibre optique ?",
-                    "answerOptions": [
-                        {"text": "Un fil de verre ou plastique qui guide la lumière", "isCorrect": True},
-                        {"text": "Un câble électrique en cuivre", "isCorrect": False},
-                        {"text": "Un tuyau pour l'eau", "isCorrect": False},
-                        {"text": "Une antenne radio", "isCorrect": False}
-                    ],
-                    "correction": "Elle permet de transmettre des données à très grande vitesse."
-                },
-                {
-                    "questionNumber": 90,
-                    "question": "La lumière fait partie de la famille des ondes :",
-                    "answerOptions": [
-                        {"text": "Électromagnétiques", "isCorrect": True},
-                        {"text": "Mécaniques", "isCorrect": False},
-                        {"text": "Sonores", "isCorrect": False},
-                        {"text": "Aquatiques", "isCorrect": False}
-                    ],
-                    "correction": "Contrairement au son, elle peut se propager dans le vide."
-                },
-                {
-                    "questionNumber": 91,
-                    "question": "Que signifie 'l'amplitude' d'un signal ?",
-                    "answerOptions": [
-                        {"text": "Sa valeur maximale (sa hauteur)", "isCorrect": True},
-                        {"text": "Sa durée", "isCorrect": False},
-                        {"text": "Sa vitesse", "isCorrect": False},
-                        {"text": "Sa couleur", "isCorrect": False}
-                    ],
-                    "correction": "Plus l'amplitude d'un son est grande, plus le volume sonore est fort."
-                },
-                {
-                    "questionNumber": 92,
-                    "question": "Quel est le rôle d'un capteur ?",
-                    "answerOptions": [
-                        {"text": "Transformer une grandeur physique en signal électrique", "isCorrect": True},
-                        {"text": "Produire de la chaleur", "isCorrect": False},
-                        {"text": "Fermer un circuit de force", "isCorrect": False},
-                        {"text": "Calculer la moyenne", "isCorrect": False}
-                    ],
-                    "correction": "Exemple : un microphone transforme le son en tension électrique."
-                },
-                {
-                    "questionNumber": 93,
-                    "question": "Quel signal est utilisé pour le Wi-Fi ou le téléphone portable ?",
-                    "answerOptions": [
-                        {"text": "Ondes radio (micro-ondes)", "isCorrect": True},
-                        {"text": "Ultrasons", "isCorrect": False},
-                        {"text": "Signaux de fumée", "isCorrect": False},
-                        {"text": "Lumière visible", "isCorrect": False}
-                    ],
-                    "correction": "Ce sont des ondes de haute fréquence captées par des antennes."
-                },
-                {
-                    "questionNumber": 94,
-                    "question": "Qu'est-ce qu'un signal analogique ?",
-                    "answerOptions": [
-                        {"text": "Un signal qui varie de façon continue dans le temps", "isCorrect": True},
-                        {"text": "Un signal composé uniquement de 0 et de 1", "isCorrect": False},
-                        {"text": "Un signal qui ne bouge pas", "isCorrect": False},
-                        {"text": "Une image papier", "isCorrect": False}
-                    ],
-                    "correction": "Le son naturel est analogique."
-                },
-                {
-                    "questionNumber": 95,
-                    "question": "Un signal numérique est composé de :",
-                    "answerOptions": [
-                        {"text": "Nombres binaires (0 et 1)", "isCorrect": True},
-                        {"text": "Vagues irrégulières", "isCorrect": False},
-                        {"text": "Chaleur", "isCorrect": False},
-                        {"text": "Pression d'air", "isCorrect": False}
-                    ],
-                    "correction": "C'est le langage des ordinateurs et de la TNT."
-                },
-                {
-                    "questionNumber": 96,
-                    "question": "Pourquoi le ciel nous paraît-il bleu ?",
-                    "answerOptions": [
-                        {"text": "Car l'atmosphère diffuse davantage la lumière bleue du Soleil", "isCorrect": True},
-                        {"text": "Car le Soleil est bleu", "isCorrect": False},
-                        {"text": "Car l'océan se reflète dans le ciel", "isCorrect": False},
-                        {"text": "Car il transforme la lumière rouge en lumière bleue", "isCorrect": False}
-                    ],
-                    "correction": "La couleur d'un objet dépend de la lumière qu'il renvoie (diffuse) vers notre œil."
-                },
-                {
-                    "questionNumber": 97,
-                    "question": "Quel est le symbole de la grandeur 'Longueur d'onde' ?",
-                    "answerOptions": [
-                        {"text": "λ", "isCorrect": True},
-                        {"text": "Ω", "isCorrect": False},
-                        {"text": "T", "isCorrect": False},
-                        {"text": "f", "isCorrect": False}
-                    ],
-                    "correction": "On utilise la lettre grecque lambda (λ) pour désigner la longueur d'onde."
-                },
-                {
-                    "questionNumber": 98,
-                    "question": "Les ondes Wi-Fi appartiennent à quelle famille de signaux ?",
-                    "answerOptions": [
-                        {"text": "Les ondes radio", "isCorrect": True},
-                        {"text": "Les ondes sonores", "isCorrect": False},
-                        {"text": "Les rayons gamma", "isCorrect": False},
-                        {"text": "Les rayonnements alpha", "isCorrect": False}
-                    ],
-                    "correction": "Le Wi-Fi utilise des ondes électromagnétiques de type radio."
-                },
-                {
-                    "questionNumber": 99,
                     "question": "Qu'est-ce qu'un acouphène ?",
                     "answerOptions": [
-                        {"text": "Un sifflement ou bourdonnement perçu sans bruit extérieur", "isCorrect": True},
-                        {"text": "Une perte totale et définitive de l'audition", "isCorrect": False},
-                        {"text": "Une infection bactérienne de l'oreille interne", "isCorrect": False},
-                        {"text": "Un appareil permettant de mieux entendre les sons", "isCorrect": False}
+                        {"text": "Un sifflement perçu sans bruit externe", "isCorrect": True},
+                        {"text": "Une perte totale de l'audition", "isCorrect": False},
+                        {"text": "Une infection de l'oreille interne", "isCorrect": False},
+                        {"text": "Un appareil pour mieux entendre", "isCorrect": False}
                     ],
-                    "correction": "L'acouphène est un symptôme de traumatisme auditif, souvent suite à une exposition sonore excessive."
+                    "correction": "**Rappel de cours :** L'acouphène est un symptôme de traumatisme auditif, souvent dû à une exposition excessive au bruit (concert, machine)."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quelle technologie utilise la lumière pour transmettre des données à très grande vitesse ?",
+                    "question": "Quelle technologie utilise la lumière pour internet ?",
                     "answerOptions": [
-                        {"text": "La fibre optique", "isCorrect": True},
-                        {"text": "Le câble coaxial", "isCorrect": False},
-                        {"text": "Le fil de cuivre", "isCorrect": False},
-                        {"text": "La liaison satellite", "isCorrect": False}
+                        {"text": "La fibre optique ultra-rapide", "isCorrect": True},
+                        {"text": "Le câble coaxial en cuivre", "isCorrect": False},
+                        {"text": "L'antenne radio de télévision", "isCorrect": False},
+                        {"text": "La liaison par satellite lointain", "isCorrect": False}
                     ],
-                    "correction": "La fibre optique guide des signaux lumineux sur de longues distances sans perte majeure de débit."
+                    "correction": "**Rappel de cours :** La fibre optique guide des signaux lumineux sur de longues distances sans perte de débit. C'est la base d'Internet haut débit."
                 }
             ]
         }

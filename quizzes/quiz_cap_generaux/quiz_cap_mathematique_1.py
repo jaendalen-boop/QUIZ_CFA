@@ -1,5 +1,5 @@
 quiz_data = {
-    "title": "Quiz Mathématiques - Niveau CAP (100 Questions)",
+    "title": "Quiz Mathématiques - Niveau CAP (100 Questions) - Version Optimisée",
     "themes": {
         # =========================================================================
         # THÈME 1 : CALCULS COMMERCIAUX ET FINANCIERS (Q1 à Q20)
@@ -11,12 +11,12 @@ quiz_data = {
                     "questionNumber": 1,
                     "question": "Quel est le montant de la TVA si le prix HT est de 100 € et le taux est de 20 % ?",
                     "answerOptions": [
-                        {"text": "20 €", "isCorrect": True},
-                        {"text": "120 €", "isCorrect": False},
-                        {"text": "10 €", "isCorrect": False},
-                        {"text": "5 €", "isCorrect": False}
+                        {"text": "Le montant de la taxe est de vingt euros", "isCorrect": True},
+                        {"text": "Le montant de la taxe est de cent vingt euros", "isCorrect": False},
+                        {"text": "Le montant de la taxe est de dix euros", "isCorrect": False},
+                        {"text": "Le montant de la taxe est de cinq euros", "isCorrect": False}
                     ],
-                    "correction": "Pour calculer le montant de la TVA, on multiplie le Prix Hors Taxe par le taux (sous forme décimale). Ici : 100 × 0,20 = 20 €."
+                    "correction": "**Rappel de cours :** Pour calculer le montant de la taxe (TVA), on multiplie le Prix Hors Taxe par le taux exprimé sous forme décimale. Calcul : 100 € x 0,20 = 20 €. Le montant de la TVA s'ajoute ensuite au prix HT pour donner le prix TTC."
                 },
                 {
                     "questionNumber": 2,
@@ -25,1108 +25,1119 @@ quiz_data = {
                         {"text": "On additionne le Prix HT et le montant de la TVA", "isCorrect": True},
                         {"text": "On soustrait le montant de la TVA au Prix HT", "isCorrect": False},
                         {"text": "On multiplie le Prix HT par le montant de la TVA", "isCorrect": False},
-                        {"text": "On divise le Prix HT par le taux de TVA", "isCorrect": False}
+                        {"text": "On divise le Prix HT par le montant de la TVA", "isCorrect": False}
                     ],
-                    "correction": "Le Prix TTC (Toutes Taxes Comprises) correspond au Prix HT (Hors Taxe) auquel on ajoute le montant de la taxe."
+                    "correction": "**Rappel de cours :** Le Prix Toutes Taxes Comprises (TTC) représente le montant total payé par le client. Il est égal à la somme du Prix Hors Taxe (HT) et de la Taxe sur la Valeur Ajoutée (TVA). Formule : TTC = HT + TVA."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Si un article coûte 50 € et bénéficie d'une remise de 10 %, quel est le montant de la remise ?",
+                    "question": "Un article à 50 € bénéficie d'une remise de 10 %. Quel est le montant de la réduction ?",
                     "answerOptions": [
-                        {"text": "5 €", "isCorrect": True},
-                        {"text": "45 €", "isCorrect": False},
-                        {"text": "10 €", "isCorrect": False},
-                        {"text": "1 €", "isCorrect": False}
+                        {"text": "La réduction est égale à cinq euros", "isCorrect": True},
+                        {"text": "La réduction est égale à dix euros", "isCorrect": False},
+                        {"text": "La réduction est égale à quarante-cinq euros", "isCorrect": False},
+                        {"text": "La réduction est égale à un euro", "isCorrect": False}
                     ],
-                    "correction": "Le montant de la remise se calcule ainsi : Prix initial × (Taux / 100). Soit 50 × 0,10 = 5 €."
+                    "correction": "**Rappel de cours :** Pour trouver le montant d'une remise, on multiplie le prix initial par le pourcentage de réduction. Calcul : 50 € x (10/100) = 50 x 0,10 = 5 €. Le nouveau prix sera de 45 € (50 - 5)."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Quel est le prix net à payer pour un article à 80 € avec une réduction de 20 € ?",
+                    "question": "Que signifie le sigle HT dans un document commercial ?",
                     "answerOptions": [
-                        {"text": "60 €", "isCorrect": True},
-                        {"text": "100 €", "isCorrect": False},
-                        {"text": "40 €", "isCorrect": False},
-                        {"text": "70 €", "isCorrect": False}
+                        {"text": "Le montant global Hors Taxes", "isCorrect": True},
+                        {"text": "La Haute Tension électrique", "isCorrect": False},
+                        {"text": "Les Honoraires du Travailleur", "isCorrect": False},
+                        {"text": "Le Haut Tarif des marchandises", "isCorrect": False}
                     ],
-                    "correction": "Prix Net = Prix Brut - Remise. Donc 80 - 20 = 60 €."
+                    "correction": "**Rappel de cours :** Le prix Hors Taxes (HT) est le prix d'un produit ou d'un service avant l'application des taxes gouvernementales (TVA). C'est la base de calcul utilisée par les professionnels entre eux."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Comment exprime-t-on 0,75 sous forme de pourcentage ?",
+                    "question": "Si le prix TTC est de 60 € et la TVA est de 10 €, quel est le prix HT ?",
                     "answerOptions": [
-                        {"text": "75 %", "isCorrect": True},
-                        {"text": "7,5 %", "isCorrect": False},
-                        {"text": "0,75 %", "isCorrect": False},
-                        {"text": "750 %", "isCorrect": False}
+                        {"text": "Le prix HT est de cinquante euros", "isCorrect": True},
+                        {"text": "Le prix HT est de soixante-dix euros", "isCorrect": False},
+                        {"text": "Le prix HT est de six euros seulement", "isCorrect": False},
+                        {"text": "Le prix HT est de soixante euros", "isCorrect": False}
                     ],
-                    "correction": "Pour passer d'un nombre décimal au pourcentage, on multiplie par 100."
+                    "correction": "**Rappel de cours :** On utilise la formule inverse du TTC. Puisque TTC = HT + TVA, alors HT = TTC - TVA. Calcul : 60 € - 10 € = 50 €."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Si 3 stylos coûtent 6 €, combien coûtent 9 stylos (situation de proportionnalité) ?",
+                    "question": "Un client achète 3 articles à 12 € l'unité. Quel est le montant total ?",
                     "answerOptions": [
-                        {"text": "18 €", "isCorrect": True},
-                        {"text": "12 €", "isCorrect": False},
-                        {"text": "27 €", "isCorrect": False},
-                        {"text": "9 €", "isCorrect": False}
+                        {"text": "Le montant total est de trente-six euros", "isCorrect": True},
+                        {"text": "Le montant total est de quinze euros", "isCorrect": False},
+                        {"text": "Le montant total est de vingt-quatre euros", "isCorrect": False},
+                        {"text": "Le montant total est de quarante euros", "isCorrect": False}
                     ],
-                    "correction": "On multiplie par 3 le nombre de stylos, donc on multiplie par 3 le prix (6 × 3 = 18)."
+                    "correction": "**Rappel de cours :** Pour calculer un prix total, on effectue une multiplication simple de la quantité par le prix unitaire. Calcul : 3 x 12 € = 36 €."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Qu'est-ce que l'intérêt simple dans un placement ?",
+                    "question": "Quelle est l'utilité d'un ticket de caisse en magasin ?",
                     "answerOptions": [
-                        {"text": "La somme rapportée par le capital placé sur une période", "isCorrect": True},
-                        {"text": "Le montant total rendu à la fin", "isCorrect": False},
-                        {"text": "Le prix d'achat du produit", "isCorrect": False},
-                        {"text": "Une taxe de l'État", "isCorrect": False}
+                        {"text": "Servir de preuve d'achat pour le client", "isCorrect": True},
+                        {"text": "Décorer l'intérieur du sac de courses", "isCorrect": False},
+                        {"text": "Donner l'adresse de tous les autres magasins", "isCorrect": False},
+                        {"text": "Calculer la météo locale de la journée", "isCorrect": False}
                     ],
-                    "correction": "L'intérêt est le loyer de l'argent prêté ou placé."
+                    "correction": "**Rappel de cours :** Le ticket de caisse détaille les achats, les taxes payées et le mode de règlement. Il est indispensable pour effectuer un échange, obtenir un remboursement ou faire valoir une garantie."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Calculez 20 % de 250.",
+                    "question": "Si un taux de TVA est de 5,5 %, comment l'écrit-on sous forme décimale ?",
                     "answerOptions": [
-                        {"text": "50", "isCorrect": True},
-                        {"text": "25", "isCorrect": False},
-                        {"text": "100", "isCorrect": False},
-                        {"text": "5", "isCorrect": False}
+                        {"text": "Le nombre décimal zéro virgule zéro cinquante-cinq", "isCorrect": True},
+                        {"text": "Le nombre décimal zéro virgule cinquante-cinq", "isCorrect": False},
+                        {"text": "Le nombre décimal cinq virgule cinq", "isCorrect": False},
+                        {"text": "Le nombre entier cinquante-cinq", "isCorrect": False}
                     ],
-                    "correction": "250 × 0,20 = 50."
+                    "correction": "**Rappel de cours :** Pour passer d'un pourcentage à un nombre décimal, on divise par 100. Calcul : 5,5 / 100 = 0,055. Cette valeur est utilisée pour multiplier directement les montants lors des calculs de taxes."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Un produit affiché à 120 € TTC avec une TVA à 20 € coûte combien en Hors Taxe ?",
+                    "question": "Qu'est-ce qu'une remise exceptionnelle ?",
                     "answerOptions": [
-                        {"text": "100 €", "isCorrect": True},
-                        {"text": "140 €", "isCorrect": False},
-                        {"text": "110 €", "isCorrect": False},
-                        {"text": "80 €", "isCorrect": False}
+                        {"text": "Une réduction accordée pour un événement précis", "isCorrect": True},
+                        {"text": "Une augmentation de prix pour les clients", "isCorrect": False},
+                        {"text": "Une taxe supplémentaire imposée par la ville", "isCorrect": False},
+                        {"text": "Le paiement obligatoire d'un acompte financier", "isCorrect": False}
                     ],
-                    "correction": "Prix HT = Prix TTC - Montant TVA. Soit 120 - 20 = 100 €."
+                    "correction": "**Rappel de cours :** Une remise est un geste commercial (soldes, fidélité, défaut mineur). Elle se déduit du prix de vente pour obtenir le prix net à payer."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Quelle est la formule du coefficient multiplicateur pour une hausse de 5 % ?",
+                    "question": "Sur une facture, que signifie le terme 'Net à payer' ?",
                     "answerOptions": [
-                        {"text": "1,05", "isCorrect": True},
-                        {"text": "0,05", "isCorrect": False},
-                        {"text": "1,5", "isCorrect": False},
-                        {"text": "5", "isCorrect": False}
+                        {"text": "La somme finale que le client doit verser", "isCorrect": True},
+                        {"text": "La somme des remises accordées par le vendeur", "isCorrect": False},
+                        {"text": "Le poids total des marchandises livrées", "isCorrect": False},
+                        {"text": "Le nom du transporteur chargé de la livraison", "isCorrect": False}
                     ],
-                    "correction": "Le CM d'une hausse est (1 + t/100), soit 1 + 0,05 = 1,05."
+                    "correction": "**Rappel de cours :** Le 'Net à payer' est le résultat final de tous les calculs (HT + TVA - Remises). C'est le montant effectif qui sortira du portefeuille du client."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Quelle est la formule du coefficient multiplicateur pour une baisse de 10 % ?",
+                    "question": "Quel est le montant de la TVA pour un produit HT de 200 € à 20 % ?",
                     "answerOptions": [
-                        {"text": "0,90", "isCorrect": True},
-                        {"text": "1,10", "isCorrect": False},
-                        {"text": "0,10", "isCorrect": False},
-                        {"text": "0,99", "isCorrect": False}
+                        {"text": "Le montant de la taxe est de quarante euros", "isCorrect": True},
+                        {"text": "Le montant de la taxe est de vingt euros", "isCorrect": False},
+                        {"text": "Le montant de la taxe est de deux cents euros", "isCorrect": False},
+                        {"text": "Le montant de la taxe est de deux euros", "isCorrect": False}
                     ],
-                    "correction": "Le CM d'une baisse est (1 - t/100), soit 1 - 0,10 = 0,90."
+                    "correction": "**Rappel de cours :** On applique la formule (Prix HT x Taux). Calcul : 200 € x 0,20 = 40 €. Le prix TTC serait alors de 240 €."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Si une échelle est de 1/100, combien représente 1 cm sur le plan dans la réalité ?",
+                    "question": "Comment calcule-t-on le montant d'une TVA à 10 % sur un service ?",
                     "answerOptions": [
-                        {"text": "100 cm (ou 1 m)", "isCorrect": True},
-                        {"text": "10 cm", "isCorrect": False},
-                        {"text": "1000 cm", "isCorrect": False},
-                        {"text": "1 cm", "isCorrect": False}
+                        {"text": "On divise le prix Hors Taxes par dix", "isCorrect": True},
+                        {"text": "On multiplie le prix Hors Taxes par dix", "isCorrect": False},
+                        {"text": "On soustrait dix euros au prix global", "isCorrect": False},
+                        {"text": "On ajoute dix pour cent au poids total", "isCorrect": False}
                     ],
-                    "correction": "L'échelle 1/100 signifie que la réalité est 100 fois plus grande que le dessin."
+                    "correction": "**Rappel de cours :** Puisque 10 % correspond à la fraction 10/100 ou 1/10, calculer 10 % d'une valeur revient à la diviser par 10. Exemple : pour 150 € HT, la TVA est de 15 €."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Comment calcule-t-on une vitesse moyenne ?",
+                    "question": "Un produit de 100 € subit une augmentation de 5 %. Quel est son nouveau prix ?",
                     "answerOptions": [
-                        {"text": "Distance / Temps", "isCorrect": True},
-                        {"text": "Distance × Temps", "isCorrect": False},
-                        {"text": "Temps / Distance", "isCorrect": False},
-                        {"text": "Distance + Temps", "isCorrect": False}
+                        {"text": "Le nouveau prix est de cent cinq euros", "isCorrect": True},
+                        {"text": "Le nouveau prix est de quatre-vingt-quinze euros", "isCorrect": False},
+                        {"text": "Le nouveau prix est de cent cinquante euros", "isCorrect": False},
+                        {"text": "Le nouveau prix est de cinq euros seulement", "isCorrect": False}
                     ],
-                    "correction": "V = d / t. C'est le rapport entre la distance parcourue et la durée du parcours."
+                    "correction": "**Rappel de cours :** Calcul de l'augmentation : 100 € x 0,05 = 5 €. On ajoute cette somme au prix initial : 100 + 5 = 105 €. En une seule étape, on peut multiplier par 1,05."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Convertissez 1h30 minutes en heures décimales.",
+                    "question": "Qu'est-ce qu'une facture proforma ?",
                     "answerOptions": [
-                        {"text": "1,5 h", "isCorrect": True},
-                        {"text": "1,3 h", "isCorrect": False},
-                        {"text": "1,30 h", "isCorrect": False},
-                        {"text": "2 h", "isCorrect": False}
+                        {"text": "Un document provisoire servant de devis", "isCorrect": True},
+                        {"text": "Un reçu final après le paiement comptant", "isCorrect": False},
+                        {"text": "Un bon de livraison sans aucun prix affiché", "isCorrect": False},
+                        {"text": "Une lettre de réclamation pour colis abîmé", "isCorrect": False}
                     ],
-                    "correction": "30 minutes correspondent à la moitié d'une heure (30/60 = 0,5)."
+                    "correction": "**Rappel de cours :** La facture proforma permet au client de connaître les conditions précises de vente avant de confirmer sa commande. Elle n'a pas de valeur comptable finale mais sert de base à l'accord."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quelle est la valeur de 1/4 en écriture décimale ?",
+                    "question": "Comment appelle-t-on l'argent rendu au client lors d'un achat en espèces ?",
                     "answerOptions": [
-                        {"text": "0,25", "isCorrect": True},
-                        {"text": "0,4", "isCorrect": False},
-                        {"text": "0,5", "isCorrect": False},
-                        {"text": "0,75", "isCorrect": False}
+                        {"text": "La monnaie ou le reliquat du paiement", "isCorrect": True},
+                        {"text": "La taxe de service sur la vente directe", "isCorrect": False},
+                        {"text": "Le bénéfice net du commerçant local", "isCorrect": False},
+                        {"text": "Le pourboire facultatif pour le vendeur", "isCorrect": False}
                     ],
-                    "correction": "1 divisé par 4 égale 0,25 (un quart)."
+                    "correction": "**Rappel de cours :** La monnaie rendue est la différence entre la somme donnée par le client et le prix TTC. Calcul : Somme donnée - Prix TTC = Monnaie à rendre."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Un capital de 1000 € placé à 2 % d'intérêt simple pendant un an rapporte :",
+                    "question": "Un commerçant achète un produit 10 € et le revend 15 €. Quel est son bénéfice ?",
                     "answerOptions": [
-                        {"text": "20 €", "isCorrect": True},
-                        {"text": "2 €", "isCorrect": False},
-                        {"text": "200 €", "isCorrect": False},
-                        {"text": "1020 €", "isCorrect": False}
+                        {"text": "Le bénéfice brut est de cinq euros", "isCorrect": True},
+                        {"text": "Le bénéfice brut est de vingt-cinq euros", "isCorrect": False},
+                        {"text": "Le bénéfice brut est de dix euros", "isCorrect": False},
+                        {"text": "Le bénéfice brut est de cent cinquante euros", "isCorrect": False}
                     ],
-                    "correction": "Intérêt = Capital × Taux × Durée. Soit 1000 × 0,02 × 1 = 20 €."
+                    "correction": "**Rappel de cours :** La marge brute (ou bénéfice) se calcule en faisant la différence entre le prix de vente et le prix d'achat. Calcul : 15 € - 10 € = 5 €."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Le prix HT d'un repas est de 20 €. La TVA est de 10 %. Quel est le prix TTC ?",
+                    "question": "Quel est le taux de TVA normal en France pour la majorité des produits ?",
                     "answerOptions": [
-                        {"text": "22 €", "isCorrect": True},
-                        {"text": "21 €", "isCorrect": False},
-                        {"text": "30 €", "isCorrect": False},
-                        {"text": "18 €", "isCorrect": False}
+                        {"text": "Un taux fixe de vingt pour cent", "isCorrect": True},
+                        {"text": "Un taux fixe de cinquante pour cent", "isCorrect": False},
+                        {"text": "Un taux fixe de cinq virgule cinq pour cent", "isCorrect": False},
+                        {"text": "Un taux fixe de deux pour cent seulement", "isCorrect": False}
                     ],
-                    "correction": "TVA = 20 × 0,10 = 2 €. Prix TTC = 20 + 2 = 22 €."
+                    "correction": "**Rappel de cours :** En France, le taux normal est de 20 %. Il existe des taux réduits : 10 % (restauration, transports), 5,5 % (produits alimentaires de base, livres) et 2,1 % (médicaments remboursés)."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quel est le résultat de 4² ?",
+                    "question": "Que signifie 'Payer à crédit' ?",
                     "answerOptions": [
-                        {"text": "16", "isCorrect": True},
-                        {"text": "8", "isCorrect": False},
-                        {"text": "4", "isCorrect": False},
-                        {"text": "12", "isCorrect": False}
+                        {"text": "Payer la somme totale plus tard", "isCorrect": True},
+                        {"text": "Payer la somme totale immédiatement", "isCorrect": False},
+                        {"text": "Payer avec des pièces de monnaie", "isCorrect": False},
+                        {"text": "Ne jamais payer la marchandise reçue", "isCorrect": False}
                     ],
-                    "correction": "Un nombre au carré est multiplié par lui-même (4 × 4 = 16)."
+                    "correction": "**Rappel de cours :** Le crédit (ou paiement différé) permet d'obtenir un bien tout de suite et de le payer plus tard, souvent en plusieurs fois (mensualités), parfois avec des intérêts supplémentaires."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Dans un tableau de proportionnalité, comment calcule-t-on la quatrième proportionnelle ?",
+                    "question": "Traduisez 25 % en fraction simplifiée.",
                     "answerOptions": [
-                        {"text": "Le produit en croix", "isCorrect": True},
-                        {"text": "L'addition en croix", "isCorrect": False},
-                        {"text": "La soustraction des colonnes", "isCorrect": False},
-                        {"text": "En devinant", "isCorrect": False}
+                        {"text": "La fraction égale à un quart", "isCorrect": True},
+                        {"text": "La fraction égale à un demi", "isCorrect": False},
+                        {"text": "La fraction égale à trois quarts", "isCorrect": False},
+                        {"text": "La fraction égale à un cinquième", "isCorrect": False}
                     ],
-                    "correction": "On multiplie les deux nombres en diagonale et on divise par le troisième."
+                    "correction": "**Rappel de cours :** 25 % signifie 25/100. En divisant le numérateur et le dénominateur par 25, on obtient la fraction simplifiée 1/4. C'est le quart de l'unité."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Que signifie le sigle HT ?",
+                    "question": "Un pantalon à 40 € est soldé à -50 %. Quel est son nouveau prix ?",
                     "answerOptions": [
-                        {"text": "Hors Taxe", "isCorrect": True},
-                        {"text": "Haute Tarif", "isCorrect": False},
-                        {"text": "Heures de Travail", "isCorrect": False},
-                        {"text": "Habitation Terminée", "isCorrect": False}
+                        {"text": "Le prix soldé est de vingt euros", "isCorrect": True},
+                        {"text": "Le prix soldé est de dix euros", "isCorrect": False},
+                        {"text": "Le prix soldé est de trente euros", "isCorrect": False},
+                        {"text": "Le prix soldé est de quarante euros", "isCorrect": False}
                     ],
-                    "correction": "C'est le prix du produit avant l'application des taxes gouvernementales."
+                    "correction": "**Rappel de cours :** Une réduction de 50 % revient à diviser le prix par deux. Calcul : 40 € / 2 = 20 €. C'est la moitié du prix initial."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 2 : GÉOMÉTRIE ET MESURES (Q21 à Q40)
+        # THÈME 2 : GÉOMÉTRIE PLANE, PÉRIMÈTRES ET AIRES (Q21 à Q40)
         # =========================================================================
         2: {
-            "name": "THÈME 2 : GÉOMÉTRIE ET MESURES",
+            "name": "THÈME 2 : GÉOMÉTRIE PLANE, PÉRIMÈTRES ET AIRES",
             "questions": [
                 {
                     "questionNumber": 21,
                     "question": "Quelle est la formule du périmètre d'un carré de côté 'c' ?",
                     "answerOptions": [
-                        {"text": "4 × c", "isCorrect": True},
-                        {"text": "c × c", "isCorrect": False},
-                        {"text": "2 × c", "isCorrect": False},
-                        {"text": "c + 4", "isCorrect": False}
+                        {"text": "La longueur du côté multipliée par quatre", "isCorrect": True},
+                        {"text": "La longueur du côté multipliée par elle-même", "isCorrect": False},
+                        {"text": "La longueur du côté multipliée par deux", "isCorrect": False},
+                        {"text": "La longueur du côté additionnée à deux", "isCorrect": False}
                     ],
-                    "correction": "Le périmètre est la somme des longueurs des 4 côtés égaux."
+                    "correction": "**Rappel de cours :** Le périmètre est la longueur du contour. Pour un carré, les 4 côtés sont égaux, donc P = c + c + c + c = 4 x c."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Quelle est la formule de l'aire d'un rectangle ?",
+                    "question": "Comment calcule-t-on l'aire (la surface) d'un rectangle ?",
                     "answerOptions": [
-                        {"text": "Longueur × largeur", "isCorrect": True},
-                        {"text": "Longueur + largeur", "isCorrect": False},
-                        {"text": "(Longueur + largeur) × 2", "isCorrect": False},
-                        {"text": "Côté × Côté", "isCorrect": False}
+                        {"text": "La longueur multipliée par la largeur", "isCorrect": True},
+                        {"text": "La longueur additionnée à la largeur", "isCorrect": False},
+                        {"text": "Le double de la somme longueur et largeur", "isCorrect": False},
+                        {"text": "La longueur divisée par la largeur totale", "isCorrect": False}
                     ],
-                    "correction": "L'aire d'un rectangle est le produit de ses deux dimensions."
+                    "correction": "**Rappel de cours :** L'aire d'un rectangle se calcule en multipliant ses deux dimensions : Longueur (L) x largeur (l). Le résultat s'exprime en unités de surface (cm², m², etc.)."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quelle est l'unité de mesure principale d'une surface ?",
+                    "question": "Quelle est la somme des angles d'un triangle quelconque ?",
                     "answerOptions": [
-                        {"text": "Le mètre carré (m²)", "isCorrect": True},
-                        {"text": "Le mètre (m)", "isCorrect": False},
-                        {"text": "Le mètre cube (m³)", "isCorrect": False},
-                        {"text": "Le litre (L)", "isCorrect": False}
+                        {"text": "Un total de cent-quatre-vingts degrés", "isCorrect": True},
+                        {"text": "Un total de quatre-vingt-dix degrés", "isCorrect": False},
+                        {"text": "Un total de trois-cent-soixante degrés", "isCorrect": False},
+                        {"text": "Un total de cent degrés exactement", "isCorrect": False}
                     ],
-                    "correction": "Une surface s'exprime en unités 'carré'."
+                    "correction": "**Rappel de cours :** C'est une propriété fondamentale de la géométrie : dans n'importe quel triangle, si on additionne la mesure des trois angles, on obtient toujours 180°."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Comment calcule-t-on le volume d'un pavé droit (parallélépipède) ?",
+                    "question": "Comment appelle-t-on un triangle possédant un angle droit (90°) ?",
                     "answerOptions": [
-                        {"text": "Longueur × largeur × hauteur", "isCorrect": True},
-                        {"text": "Longueur + largeur + hauteur", "isCorrect": False},
-                        {"text": "Aire de la base / hauteur", "isCorrect": False},
-                        {"text": "Côté × 3", "isCorrect": False}
+                        {"text": "Un triangle de type rectangle", "isCorrect": True},
+                        {"text": "Un triangle de type isocèle", "isCorrect": False},
+                        {"text": "Un triangle de type équilatéral", "isCorrect": False},
+                        {"text": "Un triangle de type quelconque", "isCorrect": False}
                     ],
-                    "correction": "Le volume est le produit des trois dimensions."
+                    "correction": "**Rappel de cours :** Un triangle rectangle possède un angle de 90°. Le côté opposé à cet angle s'appelle l'hypoténuse. On utilise le théorème de Pythagore dans ce type de triangle."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quel outil utilise-t-on pour mesurer un angle ?",
+                    "question": "Quelle est la valeur approximative du nombre Pi ?",
                     "answerOptions": [
-                        {"text": "Un rapporteur", "isCorrect": True},
-                        {"text": "Un compas", "isCorrect": False},
-                        {"text": "Une règle graduée", "isCorrect": False},
-                        {"text": "Une équerre", "isCorrect": False}
+                        {"text": "La valeur décimale de trois virgule quatorze", "isCorrect": True},
+                        {"text": "La valeur décimale de deux virgule sept", "isCorrect": False},
+                        {"text": "La valeur entière simple de trois", "isCorrect": False},
+                        {"text": "La valeur décimale de trois virgule vingt", "isCorrect": False}
                     ],
-                    "correction": "Le rapporteur permet de lire la mesure d'un angle en degrés."
+                    "correction": "**Rappel de cours :** Pi (π) est un nombre irrationnel. On utilise généralement la valeur approchée 3,14 pour calculer le périmètre (2πR) ou l'aire (πR²) d'un cercle."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Combien font 180° pour un angle ?",
+                    "question": "Un triangle équilatéral possède :",
                     "answerOptions": [
-                        {"text": "Un angle plat", "isCorrect": True},
-                        {"text": "Un angle droit", "isCorrect": False},
-                        {"text": "Un angle aigu", "isCorrect": False},
-                        {"text": "Un cercle complet", "isCorrect": False}
+                        {"text": "Trois côtés de même longueur exactement", "isCorrect": True},
+                        {"text": "Deux côtés de même longueur uniquement", "isCorrect": False},
+                        {"text": "Un angle droit de quatre-vingt-dix degrés", "isCorrect": False},
+                        {"text": "Trois côtés de longueurs toutes différentes", "isCorrect": False}
                     ],
-                    "correction": "Un angle droit fait 90°, un angle plat fait le double (180°)."
+                    "correction": "**Rappel de cours :** Dans un triangle équilatéral, tous les côtés sont égaux et tous les angles mesurent 60°. Il possède trois axes de symétrie."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quel est le nom d'un triangle ayant un angle droit ?",
+                    "question": "Quel est le périmètre d'un cercle de rayon 5 cm (utiliser Pi = 3) ?",
                     "answerOptions": [
-                        {"text": "Triangle rectangle", "isCorrect": True},
-                        {"text": "Triangle isocèle", "isCorrect": False},
-                        {"text": "Triangle équilatéral", "isCorrect": False},
-                        {"text": "Triangle quelconque", "isCorrect": False}
+                        {"text": "Une longueur totale de trente centimètres", "isCorrect": True},
+                        {"text": "Une longueur totale de quinze centimètres", "isCorrect": False},
+                        {"text": "Une longueur totale de soixante centimètres", "isCorrect": False},
+                        {"text": "Une longueur totale de dix centimètres", "isCorrect": False}
                     ],
-                    "correction": "Un triangle rectangle possède un angle de 90°."
+                    "correction": "**Rappel de cours :** Formule du périmètre : 2 x π x R. Calcul : 2 x 3 x 5 = 30 cm. Si on utilisait la valeur précise de Pi, on obtiendrait environ 31,4 cm."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Le théorème de Pythagore s'utilise dans un triangle :",
+                    "question": "Comment calcule-t-on l'aire d'un triangle ?",
                     "answerOptions": [
-                        {"text": "Rectangle", "isCorrect": True},
-                        {"text": "Quelconque", "isCorrect": False},
-                        {"text": "Isocèle", "isCorrect": False},
-                        {"text": "Équilatéral", "isCorrect": False}
+                        {"text": "La base multipliée par la hauteur divisée par deux", "isCorrect": True},
+                        {"text": "La base multipliée simplement par la hauteur", "isCorrect": False},
+                        {"text": "La somme des trois côtés du triangle", "isCorrect": False},
+                        {"text": "La base additionnée à la hauteur totale", "isCorrect": False}
                     ],
-                    "correction": "Pythagore permet de calculer la longueur d'un côté dans un triangle rectangle."
+                    "correction": "**Rappel de cours :** L'aire d'un triangle correspond à la moitié de l'aire du rectangle qui le contiendrait. Formule : (Base x Hauteur) / 2."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quelle est la valeur approchée du nombre Pi (π) ?",
+                    "question": "Dans un rectangle de 10 cm sur 4 cm, quel est le périmètre ?",
                     "answerOptions": [
-                        {"text": "3,14", "isCorrect": True},
-                        {"text": "2,14", "isCorrect": False},
-                        {"text": "3,41", "isCorrect": False},
-                        {"text": "1,14", "isCorrect": False}
+                        {"text": "Vingt-huit centimètres au total", "isCorrect": True},
+                        {"text": "Quarante centimètres au total", "isCorrect": False},
+                        {"text": "Quatorze centimètres au total", "isCorrect": False},
+                        {"text": "Vingt centimètres au total", "isCorrect": False}
                     ],
-                    "correction": "Pi est utilisé pour les calculs liés au cercle."
+                    "correction": "**Rappel de cours :** Le périmètre du rectangle est P = (Longueur + largeur) x 2. Calcul : (10 + 4) x 2 = 14 x 2 = 28 cm."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Comment calcule-t-on le périmètre d'un cercle ?",
+                    "question": "Quelle est l'aire d'un carré de 6 cm de côté ?",
                     "answerOptions": [
-                        {"text": "2 × π × Rayon", "isCorrect": True},
-                        {"text": "π × Rayon²", "isCorrect": False},
-                        {"text": "Rayon × Rayon", "isCorrect": False},
-                        {"text": "Diamètre / π", "isCorrect": False}
+                        {"text": "Trente-six centimètres carrés de surface", "isCorrect": True},
+                        {"text": "Vingt-quatre centimètres carrés de surface", "isCorrect": False},
+                        {"text": "Douze centimètres carrés de surface", "isCorrect": False},
+                        {"text": "Trente centimètres carrés de surface", "isCorrect": False}
                     ],
-                    "correction": "C'est aussi égal à π × Diamètre."
+                    "correction": "**Rappel de cours :** L'aire du carré est Aire = Côté x Côté (ou Côté²). Calcul : 6 cm x 6 cm = 36 cm²."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Quelle est la somme des angles d'un triangle ?",
+                    "question": "Comment appelle-t-on un polygone à 4 côtés dont les côtés opposés sont parallèles ?",
                     "answerOptions": [
-                        {"text": "180°", "isCorrect": True},
-                        {"text": "90°", "isCorrect": False},
-                        {"text": "360°", "isCorrect": False},
-                        {"text": "100°", "isCorrect": False}
+                        {"text": "Un quadrilatère de type parallélogramme", "isCorrect": True},
+                        {"text": "Un triangle de type rectangle", "isCorrect": False},
+                        {"text": "Un hexagone de type régulier", "isCorrect": False},
+                        {"text": "Un cercle de type géométrique", "isCorrect": False}
                     ],
-                    "correction": "Dans n'importe quel triangle, l'addition des trois angles donne toujours 180°."
+                    "correction": "**Rappel de cours :** Le parallélogramme a ses côtés opposés parallèles et de même longueur. Le rectangle, le losange et le carré sont des parallélogrammes particuliers."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Un triangle équilatéral possède :",
+                    "question": "Combien de côtés possède un hexagone ?",
                     "answerOptions": [
-                        {"text": "3 côtés égaux", "isCorrect": True},
-                        {"text": "2 côtés égaux", "isCorrect": False},
-                        {"text": "Un angle droit", "isCorrect": False},
-                        {"text": "Aucun côté égal", "isCorrect": False}
+                        {"text": "Un total de six côtés", "isCorrect": True},
+                        {"text": "Un total de huit côtés", "isCorrect": False},
+                        {"text": "Un total de cinq côtés", "isCorrect": False},
+                        {"text": "Un total de quatre côtés", "isCorrect": False}
                     ],
-                    "correction": "Ses trois angles font également 60° chacun."
+                    "correction": "**Rappel de cours :** 'Hexa' signifie 6 en grec. Un hexagone est donc une figure plane à 6 côtés. La France est souvent appelée l'Hexagone à cause de sa forme géographique."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Comment s'appelle le côté le plus long d'un triangle rectangle ?",
+                    "question": "Dans un triangle rectangle, le théorème de Pythagore s'écrit :",
                     "answerOptions": [
-                        {"text": "L'hypoténuse", "isCorrect": True},
-                        {"text": "La base", "isCorrect": False},
-                        {"text": "La hauteur", "isCorrect": False},
-                        {"text": "Le sommet", "isCorrect": False}
+                        {"text": "a² + b² = c² (c étant l'hypoténuse)", "isCorrect": True},
+                        {"text": "a + b = c (c étant l'hypoténuse)", "isCorrect": False},
+                        {"text": "a x b = c (c étant l'hypoténuse)", "isCorrect": False},
+                        {"text": "a² - b² = c² (c étant l'hypoténuse)", "isCorrect": False}
                     ],
-                    "correction": "C'est le côté opposé à l'angle droit."
+                    "correction": "**Rappel de cours :** Pythagore énonce que le carré de la longueur de l'hypoténuse est égal à la somme des carrés des longueurs des deux autres côtés."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Convertissez 1 mètre en millimètres.",
+                    "question": "Quelle est la mesure d'un angle droit ?",
                     "answerOptions": [
-                        {"text": "1000 mm", "isCorrect": True},
-                        {"text": "100 mm", "isCorrect": False},
-                        {"text": "10 mm", "isCorrect": False},
-                        {"text": "10000 mm", "isCorrect": False}
+                        {"text": "Une mesure de quatre-vingt-dix degrés", "isCorrect": True},
+                        {"text": "Une mesure de cent-quatre-vingts degrés", "isCorrect": False},
+                        {"text": "Une mesure de quarante-cinq degrés", "isCorrect": False},
+                        {"text": "Une mesure de zéro degré exactement", "isCorrect": False}
                     ],
-                    "correction": "1 m = 10 dm = 100 cm = 1000 mm."
+                    "correction": "**Rappel de cours :** Un angle droit est formé par deux droites perpendiculaires. Il correspond au quart d'un tour complet de cercle (360 / 4 = 90)."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Quelle est l'aire d'un carré de 5 cm de côté ?",
+                    "question": "Comment appelle-t-on le segment qui relie le centre au bord d'un cercle ?",
                     "answerOptions": [
-                        {"text": "25 cm²", "isCorrect": True},
-                        {"text": "20 cm²", "isCorrect": False},
-                        {"text": "10 cm²", "isCorrect": False},
-                        {"text": "50 cm²", "isCorrect": False}
+                        {"text": "Le rayon du cercle", "isCorrect": True},
+                        {"text": "Le diamètre du cercle", "isCorrect": False},
+                        {"text": "La corde du cercle", "isCorrect": False},
+                        {"text": "L'arc du cercle", "isCorrect": False}
                     ],
-                    "correction": "Aire = 5 × 5 = 25 cm²."
+                    "correction": "**Rappel de cours :** Le rayon (R) est la distance constante entre le centre et n'importe quel point du cercle. Le diamètre (D) est égal à deux fois le rayon (D = 2R)."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Un litre (1 L) d'eau correspond à quelle masse ?",
+                    "question": "Quelle est l'aire d'un disque de rayon 10 cm (utiliser Pi = 3,14) ?",
                     "answerOptions": [
-                        {"text": "1 kg", "isCorrect": True},
-                        {"text": "1 g", "isCorrect": False},
-                        {"text": "10 kg", "isCorrect": False},
-                        {"text": "0,5 kg", "isCorrect": False}
+                        {"text": "Trois cent quatorze centimètres carrés", "isCorrect": True},
+                        {"text": "Trente et un virgule quatre centimètres carrés", "isCorrect": False},
+                        {"text": "Soixante-deux virgule huit centimètres carrés", "isCorrect": False},
+                        {"text": "Cent centimètres carrés exactement", "isCorrect": False}
                     ],
-                    "correction": "C'est une correspondance utile : 1 L d'eau pure pèse 1 kg."
+                    "correction": "**Rappel de cours :** Formule de l'aire du disque : π x R². Calcul : 3,14 x 10² = 3,14 x 100 = 314 cm²."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Comment appelle-t-on un polygone à 5 côtés ?",
+                    "question": "Qu'est-ce qu'un angle obtus ?",
                     "answerOptions": [
-                        {"text": "Un pentagone", "isCorrect": True},
-                        {"text": "Un hexagone", "isCorrect": False},
-                        {"text": "Un losange", "isCorrect": False},
-                        {"text": "Un quadrilatère", "isCorrect": False}
+                        {"text": "Un angle supérieur à 90 degrés", "isCorrect": True},
+                        {"text": "Un angle inférieur à 90 degrés", "isCorrect": False},
+                        {"text": "Un angle égal à 90 degrés exactement", "isCorrect": False},
+                        {"text": "Un angle qui mesure zéro degré", "isCorrect": False}
                     ],
-                    "correction": "Penta- signifie 5 en grec."
+                    "correction": "**Rappel de cours :** Un angle est dit 'obtus' si sa mesure est comprise entre 90° et 180°. S'il est plus petit que 90°, il est dit 'aigu'."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Qu'est-ce qu'un angle droit ?",
+                    "question": "Un rectangle a un périmètre de 20 cm. Si sa longueur est 6 cm, quelle est sa largeur ?",
                     "answerOptions": [
-                        {"text": "Un angle de 90°", "isCorrect": True},
-                        {"text": "Un angle de 45°", "isCorrect": False},
-                        {"text": "Un angle de 180°", "isCorrect": False},
-                        {"text": "Un angle de 0°", "isCorrect": False}
+                        {"text": "Une largeur de quatre centimètres", "isCorrect": True},
+                        {"text": "Une largeur de quatorze centimètres", "isCorrect": False},
+                        {"text": "Une largeur de huit centimètres", "isCorrect": False},
+                        {"text": "Une largeur de dix centimètres", "isCorrect": False}
                     ],
-                    "correction": "L'angle droit est formé par deux droites perpendiculaires."
+                    "correction": "**Rappel de cours :** Demi-périmètre (L+l) = 20 / 2 = 10 cm. Si la longueur L = 6, alors la largeur l = 10 - 6 = 4 cm."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quel est le volume d'un cube de 2 cm de côté ?",
+                    "question": "Comment appelle-t-on un polygone à 3 côtés ?",
                     "answerOptions": [
-                        {"text": "8 cm³", "isCorrect": True},
-                        {"text": "4 cm³", "isCorrect": False},
-                        {"text": "6 cm³", "isCorrect": False},
-                        {"text": "12 cm³", "isCorrect": False}
+                        {"text": "Un triangle géométrique", "isCorrect": True},
+                        {"text": "Un quadrilatère géométrique", "isCorrect": False},
+                        {"text": "Un cercle géométrique", "isCorrect": False},
+                        {"text": "Un pentagone géométrique", "isCorrect": False}
                     ],
-                    "correction": "Volume = 2 × 2 × 2 = 8 cm³."
+                    "correction": "**Rappel de cours :** Le triangle est le polygone ayant le plus petit nombre de côtés. Il possède également trois sommets et trois angles."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quelle est la définition d'un segment ?",
+                    "question": "Que signifie 'perpendiculaire' en géométrie ?",
                     "answerOptions": [
-                        {"text": "Une portion de droite délimitée par deux points", "isCorrect": True},
-                        {"text": "Une ligne qui ne s'arrête jamais", "isCorrect": False},
-                        {"text": "Un cercle coupé en deux", "isCorrect": False},
-                        {"text": "Un angle", "isCorrect": False}
+                        {"text": "Qui se croise en formant un angle droit", "isCorrect": True},
+                        {"text": "Qui ne se croise jamais à l'infini", "isCorrect": False},
+                        {"text": "Qui a exactement la même longueur", "isCorrect": False},
+                        {"text": "Qui est tracé avec un compas seul", "isCorrect": False}
                     ],
-                    "correction": "Un segment a une longueur mesurable, contrairement à une droite."
+                    "correction": "**Rappel de cours :** Deux droites sont perpendiculaires si elles se coupent en formant quatre angles de 90°. On utilise l'équerre pour vérifier la perpendicularité."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 3 : ALGÈBRE ET STATISTIQUES (Q41 à Q60)
+        # THÈME 3 : STATISTIQUES ET PROBABILITÉS (Q41 à Q60)
         # =========================================================================
         3: {
-            "name": "THÈME 3 : ALGÈBRE ET STATISTIQUES",
+            "name": "THÈME 3 : STATISTIQUES ET PROBABILITÉS",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Résolvez l'équation : x + 5 = 12. Quelle est la valeur de x ?",
+                    "question": "Quelle est la définition de la 'moyenne' d'une série statistique ?",
                     "answerOptions": [
-                        {"text": "7", "isCorrect": True},
-                        {"text": "17", "isCorrect": False},
-                        {"text": "5", "isCorrect": False},
-                        {"text": "-7", "isCorrect": False}
+                        {"text": "La somme des valeurs divisée par l'effectif total", "isCorrect": True},
+                        {"text": "La valeur située exactement au milieu de la série", "isCorrect": False},
+                        {"text": "La valeur qui apparaît le plus souvent dans la série", "isCorrect": False},
+                        {"text": "La différence entre le maximum et le minimum", "isCorrect": False}
                     ],
-                    "correction": "x = 12 - 5 = 7."
+                    "correction": "**Rappel de cours :** La moyenne est l'indicateur de tendance centrale le plus utilisé. On additionne toutes les données collectées et on divise le résultat par le nombre total d'individus (N)."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Comment calcule-t-on la moyenne d'une série de notes ?",
+                    "question": "On lance un dé à 6 faces. Quelle est la probabilité d'obtenir le chiffre 4 ?",
                     "answerOptions": [
-                        {"text": "Somme des notes / Nombre de notes", "isCorrect": True},
-                        {"text": "Note la plus haute - note la plus basse", "isCorrect": False},
-                        {"text": "Note du milieu", "isCorrect": False},
-                        {"text": "Somme des notes × 2", "isCorrect": False}
+                        {"text": "Une chance sur six issues possibles", "isCorrect": True},
+                        {"text": "Quatre chances sur six issues possibles", "isCorrect": False},
+                        {"text": "Une chance sur quatre issues possibles", "isCorrect": False},
+                        {"text": "Six chances sur six issues possibles", "isCorrect": False}
                     ],
-                    "correction": "La moyenne est la valeur unique que chacun aurait si on partageait tout équitablement."
+                    "correction": "**Rappel de cours :** Pour un dé équilibré, chaque face a la même chance de sortir. Il y a 1 résultat favorable (le 4) sur 6 résultats possibles au total. La probabilité est donc 1/6."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Dans une série statistique, qu'est-ce que l'étendue ?",
+                    "question": "Qu'est-ce que l'étendue d'une série statistique ?",
                     "answerOptions": [
-                        {"text": "Différence entre la plus grande et la plus petite valeur", "isCorrect": True},
-                        {"text": "La valeur moyenne", "isCorrect": False},
-                        {"text": "Le nombre total de données", "isCorrect": False},
-                        {"text": "La valeur la plus fréquente", "isCorrect": False}
+                        {"text": "L'écart entre la valeur maximale et minimale", "isCorrect": True},
+                        {"text": "La valeur moyenne de l'ensemble des données", "isCorrect": False},
+                        {"text": "Le nombre total d'individus dans l'échantillon", "isCorrect": False},
+                        {"text": "Le pourcentage de réussite à l'expérience", "isCorrect": False}
                     ],
-                    "correction": "Elle mesure la dispersion des données."
+                    "correction": "**Rappel de cours :** L'étendue mesure la dispersion des données. Elle se calcule en faisant : Plus grande valeur - Plus petite valeur. Une étendue faible signifie que les données sont proches les unes des autres."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quelle est la valeur de x si 2x = 10 ?",
+                    "question": "Quelle est la probabilité d'un événement impossible ?",
                     "answerOptions": [
-                        {"text": "5", "isCorrect": True},
-                        {"text": "20", "isCorrect": False},
-                        {"text": "8", "isCorrect": False},
-                        {"text": "12", "isCorrect": False}
+                        {"text": "Une probabilité égale à zéro", "isCorrect": True},
+                        {"text": "Une probabilité égale à un", "isCorrect": False},
+                        {"text": "Une probabilité égale à zéro virgule cinq", "isCorrect": False},
+                        {"text": "Une probabilité de cent pour cent", "isCorrect": False}
                     ],
-                    "correction": "x = 10 / 2 = 5."
+                    "correction": "**Rappel de cours :** En mathématiques, la probabilité d'un événement est un nombre compris entre 0 et 1. Si l'événement ne peut jamais se produire, sa probabilité est de 0 (soit 0 %)."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Qu'est-ce qu'un effectif en statistique ?",
+                    "question": "Dans un sondage, qu'est-ce que l'effectif total ?",
                     "answerOptions": [
-                        {"text": "Le nombre de fois qu'une donnée apparaît", "isCorrect": True},
-                        {"text": "Le résultat d'un calcul de pourcentage", "isCorrect": False},
-                        {"text": "Le nom du graphique", "isCorrect": False},
-                        {"text": "La somme de toutes les données", "isCorrect": False}
+                        {"text": "Le nombre total de personnes interrogées", "isCorrect": True},
+                        {"text": "La moyenne d'âge des personnes du groupe", "isCorrect": False},
+                        {"text": "La réponse la plus fréquente donnée au test", "isCorrect": False},
+                        {"text": "La différence entre les hommes et les femmes", "isCorrect": False}
                     ],
-                    "correction": "L'effectif total est la somme de tous les effectifs individuels."
+                    "correction": "**Rappel de cours :** L'effectif total (souvent noté N) correspond à la somme de tous les effectifs individuels. C'est la taille globale de la population ou de l'échantillon étudié."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Que représente la fréquence en statistique ?",
+                    "question": "On tire une carte dans un jeu de 32 cartes. Quelle est la probabilité de tirer un cœur ?",
                     "answerOptions": [
-                        {"text": "Effectif / Effectif total", "isCorrect": True},
-                        {"text": "Effectif total / Effectif", "isCorrect": False},
-                        {"text": "Effectif × 100", "isCorrect": False},
-                        {"text": "La valeur moyenne", "isCorrect": False}
+                        {"text": "Huit chances sur trente-deux issues", "isCorrect": True},
+                        {"text": "Une chance sur trente-deux issues", "isCorrect": False},
+                        {"text": "Quatre chances sur trente-deux issues", "isCorrect": False},
+                        {"text": "Huit chances sur cinquante-deux issues", "isCorrect": False}
                     ],
-                    "correction": "C'est la part (souvent en %) que représente une catégorie dans le total."
+                    "correction": "**Rappel de cours :** Dans un jeu de 32 cartes, il y a 4 couleurs (Cœur, Carreau, Pique, Trèfle) avec 8 cartes par couleur. La probabilité de tirer un cœur est de 8/32, ce qui se simplifie en 1/4 (25 %)."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Comment s'appelle l'axe horizontal dans un repère ?",
+                    "question": "Comment appelle-t-on la valeur qui apparaît le plus souvent dans une série ?",
                     "answerOptions": [
-                        {"text": "L'axe des abscisses", "isCorrect": True},
-                        {"text": "L'axe des ordonnées", "isCorrect": False},
-                        {"text": "L'axe des altitudes", "isCorrect": False},
-                        {"text": "La droite numérique", "isCorrect": False}
+                        {"text": "Le mode de la série statistique", "isCorrect": True},
+                        {"text": "La médiane de la série statistique", "isCorrect": False},
+                        {"text": "La moyenne de la série statistique", "isCorrect": False},
+                        {"text": "L'indice de la série statistique", "isCorrect": False}
                     ],
-                    "correction": "L'axe des ordonnées est l'axe vertical."
+                    "correction": "**Rappel de cours :** Le mode est la valeur dont l'effectif est le plus grand. C'est l'indication du résultat le plus fréquent ou le plus 'populaire' dans la distribution."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quelles sont les coordonnées de l'origine d'un repère ?",
+                    "question": "Quelle est la somme des probabilités de toutes les issues possibles ?",
                     "answerOptions": [
-                        {"text": "(0 ; 0)", "isCorrect": True},
-                        {"text": "(1 ; 1)", "isCorrect": False},
-                        {"text": "(0 ; 1)", "isCorrect": False},
-                        {"text": "(1 ; 0)", "isCorrect": False}
+                        {"text": "La somme est égale à un exactement", "isCorrect": True},
+                        {"text": "La somme est égale à zéro exactement", "isCorrect": False},
+                        {"text": "La somme est égale à cent exactement", "isCorrect": False},
+                        {"text": "La somme est variable selon le type de dé", "isCorrect": False}
                     ],
-                    "correction": "C'est le point d'intersection des deux axes."
+                    "correction": "**Rappel de cours :** Comme il est certain que l'un des résultats possibles va se produire, si on additionne les chances de chaque issue, on arrive obligatoirement à 1 (soit 100 % de probabilité)."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Une fonction linéaire est représentée par :",
+                    "question": "Comment calcule-t-on une fréquence en statistiques ?",
                     "answerOptions": [
-                        {"text": "Une droite passant par l'origine", "isCorrect": True},
-                        {"text": "Un cercle", "isCorrect": False},
-                        {"text": "Une courbe quelconque", "isCorrect": False},
-                        {"text": "Une droite ne passant pas par l'origine", "isCorrect": False}
+                        {"text": "L'effectif de la valeur divisé par l'effectif total", "isCorrect": True},
+                        {"text": "L'effectif total divisé par l'effectif de la valeur", "isCorrect": False},
+                        {"text": "L'effectif de la valeur multiplié par cent", "isCorrect": False},
+                        {"text": "L'effectif total multiplié par la moyenne", "isCorrect": False}
                     ],
-                    "correction": "Elle traduit une situation de proportionnalité."
+                    "correction": "**Rappel de cours :** La fréquence f = n / N. C'est un nombre entre 0 et 1 qui exprime la part de la valeur dans la population. On multiplie par 100 pour l'avoir en pourcentage."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Calculer la moyenne de 10, 12 et 14.",
+                    "question": "Qu'est-ce qu'une expérience aléatoire ?",
                     "answerOptions": [
-                        {"text": "12", "isCorrect": True},
-                        {"text": "10", "isCorrect": False},
-                        {"text": "36", "isCorrect": False},
-                        {"text": "11", "isCorrect": False}
+                        {"text": "Une expérience dont on ne peut prédire le résultat", "isCorrect": True},
+                        {"text": "Une expérience réalisée avec une règle précise", "isCorrect": False},
+                        {"text": "Un calcul mathématique sans aucune erreur", "isCorrect": False},
+                        {"text": "Une enquête faite uniquement par téléphone", "isCorrect": False}
                     ],
-                    "correction": "(10 + 12 + 14) / 3 = 36 / 3 = 12."
+                    "correction": "**Rappel de cours :** Une expérience est aléatoire si on connaît toutes les issues possibles (ex: 1, 2, 3, 4, 5, 6 au dé) mais qu'il est impossible de savoir laquelle va sortir avant de réaliser l'expérience."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Si un graphique est un diagramme circulaire, la somme des pourcentages doit être :",
+                    "question": "Quelle est la probabilité d'obtenir 'Pile' lors d'un lancer de pièce ?",
                     "answerOptions": [
-                        {"text": "100 %", "isCorrect": True},
-                        {"text": "360 %", "isCorrect": False},
-                        {"text": "50 %", "isCorrect": False},
-                        {"text": "0 %", "isCorrect": False}
+                        {"text": "Une probabilité égale à zéro virgule cinq", "isCorrect": True},
+                        {"text": "Une probabilité égale à un entier", "isCorrect": False},
+                        {"text": "Une probabilité égale à zéro virgule vingt-cinq", "isCorrect": False},
+                        {"text": "Une probabilité égale à zéro virgule un", "isCorrect": False}
                     ],
-                    "correction": "Le cercle complet représente la totalité de l'échantillon."
+                    "correction": "**Rappel de cours :** Sur une pièce équilibrée, il y a 2 issues possibles (Pile ou Face). Chaque issue a 1 chance sur 2. En décimal, 1/2 = 0,5 (ou 50 %)."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Que signifie f(x) = 3x ?",
+                    "question": "Comment calcule-t-on la moyenne de ces trois notes : 10, 12, 14 ?",
                     "answerOptions": [
-                        {"text": "On multiplie chaque nombre x par 3", "isCorrect": True},
-                        {"text": "On ajoute 3 à chaque nombre x", "isCorrect": False},
-                        {"text": "On divise x par 3", "isCorrect": False},
-                        {"text": "x vaut toujours 3", "isCorrect": False}
+                        {"text": "La moyenne est égale à douze", "isCorrect": True},
+                        {"text": "La moyenne est égale à trente-six", "isCorrect": False},
+                        {"text": "La moyenne est égale à dix", "isCorrect": False},
+                        {"text": "La moyenne est égale à onze", "isCorrect": False}
                     ],
-                    "correction": "C'est l'expression d'une fonction linéaire."
+                    "correction": "**Rappel de cours :** On fait la somme : 10 + 12 + 14 = 36. On divise par le nombre de notes : 36 / 3 = 12. La moyenne est donc 12."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Dans l'expression 5x + 2, quel est le terme constant ?",
+                    "question": "Que représente un diagramme à bâtons en statistiques ?",
                     "answerOptions": [
-                        {"text": "2", "isCorrect": True},
-                        {"text": "5", "isCorrect": False},
-                        {"text": "x", "isCorrect": False},
-                        {"text": "5x", "isCorrect": False}
+                        {"text": "La répartition des effectifs par catégorie", "isCorrect": True},
+                        {"text": "La météo des jours de la semaine locale", "isCorrect": False},
+                        {"text": "Le prix total de tous les articles vendus", "isCorrect": False},
+                        {"text": "La longueur du trajet parcouru en voiture", "isCorrect": False}
                     ],
-                    "correction": "Le terme constant ne change pas, contrairement au terme contenant x."
+                    "correction": "**Rappel de cours :** Dans ce graphique, la hauteur de chaque bâton est proportionnelle à l'effectif (ou à la fréquence) de la valeur représentée. Cela permet de comparer visuellement les données."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Calculer l'étendue de la série : 5 ; 12 ; 3 ; 18 ; 10.",
+                    "question": "Quelle est la probabilité d'un événement certain ?",
                     "answerOptions": [
-                        {"text": "15", "isCorrect": True},
-                        {"text": "18", "isCorrect": False},
-                        {"text": "3", "isCorrect": False},
-                        {"text": "12", "isCorrect": False}
+                        {"text": "La valeur de la probabilité est égale à un", "isCorrect": True},
+                        {"text": "La valeur de la probabilité est égale à zéro", "isCorrect": False},
+                        {"text": "La valeur de la probabilité est de cinquante", "isCorrect": False},
+                        {"text": "La valeur de la probabilité est infinie", "isCorrect": False}
                     ],
-                    "correction": "Étendue = 18 (max) - 3 (min) = 15."
+                    "correction": "**Rappel de cours :** Un événement certain se produit dans tous les cas. Sa probabilité est donc maximale, soit 1 (ce qui correspond à 100 % de chances)."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Si x = 3, quelle est la valeur de 2x + 4 ?",
+                    "question": "Dans une série statistique, la médiane est la valeur qui :",
                     "answerOptions": [
-                        {"text": "10", "isCorrect": True},
-                        {"text": "9", "isCorrect": False},
-                        {"text": "7", "isCorrect": False},
-                        {"text": "12", "isCorrect": False}
+                        {"text": "Partage la série en deux effectifs égaux", "isCorrect": True},
+                        {"text": "Correspond à la moyenne des valeurs totales", "isCorrect": False},
+                        {"text": "Est la plus grande valeur de l'ensemble", "isCorrect": False},
+                        {"text": "A été calculée par une multiplication complexe", "isCorrect": False}
                     ],
-                    "correction": "2 × 3 + 4 = 6 + 4 = 10."
+                    "correction": "**Rappel de cours :** Pour trouver la médiane, on range d'abord les valeurs dans l'ordre croissant. La médiane est la valeur du milieu : il y a autant de données plus petites que de données plus grandes."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quel graphique utilise des bâtons pour représenter des effectifs ?",
+                    "question": "Si un sac contient 3 billes rouges et 7 billes bleues, quelle est la probabilité de tirer une bille rouge ?",
                     "answerOptions": [
-                        {"text": "L'histogramme ou diagramme en bâtons", "isCorrect": True},
-                        {"text": "Le diagramme circulaire", "isCorrect": False},
-                        {"text": "La courbe", "isCorrect": False},
-                        {"text": "La photo", "isCorrect": False}
+                        {"text": "La probabilité est de zéro virgule trois", "isCorrect": True},
+                        {"text": "La probabilité est de zéro virgule sept", "isCorrect": False},
+                        {"text": "La probabilité est de trois virgule zéro", "isCorrect": False},
+                        {"text": "La probabilité est de un sur trois", "isCorrect": False}
                     ],
-                    "correction": "La hauteur du bâton est proportionnelle à l'effectif."
+                    "correction": "**Rappel de cours :** Nombre total de billes = 3 + 7 = 10. Billes rouges favorables = 3. Probabilité = 3/10 = 0,3 (soit 30 %)."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Que signifie x² ?",
+                    "question": "Que signifie un pourcentage de 100 % pour un effectif ?",
                     "answerOptions": [
-                        {"text": "x multiplié par x", "isCorrect": True},
-                        {"text": "x multiplié par 2", "isCorrect": False},
-                        {"text": "x plus x", "isCorrect": False},
-                        {"text": "2 divisé par x", "isCorrect": False}
+                        {"text": "La totalité de la population concernée", "isCorrect": True},
+                        {"text": "La moitié de la population concernée", "isCorrect": False},
+                        {"text": "Une personne seule dans le groupe", "isCorrect": False},
+                        {"text": "C'est une erreur de calcul impossible", "isCorrect": False}
                     ],
-                    "correction": "C'est la puissance 2."
+                    "correction": "**Rappel de cours :** 100 % correspond à la fraction 100/100, soit l'unité entière. Cela désigne donc tous les individus de la série sans exception."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Résolvez 3x = 15.",
+                    "question": "Sur un diagramme circulaire, la somme des secteurs vaut toujours :",
                     "answerOptions": [
-                        {"text": "5", "isCorrect": True},
-                        {"text": "12", "isCorrect": False},
-                        {"text": "18", "isCorrect": False},
-                        {"text": "3", "isCorrect": False}
+                        {"text": "Un total de cent pour cent", "isCorrect": True},
+                        {"text": "Un total de cinquante pour cent", "isCorrect": False},
+                        {"text": "Un total de trois-cent-soixante pour cent", "isCorrect": False},
+                        {"text": "Un total égal à la moyenne arithmétique", "isCorrect": False}
                     ],
-                    "correction": "x = 15 / 3 = 5."
+                    "correction": "**Rappel de cours :** Le disque entier représente la totalité de l'effectif (100 %). Les angles des secteurs sont calculés pour que leur somme fasse 360°, mais le total des pourcentages reste 100 %."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Une probabilité est toujours comprise entre :",
+                    "question": "Comment calcule-t-on l'étendue de ces températures : 12°C, 15°C, 22°C ?",
                     "answerOptions": [
-                        {"text": "0 et 1", "isCorrect": True},
-                        {"text": "1 et 100", "isCorrect": False},
-                        {"text": "-1 et 1", "isCorrect": False},
-                        {"text": "0 et 100", "isCorrect": True}
+                        {"text": "L'étendue est égale à dix degrés", "isCorrect": True},
+                        {"text": "L'étendue est égale à vingt-deux degrés", "isCorrect": False},
+                        {"text": "L'étendue est égale à douze degrés", "isCorrect": False},
+                        {"text": "L'étendue est égale à dix-sept degrés", "isCorrect": False}
                     ],
-                    "correction": "En mathématiques, P est entre 0 (impossible) et 1 (certain). En langage courant on utilise souvent 0 à 100%."
+                    "correction": "**Rappel de cours :** On cherche le max (22) et le min (12). On fait la soustraction : 22 - 12 = 10. L'étendue thermique est donc de 10°C."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Le mode d'une série statistique est :",
+                    "question": "On lance un dé. Quel est le contraire de 'obtenir un chiffre pair' ?",
                     "answerOptions": [
-                        {"text": "La valeur qui a le plus grand effectif", "isCorrect": True},
-                        {"text": "La moyenne", "isCorrect": False},
-                        {"text": "L'étendue", "isCorrect": False},
-                        {"text": "La valeur la plus petite", "isCorrect": False}
+                        {"text": "Obtenir un chiffre impair au lancer", "isCorrect": True},
+                        {"text": "Obtenir le chiffre deux au lancer", "isCorrect": False},
+                        {"text": "Obtenir le chiffre six au lancer", "isCorrect": False},
+                        {"text": "Obtenir un chiffre supérieur à quatre", "isCorrect": False}
                     ],
-                    "correction": "C'est la donnée qui apparaît le plus souvent."
+                    "correction": "**Rappel de cours :** L'événement contraire comprend toutes les issues qui ne réalisent pas l'événement initial. Si on ne tire pas un pair (2, 4, 6), on tire forcément un impair (1, 3, 5)."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 4 : NUMÉRATION ET CALCUL NUMÉRIQUE (Q61 à Q80)
+        # THÈME 4 : ALGÈBRE ET FONCTIONS NUMÉRIQUES (Q61 à Q80)
         # =========================================================================
         4: {
-            "name": "THÈME 4 : NUMÉRATION ET CALCUL NUMÉRIQUE",
+            "name": "THÈME 4 : ALGÈBRE ET FONCTIONS NUMÉRIQUES",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Combien font 12,5 × 100 ?",
+                    "question": "Quelle est la solution de l'équation suivante : x + 5 = 12 ?",
                     "answerOptions": [
-                        {"text": "1250", "isCorrect": True},
-                        {"text": "125", "isCorrect": False},
-                        {"text": "12500", "isCorrect": False},
-                        {"text": "1,25", "isCorrect": False}
+                        {"text": "La valeur de x est égale à sept", "isCorrect": True},
+                        {"text": "La valeur de x est égale à dix-sept", "isCorrect": False},
+                        {"text": "La valeur de x est égale à sept virgule cinq", "isCorrect": False},
+                        {"text": "La valeur de x est égale à moins sept", "isCorrect": False}
                     ],
-                    "correction": "On décale la virgule de deux rangs vers la droite."
+                    "correction": "**Rappel de cours :** Pour isoler x, on déplace le +5 de l'autre côté de l'égalité en changeant son signe. Calcul : x = 12 - 5 = 7. Vérification : 7 + 5 donne bien 12."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quel est le résultat de (-5) + (-3) ?",
+                    "question": "Résoudre l'équation simple : 3x = 15.",
                     "answerOptions": [
-                        {"text": "-8", "isCorrect": True},
-                        {"text": "-2", "isCorrect": False},
-                        {"text": "8", "isCorrect": False},
-                        {"text": "15", "isCorrect": False}
+                        {"text": "La valeur de x est égale à cinq", "isCorrect": True},
+                        {"text": "La valeur de x est égale à douze", "isCorrect": False},
+                        {"text": "La valeur de x est égale à quarante-cinq", "isCorrect": False},
+                        {"text": "La valeur de x est égale à trois", "isCorrect": False}
                     ],
-                    "correction": "On additionne deux nombres négatifs, le résultat est plus négatif."
+                    "correction": "**Rappel de cours :** Pour isoler x quand il est multiplié par un nombre, on divise de l'autre côté par ce même nombre. Calcul : x = 15 / 3 = 5. Vérification : 3 x 5 = 15."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Combien font 1/2 + 1/2 ?",
+                    "question": "Comment appelle-t-on l'expression f(x) = ax + b ?",
                     "answerOptions": [
-                        {"text": "1", "isCorrect": True},
-                        {"text": "2/4", "isCorrect": False},
-                        {"text": "1/4", "isCorrect": False},
-                        {"text": "2", "isCorrect": False}
+                        {"text": "Une fonction de type affine", "isCorrect": True},
+                        {"text": "Une fonction de type linéaire", "isCorrect": False},
+                        {"text": "Une fonction de type constante", "isCorrect": False},
+                        {"text": "Une fonction de type carrré", "isCorrect": False}
                     ],
-                    "correction": "Deux moitiés font un tout."
+                    "correction": "**Rappel de cours :** Une fonction affine est représentée par une droite qui ne passe pas forcément par l'origine. 'a' est le coefficient directeur (la pente) et 'b' est l'ordonnée à l'origine."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quelle est la racine carrée de 25 ?",
+                    "question": "Dans f(x) = 2x, si x = 4, quelle est la valeur de f(x) ?",
                     "answerOptions": [
-                        {"text": "5", "isCorrect": True},
-                        {"text": "12,5", "isCorrect": False},
-                        {"text": "50", "isCorrect": False},
-                        {"text": "2,5", "isCorrect": False}
+                        {"text": "L'image du nombre est égale à huit", "isCorrect": True},
+                        {"text": "L'image du nombre est égale à six", "isCorrect": False},
+                        {"text": "L'image du nombre est égale à deux", "isCorrect": False},
+                        {"text": "L'image du nombre est égale à quatre", "isCorrect": False}
                     ],
-                    "correction": "Car 5 × 5 = 25."
+                    "correction": "**Rappel de cours :** Calculer l'image d'un nombre consiste à remplacer x par sa valeur dans la fonction. Calcul : 2 x 4 = 8. On dit que 8 est l'image de 4 par f."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Quel est le résultat de 10 / 0,1 ?",
+                    "question": "La représentation graphique d'une fonction linéaire est toujours :",
                     "answerOptions": [
-                        {"text": "100", "isCorrect": True},
-                        {"text": "1", "isCorrect": False},
-                        {"text": "0", "isCorrect": False},
-                        {"text": "10", "isCorrect": False}
+                        {"text": "Une droite passant par l'origine (0,0)", "isCorrect": True},
+                        {"text": "Un cercle parfait centré sur l'axe", "isCorrect": False},
+                        {"text": "Une courbe en forme de lettre U", "isCorrect": False},
+                        {"text": "Une droite horizontale parallèle à l'axe", "isCorrect": False}
                     ],
-                    "correction": "Diviser par 0,1 revient à multiplier par 10."
+                    "correction": "**Rappel de cours :** Une fonction linéaire (type f(x) = ax) traduit une situation de proportionnalité. Sa droite passe obligatoirement par le point (0,0) car si x = 0, alors f(0) = 0."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Combien font 3 × (4 + 2) ?",
+                    "question": "Quel est le résultat de l'opération : (-4) + (-3) ?",
                     "answerOptions": [
-                        {"text": "18", "isCorrect": True},
-                        {"text": "14", "isCorrect": False},
-                        {"text": "20", "isCorrect": False},
-                        {"text": "12", "isCorrect": False}
+                        {"text": "Le résultat est égal à moins sept", "isCorrect": True},
+                        {"text": "Le résultat est égal à moins un", "isCorrect": False},
+                        {"text": "Le résultat est égal à sept positif", "isCorrect": False},
+                        {"text": "Le résultat est égal à douze positif", "isCorrect": False}
                     ],
-                    "correction": "On calcule d'abord entre parenthèses : 3 × 6 = 18."
+                    "correction": "**Rappel de cours :** Quand on additionne deux nombres négatifs, on additionne leurs valeurs absolues et on garde le signe moins. Calcul : 4 + 3 = 7, donc le résultat est -7."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Quel est le nombre le plus grand ?",
+                    "question": "Que vaut le produit : (-2) x (-5) ?",
                     "answerOptions": [
-                        {"text": "0,12", "isCorrect": True},
-                        {"text": "0,099", "isCorrect": False},
-                        {"text": "0,1", "isCorrect": False},
-                        {"text": "0,0125", "isCorrect": False}
+                        {"text": "Le résultat est égal à dix positif", "isCorrect": True},
+                        {"text": "Le résultat est égal à moins dix", "isCorrect": False},
+                        {"text": "Le résultat est égal à moins sept", "isCorrect": False},
+                        {"text": "Le résultat est égal à trois positif", "isCorrect": False}
                     ],
-                    "correction": "On compare chiffre par chiffre après la virgule."
+                    "correction": "**Rappel de cours :** Règle des signes pour la multiplication : le produit de deux nombres de même signe est toujours positif. Calcul : 2 x 5 = 10, et moins par moins donne plus."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Écriture scientifique de 5000 :",
+                    "question": "Quelle est l'inconnue dans l'équation 4y - 2 = 10 ?",
                     "answerOptions": [
-                        {"text": "5 × 10³", "isCorrect": True},
-                        {"text": "50 × 10²", "isCorrect": False},
-                        {"text": "0,5 × 10⁴", "isCorrect": False},
-                        {"text": "5 × 10²", "isCorrect": False}
+                        {"text": "La lettre y minuscule", "isCorrect": True},
+                        {"text": "Le chiffre quatre entier", "isCorrect": False},
+                        {"text": "Le nombre dix entier", "isCorrect": False},
+                        {"text": "Le signe moins de soustraction", "isCorrect": False}
                     ],
-                    "correction": "Un seul chiffre (non nul) avant la virgule."
+                    "correction": "**Rappel de cours :** L'inconnue est la lettre (généralement x ou y) dont on cherche la valeur numérique pour que l'égalité soit vraie."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Combien font 7 × 8 ?",
+                    "question": "Réduisez l'expression suivante : 3x + 2x - x.",
                     "answerOptions": [
-                        {"text": "56", "isCorrect": True},
-                        {"text": "49", "isCorrect": False},
-                        {"text": "64", "isCorrect": False},
-                        {"text": "54", "isCorrect": False}
+                        {"text": "L'expression réduite est égale à 4x", "isCorrect": True},
+                        {"text": "L'expression réduite est égale à 5x", "isCorrect": False},
+                        {"text": "L'expression réduite est égale à 6x", "isCorrect": False},
+                        {"text": "L'expression réduite est égale à x", "isCorrect": False}
                     ],
-                    "correction": "Table de multiplication de 7 et 8."
+                    "correction": "**Rappel de cours :** On peut additionner les termes qui ont la même lettre. Calcul : (3 + 2 - 1)x = 4x. Rappelez-vous que '-x' est équivalent à '-1x'."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Que vaut 10 puissance 0 (10⁰) ?",
+                    "question": "Que vaut le carré du nombre 5 (noté 5²) ?",
                     "answerOptions": [
-                        {"text": "1", "isCorrect": True},
-                        {"text": "0", "isCorrect": False},
-                        {"text": "10", "isCorrect": False},
-                        {"text": "0,1", "isCorrect": False}
+                        {"text": "Le résultat est égal à vingt-cinq", "isCorrect": True},
+                        {"text": "Le résultat est égal à dix entier", "isCorrect": False},
+                        {"text": "Le résultat est égal à cinquante", "isCorrect": False},
+                        {"text": "Le résultat est égal à cinq seulement", "isCorrect": False}
                     ],
-                    "correction": "Tout nombre (sauf 0) à la puissance 0 vaut 1."
+                    "correction": "**Rappel de cours :** Elever un nombre au carré consiste à le multiplier par lui-même. Calcul : 5 x 5 = 25. Ne pas confondre avec 5 x 2."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Résultat de 1/2 × 1/2 ?",
+                    "question": "Résoudre : 2x + 1 = 9.",
                     "answerOptions": [
-                        {"text": "1/4 (ou 0,25)", "isCorrect": True},
-                        {"text": "1", "isCorrect": False},
-                        {"text": "2/4", "isCorrect": False},
-                        {"text": "1/2", "isCorrect": False}
+                        {"text": "La valeur de x est égale à quatre", "isCorrect": True},
+                        {"text": "La valeur de x est égale à huit", "isCorrect": False},
+                        {"text": "La valeur de x est égale à cinq", "isCorrect": False},
+                        {"text": "La valeur de x est égale à trois", "isCorrect": False}
                     ],
-                    "correction": "On multiplie les numérateurs entre eux et les dénominateurs entre eux."
+                    "correction": "**Rappel de cours :** 1) 2x = 9 - 1 = 8. 2) x = 8 / 2 = 4. La solution de l'équation est 4."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Simplifier 10/20 :",
+                    "question": "Si a = 3 et b = 4, que vaut a + 2b ?",
                     "answerOptions": [
-                        {"text": "1/2", "isCorrect": True},
-                        {"text": "2", "isCorrect": False},
-                        {"text": "0,2", "isCorrect": False},
-                        {"text": "1/10", "isCorrect": False}
+                        {"text": "La valeur totale est égale à onze", "isCorrect": True},
+                        {"text": "La valeur totale est égale à quatorze", "isCorrect": False},
+                        {"text": "La valeur totale est égale à dix", "isCorrect": False},
+                        {"text": "La valeur totale est égale à vingt", "isCorrect": False}
                     ],
-                    "correction": "On divise par 10 en haut et en bas."
+                    "correction": "**Rappel de cours :** On remplace les lettres par les chiffres. Calcul : 3 + (2 x 4) = 3 + 8 = 11. On respecte la priorité de la multiplication."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quel est l'inverse de 2 ?",
+                    "question": "Quelle est l'inverse du nombre 2 ?",
                     "answerOptions": [
-                        {"text": "1/2 (ou 0,5)", "isCorrect": True},
-                        {"text": "-2", "isCorrect": False},
-                        {"text": "1", "isCorrect": False},
-                        {"text": "0,2", "isCorrect": False}
+                        {"text": "Le nombre décimal zéro virgule cinq", "isCorrect": True},
+                        {"text": "Le nombre entier négatif moins deux", "isCorrect": False},
+                        {"text": "Le nombre entier égale à quatre", "isCorrect": False},
+                        {"text": "Le nombre entier égale à un", "isCorrect": False}
                     ],
-                    "correction": "L'inverse d'un nombre x est 1/x."
+                    "correction": "**Rappel de cours :** L'inverse d'un nombre x est 1/x. Pour 2, l'inverse est 1/2, soit 0,5 en écriture décimale."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quel est l'opposé de 5 ?",
+                    "question": "Que signifie graphiquement une fonction croissante ?",
                     "answerOptions": [
-                        {"text": "-5", "isCorrect": True},
-                        {"text": "1/5", "isCorrect": False},
-                        {"text": "0", "isCorrect": False},
-                        {"text": "5", "isCorrect": False}
+                        {"text": "La courbe monte de gauche à droite", "isCorrect": True},
+                        {"text": "La courbe descend de gauche à droite", "isCorrect": False},
+                        {"text": "La courbe est une ligne plate horizontale", "isCorrect": False},
+                        {"text": "La courbe forme un cercle fermé", "isCorrect": False}
                     ],
-                    "correction": "L'opposé change le signe du nombre."
+                    "correction": "**Rappel de cours :** Une fonction est croissante si, lorsque les valeurs de x augmentent, les valeurs de y augmentent également. La pente de la droite (ou de la tangente) est alors positive."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Combien font 1/3 de 90 ?",
+                    "question": "Dans f(x) = 3x + 1, quel est le nom du nombre '1' ?",
                     "answerOptions": [
-                        {"text": "30", "isCorrect": True},
-                        {"text": "60", "isCorrect": False},
-                        {"text": "10", "isCorrect": False},
-                        {"text": "270", "isCorrect": False}
+                        {"text": "L'ordonnée à l'origine de la droite", "isCorrect": True},
+                        {"text": "Le coefficient directeur de la droite", "isCorrect": False},
+                        {"text": "L'image du chiffre trois par la fonction", "isCorrect": False},
+                        {"text": "La racine carrée de l'expression", "isCorrect": False}
                     ],
-                    "correction": "On divise 90 par 3."
+                    "correction": "**Rappel de cours :** Dans f(x) = ax + b, 'b' est l'ordonnée à l'origine. C'est la valeur de y au point où la droite coupe l'axe vertical (quand x = 0)."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Le résultat de 10 + 5 × 2 est :",
+                    "question": "Résoudre : x / 2 = 10.",
                     "answerOptions": [
-                        {"text": "20", "isCorrect": True},
-                        {"text": "30", "isCorrect": False},
-                        {"text": "17", "isCorrect": False},
-                        {"text": "25", "isCorrect": False}
+                        {"text": "La valeur de x est égale à vingt", "isCorrect": True},
+                        {"text": "La valeur de x est égale à cinq", "isCorrect": False},
+                        {"text": "La valeur de x est égale à huit", "isCorrect": False},
+                        {"text": "La valeur de x est égale à douze", "isCorrect": False}
                     ],
-                    "correction": "La multiplication est prioritaire sur l'addition."
+                    "correction": "**Rappel de cours :** L'opération inverse de la division est la multiplication. On multiplie 10 par 2 pour isoler x. Calcul : x = 10 x 2 = 20."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Un angle obtus est un angle :",
+                    "question": "Quelle est la valeur de x² si x = -4 ?",
                     "answerOptions": [
-                        {"text": "Supérieur à 90° et inférieur à 180°", "isCorrect": True},
-                        {"text": "Inférieur à 90°", "isCorrect": False},
-                        {"text": "Égal à 90°", "isCorrect": False},
-                        {"text": "Égal à 180°", "isCorrect": False}
+                        {"text": "Le résultat est égal à seize positif", "isCorrect": True},
+                        {"text": "Le résultat est égal à moins seize", "isCorrect": False},
+                        {"text": "Le résultat est égal à huit positif", "isCorrect": False},
+                        {"text": "Le résultat est égal à moins huit", "isCorrect": False}
                     ],
-                    "correction": "L'angle aigu est plus petit que 90°."
+                    "correction": "**Rappel de cours :** (-4)² = (-4) x (-4). Moins par moins donne plus. Le carré d'un nombre réel est toujours positif. Le résultat est donc 16."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Combien de minutes y a-t-il dans 2,5 heures ?",
+                    "question": "Comment écrit-on 'le triple de x' ?",
                     "answerOptions": [
-                        {"text": "150 minutes", "isCorrect": True},
-                        {"text": "120 minutes", "isCorrect": False},
-                        {"text": "250 minutes", "isCorrect": False},
-                        {"text": "130 minutes", "isCorrect": False}
+                        {"text": "L'expression algébrique 3x", "isCorrect": True},
+                        {"text": "L'expression algébrique x + 3", "isCorrect": False},
+                        {"text": "L'expression algébrique x³", "isCorrect": False},
+                        {"text": "L'expression algébrique x / 3", "isCorrect": False}
                     ],
-                    "correction": "2h = 120 min et 0,5h = 30 min. Total = 150 min."
+                    "correction": "**Rappel de cours :** Le triple signifie multiplier par 3. 'x + 3' est l'augmentation de 3 et 'x³' est le cube de x."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Si un produit coûte 10 € HT et que la TVA est de 20 %, quel est le prix TTC ?",
+                    "question": "Développer l'expression : 2(x + 3).",
                     "answerOptions": [
-                        {"text": "12 €", "isCorrect": True},
-                        {"text": "10,20 €", "isCorrect": False},
-                        {"text": "30 €", "isCorrect": False},
-                        {"text": "8 €", "isCorrect": False}
+                        {"text": "L'expression développée est 2x + 6", "isCorrect": True},
+                        {"text": "L'expression développée est 2x + 3", "isCorrect": False},
+                        {"text": "L'expression développée est x + 6", "isCorrect": False},
+                        {"text": "L'expression développée est 5x", "isCorrect": False}
                     ],
-                    "correction": "10 × 1,20 = 12 €."
+                    "correction": "**Rappel de cours :** On utilise la distributivité : on multiplie le chiffre 2 par chaque terme dans la parenthèse. Calcul : (2 x x) + (2 x 3) = 2x + 6."
                 },
                 {
-                    "questionNumber": 100,
-                    "question": "La perspective cavalière sert à :",
+                    "questionNumber": 80,
+                    "question": "Quelle est la valeur de 10 puissance 3 (10³) ?",
                     "answerOptions": [
-                        {"text": "Représenter un objet en 3D sur une feuille plate", "isCorrect": True},
-                        {"text": "Calculer la météo", "isCorrect": False},
-                        {"text": "Mesurer le poids des objets", "isCorrect": False},
-                        {"text": "Écrire des chiffres romains", "isCorrect": False}
+                        {"text": "Le résultat est égal à mille", "isCorrect": True},
+                        {"text": "Le résultat est égal à cent", "isCorrect": False},
+                        {"text": "Le résultat est égal à trente", "isCorrect": False},
+                        {"text": "Le résultat est égal à dix mille", "isCorrect": False}
                     ],
-                    "correction": "C'est une technique de dessin technique."
+                    "correction": "**Rappel de cours :** 10³ = 10 x 10 x 10 = 1 000. L'exposant indique le nombre de zéros à placer après le 1."
                 }
             ]
         },
         # =========================================================================
-        # THÈME 5 : PROPRIÉTÉS ET CONVERSIONS (Questions 81 à 100)
+        # THÈME 5 : UNITÉS DE MESURE ET GRANDEURS PHYSIQUES (Q81 à Q100)
         # =========================================================================
         5: {
-            "name": "THÈME 5 : PROPRIÉTÉS ET CONVERSIONS",
+            "name": "THÈME 5 : UNITÉS DE MESURE ET GRANDEURS PHYSIQUES",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Un triangle isocèle possède :",
+                    "question": "Combien y a-t-il de grammes dans un kilogramme ?",
                     "answerOptions": [
-                        {"text": "2 côtés égaux", "isCorrect": True},
-                        {"text": "3 côtés égaux", "isCorrect": False},
-                        {"text": "Aucun côté égal", "isCorrect": False},
-                        {"text": "Un angle de 90°", "isCorrect": False}
+                        {"text": "Un total de mille grammes", "isCorrect": True},
+                        {"text": "Un total de cent grammes", "isCorrect": False},
+                        {"text": "Un total de dix grammes", "isCorrect": False},
+                        {"text": "Un total de dix mille grammes", "isCorrect": False}
                     ],
-                    "correction": "Il a aussi deux angles égaux à la base."
+                    "correction": "**Rappel de cours :** Le préfixe 'kilo' signifie mille. C'est l'unité de base de masse dans le système international. Pour convertir des kg en g, on multiplie par 1000."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Quelle est l'unité de mesure du volume d'un liquide ?",
+                    "question": "Quelle unité utilise-t-on pour mesurer une intensité électrique ?",
                     "answerOptions": [
-                        {"text": "Le litre", "isCorrect": True},
-                        {"text": "Le gramme", "isCorrect": False},
-                        {"text": "Le mètre carré", "isCorrect": False},
-                        {"text": "Le degré", "isCorrect": False}
+                        {"text": "L'unité nommée l'Ampère (A)", "isCorrect": True},
+                        {"text": "L'unité nommée le Volt (V)", "isCorrect": False},
+                        {"text": "L'unité nommée le Watt (W)", "isCorrect": False},
+                        {"text": "L'unité nommée l'Ohm (Ω)", "isCorrect": False}
                     ],
-                    "correction": "Le litre est l'unité usuelle, le mètre cube est l'unité internationale."
+                    "correction": "**Rappel de cours :** L'intensité (débit d'électrons) se mesure en Ampères. Le Volt mesure la tension et le Watt mesure la puissance."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Combien de grammes y a-t-il dans 1,2 kg ?",
+                    "question": "Combien de minutes y a-t-il dans 2 heures et demie ?",
                     "answerOptions": [
-                        {"text": "1200 g", "isCorrect": True},
-                        {"text": "120 g", "isCorrect": False},
-                        {"text": "12 g", "isCorrect": False},
-                        {"text": "12000 g", "isCorrect": False}
+                        {"text": "Un total de cent cinquante minutes", "isCorrect": True},
+                        {"text": "Un total de cent vingt minutes", "isCorrect": False},
+                        {"text": "Un total de cent trente minutes", "isCorrect": False},
+                        {"text": "Un total de deux cent cinquante minutes", "isCorrect": False}
                     ],
-                    "correction": "On multiplie par 1000."
+                    "correction": "**Rappel de cours :** 1 heure = 60 minutes. Donc 2 heures = 120 minutes. Une demi-heure = 30 minutes. Calcul : 120 + 30 = 150 minutes."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Une journée de 24 heures contient combien de minutes ?",
+                    "question": "Quelle est l'unité de mesure de la puissance électrique ?",
                     "answerOptions": [
-                        {"text": "1440 minutes", "isCorrect": True},
-                        {"text": "1200 minutes", "isCorrect": False},
-                        {"text": "3600 minutes", "isCorrect": False},
-                        {"text": "60 minutes", "isCorrect": False}
+                        {"text": "L'unité nommée le Watt (W)", "isCorrect": True},
+                        {"text": "L'unité nommée le Joule (J)", "isCorrect": False},
+                        {"text": "L'unité nommée le Litre (L)", "isCorrect": False},
+                        {"text": "L'unité nommée le Mètre (m)", "isCorrect": False}
                     ],
-                    "correction": "24 × 60 = 1440."
+                    "correction": "**Rappel de cours :** La puissance électrique (P) est le produit de la tension par l'intensité (P = U x I). Elle s'exprime en Watts. On l'utilise pour indiquer la consommation des appareils."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Que vaut l'angle droit en degrés ?",
+                    "question": "Comment convertit-on des centimètres en millimètres ?",
                     "answerOptions": [
-                        {"text": "90°", "isCorrect": True},
-                        {"text": "180°", "isCorrect": False},
-                        {"text": "45°", "isCorrect": False},
-                        {"text": "360°", "isCorrect": False}
+                        {"text": "On multiplie la valeur par dix", "isCorrect": True},
+                        {"text": "On divise la valeur par dix", "isCorrect": False},
+                        {"text": "On multiplie la valeur par cent", "isCorrect": False},
+                        {"text": "On divise la valeur par cent", "isCorrect": False}
                     ],
-                    "correction": "C'est l'angle du coin d'une feuille de papier."
+                    "correction": "**Rappel de cours :** Dans le tableau des longueurs, le millimètre est l'unité juste à droite du centimètre. Pour passer de l'un à l'autre, on multiplie donc par 10. Exemple : 5 cm = 50 mm."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Le périmètre d'un rectangle de 10 cm sur 5 cm est :",
+                    "question": "Quelle est la masse de 1 litre d'eau pure ?",
                     "answerOptions": [
-                        {"text": "30 cm", "isCorrect": True},
-                        {"text": "50 cm", "isCorrect": False},
-                        {"text": "15 cm", "isCorrect": False},
-                        {"text": "25 cm", "isCorrect": False}
+                        {"text": "Une masse égale à un kilogramme", "isCorrect": True},
+                        {"text": "Une masse égale à cent grammes", "isCorrect": False},
+                        {"text": "Une masse égale à dix kilogrammes", "isCorrect": False},
+                        {"text": "Une masse égale à un gramme seul", "isCorrect": False}
                     ],
-                    "correction": "(10 + 5) × 2 = 30 cm."
+                    "correction": "**Rappel de cours :** C'est une correspondance de référence : 1 dm³ d'eau = 1 litre = 1 kg. Attention, cette égalité n'est vraie que pour l'eau (la densité de l'huile ou du métal est différente)."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Un angle aigu est :",
+                    "question": "Combien de secondes y a-t-il dans une minute ?",
                     "answerOptions": [
-                        {"text": "Plus petit que 90°", "isCorrect": True},
-                        {"text": "Plus grand que 90°", "isCorrect": False},
-                        {"text": "Égal à 90°", "isCorrect": False},
-                        {"text": "Égal à 180°", "isCorrect": False}
+                        {"text": "Un total de soixante secondes", "isCorrect": True},
+                        {"text": "Un total de cent secondes", "isCorrect": False},
+                        {"text": "Un total de trente secondes", "isCorrect": False},
+                        {"text": "Un total de douze secondes", "isCorrect": False}
                     ],
-                    "correction": "Comme l'angle d'un triangle équilatéral (60°)."
+                    "correction": "**Rappel de cours :** Le système de mesure du temps est sexagésimal (base 60). Une minute vaut 60 secondes et une heure vaut 3600 secondes (60x60)."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Quelle est la moitié de 0,5 ?",
+                    "question": "Quelle est l'unité de mesure d'une surface dans le système international ?",
                     "answerOptions": [
-                        {"text": "0,25", "isCorrect": True},
-                        {"text": "0,10", "isCorrect": False},
-                        {"text": "1", "isCorrect": False},
-                        {"text": "0,2", "isCorrect": False}
+                        {"text": "L'unité nommée le mètre carré", "isCorrect": True},
+                        {"text": "L'unité nommée le mètre cube", "isCorrect": False},
+                        {"text": "L'unité nommée le mètre linéaire", "isCorrect": False},
+                        {"text": "L'unité nommée le kilogramme", "isCorrect": False}
                     ],
-                    "correction": "0,5 / 2 = 0,25."
+                    "correction": "**Rappel de cours :** Une surface se mesure en deux dimensions (longueur x largeur). L'unité de base est le m². Pour les terrains agricoles, on utilise aussi l'hectare (ha) qui vaut 10 000 m²."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Combien de centimètres y a-t-il dans un mètre ?",
+                    "question": "Convertissez 1,5 kg en grammes.",
                     "answerOptions": [
-                        {"text": "100", "isCorrect": True},
-                        {"text": "10", "isCorrect": False},
-                        {"text": "1000", "isCorrect": False},
-                        {"text": "1", "isCorrect": False}
+                        {"text": "Un total de mille cinq cents grammes", "isCorrect": True},
+                        {"text": "Un total de cent cinquante grammes", "isCorrect": False},
+                        {"text": "Un total de quinze grammes seulement", "isCorrect": False},
+                        {"text": "Un total de quinze mille grammes", "isCorrect": False}
                     ],
-                    "correction": "Cent- signifie 100."
+                    "correction": "**Rappel de cours :** On multiplie par 1000. Calcul : 1,5 x 1000 = 1500 g. C'est utile pour les recettes de cuisine ou les pesées en atelier."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Comment calcule-t-on l'aire d'un disque ?",
+                    "question": "Quelle unité utilise-t-on pour la tension électrique ?",
                     "answerOptions": [
-                        {"text": "π × Rayon × Rayon", "isCorrect": True},
-                        {"text": "2 × π × Rayon", "isCorrect": False},
-                        {"text": "Diamètre × π", "isCorrect": False},
-                        {"text": "Rayon × 2", "isCorrect": False}
+                        {"text": "L'unité nommée le Volt (V)", "isCorrect": True},
+                        {"text": "L'unité nommée l'Ampère (A)", "isCorrect": False},
+                        {"text": "L'unité nommée l'Ohm (Ω)", "isCorrect": False},
+                        {"text": "L'unité nommée le Watt (W)", "isCorrect": False}
                     ],
-                    "correction": "Aussi écrit π × R²."
+                    "correction": "**Rappel de cours :** La tension électrique (différence de potentiel) se mesure avec un voltmètre branché en dérivation. En France, la tension domestique est de 230 V."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quel est le périmètre d'un triangle dont les côtés mesurent 3, 4 et 5 cm ?",
+                    "question": "Combien de millilitres y a-t-il dans un litre ?",
                     "answerOptions": [
-                        {"text": "12 cm", "isCorrect": True},
-                        {"text": "6 cm", "isCorrect": False},
-                        {"text": "60 cm", "isCorrect": False},
-                        {"text": "7 cm", "isCorrect": False}
+                        {"text": "Un total de mille millilitres", "isCorrect": True},
+                        {"text": "Un total de cent millilitres", "isCorrect": False},
+                        {"text": "Un total de dix millilitres", "isCorrect": False},
+                        {"text": "Un total de un millilitre seul", "isCorrect": False}
                     ],
-                    "correction": "3 + 4 + 5 = 12."
+                    "correction": "**Rappel de cours :** Le préfixe 'milli' signifie millième. Il faut donc 1000 millilitres pour constituer un litre entier. C'est l'équivalent de 1 cm³."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Convertir 50 cl en litres.",
+                    "question": "Quelle est l'unité de mesure d'un volume ?",
                     "answerOptions": [
-                        {"text": "0,5 L", "isCorrect": True},
-                        {"text": "5 L", "isCorrect": False},
-                        {"text": "500 L", "isCorrect": False},
-                        {"text": "0,05 L", "isCorrect": False}
+                        {"text": "L'unité nommée le mètre cube", "isCorrect": True},
+                        {"text": "L'unité nommée le mètre carré", "isCorrect": False},
+                        {"text": "L'unité nommée le mètre linéaire", "isCorrect": False},
+                        {"text": "L'unité nommée le kilogramme", "isCorrect": False}
                     ],
-                    "correction": "Il y a 100 cl dans 1 L."
+                    "correction": "**Rappel de cours :** Un volume se mesure en trois dimensions (L x l x h). L'unité de référence est le m³. On utilise aussi beaucoup le litre pour les liquides."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Quelle est la valeur de 10³ ?",
+                    "question": "Convertissez 2,5 mètres en centimètres.",
                     "answerOptions": [
-                        {"text": "1000", "isCorrect": True},
-                        {"text": "30", "isCorrect": False},
-                        {"text": "100", "isCorrect": False},
-                        {"text": "300", "isCorrect": False}
+                        {"text": "Un total de deux cent cinquante centimètres", "isCorrect": True},
+                        {"text": "Un total de vingt-cinq centimètres", "isCorrect": False},
+                        {"text": "Un total de deux mille cinq cents centimètres", "isCorrect": False},
+                        {"text": "Un total de deux virgule cinq centimètres", "isCorrect": False}
                     ],
-                    "correction": "10 × 10 × 10 = 1000."
+                    "correction": "**Rappel de cours :** Pour passer des mètres aux centimètres, on multiplie par 100 (on décale la virgule de deux rangs vers la droite). Calcul : 2,5 x 100 = 250 cm."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Un quadrilatère ayant 4 côtés égaux et 4 angles droits est :",
+                    "question": "Quel instrument utilise-t-on pour mesurer une masse ?",
                     "answerOptions": [
-                        {"text": "Un carré", "isCorrect": True},
-                        {"text": "Un rectangle", "isCorrect": False},
-                        {"text": "Un losange", "isCorrect": False},
-                        {"text": "Un trapèze", "isCorrect": False}
+                        {"text": "Une balance de précision", "isCorrect": True},
+                        {"text": "Une règle graduée plate", "isCorrect": False},
+                        {"text": "Un thermomètre à mercure", "isCorrect": False},
+                        {"text": "Un rapporteur d'angles", "isCorrect": False}
                     ],
-                    "correction": "Le carré est un cas particulier de rectangle et de losange."
+                    "correction": "**Rappel de cours :** La balance mesure la masse (en kg ou g). Le pèse-personne ou la balance de cuisine en sont des exemples courants."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Combien de secondes y a-t-il dans une minute ?",
+                    "question": "Que mesure-t-on avec un 'chronomètre' ?",
                     "answerOptions": [
-                        {"text": "60", "isCorrect": True},
-                        {"text": "100", "isCorrect": False},
-                        {"text": "3600", "isCorrect": False},
-                        {"text": "10", "isCorrect": False}
+                        {"text": "Une durée ou un intervalle de temps", "isCorrect": True},
+                        {"text": "La température d'un corps", "isCorrect": False},
+                        {"text": "La longueur d'une salle de cours", "isCorrect": False},
+                        {"text": "Le poids d'un colis postal", "isCorrect": False}
                     ],
-                    "correction": "Le temps utilise la base 60."
+                    "correction": "**Rappel de cours :** Le chronomètre sert à mesurer le temps écoulé entre un début et une fin. Il est très précis (souvent au centième de seconde près)."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Le périmètre latéral d'un cylindre se calcule en multipliant la hauteur par :",
+                    "question": "Quelle est l'unité de mesure de la température en France ?",
                     "answerOptions": [
-                        {"text": "Le périmètre de la base", "isCorrect": True},
-                        {"text": "Le rayon", "isCorrect": False},
-                        {"text": "Le diamètre", "isCorrect": False},
-                        {"text": "La largeur", "isCorrect": False}
+                        {"text": "Le degré de type Celsius", "isCorrect": True},
+                        {"text": "Le degré de type Fahrenheit", "isCorrect": False},
+                        {"text": "L'unité nommée le Kelvin", "isCorrect": False},
+                        {"text": "Le degré de type Angle", "isCorrect": False}
                     ],
-                    "correction": "Si on déroule le cylindre, on obtient un rectangle."
+                    "correction": "**Rappel de cours :** En France et dans la plupart des pays, on utilise l'échelle Celsius (°C). L'eau gèle à 0°C et bout à 100°C (à pression normale)."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "1 décimètre cube (dm³) est exactement égal à :",
+                    "question": "Quelle est la conversion fondamentale de capacité ?",
                     "answerOptions": [
-                        {"text": "1 litre", "isCorrect": True},
-                        {"text": "10 litres", "isCorrect": False},
-                        {"text": "100 litres", "isCorrect": False},
-                        {"text": "0,1 litre", "isCorrect": False}
+                        {"text": "Un litre est égal à un décimètre cube", "isCorrect": True},
+                        {"text": "Un litre est égal à un mètre cube", "isCorrect": False},
+                        {"text": "Un litre est égal à cent litres cubes", "isCorrect": False},
+                        {"text": "Un litre est égal à zéro virgule un litre", "isCorrect": False}
                     ],
-                    "correction": "C'est la conversion fondamentale à connaître : 1 L = 1 dm³."
+                    "correction": "**Rappel de cours :** C'est le lien entre le volume et la capacité : 1 L = 1 dm³. Cela signifie qu'un cube de 10 cm de côté peut contenir exactement 1 litre de liquide."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Le nombre de sommets d'un cube est :",
+                    "question": "Le nombre de sommets d'un cube est de :",
                     "answerOptions": [
-                        {"text": "8", "isCorrect": True},
-                        {"text": "6", "isCorrect": False},
-                        {"text": "12", "isCorrect": False},
-                        {"text": "4", "isCorrect": False}
+                        {"text": "Un total de huit sommets", "isCorrect": True},
+                        {"text": "Un total de six sommets", "isCorrect": False},
+                        {"text": "Un total de douze sommets", "isCorrect": False},
+                        {"text": "Un total de quatre sommets", "isCorrect": False}
                     ],
-                    "correction": "Un cube a 8 coins (sommets)."
+                    "correction": "**Rappel de cours :** Un cube possède 8 coins (sommets), 12 arêtes (les barres) et 6 faces (les carrés qui l'entourent)."
                 },
                 {
                     "questionNumber": 99,
                     "question": "Pour additionner deux durées, on doit parfois :",
                     "answerOptions": [
-                        {"text": "Convertir les minutes en heures si elles dépassent 60", "isCorrect": True},
-                        {"text": "Convertir systématiquement en secondes", "isCorrect": False},
-                        {"text": "Multiplier les heures entre elles", "isCorrect": False},
-                        {"text": "Simplifier le calcul final", "isCorrect": False}
+                        {"text": "Convertir les minutes en heures dès soixante", "isCorrect": True},
+                        {"text": "Convertir systématiquement en secondes pures", "isCorrect": False},
+                        {"text": "Multiplier les heures entre elles directement", "isCorrect": False},
+                        {"text": "Simplifier le calcul par division finale", "isCorrect": False}
                     ],
-                    "correction": "Dès qu'on atteint 60 minutes, on ajoute 1 heure."
+                    "correction": "**Rappel de cours :** Lorsque le total des minutes atteint ou dépasse 60, on doit retrancher 60 aux minutes et ajouter 1 au compteur des heures. Exemple : 1h45 + 30min = 1h75 = 2h15."
+                },
+                {
+                    "questionNumber": 100,
+                    "question": "Combien de millimètres y a-t-il dans un mètre ?",
+                    "answerOptions": [
+                        {"text": "Un total de mille millimètres", "isCorrect": True},
+                        {"text": "Un total de cent millimètres", "isCorrect": False},
+                        {"text": "Un total de dix millimètres", "isCorrect": False},
+                        {"text": "Un total de dix mille millimètres", "isCorrect": False}
+                    ],
+                    "correction": "**Rappel de cours :** Comme l'indique le nom 'mille-mètre', il faut 1000 petites graduations de mm pour faire un mètre entier. 1 m = 10 dm = 100 cm = 1000 mm."
                 }
             ]
         }

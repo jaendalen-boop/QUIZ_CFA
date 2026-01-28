@@ -415,7 +415,7 @@ quiz_data = {
                     "questionNumber": 37,
                     "question": "Quel nom donne-t-on à la grande casserole haute, munie d'une queue, utilisée pour cuire de grandes quantités de liquides ou potages ?",
                     "answerOptions": [
-                        {"text": "La russe", "isCorrect étonnée": True},
+                        {"text": "La russe", "isCorrect": True},
                         {"text": "Le rondeau", "isCorrect": False},
                         {"text": "La braisière", "isCorrect": False},
                         {"text": "La plaque à rôtir", "isCorrect": False}

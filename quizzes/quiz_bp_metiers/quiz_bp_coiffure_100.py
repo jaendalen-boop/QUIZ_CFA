@@ -942,7 +942,7 @@ quiz_data = {
                     "correction": "Il a créé des lignes épurées et faciles à coiffer (ex: le Bob) qui ont libéré les femmes des mises en plis quotidiennes."
                 },
                 {
-                    "questionNumber": 2,
+                    "questionNumber": 83,
                     "question": "Quelle période historique est célèbre pour ses perruques poudrées monumentales chez les femmes de la cour ?",
                     "answerOptions": [
                         {"text": "Le 18ème siècle (Louis XVI)", "isCorrect": True},
