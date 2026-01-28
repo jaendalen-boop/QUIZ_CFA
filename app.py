@@ -850,129 +850,90 @@ def show_profile_page():
         return
 
     username = st.session_state.username
-
-    # Infos de base / stats / scores
     user_info = get_user_info(username)
     stats = get_user_stats(username)
     user_scores = load_user_scores(username)
     quizzes = user_scores.get("quizzes", {})
 
-    # --- Calculs complémentaires pour badges ---
-
-    # Quiz validés (tous les thèmes faits + moyenne ≥ 70 %)
+    # --- 1. CALCULS DES SCORES ET VALIDATIONS ---
     validated_quiz_count = 0
+    validated_cap, validated_bacpro = 0, 0
+    validated_bp, validated_bts, validated_cs = 0, 0, 0
 
-    # Compteurs par niveau pour badges "spécialiste"
-    validated_cap = 0
-    validated_bacpro = 0
-    validated_bp = 0
-    validated_bts = 0
-    validated_cs = 0
-
-    for quiz_key, quiz_data in quizzes.items():
-        scores = quiz_data.get("scores", {})
-        if not scores:
-            continue
-
-        total_correct = 0
-        total_questions = 0
+    for quiz_key, quiz_data_score in quizzes.items():
+        scores = quiz_data_score.get("scores", {})
+        if not scores: continue
+        
+        total_correct, total_questions = 0, 0
         all_themes_completed = True
-
         for score_str in scores.values():
-            # On ne traite que les chaînes "8/10"
-            if not isinstance(score_str, str):
-                continue
+            if not isinstance(score_str, str): continue
             try:
                 correct, total = map(int, score_str.split("/"))
                 total_correct += correct
                 total_questions += total
-            except ValueError:
-                all_themes_completed = False
+            except ValueError: all_themes_completed = False
 
-        if total_questions == 0:
-            continue
+        if total_questions > 0:
+            percentage = (total_correct / total_questions) * 100
+            if all_themes_completed and percentage >= 70:
+                validated_quiz_count += 1
+                if quiz_key.startswith("cap_"): validated_cap += 1
+                elif quiz_key.startswith("bacpro_"): validated_bacpro += 1
+                elif quiz_key.startswith("bp_"): validated_bp += 1
+                elif quiz_key.startswith("bts_"): validated_bts += 1
+                elif quiz_key.startswith("cs_"): validated_cs += 1
 
-        percentage = (total_correct / total_questions) * 100
-        if all_themes_completed and percentage >= 70:
-            validated_quiz_count += 1
+    # --- 2. FORMATAGE DE LA DATE D'ANCIENNETÉ ---
+    created_at_raw = user_info.get('created_at')
+    date_display, relative_display = "N/A", ""
+    if created_at_raw:
+        try:
+            dt = datetime.fromisoformat(created_at_raw)
+            mois = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+            date_display = f"le {dt.day} {mois[dt.month - 1]} {dt.year}"
+            now = datetime.now()
+            y, m, d = now.year - dt.year, now.month - dt.month, now.day - dt.day
+            if d < 0: m -= 1; d += 30
+            if m < 0: y -= 1; m += 12
+            parts = []
+            if y > 0: parts.append(f"{y} {'an' if y == 1 else 'ans'}")
+            if m > 0: parts.append(f"{m} mois")
+            if d > 0: parts.append(f"{d} {'jour' if d == 1 else 'jours'}")
+            if parts:
+                txt = ', '.join(parts[:-1]) + ' et ' + parts[-1] if len(parts) > 1 else parts[0]
+                relative_display = f"<br><span style='font-size:0.9rem; opacity:0.8;'>soit il y a {txt}</span>"
+        except Exception: date_display = created_at_raw
 
-            if quiz_key.startswith("cap_"):
-                validated_cap += 1
-            elif quiz_key.startswith("bacpro_"):
-                validated_bacpro += 1
-            elif quiz_key.startswith("bp_"):
-                validated_bp += 1
-            elif quiz_key.startswith("bts_"):
-                validated_bts += 1
-            elif quiz_key.startswith("cs_"):
-                validated_cs += 1
-
-    # --- En-tête profil ---
-
-    st.markdown(
-        f"<h1 style='text-align:center;margin-bottom:1rem;'>👤 Profil de {username}</h1>",
-        unsafe_allow_html=True,
-    )
-
-    st.markdown(
-        f"""
-        <div style="
-            max-width: 700px;
-            margin: 0 auto 1.5rem auto;
-            padding: 1rem 1.5rem;
-            border-radius: 16px;
-            background: #f9fafb;
-            border: 1px solid #e5e7eb;
-        ">
-            <p style="margin:0.2rem 0;"><strong>Email :</strong> {user_info.get('email', 'Non renseigné')}</p>
-            <p style="margin:0.2rem 0;"><strong>Compte créé le :</strong> {user_info.get('created_at', 'N/A')}</p>
+    # --- 3. AFFICHAGE DE L'EN-TÊTE ---
+    st.markdown(f"<h1 style='text-align:center;margin-bottom:1rem;'>👤 Profil de {username}</h1>", unsafe_allow_html=True)
+    st.markdown(f"""
+        <div style="max-width: 700px; margin: 0 auto 1.5rem auto; padding: 1rem 1.5rem; border-radius: 16px; background: #f9fafb; border: 1px solid #e5e7eb; text-align: center;">
+            <p style="margin:0.2rem 0;"><strong>Compte créé le :</strong> {date_display} {relative_display}</p>
         </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    """, unsafe_allow_html=True)
 
-    # --- Stats globales ---
-
+    # --- 4. STATISTIQUES ET PROGRESSION ---
     st.subheader("Progression globale")
-
-    col1, col2, col3, col4 = st.columns(4)
-    col1.metric("Quiz différents", stats.get("total_quizzes", 0))
-    col2.metric("Quiz validés", validated_quiz_count)
-    col3.metric("Questions totales", stats.get("total_questions", 0))
-    col4.metric("Réussite moyenne", f"{stats.get('average_percentage', 0)} %")
-
-          # --- BARRES DE PROGRESSION PAR NIVEAU ---
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Quiz différents", stats.get("total_quizzes", 0))
+    c2.metric("Quiz validés", validated_quiz_count)
+    c3.metric("Questions totales", stats.get("total_questions", 0))
+    c4.metric("Réussite moyenne", f"{stats.get('average_percentage', 0)} %")
 
     st.markdown("### 📈 Progression par diplôme")
-    
-    # On définit un objectif (ex: 5 quiz pour remplir la barre)
-    obj = 5 
-    
+    obj = 5
     col_p1, col_p2 = st.columns(2)
     with col_p1:
-        st.write(f"**CAP** ({validated_cap}/{obj})")
-        st.progress(min(validated_cap / obj, 1.0))
-        
-        st.write(f"**BAC PRO** ({validated_bacpro}/{obj})")
-        st.progress(min(validated_bacpro / obj, 1.0))
-
+        st.write(f"**CAP** ({validated_cap}/{obj})"); st.progress(min(validated_cap/obj, 1.0))
+        st.write(f"**BAC PRO** ({validated_bacpro}/{obj})"); st.progress(min(validated_bacpro/obj, 1.0))
     with col_p2:
-        st.write(f"**BP / BTS / CS** ({validated_bp + validated_bts + validated_cs}/{obj})")
-        st.progress(min((validated_bp + validated_bts + validated_cs) / obj, 1.0))
-    
-    st.markdown("<br>", unsafe_allow_html=True)
+        st.write(f"**BP / BTS / CS** ({validated_bp+validated_bts+validated_cs}/{obj})")
+        st.progress(min((validated_bp+validated_bts+validated_cs)/obj, 1.0))
 
-    # --- Badges ---
-
-    st.markdown("### Badges")
-
-# --- SECTION BADGES ---
+    # --- 5. SYSTÈME DE BADGES COMPLET ---
     st.markdown("### 🏆 Vos Badges")
-
-    total_quiz_played = stats.get("total_quizzes", 0)
-    
-    # Configuration des badges
-    tous_les_badges = [
+    badges = [
         {"nom": "🎯 Premier quiz", "cond": validated_quiz_count >= 1},
         {"nom": "🏅 5 quiz validés", "cond": validated_quiz_count >= 5},
         {"nom": "📚 100 questions", "cond": stats.get("total_questions", 0) >= 100},
@@ -982,71 +943,27 @@ def show_profile_page():
         {"nom": "🏗️ Expert CAP", "cond": validated_cap >= 3},
         {"nom": "🏬 Expert BAC PRO", "cond": validated_bacpro >= 2},
         {"nom": "🎓 Spécialiste Sup", "cond": (validated_bp >= 1 and validated_bts >= 1)},
-        {"nom": "⏱️ Fidèle au poste", "cond": total_quiz_played >= 10},
+        {"nom": "⏱️ Fidèle au poste", "cond": stats.get("total_quizzes", 0) >= 10}
     ]
+    html_badges = "<div style='display:flex; flex-wrap:wrap; gap:0.5rem;'>"
+    for b in badges:
+        style = "background:#eef2ff; border:1px solid #c7d2fe; color:#1f2937;" if b["cond"] else "background:#f3f4f6; border:1px solid #d1d5db; color:#9ca3af; opacity:0.5; filter:grayscale(100%);"
+        html_badges += f"<span style='{style} border-radius:999px; padding:0.4rem 0.8rem; font-size:0.85rem; font-weight:500;'>{b['nom']}</span>"
+    st.markdown(html_badges + "</div>", unsafe_allow_html=True)
 
-    # Construction de la ligne HTML
-    html_str = "<div style='display:flex; flex-wrap:wrap; gap:0.5rem;'>"
-    
-    for b in tous_les_badges:
-        if b["cond"]:
-            # Badge débloqué : Couleur indigo
-            style = "background:#eef2ff; border:1px solid #c7d2fe; color:#1f2937; opacity:1;"
-        else:
-            # Badge verrouillé : Grisé et transparent
-            style = "background:#f3f4f6; border:1px solid #d1d5db; color:#9ca3af; opacity:0.5; filter:grayscale(100%);"
-            
-        html_str += f"<span style='{style} border-radius:999px; padding:0.4rem 0.8rem; font-size:0.85rem; font-weight:500;'>{b['nom']}</span>"
-    
-    html_str += "</div>"
-
-    # IMPORTANT : C'est cette ligne qui transforme le code ci-dessus en vrais badges
-    st.markdown(html_str, unsafe_allow_html=True)
-
-    # --- Détail par quiz ---
-
+    # --- 6. DÉTAIL DES QUIZ AVEC FILTRE ---
     st.markdown("---")
     st.subheader("Détail par quiz")
-
     if not quizzes:
         st.info("Aucun quiz complété pour le moment.")
-        return
-
-    level_filter = st.selectbox(
-        "Filtrer par niveau",
-        options=["Tous", "CAP", "BAC PRO", "BP", "BTS", "CS"],
-        index=0,
-    )
-
-    def quiz_matches_level(key: str) -> bool:
-        if level_filter == "Tous":
-            return True
-        if level_filter == "CAP" and key.startswith("cap_"):
-            return True
-        if level_filter == "BAC PRO" and key.startswith("bacpro_"):
-            return True
-        if level_filter == "BP" and key.startswith("bp_"):
-            return True
-        if level_filter == "BTS" and key.startswith("bts_"):
-            return True
-        if level_filter == "CS" and key.startswith("cs_"):
-            return True
-        return False
-
-    for quiz_key, quiz_data in quizzes.items():
-        if not quiz_matches_level(quiz_key):
-            continue
-
-        quiz_info = QUIZZES.get(quiz_key, {})
-        quiz_title = quiz_info.get("title", quiz_key)
-        last_updated = quiz_data.get("last_updated", "")
-
-        with st.expander(quiz_title):
-            if last_updated:
-                st.caption(f"Dernière mise à jour : {last_updated}")
-            scores = quiz_data.get("scores", {})
-            for theme_num, score_str in scores.items():
-                st.write(f"- Thème {theme_num} : {score_str}")
+    else:
+        level_filter = st.selectbox("Filtrer par niveau", ["Tous", "CAP", "BAC PRO", "BP", "BTS", "CS"])
+        for q_key, q_data in quizzes.items():
+            if level_filter != "Tous" and not q_key.startswith(level_filter.lower().replace(" ", "")): continue
+            quiz_info = QUIZZES.get(q_key, {})
+            with st.expander(quiz_info.get("title", q_key)):
+                for t_num, s_str in q_data.get("scores", {}).items():
+                    st.write(f"- Thème {t_num} : {s_str}")
 
 
 # -----------------------
