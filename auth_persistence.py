@@ -127,34 +127,24 @@ def email_exists(email: str) -> bool:
 
 def create_user(username: str, email: str, password: str) -> tuple[bool, str]:
     """
-    Crée un nouvel utilisateur.
-    
-    Returns:
-        (success: bool, message: str)
+    Crée un nouvel utilisateur sans contrainte de longueur ou d'email.
     """
     username = username.strip().lower()
-    email = email.strip().lower()
     
-    # Validations
-    if not username or len(username) < 3:
-        return False, "❌ Le nom d'utilisateur doit avoir au moins 3 caractères"
+    # Validations minimales
+    if not username:
+        return False, "❌ Veuillez choisir un nom d'utilisateur"
     
-    if not email or "@" not in email:
-        return False, "❌ Email invalide"
-    
-    if not password or len(password) < 6:
-        return False, "❌ Le mot de passe doit avoir au moins 6 caractères"
+    if not password:
+        return False, "❌ Veuillez choisir un mot de passe"
     
     if user_exists(username):
         return False, "❌ Cet utilisateur existe déjà"
     
-    if email_exists(email):
-        return False, "❌ Cet email est déjà utilisé"
-    
     # Crée l'utilisateur
     users = load_users_db()
     users[username] = {
-        "email": email,
+        "email": email, # Sera une chaîne vide "" envoyée par app.py
         "password": hash_password(password),
         "created_at": datetime.now().isoformat(),
     }

@@ -625,83 +625,69 @@ def show_entry_screen():
     st.markdown("""
     <div style="padding: 2rem; border-radius: 20px; background: linear-gradient(135deg, #6A11CB, #2575FC); color: white; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.25); max-width: 700px; margin: 2rem auto;">
         <h1 style="margin-bottom: 0.5rem;">Plateforme de révision CFA CMAR</h1>
-        <p style="font-size: 1.1rem; opacity: 0.9;">Révisez par niveau, métier et matières générales, et suivez votre progression.</p>
+        <p style="font-size: 1.1rem; opacity: 0.9;">Révisez par niveau et métier.</p>
     </div>
     """, unsafe_allow_html=True)
+
+    if "auth_mode" not in st.session_state:
+        st.session_state.auth_mode = "login"
 
     col1, col2 = st.columns(2)
 
     with col1:
-        st.subheader("Accès rapide")
-        st.write("Utilisez l'application immédiatement sans compte.")
-        if st.button("🚀 Entrer sans compte", use_container_width=True):
+        st.subheader("🚀 Accès rapide")
+        st.write("Accédez aux quiz immédiatement sans créer de profil.")
+        if st.button("Entrer sans compte", use_container_width=True):
             st.session_state.auth_stage = "guest"
             st.rerun()
 
     with col2:
-        st.subheader("Espace Personnel")
-        tabs = st.tabs(["Se connecter", "Créer un compte"])
-
-        with tabs[0]:
-            # --- FORMULAIRE DE CONNEXION CACHÉ ---
-            st.markdown("""
-                <form id="login-form" style="display:none;" action="javascript:void(0);">
-                    <input type="text" id="hidden-login-user" autocomplete="username">
-                    <input type="password" id="hidden-login-pass" autocomplete="current-password">
-                    <input type="submit">
-                </form>
-            """, unsafe_allow_html=True)
+        if st.session_state.auth_mode == "login":
+            st.subheader("🔐 Connexion")
+            # Aide navigateur invisible
+            st.markdown('<form action="javascript:void(0);" style="display:none;"><input type="text" autocomplete="username"><input type="password" autocomplete="current-password"></form>', unsafe_allow_html=True)
             
-            login_user_val = st.text_input("👤 Nom d'utilisateur", key="l_user")
-            login_pass_val = st.text_input("🔑 Mot de passe", type="password", key="l_pass")
+            user = st.text_input("Utilisateur", key="l_user", autocomplete="username")
+            pw = st.text_input("Mot de passe", type="password", key="l_pw", autocomplete="current-password")
             
-            if st.button("🔓 Se connecter", use_container_width=True, type="primary"):
-                if login_user_val and login_pass_val:
-                    success, msg = login_user(login_user_val, login_pass_val)
+            if st.button("Se connecter", use_container_width=True, type="primary"):
+                if user and pw:
+                    success, msg = login_user(user, pw)
                     if success:
                         st.session_state.auth_stage = "logged_in"
-                        st.session_state.username = login_user_val.strip().lower()
-                        # SCRIPT DE FORCE
-                        st.markdown(f"""
-                            <script>
-                                document.getElementById('hidden-login-user').value = '{login_user_val}';
-                                document.getElementById('hidden-login-pass').value = '{login_pass_val}';
-                                document.getElementById('login-form').dispatchEvent(new Event('submit'));
-                            </script>
-                        """, unsafe_allow_html=True)
+                        st.session_state.username = user.strip().lower()
                         st.rerun()
                     else:
                         st.error(msg)
+            
+            if st.button("Pas de compte ? Créer un profil", use_container_width=True):
+                st.session_state.auth_mode = "signup"
+                st.rerun()
 
-        with tabs[1]:
-            # --- FORMULAIRE D'INSCRIPTION CACHÉ ---
-            st.markdown("""
-                <form id="signup-form" style="display:none;" action="javascript:void(0);">
-                    <input type="text" id="hidden-signup-user" autocomplete="username">
-                    <input type="password" id="hidden-signup-pass" autocomplete="new-password">
-                    <input type="submit">
-                </form>
-            """, unsafe_allow_html=True)
+        else:
+            st.subheader("🆕 Inscription")
+            # Aide navigateur invisible
+            st.markdown('<form action="javascript:void(0);" style="display:none;"><input type="text" autocomplete="username"><input type="password" autocomplete="new-password"></form>', unsafe_allow_html=True)
+
+            new_u = st.text_input("Pseudo", key="s_user", autocomplete="username")
+            new_p = st.text_input("Mot de passe", type="password", key="s_pw", autocomplete="new-password")
             
-            new_user_val = st.text_input("Nom d'utilisateur", key="s_user")
-            new_email_val = st.text_input("Email", key="s_email")
-            new_pass_val = st.text_input("Mot de passe", type="password", key="s_pass")
-            
-            if st.button("🚀 Créer mon compte", use_container_width=True):
-                if new_user_val and new_pass_val:
-                    success, msg = create_user(new_user_val, new_email_val, new_pass_val)
+            if st.button("Créer mon compte", use_container_width=True, type="primary"):
+                if new_u and new_p:
+                    # On envoie une chaîne vide pour l'email
+                    success, msg = create_user(new_u, "", new_p)
                     if success:
-                        st.success("Compte créé !")
-                        # SCRIPT DE FORCE POUR L'INSCRIPTION
-                        st.markdown(f"""
-                            <script>
-                                document.getElementById('hidden-signup-user').value = '{new_user_val}';
-                                document.getElementById('hidden-signup-pass').value = '{new_pass_val}';
-                                document.getElementById('signup-form').dispatchEvent(new Event('submit'));
-                            </script>
-                        """, unsafe_allow_html=True)
+                        st.success("Compte créé ! Connectez-vous.")
+                        st.session_state.auth_mode = "login"
+                        st.rerun()
                     else:
                         st.error(msg)
+                else:
+                    st.warning("⚠️ Choisissez un pseudo et un mot de passe.")
+            
+            if st.button("Retour à la connexion", use_container_width=True):
+                st.session_state.auth_mode = "login"
+                st.rerun()
 
 # -----------------------
 # FONCTIONS UTILITAIRES

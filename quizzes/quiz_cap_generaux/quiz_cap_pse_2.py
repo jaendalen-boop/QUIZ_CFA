@@ -1,5 +1,5 @@
 quiz_data = {
-    "title": "Quiz CAP Prévention Santé Environnement - Série 2 (100 Questions)",
+    "title": "Quiz CAP Prévention Santé Environnement - Série 2 (100 Questions) - Version Optimisée",
     "themes": {
         # =========================================================================
         # THÈME 1 : HYGIÈNE DE VIE ET RISQUES BIOLOGIQUES (Questions 1 à 20)
@@ -11,221 +11,221 @@ quiz_data = {
                     "questionNumber": 1,
                     "question": "Quel est le geste le plus efficace pour éviter la propagation des microbes manuportés ?",
                     "answerOptions": [
-                        {"text": "Se laver les mains", "isCorrect": True},
-                        {"text": "Porter un masque", "isCorrect": False},
-                        {"text": "Aérer la pièce", "isCorrect": False},
-                        {"text": "Mettre des gants", "isCorrect": False}
+                        {"text": "Se laver les mains très régulièrement à l'eau et au savon", "isCorrect": True},
+                        {"text": "Porter un masque de protection respiratoire jetable", "isCorrect": False},
+                        {"text": "Aérer la pièce de vie au moins dix minutes par jour", "isCorrect": False},
+                        {"text": "Mettre des gants de ménage pour toutes les activités", "isCorrect": False}
                     ],
-                    "correction": "80% des microbes se transmettent par les mains. Le lavage des mains (eau + savon ou gel hydroalcoolique) est la barrière n°1 contre les infections."
+                    "correction": "**Rappel de cours :** Environ 80 % des microbes se transmettent par les mains (transmission manuportée). Le lavage des mains (ou l'usage de gel hydroalcoolique) reste la barrière numéro 1 contre les infections hivernales, alimentaires et hospitalières."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "Contre quelles maladies le vaccin DTP (obligatoire) protège-t-il ?",
+                    "question": "Contre quelles maladies le vaccin DTP (obligatoire en France) protège-t-il ?",
                     "answerOptions": [
-                        {"text": "Diphtérie Tétanos Poliomyélite", "isCorrect": True},
-                        {"text": "Diabète Toux Pneumonie", "isCorrect": False},
-                        {"text": "Dengue Typhoïde Paludisme", "isCorrect": False},
-                        {"text": "Dépression Tuberculose Peste", "isCorrect": False}
+                        {"text": "La Diphtérie, le Tétanos et la Poliomyélite", "isCorrect": True},
+                        {"text": "Le Diabète, la Toux et la Pneumonie sévère", "isCorrect": False},
+                        {"text": "La Dengue, la Typhoïde et le Paludisme", "isCorrect": False},
+                        {"text": "La Dépression, la Tuberculose et la Peste", "isCorrect": False}
                     ],
-                    "correction": "Le DTP est le vaccin de base obligatoire en France. Il protège contre trois maladies graves : la Diphtérie (respiratoire), le Tétanos (musculaire) et la Poliomyélite (paralysie)."
+                    "correction": "**Rappel de cours :** Le vaccin DTP est indispensable. Il protège contre la Diphtérie (angine grave), le Tétanos (infection par une plaie souillée) et la Poliomyélite (paralysie). Les rappels sont essentiels tout au long de la vie adulte."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Dans quel cas unique les antibiotiques sont-ils efficaces ?",
+                    "question": "Dans quel cas unique les antibiotiques sont-ils réellement efficaces ?",
                     "answerOptions": [
-                        {"text": "Infection bactérienne", "isCorrect": True},
-                        {"text": "Infection virale", "isCorrect": False},
-                        {"text": "Infection fongique", "isCorrect": False},
-                        {"text": "Fatigue chronique", "isCorrect": False}
+                        {"text": "Pour soigner une infection de type bactérienne", "isCorrect": True},
+                        {"text": "Pour soigner une infection de type virale", "isCorrect": False},
+                        {"text": "Pour soigner une infection de type fongique", "isCorrect": False},
+                        {"text": "Pour lutter contre une fatigue physique chronique", "isCorrect": False}
                     ],
-                    "correction": "\"Les antibiotiques, c'est pas automatique\". Ils tuent les bactéries mais sont totalement inutiles contre les virus (grippe, rhume, COVID-19)."
+                    "correction": "**Rappel de cours :** Comme le dit le slogan 'Les antibiotiques, c'est pas automatique', ils ne tuent que les bactéries. Ils sont totalement inutiles contre les virus (grippe, rhume, bronchite, COVID-19) et leur usage abusif crée des résistances dangereuses."
                 },
                 {
                     "questionNumber": 4,
                     "question": "Quel est le principal danger d'une consommation excessive d'écrans avant le coucher ?",
                     "answerOptions": [
-                        {"text": "Retard d'endormissement dû à la lumière bleue", "isCorrect": True},
-                        {"text": "Augmentation de l'audition", "isCorrect": False},
-                        {"text": "Amélioration de la mémoire", "isCorrect": False},
-                        {"text": "Baisse du rythme cardiaque", "isCorrect": False}
+                        {"text": "Un retard d'endormissement dû à l'effet de la lumière bleue", "isCorrect": True},
+                        {"text": "Une augmentation sensible de la capacité d'audition", "isCorrect": False},
+                        {"text": "Une amélioration globale de la mémoire à long terme", "isCorrect": False},
+                        {"text": "Une baisse brutale du rythme cardiaque durant la nuit", "isCorrect": False}
                     ],
-                    "correction": "La lumière bleue des écrans bloque la sécrétion de mélatonine (l'hormone du sommeil), perturbant ainsi l'horloge biologique."
+                    "correction": "**Rappel de cours :** La lumière bleue émise par les smartphones et tablettes bloque la sécrétion de mélatonine, l'hormone du sommeil. Cela décale l'horloge biologique et nuit à la qualité de la récupération nocturne."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Comment appelle-t-on la période entre la contamination par un microbe et l'apparition des premiers symptômes ?",
+                    "question": "Comment appelle-t-on la période entre la contamination par un microbe et les symptômes ?",
                     "answerOptions": [
-                        {"text": "L'incubation", "isCorrect": True},
-                        {"text": "L'invasion", "isCorrect": False},
-                        {"text": "La convalescence", "isCorrect": False},
-                        {"text": "La guérison", "isCorrect": False}
+                        {"text": "La phase d'incubation du germe infectieux", "isCorrect": True},
+                        {"text": "La phase d'invasion brutale de l'organisme", "isCorrect": False},
+                        {"text": "La phase de convalescence après la maladie", "isCorrect": False},
+                        {"text": "La phase de guérison totale du patient", "isCorrect": False}
                     ],
-                    "correction": "Pendant l'incubation, le microbe se multiplie dans l'organisme sans que la personne ne se sente encore malade."
+                    "correction": "**Rappel de cours :** Durant l'incubation, le microbe se multiplie silencieusement. La personne est souvent déjà contagieuse même si elle ne se sent pas encore malade. La durée varie selon la maladie (quelques jours pour la grippe, plusieurs années pour le VIH)."
                 },
                 {
                     "questionNumber": 6,
                     "question": "Quelle est la fonction principale des globules blancs (leucocytes) ?",
                     "answerOptions": [
-                        {"text": "Défendre l'organisme contre les agresseurs", "isCorrect": True},
-                        {"text": "Transporter l'oxygène", "isCorrect": False},
-                        {"text": "Permettre la coagulation du sang", "isCorrect": False},
-                        {"text": "Digérer les graisses", "isCorrect": False}
+                        {"text": "Défendre activement l'organisme contre les agresseurs", "isCorrect": True},
+                        {"text": "Transporter l'oxygène pur vers les organes vitaux", "isCorrect": False},
+                        {"text": "Permettre la coagulation rapide du sang sur une plaie", "isCorrect": False},
+                        {"text": "Digérer les graisses après un repas trop lourd", "isCorrect": False}
                     ],
-                    "correction": "Les globules blancs sont les soldats du système immunitaire qui neutralisent les bactéries et les virus."
+                    "correction": "**Rappel de cours :** Les globules blancs sont les cellules du système immunitaire. Ils agissent comme des soldats qui détectent, attaquent et détruisent les virus, les bactéries et les corps étrangers présents dans le sang ou les tissus."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Qu'est-ce qu'un porteur sain ?",
+                    "question": "Qu'est-ce qu'un porteur sain en infectiologie ?",
                     "answerOptions": [
-                        {"text": "Une personne infectée qui ne présente aucun symptôme mais transmet le microbe", "isCorrect": True},
-                        {"text": "Une personne qui fait beaucoup de sport", "isCorrect": False},
-                        {"text": "Une personne qui n'a jamais été malade", "isCorrect": False},
-                        {"text": "Un infirmier en bonne santé", "isCorrect": False}
+                        {"text": "Une personne infectée sans symptômes qui transmet le microbe", "isCorrect": True},
+                        {"text": "Une personne qui pratique une activité sportive intense", "isCorrect": False},
+                        {"text": "Une personne qui n'a jamais contracté de maladie", "isCorrect": False},
+                        {"text": "Un professionnel de santé travaillant à l'hôpital", "isCorrect": False}
                     ],
-                    "correction": "Le porteur sain est dangereux pour les autres car il ignore qu'il est contagieux."
+                    "correction": "**Rappel de cours :** Le porteur sain (ou asymptomatique) héberge un microbe dangereux sans en souffrir lui-même. C'est un maillon critique dans la propagation des épidémies car il contamine les autres sans le savoir."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quel organe est principalement détruit par le virus du SIDA (VIH) ?",
+                    "question": "Quel système est principalement détruit par le virus du SIDA ?",
                     "answerOptions": [
-                        {"text": "Le système immunitaire", "isCorrect": True},
-                        {"text": "Le système digestif", "isCorrect": False},
-                        {"text": "Le système moteur", "isCorrect": False},
-                        {"text": "Le système osseux", "isCorrect": False}
+                        {"text": "L'ensemble du système immunitaire de défense", "isCorrect": True},
+                        {"text": "L'ensemble du système digestif et intestinal", "isCorrect": False},
+                        {"text": "L'ensemble du système moteur et musculaire", "isCorrect": False},
+                        {"text": "L'ensemble du système osseux et articulaire", "isCorrect": False}
                     ],
-                    "correction": "Le VIH s'attaque aux lymphocytes T4, affaiblissant les défenses naturelles jusqu'à ce que l'organisme ne puisse plus combattre les infections bénignes."
+                    "correction": "**Rappel de cours :** Le VIH (Virus de l'Immunodéficience Humaine) s'attaque aux lymphocytes T4, les 'chefs d'orchestre' de nos défenses. Sans traitement, le corps ne peut plus se défendre contre les infections dites 'opportunistes'."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Quel est le moyen de prévention le plus sûr contre le SIDA et les IST lors d'un rapport sexuel ?",
+                    "question": "Quel est le moyen de prévention le plus sûr contre les IST lors d'un rapport sexuel ?",
                     "answerOptions": [
-                        {"text": "Le préservatif", "isCorrect": True},
-                        {"text": "La pilule contraceptive", "isCorrect": False},
-                        {"text": "Se laver après le rapport", "isCorrect": False},
-                        {"text": "La confiance mutuelle seule", "isCorrect": False}
+                        {"text": "L'usage systématique d'un préservatif masculin ou féminin", "isCorrect": True},
+                        {"text": "La prise quotidienne de la pilule contraceptive féminine", "isCorrect": False},
+                        {"text": "Une hygiène corporelle très rigoureuse après le rapport", "isCorrect": False},
+                        {"text": "La confiance mutuelle établie entre les deux partenaires", "isCorrect": False}
                     ],
-                    "correction": "Le préservatif (masculin ou féminin) est le seul rempart physique contre la transmission des virus et bactéries sexuels."
+                    "correction": "**Rappel de cours :** Seul le préservatif agit comme une barrière physique contre les bactéries et virus sexuellement transmissibles. La pilule et le stérilet empêchent la grossesse mais n'offrent aucune protection contre les infections."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Quelle est la définition d'une pandémie ?",
+                    "question": "Quelle est la définition précise d'une pandémie ?",
                     "answerOptions": [
-                        {"text": "Une épidémie qui s'étend à l'échelle mondiale", "isCorrect": True},
-                        {"text": "Une maladie qui ne touche que les animaux", "isCorrect": False},
-                        {"text": "Une maladie génétique rare", "isCorrect": False},
-                        {"text": "Une infection limitée à un seul quartier", "isCorrect": False}
+                        {"text": "Une épidémie de grande ampleur à l'échelle mondiale", "isCorrect": True},
+                        {"text": "Une maladie qui ne touche que les animaux sauvages", "isCorrect": False},
+                        {"text": "Une maladie génétique très rare dès la naissance", "isCorrect": False},
+                        {"text": "Une infection bactérienne limitée à un seul quartier", "isCorrect": False}
                     ],
-                    "correction": "Une pandémie (comme la COVID-19) traverse les frontières et touche une grande partie de la population mondiale."
+                    "correction": "**Rappel de cours :** On parle de pandémie quand une maladie infectieuse se propage sur plusieurs continents simultanément et touche une très grande partie de la population mondiale (ex: Grippe espagnole, COVID-19)."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Quel est le risque majeur d'un bruit supérieur à 85 décibels répété quotidiennement ?",
+                    "question": "Quel est le risque d'un bruit supérieur à 85 dB répété quotidiennement ?",
                     "answerOptions": [
-                        {"text": "Lésions irréversibles de l'oreille interne", "isCorrect": True},
-                        {"text": "Amélioration de la vue", "isCorrect": False},
-                        {"text": "Augmentation de la force musculaire", "isCorrect": False},
-                        {"text": "Baisse du cholestérol", "isCorrect": False}
+                        {"text": "Le développement de lésions irréversibles de l'oreille interne", "isCorrect": True},
+                        {"text": "Une amélioration globale de la vision nocturne du sujet", "isCorrect": False},
+                        {"text": "Une augmentation de la force musculaire des membres", "isCorrect": False},
+                        {"text": "Une baisse durable du taux de cholestérol dans le sang", "isCorrect": False}
                     ],
-                    "correction": "Les cellules ciliées de la cochlée sont détruites par le bruit excessif. Une fois mortes, elles ne se régénèrent jamais."
+                    "correction": "**Rappel de cours :** Les cellules ciliées de la cochlée captent les sons. Si elles sont détruites par un bruit trop fort (concert, usine), elles ne se régénèrent jamais. La surdérité professionnelle est définitive."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Que signifie le sigle IMC ?",
+                    "question": "À quoi sert le calcul de l'Indice de Masse Corporelle ?",
                     "answerOptions": [
-                        {"text": "Indice de Masse Corporelle", "isCorrect": True},
-                        {"text": "Indice de Musculation de Croissance", "isCorrect": False},
-                        {"text": "Intoxication Mentale Chronique", "isCorrect": False},
-                        {"text": "Indicateur Médical du Cœur", "isCorrect": False}
+                        {"text": "À évaluer la corpulence et les risques liés au poids", "isCorrect": True},
+                        {"text": "À mesurer la puissance de la musculature du cœur", "isCorrect": False},
+                        {"text": "À détecter une intoxication mentale ou un stress", "isCorrect": False},
+                        {"text": "À vérifier le taux de sucre présent dans les urines", "isCorrect": False}
                     ],
-                    "correction": "L'IMC se calcule en divisant le poids par la taille au carré (kg/m²). Il permet d'évaluer les risques de surpoids ou de maigreur."
+                    "correction": "**Rappel de cours :** L'IMC se calcule en divisant le poids (kg) par la taille au carré (m²). Entre 18,5 et 25, la corpulence est normale. Au-delà de 30, on parle d'obésité avec des risques accrus pour le cœur."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Pourquoi faut-il privilégier les 'sucres lents' (féculents) ?",
+                    "question": "Pourquoi est-il vital de privilégier les glucides complexes comme les féculents ?",
                     "answerOptions": [
-                        {"text": "Ils fournissent de l'énergie durablement à l'organisme", "isCorrect": True},
-                        {"text": "Ils font maigrir instantanément", "isCorrect": False},
-                        {"text": "Ils remplacent les protéines", "isCorrect": False},
-                        {"text": "Ils sont plus faciles à manger", "isCorrect": False}
+                        {"text": "Car ils fournissent de l'énergie durablement à l'organisme", "isCorrect": True},
+                        {"text": "Car ils permettent de perdre du poids très rapidement", "isCorrect": False},
+                        {"text": "Car ils peuvent remplacer totalement les protéines animales", "isCorrect": False},
+                        {"text": "Car ils sont beaucoup plus faciles à digérer le soir", "isCorrect": False}
                     ],
-                    "correction": "Les glucides complexes sont digérés lentement, évitant les pics d'insuline et les sensations de faim (coups de barre)."
+                    "correction": "**Rappel de cours :** Les 'sucres lents' libèrent leur énergie sur plusieurs heures. Ils évitent les pics d'insuline et les sensations de faim (fringales) responsables du grignotage."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "Quelle est la principale cause d'apparition des caries dentaires ?",
+                    "question": "Quelle est la cause directe de la destruction de l'émail dentaire ?",
                     "answerOptions": [
-                        {"text": "Action des bactéries sur les résidus de sucre", "isCorrect": True},
-                        {"text": "Manque d'exercice physique", "isCorrect": False},
-                        {"text": "Lecture dans le noir", "isCorrect": False},
-                        {"text": "Consommation de légumes verts", "isCorrect": False}
+                        {"text": "L'action des acides produits par les bactéries sur le sucre", "isCorrect": True},
+                        {"text": "Le manque d'exercice physique régulier pendant la semaine", "isCorrect": False},
+                        {"text": "Le fait de lire trop longtemps dans une pièce noire", "isCorrect": False},
+                        {"text": "La consommation exclusive de légumes verts frais", "isCorrect": False}
                     ],
-                    "correction": "Les bactéries de la plaque dentaire transforment le sucre en acide, qui attaque l'émail des dents."
+                    "correction": "**Rappel de cours :** Les bactéries de la plaque dentaire transforment les résidus de sucre en acide. Cet acide 'creuse' la dent, créant une carie. Le brossage élimine mécaniquement ces bactéries."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quel est l'effet de la nicotine sur le corps ?",
+                    "question": "Quel est l'effet principal de la nicotine sur le système cardiovasculaire ?",
                     "answerOptions": [
-                        {"text": "Dépendance et augmentation du rythme cardiaque", "isCorrect": True},
-                        {"text": "Somnolence immédiate", "isCorrect": False},
-                        {"text": "Amélioration de la respiration", "isCorrect": False},
-                        {"text": "Baisse de la tension artérielle", "isCorrect": False}
+                        {"text": "Une forte dépendance et une hausse du rythme cardiaque", "isCorrect": True},
+                        {"text": "Une somnolence immédiate dès la première bouffée", "isCorrect": False},
+                        {"text": "Une amélioration de la capacité respiratoire profonde", "isCorrect": False},
+                        {"text": "Une baisse durable de la tension artérielle moyenne", "isCorrect": False}
                     ],
-                    "correction": "La nicotine est la substance addictive du tabac. Elle agit comme un excitant cardio-vasculaire."
+                    "correction": "**Rappel de cours :** La nicotine est la substance addictive du tabac. Elle agit comme un stimulant qui accélère le cœur et rétrécit les artères, augmentant ainsi le risque d'infarctus ou d'AVC."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Qu'est-ce qu'une addiction ?",
+                    "question": "Comment définit-on médicalement une addiction ?",
                     "answerOptions": [
-                        {"text": "Besoin irrépressible de consommer une substance malgré ses effets nocifs", "isCorrect": True},
-                        {"text": "Une habitude de lecture quotidienne", "isCorrect": False},
-                        {"text": "Le fait de manger trois repas par jour", "isCorrect": False},
-                        {"text": "Une allergie alimentaire", "isCorrect": False}
+                        {"text": "Le besoin irrépressible de consommer malgré la toxicité", "isCorrect": True},
+                        {"text": "Une habitude culturelle de lecture quotidienne calme", "isCorrect": False},
+                        {"text": "Le fait de prendre trois repas équilibrés par jour", "isCorrect": False},
+                        {"text": "Une allergie alimentaire sévère à certains produits", "isCorrect": False}
                     ],
-                    "correction": "L'addiction (drogue, alcool, jeux, écrans) se définit par la perte de contrôle et la dépendance."
+                    "correction": "**Rappel de cours :** L'addiction est une maladie du cerveau. Elle se caractérise par la perte de contrôle, la dépendance physique ou psychique, et la poursuite de la consommation malgré les dommages évidents."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Comment appelle-t-on le sommeil où l'on rêve le plus ?",
+                    "question": "Dans quelle phase du sommeil l'activité cérébrale est-elle la plus intense ?",
                     "answerOptions": [
-                        {"text": "Le sommeil paradoxal", "isCorrect": True},
-                        {"text": "Le sommeil lent léger", "isCorrect": False},
-                        {"text": "Le sommeil lent profond", "isCorrect": False},
-                        {"text": "L'insomnie", "isCorrect": False}
+                        {"text": "Durant le sommeil paradoxal propice aux rêves", "isCorrect": True},
+                        {"text": "Durant le sommeil lent léger de début de nuit", "isCorrect": False},
+                        {"text": "Durant le sommeil lent profond réparateur", "isCorrect": False},
+                        {"text": "Durant les périodes d'insomnie en milieu de nuit", "isCorrect": False}
                     ],
-                    "correction": "Pendant le sommeil paradoxal, l'activité cérébrale est intense alors que le corps est totalement paralysé."
+                    "correction": "**Rappel de cours :** Durant le sommeil paradoxal, le cerveau est très actif alors que les muscles sont totalement relâchés (paralysie musculaire). C'est la phase où l'on traite les émotions et les souvenirs."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Quel nutriment aide à la formation des os et des dents ?",
+                    "question": "Quel nutriment minéral assure la solidité du squelette ?",
                     "answerOptions": [
-                        {"text": "Le calcium", "isCorrect": True},
-                        {"text": "Le fer", "isCorrect": False},
-                        {"text": "La vitamine C", "isCorrect": False},
-                        {"text": "Les fibres", "isCorrect": False}
+                        {"text": "Le calcium présent dans les laitages et certaines eaux", "isCorrect": True},
+                        {"text": "Le fer présent dans les viandes rouges et épinards", "isCorrect": False},
+                        {"text": "La vitamine C présente dans les agrumes frais", "isCorrect": False},
+                        {"text": "Les fibres présentes dans les céréales complètes", "isCorrect": False}
                     ],
-                    "correction": "Le calcium est minéral indispensable à la solidité du squelette, apporté principalement par les produits laitiers."
+                    "correction": "**Rappel de cours :** Le calcium est le constituant majeur des os et des dents. Un apport suffisant, dès l'enfance et à l'adolescence, est crucial pour prévenir l'ostéoporose plus tard."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Pourquoi est-il important d'aérer son logement au moins 10 minutes par jour ?",
+                    "question": "Quel est l'intérêt sanitaire majeur d'aérer son logement quotidiennement ?",
                     "answerOptions": [
-                        {"text": "Éliminer les polluants intérieurs et renouveler l'oxygène", "isCorrect": True},
-                        {"text": "Refroidir les murs en été", "isCorrect": False},
-                        {"text": "Faire entrer la poussière de la rue", "isCorrect": False},
-                        {"text": "Chasser les mouches", "isCorrect": False}
+                        {"text": "Renouveler l'oxygène et chasser les polluants intérieurs", "isCorrect": True},
+                        {"text": "Faire baisser la température des murs en été chaud", "isCorrect": False},
+                        {"text": "Laisser entrer la poussière naturelle de la rue passante", "isCorrect": False},
+                        {"text": "Chasser les insectes volants comme les mouches", "isCorrect": False}
                     ],
-                    "correction": "L'air intérieur est souvent plus pollué que l'air extérieur (COV, CO2, humidité). L'aération prévient les troubles respiratoires."
+                    "correction": "**Rappel de cours :** L'air intérieur est souvent 5 à 10 fois plus pollué que l'air extérieur (meubles, produits ménagers, humidité). L'aération évite l'accumulation de CO2 et de moisissures."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quel est le rôle de la mélanine dans la peau ?",
+                    "question": "Quel est le rôle de la mélanine présente dans les cellules de la peau ?",
                     "answerOptions": [
-                        {"text": "Protéger contre les rayons UV du soleil", "isCorrect": True},
-                        {"text": "Rendre la peau imperméable", "isCorrect": False},
-                        {"text": "Réguler la transpiration", "isCorrect": False},
-                        {"text": "Transporter le sang", "isCorrect": False}
+                        {"text": "Filtre naturel contre les rayons ultraviolets dangereux", "isCorrect": True},
+                        {"text": "Barrière imperméable contre la pénétration de l'eau", "isCorrect": False},
+                        {"text": "Système de régulation de la transpiration excessive", "isCorrect": False},
+                        {"text": "Système de transport du sang dans les capillaires", "isCorrect": False}
                     ],
-                    "correction": "La mélanine est le pigment qui donne sa couleur à la peau et filtre une partie des rayons solaires dangereux."
+                    "correction": "**Rappel de cours :** La mélanine donne son bronzage à la peau. Elle absorbe une partie des rayons UV du soleil pour protéger l'ADN des cellules, mais cette protection est limitée et nécessite l'usage de crème solaire."
                 }
             ]
         },
@@ -237,223 +237,223 @@ quiz_data = {
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Qu'est-ce qu'une charge fixe dans un budget ?",
+                    "question": "Quelle est la définition d'une charge fixe dans un budget personnel ?",
                     "answerOptions": [
-                        {"text": "Une dépense régulière dont le montant est prévisible (ex : loyer)", "isCorrect": True},
-                        {"text": "Un achat coup de cœur en magasin", "isCorrect": False},
-                        {"text": "La facture d'essence qui varie", "isCorrect": False},
-                        {"text": "Un cadeau d'anniversaire", "isCorrect": False}
+                        {"text": "Une dépense régulière et prévisible comme le loyer", "isCorrect": True},
+                        {"text": "Un achat coup de cœur imprévu en centre commercial", "isCorrect": False},
+                        {"text": "La facture de carburant qui varie selon les trajets", "isCorrect": False},
+                        {"text": "Un cadeau offert lors d'un repas d'anniversaire", "isCorrect": False}
                     ],
-                    "correction": "Les charges fixes (loyer, assurances, abonnements) doivent être payées chaque mois avant les loisirs."
+                    "correction": "**Rappel de cours :** Les charges fixes (loyer, assurances, abonnements) sont prioritaires. Il faut les payer avant de consacrer de l'argent aux charges variables (alimentation) ou aux loisirs."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Que signifie le sigle TAEG sur un contrat de crédit ?",
+                    "question": "Que représente le TAEG sur un contrat de crédit à la consommation ?",
                     "answerOptions": [
-                        {"text": "Taux Annuel Effectif Global", "isCorrect": True},
-                        {"text": "Tarif d'Achat Électrique Garanti", "isCorrect": False},
-                        {"text": "Taux d'Assurance En Groupe", "isCorrect": False},
-                        {"text": "Taxe sur l'Argent Emprunté", "isCorrect": False}
+                        {"text": "Le coût total annuel du crédit tout compris", "isCorrect": True},
+                        {"text": "Le tarif d'achat électrique garanti par l'État", "isCorrect": False},
+                        {"text": "Le taux d'assurance en groupe proposé au client", "isCorrect": False},
+                        {"text": "La taxe sur l'argent emprunté lors d'une vente", "isCorrect": False}
                     ],
-                    "correction": "Le TAEG représente le coût total du crédit (intérêts + frais de dossier + assurance obligatoire)."
+                    "correction": "**Rappel de cours :** Le Taux Annuel Effectif Global inclut les intérêts, les frais de dossier et l'assurance. C'est l'indicateur unique pour comparer deux offres de prêt différentes."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quel document récapitule les ressources et les dépenses d'un individu ?",
+                    "question": "Quel document financier permet de prévoir ses ressources et dépenses ?",
                     "answerOptions": [
-                        {"text": "Le budget", "isCorrect": True},
-                        {"text": "La fiche de paie", "isCorrect": False},
-                        {"text": "Le relevé d'identité bancaire (RIB)", "isCorrect": False},
-                        {"text": "Le contrat de travail", "isCorrect": False}
+                        {"text": "Un budget prévisionnel mensuel ou annuel", "isCorrect": True},
+                        {"text": "Une fiche de paie reçue de l'employeur actuel", "isCorrect": False},
+                        {"text": "Un relevé d'identité bancaire pour un virement", "isCorrect": False},
+                        {"text": "Un contrat de travail signé pour un poste fixe", "isCorrect": False}
                     ],
-                    "correction": "Établir un budget permet de gérer son argent, d'anticiper les dépenses et d'éviter le découvert bancaire."
+                    "correction": "**Rappel de cours :** Tenir son budget permet d'éviter le découvert bancaire et les agios. On soustrait les dépenses des revenus pour connaître le 'reste à vivre'."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Quelle est la durée légale du délai de rétractation pour un achat sur internet ?",
+                    "question": "Quel est le délai légal de rétractation après un achat sur internet ?",
                     "answerOptions": [
-                        {"text": "14 jours", "isCorrect": True},
-                        {"text": "2 jours", "isCorrect": False},
-                        {"text": "30 jours", "isCorrect": False},
-                        {"text": "Aucun délai", "isCorrect": False}
+                        {"text": "Une durée de quatorze jours calendaires entiers", "isCorrect": True},
+                        {"text": "Une durée de deux jours ouvrables seulement", "isCorrect": False},
+                        {"text": "Une durée de trente jours calendaires entiers", "isCorrect": False},
+                        {"text": "Il n'y a aucun droit de retour pour le numérique", "isCorrect": False}
                     ],
-                    "correction": "En vente à distance, le consommateur dispose de 14 jours pour changer d'avis sans avoir à se justifier."
+                    "correction": "**Rappel de cours :** La loi Hamon protège l'acheteur à distance. On dispose de 14 jours pour changer d'avis, renvoyer le produit et être remboursé sans avoir à justifier de motif."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Qu'est-ce que le 'reste à vivre' ?",
+                    "question": "Comment appelle-t-on la somme d'argent qu'il reste pour les loisirs ?",
                     "answerOptions": [
-                        {"text": "La somme restante après paiement des charges fixes et obligatoires", "isCorrect": True},
-                        {"text": "Le montant du salaire brut", "isCorrect": False},
-                        {"text": "Le prix total d'un chariot de courses", "isCorrect": False},
-                        {"text": "L'argent placé sur un livret d'épargne", "isCorrect": False}
+                        {"text": "Le reste à vivre après les charges obligatoires", "isCorrect": True},
+                        {"text": "Le montant du salaire brut avant les cotisations", "isCorrect": False},
+                        {"text": "Le prix total affiché sur le chariot de courses", "isCorrect": False},
+                        {"text": "L'argent placé sur un livret d'épargne bancaire", "isCorrect": False}
                     ],
-                    "correction": "C'est la somme disponible pour l'alimentation, les loisirs, l'hygiène et les imprévus."
+                    "correction": "**Rappel de cours :** Le 'reste à vivre' est ce qu'il vous reste une fois que le logement, les factures (eau, électricité) et les assurances sont payés. Il sert à manger et à sortir."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Quel organisme peut aider une personne en situation de surendettement ?",
+                    "question": "Vers quel organisme se tourner en cas de dettes impossibles à payer ?",
                     "answerOptions": [
-                        {"text": "La Commission de surendettement (Banque de France)", "isCorrect": True},
-                        {"text": "La mairie", "isCorrect": False},
-                        {"text": "Le commissariat de police", "isCorrect": False},
-                        {"text": "Le pôle emploi", "isCorrect": False}
+                        {"text": "La commission de surendettement de la Banque de France", "isCorrect": True},
+                        {"text": "La mairie de la commune de résidence actuelle", "isCorrect": False},
+                        {"text": "Le commissariat de police de la ville locale", "isCorrect": False},
+                        {"text": "Le service de recherche de pôle emploi ici", "isCorrect": False}
                     ],
-                    "correction": "Elle permet de négocier un plan de remboursement avec les créanciers ou d'effacer les dettes sous conditions."
+                    "correction": "**Rappel de cours :** Si un particulier ne peut plus payer ses dettes non professionnelles, il peut déposer un dossier. La commission propose alors un plan de remboursement ou un effacement des dettes."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Que signifie le label 'Agriculture Biologique' (AB) ?",
+                    "question": "Quelle est la garantie principale offerte par le label AB ?",
                     "answerOptions": [
-                        {"text": "Produit cultivé sans engrais chimiques de synthèse ni pesticides", "isCorrect": True},
-                        {"text": "Produit qui coûte moins cher que les autres", "isCorrect": False},
-                        {"text": "Produit fabriqué uniquement en France", "isCorrect": False},
-                        {"text": "Produit sans aucune calorie", "isCorrect": False}
+                        {"text": "Produit cultivé sans engrais ni pesticides de synthèse", "isCorrect": True},
+                        {"text": "Produit vendu au prix le plus bas du marché actuel", "isCorrect": False},
+                        {"text": "Produit fabriqué exclusivement sur le sol français", "isCorrect": False},
+                        {"text": "Produit ne contenant absolument aucune calorie", "isCorrect": False}
                     ],
-                    "correction": "Le logo AB garantit un mode de production respectueux de l'environnement et du bien-être animal."
+                    "correction": "**Rappel de cours :** Le label Agriculture Biologique garantit que 95 % au moins des composants sont bio. Il interdit les OGM et limite drastiquement les traitements chimiques."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Quel est le but principal de l'assurance responsabilité civile ?",
+                    "question": "Que couvre l'assurance 'Responsabilité Civile' obligatoire ?",
                     "answerOptions": [
-                        {"text": "Réparer les dommages causés involontairement à autrui", "isCorrect": True},
-                        {"text": "Payer ses propres frais médicaux", "isCorrect": False},
-                        {"text": "Protéger sa maison contre le vol", "isCorrect": False},
-                        {"text": "Acheter une nouvelle voiture", "isCorrect": False}
+                        {"text": "Les dommages causés involontairement à une autre personne", "isCorrect": True},
+                        {"text": "Les frais médicaux personnels après une hospitalisation", "isCorrect": False},
+                        {"text": "La protection des biens mobiliers contre le vol domestique", "isCorrect": False},
+                        {"text": "L'achat d'un nouveau véhicule après une panne moteur", "isCorrect": False}
                     ],
-                    "correction": "Elle est obligatoire et prend en charge les indemnités dues si vous blessez quelqu'un ou cassez l'objet d'un tiers par erreur."
+                    "correction": "**Rappel de cours :** Cette assurance est vitale. Si vous cassez un objet de valeur chez quelqu'un ou si vous blessez quelqu'un par inadvertance, c'est l'assurance qui paiera l'indemnisation à votre place."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Qu'est-ce que l'éco-consommation ?",
+                    "question": "Qu'est-ce que l'éco-consommation au quotidien ?",
                     "answerOptions": [
-                        {"text": "Consommer des produits en limitant leur impact environnemental", "isCorrect": True},
-                        {"text": "Ne plus rien acheter du tout", "isCorrect": False},
-                        {"text": "Acheter uniquement des produits importés par avion", "isCorrect": False},
-                        {"text": "Utiliser beaucoup d'emballages plastiques", "isCorrect": False}
+                        {"text": "Choisir des produits en limitant leur impact sur la nature", "isCorrect": True},
+                        {"text": "Ne plus rien acheter du tout pour économiser l'argent", "isCorrect": False},
+                        {"text": "Acheter uniquement des articles importés par voie aérienne", "isCorrect": False},
+                        {"text": "Multiplier les emballages plastiques pour plus d'hygiène", "isCorrect": False}
                     ],
-                    "correction": "Cela passe par le choix de produits locaux, de saison, avec peu d'emballage et durables."
+                    "correction": "**Rappel de cours :** C'est une démarche citoyenne qui privilégie les produits de saison, locaux, durables et avec le moins d'emballages possible."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Quelle mention est obligatoire sur l'étiquetage des produits préemballés ?",
+                    "question": "Quelle mention doit obligatoirement figurer sur un emballage alimentaire ?",
                     "answerOptions": [
-                        {"text": "La liste des ingrédients", "isCorrect": True},
-                        {"text": "La photo du producteur", "isCorrect": False},
-                        {"text": "Le nom du transporteur", "isCorrect": False},
-                        {"text": "La météo du jour de fabrication", "isCorrect": False}
+                        {"text": "La liste complète des ingrédients et allergènes", "isCorrect": True},
+                        {"text": "La photo du producteur ou du gérant de l'usine", "isCorrect": False},
+                        {"text": "Le nom du chauffeur qui a transporté le produit", "isCorrect": False},
+                        {"text": "Les prévisions météo du jour de la mise en boîte", "isCorrect": False}
                     ],
-                    "correction": "La liste doit aussi mettre en évidence les allergènes (gluten, lait, arachide...)."
+                    "correction": "**Rappel de cours :** La liste des ingrédients est classée par ordre décroissant de poids. Les allergènes (arachide, lait, gluten) doivent être écrits en gras ou soulignés."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "Que signifie un Nutri-Score classé 'E' ?",
+                    "question": "Quel est le message d'un Nutri-Score classé 'E' sur un produit ?",
                     "answerOptions": [
-                        {"text": "Qualité nutritionnelle médiocre (trop gras, trop sucré ou trop salé)", "isCorrect": True},
-                        {"text": "Produit excellent pour la santé", "isCorrect": False},
-                        {"text": "Produit sans aucun danger", "isCorrect": False},
-                        {"text": "Produit issu du commerce équitable", "isCorrect": False}
+                        {"text": "Qualité nutritionnelle médiocre car trop gras ou sucré", "isCorrect": True},
+                        {"text": "Produit excellent pour la santé et la croissance", "isCorrect": False},
+                        {"text": "Produit sans aucun danger pour la consommation", "isCorrect": False},
+                        {"text": "Produit issu exclusivement du commerce équitable", "isCorrect": False}
                     ],
-                    "correction": "Le Nutri-Score va de A (vert - bon) à E (orange foncé - limité). Il aide à comparer des produits d'une même catégorie."
+                    "correction": "**Rappel de cours :** Le Nutri-Score aide à comparer deux produits de même rayon. Un classement 'E' (orange foncé) indique une forte densité calorique, de sel ou d'acides gras saturés."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Quel est l'intérêt de l'épargne de précaution ?",
+                    "question": "Quelle somme est-il conseillé de mettre de côté pour son épargne de précaution ?",
                     "answerOptions": [
-                        {"text": "Faire face à un imprévu (panne, perte d'emploi)", "isCorrect": True},
-                        {"text": "Avoir un gros salaire", "isCorrect": False},
-                        {"text": "Payer ses impôts plus vite", "isCorrect": False},
-                        {"text": "Donner de l'argent à la banque", "isCorrect": False}
+                        {"text": "L'équivalent de deux à trois mois de salaire mensuel", "isCorrect": True},
+                        {"text": "L'équivalent de dix ans de revenus du foyer actuel", "isCorrect": False},
+                        {"text": "Juste assez pour payer le prochain ticket de cinéma", "isCorrect": False},
+                        {"text": "L'intégralité du salaire dès qu'il est versé par le patron", "isCorrect": False}
                     ],
-                    "correction": "Il est conseillé de mettre de côté l'équivalent de 2 à 3 mois de salaire en cas de coup dur."
+                    "correction": "**Rappel de cours :** Cette réserve permet de payer une réparation urgente (voiture, machine à laver) ou de faire face à une baisse de revenus imprévue sans s'endetter."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Qu'est-ce qu'une publicité mensongère ?",
+                    "question": "Comment définit-on légalement une publicité mensongère ?",
                     "answerOptions": [
-                        {"text": "Une publicité qui donne des informations fausses ou trompeuses", "isCorrect": True},
-                        {"text": "Une publicité qui dure trop longtemps", "isCorrect": False},
-                        {"text": "Une publicité à la radio", "isCorrect": False},
-                        {"text": "Une publicité pour un produit gratuit", "isCorrect": False}
+                        {"text": "Une annonce donnant des informations fausses ou trompeuses", "isCorrect": True},
+                        {"text": "Une annonce qui dure plus de trente secondes à la radio", "isCorrect": False},
+                        {"text": "Une annonce pour un produit qui est totalement gratuit", "isCorrect": False},
+                        {"text": "Une annonce affichée uniquement dans les gares de train", "isCorrect": False}
                     ],
-                    "correction": "C'est un délit puni par le Code de la consommation pour protéger l'acheteur."
+                    "correction": "**Rappel de cours :** C'est un délit. La loi interdit de mentir sur les caractéristiques réelles du produit, son prix ou les résultats attendus de son utilisation."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Que signifie le terme 'obsolescence programmée' ?",
+                    "question": "Que signifie l'obsolescence programmée d'un appareil ?",
                     "answerOptions": [
-                        {"text": "Réduire volontairement la durée de vie d'un produit pour en vendre un neuf", "isCorrect": True},
-                        {"text": "Réparer gratuitement un appareil", "isCorrect": False},
-                        {"text": "Le fait qu'un produit soit démodé", "isCorrect": False},
-                        {"text": "Une garantie de 10 ans", "isCorrect": False}
+                        {"text": "Réduire volontairement sa durée de vie pour en vendre un neuf", "isCorrect": True},
+                        {"text": "Réparer gratuitement une machine pour aider le client", "isCorrect": False},
+                        {"text": "Le fait qu'un produit soit devenu démodé avec le temps", "isCorrect": False},
+                        {"text": "L'attribution d'une garantie totale de dix ans d'usage", "isCorrect": False}
                     ],
-                    "correction": "C'est une pratique illégale qui pousse à la surconsommation et au gaspillage des ressources."
+                    "correction": "**Rappel de cours :** Interdite par la loi, cette pratique consiste à utiliser des composants fragiles ou des logiciels qui ralentissent l'appareil pour forcer le rachat."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Pourquoi faut-il comparer les prix au kilo ou au litre en magasin ?",
+                    "question": "Pourquoi le prix au kilo est-il l'indicateur le plus fiable ?",
                     "answerOptions": [
-                        {"text": "Pour comparer objectivement le coût réel malgré la taille de l'emballage", "isCorrect": True},
-                        {"text": "Pour apprendre à faire des mathématiques", "isCorrect": False},
-                        {"text": "Pour savoir si le paquet est lourd", "isCorrect": False},
-                        {"text": "Pour vérifier le nom de la marque", "isCorrect": False}
+                        {"text": "Il permet de comparer le coût réel malgré les emballages", "isCorrect": True},
+                        {"text": "Il aide à apprendre les mathématiques au quotidien", "isCorrect": False},
+                        {"text": "Il indique si le paquet est trop lourd à porter seul", "isCorrect": False},
+                        {"text": "Il permet de vérifier le prestige de la marque choisie", "isCorrect": False}
                     ],
-                    "correction": "Parfois, les formats 'familiaux' ou 'promos' sont plus chers à l'unité que les formats standards."
+                    "correction": "**Rappel de cours :** Le marketing joue sur la taille des paquets. Seul le prix au kilo (ou au litre) permet de voir qu'un petit format est souvent plus cher que le format standard."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Quelle est l'utilité du ticket de caisse ?",
+                    "question": "Quelle est la valeur juridique du ticket de caisse ?",
                     "answerOptions": [
-                        {"text": "Preuve d'achat pour un échange, un remboursement ou la garantie", "isCorrect": True},
-                        {"text": "Faire de la publicité au dos", "isCorrect": False},
-                        {"text": "Vérifier l'heure de sortie du magasin", "isCorrect": False},
-                        {"text": "C'est un papier inutile", "isCorrect": False}
+                        {"text": "Il sert de preuve d'achat pour l'échange ou la garantie", "isCorrect": True},
+                        {"text": "Il sert de support publicitaire pour les marques locales", "isCorrect": False},
+                        {"text": "Il sert à vérifier l'heure de sortie exacte du magasin", "isCorrect": False},
+                        {"text": "Il ne possède aucune utilité réelle pour le consommateur", "isCorrect": False}
                     ],
-                    "correction": "Il est indispensable pour faire valoir ses droits de consommateur en cas de défaut."
+                    "correction": "**Rappel de cours :** Sans ticket de caisse, il est très difficile de prouver que vous avez acheté l'objet. Il est indispensable pour faire jouer la garantie légale de 2 ans."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Qu'est-ce que le commerce équitable ?",
+                    "question": "Quel est l'engagement premier du commerce équitable ?",
                     "answerOptions": [
-                        {"text": "Garantir une juste rémunération aux producteurs des pays en développement", "isCorrect": True},
-                        {"text": "Vendre des produits uniquement sur les marchés", "isCorrect": False},
-                        {"text": "Un échange de produits entre voisins", "isCorrect": False},
-                        {"text": "Un magasin qui appartient à l'État", "isCorrect": False}
+                        {"text": "Assurer une juste rémunération aux petits producteurs", "isCorrect": True},
+                        {"text": "Vendre les articles le moins cher possible pour le client", "isCorrect": False},
+                        {"text": "Organiser des échanges de produits entre voisins proches", "isCorrect": False},
+                        {"text": "Appartenir obligatoirement à l'État de la zone concernée", "isCorrect": False}
                     ],
-                    "correction": "Il assure le respect des droits des travailleurs et de l'environnement (ex : label Max Havelaar)."
+                    "correction": "**Rappel de cours :** Ce système garantit que les paysans du Sud (café, chocolat, coton) ne sont pas exploités et peuvent vivre dignement de leur travail."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Que signifie la garantie légale de conformité (2 ans) ?",
+                    "question": "Combien de temps dure la garantie légale de conformité en France ?",
                     "answerOptions": [
-                        {"text": "Le vendeur doit réparer ou remplacer un produit défectueux", "isCorrect": True},
-                        {"text": "Le produit doit être joli pendant 2 ans", "isCorrect": False},
-                        {"text": "Le client doit payer un abonnement de 2 ans", "isCorrect": False},
-                        {"text": "Le produit ne doit pas changer de couleur", "isCorrect": False}
+                        {"text": "Une durée totale de deux ans pour tout bien neuf", "isCorrect": True},
+                        {"text": "Une durée totale de six mois pour tout bien neuf", "isCorrect": False},
+                        {"text": "Une durée totale de dix ans pour l'ensemble des biens", "isCorrect": False},
+                        {"text": "Une durée totale de un mois pour les vêtements neufs", "isCorrect": False}
                     ],
-                    "correction": "Cette garantie est gratuite et obligatoire pour tous les biens neufs vendus en France."
+                    "correction": "**Rappel de cours :** Si votre lave-linge tombe en panne après 18 mois, le vendeur doit le réparer ou le remplacer gratuitement (sauf si vous avez fait une mauvaise utilisation)."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Qu'est-ce qu'un prélèvement automatique ?",
+                    "question": "Qu'est-ce qu'un prélèvement automatique bancaire ?",
                     "answerOptions": [
-                        {"text": "La banque paie directement une facture récurrente (ex : électricité)", "isCorrect": True},
-                        {"text": "Un retrait d'argent au distributeur", "isCorrect": False},
-                        {"text": "Une erreur de la banque", "isCorrect": False},
-                        {"text": "Une prise de sang à l'hôpital", "isCorrect": False}
+                        {"text": "Le paiement automatique d'une facture récurrente de zone", "isCorrect": True},
+                        {"text": "Un retrait d'argent liquide au distributeur automatique", "isCorrect": False},
+                        {"text": "Une erreur informatique de la banque lors d'un transfert", "isCorrect": False},
+                        {"text": "Une prise de sang réalisée par un infirmier à l'hôpital", "isCorrect": False}
                     ],
-                    "correction": "Il simplifie le paiement des charges fixes mais nécessite de surveiller son solde."
+                    "correction": "**Rappel de cours :** Il évite les oublis de paiement pour le téléphone, l'électricité ou le loyer. Il peut être annulé (révoqué) à tout moment par le client."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quel est le risque majeur des jeux d'argent et de hasard ?",
+                    "question": "Quel risque social est associé aux jeux d'argent ?",
                     "answerOptions": [
-                        {"text": "L'addiction et l'endettement rapide", "isCorrect": True},
-                        {"text": "Devenir trop riche d'un coup", "isCorrect": False},
-                        {"text": "Se faire des amis", "isCorrect": False},
-                        {"text": "Perdre son ticket", "isCorrect": False}
+                        {"text": "Le risque d'addiction et d'endettement rapide du joueur", "isCorrect": True},
+                        {"text": "Le risque de devenir trop riche en très peu de temps", "isCorrect": False},
+                        {"text": "Le risque de se faire trop d'amis durant les parties", "isCorrect": False},
+                        {"text": "Le risque de perdre son ticket dans la rue passante", "isCorrect": False}
                     ],
-                    "correction": "La dépendance au jeu est une maladie reconnue qui peut détruire la vie sociale et financière."
+                    "correction": "**Rappel de cours :** L'addiction au jeu est une pathologie qui détruit la vie de famille et conduit souvent à emprunter de l'argent de façon désespérée (surendettement)."
                 }
             ]
         },
@@ -465,223 +465,223 @@ quiz_data = {
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel est le principal gaz responsable de l'effet de serre d'origine humaine ?",
+                    "question": "Quel gaz est le premier responsable de l'effet de serre humain ?",
                     "answerOptions": [
-                        {"text": "Le dioxyde de carbone (CO2)", "isCorrect": True},
-                        {"text": "L'oxygène", "isCorrect": False},
-                        {"text": "L'hélium", "isCorrect": False},
-                        {"text": "L'azote", "isCorrect": False}
+                        {"text": "Le dioxyde de carbone rejeté par les usines", "isCorrect": True},
+                        {"text": "L'oxygène pur présent dans l'air ambiant ici", "isCorrect": False},
+                        {"text": "L'hélium utilisé pour gonfler les ballons de fête", "isCorrect": False},
+                        {"text": "L'azote liquide utilisé dans la recherche médicale", "isCorrect": False}
                     ],
-                    "correction": "Le CO2, issu de la combustion des énergies fossiles (pétrole, gaz, charbon), piège la chaleur dans l'atmosphère."
+                    "correction": "**Rappel de cours :** Le CO2 provient principalement de la combustion du pétrole, du charbon et du gaz. En s'accumulant, il forme un 'couvercle' qui retient la chaleur terrestre."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "Pourquoi faut-il privilégier le tri sélectif des déchets ?",
+                    "question": "Quel est l'intérêt écologique majeur du tri sélectif ?",
                     "answerOptions": [
                         {"text": "Économiser les matières premières par le recyclage", "isCorrect": True},
-                        {"text": "Pour que les poubelles soient plus jolies", "isCorrect": False},
-                        {"text": "Pour remplir les décharges plus vite", "isCorrect": False},
-                        {"text": "Parce que c'est une activité sportive", "isCorrect": False}
+                        {"text": "Rendre les poubelles plus esthétiques dans les rues", "isCorrect": False},
+                        {"text": "Remplir les décharges publiques de plus en plus vite", "isCorrect": False},
+                        {"text": "Pratiquer une activité physique en portant les sacs", "isCorrect": False}
                     ],
-                    "correction": "Recycler permet de fabriquer de nouveaux objets sans puiser à nouveau dans les ressources naturelles limitées de la Terre."
+                    "correction": "**Rappel de cours :** Recycler une tonne d'acier ou de papier évite de couper de nouveaux arbres ou de creuser de nouvelles mines. Cela préserve les ressources de la Terre."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Qu'est-ce que l'empreinte carbone ?",
+                    "question": "Comment définit-on l'empreinte carbone d'une activité ?",
                     "answerOptions": [
-                        {"text": "La quantité de gaz à effet de serre émise par une activité ou un produit", "isCorrect": True},
-                        {"text": "Une trace de pas dans le charbon", "isCorrect": False},
-                        {"text": "Le prix de la tonne de charbon", "isCorrect": False},
-                        {"text": "La couleur noire d'un emballage", "isCorrect": False}
+                        {"text": "La quantité totale de gaz à effet de serre émise", "isCorrect": True},
+                        {"text": "La trace d'un pas de chaussure dans le charbon noir", "isCorrect": False},
+                        {"text": "Le prix de vente officiel de la tonne de charbon", "isCorrect": False},
+                        {"text": "La couleur sombre d'un emballage cartonné recyclé", "isCorrect": False}
                     ],
-                    "correction": "Elle permet de mesurer l'impact écologique de nos modes de transport, de chauffage ou d'alimentation."
+                    "correction": "**Rappel de cours :** Elle permet de mesurer l'impact climatique d'un trajet en avion, de la fabrication d'un smartphone ou de la production d'un steak de bœuf."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quelle action simple permet de réduire sa consommation d'électricité ?",
+                    "question": "Quel geste simple réduit la consommation électrique à la maison ?",
                     "answerOptions": [
-                        {"text": "Éteindre les appareils en veille", "isCorrect": True},
-                        {"text": "Laisser la lumière allumée toute la journée", "isCorrect": False},
-                        {"text": "Ouvrir les fenêtres avec le chauffage allumé", "isCorrect": False},
-                        {"text": "Utiliser un vieux réfrigérateur mal fermé", "isCorrect": False}
+                        {"text": "Éteindre systématiquement les appareils en veille", "isCorrect": True},
+                        {"text": "Laisser l'ensemble des lumières allumées la journée", "isCorrect": False},
+                        {"text": "Ouvrir les fenêtres quand le chauffage est au maximum", "isCorrect": False},
+                        {"text": "Utiliser un réfrigérateur très ancien qui ferme mal", "isCorrect": False}
                     ],
-                    "correction": "Les appareils en veille (TV, ordi) consomment de l'énergie inutilement 24h/24."
+                    "correction": "**Rappel de cours :** Les veilles (TV, ordinateurs, chargeurs) peuvent représenter jusqu'à 10 % de la facture d'électricité. Les éteindre est un geste facile pour le budget et la planète."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Dans quel bac de tri doit-on jeter les boîtes de conserve en métal ?",
+                    "question": "Où doit-on jeter les boîtes de conserve en métal vides ?",
                     "answerOptions": [
-                        {"text": "Le bac jaune", "isCorrect": True},
-                        {"text": "Le bac vert (verre)", "isCorrect": False},
-                        {"text": "Le bac gris (ordures ménagères)", "isCorrect": False},
-                        {"text": "On ne doit pas les jeter", "isCorrect": False}
+                        {"text": "Dans le bac jaune réservé aux emballages", "isCorrect": True},
+                        {"text": "Dans le bac vert réservé uniquement au verre", "isCorrect": False},
+                        {"text": "Dans le bac gris réservé aux ordures ménagères", "isCorrect": False},
+                        {"text": "Il est interdit de jeter du métal à la poubelle", "isCorrect": False}
                     ],
-                    "correction": "L'acier et l'aluminium sont recyclables à l'infini. Ils vont dans le bac des emballages."
+                    "correction": "**Rappel de cours :** L'acier et l'aluminium des conserves et canettes sont recyclables à l'infini. Ils doivent être mis dans le bac de tri (souvent jaune)."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Qu'est-ce qu'une énergie renouvelable ?",
+                    "question": "Quelle est la caractéristique d'une énergie renouvelable ?",
                     "answerOptions": [
-                        {"text": "Une source d'énergie qui ne s'épuise pas (ex : soleil, vent)", "isCorrect": True},
-                        {"text": "Une énergie que l'on achète à nouveau", "isCorrect": False},
-                        {"text": "Le pétrole et le gaz naturel", "isCorrect": False},
-                        {"text": "L'électricité du secteur", "isCorrect": False}
+                        {"text": "C'est une source qui ne s'épuise pas avec le temps", "isCorrect": True},
+                        {"text": "C'est une énergie que l'on doit acheter à nouveau", "isCorrect": False},
+                        {"text": "Cela désigne exclusivement le pétrole et le gaz", "isCorrect": False},
+                        {"text": "Cela désigne l'électricité fournie par les piles", "isCorrect": False}
                     ],
-                    "correction": "Contrairement aux énergies fossiles, elles polluent moins et sont inépuisables."
+                    "correction": "**Rappel de cours :** Le vent (éolien), le soleil (solaire) et l'eau (hydraulique) sont des énergies propres et inépuisables à l'échelle de l'histoire humaine."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Pourquoi le gaspillage alimentaire est-il un problème écologique ?",
+                    "question": "Pourquoi le gaspillage alimentaire est-il une faute écologique ?",
                     "answerOptions": [
-                        {"text": "Car produire cette nourriture a consommé de l'eau et de l'énergie pour rien", "isCorrect": True},
-                        {"text": "Parce que c'est mal poli", "isCorrect": False},
-                        {"text": "Pour que les poubelles ne sentent pas mauvais", "isCorrect": False},
-                        {"text": "Cela n'a aucun impact écologique", "isCorrect": False}
+                        {"text": "Car produire ce repas a consommé de l'eau inutilement", "isCorrect": True},
+                        {"text": "Parce que c'est une attitude considérée comme impolie", "isCorrect": False},
+                        {"text": "Pour éviter que les poubelles sentent mauvais dehors", "isCorrect": False},
+                        {"text": "Cela n'a absolument aucun impact sur l'environnement", "isCorrect": False}
                     ],
-                    "correction": "Jeter un aliment, c'est aussi jeter toutes les ressources utilisées pour le cultiver, le transformer et le transporter."
+                    "correction": "**Rappel de cours :** Jeter un aliment, c'est jeter toute l'énergie du transport, les engrais et les milliers de litres d'eau utilisés pour le faire pousser."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quel est l'objectif du développement durable ?",
+                    "question": "Quel est l'objectif central du développement durable ?",
                     "answerOptions": [
-                        {"text": "Répondre aux besoins d'aujourd'hui sans sacrifier ceux de demain", "isCorrect": True},
-                        {"text": "Arrêter toute activité économique", "isCorrect": False},
-                        {"text": "Vendre des produits plus chers", "isCorrect": False},
-                        {"text": "Utiliser toutes les ressources tout de suite", "isCorrect": False}
+                        {"text": "Satisfaire nos besoins sans compromettre ceux des futurs", "isCorrect": True},
+                        {"text": "Arrêter définitivement toute forme d'activité économique", "isCorrect": False},
+                        {"text": "Augmenter le prix des produits pour les rendre rares", "isCorrect": False},
+                        {"text": "Consommer toutes les ressources terrestres maintenant", "isCorrect": False}
                     ],
-                    "correction": "Il repose sur trois piliers : la protection de l'environnement, l'équité sociale et l'efficacité économique."
+                    "correction": "**Rappel de cours :** Il repose sur trois piliers indissociables : l'économie (produire), le social (partager) et l'environnement (protéger)."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "Que signifie l'Écolabel européen ?",
+                    "question": "Que garantit l'Écolabel européen sur un produit ?",
                     "answerOptions": [
-                        {"text": "Le produit a un impact environnemental réduit tout au long de sa vie", "isCorrect": True},
-                        {"text": "Le produit est gratuit", "isCorrect": False},
-                        {"text": "Le produit est fabriqué uniquement à la main", "isCorrect": False},
-                        {"text": "Le produit a été testé sur des fleurs", "isCorrect": False}
+                        {"text": "Un impact environnemental réduit durant toute sa vie", "isCorrect": True},
+                        {"text": "La gratuité totale du produit pour le consommateur", "isCorrect": False},
+                        {"text": "La fabrication du produit uniquement à la main", "isCorrect": False},
+                        {"text": "Que le produit a été testé sur des fleurs sauvages", "isCorrect": False}
                     ],
-                    "correction": "C'est une certification officielle pour aider les consommateurs à choisir des produits plus 'verts'."
+                    "correction": "**Rappel de cours :** Ce label officiel prend en compte tout le cycle de vie : extraction des matières, fabrication, transport, utilisation et fin de vie (déchet)."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Comment appelle-t-on la disparition d'espèces animales et végétales ?",
+                    "question": "Comment nomme-t-on la perte de la variété des espèces ?",
                     "answerOptions": [
-                        {"text": "L'érosion de la biodiversité", "isCorrect": True},
-                        {"text": "Le changement de saison", "isCorrect": False},
-                        {"text": "La métamorphose", "isCorrect": False},
-                        {"text": "Le clonage", "isCorrect": False}
+                        {"text": "L'érosion de la biodiversité mondiale", "isCorrect": True},
+                        {"text": "Le changement naturel des quatre saisons", "isCorrect": False},
+                        {"text": "Le phénomène de métamorphose animale", "isCorrect": False},
+                        {"text": "Le clonage scientifique des cellules souches", "isCorrect": False}
                     ],
-                    "correction": "La biodiversité est essentielle à l'équilibre de la vie sur Terre et à la survie humaine."
+                    "correction": "**Rappel de cours :** La destruction des forêts, la pollution et le climat font disparaître les espèces à une vitesse record, ce qui menace les ressources alimentaires et médicales de l'homme."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Quel est l'intérêt de manger des produits 'de saison' ?",
+                    "question": "Quel est l'avantage de consommer des fruits de saison ?",
                     "answerOptions": [
-                        {"text": "Limiter les transports lointains et la culture sous serres chauffées", "isCorrect": True},
-                        {"text": "Parce qu'ils sont plus jolis", "isCorrect": False},
-                        {"text": "Pour payer plus d'impôts", "isCorrect": False},
-                        {"text": "Ils n'ont pas de goût", "isCorrect": False}
+                        {"text": "Limiter les transports lointains et les serres chauffées", "isCorrect": True},
+                        {"text": "Parce qu'ils ont des couleurs beaucoup plus jolies", "isCorrect": False},
+                        {"text": "Pour pouvoir payer une taxe carbone plus élevée ici", "isCorrect": False},
+                        {"text": "Car les fruits hors saison n'ont aucun goût sucré", "isCorrect": False}
                     ],
-                    "correction": "C'est un acte de consommation responsable qui réduit la pollution liée au transport."
+                    "correction": "**Rappel de cours :** Consommer des fraises en hiver nécessite soit un transport par avion (très polluant), soit des serres chauffées au gaz. Manger de saison est un acte citoyen simple."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Que faire des piles et batteries usagées ?",
+                    "question": "Que doit-on faire des batteries et piles usagées ?",
                     "answerOptions": [
-                        {"text": "Les déposer dans des points de collecte spécifiques", "isCorrect": True},
-                        {"text": "Les jeter dans la poubelle ménagère", "isCorrect": False},
-                        {"text": "Les brûler dans la cheminée", "isCorrect": False},
-                        {"text": "Les enterrer dans le jardin", "isCorrect": False}
+                        {"text": "Les rapporter dans des points de collecte spécifiques", "isCorrect": True},
+                        {"text": "Les jeter avec les ordures ménagères classiques", "isCorrect": False},
+                        {"text": "Les brûler dans une cheminée ou un poêle à bois", "isCorrect": False},
+                        {"text": "Les enterrer dans le sol du jardin potager privé", "isCorrect": False}
                     ],
-                    "correction": "Elles contiennent des métaux lourds (mercure, plomb) très toxiques pour les sols et l'eau."
+                    "correction": "**Rappel de cours :** Elles contiennent des métaux lourds (mercure, lithium) extrêmement toxiques pour les nappes phréatiques s'ils fuient dans la nature."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quelle est la principale pollution générée par les transports routiers ?",
+                    "question": "Quelle pollution majeure est issue du transport routier ?",
                     "answerOptions": [
-                        {"text": "Émission de particules fines et de CO2", "isCorrect": True},
-                        {"text": "Pollution par le bruit uniquement", "isCorrect": False},
-                        {"text": "Pollution visuelle des routes", "isCorrect": False},
-                        {"text": "Consommation excessive d'eau", "isCorrect": False}
+                        {"text": "Le rejet de particules fines et de gaz carbonique", "isCorrect": True},
+                        {"text": "La pollution sonore par les klaxons uniquement ici", "isCorrect": False},
+                        {"text": "Une dégradation visuelle de l'ensemble des routes", "isCorrect": False},
+                        {"text": "Une consommation d'eau potable excessive par jour", "isCorrect": False}
                     ],
-                    "correction": "Les gaz d'échappement dégradent la qualité de l'air et provoquent des maladies respiratoires."
+                    "correction": "**Rappel de cours :** Les gaz d'échappement dégradent la qualité de l'air des villes et provoquent des maladies respiratoires (asthme) tout en aggravant l'effet de serre."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "À quoi sert le compostage ?",
+                    "question": "Quel est l'objectif premier du compostage domestique ?",
                     "answerOptions": [
-                        {"text": "Transformer les déchets organiques en engrais naturel", "isCorrect": True},
-                        {"text": "Remplacer les sacs plastiques", "isCorrect": False},
-                        {"text": "Produire de l'électricité", "isCorrect": False},
-                        {"text": "Tuer les insectes", "isCorrect": False}
+                        {"text": "Transformer les biodéchets en engrais naturel gratuit", "isCorrect": True},
+                        {"text": "Trouver un remplaçant pour les sacs en plastique", "isCorrect": False},
+                        {"text": "Produire une quantité faible d'électricité locale", "isCorrect": False},
+                        {"text": "Éliminer l'ensemble des insectes du jardin potager", "isCorrect": False}
                     ],
-                    "correction": "Il réduit le volume de nos ordures ménagères et nourrit la terre sans chimie."
+                    "correction": "**Rappel de cours :** Le compostage permet de réduire de 30 % le poids de notre poubelle grise en valorisant les épluchures et restes de repas."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "Quelle quantité d'eau douce est disponible sur Terre ?",
+                    "question": "Quelle est la part d'eau douce liquide sur la planète ?",
                     "answerOptions": [
-                        {"text": "Très peu (moins de 3% de l'eau totale)", "isCorrect": True},
-                        {"text": "50%", "isCorrect": False},
-                        {"text": "Autant que l'eau salée", "isCorrect": False},
-                        {"text": "L'eau est inépuisable", "isCorrect": False}
+                        {"text": "Moins de trois pour cent de la totalité de l'eau", "isCorrect": True},
+                        {"text": "Près de cinquante pour cent de la totalité de l'eau", "isCorrect": False},
+                        {"text": "Exactement autant que l'ensemble de l'eau salée", "isCorrect": False},
+                        {"text": "L'eau est une ressource infinie et inépuisable ici", "isCorrect": False}
                     ],
-                    "correction": "L'eau potable est une ressource rare et précieuse qu'il faut protéger contre le gaspillage et la pollution."
+                    "correction": "**Rappel de cours :** L'eau potable est rare. La majeure partie de l'eau sur Terre est salée (océans). L'eau douce est souvent bloquée dans les glaces ou profonde sous terre."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quel est le risque des microplastiques dans l'océan ?",
+                    "question": "Pourquoi les plastiques dans l'océan sont-ils dangereux ?",
                     "answerOptions": [
-                        {"text": "Ils entrent dans la chaîne alimentaire et empoisonnent les animaux", "isCorrect": True},
-                        {"text": "Ils rendent l'eau plus bleue", "isCorrect": False},
-                        {"text": "Ils servent de nourriture aux poissons", "isCorrect": False},
-                        {"text": "Ils disparaissent naturellement en 2 jours", "isCorrect": False}
+                        {"text": "Ils intoxiquent les animaux et la chaîne alimentaire", "isCorrect": True},
+                        {"text": "Ils finissent par rendre l'eau de mer beaucoup plus bleue", "isCorrect": False},
+                        {"text": "Ils servent de nourriture saine pour les poissons locaux", "isCorrect": False},
+                        {"text": "Ils disparaissent par miracle en moins de deux jours", "isCorrect": False}
                     ],
-                    "correction": "Les plastiques mettent des centaines d'années à se décomposer et finissent dans nos assiettes via les produits de la mer."
+                    "correction": "**Rappel de cours :** Les plastiques ne disparaissent jamais vraiment, ils se brisent en micro-plastiques que les poissons avalent. On finit par les retrouver dans nos propres assiettes."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Que signifie le logo 'Point Vert' (deux flèches entrelacées) ?",
+                    "question": "Que signifie le logo 'Point Vert' sur un emballage ?",
                     "answerOptions": [
-                        {"text": "L'entreprise finance le système de tri (ce n'est pas un logo de recyclage)", "isCorrect": True},
-                        {"text": "L'objet est 100% recyclable", "isCorrect": False},
-                        {"text": "L'objet est biodégradable", "isCorrect": False},
-                        {"text": "Le produit est bio", "isCorrect": False}
+                        {"text": "L'entreprise paie une taxe pour financer le tri sélectif", "isCorrect": True},
+                        {"text": "L'objet est intégralement composé de matière recyclée", "isCorrect": False},
+                        {"text": "L'objet est biodégradable dans la nature en un mois", "isCorrect": False},
+                        {"text": "Le produit est garanti issu de l'agriculture bio ici", "isCorrect": False}
                     ],
-                    "correction": "Attention, ce logo est souvent confondu avec le ruban de Möbius qui, lui, indique le recyclage."
+                    "correction": "**Rappel de cours :** C'est un logo financier : il ne signifie pas que le produit est recyclé ou recyclable, mais que le fabricant contribue financièrement au système de tri des déchets."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Quel est l'impact de la déforestation ?",
+                    "question": "Quel est l'impact de la déforestation tropicale ?",
                     "answerOptions": [
-                        {"text": "Augmentation du CO2 et perte d'habitats pour les animaux", "isCorrect": True},
-                        {"text": "Meilleure vue sur les montagnes", "isCorrect": False},
-                        {"text": "Plus de place pour les déserts", "isCorrect": False},
-                        {"text": "Amélioration de la fertilité des sols", "isCorrect": False}
+                        {"text": "Une hausse du CO2 et une perte d'habitat animal", "isCorrect": True},
+                        {"text": "Une meilleure vue sur l'ensemble des montagnes", "isCorrect": False},
+                        {"text": "L'extension des zones désertiques pour le tourisme", "isCorrect": False},
+                        {"text": "Une amélioration durable de la fertilité des sols", "isCorrect": False}
                     ],
-                    "correction": "Les arbres sont les 'poumons' de la Terre car ils absorbent le carbone."
+                    "correction": "**Rappel de cours :** Les forêts sont des 'puits de carbone'. Les détruire accélère le réchauffement climatique et fait disparaître des espèces uniques."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Qu'est-ce que le 'circuit court' ?",
+                    "question": "Qu'est-ce que la vente en 'circuit court' ?",
                     "answerOptions": [
-                        {"text": "Maximum un intermédiaire entre le producteur et le consommateur", "isCorrect": True},
-                        {"text": "Un marathon de 5 kilomètres", "isCorrect": False},
-                        {"text": "Une panne électrique dans la cuisine", "isCorrect": False},
-                        {"text": "Acheter au supermarché", "isCorrect": False}
+                        {"text": "Un seul intermédiaire maximum entre producteur et client", "isCorrect": True},
+                        {"text": "Un marathon de cinq kilomètres organisé en ville", "isCorrect": False},
+                        {"text": "Une panne électrique majeure dans une cuisine moderne", "isCorrect": False},
+                        {"text": "Le fait d'acheter ses produits au grand supermarché", "isCorrect": False}
                     ],
-                    "correction": "Il favorise l'économie locale et réduit la pollution liée aux transports internationaux."
+                    "correction": "**Rappel de cours :** Le circuit court (AMAP, vente à la ferme) assure un meilleur revenu au paysan et limite les gaz à effet de serre liés au transport."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Comment limiter l'impact environnemental du numérique ?",
+                    "question": "Comment limiter l'impact écologique de ses emails ?",
                     "answerOptions": [
-                        {"text": "Garder ses appareils le plus longtemps possible", "isCorrect": True},
-                        {"text": "Changer de smartphone tous les ans", "isCorrect": False},
-                        {"text": "Laisser l'ordinateur allumé toute la nuit", "isCorrect": False},
-                        {"text": "Envoyer 500 emails par jour", "isCorrect": False}
+                        {"text": "Supprimer les messages inutiles et les grosses pièces jointes", "isCorrect": True},
+                        {"text": "Changer son smartphone par un modèle neuf tous les ans", "isCorrect": False},
+                        {"text": "Laisser l'ensemble des ordinateurs allumés toute la nuit", "isCorrect": False},
+                        {"text": "Envoyer systématiquement cinq cents emails chaque jour", "isCorrect": False}
                     ],
-                    "correction": "La fabrication d'un appareil électronique consomme énormément de ressources et de métaux rares."
+                    "correction": "**Rappel de cours :** Le stockage des données dans des 'Data Centers' consomme énormément d'électricité. Trier sa boîte mail réduit cette dépense énergétique invisible."
                 }
             ]
         },
@@ -693,223 +693,223 @@ quiz_data = {
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quel contrat de travail est conclu pour une durée indéterminée ?",
+                    "question": "Quel contrat de travail est la forme normale de l'emploi ?",
                     "answerOptions": [
-                        {"text": "CDI", "isCorrect": True},
-                        {"text": "CDD", "isCorrect": False},
-                        {"text": "CTT (Intérim)", "isCorrect": False},
-                        {"text": "Stage", "isCorrect": False}
+                        {"text": "Le Contrat à Durée Indéterminée désigné par CDI", "isCorrect": True},
+                        {"text": "Le Contrat à Durée Déterminée pour une mission seule", "isCorrect": False},
+                        {"text": "Le Contrat de Travail Temporaire utilisé en intérim", "isCorrect": False},
+                        {"text": "Le Contrat de Stage effectué pendant les études", "isCorrect": False}
                     ],
-                    "correction": "Le CDI est la forme normale du contrat de travail. Il n'a pas de date de fin prévue."
+                    "correction": "**Rappel de cours :** Le CDI est la norme. Il garantit une stabilité d'emploi car il n'a pas de date de fin. Le CDD doit rester une exception pour un besoin ponctuel."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quelle est la durée légale du travail hebdomadaire en France ?",
+                    "question": "Quelle est la durée légale du travail par semaine en France ?",
                     "answerOptions": [
-                        {"text": "35 heures", "isCorrect": True},
-                        {"text": "39 heures", "isCorrect": False},
-                        {"text": "48 heures", "isCorrect": False},
-                        {"text": "20 heures", "isCorrect": False}
+                        {"text": "Une durée de trente-cinq heures par semaine", "isCorrect": True},
+                        {"text": "Une durée de trente-neuf heures par semaine", "isCorrect": False},
+                        {"text": "Une durée de quarante-huit heures par semaine", "isCorrect": False},
+                        {"text": "Une durée de vingt heures par semaine seulement", "isCorrect": False}
                     ],
-                    "correction": "C'est la durée de référence. Au-delà, on parle d'heures supplémentaires."
+                    "correction": "**Rappel de cours :** 35 heures est la durée de référence. Les heures effectuées au-delà sont des 'heures supplémentaires' payées plus cher ou récupérées en repos."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "Sur une fiche de paie, qu'est-ce que le 'salaire brut' ?",
+                    "question": "À quoi correspond le 'salaire brut' sur un bulletin de paie ?",
                     "answerOptions": [
-                        {"text": "Le salaire avant déduction des cotisations sociales", "isCorrect": True},
-                        {"text": "L'argent qui arrive sur le compte bancaire", "isCorrect": False},
-                        {"text": "Le montant des pourboires", "isCorrect": False},
-                        {"text": "Le salaire minimum uniquement", "isCorrect": False}
+                        {"text": "Le salaire total avant déduction des cotisations", "isCorrect": True},
+                        {"text": "La somme nette qui arrive sur le compte en banque", "isCorrect": False},
+                        {"text": "Le montant des pourboires donnés par les clients", "isCorrect": False},
+                        {"text": "Le montant du salaire minimum légal uniquement", "isCorrect": False}
                     ],
-                    "correction": "On retire du brut les charges salariales pour obtenir le 'salaire net'."
+                    "correction": "**Rappel de cours :** On retire du salaire brut les cotisations sociales (retraite, chômage, santé) pour obtenir le salaire net, qui est celui que l'on perçoit réellement."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Quelle instance représente les salariés et traite des questions de sécurité et santé au travail ?",
+                    "question": "Quelle instance représente les salariés dans les entreprises de plus de 11 salariés ?",
                     "answerOptions": [
-                        {"text": "Le CSE (Comité Social et Économique)", "isCorrect": True},
-                        {"text": "Le Tribunal de Grande Instance", "isCorrect": False},
-                        {"text": "La Caisse d'Allocations Familiales", "isCorrect": False},
-                        {"text": "La direction des ressources humaines", "isCorrect": False}
+                        {"text": "Le Comité Social et Économique désigné par CSE", "isCorrect": True},
+                        {"text": "Le Tribunal de Grande Instance de la ville locale", "isCorrect": False},
+                        {"text": "La Caisse d'Allocations Familiales départementale", "isCorrect": False},
+                        {"text": "La direction des ressources humaines de la firme", "isCorrect": False}
                     ],
-                    "correction": "Le CSE est obligatoire dans les entreprises de plus de 11 salariés."
+                    "correction": "**Rappel de cours :** Le CSE remplace les anciens délégués du personnel. Il est consulté sur l'organisation du travail, les conditions de santé et la sécurité."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Qu'est-ce que la Convention Collective ?",
+                    "question": "Qu'est-ce qu'une Convention Collective ?",
                     "answerOptions": [
-                        {"text": "Un accord adaptant le Code du travail à un secteur précis (ex : Coiffure, BTP)", "isCorrect": True},
-                        {"text": "Un livre sur la politesse au bureau", "isCorrect": False},
-                        {"text": "Le règlement intérieur de l'entreprise", "isCorrect": False},
-                        {"text": "Une réunion de tous les salariés", "isCorrect": False}
+                        {"text": "Un accord adaptant le droit au secteur d'activité", "isCorrect": True},
+                        {"text": "Un livre sur les règles de politesse au bureau", "isCorrect": False},
+                        {"text": "Le simple règlement intérieur de l'entreprise ici", "isCorrect": False},
+                        {"text": "Une réunion annuelle de l'ensemble des salariés", "isCorrect": False}
                     ],
-                    "correction": "Elle prévoit souvent des avantages supérieurs au Code du travail (primes, congés supplémentaires)."
+                    "correction": "**Rappel de cours :** Chaque métier (BTP, Coiffure, Restauration) a sa convention. Elle propose souvent des droits plus avantageux que le Code du travail (primes, jours de congés)."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "À quoi sert la période d'essai ?",
+                    "question": "À quoi sert principalement la période d'essai au début du contrat ?",
                     "answerOptions": [
-                        {"text": "Permettre à l'employeur et au salarié de tester leur compatibilité", "isCorrect": True},
-                        {"text": "Travailler sans être payé", "isCorrect": False},
-                        {"text": "Acheter ses outils", "isCorrect": False},
-                        {"text": "Prendre des vacances avant de commencer", "isCorrect": False}
+                        {"text": "Permettre à chacun de tester ses compétences et le poste", "isCorrect": True},
+                        {"text": "Travailler gratuitement pour apprendre les bases ici", "isCorrect": False},
+                        {"text": "Forcer le salarié à acheter ses propres outils de zone", "isCorrect": False},
+                        {"text": "Prendre deux semaines de vacances avant de commencer", "isCorrect": False}
                     ],
-                    "correction": "Durant cette période, le contrat peut être rompu sans motif ni indemnité."
+                    "correction": "**Rappel de cours :** Durant cette période, l'employeur ou le salarié peut mettre fin au contrat sans préavis ni motif, afin de vérifier si le recrutement est réussi."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Que signifie le sigle SMIC ?",
+                    "question": "Que signifie précisément le sigle SMIC ?",
                     "answerOptions": [
                         {"text": "Salaire Minimum Interprofessionnel de Croissance", "isCorrect": True},
                         {"text": "Système de Mesure de l'Indice de Consommation", "isCorrect": False},
-                        {"text": "Seuil de Mobilité Individuelle Court", "isCorrect": False},
-                        {"text": "Salaire Moyen de l'Industrie et du Commerce", "isCorrect": False}
+                        {"text": "Seuil de Mobilité Individuelle Court pour l'emploi", "isCorrect": False},
+                        {"text": "Salaire Moyen de l'Industrie et du Commerce national", "isCorrect": False}
                     ],
-                    "correction": "C'est le salaire horaire minimum obligatoire en dessous duquel un salarié ne peut être payé."
+                    "correction": "**Rappel de cours :** C'est le montant horaire en dessous duquel il est interdit de rémunérer un salarié en France. Il est revalorisé selon l'inflation."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quel document est obligatoirement remis à la fin d'un contrat de travail ?",
+                    "question": "Quel document est obligatoirement remis au salarié à la fin du contrat ?",
                     "answerOptions": [
-                        {"text": "Le certificat de travail et l'attestation Pôle Emploi", "isCorrect": True},
-                        {"text": "Le double des clés de l'entreprise", "isCorrect": False},
-                        {"text": "Une lettre de recommandation obligatoire", "isCorrect": False},
-                        {"text": "Un chèque cadeau", "isCorrect": False}
+                        {"text": "Le certificat de travail et l'attestation pôle emploi", "isCorrect": True},
+                        {"text": "Le double de l'ensemble des clés de l'entreprise", "isCorrect": False},
+                        {"text": "Une lettre de recommandation obligatoire du patron", "isCorrect": False},
+                        {"text": "Un chèque cadeau pour les prochaines vacances ici", "isCorrect": False}
                     ],
-                    "correction": "Ces documents sont nécessaires pour faire valoir ses droits au chômage et prouver son expérience."
+                    "correction": "**Rappel de cours :** Ces documents permettent de prouver son expérience et de s'inscrire pour percevoir les allocations chômage si les conditions sont remplies."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Qu'est-ce qu'une maladie professionnelle ?",
+                    "question": "Qu'est-ce qu'une maladie professionnelle selon la loi ?",
                     "answerOptions": [
-                        {"text": "Une maladie causée par l'exercice prolongé d'un métier", "isCorrect": True},
-                        {"text": "Une blessure soudaine au travail", "isCorrect": False},
-                        {"text": "Attraper froid sur le chantier", "isCorrect": False},
-                        {"text": "Un accident de voiture en allant au travail", "isCorrect": False}
+                        {"text": "Une pathologie causée par l'exercice prolongé d'un métier", "isCorrect": True},
+                        {"text": "Une blessure survenue soudainement lors d'une tâche", "isCorrect": False},
+                        {"text": "Le fait d'attraper froid sur le chantier en hiver", "isCorrect": False},
+                        {"text": "Un accident de voiture en allant au travail le matin", "isCorrect": False}
                     ],
-                    "correction": "Elle doit figurer dans un tableau de la Sécurité sociale pour être reconnue (ex : silicose, tendinite)."
+                    "correction": "**Rappel de cours :** La maladie professionnelle (ex: tendinites, silicose) résulte d'une exposition répétée à un risque physique ou chimique lié au poste de travail."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Quel organisme gère les dossiers de chômage en France ?",
+                    "question": "Quel organisme remplace Pôle Emploi depuis 2024 ?",
                     "answerOptions": [
-                        {"text": "France Travail (anciennement Pôle Emploi)", "isCorrect": True},
-                        {"text": "La Sécurité Sociale", "isCorrect": False},
-                        {"text": "Le Conseil de Prud'hommes", "isCorrect": False},
-                        {"text": "La Mairie", "isCorrect": False}
+                        {"text": "L'organisme nommé France Travail", "isCorrect": True},
+                        {"text": "L'organisme nommé la Sécurité Sociale", "isCorrect": False},
+                        {"text": "L'organisme nommé le Conseil de Prud'hommes", "isCorrect": False},
+                        {"text": "L'organisme nommé la Mairie de la ville", "isCorrect": False}
                     ],
-                    "correction": "Il accompagne les demandeurs d'emploi dans leur recherche et verse les allocations."
+                    "correction": "**Rappel de cours :** France Travail accompagne les chômeurs, centralise les offres d'emploi et verse les indemnités selon les droits acquis par les anciens salariés."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "Que signifie être 'salarié' ?",
+                    "question": "Que signifie être officiellement 'salarié' ?",
                     "answerOptions": [
-                        {"text": "Travailler pour un employeur contre rémunération et sous son autorité", "isCorrect": True},
-                        {"text": "Travailler gratuitement pour apprendre", "isCorrect": False},
-                        {"text": "Être son propre patron", "isCorrect": False},
-                        {"text": "Ne pas avoir de contrat", "isCorrect": False}
+                        {"text": "Travailler sous l'autorité d'un employeur pour un salaire", "isCorrect": True},
+                        {"text": "Travailler sans être payé pour apprendre un nouveau métier", "isCorrect": False},
+                        {"text": "Être son propre patron et gérer ses clients seul", "isCorrect": False},
+                        {"text": "Travailler pour quelqu'un sans aucun contrat écrit", "isCorrect": False}
                     ],
-                    "correction": "Le lien de subordination est l'élément clé qui définit le salariat."
+                    "correction": "**Rappel de cours :** Le salariat se définit par le lien de subordination (recevoir des ordres) et la rémunération prévue par un contrat de travail."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Quel tribunal est compétent en cas de litige entre un employeur et un salarié ?",
+                    "question": "Quel tribunal traite les litiges entre employeur et salarié ?",
                     "answerOptions": [
-                        {"text": "Le Conseil de Prud'hommes", "isCorrect": True},
-                        {"text": "Le Tribunal Correctionnel", "isCorrect": False},
-                        {"text": "Le Tribunal de Commerce", "isCorrect": False},
-                        {"text": "La Cour d'Appel administrative", "isCorrect": False}
+                        {"text": "Le Conseil de Prud'hommes de la ville", "isCorrect": True},
+                        {"text": "Le Tribunal Correctionnel de la ville locale", "isCorrect": False},
+                        {"text": "Le Tribunal de Commerce de la grande cité", "isCorrect": False},
+                        {"text": "La Cour d'Appel administrative régionale ici", "isCorrect": False}
                     ],
-                    "correction": "Il traite les conflits liés au contrat de travail (licenciement, salaires non payés...)."
+                    "correction": "**Rappel de cours :** Ce tribunal est paritaire (moitié patrons, moitié salariés). Il intervient pour les licenciements abusifs ou les salaires non payés."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quelle est la fonction de la Médecine du Travail ?",
+                    "question": "Quelle est la mission de la Médecine du Travail ?",
                     "answerOptions": [
-                        {"text": "Prévenir l'altération de la santé des travailleurs due à leur métier", "isCorrect": True},
-                        {"text": "Soigner les grippes des salariés", "isCorrect": False},
-                        {"text": "Sanctionner les ouvriers malades", "isCorrect": False},
-                        {"text": "Distribuer des médicaments gratuitement", "isCorrect": False}
+                        {"text": "Prévenir l'altération de la santé due aux conditions", "isCorrect": True},
+                        {"text": "Soigner les grippes et rhumes de l'ensemble des salariés", "isCorrect": False},
+                        {"text": "Sanctionner les ouvriers qui sont souvent malades", "isCorrect": False},
+                        {"text": "Distribuer des médicaments gratuitement chaque matin", "isCorrect": False}
                     ],
-                    "correction": "Le médecin du travail vérifie l'aptitude au poste et conseille sur l'ergonomie."
+                    "correction": "**Rappel de cours :** Le médecin du travail vérifie que le salarié est apte à son poste et conseille l'employeur sur l'aménagement ergonomique des postes."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "À quoi sert le règlement intérieur de l'entreprise ?",
+                    "question": "À quoi sert le règlement intérieur d'une entreprise ?",
                     "answerOptions": [
                         {"text": "Fixer les règles de discipline, d'hygiène et de sécurité", "isCorrect": True},
-                        {"text": "Donner les recettes de cuisine de la cantine", "isCorrect": False},
-                        {"text": "Lister les numéros de téléphone des clients", "isCorrect": False},
-                        {"text": "Vendre des produits aux employés", "isCorrect": False}
+                        {"text": "Donner les meilleures recettes de cuisine de la cantine", "isCorrect": False},
+                        {"text": "Lister l'ensemble des numéros de téléphone des clients", "isCorrect": False},
+                        {"text": "Vendre des produits dérivés aux employés de la zone", "isCorrect": False}
                     ],
-                    "correction": "Il est obligatoire dans les entreprises de plus de 50 salariés."
+                    "correction": "**Rappel de cours :** Il est obligatoire à partir de 50 salariés. Il définit les sanctions possibles en cas de faute et les règles de sécurité à respecter."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Qu'est-ce qu'une faute grave ?",
+                    "question": "Qu'est-ce qu'une faute grave au travail ?",
                     "answerOptions": [
-                        {"text": "Un comportement rendant impossible le maintien du salarié dans l'entreprise", "isCorrect": True},
-                        {"text": "Arriver une fois avec 2 minutes de retard", "isCorrect": False},
-                        {"text": "Faire une erreur de calcul sans importance", "isCorrect": False},
-                        {"text": "Demander une augmentation", "isCorrect": False}
+                        {"text": "Un comportement rendant impossible le maintien au poste", "isCorrect": True},
+                        {"text": "Arriver une seule fois avec deux minutes de retard", "isCorrect": False},
+                        {"text": "Faire une petite erreur de calcul sans aucune importance", "isCorrect": False},
+                        {"text": "Demander poliment une augmentation de salaire net", "isCorrect": False}
                     ],
-                    "correction": "Elle entraîne souvent un licenciement immédiat sans préavis ni indemnité."
+                    "correction": "**Rappel de cours :** Vol, violence ou abandon de poste sont des fautes graves. Elles entraînent le départ immédiat sans indemnités de licenciement."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Que signifie le droit de retrait ?",
+                    "question": "Que signifie concrètement le droit de retrait ?",
                     "answerOptions": [
-                        {"text": "S'écarter d'une situation de travail présentant un danger grave et imminent", "isCorrect": True},
-                        {"text": "Prendre sa retraite à 50 ans", "isCorrect": False},
-                        {"text": "Retirer de l'argent au distributeur de l'entreprise", "isCorrect": False},
-                        {"text": "Ne pas venir travailler car il pleut", "isCorrect": False}
+                        {"text": "Arrêter le travail face à un danger grave et imminent", "isCorrect": True},
+                        {"text": "Prendre sa retraite de manière anticipée à cinquante ans", "isCorrect": False},
+                        {"text": "Retirer de l'argent liquide au distributeur automatique", "isCorrect": False},
+                        {"text": "Ne pas venir travailler parce qu'il pleut trop dehors", "isCorrect": False}
                     ],
-                    "correction": "C'est un droit protecteur pour le salarié qui craint pour sa vie ou sa santé."
+                    "correction": "**Rappel de cours :** Si un salarié pense que sa vie est en danger immédiat (ex: machine défectueuse), il peut cesser le travail sans être puni, à condition de prévenir son patron."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "Combien de jours de congés payés gagne un salarié par mois de travail effectif ?",
+                    "question": "Combien de jours de congés payés gagne un salarié par mois travaillé ?",
                     "answerOptions": [
-                        {"text": "2,5 jours", "isCorrect": True},
-                        {"text": "1 jour", "isCorrect": False},
-                        {"text": "5 jours", "isCorrect": False},
-                        {"text": "Aucun la première année", "isCorrect": False}
+                        {"text": "Une durée de deux virgule cinq jours", "isCorrect": True},
+                        {"text": "Une durée de un jour entier seulement", "isCorrect": False},
+                        {"text": "Une durée de cinq jours entiers travaillés", "isCorrect": False},
+                        {"text": "Il n'y a aucun congé la toute première année", "isCorrect": False}
                     ],
-                    "correction": "Cela correspond à 30 jours ouvrables (5 semaines) par an."
+                    "correction": "**Rappel de cours :** Cela fait un total de 30 jours ouvrables par an (5 semaines). Les congés sont un droit acquis par le travail effectif."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Quelle est la différence entre un accident du travail et un accident de trajet ?",
+                    "question": "Quelle est la différence entre un accident du travail et de trajet ?",
                     "answerOptions": [
-                        {"text": "Le trajet se passe entre le domicile et le lieu de travail", "isCorrect": True},
-                        {"text": "L'accident de trajet n'est pas remboursé", "isCorrect": False},
-                        {"text": "L'accident du travail a lieu uniquement au bureau", "isCorrect": False},
-                        {"text": "C'est la même chose légalement", "isCorrect": False}
+                        {"text": "Le trajet a lieu entre la maison et le bureau habituel", "isCorrect": True},
+                        {"text": "L'accident de trajet n'est jamais remboursé par l'État", "isCorrect": False},
+                        {"text": "L'accident du travail arrive uniquement à son bureau", "isCorrect": False},
+                        {"text": "Il n'existe aucune différence légale entre les deux", "isCorrect": False}
                     ],
-                    "correction": "L'accident de trajet bénéficie d'une protection proche de l'accident du travail."
+                    "correction": "**Rappel de cours :** L'accident de trajet (sur le chemin direct vers l'usine) est protégé de la même manière que l'accident survenu sur le poste de travail."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Que signifie 'CDD d'usage' ?",
+                    "question": "Que signifie l'appellation 'CDD d'usage' ?",
                     "answerOptions": [
-                        {"text": "Un contrat court pour des secteurs où il est d'usage de ne pas recruter en CDI (ex : extra)", "isCorrect": True},
-                        {"text": "Un contrat pour utiliser une machine", "isCorrect": False},
-                        {"text": "Un contrat qui dure 10 ans", "isCorrect": False},
-                        {"text": "Un contrat réservé aux stagiaires", "isCorrect": False}
+                        {"text": "Un contrat court pour des secteurs spécifiques (extras)", "isCorrect": True},
+                        {"text": "Un contrat pour apprendre à utiliser une machine neuve", "isCorrect": False},
+                        {"text": "Un contrat qui possède une durée de dix ans fermes", "isCorrect": False},
+                        {"text": "Un contrat réservé exclusivement aux jeunes stagiaires", "isCorrect": False}
                     ],
-                    "correction": "Courant dans la restauration (extras) ou l'audiovisuel."
+                    "correction": "**Rappel de cours :** C'est un CDD utilisé dans la restauration, le spectacle ou l'audiovisuel où il est d'usage de ne pas recruter en CDI pour des missions brèves."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Quelle est la mission d'un syndicat ?",
+                    "question": "Quelle est la mission dévolue à un syndicat ?",
                     "answerOptions": [
-                        {"text": "Défendre les droits et intérêts des travailleurs", "isCorrect": True},
-                        {"text": "Organiser les vacances du patron", "isCorrect": False},
-                        {"text": "Payer les amendes des salariés", "isCorrect": False},
-                        {"text": "Remplacer le médecin du travail", "isCorrect": False}
+                        {"text": "Défendre les droits et les intérêts de tous les travailleurs", "isCorrect": True},
+                        {"text": "Organiser l'ensemble des vacances du grand patron ici", "isCorrect": False},
+                        {"text": "Payer l'ensemble des amendes privées des salariés locaux", "isCorrect": False},
+                        {"text": "Remplacer le rôle du médecin du travail en entreprise", "isCorrect": False}
                     ],
-                    "correction": "Les syndicats négocient les conventions collectives et assistent les salariés."
+                    "correction": "**Rappel de cours :** Les syndicats négocient les conditions de travail, assistent les salariés lors d'entretiens et peuvent déclencher des mouvements de grève."
                 }
             ]
         },
@@ -921,223 +921,223 @@ quiz_data = {
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel est l'ordre chronologique des actions du Sauveteur Secouriste du Travail (SST) ?",
+                    "question": "Quel est l'ordre chronologique des actions du SST lors d'un secours ?",
                     "answerOptions": [
-                        {"text": "Protéger - Examiner - Faire alerter - Secourir", "isCorrect": True},
-                        {"text": "Secourir - Alerter - Examiner - Partir", "isCorrect": False},
-                        {"text": "Alerter - Protéger - Secourir - Examiner", "isCorrect": False},
-                        {"text": "Examiner - Alerter - Secourir - Protéger", "isCorrect": False}
+                        {"text": "Protéger - Examiner - Faire alerter - Secourir la victime", "isCorrect": True},
+                        {"text": "Secourir - Alerter - Examiner - Partir vite du lieu noir", "isCorrect": False},
+                        {"text": "Alerter - Protéger - Secourir - Examiner la plaie ouverte", "isCorrect": False},
+                        {"text": "Examiner - Alerter - Secourir - Protéger le matériel neuf", "isCorrect": False}
                     ],
-                    "correction": "On protège d'abord pour éviter un sur-accident, puis on examine la victime pour donner les bonnes informations aux secours."
+                    "correction": "**Rappel de cours :** On protège d'abord pour éviter un sur-accident. Puis on examine pour savoir quoi dire au SAMU (15). L'alerte doit être rapide pour que les médecins arrivent vite."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Quelle est la première chose à faire si une victime s'étouffe totalement (ne peut plus parler ni tousser) ?",
+                    "question": "Que faire en premier si une victime s'étouffe totalement (silence total) ?",
                     "answerOptions": [
-                        {"text": "Donner 5 claques vigoureuses dans le dos", "isCorrect": True},
-                        {"text": "Lui donner un verre d'eau", "isCorrect": False},
-                        {"text": "L'allonger par terre", "isCorrect": False},
-                        {"text": "Lui demander de lever les bras", "isCorrect": False}
+                        {"text": "Donner cinq claques vigoureuses entre les omoplates", "isCorrect": True},
+                        {"text": "Lui proposer un grand verre d'eau fraîche immédiatement", "isCorrect": False},
+                        {"text": "Allonger la personne directement par terre sur le sol", "isCorrect": False},
+                        {"text": "Lui demander de lever les deux bras très haut ainsi", "isCorrect": False}
                     ],
-                    "correction": "Si les claques ne fonctionnent pas, il faudra pratiquer les compressions abdominales (méthode de Heimlich)."
+                    "correction": "**Rappel de cours :** Si les claques ne fonctionnent pas, il faudra pratiquer la méthode de Heimlich (compressions abdominales) pour expulser l'objet coincé."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Comment arrêter un saignement abondant (hémorragie) ?",
+                    "question": "Quelle est l'action pour arrêter une hémorragie externe abondante ?",
                     "answerOptions": [
-                        {"text": "Appuyer directement sur la plaie avec une main gantée ou un linge propre", "isCorrect": True},
-                        {"text": "Laisser couler le sang pour nettoyer", "isCorrect": False},
-                        {"text": "Mettre de la farine sur la plaie", "isCorrect": False},
-                        {"text": "Faire un garrot au cou", "isCorrect": False}
+                        {"text": "Appuyer directement sur la plaie avec un linge propre", "isCorrect": True},
+                        {"text": "Laisser couler le sang pour nettoyer la plaie naturellement", "isCorrect": False},
+                        {"text": "Mettre de la farine sur la plaie pour boucher le trou", "isCorrect": False},
+                        {"text": "Faire un garrot serré directement autour du cou du blessé", "isCorrect": False}
                     ],
-                    "correction": "La compression directe arrête la majorité des hémorragies en attendant les secours."
+                    "correction": "**Rappel de cours :** La compression directe doit être maintenue jusqu'à l'arrivée des secours. Si la plaie contient un corps étranger (verre, couteau), on ne doit pas appuyer dessus."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Comment vérifier si une victime inconsciente respire ?",
+                    "question": "Comment vérifier si une personne inconsciente respire encore ?",
                     "answerOptions": [
-                        {"text": "Regarder le ventre monter, écouter le souffle et sentir l'air sur sa joue", "isCorrect": True},
-                        {"text": "Lui crier dessus", "isCorrect": False},
-                        {"text": "Lui pincer le bras", "isCorrect": False},
-                        {"text": "Lui mettre un miroir devant la bouche", "isCorrect": False}
+                        {"text": "Regarder le ventre bouger et sentir le souffle sur sa joue", "isCorrect": True},
+                        {"text": "Lui crier très fort dans les oreilles pour la réveiller", "isCorrect": False},
+                        {"text": "Lui pincer le bras pour voir si elle bouge la main", "isCorrect": False},
+                        {"text": "Lui placer un petit miroir devant sa bouche fermée ici", "isCorrect": False}
                     ],
-                    "correction": "On vérifie la respiration pendant 10 secondes maximum."
+                    "correction": "**Rappel de cours :** On bascule prudemment la tête en arrière pour dégager les voies aériennes et on observe pendant 10 secondes si la poitrine se soulève."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Que doit-on faire si une victime est inconsciente mais respire normalement ?",
+                    "question": "Que faire si une victime est inconsciente mais qu'elle respire ?",
                     "answerOptions": [
-                        {"text": "La mettre en Position Latérale de Sécurité (PLS)", "isCorrect": True},
-                        {"text": "Lui faire un massage cardiaque", "isCorrect": False},
-                        {"text": "Lui donner à boire", "isCorrect": False},
-                        {"text": "La laisser sur le dos", "isCorrect": False}
+                        {"text": "La placer en Position Latérale de Sécurité par terre", "isCorrect": True},
+                        {"text": "Lui faire un massage cardiaque très énergique et rapide", "isCorrect": False},
+                        {"text": "Lui donner un verre d'eau sucrée pour la réveiller", "isCorrect": False},
+                        {"text": "La laisser sur le dos en attendant les pompiers ici", "isCorrect": False}
                     ],
-                    "correction": "La PLS évite que la victime ne s'étouffe avec sa langue ou ses vomissements."
+                    "correction": "**Rappel de cours :** La PLS permet de garder les voies respiratoires libres et d'éviter que la victime ne s'étouffe si elle vomit."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Que faire face à une victime qui ne répond pas et ne respire pas ?",
+                    "question": "Que faire face à une victime qui ne répond pas et ne respire plus ?",
                     "answerOptions": [
-                        {"text": "Alerter et débuter immédiatement un massage cardiaque", "isCorrect": True},
-                        {"text": "L'arroser d'eau froide", "isCorrect": False},
-                        {"text": "Attendre 10 minutes", "isCorrect": False},
-                        {"text": "Lui mettre une couverture", "isCorrect": False}
+                        {"text": "Alerter les secours et débuter un massage cardiaque", "isCorrect": True},
+                        {"text": "L'arroser d'eau froide pour provoquer un choc thermique", "isCorrect": False},
+                        {"text": "Attendre dix minutes pour voir si elle reprend conscience", "isCorrect": False},
+                        {"text": "Lui mettre une couverture chaude sur l'ensemble du corps", "isCorrect": False}
                     ],
-                    "correction": "Chaque minute compte. Il faut masser le cœur pour envoyer du sang au cerveau."
+                    "correction": "**Rappel de cours :** Sans oxygène, le cerveau meurt en quelques minutes. Le massage cardiaque remplace le cœur pour envoyer du sang au cerveau en attendant le défibrillateur."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Quel appareil doit être utilisé le plus tôt possible en cas d'arrêt cardiaque ?",
+                    "question": "Quel appareil est indispensable lors d'un arrêt cardiaque ?",
                     "answerOptions": [
-                        {"text": "Le DAE (Défibrillateur Automatisé Externe)", "isCorrect": True},
-                        {"text": "Un thermomètre", "isCorrect": False},
-                        {"text": "Un ventilateur", "isCorrect": False},
-                        {"text": "Une balance", "isCorrect": False}
+                        {"text": "Le Défibrillateur Automatisé Externe placé en ville", "isCorrect": True},
+                        {"text": "Un thermomètre à mercure pour vérifier la fièvre", "isCorrect": False},
+                        {"text": "Un ventilateur pour apporter de l'air frais au sujet", "isCorrect": False},
+                        {"text": "Une balance médicale pour connaître le poids total", "isCorrect": False}
                     ],
-                    "correction": "Le DAE analyse le rythme cardiaque et délivre un choc électrique si nécessaire. Il est accessible à tous dans les lieux publics."
+                    "correction": "**Rappel de cours :** Le DAE donne des instructions vocales. Il analyse le cœur et ne délivre un choc électrique que si c'est strictement nécessaire pour relancer le rythme."
                 },
                 {
                     "questionNumber": 88,
                     "question": "Quelle est la conduite à tenir pour une brûlure thermique simple ?",
                     "answerOptions": [
-                        {"text": "Rincer à l'eau tempérée (15-25°C) jusqu'à disparition de la douleur", "isCorrect": True},
-                        {"text": "Mettre du beurre ou du dentifrice", "isCorrect": False},
-                        {"text": "Percer les cloques immédiatement", "isCorrect": False},
-                        {"text": "Mettre de la glace directement sur la peau", "isCorrect": False}
+                        {"text": "Rincer à l'eau tempérée jusqu'à la fin de la douleur", "isCorrect": True},
+                        {"text": "Appliquer du beurre ou du dentifrice sur la zone rouge", "isCorrect": False},
+                        {"text": "Percer les cloques de liquide dès leur apparition rapide", "isCorrect": False},
+                        {"text": "Mettre de la glace directement sur la peau brûlée vive", "isCorrect": False}
                     ],
-                    "correction": "L'eau refroidit les tissus et stoppe la progression de la brûlure en profondeur."
+                    "correction": "**Rappel de cours :** On rince à l'eau du robinet (15-25°C) pendant au moins 15 minutes. Cela arrête la progression de la chaleur dans les couches profondes de la peau."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Que signifie un panneau circulaire rouge barré ?",
+                    "question": "Que signifie un panneau de sécurité circulaire rouge barré ?",
                     "answerOptions": [
-                        {"text": "Une interdiction", "isCorrect": True},
-                        {"text": "Une obligation", "isCorrect": False},
-                        {"text": "Une sortie de secours", "isCorrect": False},
-                        {"text": "Un danger électrique", "isCorrect": False}
+                        {"text": "Une interdiction formelle de faire une action précise", "isCorrect": True},
+                        {"text": "Une obligation de porter un vêtement de sécurité bleu", "isCorrect": False},
+                        {"text": "Une sortie de secours située à proximité immédiate ici", "isCorrect": False},
+                        {"text": "Un danger électrique important lié à la machine locale", "isCorrect": False}
                     ],
-                    "correction": "Ex : Interdiction de fumer, interdiction d'entrer."
+                    "correction": "**Rappel de cours :** Le rouge sur un rond signifie toujours 'Interdit'. Exemple : Interdiction de fumer, interdiction de passer pour les piétons."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Quel est le risque lié à une exposition prolongée aux vibrations (ex : marteau-piqueur) ?",
+                    "question": "Quel risque est lié à l'usage prolongé d'un marteau-piqueur ?",
                     "answerOptions": [
-                        {"text": "Troubles articulaires et circulatoires des mains", "isCorrect": True},
-                        {"text": "Amélioration de la force du poignet", "isCorrect": False},
-                        {"text": "Perte de la vue", "isCorrect": False},
-                        {"text": "Caries dentaires", "isCorrect": False}
+                        {"text": "Des troubles articulaires et circulatoires des mains", "isCorrect": True},
+                        {"text": "Une amélioration de la force du poignet et du bras", "isCorrect": False},
+                        {"text": "Une perte de la vue par manque de lumière vive", "isCorrect": False},
+                        {"text": "Le développement de caries dentaires sur les molaires", "isCorrect": False}
                     ],
-                    "correction": "C'est un risque physique professionnel qui peut causer la maladie des 'doigts blancs'."
+                    "correction": "**Rappel de cours :** Les vibrations sont un risque physique professionnel. Elles peuvent causer le syndrome des 'doigts blancs' ou des douleurs chroniques aux articulations."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Comment appelle-t-on la méthode d'analyse pour comprendre un accident après coup ?",
+                    "question": "Comment appelle-t-on l'outil d'analyse après un accident ?",
                     "answerOptions": [
-                        {"text": "L'arbre des causes", "isCorrect": True},
-                        {"text": "La météo des risques", "isCorrect": False},
-                        {"text": "Le cercle de Sinner", "isCorrect": False},
-                        {"text": "La pyramide alimentaire", "isCorrect": False}
+                        {"text": "L'arbre des causes pour comprendre l'événement", "isCorrect": True},
+                        {"text": "La météo des risques pour prévoir les futurs orages", "isCorrect": False},
+                        {"text": "Le cercle de Sinner pour le nettoyage des sols gris", "isCorrect": False},
+                        {"text": "La pyramide alimentaire pour les repas du midi local", "isCorrect": False}
                     ],
-                    "correction": "Il permet de remonter aux causes profondes pour éviter que l'accident ne se reproduise."
+                    "correction": "**Rappel de cours :** L'arbre des causes permet de remonter tous les faits qui ont mené à l'accident afin de mettre en place des mesures pour que cela ne se reproduise plus."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "Qu'est-ce que le risque électrique ?",
+                    "question": "Qu'est-ce que le risque électrique au travail ?",
                     "answerOptions": [
-                        {"text": "Le risque d'électrisation ou d'électrocution par contact avec le courant", "isCorrect": True},
-                        {"text": "Le risque de tomber d'une échelle", "isCorrect": False},
-                        {"text": "Le risque de manquer de lumière", "isCorrect": False},
-                        {"text": "Le risque que la batterie du téléphone soit vide", "isCorrect": False}
+                        {"text": "L'électrisation ou l'électrocution par un fil nu", "isCorrect": True},
+                        {"text": "Le risque de tomber d'une échelle mal fixée au mur", "isCorrect": False},
+                        {"text": "Le risque de manquer de lumière dans l'atelier sombre", "isCorrect": False},
+                        {"text": "Le risque que la batterie du téléphone soit vide le soir", "isCorrect": False}
                     ],
-                    "correction": "Le passage du courant dans le corps peut causer des brûlures internes ou l'arrêt du cœur."
+                    "correction": "**Rappel de cours :** Le courant traverse le corps. L'électrisation est la blessure, l'électrocution est la mort provoquée par le choc électrique."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "Pourquoi le stress au travail est-il considéré comme un risque ?",
+                    "question": "Pourquoi le stress chronique est-il un risque professionnel ?",
                     "answerOptions": [
-                        {"text": "Il peut causer des maladies cardiovasculaires et des dépressions", "isCorrect": True},
-                        {"text": "Il rend les gens plus rapides", "isCorrect": False},
-                        {"text": "Il n'a aucun impact sur la santé", "isCorrect": False},
-                        {"text": "Il fait grossir uniquement", "isCorrect": False}
+                        {"text": "Il cause des maladies cardiaques et des dépressions", "isCorrect": True},
+                        {"text": "Il permet aux ouvriers de travailler beaucoup plus vite", "isCorrect": False},
+                        {"text": "Il n'a aucun impact sur la santé physique du salarié", "isCorrect": False},
+                        {"text": "Il fait grossir les personnes qui travaillent au bureau", "isCorrect": False}
                     ],
-                    "correction": "Le stress chronique est un Risque Psycho-Social (RPS) majeur."
+                    "correction": "**Rappel de cours :** Le stress prolongé libère du cortisol qui abîme le cœur et affaiblit le système immunitaire. C'est un Risque Psycho-Social (RPS) majeur."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "Quel est l'EPI indispensable pour se protéger les yeux des produits chimiques ?",
+                    "question": "Quel EPI protège les yeux des projections d'acide ?",
                     "answerOptions": [
-                        {"text": "Les lunettes de protection ou visière", "isCorrect": True},
-                        {"text": "Des lunettes de soleil", "isCorrect": False},
-                        {"text": "Fermer les yeux en travaillant", "isCorrect": False},
-                        {"text": "Mettre un bonnet", "isCorrect": False}
+                        {"text": "Les lunettes de protection intégrale ou visière", "isCorrect": True},
+                        {"text": "Des lunettes de soleil classiques pour la plage", "isCorrect": False},
+                        {"text": "Fermer les yeux très fort pendant le travail manuel", "isCorrect": False},
+                        {"text": "Mettre un bonnet en laine sur le haut de la tête", "isCorrect": False}
                     ],
-                    "correction": "Les projections d'acide ou de base peuvent causer une cécité immédiate."
+                    "correction": "**Rappel de cours :** Une seule goutte d'acide dans l'œil peut causer une cécité définitive. La protection doit être étanche sur les côtés."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Que faire si un collègue est électrisé et encore en contact avec la source électrique ?",
+                    "question": "Que faire si un collègue est électrisé et encore en contact avec le fil ?",
                     "answerOptions": [
-                        {"text": "Couper le courant immédiatement sans toucher la victime", "isCorrect": True},
-                        {"text": "Tirer la victime par le bras", "isCorrect": False},
-                        {"text": "Lui verser de l'eau", "isCorrect": False},
-                        {"text": "Appeler ses parents", "isCorrect": False}
+                        {"text": "Couper le courant immédiatement sans toucher la personne", "isCorrect": True},
+                        {"text": "Tirer le collègue par le bras pour le décoller du fil", "isCorrect": False},
+                        {"text": "Lui verser un seau d'eau froide sur l'ensemble du corps", "isCorrect": False},
+                        {"text": "Appeler ses parents pour les informer de la situation", "isCorrect": False}
                     ],
-                    "correction": "Si vous touchez la victime, vous serez électrisé à votre tour. Il faut isoler le courant d'abord."
+                    "correction": "**Rappel de cours :** Si vous touchez la victime, vous serez électrisé à votre tour. Il faut couper le disjoncteur ou écarter le fil avec un bâton en bois sec."
                 },
                 {
                     "questionNumber": 96,
                     "question": "Quelle est la définition de la prévention intrinsèque ?",
                     "answerOptions": [
-                        {"text": "Supprimer le danger dès la conception (ex : remplacer un produit toxique)", "isCorrect": True},
-                        {"text": "Mettre une affiche de sécurité", "isCorrect": False},
-                        {"text": "Porter un casque", "isCorrect": False},
-                        {"text": "Former les salariés", "isCorrect": False}
+                        {"text": "Supprimer le danger dès la conception de la tâche", "isCorrect": True},
+                        {"text": "Mettre une grande affiche de sécurité sur le mur gris", "isCorrect": False},
+                        {"text": "Porter un casque lourd pendant toute la journée ici", "isCorrect": False},
+                        {"text": "Former les salariés aux gestes qui sauvent des vies", "isCorrect": False}
                     ],
-                    "correction": "C'est le niveau de prévention le plus efficace."
+                    "correction": "**Rappel de cours :** C'est le niveau le plus efficace de prévention. Exemple : remplacer un produit toxique par un produit inoffensif. On supprime le problème à la source."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Qu'est-ce qu'un Risque Psycho-Social (RPS) ?",
+                    "question": "Qu'est-ce qu'un RPS au sein d'une entreprise ?",
                     "answerOptions": [
-                        {"text": "Stress, harcèlement, burn-out ou violence au travail", "isCorrect": True},
-                        {"text": "Une coupure au doigt", "isCorrect": False},
-                        {"text": "Un problème de dos", "isCorrect": False},
-                        {"text": "Un microbe", "isCorrect": False}
+                        {"text": "Stress, harcèlement, burn-out ou violence interne", "isCorrect": True},
+                        {"text": "Une simple coupure au doigt avec un papier blanc", "isCorrect": False},
+                        {"text": "Un problème de dos lié au port de charges lourdes", "isCorrect": False},
+                        {"text": "Un microbe attrapé lors de la pause déjeuner ici", "isCorrect": False}
                     ],
-                    "correction": "Le stress survient quand le salarié a l'impression (réelle ou ressentie) qu'il n'arrivera pas à faire ce qu'on attend de lui."
+                    "correction": "**Rappel de cours :** Les Risques Psycho-Sociaux touchent à la santé mentale. Ils sont souvent liés à une mauvaise organisation du travail ou à des tensions entre collègues."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Pourquoi est-il interdit de fumer dans les locaux de travail ?",
+                    "question": "Pourquoi fumer est-il interdit dans l'entreprise ?",
                     "answerOptions": [
-                        {"text": "Risque incendie et protection des non-fumeurs", "isCorrect": True},
-                        {"text": "Pour économiser l'argent des salariés", "isCorrect": False},
-                        {"text": "Parce que l'odeur dérange le patron", "isCorrect": False},
-                        {"text": "Pour éviter de salir les cendriers", "isCorrect": False}
+                        {"text": "Risque incendie et protection contre le tabagisme passif", "isCorrect": True},
+                        {"text": "Pour économiser l'argent de l'ensemble des salariés", "isCorrect": False},
+                        {"text": "Parce que l'odeur dérange le grand patron le matin", "isCorrect": False},
+                        {"text": "Pour éviter de salir les cendriers de la cour intérieure", "isCorrect": False}
                     ],
-                    "correction": "L'interdiction vise deux objectifs majeurs : prévenir les départs de feu (mégots mal éteints) et protéger la santé de tous contre le tabagisme passif."
+                    "correction": "**Rappel de cours :** La loi protège les non-fumeurs. La fumée contient des substances cancérigènes. De plus, un mégot mal éteint peut causer une catastrophe industrielle."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Quel dispositif de sécurité coupe le courant si une personne touche un fil dénudé ?",
+                    "question": "Quel dispositif coupe le courant si on touche un fil dénudé ?",
                     "answerOptions": [
-                        {"text": "Disjoncteur différentiel 30 mA", "isCorrect": True},
-                        {"text": "Fusible à cartouche", "isCorrect": False},
-                        {"text": "Ampoule basse consommation", "isCorrect": False},
-                        {"text": "Rallonge électrique", "isCorrect": False}
+                        {"text": "Un disjoncteur différentiel de trente milliampères", "isCorrect": True},
+                        {"text": "Un fusible à cartouche placé dans le tableau mural", "isCorrect": False},
+                        {"text": "Une ampoule basse consommation de type LED moderne", "isCorrect": False},
+                        {"text": "Une rallonge électrique branchée sur la prise de zone", "isCorrect": False}
                     ],
-                    "correction": "Le différentiel (30 milliampères) détecte les fuites de courant vers la terre (ce qui se passe quand on s'électrise)."
+                    "correction": "**Rappel de cours :** Le différentiel 30 mA détecte une fuite de courant vers la terre (à travers votre corps). Il coupe l'électricité en quelques millièmes de seconde pour vous sauver."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Quel est le but ultime de toutes les démarches de prévention en entreprise ?",
+                    "question": "Quel est le but ultime de la prévention en entreprise ?",
                     "answerOptions": [
-                        {"text": "Supprimer ou réduire les accidents du travail", "isCorrect": True},
-                        {"text": "Remplir des papiers administratifs", "isCorrect": False},
-                        {"text": "Faire plaisir à l'inspecteur du travail", "isCorrect": False},
-                        {"text": "Dépenser le budget sécurité", "isCorrect": False}
+                        {"text": "Supprimer ou réduire au maximum les accidents", "isCorrect": True},
+                        {"text": "Remplir tous les papiers administratifs demandés", "isCorrect": False},
+                        {"text": "Faire plaisir à l'inspecteur du travail en visite", "isCorrect": False},
+                        {"text": "Dépenser l'intégralité du budget sécurité du mois", "isCorrect": False}
                     ],
-                    "correction": "La finalité de la PSE et de la santé au travail est de préserver l'intégrité physique et mentale des travailleurs."
+                    "correction": "**Rappel de cours :** La finalité de la PSE est de préserver l'intégrité physique et mentale des travailleurs pour qu'ils rentrent chez eux en bonne santé chaque soir."
                 }
             ]
         }
