@@ -19,8 +19,6 @@ class UIMode(Enum):
 
 ADMIN_USERS = ["eral", "admin"]
 
-st.set_page_config(page_title="Quiz CFA", page_icon="🎓", layout="centered")
-
 if "auth_stage" not in st.session_state:
     st.session_state.auth_stage = "entry"
 
@@ -972,28 +970,49 @@ def show_profile_page():
                     st.write(f"- Thème {t_num} : {s_str}")
 
 def show_admin_reports_page():
-    st.title("🛠️ Signalements des Apprenants")
+    st.markdown("<h2 style='text-align:center;'>🛠️ Gestion des Signalements</h2>", unsafe_allow_html=True)
     from auth_persistence import get_all_reports, delete_report
     reports = get_all_reports()
     
+    # Bouton retour toujours visible
+    if st.button("⬅️ Revenir aux quiz", use_container_width=True):
+        st.session_state.ui_mode = UIMode.APP
+        st.rerun()
+
+    st.markdown("---")
+
     if not reports:
-        st.info("Aucun signalement en cours.")
+        st.success("✅ Félicitations ! Aucun signalement en attente.")
         return
 
+    st.info(f"Il y a actuellement **{len(reports)}** signalement(s) à traiter.")
+
     for r in reports:
-        q_num = r.get('q_idx', 'N/A') # Récupère le numéro s'il existe
+        q_num = r.get('q_idx', 'N/A')
         with st.container():
+            # Encadré visuel pour chaque rapport
             st.markdown(f"""
-            <div style="border:1px solid #ddd; padding:1rem; border-radius:10px; margin-bottom:1rem; background:#f9f9f9;">
-                <p><strong>Quiz :</strong> {r['quiz']} | <strong>Thème :</strong> {r['theme']} | <span style="color:#2563eb; font-weight:bold;">Question n°{q_num}</span></p>
-                <p><strong>Question :</strong> {r['question']}</p>
-                <p style="color:#e11d48;"><strong>Signalement :</strong> {r['reason']}</p>
-                <p style="font-size:0.8rem; color:#666;">Par {r['username']} le {r['date'][:10]}</p>
+            <div style="border:2px solid #e5e7eb; padding:1rem; border-radius:12px; margin-bottom:0.5rem; background:#ffffff;">
+                <p style="margin:0; font-size:0.9rem; color:#6b7280;">
+                    <strong>Quiz :</strong> {r['quiz']} | <strong>Thème :</strong> {r['theme']} | 
+                    <span style="color:#2563eb; font-weight:bold;">Question n°{q_num}</span>
+                </p>
+                <hr style="margin:0.5rem 0; opacity:0.2;">
+                <p style="font-weight:600; margin-bottom:0.5rem;">{r['question']}</p>
+                <div style="background:#fff1f2; border-left:4px solid #e11d48; padding:0.5rem; border-radius:4px;">
+                    <p style="color:#9f1239; margin:0; font-size:0.95rem;"><strong>Problème :</strong> {r['reason']}</p>
+                </div>
+                <p style="font-size:0.75rem; color:#9ca3af; margin-top:0.5rem;">Signalé par <b>{r['username']}</b> le {r['date'][:10]}</p>
             </div>
             """, unsafe_allow_html=True)
-            if st.button(f"Marquer comme résolu", key=f"del_{r['id']}"):
+            
+            # Bouton de suppression (Marquer comme corrigé)
+            if st.button(f"🗑️ Marquer comme corrigé / Supprimer", key=f"del_{r['id']}", use_container_width=True):
                 delete_report(r['id'])
+                st.toast(f"Signalement #{r['id']} supprimé !") # Petite notification discrète
                 st.rerun()
+            st.markdown("<div style='margin-bottom:2rem;'></div>", unsafe_allow_html=True)
+
 # -----------------------
 # INTERFACE : SÉLECTEUR DE NIVEAU
 # -----------------------
@@ -1562,36 +1581,13 @@ def show_question_screen():
     # --- LOGIQUE D'AFFICHAGE ---
     if not st.session_state.answer_locked:
         # ÉCRAN : CHOIX DE LA RÉPONSE
-        st.markdown(
-            f"""
-            <style>
-            div[data-testid="stButton"] > button {{
-                width: 100% !important;
-                display: flex !important;
-                justify-content: center !important;
-                text-align: center !important;
-                padding: 0.6rem 0.8rem;
-                border-radius: 8px;
-                min-height: 48px;
-            }}
-            div[data-testid="stButton"] button[kind="primary"] {{
-                font-weight: 900 !important;
-                border: 2px solid {color} !important;
-            }}
-            </style>
-            """,
-            unsafe_allow_html=True,
-        )
+        st.markdown(f"<style>div[data-testid='stButton'] > button {{ width: 100% !important; text-align: center !important; justify-content: center !important; border-radius: 8px !important; min-height: 48px !important; }} div[data-testid='stButton'] button[kind='primary'] {{ font-weight: 900 !important; border: 2px solid {color} !important; }}</style>", unsafe_allow_html=True)
 
         for opt in answer_options:
             is_selected = (st.session_state.selected_answer == opt["text"])
             label = f"✔️ {opt['key']}. {opt['text']}" if is_selected else f"{opt['key']}. {opt['text']}"
             btn_type = "primary" if is_selected else "secondary"
-            
-            if st.button(label, 
-                         key=f"opt_{q_id}_{opt['key']}_{st.session_state.get('theme_attempt_counter',0)}", 
-                         use_container_width=True,
-                         type=btn_type):
+            if st.button(label, key=f"opt_{q_id}_{opt['key']}_{st.session_state.get('theme_attempt_counter',0)}", use_container_width=True, type=btn_type):
                 st.session_state.selected_answer = opt["text"]
                 st.rerun()
 
@@ -1612,17 +1608,14 @@ def show_question_screen():
             if st.button("⬅️ Retour", use_container_width=True):
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
-
     else:
         # ÉCRAN : CORRECTION
         for opt in answer_options:
             is_correct_answer = opt["isCorrect"]
             is_user_answer = (st.session_state.selected_answer == opt["text"])
-            
             if is_correct_answer: b_c, bg, t_c, icon = "#22c55e", "#d4edda", "#155724", "✅"
             elif is_user_answer: b_c, bg, t_c, icon = "#dc3545", "#f8d7da", "#721c24", "❌"
             else: b_c, bg, t_c, icon = "#d1d5db", "#f9fafb", "#1f2937", ""
-
             st.markdown(f"<div style='border:2px solid {b_c}; border-radius:12px; padding:0.6rem; margin-bottom:0.3rem; background:{bg}; color:{t_c}; text-align: center;'>{icon} <strong>{opt['key']}.</strong> {opt['text']}</div>", unsafe_allow_html=True)
 
         if st.session_state.last_is_correct:
@@ -1633,7 +1626,7 @@ def show_question_screen():
             st.markdown(f"<div style='text-align:center; color:#dc3545; font-weight:bold; margin:1rem 0;'>❌ Mauvaise réponse. La solution était : {sol}</div>", unsafe_allow_html=True)
 
         if q.get("correction"):
-            st.info(f"**📚 Rappel de cours :** {q['correction']}")
+            st.info(f"**📚 Rappel :** {q['correction']}")
 
         col1, col2 = st.columns(2, gap="small")
         with col1:
@@ -1658,21 +1651,13 @@ def show_question_screen():
         if st.button("Envoyer", key=f"rep_btn_{idx}"):
             if reason:
                 from auth_persistence import save_question_report
-                save_question_report(
-                    st.session_state.username or "Anonyme", 
-                    st.session_state.selected_quiz_key, 
-                    theme_number, 
-                    idx + 1, 
-                    q['question'], 
-                    reason
-                )
+                save_question_report(st.session_state.username or "Anonyme", st.session_state.selected_quiz_key, theme_number, idx + 1, q['question'], reason)
                 st.success(f"Signalement envoyé (Question n°{idx+1}) !")
-            else: 
-                st.warning("Décrivez l'erreur.")
+            else: st.warning("Décrivez l'erreur.")
 
     # --- Confirmation de sortie ---
     if st.session_state.get("show_quit_confirmation"):
-        st.warning("⚠️ Quitter annulera votre progression sur ce thème.")
+        st.warning("⚠️ Quitter annulera votre progression.")
         c_y, c_n = st.columns(2)
         if c_y.button("Oui, quitter", use_container_width=True):
             st.session_state.show_quit_confirmation = False
@@ -1681,6 +1666,7 @@ def show_question_screen():
         if c_n.button("Non, continuer", use_container_width=True):
             st.session_state.show_quit_confirmation = False
             st.rerun()
+
 # -----------------------
 # FONCTION PRINCIPALE
 # -----------------------
@@ -1794,21 +1780,28 @@ def show_theme_result():
             st.rerun()
 
 def main():
-    # --- 1. SIDEBAR ---
+    # --- 1. SIDEBAR (Navigation) ---
     with st.sidebar:
         st.markdown("### Navigation")
         if st.session_state.get("auth_stage") == "logged_in":
+            # On change le mode en utilisant la valeur pour plus de stabilité
             if st.button("👤 Mon profil", use_container_width=True):
                 st.session_state.ui_mode = UIMode.PROFILE
+                st.rerun()
             if st.button("🏠 Quiz", use_container_width=True):
                 st.session_state.ui_mode = UIMode.APP
+                st.rerun()
             
-            # Affichage admin
+            # --- SECTION ADMIN ---
             curr_user = st.session_state.get("username", "")
             if curr_user in ADMIN_USERS:
                 st.markdown("---")
-                if st.button("🚩 Voir les signalements", use_container_width=True):
+                from auth_persistence import get_all_reports
+                nb_reports = len(get_all_reports())
+                label = f"🚩 Signalements ({nb_reports})" if nb_reports > 0 else "Voir les signalements"
+                if st.button(label, use_container_width=True):
                     st.session_state.ui_mode = UIMode.ADMIN
+                    st.rerun()
 
             st.markdown("---")
             st.caption(f"Connecté : {curr_user}")
@@ -1817,19 +1810,21 @@ def main():
                 st.session_state.auth_stage = "entry"
                 st.rerun()
 
-    # --- 2. AIGUILLAGE DES ÉCRANS ---
-    mode = st.session_state.ui_mode
-    
-    if mode == UIMode.ADMIN:
+    # --- 2. AIGUILLAGE DES ÉCRANS (Correction de la comparaison) ---
+    # On récupère la valeur texte du mode pour éviter le bug des Enums rechargés
+    current_mode = st.session_state.ui_mode
+    mode_val = current_mode.value if hasattr(current_mode, 'value') else current_mode
+
+    if mode_val == "admin":
         show_admin_reports_page()
-    elif mode == UIMode.PROFILE:
+    elif mode_val == "profile":
         show_profile_page()
     elif st.session_state.selected_quiz_key is None:
         show_quiz_selector()
     elif st.session_state.current_theme is None:
         show_main_menu_for_current_quiz()
     else:
-        # Gestion du Quiz
+        # On est dans un quiz
         q_data = get_current_quiz_data()
         theme_idx = st.session_state.current_theme
         theme_questions = q_data["themes"][theme_idx]["questions"]
@@ -1840,8 +1835,9 @@ def main():
         else:
             show_question_screen()
 
-# --- 3. LANCEMENT ---
+# --- 3. LANCEMENT INDISPENSABLE ---
 if __name__ == "__main__":
+    # Initialisation de sécurité
     if "ui_mode" not in st.session_state:
         st.session_state.ui_mode = UIMode.APP
         

@@ -373,10 +373,16 @@ def get_all_reports():
     return []
 
 def delete_report(report_id):
-    """Supprime un signalement une fois traité."""
+    """Supprime définitivement un signalement du fichier JSON."""
     if REPORTS_FILE.exists():
-        with open(REPORTS_FILE, "r", encoding="utf-8") as f:
-            reports = json.load(f)
-        reports = [r for r in reports if r["id"] != report_id]
-        with open(REPORTS_FILE, "w", encoding="utf-8") as f:
-            json.dump(reports, f, indent=2, ensure_ascii=False)
+        try:
+            with open(REPORTS_FILE, "r", encoding="utf-8") as f:
+                reports = json.load(f)
+            # On garde tous les rapports SAUF celui que l'on veut supprimer
+            new_reports = [r for r in reports if r["id"] != report_id]
+            with open(REPORTS_FILE, "w", encoding="utf-8") as f:
+                json.dump(new_reports, f, indent=2, ensure_ascii=False)
+            return True
+        except Exception as e:
+            print(f"Erreur suppression : {e}")
+    return False
