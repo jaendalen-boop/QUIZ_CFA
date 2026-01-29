@@ -596,32 +596,35 @@ LEVELS = ["CAP", "BAC PRO", "BP", "BTS", "CS"]
 # STATE SPÉCIFIQUE À LA NAVIGATION
 # -----------------------
 
-if "selected_quiz_key" not in st.session_state:
-    st.session_state.selected_quiz_key = None
-if "current_theme" not in st.session_state:
-    st.session_state.current_theme = None
-if "current_question_index" not in st.session_state:
-    st.session_state.current_question_index = 0
-if "score" not in st.session_state:
-    st.session_state.score = 0
-if "theme_scores" not in st.session_state:
-    st.session_state.theme_scores = {}
-if "show_correction" not in st.session_state:
-    st.session_state.show_correction = False
-if "last_is_correct" not in st.session_state:
-    st.session_state.last_is_correct = None
-if "shuffled_questions" not in st.session_state:
-    st.session_state.shuffled_questions = None
-if "selected_level" not in st.session_state:
-    st.session_state.selected_level = None
-if "selected_cap_family" not in st.session_state:
-    st.session_state.selected_cap_family = None
-if "selected_cap_general_subject" not in st.session_state:
-    st.session_state.selected_cap_general_subject = None
-if "show_quit_confirmation" not in st.session_state:
-    st.session_state.show_quit_confirmation = False
-if "ui_mode" not in st.session_state:
-    st.session_state.ui_mode = UIMode.APP
+# -----------------------
+# STATE SPÉCIFIQUE À LA NAVIGATION
+# -----------------------
+
+# Liste exhaustive de toutes les variables nécessaires au fonctionnement
+default_states = {
+    "selected_quiz_key": None,
+    "current_theme": None,
+    "current_question_index": 0,
+    "score": 0,
+    "theme_scores": {},
+    "show_correction": False,
+    "last_is_correct": None,
+    "shuffled_questions": None,
+    "shuffled_answers": {},
+    "selected_level": None,
+    "selected_cap_family": None,
+    "selected_cap_general_subject": None,
+    "show_quit_confirmation": False,
+    "ui_mode": UIMode.APP,
+    "answer_locked": False,      # <--- Ajout crucial
+    "selected_answer": None,     # <--- Ajout crucial
+    "theme_attempt_counter": 0   # <--- Ajout crucial
+}
+
+# Initialisation automatique
+for key, value in default_states.items():
+    if key not in st.session_state:
+        st.session_state[key] = value
 
 
 def show_entry_screen():
@@ -975,16 +978,14 @@ def show_admin_reports_page():
     
     if not reports:
         st.info("Aucun signalement en cours.")
-        if st.button("Retour au menu"):
-            st.session_state.ui_mode = UIMode.APP
-            st.rerun()
         return
 
     for r in reports:
+        q_num = r.get('q_idx', 'N/A') # Récupère le numéro s'il existe
         with st.container():
             st.markdown(f"""
             <div style="border:1px solid #ddd; padding:1rem; border-radius:10px; margin-bottom:1rem; background:#f9f9f9;">
-                <p><strong>Quiz :</strong> {r['quiz']} | <strong>Thème :</strong> {r['theme']}</p>
+                <p><strong>Quiz :</strong> {r['quiz']} | <strong>Thème :</strong> {r['theme']} | <span style="color:#2563eb; font-weight:bold;">Question n°{q_num}</span></p>
                 <p><strong>Question :</strong> {r['question']}</p>
                 <p style="color:#e11d48;"><strong>Signalement :</strong> {r['reason']}</p>
                 <p style="font-size:0.8rem; color:#666;">Par {r['username']} le {r['date'][:10]}</p>
@@ -993,7 +994,6 @@ def show_admin_reports_page():
             if st.button(f"Marquer comme résolu", key=f"del_{r['id']}"):
                 delete_report(r['id'])
                 st.rerun()
-
 # -----------------------
 # INTERFACE : SÉLECTEUR DE NIVEAU
 # -----------------------
@@ -1523,10 +1523,6 @@ def show_main_menu_for_current_quiz():
         st.write("")
 
 
-# -----------------------
-# INTERFACE : ÉCRAN DE QUESTION
-# -----------------------
-
 def show_question_screen():
     quiz_data = get_current_quiz_data()
     theme_number = st.session_state.current_theme
@@ -1550,9 +1546,6 @@ def show_question_screen():
     q = get_current_question()
     if q is None:
         st.error("Erreur : question introuvable.")
-        if st.button("Retour au menu principal"):
-            go_back_to_main_menu()
-            st.rerun()
         return
 
     q_id = f"{theme_number}_{idx}"
@@ -1564,16 +1557,41 @@ def show_question_screen():
         st.session_state.shuffled_answers[q_id] = options
 
     answer_options = st.session_state.shuffled_answers[q_id]
-    st.markdown(f"<h3 style='margin:0.5rem 0;font-size:1.1rem;font-weight:700;line-height:1.3;'>{q['question']}</h3>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='margin:0.5rem 0;font-size:1.1rem;font-weight:700;line-height:1.3;text-align:center;'>{q['question']}</h3>", unsafe_allow_html=True)
 
-    # --- LOGIQUE D'AFFICHAGE DES RÉPONSES ---
+    # --- LOGIQUE D'AFFICHAGE ---
     if not st.session_state.answer_locked:
         # ÉCRAN : CHOIX DE LA RÉPONSE
-        st.markdown(f"<style>div[data-testid='stButton'] > button {{ width: 100%; text-align: left; padding: 0.6rem 0.8rem; border-radius: 8px; border: 2px solid #d1d5db; background: #ffffff !important; color: #1f2937 !important; font-size: 0.95rem; min-height: 48px; display: flex; align-items: center; }} div[data-testid='stButton'] > button:active {{ background: #{color[1:]} !important; color: #ffffff !important; border-color: #{color[1:]} !important; }}</style>", unsafe_allow_html=True)
+        st.markdown(
+            f"""
+            <style>
+            div[data-testid="stButton"] > button {{
+                width: 100% !important;
+                display: flex !important;
+                justify-content: center !important;
+                text-align: center !important;
+                padding: 0.6rem 0.8rem;
+                border-radius: 8px;
+                min-height: 48px;
+            }}
+            div[data-testid="stButton"] button[kind="primary"] {{
+                font-weight: 900 !important;
+                border: 2px solid {color} !important;
+            }}
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
 
         for opt in answer_options:
             is_selected = (st.session_state.selected_answer == opt["text"])
-            if st.button(f"{'✓ ' if is_selected else ''}{opt['key']}. {opt['text']}", key=f"opt_{q_id}_{opt['key']}_{st.session_state.get('theme_attempt_counter',0)}"):
+            label = f"✔️ {opt['key']}. {opt['text']}" if is_selected else f"{opt['key']}. {opt['text']}"
+            btn_type = "primary" if is_selected else "secondary"
+            
+            if st.button(label, 
+                         key=f"opt_{q_id}_{opt['key']}_{st.session_state.get('theme_attempt_counter',0)}", 
+                         use_container_width=True,
+                         type=btn_type):
                 st.session_state.selected_answer = opt["text"]
                 st.rerun()
 
@@ -1589,8 +1607,6 @@ def show_question_screen():
                     st.session_state.show_correction = True
                     st.session_state.answer_locked = True
                     if is_correct: st.session_state.score += 1
-                    if "question_results" not in st.session_state: st.session_state.question_results = []
-                    st.session_state.question_results.append(is_correct)
                     st.rerun()
         with col2:
             if st.button("⬅️ Retour", use_container_width=True):
@@ -1598,7 +1614,7 @@ def show_question_screen():
                 st.rerun()
 
     else:
-        # ÉCRAN : CORRECTION ET FEEDBACK
+        # ÉCRAN : CORRECTION
         for opt in answer_options:
             is_correct_answer = opt["isCorrect"]
             is_user_answer = (st.session_state.selected_answer == opt["text"])
@@ -1607,13 +1623,14 @@ def show_question_screen():
             elif is_user_answer: b_c, bg, t_c, icon = "#dc3545", "#f8d7da", "#721c24", "❌"
             else: b_c, bg, t_c, icon = "#d1d5db", "#f9fafb", "#1f2937", ""
 
-            st.markdown(f"<div style='border:2px solid {b_c}; border-radius:12px; padding:0.6rem; margin-bottom:0.3rem; background:{bg}; color:{t_c};'>{icon} <strong>{opt['key']}.</strong> {opt['text']}</div>", unsafe_allow_html=True)
+            st.markdown(f"<div style='border:2px solid {b_c}; border-radius:12px; padding:0.6rem; margin-bottom:0.3rem; background:{bg}; color:{t_c}; text-align: center;'>{icon} <strong>{opt['key']}.</strong> {opt['text']}</div>", unsafe_allow_html=True)
 
         if st.session_state.last_is_correct:
-            st.success(" Bonne réponse !")
+            st.markdown("<div style='text-align:center; color:#22c55e; font-weight:bold; margin:1rem 0;'>✅ Bonne réponse !</div>", unsafe_allow_html=True)
         else:
             correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
-            st.error(f"Mauvaise réponse. La solution était : {correct_opt['text'] if correct_opt else 'N/A'}")
+            sol = correct_opt['text'] if correct_opt else 'N/A'
+            st.markdown(f"<div style='text-align:center; color:#dc3545; font-weight:bold; margin:1rem 0;'>❌ Mauvaise réponse. La solution était : {sol}</div>", unsafe_allow_html=True)
 
         if q.get("correction"):
             st.info(f"**📚 Rappel de cours :** {q['correction']}")
@@ -1634,17 +1651,24 @@ def show_question_screen():
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
 
-    # --- LE BOUTON DE SIGNALEMENT (TOUJOURS VISIBLE, HORS DU IF/ELSE) ---
+    # --- SIGNALEMENT (Admin : Question n°) ---
     st.markdown("---")
     with st.expander("🚩 Signaler un problème sur cette question"):
         reason = st.text_area("Précisez l'erreur...", key=f"report_area_{idx}")
         if st.button("Envoyer", key=f"rep_btn_{idx}"):
             if reason:
                 from auth_persistence import save_question_report
-                save_question_report(st.session_state.username or "Anonyme", st.session_state.selected_quiz_key, theme_number, q['question'], reason)
-                st.success("Signalement envoyé !")
-            else:
-                st.warning("Veuillez décrire l'erreur.")
+                save_question_report(
+                    st.session_state.username or "Anonyme", 
+                    st.session_state.selected_quiz_key, 
+                    theme_number, 
+                    idx + 1, 
+                    q['question'], 
+                    reason
+                )
+                st.success(f"Signalement envoyé (Question n°{idx+1}) !")
+            else: 
+                st.warning("Décrivez l'erreur.")
 
     # --- Confirmation de sortie ---
     if st.session_state.get("show_quit_confirmation"):

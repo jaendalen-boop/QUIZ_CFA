@@ -343,24 +343,25 @@ def get_all_users_stats() -> dict:
 
 REPORTS_FILE = DATA_DIR / "reports.json"
 
-def save_question_report(username, quiz_key, theme_num, question_text, reason):
-    """Enregistre un signalement dans reports.json."""
+def save_question_report(username, quiz_key, theme_num, q_idx, question_text, reason):
+    """Enregistre un signalement incluant l'index de la question."""
     reports = []
     if REPORTS_FILE.exists():
-        with open(REPORTS_FILE, "r", encoding="utf-8") as f:
-            reports = json.load(f)
+        try:
+            with open(REPORTS_FILE, "r", encoding="utf-8") as f:
+                reports = json.load(f)
+        except: reports = []
     
-    new_report = {
+    reports.append({
         "id": len(reports) + 1,
         "date": datetime.now().isoformat(),
         "username": username,
         "quiz": quiz_key,
         "theme": theme_num,
+        "q_idx": q_idx, # On enregistre le numéro de la question
         "question": question_text,
-        "reason": reason,
-        "status": "en_attente"
-    }
-    reports.append(new_report)
+        "reason": reason
+    })
     with open(REPORTS_FILE, "w", encoding="utf-8") as f:
         json.dump(reports, f, indent=2, ensure_ascii=False)
 
