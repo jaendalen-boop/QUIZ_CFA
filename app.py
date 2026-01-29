@@ -970,11 +970,14 @@ def show_profile_page():
                     st.write(f"- Thème {t_num} : {s_str}")
 
 def show_admin_reports_page():
-    st.markdown("<h2 style='text-align:center;'>🛠️ Gestion des Signalements</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align:center;'>🛠️ Gestion & Édition des Questions</h2>", unsafe_allow_html=True)
     from auth_persistence import get_all_reports, delete_report
+    import importlib
+    import pprint
+    import os
+    
     reports = get_all_reports()
     
-    # Bouton retour toujours visible
     if st.button("⬅️ Revenir aux quiz", use_container_width=True):
         st.session_state.ui_mode = UIMode.APP
         st.rerun()
@@ -982,36 +985,74 @@ def show_admin_reports_page():
     st.markdown("---")
 
     if not reports:
-        st.success("✅ Félicitations ! Aucun signalement en attente.")
+        st.success("✅ Aucun signalement en attente.")
         return
 
     st.info(f"Il y a actuellement **{len(reports)}** signalement(s) à traiter.")
 
     for r in reports:
-        q_num = r.get('q_idx', 'N/A')
-        with st.container():
-            # Encadré visuel pour chaque rapport
-            st.markdown(f"""
-            <div style="border:2px solid #e5e7eb; padding:1rem; border-radius:12px; margin-bottom:0.5rem; background:#ffffff;">
-                <p style="margin:0; font-size:0.9rem; color:#6b7280;">
-                    <strong>Quiz :</strong> {r['quiz']} | <strong>Thème :</strong> {r['theme']} | 
-                    <span style="color:#2563eb; font-weight:bold;">Question n°{q_num}</span>
-                </p>
-                <hr style="margin:0.5rem 0; opacity:0.2;">
-                <p style="font-weight:600; margin-bottom:0.5rem;">{r['question']}</p>
-                <div style="background:#fff1f2; border-left:4px solid #e11d48; padding:0.5rem; border-radius:4px;">
-                    <p style="color:#9f1239; margin:0; font-size:0.95rem;"><strong>Problème :</strong> {r['reason']}</p>
-                </div>
-                <p style="font-size:0.75rem; color:#9ca3af; margin-top:0.5rem;">Signalé par <b>{r['username']}</b> le {r['date'][:10]}</p>
-            </div>
-            """, unsafe_allow_html=True)
+        report_id = r['id']
+        # CORRECTION : On utilise la clé 'quiz' qui contient l'identifiant (ex: bp_arts_de_la_cuisine_100)
+        quiz_key = r.get('quiz') 
+        theme_id = r.get('theme')
+        q_idx = r.get('q_idx', 1) - 1 
+
+        # RÉCUPÉRATION DU TITRE ESTHÉTIQUE
+        quiz_info = QUIZZES.get(quiz_key)
+        display_title = quiz_info['title'] if quiz_info else quiz_key
+
+        with st.expander(f"🚩 Rapport #{report_id} : {display_title} (Question {q_idx + 1})"):
+            st.error(f"**Problème signalé :** {r['reason']}")
             
-            # Bouton de suppression (Marquer comme corrigé)
-            if st.button(f"🗑️ Marquer comme corrigé / Supprimer", key=f"del_{r['id']}", use_container_width=True):
-                delete_report(r['id'])
-                st.toast(f"Signalement #{r['id']} supprimé !") # Petite notification discrète
-                st.rerun()
-            st.markdown("<div style='margin-bottom:2rem;'></div>", unsafe_allow_html=True)
+            if quiz_info:
+                try:
+                    # Chargement et rafraîchissement du module
+                    module = importlib.import_module(quiz_info['path'])
+                    importlib.reload(module)
+                    current_quiz_data = module.quiz_data
+                    
+                    # Accès à la question
+                    question_to_edit = current_quiz_data["themes"][theme_id]["questions"][q_idx]
+                    
+                    st.markdown("---")
+                    new_q_text = st.text_area("Libellé de la question", value=question_to_edit['question'], key=f"edit_q_{report_id}")
+                    
+                    st.write("**Options :**")
+                    new_options = []
+                    for i, opt in enumerate(question_to_edit['answerOptions']):
+                        col_txt, col_ok = st.columns([3, 1])
+                        o_txt = col_txt.text_input(f"Option {chr(65+i)}", value=opt['text'], key=f"opt_{report_id}_{i}")
+                        o_ok = col_ok.toggle("Correct", value=opt['isCorrect'], key=f"corr_{report_id}_{i}")
+                        new_options.append({"text": o_txt, "isCorrect": o_ok})
+                    
+                    new_corr = st.text_area("Rappel de cours", value=question_to_edit.get('correction', ''), key=f"edit_c_{report_id}")
+
+                    c1, c2 = st.columns(2)
+                    if c1.button("💾 Enregistrer & Publier", key=f"save_{report_id}", use_container_width=True, type="primary"):
+                        # Mise à jour
+                        question_to_edit['question'] = new_q_text
+                        question_to_edit['answerOptions'] = new_options
+                        question_to_edit['correction'] = new_corr
+                        
+                        # Écriture formatée
+                        file_path = quiz_info['path'].replace(".", "/") + ".py"
+                        formatted_data = pprint.pformat(current_quiz_data, indent=4, sort_dicts=False, width=100)
+                        
+                        with open(file_path, "w", encoding="utf-8") as f:
+                            f.write(f"quiz_data = {formatted_data}")
+                        
+                        delete_report(report_id)
+                        st.success("Modifications enregistrées !")
+                        st.rerun()
+
+                    if c2.button("🗑️ Supprimer le rapport", key=f"del_{report_id}", use_container_width=True):
+                        delete_report(report_id)
+                        st.rerun()
+
+                except Exception as e:
+                    st.error(f"Erreur technique : {e}")
+            else:
+                st.error(f"Impossible de localiser le quiz '{quiz_key}' dans le catalogue.")
 
 # -----------------------
 # INTERFACE : SÉLECTEUR DE NIVEAU
