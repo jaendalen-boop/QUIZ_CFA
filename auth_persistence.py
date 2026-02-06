@@ -127,7 +127,8 @@ def email_exists(email: str) -> bool:
 
 def create_user(username: str, email: str, password: str) -> tuple[bool, str]:
     """
-    Crée un nouvel utilisateur sans contrainte de longueur ou d'email.
+    Crée un nouvel utilisateur sans aucune vérification d'email.
+    L'argument email est conservé pour la compatibilité mais ignoré.
     """
     username = username.strip().lower()
     
@@ -144,13 +145,13 @@ def create_user(username: str, email: str, password: str) -> tuple[bool, str]:
     # Crée l'utilisateur
     users = load_users_db()
     users[username] = {
-        "email": email, # Sera une chaîne vide "" envoyée par app.py
+        "email": "", # On enregistre une chaîne vide systématiquement
         "password": hash_password(password),
         "created_at": datetime.now().isoformat(),
     }
     
     save_users_db(users)
-    return True, f"✅ Compte créé avec succès !"
+    return True, "✅ Compte créé avec succès !"
 
 def login_user(username: str, password: str) -> tuple[bool, str]:
     """

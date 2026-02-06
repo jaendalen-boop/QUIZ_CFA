@@ -681,9 +681,8 @@ def show_entry_screen():
                     # On envoie une chaîne vide pour l'email
                     success, msg = create_user(new_u, "", new_p)
                     if success:
+                        st.balloons()
                         st.success("Compte créé ! Connectez-vous.")
-                        st.session_state.auth_mode = "login"
-                        st.rerun()
                     else:
                         st.error(msg)
                 else:
@@ -1713,7 +1712,7 @@ def show_question_screen():
 # -----------------------
 
 def show_theme_result():
-    """Affiche le résultat d'un thème complété"""
+    """Affiche le résultat d'un thème complété avec toutes les fonctionnalités et le GIF local"""
     quiz_data = get_current_quiz_data()
     quiz_key = st.session_state.selected_quiz_key
     theme_number = st.session_state.current_theme
@@ -1820,6 +1819,18 @@ def show_theme_result():
             start_theme(theme_number)
             st.rerun()
 
+    # --- LE GIF DE LA VICTOIRE (Local Assets) ---
+    if percentage >= 100:
+        st.markdown("---")
+        # Centrage du GIF
+        _, col_gif, _ = st.columns([1, 2, 1])
+        with col_gif:
+            gif_path = "assets/success.gif"
+            import os
+            if os.path.exists(gif_path):
+                st.image(gif_path, use_container_width=True, caption="Félicitations !")
+            else:
+                st.info("Place ton fichier 'success.gif' dans le dossier 'assets' pour l'afficher ici.")
 def main():
     # --- 1. SIDEBAR (Navigation) ---
     with st.sidebar:
