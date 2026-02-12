@@ -1,1145 +1,1242 @@
-quiz_data = {
-    "title": "Quiz Anglais - Niveau CAP (100 Questions) - Version Épurée",
-    "themes": {
-        # =========================================================================
-        # THÈME 1 : SE PRÉSENTER ET VIE QUOTIDIENNE
-        # =========================================================================
-        1: {
-            "name": "THÈME 1 : SE PRÉSENTER ET VIE QUOTIDIENNE",
-            "questions": [
-                {
-                    "questionNumber": 1,
-                    "question": "Quelle est la forme correcte pour dire 'J'habite à Londres' ?",
-                    "answerOptions": [
-                        {"text": "I live in London", "isCorrect": True},
-                        {"text": "I lives in London", "isCorrect": False},
-                        {"text": "I living in London", "isCorrect": False},
-                        {"text": "I to live in London", "isCorrect": False}
-                    ],
-                    "correction": "Au présent simple avec 'I', on utilise la base verbale. Le 's' est réservé à 'he, she, it'."
-                },
-                {
-                    "questionNumber": 2,
-                    "question": "Comment demande-t-on 'Quel âge as-tu ?' ?",
-                    "answerOptions": [
-                        {"text": "How old are you?", "isCorrect": True},
-                        {"text": "How many years do you have?", "isCorrect": False},
-                        {"text": "What age do you have?", "isCorrect": False},
-                        {"text": "How old have you?", "isCorrect": False}
-                    ],
-                    "correction": "En anglais, on utilise l'adjectif 'old' avec le verbe être (be). On ne 'possède' pas son âge."
-                },
-                {
-                    "questionNumber": 3,
-                    "question": "Complétez : 'She ______ up at 7:00 am.'",
-                    "answerOptions": [
-                        {"text": "gets", "isCorrect": True},
-                        {"text": "get", "isCorrect": False},
-                        {"text": "getting", "isCorrect": False},
-                        {"text": "to get", "isCorrect": False}
-                    ],
-                    "correction": "À la 3ème personne du singulier (she) au présent simple, le verbe prend un 's'."
-                },
-                {
-                    "questionNumber": 4,
-                    "question": "Comment dit-on 'Enchanté' lors d'une rencontre ?",
-                    "answerOptions": [
-                        {"text": "Nice to meet you", "isCorrect": True},
-                        {"text": "Good to meet you", "isCorrect": False},
-                        {"text": "Hello you", "isCorrect": False},
-                        {"text": "Fine thanks", "isCorrect": False}
-                    ],
-                    "correction": "'Nice to meet you' est l'expression polie standard lors d'une présentation."
-                },
-                {
-                    "questionNumber": 5,
-                    "question": "Quel jour se situe entre 'Tuesday' et 'Thursday' ?",
-                    "answerOptions": [
-                        {"text": "Wednesday", "isCorrect": True},
-                        {"text": "Monday", "isCorrect": False},
-                        {"text": "Friday", "isCorrect": False},
-                        {"text": "Saturday", "isCorrect": False}
-                    ],
-                    "correction": "L'ordre est : Tuesday (mardi), Wednesday (mercredi), Thursday (jeudi)."
-                },
-                {
-                    "questionNumber": 6,
-                    "question": "Comment dit-on 'Il est dix heures' ?",
-                    "answerOptions": [
-                        {"text": "It is ten o'clock", "isCorrect": True},
-                        {"text": "It has ten o'clock", "isCorrect": False},
-                        {"text": "He is ten o'clock", "isCorrect": False},
-                        {"text": "There is ten o'clock", "isCorrect": False}
-                    ],
-                    "correction": "Pour l'heure, on utilise toujours 'It is' (ou It's)."
-                },
-                {
-                    "questionNumber": 7,
-                    "question": "Choisissez la forme correcte : '______ you like coffee?'",
-                    "answerOptions": [
-                        {"text": "Do", "isCorrect": True},
-                        {"text": "Does", "isCorrect": False},
-                        {"text": "Are", "isCorrect": False},
-                        {"text": "Is", "isCorrect": False}
-                    ],
-                    "correction": "On utilise l'auxiliaire 'Do' pour les questions au présent simple avec 'you'."
-                },
-                {
-                    "questionNumber": 8,
-                    "question": "Comment dit-on 'Petit-déjeuner' ?",
-                    "answerOptions": [
-                        {"text": "Breakfast", "isCorrect": True},
-                        {"text": "Lunch", "isCorrect": False},
-                        {"text": "Dinner", "isCorrect": False},
-                        {"text": "Snack", "isCorrect": False}
-                    ],
-                    "correction": "Breakfast = matin, Lunch = midi, Dinner = soir."
-                },
-                {
-                    "questionNumber": 9,
-                    "question": "Quel est le pluriel de 'child' ?",
-                    "answerOptions": [
-                        {"text": "children", "isCorrect": True},
-                        {"text": "childs", "isCorrect": False},
-                        {"text": "childrens", "isCorrect": False},
-                        {"text": "childes", "isCorrect": False}
-                    ],
-                    "correction": "'Child' a un pluriel irrégulier : 'children'. On n'ajoute jamais de 's'."
-                },
-                {
-                    "questionNumber": 10,
-                    "question": "Comment dit-on 'S'il vous plaît' ?",
-                    "answerOptions": [
-                        {"text": "Please", "isCorrect": True},
-                        {"text": "Thank you", "isCorrect": False},
-                        {"text": "Welcome", "isCorrect": False},
-                        {"text": "Sorry", "isCorrect": False}
-                    ],
-                    "correction": "'Please' sert à demander poliment. Ne pas confondre avec 'Welcome' (Bienvenue)."
-                },
-                {
-                    "questionNumber": 11,
-                    "question": "Quelle est la traduction de 'Aujourd'hui' ?",
-                    "answerOptions": [
-                        {"text": "Today", "isCorrect": True},
-                        {"text": "Yesterday", "isCorrect": False},
-                        {"text": "Tomorrow", "isCorrect": False},
-                        {"text": "Tonight", "isCorrect": False}
-                    ],
-                    "correction": "Today = aujourd'hui, Yesterday = hier, Tomorrow = demain."
-                },
-                {
-                    "questionNumber": 12,
-                    "question": "Comment dit-on 'Je m'appelle...' ?",
-                    "answerOptions": [
-                        {"text": "My name is", "isCorrect": True},
-                        {"text": "I call me", "isCorrect": False},
-                        {"text": "I am name", "isCorrect": False},
-                        {"text": "Me is", "isCorrect": False}
-                    ],
-                    "correction": "On utilise 'My name is' ou 'I am'."
-                },
-                {
-                    "questionNumber": 13,
-                    "question": "Choisissez l'article correct : 'I want ______ apple.'",
-                    "answerOptions": [
-                        {"text": "an", "isCorrect": True},
-                        {"text": "a", "isCorrect": False},
-                        {"text": "the", "isCorrect": False},
-                        {"text": "some", "isCorrect": False}
-                    ],
-                    "correction": "On utilise 'an' devant un mot commençant par une voyelle."
-                },
-                {
-                    "questionNumber": 14,
-                    "question": "Quel mois vient juste après 'June' ?",
-                    "answerOptions": [
-                        {"text": "July", "isCorrect": True},
-                        {"text": "August", "isCorrect": False},
-                        {"text": "May", "isCorrect": False},
-                        {"text": "April", "isCorrect": False}
-                    ],
-                    "correction": "L'ordre est : May (mai), June (juin), July (juillet), August (août)."
-                },
-                {
-                    "questionNumber": 15,
-                    "question": "Comment dit-on 'Où habites-tu ?' ?",
-                    "answerOptions": [
-                        {"text": "Where do you live?", "isCorrect": True},
-                        {"text": "What do you live?", "isCorrect": False},
-                        {"text": "Who do you live?", "isCorrect": False},
-                        {"text": "When do you live?", "isCorrect": False}
-                    ],
-                    "correction": "'Where' interroge sur le lieu."
-                },
-                {
-                    "questionNumber": 16,
-                    "question": "Quelle est la couleur 'blue' ?",
-                    "answerOptions": [
-                        {"text": "Bleu", "isCorrect": True},
-                        {"text": "Rouge", "isCorrect": False},
-                        {"text": "Vert", "isCorrect": False},
-                        {"text": "Noir", "isCorrect": False}
-                    ],
-                    "correction": "Blue = bleu, Red = rouge, Green = vert, Black = noir."
-                },
-                {
-                    "questionNumber": 17,
-                    "question": "Comment dit-on 'Frère' ?",
-                    "answerOptions": [
-                        {"text": "Brother", "isCorrect": True},
-                        {"text": "Sister", "isCorrect": False},
-                        {"text": "Father", "isCorrect": False},
-                        {"text": "Mother", "isCorrect": False}
-                    ],
-                    "correction": "Brother = frère, Sister = sœur, Father = père, Mother = mère."
-                },
-                {
-                    "questionNumber": 18,
-                    "question": "Traduisez : 'Je suis fatigué'.",
-                    "answerOptions": [
-                        {"text": "I am tired", "isCorrect": True},
-                        {"text": "I am sleep", "isCorrect": False},
-                        {"text": "I have tired", "isCorrect": False},
-                        {"text": "I am angry", "isCorrect": False}
-                    ],
-                    "correction": "On utilise 'be' + l'adjectif 'tired'. On n'utilise pas 'have'."
-                },
-                {
-                    "questionNumber": 19,
-                    "question": "Comment dit-on 'Au revoir' ?",
-                    "answerOptions": [
-                        {"text": "Goodbye", "isCorrect": True},
-                        {"text": "Hello", "isCorrect": False},
-                        {"text": "Welcome", "isCorrect": False},
-                        {"text": "Please", "isCorrect": False}
-                    ],
-                    "correction": "Goodbye = au revoir, Hello = bonjour."
-                },
-                {
-                    "questionNumber": 20,
-                    "question": "Comment demande-t-on 'Comment ça va ?' ?",
-                    "answerOptions": [
-                        {"text": "How are you?", "isCorrect": True},
-                        {"text": "How you go?", "isCorrect": False},
-                        {"text": "What are you doing?", "isCorrect": False},
-                        {"text": "Who are you?", "isCorrect": False}
-                    ],
-                    "correction": "'How are you?' est la forme standard pour prendre des nouvelles."
-                }
-            ]
-        },
-        # =========================================================================
-        # THÈME 2 : GRAMMAIRE ET CONJUGAISON DE BASE
-        # =========================================================================
-        2: {
-            "name": "THÈME 2 : GRAMMAIRE ET CONJUGAISON DE BASE",
-            "questions": [
-                {
-                    "questionNumber": 21,
-                    "question": "Quel est le pronom personnel pour 'Il' ?",
-                    "answerOptions": [
-                        {"text": "He", "isCorrect": True},
-                        {"text": "She", "isCorrect": False},
-                        {"text": "It", "isCorrect": False},
-                        {"text": "They", "isCorrect": False}
-                    ],
-                    "correction": "He = masculin, She = féminin, It = neutre (objets/animaux)."
-                },
-                {
-                    "questionNumber": 22,
-                    "question": "Comment forme-t-on généralement le pluriel en anglais ?",
-                    "answerOptions": [
-                        {"text": "On ajoute un -s", "isCorrect": True},
-                        {"text": "On ajoute un -es", "isCorrect": False},
-                        {"text": "On ne change rien", "isCorrect": False},
-                        {"text": "On double la fin", "isCorrect": False}
-                    ],
-                    "correction": "La règle générale est d'ajouter un 's' à la fin du nom."
-                },
-                {
-                    "questionNumber": 23,
-                    "question": "Quelle est la forme négative de 'I like tea' ?",
-                    "answerOptions": [
-                        {"text": "I don't like tea", "isCorrect": True},
-                        {"text": "I not like tea", "isCorrect": False},
-                        {"text": "I no like tea", "isCorrect": False},
-                        {"text": "I doesn't like tea", "isCorrect": False}
-                    ],
-                    "correction": "On utilise 'don't' (do not) pour la négation au présent simple."
-                },
-                {
-                    "questionNumber": 24,
-                    "question": "Choisissez la bonne forme : 'We ______ happy.'",
-                    "answerOptions": [
-                        {"text": "are", "isCorrect": True},
-                        {"text": "is", "isCorrect": False},
-                        {"text": "am", "isCorrect": False},
-                        {"text": "be", "isCorrect": False}
-                    ],
-                    "correction": "Conjugaison de BE : I am, You are, He/She/It is, We are, They are."
-                },
-                {
-                    "questionNumber": 25,
-                    "question": "Que signifie 'always' ?",
-                    "answerOptions": [
-                        {"text": "Toujours", "isCorrect": True},
-                        {"text": "Souvent", "isCorrect": False},
-                        {"text": "Parfois", "isCorrect": False},
-                        {"text": "Jamais", "isCorrect": False}
-                    ],
-                    "correction": "Always = toujours, Often = souvent, Sometimes = parfois, Never = jamais."
-                },
-                {
-                    "questionNumber": 26,
-                    "question": "Quel auxiliaire utilise-t-on pour le futur ?",
-                    "answerOptions": [
-                        {"text": "Will", "isCorrect": True},
-                        {"text": "Do", "isCorrect": False},
-                        {"text": "Have", "isCorrect": False},
-                        {"text": "Was", "isCorrect": False}
-                    ],
-                    "correction": "'Will' est l'auxiliaire du futur pour tous les sujets."
-                },
-                {
-                    "questionNumber": 27,
-                    "question": "Comment dit-on 'Ceci' (proche de soi) ?",
-                    "answerOptions": [
-                        {"text": "This", "isCorrect": True},
-                        {"text": "That", "isCorrect": False},
-                        {"text": "These", "isCorrect": False},
-                        {"text": "Those", "isCorrect": False}
-                    ],
-                    "correction": "This (proche), That (éloigné). These et Those sont leurs pluriels."
-                },
-                {
-                    "questionNumber": 28,
-                    "question": "Quelle est la traduction de 'Never' ?",
-                    "answerOptions": [
-                        {"text": "Jamais", "isCorrect": True},
-                        {"text": "Quelquefois", "isCorrect": False},
-                        {"text": "Rarement", "isCorrect": False},
-                        {"text": "Bientôt", "isCorrect": False}
-                    ],
-                    "correction": "Never = jamais. On ne rajoute pas d'autre négation dans la phrase."
-                },
-                {
-                    "questionNumber": 29,
-                    "question": "Complétez : 'He ______ a new car.'",
-                    "answerOptions": [
-                        {"text": "has", "isCorrect": True},
-                        {"text": "have", "isCorrect": False},
-                        {"text": "having", "isCorrect": False},
-                        {"text": "haves", "isCorrect": False}
-                    ],
-                    "correction": "Le verbe 'to have' devient 'has' à la 3ème personne du singulier."
-                },
-                {
-                    "questionNumber": 30,
-                    "question": "Que signifie 'When' ?",
-                    "answerOptions": [
-                        {"text": "Quand", "isCorrect": True},
-                        {"text": "Pourquoi", "isCorrect": False},
-                        {"text": "Qui", "isCorrect": False},
-                        {"text": "Comment", "isCorrect": False}
-                    ],
-                    "correction": "When = Quand (temps), Where = Où (lieu), Why = Pourquoi (cause)."
-                },
-                {
-                    "questionNumber": 31,
-                    "question": "Quel est le prétérit (passé) de 'to work' ?",
-                    "answerOptions": [
-                        {"text": "worked", "isCorrect": True},
-                        {"text": "work", "isCorrect": False},
-                        {"text": "working", "isCorrect": False},
-                        {"text": "worken", "isCorrect": False}
-                    ],
-                    "correction": "Pour les verbes réguliers, on ajoute '-ed' pour former le passé."
-                },
-                {
-                    "questionNumber": 32,
-                    "question": "Traduisez 'Beaucoup de' (choses dénombrables) :",
-                    "answerOptions": [
-                        {"text": "Many", "isCorrect": True},
-                        {"text": "Much", "isCorrect": False},
-                        {"text": "Very", "isCorrect": False},
-                        {"text": "Little", "isCorrect": False}
-                    ],
-                    "correction": "Many s'utilise avec les noms pluriels. Much avec les noms indénombrables."
-                },
-                {
-                    "questionNumber": 33,
-                    "question": "Comment dit-on 'Ma voiture' ?",
-                    "answerOptions": [
-                        {"text": "My car", "isCorrect": True},
-                        {"text": "Me car", "isCorrect": False},
-                        {"text": "Mine car", "isCorrect": False},
-                        {"text": "I car", "isCorrect": False}
-                    ],
-                    "correction": "'My' est l'adjectif possessif. 'Mine' est un pronom (s'utilise sans nom)."
-                },
-                {
-                    "questionNumber": 34,
-                    "question": "Choisissez la bonne préposition : 'I am ______ the kitchen.'",
-                    "answerOptions": [
-                        {"text": "In", "isCorrect": True},
-                        {"text": "On", "isCorrect": False},
-                        {"text": "At", "isCorrect": False},
-                        {"text": "Under", "isCorrect": False}
-                    ],
-                    "correction": "On utilise 'in' pour indiquer qu'on est à l'intérieur d'une pièce."
-                },
-                {
-                    "questionNumber": 35,
-                    "question": "Quel auxiliaire utilise-t-on pour une question au prétérit ?",
-                    "answerOptions": [
-                        {"text": "Did", "isCorrect": True},
-                        {"text": "Do", "isCorrect": False},
-                        {"text": "Does", "isCorrect": False},
-                        {"text": "Will", "isCorrect": False}
-                    ],
-                    "correction": "'Did' est l'auxiliaire du passé pour tous les sujets."
-                },
-                {
-                    "questionNumber": 36,
-                    "question": "Complétez : 'They ______ English.'",
-                    "answerOptions": [
-                        {"text": "speak", "isCorrect": True},
-                        {"text": "speaks", "isCorrect": False},
-                        {"text": "speaking", "isCorrect": False},
-                        {"text": "to speak", "isCorrect": False}
-                    ],
-                    "correction": "Au présent simple avec 'They', le verbe ne prend pas de 's'."
-                },
-                {
-                    "questionNumber": 37,
-                    "question": "Que signifie 'Which' ?",
-                    "answerOptions": [
-                        {"text": "Lequel", "isCorrect": True},
-                        {"text": "Quoi", "isCorrect": False},
-                        {"text": "Où", "isCorrect": False},
-                        {"text": "Qui", "isCorrect": False}
-                    ],
-                    "correction": "'Which' exprime un choix entre plusieurs options."
-                },
-                {
-                    "questionNumber": 38,
-                    "question": "Quelle est la forme contractée de 'I am not' ?",
-                    "answerOptions": [
-                        {"text": "I'm not", "isCorrect": True},
-                        {"text": "I amn't", "isCorrect": False},
-                        {"text": "I'm don't", "isCorrect": False},
-                        {"text": "I no am", "isCorrect": False}
-                    ],
-                    "correction": "'I'm not' est la seule forme contractée correcte."
-                },
-                {
-                    "questionNumber": 39,
-                    "question": "Traduisez : 'Il y a' (singulier).",
-                    "answerOptions": [
-                        {"text": "There is", "isCorrect": True},
-                        {"text": "There are", "isCorrect": False},
-                        {"text": "It has", "isCorrect": False},
-                        {"text": "They are", "isCorrect": False}
-                    ],
-                    "correction": "There is (singulier), There are (pluriel)."
-                },
-                {
-                    "questionNumber": 40,
-                    "question": "Quelle est la terminaison du présent continu (be + ing) ?",
-                    "answerOptions": [
-                        {"text": "-ing", "isCorrect": True},
-                        {"text": "-ed", "isCorrect": False},
-                        {"text": "-s", "isCorrect": False},
-                        {"text": "-ly", "isCorrect": False}
-                    ],
-                    "correction": "Le présent continu exprime une action en cours avec 'be' + verbe-ing."
-                }
-            ]
-        },
-        # =========================================================================
-        # THÈME 3 : VOCABULAIRE DU TRAVAIL ET DE L'ENTREPRISE
-        # =========================================================================
-        3: {
-            "name": "THÈME 3 : VOCABULAIRE DU TRAVAIL ET DE L'ENTREPRISE",
-            "questions": [
-                {
-                    "questionNumber": 41,
-                    "question": "Comment dit-on 'Un emploi' ?",
-                    "answerOptions": [
-                        {"text": "A job", "isCorrect": True},
-                        {"text": "A work", "isCorrect": False},
-                        {"text": "A boss", "isCorrect": False},
-                        {"text": "A salary", "isCorrect": False}
-                    ],
-                    "correction": "Un 'job' est un emploi précis. 'Work' désigne le travail en général."
-                },
-                {
-                    "questionNumber": 42,
-                    "question": "Quel mot désigne le 'Patron' ?",
-                    "answerOptions": [
-                        {"text": "The boss", "isCorrect": True},
-                        {"text": "The employee", "isCorrect": False},
-                        {"text": "The customer", "isCorrect": False},
-                        {"text": "The worker", "isCorrect": False}
-                    ],
-                    "correction": "Boss = patron/chef. Employee = employé."
-                },
-                {
-                    "questionNumber": 43,
-                    "question": "Traduisez : 'Une réunion'.",
-                    "answerOptions": [
-                        {"text": "A meeting", "isCorrect": True},
-                        {"text": "A desk", "isCorrect": False},
-                        {"text": "A tool", "isCorrect": False},
-                        {"text": "A factory", "isCorrect": False}
-                    ],
-                    "correction": "Meeting vient de 'to meet' (rencontrer/se réunir)."
-                },
-                {
-                    "questionNumber": 44,
-                    "question": "Comment dit-on 'Salaire' ?",
-                    "answerOptions": [
-                        {"text": "Salary", "isCorrect": True},
-                        {"text": "Money", "isCorrect": False},
-                        {"text": "Price", "isCorrect": False},
-                        {"text": "Bill", "isCorrect": False}
-                    ],
-                    "correction": "Salary = salaire mensuel. Price = prix d'un objet."
-                },
-                {
-                    "questionNumber": 45,
-                    "question": "Que signifie 'To hire' ?",
-                    "answerOptions": [
-                        {"text": "Embaucher", "isCorrect": True},
-                        {"text": "Licencier", "isCorrect": False},
-                        {"text": "Travailler", "isCorrect": False},
-                        {"text": "Chercher", "isCorrect": False}
-                    ],
-                    "correction": "Hire = recruter/embaucher. Fire = licencier."
-                },
-                {
-                    "questionNumber": 46,
-                    "question": "Comment dit-on 'Chercher un travail' ?",
-                    "answerOptions": [
-                        {"text": "Look for a job", "isCorrect": True},
-                        {"text": "Find a job", "isCorrect": False},
-                        {"text": "Give a job", "isCorrect": False},
-                        {"text": "Lose a job", "isCorrect": False}
-                    ],
-                    "correction": "Look for = chercher. Find = trouver."
-                },
-                {
-                    "questionNumber": 47,
-                    "question": "Quel mot désigne le meuble 'Bureau' ?",
-                    "answerOptions": [
-                        {"text": "A desk", "isCorrect": True},
-                        {"text": "An office", "isCorrect": False},
-                        {"text": "A chair", "isCorrect": False},
-                        {"text": "A computer", "isCorrect": False}
-                    ],
-                    "correction": "Desk = le meuble. Office = la pièce ou l'entreprise."
-                },
-                {
-                    "questionNumber": 48,
-                    "question": "Traduisez : 'Un client'.",
-                    "answerOptions": [
-                        {"text": "A customer", "isCorrect": True},
-                        {"text": "A seller", "isCorrect": False},
-                        {"text": "A supplier", "isCorrect": False},
-                        {"text": "A partner", "isCorrect": False}
-                    ],
-                    "correction": "Customer = client (magasin). Supplier = fournisseur."
-                },
-                {
-                    "questionNumber": 49,
-                    "question": "Que signifie 'Full-time' ?",
-                    "answerOptions": [
-                        {"text": "Temps plein", "isCorrect": True},
-                        {"text": "Temps partiel", "isCorrect": False},
-                        {"text": "Heures sup", "isCorrect": False},
-                        {"text": "Congés", "isCorrect": False}
-                    ],
-                    "correction": "Full-time = temps plein. Part-time = temps partiel."
-                },
-                {
-                    "questionNumber": 50,
-                    "question": "Comment dit-on 'L'usine' ?",
-                    "answerOptions": [
-                        {"text": "The factory", "isCorrect": True},
-                        {"text": "The shop", "isCorrect": False},
-                        {"text": "The warehouse", "isCorrect": False},
-                        {"text": "The lab", "isCorrect": False}
-                    ],
-                    "correction": "Factory = usine. Warehouse = entrepôt."
-                },
-                {
-                    "questionNumber": 51,
-                    "question": "Quel mot désigne un 'Apprenti' ?",
-                    "answerOptions": [
-                        {"text": "Apprentice", "isCorrect": True},
-                        {"text": "Student", "isCorrect": False},
-                        {"text": "Teacher", "isCorrect": False},
-                        {"text": "Master", "isCorrect": False}
-                    ],
-                    "correction": "Apprentice = apprenti. Terme proche du français."
-                },
-                {
-                    "questionNumber": 52,
-                    "question": "Traduisez : 'Sécurité au travail'.",
-                    "answerOptions": [
-                        {"text": "Safety", "isCorrect": True},
-                        {"text": "Security", "isCorrect": False},
-                        {"text": "Health", "isCorrect": False},
-                        {"text": "Danger", "isCorrect": False}
-                    ],
-                    "correction": "Safety = sécurité physique/prévention. Security = protection contre le vol."
-                },
-                {
-                    "questionNumber": 53,
-                    "question": "Que signifie 'To resign' ?",
-                    "answerOptions": [
-                        {"text": "Démissionner", "isCorrect": True},
-                        {"text": "Signer à nouveau", "isCorrect": False},
-                        {"text": "Vendre", "isCorrect": False},
-                        {"text": "Acheter", "isCorrect": False}
-                    ],
-                    "correction": "Resign = démissionner. Quit est aussi utilisé."
-                },
-                {
-                    "questionNumber": 54,
-                    "question": "Comment dit-on 'Un outil' ?",
-                    "answerOptions": [
-                        {"text": "A tool", "isCorrect": True},
-                        {"text": "A machine", "isCorrect": False},
-                        {"text": "A box", "isCorrect": False},
-                        {"text": "A gear", "isCorrect": False}
-                    ],
-                    "correction": "Tool = outil (marteau, clé, etc.)."
-                },
-                {
-                    "questionNumber": 55,
-                    "question": "Quel mot désigne la 'Retraite' ?",
-                    "answerOptions": [
-                        {"text": "Retirement", "isCorrect": True},
-                        {"text": "Holidays", "isCorrect": False},
-                        {"text": "Weekend", "isCorrect": False},
-                        {"text": "Break", "isCorrect": False}
-                    ],
-                    "correction": "Retirement = retraite. Holidays = vacances."
-                },
-                {
-                    "questionNumber": 56,
-                    "question": "Traduisez : 'Compétences'.",
-                    "answerOptions": [
-                        {"text": "Skills", "isCorrect": True},
-                        {"text": "Hobbies", "isCorrect": False},
-                        {"text": "Studies", "isCorrect": False},
-                        {"text": "Dreams", "isCorrect": False}
-                    ],
-                    "correction": "Skills = compétences/savoir-faire."
-                },
-                {
-                    "questionNumber": 57,
-                    "question": "Comment dit-on 'Gagner sa vie' ?",
-                    "answerOptions": [
-                        {"text": "To earn a living", "isCorrect": True},
-                        {"text": "To win a living", "isCorrect": False},
-                        {"text": "To make a life", "isCorrect": False},
-                        {"text": "To pay a living", "isCorrect": False}
-                    ],
-                    "correction": "Earn = gagner par le travail. Win = gagner au jeu."
-                },
-                {
-                    "questionNumber": 58,
-                    "question": "Que signifie 'A warehouse' ?",
-                    "answerOptions": [
-                        {"text": "Un entrepôt", "isCorrect": True},
-                        {"text": "Un magasin", "isCorrect": False},
-                        {"text": "Une maison", "isCorrect": False},
-                        {"text": "Un garage", "isCorrect": False}
-                    ],
-                    "correction": "Warehouse = lieu de stockage."
-                },
-                {
-                    "questionNumber": 59,
-                    "question": "Comment dit-on 'Heures supplémentaires' ?",
-                    "answerOptions": [
-                        {"text": "Overtime", "isCorrect": True},
-                        {"text": "Bonus time", "isCorrect": False},
-                        {"text": "More time", "isCorrect": False},
-                        {"text": "Plus time", "isCorrect": False}
-                    ],
-                    "correction": "Overtime = heures travaillées en plus du contrat."
-                },
-                {
-                    "questionNumber": 60,
-                    "question": "Traduisez : 'Un CV'.",
-                    "answerOptions": [
-                        {"text": "A resume", "isCorrect": True},
-                        {"text": "A letter", "isCorrect": False},
-                        {"text": "A book", "isCorrect": False},
-                        {"text": "A paper", "isCorrect": False}
-                    ],
-                    "correction": "Resume (US) ou CV (UK) désigne le parcours professionnel."
-                }
-            ]
-        },
-        # =========================================================================
-        # THÈME 4 : VOYAGE, COMMERCE ET SERVICES
-        # =========================================================================
-        4: {
-            "name": "THÈME 4 : VOYAGE, COMMERCE ET SERVICES",
-            "questions": [
-                {
-                    "questionNumber": 61,
-                    "question": "Comment dit-on 'Un billet d'avion' ?",
-                    "answerOptions": [
-                        {"text": "A plane ticket", "isCorrect": True},
-                        {"text": "A plane card", "isCorrect": False},
-                        {"text": "A plane paper", "isCorrect": False},
-                        {"text": "A plane book", "isCorrect": False}
-                    ],
-                    "correction": "Ticket = billet (train, bus, avion)."
-                },
-                {
-                    "questionNumber": 62,
-                    "question": "Quel mot désigne 'L'addition' ?",
-                    "answerOptions": [
-                        {"text": "The bill", "isCorrect": True},
-                        {"text": "The addition", "isCorrect": False},
-                        {"text": "The paper", "isCorrect": False},
-                        {"text": "The price", "isCorrect": False}
-                    ],
-                    "correction": "Bill = addition. Addition n'est utilisé que pour le calcul mathématique."
-                },
-                {
-                    "questionNumber": 63,
-                    "question": "Traduisez : 'Une chambre simple'.",
-                    "answerOptions": [
-                        {"text": "A single room", "isCorrect": True},
-                        {"text": "A double room", "isCorrect": False},
-                        {"text": "A one room", "isCorrect": False},
-                        {"text": "A small room", "isCorrect": False}
-                    ],
-                    "correction": "Single room = 1 personne, Double room = 2 personnes."
-                },
-                {
-                    "questionNumber": 64,
-                    "question": "Comment dit-on 'Combien ça coûte ?' ?",
-                    "answerOptions": [
-                        {"text": "How much is it?", "isCorrect": True},
-                        {"text": "How many is it?", "isCorrect": False},
-                        {"text": "How price is it?", "isCorrect": False},
-                        {"text": "What cost is it?", "isCorrect": False}
-                    ],
-                    "correction": "L'argent est indénombrable, on utilise 'How much'."
-                },
-                {
-                    "questionNumber": 65,
-                    "question": "Que signifie 'To book' ?",
-                    "answerOptions": [
-                        {"text": "Réserver", "isCorrect": True},
-                        {"text": "Lire", "isCorrect": False},
-                        {"text": "Vendre", "isCorrect": False},
-                        {"text": "Écrire", "isCorrect": False}
-                    ],
-                    "correction": "To book = effectuer une réservation (hôtel, restaurant)."
-                },
-                {
-                    "questionNumber": 66,
-                    "question": "Comment dit-on 'Un magasin' ?",
-                    "answerOptions": [
-                        {"text": "A shop", "isCorrect": True},
-                        {"text": "A storage", "isCorrect": False},
-                        {"text": "A library", "isCorrect": False},
-                        {"text": "A house", "isCorrect": False}
-                    ],
-                    "correction": "Shop (UK) ou Store (US) = magasin."
-                },
-                {
-                    "questionNumber": 67,
-                    "question": "Quel mot désigne 'Les bagages' ?",
-                    "answerOptions": [
-                        {"text": "Luggage", "isCorrect": True},
-                        {"text": "Bags", "isCorrect": True},
-                        {"text": "Boxes", "isCorrect": False},
-                        {"text": "Clothes", "isCorrect": False}
-                    ],
-                    "correction": "Luggage est indénombrable (pas de 's'). Bags est dénombrable."
-                },
-                {
-                    "questionNumber": 68,
-                    "question": "Traduisez : 'Service compris'.",
-                    "answerOptions": [
-                        {"text": "Service included", "isCorrect": True},
-                        {"text": "Service with", "isCorrect": False},
-                        {"text": "Service here", "isCorrect": False},
-                        {"text": "Service free", "isCorrect": False}
-                    ],
-                    "correction": "Included signifie que c'est déjà intégré dans le prix."
-                },
-                {
-                    "questionNumber": 69,
-                    "question": "Que signifie 'Sold out' ?",
-                    "answerOptions": [
-                        {"text": "Épuisé / Complet", "isCorrect": True},
-                        {"text": "En solde", "isCorrect": False},
-                        {"text": "Ouvert", "isCorrect": False},
-                        {"text": "Vendre dehors", "isCorrect": False}
-                    ],
-                    "correction": "Sold out = il n'y a plus de stock ou de places."
-                },
-                {
-                    "questionNumber": 70,
-                    "question": "Comment dit-on 'La monnaie' (rendue) ?",
-                    "answerOptions": [
-                        {"text": "Change", "isCorrect": True},
-                        {"text": "Money", "isCorrect": False},
-                        {"text": "Coins", "isCorrect": False},
-                        {"text": "Notes", "isCorrect": False}
-                    ],
-                    "correction": "Change = la différence remboursée après un paiement."
-                },
-                {
-                    "questionNumber": 71,
-                    "question": "Quel mot désigne 'Le menu' ?",
-                    "answerOptions": [
-                        {"text": "Menu", "isCorrect": True},
-                        {"text": "Card", "isCorrect": False},
-                        {"text": "List", "isCorrect": False},
-                        {"text": "Food", "isCorrect": False}
-                    ],
-                    "correction": "Le mot 'Menu' est identique en français et en anglais."
-                },
-                {
-                    "questionNumber": 72,
-                    "question": "Traduisez : 'Payer en espèces'.",
-                    "answerOptions": [
-                        {"text": "Pay in cash", "isCorrect": True},
-                        {"text": "Pay with card", "isCorrect": False},
-                        {"text": "Pay in paper", "isCorrect": False},
-                        {"text": "Pay by check", "isCorrect": False}
-                    ],
-                    "correction": "Cash = argent liquide (pièces et billets)."
-                },
-                {
-                    "questionNumber": 73,
-                    "question": "Que signifie 'A receipt' ?",
-                    "answerOptions": [
-                        {"text": "Un ticket de caisse", "isCorrect": True},
-                        {"text": "Une recette", "isCorrect": False},
-                        {"text": "Une lettre", "isCorrect": False},
-                        {"text": "Un cadeau", "isCorrect": False}
-                    ],
-                    "correction": "Receipt = preuve de paiement. Recipe = recette de cuisine."
-                },
-                {
-                    "questionNumber": 74,
-                    "question": "Comment dit-on 'Ouvert' et 'Fermé' ?",
-                    "answerOptions": [
-                        {"text": "Open / Closed", "isCorrect": True},
-                        {"text": "Start / Stop", "isCorrect": False},
-                        {"text": "Begin / End", "isCorrect": False},
-                        {"text": "Yes / No", "isCorrect": False}
-                    ],
-                    "correction": "Open = ouvert. Closed = fermé."
-                },
-                {
-                    "questionNumber": 75,
-                    "question": "Traduisez : 'Où se trouve la banque ?'.",
-                    "answerOptions": [
-                        {"text": "Where is the bank?", "isCorrect": True},
-                        {"text": "What is the bank?", "isCorrect": False},
-                        {"text": "When is the bank?", "isCorrect": False},
-                        {"text": "Who is the bank?", "isCorrect": False}
-                    ],
-                    "correction": "Where = Où (lieu)."
-                },
-                {
-                    "questionNumber": 76,
-                    "question": "Quel mot désigne 'Une remise' ?",
-                    "answerOptions": [
-                        {"text": "A discount", "isCorrect": True},
-                        {"text": "A price", "isCorrect": False},
-                        {"text": "A sale", "isCorrect": False},
-                        {"text": "A gift", "isCorrect": False}
-                    ],
-                    "correction": "Discount = réduction / remise commerciale."
-                },
-                {
-                    "questionNumber": 77,
-                    "question": "Que signifie 'Arrivals' ?",
-                    "answerOptions": [
-                        {"text": "Arrivées", "isCorrect": True},
-                        {"text": "Départs", "isCorrect": False},
-                        {"text": "Douane", "isCorrect": False},
-                        {"text": "Sécurité", "isCorrect": False}
-                    ],
-                    "correction": "Arrivals = Arrivées. Departures = Départs."
-                },
-                {
-                    "questionNumber": 78,
-                    "question": "Comment dit-on 'Le centre-ville' ?",
-                    "answerOptions": [
-                        {"text": "City center", "isCorrect": True},
-                        {"text": "Downtown", "isCorrect": True},
-                        {"text": "Middle city", "isCorrect": False},
-                        {"text": "Town place", "isCorrect": False}
-                    ],
-                    "correction": "City center (UK) ou Downtown (US) = centre-ville."
-                },
-                {
-                    "questionNumber": 79,
-                    "question": "Traduisez : 'Un pourboire'.",
-                    "answerOptions": [
-                        {"text": "A tip", "isCorrect": True},
-                        {"text": "A help", "isCorrect": False},
-                        {"text": "A drink", "isCorrect": False},
-                        {"text": "A coin", "isCorrect": False}
-                    ],
-                    "correction": "Tip = pourboire."
-                },
-                {
-                    "questionNumber": 80,
-                    "question": "Comment dit-on 'Cher' (prix) ?",
-                    "answerOptions": [
-                        {"text": "Expensive", "isCorrect": True},
-                        {"text": "Cheap", "isCorrect": False},
-                        {"text": "Free", "isCorrect": False},
-                        {"text": "Good", "isCorrect": False}
-                    ],
-                    "correction": "Expensive = cher. Cheap = bon marché."
-                }
-            ]
-        },
-        # =========================================================================
-        # THÈME 5 : CULTURE ET COMPRÉHENSION GLOBALE
-        # =========================================================================
-        5: {
-            "name": "THÈME 5 : CULTURE ET COMPRÉHENSION GLOBALE",
-            "questions": [
-                {
-                    "questionNumber": 81,
-                    "question": "Quelle est la capitale du Royaume-Uni ?",
-                    "answerOptions": [
-                        {"text": "London", "isCorrect": True},
-                        {"text": "New York", "isCorrect": False},
-                        {"text": "Washington", "isCorrect": False},
-                        {"text": "Dublin", "isCorrect": False}
-                    ],
-                    "correction": "London est la capitale du UK. Washington est celle des USA."
-                },
-                {
-                    "questionNumber": 82,
-                    "question": "Quelle est la monnaie utilisée aux États-Unis ?",
-                    "answerOptions": [
-                        {"text": "Dollar", "isCorrect": True},
-                        {"text": "Pound", "isCorrect": False},
-                        {"text": "Euro", "isCorrect": False},
-                        {"text": "Yen", "isCorrect": False}
-                    ],
-                    "correction": "USA = Dollar ($). UK = Pound (£)."
-                },
-                {
-                    "questionNumber": 83,
-                    "question": "Qui est le chef de l'État au Royaume-Uni ?",
-                    "answerOptions": [
-                        {"text": "The King / Queen", "isCorrect": True},
-                        {"text": "The President", "isCorrect": False},
-                        {"text": "The Prime Minister", "isCorrect": False},
-                        {"text": "The Mayor", "isCorrect": False}
-                    ],
-                    "correction": "Le UK est une monarchie. Le chef du gouvernement est le Prime Minister."
-                },
-                {
-                    "questionNumber": 84,
-                    "question": "Dans quel pays ne parle-t-on pas anglais (officiel) ?",
-                    "answerOptions": [
-                        {"text": "Brazil", "isCorrect": True},
-                        {"text": "Australia", "isCorrect": False},
-                        {"text": "Canada", "isCorrect": False},
-                        {"text": "Ireland", "isCorrect": False}
-                    ],
-                    "correction": "Au Brésil, la langue officielle est le portugais."
-                },
-                {
-                    "questionNumber": 85,
-                    "question": "Comment s'appelle le drapeau du Royaume-Uni ?",
-                    "answerOptions": [
-                        {"text": "Union Jack", "isCorrect": True},
-                        {"text": "Stars and Stripes", "isCorrect": False},
-                        {"text": "Tricolour", "isCorrect": False},
-                        {"text": "Red Cross", "isCorrect": False}
-                    ],
-                    "correction": "Union Jack est le nom du drapeau britannique."
-                },
-                {
-                    "questionNumber": 86,
-                    "question": "Où se trouve la Statue de la Liberté ?",
-                    "answerOptions": [
-                        {"text": "New York", "isCorrect": True},
-                        {"text": "Los Angeles", "isCorrect": False},
-                        {"text": "Miami", "isCorrect": False},
-                        {"text": "Chicago", "isCorrect": False}
-                    ],
-                    "correction": "Elle est située sur Liberty Island à New York."
-                },
-                {
-                    "questionNumber": 87,
-                    "question": "Que signifie 'USA' ?",
-                    "answerOptions": [
-                        {"text": "United States of America", "isCorrect": True},
-                        {"text": "United States of Africa", "isCorrect": False},
-                        {"text": "Under Sea Area", "isCorrect": False},
-                        {"text": "United Systems of America", "isCorrect": False}
-                    ],
-                    "correction": "USA = États-Unis d'Amérique."
-                },
-                {
-                    "questionNumber": 88,
-                    "question": "Quel sport est très populaire aux USA ?",
-                    "answerOptions": [
-                        {"text": "Baseball", "isCorrect": True},
-                        {"text": "Pétanque", "isCorrect": False},
-                        {"text": "Judo", "isCorrect": False},
-                        {"text": "Cricket", "isCorrect": False}
-                    ],
-                    "correction": "Le Baseball, le Football Américain et le Basket sont les sports majeurs."
-                },
-                {
-                    "questionNumber": 89,
-                    "question": "Boisson chaude préférée des Britanniques ?",
-                    "answerOptions": [
-                        {"text": "Tea", "isCorrect": True},
-                        {"text": "Coffee", "isCorrect": False},
-                        {"text": "Wine", "isCorrect": False},
-                        {"text": "Beer", "isCorrect": False}
-                    ],
-                    "correction": "Le thé est une véritable institution sociale au UK."
-                },
-                {
-                    "questionNumber": 90,
-                    "question": "Nom de la célèbre tour horloge à Londres ?",
-                    "answerOptions": [
-                        {"text": "Big Ben", "isCorrect": True},
-                        {"text": "Eiffel Tower", "isCorrect": False},
-                        {"text": "Empire State", "isCorrect": False},
-                        {"text": "White House", "isCorrect": False}
-                    ],
-                    "correction": "Big Ben est le nom de la cloche de l'Elizabeth Tower."
-                },
-                {
-                    "questionNumber": 91,
-                    "question": "Quelle fête est célébrée le 31 octobre ?",
-                    "answerOptions": [
-                        {"text": "Halloween", "isCorrect": True},
-                        {"text": "Christmas", "isCorrect": False},
-                        {"text": "Easter", "isCorrect": False},
-                        {"text": "Thanksgiving", "isCorrect": False}
-                    ],
-                    "correction": "Halloween est une fête majeure dans le monde anglophone."
-                },
-                {
-                    "questionNumber": 92,
-                    "question": "L'équivalent de 'Bon appétit' ?",
-                    "answerOptions": [
-                        {"text": "Enjoy your meal", "isCorrect": True},
-                        {"text": "Good eat", "isCorrect": False},
-                        {"text": "Nice food", "isCorrect": False},
-                        {"text": "Happy lunch", "isCorrect": False}
-                    ],
-                    "correction": "L'anglais utilise 'Enjoy your meal' (Appréciez votre repas)."
-                },
-                {
-                    "questionNumber": 93,
-                    "question": "Que signifie 'ASAP' ?",
-                    "answerOptions": [
-                        {"text": "As Soon As Possible", "isCorrect": True},
-                        {"text": "As Slow As Possible", "isCorrect": False},
-                        {"text": "Always Send A Paper", "isCorrect": False},
-                        {"text": "After Some Apples", "isCorrect": False}
-                    ],
-                    "correction": "ASAP = Dès que possible."
-                },
-                {
-                    "questionNumber": 94,
-                    "question": "Traduisez 'Faire la queue' :",
-                    "answerOptions": [
-                        {"text": "To queue / stand in line", "isCorrect": True},
-                        {"text": "To wait the bus", "isCorrect": False},
-                        {"text": "To make the shop", "isCorrect": False},
-                        {"text": "To walk fast", "isCorrect": False}
-                    ],
-                    "correction": "Queue (UK) ou Stand in line (US)."
-                },
-                {
-                    "questionNumber": 95,
-                    "question": "Mot pour 'Fausse information' ?",
-                    "answerOptions": [
-                        {"text": "Fake news", "isCorrect": True},
-                        {"text": "True news", "isCorrect": False},
-                        {"text": "Real news", "isCorrect": False},
-                        {"text": "Good news", "isCorrect": False}
-                    ],
-                    "correction": "Fake = faux / truqué."
-                },
-                {
-                    "questionNumber": 96,
-                    "question": "Comment dit-on 'Devant le bâtiment' ?",
-                    "answerOptions": [
-                        {"text": "In front of", "isCorrect": True},
-                        {"text": "Behind", "isCorrect": False},
-                        {"text": "Between", "isCorrect": False},
-                        {"text": "Before", "isCorrect": False}
-                    ],
-                    "correction": "In front of = devant. Behind = derrière."
-                },
-                {
-                    "questionNumber": 97,
-                    "question": "Comparatif correct : 'This is ______ than that.'",
-                    "answerOptions": [
-                        {"text": "faster", "isCorrect": True},
-                        {"text": "more fast", "isCorrect": False},
-                        {"text": "fastest", "isCorrect": False},
-                        {"text": "as fast", "isCorrect": False}
-                    ],
-                    "correction": "Pour les adjectifs courts, on ajoute '-er' au comparatif."
-                },
-                {
-                    "questionNumber": 98,
-                    "question": "Superlatif : 'The ______ hotel.'",
-                    "answerOptions": [
-                        {"text": "most expensive", "isCorrect": True},
-                        {"text": "more expensive", "isCorrect": False},
-                        {"text": "expensivest", "isCorrect": False},
-                        {"text": "expensive", "isCorrect": False}
-                    ],
-                    "correction": "Pour les adjectifs longs, on utilise 'the most'."
-                },
-                {
-                    "questionNumber": 99,
-                    "question": "Mot interrogatif pour 'Pourquoi' ?",
-                    "answerOptions": [
-                        {"text": "Why", "isCorrect": True},
-                        {"text": "What", "isCorrect": False},
-                        {"text": "Which", "isCorrect": False},
-                        {"text": "Who", "isCorrect": False}
-                    ],
-                    "correction": "Why = Pourquoi. On répond souvent par 'Because'."
-                },
-                {
-                    "questionNumber": 100,
-                    "question": "Traduisez 'Je peux vous aider ?' :",
-                    "answerOptions": [
-                        {"text": "Can I help you?", "isCorrect": True},
-                        {"text": "Do I help you?", "isCorrect": False},
-                        {"text": "Am I help you?", "isCorrect": False},
-                        {"text": "Will I help you?", "isCorrect": False}
-                    ],
-                    "correction": "Le modal 'Can' exprime ici la capacité ou la proposition."
-                }
-            ]
-        }
-    }
-}
+quiz_data = {   'title': 'Quiz Anglais - Niveau CAP (100 Questions) - Version Épurée',
+    'themes': {   1: {   'name': 'THÈME 1 : SE PRÉSENTER ET VIE QUOTIDIENNE',
+                         'questions': [   {   'questionNumber': 1,
+                                              'question': 'Quelle est la forme correcte pour dire '
+                                                          "'J'habite à Londres' ?",
+                                              'answerOptions': [   {   'text': 'I live in London',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'I lives in London',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'I living in London',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'I to live in '
+                                                                               'London',
+                                                                       'isCorrect': False}],
+                                              'correction': "Au présent simple avec 'I', on "
+                                                            "utilise la base verbale. Le 's' est "
+                                                            "réservé à 'he, she, it'."},
+                                          {   'questionNumber': 2,
+                                              'question': "Comment demande-t-on 'Quel âge as-tu ?' "
+                                                          '?',
+                                              'answerOptions': [   {   'text': 'How old are you?',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'How many years do '
+                                                                               'you have?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'What age do you '
+                                                                               'have?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'How old have you?',
+                                                                       'isCorrect': False}],
+                                              'correction': "En anglais, on utilise l'adjectif "
+                                                            "'old' avec le verbe être (be). On ne "
+                                                            "'possède' pas son âge."},
+                                          {   'questionNumber': 3,
+                                              'question': "Complétez : 'She ______ up at 7:00 am.'",
+                                              'answerOptions': [   {   'text': 'gets',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'get',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'getting',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'to get',
+                                                                       'isCorrect': False}],
+                                              'correction': 'À la 3ème personne du singulier (she) '
+                                                            'au présent simple, le verbe prend un '
+                                                            "'s'."},
+                                          {   'questionNumber': 4,
+                                              'question': "Comment dit-on 'Enchanté' lors d'une "
+                                                          'rencontre ?',
+                                              'answerOptions': [   {   'text': 'Nice to meet you',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Good to meet you',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Hello you',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Fine thanks',
+                                                                       'isCorrect': False}],
+                                              'correction': "'Nice to meet you' est l'expression "
+                                                            "polie standard lors d'une "
+                                                            'présentation.'},
+                                          {   'questionNumber': 5,
+                                              'question': "Quel jour se situe entre 'Tuesday' et "
+                                                          "'Thursday' ?",
+                                              'answerOptions': [   {   'text': 'Wednesday',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Monday',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Friday',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Saturday',
+                                                                       'isCorrect': False}],
+                                              'correction': "L'ordre est : Tuesday (mardi), "
+                                                            'Wednesday (mercredi), Thursday '
+                                                            '(jeudi).'},
+                                          {   'questionNumber': 6,
+                                              'question': "Comment dit-on 'Il est dix heures' ?",
+                                              'answerOptions': [   {   'text': "It is ten o'clock",
+                                                                       'isCorrect': True},
+                                                                   {   'text': "It has ten o'clock",
+                                                                       'isCorrect': False},
+                                                                   {   'text': "He is ten o'clock",
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'There is ten '
+                                                                               "o'clock",
+                                                                       'isCorrect': False}],
+                                              'correction': "Pour l'heure, on utilise toujours 'It "
+                                                            "is' (ou It's)."},
+                                          {   'questionNumber': 7,
+                                              'question': "Choisissez la forme correcte : '______ "
+                                                          "you like coffee?'",
+                                              'answerOptions': [   {   'text': 'Do',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Does',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Are',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Is',
+                                                                       'isCorrect': False}],
+                                              'correction': "On utilise l'auxiliaire 'Do' pour les "
+                                                            'questions au présent simple avec '
+                                                            "'you'."},
+                                          {   'questionNumber': 8,
+                                              'question': "Comment dit-on 'Petit-déjeuner' ?",
+                                              'answerOptions': [   {   'text': 'Breakfast',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Lunch',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Dinner',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Snack',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Breakfast = matin, Lunch = midi, '
+                                                            'Dinner = soir.'},
+                                          {   'questionNumber': 9,
+                                              'question': "Quel est le pluriel de 'child' ?",
+                                              'answerOptions': [   {   'text': 'children',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'childs',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'childrens',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'childes',
+                                                                       'isCorrect': False}],
+                                              'correction': "'Child' a un pluriel irrégulier : "
+                                                            "'children'. On n'ajoute jamais de "
+                                                            "'s'."},
+                                          {   'questionNumber': 10,
+                                              'question': "Comment dit-on 'S'il vous plaît' ?",
+                                              'answerOptions': [   {   'text': 'Please',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Thank you',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Welcome',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Sorry',
+                                                                       'isCorrect': False}],
+                                              'correction': "'Please' sert à demander poliment. Ne "
+                                                            "pas confondre avec 'Welcome' "
+                                                            '(Bienvenue).'},
+                                          {   'questionNumber': 11,
+                                              'question': 'Quelle est la traduction de '
+                                                          "'Aujourd'hui' ?",
+                                              'answerOptions': [   {   'text': 'Today',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Yesterday',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Tomorrow',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Tonight',
+                                                                       'isCorrect': False}],
+                                              'correction': "Today = aujourd'hui, Yesterday = "
+                                                            'hier, Tomorrow = demain.'},
+                                          {   'questionNumber': 12,
+                                              'question': "Comment dit-on 'Je m'appelle...' ?",
+                                              'answerOptions': [   {   'text': 'My name is',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'I call me',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'I am name',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Me is',
+                                                                       'isCorrect': False}],
+                                              'correction': "On utilise 'My name is' ou 'I am'."},
+                                          {   'questionNumber': 13,
+                                              'question': "Choisissez l'article correct : 'I want "
+                                                          "______ apple.'",
+                                              'answerOptions': [   {   'text': 'an',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'a',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'the',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'some',
+                                                                       'isCorrect': False}],
+                                              'correction': "On utilise 'an' devant un mot "
+                                                            'commençant par une voyelle.'},
+                                          {   'questionNumber': 14,
+                                              'question': "Quel mois vient juste après 'June' ?",
+                                              'answerOptions': [   {   'text': 'July',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'August',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'May',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'April',
+                                                                       'isCorrect': False}],
+                                              'correction': "L'ordre est : May (mai), June (juin), "
+                                                            'July (juillet), August (août).'},
+                                          {   'questionNumber': 15,
+                                              'question': "Comment dit-on 'Où habites-tu ?' ?",
+                                              'answerOptions': [   {   'text': 'Where do you live?',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'What do you live?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Who do you live?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'When do you live?',
+                                                                       'isCorrect': False}],
+                                              'correction': "'Where' interroge sur le lieu."},
+                                          {   'questionNumber': 16,
+                                              'question': "Quelle est la couleur 'blue' ?",
+                                              'answerOptions': [   {   'text': 'Bleu',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Rouge',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Vert',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Noir',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Blue = bleu, Red = rouge, Green = '
+                                                            'vert, Black = noir.'},
+                                          {   'questionNumber': 17,
+                                              'question': "Comment dit-on 'Frère' ?",
+                                              'answerOptions': [   {   'text': 'Brother',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Sister',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Father',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Mother',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Brother = frère, Sister = sœur, '
+                                                            'Father = père, Mother = mère.'},
+                                          {   'questionNumber': 18,
+                                              'question': "Traduisez : 'Je suis fatigué'.",
+                                              'answerOptions': [   {   'text': 'I am tired',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'I am sleep',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'I have tired',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'I am angry',
+                                                                       'isCorrect': False}],
+                                              'correction': "On utilise 'be' + l'adjectif 'tired'. "
+                                                            "On n'utilise pas 'have'."},
+                                          {   'questionNumber': 19,
+                                              'question': "Comment dit-on 'Au revoir' ?",
+                                              'answerOptions': [   {   'text': 'Goodbye',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Hello',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Welcome',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Please',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Goodbye = au revoir, Hello = '
+                                                            'bonjour.'},
+                                          {   'questionNumber': 20,
+                                              'question': "Comment demande-t-on 'Comment ça va ?' "
+                                                          '?',
+                                              'answerOptions': [   {   'text': 'How are you?',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'How you go?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'What are you '
+                                                                               'doing?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Who are you?',
+                                                                       'isCorrect': False}],
+                                              'correction': "'How are you?' est la forme standard "
+                                                            'pour prendre des nouvelles.'}]},
+                  2: {   'name': 'THÈME 2 : GRAMMAIRE ET CONJUGAISON DE BASE',
+                         'questions': [   {   'questionNumber': 21,
+                                              'question': "Quel est le pronom personnel pour 'Il' "
+                                                          '?',
+                                              'answerOptions': [   {   'text': 'He',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'She',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'It',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'They',
+                                                                       'isCorrect': False}],
+                                              'correction': 'He = masculin, She = féminin, It = '
+                                                            'neutre (objets/animaux).'},
+                                          {   'questionNumber': 22,
+                                              'question': 'Comment forme-t-on généralement le '
+                                                          'pluriel en anglais ?',
+                                              'answerOptions': [   {   'text': 'On ajoute un -s',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'On ajoute un -es',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'On ne change rien',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'On double la fin',
+                                                                       'isCorrect': False}],
+                                              'correction': "La règle générale est d'ajouter un "
+                                                            "'s' à la fin du nom."},
+                                          {   'questionNumber': 23,
+                                              'question': "Quelle est la forme négative de 'I like "
+                                                          "tea' ?",
+                                              'answerOptions': [   {   'text': "I don't like tea",
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'I not like tea',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'I no like tea',
+                                                                       'isCorrect': False},
+                                                                   {   'text': "I doesn't like tea",
+                                                                       'isCorrect': False}],
+                                              'correction': "On utilise 'don't' (do not) pour la "
+                                                            'négation au présent simple.'},
+                                          {   'questionNumber': 24,
+                                              'question': "Choisissez la bonne forme : 'We ______ "
+                                                          "happy.'",
+                                              'answerOptions': [   {   'text': 'are',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'is',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'am',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'be',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Conjugaison de BE : I am, You are, '
+                                                            'He/She/It is, We are, They are.'},
+                                          {   'questionNumber': 25,
+                                              'question': "Que signifie 'always' ?",
+                                              'answerOptions': [   {   'text': 'Toujours',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Souvent',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Parfois',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Jamais',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Always = toujours, Often = souvent, '
+                                                            'Sometimes = parfois, Never = jamais.'},
+                                          {   'questionNumber': 26,
+                                              'question': 'Quel auxiliaire utilise-t-on pour le '
+                                                          'futur ?',
+                                              'answerOptions': [   {   'text': 'Will',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Do',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Have',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Was',
+                                                                       'isCorrect': False}],
+                                              'correction': "'Will' est l'auxiliaire du futur pour "
+                                                            'tous les sujets.'},
+                                          {   'questionNumber': 27,
+                                              'question': "Comment dit-on 'Ceci' (proche de soi) ?",
+                                              'answerOptions': [   {   'text': 'This',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'That',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'These',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Those',
+                                                                       'isCorrect': False}],
+                                              'correction': 'This (proche), That (éloigné). These '
+                                                            'et Those sont leurs pluriels.'},
+                                          {   'questionNumber': 28,
+                                              'question': "Quelle est la traduction de 'Never' ?",
+                                              'answerOptions': [   {   'text': 'Jamais',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Quelquefois',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Rarement',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Bientôt',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Never = jamais. On ne rajoute pas '
+                                                            "d'autre négation dans la phrase."},
+                                          {   'questionNumber': 29,
+                                              'question': "Complétez : 'He ______ a new car.'",
+                                              'answerOptions': [   {   'text': 'has',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'have',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'having',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'haves',
+                                                                       'isCorrect': False}],
+                                              'correction': "Le verbe 'to have' devient 'has' à la "
+                                                            '3ème personne du singulier.'},
+                                          {   'questionNumber': 30,
+                                              'question': "Que signifie 'When' ?",
+                                              'answerOptions': [   {   'text': 'Quand',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Pourquoi',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Qui',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Comment',
+                                                                       'isCorrect': False}],
+                                              'correction': 'When = Quand (temps), Where = Où '
+                                                            '(lieu), Why = Pourquoi (cause).'},
+                                          {   'questionNumber': 31,
+                                              'question': "Quel est le prétérit (passé) de 'to "
+                                                          "work' ?",
+                                              'answerOptions': [   {   'text': 'worked',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'work',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'working',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'worken',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Pour les verbes réguliers, on ajoute '
+                                                            "'-ed' pour former le passé."},
+                                          {   'questionNumber': 32,
+                                              'question': "Traduisez 'Beaucoup de' (choses "
+                                                          'dénombrables) :',
+                                              'answerOptions': [   {   'text': 'Many',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Much',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Very',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Little',
+                                                                       'isCorrect': False}],
+                                              'correction': "Many s'utilise avec les noms "
+                                                            'pluriels. Much avec les noms '
+                                                            'indénombrables.'},
+                                          {   'questionNumber': 33,
+                                              'question': "Comment dit-on 'Ma voiture' ?",
+                                              'answerOptions': [   {   'text': 'My car',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Me car',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Mine car',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'I car',
+                                                                       'isCorrect': False}],
+                                              'correction': "'My' est l'adjectif possessif. 'Mine' "
+                                                            "est un pronom (s'utilise sans nom)."},
+                                          {   'questionNumber': 34,
+                                              'question': "Choisissez la bonne préposition : 'I am "
+                                                          "______ the kitchen.'",
+                                              'answerOptions': [   {   'text': 'In',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'On',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'At',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Under',
+                                                                       'isCorrect': False}],
+                                              'correction': "On utilise 'in' pour indiquer qu'on "
+                                                            "est à l'intérieur d'une pièce."},
+                                          {   'questionNumber': 35,
+                                              'question': 'Quel auxiliaire utilise-t-on pour une '
+                                                          'question au prétérit ?',
+                                              'answerOptions': [   {   'text': 'Did',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Do',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Does',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Will',
+                                                                       'isCorrect': False}],
+                                              'correction': "'Did' est l'auxiliaire du passé pour "
+                                                            'tous les sujets.'},
+                                          {   'questionNumber': 36,
+                                              'question': "Complétez : 'They ______ English.'",
+                                              'answerOptions': [   {   'text': 'speak',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'speaks',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'speaking',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'to speak',
+                                                                       'isCorrect': False}],
+                                              'correction': "Au présent simple avec 'They', le "
+                                                            "verbe ne prend pas de 's'."},
+                                          {   'questionNumber': 37,
+                                              'question': "Que signifie 'Which' ?",
+                                              'answerOptions': [   {   'text': 'Lequel',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Quoi',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Où',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Qui',
+                                                                       'isCorrect': False}],
+                                              'correction': "'Which' exprime un choix entre "
+                                                            'plusieurs options.'},
+                                          {   'questionNumber': 38,
+                                              'question': "Quelle est la forme contractée de 'I am "
+                                                          "not' ?",
+                                              'answerOptions': [   {   'text': "I'm not",
+                                                                       'isCorrect': True},
+                                                                   {   'text': "I amn't",
+                                                                       'isCorrect': False},
+                                                                   {   'text': "I'm don't",
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'I no am',
+                                                                       'isCorrect': False}],
+                                              'correction': "'I'm not' est la seule forme "
+                                                            'contractée correcte.'},
+                                          {   'questionNumber': 39,
+                                              'question': "Traduisez : 'Il y a' (singulier).",
+                                              'answerOptions': [   {   'text': 'There is',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'There are',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'It has',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'They are',
+                                                                       'isCorrect': False}],
+                                              'correction': 'There is (singulier), There are '
+                                                            '(pluriel).'},
+                                          {   'questionNumber': 40,
+                                              'question': 'Quelle est la terminaison du présent '
+                                                          'continu (be + ing) ?',
+                                              'answerOptions': [   {   'text': '-ing',
+                                                                       'isCorrect': True},
+                                                                   {   'text': '-ed',
+                                                                       'isCorrect': False},
+                                                                   {   'text': '-s',
+                                                                       'isCorrect': False},
+                                                                   {   'text': '-ly',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Le présent continu exprime une action '
+                                                            "en cours avec 'be' + verbe-ing."}]},
+                  3: {   'name': "THÈME 3 : VOCABULAIRE DU TRAVAIL ET DE L'ENTREPRISE",
+                         'questions': [   {   'questionNumber': 41,
+                                              'question': "Comment dit-on 'Un emploi' ?",
+                                              'answerOptions': [   {   'text': 'A job',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'A work',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A boss',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A salary',
+                                                                       'isCorrect': False}],
+                                              'correction': "Un 'job' est un emploi précis. 'Work' "
+                                                            'désigne le travail en général.'},
+                                          {   'questionNumber': 42,
+                                              'question': "Quel mot désigne le 'Patron' ?",
+                                              'answerOptions': [   {   'text': 'The boss',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'The employee',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'The customer',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'The worker',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Boss = patron/chef. Employee = '
+                                                            'employé.'},
+                                          {   'questionNumber': 43,
+                                              'question': "Traduisez : 'Une réunion'.",
+                                              'answerOptions': [   {   'text': 'A meeting',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'A desk',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A tool',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A factory',
+                                                                       'isCorrect': False}],
+                                              'correction': "Meeting vient de 'to meet' "
+                                                            '(rencontrer/se réunir).'},
+                                          {   'questionNumber': 44,
+                                              'question': "Comment dit-on 'Salaire' ?",
+                                              'answerOptions': [   {   'text': 'Salary',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Money',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Price',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Bill',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Salary = salaire mensuel. Price = '
+                                                            "prix d'un objet."},
+                                          {   'questionNumber': 45,
+                                              'question': "Que signifie 'To hire' ?",
+                                              'answerOptions': [   {   'text': 'Embaucher',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Licencier',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Travailler',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Chercher',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Hire = recruter/embaucher. Fire = '
+                                                            'licencier.'},
+                                          {   'questionNumber': 46,
+                                              'question': "Comment dit-on 'Chercher un travail' ?",
+                                              'answerOptions': [   {   'text': 'Look for a job',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Find a job',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Give a job',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Lose a job',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Look for = chercher. Find = trouver.'},
+                                          {   'questionNumber': 47,
+                                              'question': "Quel mot désigne le meuble 'Bureau' ?",
+                                              'answerOptions': [   {   'text': 'A desk',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'An office',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A chair',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A computer',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Desk = le meuble. Office = la pièce '
+                                                            "ou l'entreprise."},
+                                          {   'questionNumber': 48,
+                                              'question': "Traduisez : 'Un client'.",
+                                              'answerOptions': [   {   'text': 'A customer',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'A seller',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A supplier',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A partner',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Customer = client (magasin). Supplier '
+                                                            '= fournisseur.'},
+                                          {   'questionNumber': 49,
+                                              'question': "Que signifie 'Full-time' ?",
+                                              'answerOptions': [   {   'text': 'Temps plein',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Temps partiel',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Heures sup',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Congés',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Full-time = temps plein. Part-time = '
+                                                            'temps partiel.'},
+                                          {   'questionNumber': 50,
+                                              'question': "Comment dit-on 'L'usine' ?",
+                                              'answerOptions': [   {   'text': 'The factory',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'The shop',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'The warehouse',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'The lab',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Factory = usine. Warehouse = '
+                                                            'entrepôt.'},
+                                          {   'questionNumber': 51,
+                                              'question': "Quel mot désigne un 'Apprenti' ?",
+                                              'answerOptions': [   {   'text': 'Apprentice',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Student',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Teacher',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Master',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Apprentice = apprenti. Terme proche '
+                                                            'du français.'},
+                                          {   'questionNumber': 52,
+                                              'question': "Traduisez : 'Sécurité au travail'.",
+                                              'answerOptions': [   {   'text': 'Safety',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Security',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Health',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Danger',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Safety = sécurité '
+                                                            'physique/prévention. Security = '
+                                                            'protection contre le vol.'},
+                                          {   'questionNumber': 53,
+                                              'question': "Que signifie 'To resign' ?",
+                                              'answerOptions': [   {   'text': 'Démissionner',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Signer à nouveau',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Vendre',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Acheter',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Resign = démissionner. Quit est aussi '
+                                                            'utilisé.'},
+                                          {   'questionNumber': 54,
+                                              'question': "Comment dit-on 'Un outil' ?",
+                                              'answerOptions': [   {   'text': 'A tool',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'A machine',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A box',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A gear',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Tool = outil (marteau, clé, etc.).'},
+                                          {   'questionNumber': 55,
+                                              'question': "Quel mot désigne la 'Retraite' ?",
+                                              'answerOptions': [   {   'text': 'Retirement',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Holidays',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Weekend',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Break',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Retirement = retraite. Holidays = '
+                                                            'vacances.'},
+                                          {   'questionNumber': 56,
+                                              'question': "Traduisez : 'Compétences'.",
+                                              'answerOptions': [   {   'text': 'Skills',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Hobbies',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Studies',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Dreams',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Skills = compétences/savoir-faire.'},
+                                          {   'questionNumber': 57,
+                                              'question': "Comment dit-on 'Gagner sa vie' ?",
+                                              'answerOptions': [   {   'text': 'To earn a living',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'To win a living',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'To make a life',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'To pay a living',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Earn = gagner par le travail. Win = '
+                                                            'gagner au jeu.'},
+                                          {   'questionNumber': 58,
+                                              'question': "Que signifie 'A warehouse' ?",
+                                              'answerOptions': [   {   'text': 'Un entrepôt',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Un magasin',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Une maison',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Un garage',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Warehouse = lieu de stockage.'},
+                                          {   'questionNumber': 59,
+                                              'question': "Comment dit-on 'Heures supplémentaires' "
+                                                          '?',
+                                              'answerOptions': [   {   'text': 'Overtime',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Bonus time',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'More time',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Plus time',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Overtime = heures travaillées en plus '
+                                                            'du contrat.'},
+                                          {   'questionNumber': 60,
+                                              'question': "Traduisez : 'Un CV'.",
+                                              'answerOptions': [   {   'text': 'A resume',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'A letter',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A book',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A paper',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Resume (US) ou CV (UK) désigne le '
+                                                            'parcours professionnel.'}]},
+                  4: {   'name': 'THÈME 4 : VOYAGE, COMMERCE ET SERVICES',
+                         'questions': [   {   'questionNumber': 61,
+                                              'question': "Comment dit-on 'Un billet d'avion' ?",
+                                              'answerOptions': [   {   'text': 'A plane ticket',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'A plane card',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A plane paper',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A plane book',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Ticket = billet (train, bus, avion).'},
+                                          {   'questionNumber': 62,
+                                              'question': "Quel mot désigne 'L'addition' ?",
+                                              'answerOptions': [   {   'text': 'The bill',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'The addition',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'The paper',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'The price',
+                                                                       'isCorrect': False}],
+                                              'correction': "Bill = addition. Addition n'est "
+                                                            'utilisé que pour le calcul '
+                                                            'mathématique.'},
+                                          {   'questionNumber': 63,
+                                              'question': "Traduisez : 'Une chambre simple'.",
+                                              'answerOptions': [   {   'text': 'A single room',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'A double room',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A one room',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A small room',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Single room = 1 personne, Double room '
+                                                            '= 2 personnes.'},
+                                          {   'questionNumber': 64,
+                                              'question': "Comment dit-on 'Combien ça coûte ?' ?",
+                                              'answerOptions': [   {   'text': 'How much is it?',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'How many is it?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'How price is it?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'What cost is it?',
+                                                                       'isCorrect': False}],
+                                              'correction': "L'argent est indénombrable, on "
+                                                            "utilise 'How much'."},
+                                          {   'questionNumber': 65,
+                                              'question': "Que signifie 'To book' ?",
+                                              'answerOptions': [   {   'text': 'Réserver',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Lire',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Vendre',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Écrire',
+                                                                       'isCorrect': False}],
+                                              'correction': 'To book = effectuer une réservation '
+                                                            '(hôtel, restaurant).'},
+                                          {   'questionNumber': 66,
+                                              'question': "Comment dit-on 'Un magasin' ?",
+                                              'answerOptions': [   {   'text': 'A shop',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'A storage',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A library',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A house',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Shop (UK) ou Store (US) = magasin.'},
+                                          {   'questionNumber': 67,
+                                              'question': "Quel mot désigne 'Les bagages' ?",
+                                              'answerOptions': [   {   'text': 'Luggage',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Bags',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Boxes',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Clothes',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Luggage est indénombrable (pas de '
+                                                            "'s'). Bags est dénombrable."},
+                                          {   'questionNumber': 68,
+                                              'question': "Traduisez : 'Service compris'.",
+                                              'answerOptions': [   {   'text': 'Service included',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Service with',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Service here',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Service free',
+                                                                       'isCorrect': False}],
+                                              'correction': "Included signifie que c'est déjà "
+                                                            'intégré dans le prix.'},
+                                          {   'questionNumber': 69,
+                                              'question': "Que signifie 'Sold out' ?",
+                                              'answerOptions': [   {   'text': 'Épuisé / Complet',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'En solde',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Ouvert',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Vendre dehors',
+                                                                       'isCorrect': False}],
+                                              'correction': "Sold out = il n'y a plus de stock ou "
+                                                            'de places.'},
+                                          {   'questionNumber': 70,
+                                              'question': "Comment dit-on 'La monnaie' (rendue) ?",
+                                              'answerOptions': [   {   'text': 'Change',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Money',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Coins',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Notes',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Change = la différence remboursée '
+                                                            'après un paiement.'},
+                                          {   'questionNumber': 71,
+                                              'question': "Quel mot désigne 'Le menu' ?",
+                                              'answerOptions': [   {   'text': 'Menu',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Card',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'List',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Food',
+                                                                       'isCorrect': False}],
+                                              'correction': "Le mot 'Menu' est identique en "
+                                                            'français et en anglais.'},
+                                          {   'questionNumber': 72,
+                                              'question': "Traduisez : 'Payer en espèces'.",
+                                              'answerOptions': [   {   'text': 'Pay in cash',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Pay with card',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Pay in paper',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Pay by check',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Cash = argent liquide (pièces et '
+                                                            'billets).'},
+                                          {   'questionNumber': 73,
+                                              'question': "Que signifie 'A receipt' ?",
+                                              'answerOptions': [   {   'text': 'Un ticket de '
+                                                                               'caisse',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Une recette',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Une lettre',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Un cadeau',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Receipt = preuve de paiement. Recipe '
+                                                            '= recette de cuisine.'},
+                                          {   'questionNumber': 74,
+                                              'question': "Comment dit-on 'Ouvert' et 'Fermé' ?",
+                                              'answerOptions': [   {   'text': 'Open / Closed',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Start / Stop',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Begin / End',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Yes / No',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Open = ouvert. Closed = fermé.'},
+                                          {   'questionNumber': 75,
+                                              'question': "Traduisez : 'Où se trouve la banque ?'.",
+                                              'answerOptions': [   {   'text': 'Where is the bank?',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'What is the bank?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'When is the bank?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Who is the bank?',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Where = Où (lieu).'},
+                                          {   'questionNumber': 76,
+                                              'question': "Quel mot désigne 'Une remise' ?",
+                                              'answerOptions': [   {   'text': 'A discount',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'A price',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A sale',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A gift',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Discount = réduction / remise '
+                                                            'commerciale.'},
+                                          {   'questionNumber': 77,
+                                              'question': "Que signifie 'Arrivals' ?",
+                                              'answerOptions': [   {   'text': 'Arrivées',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Départs',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Douane',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Sécurité',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Arrivals = Arrivées. Departures = '
+                                                            'Départs.'},
+                                          {   'questionNumber': 78,
+                                              'question': "Comment dit-on 'Le centre-ville' ?",
+                                              'answerOptions': [   {   'text': 'City center',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Downtown',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Middle city',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Town place',
+                                                                       'isCorrect': False}],
+                                              'correction': 'City center (UK) ou Downtown (US) = '
+                                                            'centre-ville.'},
+                                          {   'questionNumber': 79,
+                                              'question': "Traduisez : 'Un pourboire'.",
+                                              'answerOptions': [   {   'text': 'A tip',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'A help',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A drink',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'A coin',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Tip = pourboire.'},
+                                          {   'questionNumber': 80,
+                                              'question': "Comment dit-on 'Cher' (prix) ?",
+                                              'answerOptions': [   {   'text': 'Expensive',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Cheap',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Free',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Good',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Expensive = cher. Cheap = bon '
+                                                            'marché.'}]},
+                  5: {   'name': 'THÈME 5 : CULTURE ET COMPRÉHENSION GLOBALE',
+                         'questions': [   {   'questionNumber': 81,
+                                              'question': 'Quelle est la capitale du Royaume-Uni ?',
+                                              'answerOptions': [   {   'text': 'London',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'New York',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Washington',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Dublin',
+                                                                       'isCorrect': False}],
+                                              'correction': 'London est la capitale du UK. '
+                                                            'Washington est celle des USA.'},
+                                          {   'questionNumber': 82,
+                                              'question': 'Quelle est la monnaie utilisée aux '
+                                                          'États-Unis ?',
+                                              'answerOptions': [   {   'text': 'Dollar',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Pound',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Euro',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Yen',
+                                                                       'isCorrect': False}],
+                                              'correction': 'USA = Dollar ($). UK = Pound (£).'},
+                                          {   'questionNumber': 83,
+                                              'question': "Qui est le chef de l'État au "
+                                                          'Royaume-Uni ?',
+                                              'answerOptions': [   {   'text': 'The King / Queen',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'The President',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'The Prime Minister',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'The Mayor',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Le UK est une monarchie. Le chef du '
+                                                            'gouvernement est le Prime Minister.'},
+                                          {   'questionNumber': 84,
+                                              'question': 'Dans quel pays ne parle-t-on pas '
+                                                          'anglais (officiel) ?',
+                                              'answerOptions': [   {   'text': 'Brazil',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Australia',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Canada',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Ireland',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Au Brésil, la langue officielle est '
+                                                            'le portugais.'},
+                                          {   'questionNumber': 85,
+                                              'question': "Comment s'appelle le drapeau du "
+                                                          'Royaume-Uni ?',
+                                              'answerOptions': [   {   'text': 'Union Jack',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Stars and Stripes',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Tricolour',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Red Cross',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Union Jack est le nom du drapeau '
+                                                            'britannique.'},
+                                          {   'questionNumber': 86,
+                                              'question': 'Où se trouve la Statue de la Liberté ?',
+                                              'answerOptions': [   {   'text': 'New York',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Los Angeles',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Miami',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Chicago',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Elle est située sur Liberty Island à '
+                                                            'New York.'},
+                                          {   'questionNumber': 87,
+                                              'question': "Que signifie 'USA' ?",
+                                              'answerOptions': [   {   'text': 'United States of '
+                                                                               'America',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'United States of '
+                                                                               'Africa',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Under Sea Area',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'United Systems of '
+                                                                               'America',
+                                                                       'isCorrect': False}],
+                                              'correction': "USA = États-Unis d'Amérique."},
+                                          {   'questionNumber': 88,
+                                              'question': 'Quel sport est très populaire aux USA ?',
+                                              'answerOptions': [   {   'text': 'Baseball',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Pétanque',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Judo',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Cricket',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Le Baseball, le Football Américain et '
+                                                            'le Basket sont les sports majeurs.'},
+                                          {   'questionNumber': 89,
+                                              'question': 'Boisson chaude préférée des '
+                                                          'Britanniques ?',
+                                              'answerOptions': [   {   'text': 'Tea',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Coffee',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Wine',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Beer',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Le thé est une véritable institution '
+                                                            'sociale au UK.'},
+                                          {   'questionNumber': 90,
+                                              'question': 'Nom de la célèbre tour horloge à '
+                                                          'Londres ?',
+                                              'answerOptions': [   {   'text': 'Big Ben',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Eiffel Tower',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Empire State',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'White House',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Big Ben est le nom de la cloche de '
+                                                            "l'Elizabeth Tower."},
+                                          {   'questionNumber': 91,
+                                              'question': 'Quelle fête est célébrée le 31 octobre '
+                                                          '?',
+                                              'answerOptions': [   {   'text': 'Halloween',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Christmas',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Easter',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Thanksgiving',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Halloween est une fête majeure dans '
+                                                            'le monde anglophone.'},
+                                          {   'questionNumber': 92,
+                                              'question': "L'équivalent de 'Bon appétit' ?",
+                                              'answerOptions': [   {   'text': 'Enjoy your meal',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Good eat',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Nice food',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Happy lunch',
+                                                                       'isCorrect': False}],
+                                              'correction': "L'anglais utilise 'Enjoy your meal' "
+                                                            '(Appréciez votre repas).'},
+                                          {   'questionNumber': 93,
+                                              'question': "Que signifie 'ASAP' ?",
+                                              'answerOptions': [   {   'text': 'As Soon As '
+                                                                               'Possible',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'As Slow As '
+                                                                               'Possible',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Always Send A '
+                                                                               'Paper',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'After Some Apples',
+                                                                       'isCorrect': False}],
+                                              'correction': 'ASAP = Dès que possible.'},
+                                          {   'questionNumber': 94,
+                                              'question': "Traduisez 'Faire la queue' :",
+                                              'answerOptions': [   {   'text': 'To queue / stand '
+                                                                               'in line',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'To wait the bus',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'To make the shop',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'To walk fast',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Queue (UK) ou Stand in line (US).'},
+                                          {   'questionNumber': 95,
+                                              'question': "Mot pour 'Fausse information' ?",
+                                              'answerOptions': [   {   'text': 'Fake news',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'True news',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Real news',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Good news',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Fake = faux / truqué.'},
+                                          {   'questionNumber': 96,
+                                              'question': "Comment dit-on 'Devant le bâtiment' ?",
+                                              'answerOptions': [   {   'text': 'In front of',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Behind',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Between',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Before',
+                                                                       'isCorrect': False}],
+                                              'correction': 'In front of = devant. Behind = '
+                                                            'derrière.'},
+                                          {   'questionNumber': 97,
+                                              'question': "Comparatif correct : 'This is ______ "
+                                                          "than that.'",
+                                              'answerOptions': [   {   'text': 'faster',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'more fast',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'fastest',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'as fast',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Pour les adjectifs courts, on ajoute '
+                                                            "'-er' au comparatif."},
+                                          {   'questionNumber': 98,
+                                              'question': "Superlatif : 'The ______ hotel.'",
+                                              'answerOptions': [   {   'text': 'most expensive',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'more expensive',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'expensivest',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'expensive',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Pour les adjectifs longs, on utilise '
+                                                            "'the most'."},
+                                          {   'questionNumber': 99,
+                                              'question': "Mot interrogatif pour 'Pourquoi' ?",
+                                              'answerOptions': [   {   'text': 'Why',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'What',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Which',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Who',
+                                                                       'isCorrect': False}],
+                                              'correction': 'Why = Pourquoi. On répond souvent par '
+                                                            "'Because'."},
+                                          {   'questionNumber': 100,
+                                              'question': "Traduisez 'Je peux vous aider ?' :",
+                                              'answerOptions': [   {   'text': 'Can I help you?',
+                                                                       'isCorrect': True},
+                                                                   {   'text': 'Do I help you?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Am I help you?',
+                                                                       'isCorrect': False},
+                                                                   {   'text': 'Will I help you?',
+                                                                       'isCorrect': False}],
+                                              'correction': "Le modal 'Can' exprime ici la "
+                                                            'capacité ou la proposition.'}]}}}

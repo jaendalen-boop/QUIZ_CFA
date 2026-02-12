@@ -1,389 +1,205 @@
-# ==================================================================
-# AUTH PERSISTENCE - User Authentication & Score Management
-# ==================================================================
-import json
+import streamlit as st
+from streamlit_gsheets import GSheetsConnection
+import pandas as pd
 import hashlib
-from pathlib import Path
 from datetime import datetime
+import json
 
-# ===================== PATHS =====================
-DATA_DIR = Path("data")
-USERS_FILE = DATA_DIR / "users.json"
-SCORES_DIR = DATA_DIR / "scores"
-
-# Crée les répertoires s'ils n'existent pas
-DATA_DIR.mkdir(exist_ok=True)
-SCORES_DIR.mkdir(exist_ok=True)
-
-# ===================== UTILITY FUNCTIONS =====================
+# --- CONNEXION ---
+conn = st.connection("gsheets", type=GSheetsConnection)
 
 def hash_password(password: str) -> str:
-    """
-    Hache un mot de passe en SHA256.
-    """
+    """Hache le mot de passe en SHA256 pour la sécurité."""
     return hashlib.sha256(password.encode()).hexdigest()
 
-def load_users_db() -> dict:
-    """
-    Charge la base de données des utilisateurs.
-    Crée un fichier vide si inexistant.
-    """
-    if USERS_FILE.exists():
-        try:
-            with open(USERS_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except (json.JSONDecodeError, IOError):
-            return {}
-    return {}
+def force_refresh_cache():
+    """Vide la mémoire vive pour forcer Streamlit à relire Google Sheets."""
+    st.cache_data.clear()
 
-def save_users_db(users: dict):
-    """
-    Sauvegarde la base de données des utilisateurs.
-    """
+# ===================== GESTION UTILISATEURS =====================
+
+@st.cache_data(ttl=600)
+def load_users_db():
     try:
-        with open(USERS_FILE, "w", encoding="utf-8") as f:
-            json.dump(users, f, indent=2, ensure_ascii=False)
-    except IOError as e:
-        print(f"❌ Erreur sauvegarde utilisateurs: {e}")
-
-def load_user_scores(username: str) -> dict:
-    """
-    Charge les scores d'un utilisateur.
-    Crée un fichier vide si inexistant.
-    """
-    score_file = SCORES_DIR / f"{username}.json"
-    
-    if score_file.exists():
-        try:
-            with open(score_file, "r", encoding="utf-8") as f:
-                return json.load(f)
-        except (json.JSONDecodeError, IOError):
-            return {"quizzes": {}}
-    
-    return {"quizzes": {}, "created_at": datetime.now().isoformat()}
-
-def save_user_scores(username: str, quiz_key: str, theme_scores: dict):
-    """
-    Sauvegarde les scores d'un utilisateur pour un quiz donné.
-    
-    Args:
-        username: nom d'utilisateur
-        quiz_key: clé du quiz (ex: "cap_boucher_100")
-        theme_scores: dict {theme_num: score} (ex: {"0": "8/10", "1": "9/10"})
-    """
-    score_file = SCORES_DIR / f"{username}.json"
-    
-    user_data = load_user_scores(username)
-    
-    if "quizzes" not in user_data:
-        user_data["quizzes"] = {}
-    
-    user_data["quizzes"][quiz_key] = {
-        "scores": theme_scores,
-        "last_updated": datetime.now().isoformat()
-    }
-    
-    try:
-        with open(score_file, "w", encoding="utf-8") as f:
-            json.dump(user_data, f, indent=2, ensure_ascii=False)
-    except IOError as e:
-        print(f"❌ Erreur sauvegarde scores: {e}")
-
-def reset_quiz_scores(username: str, quiz_key: str):
-    """
-    Réinitialise les scores d'un quiz pour un utilisateur.
-    """
-    score_file = SCORES_DIR / f"{username}.json"
-    
-    user_data = load_user_scores(username)
-    
-    if quiz_key in user_data.get("quizzes", {}):
-        del user_data["quizzes"][quiz_key]
-    
-    try:
-        with open(score_file, "w", encoding="utf-8") as f:
-            json.dump(user_data, f, indent=2, ensure_ascii=False)
-    except IOError as e:
-        print(f"❌ Erreur lors de la réinitialisation: {e}")
-
-# ===================== AUTHENTICATION =====================
+        return conn.read(worksheet="users")
+    except:
+        return pd.DataFrame(columns=["username", "password", "created_at"])
 
 def user_exists(username: str) -> bool:
-    """
-    Vérifie si un utilisateur existe.
-    """
-    users = load_users_db()
-    return username.lower() in users
-
-def email_exists(email: str) -> bool:
-    """
-    Vérifie si un email est déjà utilisé.
-    """
-    users = load_users_db()
-    for user_data in users.values():
-        if user_data.get("email", "").lower() == email.lower():
-            return True
-    return False
+    df = load_users_db()
+    if df.empty: return False
+    return username.lower() in df['username'].str.lower().values
 
 def create_user(username: str, email: str, password: str) -> tuple[bool, str]:
-    """
-    Crée un nouvel utilisateur sans aucune vérification d'email.
-    L'argument email est conservé pour la compatibilité mais ignoré.
-    """
     username = username.strip().lower()
-    
-    # Validations minimales
-    if not username:
-        return False, "❌ Veuillez choisir un nom d'utilisateur"
-    
-    if not password:
-        return False, "❌ Veuillez choisir un mot de passe"
-    
     if user_exists(username):
         return False, "❌ Cet utilisateur existe déjà"
     
-    # Crée l'utilisateur
-    users = load_users_db()
-    users[username] = {
-        "email": "", # On enregistre une chaîne vide systématiquement
+    df = conn.read(worksheet="users", ttl=0)
+    new_user = pd.DataFrame([{
+        "username": username,
         "password": hash_password(password),
-        "created_at": datetime.now().isoformat(),
-    }
+        "created_at": datetime.now().isoformat()
+    }])
     
-    save_users_db(users)
+    updated_df = pd.concat([df, new_user], ignore_index=True)
+    conn.update(worksheet="users", data=updated_df)
+    force_refresh_cache()
     return True, "✅ Compte créé avec succès !"
 
 def login_user(username: str, password: str) -> tuple[bool, str]:
-    """
-    Authentifie un utilisateur.
-    
-    Returns:
-        (success: bool, message: str)
-    """
     username = username.strip().lower()
+    df = load_users_db()
+    if df.empty: return False, "❌ Aucun utilisateur enregistré"
     
-    if not username or not password:
-        return False, "❌ Veuillez remplir tous les champs"
-    
-    users = load_users_db()
-    
-    if username not in users:
+    user_row = df[df['username'].str.lower() == username]
+    if user_row.empty:
         return False, "❌ Utilisateur non trouvé"
     
-    user_data = users[username]
-    hashed = hash_password(password)
-    
-    if user_data.get("password") != hashed:
-        return False, "❌ Mot de passe incorrect"
-    
-    return True, f"✅ Bienvenue {username} !"
+    if str(user_row.iloc[0]['password']) == hash_password(password):
+        return True, f"✅ Bienvenue {username} !"
+    return False, "❌ Mot de passe incorrect"
 
 def get_user_info(username: str) -> dict:
-    """
-    Retourne les informations d'un utilisateur.
-    """
-    users = load_users_db()
-    if username.lower() in users:
-        user_data = users[username.lower()].copy()
-        user_data.pop("password", None)  # Ne pas exposer le hash
-        return user_data
+    """Récupère les infos d'un utilisateur (appelé par app.py)."""
+    df = load_users_db()
+    user_row = df[df['username'].str.lower() == username.lower()]
+    if not user_row.empty:
+        info = user_row.iloc[0].to_dict()
+        if "password" in info: del info["password"]
+        return info
     return {}
 
+def delete_user(username: str) -> tuple[bool, str]:
+    """Supprime un utilisateur (Admin)."""
+    try:
+        df = conn.read(worksheet="users", ttl=0)
+        df = df[df['username'].str.lower() != username.lower()]
+        conn.update(worksheet="users", data=df)
+        force_refresh_cache()
+        return True, f"✅ Utilisateur {username} supprimé"
+    except:
+        return False, "❌ Erreur lors de la suppression"
+
+# ===================== GESTION DES SCORES & STATS =====================
+
+@st.cache_data(ttl=60)
+def load_user_scores(username: str) -> dict:
+    try:
+        df = conn.read(worksheet="scores")
+        user_rows = df[df['username'] == username]
+        quizzes = {}
+        for _, row in user_rows.iterrows():
+            quizzes[row['quiz_key']] = {
+                "scores": json.loads(row['scores_json']),
+                "last_updated": row['last_updated']
+            }
+        return {"quizzes": quizzes}
+    except:
+        return {"quizzes": {}}
+
+def save_user_scores(username: str, quiz_key: str, theme_scores: dict):
+    try:
+        df = conn.read(worksheet="scores", ttl=0)
+    except:
+        df = pd.DataFrame(columns=["username", "quiz_key", "scores_json", "last_updated"])
+    
+    scores_json = json.dumps(theme_scores)
+    now = datetime.now().isoformat()
+    mask = (df['username'] == username) & (df['quiz_key'] == quiz_key)
+    
+    if any(mask):
+        df.loc[mask, 'scores_json'] = scores_json
+        df.loc[mask, 'last_updated'] = now
+    else:
+        new_score = pd.DataFrame([{"username": username, "quiz_key": quiz_key, "scores_json": scores_json, "last_updated": now}])
+        df = pd.concat([df, new_score], ignore_index=True)
+    
+    conn.update(worksheet="scores", data=df)
+    force_refresh_cache()
+
+def reset_quiz_scores(username: str, quiz_key: str):
+    """Efface les scores d'un quiz spécifique pour un utilisateur."""
+    try:
+        df = conn.read(worksheet="scores", ttl=0)
+        df = df[~((df['username'] == username) & (df['quiz_key'] == quiz_key))]
+        conn.update(worksheet="scores", data=df)
+        force_refresh_cache()
+    except: pass
+
 def get_user_stats(username: str) -> dict:
-    """
-    Retourne les statistiques d'un utilisateur.
-    """
+    """Calcule les statistiques globales pour le profil."""
     user_scores = load_user_scores(username)
     quizzes = user_scores.get("quizzes", {})
-
-    stats = {
-        "total_quizzes": len(quizzes),
-        "total_themes": 0,
-        "total_questions": 0,
-        "total_correct": 0,
-        "average_percentage": 0,
-    }
+    stats = {"total_quizzes": len(quizzes), "total_themes": 0, "total_questions": 0, "total_correct": 0, "average_percentage": 0}
 
     for quiz_key, quiz_data in quizzes.items():
         scores = quiz_data.get("scores", {})
         stats["total_themes"] += len(scores)
-
         for theme_num, score_str in scores.items():
-            # On ne traite que les chaînes de type "8/10"
-            if not isinstance(score_str, str):
-                continue
             try:
                 parts = score_str.split("/")
-                correct = int(parts[0])
-                total = int(parts[1])
-                stats["total_questions"] += total
-                stats["total_correct"] += correct
-            except (ValueError, IndexError):
-                # Ignore les formats invalides
-                continue
-
+                stats["total_correct"] += int(parts[0])
+                stats["total_questions"] += int(parts[1])
+            except: continue
     if stats["total_questions"] > 0:
-        stats["average_percentage"] = round(
-            (stats["total_correct"] / stats["total_questions"]) * 100, 1
-        )
-
+        stats["average_percentage"] = round((stats["total_correct"] / stats["total_questions"]) * 100, 1)
     return stats
 
-
-
-# ===================== DATA EXPORT =====================
-
 def export_user_scores_txt(username: str, quiz_title: str = None) -> str:
-    """
-    Exporte les scores d'un utilisateur en texte.
-    
-    Args:
-        username: nom d'utilisateur
-        quiz_title: titre optionnel du quiz (pour un quiz spécifique)
-    
-    Returns:
-        str: contenu formaté en texte
-    """
+    """Génère un bilan texte des résultats."""
     user_data = load_user_scores(username)
     quizzes = user_data.get("quizzes", {})
-    
-    lines = [
-        "=" * 60,
-        f"RÉSULTATS DES QUIZ - {username.upper()}",
-        "=" * 60,
-        f"Date d'export : {datetime.now().strftime('%d/%m/%Y %H:%M')}",
-        "",
-    ]
-    
-    total_score = 0
-    total_max = 0
-    quiz_count = 0
+    lines = ["="*60, f"RÉSULTATS DES QUIZ - {username.upper()}", "="*60, f"Date d'export : {datetime.now().strftime('%d/%m/%Y %H:%M')}", ""]
     
     for quiz_key, quiz_data in quizzes.items():
         scores = quiz_data.get("scores", {})
-        last_updated = quiz_data.get("last_updated", "")
-        
-        lines.append(f"Quiz : {quiz_key}")
-        if last_updated:
-            lines.append(f"Dernière mise à jour : {last_updated}")
-        lines.append("-" * 60)
-        
+        lines.append(f"Quiz : {quiz_key}\nDernière mise à jour : {quiz_data.get('last_updated', '')}\n" + "-"*60)
         for theme_num in sorted(scores.keys()):
-            score_str = scores[theme_num]
-            lines.append(f"  Thème {theme_num} : {score_str}")
-            
-            try:
-                parts = score_str.split("/")
-                correct = int(parts[0])
-                total = int(parts[1])
-                total_score += correct
-                total_max += total
-                quiz_count += 1
-            except (ValueError, IndexError):
-                pass
-        
+            lines.append(f"  Thème {theme_num} : {scores[theme_num]}")
         lines.append("")
-    
-    lines.append("=" * 60)
-    lines.append(f"TOTAL : {total_score}/{total_max}")
-    
-    if total_max > 0:
-        percentage = (total_score / total_max) * 100
-        lines.append(f"Pourcentage global : {percentage:.1f}%")
-    
-    lines.append(f"Nombre de quiz complétés : {quiz_count}")
-    lines.append("=" * 60)
-    
     return "\n".join(lines)
 
-# ===================== CLEANUP / ADMIN =====================
+# ===================== SIGNALEMENTS =====================
 
-def delete_user(username: str) -> tuple[bool, str]:
-    """
-    Supprime un utilisateur et ses scores.
-    ⚠️ ATTENTION : Opération irréversible
-    """
-    username = username.lower()
-    
-    users = load_users_db()
-    if username not in users:
-        return False, "❌ Utilisateur non trouvé"
-    
-    del users[username]
-    save_users_db(users)
-    
-    # Supprimer les scores
-    score_file = SCORES_DIR / f"{username}.json"
-    if score_file.exists():
-        score_file.unlink()
-    
-    return True, f"✅ Utilisateur {username} supprimé"
-
-def get_all_users_list() -> list:
-    """
-    Retourne la liste de tous les utilisateurs (admin).
-    """
-    users = load_users_db()
-    return list(users.keys())
-
-def get_all_users_stats() -> dict:
-    """
-    Retourne les stats globales de tous les utilisateurs (admin).
-    """
-    users = get_all_users_list()
-    stats = {
-        "total_users": len(users),
-        "users": {}
-    }
-    
-    for username in users:
-        user_stats = get_user_stats(username)
-        stats["users"][username] = user_stats
-    
-    return stats
-
-REPORTS_FILE = DATA_DIR / "reports.json"
+@st.cache_data(ttl=60)
+def get_all_reports():
+    try:
+        df = conn.read(worksheet="reports")
+        if df.empty: return []
+        for col in ['id', 'theme', 'q_idx']:
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int)
+        return df.to_dict('records')
+    except:
+        return []
 
 def save_question_report(username, quiz_key, theme_num, q_idx, question_text, reason):
-    """Enregistre un signalement incluant l'index de la question."""
-    reports = []
-    if REPORTS_FILE.exists():
-        try:
-            with open(REPORTS_FILE, "r", encoding="utf-8") as f:
-                reports = json.load(f)
-        except: reports = []
+    try:
+        df = conn.read(worksheet="reports", ttl=0)
+    except:
+        df = pd.DataFrame(columns=["id", "date", "username", "quiz", "theme", "q_idx", "question", "reason"])
     
-    reports.append({
-        "id": len(reports) + 1,
-        "date": datetime.now().isoformat(),
+    new_report = pd.DataFrame([{
+        "id": len(df) + 1, 
+        "date": datetime.now().isoformat(), 
         "username": username,
-        "quiz": quiz_key,
-        "theme": theme_num,
-        "q_idx": q_idx, # On enregistre le numéro de la question
-        "question": question_text,
+        "quiz": quiz_key, 
+        "theme": theme_num, 
+        "q_idx": int(q_idx), # On force l'entier ici
+        "question": question_text, 
         "reason": reason
-    })
-    with open(REPORTS_FILE, "w", encoding="utf-8") as f:
-        json.dump(reports, f, indent=2, ensure_ascii=False)
-
-def get_all_reports():
-    """Récupère tous les signalements."""
-    if REPORTS_FILE.exists():
-        with open(REPORTS_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return []
+    }])
+    
+    conn.update(worksheet="reports", data=pd.concat([df, new_report], ignore_index=True))
+    force_refresh_cache()
 
 def delete_report(report_id):
-    """Supprime définitivement un signalement du fichier JSON."""
-    if REPORTS_FILE.exists():
-        try:
-            with open(REPORTS_FILE, "r", encoding="utf-8") as f:
-                reports = json.load(f)
-            # On garde tous les rapports SAUF celui que l'on veut supprimer
-            new_reports = [r for r in reports if r["id"] != report_id]
-            with open(REPORTS_FILE, "w", encoding="utf-8") as f:
-                json.dump(new_reports, f, indent=2, ensure_ascii=False)
-            return True
-        except Exception as e:
-            print(f"Erreur suppression : {e}")
-    return False
+    try:
+        df = conn.read(worksheet="reports", ttl=0)
+        df = df[df['id'] != report_id]
+        conn.update(worksheet="reports", data=df)
+        force_refresh_cache()
+        return True
+    except:
+        return False

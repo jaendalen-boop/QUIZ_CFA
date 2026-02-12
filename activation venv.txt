@@ -1,1 +1,13 @@
 .\venv\Scripts\Activate.ps1
+
+
+
+
+
+
+
+Faites votre git add .
+
+Faites votre git commit -m "Migration vers Google Sheets"
+
+Faites votre git push.

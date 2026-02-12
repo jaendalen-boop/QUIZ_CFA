@@ -658,8 +658,15 @@ def show_entry_screen():
                 if user and pw:
                     success, msg = login_user(user, pw)
                     if success:
-                        st.session_state.auth_stage = "logged_in"
+                        # --- OPTIMISATION : MISE EN CACHE ---
                         st.session_state.username = user.strip().lower()
+                        
+                        with st.spinner("Chargement de votre profil..."):
+                            # On télécharge les données de Google UNE SEULE FOIS ici
+                            st.session_state.user_stats = get_user_stats(st.session_state.username)
+                            st.session_state.user_scores = load_user_scores(st.session_state.username)
+                        
+                        st.session_state.auth_stage = "logged_in"
                         st.rerun()
                     else:
                         st.error(msg)
@@ -678,7 +685,6 @@ def show_entry_screen():
             
             if st.button("Créer mon compte", use_container_width=True, type="primary"):
                 if new_u and new_p:
-                    # On envoie une chaîne vide pour l'email
                     success, msg = create_user(new_u, "", new_p)
                     if success:
                         st.balloons()
@@ -755,6 +761,10 @@ def start_theme(theme_number: int):
     theme = quiz_data["themes"][theme_number]
     questions = theme["questions"]
     
+    # --- CORRECTION : On marque l'index d'origine AVANT le mélange ---
+    for i, q in enumerate(questions):
+        q['original_index'] = i  # On stocke l'index 0, 1, 2... du fichier source
+    
     shuffled = questions.copy()
     random.shuffle(shuffled)
     
@@ -770,7 +780,6 @@ def start_theme(theme_number: int):
     if "theme_attempt_counter" not in st.session_state:
         st.session_state.theme_attempt_counter = 0
     st.session_state.theme_attempt_counter += 1
-
 
 def go_back_to_main_menu():
     """Retour au menu des thèmes pour le quiz courant (sans effacer les scores)."""
@@ -973,7 +982,6 @@ def show_admin_reports_page():
     from auth_persistence import get_all_reports, delete_report
     import importlib
     import pprint
-    import os
     
     reports = get_all_reports()
     
@@ -991,67 +999,70 @@ def show_admin_reports_page():
 
     for r in reports:
         report_id = r['id']
-        # CORRECTION : On utilise la clé 'quiz' qui contient l'identifiant (ex: bp_arts_de_la_cuisine_100)
         quiz_key = r.get('quiz') 
-        theme_id = r.get('theme')
-        q_idx = r.get('q_idx', 1) - 1 
+        
+        # Nettoyage sécurisé
+        try:
+            theme_id = int(float(r.get('theme', 0)))
+            q_idx = int(float(r.get('q_idx', 1))) - 1
+        except:
+            theme_id, q_idx = 0, 0
 
-        # RÉCUPÉRATION DU TITRE ESTHÉTIQUE
         quiz_info = QUIZZES.get(quiz_key)
         display_title = quiz_info['title'] if quiz_info else quiz_key
 
-        with st.expander(f"🚩 Rapport #{report_id} : {display_title} (Question {q_idx + 1})"):
+        with st.expander(f"🚩 Rapport #{report_id} : {display_title} (Thème {theme_id}, Question {q_idx + 1})"):
             st.error(f"**Problème signalé :** {r['reason']}")
+            
+            # Affichage de la question enregistrée dans le signalement
+            if 'question' in r and r['question']:
+                st.warning(f"**Texte envoyé par l'élève :**\n\n{r['question']}")
             
             if quiz_info:
                 try:
-                    # Chargement et rafraîchissement du module
                     module = importlib.import_module(quiz_info['path'])
                     importlib.reload(module)
                     current_quiz_data = module.quiz_data
                     
-                    # Accès à la question
-                    question_to_edit = current_quiz_data["themes"][theme_id]["questions"][q_idx]
-                    
-                    st.markdown("---")
-                    new_q_text = st.text_area("Libellé de la question", value=question_to_edit['question'], key=f"edit_q_{report_id}")
-                    
-                    st.write("**Options :**")
-                    new_options = []
-                    for i, opt in enumerate(question_to_edit['answerOptions']):
-                        col_txt, col_ok = st.columns([3, 1])
-                        o_txt = col_txt.text_input(f"Option {chr(65+i)}", value=opt['text'], key=f"opt_{report_id}_{i}")
-                        o_ok = col_ok.toggle("Correct", value=opt['isCorrect'], key=f"corr_{report_id}_{i}")
-                        new_options.append({"text": o_txt, "isCorrect": o_ok})
-                    
-                    new_corr = st.text_area("Rappel de cours", value=question_to_edit.get('correction', ''), key=f"edit_c_{report_id}")
+                    themes = current_quiz_data.get("themes", {})
+                    if theme_id in themes:
+                        questions_list = themes[theme_id].get("questions", [])
+                        if 0 <= q_idx < len(questions_list):
+                            question_to_edit = questions_list[q_idx]
+                            
+                            st.markdown("---")
+                            new_q_text = st.text_area("Libellé (Fichier .py)", value=question_to_edit['question'], key=f"edit_q_{report_id}")
+                            
+                            new_options = []
+                            for i, opt in enumerate(question_to_edit['answerOptions']):
+                                col_txt, col_ok = st.columns([3, 1])
+                                o_txt = col_txt.text_input(f"Option {chr(65+i)}", value=opt['text'], key=f"opt_{report_id}_{i}")
+                                o_ok = col_ok.toggle("Correct", value=opt['isCorrect'], key=f"corr_{report_id}_{i}")
+                                new_options.append({"text": o_txt, "isCorrect": o_ok})
+                            
+                            new_corr = st.text_area("Correction", value=question_to_edit.get('correction', ''), key=f"edit_c_{report_id}")
 
-                    c1, c2 = st.columns(2)
-                    if c1.button("💾 Enregistrer & Publier", key=f"save_{report_id}", use_container_width=True, type="primary"):
-                        # Mise à jour
-                        question_to_edit['question'] = new_q_text
-                        question_to_edit['answerOptions'] = new_options
-                        question_to_edit['correction'] = new_corr
-                        
-                        # Écriture formatée
-                        file_path = quiz_info['path'].replace(".", "/") + ".py"
-                        formatted_data = pprint.pformat(current_quiz_data, indent=4, sort_dicts=False, width=100)
-                        
-                        with open(file_path, "w", encoding="utf-8") as f:
-                            f.write(f"quiz_data = {formatted_data}")
-                        
-                        delete_report(report_id)
-                        st.success("Modifications enregistrées !")
-                        st.rerun()
+                            c1, c2 = st.columns(2)
+                            if c1.button("💾 Enregistrer & Publier", key=f"save_{report_id}", use_container_width=True, type="primary"):
+                                question_to_edit['question'] = new_q_text
+                                question_to_edit['answerOptions'] = new_options
+                                question_to_edit['correction'] = new_corr
+                                
+                                file_path = quiz_info['path'].replace(".", "/") + ".py"
+                                with open(file_path, "w", encoding="utf-8") as f:
+                                    f.write(f"quiz_data = {pprint.pformat(current_quiz_data, indent=4, sort_dicts=False, width=100)}")
+                                
+                                delete_report(report_id)
+                                st.success("✅ Mis à jour !")
+                                st.rerun()
 
-                    if c2.button("🗑️ Supprimer le rapport", key=f"del_{report_id}", use_container_width=True):
-                        delete_report(report_id)
-                        st.rerun()
-
-                except Exception as e:
-                    st.error(f"Erreur technique : {e}")
-            else:
-                st.error(f"Impossible de localiser le quiz '{quiz_key}' dans le catalogue.")
+                            if c2.button("🗑️ Supprimer le rapport", key=f"del_{report_id}", use_container_width=True):
+                                delete_report(report_id)
+                                st.rerun()
+                        else: st.warning("Index de question introuvable.")
+                    else: st.warning("Thème introuvable.")
+                except Exception as e: st.error(f"Erreur d'accès fichier : {e}")
+            else: st.error("Quiz non localisé.")
 
 # -----------------------
 # INTERFACE : SÉLECTEUR DE NIVEAU
@@ -1607,6 +1618,10 @@ def show_question_screen():
         st.error("Erreur : question introuvable.")
         return
 
+    # On récupère l'index technique réel (étiquette invisible)
+    # Si par défaut elle n'existe pas, on prend l'index actuel (idx)
+    orig_idx_tech = q.get('original_index', idx)
+
     q_id = f"{theme_number}_{idx}"
     if q_id not in st.session_state.shuffled_answers:
         options = [opt.copy() for opt in q["answerOptions"]]
@@ -1684,16 +1699,29 @@ def show_question_screen():
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
 
-    # --- SIGNALEMENT (Admin : Question n°) ---
+    # --- SIGNALEMENT CORRIGÉ (Admin : Utilise l'index original) ---
     st.markdown("---")
     with st.expander("🚩 Signaler un problème sur cette question"):
-        reason = st.text_area("Précisez l'erreur...", key=f"report_area_{idx}")
-        if st.button("Envoyer", key=f"rep_btn_{idx}"):
+        # On utilise orig_idx_tech pour la clé unique du champ de texte
+        reason = st.text_area("Précisez l'erreur...", key=f"report_area_{orig_idx_tech}")
+        if st.button("Envoyer", key=f"rep_btn_{orig_idx_tech}"):
             if reason:
                 from auth_persistence import save_question_report
-                save_question_report(st.session_state.username or "Anonyme", st.session_state.selected_quiz_key, theme_number, idx + 1, q['question'], reason)
-                st.success(f"Signalement envoyé (Question n°{idx+1}) !")
-            else: st.warning("Décrivez l'erreur.")
+                
+                # On envoie l'index technique + 1 pour l'affichage Admin
+                vrai_numero = orig_idx_tech + 1
+                
+                save_question_report(
+                    st.session_state.username or "Anonyme", 
+                    st.session_state.selected_quiz_key, 
+                    theme_number, 
+                    vrai_numero, 
+                    q['question'], 
+                    reason
+                )
+                st.success(f"✅ Signalement envoyé (réf: Question n°{vrai_numero}) !")
+            else: 
+                st.warning("Veuillez décrire l'erreur.")
 
     # --- Confirmation de sortie ---
     if st.session_state.get("show_quit_confirmation"):
