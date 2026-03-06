@@ -100,7 +100,7 @@ QUIZZES = {
         "title": "BP MIGCS",
         "description": "Révisions complètes BP MIGCS.",
         "path": "quizzes.quiz_bp_metiers.quiz_bp_migcs_100",
-        "icon": "🖨️",
+        "icon": "⚡",
         "color": "#34495e",
     },
 
