@@ -97,7 +97,7 @@ QUIZZES = {
         "color": "#7f8c8d",
     },
     "bp_migcs_100": {
-        "title": "BP Métiers de l'industrie graphique (communication et services)",
+        "title": "BP MIGCS",
         "description": "Révisions complètes BP MIGCS.",
         "path": "quizzes.quiz_bp_metiers.quiz_bp_migcs_100",
         "icon": "🖨️",
@@ -861,13 +861,15 @@ def show_profile_page():
         st.info("Connectez-vous pour accéder à votre profil.")
         return
 
+    from auth_persistence import get_user_stats, export_user_scores_txt, load_user_scores, get_user_info
+    
     username = st.session_state.username
     user_info = get_user_info(username)
     stats = get_user_stats(username)
     user_scores = load_user_scores(username)
     quizzes = user_scores.get("quizzes", {})
 
-    # --- 1. CALCULS DES SCORES ET VALIDATIONS ---
+    # --- 1. CALCULS DES SCORES ET VALIDATIONS (Logique préservée) ---
     validated_quiz_count = 0
     validated_cap, validated_bacpro = 0, 0
     validated_bp, validated_bts, validated_cs = 0, 0, 0
@@ -896,7 +898,7 @@ def show_profile_page():
                 elif quiz_key.startswith("bts_"): validated_bts += 1
                 elif quiz_key.startswith("cs_"): validated_cs += 1
 
-    # --- 2. FORMATAGE DE LA DATE D'ANCIENNETÉ ---
+    # --- 2. FORMATAGE DE LA DATE (Logique préservée) ---
     created_at_raw = user_info.get('created_at')
     date_display, relative_display = "N/A", ""
     if created_at_raw:
@@ -914,36 +916,47 @@ def show_profile_page():
             if d > 0: parts.append(f"{d} {'jour' if d == 1 else 'jours'}")
             if parts:
                 txt = ', '.join(parts[:-1]) + ' et ' + parts[-1] if len(parts) > 1 else parts[0]
-                relative_display = f"<br><span style='font-size:0.9rem; opacity:0.8;'>soit il y a {txt}</span>"
+                relative_display = f"<br><span style='font-size:0.85rem; opacity:0.7;'>Membre depuis {txt}</span>"
         except Exception: date_display = created_at_raw
 
-    # --- 3. AFFICHAGE DE L'EN-TÊTE ---
-    st.markdown(f"<h1 style='text-align:center;margin-bottom:1rem;'>👤 Profil de {username}</h1>", unsafe_allow_html=True)
+    # --- 3. EN-TÊTE MODERNE ---
     st.markdown(f"""
-        <div style="max-width: 700px; margin: 0 auto 1.5rem auto; padding: 1rem 1.5rem; border-radius: 16px; background: #f9fafb; border: 1px solid #e5e7eb; text-align: center;">
-            <p style="margin:0.2rem 0;"><strong>Compte créé le :</strong> {date_display} {relative_display}</p>
-        </div>
+    <div style="background: white; padding: 1.5rem; border-radius: 15px; border-left: 5px solid #6A11CB; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+        <h2 style="margin:0; color:#1f2937;">👤 Profil de {username.capitalize()}</h2>
+        <p style="color: gray; margin:0.5rem 0 0 0;">Compte créé {date_display} {relative_display}</p>
+    </div>
     """, unsafe_allow_html=True)
 
-    # --- 4. STATISTIQUES ET PROGRESSION ---
-    st.subheader("Progression globale")
+    # --- 4. CARTES DE STATISTIQUES (Design amélioré) ---
+    st.subheader("📊 Progression globale")
     c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Quiz différents", stats.get("total_quizzes", 0))
-    c2.metric("Quiz validés", validated_quiz_count)
-    c3.metric("Questions totales", stats.get("total_questions", 0))
-    c4.metric("Réussite moyenne", f"{stats.get('average_percentage', 0)} %")
+    card_style = "background:#f8f9fa; padding:0.8rem; border-radius:12px; text-align:center; border: 1px solid #e5e7eb;"
+    
+    c1.markdown(f"<div style='{card_style}'><span style='font-size:0.75rem; color:gray;'>QUIZ JOUÉS</span><br><b style='font-size:1.3rem;'>{stats.get('total_quizzes', 0)}</b></div>", unsafe_allow_html=True)
+    c2.markdown(f"<div style='{card_style}'><span style='font-size:0.75rem; color:gray;'>VALIDÉS (70%+)</span><br><b style='font-size:1.3rem; color:#6A11CB;'>{validated_quiz_count}</b></div>", unsafe_allow_html=True)
+    c3.markdown(f"<div style='{card_style}'><span style='font-size:0.75rem; color:gray;'>QUESTIONS</span><br><b style='font-size:1.3rem;'>{stats.get('total_questions', 0)}</b></div>", unsafe_allow_html=True)
+    
+    moyenne = stats.get('average_percentage', 0)
+    color_moy = "#22c55e" if moyenne >= 70 else "#f59e0b" if moyenne >= 50 else "#ef4444"
+    c4.markdown(f"<div style='{card_style}'><span style='font-size:0.75rem; color:gray;'>RÉUSSITE</span><br><b style='font-size:1.3rem; color:{color_moy};'>{moyenne}%</b></div>", unsafe_allow_html=True)
 
-    st.markdown("### 📈 Progression par diplôme")
+    # --- 5. PROGRESSION PAR DIPLÔME ---
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("### 📈 Objectifs par diplôme")
     obj = 5
     col_p1, col_p2 = st.columns(2)
     with col_p1:
-        st.write(f"**CAP** ({validated_cap}/{obj})"); st.progress(min(validated_cap/obj, 1.0))
-        st.write(f"**BAC PRO** ({validated_bacpro}/{obj})"); st.progress(min(validated_bacpro/obj, 1.0))
+        st.write(f"**CAP** ({validated_cap}/{obj})")
+        st.progress(min(validated_cap/obj, 1.0))
+        st.write(f"**BAC PRO** ({validated_bacpro}/{obj})")
+        st.progress(min(validated_bacpro/obj, 1.0))
     with col_p2:
-        st.write(f"**BP / BTS / CS** ({validated_bp+validated_bts+validated_cs}/{obj})")
-        st.progress(min((validated_bp+validated_bts+validated_cs)/obj, 1.0))
+        val_sup = validated_bp + validated_bts + validated_cs
+        st.write(f"**BP / BTS / CS** ({val_sup}/{obj})")
+        st.progress(min(val_sup/obj, 1.0))
 
-    # --- 5. SYSTÈME DE BADGES COMPLET ---
+    # --- 6. SYSTÈME DE BADGES (Logique préservée, style optimisé) ---
+    st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("### 🏆 Vos Badges")
     badges = [
         {"nom": "🎯 Premier quiz", "cond": validated_quiz_count >= 1},
@@ -957,26 +970,46 @@ def show_profile_page():
         {"nom": "🎓 Spécialiste Sup", "cond": (validated_bp >= 1 and validated_bts >= 1)},
         {"nom": "⏱️ Fidèle au poste", "cond": stats.get("total_quizzes", 0) >= 10}
     ]
-    html_badges = "<div style='display:flex; flex-wrap:wrap; gap:0.5rem;'>"
+    
+    html_badges = "<div style='display:flex; flex-wrap:wrap; gap:0.6rem;'>"
     for b in badges:
-        style = "background:#eef2ff; border:1px solid #c7d2fe; color:#1f2937;" if b["cond"] else "background:#f3f4f6; border:1px solid #d1d5db; color:#9ca3af; opacity:0.5; filter:grayscale(100%);"
-        html_badges += f"<span style='{style} border-radius:999px; padding:0.4rem 0.8rem; font-size:0.85rem; font-weight:500;'>{b['nom']}</span>"
+        if b["cond"]:
+            style = "background:linear-gradient(135deg, #6A11CB 0%, #2575FC 100%); color:white; border:none; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"
+        else:
+            style = "background:#f3f4f6; border:1px solid #d1d5db; color:#9ca3af; opacity:0.4; filter:grayscale(100%);"
+        html_badges += f"<span style='{style} border-radius:12px; padding:0.4rem 0.9rem; font-size:0.8rem; font-weight:600;'>{b['nom']}</span>"
     st.markdown(html_badges + "</div>", unsafe_allow_html=True)
 
-    # --- 6. DÉTAIL DES QUIZ AVEC FILTRE ---
+    # --- 7. DÉTAIL DES QUIZ AVEC FILTRE ---
     st.markdown("---")
-    st.subheader("Détail par quiz")
+    st.subheader("📜 Détail par quiz")
     if not quizzes:
         st.info("Aucun quiz complété pour le moment.")
     else:
         level_filter = st.selectbox("Filtrer par niveau", ["Tous", "CAP", "BAC PRO", "BP", "BTS", "CS"])
         for q_key, q_data in quizzes.items():
-            if level_filter != "Tous" and not q_key.startswith(level_filter.lower().replace(" ", "")): continue
+            if level_filter != "Tous" and not q_key.startswith(level_filter.lower().replace(" ", "")): 
+                continue
+            
             quiz_info = QUIZZES.get(q_key, {})
-            with st.expander(quiz_info.get("title", q_key)):
+            with st.expander(f"📁 {quiz_info.get('title', q_key)}"):
                 for t_num, s_str in q_data.get("scores", {}).items():
-                    st.write(f"- Thème {t_num} : {s_str}")
+                    st.write(f"**Thème {t_num}** : `{s_str}`")
 
+    # --- 8. ACTIONS ---
+    st.markdown("<br>", unsafe_allow_html=True)
+    col_btn1, col_btn2, col_btn3 = st.columns([1, 1, 1])
+    with col_btn1:
+        if st.button("⬅️ Retour", use_container_width=True):
+            st.session_state.ui_mode = UIMode.APP
+            st.rerun()
+    with col_btn2:
+        if st.button("🔄 Actualiser", use_container_width=True):
+            st.cache_data.clear()
+            st.rerun()
+    with col_btn3:
+        report_text = export_user_scores_txt(username)
+        st.download_button("📄 Mon Bilan (TXT)", data=report_text, file_name=f"bilan_{username}.txt", use_container_width=True)
 def show_admin_reports_page():
     st.markdown("<h2 style='text-align:center;'>🛠️ Gestion & Édition des Questions</h2>", unsafe_allow_html=True)
     from auth_persistence import get_all_reports, delete_report
@@ -1063,6 +1096,36 @@ def show_admin_reports_page():
                     else: st.warning("Thème introuvable.")
                 except Exception as e: st.error(f"Erreur d'accès fichier : {e}")
             else: st.error("Quiz non localisé.")
+
+def show_admin_dashboard():
+    st.markdown("<h2 style='text-align:center;'>📊 Statistiques Globales</h2>", unsafe_allow_html=True)
+    from auth_persistence import get_global_stats
+    
+    df_stats = get_global_stats()
+    
+    if df_stats is None or df_stats.empty:
+        st.warning("Aucune donnée de score disponible pour le moment.")
+        return
+
+    # --- INDICATEURS CLÉS ---
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Total Élèves", len(df_stats['user'].unique()))
+    col2.metric("Moyenne Générale", f"{round(df_stats['percent'].mean())}%")
+    col3.metric("Quiz joués", len(df_stats))
+
+    # --- CLASSEMENT DES QUIZ ---
+    st.markdown("### 🏆 Performance par Quiz")
+    # On groupe par Quiz pour voir la moyenne de réussite
+    quiz_perf = df_stats.groupby('quiz')['percent'].mean().sort_values(ascending=False).reset_index()
+    
+    # On rend les noms plus jolis
+    quiz_perf['quiz'] = quiz_perf['quiz'].str.replace("_", " ").str.title()
+    
+    st.table(quiz_perf.rename(columns={"quiz": "Nom du Quiz", "percent": "Réussite Moyenne (%)"}))
+
+    # --- ALERTES (Quiz les plus difficiles) ---
+    hardest = quiz_perf.iloc[-1]
+    st.error(f"⚠️ **Attention :** Le quiz '{hardest['quiz']}' semble le plus difficile ({round(hardest['percent'])}% de réussite).")
 
 # -----------------------
 # INTERFACE : SÉLECTEUR DE NIVEAU

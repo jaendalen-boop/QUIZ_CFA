@@ -146,20 +146,61 @@ def get_user_stats(username: str) -> dict:
         stats["average_percentage"] = round((stats["total_correct"] / stats["total_questions"]) * 100, 1)
     return stats
 
-def export_user_scores_txt(username: str, quiz_title: str = None) -> str:
-    """Génère un bilan texte des résultats."""
+def export_user_scores_txt(username: str, quiz_titles_map: dict = None) -> str:
+    """Génère un bilan texte des résultats avec un formatage propre et lisible."""
     user_data = load_user_scores(username)
     quizzes = user_data.get("quizzes", {})
-    lines = ["="*60, f"RÉSULTATS DES QUIZ - {username.upper()}", "="*60, f"Date d'export : {datetime.now().strftime('%d/%m/%Y %H:%M')}", ""]
     
+    # En-tête du document
+    lines = [
+        "="*60,
+        f"BILAN DES RÉSULTATS - {username.upper()}",
+        "="*60,
+        f"Document généré le : {datetime.now().strftime('%d/%m/%Y à %H:%M')}",
+        ""
+    ]
+    
+    if not quizzes:
+        lines.append("Aucun score enregistré pour le moment.")
+        return "\n".join(lines)
+
     for quiz_key, quiz_data in quizzes.items():
         scores = quiz_data.get("scores", {})
-        lines.append(f"Quiz : {quiz_key}\nDernière mise à jour : {quiz_data.get('last_updated', '')}\n" + "-"*60)
-        for theme_num in sorted(scores.keys()):
-            lines.append(f"  Thème {theme_num} : {scores[theme_num]}")
-        lines.append("")
-    return "\n".join(lines)
+        
+        # --- 1. NETTOYAGE DU NOM DU QUIZ ---
+        # Si on passe le catalogue des titres, on prend le vrai titre, 
+        # sinon on transforme 'cap_anglais_2' en 'CAP ANGLAIS 2'
+        display_title = quiz_key
+        if quiz_titles_map and quiz_key in quiz_titles_map:
+            display_title = quiz_titles_map[quiz_key].get('title', quiz_key)
+        else:
+            display_title = quiz_key.replace("_", " ").upper()
 
+        # --- 2. FORMATAGE DE LA DATE ---
+        raw_date = quiz_data.get('last_updated', '')
+        formatted_date = "N/A"
+        if raw_date:
+            try:
+                # On transforme le format technique (ISO) en format humain
+                dt = datetime.fromisoformat(raw_date)
+                formatted_date = dt.strftime('%d/%m/%Y à %H:%M')
+            except:
+                formatted_date = raw_date # Sécurité en cas de format imprévu
+
+        # --- 3. CONSTRUCTION DU BLOC QUIZ ---
+        lines.append(f"📌 QUIZ : {display_title}")
+        lines.append(f"📅 Dernière mise à jour : {formatted_date}")
+        lines.append("-" * 30)
+        
+        # Tri des thèmes pour un affichage ordonné (1, 2, 3...)
+        for theme_num in sorted(scores.keys(), key=lambda x: int(x) if x.isdigit() else x):
+            lines.append(f"  • Thème {theme_num} : {scores[theme_num]}")
+        
+        lines.append("") # Espace entre les quiz
+        lines.append("=" * 60)
+        lines.append("")
+
+    return "\n".join(lines)
 # ===================== SIGNALEMENTS =====================
 
 @st.cache_data(ttl=60)
@@ -203,3 +244,31 @@ def delete_report(report_id):
         return True
     except:
         return False
+
+def get_global_stats():
+    """Récupère les statistiques de tous les utilisateurs pour l'Admin."""
+    try:
+        # On lit la feuille des scores sans cache pour la précision
+        df = conn.read(worksheet="scores", ttl=0)
+        if df.empty:
+            return None
+
+        # On décode le JSON des scores pour chaque ligne
+        all_data = []
+        for _, row in df.iterrows():
+            scores = json.loads(row['scores_json'])
+            for theme, val in scores.items():
+                try:
+                    p = val.split("/")
+                    all_data.append({
+                        "quiz": row['quiz_key'],
+                        "user": row['username'],
+                        "score_val": int(p[0]),
+                        "total_val": int(p[1]),
+                        "percent": (int(p[0]) / int(p[1])) * 100
+                    })
+                except: continue
+        
+        return pd.DataFrame(all_data)
+    except:
+        return None
