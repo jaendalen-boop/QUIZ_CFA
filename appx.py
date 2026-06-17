@@ -40,17 +40,7 @@ if "username" not in st.session_state:
     st.session_state.username = None
 
 # -----------------------
-# CHARTE GRAPHIQUE CMA OCCITANIE (CODES HEX)
-# -----------------------
-CMA_ROUGE = "#A8131D"          # Rouge institutionnel (Logo)
-CMA_ROUGE_WEB = "#CD493D"      # Rouge éclairé optimisé pour le contraste web
-CMA_BLEU_MARINE = "#0F3250"    # Bleu Marine de soutien
-CMA_TURQUOISE = "#5CC6A5"      # Cible Apprentis / Formation
-CMA_MOUTARDE = "#F1BA33"       # Cible Artisans / Entreprises
-CMA_BEIGE = "#F8F0E3"          # Fond de soutien clair universel
-
-# -----------------------
-# QUIZZES (Harmonisés aux couleurs cibles CMA)
+# QUIZZES
 # -----------------------
 
 QUIZZES = {
@@ -60,21 +50,21 @@ QUIZZES = {
         "description": "Révisions complètes Bac Pro MCV option B.",
         "path": "quizzes.quiz_bacpro_metiers.quiz_bacpro_mcvb_100",
         "icon": "🛍️",
-        "color": CMA_TURQUOISE,
+        "color": "#1abc9c",
     },
     "bacpro_mcva_100": {
         "title": "Bac Pro Métiers du commerce et de la vente option A (animation et gestion de l'espace commercial)",
         "description": "Révisions complètes Bac Pro MCV option A.",
         "path": "quizzes.quiz_bacpro_metiers.quiz_bacpro_mcva_100",
         "icon": "🏬",
-        "color": CMA_TURQUOISE,
+        "color": "#27ae60",
     },
     "bacpro_mva_100": {
         "title": "Bac Pro Maintenance des véhicules option A (voitures particulières)",
         "description": "Révisions complètes Bac Pro Maintenance des véhicules option A (VP).",
         "path": "quizzes.quiz_bacpro_metiers.quiz_bacpro_mva_100",
         "icon": "🚗",
-        "color": CMA_TURQUOISE,
+        "color": "#2980b9",
     },
 
     # ----- BP -----
@@ -83,35 +73,35 @@ QUIZZES = {
         "description": "Révisions complètes BP Arts de la cuisine.",
         "path": "quizzes.quiz_bp_metiers.quiz_bp_arts_de_la_cuisine_100",
         "icon": "👨‍🍳",
-        "color": CMA_MOUTARDE,
+        "color": "#e67e22",
     },
     "bp_boucher_100": {
         "title": "BP Boucher",
         "description": "Révisions complètes BP Boucher.",
         "path": "quizzes.quiz_bp_metiers.quiz_bp_boucher_100",
         "icon": "🥩",
-        "color": CMA_MOUTARDE,
+        "color": "#c0392b",
     },
     "bp_coiffure_100": {
         "title": "BP Coiffure",
         "description": "Révisions complètes BP Coiffure.",
         "path": "quizzes.quiz_bp_metiers.quiz_bp_coiffure_100",
         "icon": "💇",
-        "color": CMA_MOUTARDE,
+        "color": "#9b59b6",
     },
     "bp_macon_100": {
         "title": "BP Maçon",
         "description": "Révisions complètes BP Maçon.",
         "path": "quizzes.quiz_bp_metiers.quiz_bp_macon_100",
         "icon": "🧱",
-        "color": CMA_MOUTARDE,
+        "color": "#7f8c8d",
     },
     "bp_migcs_100": {
         "title": "BP MIGCS",
         "description": "Révisions complètes BP MIGCS.",
         "path": "quizzes.quiz_bp_metiers.quiz_bp_migcs_100",
         "icon": "⚡",
-        "color": CMA_MOUTARDE,
+        "color": "#34495e",
     },
 
     # ----- BTS -----
@@ -120,7 +110,7 @@ QUIZZES = {
         "description": "Révisions complètes BTS Maintenance des véhicules option A (VP).",
         "path": "quizzes.quiz_bts_metiers.quiz_bts_meca_vp_100",
         "icon": "🔧",
-        "color": CMA_BLEU_MARINE,
+        "color": "#2980b9",
     },
 
     # ----- CAP métiers -----
@@ -129,171 +119,255 @@ QUIZZES = {
         "description": "Révisions complètes CAP Boucher.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_boucher_100",
         "icon": "🥩",
-        "color": CMA_TURQUOISE,
+        "color": "#e74c3c",
     },
     "cap_boulanger_100": {
         "title": "CAP Boulanger",
         "description": "Révisions complètes CAP Boulanger.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_boulanger_100",
         "icon": "🥖",
-        "color": CMA_TURQUOISE,
+        "color": "#f39c12",
     },
     "cap_carreleur_mosaiste_100": {
         "title": "CAP Carreleur-mosaïste",
         "description": "Révisions complètes CAP Carreleur-mosaïste.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_carreleur_mosaiste_100",
         "icon": "🔲",
-        "color": CMA_TURQUOISE,
+        "color": "#2ecc71",
     },
     "cap_carrosserie_automobile_100": {
         "title": "CAP Réparation des carrosseries",
         "description": "Révisions complètes CAP Réparation des carrosseries.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_carrosserie_automobile_100",
         "icon": "🚙",
-        "color": CMA_TURQUOISE,
+        "color": "#34495e",
     },
     "cap_charcutier_traiteur_100": {
         "title": "CAP Charcutier-traiteur",
         "description": "Révisions complètes CAP Charcutier-traiteur.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_charcutier_traiteur_100",
         "icon": "🍖",
-        "color": CMA_TURQUOISE,
+        "color": "#c0392b",
     },
     "cap_chcr_100": {
         "title": "CAP Commercialisation et services en hôtel-café-restaurant",
         "description": "Révisions complètes CAP Commercialisation et services en hôtel-café-restaurant.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_chcr_100",
         "icon": "☕",
-        "color": CMA_TURQUOISE,
+        "color": "#e67e22",
     },
     "cap_coiffure_100": {
         "title": "CAP Coiffure",
         "description": "Révisions complètes CAP Coiffure.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_coiffure_100",
         "icon": "💇",
-        "color": CMA_TURQUOISE,
+        "color": "#9b59b6",
     },
     "cap_couvreur_100": {
         "title": "CAP Couvreur",
         "description": "Révisions complètes CAP Couvreur.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_couvreur_100",
         "icon": "🏠",
-        "color": CMA_TURQUOISE,
+        "color": "#8e44ad",
     },
     "cap_cuisine_100": {
         "title": "CAP Cuisine",
         "description": "Révisions complètes CAP Cuisine.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_cuisine_100",
         "icon": "👨‍🍳",
-        "color": CMA_TURQUOISE,
+        "color": "#e67e22",
     },
     "cap_electricien_100": {
         "title": "CAP Électricien",
         "description": "Révisions complètes CAP Électricien.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_electricien_100",
         "icon": "⚡",
-        "color": CMA_TURQUOISE,
+        "color": "#f1c40f",
     },
     "cap_equipier_polyvalent_commerce_100": {
         "title": "CAP Équipier polyvalent du commerce",
         "description": "Révisions complètes CAP Équipier polyvalent du commerce (EPC).",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_employe_polyvalent_commerce_100",
         "icon": "🛒",
-        "color": CMA_TURQUOISE,
+        "color": "#16a085",
     },
     "cap_macon_100": {
         "title": "CAP Maçon",
         "description": "Révisions complètes CAP Maçon.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_macon_100",
         "icon": "🧱",
-        "color": CMA_TURQUOISE,
+        "color": "#95a5a6",
     },
     "cap_meca_vp_100": {
         "title": "CAP Maintenance des véhicules, option A (voitures particulières)",
         "description": "Révisions complètes CAP Maintenance des véhicules option voitures particulières.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_meca_vp_100",
         "icon": "🔧",
-        "color": CMA_TURQUOISE,
+        "color": "#34495e",
     },
     "cap_menuisier_fabricant_100": {
         "title": "CAP Menuisier fabricant de menuiserie, mobilier et agencement",
         "description": "Révisions complètes CAP Menuisier fabricant.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_menuisier_fabricant_100",
         "icon": "🪚",
-        "color": CMA_TURQUOISE,
+        "color": "#8b4513",
     },
     "cap_menuisier_installateur_100": {
         "title": "CAP Menuisier installateur",
         "description": "Révisions complètes CAP Menuisier installateur.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_menuisier_installateur_100",
         "icon": "🔨",
-        "color": CMA_TURQUOISE,
+        "color": "#a0522d",
     },
     "cap_patissier_100": {
         "title": "CAP Pâtissier",
         "description": "Révisions complètes CAP Pâtissier.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_patissier_100",
         "icon": "🧁",
-        "color": CMA_TURQUOISE,
+        "color": "#e91e63",
     },
     "cap_peintre_100": {
         "title": "CAP Peintre applicateur de revêtements",
         "description": "Révisions complètes CAP Peintre applicateur de revêtements.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_peintre_100",
         "icon": "🎨",
-        "color": CMA_TURQUOISE,
+        "color": "#673ab7",
     },
     "cap_peinture_carrosserie_100": {
         "title": "CAP Peintre en carrosserie",
         "description": "Révisions complètes CAP Peintre en carrosserie.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_peinture_carrosserie_100",
         "icon": "🚗",
-        "color": CMA_TURQUOISE,
+        "color": "#3498db",
     },
     "cap_platre_isolation_100": {
         "title": "CAP Métiers du plâtre et de l'isolation",
         "description": "Révisions complètes CAP Métiers du plâtre et de l'isolation.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_platre_isolation_100",
         "icon": "🧱",
-        "color": CMA_TURQUOISE,
+        "color": "#bdc3c7",
     },
     "cap_sanitaire_100": {
         "title": "CAP Monteur en installations sanitaires",
         "description": "Révisions complètes CAP Monteur en installations sanitaires.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_sanitaire_100",
         "icon": "🚰",
-        "color": CMA_TURQUOISE,
+        "color": "#3498db",
     },
     "cap_serrurier_metallier_100": {
         "title": "CAP Serrurier-métallier",
         "description": "Révisions complètes CAP Serrurier-métallier.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_serrurier_metallier_100",
         "icon": "🔐",
-        "color": CMA_TURQUOISE,
+        "color": "#7f8c8d",
     },
     "cap_thermique_100": {
-        "title": "CAP Monteur en installations physiques / thermiques",
+        "title": "CAP Monteur en installations thermiques",
         "description": "Révisions complètes CAP Monteur en installations thermiques.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_thermique_100",
         "icon": "🔥",
-        "color": CMA_TURQUOISE,
+        "color": "#e74c3c",
     },
 
     # ----- CAP Matières générales -----
-    "cap_anglais_1": {"title": "CAP Matières générales – Anglais (quiz 1)", "description": "Révisions d'anglais – série 1.", "path": "quizzes.quiz_cap_generaux.quiz_cap_anglais_1", "icon": "🇬🇧", "color": CMA_BLEU_MARINE},
-    "cap_anglais_2": {"title": "CAP Matières générales – Anglais (quiz 2)", "description": "Révisions d'anglais – série 2.", "path": "quizzes.quiz_cap_generaux.quiz_cap_anglais_2", "icon": "🇬🇧", "color": CMA_BLEU_MARINE},
-    "cap_espagnol_1": {"title": "CAP Matières générales – Espagnol (quiz 1)", "description": "Révisions d'espagnol – série 1.", "path": "quizzes.quiz_cap_generaux.quiz_cap_espagnol_1", "icon": "🇪🇸", "color": CMA_BLEU_MARINE},
-    "cap_espagnol_2": {"title": "CAP Matières générales – Espagnol (quiz 2)", "description": "Révisions d'espagnol – série 2.", "path": "quizzes.quiz_cap_generaux.quiz_cap_espagnol_2", "icon": "🇪🇸", "color": CMA_BLEU_MARINE},
-    "cap_francais_1": {"title": "CAP Matières générales – Français (quiz 1)", "description": "Révisions de français – série 1.", "path": "quizzes.quiz_cap_generaux.quiz_cap_francais_1", "icon": "📘", "color": CMA_BLEU_MARINE},
-    "cap_francais_2": {"title": "CAP Matières générales – Français (quiz 2)", "description": "Révisions de français – série 2.", "path": "quizzes.quiz_cap_generaux.quiz_cap_francais_2", "icon": "📗", "color": CMA_BLEU_MARINE},
-    "cap_histoire_geographie_1": {"title": "CAP Matières générales – Histoire-Géographie (quiz 1)", "description": "Révisions d'histoire-géographie – série 1.", "path": "quizzes.quiz_cap_generaux.quiz_cap_histoire_geographie_1", "icon": "🌍", "color": CMA_BLEU_MARINE},
-    "cap_histoire_geographie_2": {"title": "CAP Matières générales – Histoire-Géographie (quiz 2)", "description": "Révisions d'histoire-géographie – série 2.", "path": "quizzes.quiz_cap_generaux.quiz_cap_histoire_geographie_2", "icon": "🗺️", "color": CMA_BLEU_MARINE},
-    "cap_mathematique_1": {"title": "CAP Matières générales – Mathématiques (quiz 1)", "description": "Révisions de mathématiques – série 1.", "path": "quizzes.quiz_cap_generaux.quiz_cap_mathematique_1", "icon": "➗", "color": CMA_BLEU_MARINE},
-    "cap_mathematique_2": {"title": "CAP Matières générales – Mathématiques (quiz 2)", "description": "Révisions de mathématiques – série 2.", "path": "quizzes.quiz_cap_generaux.quiz_cap_mathematique_2", "icon": "✖️", "color": CMA_BLEU_MARINE},
-    "cap_pse_1": {"title": "CAP Matières générales – PSE (quiz 1)", "description": "Révisions de Prévention Santé Environnement – série 1.", "path": "quizzes.quiz_cap_generaux.quiz_cap_pse_1", "icon": "🩺", "color": CMA_BLEU_MARINE},
-    "cap_pse_2": {"title": "CAP Matières générales – PSE (quiz 2)", "description": "Révisions de Prévention Santé Environnement – série 2.", "path": "quizzes.quiz_cap_generaux.quiz_cap_pse_2", "icon": "🏥", "color": CMA_BLEU_MARINE},
-    "cap_science_physique_1": {"title": "CAP Matières générales – Sciences physiques (quiz 1)", "description": "Révisions de sciences physiques – série 1.", "path": "quizzes.quiz_cap_generaux.quiz_cap_science_physique_1", "icon": "🔬", "color": CMA_BLEU_MARINE},
-    "cap_science_physique_2": {"title": "CAP Matières générales – Sciences physiques (quiz 2)", "description": "Révisions de sciences physiques – série 2.", "path": "quizzes.quiz_cap_generaux.quiz_cap_science_physique_2", "icon": "⚗️", "color": CMA_BLEU_MARINE},
+    "cap_anglais_1": {
+        "title": "CAP Matières générales – Anglais (quiz 1)",
+        "description": "Révisions d'anglais – série 1.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_anglais_1",
+        "icon": "🇬🇧",
+        "color": "#3b82f6",
+    },
+    "cap_anglais_2": {
+        "title": "CAP Matières générales – Anglais (quiz 2)",
+        "description": "Révisions d'anglais – série 2.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_anglais_2",
+        "icon": "🇬🇧",
+        "color": "#2563eb",
+    },
+    "cap_espagnol_1": {
+        "title": "CAP Matières générales – Espagnol (quiz 1)",
+        "description": "Révisions d'espagnol – série 1.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_espagnol_1",
+        "icon": "🇪🇸",
+        "color": "#f97316",
+    },
+    "cap_espagnol_2": {
+        "title": "CAP Matières générales – Espagnol (quiz 2)",
+        "description": "Révisions d'espagnol – série 2.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_espagnol_2",
+        "icon": "🇪🇸",
+        "color": "#ea580c",
+    },
+    "cap_francais_1": {
+        "title": "CAP Matières générales – Français (quiz 1)",
+        "description": "Révisions de français – série 1.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_francais_1",
+        "icon": "📘",
+        "color": "#10b981",
+    },
+    "cap_francais_2": {
+        "title": "CAP Matières générales – Français (quiz 2)",
+        "description": "Révisions de français – série 2.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_francais_2",
+        "icon": "📗",
+        "color": "#059669",
+    },
+    "cap_histoire_geographie_1": {
+        "title": "CAP Matières générales – Histoire-Géographie (quiz 1)",
+        "description": "Révisions d'histoire-géographie – série 1.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_histoire_geographie_1",
+        "icon": "🌍",
+        "color": "#facc15",
+    },
+    "cap_histoire_geographie_2": {
+        "title": "CAP Matières générales – Histoire-Géographie (quiz 2)",
+        "description": "Révisions d'histoire-géographie – série 2.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_histoire_geographie_2",
+        "icon": "🗺️",
+        "color": "#eab308",
+    },
+    "cap_mathematique_1": {
+        "title": "CAP Matières générales – Mathématiques (quiz 1)",
+        "description": "Révisions de mathématiques – série 1.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_mathematique_1",
+        "icon": "➗",
+        "color": "#6366f1",
+    },
+    "cap_mathematique_2": {
+        "title": "CAP Matières générales – Mathématiques (quiz 2)",
+        "description": "Révisions de mathématiques – série 2.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_mathematique_2",
+        "icon": "✖️",
+        "color": "#4f46e5",
+    },
+    "cap_pse_1": {
+        "title": "CAP Matières générales – PSE (quiz 1)",
+        "description": "Révisions de Prévention Santé Environnement – série 1.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_pse_1",
+        "icon": "🩺",
+        "color": "#22c55e",
+    },
+    "cap_pse_2": {
+        "title": "CAP Matières générales – PSE (quiz 2)",
+        "description": "Révisions de Prévention Santé Environnement – série 2.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_pse_2",
+        "icon": "🏥",
+        "color": "#16a34a",
+    },
+    "cap_science_physique_1": {
+        "title": "CAP Matières générales – Sciences physiques (quiz 1)",
+        "description": "Révisions de sciences physiques – série 1.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_science_physique_1",
+        "icon": "🔬",
+        "color": "#0ea5e9",
+    },
+    "cap_science_physique_2": {
+        "title": "CAP Matières générales – Sciences physiques (quiz 2)",
+        "description": "Révisions de sciences physiques – série 2.",
+        "path": "quizzes.quiz_cap_generaux.quiz_cap_science_physique_2",
+        "icon": "⚗️",
+        "color": "#0284c7",
+    },
 
     # ----- CS -----
     "cs_coiffure_coupe_couleur_100": {
@@ -301,174 +375,100 @@ QUIZZES = {
         "description": "Révisions complètes CS Coiffure coupe couleur.",
         "path": "quizzes.quiz_cs_metiers.quiz_cs_coiffure_coupe_couleur_100",
         "icon": "💇",
-        "color": CMA_ROUGE_WEB,
+        "color": "#e84393",
     },
 
     # ----- BAC PRO Matières générales -----
-    "bacpro_anglais": {"title": "BAC PRO Matières générales – Anglais", "description": "Révisions d'anglais – BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_anglais", "icon": "🇬🇧", "color": CMA_BLEU_MARINE},
-    "bacpro_anglais_2": {"title": "BAC PRO Matières générales – Anglais (quiz 2)", "description": "Révisions d'anglais – série 2 BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_anglais_2", "icon": "🇬🇧", "color": CMA_BLEU_MARINE},
-    "bacpro_espagnol": {"title": "BAC PRO Matières générales – Espagnol", "description": "Révisions d'espagnol – BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_espagnol", "icon": "🇪🇸", "color": CMA_BLEU_MARINE},
-    "bacpro_espagnol_2": {"title": "BAC PRO Matières générales – Espagnol (quiz 2)", "description": "Révisions d'espagnol – série 2 BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_espagnol_2", "icon": "🇪🇸", "color": CMA_BLEU_MARINE},
-    "bacpro_francais": {"title": "BAC PRO Matières générales – Français", "description": "Révisions de français – BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_francais", "icon": "📘", "color": CMA_BLEU_MARINE},
-    "bacpro_francais_2": {"title": "BAC PRO Matières générales – Français (quiz 2)", "description": "Révisions de français – série 2 BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_francais_2", "icon": "📘", "color": CMA_BLEU_MARINE},
-    "bacpro_histoire_geographie": {"title": "BAC PRO Matières générales – Histoire-Géographie", "description": "Révisions d'histoire-géographie – BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_histoire_geographie", "icon": "🌍", "color": CMA_BLEU_MARINE},
-    "bacpro_histoire_geographie_2": {"title": "BAC PRO Matières générales – Histoire-Géographie (quiz 2)", "description": "Révisions d'histoire-géographie – série 2 BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_histoire_geographie_2", "icon": "🌍", "color": CMA_BLEU_MARINE},
-    "bacpro_enseignement_moral_et_civique": {"title": "BAC PRO Matières générales – Enseignement moral et civique", "description": "Révisions d'EMC – BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_enseignement_moral_et_civique", "icon": "🕊️", "color": CMA_BLEU_MARINE},
-    "bacpro_mathematique": {"title": "BAC PRO Matières générales – Mathématiques", "description": "Révisions de mathématiques – BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique", "icon": "📐", "color": CMA_BLEU_MARINE},
-    "bacpro_mathematique_2": {"title": "BAC PRO Matières générales – Mathématiques (quiz 2)", "description": "Révisions de mathématiques – série 2 BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique_2", "icon": "📐", "color": CMA_BLEU_MARINE},
+    "bacpro_anglais": {
+        "title": "BAC PRO Matières générales – Anglais",
+        "description": "Révisions d'anglais – BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_anglais",
+        "icon": "🇬🇧",
+        "color": "#3b82f6",
+    },
+    "bacpro_anglais_2": {
+        "title": "BAC PRO Matières générales – Anglais (quiz 2)",
+        "description": "Révisions d'anglais – série 2 BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_anglais_2",
+        "icon": "🇬🇧",
+        "color": "#2563eb",
+    },
+    "bacpro_espagnol": {
+        "title": "BAC PRO Matières générales – Espagnol",
+        "description": "Révisions d'espagnol – BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_espagnol",
+        "icon": "🇪🇸",
+        "color": "#f97316",
+    },
+    "bacpro_espagnol_2": {
+        "title": "BAC PRO Matières générales – Espagnol (quiz 2)",
+        "description": "Révisions d'espagnol – série 2 BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_espagnol_2",
+        "icon": "🇪🇸",
+        "color": "#ea580c",
+    },
+    "bacpro_francais": {
+        "title": "BAC PRO Matières générales – Français",
+        "description": "Révisions de français – BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_francais",
+        "icon": "📘",
+        "color": "#10b981",
+    },
+    "bacpro_francais_2": {
+        "title": "BAC PRO Matières générales – Français (quiz 2)",
+        "description": "Révisions de français – série 2 BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_francais_2",
+        "icon": "📘",
+        "color": "#059669",
+    },
+    "bacpro_histoire_geographie": {
+        "title": "BAC PRO Matières générales – Histoire-Géographie",
+        "description": "Révisions d'histoire-géographie – BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_histoire_geographie",
+        "icon": "🌍",
+        "color": "#facc15",
+    },
+    "bacpro_histoire_geographie_2": {
+        "title": "BAC PRO Matières générales – Histoire-Géographie (quiz 2)",
+        "description": "Révisions d'histoire-géographie – série 2 BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_histoire_geographie_2",
+        "icon": "🌍",
+        "color": "#eab308",
+    },
+    "bacpro_enseignement_moral_et_civique": {
+        "title": "BAC PRO Matières générales – Enseignement moral et civique",
+        "description": "Révisions d'EMC – BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_enseignement_moral_et_civique",
+        "icon": "🕊️",
+        "color": "#6366f1",
+    },
+    "bacpro_mathematique": {
+        "title": "BAC PRO Matières générales – Mathématiques",
+        "description": "Révisions de mathématiques – BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique",
+        "icon": "📐",
+        "color": "#0ea5e9",
+    },
+    "bacpro_mathematique_2": {
+        "title": "BAC PRO Matières générales – Mathématiques (quiz 2)",
+        "description": "Révisions de mathématiques – série 2 BAC PRO.",
+        "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique_2",
+        "icon": "📐",
+        "color": "#0284c7",
+    },
 }
 
 # -----------------------
-# COULEURS PAR THÈME (Quiz en cours)
+# COULEURS PAR THÈME
 # -----------------------
 
 THEME_COLORS = {
-    1: CMA_ROUGE_WEB,
-    2: CMA_BLEU_MARINE,
-    3: CMA_TURQUOISE,
-    4: CMA_MOUTARDE,
-    5: CMA_ROUGE,
+    1: "#4f46e5",  # bleu-violet
+    2: "#16a34a",  # vert
+    3: "#ea580c",  # orange
+    4: "#0ea5e9",  # bleu clair
+    5: "#e11d48",  # rose-rouge
 }
-
-def inject_cma_theme():
-    """Injecte la charte graphique de la CMA Occitanie (En-tête de sidebar aéré)"""
-    st.markdown("""
-    <style>
-    /* Importation des polices officielles Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
-
-    /* Configuration globale du fond de soutien beige */
-    .stApp {
-        background-color: #F8F0E3;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    /* Titres principaux de la zone centrale */
-    .stApp h1, .stApp h2, .stApp h3 {
-        font-family: 'Roboto Slab', serif;
-        color: #0F3250;
-        font-weight: 700;
-    }
-
-    /* --- SIDEBAR INSTITUTIONNELLE --- */
-    section[data-testid="stSidebar"] {
-        background-color: #0F3250 !important;
-    }
-
-    /* EN-TÊTE DE SIDEBAR BEIGE AVEC TITRE ET MARGE INFÉRIEURE POUR AÉRER */
-    section[data-testid="stSidebar"] div[data-testid="stSidebarHeader"] {
-        background-color: #F8F0E3 !important;
-        border-bottom: 1px solid #B0D2D9;
-        padding: 0.6rem 1rem !important;
-        border-radius: 0 0 12px 12px !important;
-        /* Ajout d'une marge de 1.5rem en bas pour décoller le bouton "Mon profil" */
-        margin: 0 8px 1.5rem 8px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-    }
-
-    /* Injection du texte "Navigation" stylisé dans la zone gauche de la bande */
-    section[data-testid="stSidebar"] div[data-testid="stSidebarHeader"]::before {
-        content: "Navigation" !important;
-        color: #0F3250 !important;
-        font-family: 'Roboto Slab', serif !important;
-        font-weight: 700 !important;
-        font-size: 1.1rem !important;
-        display: inline-block !important;
-    }
-
-    /* Force la visibilité de la flèche */
-    section[data-testid="stSidebar"] div[data-testid="stSidebarHeader"] button,
-    section[data-testid="stSidebar"] button[data-testid="sidebar-close-button"],
-    section[data-testid="stSidebarCollapse"] button {
-        opacity: 1 !important;
-        visibility: visible !important;
-    }
-
-    /* Couleur de la flèche interne */
-    section[data-testid="stSidebar"] div[data-testid="stSidebarHeader"] button svg,
-    section[data-testid="stSidebar"] button[data-testid="sidebar-close-button"] svg,
-    section[data-testid="stSidebarCollapse"] button svg,
-    div[class*="StyledSidebarCloseButton"] button svg {
-        fill: #0F3250 !important;
-        color: #0F3250 !important;
-        opacity: 1 !important;
-        width: 20px !important;
-        height: 20px !important;
-    }
-
-    /* Effet de survol sur la flèche */
-    section[data-testid="stSidebar"] div[data-testid="stSidebarHeader"] button:hover svg {
-        fill: #CD493D !important;
-        color: #CD493D !important;
-    }
-
-    /* Ciblage exclusif des textes de contenu de la barre latérale */
-    section[data-testid="stSidebar"] .stMarkdown p,
-    section[data-testid="stSidebar"] h1,
-    section[data-testid="stSidebar"] h2,
-    section[data-testid="stSidebar"] h3 {
-        color: #ffffff !important;
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    /* Stylisation des boutons de navigation internes à la barre latérale */
-    section[data-testid="stSidebar"] .stButton button {
-        background-color: rgba(255, 255, 255, 0.1) !important;
-        color: #ffffff !important;
-        border: 1px solid #B0D2D9 !important;
-        border-radius: 6px !important;
-        font-weight: 600 !important;
-        transition: all 0.2s ease !important;
-    }
-
-    section[data-testid="stSidebar"] .stButton button:hover {
-        background-color: #CD493D !important;
-        border-color: #CD493D !important;
-        color: #ffffff !important;
-    }
-
-    /* Textes secondaires/statuts dans la barre latérale */
-    section[data-testid="stSidebar"] .stCaption {
-        color: #B0D2D9 !important;
-    }
-
-    /* --- BOUTONS ZONE CENTRALE --- */
-    .stApp .stButton button {
-        font-family: 'Montserrat', sans-serif;
-        background-color: #ffffff;
-        color: #0F3250;
-        border: 2px solid #0F3250;
-        border-radius: 8px;
-        transition: all 0.2s ease;
-    }
-
-    .stApp .stButton button:hover {
-        background-color: #0F3250;
-        color: #ffffff;
-    }
-
-    .stApp .stButton button[kind="primary"] {
-        background-color: #CD493D;
-        color: #ffffff;
-        border: 2px solid #CD493D;
-        font-weight: 700;
-    }
-
-    .stApp .stButton button[kind="primary"]:hover {
-        background-color: #A8131D;
-        border-color: #A8131D;
-    }
-
-    /* Conteneurs Expanders */
-    .stContainer .stExpander {
-        background-color: #ffffff;
-        border: 1px solid #0F3250;
-        border-radius: 8px;
-    }
-    </style>
-    """, unsafe_allow_html=True)
 
 # -----------------------
 # CATALOGUE DES QUIZ PAR NIVEAU / FAMILLE
@@ -626,16 +626,12 @@ for key, value in default_states.items():
 
 
 def show_entry_screen():
-    inject_cma_theme()
-    
-    # Utilisation d'un container natif avec un style en ligne strict pour l'en-tête
-    with st.container():
-        st.markdown("""
-        <div style="background-color: #0F3250; padding: 2.5rem 1rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 2rem;">
-            <h1 style="color: #ffffff; font-family: 'Roboto Slab', serif; margin: 0 0 0.5rem 0; font-size: 2.2rem; font-weight: 800;">Plateforme de révision CFA CMAR</h1>
-            <p style="color: #F8F0E3; font-family: 'Montserrat', sans-serif; margin: 0; font-size: 1.1rem; opacity: 0.95;">Révisez par niveau et métier.</p>
-        </div>
-        """, unsafe_allow_html=True)
+    st.markdown("""
+    <div style="padding: 2rem; border-radius: 20px; background: linear-gradient(135deg, #6A11CB, #2575FC); color: white; text-align: center; box-shadow: 0 10px 25px rgba(0,0,0,0.25); max-width: 700px; margin: 2rem auto;">
+        <h1 style="margin-bottom: 0.5rem;">Plateforme de révision CFA CMAR</h1>
+        <p style="font-size: 1.1rem; opacity: 0.9;">Révisez par niveau et métier.</p>
+    </div>
+    """, unsafe_allow_html=True)
 
     if "auth_mode" not in st.session_state:
         st.session_state.auth_mode = "login"
@@ -652,6 +648,7 @@ def show_entry_screen():
     with col2:
         if st.session_state.auth_mode == "login":
             st.subheader("🔐 Connexion")
+            # Aide navigateur invisible
             st.markdown('<form action="javascript:void(0);" style="display:none;"><input type="text" autocomplete="username"><input type="password" autocomplete="current-password"></form>', unsafe_allow_html=True)
             
             user = st.text_input("Utilisateur", key="l_user", autocomplete="username")
@@ -661,10 +658,14 @@ def show_entry_screen():
                 if user and pw:
                     success, msg = login_user(user, pw)
                     if success:
+                        # --- OPTIMISATION : MISE EN CACHE ---
                         st.session_state.username = user.strip().lower()
+                        
                         with st.spinner("Chargement de votre profil..."):
+                            # On télécharge les données de Google UNE SEULE FOIS ici
                             st.session_state.user_stats = get_user_stats(st.session_state.username)
                             st.session_state.user_scores = load_user_scores(st.session_state.username)
+                        
                         st.session_state.auth_stage = "logged_in"
                         st.rerun()
                     else:
@@ -673,8 +674,10 @@ def show_entry_screen():
             if st.button("Pas de compte ? Créer un profil", use_container_width=True):
                 st.session_state.auth_mode = "signup"
                 st.rerun()
+
         else:
             st.subheader("🆕 Inscription")
+            # Aide navigateur invisible
             st.markdown('<form action="javascript:void(0);" style="display:none;"><input type="text" autocomplete="username"><input type="password" autocomplete="new-password"></form>', unsafe_allow_html=True)
 
             new_u = st.text_input("Pseudo", key="s_user", autocomplete="username")
@@ -1129,74 +1132,90 @@ def show_admin_dashboard():
 # -----------------------
 
 def show_level_selector():
-    with st.container():
-        st.markdown("""
-        <div style="background-color: #0F3250; padding: 2.5rem 1rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 2.5rem;">
-            <h1 style="color: #ffffff; font-family: 'Roboto Slab', serif; margin: 0 0 0.5rem 0; font-size: 2.6rem; font-weight: 800;">E-Révisions CMA</h1>
-            <p style="color: #F8F0E3; font-family: 'Montserrat', sans-serif; margin: 0; font-size: 1.1rem; opacity: 0.95;">Chambre de Métiers et de l'Artisanat d'Occitanie</p>
+    st.markdown(
+        """
+        <div style='
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem 1rem;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        '>
+            <h1 style='
+                font-size: 2.8rem;
+                margin: 0;
+                color: #ffffff;
+                font-weight: 800;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            '>Quiz CFA</h1>
+            <p style='
+                font-size: 1.2rem;
+                color: #f0f0f0;
+                margin: 0.5rem 0 0 0;
+                font-weight: 400;
+            '>Centre de Foix</p>
         </div>
-        """, unsafe_allow_html=True)
+        """,
+        unsafe_allow_html=True,
+    )
     
     st.markdown(
-        "<h2 style='text-align:center; margin-bottom:2.5rem; color:#0F3250; font-family:\"Roboto Slab\"; font-size:1.6rem;'>Choisissez votre niveau de formation</h2>",
+        "<h2 style='text-align:center;margin-bottom:2rem;color:#374151;font-size:1.8rem;'>Choisissez un niveau de formation</h2>",
         unsafe_allow_html=True
     )
 
-    # Configuration des couleurs cibles et institutionnelles selon le livret
     level_colors = {
-        "CAP": "#5CC6A5",       # Turquoise (Cible Apprentis)
-        "BP": "#F1BA33",        # Moutarde (Cible Artisans)
-        "BAC PRO": "#CD493D",   # Rouge Éclairé (Dynamisme)
-        "BTS": "#0F3250",       # Bleu Marine (Institutionnel)
-        "CS": "#A8131D",        # Rouge CMA (Marqueur fort)
+        "CAP": "#4f46e5",
+        "BP": "#16a34a",
+        "BAC PRO": "#f97316",
+        "BTS": "#0ea5e9",
+        "CS": "#e11d48",
     }
     
     level_icons = {
         "CAP": "🎓",
-        "BP": "🏆",
-        "BAC PRO": "💼",
+        "BP": "📘",
+        "BAC PRO": "🏆",
         "BTS": "🎯",
         "CS": "⭐",
     }
 
-    st.markdown("<div style='max-width:900px; margin:0 auto;'>", unsafe_allow_html=True)
+    st.markdown("<div style='max-width:900px;margin:0 auto;'>", unsafe_allow_html=True)
     
     cols = st.columns(len(LEVELS))
     
     for i, level in enumerate(LEVELS):
-        color = level_colors.get(level, "#0F3250")
+        color = level_colors.get(level, "#6b7280")
         icon = level_icons.get(level, "📚")
         enabled = level in ["CAP", "BP", "BAC PRO", "BTS", "CS"]
         
         with cols[i]:
-            # Remplacement du dégradé par un encart blanc massif propre avec bordure colorée (Charte p.59)
             st.markdown(
                 f"""
                 <div style="
-                    background-color: #ffffff;
-                    border: 1px solid #e5e7eb;
-                    border-top: 6px solid {color};
-                    border-radius: 8px;
-                    padding: 1.5rem 1rem;
+                    background: linear-gradient(135deg, {color}15 0%, {color}05 100%);
+                    border: 3px solid {color};
+                    border-radius: 16px;
+                    padding: 1.5rem 1rem 0.5rem 1rem;
                     text-align: center;
-                    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
-                    min-height: 150px;
+                    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+                    min-height: 160px;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.8rem;
                 ">
-                    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">{icon}</div>
-                    <div style="font-family: 'Roboto Slab', serif; font-size: 1.2rem; font-weight: 700; color: #0F3250; margin-bottom: 0.2rem;">{level}</div>
+                    <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">{icon}</div>
+                    <div style="font-size: 1.4rem; font-weight: 700; color: {color}; margin-bottom: 0.3rem;">{level}</div>
                 </div>
                 """,
                 unsafe_allow_html=True,
             )
             
             if enabled:
-                # Bouton de validation d'accès au niveau
-                if st.button(f"S'entraîner", key=f"btn_level_{level}", type="primary", use_container_width=True):
+                if st.button(f"Accéder au {level}", key=f"btn_level_{level}", type="primary", use_container_width=True):
                     st.session_state.selected_level = level
                     st.session_state.selected_cap_family = None
                     st.session_state.selected_cap_general_subject = None
@@ -1205,11 +1224,12 @@ def show_level_selector():
                     st.rerun()
             else:
                 st.markdown(
-                    f"<p style='text-align:center; color:#9ca3af; font-family:\"Montserrat\"; font-size:0.85rem; margin-top:-0.5rem;'>Bientôt disponible</p>",
+                    f"<p style='text-align:center;color:#9ca3af;font-size:0.9rem;margin-top:-0.5rem;'>Bientôt disponible</p>",
                     unsafe_allow_html=True
                 )
     
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 # -----------------------
 # INTERFACE : FAMILLES CAP
@@ -1331,19 +1351,22 @@ def show_cap_general_quizzes_for_subject():
 
 def render_quiz_card(key):
     info = QUIZZES[key]
-    color = info.get("color", "#0F3250")
+    color = info.get("color", "#666")
 
-    # Génération d'encarts rectangulaires massifs selon la charte
     st.markdown(
         f"""
         <style>
         .quiz-card-{key} {{
-            background-color: #ffffff;
-            border-left: 6px solid {color};
-            border-radius: 8px;
-            padding: 1.2rem;
+            background: linear-gradient(135deg, {color}15, {color}05);
+            border-left: 5px solid {color};
+            border-radius: 10px;
+            padding: 1rem;
             margin-bottom: 1rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }}
+        .quiz-card-{key}:hover {{
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }}
         </style>
         """,
@@ -1355,16 +1378,17 @@ def render_quiz_card(key):
         cols = st.columns([1, 5])
         with cols[0]:
             st.markdown(
-                f"<h1 style='font-size:2.8rem; margin:0; text-align:center;'>{info.get('icon', '')}</h1>",
+                f"<h1 style='font-size:3rem;margin:0;'>{info.get('icon', '')}</h1>",
                 unsafe_allow_html=True,
             )
         with cols[1]:
-            st.markdown(f"<span style='font-family:\"Roboto Slab\"; font-size:1.1rem; font-weight:700; color:#0F3250;'>{info['title']}</span>", unsafe_allow_html=True)
-            st.markdown(f"<p style='margin: 0.5rem 0; font-family:\"Montserrat\"; color:#555555;'>{info['description']}</p>", unsafe_allow_html=True)
+            st.markdown(f"**{info['title']}**")
+            st.write(info["description"])
             if st.button("Lancer ce quiz", key=f"select_quiz_{key}"):
                 st.session_state.selected_quiz_key = key
                 reset_quiz_state_for_selected_quiz()
                 st.rerun()
+        
         st.markdown("</div>", unsafe_allow_html=True)
 
 # -----------------------
@@ -1645,28 +1669,20 @@ def show_question_screen():
 
     idx = st.session_state.current_question_index
     total_questions = len(questions)
-    
-    # Récupération de la couleur du thème (liée à la charte CMA)
-    color = THEME_COLORS.get(theme_number, "#0F3250")
+    color = THEME_COLORS.get(theme_number, "#4f46e5")
 
-    # En-tête du thème épuré
-    st.markdown(f"<div style='margin-bottom: 0.5rem;'><span style='font-family:\"Montserrat\"; font-size:0.85rem; font-weight:600; color:#555555; text-transform: uppercase;'>Thème : {theme_name}</span></div>", unsafe_allow_html=True)
-    
-    # Barre de progression fine et moderne (Charte CMA)
+    # --- Header et Barre de progression ---
+    st.markdown(f"<div class='theme-header'><h4 style='margin:0;font-size:0.9rem;'>{theme_name}</h4><div style='height:3px;border-radius:999px;background:{color};margin:0.2rem 0;'></div></div>", unsafe_allow_html=True)
     progress_percent = ((idx + 1) / total_questions) * 100
-    st.markdown(f"""
-    <div style='width:100%; background-color:#e5e7eb; border-radius:999px; height:8px; position:relative; margin-bottom:1.5rem; overflow:hidden;'>
-        <div style='width:{progress_percent}%; background-color:{color}; height:100%; border-radius:999px; transition:width 0.4s ease;'></div>
-    </div>
-    <div style='text-align:right; margin-top:-1rem; margin-bottom:1.5rem;'><span style='font-family:\"Montserrat\"; font-size:0.85rem; font-weight:700; color:#0F3250;'>Question {idx + 1} sur {total_questions}</span></div>
-    """, unsafe_allow_html=True)
+    st.markdown(f"<div style='width:100%;background:#e5e7eb;border-radius:8px;height:20px;position:relative;margin:0.3rem 0 0.5rem 0;overflow:hidden;'><div style='width:{progress_percent}%;background:linear-gradient(90deg, {color} 0%, {color}dd 100%);height:100%;border-radius:8px;transition:width 0.4s ease;'></div><span style='position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);font-weight:600;font-size:0.7rem;color:#1f2937;'>{idx + 1}/{total_questions}</span></div>", unsafe_allow_html=True)
 
     q = get_current_question()
     if q is None:
         st.error("Erreur : question introuvable.")
         return
 
-    # Récupération de l'index technique réel
+    # On récupère l'index technique réel (étiquette invisible)
+    # Si par défaut elle n'existe pas, on prend l'index actuel (idx)
     orig_idx_tech = q.get('original_index', idx)
 
     q_id = f"{theme_number}_{idx}"
@@ -1678,30 +1694,26 @@ def show_question_screen():
         st.session_state.shuffled_answers[q_id] = options
 
     answer_options = st.session_state.shuffled_answers[q_id]
-    
-    # Affichage de la question stylisée en Roboto Slab
-    st.markdown(f"<h3 style='margin: 1.5rem 0; font-size:1.3rem; font-weight:700; line-height:1.4; text-align:center; color:#0F3250;'>{q['question']}</h3>", unsafe_allow_html=True)
+    st.markdown(f"<h3 style='margin:0.5rem 0;font-size:1.1rem;font-weight:700;line-height:1.3;text-align:center;'>{q['question']}</h3>", unsafe_allow_html=True)
 
-    # --- LOGIQUE D'AFFICHAGE DE L'ÉCRAN ---
+    # --- LOGIQUE D'AFFICHAGE ---
     if not st.session_state.answer_locked:
-        # Style dynamique pour caler les boutons d'options sur toute la largeur
-        st.markdown(f"<style>div[data-testid='stButton'] > button {{ width: 100% !important; text-align: left !important; padding-left: 1.5rem !important; border-radius: 8px !important; min-height: 52px !important; font-family: 'Montserrat', sans-serif !important; }}</style>", unsafe_allow_html=True)
+        # ÉCRAN : CHOIX DE LA RÉPONSE
+        st.markdown(f"<style>div[data-testid='stButton'] > button {{ width: 100% !important; text-align: center !important; justify-content: center !important; border-radius: 8px !important; min-height: 48px !important; }} div[data-testid='stButton'] button[kind='primary'] {{ font-weight: 900 !important; border: 2px solid {color} !important; }}</style>", unsafe_allow_html=True)
 
         for opt in answer_options:
             is_selected = (st.session_state.selected_answer == opt["text"])
-            label = f"🔹 {opt['key']}.  {opt['text']}" if is_selected else f"{opt['key']}.  {opt['text']}"
+            label = f"✔️ {opt['key']}. {opt['text']}" if is_selected else f"{opt['key']}. {opt['text']}"
             btn_type = "primary" if is_selected else "secondary"
-            
             if st.button(label, key=f"opt_{q_id}_{opt['key']}_{st.session_state.get('theme_attempt_counter',0)}", use_container_width=True, type=btn_type):
                 st.session_state.selected_answer = opt["text"]
                 st.rerun()
 
-        st.markdown("<br>", unsafe_allow_html=True)
         col1, col2 = st.columns(2, gap="small")
         with col1:
-            if st.button("✅ Valider ma réponse", use_container_width=True, type="primary"):
+            if st.button("✅ Valider", use_container_width=True, type="primary"):
                 if not st.session_state.selected_answer:
-                    st.warning("Veuillez sélectionner une réponse avant de valider.")
+                    st.warning("Sélectionnez une réponse.")
                 else:
                     correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
                     is_correct = (correct_opt and st.session_state.selected_answer == correct_opt["text"])
@@ -1715,41 +1727,28 @@ def show_question_screen():
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
     else:
-        # ÉCRAN DE CORRECTION : Blocs statiques colorés selon le résultat (Vert succès ou Rouge CMA)
+        # ÉCRAN : CORRECTION
         for opt in answer_options:
             is_correct_answer = opt["isCorrect"]
             is_user_answer = (st.session_state.selected_answer == opt["text"])
-            
-            if is_correct_answer: 
-                b_c, bg, t_c, icon = "#22c55e", "#d4edda", "#155724", "✅"
-            elif is_user_answer: 
-                b_c, bg, t_c, icon = "#CD493D", "#f8d7da", "#721c24", "❌"
-            else: 
-                b_c, bg, t_c, icon = "#e5e7eb", "#ffffff", "#1f2937", ""
-                
-            st.markdown(f"<div style='border: 1px solid {b_c}; border-left: 6px solid {b_c}; border-radius: 8px; padding: 0.8rem 1.2rem; margin-bottom: 0.5rem; background: {bg}; color: {t_c}; font-family: \"Montserrat\"; text-align: left;'>{icon} <strong>{opt['key']}.</strong> {opt['text']}</div>", unsafe_allow_html=True)
+            if is_correct_answer: b_c, bg, t_c, icon = "#22c55e", "#d4edda", "#155724", "✅"
+            elif is_user_answer: b_c, bg, t_c, icon = "#dc3545", "#f8d7da", "#721c24", "❌"
+            else: b_c, bg, t_c, icon = "#d1d5db", "#f9fafb", "#1f2937", ""
+            st.markdown(f"<div style='border:2px solid {b_c}; border-radius:12px; padding:0.6rem; margin-bottom:0.3rem; background:{bg}; color:{t_c}; text-align: center;'>{icon} <strong>{opt['key']}.</strong> {opt['text']}</div>", unsafe_allow_html=True)
 
-        # Message de statut du résultat
         if st.session_state.last_is_correct:
-            st.markdown("<div style='text-align:center; color:#22c55e; font-family:\"Roboto Slab\"; font-weight:700; font-size:1.2rem; margin:1.5rem 0;'>Excellent ! Bonne réponse.</div>", unsafe_allow_html=True)
+            st.markdown("<div style='text-align:center; color:#22c55e; font-weight:bold; margin:1rem 0;'>✅ Bonne réponse !</div>", unsafe_allow_html=True)
         else:
             correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
             sol = correct_opt['text'] if correct_opt else 'N/A'
-            st.markdown(f"<div style='text-align:center; color:#CD493D; font-family:\"Roboto Slab\"; font-weight:700; font-size:1.2rem; margin:1.5rem 0;'>Mauvaise réponse. La solution était : {sol}</div>", unsafe_allow_html=True)
+            st.markdown(f"<div style='text-align:center; color:#dc3545; font-weight:bold; margin:1rem 0;'>❌ Mauvaise réponse. La solution était : {sol}</div>", unsafe_allow_html=True)
 
-        # Encart de contenu pour le rappel de cours (Style p.59 du livret)
         if q.get("correction"):
-            st.markdown(f"""
-            <div style="background-color: #ffffff; border: 1px solid #0F3250; border-top: 4px solid #0F3250; border-radius: 8px; padding: 1.2rem; margin: 1.5rem 0;">
-                <span style="font-family: 'Roboto Slab'; font-weight: 700; color: #0F3250; display: block; margin-bottom: 0.3rem;">📚 Rappel de cours</span>
-                <p style="font-family: 'Montserrat'; color: #333333; margin: 0; font-size: 0.95rem; line-height: 1.5;">{q['correction']}</p>
-            </div>
-            """, unsafe_allow_html=True)
+            st.info(f"**📚 Rappel :** {q['correction']}")
 
-        st.markdown("<br>", unsafe_allow_html=True)
         col1, col2 = st.columns(2, gap="small")
         with col1:
-            if st.button("➡️ Question suivante", use_container_width=True, type="primary"):
+            if st.button("➡️ Suivant", use_container_width=True, type="primary"):
                 st.session_state.show_correction = False
                 st.session_state.answer_locked = False
                 st.session_state.selected_answer = None
@@ -1759,18 +1758,22 @@ def show_question_screen():
                 else:
                     st.rerun()
         with col2:
-            if st.button("⬅️ Quitter le thème", use_container_width=True):
+            if st.button("⬅️ Quitter", use_container_width=True):
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
 
-    # --- BLOCK SIGNALEMENT ---
+    # --- SIGNALEMENT CORRIGÉ (Admin : Utilise l'index original) ---
     st.markdown("---")
-    with st.expander("🚩 Signaler une erreur sur cette question"):
+    with st.expander("🚩 Signaler un problème sur cette question"):
+        # On utilise orig_idx_tech pour la clé unique du champ de texte
         reason = st.text_area("Précisez l'erreur...", key=f"report_area_{orig_idx_tech}")
-        if st.button("Envoyer le rapport", key=f"rep_btn_{orig_idx_tech}"):
+        if st.button("Envoyer", key=f"rep_btn_{orig_idx_tech}"):
             if reason:
                 from auth_persistence import save_question_report
+                
+                # On envoie l'index technique + 1 pour l'affichage Admin
                 vrai_numero = orig_idx_tech + 1
+                
                 save_question_report(
                     st.session_state.username or "Anonyme", 
                     st.session_state.selected_quiz_key, 
@@ -1781,19 +1784,20 @@ def show_question_screen():
                 )
                 st.success(f"✅ Signalement envoyé (réf: Question n°{vrai_numero}) !")
             else: 
-                st.warning("Veuillez décrire l'erreur rencontrée.")
+                st.warning("Veuillez décrire l'erreur.")
 
     # --- Confirmation de sortie ---
     if st.session_state.get("show_quit_confirmation"):
-        st.warning("⚠️ Quitter annulera votre progression en cours sur ce thème.")
+        st.warning("⚠️ Quitter annulera votre progression.")
         c_y, c_n = st.columns(2)
-        if c_y.button("Oui, je quitte", use_container_width=True):
+        if c_y.button("Oui, quitter", use_container_width=True):
             st.session_state.show_quit_confirmation = False
             go_back_to_main_menu()
             st.rerun()
-        if c_n.button("Non, je reste", use_container_width=True):
+        if c_n.button("Non, continuer", use_container_width=True):
             st.session_state.show_quit_confirmation = False
             st.rerun()
+
 # -----------------------
 # FONCTION PRINCIPALE
 # -----------------------
@@ -1808,28 +1812,26 @@ def show_theme_result():
     total_questions = len(theme["questions"])
     score = st.session_state.score
     percentage = (score / total_questions * 100) if total_questions > 0 else 0
-    
-    # Couleur du thème issue de la charte CMA
-    color = THEME_COLORS.get(theme_number, "#0F3250")
+    color = THEME_COLORS.get(theme_number, "#4f46e5")
     
     st.markdown(
-        f"<h1 style='text-align:center; color:{color}; font-family:\"Roboto Slab\"; margin-bottom:1.5rem;'>Bilan : {theme_name}</h1>",
+        f"<h1 style='text-align:center;color:{color};margin-bottom:1.5rem'>Résultat {theme_name}</h1>",
         unsafe_allow_html=True
     )
     
-    # Cercle de progression SVG stylisé (Fond beige #F8F0E3, structure grise légère, arc coloré CMA)
+    # Afficher le cercle de progression avec pourcentage
     st.markdown(
         f"""
-        <div style="text-align:center; margin:2rem 0;">
-            <div style="display:inline-block; position:relative; width:200px; height:200px;">
+        <div style="text-align:center;margin:2rem 0;">
+            <div style="display:inline-block;position:relative;width:200px;height:200px;">
                 <svg width="200" height="200" style="transform:rotate(-90deg)">
-                    <circle cx="100" cy="100" r="85" fill="none" stroke="#e5e7eb" stroke-width="10"></circle>
-                    <circle cx="100" cy="100" r="85" fill="none" stroke="{color}" stroke-width="10" 
-                            stroke-dasharray="{percentage * 5.34} 534" stroke-linecap="round" style="transition: stroke-dasharray 0.6s ease-in-out;"></circle>
+                    <circle cx="100" cy="100" r="85" fill="none" stroke="#e5e7eb" stroke-width="12"></circle>
+                    <circle cx="100" cy="100" r="85" fill="none" stroke="{color}" stroke-width="12" 
+                            stroke-dasharray="{percentage * 5.34} 534" stroke-linecap="round"></circle>
                 </svg>
-                <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center;">
-                    <div style="font-family:'Roboto Slab'; font-size:2.8rem; font-weight:800; color:#0F3250;">{score}/{total_questions}</div>
-                    <div style="font-family:'Montserrat'; font-size:1.1rem; color:#555555; font-weight:600;">{percentage:.0f}%</div>
+                <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;">
+                    <div style="font-size:3rem;font-weight:800;color:{color};">{score}/{total_questions}</div>
+                    <div style="font-size:1.2rem;color:#6b7280;font-weight:600;">{percentage:.0f}%</div>
                 </div>
             </div>
         </div>
@@ -1837,26 +1839,26 @@ def show_theme_result():
         unsafe_allow_html=True
     )
     
-    # Encarts rectangulaires massifs de résultats selon le score (Style page 59 du livret)
+    # Afficher le message selon le score
     if percentage >= 100:
         st.balloons()
         st.markdown(
             f"""
-            <div style="background-color: #ffffff; border: 1px solid #22c55e; border-left: 6px solid #22c55e;
-                        padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-                <h2 style="color:#155724; font-family:'Roboto Slab'; margin:0; font-size:1.6rem;">Parfait !</h2>
-                <p style="color:#155724; font-family:'Montserrat'; margin:0.5rem 0 0 0; font-size:1rem;">Vous avez obtenu la note maximale de {score}/{total_questions}. Félicitations !</p>
+            <div style="background:linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);border-left:6px solid #28a745;
+                        padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#155724;margin:0;font-size:2rem;">Parfait !</h2>
+                <p style="color:#155724;margin:0.5rem 0 0 0;font-size:1.1rem;">Score parfait {score}/{total_questions} - {percentage:.0f}%</p>
             </div>
             """,
             unsafe_allow_html=True
         )
-    elif percentage >= 70:
+    elif percentage >= 75:
         st.markdown(
             f"""
-            <div style="background-color: #ffffff; border: 1px solid #22c55e; border-left: 6px solid #22c55e;
-                        padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-                <h2 style="color:#155724; font-family:'Roboto Slab'; margin:0; font-size:1.6rem;">Objectif validé !</h2>
-                <p style="color:#155724; font-family:'Montserrat'; margin:0.5rem 0 0 0; font-size:1rem;">Très bon score de {score}/{total_questions} ({percentage:.0f}%). Le niveau requis est atteint.</p>
+            <div style="background:linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);border-left:6px solid #28a745;
+                        padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#155724;margin:0;font-size:2rem;">Très bien !</h2>
+                <p style="color:#155724;margin:0.5rem 0 0 0;font-size:1.1rem;">Score {score}/{total_questions} - {percentage:.0f}%</p>
             </div>
             """,
             unsafe_allow_html=True
@@ -1864,10 +1866,10 @@ def show_theme_result():
     elif percentage >= 50:
         st.markdown(
             f"""
-            <div style="background-color: #ffffff; border: 1px solid #F1BA33; border-left: 6px solid #F1BA33;
-                        padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-                <h2 style="color:#866939; font-family:'Roboto Slab'; margin:0; font-size:1.6rem;">Résultat encourageant</h2>
-                <p style="color:#866939; font-family:'Montserrat'; margin:0.5rem 0 0 0; font-size:1rem;">Score de {score}/{total_questions} ({percentage:.0f}%). Encore un petit effort pour stabiliser vos connaissances.</p>
+            <div style="background:linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);border-left:6px solid #17a2b8;
+                        padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#0c5460;margin:0;font-size:2rem;">Pas mal !</h2>
+                <p style="color:#0c5460;margin:0.5rem 0 0 0;font-size:1.1rem;">Score {score}/{total_questions} - {percentage:.0f}%</p>
             </div>
             """,
             unsafe_allow_html=True
@@ -1875,21 +1877,21 @@ def show_theme_result():
     else:
         st.markdown(
             f"""
-            <div style="background-color: #ffffff; border: 1px solid #CD493D; border-left: 6px solid #CD493D;
-                        padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-                <h2 style="color:#721c24; font-family:'Roboto Slab'; margin:0; font-size:1.6rem;">À réviser</h2>
-                <p style="color:#721c24; font-family:'Montserrat'; margin:0.5rem 0 0 0; font-size:1rem;">Score de {score}/{total_questions} ({percentage:.0f}%). Prenez le temps de revoir ce thème et essayez à nouveau.</p>
+            <div style="background:linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);border-left:6px solid #dc3545;
+                        padding:1.5rem;border-radius:16px;margin:1.5rem 0;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+                <h2 style="color:#721c24;margin:0;font-size:2rem;">Continue tes efforts !</h2>
+                <p style="color:#721c24;margin:0.5rem 0 0 0;font-size:1.1rem;">Score {score}/{total_questions} - {percentage:.0f}% - Révise encore ce thème !</p>
             </div>
             """,
             unsafe_allow_html=True
         )
     
-    # Sauvegarde du score du thème dans la session
+    # Sauvegarder le score du thème dans la session
     if quiz_key not in st.session_state.theme_scores:
         st.session_state.theme_scores[quiz_key] = {}
     st.session_state.theme_scores[quiz_key][theme_number] = f"{score}/{total_questions}"
 
-# Sauvegarder les scores du quiz pour l'utilisateur connecté (persistance disque)
+    # Sauvegarder les scores du quiz pour l'utilisateur connecté (persistance disque)
     if st.session_state.get("auth_stage") == "logged_in" and st.session_state.get("username"):
         save_user_scores(
             st.session_state.username,
@@ -1897,21 +1899,21 @@ def show_theme_result():
             st.session_state.theme_scores[quiz_key],
         )
     
-    st.markdown("<br>", unsafe_allow_html=True)
-    # Boutons d'action calés sur la charte
+    # Boutons pour continuer
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("Menu des thèmes", use_container_width=True):
+        if st.button("Revenir au menu des thèmes", use_container_width=True):
             go_back_to_main_menu()
             st.rerun()
     with col2:
-        if st.button("Recommencer ce thème", use_container_width=True, type="primary"):
+        if st.button("Refaire ce thème", use_container_width=True, type="primary"):
             start_theme(theme_number)
             st.rerun()
 
     # --- LE GIF DE LA VICTOIRE (Local Assets) ---
     if percentage >= 100:
         st.markdown("---")
+        # Centrage du GIF
         _, col_gif, _ = st.columns([1, 2, 1])
         with col_gif:
             gif_path = "assets/success.gif"
@@ -1919,15 +1921,13 @@ def show_theme_result():
             if os.path.exists(gif_path):
                 st.image(gif_path, use_container_width=True, caption="Félicitations !")
             else:
-                st.info("Placez votre fichier 'success.gif' dans le dossier 'assets' pour l'afficher ici.")
-
+                st.info("Place ton fichier 'success.gif' dans le dossier 'assets' pour l'afficher ici.")
 def main():
-    # Injection systématique du thème graphique CMA
-    inject_cma_theme()
-
-    # --- 1. SIDEBAR (Navigation d'origine nettoyée) ---
+    # --- 1. SIDEBAR (Navigation) ---
     with st.sidebar:
+        st.markdown("### Navigation")
         if st.session_state.get("auth_stage") == "logged_in":
+            # On change le mode en utilisant la valeur pour plus de stabilité
             if st.button("👤 Mon profil", use_container_width=True):
                 st.session_state.ui_mode = UIMode.PROFILE
                 st.rerun()
@@ -1953,14 +1953,8 @@ def main():
                 st.session_state.auth_stage = "entry"
                 st.rerun()
 
-        # --- SIGNATURE INSTITUTIONNELLE : LOGO CFA FOIX ---
-        import os
-        logo_path = "assets/logo_cfa_cmar_foix.png"
-        if os.path.exists(logo_path):
-            st.markdown("<br><br>", unsafe_allow_html=True)
-            st.image(logo_path, use_container_width=True)
-
-    # --- 2. AIGUILLAGE DES ÉCRANS ---
+    # --- 2. AIGUILLAGE DES ÉCRANS (Correction de la comparaison) ---
+    # On récupère la valeur texte du mode pour éviter le bug des Enums rechargés
     current_mode = st.session_state.ui_mode
     mode_val = current_mode.value if hasattr(current_mode, 'value') else current_mode
 
@@ -1973,6 +1967,7 @@ def main():
     elif st.session_state.current_theme is None:
         show_main_menu_for_current_quiz()
     else:
+        # On est dans un quiz
         q_data = get_current_quiz_data()
         theme_idx = st.session_state.current_theme
         theme_questions = q_data["themes"][theme_idx]["questions"]
