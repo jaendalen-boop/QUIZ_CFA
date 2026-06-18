@@ -331,44 +331,49 @@ THEME_COLORS = {
 }
 
 def inject_cma_theme():
-    """Injecte la charte graphique de la CMA Occitanie (En-tête de sidebar aéré)"""
+    """Injecte la charte graphique de la CMA Occitanie avec isolation stricte de la sidebar"""
     st.markdown("""
     <style>
     /* Importation des polices officielles Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
 
-    /* Configuration globale du fond de soutien beige */
+    /* =========================================================================
+       ☀️ CONFIGURATION DE BASE (MODE CLAIR STABLE)
+       ========================================================================= */
+    /* Zone principale : Fond de soutien beige */
     .stApp {
-        background-color: #F8F0E3;
+        background-color: #F8F0E3 !important;
         font-family: 'Montserrat', sans-serif;
     }
 
-    /* Titres principaux de la zone centrale */
-    .stApp h1, .stApp h2, .stApp h3 {
-        font-family: 'Roboto Slab', serif;
-        color: #0F3250;
-        font-weight: 700;
+    /* Titres et textes de la zone centrale uniquement (Bleu Marine) */
+    .main h1, .main h2, .main h3, .main p, .main span, .main label {
+        color: #0F3250 !important;
     }
 
-    /* --- SIDEBAR INSTITUTIONNELLE --- */
+    /* Conteneurs Expanders centraux */
+    .stContainer .stExpander, div[data-testid="stExpander"] {
+        background-color: #ffffff !important;
+        border: 1px solid #0F3250 !important;
+        border-radius: 8px;
+    }
+
+    /* --- SIDEBAR VERROUILLÉE (Le code stable d'origine) --- */
     section[data-testid="stSidebar"] {
         background-color: #0F3250 !important;
     }
 
-    /* EN-TÊTE DE SIDEBAR BEIGE AVEC TITRE ET MARGE INFÉRIEURE POUR AÉRER */
     section[data-testid="stSidebar"] div[data-testid="stSidebarHeader"] {
         background-color: #F8F0E3 !important;
         border-bottom: 1px solid #B0D2D9;
         padding: 0.6rem 1rem !important;
         border-radius: 0 0 12px 12px !important;
-        /* Ajout d'une marge de 1.5rem en bas pour décoller le bouton "Mon profil" */
         margin: 0 8px 1.5rem 8px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: space-between !important;
     }
 
-    /* Injection du texte "Navigation" stylisé dans la zone gauche de la bande */
     section[data-testid="stSidebar"] div[data-testid="stSidebarHeader"]::before {
         content: "Navigation" !important;
         color: #0F3250 !important;
@@ -378,7 +383,6 @@ def inject_cma_theme():
         display: inline-block !important;
     }
 
-    /* Force la visibilité de la flèche */
     section[data-testid="stSidebar"] div[data-testid="stSidebarHeader"] button,
     section[data-testid="stSidebar"] button[data-testid="sidebar-close-button"],
     section[data-testid="stSidebarCollapse"] button {
@@ -386,7 +390,6 @@ def inject_cma_theme():
         visibility: visible !important;
     }
 
-    /* Couleur de la flèche interne */
     section[data-testid="stSidebar"] div[data-testid="stSidebarHeader"] button svg,
     section[data-testid="stSidebar"] button[data-testid="sidebar-close-button"] svg,
     section[data-testid="stSidebarCollapse"] button svg,
@@ -398,22 +401,20 @@ def inject_cma_theme():
         height: 20px !important;
     }
 
-    /* Effet de survol sur la flèche */
     section[data-testid="stSidebar"] div[data-testid="stSidebarHeader"] button:hover svg {
         fill: #CD493D !important;
         color: #CD493D !important;
     }
 
-    /* Ciblage exclusif des textes de contenu de la barre latérale */
     section[data-testid="stSidebar"] .stMarkdown p,
     section[data-testid="stSidebar"] h1,
     section[data-testid="stSidebar"] h2,
-    section[data-testid="stSidebar"] h3 {
+    section[data-testid="stSidebar"] h3,
+    section[data-testid="stSidebar"] span,
+    section[data-testid="stSidebar"] caption {
         color: #ffffff !important;
-        font-family: 'Montserrat', sans-serif;
     }
 
-    /* Stylisation des boutons de navigation internes à la barre latérale */
     section[data-testid="stSidebar"] .stButton button {
         background-color: rgba(255, 255, 255, 0.1) !important;
         color: #ffffff !important;
@@ -429,7 +430,6 @@ def inject_cma_theme():
         color: #ffffff !important;
     }
 
-    /* Textes secondaires/statuts dans la barre latérale */
     section[data-testid="stSidebar"] .stCaption {
         color: #B0D2D9 !important;
     }
@@ -461,11 +461,37 @@ def inject_cma_theme():
         border-color: #A8131D;
     }
 
-    /* Conteneurs Expanders */
-    .stContainer .stExpander {
-        background-color: #ffffff;
-        border: 1px solid #0F3250;
-        border-radius: 8px;
+
+    /* =========================================================================
+       🌙 ADAPTATION MODE SOMBRE (CIBLAGE CHIRURGICAL APPLIQUÉ UNIQUEMENT AU CENTRE)
+       ========================================================================= */
+    @media (prefers-color-scheme: dark) {
+        /* Seul le fond de la zone centrale bascule en Bleu Marine */
+        .main {
+            background-color: #0F3250 !important;
+        }
+        
+        /* Seuls les textes de la zone centrale passent en blanc */
+        .main h1, .main h2, .main h3, .main p, .main span, .main label {
+            color: #ffffff !important;
+        }
+        
+        /* Adaptation des boutons de la zone centrale */
+        .main .stButton button {
+            color: #ffffff !important;
+            border: 2px solid #ffffff !important;
+            background-color: transparent !important;
+        }
+        .main .stButton button:hover {
+            background-color: #ffffff !important;
+            color: #0F3250 !important;
+        }
+
+        /* Adaptation des conteneurs expanders de la zone centrale */
+        .main .stExpander, .main div[data-testid="stExpander"] {
+            background-color: rgba(255, 255, 255, 0.05) !important;
+            border: 1px solid #ffffff !important;
+        }
     }
     </style>
     """, unsafe_allow_html=True)
