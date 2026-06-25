@@ -735,21 +735,42 @@ def get_sorted_quiz_keys(keys):
 # -----------------------
 
 def get_current_quiz_data():
-    """Charge dynamiquement et retourne le quiz_data du quiz sélectionné."""
+    """Charge dynamiquement le quiz_data du fichier .py et y injecte les corrections depuis Google Sheets."""
     quiz_key = st.session_state.selected_quiz_key
     if quiz_key is None:
         return None
     
-    # On récupère le chemin enregistré dans le dictionnaire
     quiz_path = QUIZZES[quiz_key].get("path")
     
     if quiz_path:
         try:
-            # On charge le fichier seulement maintenant
+            # 1. Chargement initial du fichier .py d'origine
             module = importlib.import_module(quiz_path)
-            return module.quiz_data
+            importlib.reload(module)
+            current_quiz_data = module.quiz_data
+            
+            # 2. Récupération des correctifs Sheets pour ce quiz précis
+            from auth_persistence import get_modified_questions_for_quiz
+            corrections = get_modified_questions_for_quiz(quiz_key)
+            
+            # 3. Injection des correctifs en mémoire vive à la volée
+            if corrections:
+                themes = current_quiz_data.get("themes", {})
+                for theme_id, q_dict in corrections.items():
+                    if theme_id in themes:
+                        questions_list = themes[theme_id].get("questions", [])
+                        for q_idx, updated_fields in q_dict.items():
+                            # L'index stocké dans Sheets est humain (1, 2, 3...), on repasse en informatique (0, 1, 2...)
+                            idx_tech = q_idx - 1 
+                            if 0 <= idx_tech < len(questions_list):
+                                # Remplacement chirurgical des éléments de la question
+                                questions_list[idx_tech]['question'] = updated_fields['question']
+                                questions_list[idx_tech]['answerOptions'] = updated_fields['answerOptions']
+                                questions_list[idx_tech]['correction'] = updated_fields['correction']
+            
+            return current_quiz_data
         except Exception as e:
-            st.error(f"Erreur de chargement du quiz : {e}")
+            st.error(f"Erreur de chargement ou d'injection du quiz : {e}")
             return None
     return None
 
@@ -803,6 +824,62 @@ def start_theme(theme_number: int):
     if "theme_attempt_counter" not in st.session_state:
         st.session_state.theme_attempt_counter = 0
     st.session_state.theme_attempt_counter += 1
+
+def start_exam_mode():
+    """Génère un examen blanc de 30 questions (6 questions aléatoires par thème)."""
+    quiz_data = get_current_quiz_data()
+    if not quiz_data:
+        st.error("Impossible de charger les données pour l'examen.")
+        return
+
+    all_exam_questions = []
+    
+    # Parcours de chaque thème du quiz pour piocher 6 questions
+    for theme_id, theme_data in quiz_data["themes"].items():
+        questions = theme_data["questions"].copy()
+        
+        # On injecte l'index d'origine et le numéro de thème avant le mélange pour les rapports d'erreur
+        for i, q in enumerate(questions):
+            q['original_index'] = i
+            q['theme_origin'] = theme_id
+            
+        # Mélange des questions du thème courant
+        random.shuffle(questions)
+        
+        # Sélection des 6 premières questions (ou de toutes si le thème en contient moins de 6)
+        all_exam_questions.extend(questions[:6])
+        
+    # Mélange final de l'ensemble des 30 questions pour panacher l'examen
+    random.shuffle(all_exam_questions)
+    
+    # Initialisation des variables d'état spécifiques à l'examen
+    st.session_state.exam_mode = True
+    st.session_state.exam_questions = all_exam_questions
+    st.session_state.exam_user_answers = {}
+    st.session_state.current_question_index = 0
+    st.session_state.score = 0
+    st.session_state.selected_answer = None
+    st.session_state.answer_locked = False
+    st.session_state.show_correction = False
+    
+    if "theme_attempt_counter" not in st.session_state:
+        st.session_state.theme_attempt_counter = 0
+    st.session_state.theme_attempt_counter += 1
+
+
+def get_current_exam_comment(score: int) -> str:
+    """Retourne le commentaire sobre associé au score de l'examen blanc."""
+    # Le barème est basé sur 30 questions
+    if score == 30:
+        return "INCROYABLE ! Un sans-faute parfait ! Vous avez détruit le quiz. Respect total !"
+    elif 24 <= score <= 29:
+        return "Excellent travail ! Le diplôme est à portée de main. Vous maîtrisez parfaitement votre sujet."
+    elif 21 <= score <= 23:
+        return "Examen validé ! Le score requis de 70% est atteint. Continuez ainsi pour sécuriser vos points."
+    elif 15 <= score <= 20:
+        return "Score encourageant mais encore trop juste. Révisez les thèmes où vous avez fait des erreurs avant de retenter l'examen."
+    else:
+        return "Niveau insuffisant. Prenez le temps de retravailler chaque thème un par un en mode entraînement classique."
 
 def go_back_to_main_menu():
     """Retour au menu des thèmes pour le quiz courant (sans effacer les scores)."""
@@ -892,13 +969,27 @@ def show_profile_page():
     user_scores = load_user_scores(username)
     quizzes = user_scores.get("quizzes", {})
 
-    # --- 1. CALCULS DES SCORES ET VALIDATIONS (Logique préservée) ---
+    # --- 1. CALCULS DES SCORES ET VALIDATIONS ---
     validated_quiz_count = 0
     validated_cap, validated_bacpro = 0, 0
     validated_bp, validated_bts, validated_cs = 0, 0, 0
+    
+    # Variables de suivi spécifiques pour le calcul des deux nouveaux trophées
+    total_exam_attempts_all_quizzes = 0
+    has_high_exam_score = False
 
     for quiz_key, quiz_data_score in quizzes.items():
         scores = quiz_data_score.get("scores", {})
+        
+        # Extraction et cumul des statistiques d'examen blanc
+        exam_stats = quiz_data_score.get("exam_stats", {})
+        attempts = exam_stats.get("attempts", 0)
+        best_score = exam_stats.get("best_score", 0)
+        
+        total_exam_attempts_all_quizzes += attempts
+        if best_score >= 25:
+            has_high_exam_score = True
+            
         if not scores: continue
         
         total_correct, total_questions = 0, 0
@@ -921,7 +1012,7 @@ def show_profile_page():
                 elif quiz_key.startswith("bts_"): validated_bts += 1
                 elif quiz_key.startswith("cs_"): validated_cs += 1
 
-    # --- 2. FORMATAGE DE LA DATE (Logique préservée) ---
+    # --- 2. FORMATAGE DE LA DATE ---
     created_at_raw = user_info.get('created_at')
     date_display, relative_display = "N/A", ""
     if created_at_raw:
@@ -950,7 +1041,7 @@ def show_profile_page():
     </div>
     """, unsafe_allow_html=True)
 
-    # --- 4. CARTES DE STATISTIQUES (Design amélioré) ---
+    # --- 4. CARTES DE STATISTIQUES ---
     st.subheader("📊 Progression globale")
     c1, c2, c3, c4 = st.columns(4)
     card_style = "background:#f8f9fa; padding:0.8rem; border-radius:12px; text-align:center; border: 1px solid #e5e7eb;"
@@ -978,7 +1069,7 @@ def show_profile_page():
         st.write(f"**BP / BTS / CS** ({val_sup}/{obj})")
         st.progress(min(val_sup/obj, 1.0))
 
-    # --- 6. SYSTÈME DE BADGES (Logique préservée, style optimisé) ---
+    # --- 6. SYSTÈME DE BADGES ---
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("### 🏆 Vos Badges")
     badges = [
@@ -991,7 +1082,9 @@ def show_profile_page():
         {"nom": "🏗️ Expert CAP", "cond": validated_cap >= 3},
         {"nom": "🏬 Expert BAC PRO", "cond": validated_bacpro >= 2},
         {"nom": "🎓 Spécialiste Sup", "cond": (validated_bp >= 1 and validated_bts >= 1)},
-        {"nom": "⏱️ Fidèle au poste", "cond": stats.get("total_quizzes", 0) >= 10}
+        {"nom": "⏱️ Fidèle au poste", "cond": stats.get("total_quizzes", 0) >= 10},
+        {"nom": "⏳ Assiduité Examen (5 examens blancs)", "cond": total_exam_attempts_all_quizzes >= 5},
+        {"nom": "⚡ Maîtrise Examen (Score ≥ 25/30)", "cond": has_high_exam_score}
     ]
     
     html_badges = "<div style='display:flex; flex-wrap:wrap; gap:0.6rem;'>"
@@ -1016,8 +1109,16 @@ def show_profile_page():
             
             quiz_info = QUIZZES.get(q_key, {})
             with st.expander(f"📁 {quiz_info.get('title', q_key)}"):
+                # Affichage des thèmes classiques
                 for t_num, s_str in q_data.get("scores", {}).items():
                     st.write(f"**Thème {t_num}** : `{s_str}`")
+                
+                # Bloc d'affichage des performances de l'examen blanc si existant
+                e_stats = q_data.get("exam_stats", {})
+                if e_stats.get("attempts", 0) > 0:
+                    st.markdown("---")
+                    st.write(f"📝 **Tentatives d'examen blanc** : {e_stats['attempts']}")
+                    st.write(f"🏆 **Meilleur score à l'examen** : {e_stats['best_score']} / 30")
 
     # --- 8. ACTIONS ---
     st.markdown("<br>", unsafe_allow_html=True)
@@ -1033,11 +1134,11 @@ def show_profile_page():
     with col_btn3:
         report_text = export_user_scores_txt(username)
         st.download_button("📄 Mon Bilan (TXT)", data=report_text, file_name=f"bilan_{username}.txt", use_container_width=True)
+
 def show_admin_reports_page():
     st.markdown("<h2 style='text-align:center;'>🛠️ Gestion & Édition des Questions</h2>", unsafe_allow_html=True)
-    from auth_persistence import get_all_reports, delete_report
+    from auth_persistence import get_all_reports, delete_report, save_modified_question
     import importlib
-    import pprint
     
     reports = get_all_reports()
     
@@ -1057,7 +1158,6 @@ def show_admin_reports_page():
         report_id = r['id']
         quiz_key = r.get('quiz') 
         
-        # Nettoyage sécurisé
         try:
             theme_id = int(float(r.get('theme', 0)))
             q_idx = int(float(r.get('q_idx', 1))) - 1
@@ -1070,7 +1170,6 @@ def show_admin_reports_page():
         with st.expander(f"🚩 Rapport #{report_id} : {display_title} (Thème {theme_id}, Question {q_idx + 1})"):
             st.error(f"**Problème signalé :** {r['reason']}")
             
-            # Affichage de la question enregistrée dans le signalement
             if 'question' in r and r['question']:
                 st.warning(f"**Texte envoyé par l'élève :**\n\n{r['question']}")
             
@@ -1087,7 +1186,7 @@ def show_admin_reports_page():
                             question_to_edit = questions_list[q_idx]
                             
                             st.markdown("---")
-                            new_q_text = st.text_area("Libellé (Fichier .py)", value=question_to_edit['question'], key=f"edit_q_{report_id}")
+                            new_q_text = st.text_area("Libellé de la question", value=question_to_edit['question'], key=f"edit_q_{report_id}")
                             
                             new_options = []
                             for i, opt in enumerate(question_to_edit['answerOptions']):
@@ -1099,25 +1198,30 @@ def show_admin_reports_page():
                             new_corr = st.text_area("Correction", value=question_to_edit.get('correction', ''), key=f"edit_c_{report_id}")
 
                             c1, c2 = st.columns(2)
-                            if c1.button("💾 Enregistrer & Publier", key=f"save_{report_id}", use_container_width=True, type="primary"):
-                                question_to_edit['question'] = new_q_text
-                                question_to_edit['answerOptions'] = new_options
-                                question_to_edit['correction'] = new_corr
+                            if c1.button("💾 Enregistrer & Publier sur Sheets", key=f"save_{report_id}", use_container_width=True, type="primary"):
+                                # Sauvegarde sécurisée dans Google Sheets (Numéro humain de question = q_idx + 1)
+                                success = save_modified_question(
+                                    quiz_key=quiz_key,
+                                    theme_id=theme_id,
+                                    question_idx=q_idx + 1,
+                                    question_text=new_q_text,
+                                    options_list=new_options,
+                                    correction_text=new_corr
+                                )
                                 
-                                file_path = quiz_info['path'].replace(".", "/") + ".py"
-                                with open(file_path, "w", encoding="utf-8") as f:
-                                    f.write(f"quiz_data = {pprint.pformat(current_quiz_data, indent=4, sort_dicts=False, width=100)}")
-                                
-                                delete_report(report_id)
-                                st.success("✅ Mis à jour !")
-                                st.rerun()
+                                if success:
+                                    delete_report(report_id)
+                                    st.success("✅ Mis à jour dans Google Sheets et synchronisé !")
+                                    st.rerun()
+                                else:
+                                    st.error("❌ Erreur lors de l'enregistrement sur Google Sheets.")
 
                             if c2.button("🗑️ Supprimer le rapport", key=f"del_{report_id}", use_container_width=True):
                                 delete_report(report_id)
                                 st.rerun()
                         else: st.warning("Index de question introuvable.")
                     else: st.warning("Thème introuvable.")
-                except Exception as e: st.error(f"Erreur d'accès fichier : {e}")
+                except Exception as e: st.error(f"Erreur d'accès aux données : {e}")
             else: st.error("Quiz non localisé.")
 
 def show_admin_dashboard():
@@ -1601,20 +1705,29 @@ def show_quiz_selector():
 # INTERFACE : MENU DES THÈMES (POUR LE QUIZ COURANT)
 # -----------------------
 
-def show_main_menu_for_current_quiz():
+def show_quiz_page():
+    """Affiche la page d'accueil d'un quiz avec la liste de ses thèmes et l'accès à l'Examen Blanc."""
     quiz_data = get_current_quiz_data()
     quiz_key = st.session_state.selected_quiz_key
     if not quiz_data or not quiz_key:
         st.error("Aucune donnée de quiz chargée.")
+        if st.button("⬅️ Retour au menu"):
+            go_back_to_main_menu()
+            st.rerun()
         return
 
-    st.title(quiz_data["title"])
+    # En-tête du quiz
+    st.markdown(f"<h2 style='text-align:center; font-family:\"Roboto Slab\"; color:#0F3250;'>{quiz_data['title']}</h2>", unsafe_allow_html=True)
+    if quiz_data.get("subtitle"):
+        st.markdown(f"<p style='text-align:center; font-family:\"Montserrat\"; font-style:italic; color:#555555; margin-bottom:2rem;'>{quiz_data['subtitle']}</p>", unsafe_allow_html=True)
 
-    if st.button("🔙 Retour au menu des quiz"):
+    # Bouton de retour général
+    if st.button("⬅️ Choisir un autre quiz", use_container_width=True):
         st.session_state.selected_quiz_key = None
         st.session_state.current_theme = None
         st.rerun()
 
+    st.markdown("---")
     st.subheader("Progression globale")
     total_score = 0
     total_max = 0
@@ -1639,8 +1752,15 @@ def show_main_menu_for_current_quiz():
     if all_completed and total_max > 0:
         st.success("🎉 Tous les thèmes complétés !")
 
-    st.subheader("Choisissez un thème")
-    for num, theme in quiz_data["themes"].items():
+    st.markdown("---")
+    st.markdown("<h3 style='font-family:\"Roboto Slab\"; color:#0F3250; margin-bottom:1.5rem;'>Thèmes d'entraînement</h3>", unsafe_allow_html=True)
+
+    # Affichage de la liste des thèmes sous forme de boutons
+    themes_dict = quiz_data["themes"]
+    themes_keys = list(themes_dict.keys())
+    
+    for idx, num in enumerate(themes_keys):
+        theme = themes_dict[num]
         col1, col2 = st.columns([3, 1])
         with col1:
             st.write(f"**{theme['name']}**")
@@ -1651,34 +1771,63 @@ def show_main_menu_for_current_quiz():
             else:
                 st.warning("Non fait")
 
-        if st.button(f"Commencer le thème {num}", key=f"btn_theme_{num}"):
+        color = THEME_COLORS.get(num, "#0F3250")
+        st.markdown(f"""
+        <style>
+        div[data-testid="stHorizontalBlock"] div[data-basebutton-id="btn_theme_{num}"] button {{
+            border-left: 6px solid {color} !important;
+        }}
+        </style>
+        """, unsafe_allow_html=True)
+
+        if st.button(f"Commencer le thème {num}", key=f"btn_theme_{num}", use_container_width=True):
             start_theme(num)
             st.rerun()
 
-        st.write("")
+        # --- AJOUT DE LA SÉPARATION VISUELLE ---
+        # On affiche une ligne fine grise sous chaque thème, sauf sous le tout dernier de la liste
+        if idx < len(themes_keys) - 1:
+            st.markdown("<hr style='margin: 1.5rem 0; border: 0; border-top: 1px solid #e5e7eb;'>", unsafe_allow_html=True)
+
+    # =========================================================================
+    # 📝 SECTION EXAMEN BLANC
+    # =========================================================================
+
+    st.markdown("---")
+    st.markdown("<h4 style='font-family:\"Roboto Slab\"; color:#0F3250; margin-bottom:0.5rem;'>Évaluation finale</h4>", unsafe_allow_html=True)
+    st.markdown("<p style='font-family:\"Montserrat\"; font-size:0.9rem; color:#555555; margin-bottom:1rem;'>Une fois que vous maîtrisez les différents thèmes, tentez l'examen blanc pluridisciplinaire dans les conditions réelles.</p>", unsafe_allow_html=True)
+    
+    if st.button("📝 Lancer un Examen Blanc (30 questions)", key="launch_exam_btn", use_container_width=True):
+        start_exam_mode()
+        st.rerun()
 
 
 def show_question_screen():
-    quiz_data = get_current_quiz_data()
-    theme_number = st.session_state.current_theme
-    theme = quiz_data["themes"][theme_number]
-    theme_name = theme["name"]
-
-    if st.session_state.shuffled_questions:
-        questions = st.session_state.shuffled_questions
+    # Détection du mode examen ou entraînement classique
+    is_exam = st.session_state.get("exam_mode", False)
+    
+    if is_exam:
+        questions = st.session_state.exam_questions
+        theme_name = "Examen Blanc Pluridisciplinaire"
+        color = "#0F3250"  # Bleu Marine Institutionnel pour l'examen
     else:
-        questions = theme["questions"]
+        quiz_data = get_current_quiz_data()
+        theme_number = st.session_state.current_theme
+        theme = quiz_data["themes"][theme_number]
+        theme_name = theme["name"]
+        color = THEME_COLORS.get(theme_number, "#0F3250")
+        if st.session_state.shuffled_questions:
+            questions = st.session_state.shuffled_questions
+        else:
+            questions = theme["questions"]
 
     idx = st.session_state.current_question_index
     total_questions = len(questions)
     
-    # Récupération de la couleur du thème (liée à la charte CMA)
-    color = THEME_COLORS.get(theme_number, "#0F3250")
-
-    # En-tête du thème épuré
-    st.markdown(f"<div style='margin-bottom: 0.5rem;'><span style='font-family:\"Montserrat\"; font-size:0.85rem; font-weight:600; color:#555555; text-transform: uppercase;'>Thème : {theme_name}</span></div>", unsafe_allow_html=True)
+    # En-tête de l'interface épuré
+    st.markdown(f"<div style='margin-bottom: 0.5rem;'><span style='font-family:\"Montserrat\"; font-size:0.85rem; font-weight:600; color:#555555; text-transform: uppercase;'>{theme_name}</span></div>", unsafe_allow_html=True)
     
-    # Barre de progression fine et moderne (Charte CMA)
+    # Barre de progression fine et moderne
     progress_percent = ((idx + 1) / total_questions) * 100
     st.markdown(f"""
     <div style='width:100%; background-color:#e5e7eb; border-radius:999px; height:8px; position:relative; margin-bottom:1.5rem; overflow:hidden;'>
@@ -1687,15 +1836,17 @@ def show_question_screen():
     <div style='text-align:right; margin-top:-1rem; margin-bottom:1.5rem;'><span style='font-family:\"Montserrat\"; font-size:0.85rem; font-weight:700; color:#0F3250;'>Question {idx + 1} sur {total_questions}</span></div>
     """, unsafe_allow_html=True)
 
-    q = get_current_question()
+    q = questions[idx] if idx < len(questions) else None
     if q is None:
         st.error("Erreur : question introuvable.")
         return
 
-    # Récupération de l'index technique réel
     orig_idx_tech = q.get('original_index', idx)
+    theme_origin = q.get('theme_origin', st.session_state.current_theme)
 
-    q_id = f"{theme_number}_{idx}"
+    # Identifiant unique de question pour le mélange des réponses
+    q_id = f"exam_{idx}" if is_exam else f"{theme_origin}_{idx}"
+    
     if q_id not in st.session_state.shuffled_answers:
         options = [opt.copy() for opt in q["answerOptions"]]
         random.shuffle(options)
@@ -1705,121 +1856,163 @@ def show_question_screen():
 
     answer_options = st.session_state.shuffled_answers[q_id]
     
-    # Affichage de la question stylisée en Roboto Slab
+    # Affichage de la question stylisée
     st.markdown(f"<h3 style='margin: 1.5rem 0; font-size:1.3rem; font-weight:700; line-height:1.4; text-align:center; color:#0F3250;'>{q['question']}</h3>", unsafe_allow_html=True)
 
-    # --- LOGIQUE D'AFFICHAGE DE L'ÉCRAN ---
-    if not st.session_state.answer_locked:
-        # Style dynamique pour caler les boutons d'options sur toute la largeur
+    # --- CAS PARAMÉTRABLE : MODE EXAMEN BLANC ---
+    if is_exam:
         st.markdown(f"<style>div[data-testid='stButton'] > button {{ width: 100% !important; text-align: left !important; padding-left: 1.5rem !important; border-radius: 8px !important; min-height: 52px !important; font-family: 'Montserrat', sans-serif !important; }}</style>", unsafe_allow_html=True)
 
+        # Récupération de la réponse déjà sauvegardée si l'élève revient en arrière
+        current_saved_ans = st.session_state.exam_user_answers.get(idx, None)
+
         for opt in answer_options:
-            is_selected = (st.session_state.selected_answer == opt["text"])
+            is_selected = (current_saved_ans == opt["text"])
             label = f"🔹 {opt['key']}.  {opt['text']}" if is_selected else f"{opt['key']}.  {opt['text']}"
             btn_type = "primary" if is_selected else "secondary"
             
-            if st.button(label, key=f"opt_{q_id}_{opt['key']}_{st.session_state.get('theme_attempt_counter',0)}", use_container_width=True, type=btn_type):
-                st.session_state.selected_answer = opt["text"]
+            if st.button(label, key=f"exam_opt_{idx}_{opt['key']}", use_container_width=True, type=btn_type):
+                st.session_state.exam_user_answers[idx] = opt["text"]
                 st.rerun()
 
         st.markdown("<br>", unsafe_allow_html=True)
         col1, col2 = st.columns(2, gap="small")
         with col1:
-            if st.button("✅ Valider ma réponse", use_container_width=True, type="primary"):
-                if not st.session_state.selected_answer:
-                    st.warning("Veuillez sélectionner une réponse avant de valider.")
+            label_next = "Soumettre l'examen" if (idx + 1 == total_questions) else "Question suivante ➡️"
+            if st.button(label_next, use_container_width=True, type="primary"):
+                if idx not in st.session_state.exam_user_answers:
+                    st.warning("Veuillez sélectionner une réponse avant de continuer.")
                 else:
-                    correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
-                    is_correct = (correct_opt and st.session_state.selected_answer == correct_opt["text"])
-                    st.session_state.last_is_correct = is_correct
-                    st.session_state.show_correction = True
-                    st.session_state.answer_locked = True
-                    if is_correct: st.session_state.score += 1
-                    st.rerun()
+                    if idx + 1 == total_questions:
+                        # Fin de l'examen, calcul automatique du score final
+                        total_score = 0
+                        for exam_idx, question_obj in enumerate(st.session_state.exam_questions):
+                            user_ans = st.session_state.exam_user_answers.get(exam_idx)
+                            correct_opt = next((o for o in question_obj["answerOptions"] if o["isCorrect"]), None)
+                            if correct_opt and user_ans == correct_opt["text"]:
+                                total_score += 1
+                        st.session_state.score = total_score
+                        st.session_state.current_question_index += 1
+                        show_exam_result()
+                    else:
+                        st.session_state.current_question_index += 1
+                        st.rerun()
         with col2:
-            if st.button("⬅️ Retour", use_container_width=True):
+            if st.button("⬅️ Quitter l'examen", use_container_width=True):
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
+
+    # --- CAS D'ORIGINE : ENTRAÎNEMENT CLASSIQUE PAR THÈME ---
     else:
-        # ÉCRAN DE CORRECTION : Blocs statiques colorés selon le résultat (Vert succès ou Rouge CMA)
-        for opt in answer_options:
-            is_correct_answer = opt["isCorrect"]
-            is_user_answer = (st.session_state.selected_answer == opt["text"])
-            
-            if is_correct_answer: 
-                b_c, bg, t_c, icon = "#22c55e", "#d4edda", "#155724", "✅"
-            elif is_user_answer: 
-                b_c, bg, t_c, icon = "#CD493D", "#f8d7da", "#721c24", "❌"
-            else: 
-                b_c, bg, t_c, icon = "#e5e7eb", "#ffffff", "#1f2937", ""
+        if not st.session_state.answer_locked:
+            st.markdown(f"<style>div[data-testid='stButton'] > button {{ width: 100% !important; text-align: left !important; padding-left: 1.5rem !important; border-radius: 8px !important; min-height: 52px !important; font-family: 'Montserrat', sans-serif !important; }}</style>", unsafe_allow_html=True)
+
+            for opt in answer_options:
+                is_selected = (st.session_state.selected_answer == opt["text"])
+                label = f"🔹 {opt['key']}.  {opt['text']}" if is_selected else f"{opt['key']}.  {opt['text']}"
+                btn_type = "primary" if is_selected else "secondary"
                 
-            st.markdown(f"<div style='border: 1px solid {b_c}; border-left: 6px solid {b_c}; border-radius: 8px; padding: 0.8rem 1.2rem; margin-bottom: 0.5rem; background: {bg}; color: {t_c}; font-family: \"Montserrat\"; text-align: left;'>{icon} <strong>{opt['key']}.</strong> {opt['text']}</div>", unsafe_allow_html=True)
-
-        # Message de statut du résultat
-        if st.session_state.last_is_correct:
-            st.markdown("<div style='text-align:center; color:#22c55e; font-family:\"Roboto Slab\"; font-weight:700; font-size:1.2rem; margin:1.5rem 0;'>Excellent ! Bonne réponse.</div>", unsafe_allow_html=True)
-        else:
-            correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
-            sol = correct_opt['text'] if correct_opt else 'N/A'
-            st.markdown(f"<div style='text-align:center; color:#CD493D; font-family:\"Roboto Slab\"; font-weight:700; font-size:1.2rem; margin:1.5rem 0;'>Mauvaise réponse. La solution était : {sol}</div>", unsafe_allow_html=True)
-
-        # Encart de contenu pour le rappel de cours (Style p.59 du livret)
-        if q.get("correction"):
-            st.markdown(f"""
-            <div style="background-color: #ffffff; border: 1px solid #0F3250; border-top: 4px solid #0F3250; border-radius: 8px; padding: 1.2rem; margin: 1.5rem 0;">
-                <span style="font-family: 'Roboto Slab'; font-weight: 700; color: #0F3250; display: block; margin-bottom: 0.3rem;">📚 Rappel de cours</span>
-                <p style="font-family: 'Montserrat'; color: #333333; margin: 0; font-size: 0.95rem; line-height: 1.5;">{q['correction']}</p>
-            </div>
-            """, unsafe_allow_html=True)
-
-        st.markdown("<br>", unsafe_allow_html=True)
-        col1, col2 = st.columns(2, gap="small")
-        with col1:
-            if st.button("➡️ Question suivante", use_container_width=True, type="primary"):
-                st.session_state.show_correction = False
-                st.session_state.answer_locked = False
-                st.session_state.selected_answer = None
-                st.session_state.current_question_index += 1
-                if st.session_state.current_question_index >= total_questions:
-                    show_theme_result()
-                else:
+                if st.button(label, key=f"opt_{q_id}_{opt['key']}_{st.session_state.get('theme_attempt_counter',0)}", use_container_width=True, type=btn_type):
+                    st.session_state.selected_answer = opt["text"]
                     st.rerun()
-        with col2:
-            if st.button("⬅️ Quitter le thème", use_container_width=True):
-                st.session_state.show_quit_confirmation = True
-                st.rerun()
 
-    # --- BLOCK SIGNALEMENT ---
+            st.markdown("<br>", unsafe_allow_html=True)
+            col1, col2 = st.columns(2, gap="small")
+            with col1:
+                if st.button("✅ Valider ma réponse", use_container_width=True, type="primary"):
+                    if not st.session_state.selected_answer:
+                        st.warning("Veuillez sélectionner une réponse avant de valider.")
+                    else:
+                        correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
+                        is_correct = (correct_opt and st.session_state.selected_answer == correct_opt["text"])
+                        st.session_state.last_is_correct = is_correct
+                        st.session_state.show_correction = True
+                        st.session_state.answer_locked = True
+                        if is_correct: st.session_state.score += 1
+                        st.rerun()
+            with col2:
+                if st.button("⬅️ Retour", use_container_width=True):
+                    st.session_state.show_quit_confirmation = True
+                    st.rerun()
+        else:
+            for opt in answer_options:
+                is_correct_answer = opt["isCorrect"]
+                is_user_answer = (st.session_state.selected_answer == opt["text"])
+                
+                if is_correct_answer: 
+                    b_c, bg, t_c, icon = "#22c55e", "#d4edda", "#155724", "✅"
+                elif is_user_answer: 
+                    b_c, bg, t_c, icon = "#CD493D", "#f8d7da", "#721c24", "❌"
+                else: 
+                    b_c, bg, t_c, icon = "#e5e7eb", "#ffffff", "#1f2937", ""
+                    
+                st.markdown(f"<div style='border: 1px solid {b_c}; border-left: 6px solid {b_c}; border-radius: 8px; padding: 0.8rem 1.2rem; margin-bottom: 0.5rem; background: {bg}; color: {t_c}; font-family: \"Montserrat\"; text-align: left;'>{icon} <strong>{opt['key']}.</strong> {opt['text']}</div>", unsafe_allow_html=True)
+
+            if st.session_state.last_is_correct:
+                st.markdown("<div style='text-align:center; color:#22c55e; font-family:\"Roboto Slab\"; font-weight:700; font-size:1.2rem; margin:1.5rem 0;'>Excellent ! Bonne réponse.</div>", unsafe_allow_html=True)
+            else:
+                correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
+                sol = correct_opt['text'] if correct_opt else 'N/A'
+                st.markdown(f"<div style='text-align:center; color:#CD493D; font-family:\"Roboto Slab\"; font-weight:700; font-size:1.2rem; margin:1.5rem 0;'>Mauvaise réponse. La solution était : {sol}</div>", unsafe_allow_html=True)
+
+            if q.get("correction"):
+                st.markdown(f"""
+                <div style="background-color: #ffffff; border: 1px solid #0F3250; border-top: 4px solid #0F3250; border-radius: 8px; padding: 1.2rem; margin: 1.5rem 0;">
+                    <span style="font-family: 'Roboto Slab'; font-weight: 700; color: #0F3250; display: block; margin-bottom: 0.3rem;">📚 Rappel de cours</span>
+                    <p style="font-family: 'Montserrat'; color: #333333; margin: 0; font-size: 0.95rem; line-height: 1.5;">{q['correction']}</p>
+                </div>
+                """, unsafe_allow_html=True)
+
+            st.markdown("<br>", unsafe_allow_html=True)
+            col1, col2 = st.columns(2, gap="small")
+            with col1:
+                if st.button("➡️ Question suivante", use_container_width=True, type="primary"):
+                    st.session_state.show_correction = False
+                    st.session_state.answer_locked = False
+                    st.session_state.selected_answer = None
+                    st.session_state.current_question_index += 1
+                    if st.session_state.current_question_index >= total_questions:
+                        show_theme_result()
+                    else:
+                        st.rerun()
+            with col2:
+                if st.button("⬅️ Quitter le thème", use_container_width=True):
+                    st.session_state.show_quit_confirmation = True
+                    st.rerun()
+
+    # --- BLOCK SIGNALEMENT COMMUN ---
     st.markdown("---")
     with st.expander("🚩 Signaler une erreur sur cette question"):
-        reason = st.text_area("Précisez l'erreur...", key=f"report_area_{orig_idx_tech}")
-        if st.button("Envoyer le rapport", key=f"rep_btn_{orig_idx_tech}"):
+        reason = st.text_area("Précisez l'erreur...", key=f"report_area_{orig_idx_tech}_{theme_origin}")
+        if st.button("Envoyer le rapport", key=f"rep_btn_{orig_idx_tech}_{theme_origin}"):
             if reason:
                 from auth_persistence import save_question_report
                 vrai_numero = orig_idx_tech + 1
                 save_question_report(
                     st.session_state.username or "Anonyme", 
                     st.session_state.selected_quiz_key, 
-                    theme_number, 
+                    theme_origin, 
                     vrai_numero, 
                     q['question'], 
                     reason
                 )
-                st.success(f"✅ Signalement envoyé (réf: Question n°{vrai_numero}) !")
+                st.success(f"✅ Signalement envoyé (réf: Thème {theme_origin}, Question n°{vrai_numero}) !")
             else: 
                 st.warning("Veuillez décrire l'erreur rencontrée.")
 
-    # --- Confirmation de sortie ---
+    # --- Confirmation de sortie commune ---
     if st.session_state.get("show_quit_confirmation"):
-        st.warning("⚠️ Quitter annulera votre progression en cours sur ce thème.")
+        st.warning("⚠️ Quitter annulera votre progression en cours.")
         c_y, c_n = st.columns(2)
         if c_y.button("Oui, je quitte", use_container_width=True):
             st.session_state.show_quit_confirmation = False
+            st.session_state.exam_mode = False
             go_back_to_main_menu()
             st.rerun()
         if c_n.button("Non, je reste", use_container_width=True):
             st.session_state.show_quit_confirmation = False
             st.rerun()
+
 # -----------------------
 # FONCTION PRINCIPALE
 # -----------------------
@@ -1947,6 +2140,100 @@ def show_theme_result():
             else:
                 st.info("Placez votre fichier 'success.gif' dans le dossier 'assets' pour l'afficher ici.")
 
+def show_exam_result():
+    """Affiche la page de bilan de l'Examen Blanc avec rétroaction et sauvegarde des statistiques."""
+    st.markdown("<h2 style='text-align:center; font-family:\"Roboto Slab\"; color:#0F3250;'>Bilan de l'Examen Blanc</h2>", unsafe_allow_html=True)
+    
+    score = st.session_state.score
+    total = len(st.session_state.exam_questions)
+    percentage = (score / total) * 100 if total > 0 else 0
+    
+    # Récupération du commentaire sobre sans émoticône
+    comment = get_current_exam_comment(score)
+    
+    # --- SAUVEGARDE ET PERSISTANCE DES STASTISTIQUES D'EXAMEN ---
+    quiz_key = st.session_state.selected_quiz_key
+    if st.session_state.get("auth_stage") == "logged_in" and st.session_state.get("username") and quiz_key:
+        save_user_scores(
+            username=st.session_state.username,
+            quiz_key=quiz_key,
+            theme_scores={},  # On ne touche pas aux thèmes classiques ici
+            exam_attempt=True,
+            exam_score=score
+        )
+    
+    # --- VISUALISATION DU SCORE (Arc de cercle SVG) ---
+    angle = (percentage / 100) * 180
+    r, g, b = 205, 73, 61  # Rouge par défaut (#CD493D)
+    if percentage >= 70:
+        r, g, b = 34, 197, 94  # Vert en cas de validation (#22c55e)
+        
+    svg_gauge = f"""
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 2rem 0;">
+        <svg width="240" height="130" viewBox="0 0 200 110">
+            <path d="M20,100 A80,80 0 0,1 180,100" fill="none" stroke="#e5e7eb" stroke-width="16" stroke-linecap="round"/>
+            <path d="M20,100 A80,80 0 0,1 180,100" fill="none" stroke="rgb({r},{g},{b})" stroke-width="16" stroke-linecap="round"
+                  stroke-dasharray="251.2" stroke-dashoffset="{251.2 - (251.2 * (angle / 180))}"/>
+            <text x="100" y="95" text-anchor="middle" font-family="Roboto Slab" font-size="26" font-weight="700" fill="#0F3250">{score} / {total}</text>
+            <text x="100" y="115" text-anchor="middle" font-family="Montserrat" font-size="10" font-weight="600" fill="#555555">{percentage:.1f}% de réussite</text>
+        </svg>
+        <div style="max-width: 550px; text-align: center; margin-top: 1rem; padding: 0 1rem;">
+            <p style="font-family: 'Montserrat'; font-size: 1.05rem; font-weight: 600; color: #0F3250; line-height: 1.5; margin: 0;">{comment}</p>
+        </div>
+    </div>
+    """
+    st.markdown(svg_gauge, unsafe_allow_html=True)
+    
+    # --- EASTER EGG : SANS-FAUTE PARFAIT (30/30) ---
+    if score == 30:
+        st.balloons()
+        import os
+        gif_path = os.path.join("assets", "popopo.gif")
+        if os.path.exists(gif_path):
+            c1, c2, c3 = st.columns([1, 2, 1])
+            with c2:
+                st.image(gif_path, use_container_width=True)
+                
+    st.markdown("---")
+    
+    # --- ANALYSE DÉTAILLÉE DES RÉPONSES ---
+    st.markdown("<h3 style='font-family:\"Roboto Slab\"; color:#0F3250; margin-bottom:1rem;'>Récapitulatif des questions</h3>", unsafe_allow_html=True)
+    
+    for idx, q in enumerate(st.session_state.exam_questions):
+        user_ans = st.session_state.exam_user_answers.get(idx, "Aucune réponse")
+        correct_opt = next((o for o in q["answerOptions"] if o["isCorrect"]), None)
+        correct_txt = correct_opt["text"] if correct_opt else ""
+        is_correct = (user_ans == correct_txt)
+        
+        status_color = "#22c55e" if is_correct else "#CD493D"
+        status_bg = "#ffffff"
+        border_style = f"border: 1px solid {status_color}; border-left: 6px solid {status_color};"
+        
+        box_html = f"""
+        <div style="{border_style} border-radius: 8px; padding: 1.2rem; margin-bottom: 1rem; background-color: {status_bg}; font-family: 'Montserrat';">
+            <span style="font-size: 0.85rem; font-weight: 700; color: {status_color}; text-transform: uppercase;">Question {idx + 1} — {'Correct' if is_correct else 'Erreur'}</span>
+            <p style="font-size: 1.05rem; font-weight: 700; color: #0F3250; margin: 0.4rem 0 0.8rem 0; line-height: 1.4;">{q['question']}</p>
+            <p style="margin: 0.2rem 0; font-size: 0.95rem; color: #333333;"><strong>Votre réponse :</strong> {user_ans}</p>
+        </div>
+        """
+        st.markdown(box_html, unsafe_allow_html=True)
+        
+        if not is_correct:
+            st.markdown(f"""
+            <div style="background-color: #ffffff; border: 1px solid #0F3250; border-top: 4px solid #0F3250; border-radius: 8px; padding: 1.2rem; margin: -0.5rem 0 1.5rem 0;">
+                <span style="font-family: 'Roboto Slab'; font-weight: 700; color: #0F3250; display: block; margin-bottom: 0.3rem;">💡 Solution & Rappel de cours</span>
+                <p style="font-family: 'Montserrat'; color: #CD493D; margin: 0 0 0.5rem 0; font-size: 0.95rem;"><strong>La bonne réponse était :</strong> {correct_txt}</p>
+                <p style="font-family: 'Montserrat'; color: #333333; margin: 0; font-size: 0.95rem; line-height: 1.5;">{q.get('correction', 'Pas de rappel de cours disponible pour cette question.')}</p>
+            </div>
+            """, unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+    if st.button("🔄 Retourner au menu principal", use_container_width=True, type="primary"):
+        st.session_state.exam_mode = False
+        go_back_to_main_menu()
+        st.rerun()
+
+
 def main():
     # Injection systématique du thème graphique CMA
     inject_cma_theme()
@@ -1975,8 +2262,12 @@ def main():
             st.markdown("---")
             st.caption(f"Connecté : {curr_user}")
         else:
+            # Réinitialisation complète de l'état d'accueil pour l'invite de connexion
             if st.button("🔐 Connexion / Inscription", use_container_width=True):
                 st.session_state.auth_stage = "entry"
+                st.session_state.ui_mode = UIMode.APP
+                st.session_state.selected_quiz_key = None
+                st.session_state.current_theme = None
                 st.rerun()
 
         # --- SIGNATURE INSTITUTIONNELLE : LOGO CFA FOIX ---
@@ -1987,6 +2278,11 @@ def main():
             st.image(logo_path, use_container_width=True)
 
     # --- 2. AIGUILLAGE DES ÉCRANS ---
+    # AJOUT DE LA SÉCURITÉ : Si l'état d'authentification demande l'écran de saisie, on l'affiche en priorité absolue
+    if st.session_state.get("auth_stage") == "entry":
+        show_entry_screen()
+        return
+
     current_mode = st.session_state.ui_mode
     mode_val = current_mode.value if hasattr(current_mode, 'value') else current_mode
 
@@ -1996,27 +2292,30 @@ def main():
         show_profile_page()
     elif st.session_state.selected_quiz_key is None:
         show_quiz_selector()
-    elif st.session_state.current_theme is None:
-        show_main_menu_for_current_quiz()
+    elif st.session_state.current_theme is None and not st.session_state.get("exam_mode", False):
+        show_quiz_page()
     else:
-        q_data = get_current_quiz_data()
-        theme_idx = st.session_state.current_theme
-        theme_questions = q_data["themes"][theme_idx]["questions"]
-        curr_idx = st.session_state.current_question_index
-        
-        if curr_idx >= len(theme_questions):
-            show_theme_result()
+        # Routage spécifique au mode examen ou entraînement classique
+        if st.session_state.get("exam_mode", False):
+            questions = st.session_state.exam_questions
+            curr_idx = st.session_state.current_question_index
+            
+            if curr_idx >= len(questions):
+                show_exam_result()
+            else:
+                show_question_screen()
         else:
-            show_question_screen()
+            q_data = get_current_quiz_data()
+            theme_idx = st.session_state.current_theme
+            theme_questions = q_data["themes"][theme_idx]["questions"]
+            curr_idx = st.session_state.current_question_index
+            
+            if curr_idx >= len(theme_questions):
+                show_theme_result()
+            else:
+                show_question_screen()
 
-# --- 3. LANCEMENT INDISPENSABLE ---
+
+# Point d'entrée de l'application
 if __name__ == "__main__":
-    # Initialisation de sécurité
-    if "ui_mode" not in st.session_state:
-        st.session_state.ui_mode = UIMode.APP
-        
-    auth = st.session_state.get("auth_stage")
-    if auth in ("guest", "logged_in"):
-        main()
-    else:
-        show_entry_screen()
+    main()

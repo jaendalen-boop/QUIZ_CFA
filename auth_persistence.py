@@ -98,25 +98,54 @@ def load_user_scores(username: str) -> dict:
     except:
         return {"quizzes": {}}
 
-def save_user_scores(username: str, quiz_key: str, theme_scores: dict):
-    try:
-        df = conn.read(worksheet="scores", ttl=0)
-    except:
-        df = pd.DataFrame(columns=["username", "quiz_key", "scores_json", "last_updated"])
+def save_user_scores(username: str, quiz_key: str, theme_scores: dict, exam_attempt: bool = False, exam_score: int = None):
+    """Sauvegarde les scores des thèmes et met à jour les statistiques de l'examen blanc."""
+    import json
+    import os
+
+    username = username.strip().lower()
+    filepath = os.path.join(DATA_DIR, f"{username}_scores.json")
     
-    scores_json = json.dumps(theme_scores)
-    now = datetime.now().isoformat()
-    mask = (df['username'] == username) & (df['quiz_key'] == quiz_key)
-    
-    if any(mask):
-        df.loc[mask, 'scores_json'] = scores_json
-        df.loc[mask, 'last_updated'] = now
+    # Chargement des données existantes ou initialisation
+    if os.path.exists(filepath):
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+        except:
+            data = {"quizzes": {}}
     else:
-        new_score = pd.DataFrame([{"username": username, "quiz_key": quiz_key, "scores_json": scores_json, "last_updated": now}])
-        df = pd.concat([df, new_score], ignore_index=True)
-    
-    conn.update(worksheet="scores", data=df)
-    force_refresh_cache()
+        data = {"quizzes": {}}
+
+    if "quizzes" not in data:
+        data["quizzes"] = {}
+
+    if quiz_key not in data["quizzes"]:
+        data["quizzes"][quiz_key] = {"scores": {}, "exam_stats": {"attempts": 0, "best_score": 0}}
+
+    # Sécurité pour les structures anciennes qui n'ont pas encore 'exam_stats'
+    if "exam_stats" not in data["quizzes"][quiz_key]:
+        data["quizzes"][quiz_key]["exam_stats"] = {"attempts": 0, "best_score": 0}
+
+    # Mise à jour des scores de thèmes classiques
+    for t_num, score in theme_scores.items():
+        if score is not None:
+            data["quizzes"][quiz_key]["scores"][str(t_num)] = score
+
+    # Mise à jour spécifique si c'est un examen blanc qui vient d'être soumis
+    if exam_attempt:
+        data["quizzes"][quiz_key]["exam_stats"]["attempts"] += 1
+        if exam_score is not None:
+            current_best = data["quizzes"][quiz_key]["exam_stats"].get("best_score", 0)
+            if exam_score > current_best:
+                data["quizzes"][quiz_key]["exam_stats"]["best_score"] = exam_score
+
+    # Écriture sur le disque
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+        return True
+    except:
+        return False
 
 def reset_quiz_scores(username: str, quiz_key: str):
     """Efface les scores d'un quiz spécifique pour un utilisateur."""
@@ -272,3 +301,85 @@ def get_global_stats():
         return pd.DataFrame(all_data)
     except:
         return None
+
+# ===================== GESTION DES CORRECTIONS DE QUESTIONS =====================
+
+@st.cache_data(ttl=60)
+def load_all_modified_questions() -> pd.DataFrame:
+    """Charge l'intégralité de l'onglet des questions modifiées avec mise en cache."""
+    try:
+        df = conn.read(worksheet="modified_questions")
+        if df.empty:
+            return pd.DataFrame(columns=["quiz_key", "theme_id", "question_idx", "question_text", "options_json", "correction_text"])
+        
+        # Sécurité de typage pour les indexations numériques
+        for col in ['theme_id', 'question_idx']:
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0).astype(int)
+        return df
+    except:
+        return pd.DataFrame(columns=["quiz_key", "theme_id", "question_idx", "question_text", "options_json", "correction_text"])
+
+
+def save_modified_question(quiz_key: str, theme_id: int, question_idx: int, question_text: str, options_list: list, correction_text: str) -> bool:
+    """Enregistre ou met à jour une correction de question dans Google Sheets."""
+    try:
+        # Lecture sans cache pour avoir l'état réel avant écriture
+        df = conn.read(worksheet="modified_questions", ttl=0)
+    except:
+        df = pd.DataFrame(columns=["quiz_key", "theme_id", "question_idx", "question_text", "options_json", "correction_text"])
+    
+    # Normalisation des types pour la comparaison
+    theme_id = int(theme_id)
+    question_idx = int(question_idx)
+    options_json = json.dumps(options_list, ensure_ascii=False)
+    
+    # Masque pour vérifier si cette question spécifique a déjà été modifiée auparavant
+    mask = (df['quiz_key'] == quiz_key) & (df['theme_id'] == theme_id) & (df['question_idx'] == question_idx)
+    
+    if any(mask):
+        # Mise à jour de la ligne existante
+        df.loc[mask, 'question_text'] = question_text
+        df.loc[mask, 'options_json'] = options_json
+        df.loc[mask, 'correction_text'] = correction_text
+    else:
+        # Création d'une nouvelle ligne
+        new_row = pd.DataFrame([{
+            "quiz_key": quiz_key,
+            "theme_id": theme_id,
+            "question_idx": question_idx,
+            "question_text": question_text,
+            "options_json": options_json,
+            "correction_text": correction_text
+        }])
+        df = pd.concat([df, new_row], ignore_index=True)
+    
+    # Envoi de la mise à jour vers Google Sheets et purge du cache local
+    conn.update(worksheet="modified_questions", data=df)
+    force_refresh_cache()
+    return True
+
+
+def get_modified_questions_for_quiz(quiz_key: str) -> dict:
+    """Filtre et retourne les corrections indexées pour un quiz précis."""
+    df = load_all_modified_questions()
+    if df.empty:
+        return {}
+    
+    # Filtrage sur le quiz demandé
+    quiz_df = df[df['quiz_key'] == quiz_key]
+    
+    corrections = {}
+    for _, row in quiz_df.iterrows():
+        t_id = int(row['theme_id'])
+        q_idx = int(row['question_idx'])
+        
+        if t_id not in corrections:
+            corrections[t_id] = {}
+            
+        corrections[t_id][q_idx] = {
+            "question": row['question_text'],
+            "answerOptions": json.loads(row['options_json']),
+            "correction": row['correction_text']
+        }
+    return corrections
