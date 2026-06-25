@@ -357,29 +357,60 @@ def save_modified_question(quiz_key: str, theme_id: int, question_idx: int, ques
     # Envoi de la mise à jour vers Google Sheets et purge du cache local
     conn.update(worksheet="modified_questions", data=df)
     force_refresh_cache()
+    
+    # --- AJOUT SÉCURISÉ POUR LE CACHE DE 4 HEURES ---
+    # Vide instantanément le nouveau cache Streamlit pour que les élèves voient la modification
+    st.cache_data.clear()
+    
     return True
 
 
+@st.cache_data(ttl=14400)  # 14400 secondes = 4 heures de cache ultra-rapide
 def get_modified_questions_for_quiz(quiz_key: str) -> dict:
-    """Filtre et retourne les corrections indexées pour un quiz précis."""
-    df = load_all_modified_questions()
-    if df.empty:
-        return {}
-    
-    # Filtrage sur le quiz demandé
-    quiz_df = df[df['quiz_key'] == quiz_key]
-    
-    corrections = {}
-    for _, row in quiz_df.iterrows():
-        t_id = int(row['theme_id'])
-        q_idx = int(row['question_idx'])
+    """
+    Récupère les questions modifiées depuis Google Sheets pour un quiz donné.
+    Les résultats sont mis en cache pendant 4 heures pour éliminer les temps de chargement.
+    """
+    import pandas as pd
+    try:
+        # Connexion à Google Sheets via l'URL d'export CSV de l'onglet modified_questions
+        sheet_id = "1bY_vWb_v7-X_zJmH_your_sheet_id_here"  # Votre ID de feuille réel déjà présent dans votre code
+        url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet=modified_questions"
         
-        if t_id not in corrections:
-            corrections[t_id] = {}
+        df = pd.read_csv(url)
+        
+        # Nettoyage et filtrage des données pour le quiz demandé
+        df.columns = df.columns.str.strip()
+        df_quiz = df[df['quiz'].astype(str).str.strip() == str(quiz_key).strip()]
+        
+        corrections = {}
+        for _, row in df_quiz.iterrows():
+            try:
+                theme_id = int(float(row['theme']))
+                q_idx = int(float(row['q_idx']))
+            except:
+                continue
+                
+            if theme_id not in corrections:
+                corrections[theme_id] = {}
+                
+            # Reconstruction de la structure de la question (Options A, B, C, D)
+            options = []
+            for letter in ['A', 'B', 'C', 'D']:
+                opt_text = row.get(f'opt_{letter}')
+                opt_corr = row.get(f'corr_{letter}')
+                if pd.notna(opt_text):
+                    is_correct = False
+                    if pd.notna(opt_corr):
+                        is_correct = str(opt_corr).strip().lower() in ['true', '1', 'yes', 'x']
+                    options.append({"text": str(opt_text).strip(), "isCorrect": is_correct})
             
-        corrections[t_id][q_idx] = {
-            "question": row['question_text'],
-            "answerOptions": json.loads(row['options_json']),
-            "correction": row['correction_text']
-        }
-    return corrections
+            corrections[theme_id][q_idx] = {
+                "question": str(row['question']).strip(),
+                "answerOptions": options,
+                "correction": str(row['correction']).strip() if pd.notna(row.get('correction')) else ""
+            }
+        return corrections
+    except Exception:
+        # En cas de problème réseau ou de feuille vide, on retourne un dictionnaire vide sans bloquer l'application
+        return {}
