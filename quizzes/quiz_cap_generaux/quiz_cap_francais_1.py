@@ -16,7 +16,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'reçue au dépôt ce '
                                                                                'matin',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Avec '
+                                              'correction': ' Avec '
                                                             "l'auxiliaire 'avoir', le participe "
                                                             "passé ne s'accorde jamais avec le "
                                                             "sujet. Cependant, il s'accorde en "
@@ -41,7 +41,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'joint au présent '
                                                                                'message',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'adjectif "
+                                              'correction': " L'adjectif "
                                                             "'joint' suit une règle particulière. "
                                                             "Lorsqu'il est placé après le nom, il "
                                                             "s'accorde normalement en genre et en "
@@ -66,7 +66,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'toutes sans '
                                                                                'exception',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Dans cette '
+                                              'correction': ' Dans cette '
                                                             "phrase, 'tous' est un pronom indéfini "
                                                             "qui remplace 'ils' (masculin "
                                                             "pluriel). On doit accorder 'tout' "
@@ -87,7 +87,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'verre désignant '
                                                                                'une matière',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Des homonymes '
+                                              'correction': ' Des homonymes '
                                                             'sont des mots qui se prononcent de la '
                                                             'même façon (homophones) mais qui ont '
                                                             'des sens différents et souvent des '
@@ -110,7 +110,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Un Attribut du '
                                                                                'sujet du verbe',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Pour trouver le '
+                                              'correction': ' Pour trouver le '
                                                             "COI, on pose la question 'à qui ?' ou "
                                                             "'à quoi ?' après le verbe. Ici, le "
                                                             "client téléphone 'à quoi ?' -> au "
@@ -133,7 +133,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'quatre-vins selon '
                                                                                'le mot vin',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Vingt' et "
+                                              'correction': " 'Vingt' et "
                                                             "'cent' prennent un 's' quand ils sont "
                                                             "multipliés par un nombre et qu'ils "
                                                             "terminent l'adjectif numéral. Exemple "
@@ -157,7 +157,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'effectuer des '
                                                                                'travaus',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La plupart des '
+                                              'correction': ' La plupart des '
                                                             'noms se terminant en -ail prennent un '
                                                             '-s au pluriel (ex: des rails). '
                                                             'Cependant, sept mots font exception '
@@ -180,7 +180,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Le verbe être '
                                                                                'conjugué',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Ses' est un "
+                                              'correction': " 'Ses' est un "
                                                             'déterminant (ou adjectif) possessif '
                                                             'qui indique que les outils '
                                                             'appartiennent au personnage. Il ne '
@@ -200,7 +200,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                        'isCorrect': False},
                                                                    {   'text': 'elle ai partie tôt',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** Il s'agit ici "
+                                              'correction': " Il s'agit ici "
                                                             "de l'auxiliaire 'être' conjugué au "
                                                             "présent de l'indicatif à la 3ème "
                                                             "personne du singulier. 'Est' permet "
@@ -223,7 +223,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'nous faissons le '
                                                                                'travail',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le verbe '
+                                              'correction': ' Le verbe '
                                                             "'faire' est irrégulier. À la première "
                                                             'personne du pluriel du présent, bien '
                                                             'que la prononciation ressemble au son '
@@ -241,7 +241,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                        'isCorrect': False},
                                                                    {   'text': 'ils sont fini cela',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Ont' est la "
+                                              'correction': " 'Ont' est la "
                                                             "forme du verbe 'avoir' à la 3ème "
                                                             'personne du pluriel. On peut le '
                                                             'reconnaître en changeant le temps de '
@@ -262,7 +262,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Une préposition de '
                                                                                'lieu',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'adjectif "
+                                              'correction': " L'adjectif "
                                                             'qualificatif apporte une précision, '
                                                             'une qualité ou une caractéristique au '
                                                             "nom qu'il accompagne. Il s'accorde "
@@ -284,7 +284,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Bonjour comment, '
                                                                                'allez vous.',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une phrase '
+                                              'correction': ' Une phrase '
                                                             'interrogative doit obligatoirement se '
                                                             'terminer par un point '
                                                             "d'interrogation. Elle commence "
@@ -304,7 +304,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                        'isCorrect': False},
                                                                    {   'text': 'le mouvement actif',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un antonyme est '
+                                              'correction': ' Un antonyme est '
                                                             "un mot qui a un sens opposé. 'Lent' "
                                                             "est l'antonyme de 'rapide'. À "
                                                             "l'inverse, 'véloce' ou 'prompt' "
@@ -320,7 +320,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                        'isCorrect': False},
                                                                    {   'text': 'Les petit enfant',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Dans un groupe '
+                                              'correction': ' Dans un groupe '
                                                             "nominal, la règle de l'accord en "
                                                             "nombre s'applique à tous les "
                                                             "composants : le déterminant ('Les'), "
@@ -339,7 +339,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                        'isCorrect': False},
                                                                    {   'text': 'le déterminant une',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le Complément '
+                                              'correction': ' Le Complément '
                                                             "d'Objet Direct (COD) se trouve en "
                                                             "posant la question 'Quoi ?' ou 'Qui "
                                                             "?' directement après le verbe. 'Il "
@@ -359,7 +359,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': "il s'accorde selon "
                                                                                "l'envie",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Même si un nom '
+                                              'correction': ' Même si un nom '
                                                             'désigne un grand nombre de personnes '
                                                             "ou d'objets, s'il est au singulier "
                                                             "(comme 'la foule', 'le groupe', 'le "
@@ -380,7 +380,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'le dévéloppement '
                                                                                'durable',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le mot '
+                                              'correction': ' Le mot '
                                                             "'développement' est souvent source "
                                                             "d'erreur. Il s'écrit avec un seul 'l' "
                                                             "mais deux 'p'. C'est une règle "
@@ -402,7 +402,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Faire une pause '
                                                                                'moyenne',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le point '
+                                              'correction': ' Le point '
                                                             "d'exclamation termine les phrases "
                                                             'exclamatives. Il sert à traduire à '
                                                             "l'écrit une émotion intense comme la "
@@ -419,7 +419,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                        'isCorrect': False},
                                                                    {   'text': 'le mot jeu',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un synonyme est '
+                                              'correction': ' Un synonyme est '
                                                             'un mot ayant un sens identique ou '
                                                             "très proche. 'Boulot' appartient au "
                                                             'registre familier, alors que '
@@ -444,7 +444,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': "L'âge précis de "
                                                                                "l'employeur direct",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Dans un '
+                                              'correction': ' Dans un '
                                                             "courrier officiel, l'en-tête doit "
                                                             "permettre d'identifier immédiatement "
                                                             "l'expéditeur (nom, adresse, "
@@ -468,7 +468,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Un diplôme '
                                                                                'original certifié',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le CV est la '
+                                              'correction': ' Le CV est la '
                                                             "'carte d'identité' professionnelle du "
                                                             'candidat. Il récapitule les données '
                                                             'personnelles, les diplômes obtenus, '
@@ -492,7 +492,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Je vous remercie '
                                                                                "beaucoup d'avance",
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'écrit "
+                                              'correction': " L'écrit "
                                                             "professionnel exige l'emploi de "
                                                             'formules de politesse codifiées. On '
                                                             'utilise généralement des verbes comme '
@@ -516,7 +516,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'automatique en fin '
                                                                                'de mail',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La mention '
+                                              'correction': ' La mention '
                                                             "'Objet' (ou 'Subject') permet au "
                                                             'destinataire de connaître '
                                                             'immédiatement le thème du message '
@@ -539,7 +539,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                "de l'entrepôt "
                                                                                'local',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le compte-rendu '
+                                              'correction': ' Le compte-rendu '
                                                             '(ou procès-verbal) est un document de '
                                                             'synthèse. Il garde une trace écrite '
                                                             'des discussions, des décisions prises '
@@ -562,7 +562,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'La liste complète '
                                                                                'des films préférés',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La rubrique '
+                                              'correction': ' La rubrique '
                                                             'compétences met en avant les '
                                                             'savoir-faire concrets du candidat '
                                                             "(ex: 'maîtrise du pack office', "
@@ -588,7 +588,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'ouvertement son '
                                                                                'ancien patron',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La lettre de '
+                                              'correction': ' La lettre de '
                                                             'motivation complète le CV. Elle sert '
                                                             "à démontrer que l'on a compris les "
                                                             "besoins de l'entreprise et à "
@@ -612,7 +612,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Le nom et Prénom '
                                                                                'du Junior employé',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une pièce '
+                                              'correction': ' Une pièce '
                                                             'jointe (PJ) est un fichier '
                                                             'informatique (document texte, image, '
                                                             'PDF) qui est envoyé en même temps que '
@@ -636,7 +636,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'faite au crayon '
                                                                                'papier',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La lisibilité '
+                                              'correction': ' La lisibilité '
                                                             'est essentielle. Un document '
                                                             'professionnel doit respecter des '
                                                             'marges, utiliser une police de '
@@ -662,7 +662,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'restaurants du '
                                                                                'quartier proche',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le rapport de '
+                                              'correction': ' Le rapport de '
                                                             'stage est un bilan. Il permet à '
                                                             "l'élève de montrer ce qu'il a appris, "
                                                             "de décrire l'entreprise qui l'a "
@@ -686,7 +686,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'connexion Wi-Fi '
                                                                                'privée',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La nétiquette '
+                                              'correction': ' La nétiquette '
                                                             '(contraction de Net et étiquette) '
                                                             'définit les comportements à adopter '
                                                             'en ligne. Par exemple : ne pas '
@@ -710,7 +710,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'complet de la '
                                                                                'semaine',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une offre '
+                                              'correction': ' Une offre '
                                                             "d'emploi (ou fiche de poste) précise "
                                                             'les tâches quotidiennes à accomplir '
                                                             'ainsi que les diplômes ou '
@@ -734,7 +734,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'par une '
                                                                                'plaisanterie',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La signature '
+                                              'correction': ' La signature '
                                                             "électronique permet d'identifier "
                                                             "l'auteur du mail. Elle comporte "
                                                             'souvent le nom, le titre (poste '
@@ -759,7 +759,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'obligation légale '
                                                                                'de la loi',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La relecture '
+                                              'correction': ' La relecture '
                                                             "permet de s'assurer que le message "
                                                             "est poli, clair et qu'il ne contient "
                                                             "pas d'erreurs (orthographe, "
@@ -785,7 +785,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'des chaussures '
                                                                                'neuves',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une consigne de '
+                                              'correction': ' Une consigne de '
                                                             'sécurité est un ordre à suivre '
                                                             "impérativement (ex: 'porter un "
                                                             "casque', 'ne pas fumer'). Son "
@@ -811,7 +811,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'particulièrement '
                                                                                'dur',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'argument est "
+                                              'correction': " L'argument est "
                                                             "l'idée générale, tandis que l'exemple "
                                                             "est un cas concret. L'exemple permet "
                                                             'au lecteur de mieux comprendre la '
@@ -836,7 +836,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'totalement '
                                                                                'silencieux',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** Lors d'un oral "
+                                              'correction': " Lors d'un oral "
                                                             'de recrutement, il faut montrer sa '
                                                             'motivation par une parole dynamique, '
                                                             'tout en respectant les codes de '
@@ -862,7 +862,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'définitivement de '
                                                                                "parler à l'autre",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Récapituler '
+                                              'correction': ' Récapituler '
                                                             'consiste à faire un bilan rapide de '
                                                             'ce qui a été dit ou décidé. Cela '
                                                             "permet de s'assurer que tous les "
@@ -886,7 +886,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Le Curriculum '
                                                                                "Vitae de l'employé",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La facture est '
+                                              'correction': ' La facture est '
                                                             'un document comptable obligatoire. '
                                                             "Elle prouve l'achat ou la vente et "
                                                             'détaille le prix HT (Hors Taxes), le '
@@ -909,7 +909,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'entre deux '
                                                                                'individus',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La '
+                                              'correction': ' La '
                                                             'communication verbale repose sur '
                                                             "l'usage des mots (parlés ou écrits). "
                                                             "Elle s'oppose à la communication "
@@ -935,7 +935,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'une histoire '
                                                                                'fausse',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un texte '
+                                              'correction': ' Un texte '
                                                             'informatif (ou explicatif) a pour but '
                                                             'de transmettre un savoir ou des '
                                                             'informations de manière objective '
@@ -960,7 +960,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                "détails d'un long "
                                                                                'voyage',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Dans un texte '
+                                              'correction': ' Dans un texte '
                                                             "argumentatif, l'auteur défend une "
                                                             'thèse (une opinion). Il utilise des '
                                                             'arguments logiques et des exemples '
@@ -982,7 +982,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'rédigé tout le '
                                                                                'récit',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le protagoniste '
+                                              'correction': ' Le protagoniste '
                                                             'est le personnage dont on suit les '
                                                             "aventures. L'histoire est construite "
                                                             'autour de ses désirs, de ses actions '
@@ -1005,7 +1005,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                "d'une seule "
                                                                                'consonne',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Deux mots sont '
+                                              'correction': ' Deux mots sont '
                                                             "synonymes s'ils peuvent être "
                                                             "remplacés l'un par l'autre dans un "
                                                             'contexte donné sans changer le sens '
@@ -1029,7 +1029,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'complexe à '
                                                                                'comprendre',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une information '
+                                              'correction': ' Une information '
                                                             'explicite est formulée clairement '
                                                             'noir sur blanc. Elle ne nécessite '
                                                             'aucune déduction ou interprétation de '
@@ -1051,7 +1051,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'de restaurant '
                                                                                'local',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La fiction '
+                                              'correction': ' La fiction '
                                                             'désigne les récits inventés (romans, '
                                                             'contes, nouvelles). Même si elle '
                                                             "s'inspire du réel, l'histoire et les "
@@ -1074,7 +1074,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Finir le texte par '
                                                                                'un mot final court',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le titre a une '
+                                              'correction': ' Le titre a une '
                                                             'double fonction : informative (il '
                                                             'annonce de quoi parle le texte) et '
                                                             'incitative (il doit donner envie '
@@ -1097,7 +1097,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'la toute fin du '
                                                                                'texte',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'implicite "
+                                              'correction': " L'implicite "
                                                             "demande au lecteur de 'lire entre les "
                                                             "lignes'. Le message n'est pas dit "
                                                             'directement, il faut utiliser sa '
@@ -1121,7 +1121,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'des colonnes de '
                                                                                'presse',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** En poésie, une '
+                                              'correction': ' En poésie, une '
                                                             "'ligne' s'appelle un vers. Un groupe "
                                                             'de vers séparé par un espace blanc '
                                                             "s'appelle une strophe."},
@@ -1142,7 +1142,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                "l'orthographe "
                                                                                'simple du mot',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'étymologie "
+                                              'correction': " L'étymologie "
                                                             'remonte aux racines du mot (souvent '
                                                             'le latin ou le grec). Elle permet de '
                                                             "comprendre comment le sens d'un mot a "
@@ -1165,7 +1165,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'date précise '
                                                                                'indiquée',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un récit '
+                                              'correction': ' Un récit '
                                                             'chronologique raconte les événements '
                                                             "dans l'ordre où ils se sont déroulés "
                                                             '(du plus ancien au plus récent) sans '
@@ -1189,7 +1189,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'pour les moines '
                                                                                'anciens',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une biographie '
+                                              'correction': ' Une biographie '
                                                             "est l'histoire de la vie d'un "
                                                             "individu réel écrite par quelqu'un "
                                                             "d'autre. Si la personne écrit sa "
@@ -1214,7 +1214,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'français commises '
                                                                                'souvent',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le vocabulaire '
+                                              'correction': ' Le vocabulaire '
                                                             '(ou lexique) est le stock de mots '
                                                             'dont dispose une personne pour '
                                                             "s'exprimer. Plus il est riche, plus "
@@ -1238,7 +1238,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'plus long à lire '
                                                                                'ici',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On les appelle '
+                                              'correction': ' On les appelle '
                                                             'connecteurs logiques. Ils servent à '
                                                             'articuler les phrases pour montrer un '
                                                             'lien de cause, de conséquence, '
@@ -1261,7 +1261,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'particulier de '
                                                                                'dictionnaire ici',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La métaphore '
+                                              'correction': ' La métaphore '
                                                             'est une comparaison directe. Exemple '
                                                             ": 'Cet homme est un lion' (il est "
                                                             "courageux). On ne dit pas 'comme un "
@@ -1281,7 +1281,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Le poisson de '
                                                                                'rivière ou mer',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le champ '
+                                              'correction': ' Le champ '
                                                             'lexical regroupe tous les mots (noms, '
                                                             'verbes, adjectifs) qui se rapportent '
                                                             'à un même thème ou une même idée '
@@ -1303,7 +1303,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'anglais ou '
                                                                                'espagnol',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un résumé doit '
+                                              'correction': ' Un résumé doit '
                                                             'être fidèle au texte original. Il '
                                                             'conserve les informations les plus '
                                                             "importantes et l'ordre des idées tout "
@@ -1326,7 +1326,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Une musique jouée '
                                                                                'sans aucune parole',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Dans un roman, '
+                                              'correction': ' Dans un roman, '
                                                             'le dialogue est signalé par des '
                                                             'guillemets ou des tirets. Il permet '
                                                             'de donner la parole aux personnages '
@@ -1350,7 +1350,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'résultats du sport '
                                                                                'national',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est l'ouvrage "
+                                              'correction': " C'est l'ouvrage "
                                                             'de référence pour vérifier le sens '
                                                             "d'un mot, sa nature grammaticale, son "
                                                             'genre, son orthographe et son origine '
@@ -1373,7 +1373,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                "d'impression sur "
                                                                                'la page',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'illustration "
+                                              'correction': " L'illustration "
                                                             '(dessin, schéma, photo) aide à '
                                                             'visualiser ce que dit le texte, à '
                                                             'clarifier une explication ou à rendre '
@@ -1395,7 +1395,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'La signature '
                                                                                'manuscrite en bas',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La légende '
+                                              'correction': ' La légende '
                                                             'apporte des détails indispensables '
                                                             "pour comprendre l'image : ce que l'on "
                                                             "voit, l'identité des personnes, la "
@@ -1417,7 +1417,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Cacher les murs '
                                                                                'qui sont abîmés',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une publicité '
+                                              'correction': ' Une publicité '
                                                             "utilise l'image (visuel) et le slogan "
                                                             '(texte court) pour attirer '
                                                             "l'attention et convaincre le public "
@@ -1439,7 +1439,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Au dos de la page '
                                                                                'du livre cartonné',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La bulle relie '
+                                              'correction': ' La bulle relie '
                                                             'physiquement le texte au personnage '
                                                             "qui s'exprime. Sa forme peut varier : "
                                                             'ovale pour parler, en nuage pour '
@@ -1460,7 +1460,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Le poids total de '
                                                                                'la grosse caméra',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le cadrage est '
+                                              'correction': ' Le cadrage est '
                                                             "le choix de la limite de l'image. "
                                                             "Selon que l'on filme en plan large ou "
                                                             'en gros plan, on ne transmet pas le '
@@ -1481,7 +1481,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'vulgaire interdit '
                                                                                'ici',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un slogan doit '
+                                              'correction': ' Un slogan doit '
                                                             'être simple, rythmé et mémorisable. '
                                                             "Il est l'outil de base de la "
                                                             'communication pour frapper les '
@@ -1503,7 +1503,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': "L'image entière "
                                                                                'vue dans son cadre',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une image se '
+                                              'correction': ' Une image se '
                                                             'construit en profondeur : le premier '
                                                             'plan est le plus près du spectateur, '
                                                             "l'arrière-plan est le plus éloigné. "
@@ -1526,7 +1526,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Payer les factures '
                                                                                'du département',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le logo (ou '
+                                              'correction': ' Le logo (ou '
                                                             'logotype) est un symbole graphique '
                                                             'unique. Il permet au consommateur de '
                                                             'reconnaître immédiatement une '
@@ -1547,7 +1547,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'éteinte par '
                                                                                "l'auteur",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Dans une prise '
+                                              'correction': ' Dans une prise '
                                                             "de vue en plongée, l'appareil est "
                                                             'placé au-dessus du sujet. Cela a '
                                                             "tendance à l'écraser, à le rendre "
@@ -1569,7 +1569,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Prendre une photo '
                                                                                'de groupe ici',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La caricature '
+                                              'correction': ' La caricature '
                                                             'déforme les traits physiques pour '
                                                             'souligner des défauts ou critiquer '
                                                             'des comportements (politiques, '
@@ -1591,7 +1591,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'professeurs de '
                                                                                'collège',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Les médias '
+                                              'correction': ' Les médias '
                                                             'regroupent la presse écrite, la '
                                                             'télévision, la radio et Internet. Ils '
                                                             'jouent un rôle fondamental dans la '
@@ -1612,7 +1612,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Une publicité pour '
                                                                                'une voiture',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** Une 'fake news' "
+                                              'correction': " Une 'fake news' "
                                                             'est une information mensongère créée '
                                                             'pour tromper le public. Il est '
                                                             'crucial de vérifier les sources et de '
@@ -1634,7 +1634,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Faire des montages '
                                                                                'truqués de gens',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le '
+                                              'correction': ' Le '
                                                             'photojournaliste utilise ses clichés '
                                                             "pour informer sur la réalité d'une "
                                                             'situation (conflit, fête, '
@@ -1656,7 +1656,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Une photo de nuit '
                                                                                'uniquement ici',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le noir et '
+                                              'correction': ' Le noir et '
                                                             'blanc (monochrome) permet de se '
                                                             'concentrer sur les contrastes, les '
                                                             'formes et la lumière sans être '
@@ -1679,7 +1679,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'La fin du journal '
                                                                                'télévisé de nuit',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Identifier la '
+                                              'correction': ' Identifier la '
                                                             "source (nom de l'agence de presse, du "
                                                             'journaliste, du témoin) permet de '
                                                             "juger si l'information est sérieuse "
@@ -1702,7 +1702,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                "l'ensemble des "
                                                                                'images',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'éditorial est "
+                                              'correction': " L'éditorial est "
                                                             'un article qui exprime la position '
                                                             'politique ou morale du journal sur un '
                                                             "sujet d'actualité. Contrairement au "
@@ -1724,7 +1724,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Cacher le manque '
                                                                                'de texte écrit',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'infographie "
+                                              'correction': " L'infographie "
                                                             'permet de visualiser des chiffres ou '
                                                             'des concepts complexes en un clin '
                                                             "d'œil. Elle utilise des dessins, des "
@@ -1746,7 +1746,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                "l'ouvrage cartonné "
                                                                                'ici',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** La 'une' "
+                                              'correction': " La 'une' "
                                                             'contient les titres les plus '
                                                             'importants (les manchettes) et une '
                                                             'grande photo. Elle doit être '
@@ -1767,7 +1767,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'La caméra ne filme '
                                                                                'rien du tout',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** En '
+                                              'correction': ' En '
                                                             "contre-plongée, l'appareil est situé "
                                                             'plus bas que le sujet. Cela a pour '
                                                             "effet de l'agrandir, de lui donner de "
@@ -1790,7 +1790,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Une publicité pour '
                                                                                'les voitures',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Les faits '
+                                              'correction': ' Les faits '
                                                             'divers concernent les événements '
                                                             'quotidiens tragiques ou insolites '
                                                             '(accidents, cambriolages, '
@@ -1814,7 +1814,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Raconter une '
                                                                                'légende imaginaire',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le documentaire '
+                                              'correction': ' Le documentaire '
                                                             'explore un sujet de société, '
                                                             "d'histoire ou de nature. Il se base "
                                                             'sur des images réelles, des '
@@ -1836,7 +1836,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Le lecteur qui lit '
                                                                                'à voix haute',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le narrateur '
+                                              'correction': ' Le narrateur '
                                                             "est la 'voix' créée par l'auteur pour "
                                                             'raconter. Il peut être extérieur à '
                                                             "l'histoire ou être un des personnages "
@@ -1857,7 +1857,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Une majuscule au '
                                                                                'milieu du mot',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'allitération "
+                                              'correction': " L'allitération "
                                                             'crée un effet musical ou suggère un '
                                                             'bruit. Exemple célèbre de Racine : '
                                                             "'Pour qui sont ces serpents qui "
@@ -1879,7 +1879,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Une épopée de '
                                                                                'chevalier ancienne',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La farce '
+                                              'correction': ' La farce '
                                                             'utilise un humour physique (grimaces, '
                                                             'chutes) et des situations exagérées '
                                                             'pour faire rire. Elle était très '
@@ -1902,7 +1902,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'particulier de '
                                                                                'dictionnaire',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'exode désigne "
+                                              'correction': " L'exode désigne "
                                                             "la fuite ou le départ forcé d'un "
                                                             'grand nombre de personnes (ex: '
                                                             "l'exode rural vers les villes ou "
@@ -1923,7 +1923,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Un mot pour dire '
                                                                                "merci à l'auteur",
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'incipit (du "
+                                              'correction': " L'incipit (du "
                                                             "latin 'il commence') désigne les "
                                                             'premières pages ou lignes. Il a pour '
                                                             'but de présenter le cadre, les '
@@ -1944,7 +1944,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Le roman de '
                                                                                'fiction imaginaire',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La peinture est '
+                                              'correction': ' La peinture est '
                                                             'un art visuel utilisant des couleurs '
                                                             'et des formes. Les trois autres sont '
                                                             'des genres littéraires utilisant le '
@@ -1965,7 +1965,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'feuille de papier '
                                                                                'ici',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Déclamer '
+                                              'correction': ' Déclamer '
                                                             'consiste à réciter un texte (poème, '
                                                             'discours) en y mettant de '
                                                             "l'intensité, du geste et du rythme "
@@ -1984,7 +1984,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Une majuscule au '
                                                                                'début de ligne',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La rime est le '
+                                              'correction': ' La rime est le '
                                                             'retour du même son à la fin de deux '
                                                             'ou plusieurs vers. Elle crée la '
                                                             'musicalité du poème et aide à la '
@@ -2004,7 +2004,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'La scène de fin de '
                                                                                "l'histoire ici",
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'antagoniste "
+                                              'correction': " L'antagoniste "
                                                             'est le personnage qui crée des '
                                                             'obstacles au héros (le protagoniste). '
                                                             "C'est souvent le 'méchant' ou le "
@@ -2025,7 +2025,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'grammaire grave '
                                                                                'ici',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un mot est '
+                                              'correction': ' Un mot est '
                                                             "polysémique lorsqu'il possède "
                                                             'plusieurs significations possibles. '
                                                             "Exemple : le mot 'bouton' (vêtement, "
@@ -2046,7 +2046,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Un dialogue entre '
                                                                                'deux personnes',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'ellipse "
+                                              'correction': " L'ellipse "
                                                             'consiste à passer sous silence un '
                                                             "moment de l'histoire qui n'est pas "
                                                             "utile à l'intrigue (ex: 'Dix ans plus "
@@ -2067,7 +2067,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Ne rien dire et '
                                                                                'rester silencieux',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'ironie est un "
+                                              'correction': " L'ironie est un "
                                                             'procédé de moquerie. On dit le '
                                                             "contraire de ce que l'on veut faire "
                                                             'comprendre, tout en laissant des '
@@ -2090,7 +2090,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                                'publicitaire de '
                                                                                'ville',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La fable '
+                                              'correction': ' La fable '
                                                             'utilise souvent des animaux pour '
                                                             'critiquer les défauts humains (ex: '
                                                             "'Le Corbeau et le Renard' de Jean de "
@@ -2110,7 +2110,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Une insulte ou une '
                                                                                'moquerie méchante',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La dénotation '
+                                              'correction': ' La dénotation '
                                                             "est le sens premier et objectif d'un "
                                                             "mot. Elle s'oppose à la connotation, "
                                                             'qui est le sens subjectif ou '
@@ -2132,7 +2132,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'La première page '
                                                                                'blanche du livre',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Les péripéties '
+                                              'correction': ' Les péripéties '
                                                             "sont les rebondissements de l'action. "
                                                             "Elles relancent l'intérêt du lecteur "
                                                             'et compliquent ou résolvent le '
@@ -2153,7 +2153,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Une personne '
                                                                                'criant dans la rue',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** Il s'agit d'une "
+                                              'correction': " Il s'agit d'une "
                                                             "métaphore. Le 'bruit' ne court pas "
                                                             "physiquement, cela signifie qu'une "
                                                             'information (vraie ou fausse) circule '
@@ -2174,7 +2174,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': "Je n'ai pas pris "
                                                                                'de pain ce matin',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'énumération "
+                                              'correction': " L'énumération "
                                                             'consiste à lister plusieurs éléments '
                                                             'les uns après les autres (souvent '
                                                             'séparés par des virgules). Elle sert '
@@ -2195,7 +2195,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Un aliment de base '
                                                                                'pour le repas',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un mot abstrait '
+                                              'correction': ' Un mot abstrait '
                                                             'désigne un concept, un sentiment ou '
                                                             'une valeur (ex: le courage, la '
                                                             "liberté, l'amitié). Il s'oppose au "
@@ -2216,7 +2216,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Le mot Machin pour '
                                                                                'la catégorie',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un mot '
+                                              'correction': ' Un mot '
                                                             'générique englobe toute une catégorie '
                                                             "d'objets ou d'êtres vivants. Exemple "
                                                             ": 'Animal' est le mot générique pour "
@@ -2236,7 +2236,7 @@ quiz_data = {   'title': 'Quiz Français - Niveau CAP (100 Questions) - Version 
                                                                    {   'text': 'Personne du tout '
                                                                                'ne raconte ici',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** Lorsque l'on "
+                                              'correction': " Lorsque l'on "
                                                             "utilise 'il' ou 'elle', le narrateur "
                                                             'est généralement un témoin ou une '
                                                             "voix invisible qui n'est pas un "

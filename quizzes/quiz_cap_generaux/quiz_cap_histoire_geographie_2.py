@@ -16,7 +16,7 @@ quiz_data = {
                         {"text": "Le suffrage universel masculin pour tous les citoyens majeurs", "isCorrect": False},
                         {"text": "La création du système moderne de la Sécurité sociale nationale", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le gouvernement du Front populaire, dirigé par Léon Blum, a signé les accords de Matignon en juin 1936. Ces accords ont instauré pour la première fois les congés payés et la semaine de 40 heures. C'est une révolution pour la vie quotidienne des ouvriers qui peuvent enfin partir en vacances."
+                    "correction": " Le gouvernement du Front populaire, dirigé par Léon Blum, a signé les accords de Matignon en juin 1936. Ces accords ont instauré pour la première fois les congés payés et la semaine de 40 heures. C'est une révolution pour la vie quotidienne des ouvriers qui peuvent enfin partir en vacances."
                 },
                 {
                     "questionNumber": 2,
@@ -27,7 +27,7 @@ quiz_data = {
                         {"text": "L'empereur Napoléon III, bâtisseur du Paris moderne et industriel", "isCorrect": False},
                         {"text": "Le républicain Jules Ferry, fondateur de l'école gratuite et laïque", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Léon Blum est le leader de la coalition de gauche (socialistes, communistes et radicaux) qui remporte les élections législatives de 1936. Son nom reste attaché aux grandes réformes sociales qui ont amélioré la condition ouvrière en France."
+                    "correction": " Léon Blum est le leader de la coalition de gauche (socialistes, communistes et radicaux) qui remporte les élections législatives de 1936. Son nom reste attaché aux grandes réformes sociales qui ont amélioré la condition ouvrière en France."
                 },
                 {
                     "questionNumber": 3,
@@ -38,7 +38,7 @@ quiz_data = {
                         {"text": "La prise de la Bastille par le peuple parisien en révolte totale", "isCorrect": False},
                         {"text": "Le sacre impérial de Napoléon Bonaparte à la cathédrale Notre-Dame", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Après la défaite de Napoléon III face aux Prussiens à Sedan, la République est proclamée le 4 septembre 1870 à Paris. Ce régime, qui dure jusqu'en 1940, va enraciner la démocratie, les libertés fondamentales et l'école laïque en France."
+                    "correction": " Après la défaite de Napoléon III face aux Prussiens à Sedan, la République est proclamée le 4 septembre 1870 à Paris. Ce régime, qui dure jusqu'en 1940, va enraciner la démocratie, les libertés fondamentales et l'école laïque en France."
                 },
                 {
                     "questionNumber": 4,
@@ -49,7 +49,7 @@ quiz_data = {
                         {"text": "La Constitution de la Cinquième République française actuelle", "isCorrect": False},
                         {"text": "Le règlement général de l'Assemblée nationale élue par le peuple", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Adoptée le 26 août 1789, la DDHC définit des droits naturels et inaliénables comme la liberté, la propriété et la sûreté. Elle affirme que la souveraineté réside désormais dans la Nation et non plus dans la personne du roi."
+                    "correction": " Adoptée le 26 août 1789, la DDHC définit des droits naturels et inaliénables comme la liberté, la propriété et la sûreté. Elle affirme que la souveraineté réside désormais dans la Nation et non plus dans la personne du roi."
                 },
                 {
                     "questionNumber": 5,
@@ -60,7 +60,7 @@ quiz_data = {
                         {"text": "L'Organisation du Traité de l'Atlantique Nord pour la défense militaire", "isCorrect": False},
                         {"text": "La Société des Nations créée juste après la fin de la Grande Guerre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'ONU remplace la SDN (qui n'avait pas pu empêcher la guerre). Sa mission est de maintenir la paix et la sécurité internationales, de protéger les droits de l'homme et de favoriser la coopération entre tous les peuples du monde."
+                    "correction": " L'ONU remplace la SDN (qui n'avait pas pu empêcher la guerre). Sa mission est de maintenir la paix et la sécurité internationales, de protéger les droits de l'homme et de favoriser la coopération entre tous les peuples du monde."
                 },
                 {
                     "questionNumber": 6,
@@ -71,7 +71,7 @@ quiz_data = {
                         {"text": "La suppression définitive de la fonction de Premier ministre d'État", "isCorrect": False},
                         {"text": "Le droit de vote accordé aux jeunes citoyens dès l'âge de seize ans", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Voulue par le général de Gaulle et adoptée par référendum, cette réforme change la Constitution. Désormais, le Président n'est plus élu par des grands électeurs mais par l'ensemble des citoyens, ce qui renforce son autorité."
+                    "correction": " Voulue par le général de Gaulle et adoptée par référendum, cette réforme change la Constitution. Désormais, le Président n'est plus élu par des grands électeurs mais par l'ensemble des citoyens, ce qui renforce son autorité."
                 },
                 {
                     "questionNumber": 7,
@@ -82,7 +82,7 @@ quiz_data = {
                         {"text": "La révolution numérique modifiant profondément les modes de vie", "isCorrect": False},
                         {"text": "L'immigration de masse venant exclusivement des pays voisins frontaliers", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Avec la révolution industrielle, les besoins en ouvriers dans les villes augmentent alors que les machines agricoles remplacent les bras à la campagne. Les paysans quittent alors leurs terres pour chercher du travail dans les usines urbaines."
+                    "correction": " Avec la révolution industrielle, les besoins en ouvriers dans les villes augmentent alors que les machines agricoles remplacent les bras à la campagne. Les paysans quittent alors leurs terres pour chercher du travail dans les usines urbaines."
                 },
                 {
                     "questionNumber": 8,
@@ -93,7 +93,7 @@ quiz_data = {
                         {"text": "Le Code du travail régissant les relations entre salariés et patrons", "isCorrect": False},
                         {"text": "La Charte de l'environnement intégrée au texte constitutionnel en 2004", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La Constitution est la règle suprême de l'État. Celle de 1958 instaure un régime semi-présidentiel stable, où le pouvoir exécutif (Président et Gouvernement) est renforcé par rapport aux régimes précédents."
+                    "correction": " La Constitution est la règle suprême de l'État. Celle de 1958 instaure un régime semi-présidentiel stable, où le pouvoir exécutif (Président et Gouvernement) est renforcé par rapport aux régimes précédents."
                 },
                 {
                     "questionNumber": 9,
@@ -104,7 +104,7 @@ quiz_data = {
                         {"text": "La création du système de la sécurité sociale pour tous les assurés", "isCorrect": False},
                         {"text": "L'instauration de l'école laïque et gratuite par le ministre Jules Ferry", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le 9 octobre 1981, sous la présidence de François Mitterrand, la France abolit la peine de mort. C'est l'aboutissement d'un long combat humaniste mené notamment par le ministre de la justice Robert Badinter."
+                    "correction": " Le 9 octobre 1981, sous la présidence de François Mitterrand, la France abolit la peine de mort. C'est l'aboutissement d'un long combat humaniste mené notamment par le ministre de la justice Robert Badinter."
                 },
                 {
                     "questionNumber": 10,
@@ -115,7 +115,7 @@ quiz_data = {
                         {"text": "Le couronnement solennel du roi Louis XVI à la cathédrale de Reims", "isCorrect": False},
                         {"text": "La signature historique de l'armistice de la Grande Guerre de 1914", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Si le 14 juillet rappelle la prise de la Bastille (1789), la fête nationale instituée en 1880 célèbre surtout la Fête de la Fédération de 1790, qui symbolisait la réconciliation et l'unité de tous les Français."
+                    "correction": " Si le 14 juillet rappelle la prise de la Bastille (1789), la fête nationale instituée en 1880 célèbre surtout la Fête de la Fédération de 1790, qui symbolisait la réconciliation et l'unité de tous les Français."
                 },
                 {
                     "questionNumber": 11,
@@ -126,7 +126,7 @@ quiz_data = {
                         {"text": "Le principe de solidarité nationale obligatoire pour la protection", "isCorrect": False},
                         {"text": "Le principe de sécurité publique sur l'ensemble du territoire français", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La laïcité repose sur la loi de 1905. Elle garantit la liberté de conscience (croire ou ne pas croire) et le libre exercice des cultes, mais l'État est neutre et ne subventionne aucune religion."
+                    "correction": " La laïcité repose sur la loi de 1905. Elle garantit la liberté de conscience (croire ou ne pas croire) et le libre exercice des cultes, mais l'État est neutre et ne subventionne aucune religion."
                 },
                 {
                     "questionNumber": 12,
@@ -137,7 +137,7 @@ quiz_data = {
                         {"text": "Le Code civil traitant des affaires de famille et de propriété", "isCorrect": False},
                         {"text": "Le règlement intérieur de la mairie de la commune de résidence", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Code du travail définit les droits (salaire minimum, congés, hygiène) et les devoirs des employeurs et des employés. Il est le fruit de plus d'un siècle de réformes sociales."
+                    "correction": " Le Code du travail définit les droits (salaire minimum, congés, hygiène) et les devoirs des employeurs et des employés. Il est le fruit de plus d'un siècle de réformes sociales."
                 },
                 {
                     "questionNumber": 13,
@@ -148,7 +148,7 @@ quiz_data = {
                         {"text": "La conquête coloniale des territoires de l'Afrique du Nord", "isCorrect": False},
                         {"text": "La chute du mur de Berlin séparant l'Europe de l'Est et de l'Ouest", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La Première Guerre mondiale a mobilisé des millions de soldats (les Poilus) dans une guerre de tranchées meurtrière. Elle a transformé la société en faisant entrer massivement les femmes dans le monde du travail."
+                    "correction": " La Première Guerre mondiale a mobilisé des millions de soldats (les Poilus) dans une guerre de tranchées meurtrière. Elle a transformé la société en faisant entrer massivement les femmes dans le monde du travail."
                 },
                 {
                     "questionNumber": 14,
@@ -159,7 +159,7 @@ quiz_data = {
                         {"text": "Le droit d'avoir deux semaines de vacances payées par le patron", "isCorrect": False},
                         {"text": "Le droit d'aller à l'école gratuitement pour apprendre à lire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En 1864, la loi Ollivier supprime le délit de coalition. Les ouvriers obtiennent enfin le droit de cesser le travail collectivement pour défendre leurs intérêts, ce qui permet la naissance des syndicats."
+                    "correction": " En 1864, la loi Ollivier supprime le délit de coalition. Les ouvriers obtiennent enfin le droit de cesser le travail collectivement pour défendre leurs intérêts, ce qui permet la naissance des syndicats."
                 },
                 {
                     "questionNumber": 15,
@@ -170,7 +170,7 @@ quiz_data = {
                         {"text": "Le Premier ministre et l'ensemble de ses ministres à Matignon", "isCorrect": False},
                         {"text": "Les juges et magistrats des différents tribunaux civils et criminels", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le pouvoir législatif consiste à discuter, amender et voter les lois. Il est exercé par l'Assemblée nationale et le Sénat. C'est l'un des trois pouvoirs fondamentaux qui assure l'équilibre démocratique."
+                    "correction": " Le pouvoir législatif consiste à discuter, amender et voter les lois. Il est exercé par l'Assemblée nationale et le Sénat. C'est l'un des trois pouvoirs fondamentaux qui assure l'équilibre démocratique."
                 },
                 {
                     "questionNumber": 16,
@@ -181,7 +181,7 @@ quiz_data = {
                         {"text": "Le Conseil de sécurité permanent des Nations Unies de New York", "isCorrect": False},
                         {"text": "L'administration militaire provisoire des forces alliées de l'Ouest", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le GPRF remplace le régime de Vichy à la Libération. Sous la direction du général de Gaulle, il rétablit les libertés, accorde le droit de vote aux femmes et crée la Sécurité sociale."
+                    "correction": " Le GPRF remplace le régime de Vichy à la Libération. Sous la direction du général de Gaulle, il rétablit les libertés, accorde le droit de vote aux femmes et crée la Sécurité sociale."
                 },
                 {
                     "questionNumber": 17,
@@ -192,7 +192,7 @@ quiz_data = {
                         {"text": "Prêter de l'argent avec intérêt aux entreprises en difficulté", "isCorrect": False},
                         {"text": "Rédiger l'ensemble des livres d'histoire pour les écoles publiques", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les syndicats (comme la CGT, la CFDT ou FO) sont des organisations qui négocient avec les employeurs pour obtenir de meilleurs salaires, des horaires plus courts ou une sécurité accrue sur le lieu de travail."
+                    "correction": " Les syndicats (comme la CGT, la CFDT ou FO) sont des organisations qui négocient avec les employeurs pour obtenir de meilleurs salaires, des horaires plus courts ou une sécurité accrue sur le lieu de travail."
                 },
                 {
                     "questionNumber": 18,
@@ -203,7 +203,7 @@ quiz_data = {
                         {"text": "Le président François Hollande lors de la réforme de l'an 2014", "isCorrect": False},
                         {"text": "Le président Valéry Giscard d'Estaing lors de la loi de 1975", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En abaissant l'âge de l'instruction obligatoire de 6 à 3 ans, la loi de 2019 a pour but de favoriser l'égalité des chances dès le plus jeune âge en rendant l'école maternelle indispensable pour tous."
+                    "correction": " En abaissant l'âge de l'instruction obligatoire de 6 à 3 ans, la loi de 2019 a pour but de favoriser l'égalité des chances dès le plus jeune âge en rendant l'école maternelle indispensable pour tous."
                 },
                 {
                     "questionNumber": 19,
@@ -214,7 +214,7 @@ quiz_data = {
                         {"text": "L'armée dirige le pays de manière autoritaire sans aucune élection", "isCorrect": False},
                         {"text": "Chaque ville du territoire est totalement indépendante du pays central", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La souveraineté nationale signifie que le pouvoir n'est pas celui d'un seul homme (le roi), mais celui du peuple. Le peuple exerce ce pouvoir par l'élection de ses représentants ou par le vote au référendum."
+                    "correction": " La souveraineté nationale signifie que le pouvoir n'est pas celui d'un seul homme (le roi), mais celui du peuple. Le peuple exerce ce pouvoir par l'élection de ses représentants ou par le vote au référendum."
                 },
                 {
                     "questionNumber": 20,
@@ -225,7 +225,7 @@ quiz_data = {
                         {"text": "Le traité de Rome créant le premier marché commun européen", "isCorrect": False},
                         {"text": "Le traité de Lisbonne réformant l'ensemble des instances de l'Union", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le traité de Maastricht est un acte majeur qui transforme la Communauté Économique en Union Européenne. Il lance la monnaie unique (l'euro) et permet à tout citoyen de l'Union de voter aux élections locales de son pays de résidence."
+                    "correction": " Le traité de Maastricht est un acte majeur qui transforme la Communauté Économique en Union Européenne. Il lance la monnaie unique (l'euro) et permet à tout citoyen de l'Union de voter aux élections locales de son pays de résidence."
                 }
             ]
         },
@@ -244,7 +244,7 @@ quiz_data = {
                         {"text": "Le processus de désertification des sols arides de la planète", "isCorrect": False},
                         {"text": "Le processus de mondialisation des échanges culturels et financiers", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'urbanisation est un phénomène mondial. Aujourd'hui, plus de 55 % des humains vivent en ville. Cela s'explique par la recherche d'emplois, de services (santé, éducation) et de loisirs concentrés dans les pôles urbains."
+                    "correction": " L'urbanisation est un phénomène mondial. Aujourd'hui, plus de 55 % des humains vivent en ville. Cela s'explique par la recherche d'emplois, de services (santé, éducation) et de loisirs concentrés dans les pôles urbains."
                 },
                 {
                     "questionNumber": 22,
@@ -255,7 +255,7 @@ quiz_data = {
                         {"text": "Un terrain agricole cultivé de manière intensive pour l'export", "isCorrect": False},
                         {"text": "Une île déserte ne possédant aucun habitant permanent sur place", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une métropole est une ville qui dispose de fonctions de commandement (politique, économique, culturel). Elle attire les populations et les activités et rayonne sur les villes plus petites qui l'entourent."
+                    "correction": " Une métropole est une ville qui dispose de fonctions de commandement (politique, économique, culturel). Elle attire les populations et les activités et rayonne sur les villes plus petites qui l'entourent."
                 },
                 {
                     "questionNumber": 23,
@@ -266,7 +266,7 @@ quiz_data = {
                         {"text": "Le quartier d'affaires moderne avec ses gratte-ciel de bureaux", "isCorrect": False},
                         {"text": "La zone industrielle délaissée en attente de réhabilitation", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La périurbanisation est l'étalement urbain. Des familles quittent le centre pour habiter dans des maisons individuelles avec jardin. Cela entraîne une augmentation des déplacements quotidiens en voiture vers le travail."
+                    "correction": " La périurbanisation est l'étalement urbain. Des familles quittent le centre pour habiter dans des maisons individuelles avec jardin. Cela entraîne une augmentation des déplacements quotidiens en voiture vers le travail."
                 },
                 {
                     "questionNumber": 24,
@@ -277,7 +277,7 @@ quiz_data = {
                         {"text": "Le pilier Militaire, le pilier Politique et le pilier Public", "isCorrect": False},
                         {"text": "Le pilier Local, le pilier National et le pilier Mondial global", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour être durable, un projet doit être économiquement viable, socialement équitable (profiter à tous) et écologiquement vivable (ne pas détruire les ressources de la planète)."
+                    "correction": " Pour être durable, un projet doit être économiquement viable, socialement équitable (profiter à tous) et écologiquement vivable (ne pas détruire les ressources de la planète)."
                 },
                 {
                     "questionNumber": 25,
@@ -288,7 +288,7 @@ quiz_data = {
                         {"text": "La banlieue pavillonnaire calme située loin des centres urbains", "isCorrect": False},
                         {"text": "La zone commerciale de sortie de ville avec ses parkings", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le CBD (Central Business District) est le cœur financier d'une métropole. On le reconnaît à son architecture verticale (tours). À Paris, le quartier de La Défense remplit ce rôle de commandement économique."
+                    "correction": " Le CBD (Central Business District) est le cœur financier d'une métropole. On le reconnaît à son architecture verticale (tours). À Paris, le quartier de La Défense remplit ce rôle de commandement économique."
                 },
                 {
                     "questionNumber": 26,
@@ -299,7 +299,7 @@ quiz_data = {
                         {"text": "Tout mettre dans la même poubelle grise pour gagner du temps", "isCorrect": False},
                         {"text": "Jeter l'ensemble de ses ordures directement dans la rivière", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le tri sélectif permet de transformer le papier, le verre ou le plastique en de nouveaux objets. C'est un geste citoyen essentiel pour limiter le gaspillage des ressources naturelles et réduire la pollution."
+                    "correction": " Le tri sélectif permet de transformer le papier, le verre ou le plastique en de nouveaux objets. C'est un geste citoyen essentiel pour limiter le gaspillage des ressources naturelles et réduire la pollution."
                 },
                 {
                     "questionNumber": 27,
@@ -310,7 +310,7 @@ quiz_data = {
                         {"text": "L'utilisation de l'avion gros porteur pour les trajets lointains", "isCorrect": False},
                         {"text": "Le recours au camion de livraison lourd pour les marchandises", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les transports doux ne rejettent pas de polluants atmosphériques. Ils sont favorisés dans les villes durables par la création de pistes cyclables, de trottoirs larges et de zones à circulation limitée."
+                    "correction": " Les transports doux ne rejettent pas de polluants atmosphériques. Ils sont favorisés dans les villes durables par la création de pistes cyclables, de trottoirs larges et de zones à circulation limitée."
                 },
                 {
                     "questionNumber": 28,
@@ -321,7 +321,7 @@ quiz_data = {
                         {"text": "Un quartier urbain ne possédant aucune habitation de nuit", "isCorrect": False},
                         {"text": "Un quartier urbain dépourvu de tout système d'éclairage public", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un éco-quartier intègre des critères de durabilité : bâtiments isolés thermiquement, gestion des eaux de pluie, espaces verts nombreux, proximité des commerces et mixité sociale."
+                    "correction": " Un éco-quartier intègre des critères de durabilité : bâtiments isolés thermiquement, gestion des eaux de pluie, espaces verts nombreux, proximité des commerces et mixité sociale."
                 },
                 {
                     "questionNumber": 29,
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "L'azote présent naturellement en grande quantité dans le ciel", "isCorrect": False},
                         {"text": "L'hélium utilisé pour gonfler les ballons de fête foraine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le CO2 est rejeté par les usines, les voitures et les systèmes de chauffage. En s'accumulant dans l'atmosphère, il retient la chaleur du soleil, ce qui provoque le réchauffement global de la planète."
+                    "correction": " Le CO2 est rejeté par les usines, les voitures et les systèmes de chauffage. En s'accumulant dans l'atmosphère, il retient la chaleur du soleil, ce qui provoque le réchauffement global de la planète."
                 },
                 {
                     "questionNumber": 30,
@@ -343,7 +343,7 @@ quiz_data = {
                         {"text": "La construction rapide d'un nouvel immeuble de bureaux", "isCorrect": False},
                         {"text": "Le passage naturel des différentes saisons de l'année", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La mobilité est un enjeu majeur. Il s'agit de permettre aux citadins de se déplacer facilement entre leur domicile, leur travail et leurs loisirs tout en réduisant les embouteillages et la pollution."
+                    "correction": " La mobilité est un enjeu majeur. Il s'agit de permettre aux citadins de se déplacer facilement entre leur domicile, leur travail et leurs loisirs tout en réduisant les embouteillages et la pollution."
                 },
                 {
                     "questionNumber": 31,
@@ -354,7 +354,7 @@ quiz_data = {
                         {"text": "L'arrivée massive des touristes étrangers lors de l'été", "isCorrect": False},
                         {"text": "Le voyage d'un pays étranger vers un autre territoire lointain", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Entre 1850 et 1970, la France est passée d'un pays majoritairement rural à un pays urbain. Les progrès techniques ont réduit le besoin de bras dans les champs, poussant les ruraux à chercher du travail en ville."
+                    "correction": " Entre 1850 et 1970, la France est passée d'un pays majoritairement rural à un pays urbain. Les progrès techniques ont réduit le besoin de bras dans les champs, poussant les ruraux à chercher du travail en ville."
                 },
                 {
                     "questionNumber": 32,
@@ -365,7 +365,7 @@ quiz_data = {
                         {"text": "Supprimer définitivement l'ensemble des écoles publiques", "isCorrect": False},
                         {"text": "Vendre une quantité supérieure de voitures neuves par an", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le développement durable n'est pas qu'écologique. Son volet social vise à garantir à tous l'accès à la santé, à l'éducation et au logement, tout en luttant contre la pauvreté et les exclusions."
+                    "correction": " Le développement durable n'est pas qu'écologique. Son volet social vise à garantir à tous l'accès à la santé, à l'éducation et au logement, tout en luttant contre la pauvreté et les exclusions."
                 },
                 {
                     "questionNumber": 33,
@@ -376,7 +376,7 @@ quiz_data = {
                         {"text": "La protection stricte de la zone verte départementale", "isCorrect": False},
                         {"text": "La rénovation complète d'un vieux quartier insalubre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'étalement urbain signifie que la ville prend de plus en plus de place au sol. Cela détruit les écosystèmes, réduit la surface des terres pour cultiver et oblige à construire de nouvelles routes."
+                    "correction": " L'étalement urbain signifie que la ville prend de plus en plus de place au sol. Cela détruit les écosystèmes, réduit la surface des terres pour cultiver et oblige à construire de nouvelles routes."
                 },
                 {
                     "questionNumber": 34,
@@ -387,7 +387,7 @@ quiz_data = {
                         {"text": "Laisser l'objet se décomposer naturellement au soleil chaud", "isCorrect": False},
                         {"text": "Envoyer l'objet dans l'espace lointain par une fusée", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le recyclage consiste à réintroduire des déchets dans un cycle de production. Cela permet d'économiser l'énergie et d'éviter de puiser dans les réserves naturelles de la Terre (mines, forêts)."
+                    "correction": " Le recyclage consiste à réintroduire des déchets dans un cycle de production. Cela permet d'économiser l'énergie et d'éviter de puiser dans les réserves naturelles de la Terre (mines, forêts)."
                 },
                 {
                     "questionNumber": 35,
@@ -398,7 +398,7 @@ quiz_data = {
                         {"text": "Le départ forcé des familles modestes du centre-ville", "isCorrect": False},
                         {"text": "La fermeture définitive des petits commerces locaux de quartier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La mixité sociale évite la séparation des populations selon leur richesse. Elle permet de faire vivre ensemble des personnes d'origines et de revenus différents dans un même quartier."
+                    "correction": " La mixité sociale évite la séparation des populations selon leur richesse. Elle permet de faire vivre ensemble des personnes d'origines et de revenus différents dans un même quartier."
                 },
                 {
                     "questionNumber": 36,
@@ -409,7 +409,7 @@ quiz_data = {
                         {"text": "Pour supprimer l'ensemble des trottoirs réservés aux piétons", "isCorrect": False},
                         {"text": "Pour attirer des prédateurs animaux sauvages dans les rues", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les parcs, jardins et forêts urbaines filtrent l'air, absorbent le bruit, régulent la chaleur pendant les canicules et offrent des lieux de détente indispensables à la qualité de vie des habitants."
+                    "correction": " Les parcs, jardins et forêts urbaines filtrent l'air, absorbent le bruit, régulent la chaleur pendant les canicules et offrent des lieux de détente indispensables à la qualité de vie des habitants."
                 },
                 {
                     "questionNumber": 37,
@@ -420,7 +420,7 @@ quiz_data = {
                         {"text": "La baisse globale du niveau des océans sur la planète", "isCorrect": False},
                         {"text": "La création naturelle de nouvelles ressources pures d'eau", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les moteurs thermiques rejettent des gaz toxiques (oxydes d'azote, particules fines) qui nuisent à la santé. Le bruit du trafic routier est aussi une source importante de stress pour les citadins."
+                    "correction": " Les moteurs thermiques rejettent des gaz toxiques (oxydes d'azote, particules fines) qui nuisent à la santé. Le bruit du trafic routier est aussi une source importante de stress pour les citadins."
                 },
                 {
                     "questionNumber": 38,
@@ -431,7 +431,7 @@ quiz_data = {
                         {"text": "Une zone géographique désertique dépourvue d'habitants", "isCorrect": False},
                         {"text": "Un canton électoral pour les votes de proximité immédiate", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une agglomération se définit par la continuité des constructions. Entre la ville centre et sa banlieue, il n'y a pas de coupure de plus de 200 mètres sans habitations ou bâtiments industriels."
+                    "correction": " Une agglomération se définit par la continuité des constructions. Entre la ville centre et sa banlieue, il n'y a pas de coupure de plus de 200 mètres sans habitations ou bâtiments industriels."
                 },
                 {
                     "questionNumber": 39,
@@ -442,7 +442,7 @@ quiz_data = {
                         {"text": "Ouvrir toutes les fenêtres de la maison en plein hiver froid", "isCorrect": False},
                         {"text": "Utiliser systématiquement des appareils électroménagers très anciens", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une bonne isolation thermique des murs et des toits évite la perte de chaleur. Cela permet de réduire les factures d'énergie et de diminuer le rejet de gaz à effet de serre liés au chauffage."
+                    "correction": " Une bonne isolation thermique des murs et des toits évite la perte de chaleur. Cela permet de réduire les factures d'énergie et de diminuer le rejet de gaz à effet de serre liés au chauffage."
                 },
                 {
                     "questionNumber": 40,
@@ -453,7 +453,7 @@ quiz_data = {
                         {"text": "Le départ massif de l'ensemble des commerçants du centre urbain", "isCorrect": False},
                         {"text": "L'interdiction de construire de nouveaux bâtiments dans les parcs", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La gentrification survient lorsqu'un quartier populaire est rénové. Le prix des loyers augmente, ce qui oblige les habitants d'origine à partir et attire des nouveaux résidents plus riches."
+                    "correction": " La gentrification survient lorsqu'un quartier populaire est rénové. Le prix des loyers augmente, ce qui oblige les habitants d'origine à partir et attire des nouveaux résidents plus riches."
                 }
             ]
         },
@@ -472,7 +472,7 @@ quiz_data = {
                         {"text": "Le Général de brigade le plus ancien de l'état-major national", "isCorrect": False},
                         {"text": "Le Ministre des armées chargé de la gestion du budget militaire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En France, le Président est le chef des armées (article 15). Il préside les conseils de défense et décide de l'usage de la force nucléaire. Le gouvernement, lui, dispose de la force armée pour appliquer la politique décidée."
+                    "correction": " En France, le Président est le chef des armées (article 15). Il préside les conseils de défense et décide de l'usage de la force nucléaire. Le gouvernement, lui, dispose de la force armée pour appliquer la politique décidée."
                 },
                 {
                     "questionNumber": 42,
@@ -483,7 +483,7 @@ quiz_data = {
                         {"text": "Le passage d'un examen militaire physique de très haut niveau", "isCorrect": False},
                         {"text": "L'achat d'un uniforme de parade républicain pour les cérémonies", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Tout Français doit se faire recenser à sa mairie entre 16 ans et la fin du trimestre suivant. Cette démarche est indispensable pour passer des examens comme le permis de conduire ou le CAP."
+                    "correction": " Tout Français doit se faire recenser à sa mairie entre 16 ans et la fin du trimestre suivant. Cette démarche est indispensable pour passer des examens comme le permis de conduire ou le CAP."
                 },
                 {
                     "questionNumber": 43,
@@ -494,7 +494,7 @@ quiz_data = {
                         {"text": "Le Jeune Diplômé en Carrière militaire effectuant son service actif", "isCorrect": False},
                         {"text": "La Justice de Droite et de Citoyenneté gérant les tribunaux civils", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La JDC est la troisième étape du parcours citoyen. Elle permet d'informer les jeunes sur les enjeux de la défense nationale, les formes d'engagement et de dépister d'éventuelles difficultés de lecture."
+                    "correction": " La JDC est la troisième étape du parcours citoyen. Elle permet d'informer les jeunes sur les enjeux de la défense nationale, les formes d'engagement et de dépister d'éventuelles difficultés de lecture."
                 },
                 {
                     "questionNumber": 44,
@@ -505,7 +505,7 @@ quiz_data = {
                         {"text": "Le Fonds monétaire international gérant les crises financières", "isCorrect": False},
                         {"text": "La Ligue des champions du sport professionnel européen moderne", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'OTAN est une alliance militaire créée en 1949. Elle repose sur le principe de solidarité : si un membre est attaqué, les autres doivent l'aider. La France en est un membre fondateur stratégique."
+                    "correction": " L'OTAN est une alliance militaire créée en 1949. Elle repose sur le principe de solidarité : si un membre est attaqué, les autres doivent l'aider. La France en est un membre fondateur stratégique."
                 },
                 {
                     "questionNumber": 45,
@@ -516,7 +516,7 @@ quiz_data = {
                         {"text": "Vérifier le paiement des impôts directs de l'ensemble des citoyens", "isCorrect": False},
                         {"text": "Changer l'ensemble des lois votées au sein du Parlement national", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'armée protège la population face aux menaces extérieures et intérieures (comme le terrorisme avec l'opération Sentinelle). Elle intervient aussi lors de catastrophes naturelles (inondations, feux)."
+                    "correction": " L'armée protège la population face aux menaces extérieures et intérieures (comme le terrorisme avec l'opération Sentinelle). Elle intervient aussi lors de catastrophes naturelles (inondations, feux)."
                 },
                 {
                     "questionNumber": 46,
@@ -527,7 +527,7 @@ quiz_data = {
                         {"text": "Un voyage diplomatique de découverte culturelle pour les gradés", "isCorrect": False},
                         {"text": "Une invasion illégale sans aucun accord des instances de l'ONU", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les OPEX (Opérations Extérieures) sont des missions menées hors de France, souvent sous mandat international. Elles visent à stabiliser une zone, à lutter contre le terrorisme ou à évacuer des ressortissants."
+                    "correction": " Les OPEX (Opérations Extérieures) sont des missions menées hors de France, souvent sous mandat international. Elles visent à stabiliser une zone, à lutter contre le terrorisme ou à évacuer des ressortissants."
                 },
                 {
                     "questionNumber": 47,
@@ -538,7 +538,7 @@ quiz_data = {
                         {"text": "La gendarmerie nationale présente uniquement en zone rurale", "isCorrect": False},
                         {"text": "La police municipale des plus petites communes de l'hexagone", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La dissuasion nucléaire est l'assurance-vie de la France. Elle doit décourager n'importe quel pays de s'attaquer à nos intérêts vitaux sous peine de subir des dégâts inacceptables."
+                    "correction": " La dissuasion nucléaire est l'assurance-vie de la France. Elle doit décourager n'importe quel pays de s'attaquer à nos intérêts vitaux sous peine de subir des dégâts inacceptables."
                 },
                 {
                     "questionNumber": 48,
@@ -549,7 +549,7 @@ quiz_data = {
                         {"text": "La Police nationale chargée des enquêtes judiciaires urbaines", "isCorrect": False},
                         {"text": "La Protection civile pour les accidents de la route quotidiens", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Elle assure la souveraineté de la France dans le ciel. En cas d'avion inconnu ou suspect, des chasseurs décollent en quelques minutes pour l'intercepter (permanence opérationnelle 24h/24)."
+                    "correction": " Elle assure la souveraineté de la France dans le ciel. En cas d'avion inconnu ou suspect, des chasseurs décollent en quelques minutes pour l'intercepter (permanence opérationnelle 24h/24)."
                 },
                 {
                     "questionNumber": 49,
@@ -560,7 +560,7 @@ quiz_data = {
                         {"text": "Un espion caché au sein des services secrets du gouvernement", "isCorrect": False},
                         {"text": "Un soldat de métier travaillant à plein temps pour la nation", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La réserve opérationnelle permet à des étudiants ou des salariés de servir la patrie quelques jours par an. Ils reçoivent une formation militaire et viennent renforcer les effectifs des forces régulières."
+                    "correction": " La réserve opérationnelle permet à des étudiants ou des salariés de servir la patrie quelques jours par an. Ils reçoivent une formation militaire et viennent renforcer les effectifs des forces régulières."
                 },
                 {
                     "questionNumber": 50,
@@ -571,7 +571,7 @@ quiz_data = {
                         {"text": "Nettoyer les plages après le départ massif des touristes l'été", "isCorrect": False},
                         {"text": "Organiser des croisières de luxe pour le grand public national", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La Marine nationale surveille les côtes, lutte contre le narcotrafic en mer, protège les navires marchands et assure la présence française sur tous les océans du monde."
+                    "correction": " La Marine nationale surveille les côtes, lutte contre le narcotrafic en mer, protège les navires marchands et assure la présence française sur tous les océans du monde."
                 },
                 {
                     "questionNumber": 51,
@@ -582,7 +582,7 @@ quiz_data = {
                         {"text": "La vente de jeux vidéo de guerre en magasin de grande surface", "isCorrect": False},
                         {"text": "La censure de l'ensemble des réseaux sociaux privés du pays", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le cyberespace est un nouveau champ de bataille. L'armée doit protéger ses réseaux et les infrastructures vitales du pays (hôpitaux, électricité) contre le piratage d'États ennemis ou de criminels."
+                    "correction": " Le cyberespace est un nouveau champ de bataille. L'armée doit protéger ses réseaux et les infrastructures vitales du pays (hôpitaux, électricité) contre le piratage d'États ennemis ou de criminels."
                 },
                 {
                     "questionNumber": 52,
@@ -593,7 +593,7 @@ quiz_data = {
                         {"text": "Le service privé de sécurité des banques commerciales et dépôts", "isCorrect": False},
                         {"text": "L'association locale des voisins vigilants pour le quartier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Contrairement à la police, les gendarmes sont des militaires. Ils assurent la sécurité publique, principalement dans les zones rurales et périurbaines, ainsi que des missions judiciaires et de maintien de l'ordre."
+                    "correction": " Contrairement à la police, les gendarmes sont des militaires. Ils assurent la sécurité publique, principalement dans les zones rurales et périurbaines, ainsi que des missions judiciaires et de maintien de l'ordre."
                 },
                 {
                     "questionNumber": 53,
@@ -604,7 +604,7 @@ quiz_data = {
                         {"text": "La protection des bâtiments contre les inondations des rivières", "isCorrect": False},
                         {"text": "La lutte médicale contre l'ensemble des maladies contagieuses", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Vigipirate est un outil de l'État qui permet de coordonner les services (police, armée, douanes) pour protéger les citoyens dans les lieux publics (gares, écoles, musées) face au risque terroriste."
+                    "correction": " Vigipirate est un outil de l'État qui permet de coordonner les services (police, armée, douanes) pour protéger les citoyens dans les lieux publics (gares, écoles, musées) face au risque terroriste."
                 },
                 {
                     "questionNumber": 54,
@@ -615,7 +615,7 @@ quiz_data = {
                         {"text": "L'Union européenne pour l'intégralité des pays membres du sud", "isCorrect": False},
                         {"text": "L'ensemble des citoyens lors d'un vote par scrutin dominical", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En démocratie, c'est le peuple (via ses députés et sénateurs élus) qui contrôle l'argent public. Le budget de la défense permet d'acheter du matériel moderne et de payer les soldats."
+                    "correction": " En démocratie, c'est le peuple (via ses députés et sénateurs élus) qui contrôle l'argent public. Le budget de la défense permet d'acheter du matériel moderne et de payer les soldats."
                 },
                 {
                     "questionNumber": 55,
@@ -626,7 +626,7 @@ quiz_data = {
                         {"text": "Elle n'est composée que par des soldats de métier à plein temps", "isCorrect": False},
                         {"text": "Elle dépend entièrement des décisions stratégiques des États-Unis", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La défense ne se limite pas aux armes. Elle inclut la protection des données (numérique), la sécurité des approvisionnements (énergie) et la solidarité entre l'ensemble des citoyens français."
+                    "correction": " La défense ne se limite pas aux armes. Elle inclut la protection des données (numérique), la sécurité des approvisionnements (énergie) et la solidarité entre l'ensemble des citoyens français."
                 },
                 {
                     "questionNumber": 56,
@@ -637,7 +637,7 @@ quiz_data = {
                         {"text": "Arrêter les petits voleurs dans les rues des métropoles de zone", "isCorrect": False},
                         {"text": "Construire uniquement des hôpitaux privés dans les pays riches", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les soldats français participent souvent à ces missions. Les Casques bleus s'interposent entre les belligérants pour faire respecter un cessez-le-feu et protéger les populations innocentes."
+                    "correction": " Les soldats français participent souvent à ces missions. Les Casques bleus s'interposent entre les belligérants pour faire respecter un cessez-le-feu et protéger les populations innocentes."
                 },
                 {
                     "questionNumber": 57,
@@ -648,7 +648,7 @@ quiz_data = {
                         {"text": "Écrire quotidiennement son propre journal intime chaque soir", "isCorrect": False},
                         {"text": "Se souvenir uniquement des victoires gagnées par son pays", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La mémoire fait partie de la défense des valeurs. En célébrant le 11 novembre ou le 8 mai, on rappelle le prix de la liberté et on rend hommage à ceux qui sont morts pour la patrie."
+                    "correction": " La mémoire fait partie de la défense des valeurs. En célébrant le 11 novembre ou le 8 mai, on rappelle le prix de la liberté et on rend hommage à ceux qui sont morts pour la patrie."
                 },
                 {
                     "questionNumber": 58,
@@ -659,7 +659,7 @@ quiz_data = {
                         {"text": "Le vote des soldats eux-mêmes lors d'un scrutin majoritaire", "isCorrect": False},
                         {"text": "Une commission composée de citoyens anonymes tirés au sort", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Président est le garant de l'indépendance nationale et de l'intégrité du territoire. Il décide des interventions extérieures, mais il doit informer le Parlement rapidement."
+                    "correction": " Le Président est le garant de l'indépendance nationale et de l'intégrité du territoire. Il décide des interventions extérieures, mais il doit informer le Parlement rapidement."
                 },
                 {
                     "questionNumber": 59,
@@ -670,7 +670,7 @@ quiz_data = {
                         {"text": "Elle gère la vente des quotidiens dans les kiosques le matin", "isCorrect": False},
                         {"text": "Elle dirige l'intégralité des entreprises privées du territoire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En cas d'inondation, de tempête ou de crise sanitaire, l'armée apporte son aide logistique (hélicoptères, camions, hôpitaux mobiles) pour soutenir les pompiers et les secours civils."
+                    "correction": " En cas d'inondation, de tempête ou de crise sanitaire, l'armée apporte son aide logistique (hélicoptères, camions, hôpitaux mobiles) pour soutenir les pompiers et les secours civils."
                 },
                 {
                     "questionNumber": 60,
@@ -681,7 +681,7 @@ quiz_data = {
                         {"text": "Pour surveiller uniquement l'activité des volcans encore actifs", "isCorrect": False},
                         {"text": "Pour empêcher les gens de voyager librement vers la ville de Paris", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La présence militaire dans les DROM-COM assure la souveraineté française sur tous les océans, lutte contre le trafic de drogue et secourt les populations lors des cyclones tropicaux."
+                    "correction": " La présence militaire dans les DROM-COM assure la souveraineté française sur tous les océans, lutte contre le trafic de drogue et secourt les populations lors des cyclones tropicaux."
                 }
             ]
         },
@@ -700,7 +700,7 @@ quiz_data = {
                         {"text": "Le droit de faire tout ce que l'on veut seul sans aucune règle", "isCorrect": False},
                         {"text": "Une récompense accordée uniquement aux très bons citoyens du pays", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les libertés fondamentales (droit de circuler, de s'exprimer, de croire) sont inscrites dans la Déclaration de 1789. Elles sont reconnues comme appartenant à chaque être humain dès sa naissance."
+                    "correction": " Les libertés fondamentales (droit de circuler, de s'exprimer, de croire) sont inscrites dans la Déclaration de 1789. Elles sont reconnues comme appartenant à chaque être humain dès sa naissance."
                 },
                 {
                     "questionNumber": 62,
@@ -711,7 +711,7 @@ quiz_data = {
                         {"text": "L'obligation d'aller à la messe chaque dimanche matin de l'année", "isCorrect": False},
                         {"text": "Le droit de changer de prénom et de nom de famille chaque année", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Ce droit permet à chacun de choisir ses convictions religieuses ou philosophiques sans crainte d'être poursuivi. C'est l'un des piliers de la laïcité française."
+                    "correction": " Ce droit permet à chacun de choisir ses convictions religieuses ou philosophiques sans crainte d'être poursuivi. C'est l'un des piliers de la laïcité française."
                 },
                 {
                     "questionNumber": 63,
@@ -722,7 +722,7 @@ quiz_data = {
                         {"text": "Le secret professionnel des médecins travaillant à l'hôpital public", "isCorrect": False},
                         {"text": "La propriété privée des entreprises commerciales et industrielles", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La liberté de la presse est indispensable à la démocratie. Elle permet d'informer les citoyens et d'exercer un contre-pouvoir. Elle est protégée par la loi mais interdit la diffamation."
+                    "correction": " La liberté de la presse est indispensable à la démocratie. Elle permet d'informer les citoyens et d'exercer un contre-pouvoir. Elle est protégée par la loi mais interdit la diffamation."
                 },
                 {
                     "questionNumber": 64,
@@ -733,7 +733,7 @@ quiz_data = {
                         {"text": "L'interdiction de parler à ses voisins les plus proches de sa maison", "isCorrect": False},
                         {"text": "L'obligation d'avoir des rideaux à l'ensemble des fenêtres de chambre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'article 9 du Code civil dispose que 'chacun a droit au respect de sa vie privée'. Cela signifie que personne n'a le droit de diffuser des photos ou des infos intimes sans votre accord préalable."
+                    "correction": " L'article 9 du Code civil dispose que 'chacun a droit au respect de sa vie privée'. Cela signifie que personne n'a le droit de diffuser des photos ou des infos intimes sans votre accord préalable."
                 },
                 {
                     "questionNumber": 65,
@@ -744,7 +744,7 @@ quiz_data = {
                         {"text": "L'obligation de dire toujours la même chose que son propre voisin", "isCorrect": False},
                         {"text": "L'obligation d'avoir une carte de presse pour parler dans la rue", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La liberté d'expression connaît des limites pour protéger autrui. On ne peut pas injurier, diffamer ou appeler à la haine raciale ou religieuse. Ces actes sont des délits punis par les tribunaux."
+                    "correction": " La liberté d'expression connaît des limites pour protéger autrui. On ne peut pas injurier, diffamer ou appeler à la haine raciale ou religieuse. Ces actes sont des délits punis par les tribunaux."
                 },
                 {
                     "questionNumber": 66,
@@ -755,7 +755,7 @@ quiz_data = {
                         {"text": "Choisir ses propres amis personnels pour une soirée privée chez soi", "isCorrect": False},
                         {"text": "Recruter un candidat car il est particulièrement qualifié pour le poste", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La discrimination consiste à refuser un emploi ou un droit à quelqu'un à cause de son origine, de son sexe, de son âge ou de son handicap. C'est un acte grave qui s'oppose à l'égalité."
+                    "correction": " La discrimination consiste à refuser un emploi ou un droit à quelqu'un à cause de son origine, de son sexe, de son âge ou de son handicap. C'est un acte grave qui s'oppose à l'égalité."
                 },
                 {
                     "questionNumber": 67,
@@ -766,7 +766,7 @@ quiz_data = {
                         {"text": "L'obéissance aveugle à tous les ordres donnés par la hiérarchie", "isCorrect": False},
                         {"text": "Le silence total et permanent dans l'ensemble de l'espace public", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La tolérance n'est pas seulement accepter l'autre, c'est reconnaître que chaque citoyen a les mêmes droits. Le respect est la base de la paix sociale dans une République plurielle."
+                    "correction": " La tolérance n'est pas seulement accepter l'autre, c'est reconnaître que chaque citoyen a les mêmes droits. Le respect est la base de la paix sociale dans une République plurielle."
                 },
                 {
                     "questionNumber": 68,
@@ -777,7 +777,7 @@ quiz_data = {
                         {"text": "Le paiement régulier de son propre loyer chaque mois de l'année", "isCorrect": False},
                         {"text": "Le respect strict du code de la route lorsque l'on conduit sa voiture", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En votant pour les députés, le citoyen choisit ses représentants. Ce sont eux qui discutent et votent les lois à l'Assemblée nationale, au nom de l'intérêt général du pays."
+                    "correction": " En votant pour les députés, le citoyen choisit ses représentants. Ce sont eux qui discutent et votent les lois à l'Assemblée nationale, au nom de l'intérêt général du pays."
                 },
                 {
                     "questionNumber": 69,
@@ -788,7 +788,7 @@ quiz_data = {
                         {"text": "Le droit de propriété privée des terrains et des maisons de zone", "isCorrect": False},
                         {"text": "La liberté de conscience spirituelle et religieuse de chacun", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Cette liberté permet à des personnes de se regrouper pour un projet commun sans but lucratif (sport, culture, aide humanitaire). Elle est un moteur essentiel de la vie citoyenne en France."
+                    "correction": " Cette liberté permet à des personnes de se regrouper pour un projet commun sans but lucratif (sport, culture, aide humanitaire). Elle est un moteur essentiel de la vie citoyenne en France."
                 },
                 {
                     "questionNumber": 70,
@@ -799,7 +799,7 @@ quiz_data = {
                         {"text": "Le fait de posséder plusieurs nationalités au sein de sa famille", "isCorrect": False},
                         {"text": "L'absence totale de débat d'idées au sein des différents médias", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le pluralisme garantit que les citoyens peuvent choisir entre plusieurs visions de la société. S'il n'y avait qu'un seul parti ou une seule radio officielle, ce ne serait plus une démocratie."
+                    "correction": " Le pluralisme garantit que les citoyens peuvent choisir entre plusieurs visions de la société. S'il n'y avait qu'un seul parti ou une seule radio officielle, ce ne serait plus une démocratie."
                 },
                 {
                     "questionNumber": 71,
@@ -810,7 +810,7 @@ quiz_data = {
                         {"text": "L'obligation de se taire définitivement face au juge du siège", "isCorrect": False},
                         {"text": "Le droit de changer de juge au hasard durant le procès en cours", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une garantie de justice. Si une personne estime que le jugement n'est pas juste ou contient une erreur, elle peut demander un second examen de l'affaire par une Cour d'appel."
+                    "correction": " C'est une garantie de justice. Si une personne estime que le jugement n'est pas juste ou contient une erreur, elle peut demander un second examen de l'affaire par une Cour d'appel."
                 },
                 {
                     "questionNumber": 72,
@@ -821,7 +821,7 @@ quiz_data = {
                         {"text": "L'obligation d'insulter celui qui a triché lors d'une épreuve locale", "isCorrect": False},
                         {"text": "L'application de la loi du talion pour punir les coupables de faits", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans un État de droit, c'est la justice qui tranche les conflits. On ne peut pas se faire justice soi-même. Seules les forces de l'ordre peuvent utiliser la force pour faire respecter la loi."
+                    "correction": " Dans un État de droit, c'est la justice qui tranche les conflits. On ne peut pas se faire justice soi-même. Seules les forces de l'ordre peuvent utiliser la force pour faire respecter la loi."
                 },
                 {
                     "questionNumber": 73,
@@ -832,7 +832,7 @@ quiz_data = {
                         {"text": "Le fait de devoir s'habiller exactement de la même façon le jour", "isCorrect": False},
                         {"text": "Le fait de travailler uniquement dans les mêmes types de métiers", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Inscrit dans la Constitution, ce principe impose que le sexe ne soit jamais un obstacle. À compétences égales, une femme doit avoir le même salaire et les mêmes responsabilités qu'un homme."
+                    "correction": " Inscrit dans la Constitution, ce principe impose que le sexe ne soit jamais un obstacle. À compétences égales, une femme doit avoir le même salaire et les mêmes responsabilités qu'un homme."
                 },
                 {
                     "questionNumber": 74,
@@ -843,7 +843,7 @@ quiz_data = {
                         {"text": "Vivre dans une cabane isolée sans aucune eau courante ni gaz", "isCorrect": False},
                         {"text": "Refuser de payer ses impôts directs à la mairie de son domicile", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'éco-citoyenneté est un engagement volontaire. C'est comprendre que nos petits gestes (tri, économies d'énergie) ont un impact sur la survie de la planète, qui est un bien commun."
+                    "correction": " L'éco-citoyenneté est un engagement volontaire. C'est comprendre que nos petits gestes (tri, économies d'énergie) ont un impact sur la survie de la planète, qui est un bien commun."
                 },
                 {
                     "questionNumber": 75,
@@ -854,7 +854,7 @@ quiz_data = {
                         {"text": "Arrêter les criminels directement dans la rue passante urbaine", "isCorrect": False},
                         {"text": "Écrire l'ensemble des nouvelles lois au sein de l'assemblée nationale", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une autorité indépendante. Tout citoyen peut la contacter gratuitement s'il se sent victime de discrimination ou s'il a un conflit grave avec une administration (mairie, préfecture)."
+                    "correction": " C'est une autorité indépendante. Tout citoyen peut la contacter gratuitement s'il se sent victime de discrimination ou s'il a un conflit grave avec une administration (mairie, préfecture)."
                 },
                 {
                     "questionNumber": 76,
@@ -865,7 +865,7 @@ quiz_data = {
                         {"text": "La liberté d'acheter ce que l'on veut dans les magasins de luxe", "isCorrect": False},
                         {"text": "Le respect du silence absolu dans les couloirs des hôpitaux", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La fraternité n'est pas seulement une idée, c'est une règle sociale. Elle se traduit par les aides sociales (RSA, APL) financées par les impôts des travailleurs pour aider ceux qui sont en difficulté."
+                    "correction": " La fraternité n'est pas seulement une idée, c'est une règle sociale. Elle se traduit par les aides sociales (RSA, APL) financées par les impôts des travailleurs pour aider ceux qui sont en difficulté."
                 },
                 {
                     "questionNumber": 77,
@@ -876,7 +876,7 @@ quiz_data = {
                         {"text": "Il n'y a pas besoin de faire de procès pour punir un individu ici", "isCorrect": False},
                         {"text": "La victime a toujours raison sans avoir besoin d'aucune preuve", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est un principe sacré de la justice. On ne peut pas traiter quelqu'un comme un coupable avant que les preuves n'aient été débattues. Cela évite les erreurs judiciaires dramatiques."
+                    "correction": " C'est un principe sacré de la justice. On ne peut pas traiter quelqu'un comme un coupable avant que les preuves n'aient été débattues. Cela évite les erreurs judiciaires dramatiques."
                 },
                 {
                     "questionNumber": 78,
@@ -887,7 +887,7 @@ quiz_data = {
                         {"text": "Le groupe des supporters présents dans le stade de foot local", "isCorrect": False},
                         {"text": "La réunion des membres de l'association de quartier de zone", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour voter, il faut être de nationalité française, avoir 18 ans et être inscrit sur les listes électorales de sa commune. C'est l'acte fondamental de participation à la vie démocratique."
+                    "correction": " Pour voter, il faut être de nationalité française, avoir 18 ans et être inscrit sur les listes électorales de sa commune. C'est l'acte fondamental de participation à la vie démocratique."
                 },
                 {
                     "questionNumber": 79,
@@ -898,7 +898,7 @@ quiz_data = {
                         {"text": "La liberté de changer d'avis souvent lors d'une discussion riche", "isCorrect": False},
                         {"text": "Le droit d'avoir un passeport gratuit délivré par la préfecture", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En France, on peut voyager d'une ville à l'autre sans passeport. Cette liberté est garantie par la Constitution et ne peut être limitée qu'en cas d'urgence grave (confinement, sécurité d'État)."
+                    "correction": " En France, on peut voyager d'une ville à l'autre sans passeport. Cette liberté est garantie par la Constitution et ne peut être limitée qu'en cas d'urgence grave (confinement, sécurité d'État)."
                 },
                 {
                     "questionNumber": 80,
@@ -909,7 +909,7 @@ quiz_data = {
                         {"text": "La loi du plus fort au sein du groupe social le plus puissant", "isCorrect": False},
                         {"text": "La sélection naturelle des individus au sein de la population", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Symbolisé par le bandeau sur les yeux de la Justice, ce principe signifie que le jugement ne doit dépendre ni de la richesse, ni du rang social. Tous les citoyens sont égaux face aux droits et aux peines."
+                    "correction": " Symbolisé par le bandeau sur les yeux de la Justice, ce principe signifie que le jugement ne doit dépendre ni de la richesse, ni du rang social. Tous les citoyens sont égaux face aux droits et aux peines."
                 }
             ]
         },
@@ -928,7 +928,7 @@ quiz_data = {
                         {"text": "Le continent de l'Europe avec ses populations vieillissantes", "isCorrect": False},
                         {"text": "Le continent de l'Amérique avec ses vastes espaces de zone", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'Asie regroupe plus de 4,5 milliards d'habitants, soit environ 60 % de la population mondiale. La Chine et l'Inde sont les deux pays les plus peuplés de la planète."
+                    "correction": " L'Asie regroupe plus de 4,5 milliards d'habitants, soit environ 60 % de la population mondiale. La Chine et l'Inde sont les deux pays les plus peuplés de la planète."
                 },
                 {
                     "questionNumber": 82,
@@ -939,7 +939,7 @@ quiz_data = {
                         {"text": "Le cycle naturel de la lune influençant les marées océaniques", "isCorrect": False},
                         {"text": "L'érosion des sols agricoles par le vent et la pluie d'été", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le changement climatique est provoqué par l'excès de gaz à effet de serre (CO2). Il entraîne une hausse des températures, la fonte des glaces et une multiplication des tempêtes et sécheresses."
+                    "correction": " Le changement climatique est provoqué par l'excès de gaz à effet de serre (CO2). Il entraîne une hausse des températures, la fonte des glaces et une multiplication des tempêtes et sécheresses."
                 },
                 {
                     "questionNumber": 83,
@@ -950,7 +950,7 @@ quiz_data = {
                         {"text": "Le pays de la Chine situé dans l'est de l'Asie lointaine", "isCorrect": False},
                         {"text": "Les États-Unis d'Amérique s'étendant d'un océan à l'autre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La Russie couvre plus de 17 millions de km². Elle s'étend de l'Europe de l'Est jusqu'à l'Extrême-Orient asiatique. C'est un pays riche en ressources énergétiques (gaz, pétrole)."
+                    "correction": " La Russie couvre plus de 17 millions de km². Elle s'étend de l'Europe de l'Est jusqu'à l'Extrême-Orient asiatique. C'est un pays riche en ressources énergétiques (gaz, pétrole)."
                 },
                 {
                     "questionNumber": 84,
@@ -961,7 +961,7 @@ quiz_data = {
                         {"text": "La quantité totale de pluie mesurée au cours d'une année", "isCorrect": False},
                         {"text": "Le tri des différents déchets plastiques dans les usines de zone", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La biodiversité comprend les animaux, les plantes, les champignons et les micro-organismes. Elle est indispensable à l'équilibre de la vie (pollinisation, purification de l'eau, médicaments)."
+                    "correction": " La biodiversité comprend les animaux, les plantes, les champignons et les micro-organismes. Elle est indispensable à l'équilibre de la vie (pollinisation, purification de l'eau, médicaments)."
                 },
                 {
                     "questionNumber": 85,
@@ -972,7 +972,7 @@ quiz_data = {
                         {"text": "Le grand fleuve du Mississippi situé au centre des États-Unis", "isCorrect": False},
                         {"text": "Le grand fleuve du Yangtsé situé au centre de la Chine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'Amazone traverse le Pérou, la Colombie et le Brésil. C'est le fleuve au débit le plus puissant du monde. Son bassin versant abrite la plus grande forêt tropicale humide."
+                    "correction": " L'Amazone traverse le Pérou, la Colombie et le Brésil. C'est le fleuve au débit le plus puissant du monde. Son bassin versant abrite la plus grande forêt tropicale humide."
                 },
                 {
                     "questionNumber": 86,
@@ -983,7 +983,7 @@ quiz_data = {
                         {"text": "Une énergie qui coûte très cher à produire chaque jour ouvré", "isCorrect": False},
                         {"text": "Une énergie qui s'arrête de fonctionner brusquement le soir", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Ces énergies utilisent les forces de la nature : le soleil (solaire), le vent (éolien), l'eau (hydraulique) ou la chaleur de la terre (géothermie). Elles émettent peu de CO2."
+                    "correction": " Ces énergies utilisent les forces de la nature : le soleil (solaire), le vent (éolien), l'eau (hydraulique) ou la chaleur de la terre (géothermie). Elles émettent peu de CO2."
                 },
                 {
                     "questionNumber": 87,
@@ -994,7 +994,7 @@ quiz_data = {
                         {"text": "L'océan Indien situé au sud de l'Asie et à l'est de l'Afrique", "isCorrect": False},
                         {"text": "L'océan Arctique glacial situé autour du pôle Nord géographique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'océan Pacifique est plus grand que toutes les terres émergées réunies. C'est un espace majeur pour le commerce mondial, reliant l'Amérique à l'Asie."
+                    "correction": " L'océan Pacifique est plus grand que toutes les terres émergées réunies. C'est un espace majeur pour le commerce mondial, reliant l'Amérique à l'Asie."
                 },
                 {
                     "questionNumber": 88,
@@ -1005,7 +1005,7 @@ quiz_data = {
                         {"text": "L'île du Groenland appartenant au royaume du Danemark", "isCorrect": False},
                         {"text": "La région de Sibérie située dans le nord de la Russie froide", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'Antarctique est un continent de glace. Il n'appartient à aucun pays et est réservé par traité international à la recherche scientifique et à la protection de la nature."
+                    "correction": " L'Antarctique est un continent de glace. Il n'appartient à aucun pays et est réservé par traité international à la recherche scientifique et à la protection de la nature."
                 },
                 {
                     "questionNumber": 89,
@@ -1016,7 +1016,7 @@ quiz_data = {
                         {"text": "Les États-Unis d'Amérique pôle économique de l'Ouest", "isCorrect": False},
                         {"text": "Le pays du Nigeria situé au centre de l'Afrique de l'Ouest", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'Inde a récemment dépassé la Chine pour devenir le pays le plus peuplé au monde avec plus de 1,4 milliard d'habitants. Cette population très jeune est un défi et un atout économique."
+                    "correction": " L'Inde a récemment dépassé la Chine pour devenir le pays le plus peuplé au monde avec plus de 1,4 milliard d'habitants. Cette population très jeune est un défi et un atout économique."
                 },
                 {
                     "questionNumber": 90,
@@ -1027,7 +1027,7 @@ quiz_data = {
                         {"text": "Le dessin artistique d'une plante rare dans un cahier blanc", "isCorrect": False},
                         {"text": "Le prix de vente de la viande biologique sur le marché local", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Elle calcule la surface de terre nécessaire pour produire ce que nous consommons et absorber nos déchets. Aujourd'hui, l'humanité consomme plus que ce que la Terre peut régénérer."
+                    "correction": " Elle calcule la surface de terre nécessaire pour produire ce que nous consommons et absorber nos déchets. Aujourd'hui, l'humanité consomme plus que ce que la Terre peut régénérer."
                 },
                 {
                     "questionNumber": 91,
@@ -1038,7 +1038,7 @@ quiz_data = {
                         {"text": "La pluie qui tombe de manière fréquente sur les îles", "isCorrect": False},
                         {"text": "Le vent qui souffle de façon très forte dans les déserts", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La couche d'ozone nous protège des rayons UV dangereux. Elle a été endommagée par des gaz (CFC) autrefois utilisés dans les bombes aérosols et les réfrigérateurs."
+                    "correction": " La couche d'ozone nous protège des rayons UV dangereux. Elle a été endommagée par des gaz (CFC) autrefois utilisés dans les bombes aérosols et les réfrigérateurs."
                 },
                 {
                     "questionNumber": 92,
@@ -1049,7 +1049,7 @@ quiz_data = {
                         {"text": "La forêt de Brocéliande située dans l'ouest de la France lointaine", "isCorrect": False},
                         {"text": "La forêt noire allemande située dans le centre de l'Europe", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Surnommée le 'poumon de la Terre', l'Amazonie abrite des millions d'espèces. Sa déforestation massive menace le climat et la survie des peuples autochtones qui y vivent."
+                    "correction": " Surnommée le 'poumon de la Terre', l'Amazonie abrite des millions d'espèces. Sa déforestation massive menace le climat et la survie des peuples autochtones qui y vivent."
                 },
                 {
                     "questionNumber": 93,
@@ -1060,7 +1060,7 @@ quiz_data = {
                         {"text": "Le pays du Mali situé au centre du continent de l'Afrique", "isCorrect": False},
                         {"text": "Le pays de la Pologne situé dans le centre de l'Europe de l'Est", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Japon est situé sur la 'ceinture de feu' du Pacifique. Les Japonais ont appris à vivre avec ce risque en construisant des bâtiments parasismiques et en faisant des exercices d'alerte."
+                    "correction": " Le Japon est situé sur la 'ceinture de feu' du Pacifique. Les Japonais ont appris à vivre avec ce risque en construisant des bâtiments parasismiques et en faisant des exercices d'alerte."
                 },
                 {
                     "questionNumber": 94,
@@ -1071,7 +1071,7 @@ quiz_data = {
                         {"text": "Environ cinquante pour cent de la surface totale du globe terrestre", "isCorrect": False},
                         {"text": "Environ quatre-vingt-dix pour cent de la surface totale du globe", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est pourquoi on appelle la Terre la 'planète bleue'. Les océans régulent le climat mondial en absorbant une grande partie de la chaleur et du CO2."
+                    "correction": " C'est pourquoi on appelle la Terre la 'planète bleue'. Les océans régulent le climat mondial en absorbant une grande partie de la chaleur et du CO2."
                 },
                 {
                     "questionNumber": 95,
@@ -1082,7 +1082,7 @@ quiz_data = {
                         {"text": "Une ville située exclusivement sur une île au milieu de l'eau", "isCorrect": False},
                         {"text": "Une ville déserte ne possédant plus aucun habitant en centre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les mégapoles (comme Tokyo, Mexico, Lagos) concentrent des populations immenses. Elles font face à des défis géants de transport, de logement et de pollution."
+                    "correction": " Les mégapoles (comme Tokyo, Mexico, Lagos) concentrent des populations immenses. Elles font face à des défis géants de transport, de logement et de pollution."
                 },
                 {
                     "questionNumber": 96,
@@ -1093,7 +1093,7 @@ quiz_data = {
                         {"text": "Le désert d'Atacama situé dans l'ensemble du nord du Chili", "isCorrect": False},
                         {"text": "Le désert du Thar situé dans l'ensemble du nord-ouest de l'Inde", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Sahara couvre une surface équivalente à celle des États-Unis. C'est un espace de sable et de roches où les températures peuvent dépasser les 50°C le jour."
+                    "correction": " Le Sahara couvre une surface équivalente à celle des États-Unis. C'est un espace de sable et de roches où les températures peuvent dépasser les 50°C le jour."
                 },
                 {
                     "questionNumber": 97,
@@ -1104,7 +1104,7 @@ quiz_data = {
                         {"text": "Détruire les vieux villages pour construire des usines de luxe", "isCorrect": False},
                         {"text": "Fermer définitivement l'ensemble des entreprises de la région", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le développement local s'appuie sur les ressources propres d'une région (tourisme, artisanat, agriculture) pour créer de la richesse sans abîmer l'environnement."
+                    "correction": " Le développement local s'appuie sur les ressources propres d'une région (tourisme, artisanat, agriculture) pour créer de la richesse sans abîmer l'environnement."
                 },
                 {
                     "questionNumber": 98,
@@ -1115,7 +1115,7 @@ quiz_data = {
                         {"text": "Organiser uniquement des matchs de football pour le public", "isCorrect": False},
                         {"text": "Faire la guerre aux pays voisins pour voler leurs ressources", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les COP (Conférences des Parties) visent à limiter le réchauffement climatique à +1,5°C ou +2°C maximum par rapport à l'ère préindustrielle."
+                    "correction": " Les COP (Conférences des Parties) visent à limiter le réchauffement climatique à +1,5°C ou +2°C maximum par rapport à l'ère préindustrielle."
                 },
                 {
                     "questionNumber": 99,
@@ -1126,7 +1126,7 @@ quiz_data = {
                         {"text": "La création de nouvelles îles au milieu des océans lointains", "isCorrect": False},
                         {"text": "Le nettoyage de la poussière sur les routes de la ville locale", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'érosion est aggravée par l'homme (déforestation, agriculture intensive). Sans racines pour retenir la terre, celle-ci s'en va avec la pluie, rendant les champs stériles."
+                    "correction": " L'érosion est aggravée par l'homme (déforestation, agriculture intensive). Sans racines pour retenir la terre, celle-ci s'en va avec la pluie, rendant les champs stériles."
                 },
                 {
                     "questionNumber": 100,
@@ -1137,7 +1137,7 @@ quiz_data = {
                         {"text": "Une danse traditionnelle célébrée lors de la fête du village", "isCorrect": False},
                         {"text": "Un achat compulsif en ligne d'un produit fabriqué très loin", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Éteindre la lumière en partant, baisser le chauffage d'un degré, trier ses poubelles ou éviter le plastique sont des écogestes. S'ils sont pratiqués par tous, leur impact est réel."
+                    "correction": " Éteindre la lumière en partant, baisser le chauffage d'un degré, trier ses poubelles ou éviter le plastique sont des écogestes. S'ils sont pratiqués par tous, leur impact est réel."
                 }
             ]
         }

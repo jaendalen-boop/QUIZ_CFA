@@ -16,7 +16,7 @@ quiz_data = {
                         {"text": "De molécules et d'ions en mouvement libre", "isCorrect": False},
                         {"text": "De couches électroniques totalement vides", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le noyau atomique est constitué de nucléons. On y trouve les protons, qui portent une charge électrique positive, et les neutrons, qui n'ont pas de charge (neutres). Les électrons, eux, tournent autour du noyau dans le nuage électronique."
+                    "correction": " Le noyau atomique est constitué de nucléons. On y trouve les protons, qui portent une charge électrique positive, et les neutrons, qui n'ont pas de charge (neutres). Les électrons, eux, tournent autour du noyau dans le nuage électronique."
                 },
                 {
                     "questionNumber": 2,
@@ -27,7 +27,7 @@ quiz_data = {
                         {"text": "L'eau iodée changeant de couleur au contact", "isCorrect": False},
                         {"text": "Le sulfate de cuivre anhydre devenant bleu", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour identifier les ions chlorure (Cl-), on ajoute quelques gouttes de nitrate d'argent. Si un précipité blanc qui noircit à la lumière se forme, le test est positif. C'est un test d'identification classique en chimie minérale."
+                    "correction": " Pour identifier les ions chlorure (Cl-), on ajoute quelques gouttes de nitrate d'argent. Si un précipité blanc qui noircit à la lumière se forme, le test est positif. C'est un test d'identification classique en chimie minérale."
                 },
                 {
                     "questionNumber": 3,
@@ -38,7 +38,7 @@ quiz_data = {
                         {"text": "Une réaction de solidification du liquide", "isCorrect": False},
                         {"text": "Une réaction de distillation thermique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Lorsqu'on mélange un acide (pH < 7) et une base (pH > 7), les ions s'associent pour former de l'eau et un sel. Le pH du mélange se rapproche de 7. C'est une réaction qui libère souvent de la chaleur (exothermique)."
+                    "correction": " Lorsqu'on mélange un acide (pH < 7) et une base (pH > 7), les ions s'associent pour former de l'eau et un sel. Le pH du mélange se rapproche de 7. C'est une réaction qui libère souvent de la chaleur (exothermique)."
                 },
                 {
                     "questionNumber": 4,
@@ -49,7 +49,7 @@ quiz_data = {
                         {"text": "La formule chimique notée O2", "isCorrect": False},
                         {"text": "La formule chimique notée CH4", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le dioxyde de carbone est composé d'un atome de carbone (C) et de deux atomes d'oxygène (O). C'est le gaz produit par la respiration et les combustions, responsable de l'effet de serre."
+                    "correction": " Le dioxyde de carbone est composé d'un atome de carbone (C) et de deux atomes d'oxygène (O). C'est le gaz produit par la respiration et les combustions, responsable de l'effet de serre."
                 },
                 {
                     "questionNumber": 5,
@@ -60,7 +60,7 @@ quiz_data = {
                         {"text": "Il passe de l'état gazeux à l'état solide", "isCorrect": False},
                         {"text": "Il disparaît totalement dans l'air ambiant", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La fusion est le changement d'état provoqué par un apport de chaleur. Pour l'eau pure, la fusion de la glace se produit à une température fixe de 0°C sous pression normale."
+                    "correction": " La fusion est le changement d'état provoqué par un apport de chaleur. Pour l'eau pure, la fusion de la glace se produit à une température fixe de 0°C sous pression normale."
                 },
                 {
                     "questionNumber": 6,
@@ -71,7 +71,7 @@ quiz_data = {
                         {"text": "Le Newton utilisé pour le poids", "isCorrect": False},
                         {"text": "Le litre utilisé pour les volumes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Bien que le gramme soit très courant, c'est le kilogramme (kg) qui est l'unité de base internationale. La masse mesure la quantité de matière d'un objet et ne change pas, quel que soit le lieu (Terre ou Lune)."
+                    "correction": " Bien que le gramme soit très courant, c'est le kilogramme (kg) qui est l'unité de base internationale. La masse mesure la quantité de matière d'un objet et ne change pas, quel que soit le lieu (Terre ou Lune)."
                 },
                 {
                     "questionNumber": 7,
@@ -82,7 +82,7 @@ quiz_data = {
                         {"text": "Le phénomène de liquéfaction", "isCorrect": False},
                         {"text": "Le phénomène de condensation", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La sublimation est un changement d'état rare à pression normale. On l'observe par exemple avec la neige carbonique (carboglace) qui se transforme en gaz sans jamais fondre ni mouiller."
+                    "correction": " La sublimation est un changement d'état rare à pression normale. On l'observe par exemple avec la neige carbonique (carboglace) qui se transforme en gaz sans jamais fondre ni mouiller."
                 },
                 {
                     "questionNumber": 8,
@@ -93,7 +93,7 @@ quiz_data = {
                         {"text": "La lettre Co pour le cobalt", "isCorrect": False},
                         {"text": "La lettre K pour le potassium", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le carbone est l'élément de base de la chimie organique et du vivant. Son symbole est simplement C. Ca désigne le Calcium et Co le Cobalt."
+                    "correction": " Le carbone est l'élément de base de la chimie organique et du vivant. Son symbole est simplement C. Ca désigne le Calcium et Co le Cobalt."
                 },
                 {
                     "questionNumber": 9,
@@ -104,7 +104,7 @@ quiz_data = {
                         {"text": "Une solution qui ne contient aucun produit toxique", "isCorrect": False},
                         {"text": "Un gaz qui ne possède aucune odeur particulière", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un corps pur n'est pas un mélange. Il ne contient qu'un seul type de molécules (ex: eau distillée) ou d'atomes (ex: fer pur). Ses caractéristiques physiques (température de fusion, ébullition) sont fixes."
+                    "correction": " Un corps pur n'est pas un mélange. Il ne contient qu'un seul type de molécules (ex: eau distillée) ou d'atomes (ex: fer pur). Ses caractéristiques physiques (température de fusion, ébullition) sont fixes."
                 },
                 {
                     "questionNumber": 10,
@@ -115,7 +115,7 @@ quiz_data = {
                         {"text": "Un proton situé dans le noyau central", "isCorrect": False},
                         {"text": "Un isotope instable de l'atome neutre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un atome est neutre. S'il gagne un ou plusieurs électrons (chargés négativement), il devient un ion négatif appelé 'anion'. L'ion chlorure (Cl-) est un exemple d'anion."
+                    "correction": " Un atome est neutre. S'il gagne un ou plusieurs électrons (chargés négativement), il devient un ion négatif appelé 'anion'. L'ion chlorure (Cl-) est un exemple d'anion."
                 },
                 {
                     "questionNumber": 11,
@@ -126,7 +126,7 @@ quiz_data = {
                         {"text": "La solution est extrêmement basique", "isCorrect": False},
                         {"text": "La solution est bouillante à 100 degrés", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le pH 7 est le milieu de l'échelle (qui va de 0 à 14). L'eau pure a un pH de 7. En dessous de 7, le milieu est acide. Au-dessus de 7, le milieu est basique."
+                    "correction": " Le pH 7 est le milieu de l'échelle (qui va de 0 à 14). L'eau pure a un pH de 7. En dessous de 7, le milieu est acide. Au-dessus de 7, le milieu est basique."
                 },
                 {
                     "questionNumber": 12,
@@ -137,7 +137,7 @@ quiz_data = {
                         {"text": "Le neutron situé à l'intérieur du noyau", "isCorrect": False},
                         {"text": "La molécule composée de plusieurs atomes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'électron est une particule élémentaire très légère. C'est le déplacement des électrons dans un matériau conducteur qui crée le courant électrique."
+                    "correction": " L'électron est une particule élémentaire très légère. C'est le déplacement des électrons dans un matériau conducteur qui crée le courant électrique."
                 },
                 {
                     "questionNumber": 13,
@@ -148,7 +148,7 @@ quiz_data = {
                         {"text": "L'eau distillée purifiée en flacon", "isCorrect": False},
                         {"text": "L'huile d'olive utilisée en cuisine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les acides se reconnaissent souvent à leur goût piquant. Le citron contient de l'acide citrique et le vinaigre de l'acide acétique. Leur pH est inférieur à 7."
+                    "correction": " Les acides se reconnaissent souvent à leur goût piquant. Le citron contient de l'acide citrique et le vinaigre de l'acide acétique. Leur pH est inférieur à 7."
                 },
                 {
                     "questionNumber": 14,
@@ -159,7 +159,7 @@ quiz_data = {
                         {"text": "Le test du sulfate de cuivre qui blanchit", "isCorrect": False},
                         {"text": "Le test au papier pH qui devient bleu", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Si on fait buller du CO2 dans de l'eau de chaux (limpide au départ), celle-ci devient laiteuse ou trouble. C'est la preuve chimique de la présence de ce gaz."
+                    "correction": " Si on fait buller du CO2 dans de l'eau de chaux (limpide au départ), celle-ci devient laiteuse ou trouble. C'est la preuve chimique de la présence de ce gaz."
                 },
                 {
                     "questionNumber": 15,
@@ -170,7 +170,7 @@ quiz_data = {
                         {"text": "Le gaz nommé hélium", "isCorrect": False},
                         {"text": "Le gaz nommé dioxyde de carbone", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le dioxygène (O2) représente environ 21 % de l'air. C'est lui qui permet de brûler un combustible et c'est lui que nos poumons absorbent pour faire fonctionner nos cellules."
+                    "correction": " Le dioxygène (O2) représente environ 21 % de l'air. C'est lui qui permet de brûler un combustible et c'est lui que nos poumons absorbent pour faire fonctionner nos cellules."
                 },
                 {
                     "questionNumber": 16,
@@ -181,7 +181,7 @@ quiz_data = {
                         {"text": "Une solution saturée en sels minéraux", "isCorrect": False},
                         {"text": "Un alliage métallique solide et dur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'eau et l'huile sont non miscibles. Après agitation, elles finissent par se séparer en deux couches distinctes (phases). Le mélange est dit hétérogène car on voit les deux constituants."
+                    "correction": " L'eau et l'huile sont non miscibles. Après agitation, elles finissent par se séparer en deux couches distinctes (phases). Le mélange est dit hétérogène car on voit les deux constituants."
                 },
                 {
                     "questionNumber": 17,
@@ -192,7 +192,7 @@ quiz_data = {
                         {"text": "Une éprouvette graduée", "isCorrect": False},
                         {"text": "Un thermomètre digital", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La balance mesure la masse (kg). Ne pas la confondre avec le dynamomètre qui mesure le poids (force en Newton). Dans la vie courante on mélange souvent les deux termes."
+                    "correction": " La balance mesure la masse (kg). Ne pas la confondre avec le dynamomètre qui mesure le poids (force en Newton). Dans la vie courante on mélange souvent les deux termes."
                 },
                 {
                     "questionNumber": 18,
@@ -203,7 +203,7 @@ quiz_data = {
                         {"text": "L'hydroxyde de sodium noté NaOH", "isCorrect": False},
                         {"text": "Le sulfate de fer noté FeS", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le sel est un empilement régulier d'ions sodium (Na+) et d'ions chlorure (Cl-). Sa formule statistique est NaCl."
+                    "correction": " Le sel est un empilement régulier d'ions sodium (Na+) et d'ions chlorure (Cl-). Sa formule statistique est NaCl."
                 },
                 {
                     "questionNumber": 19,
@@ -214,7 +214,7 @@ quiz_data = {
                         {"text": "La dissolution d'un sucre dans l'eau", "isCorrect": False},
                         {"text": "Le mélange de deux couleurs d'encre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'ébullition se produit quand la pression de vapeur du liquide égale la pression atmosphérique. Pour l'eau pure, cela arrive à 100°C au niveau de la mer."
+                    "correction": " L'ébullition se produit quand la pression de vapeur du liquide égale la pression atmosphérique. Pour l'eau pure, cela arrive à 100°C au niveau de la mer."
                 },
                 {
                     "questionNumber": 20,
@@ -225,7 +225,7 @@ quiz_data = {
                         {"text": "Le cuivre utilisé dans les fils électriques", "isCorrect": False},
                         {"text": "L'or utilisé dans la bijouterie fine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le fer est un métal ferromagnétique. C'est un test simple pour distinguer le fer ou l'acier de l'aluminium ou du cuivre qui, eux, ne réagissent pas à l'aimant."
+                    "correction": " Le fer est un métal ferromagnétique. C'est un test simple pour distinguer le fer ou l'acier de l'aluminium ou du cuivre qui, eux, ne réagissent pas à l'aimant."
                 }
             ]
         },
@@ -244,7 +244,7 @@ quiz_data = {
                         {"text": "Un ohmmètre branché hors tension", "isCorrect": False},
                         {"text": "Un wattmètre branché sur la prise", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'intensité (I) se mesure en Ampères (A). L'appareil doit être traversé par le courant, il s'insère donc dans la boucle du circuit (montage en série)."
+                    "correction": " L'intensité (I) se mesure en Ampères (A). L'appareil doit être traversé par le courant, il s'insère donc dans la boucle du circuit (montage en série)."
                 },
                 {
                     "questionNumber": 22,
@@ -255,7 +255,7 @@ quiz_data = {
                         {"text": "L'unité nommée l'Ampère", "isCorrect": False},
                         {"text": "L'unité nommée le Joule", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La puissance (P) indique la quantité d'énergie consommée ou fournie par seconde. On utilise le Watt (W). 1000 Watts = 1 kilowatt (kW)."
+                    "correction": " La puissance (P) indique la quantité d'énergie consommée ou fournie par seconde. On utilise le Watt (W). 1000 Watts = 1 kilowatt (kW)."
                 },
                 {
                     "questionNumber": 23,
@@ -266,7 +266,7 @@ quiz_data = {
                         {"text": "Non, elle diminue si on rajoute des lampes", "isCorrect": False},
                         {"text": "Elle dépend uniquement de la couleur du fil", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est la loi d'unicité des tensions. Dans une installation domestique (en dérivation), tous les appareils reçoivent la même tension (230 V), ce qui leur permet de fonctionner normalement."
+                    "correction": " C'est la loi d'unicité des tensions. Dans une installation domestique (en dérivation), tous les appareils reçoivent la même tension (230 V), ce qui leur permet de fonctionner normalement."
                 },
                 {
                     "questionNumber": 24,
@@ -277,7 +277,7 @@ quiz_data = {
                         {"text": "E = P multiplié par t", "isCorrect": False},
                         {"text": "R = U multiplié par I", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La tension (U) aux bornes d'un conducteur ohmique est proportionnelle à l'intensité (I) qui le traverse. Le coefficient de proportionnalité est la résistance (R)."
+                    "correction": " La tension (U) aux bornes d'un conducteur ohmique est proportionnelle à l'intensité (I) qui le traverse. Le coefficient de proportionnalité est la résistance (R)."
                 },
                 {
                     "questionNumber": 25,
@@ -288,7 +288,7 @@ quiz_data = {
                         {"text": "Le fil neutre de retour du courant", "isCorrect": False},
                         {"text": "Le fil de commande de l'interrupteur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une norme de sécurité internationale. La terre permet d'évacuer les courants de fuite vers le sol pour protéger les personnes contre l'électrocution."
+                    "correction": " C'est une norme de sécurité internationale. La terre permet d'évacuer les courants de fuite vers le sol pour protéger les personnes contre l'électrocution."
                 },
                 {
                     "questionNumber": 26,
@@ -299,7 +299,7 @@ quiz_data = {
                         {"text": "E = Résistance multipliée par le temps", "isCorrect": False},
                         {"text": "E = Puissance divisée par la tension", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'énergie (E) s'exprime en Joules (J) ou en kiloWatt-heures (kWh) sur les factures d'électricité. Plus un appareil est puissant ou plus il fonctionne longtemps, plus il consomme."
+                    "correction": " L'énergie (E) s'exprime en Joules (J) ou en kiloWatt-heures (kWh) sur les factures d'électricité. Plus un appareil est puissant ou plus il fonctionne longtemps, plus il consomme."
                 },
                 {
                     "questionNumber": 27,
@@ -310,7 +310,7 @@ quiz_data = {
                         {"text": "Économiser l'énergie électrique du réseau", "isCorrect": False},
                         {"text": "Transformer l'alternatif en courant continu", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le fusible contient un filament qui fond si le courant devient trop fort (court-circuit ou surcharge). Cela ouvre le circuit et empêche les fils de chauffer et de causer un incendie."
+                    "correction": " Le fusible contient un filament qui fond si le courant devient trop fort (court-circuit ou surcharge). Cela ouvre le circuit et empêche les fils de chauffer et de causer un incendie."
                 },
                 {
                     "questionNumber": 28,
@@ -321,7 +321,7 @@ quiz_data = {
                         {"text": "Un appareil de chauffage central", "isCorrect": False},
                         {"text": "Une absence de courant électrique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** AC (Alternating Current) signifie que le courant change de sens régulièrement (50 fois par seconde en France, soit 50 Hz). C'est le courant des prises murales."
+                    "correction": " AC (Alternating Current) signifie que le courant change de sens régulièrement (50 fois par seconde en France, soit 50 Hz). C'est le courant des prises murales."
                 },
                 {
                     "questionNumber": 29,
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "Une tension de 12 Volts", "isCorrect": False},
                         {"text": "Une tension de 400 Volts", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est la tension standard pour les usages domestiques. Les appareils industriels plus puissants utilisent parfois le 400 V (triphasé)."
+                    "correction": " C'est la tension standard pour les usages domestiques. Les appareils industriels plus puissants utilisent parfois le 400 V (triphasé)."
                 },
                 {
                     "questionNumber": 30,
@@ -343,7 +343,7 @@ quiz_data = {
                         {"text": "L'énergie de type thermique", "isCorrect": False},
                         {"text": "L'énergie de type nucléaire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'éolienne transforme l'énergie mécanique du vent en énergie électrique grâce à un alternateur. C'est une énergie renouvelable."
+                    "correction": " L'éolienne transforme l'énergie mécanique du vent en énergie électrique grâce à un alternateur. C'est une énergie renouvelable."
                 },
                 {
                     "questionNumber": 31,
@@ -354,7 +354,7 @@ quiz_data = {
                         {"text": "Une tension électrique en Volt", "isCorrect": False},
                         {"text": "Une intensité électrique en Ampère", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'ohmmètre s'utilise sur un composant débranché (hors tension). Il permet par exemple de vérifier si un fil n'est pas coupé."
+                    "correction": " L'ohmmètre s'utilise sur un composant débranché (hors tension). Il permet par exemple de vérifier si un fil n'est pas coupé."
                 },
                 {
                     "questionNumber": 32,
@@ -365,7 +365,7 @@ quiz_data = {
                         {"text": "Rien ne change pour les autres", "isCorrect": False},
                         {"text": "La pile explose immédiatement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans un montage en série, le courant n'a qu'un seul chemin. Si une lampe grille, le circuit est ouvert : le courant s'arrête de circuler partout."
+                    "correction": " Dans un montage en série, le courant n'a qu'un seul chemin. Si une lampe grille, le circuit est ouvert : le courant s'arrête de circuler partout."
                 },
                 {
                     "questionNumber": 33,
@@ -376,7 +376,7 @@ quiz_data = {
                         {"text": "L'ampoule LED de secours", "isCorrect": False},
                         {"text": "Le compteur Linky électrique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le disjoncteur différentiel compare le courant qui entre et celui qui sort. S'il y a une différence (fuite), il coupe tout pour éviter l'électrocution d'une personne."
+                    "correction": " Le disjoncteur différentiel compare le courant qui entre et celui qui sort. S'il y a une différence (fuite), il coupe tout pour éviter l'électrocution d'une personne."
                 },
                 {
                     "questionNumber": 34,
@@ -387,7 +387,7 @@ quiz_data = {
                         {"text": "Le cuivre ou l'argent", "isCorrect": False},
                         {"text": "L'eau salée de la mer", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un isolant est un matériau qui ne laisse pas passer le courant électrique car il ne possède pas de charges libres. On l'utilise pour recouvrir les fils."
+                    "correction": " Un isolant est un matériau qui ne laisse pas passer le courant électrique car il ne possède pas de charges libres. On l'utilise pour recouvrir les fils."
                 },
                 {
                     "questionNumber": 35,
@@ -398,7 +398,7 @@ quiz_data = {
                         {"text": "Mille Joules d'énergie seulement", "isCorrect": False},
                         {"text": "Cent kiloWatt-heures d'énergie", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 1 kWh est l'énergie consommée par un appareil de 1000 W fonctionnant pendant une heure. C'est l'unité pratique de facturation."
+                    "correction": " 1 kWh est l'énergie consommée par un appareil de 1000 W fonctionnant pendant une heure. C'est l'unité pratique de facturation."
                 },
                 {
                     "questionNumber": 36,
@@ -409,7 +409,7 @@ quiz_data = {
                         {"text": "La lettre I majuscule", "isCorrect": False},
                         {"text": "La lettre P majuscule", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Attention à ne pas confondre le symbole de la grandeur (U) et le symbole de son unité (V pour le Volt)."
+                    "correction": " Attention à ne pas confondre le symbole de la grandeur (U) et le symbole de son unité (V pour le Volt)."
                 },
                 {
                     "questionNumber": 37,
@@ -420,7 +420,7 @@ quiz_data = {
                         {"text": "L'interrupteur va-et-vient", "isCorrect": False},
                         {"text": "Le transformateur de tension", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Chaque circuit est protégé par un disjoncteur calibré (ex: 16A pour les prises). S'il y a trop d'appareils, il 'saute' pour éviter l'incendie."
+                    "correction": " Chaque circuit est protégé par un disjoncteur calibré (ex: 16A pour les prises). S'il y a trop d'appareils, il 'saute' pour éviter l'incendie."
                 },
                 {
                     "questionNumber": 38,
@@ -431,7 +431,7 @@ quiz_data = {
                         {"text": "Une fréquence de 230 Hertz", "isCorrect": False},
                         {"text": "Une fréquence de 0 Hertz", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le courant change de sens 100 fois par seconde, ce qui fait 50 cycles complets (Hertz). Aux USA, la norme est de 60 Hz."
+                    "correction": " Le courant change de sens 100 fois par seconde, ce qui fait 50 cycles complets (Hertz). Aux USA, la norme est de 60 Hz."
                 },
                 {
                     "questionNumber": 39,
@@ -442,7 +442,7 @@ quiz_data = {
                         {"text": "Une énergie de type chimique", "isCorrect": False},
                         {"text": "Une énergie de type solaire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est le principe utilisé dans les centrales électriques, les barrages et les voitures. On fait tourner un aimant près d'une bobine de cuivre."
+                    "correction": " C'est le principe utilisé dans les centrales électriques, les barrages et les voitures. On fait tourner un aimant près d'une bobine de cuivre."
                 },
                 {
                     "questionNumber": 40,
@@ -453,7 +453,7 @@ quiz_data = {
                         {"text": "L'intensité du courant traversant", "isCorrect": False},
                         {"text": "Le prix de vente en magasin", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est la puissance électrique. Plus ce chiffre est élevé, plus l'ampoule consomme d'énergie (et généralement, plus elle éclaire)."
+                    "correction": " C'est la puissance électrique. Plus ce chiffre est élevé, plus l'ampoule consomme d'énergie (et généralement, plus elle éclaire)."
                 }
             ]
         },
@@ -472,7 +472,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Joule", "isCorrect": False},
                         {"text": "L'unité nommée le Pascal", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une force (F) s'exprime en Newtons (N). Elle est représentée par une flèche (vecteur) qui indique sa direction, son sens et son intensité."
+                    "correction": " Une force (F) s'exprime en Newtons (N). Elle est représentée par une flèche (vecteur) qui indique sa direction, son sens et son intensité."
                 },
                 {
                     "questionNumber": 42,
@@ -483,7 +483,7 @@ quiz_data = {
                         {"text": "Le volume de l'objet choisi", "isCorrect": False},
                         {"text": "La densité de l'objet choisi", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le poids (P) est une force attractive vers le centre de la Terre. Elle dépend de la masse de l'objet et de la pesanteur (g)."
+                    "correction": " Le poids (P) est une force attractive vers le centre de la Terre. Elle dépend de la masse de l'objet et de la pesanteur (g)."
                 },
                 {
                     "questionNumber": 43,
@@ -494,7 +494,7 @@ quiz_data = {
                         {"text": "m = P multiplié par g", "isCorrect": False},
                         {"text": "g = P multiplié par m", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** g est l'intensité de la pesanteur. Sur Terre, g vaut environ 9,81 N/kg. Le poids se mesure avec un dynamomètre et la masse avec une balance."
+                    "correction": " g est l'intensité de la pesanteur. Sur Terre, g vaut environ 9,81 N/kg. Le poids se mesure avec un dynamomètre et la masse avec une balance."
                 },
                 {
                     "questionNumber": 44,
@@ -505,7 +505,7 @@ quiz_data = {
                         {"text": "Une courbe sans forme précise", "isCorrect": False},
                         {"text": "Un point immobile dans l'espace", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La trajectoire est l'ensemble des positions successives d'un objet. Si l'objet se déplace sur une droite, le mouvement est rectiligne."
+                    "correction": " La trajectoire est l'ensemble des positions successives d'un objet. Si l'objet se déplace sur une droite, le mouvement est rectiligne."
                 },
                 {
                     "questionNumber": 45,
@@ -516,7 +516,7 @@ quiz_data = {
                         {"text": "La vitesse diminue sans cesse", "isCorrect": False},
                         {"text": "La vitesse est nulle tout le temps", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans un mouvement uniforme, l'objet parcourt des distances égales pendant des durées égales. Sa vitesse ne change pas."
+                    "correction": " Dans un mouvement uniforme, l'objet parcourt des distances égales pendant des durées égales. Sa vitesse ne change pas."
                 },
                 {
                     "questionNumber": 46,
@@ -527,7 +527,7 @@ quiz_data = {
                         {"text": "Distance multipliée par le Temps", "isCorrect": False},
                         {"text": "Somme de la Distance et du Temps", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** v = d / t. Pour obtenir des mètres par seconde (m/s), il faut utiliser la distance en mètres et le temps en secondes."
+                    "correction": " v = d / t. Pour obtenir des mètres par seconde (m/s), il faut utiliser la distance en mètres et le temps en secondes."
                 },
                 {
                     "questionNumber": 47,
@@ -538,7 +538,7 @@ quiz_data = {
                         {"text": "La force de poussée", "isCorrect": False},
                         {"text": "La force magnétique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le frottement agit toujours dans le sens contraire du mouvement. Il dépend de la nature des surfaces en contact (ex: pneu sur bitume ou sur glace)."
+                    "correction": " Le frottement agit toujours dans le sens contraire du mouvement. Il dépend de la nature des surfaces en contact (ex: pneu sur bitume ou sur glace)."
                 },
                 {
                     "questionNumber": 48,
@@ -549,7 +549,7 @@ quiz_data = {
                         {"text": "Une force de un Newton", "isCorrect": False},
                         {"text": "Une force de mille Newtons", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On prend souvent g = 10 N/kg pour simplifier. P = 10 kg x 10 N/kg = 100 N."
+                    "correction": " On prend souvent g = 10 N/kg pour simplifier. P = 10 kg x 10 N/kg = 100 N."
                 },
                 {
                     "questionNumber": 49,
@@ -560,7 +560,7 @@ quiz_data = {
                         {"text": "Un thermomètre à alcool", "isCorrect": False},
                         {"text": "Un anémomètre à coupelles", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le dynamomètre contient un ressort qui s'allonge proportionnellement à la force appliquée. On lit la valeur en Newtons sur la réglette."
+                    "correction": " Le dynamomètre contient un ressort qui s'allonge proportionnellement à la force appliquée. On lit la valeur en Newtons sur la réglette."
                 },
                 {
                     "questionNumber": 50,
@@ -571,7 +571,7 @@ quiz_data = {
                         {"text": "L'énergie stockée dans une pile", "isCorrect": False},
                         {"text": "L'énergie venant du soleil", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'énergie cinétique (Ec) dépend de la masse et surtout de la vitesse de l'objet. Si vous doublez la vitesse, l'énergie est multipliée par quatre !"
+                    "correction": " L'énergie cinétique (Ec) dépend de la masse et surtout de la vitesse de l'objet. Si vous doublez la vitesse, l'énergie est multipliée par quatre !"
                 },
                 {
                     "questionNumber": 51,
@@ -582,7 +582,7 @@ quiz_data = {
                         {"text": "La trajectoire est toujours droite", "isCorrect": False},
                         {"text": "L'objet reste immobile tout le temps", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'accélération traduit une variation de la vitesse. Dans une voiture, on accélère pour passer de 0 à 50 km/h."
+                    "correction": " L'accélération traduit une variation de la vitesse. Dans une voiture, on accélère pour passer de 0 à 50 km/h."
                 },
                 {
                     "questionNumber": 52,
@@ -593,7 +593,7 @@ quiz_data = {
                         {"text": "Deux fois plus élevé environ", "isCorrect": False},
                         {"text": "Dix fois plus élevé environ", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La Lune est moins massive que la Terre, sa pesanteur est donc plus faible (g = 1,6 N/kg). Un astronaute s'y sent beaucoup plus léger."
+                    "correction": " La Lune est moins massive que la Terre, sa pesanteur est donc plus faible (g = 1,6 N/kg). Un astronaute s'y sent beaucoup plus léger."
                 },
                 {
                     "questionNumber": 53,
@@ -604,7 +604,7 @@ quiz_data = {
                         {"text": "Le mètre par minute (m/min)", "isCorrect": False},
                         {"text": "Le kilomètre par seconde (km/s)", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour passer des m/s aux km/h, on multiplie par 3,6. Exemple : 10 m/s = 36 km/h."
+                    "correction": " Pour passer des m/s aux km/h, on multiplie par 3,6. Exemple : 10 m/s = 36 km/h."
                 },
                 {
                     "questionNumber": 54,
@@ -615,7 +615,7 @@ quiz_data = {
                         {"text": "La tension d'un fil invisible", "isCorrect": False},
                         {"text": "La force magnétique du bois", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est la force exercée par la table vers le haut pour compenser le poids de l'objet. Si cette force n'existait pas, l'objet s'enfoncerait dans la table."
+                    "correction": " C'est la force exercée par la table vers le haut pour compenser le poids de l'objet. Si cette force n'existait pas, l'objet s'enfoncerait dans la table."
                 },
                 {
                     "questionNumber": 55,
@@ -626,7 +626,7 @@ quiz_data = {
                         {"text": "Il change obligatoirement de direction", "isCorrect": False},
                         {"text": "Il explose sous l'effet des tensions", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est le principe d'inertie (première loi de Newton). Sans force globale, un objet ne change pas son état de mouvement."
+                    "correction": " C'est le principe d'inertie (première loi de Newton). Sans force globale, un objet ne change pas son état de mouvement."
                 },
                 {
                     "questionNumber": 56,
@@ -637,7 +637,7 @@ quiz_data = {
                         {"text": "Une trajectoire de type cercle", "isCorrect": False},
                         {"text": "Une trajectoire immobile au sol", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Sous l'effet de la pesanteur, tout objet lancé (projectiles) décrit une courbe appelée parabole."
+                    "correction": " Sous l'effet de la pesanteur, tout objet lancé (projectiles) décrit une courbe appelée parabole."
                 },
                 {
                     "questionNumber": 57,
@@ -648,7 +648,7 @@ quiz_data = {
                         {"text": "La longueur totale de la voiture", "isCorrect": False},
                         {"text": "Le temps de réaction du chauffeur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La distance de freinage dépend de la vitesse, de l'état des pneus et de la route (mouillée ou sèche)."
+                    "correction": " La distance de freinage dépend de la vitesse, de l'état des pneus et de la route (mouillée ou sèche)."
                 },
                 {
                     "questionNumber": 58,
@@ -659,7 +659,7 @@ quiz_data = {
                         {"text": "L'énergie électrique de charge", "isCorrect": False},
                         {"text": "L'énergie sonore de vibration", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un objet possède de l'énergie simplement parce qu'il est en hauteur. S'il tombe, cette énergie se transforme en énergie cinétique."
+                    "correction": " Un objet possède de l'énergie simplement parce qu'il est en hauteur. S'il tombe, cette énergie se transforme en énergie cinétique."
                 },
                 {
                     "questionNumber": 59,
@@ -670,7 +670,7 @@ quiz_data = {
                         {"text": "La chute libre verticale", "isCorrect": False},
                         {"text": "La rotation uniforme rapide", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un objet est immobile dans un référentiel donné si sa position ne change pas au cours du temps par rapport à ce référentiel."
+                    "correction": " Un objet est immobile dans un référentiel donné si sa position ne change pas au cours du temps par rapport à ce référentiel."
                 },
                 {
                     "questionNumber": 60,
@@ -681,7 +681,7 @@ quiz_data = {
                         {"text": "Peser 100 kg sur une route", "isCorrect": False},
                         {"text": "Rouler pendant 100 minutes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une unité de vitesse. À cette vitesse constante, vous faites le trajet Paris-Lille (200 km) en exactement 2 heures."
+                    "correction": " C'est une unité de vitesse. À cette vitesse constante, vous faites le trajet Paris-Lille (200 km) en exactement 2 heures."
                 }
             ]
         },
@@ -700,7 +700,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Watt (W)", "isCorrect": False},
                         {"text": "L'unité nommée le Mètre (m)", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La fréquence mesure le nombre de vibrations par seconde. Plus la fréquence est élevée, plus le son est aigu. Plus elle est basse, plus le son est grave."
+                    "correction": " La fréquence mesure le nombre de vibrations par seconde. Plus la fréquence est élevée, plus le son est aigu. Plus elle est basse, plus le son est grave."
                 },
                 {
                     "questionNumber": 62,
@@ -711,7 +711,7 @@ quiz_data = {
                         {"text": "Les sons audibles de fréquences moyennes", "isCorrect": False},
                         {"text": "Les bruits blancs sans fréquence", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'oreille humaine entend entre 20 Hz et 20 000 Hz. En dessous de 20 Hz, ce sont les infrasons (éléphants, séismes). Au-dessus de 20 000 Hz, ce sont les ultrasons (chauve-souris, échographie)."
+                    "correction": " L'oreille humaine entend entre 20 Hz et 20 000 Hz. En dessous de 20 Hz, ce sont les infrasons (éléphants, séismes). Au-dessus de 20 000 Hz, ce sont les ultrasons (chauve-souris, échographie)."
                 },
                 {
                     "questionNumber": 63,
@@ -722,7 +722,7 @@ quiz_data = {
                         {"text": "Un voltmètre de précision", "isCorrect": False},
                         {"text": "Un thermomètre à laser", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le sonomètre donne un résultat en décibels (dB). C'est l'outil utilisé pour vérifier si le bruit au travail dépasse les limites légales."
+                    "correction": " Le sonomètre donne un résultat en décibels (dB). C'est l'outil utilisé pour vérifier si le bruit au travail dépasse les limites légales."
                 },
                 {
                     "questionNumber": 64,
@@ -733,7 +733,7 @@ quiz_data = {
                         {"text": "Un niveau de cinquante décibels", "isCorrect": False},
                         {"text": "Un niveau de dix décibels", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** À 85 dB (seuil de danger), une exposition prolongée abîme les cellules de l'oreille. À 120 dB (seuil de douleur), les dégâts sont immédiats."
+                    "correction": " À 85 dB (seuil de danger), une exposition prolongée abîme les cellules de l'oreille. À 120 dB (seuil de douleur), les dégâts sont immédiats."
                 },
                 {
                     "questionNumber": 65,
@@ -744,7 +744,7 @@ quiz_data = {
                         {"text": "En faisant des cercles concentriques", "isCorrect": False},
                         {"text": "Elle ne se déplace jamais", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est le principe de la propagation rectiligne de la lumière. Un rayon lumineux est une droite."
+                    "correction": " C'est le principe de la propagation rectiligne de la lumière. Un rayon lumineux est une droite."
                 },
                 {
                     "questionNumber": 66,
@@ -755,7 +755,7 @@ quiz_data = {
                         {"text": "Le Cyan, le Magenta et le Jaune", "isCorrect": False},
                         {"text": "Le Noir, le Blanc et le Gris", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En mélangeant ces trois couleurs (RVB), on peut créer toutes les autres, y compris le blanc. C'est le système utilisé par les écrans de télé et de téléphone."
+                    "correction": " En mélangeant ces trois couleurs (RVB), on peut créer toutes les autres, y compris le blanc. C'est le système utilisé par les écrans de télé et de téléphone."
                 },
                 {
                     "questionNumber": 67,
@@ -766,7 +766,7 @@ quiz_data = {
                         {"text": "Elle change de couleur de base", "isCorrect": False},
                         {"text": "Elle devient un son audible", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La réfraction explique pourquoi un bâton semble 'cassé' quand on le plonge dans un verre d'eau."
+                    "correction": " La réfraction explique pourquoi un bâton semble 'cassé' quand on le plonge dans un verre d'eau."
                 },
                 {
                     "questionNumber": 68,
@@ -777,7 +777,7 @@ quiz_data = {
                         {"text": "Une ampoule LED allumée", "isCorrect": False},
                         {"text": "Une flamme de bougie vive", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une source primaire produit sa propre lumière (Soleil). Un objet diffusant ne fait que renvoyer la lumière qu'il reçoit."
+                    "correction": " Une source primaire produit sa propre lumière (Soleil). Un objet diffusant ne fait que renvoyer la lumière qu'il reçoit."
                 },
                 {
                     "questionNumber": 69,
@@ -788,7 +788,7 @@ quiz_data = {
                         {"text": "Trois cents mètres par seconde", "isCorrect": False},
                         {"text": "Trois mille km par heure", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Rien ne va plus vite que la lumière dans le vide. Elle met environ 8 minutes pour faire le trajet entre le Soleil et la Terre."
+                    "correction": " Rien ne va plus vite que la lumière dans le vide. Elle met environ 8 minutes pour faire le trajet entre le Soleil et la Terre."
                 },
                 {
                     "questionNumber": 70,
@@ -799,7 +799,7 @@ quiz_data = {
                         {"text": "Il produit sa propre lumière rouge", "isCorrect": False},
                         {"text": "Il est situé dans une pièce noire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un objet coloré absorbe certaines couleurs de la lumière blanche et diffuse les autres. Une tomate rouge absorbe tout sauf le rouge qu'elle renvoie vers votre œil."
+                    "correction": " Un objet coloré absorbe certaines couleurs de la lumière blanche et diffuse les autres. Une tomate rouge absorbe tout sauf le rouge qu'elle renvoie vers votre œil."
                 },
                 {
                     "questionNumber": 71,
@@ -810,7 +810,7 @@ quiz_data = {
                         {"text": "La source de lumière elle-même", "isCorrect": False},
                         {"text": "Le reflet dans le miroir voisin", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Si vous éclairez une balle, la face qui n'est pas vers la lampe est dans l'ombre propre."
+                    "correction": " Si vous éclairez une balle, la face qui n'est pas vers la lampe est dans l'ombre propre."
                 },
                 {
                     "questionNumber": 72,
@@ -821,7 +821,7 @@ quiz_data = {
                         {"text": "Une vitre de type plane simple", "isCorrect": False},
                         {"text": "Un morceau de carton opaque", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les lentilles convergentes sont plus épaisses au centre qu'au bord. Elles font converger les rayons lumineux vers un point."
+                    "correction": " Les lentilles convergentes sont plus épaisses au centre qu'au bord. Elles font converger les rayons lumineux vers un point."
                 },
                 {
                     "questionNumber": 73,
@@ -832,7 +832,7 @@ quiz_data = {
                         {"text": "Un faisceau de rayons laser", "isCorrect": False},
                         {"text": "Un courant électrique intense", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le son fait vibrer les molécules de l'air. C'est pour cela que le son ne peut pas voyager dans le vide de l'espace."
+                    "correction": " Le son fait vibrer les molécules de l'air. C'est pour cela que le son ne peut pas voyager dans le vide de l'espace."
                 },
                 {
                     "questionNumber": 74,
@@ -843,7 +843,7 @@ quiz_data = {
                         {"text": "La destruction de la lumière", "isCorrect": False},
                         {"text": "La création de la lumière", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les gouttes de pluie décomposent la lumière blanche du soleil en sept couleurs principales."
+                    "correction": " Les gouttes de pluie décomposent la lumière blanche du soleil en sept couleurs principales."
                 },
                 {
                     "questionNumber": 75,
@@ -854,7 +854,7 @@ quiz_data = {
                         {"text": "Le miroir ou une plaque d'acier", "isCorrect": False},
                         {"text": "Le projecteur de cinéma au mur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un récepteur reçoit l'énergie lumineuse et la transforme (en signal nerveux pour l'œil, en électricité pour le panneau)."
+                    "correction": " Un récepteur reçoit l'énergie lumineuse et la transforme (en signal nerveux pour l'œil, en électricité pour le panneau)."
                 },
                 {
                     "questionNumber": 76,
@@ -865,7 +865,7 @@ quiz_data = {
                         {"text": "Le son est beaucoup plus grave", "isCorrect": False},
                         {"text": "Le son est beaucoup plus lent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'échelle des décibels n'est pas linéaire. Augmenter de 20 dB correspond à une intensité sonore multipliée par cent !"
+                    "correction": " L'échelle des décibels n'est pas linéaire. Augmenter de 20 dB correspond à une intensité sonore multipliée par cent !"
                 },
                 {
                     "questionNumber": 77,
@@ -876,7 +876,7 @@ quiz_data = {
                         {"text": "Il joue le rôle de lampe vive", "isCorrect": False},
                         {"text": "Il joue le rôle de nerf optique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le cristallin modifie sa forme pour faire la mise au point (accommodation) afin que l'image soit nette sur la rétine."
+                    "correction": " Le cristallin modifie sa forme pour faire la mise au point (accommodation) afin que l'image soit nette sur la rétine."
                 },
                 {
                     "questionNumber": 78,
@@ -887,7 +887,7 @@ quiz_data = {
                         {"text": "Ils vont à la même vitesse", "isCorrect": False},
                         {"text": "Le son ne bouge jamais", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le son va à 340 m/s alors que la lumière va à 300 000 km/s. C'est pourquoi on voit l'éclair avant d'entendre le tonnerre."
+                    "correction": " Le son va à 340 m/s alors que la lumière va à 300 000 km/s. C'est pourquoi on voit l'éclair avant d'entendre le tonnerre."
                 },
                 {
                     "questionNumber": 79,
@@ -898,7 +898,7 @@ quiz_data = {
                         {"text": "Une infection de l'oreille interne", "isCorrect": False},
                         {"text": "Un appareil pour mieux entendre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'acouphène est un symptôme de traumatisme auditif, souvent dû à une exposition excessive au bruit (concert, machine)."
+                    "correction": " L'acouphène est un symptôme de traumatisme auditif, souvent dû à une exposition excessive au bruit (concert, machine)."
                 },
                 {
                     "questionNumber": 100,
@@ -909,7 +909,7 @@ quiz_data = {
                         {"text": "L'antenne radio de télévision", "isCorrect": False},
                         {"text": "La liaison par satellite lointain", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La fibre optique guide des signaux lumineux sur de longues distances sans perte de débit. C'est la base d'Internet haut débit."
+                    "correction": " La fibre optique guide des signaux lumineux sur de longues distances sans perte de débit. C'est la base d'Internet haut débit."
                 }
             ]
         }

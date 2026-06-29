@@ -16,7 +16,7 @@ quiz_data = {
                         {"text": "Une durée moyenne d'environ quatre heures consécutives", "isCorrect": False},
                         {"text": "Une durée moyenne d'environ huit heures pour la nuit", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une nuit de sommeil est composée d'une succession de 4 à 6 cycles. Chaque cycle dure environ 90 minutes et se décompose en plusieurs phases : sommeil léger, sommeil profond (récupération physique) et sommeil paradoxal (récupération mentale et rêves)."
+                    "correction": " Une nuit de sommeil est composée d'une succession de 4 à 6 cycles. Chaque cycle dure environ 90 minutes et se décompose en plusieurs phases : sommeil léger, sommeil profond (récupération physique) et sommeil paradoxal (récupération mentale et rêves)."
                 },
                 {
                     "questionNumber": 2,
@@ -27,7 +27,7 @@ quiz_data = {
                         {"text": "Éliminer les toxines accumulées durant la digestion", "isCorrect": False},
                         {"text": "Maintenir un état de veille pour rester vigilant", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le sommeil lent profond est la phase la plus réparatrice pour l'organisme. C'est à ce moment que les cellules se régénèrent et que l'hormone de croissance est sécrétée. Un manque de sommeil profond entraîne une grande fatigue et une baisse d'immunité."
+                    "correction": " Le sommeil lent profond est la phase la plus réparatrice pour l'organisme. C'est à ce moment que les cellules se régénèrent et que l'hormone de croissance est sécrétée. Un manque de sommeil profond entraîne une grande fatigue et une baisse d'immunité."
                 },
                 {
                     "questionNumber": 3,
@@ -38,7 +38,7 @@ quiz_data = {
                         {"text": "Les viandes rouges et les protéines animales", "isCorrect": False},
                         {"text": "Les huiles végétales et les lipides variés", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les glucides sont le carburant du corps. On distingue les glucides complexes (féculents) qui libèrent de l'énergie lentement, et les glucides simples (sucre, fruits) qui apportent une énergie immédiate mais de courte durée."
+                    "correction": " Les glucides sont le carburant du corps. On distingue les glucides complexes (féculents) qui libèrent de l'énergie lentement, et les glucides simples (sucre, fruits) qui apportent une énergie immédiate mais de courte durée."
                 },
                 {
                     "questionNumber": 4,
@@ -49,7 +49,7 @@ quiz_data = {
                         {"text": "Consommer uniquement des légumes cuits le soir", "isCorrect": False},
                         {"text": "Consommer des fruits à volonté à chaque repas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Programme National Nutrition Santé (PNNS) préconise '5 fruits et légumes par jour' pour l'apport en fibres, vitamines et minéraux. Une portion correspond environ à la taille d'un poing ou à 80-100 grammes."
+                    "correction": " Le Programme National Nutrition Santé (PNNS) préconise '5 fruits et légumes par jour' pour l'apport en fibres, vitamines et minéraux. Une portion correspond environ à la taille d'un poing ou à 80-100 grammes."
                 },
                 {
                     "questionNumber": 5,
@@ -60,7 +60,7 @@ quiz_data = {
                         {"text": "L'augmentation immédiate de la vision nocturne", "isCorrect": False},
                         {"text": "La perte totale de l'appétit pour le sucre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le sel (chlorure de sodium) favorise la rétention d'eau et augmente la pression dans les artères. À long terme, cela peut provoquer des maladies cardiovasculaires ou des problèmes rénaux."
+                    "correction": " Le sel (chlorure de sodium) favorise la rétention d'eau et augmente la pression dans les artères. À long terme, cela peut provoquer des maladies cardiovasculaires ou des problèmes rénaux."
                 },
                 {
                     "questionNumber": 6,
@@ -71,7 +71,7 @@ quiz_data = {
                         {"text": "Le lait demi-écrémé riche en vitamines D", "isCorrect": False},
                         {"text": "Le café noir sans sucre pour l'énergie", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Notre corps est composé à environ 60 % d'eau. Elle est nécessaire pour transporter les nutriments, éliminer les déchets et réguler la température corporelle. Il est conseillé de boire 1,5 à 2 litres d'eau par jour."
+                    "correction": " Notre corps est composé à environ 60 % d'eau. Elle est nécessaire pour transporter les nutriments, éliminer les déchets et réguler la température corporelle. Il est conseillé de boire 1,5 à 2 litres d'eau par jour."
                 },
                 {
                     "questionNumber": 7,
@@ -82,7 +82,7 @@ quiz_data = {
                         {"text": "Les sels minéraux comme le fer ou le magnésium", "isCorrect": False},
                         {"text": "Les lipides contenus dans le beurre et l'huile", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les protéines sont les 'briques' de l'organisme. Elles sont essentielles pour fabriquer les muscles, les os, la peau et les anticorps. On en trouve dans la viande, le poisson, les œufs, mais aussi les légumes secs."
+                    "correction": " Les protéines sont les 'briques' de l'organisme. Elles sont essentielles pour fabriquer les muscles, les os, la peau et les anticorps. On en trouve dans la viande, le poisson, les œufs, mais aussi les légumes secs."
                 },
                 {
                     "questionNumber": 8,
@@ -93,7 +93,7 @@ quiz_data = {
                         {"text": "La quantité de sucre présente dans le sang", "isCorrect": False},
                         {"text": "La force physique des membres inférieurs", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'IMC se calcule en divisant le poids (kg) par la taille au carré (m²). Il permet d'évaluer les risques pour la santé liés au surpoids ou à la maigreur excessive."
+                    "correction": " L'IMC se calcule en divisant le poids (kg) par la taille au carré (m²). Il permet d'évaluer les risques pour la santé liés au surpoids ou à la maigreur excessive."
                 },
                 {
                     "questionNumber": 9,
@@ -104,7 +104,7 @@ quiz_data = {
                         {"text": "Une amélioration de la capacité respiratoire", "isCorrect": False},
                         {"text": "Une coloration bleue des doigts et des ongles", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La nicotine est une substance psychoactive très addictive. Elle atteint le cerveau en quelques secondes et crée un manque qui pousse le fumeur à renouveler sa consommation."
+                    "correction": " La nicotine est une substance psychoactive très addictive. Elle atteint le cerveau en quelques secondes et crée un manque qui pousse le fumeur à renouveler sa consommation."
                 },
                 {
                     "questionNumber": 10,
@@ -115,7 +115,7 @@ quiz_data = {
                         {"text": "La dégustation modérée lors d'un repas de fête", "isCorrect": False},
                         {"text": "Le sevrage alcoolique sous contrôle médical", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le binge drinking consiste à boire de grandes quantités d'alcool en moins de deux heures. Cela présente des risques graves : coma éthylique, accidents, violences et lésions cérébrales irréversibles."
+                    "correction": " Le binge drinking consiste à boire de grandes quantités d'alcool en moins de deux heures. Cela présente des risques graves : coma éthylique, accidents, violences et lésions cérébrales irréversibles."
                 },
                 {
                     "questionNumber": 11,
@@ -126,7 +126,7 @@ quiz_data = {
                         {"text": "La peau par l'apparition de taches brunes", "isCorrect": False},
                         {"text": "Les oreilles par une perte d'audition grave", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le foie filtre l'alcool présent dans le sang. Une consommation chronique sature cet organe, provoquant une inflammation puis une destruction des cellules hépatiques (cirrhose), ce qui peut être mortel."
+                    "correction": " Le foie filtre l'alcool présent dans le sang. Une consommation chronique sature cet organe, provoquant une inflammation puis une destruction des cellules hépatiques (cirrhose), ce qui peut être mortel."
                 },
                 {
                     "questionNumber": 12,
@@ -137,7 +137,7 @@ quiz_data = {
                         {"text": "L'implant hormonal placé sous la peau du bras", "isCorrect": False},
                         {"text": "Le stérilet en cuivre posé par un médecin", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les préservatifs sont les seuls moyens de protection à 'double barrière' : ils empêchent une grossesse non désirée ET la transmission de virus ou bactéries (VIH, chlamydia, herpès) lors des rapports."
+                    "correction": " Les préservatifs sont les seuls moyens de protection à 'double barrière' : ils empêchent une grossesse non désirée ET la transmission de virus ou bactéries (VIH, chlamydia, herpès) lors des rapports."
                 },
                 {
                     "questionNumber": 13,
@@ -148,7 +148,7 @@ quiz_data = {
                         {"text": "Intervention de Secours Technique", "isCorrect": False},
                         {"text": "Information sur les Soins Thérapeutiques", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les IST sont des infections qui se transmettent lors de rapports sexuels non protégés. Beaucoup sont 'asymptomatiques' (sans signes visibles), d'où l'importance du dépistage régulier."
+                    "correction": " Les IST sont des infections qui se transmettent lors de rapports sexuels non protégés. Beaucoup sont 'asymptomatiques' (sans signes visibles), d'où l'importance du dépistage régulier."
                 },
                 {
                     "questionNumber": 14,
@@ -159,7 +159,7 @@ quiz_data = {
                         {"text": "Une naissance avec une dentition complète", "isCorrect": False},
                         {"text": "Une résistance naturelle contre les virus", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'alcool traverse le placenta. Il est toxique pour le cerveau en développement du futur bébé et peut causer des malformations physiques et des troubles mentaux définitifs. La consigne est 'Zéro alcool pendant la grossesse'."
+                    "correction": " L'alcool traverse le placenta. Il est toxique pour le cerveau en développement du futur bébé et peut causer des malformations physiques et des troubles mentaux définitifs. La consigne est 'Zéro alcool pendant la grossesse'."
                 },
                 {
                     "questionNumber": 15,
@@ -170,7 +170,7 @@ quiz_data = {
                         {"text": "Manger uniquement des produits industriels", "isCorrect": False},
                         {"text": "Fumer pour réduire le stress quotidien", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le diabète de type 2 est souvent lié au mode de vie. L'activité physique aide les cellules à mieux utiliser le sucre dans le sang, évitant ainsi l'hyperglycémie chronique."
+                    "correction": " Le diabète de type 2 est souvent lié au mode de vie. L'activité physique aide les cellules à mieux utiliser le sucre dans le sang, évitant ainsi l'hyperglycémie chronique."
                 },
                 {
                     "questionNumber": 16,
@@ -181,7 +181,7 @@ quiz_data = {
                         {"text": "Remplacer l'alimentation quotidienne ici", "isCorrect": False},
                         {"text": "Guérir une maladie déjà présente en soi", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le vaccin prépare le système immunitaire à reconnaître un microbe sans rendre malade. Plus il y a de gens vaccinés, moins le virus circule : c'est la protection collective."
+                    "correction": " Le vaccin prépare le système immunitaire à reconnaître un microbe sans rendre malade. Plus il y a de gens vaccinés, moins le virus circule : c'est la protection collective."
                 },
                 {
                     "questionNumber": 17,
@@ -192,7 +192,7 @@ quiz_data = {
                         {"text": "L'angoisse paralysante de l'esprit", "isCorrect": False},
                         {"text": "La dépression mentale profonde ici", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le stress est une réaction biologique d'adaptation. À petite dose, il libère de l'adrénaline qui améliore la concentration. S'il dure trop longtemps, il devient nocif pour la santé."
+                    "correction": " Le stress est une réaction biologique d'adaptation. À petite dose, il libère de l'adrénaline qui améliore la concentration. S'il dure trop longtemps, il devient nocif pour la santé."
                 },
                 {
                     "questionNumber": 18,
@@ -203,7 +203,7 @@ quiz_data = {
                         {"text": "Le port d'un appareil dentaire en métal", "isCorrect": False},
                         {"text": "Le manque d'exposition à la lumière vive", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les bactéries de la bouche transforment les sucres en acides. Ces acides attaquent l'émail de la dent. Un brossage bi-quotidien permet d'éliminer cette plaque dentaire."
+                    "correction": " Les bactéries de la bouche transforment les sucres en acides. Ces acides attaquent l'émail de la dent. Un brossage bi-quotidien permet d'éliminer cette plaque dentaire."
                 },
                 {
                     "questionNumber": 19,
@@ -214,7 +214,7 @@ quiz_data = {
                         {"text": "Peser chaque aliment au milligramme près", "isCorrect": False},
                         {"text": "Sauter le repas du soir pour maigrir vite", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Aucun aliment n'est interdit. L'équilibre se construit sur la journée ou la semaine en variant les sources de nutriments et en évitant les excès de gras, de sel et de sucre (produits ultra-transformés)."
+                    "correction": " Aucun aliment n'est interdit. L'équilibre se construit sur la journée ou la semaine en variant les sources de nutriments et en évitant les excès de gras, de sel et de sucre (produits ultra-transformés)."
                 },
                 {
                     "questionNumber": 20,
@@ -225,7 +225,7 @@ quiz_data = {
                         {"text": "Donner une couleur rouge aux muscles", "isCorrect": False},
                         {"text": "Remplacer l'eau dans l'organisme entier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les fibres ne sont pas digérées par le corps mais elles sont vitales pour le bon fonctionnement de l'intestin. On les trouve dans les fruits, légumes et céréales complètes."
+                    "correction": " Les fibres ne sont pas digérées par le corps mais elles sont vitales pour le bon fonctionnement de l'intestin. On les trouve dans les fruits, légumes et céréales complètes."
                 }
             ]
         },
@@ -244,7 +244,7 @@ quiz_data = {
                         {"text": "Le gain régulier aux jeux de hasard en ligne", "isCorrect": False},
                         {"text": "Le prêt bancaire accordé sans condition de revenu", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'apprenti perçoit un salaire qui correspond à un pourcentage du SMIC selon son âge et son année de formation. C'est sa principale ressource financière pour gérer son autonomie."
+                    "correction": " L'apprenti perçoit un salaire qui correspond à un pourcentage du SMIC selon son âge et son année de formation. C'est sa principale ressource financière pour gérer son autonomie."
                 },
                 {
                     "questionNumber": 22,
@@ -255,7 +255,7 @@ quiz_data = {
                         {"text": "L'achat de nouveaux vêtements de sport", "isCorrect": False},
                         {"text": "La facture exceptionnelle de réparation auto", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une charge fixe est une dépense obligatoire dont le montant et la date sont prévisibles (loyer, assurance, abonnements). Les charges variables (alimentation, loisirs) peuvent être ajustées selon les revenus."
+                    "correction": " Une charge fixe est une dépense obligatoire dont le montant et la date sont prévisibles (loyer, assurance, abonnements). Les charges variables (alimentation, loisirs) peuvent être ajustées selon les revenus."
                 },
                 {
                     "questionNumber": 23,
@@ -266,7 +266,7 @@ quiz_data = {
                         {"text": "Une fiche de poste de l'entreprise actuelle", "isCorrect": False},
                         {"text": "Un relevé d'identité bancaire pour virement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Faire un budget permet d'anticiper les dépenses et d'éviter le découvert bancaire. On soustrait les charges des ressources pour connaître le 'reste à vivre' pour le mois."
+                    "correction": " Faire un budget permet d'anticiper les dépenses et d'éviter le découvert bancaire. On soustrait les charges des ressources pour connaître le 'reste à vivre' pour le mois."
                 },
                 {
                     "questionNumber": 24,
@@ -277,7 +277,7 @@ quiz_data = {
                         {"text": "Avoir perdu sa carte bleue dans le magasin", "isCorrect": False},
                         {"text": "Avoir reçu une augmentation de son salaire net", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le découvert signifie que le solde du compte est négatif. La banque facture alors des frais appelés 'agios'. C'est un signe de mauvaise gestion budgétaire ou de difficultés financières."
+                    "correction": " Le découvert signifie que le solde du compte est négatif. La banque facture alors des frais appelés 'agios'. C'est un signe de mauvaise gestion budgétaire ou de difficultés financières."
                 },
                 {
                     "questionNumber": 25,
@@ -288,7 +288,7 @@ quiz_data = {
                         {"text": "La carte bancaire à débit différé en fin de mois", "isCorrect": False},
                         {"text": "Le crédit à la consommation sur dix mois", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Avec le débit immédiat, le solde de votre compte est mis à jour dans les 24h à 48h. C'est le meilleur moyen pour suivre ses dépenses en temps réel via les applications mobiles."
+                    "correction": " Avec le débit immédiat, le solde de votre compte est mis à jour dans les 24h à 48h. C'est le meilleur moyen pour suivre ses dépenses en temps réel via les applications mobiles."
                 },
                 {
                     "questionNumber": 26,
@@ -299,7 +299,7 @@ quiz_data = {
                         {"text": "Pouvoir acheter tout ce que l'on veut sans limite", "isCorrect": False},
                         {"text": "Ne plus jamais avoir besoin de travailler ici", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'épargne consiste à mettre de l'argent de côté. Une 'réserve' de sécurité permet de payer des réparations ou de compenser une baisse de revenu sans emprunter."
+                    "correction": " L'épargne consiste à mettre de l'argent de côté. Une 'réserve' de sécurité permet de payer des réparations ou de compenser une baisse de revenu sans emprunter."
                 },
                 {
                     "questionNumber": 27,
@@ -310,7 +310,7 @@ quiz_data = {
                         {"text": "Taxe sur l'Argent Épargné en Gestion", "isCorrect": False},
                         {"text": "Total des Acomptes Encaissés en Gare", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le TAEG est le coût total du crédit (intérêts + frais de dossier + assurance). C'est l'indicateur obligatoire qui permet de comparer les offres de prêt entre différentes banques."
+                    "correction": " Le TAEG est le coût total du crédit (intérêts + frais de dossier + assurance). C'est l'indicateur obligatoire qui permet de comparer les offres de prêt entre différentes banques."
                 },
                 {
                     "questionNumber": 28,
@@ -321,7 +321,7 @@ quiz_data = {
                         {"text": "Le tribunal de commerce de la grande ville", "isCorrect": False},
                         {"text": "La mairie de votre village de résidence", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En cas d'impossibilité de payer ses dettes, on peut déposer un dossier de surendettement. La Banque de France peut alors geler les dettes ou proposer un plan de remboursement étalé."
+                    "correction": " En cas d'impossibilité de payer ses dettes, on peut déposer un dossier de surendettement. La Banque de France peut alors geler les dettes ou proposer un plan de remboursement étalé."
                 },
                 {
                     "questionNumber": 29,
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "Du moins important au plus important ici", "isCorrect": False},
                         {"text": "Selon le prix de chaque ingrédient utilisé", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'ingrédient présent en plus grande quantité est cité en premier. Cela permet au consommateur de repérer si un produit contient trop de sucre ou d'eau par rapport à l'ingrédient principal."
+                    "correction": " L'ingrédient présent en plus grande quantité est cité en premier. Cela permet au consommateur de repérer si un produit contient trop de sucre ou d'eau par rapport à l'ingrédient principal."
                 },
                 {
                     "questionNumber": 30,
@@ -343,7 +343,7 @@ quiz_data = {
                         {"text": "Le logo de la marque du distributeur local", "isCorrect": False},
                         {"text": "Le code-barres situé au dos de l'emballage", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le logo AB garantit que le produit respecte un cahier des charges strict : pas de pesticides chimiques, pas d'OGM et respect du bien-être animal pour l'élevage."
+                    "correction": " Le logo AB garantit que le produit respecte un cahier des charges strict : pas de pesticides chimiques, pas d'OGM et respect du bien-être animal pour l'élevage."
                 },
                 {
                     "questionNumber": 31,
@@ -354,7 +354,7 @@ quiz_data = {
                         {"text": "Le produit contient uniquement de la viande de bœuf", "isCorrect": False},
                         {"text": "Le produit a été fabriqué dans une usine locale", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Nutri-Score va de A (meilleure qualité) à E (moins bonne). Il tient compte des nutriments à favoriser (fibres, protéines) et de ceux à limiter (sel, calories, acides gras saturés)."
+                    "correction": " Le Nutri-Score va de A (meilleure qualité) à E (moins bonne). Il tient compte des nutriments à favoriser (fibres, protéines) et de ceux à limiter (sel, calories, acides gras saturés)."
                 },
                 {
                     "questionNumber": 32,
@@ -365,7 +365,7 @@ quiz_data = {
                         {"text": "Une durée légale de un mois calendaire entier", "isCorrect": False},
                         {"text": "Il n'y a aucun droit de retour pour le web", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour la vente à distance, la loi protège le consommateur qui ne peut pas voir le produit. On dispose de 14 jours pour renvoyer l'article et être remboursé sans justification."
+                    "correction": " Pour la vente à distance, la loi protège le consommateur qui ne peut pas voir le produit. On dispose de 14 jours pour renvoyer l'article et être remboursé sans justification."
                 },
                 {
                     "questionNumber": 33,
@@ -376,7 +376,7 @@ quiz_data = {
                         {"text": "L'étiquette de prix collée sur le carton", "isCorrect": False},
                         {"text": "La carte d'identité avec photo de l'acheteur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le ticket de caisse est indispensable pour faire jouer la garantie légale de conformité (2 ans) ou pour échanger un produit défectueux."
+                    "correction": " Le ticket de caisse est indispensable pour faire jouer la garantie légale de conformité (2 ans) ou pour échanger un produit défectueux."
                 },
                 {
                     "questionNumber": 34,
@@ -387,7 +387,7 @@ quiz_data = {
                         {"text": "Acheter uniquement des produits périmés", "isCorrect": False},
                         {"text": "Acheter une quantité énorme de produits", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le vrac permet de réduire les déchets d'emballages plastiques et de n'acheter que la quantité exacte dont on a besoin, ce qui limite aussi le gaspillage alimentaire."
+                    "correction": " Le vrac permet de réduire les déchets d'emballages plastiques et de n'acheter que la quantité exacte dont on a besoin, ce qui limite aussi le gaspillage alimentaire."
                 },
                 {
                     "questionNumber": 35,
@@ -398,7 +398,7 @@ quiz_data = {
                         {"text": "Le fait que l'objet ne nous appartienne jamais", "isCorrect": False},
                         {"text": "Une réduction systématique du prix de l'objet", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une réserve d'argent disponible à tout moment. Les intérêts sont souvent proches du maximum légal. Sans surveillance, il peut mener rapidement au surendettement."
+                    "correction": " C'est une réserve d'argent disponible à tout moment. Les intérêts sont souvent proches du maximum légal. Sans surveillance, il peut mener rapidement au surendettement."
                 },
                 {
                     "questionNumber": 36,
@@ -409,7 +409,7 @@ quiz_data = {
                         {"text": "Toujours choisir le produit le plus cher ici", "isCorrect": False},
                         {"text": "Suivre uniquement les publicités de la télé", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est un acte citoyen qui privilégie les circuits courts, le commerce équitable, le respect de l'environnement et des conditions de travail de ceux qui fabriquent."
+                    "correction": " C'est un acte citoyen qui privilégie les circuits courts, le commerce équitable, le respect de l'environnement et des conditions de travail de ceux qui fabriquent."
                 },
                 {
                     "questionNumber": 37,
@@ -420,7 +420,7 @@ quiz_data = {
                         {"text": "Remplacer sa propre voiture en cas de panne", "isCorrect": False},
                         {"text": "Gagner de l'argent lors de chaque accident", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Cette assurance est obligatoire. Elle prend en charge l'indemnisation si vous blessez quelqu'un ou cassez un objet appartenant à autrui par inadvertance."
+                    "correction": " Cette assurance est obligatoire. Elle prend en charge l'indemnisation si vous blessez quelqu'un ou cassez un objet appartenant à autrui par inadvertance."
                 },
                 {
                     "questionNumber": 38,
@@ -431,7 +431,7 @@ quiz_data = {
                         {"text": "Pour calculer le temps de cuisson de la viande", "isCorrect": False},
                         {"text": "Pour vérifier le nom de l'usine de fabrication", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le prix à l'unité peut être trompeur à cause de la taille des emballages. Le prix au kilogramme (ou au litre) est le seul indicateur fiable pour comparer deux marques différentes."
+                    "correction": " Le prix à l'unité peut être trompeur à cause de la taille des emballages. Le prix au kilogramme (ou au litre) est le seul indicateur fiable pour comparer deux marques différentes."
                 },
                 {
                     "questionNumber": 39,
@@ -442,7 +442,7 @@ quiz_data = {
                         {"text": "Un contrat pour réparer l'objet pendant dix ans", "isCorrect": False},
                         {"text": "Le droit de changer d'avis au bout de six mois", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En France, tout vendeur doit garantir pendant 2 ans que le produit fonctionne comme prévu. S'il tombe en panne sans mauvaise utilisation, il doit être réparé ou remplacé gratuitement."
+                    "correction": " En France, tout vendeur doit garantir pendant 2 ans que le produit fonctionne comme prévu. S'il tombe en panne sans mauvaise utilisation, il doit être réparé ou remplacé gratuitement."
                 },
                 {
                     "questionNumber": 40,
@@ -453,7 +453,7 @@ quiz_data = {
                         {"text": "Le Total des Valeurs d'Achat du client seul", "isCorrect": False},
                         {"text": "Le Transport de Véhicules Automobiles local", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La TVA est un impôt indirect payé par le consommateur et collecté par l'entreprise pour le compte de l'État. Le taux normal est de 20 % sur la majorité des produits."
+                    "correction": " La TVA est un impôt indirect payé par le consommateur et collecté par l'entreprise pour le compte de l'État. Le taux normal est de 20 % sur la majorité des produits."
                 }
             ]
         },
@@ -472,7 +472,7 @@ quiz_data = {
                         {"text": "Environ cinquante pour cent de l'eau totale", "isCorrect": False},
                         {"text": "La totalité de l'eau présente dans les nuages", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 97 % de l'eau est salée (océans). Sur les 3 % restants d'eau douce, la majeure partie est bloquée dans les glaciers. L'eau douce liquide (rivières, nappes) est donc une ressource très rare et précieuse."
+                    "correction": " 97 % de l'eau est salée (océans). Sur les 3 % restants d'eau douce, la majeure partie est bloquée dans les glaciers. L'eau douce liquide (rivières, nappes) est donc une ressource très rare et précieuse."
                 },
                 {
                     "questionNumber": 42,
@@ -483,7 +483,7 @@ quiz_data = {
                         {"text": "La production d'électricité par les centrales", "isCorrect": False},
                         {"text": "Le nettoyage des voitures et des routes urbaines", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'agriculture représente environ 70 % de la consommation mondiale d'eau douce. C'est un enjeu majeur pour la sécurité alimentaire et la préservation de l'environnement."
+                    "correction": " L'agriculture représente environ 70 % de la consommation mondiale d'eau douce. C'est un enjeu majeur pour la sécurité alimentaire et la préservation de l'environnement."
                 },
                 {
                     "questionNumber": 43,
@@ -494,7 +494,7 @@ quiz_data = {
                         {"text": "Les énergies propres de type solaire et hydraulique", "isCorrect": False},
                         {"text": "Les énergies gratuites venant de la mer et des vagues", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les énergies fossiles mettent des millions d'années à se former. Leur combustion rejette du CO2, gaz responsable du réchauffement climatique. Elles finiront par disparaître."
+                    "correction": " Les énergies fossiles mettent des millions d'années à se former. Leur combustion rejette du CO2, gaz responsable du réchauffement climatique. Elles finiront par disparaître."
                 },
                 {
                     "questionNumber": 44,
@@ -505,7 +505,7 @@ quiz_data = {
                         {"text": "Les vieux journaux et les magazines de mode", "isCorrect": False},
                         {"text": "Les bouteilles d'eau en plastique transparent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les piles contiennent des métaux lourds (mercure, plomb) qui polluent gravement le sol et l'eau s'ils sont jetés à la poubelle ordinaire. Ils nécessitent un traitement spécial."
+                    "correction": " Les piles contiennent des métaux lourds (mercure, plomb) qui polluent gravement le sol et l'eau s'ils sont jetés à la poubelle ordinaire. Ils nécessitent un traitement spécial."
                 },
                 {
                     "questionNumber": 45,
@@ -516,7 +516,7 @@ quiz_data = {
                         {"text": "Supprimer toute trace d'industrie dans le pays", "isCorrect": False},
                         {"text": "Utiliser uniquement l'énergie venant du pétrole brut", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est un développement qui concilie trois aspects : économique (produire), social (équité) et environnemental (protection de la nature). Il vise à préserver la planète pour nos enfants."
+                    "correction": " C'est un développement qui concilie trois aspects : économique (produire), social (équité) et environnemental (protection de la nature). Il vise à préserver la planète pour nos enfants."
                 },
                 {
                     "questionNumber": 46,
@@ -527,7 +527,7 @@ quiz_data = {
                         {"text": "Ouvrir les fenêtres quand le radiateur est au maximum", "isCorrect": False},
                         {"text": "Utiliser des ampoules très anciennes et puissantes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les petits gestes comptent : baisser le chauffage d'un degré permet d'économiser 7 % d'énergie. Les appareils en veille consomment inutilement de l'électricité toute l'année."
+                    "correction": " Les petits gestes comptent : baisser le chauffage d'un degré permet d'économiser 7 % d'énergie. Les appareils en veille consomment inutilement de l'électricité toute l'année."
                 },
                 {
                     "questionNumber": 47,
@@ -538,7 +538,7 @@ quiz_data = {
                         {"text": "Pour pouvoir manger des fraises même en plein hiver", "isCorrect": False},
                         {"text": "Parce qu'ils contiennent plus de conservateurs chimiques", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un fruit hors saison est souvent importé par avion ou cultivé sous serre chauffée. Consommer local réduit l'empreinte carbone et soutient l'agriculture de proximité."
+                    "correction": " Un fruit hors saison est souvent importé par avion ou cultivé sous serre chauffée. Consommer local réduit l'empreinte carbone et soutient l'agriculture de proximité."
                 },
                 {
                     "questionNumber": 48,
@@ -549,7 +549,7 @@ quiz_data = {
                         {"text": "L'augmentation de la pluie dans les zones tropicales", "isCorrect": False},
                         {"text": "La couleur verte des plantes durant le printemps", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est un phénomène naturel nécessaire à la vie. Cependant, l'excès de gaz (CO2, méthane) dû à l'homme retient trop de chaleur, ce qui provoque le dérèglement climatique."
+                    "correction": " C'est un phénomène naturel nécessaire à la vie. Cependant, l'excès de gaz (CO2, méthane) dû à l'homme retient trop de chaleur, ce qui provoque le dérèglement climatique."
                 },
                 {
                     "questionNumber": 49,
@@ -560,7 +560,7 @@ quiz_data = {
                         {"text": "Faire payer plus d'impôts aux habitants des villes", "isCorrect": False},
                         {"text": "Cacher les déchets au fond des grands centres de tri", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Trier permet de transformer le verre en nouvelles bouteilles, le papier en carton, etc. Cela économise l'énergie et évite de puiser dans les ressources naturelles."
+                    "correction": " Trier permet de transformer le verre en nouvelles bouteilles, le papier en carton, etc. Cela économise l'énergie et évite de puiser dans les ressources naturelles."
                 },
                 {
                     "questionNumber": 50,
@@ -571,7 +571,7 @@ quiz_data = {
                         {"text": "Le gaz naturel utilisé pour le chauffage urbain", "isCorrect": False},
                         {"text": "L'uranium utilisé dans les centrales nucléaires de zone", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une énergie est renouvelable si elle provient de sources que la nature renouvelle en permanence (soleil, vent, bois, chaleur de la terre)."
+                    "correction": " Une énergie est renouvelable si elle provient de sources que la nature renouvelle en permanence (soleil, vent, bois, chaleur de la terre)."
                 },
                 {
                     "questionNumber": 51,
@@ -582,7 +582,7 @@ quiz_data = {
                         {"text": "Laver ses cheveux trois fois par jour tous les jours", "isCorrect": False},
                         {"text": "Utiliser un jet d'eau très puissant pour se rincer", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un bain consomme 150 à 200 litres d'eau, alors qu'une douche de 5 minutes n'en utilise que 60 à 80. Couper l'eau pendant le savonnage est un écogeste efficace."
+                    "correction": " Un bain consomme 150 à 200 litres d'eau, alors qu'une douche de 5 minutes n'en utilise que 60 à 80. Couper l'eau pendant le savonnage est un écogeste efficace."
                 },
                 {
                     "questionNumber": 52,
@@ -593,7 +593,7 @@ quiz_data = {
                         {"text": "Ne plus jamais rien acheter dans les magasins de zone", "isCorrect": False},
                         {"text": "Tout jeter dans la même poubelle grise de rue", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le mouvement Zéro Déchet repose sur la règle des 5 R : Refuser l'inutile, Réduire le nécessaire, Réutiliser, Recycler et composter (Rendre à la terre)."
+                    "correction": " Le mouvement Zéro Déchet repose sur la règle des 5 R : Refuser l'inutile, Réduire le nécessaire, Réutiliser, Recycler et composter (Rendre à la terre)."
                 },
                 {
                     "questionNumber": 53,
@@ -604,7 +604,7 @@ quiz_data = {
                         {"text": "Une baisse naturelle du niveau des mers et des océans", "isCorrect": False},
                         {"text": "L'apparition de nouvelles espèces de poissons en acier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les déchets plastiques se fragmentent en micro-particules. Les animaux les confondent avec de la nourriture, ce qui provoque leur mort et pollue toute la chaîne alimentaire, jusqu'à l'homme."
+                    "correction": " Les déchets plastiques se fragmentent en micro-particules. Les animaux les confondent avec de la nourriture, ce qui provoque leur mort et pollue toute la chaîne alimentaire, jusqu'à l'homme."
                 },
                 {
                     "questionNumber": 54,
@@ -615,7 +615,7 @@ quiz_data = {
                         {"text": "Le nombre de fois qu'une personne recycle ses journaux", "isCorrect": False},
                         {"text": "Le poids total de tous les vêtements rangés dans son armoire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'empreinte carbone mesure l'impact de nos activités (transport, chauffage, alimentation, achats) sur le climat. Plus elle est élevée, plus nous contribuons au réchauffement global."
+                    "correction": " L'empreinte carbone mesure l'impact de nos activités (transport, chauffage, alimentation, achats) sur le climat. Plus elle est élevée, plus nous contribuons au réchauffement global."
                 },
                 {
                     "questionNumber": 55,
@@ -626,7 +626,7 @@ quiz_data = {
                         {"text": "Les piles usagées et les ampoules grillées de la maison", "isCorrect": False},
                         {"text": "Les morceaux de verre cassé et les assiettes en porcelaine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le compostage transforme les déchets organiques en engrais naturel. Cela réduit d'un tiers le poids de nos poubelles et évite d'utiliser des engrais chimiques dans le jardin."
+                    "correction": " Le compostage transforme les déchets organiques en engrais naturel. Cela réduit d'un tiers le poids de nos poubelles et évite d'utiliser des engrais chimiques dans le jardin."
                 },
                 {
                     "questionNumber": 56,
@@ -637,7 +637,7 @@ quiz_data = {
                         {"text": "Pour augmenter le prix de vente des produits de la ferme", "isCorrect": False},
                         {"text": "Pour supprimer les insectes qui nous dérangent en été", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La biodiversité fournit des services essentiels : pollinisation des cultures, purification de l'eau, médicaments. La disparition d'une espèce peut fragiliser tout un écosystème."
+                    "correction": " La biodiversité fournit des services essentiels : pollinisation des cultures, purification de l'eau, médicaments. La disparition d'une espèce peut fragiliser tout un écosystème."
                 },
                 {
                     "questionNumber": 57,
@@ -648,7 +648,7 @@ quiz_data = {
                         {"text": "Ne plus jamais avoir besoin de passer le permis", "isCorrect": False},
                         {"text": "Posséder plusieurs véhicules devant sa propre maison", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le covoiturage divise par le nombre de passagers les émissions de CO2 et les coûts (carburant, péage). Cela fluidifie aussi le trafic aux heures de pointe."
+                    "correction": " Le covoiturage divise par le nombre de passagers les émissions de CO2 et les coûts (carburant, péage). Cela fluidifie aussi le trafic aux heures de pointe."
                 },
                 {
                     "questionNumber": 58,
@@ -659,7 +659,7 @@ quiz_data = {
                         {"text": "Échanger des marchandises sans utiliser d'argent réel", "isCorrect": False},
                         {"text": "Interdire la vente de produits venant de l'étranger", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le commerce équitable assure aux petits producteurs des revenus dignes, des conditions de travail décentes et le respect de l'environnement, en évitant les intermédiaires excessifs."
+                    "correction": " Le commerce équitable assure aux petits producteurs des revenus dignes, des conditions de travail décentes et le respect de l'environnement, en évitant les intermédiaires excessifs."
                 },
                 {
                     "questionNumber": 59,
@@ -670,7 +670,7 @@ quiz_data = {
                         {"text": "L'éclairage public indispensable pour la sécurité", "isCorrect": False},
                         {"text": "La clarté naturelle des étoiles durant la pleine lune", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Trop de lumière la nuit désoriente les animaux (oiseaux, insectes) et perturbe le sommeil de l'homme. Éteindre les enseignes la nuit est une obligation légale."
+                    "correction": " Trop de lumière la nuit désoriente les animaux (oiseaux, insectes) et perturbe le sommeil de l'homme. Éteindre les enseignes la nuit est une obligation légale."
                 },
                 {
                     "questionNumber": 60,
@@ -681,7 +681,7 @@ quiz_data = {
                         {"text": "Passer tout son temps libre à faire du bricolage", "isCorrect": False},
                         {"text": "Augmenter la consommation d'énergie de la maison", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La réparation prolonge la durée de vie des objets. Cela lutte contre l'obsolescence programmée et évite de gaspiller les matières premières nécessaires à une nouvelle fabrication."
+                    "correction": " La réparation prolonge la durée de vie des objets. Cela lutte contre l'obsolescence programmée et évite de gaspiller les matières premières nécessaires à une nouvelle fabrication."
                 }
             ]
         },
@@ -700,7 +700,7 @@ quiz_data = {
                         {"text": "Le trajet habituel entre le domicile et l'entreprise", "isCorrect": False},
                         {"text": "L'obligation de porter un uniforme tous les jours", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un risque est la probabilité qu'un danger cause un dommage (blessure, fatigue, maladie). L'employeur a l'obligation légale de protéger la santé physique et mentale de ses salariés."
+                    "correction": " Un risque est la probabilité qu'un danger cause un dommage (blessure, fatigue, maladie). L'employeur a l'obligation légale de protéger la santé physique et mentale de ses salariés."
                 },
                 {
                     "questionNumber": 62,
@@ -711,7 +711,7 @@ quiz_data = {
                         {"text": "Un vêtement de mode choisi par le salarié seul", "isCorrect": False},
                         {"text": "Une machine de sécurité fixée sur le sol de l'usine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les EPI (casque, gants, chaussures de sécurité, lunettes) sont fournis gratuitement par l'employeur. Le salarié a l'obligation de les porter pour assurer sa propre sécurité."
+                    "correction": " Les EPI (casque, gants, chaussures de sécurité, lunettes) sont fournis gratuitement par l'employeur. Le salarié a l'obligation de les porter pour assurer sa propre sécurité."
                 },
                 {
                     "questionNumber": 63,
@@ -722,7 +722,7 @@ quiz_data = {
                         {"text": "Une maladie professionnelle déclarée par un médecin", "isCorrect": False},
                         {"text": "Une faute grave commise par le salarié sur la route", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'accident de trajet est assimilé à un accident du travail s'il se produit sur le parcours habituel, sans détour inutile. Il ouvre droit aux mêmes indemnisations."
+                    "correction": " L'accident de trajet est assimilé à un accident du travail s'il se produit sur le parcours habituel, sans détour inutile. Il ouvre droit aux mêmes indemnisations."
                 },
                 {
                     "questionNumber": 64,
@@ -733,7 +733,7 @@ quiz_data = {
                         {"text": "Le risque de surdité profonde par manque de bruit", "isCorrect": False},
                         {"text": "Une allergie cutanée aux écrans d'ordinateurs", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les TMS (mal de dos, tendinites) sont la première cause de maladie professionnelle. Ils résultent de gestes répétitifs, de postures inconfortables ou d'efforts excessifs."
+                    "correction": " Les TMS (mal de dos, tendinites) sont la première cause de maladie professionnelle. Ils résultent de gestes répétitifs, de postures inconfortables ou d'efforts excessifs."
                 },
                 {
                     "questionNumber": 65,
@@ -744,7 +744,7 @@ quiz_data = {
                         {"text": "Syndicat des Salariés Techniciens du privé", "isCorrect": False},
                         {"text": "Soin de Santé Transversal pour les agents", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le SST est un salarié formé pour porter secours en cas d'accident sur le lieu de travail. Il connaît les gestes d'urgence et participe à la prévention des risques dans son unité."
+                    "correction": " Le SST est un salarié formé pour porter secours en cas d'accident sur le lieu de travail. Il connaît les gestes d'urgence et participe à la prévention des risques dans son unité."
                 },
                 {
                     "questionNumber": 66,
@@ -755,7 +755,7 @@ quiz_data = {
                         {"text": "Une interdiction stricte de fumer dans la zone", "isCorrect": False},
                         {"text": "Une obligation de porter un casque de chantier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Ce symbole avertit que le produit peut causer des irritations, des allergies ou des somnolences. Il faut manipuler ces substances avec des gants et dans un endroit aéré."
+                    "correction": " Ce symbole avertit que le produit peut causer des irritations, des allergies ou des somnolences. Il faut manipuler ces substances avec des gants et dans un endroit aéré."
                 },
                 {
                     "questionNumber": 67,
@@ -766,7 +766,7 @@ quiz_data = {
                         {"text": "Secourir la personne en faisant un massage cardiaque", "isCorrect": False},
                         {"text": "Partir chercher de l'aide à l'extérieur de l'usine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** P.A.S signifie Protéger, Alerter, Secourir. On doit toujours commencer par supprimer le danger ou baliser la zone pour éviter un sur-accident avant d'appeler les secours."
+                    "correction": " P.A.S signifie Protéger, Alerter, Secourir. On doit toujours commencer par supprimer le danger ou baliser la zone pour éviter un sur-accident avant d'appeler les secours."
                 },
                 {
                     "questionNumber": 68,
@@ -777,7 +777,7 @@ quiz_data = {
                         {"text": "Un seuil de cinquante décibels au bureau", "isCorrect": False},
                         {"text": "Un seuil de dix décibels dans la nature", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** À partir de 85 dB, l'employeur doit mettre à disposition des protections auditives (bouchons, casques). Le bruit détruit les cellules ciliées de l'oreille interne, ce qui est irréversible."
+                    "correction": " À partir de 85 dB, l'employeur doit mettre à disposition des protections auditives (bouchons, casques). Le bruit détruit les cellules ciliées de l'oreille interne, ce qui est irréversible."
                 },
                 {
                     "questionNumber": 69,
@@ -788,7 +788,7 @@ quiz_data = {
                         {"text": "Un message de danger immédiat pour la vie", "isCorrect": False},
                         {"text": "Une information de secours ou une sortie proche", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Bleu = Obligation (ex: port du casque). Rouge = Interdiction ou matériel incendie. Jaune = Avertissement/Danger. Vert = Secours et évacuation."
+                    "correction": " Bleu = Obligation (ex: port du casque). Rouge = Interdiction ou matériel incendie. Jaune = Avertissement/Danger. Vert = Secours et évacuation."
                 },
                 {
                     "questionNumber": 70,
@@ -799,7 +799,7 @@ quiz_data = {
                         {"text": "Une fracture des membres inférieurs par chute", "isCorrect": False},
                         {"text": "Une brûlure chimique des doigts sur le clavier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour limiter la fatigue visuelle, il faut respecter la règle des '20-20-20' : toutes les 20 minutes, regarder à 20 pieds (6 mètres) pendant 20 secondes, et bien régler la luminosité de l'écran."
+                    "correction": " Pour limiter la fatigue visuelle, il faut respecter la règle des '20-20-20' : toutes les 20 minutes, regarder à 20 pieds (6 mètres) pendant 20 secondes, et bien régler la luminosité de l'écran."
                 },
                 {
                     "questionNumber": 71,
@@ -810,7 +810,7 @@ quiz_data = {
                         {"text": "Le livret d'accueil de l'apprenti en formation", "isCorrect": False},
                         {"text": "Le contrat de travail signé avec le patron", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le DUER est obligatoire dès le premier salarié. Il répertorie les dangers, évalue les risques et liste les actions de prévention à mettre en œuvre pour protéger les travailleurs."
+                    "correction": " Le DUER est obligatoire dès le premier salarié. Il répertorie les dangers, évalue les risques et liste les actions de prévention à mettre en œuvre pour protéger les travailleurs."
                 },
                 {
                     "questionNumber": 72,
@@ -821,7 +821,7 @@ quiz_data = {
                         {"text": "La décoration esthétique des bureaux de la ville", "isCorrect": False},
                         {"text": "La vitesse maximale de production d'un ouvrier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'ergonomie vise à concevoir des outils et des méthodes de travail qui limitent la fatigue, les erreurs et les accidents (ex: siège réglable, éclairage adapté, hauteur du plan de travail)."
+                    "correction": " L'ergonomie vise à concevoir des outils et des méthodes de travail qui limitent la fatigue, les erreurs et les accidents (ex: siège réglable, éclairage adapté, hauteur du plan de travail)."
                 },
                 {
                     "questionNumber": 73,
@@ -832,7 +832,7 @@ quiz_data = {
                         {"text": "Le coup de soleil sur le visage du travailleur", "isCorrect": False},
                         {"text": "La fatigue des yeux par la lumière du jour", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les chutes sont la deuxième cause d'accidents mortels au travail. L'utilisation de garde-corps (protection collective) est prioritaire sur le harnais (protection individuelle)."
+                    "correction": " Les chutes sont la deuxième cause d'accidents mortels au travail. L'utilisation de garde-corps (protection collective) est prioritaire sur le harnais (protection individuelle)."
                 },
                 {
                     "questionNumber": 74,
@@ -843,7 +843,7 @@ quiz_data = {
                         {"text": "Percer la cloque qui commence à se former", "isCorrect": False},
                         {"text": "Mettre de l'alcool à 90 degrés sur la peau", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La règle des '3 x 15' (ou au moins 10-15 min) à l'eau tiède (15°C) permet de refroidir la peau en profondeur et d'arrêter la progression de la brûlure. Ne rien appliquer d'autre sans avis médical."
+                    "correction": " La règle des '3 x 15' (ou au moins 10-15 min) à l'eau tiède (15°C) permet de refroidir la peau en profondeur et d'arrêter la progression de la brûlure. Ne rien appliquer d'autre sans avis médical."
                 },
                 {
                     "questionNumber": 75,
@@ -854,7 +854,7 @@ quiz_data = {
                         {"text": "Réparation de Produits de Sécurité interne", "isCorrect": False},
                         {"text": "Réunion de Prévention Spécialisée mensuelle", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les RPS (stress, harcèlement, violences) sont des risques qui portent atteinte à la santé mentale. Ils ont des conséquences graves sur la vie personnelle et l'efficacité au travail."
+                    "correction": " Les RPS (stress, harcèlement, violences) sont des risques qui portent atteinte à la santé mentale. Ils ont des conséquences graves sur la vie personnelle et l'efficacité au travail."
                 },
                 {
                     "questionNumber": 76,
@@ -865,7 +865,7 @@ quiz_data = {
                         {"text": "Une augmentation de la température des mains", "isCorrect": False},
                         {"text": "Le fait de devenir invisible pour ses collègues", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le passage du courant dans le corps (électrisation) peut brûler les tissus ou provoquer un arrêt cardiaque (électrocution). Un disjoncteur différentiel 30 mA est indispensable pour la protection."
+                    "correction": " Le passage du courant dans le corps (électrisation) peut brûler les tissus ou provoquer un arrêt cardiaque (électrocution). Un disjoncteur différentiel 30 mA est indispensable pour la protection."
                 },
                 {
                     "questionNumber": 77,
@@ -876,7 +876,7 @@ quiz_data = {
                         {"text": "Pour remplir les dossiers papier de la direction", "isCorrect": False},
                         {"text": "Pour amuser les collègues lors de la pause café", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un incident sans blessure est une alerte. En analysant pourquoi on a 'failli' se blesser, on peut modifier les procédures ou le matériel pour que l'accident n'ait jamais lieu."
+                    "correction": " Un incident sans blessure est une alerte. En analysant pourquoi on a 'failli' se blesser, on peut modifier les procédures ou le matériel pour que l'accident n'ait jamais lieu."
                 },
                 {
                     "questionNumber": 78,
@@ -887,7 +887,7 @@ quiz_data = {
                         {"text": "Indiquer le prix de vente du bidon de liquide", "isCorrect": False},
                         {"text": "Lister le nom de tous les employés du secteur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La FDS est obligatoire pour tout produit dangereux. Elle indique les dangers, les équipements de protection nécessaires et la conduite à tenir en cas d'accident (ingestion, contact)."
+                    "correction": " La FDS est obligatoire pour tout produit dangereux. Elle indique les dangers, les équipements de protection nécessaires et la conduite à tenir en cas d'accident (ingestion, contact)."
                 },
                 {
                     "questionNumber": 79,
@@ -898,7 +898,7 @@ quiz_data = {
                         {"text": "Une teinte bleutée autour des yeux fatigués", "isCorrect": False},
                         {"text": "Une jaunisse visible au niveau des yeux ici", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Lors d'une hémorragie ou d'un choc, le corps dirige le sang vers les organes vitaux (cœur, cerveau). La peau devient alors très pâle et froide. C'est une urgence absolue."
+                    "correction": " Lors d'une hémorragie ou d'un choc, le corps dirige le sang vers les organes vitaux (cœur, cerveau). La peau devient alors très pâle et froide. C'est une urgence absolue."
                 },
                 {
                     "questionNumber": 80,
@@ -909,7 +909,7 @@ quiz_data = {
                         {"text": "Le Robinet d'Incendie Armé pour les pompiers", "isCorrect": False},
                         {"text": "Le Bloc Autonome d'Éclairage de Sécurité", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le DAE est utilisable par tous, même sans formation. Il guide vocalement le secouriste pour placer les électrodes et n'envoie un choc électrique que s'il détecte que c'est nécessaire."
+                    "correction": " Le DAE est utilisable par tous, même sans formation. Il guide vocalement le secouriste pour placer les électrodes et n'envoie un choc électrique que s'il détecte que c'est nécessaire."
                 }
             ]
         },
@@ -928,7 +928,7 @@ quiz_data = {
                         {"text": "Le Contrat de Travail Temporaire d'intérim", "isCorrect": False},
                         {"text": "Le Contrat de Stage non rémunéré pour étude", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le CDI est la forme normale et générale de la relation de travail. Il n'a pas de date de fin prévue. Le CDD est une exception qui doit être justifiée (remplacement, surcroît d'activité)."
+                    "correction": " Le CDI est la forme normale et générale de la relation de travail. Il n'a pas de date de fin prévue. Le CDD est une exception qui doit être justifiée (remplacement, surcroît d'activité)."
                 },
                 {
                     "questionNumber": 82,
@@ -939,7 +939,7 @@ quiz_data = {
                         {"text": "Service de Maintenance Industrielle et Chimique", "isCorrect": False},
                         {"text": "Statut de Mission Internationale et Civile", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le SMIC est le salaire horaire en dessous duquel il est interdit de payer un salarié. Il est revalorisé au moins une fois par an en fonction de l'inflation."
+                    "correction": " Le SMIC est le salaire horaire en dessous duquel il est interdit de payer un salarié. Il est revalorisé au moins une fois par an en fonction de l'inflation."
                 },
                 {
                     "questionNumber": 83,
@@ -950,7 +950,7 @@ quiz_data = {
                         {"text": "Le certificat de travail de fin de mission", "isCorrect": False},
                         {"text": "La convention collective nationale du secteur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le bulletin de paie détaille le salaire brut, les cotisations sociales (retraite, santé) et le salaire net (ce qui est réellement versé). Il doit être conservé sans limitation de durée."
+                    "correction": " Le bulletin de paie détaille le salaire brut, les cotisations sociales (retraite, santé) et le salaire net (ce qui est réellement versé). Il doit être conservé sans limitation de durée."
                 },
                 {
                     "questionNumber": 84,
@@ -961,7 +961,7 @@ quiz_data = {
                         {"text": "Trente-neuf heures par semaine de travail", "isCorrect": False},
                         {"text": "Vingt-quatre heures par semaine de travail", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La durée légale est de 35h. Au-delà, les heures sont considérées comme des 'heures supplémentaires' et donnent lieu à une rémunération plus élevée ou à du repos compensateur."
+                    "correction": " La durée légale est de 35h. Au-delà, les heures sont considérées comme des 'heures supplémentaires' et donnent lieu à une rémunération plus élevée ou à du repos compensateur."
                 },
                 {
                     "questionNumber": 85,
@@ -972,7 +972,7 @@ quiz_data = {
                         {"text": "Les indemnités pour les personnes au chômage", "isCorrect": False},
                         {"text": "Les dommages causés par une inondation", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La Sécurité sociale repose sur la solidarité. Elle prend en charge une partie des frais médicaux. Le complément est souvent assuré par une 'mutuelle' (assurance complémentaire)."
+                    "correction": " La Sécurité sociale repose sur la solidarité. Elle prend en charge une partie des frais médicaux. Le complément est souvent assuré par une 'mutuelle' (assurance complémentaire)."
                 },
                 {
                     "questionNumber": 86,
@@ -983,7 +983,7 @@ quiz_data = {
                         {"text": "Payer les salaires des ouvriers en retard", "isCorrect": False},
                         {"text": "Réparer les machines qui sont en panne ici", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Il visite les entreprises pour contrôler l'application du code du travail. Il peut sanctionner l'employeur en cas de danger grave ou de non-respect des droits des salariés."
+                    "correction": " Il visite les entreprises pour contrôler l'application du code du travail. Il peut sanctionner l'employeur en cas de danger grave ou de non-respect des droits des salariés."
                 },
                 {
                     "questionNumber": 87,
@@ -994,7 +994,7 @@ quiz_data = {
                         {"text": "La période de vacances d'été annuelle", "isCorrect": False},
                         {"text": "La période de formation initiale en école", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Durant la période d'essai, l'employeur ou le salarié peut rompre le contrat très facilement, sans motif particulier. Sa durée varie selon le type de contrat (CDD ou CDI)."
+                    "correction": " Durant la période d'essai, l'employeur ou le salarié peut rompre le contrat très facilement, sans motif particulier. Sa durée varie selon le type de contrat (CDD ou CDI)."
                 },
                 {
                     "questionNumber": 88,
@@ -1005,7 +1005,7 @@ quiz_data = {
                         {"text": "Une pharmacie située dans la zone de l'usine", "isCorrect": False},
                         {"text": "Un cours de secourisme pour les directeurs", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les médecins du travail ne soignent pas les maladies ordinaires. Ils vérifient que le salarié est apte à son poste et conseillent l'employeur sur l'amélioration des conditions de travail."
+                    "correction": " Les médecins du travail ne soignent pas les maladies ordinaires. Ils vérifient que le salarié est apte à son poste et conseillent l'employeur sur l'amélioration des conditions de travail."
                 },
                 {
                     "questionNumber": 89,
@@ -1016,7 +1016,7 @@ quiz_data = {
                         {"text": "Le droit au chômage partiel pour l'activité", "isCorrect": False},
                         {"text": "Le droit de démissionner sans aucun préavis", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Si un salarié a un motif raisonnable de penser que sa situation de travail présente un danger grave et imminent pour sa vie ou sa santé, il peut arrêter son travail sans être sanctionné."
+                    "correction": " Si un salarié a un motif raisonnable de penser que sa situation de travail présente un danger grave et imminent pour sa vie ou sa santé, il peut arrêter son travail sans être sanctionné."
                 },
                 {
                     "questionNumber": 90,
@@ -1027,7 +1027,7 @@ quiz_data = {
                         {"text": "Le montant des impôts versés par le patron", "isCorrect": False},
                         {"text": "Le coût total de l'employé pour la firme", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est le montant final après déduction des cotisations sociales. Depuis 2019, l'impôt sur le revenu est souvent prélevé directement sur cette somme (prélèvement à la source)."
+                    "correction": " C'est le montant final après déduction des cotisations sociales. Depuis 2019, l'impôt sur le revenu est souvent prélevé directement sur cette somme (prélèvement à la source)."
                 },
                 {
                     "questionNumber": 91,
@@ -1038,7 +1038,7 @@ quiz_data = {
                         {"text": "Fixer le prix de vente des produits finis", "isCorrect": False},
                         {"text": "Remplacer le contrat de travail individuel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est un accord entre syndicats et employeurs d'un secteur (ex: bâtiment, coiffure). Elle propose souvent des avantages supérieurs au code du travail (primes, jours de congés supplémentaires)."
+                    "correction": " C'est un accord entre syndicats et employeurs d'un secteur (ex: bâtiment, coiffure). Elle propose souvent des avantages supérieurs au code du travail (primes, jours de congés supplémentaires)."
                 },
                 {
                     "questionNumber": 92,
@@ -1049,7 +1049,7 @@ quiz_data = {
                         {"text": "Une blessure soudaine par chute dans l'atelier", "isCorrect": False},
                         {"text": "Un rhume soigné avec des médicaments simples", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Contrairement à l'accident qui est soudain, la maladie professionnelle apparaît après une exposition prolongée à un risque (poussière, bruit, produits toxiques, gestes répétitifs)."
+                    "correction": " Contrairement à l'accident qui est soudain, la maladie professionnelle apparaît après une exposition prolongée à un risque (poussière, bruit, produits toxiques, gestes répétitifs)."
                 },
                 {
                     "questionNumber": 93,
@@ -1060,7 +1060,7 @@ quiz_data = {
                         {"text": "Uniquement les banques privées du pays lointain", "isCorrect": False},
                         {"text": "Le paiement des amendes de police uniquement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le système français repose sur les cotisations prélevées sur les salaires. On dit qu'il est 'contributif' : on cotise selon ses moyens et on reçoit selon ses besoins."
+                    "correction": " Le système français repose sur les cotisations prélevées sur les salaires. On dit qu'il est 'contributif' : on cotise selon ses moyens et on reçoit selon ses besoins."
                 },
                 {
                     "questionNumber": 94,
@@ -1071,7 +1071,7 @@ quiz_data = {
                         {"text": "Vingt-et-un ans pour les droits et devoirs", "isCorrect": False},
                         {"text": "Quinze ans pour les droits et devoirs civils", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** À 18 ans, on devient responsable de ses actes devant la loi. On obtient le droit de vote et la capacité de signer seul des contrats ou d'ouvrir un compte bancaire."
+                    "correction": " À 18 ans, on devient responsable de ses actes devant la loi. On obtient le droit de vote et la capacité de signer seul des contrats ou d'ouvrir un compte bancaire."
                 },
                 {
                     "questionNumber": 95,
@@ -1082,7 +1082,7 @@ quiz_data = {
                         {"text": "Le fait de donner beaucoup de travail à faire", "isCorrect": False},
                         {"text": "Le fait de demander d'être ponctuel le matin", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le harcèlement se définit par la répétition. Il vise à humilier ou isoler le salarié. C'est un délit puni par le code pénal et le code du travail."
+                    "correction": " Le harcèlement se définit par la répétition. Il vise à humilier ou isoler le salarié. C'est un délit puni par le code pénal et le code du travail."
                 },
                 {
                     "questionNumber": 96,
@@ -1093,7 +1093,7 @@ quiz_data = {
                         {"text": "Une lettre de félicitations pour le bon travail", "isCorrect": False},
                         {"text": "La clé de l'entrée principale du bâtiment central", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'employeur doit fournir l'attestation Pôle Emploi (pour les indemnités), le certificat de travail (prouvant l'expérience) et le reçu pour solde de tout compte (inventaire des sommes versées)."
+                    "correction": " L'employeur doit fournir l'attestation Pôle Emploi (pour les indemnités), le certificat de travail (prouvant l'expérience) et le reçu pour solde de tout compte (inventaire des sommes versées)."
                 },
                 {
                     "questionNumber": 97,
@@ -1104,7 +1104,7 @@ quiz_data = {
                         {"text": "Refuser de travailler pour une entreprise privée", "isCorrect": False},
                         {"text": "Toujours arriver en retard pour économiser du temps", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En entreprise, cela consiste à éteindre les machines, limiter les impressions papier, trier les déchets industriels et utiliser les transports doux."
+                    "correction": " En entreprise, cela consiste à éteindre les machines, limiter les impressions papier, trier les déchets industriels et utiliser les transports doux."
                 },
                 {
                     "questionNumber": 98,
@@ -1115,7 +1115,7 @@ quiz_data = {
                         {"text": "Pour que les salariés travaillent deux fois plus vite", "isCorrect": False},
                         {"text": "Pour faire plaisir aux clients qui visitent l'usine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'employeur est responsable de la santé de ses employés. Il doit leur apprendre à manipuler les produits dangereux et à utiliser les machines sans se blesser."
+                    "correction": " L'employeur est responsable de la santé de ses employés. Il doit leur apprendre à manipuler les produits dangereux et à utiliser les machines sans se blesser."
                 },
                 {
                     "questionNumber": 99,
@@ -1126,7 +1126,7 @@ quiz_data = {
                         {"text": "Une erreur de frappe dans un texte administratif", "isCorrect": False},
                         {"text": "Le fait de perdre son stylo durant la pause café", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un risque majeur (séisme, nuage toxique, inondation) touche un grand nombre de personnes et dépasse les capacités de secours habituelles de la zone."
+                    "correction": " Un risque majeur (séisme, nuage toxique, inondation) touche un grand nombre de personnes et dépasse les capacités de secours habituelles de la zone."
                 },
                 {
                     "questionNumber": 100,
@@ -1137,7 +1137,7 @@ quiz_data = {
                         {"text": "Apprendre à soigner les gens à l'hôpital de ville", "isCorrect": False},
                         {"text": "Devenir un expert en économie et finance mondiale", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La PSE vise à donner au futur professionnel les moyens de protéger sa santé, de gérer son budget et de comprendre son impact sur l'environnement pour être un citoyen éclairé."
+                    "correction": " La PSE vise à donner au futur professionnel les moyens de protéger sa santé, de gérer son budget et de comprendre son impact sur l'environnement pour être un citoyen éclairé."
                 }
             ]
         }

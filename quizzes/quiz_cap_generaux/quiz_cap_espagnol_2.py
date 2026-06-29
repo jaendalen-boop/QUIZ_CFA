@@ -16,7 +16,7 @@ quiz_data = {
                         {"text": "Tengo", "isCorrect": False},
                         {"text": "Llamo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour définir l'identité, l'origine géographique ou la nationalité, on utilise obligatoirement le verbe 'Ser'. C'est une caractéristique perçue comme permanente. Exemple : 'Soy français' ou 'Somos de Madrid'."
+                    "correction": " Pour définir l'identité, l'origine géographique ou la nationalité, on utilise obligatoirement le verbe 'Ser'. C'est une caractéristique perçue comme permanente. Exemple : 'Soy français' ou 'Somos de Madrid'."
                 },
                 {
                     "questionNumber": 2,
@@ -27,7 +27,7 @@ quiz_data = {
                         {"text": "Madrid tiene mucha gente", "isCorrect": False},
                         {"text": "Madrid parece muy lejana", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour localiser un lieu géographique, un bâtiment ou un objet dans l'espace, on utilise systématiquement le verbe 'Estar'. Exemple : 'París está en Francia' ou 'El libro está en la mesa'."
+                    "correction": " Pour localiser un lieu géographique, un bâtiment ou un objet dans l'espace, on utilise systématiquement le verbe 'Estar'. Exemple : 'París está en Francia' ou 'El libro está en la mesa'."
                 },
                 {
                     "questionNumber": 3,
@@ -38,7 +38,7 @@ quiz_data = {
                         {"text": "Mío libro", "isCorrect": False},
                         {"text": "Su libro", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'adjectif possessif de la première personne du singulier est 'Mi'. Il se place devant le nom et ne prend jamais d'accent. Son pluriel est 'Mis' (ex : mis libros)."
+                    "correction": " L'adjectif possessif de la première personne du singulier est 'Mi'. Il se place devant le nom et ne prend jamais d'accent. Son pluriel est 'Mis' (ex : mis libros)."
                 },
                 {
                     "questionNumber": 4,
@@ -49,7 +49,7 @@ quiz_data = {
                         {"text": "Pudo", "isCorrect": False},
                         {"text": "Podio", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Poder' est un verbe à diphtongue. Au présent de l'indicatif, le 'o' de la racine se transforme en 'ue' aux trois personnes du singulier et à la troisième personne du pluriel (puedo, puedes, peut, peuvent)."
+                    "correction": " 'Poder' est un verbe à diphtongue. Au présent de l'indicatif, le 'o' de la racine se transforme en 'ue' aux trois personnes du singulier et à la troisième personne du pluriel (puedo, puedes, peut, peuvent)."
                 },
                 {
                     "questionNumber": 5,
@@ -60,7 +60,7 @@ quiz_data = {
                         {"text": "Comemos", "isCorrect": False},
                         {"text": "Coméis", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour les verbes réguliers se terminant en -ER (comme comer, beber, leer), la terminaison de la 3ème personne du pluriel (ellos/ellas/ustedes) au présent est -en."
+                    "correction": " Pour les verbes réguliers se terminant en -ER (comme comer, beber, leer), la terminaison de la 3ème personne du pluriel (ellos/ellas/ustedes) au présent est -en."
                 },
                 {
                     "questionNumber": 6,
@@ -71,7 +71,7 @@ quiz_data = {
                         {"text": "La hombre", "isCorrect": False},
                         {"text": "Uno mujer", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Mujer' est un nom féminin. On utilise l'article indéfini 'una'. Son pluriel est 'unas mujeres'. À l'inverse, on dira 'un hombre' au masculin."
+                    "correction": " 'Mujer' est un nom féminin. On utilise l'article indéfini 'una'. Son pluriel est 'unas mujeres'. À l'inverse, on dira 'un hombre' au masculin."
                 },
                 {
                     "questionNumber": 7,
@@ -82,7 +82,7 @@ quiz_data = {
                         {"text": "Mañana", "isCorrect": False},
                         {"text": "Después", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Ahora' indique le moment présent. Ne pas confondre avec 'Ayer' (hier), 'Mañana' (demain) ou 'Luego / Después' (plus tard / après)."
+                    "correction": " 'Ahora' indique le moment présent. Ne pas confondre avec 'Ayer' (hier), 'Mañana' (demain) ou 'Luego / Después' (plus tard / après)."
                 },
                 {
                     "questionNumber": 8,
@@ -93,7 +93,7 @@ quiz_data = {
                         {"text": "No hay coche", "isCorrect": False},
                         {"text": "Tengo no coche", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour former la négation, on place le mot 'No' juste devant le verbe conjugué. 'Tener' est le verbe utilisé pour la possession (avoir)."
+                    "correction": " Pour former la négation, on place le mot 'No' juste devant le verbe conjugué. 'Tener' est le verbe utilisé pour la possession (avoir)."
                 },
                 {
                     "questionNumber": 9,
@@ -104,7 +104,7 @@ quiz_data = {
                         {"text": "Teníamos", "isCorrect": False},
                         {"text": "Hacemos", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Estamos' est la première personne du pluriel du verbe 'Estar'. On l'utilise ici car il s'agit d'indiquer une localisation dans l'espace."
+                    "correction": " 'Estamos' est la première personne du pluriel du verbe 'Estar'. On l'utilise ici car il s'agit d'indiquer une localisation dans l'espace."
                 },
                 {
                     "questionNumber": 10,
@@ -115,7 +115,7 @@ quiz_data = {
                         {"text": "Las canciónes", "isCorrect": False},
                         {"text": "Los canciones", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les mots se terminant par 'n' ou 's' et portant un accent sur la dernière syllabe perdent cet accent au pluriel car la tonique ne change pas de place. On ajoute -es pour former le pluriel."
+                    "correction": " Les mots se terminant par 'n' ou 's' et portant un accent sur la dernière syllabe perdent cet accent au pluriel car la tonique ne change pas de place. On ajoute -es pour former le pluriel."
                 },
                 {
                     "questionNumber": 11,
@@ -126,7 +126,7 @@ quiz_data = {
                         {"text": "Hablamos", "isCorrect": False},
                         {"text": "Hablas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour les verbes en -AR au présent, la terminaison de la 2ème personne du pluriel (vosotros/as) est -áis. Elle porte toujours un accent sur le 'á'."
+                    "correction": " Pour les verbes en -AR au présent, la terminaison de la 2ème personne du pluriel (vosotros/as) est -áis. Elle porte toujours un accent sur le 'á'."
                 },
                 {
                     "questionNumber": 12,
@@ -137,7 +137,7 @@ quiz_data = {
                         {"text": "Está", "isCorrect": False},
                         {"text": "Tiene", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Hay' est la forme impersonnelle du verbe Haber. Elle est invariable (elle ne change jamais, même si l'objet qui suit est au pluriel). On l'utilise pour exprimer l'existence."
+                    "correction": " 'Hay' est la forme impersonnelle du verbe Haber. Elle est invariable (elle ne change jamais, même si l'objet qui suit est au pluriel). On l'utilise pour exprimer l'existence."
                 },
                 {
                     "questionNumber": 13,
@@ -148,7 +148,7 @@ quiz_data = {
                         {"text": "Siempre", "isCorrect": False},
                         {"text": "Nunca", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Pronto' signifie bientôt ou tôt. L'expression 'Hasta pronto' est très courante pour dire au revoir à quelqu'un que l'on va revoir rapidement."
+                    "correction": " 'Pronto' signifie bientôt ou tôt. L'expression 'Hasta pronto' est très courante pour dire au revoir à quelqu'un que l'on va revoir rapidement."
                 },
                 {
                     "questionNumber": 14,
@@ -159,7 +159,7 @@ quiz_data = {
                         {"text": "Soy que estudiar", "isCorrect": False},
                         {"text": "Debo de estudio", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'obligation personnelle se traduit par la tournure 'Tener que + infinitif'. Elle exprime une nécessité qui dépend de la personne (Je dois, tu dois, etc.)."
+                    "correction": " L'obligation personnelle se traduit par la tournure 'Tener que + infinitif'. Elle exprime une nécessité qui dépend de la personne (Je dois, tu dois, etc.)."
                 },
                 {
                     "questionNumber": 15,
@@ -170,7 +170,7 @@ quiz_data = {
                         {"text": "Debajo", "isCorrect": False},
                         {"text": "Encima", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Detrás' est la préposition de lieu pour derrière. À l'opposé, on trouve 'delante' (devant). 'Debajo' signifie sous/dessous et 'encima' sur/dessus."
+                    "correction": " 'Detrás' est la préposition de lieu pour derrière. À l'opposé, on trouve 'delante' (devant). 'Debajo' signifie sous/dessous et 'encima' sur/dessus."
                 },
                 {
                     "questionNumber": 16,
@@ -181,7 +181,7 @@ quiz_data = {
                         {"text": "Hice", "isCorrect": False},
                         {"text": "Hagamos", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le verbe 'Hacer' est irrégulier au présent de l'indicatif uniquement à la première personne du singulier : 'Yo hago'. Les autres personnes sont régulières (tú haces, él hace...)."
+                    "correction": " Le verbe 'Hacer' est irrégulier au présent de l'indicatif uniquement à la première personne du singulier : 'Yo hago'. Les autres personnes sont régulières (tú haces, él hace...)."
                 },
                 {
                     "questionNumber": 17,
@@ -192,7 +192,7 @@ quiz_data = {
                         {"text": "Tan", "isCorrect": False},
                         {"text": "Como", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Más' s'écrit avec un accent écrit sur le 'á'. Sans accent, 'mas' est une conjonction littéraire qui signifie 'mais'. 'Menos' signifie moins."
+                    "correction": " 'Más' s'écrit avec un accent écrit sur le 'á'. Sans accent, 'mas' est une conjonction littéraire qui signifie 'mais'. 'Menos' signifie moins."
                 },
                 {
                     "questionNumber": 18,
@@ -203,7 +203,7 @@ quiz_data = {
                         {"text": "Los problemas", "isCorrect": False},
                         {"text": "Problemas unos", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Bien qu'il se termine par 'a', le mot 'problema' est masculin (d'origine grecque). On dit donc 'un problema' et 'unos problemas'. C'est une exception classique à retenir."
+                    "correction": " Bien qu'il se termine par 'a', le mot 'problema' est masculin (d'origine grecque). On dit donc 'un problema' et 'unos problemas'. C'est une exception classique à retenir."
                 },
                 {
                     "questionNumber": 19,
@@ -214,7 +214,7 @@ quiz_data = {
                         {"text": "Está calor", "isCorrect": False},
                         {"text": "Tiene calor", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour parler de la météo ou de la température ambiante, on utilise le verbe 'Hacer'. 'Hace calor' (il fait chaud), 'Hace frío' (il fait froid). 'Tener calor' s'utilise pour une personne qui a chaud."
+                    "correction": " Pour parler de la météo ou de la température ambiante, on utilise le verbe 'Hacer'. 'Hace calor' (il fait chaud), 'Hace frío' (il fait froid). 'Tener calor' s'utilise pour une personne qui a chaud."
                 },
                 {
                     "questionNumber": 20,
@@ -225,7 +225,7 @@ quiz_data = {
                         {"text": "Diez", "isCorrect": False},
                         {"text": "Mil", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le chiffre 100 se dit 'Cien' lorsqu'il est seul ou placé juste devant un nom. On utilise 'Ciento' pour les nombres composés supérieurs (ex : ciento uno, ciento veinte)."
+                    "correction": " Le chiffre 100 se dit 'Cien' lorsqu'il est seul ou placé juste devant un nom. On utilise 'Ciento' pour les nombres composés supérieurs (ex : ciento uno, ciento veinte)."
                 }
             ]
         },
@@ -244,7 +244,7 @@ quiz_data = {
                         {"text": "El salón", "isCorrect": False},
                         {"text": "El dormitorio", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Cocina' désigne à la fois la pièce où l'on prépare les repas et l'appareil de cuisson lui-même. C'est un nom féminin."
+                    "correction": " 'Cocina' désigne à la fois la pièce où l'on prépare les repas et l'appareil de cuisson lui-même. C'est un nom féminin."
                 },
                 {
                     "questionNumber": 22,
@@ -255,7 +255,7 @@ quiz_data = {
                         {"text": "Jardín", "isCorrect": False},
                         {"text": "Ventana", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On peut utiliser 'el dormitorio' (le dortoir/chambre à coucher), 'la habitation' (la pièce/chambre) ou encore 'el cuarto'. Les trois sont compris partout."
+                    "correction": " On peut utiliser 'el dormitorio' (le dortoir/chambre à coucher), 'la habitation' (la pièce/chambre) ou encore 'el cuarto'. Les trois sont compris partout."
                 },
                 {
                     "questionNumber": 23,
@@ -266,7 +266,7 @@ quiz_data = {
                         {"text": "La cama", "isCorrect": False},
                         {"text": "El armario", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La mesa' est un mot transparent très proche du français. On dit 'poner la mesa' pour mettre la table et 'quitar la mesa' pour la débarrasser."
+                    "correction": " 'La mesa' est un mot transparent très proche du français. On dit 'poner la mesa' pour mettre la table et 'quitar la mesa' pour la débarrasser."
                 },
                 {
                     "questionNumber": 24,
@@ -277,7 +277,7 @@ quiz_data = {
                         {"text": "La puerta", "isCorrect": False},
                         {"text": "El suelo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La silla' est la chaise classique. Ne confondez pas avec 'el sillón' qui désigne un fauteuil plus confortable."
+                    "correction": " 'La silla' est la chaise classique. Ne confondez pas avec 'el sillón' qui désigne un fauteuil plus confortable."
                 },
                 {
                     "questionNumber": 25,
@@ -288,7 +288,7 @@ quiz_data = {
                         {"text": "La alfombra", "isCorrect": False},
                         {"text": "El techo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La cama' se trouve dans 'el dormitorio'. On dit 'hacer la cama' pour faire son lit."
+                    "correction": " 'La cama' se trouve dans 'el dormitorio'. On dit 'hacer la cama' pour faire son lit."
                 },
                 {
                     "questionNumber": 26,
@@ -299,7 +299,7 @@ quiz_data = {
                         {"text": "El piso", "isCorrect": False},
                         {"text": "El timbre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La puerta' est un nom féminin. Pour dire 'ouvrir la porte', on utilise le verbe 'abrir' (abrir la puerta)."
+                    "correction": " 'La puerta' est un nom féminin. Pour dire 'ouvrir la porte', on utilise le verbe 'abrir' (abrir la puerta)."
                 },
                 {
                     "questionNumber": 27,
@@ -310,7 +310,7 @@ quiz_data = {
                         {"text": "La cortina", "isCorrect": False},
                         {"text": "El cristal", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La ventana' est le nom féminin pour fenêtre. Pour dire 'fermer la fenêtre', on utilise le verbe 'cerrar' (cerrar la ventana)."
+                    "correction": " 'La ventana' est le nom féminin pour fenêtre. Pour dire 'fermer la fenêtre', on utilise le verbe 'cerrar' (cerrar la ventana)."
                 },
                 {
                     "questionNumber": 28,
@@ -321,7 +321,7 @@ quiz_data = {
                         {"text": "Entrada", "isCorrect": False},
                         {"text": "Pasillo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El salón' est la pièce de vie principale. 'La sala de estar' insiste sur l'aspect détente. 'El comedor' est spécifiquement la salle à manger."
+                    "correction": " 'El salón' est la pièce de vie principale. 'La sala de estar' insiste sur l'aspect détente. 'El comedor' est spécifiquement la salle à manger."
                 },
                 {
                     "questionNumber": 29,
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "Lavabo", "isCorrect": False},
                         {"text": "Espejo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El baño' est le mot le plus courant. 'El aseo' désigne souvent une petite salle d'eau ou les toilettes dans un lieu public."
+                    "correction": " 'El baño' est le mot le plus courant. 'El aseo' désigne souvent une petite salle d'eau ou les toilettes dans un lieu public."
                 },
                 {
                     "questionNumber": 30,
@@ -343,7 +343,7 @@ quiz_data = {
                         {"text": "La cerradura", "isCorrect": False},
                         {"text": "El código", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La llave' est la clé. Attention à la prononciation du 'll' (comme un 'y'). 'La cerradura' est la serrure elle-même."
+                    "correction": " 'La llave' est la clé. Attention à la prononciation du 'll' (comme un 'y'). 'La cerradura' est la serrure elle-même."
                 },
                 {
                     "questionNumber": 31,
@@ -354,7 +354,7 @@ quiz_data = {
                         {"text": "El rellano", "isCorrect": False},
                         {"text": "El peldaño", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La escalera' est un nom féminin. Pour désigner une marche d'escalier, on utilise le mot 'el peldaño'."
+                    "correction": " 'La escalera' est un nom féminin. Pour désigner une marche d'escalier, on utilise le mot 'el peldaño'."
                 },
                 {
                     "questionNumber": 32,
@@ -365,7 +365,7 @@ quiz_data = {
                         {"text": "Chimenea", "isCorrect": False},
                         {"text": "Teja", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En espagnol, 'el tejado' désigne la structure extérieure (couverture). 'El techo' désigne le plafond vu de l'intérieur de la pièce."
+                    "correction": " En espagnol, 'el tejado' désigne la structure extérieure (couverture). 'El techo' désigne le plafond vu de l'intérieur de la pièce."
                 },
                 {
                     "questionNumber": 33,
@@ -376,7 +376,7 @@ quiz_data = {
                         {"text": "Terraza", "isCorrect": False},
                         {"text": "Prado", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El jardín' s'écrit avec un 'j' qui se prononce comme une jota (son de gorge) et porte un accent sur le 'í'."
+                    "correction": " 'El jardín' s'écrit avec un 'j' qui se prononce comme une jota (son de gorge) et porte un accent sur le 'í'."
                 },
                 {
                     "questionNumber": 34,
@@ -387,7 +387,7 @@ quiz_data = {
                         {"text": "Tabique", "isCorrect": False},
                         {"text": "Reja", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La pared' désigne généralement le mur intérieur d'une pièce. 'El muro' désigne plutôt un mur extérieur ou une muraille de clôture."
+                    "correction": " 'La pared' désigne généralement le mur intérieur d'une pièce. 'El muro' désigne plutôt un mur extérieur ou une muraille de clôture."
                 },
                 {
                     "questionNumber": 35,
@@ -398,7 +398,7 @@ quiz_data = {
                         {"text": "Estufa", "isCorrect": False},
                         {"text": "Microondas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La nevera' est le mot le plus fréquent dans le langage quotidien. 'El frigorífico' est le terme technique complet."
+                    "correction": " 'La nevera' est le mot le plus fréquent dans le langage quotidien. 'El frigorífico' est le terme technique complet."
                 },
                 {
                     "questionNumber": 36,
@@ -409,7 +409,7 @@ quiz_data = {
                         {"text": "Ratón", "isCorrect": False},
                         {"text": "Teclado", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El ordenador' est le terme utilisé en Espagne. En Amérique latine, on utilise le mot 'la computadora' ou 'el computador'."
+                    "correction": " 'El ordenador' est le terme utilisé en Espagne. En Amérique latine, on utilise le mot 'la computadora' ou 'el computador'."
                 },
                 {
                     "questionNumber": 37,
@@ -420,7 +420,7 @@ quiz_data = {
                         {"text": "Cristal", "isCorrect": False},
                         {"text": "Imagen", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El espejo' est masculin. On l'utilise pour se regarder ('mirarse en el espejo')."
+                    "correction": " 'El espejo' est masculin. On l'utilise pour se regarder ('mirarse en el espejo')."
                 },
                 {
                     "questionNumber": 38,
@@ -431,7 +431,7 @@ quiz_data = {
                         {"text": "Vasos", "isCorrect": False},
                         {"text": "Mesa", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La vajilla' désigne l'ensemble des ustensiles de table. Pour l'action de laver, on utilise l'expression 'fregar los platos' ou 'lavar la vajilla'."
+                    "correction": " 'La vajilla' désigne l'ensemble des ustensiles de table. Pour l'action de laver, on utilise l'expression 'fregar los platos' ou 'lavar la vajilla'."
                 },
                 {
                     "questionNumber": 39,
@@ -442,7 +442,7 @@ quiz_data = {
                         {"text": "Bombilla", "isCorrect": False},
                         {"text": "Brillo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La luz' est féminin. Son pluriel est 'Las luces'. Pour allumer, on utilise le verbe 'encender' et pour éteindre le verbe 'apagar'."
+                    "correction": " 'La luz' est féminin. Son pluriel est 'Las luces'. Pour allumer, on utilise le verbe 'encender' et pour éteindre le verbe 'apagar'."
                 },
                 {
                     "questionNumber": 40,
@@ -453,7 +453,7 @@ quiz_data = {
                         {"text": "Altura", "isCorrect": False},
                         {"text": "Suelo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El piso' désigne l'appartement ou l'étage. 'La planta' est utilisé pour compter les niveaux (ex : primera planta, segunda planta)."
+                    "correction": " 'El piso' désigne l'appartement ou l'étage. 'La planta' est utilisé pour compter les niveaux (ex : primera planta, segunda planta)."
                 }
             ]
         },
@@ -472,7 +472,7 @@ quiz_data = {
                         {"text": "Camino", "isCorrect": False},
                         {"text": "Plaza", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La calle' est le terme de base. 'La avenida' désigne une rue très large et 'el camino' désigne un chemin de terre ou une route de campagne."
+                    "correction": " 'La calle' est le terme de base. 'La avenida' désigne une rue très large et 'el camino' désigne un chemin de terre ou une route de campagne."
                 },
                 {
                     "questionNumber": 42,
@@ -483,7 +483,7 @@ quiz_data = {
                         {"text": "Calle", "isCorrect": False},
                         {"text": "Hotel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La tienda' est le commerce général. On peut préciser : 'tienda de ropa' (magasin de vêtements). 'Ir de tiendas' signifie faire les boutiques."
+                    "correction": " 'La tienda' est le commerce général. On peut préciser : 'tienda de ropa' (magasin de vêtements). 'Ir de tiendas' signifie faire les boutiques."
                 },
                 {
                     "questionNumber": 43,
@@ -494,7 +494,7 @@ quiz_data = {
                         {"text": "Frutería", "isCorrect": False},
                         {"text": "Farmacia", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En espagnol, le nom des commerces se forme souvent sur le nom du produit + le suffixe -ería. 'Pan' (pain) donne 'panadería'."
+                    "correction": " En espagnol, le nom des commerces se forme souvent sur le nom du produit + le suffixe -ería. 'Pan' (pain) donne 'panadería'."
                 },
                 {
                     "questionNumber": 44,
@@ -505,7 +505,7 @@ quiz_data = {
                         {"text": "A la izquierda", "isCorrect": False},
                         {"text": "Detrás", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Todo recto' est l'instruction pour indiquer qu'il ne faut pas tourner. On peut aussi dire 'todo derecho' en Amérique latine."
+                    "correction": " 'Todo recto' est l'instruction pour indiquer qu'il ne faut pas tourner. On peut aussi dire 'todo derecho' en Amérique latine."
                 },
                 {
                     "questionNumber": 45,
@@ -516,7 +516,7 @@ quiz_data = {
                         {"text": "Lugar", "isCorrect": False},
                         {"text": "Zona", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La plaza' est le cœur de la vie sociale espagnole. La 'Plaza Mayor' est la place principale historique de nombreuses villes."
+                    "correction": " 'La plaza' est le cœur de la vie sociale espagnole. La 'Plaza Mayor' est la place principale historique de nombreuses villes."
                 },
                 {
                     "questionNumber": 46,
@@ -527,7 +527,7 @@ quiz_data = {
                         {"text": "Banco", "isCorrect": False},
                         {"text": "Cine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est un mot transparent. On utilise souvent l'abréviation familière 'el súper'."
+                    "correction": " C'est un mot transparent. On utilise souvent l'abréviation familière 'el súper'."
                 },
                 {
                     "questionNumber": 47,
@@ -538,7 +538,7 @@ quiz_data = {
                         {"text": "Clínica", "isCorrect": False},
                         {"text": "Médico", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Farmacia' s'écrit avec un 'f'. Une 'farmacia de guardia' est une pharmacie ouverte en dehors des horaires habituels (nuit, dimanche)."
+                    "correction": " 'Farmacia' s'écrit avec un 'f'. Une 'farmacia de guardia' est une pharmacie ouverte en dehors des horaires habituels (nuit, dimanche)."
                 },
                 {
                     "questionNumber": 48,
@@ -549,7 +549,7 @@ quiz_data = {
                         {"text": "Parar", "isCorrect": False},
                         {"text": "Mirar", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Girar' est le terme standard en Espagne pour indiquer un changement de direction. 'Doblar' est plus fréquent en Amérique latine."
+                    "correction": " 'Girar' est le terme standard en Espagne pour indiquer un changement de direction. 'Doblar' est plus fréquent en Amérique latine."
                 },
                 {
                     "questionNumber": 49,
@@ -560,7 +560,7 @@ quiz_data = {
                         {"text": "Al lado", "isCorrect": False},
                         {"text": "Cerca", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La derecha' (la droite) et 'la izquierda' (la gauche). Ne pas confondre avec 'derecho' qui signifie 'droit/tout droit'."
+                    "correction": " 'La derecha' (la droite) et 'la izquierda' (la gauche). Ne pas confondre avec 'derecho' qui signifie 'droit/tout droit'."
                 },
                 {
                     "questionNumber": 50,
@@ -571,7 +571,7 @@ quiz_data = {
                         {"text": "Galería", "isCorrect": False},
                         {"text": "Cuadro", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El museo' est masculin. Madrid possède l'un des musées les plus célèbres au monde : le 'Museo del Prado'."
+                    "correction": " 'El museo' est masculin. Madrid possède l'un des musées les plus célèbres au monde : le 'Museo del Prado'."
                 },
                 {
                     "questionNumber": 51,
@@ -582,7 +582,7 @@ quiz_data = {
                         {"text": "Calle", "isCorrect": False},
                         {"text": "Túnel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Puente' est un nom masculin. C'est la structure qui permet de franchir un obstacle (un fleuve ou une route)."
+                    "correction": " 'Puente' est un nom masculin. C'est la structure qui permet de franchir un obstacle (un fleuve ou une route)."
                 },
                 {
                     "questionNumber": 52,
@@ -593,7 +593,7 @@ quiz_data = {
                         {"text": "Puerto", "isCorrect": False},
                         {"text": "Tren", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Estación' s'écrit avec un accent sur le 'ó'. On précise 'estación de tren' ou 'estación de autobuses' selon le transport."
+                    "correction": " 'Estación' s'écrit avec un accent sur le 'ó'. On précise 'estación de tren' ou 'estación de autobuses' selon le transport."
                 },
                 {
                     "questionNumber": 53,
@@ -604,7 +604,7 @@ quiz_data = {
                         {"text": "Árbol", "isCorrect": False},
                         {"text": "Hierba", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El parque' est un lieu de loisirs en ville. On peut y faire 'un paseo' (une promenade)."
+                    "correction": " 'El parque' est un lieu de loisirs en ville. On peut y faire 'un paseo' (une promenade)."
                 },
                 {
                     "questionNumber": 54,
@@ -615,7 +615,7 @@ quiz_data = {
                         {"text": "Andar", "isCorrect": False},
                         {"text": "Saltar", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Cruzar' est le verbe spécifique pour passer d'un côté à l'autre d'une rue, d'un pont ou d'une place."
+                    "correction": " 'Cruzar' est le verbe spécifique pour passer d'un côté à l'autre d'une rue, d'un pont ou d'une place."
                 },
                 {
                     "questionNumber": 55,
@@ -626,7 +626,7 @@ quiz_data = {
                         {"text": "Ciudad", "isCorrect": False},
                         {"text": "Centro", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El barrio' désigne une partie de la ville. Les habitants d'un quartier sont les 'vecinos' (voisins)."
+                    "correction": " 'El barrio' désigne une partie de la ville. Les habitants d'un quartier sont les 'vecinos' (voisins)."
                 },
                 {
                     "questionNumber": 56,
@@ -637,7 +637,7 @@ quiz_data = {
                         {"text": "Vivir fuera", "isCorrect": False},
                         {"text": "Vivir lejos", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La ciudad' (la ville) est le contraire de 'el campo' (la campagne)."
+                    "correction": " 'La ciudad' (la ville) est le contraire de 'el campo' (la campagne)."
                 },
                 {
                     "questionNumber": 57,
@@ -648,7 +648,7 @@ quiz_data = {
                         {"text": "Hacer el camino", "isCorrect": False},
                         {"text": "Mirar el mapa", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El camino' désigne la voie physique ou le trajet à suivre. Pour demander son chemin, on dit : '¿Podría indicarme el camino?'."
+                    "correction": " 'El camino' désigne la voie physique ou le trajet à suivre. Pour demander son chemin, on dit : '¿Podría indicarme el camino?'."
                 },
                 {
                     "questionNumber": 58,
@@ -659,7 +659,7 @@ quiz_data = {
                         {"text": "Señal", "isCorrect": False},
                         {"text": "Tráfico", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Semáforo' porte un accent sur le 'á'. Il sert à réguler la circulation des voitures ('coches') et des piétons ('peatones')."
+                    "correction": " 'Semáforo' porte un accent sur le 'á'. Il sert à réguler la circulation des voitures ('coches') et des piétons ('peatones')."
                 },
                 {
                     "questionNumber": 59,
@@ -670,7 +670,7 @@ quiz_data = {
                         {"text": "Llevar el autobús", "isCorrect": False},
                         {"text": "Traer el autobús", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Coger' est utilisé en Espagne. Attention : dans certains pays d'Amérique latine, ce verbe a une connotation vulgaire, on préfère alors utiliser 'tomar'."
+                    "correction": " 'Coger' est utilisé en Espagne. Attention : dans certains pays d'Amérique latine, ce verbe a une connotation vulgaire, on préfère alors utiliser 'tomar'."
                 },
                 {
                     "questionNumber": 60,
@@ -681,7 +681,7 @@ quiz_data = {
                         {"text": "Palacio real", "isCorrect": False},
                         {"text": "Comisaría", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Ayuntamiento' est le terme le plus courant pour désigner la mairie ou le conseil municipal. Le maire est 'el alcalde'."
+                    "correction": " 'Ayuntamiento' est le terme le plus courant pour désigner la mairie ou le conseil municipal. Le maire est 'el alcalde'."
                 }
             ]
         },
@@ -700,7 +700,7 @@ quiz_data = {
                         {"text": "Pelo", "isCorrect": False},
                         {"text": "Cuello", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Cabeza' est un nom féminin. Il est à la base de l'expression 'tener dolor de cabeza' (avoir mal à la tête)."
+                    "correction": " 'Cabeza' est un nom féminin. Il est à la base de l'expression 'tener dolor de cabeza' (avoir mal à la tête)."
                 },
                 {
                     "questionNumber": 62,
@@ -711,7 +711,7 @@ quiz_data = {
                         {"text": "Pierna", "isCorrect": False},
                         {"text": "Pie", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El brazo' est masculin. Son pluriel est 'los brazos'. C'est le membre qui va de l'épaule ('hombro') à la main."
+                    "correction": " 'El brazo' est masculin. Son pluriel est 'los brazos'. C'est le membre qui va de l'épaule ('hombro') à la main."
                 },
                 {
                     "questionNumber": 63,
@@ -722,7 +722,7 @@ quiz_data = {
                         {"text": "La garra", "isCorrect": False},
                         {"text": "El dedo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une exception importante : bien qu'il finisse par 'o', le mot 'mano' est féminin (La mano, las manos)."
+                    "correction": " C'est une exception importante : bien qu'il finisse par 'o', le mot 'mano' est féminin (La mano, las manos)."
                 },
                 {
                     "questionNumber": 64,
@@ -733,7 +733,7 @@ quiz_data = {
                         {"text": "Tripa", "isCorrect": False},
                         {"text": "Hombro", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Espalda' est féminin. Pour dire 'avoir mal au dos', on dira 'dolor de espalda' ou 'me duele la espalda'."
+                    "correction": " 'Espalda' est féminin. Pour dire 'avoir mal au dos', on dira 'dolor de espalda' ou 'me duele la espalda'."
                 },
                 {
                     "questionNumber": 65,
@@ -744,7 +744,7 @@ quiz_data = {
                         {"text": "Tobillo", "isCorrect": False},
                         {"text": "Rodilla", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El pie' désigne le pied humain. Pour un animal, on utilisera le mot 'la pata'."
+                    "correction": " 'El pie' désigne le pied humain. Pour un animal, on utilisera le mot 'la pata'."
                 },
                 {
                     "questionNumber": 66,
@@ -755,7 +755,7 @@ quiz_data = {
                         {"text": "Tener enfermo", "isCorrect": False},
                         {"text": "Hacerse enfermo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La santé étant un état passager ou temporaire, on utilise obligatoirement le verbe 'Estar'. On dit 'Estoy enfermo' (Je suis malade)."
+                    "correction": " La santé étant un état passager ou temporaire, on utilise obligatoirement le verbe 'Estar'. On dit 'Estoy enfermo' (Je suis malade)."
                 },
                 {
                     "questionNumber": 67,
@@ -766,7 +766,7 @@ quiz_data = {
                         {"text": "Queja", "isCorrect": False},
                         {"text": "Grito", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El dolor' est un nom masculin. Le verbe correspondant est 'Doler', qui est un verbe à diphtongue (duele)."
+                    "correction": " 'El dolor' est un nom masculin. Le verbe correspondant est 'Doler', qui est un verbe à diphtongue (duele)."
                 },
                 {
                     "questionNumber": 68,
@@ -777,7 +777,7 @@ quiz_data = {
                         {"text": "Soy dolor de cabeza", "isCorrect": False},
                         {"text": "Duele yo cabeza", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En espagnol, on n'utilise pas 'avoir' (tener) pour les douleurs du corps, mais le verbe 'Doler' utilisé de façon similaire au verbe 'Gusta'. La partie du corps devient le sujet du verbe."
+                    "correction": " En espagnol, on n'utilise pas 'avoir' (tener) pour les douleurs du corps, mais le verbe 'Doler' utilisé de façon similaire au verbe 'Gusta'. La partie du corps devient le sujet du verbe."
                 },
                 {
                     "questionNumber": 69,
@@ -788,7 +788,7 @@ quiz_data = {
                         {"text": "Farmacéutico", "isCorrect": False},
                         {"text": "Paciente", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El médico' est le professionnel. On peut aussi dire 'el doctor' ou 'la doctora' par courtoisie ou titre académique."
+                    "correction": " 'El médico' est le professionnel. On peut aussi dire 'el doctor' ou 'la doctora' par courtoisie ou titre académique."
                 },
                 {
                     "questionNumber": 70,
@@ -799,7 +799,7 @@ quiz_data = {
                         {"text": "Ambulatorio", "isCorrect": False},
                         {"text": "Consulta", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Hospital' s'écrit comme en français mais avec un 'H' muet. Il est toujours masculin."
+                    "correction": " 'Hospital' s'écrit comme en français mais avec un 'H' muet. Il est toujours masculin."
                 },
                 {
                     "questionNumber": 71,
@@ -810,7 +810,7 @@ quiz_data = {
                         {"text": "Tener contento", "isCorrect": False},
                         {"text": "Hacer contento", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour les sentiments et les humeurs qui sont des états changeants, on utilise le verbe 'Estar'. 'Estoy alegre' ou 'estoy feliz'."
+                    "correction": " Pour les sentiments et les humeurs qui sont des états changeants, on utilise le verbe 'Estar'. 'Estoy alegre' ou 'estoy feliz'."
                 },
                 {
                     "questionNumber": 72,
@@ -821,7 +821,7 @@ quiz_data = {
                         {"text": "Enojado", "isCorrect": False},
                         {"text": "Cansado", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Triste' est un adjectif identique au français. Il est invariable en genre (un hombre triste, una mujer triste)."
+                    "correction": " 'Triste' est un adjectif identique au français. Il est invariable en genre (un hombre triste, una mujer triste)."
                 },
                 {
                     "questionNumber": 73,
@@ -832,7 +832,7 @@ quiz_data = {
                         {"text": "Susto", "isCorrect": False},
                         {"text": "Prisa", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Comme en français, on utilise le verbe avoir (Tener) pour exprimer la peur : 'Tener miedo'."
+                    "correction": " Comme en français, on utilise le verbe avoir (Tener) pour exprimer la peur : 'Tener miedo'."
                 },
                 {
                     "questionNumber": 74,
@@ -843,7 +843,7 @@ quiz_data = {
                         {"text": "Activo", "isCorrect": False},
                         {"text": "Débil", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Cansado' est l'adjectif. Il s'accorde : 'cansada' pour une femme, 'cansados' pour un groupe."
+                    "correction": " 'Cansado' est l'adjectif. Il s'accorde : 'cansada' pour une femme, 'cansados' pour un groupe."
                 },
                 {
                     "questionNumber": 75,
@@ -854,7 +854,7 @@ quiz_data = {
                         {"text": "Aburrido", "isCorrect": False},
                         {"text": "Asustado", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise 'Estar'. 'Enfadado' est très courant en Espagne, tandis qu' 'enojado' est plus utilisé en Amérique latine."
+                    "correction": " On utilise 'Estar'. 'Enfadado' est très courant en Espagne, tandis qu' 'enojado' est plus utilisé en Amérique latine."
                 },
                 {
                     "questionNumber": 76,
@@ -865,7 +865,7 @@ quiz_data = {
                         {"text": "Boca", "isCorrect": False},
                         {"text": "Nariz", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Ojo' est masculin. Pluriel : 'Los ojos'. Un clin d'œil se dit 'un guiño'."
+                    "correction": " 'Ojo' est masculin. Pluriel : 'Los ojos'. Un clin d'œil se dit 'un guiño'."
                 },
                 {
                     "questionNumber": 77,
@@ -876,7 +876,7 @@ quiz_data = {
                         {"text": "Diente", "isCorrect": False},
                         {"text": "Labio", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Boca' est un nom féminin. Il est indispensable pour désigner le visage ('la cara')."
+                    "correction": " 'Boca' est un nom féminin. Il est indispensable pour désigner le visage ('la cara')."
                 },
                 {
                     "questionNumber": 78,
@@ -887,7 +887,7 @@ quiz_data = {
                         {"text": "Oreja", "isCorrect": False},
                         {"text": "Frente", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La nariz' est féminin singulier en espagnol. Son pluriel est 'las narices' (le 'z' devient 'c')."
+                    "correction": " 'La nariz' est féminin singulier en espagnol. Son pluriel est 'las narices' (le 'z' devient 'c')."
                 },
                 {
                     "questionNumber": 79,
@@ -898,7 +898,7 @@ quiz_data = {
                         {"text": "Ojos", "isCorrect": False},
                         {"text": "Hombros", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Oreja' désigne la partie visible (pavillon externe). 'Oído' désigne l'organe interne du sens de l'ouïe."
+                    "correction": " 'Oreja' désigne la partie visible (pavillon externe). 'Oído' désigne l'organe interne du sens de l'ouïe."
                 },
                 {
                     "questionNumber": 80,
@@ -909,7 +909,7 @@ quiz_data = {
                         {"text": "Estar sediento", "isCorrect": False},
                         {"text": "Tener hambre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Comme en français, on utilise le verbe 'Tener' (avoir) pour les besoins physiologiques : 'Tener hambre' (avoir faim), 'Tener sed' (avoir soif)."
+                    "correction": " Comme en français, on utilise le verbe 'Tener' (avoir) pour les besoins physiologiques : 'Tener hambre' (avoir faim), 'Tener sed' (avoir soif)."
                 }
             ]
         },
@@ -928,7 +928,7 @@ quiz_data = {
                         {"text": "Lima", "isCorrect": False},
                         {"text": "Bogotá", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Buenos Aires est la capitale fédérale de l'Argentine, située sur la rive sud du Río de la Plata. C'est l'une des plus grandes villes d'Amérique du Sud."
+                    "correction": " Buenos Aires est la capitale fédérale de l'Argentine, située sur la rive sud du Río de la Plata. C'est l'une des plus grandes villes d'Amérique du Sud."
                 },
                 {
                     "questionNumber": 82,
@@ -939,7 +939,7 @@ quiz_data = {
                         {"text": "Bolivia", "isCorrect": False},
                         {"text": "Ecuador", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Machu Picchu est une ancienne cité inca datant du XVe siècle, située dans les montagnes des Andes au Pérou. C'est un site classé au patrimoine mondial."
+                    "correction": " Le Machu Picchu est une ancienne cité inca datant du XVe siècle, située dans les montagnes des Andes au Pérou. C'est un site classé au patrimoine mondial."
                 },
                 {
                     "questionNumber": 83,
@@ -950,7 +950,7 @@ quiz_data = {
                         {"text": "Ebro", "isCorrect": False},
                         {"text": "Tajo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'Amazone est le fleuve le plus long et le plus puissant au monde. Il traverse le Pérou, la Colombie et principalement le Brésil."
+                    "correction": " L'Amazone est le fleuve le plus long et le plus puissant au monde. Il traverse le Pérou, la Colombie et principalement le Brésil."
                 },
                 {
                     "questionNumber": 84,
@@ -961,7 +961,7 @@ quiz_data = {
                         {"text": "Madrid", "isCorrect": False},
                         {"text": "Sevilla", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les fêtes de San Fermín ont lieu chaque année en juillet à Pampelune (Navarre). Elles sont célèbres pour les 'encierros' (lâchers de taureaux dans les rues)."
+                    "correction": " Les fêtes de San Fermín ont lieu chaque année en juillet à Pampelune (Navarre). Elles sont célèbres pour les 'encierros' (lâchers de taureaux dans les rues)."
                 },
                 {
                     "questionNumber": 85,
@@ -972,7 +972,7 @@ quiz_data = {
                         {"text": "Cuba", "isCorrect": False},
                         {"text": "España", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Mexique possède une frontière de plus de 3000 km avec les USA. C'est le pays qui compte le plus de locuteurs espagnols au monde."
+                    "correction": " Le Mexique possède une frontière de plus de 3000 km avec les USA. C'est le pays qui compte le plus de locuteurs espagnols au monde."
                 },
                 {
                     "questionNumber": 86,
@@ -983,7 +983,7 @@ quiz_data = {
                         {"text": "Caracas", "isCorrect": False},
                         {"text": "La Paz", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Santiago (souvent appelée Santiago de Chile) est la capitale et le principal centre urbain du Chili, située au pied des Andes."
+                    "correction": " Santiago (souvent appelée Santiago de Chile) est la capitale et le principal centre urbain du Chili, située au pied des Andes."
                 },
                 {
                     "questionNumber": 87,
@@ -994,7 +994,7 @@ quiz_data = {
                         {"text": "Pablo Neruda", "isCorrect": False},
                         {"text": "Jorge Luis Borges", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Gabriel García Márquez (surnommé Gabo) est l'un des auteurs les plus célèbres du 'réalisme magique'. Il a reçu le Nobel de littérature en 1982."
+                    "correction": " Gabriel García Márquez (surnommé Gabo) est l'un des auteurs les plus célèbres du 'réalisme magique'. Il a reçu le Nobel de littérature en 1982."
                 },
                 {
                     "questionNumber": 88,
@@ -1005,7 +1005,7 @@ quiz_data = {
                         {"text": "Sol", "isCorrect": False},
                         {"text": "Bolívar", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Peso mexicain est la monnaie légale du Mexique. Son symbole est le même que celui du dollar ($)."
+                    "correction": " Le Peso mexicain est la monnaie légale du Mexique. Son symbole est le même que celui du dollar ($)."
                 },
                 {
                     "questionNumber": 89,
@@ -1016,7 +1016,7 @@ quiz_data = {
                         {"text": "Bilbao", "isCorrect": False},
                         {"text": "Valencia", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Prado est l'une des plus grandes et des plus importantes pinacothèques du monde. Il abrite les chefs-d'œuvre de Velázquez, Goya et El Greco."
+                    "correction": " Le Prado est l'une des plus grandes et des plus importantes pinacothèques du monde. Il abrite les chefs-d'œuvre de Velázquez, Goya et El Greco."
                 },
                 {
                     "questionNumber": 90,
@@ -1027,7 +1027,7 @@ quiz_data = {
                         {"text": "Everest", "isCorrect": False},
                         {"text": "Kilimanjaro", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'Aconcagua culmine à 6962 mètres. Il est situé en Argentine, dans la cordillère des Andes, et c'est le point le plus haut de tout l'hémisphère sud et ouest."
+                    "correction": " L'Aconcagua culmine à 6962 mètres. Il est situé en Argentine, dans la cordillère des Andes, et c'est le point le plus haut de tout l'hémisphère sud et ouest."
                 },
                 {
                     "questionNumber": 91,
@@ -1038,7 +1038,7 @@ quiz_data = {
                         {"text": "La Bamba", "isCorrect": False},
                         {"text": "El Himno de España", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La 'Marcha Real' est l'un des rares hymnes nationaux au monde à ne pas avoir de paroles officielles. Elle date du XVIIIe siècle."
+                    "correction": " La 'Marcha Real' est l'un des rares hymnes nationaux au monde à ne pas avoir de paroles officielles. Elle date du XVIIIe siècle."
                 },
                 {
                     "questionNumber": 92,
@@ -1049,7 +1049,7 @@ quiz_data = {
                         {"text": "Brasilero", "isCorrect": False},
                         {"text": "Francés", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Brésil est l'exception linguistique en Amérique du Sud. Suite au traité de Tordesillas, il a été colonisé par le Portugal, d'où l'usage de cette langue."
+                    "correction": " Le Brésil est l'exception linguistique en Amérique du Sud. Suite au traité de Tordesillas, il a été colonisé par le Portugal, d'où l'usage de cette langue."
                 },
                 {
                     "questionNumber": 93,
@@ -1060,7 +1060,7 @@ quiz_data = {
                         {"text": "Ahora", "isCorrect": False},
                         {"text": "Rápido", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Temprano' signifie tôt (le matin). 'Tarde' peut signifier 'tard' ou désigner 'l'après-midi'."
+                    "correction": " 'Temprano' signifie tôt (le matin). 'Tarde' peut signifier 'tard' ou désigner 'l'après-midi'."
                 },
                 {
                     "questionNumber": 94,
@@ -1071,7 +1071,7 @@ quiz_data = {
                         {"text": "Semaine", "isCorrect": False},
                         {"text": "Seconde", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Un siglo' est un siècle (100 ans). On parle de 'Siglo de Oro' pour désigner l'apogée culturelle de l'Espagne au XVIe-XVIIe siècle."
+                    "correction": " 'Un siglo' est un siècle (100 ans). On parle de 'Siglo de Oro' pour désigner l'apogée culturelle de l'Espagne au XVIe-XVIIe siècle."
                 },
                 {
                     "questionNumber": 95,
@@ -1082,7 +1082,7 @@ quiz_data = {
                         {"text": "El Océano Índico", "isCorrect": False},
                         {"text": "El Polo Norte", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Cuba est la plus grande île des Antilles, située dans la mer des Caraïbes. On l'appelle souvent 'la Perla de las Antillas'."
+                    "correction": " Cuba est la plus grande île des Antilles, située dans la mer des Caraïbes. On l'appelle souvent 'la Perla de las Antillas'."
                 },
                 {
                     "questionNumber": 96,
@@ -1093,7 +1093,7 @@ quiz_data = {
                         {"text": "Con... sin...", "isCorrect": False},
                         {"text": "En... entre...", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour définir une plage horaire, on utilise 'De... a...'. Exemple : 'Trabajo de ocho a cinco'. On peut aussi utiliser 'Desde... hasta...'."
+                    "correction": " Pour définir une plage horaire, on utilise 'De... a...'. Exemple : 'Trabajo de ocho a cinco'. On peut aussi utiliser 'Desde... hasta...'."
                 },
                 {
                     "questionNumber": 97,
@@ -1104,7 +1104,7 @@ quiz_data = {
                         {"text": "Semaine passée", "isCorrect": False},
                         {"text": "Mois prochain", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Anteayer' désigne l'avant-hier. 'Ayer' est hier. 'Hoy' est aujourd'hui. 'Mañana' est demain. 'Pasado mañana' est après-demain."
+                    "correction": " 'Anteayer' désigne l'avant-hier. 'Ayer' est hier. 'Hoy' est aujourd'hui. 'Mañana' est demain. 'Pasado mañana' est après-demain."
                 },
                 {
                     "questionNumber": 98,
@@ -1115,7 +1115,7 @@ quiz_data = {
                         {"text": "Los Alpes", "isCorrect": False},
                         {"text": "Las Rocosas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La Cordillère des Andes est la plus longue chaîne de montagnes du monde, longeant toute la côte pacifique de l'Amérique du Sud sur plus de 7000 km."
+                    "correction": " La Cordillère des Andes est la plus longue chaîne de montagnes du monde, longeant toute la côte pacifique de l'Amérique du Sud sur plus de 7000 km."
                 },
                 {
                     "questionNumber": 99,
@@ -1126,7 +1126,7 @@ quiz_data = {
                         {"text": "Valencia", "isCorrect": False},
                         {"text": "Zaragoza", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le musée Guggenheim est situé à Bilbao (Pays Basque). Son architecture moderne en titane, conçue par Frank Gehry, a transformé l'image de la ville."
+                    "correction": " Le musée Guggenheim est situé à Bilbao (Pays Basque). Son architecture moderne en titane, conçue par Frank Gehry, a transformé l'image de la ville."
                 },
                 {
                     "questionNumber": 100,
@@ -1137,7 +1137,7 @@ quiz_data = {
                         {"text": "Palabra", "isCorrect": False},
                         {"text": "Historia", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La vérité' est un nom féminin. Son opposé est 'la mentira' (le mensonge). Le verbe est 'decir la verdad' (dire la vérité)."
+                    "correction": " 'La vérité' est un nom féminin. Son opposé est 'la mentira' (le mensonge). Le verbe est 'decir la verdad' (dire la vérité)."
                 }
             ]
         }

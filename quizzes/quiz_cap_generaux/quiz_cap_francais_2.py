@@ -16,7 +16,7 @@ quiz_data = {
                         {"text": "Le mode de l'impératif", "isCorrect": False},
                         {"text": "Le mode de l'infinitif", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le subjonctif est le mode utilisé pour exprimer ce qui est incertain, subjectif ou souhaité (ex: 'je veux qu'il vienne'), contrairement à l'indicatif qui est le mode de la réalité et des faits considérés comme certains."
+                    "correction": " Le subjonctif est le mode utilisé pour exprimer ce qui est incertain, subjectif ou souhaité (ex: 'je veux qu'il vienne'), contrairement à l'indicatif qui est le mode de la réalité et des faits considérés comme certains."
                 },
                 {
                     "questionNumber": 2,
@@ -27,7 +27,7 @@ quiz_data = {
                         {"text": "que je serai présent", "isCorrect": False},
                         {"text": "que je serais présent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La tournure impersonnelle 'Il faut que' exprime une obligation ou une nécessité immédiate et entraîne obligatoirement l'emploi du subjonctif présent (que je sois) pour marquer la dépendance de l'action."
+                    "correction": " La tournure impersonnelle 'Il faut que' exprime une obligation ou une nécessité immédiate et entraîne obligatoirement l'emploi du subjonctif présent (que je sois) pour marquer la dépendance de l'action."
                 },
                 {
                     "questionNumber": 3,
@@ -38,7 +38,7 @@ quiz_data = {
                         {"text": "Une répétition fréquente", "isCorrect": False},
                         {"text": "Une action soudaine brève", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'imparfait est ici utilisé pour planter le décor d'un récit et décrire un état stable ou un paysage dans le passé, sans limite de temps précise. C'est ce qu'on appelle l'imparfait descriptif."
+                    "correction": " L'imparfait est ici utilisé pour planter le décor d'un récit et décrire un état stable ou un paysage dans le passé, sans limite de temps précise. C'est ce qu'on appelle l'imparfait descriptif."
                 },
                 {
                     "questionNumber": 4,
@@ -49,7 +49,7 @@ quiz_data = {
                         {"text": "vous finirez demain", "isCorrect": False},
                         {"text": "vous aviez fini hier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le passé composé exprime une action terminée. Il se forme avec l'auxiliaire 'avoir' (ou 'être') conjugué au présent de l'indicatif suivi du participe passé du verbe concerné."
+                    "correction": " Le passé composé exprime une action terminée. Il se forme avec l'auxiliaire 'avoir' (ou 'être') conjugué au présent de l'indicatif suivi du participe passé du verbe concerné."
                 },
                 {
                     "questionNumber": 5,
@@ -60,7 +60,7 @@ quiz_data = {
                         {"text": "Le temps du présent actuel", "isCorrect": False},
                         {"text": "Le temps de l'imparfait passé", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le futur antérieur (ex: 'j'aurai mangé') exprime une action qui sera accomplie et terminée avant une autre action également située dans le futur (ex: 'quand tu arriveras')."
+                    "correction": " Le futur antérieur (ex: 'j'aurai mangé') exprime une action qui sera accomplie et terminée avant une autre action également située dans le futur (ex: 'quand tu arriveras')."
                 },
                 {
                     "questionNumber": 6,
@@ -71,7 +71,7 @@ quiz_data = {
                         {"text": "Il prend ses outils ce matin.", "isCorrect": False},
                         {"text": "Vous preniez vos outils hier.", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le présent de l'impératif sert à donner un ordre, un conseil ou une interdiction. Sa particularité est qu'il n'y a pas de sujet exprimé (le pronom personnel 'tu', 'nous' ou 'vous' disparaît)."
+                    "correction": " Le présent de l'impératif sert à donner un ordre, un conseil ou une interdiction. Sa particularité est qu'il n'y a pas de sujet exprimé (le pronom personnel 'tu', 'nous' ou 'vous' disparaît)."
                 },
                 {
                     "questionNumber": 7,
@@ -82,7 +82,7 @@ quiz_data = {
                         {"text": "L'imparfait de l'indicatif", "isCorrect": False},
                         {"text": "Le présent de l'indicatif", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le conditionnel exprime un souhait, un conseil ou une action soumise à une condition (souvent introduite par 'si'). On le reconnaît à sa racine de futur et sa terminaison d'imparfait."
+                    "correction": " Le conditionnel exprime un souhait, un conseil ou une action soumise à une condition (souvent introduite par 'si'). On le reconnaît à sa racine de futur et sa terminaison d'imparfait."
                 },
                 {
                     "questionNumber": 8,
@@ -93,7 +93,7 @@ quiz_data = {
                         {"text": "nous chanterions demain", "isCorrect": False},
                         {"text": "nous chantons aujourd'hui", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Au futur simple, la terminaison avec le pronom 'nous' est toujours '-ons'. Il faut veiller à ne pas la confondre avec la terminaison du conditionnel présent qui est '-ions'."
+                    "correction": " Au futur simple, la terminaison avec le pronom 'nous' est toujours '-ons'. Il faut veiller à ne pas la confondre avec la terminaison du conditionnel présent qui est '-ions'."
                 },
                 {
                     "questionNumber": 9,
@@ -104,7 +104,7 @@ quiz_data = {
                         {"text": "le participe erronée devu", "isCorrect": False},
                         {"text": "le participe erronée deu", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le participe passé du verbe 'devoir' prend un accent circonflexe au masculin singulier ('dû') uniquement pour le distinguer visuellement de l'article 'du'. Cet accent disparaît au féminin ('due') et au pluriel ('dus', 'dues')."
+                    "correction": " Le participe passé du verbe 'devoir' prend un accent circonflexe au masculin singulier ('dû') uniquement pour le distinguer visuellement de l'article 'du'. Cet accent disparaît au féminin ('due') et au pluriel ('dus', 'dues')."
                 },
                 {
                     "questionNumber": 10,
@@ -115,7 +115,7 @@ quiz_data = {
                         {"text": "Une habitude quotidienne", "isCorrect": False},
                         {"text": "Un passé proche terminé", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le présent de vérité générale exprime des faits qui sont considérés comme valables de tout temps, comme les lois scientifiques, les définitions géographiques ou les proverbes populaires."
+                    "correction": " Le présent de vérité générale exprime des faits qui sont considérés comme valables de tout temps, comme les lois scientifiques, les définitions géographiques ou les proverbes populaires."
                 },
                 {
                     "questionNumber": 11,
@@ -126,7 +126,7 @@ quiz_data = {
                         {"text": "j'irais à la gare bientôt", "isCorrect": False},
                         {"text": "j'allais à la gare bientôt", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le futur simple du verbe 'aller' se forme sur un radical particulier en 'ir-'. Il ne faut pas le confondre avec le conditionnel présent 'j'irais' qui exprime une éventualité ou un souhait."
+                    "correction": " Le futur simple du verbe 'aller' se forme sur un radical particulier en 'ir-'. Il ne faut pas le confondre avec le conditionnel présent 'j'irais' qui exprime une éventualité ou un souhait."
                 },
                 {
                     "questionNumber": 12,
@@ -137,7 +137,7 @@ quiz_data = {
                         {"text": "il mangeait son repas", "isCorrect": False},
                         {"text": "il mangera son repas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le plus-que-parfait exprime une action passée, antérieure à une autre action passée. Il se forme avec l'auxiliaire 'avoir' ou 'être' à l'imparfait suivi du participe passé du verbe."
+                    "correction": " Le plus-que-parfait exprime une action passée, antérieure à une autre action passée. Il se forme avec l'auxiliaire 'avoir' ou 'être' à l'imparfait suivi du participe passé du verbe."
                 },
                 {
                     "questionNumber": 13,
@@ -148,7 +148,7 @@ quiz_data = {
                         {"text": "Le temps du présent", "isCorrect": False},
                         {"text": "Le temps de l'imparfait", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le passé simple est le temps privilégié du récit écrit au passé. Il sert à exprimer des actions soudaines, brèves ou successives qui font avancer l'histoire."
+                    "correction": " Le passé simple est le temps privilégié du récit écrit au passé. Il sert à exprimer des actions soudaines, brèves ou successives qui font avancer l'histoire."
                 },
                 {
                     "questionNumber": 14,
@@ -159,7 +159,7 @@ quiz_data = {
                         {"text": "ils pourront venir ici", "isCorrect": False},
                         {"text": "ils puissent venir ici", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le verbe 'pouvoir' est un verbe irrégulier du troisième groupe. Sa conjugaison au présent est : je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent. La forme 'pouvent' est une faute de conjugaison."
+                    "correction": " Le verbe 'pouvoir' est un verbe irrégulier du troisième groupe. Sa conjugaison au présent est : je peux, tu peux, il peut, nous pouvons, vous pouvez, ils peuvent. La forme 'pouvent' est une faute de conjugaison."
                 },
                 {
                     "questionNumber": 15,
@@ -170,7 +170,7 @@ quiz_data = {
                         {"text": "le participe présent sautant", "isCorrect": False},
                         {"text": "le participe passé su", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le participe présent est une forme verbale invariable qui se termine toujours par le suffixe '-ant'. Il est utilisé pour exprimer une action simultanée ou une cause liée au verbe principal."
+                    "correction": " Le participe présent est une forme verbale invariable qui se termine toujours par le suffixe '-ant'. Il est utilisé pour exprimer une action simultanée ou une cause liée au verbe principal."
                 },
                 {
                     "questionNumber": 16,
@@ -181,7 +181,7 @@ quiz_data = {
                         {"text": "voulons bien accepter", "isCorrect": False},
                         {"text": "voulez bien accepter", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le verbe 'vouloir' possède une forme particulière à l'impératif, héritée du subjonctif. Elle est principalement employée dans des formules de politesse très soutenues (ex: 'Veuille agréer l'expression de mes salutations').."
+                    "correction": " Le verbe 'vouloir' possède une forme particulière à l'impératif, héritée du subjonctif. Elle est principalement employée dans des formules de politesse très soutenues (ex: 'Veuille agréer l'expression de mes salutations').."
                 },
                 {
                     "questionNumber": 17,
@@ -192,7 +192,7 @@ quiz_data = {
                         {"text": "la terminaison en -ions", "isCorrect": False},
                         {"text": "la terminaison en -ez", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Toutes les personnes du futur simple se terminent de la même façon pour tous les verbes : -ai, -as, -a, -ons, -ez, -ont. La terminaison '-ont' correspond à la 3ème personne du pluriel."
+                    "correction": " Toutes les personnes du futur simple se terminent de la même façon pour tous les verbes : -ai, -as, -a, -ons, -ez, -ont. La terminaison '-ont' correspond à la 3ème personne du pluriel."
                 },
                 {
                     "questionNumber": 18,
@@ -203,7 +203,7 @@ quiz_data = {
                         {"text": "Le temps du présent actuel", "isCorrect": False},
                         {"text": "Le temps du conditionnel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le futur simple est utilisé pour exprimer une action ou un événement qui doit se dérouler dans l'avenir par rapport au moment où l'on s'exprime. Sa terminaison avec 'nous' est '-ons'."
+                    "correction": " Le futur simple est utilisé pour exprimer une action ou un événement qui doit se dérouler dans l'avenir par rapport au moment où l'on s'exprime. Sa terminaison avec 'nous' est '-ons'."
                 },
                 {
                     "questionNumber": 19,
@@ -214,7 +214,7 @@ quiz_data = {
                         {"text": "Le gérondif Prenant", "isCorrect": False},
                         {"text": "Le verbe Prenons", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'infinitif est la forme nominale du verbe, celle qui n'est pas conjuguée. C'est sous cette forme 'brute' qu'on le trouve dans le dictionnaire pour en chercher la définition ou la classe."
+                    "correction": " L'infinitif est la forme nominale du verbe, celle qui n'est pas conjuguée. C'est sous cette forme 'brute' qu'on le trouve dans le dictionnaire pour en chercher la définition ou la classe."
                 },
                 {
                     "questionNumber": 20,
@@ -225,7 +225,7 @@ quiz_data = {
                         {"text": "vous eûtes du temps", "isCorrect": False},
                         {"text": "vous aurez du temps", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'imparfait du verbe 'avoir' se reconnaît à sa racine 'av-' et à ses terminaisons régulières (-ais, -ais, -ait, -ions, -iez, -aient). Pour le pronom 'vous', la terminaison est '-iez'."
+                    "correction": " L'imparfait du verbe 'avoir' se reconnaît à sa racine 'av-' et à ses terminaisons régulières (-ais, -ais, -ait, -ions, -iez, -aient). Pour le pronom 'vous', la terminaison est '-iez'."
                 }
             ]
         },
@@ -244,7 +244,7 @@ quiz_data = {
                         {"text": "Une comparaison sans outil de comparaison", "isCorrect": False},
                         {"text": "Une exagération frappante de la réalité", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'allitération est une figure de style qui consiste à répéter un son de consonne dans un vers ou une phrase pour créer un effet sonore ou musical (ex: 'Pour qui sont ces serpents qui sifflent sur vos têtes ?' avec le son 's')."
+                    "correction": " L'allitération est une figure de style qui consiste à répéter un son de consonne dans un vers ou une phrase pour créer un effet sonore ou musical (ex: 'Pour qui sont ces serpents qui sifflent sur vos têtes ?' avec le son 's')."
                 },
                 {
                     "questionNumber": 22,
@@ -255,7 +255,7 @@ quiz_data = {
                         {"text": "le terme ire", "isCorrect": False},
                         {"text": "le terme fureur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'apaisement désigne un retour au calme, c'est donc l'antonyme (le contraire) de la colère, alors que 'courroux', 'ire' et 'fureur' sont des synonymes de degrés différents."
+                    "correction": " L'apaisement désigne un retour au calme, c'est donc l'antonyme (le contraire) de la colère, alors que 'courroux', 'ire' et 'fureur' sont des synonymes de degrés différents."
                 },
                 {
                     "questionNumber": 23,
@@ -266,7 +266,7 @@ quiz_data = {
                         {"text": "Le soin naturel par les plantes", "isCorrect": False},
                         {"text": "Le nom propre d'un pays lointain", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** D'origine grecque (du mot 'logos' qui signifie parole, discours ou étude), ce suffixe sert à former les noms des disciplines scientifiques ou des études spécialisées."
+                    "correction": " D'origine grecque (du mot 'logos' qui signifie parole, discours ou étude), ce suffixe sert à former les noms des disciplines scientifiques ou des études spécialisées."
                 },
                 {
                     "questionNumber": 24,
@@ -277,7 +277,7 @@ quiz_data = {
                         {"text": "Une personnification d'objet", "isCorrect": False},
                         {"text": "Une hyperbole exagérée", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une métaphore car on établit un lien direct entre deux éléments (les cheveux et l'or) pour souligner une ressemblance de couleur sans utiliser d'outil de comparaison explicite (comme 'comme' ou 'tel')."
+                    "correction": " C'est une métaphore car on établit un lien direct entre deux éléments (les cheveux et l'or) pour souligner une ressemblance de couleur sans utiliser d'outil de comparaison explicite (comme 'comme' ou 'tel')."
                 },
                 {
                     "questionNumber": 25,
@@ -288,7 +288,7 @@ quiz_data = {
                         {"text": "un objet fragile", "isCorrect": False},
                         {"text": "un objet discret", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le mot 'éphémère' qualifie ce qui ne dure qu'un instant ou un temps très limité. Son antonyme est donc ce qui s'inscrit dans la durée, comme le mot 'durable', 'permanent' ou 'éternel'."
+                    "correction": " Le mot 'éphémère' qualifie ce qui ne dure qu'un instant ou un temps très limité. Son antonyme est donc ce qui s'inscrit dans la durée, comme le mot 'durable', 'permanent' ou 'éternel'."
                 },
                 {
                     "questionNumber": 26,
@@ -299,7 +299,7 @@ quiz_data = {
                         {"text": "Le registre administratif et froid", "isCorrect": False},
                         {"text": "Le registre médical et scientifique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'utilisation de termes imagés et populaires comme 'moulin' pour désigner un organe vital appartient au registre familier. Le choix du registre dépend de la situation de communication et du respect envers l'interlocuteur."
+                    "correction": " L'utilisation de termes imagés et populaires comme 'moulin' pour désigner un organe vital appartient au registre familier. Le choix du registre dépend de la situation de communication et du respect envers l'interlocuteur."
                 },
                 {
                     "questionNumber": 27,
@@ -310,7 +310,7 @@ quiz_data = {
                         {"text": "Être une personne très maladroite", "isCorrect": False},
                         {"text": "Avoir peur de tout ce qui bouge", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Cette expression appartient au sens figuré. Elle signifie que la personne est particulièrement altruiste et prête à aider les autres spontanément, comme si elle leur offrait son cœur sans aucune réserve."
+                    "correction": " Cette expression appartient au sens figuré. Elle signifie que la personne est particulièrement altruiste et prête à aider les autres spontanément, comme si elle leur offrait son cœur sans aucune réserve."
                 },
                 {
                     "questionNumber": 28,
@@ -321,7 +321,7 @@ quiz_data = {
                         {"text": "Une répétition en début de phrase", "isCorrect": False},
                         {"text": "Le contraire exact d'une ellipse", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'hyperbole est une figure de style qui amplifie la réalité pour frapper l'esprit du lecteur ou de l'auditeur. On l'utilise couramment (ex: 'Je meurs de soif' pour dire que l'on a simplement très soif)."
+                    "correction": " L'hyperbole est une figure de style qui amplifie la réalité pour frapper l'esprit du lecteur ou de l'auditeur. On l'utilise couramment (ex: 'Je meurs de soif' pour dire que l'on a simplement très soif)."
                 },
                 {
                     "questionNumber": 29,
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "le radical den-", "isCorrect": False},
                         {"text": "le radical denti-", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le radical (ou racine) est la partie fixe du mot qui porte le sens principal. À partir du radical 'dent-', on peut construire toute une famille de mots liés à l'anatomie ou aux soins dentaires."
+                    "correction": " Le radical (ou racine) est la partie fixe du mot qui porte le sens principal. À partir du radical 'dent-', on peut construire toute une famille de mots liés à l'anatomie ou aux soins dentaires."
                 },
                 {
                     "questionNumber": 30,
@@ -343,7 +343,7 @@ quiz_data = {
                         {"text": "Les mots antonymes", "isCorrect": False},
                         {"text": "Les mots paronymes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'homonymie regroupe des mots qui ont la même forme sonore ou graphique mais des sens totalement différents (ex: 'vert' la couleur et 'ver' l'animal). Il faut s'appuyer sur l'orthographe et le contexte pour les différencier."
+                    "correction": " L'homonymie regroupe des mots qui ont la même forme sonore ou graphique mais des sens totalement différents (ex: 'vert' la couleur et 'ver' l'animal). Il faut s'appuyer sur l'orthographe et le contexte pour les différencier."
                 },
                 {
                     "questionNumber": 31,
@@ -354,7 +354,7 @@ quiz_data = {
                         {"text": "ce qui va contre", "isCorrect": False},
                         {"text": "ce qui est avec", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** D'origine latine, le préfixe 'pré-' signifie l'antériorité dans le temps ou l'espace. 'Prévoir' signifie donc littéralement voir ou anticiper une situation avant qu'elle ne se produise réellement."
+                    "correction": " D'origine latine, le préfixe 'pré-' signifie l'antériorité dans le temps ou l'espace. 'Prévoir' signifie donc littéralement voir ou anticiper une situation avant qu'elle ne se produise réellement."
                 },
                 {
                     "questionNumber": 32,
@@ -365,7 +365,7 @@ quiz_data = {
                         {"text": "Le stade de football", "isCorrect": False},
                         {"text": "La forêt de sapins", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le champ lexical regroupe l'ensemble des termes (noms, verbes, adjectifs) qui se rapportent à un même thème ou une même activité. Les mots 'avocat', 'juge' ou 'tribunal' en font partie."
+                    "correction": " Le champ lexical regroupe l'ensemble des termes (noms, verbes, adjectifs) qui se rapportent à un même thème ou une même activité. Les mots 'avocat', 'juge' ou 'tribunal' en font partie."
                 },
                 {
                     "questionNumber": 33,
@@ -376,7 +376,7 @@ quiz_data = {
                         {"text": "Une comparaison simple", "isCorrect": False},
                         {"text": "Des allitérations sonores", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La personnification consiste à attribuer des caractéristiques, des sentiments ou des comportements humains à des objets inanimés ou à des animaux (ex: 'Le vent hurlait dans la nuit')."
+                    "correction": " La personnification consiste à attribuer des caractéristiques, des sentiments ou des comportements humains à des objets inanimés ou à des animaux (ex: 'Le vent hurlait dans la nuit')."
                 },
                 {
                     "questionNumber": 34,
@@ -387,7 +387,7 @@ quiz_data = {
                         {"text": "Un objet qui est très rapide", "isCorrect": False},
                         {"text": "Un objet qui mesure le temps", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le mot est formé de deux racines grecques : 'chronos' (le temps) et 'phagein' (manger). Une tâche chronophage est donc une activité qui 'dévore' votre temps, souvent de manière excessive."
+                    "correction": " Le mot est formé de deux racines grecques : 'chronos' (le temps) et 'phagein' (manger). Une tâche chronophage est donc une activité qui 'dévore' votre temps, souvent de manière excessive."
                 },
                 {
                     "questionNumber": 35,
@@ -398,7 +398,7 @@ quiz_data = {
                         {"text": "Un mot qui possède deux sens différents", "isCorrect": False},
                         {"text": "Une insulte ou un mot vulgaire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le néologisme est un mot de création récente ou un mot déjà existant auquel on donne un sens nouveau. Il permet à la langue d'évoluer pour désigner de nouvelles réalités techniques ou sociales."
+                    "correction": " Le néologisme est un mot de création récente ou un mot déjà existant auquel on donne un sens nouveau. Il permet à la langue d'évoluer pour désigner de nouvelles réalités techniques ou sociales."
                 },
                 {
                     "questionNumber": 36,
@@ -409,7 +409,7 @@ quiz_data = {
                         {"text": "Une personne qui est très grande", "isCorrect": False},
                         {"text": "Une personne qui voyage beaucoup", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'altruisme est une vertu qui pousse à s'intéresser et à se dévouer à autrui de manière désintéressée. C'est l'antonyme (le contraire) parfait de l'égoïsme."
+                    "correction": " L'altruisme est une vertu qui pousse à s'intéresser et à se dévouer à autrui de manière désintéressée. C'est l'antonyme (le contraire) parfait de l'égoïsme."
                 },
                 {
                     "questionNumber": 37,
@@ -420,7 +420,7 @@ quiz_data = {
                         {"text": "Un oxymore poétique", "isCorrect": False},
                         {"text": "Une ironie poétique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Il s'agit d'une comparaison car le poète établit un rapport de ressemblance explicite entre les pleurs de son cœur et la pluie sur la ville en utilisant l'outil de comparaison 'comme'."
+                    "correction": " Il s'agit d'une comparaison car le poète établit un rapport de ressemblance explicite entre les pleurs de son cœur et la pluie sur la ville en utilisant l'outil de comparaison 'comme'."
                 },
                 {
                     "questionNumber": 38,
@@ -431,7 +431,7 @@ quiz_data = {
                         {"text": "Qui a perdu la raison ou est fou", "isCorrect": False},
                         {"text": "Qui possède une très grande richesse", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La lucidité est la capacité d'un esprit à percevoir la réalité telle qu'elle est, sans se laisser aveugler par ses propres désirs ou par des illusions. C'est une forme de clairvoyance."
+                    "correction": " La lucidité est la capacité d'un esprit à percevoir la réalité telle qu'elle est, sans se laisser aveugler par ses propres désirs ou par des illusions. C'est une forme de clairvoyance."
                 },
                 {
                     "questionNumber": 39,
@@ -442,7 +442,7 @@ quiz_data = {
                         {"text": "le terme choc", "isCorrect": False},
                         {"text": "le terme vitesse", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les paronymes sont des mots dont la prononciation et l'orthographe sont très proches, ce qui entraîne souvent des confusions. 'Collision' (choc physique) et 'collusion' (entente secrète illicite) sont des paronymes."
+                    "correction": " Les paronymes sont des mots dont la prononciation et l'orthographe sont très proches, ce qui entraîne souvent des confusions. 'Collision' (choc physique) et 'collusion' (entente secrète illicite) sont des paronymes."
                 },
                 {
                     "questionNumber": 40,
@@ -453,7 +453,7 @@ quiz_data = {
                         {"text": "une chose qui est contraire", "isCorrect": False},
                         {"text": "une chose qui est très grande", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** D'origine grecque, ce préfixe exprime l'idée d'une anomalie, d'une difficulté ou d'un mauvais fonctionnement (ex: 'dyslexie' pour une difficulté d'apprentissage de la lecture)."
+                    "correction": " D'origine grecque, ce préfixe exprime l'idée d'une anomalie, d'une difficulté ou d'un mauvais fonctionnement (ex: 'dyslexie' pour une difficulté d'apprentissage de la lecture)."
                 }
             ]
         },
@@ -472,7 +472,7 @@ quiz_data = {
                         {"text": "Le type interrogatif", "isCorrect": False},
                         {"text": "Le type exclamatif", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une phrase injonctive (ou impérative) sert à donner un ordre, un conseil, une instruction ou une interdiction. Elle se termine par un point ou un point d'exclamation."
+                    "correction": " Une phrase injonctive (ou impérative) sert à donner un ordre, un conseil, une instruction ou une interdiction. Elle se termine par un point ou un point d'exclamation."
                 },
                 {
                     "questionNumber": 42,
@@ -483,7 +483,7 @@ quiz_data = {
                         {"text": "Le complément d'objet indirect", "isCorrect": False},
                         {"text": "Il disparaît systématiquement du texte", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans la transformation passive, le sujet de la phrase active devient le complément d'agent (ex: 'Le chat mange la souris' -> 'La souris est mangée PAR le chat')."
+                    "correction": " Dans la transformation passive, le sujet de la phrase active devient le complément d'agent (ex: 'Le chat mange la souris' -> 'La souris est mangée PAR le chat')."
                 },
                 {
                     "questionNumber": 43,
@@ -494,7 +494,7 @@ quiz_data = {
                         {"text": "Le sujet de la proposition", "isCorrect": False},
                         {"text": "Un adjectif qualificatif", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le complément circonstanciel de temps (CCT) apporte une précision sur le moment de l'action. On le trouve en posant la question 'Quand ?' après le verbe principal."
+                    "correction": " Le complément circonstanciel de temps (CCT) apporte une précision sur le moment de l'action. On le trouve en posant la question 'Quand ?' après le verbe principal."
                 },
                 {
                     "questionNumber": 44,
@@ -505,7 +505,7 @@ quiz_data = {
                         {"text": "Tu viens demain au travail.", "isCorrect": False},
                         {"text": "Venu demain tu au travail ?", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'interrogation peut se faire de trois manières : par l'inversion du sujet (placer le verbe avant le pronom), par l'utilisation de 'est-ce que' ou par la simple intonation à l'oral."
+                    "correction": " L'interrogation peut se faire de trois manières : par l'inversion du sujet (placer le verbe avant le pronom), par l'utilisation de 'est-ce que' ou par la simple intonation à l'oral."
                 },
                 {
                     "questionNumber": 45,
@@ -516,7 +516,7 @@ quiz_data = {
                         {"text": "Un verbe d'action", "isCorrect": False},
                         {"text": "Un nom commun masculin", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un adverbe est un mot invariable qui modifie ou précise le sens d'un verbe, d'un adjectif ou d'un autre adverbe. La plupart des adverbes de manière se terminent en '-ment'."
+                    "correction": " Un adverbe est un mot invariable qui modifie ou précise le sens d'un verbe, d'un adjectif ou d'un autre adverbe. La plupart des adverbes de manière se terminent en '-ment'."
                 },
                 {
                     "questionNumber": 46,
@@ -527,7 +527,7 @@ quiz_data = {
                         {"text": "Le sujet de la phrase complète", "isCorrect": False},
                         {"text": "Un complément d'objet direct", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'épithète est un adjectif qualificatif placé directement à côté du nom qu'il qualifie (avant ou après), sans l'intermédiaire d'un verbe d'état."
+                    "correction": " L'épithète est un adjectif qualificatif placé directement à côté du nom qu'il qualifie (avant ou après), sans l'intermédiaire d'un verbe d'état."
                 },
                 {
                     "questionNumber": 47,
@@ -538,7 +538,7 @@ quiz_data = {
                         {"text": "Partons ensemble maintenant", "isCorrect": False},
                         {"text": "Pourquoi partir maintenant ?", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La forme négative exprime le contraire d'une affirmation. Elle utilise des mots de négation (ne... pas, ne... plus, ne... jamais) qui encadrent généralement le verbe conjugué."
+                    "correction": " La forme négative exprime le contraire d'une affirmation. Elle utilise des mots de négation (ne... pas, ne... plus, ne... jamais) qui encadrent généralement le verbe conjugué."
                 },
                 {
                     "questionNumber": 48,
@@ -549,7 +549,7 @@ quiz_data = {
                         {"text": "Un complément d'objet indirect", "isCorrect": False},
                         {"text": "Un complément circonstanciel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'attribut du sujet exprime une qualité ou un état du sujet par l'intermédiaire d'un verbe d'état (être, devenir, paraître, sembler, rester, etc.). Il s'accorde en genre et nombre avec le sujet."
+                    "correction": " L'attribut du sujet exprime une qualité ou un état du sujet par l'intermédiaire d'un verbe d'état (être, devenir, paraître, sembler, rester, etc.). Il s'accorde en genre et nombre avec le sujet."
                 },
                 {
                     "questionNumber": 49,
@@ -560,7 +560,7 @@ quiz_data = {
                         {"text": "Une phrase nominale sans aucun verbe", "isCorrect": False},
                         {"text": "Une phrase interrogative posant question", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une phrase simple est constituée d'une seule proposition indépendante (un seul verbe conjugué). Une phrase complexe contient au moins deux propositions liées."
+                    "correction": " Une phrase simple est constituée d'une seule proposition indépendante (un seul verbe conjugué). Une phrase complexe contient au moins deux propositions liées."
                 },
                 {
                     "questionNumber": 50,
@@ -571,7 +571,7 @@ quiz_data = {
                         {"text": "Un déterminant défini masculin", "isCorrect": False},
                         {"text": "Un adverbe de manière invariable", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le pronom relatif sert à lier une proposition subordonnée relative à un nom ou un pronom placé juste avant lui (appelé l'antécédent). Il évite ainsi la répétition du mot dans la phrase."
+                    "correction": " Le pronom relatif sert à lier une proposition subordonnée relative à un nom ou un pronom placé juste avant lui (appelé l'antécédent). Il évite ainsi la répétition du mot dans la phrase."
                 },
                 {
                     "questionNumber": 51,
@@ -582,7 +582,7 @@ quiz_data = {
                         {"text": "le verbe d'action travaille", "isCorrect": False},
                         {"text": "le groupe nominal un garage", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le complément circonstanciel de lieu (CCL) répond à la question 'Où ?' posée après le verbe. Ici, l'action de travailler se situe 'à Lyon'. C'est une précision sur le cadre spatial."
+                    "correction": " Le complément circonstanciel de lieu (CCL) répond à la question 'Où ?' posée après le verbe. Ici, l'action de travailler se situe 'à Lyon'. C'est une précision sur le cadre spatial."
                 },
                 {
                     "questionNumber": 52,
@@ -593,7 +593,7 @@ quiz_data = {
                         {"text": "Une préposition de lieu fixe", "isCorrect": False},
                         {"text": "Un nom commun masculin singulier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Très' est un adverbe qui permet de modifier le degré d'un adjectif ou d'un autre adverbe pour en renforcer le sens. Comme tous les adverbes, il est par nature invariable."
+                    "correction": " 'Très' est un adverbe qui permet de modifier le degré d'un adjectif ou d'un autre adverbe pour en renforcer le sens. Comme tous les adverbes, il est par nature invariable."
                 },
                 {
                     "questionNumber": 53,
@@ -604,7 +604,7 @@ quiz_data = {
                         {"text": "La phrase Elle écrit une lettre longue", "isCorrect": False},
                         {"text": "La phrase Nous lisons un livre bien", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un verbe intransitif est un verbe qui ne peut pas être accompagné d'un complément d'objet (direct ou indirect). L'action exprimée par le verbe se suffit à elle-même pour faire sens."
+                    "correction": " Un verbe intransitif est un verbe qui ne peut pas être accompagné d'un complément d'objet (direct ou indirect). L'action exprimée par le verbe se suffit à elle-même pour faire sens."
                 },
                 {
                     "questionNumber": 54,
@@ -615,7 +615,7 @@ quiz_data = {
                         {"text": "Le sujet de l'action du verbe", "isCorrect": False},
                         {"text": "Un attribut du sujet du verbe", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le pronom 'lui' remplace ici un être humain. Pour trouver sa fonction, on pose la question 'à qui ?'. 'Je donne un conseil À QUI ?' -> 'à lui'. C'est donc un complément d'objet indirect (COI)."
+                    "correction": " Le pronom 'lui' remplace ici un être humain. Pour trouver sa fonction, on pose la question 'à qui ?'. 'Je donne un conseil À QUI ?' -> 'à lui'. C'est donc un complément d'objet indirect (COI)."
                 },
                 {
                     "questionNumber": 55,
@@ -626,7 +626,7 @@ quiz_data = {
                         {"text": "Une phrase chargée de noms propres", "isCorrect": False},
                         {"text": "Une phrase construite à la voix passive", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La phrase nominale est construite autour d'un nom et non d'un verbe. Elle est fréquente dans les titres de journaux ou les slogans publicitaires (ex: 'Quelle réussite remarquable !')."
+                    "correction": " La phrase nominale est construite autour d'un nom et non d'un verbe. Elle est fréquente dans les titres de journaux ou les slogans publicitaires (ex: 'Quelle réussite remarquable !')."
                 },
                 {
                     "questionNumber": 56,
@@ -637,7 +637,7 @@ quiz_data = {
                         {"text": "Donner un ordre impératif à quelqu'un", "isCorrect": False},
                         {"text": "Indiquer le temps précis de l'action", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les conjonctions de coordination sont au nombre de sept. Elles servent de lien logique ou de 'pont' entre deux mots, deux groupes de mots ou deux propositions indépendantes."
+                    "correction": " Les conjonctions de coordination sont au nombre de sept. Elles servent de lien logique ou de 'pont' entre deux mots, deux groupes de mots ou deux propositions indépendantes."
                 },
                 {
                     "questionNumber": 57,
@@ -648,7 +648,7 @@ quiz_data = {
                         {"text": "le verbe d'action chantent", "isCorrect": False},
                         {"text": "la préposition de lieu Dans", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le sujet est l'élément qui fait l'action du verbe. Pour le trouver, on pose la question 'Qui est-ce qui chante ?'. Même s'il est placé après le verbe (sujet inversé), le sujet reste ici 'les oiseaux'."
+                    "correction": " Le sujet est l'élément qui fait l'action du verbe. Pour le trouver, on pose la question 'Qui est-ce qui chante ?'. Même s'il est placé après le verbe (sujet inversé), le sujet reste ici 'les oiseaux'."
                 },
                 {
                     "questionNumber": 58,
@@ -659,7 +659,7 @@ quiz_data = {
                         {"text": "Une proposition principale indépendante", "isCorrect": False},
                         {"text": "Une proposition circonstancielle de temps", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La proposition complétive 'complète' un verbe. Elle joue le rôle de COD du verbe principal (ici 'penser'). Elle est introduite par la conjonction de subordination 'que'."
+                    "correction": " La proposition complétive 'complète' un verbe. Elle joue le rôle de COD du verbe principal (ici 'penser'). Elle est introduite par la conjonction de subordination 'que'."
                 },
                 {
                     "questionNumber": 59,
@@ -670,7 +670,7 @@ quiz_data = {
                         {"text": "Le signe de la virgule", "isCorrect": False},
                         {"text": "Le signe du point d'interrogation", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les deux-points (:) servent à annoncer une liste d'éléments (énumération), une citation directe ou une explication détaillée de ce qui vient d'être affirmé auparavant."
+                    "correction": " Les deux-points (:) servent à annoncer une liste d'éléments (énumération), une citation directe ou une explication détaillée de ce qui vient d'être affirmé auparavant."
                 },
                 {
                     "questionNumber": 60,
@@ -681,7 +681,7 @@ quiz_data = {
                         {"text": "Un nom commun masculin singulier", "isCorrect": False},
                         {"text": "Une préposition de lieu fixe", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le mot 'vite' précise la façon dont l'action est réalisée. C'est un adverbe de manière. Il ne faut pas le confondre avec l'adjectif 'rapide' qui s'accorde avec le nom qu'il qualifie."
+                    "correction": " Le mot 'vite' précise la façon dont l'action est réalisée. C'est un adverbe de manière. Il ne faut pas le confondre avec l'adjectif 'rapide' qui s'accorde avec le nom qu'il qualifie."
                 }
             ]
         },
@@ -700,7 +700,7 @@ quiz_data = {
                         {"text": "Le réseau du web mondial actuel", "isCorrect": False},
                         {"text": "Le média de la radio sonore", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le terme 'la presse' désigne l'ensemble des journaux et des magazines périodiques destinés à informer le public sur l'actualité politique, économique, sociale ou culturelle."
+                    "correction": " Le terme 'la presse' désigne l'ensemble des journaux et des magazines périodiques destinés à informer le public sur l'actualité politique, économique, sociale ou culturelle."
                 },
                 {
                     "questionNumber": 62,
@@ -711,7 +711,7 @@ quiz_data = {
                         {"text": "Le prix monétaire du journal", "isCorrect": False},
                         {"text": "Le type de papier utilisé ici", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Citer et vérifier ses sources est la base du métier de journaliste. La source peut être une agence de presse (ex: l'AFP), un témoin direct, une institution ou un document officiel."
+                    "correction": " Citer et vérifier ses sources est la base du métier de journaliste. La source peut être une agence de presse (ex: l'AFP), un témoin direct, une institution ou un document officiel."
                 },
                 {
                     "questionNumber": 63,
@@ -722,7 +722,7 @@ quiz_data = {
                         {"text": "La publicité située tout en bas", "isCorrect": False},
                         {"text": "Le nom complet du journaliste auteur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le bandeau est l'espace situé tout en haut de la Une. Il contient souvent le titre du journal, la date, le prix de vente et les gros titres de l'actualité du jour."
+                    "correction": " Le bandeau est l'espace situé tout en haut de la Une. Il contient souvent le titre du journal, la date, le prix de vente et les gros titres de l'actualité du jour."
                 },
                 {
                     "questionNumber": 64,
@@ -733,7 +733,7 @@ quiz_data = {
                         {"text": "La liste des résultats sportifs", "isCorrect": False},
                         {"text": "La liste des films à l'affiche", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'éditorial (ou édito) exprime la position officielle ou l'opinion du journal sur un sujet d'actualité. Il engage la ligne politique et la responsabilité du média."
+                    "correction": " L'éditorial (ou édito) exprime la position officielle ou l'opinion du journal sur un sujet d'actualité. Il engage la ligne politique et la responsabilité du média."
                 },
                 {
                     "questionNumber": 65,
@@ -744,7 +744,7 @@ quiz_data = {
                         {"text": "Cacher le manque de texte écrit", "isCorrect": False},
                         {"text": "Faire une blague visuelle drôle", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'infographie permet de visualiser des données complexes ou des chiffres par des images, des graphiques et des couleurs. Elle favorise une compréhension rapide et visuelle d'un sujet."
+                    "correction": " L'infographie permet de visualiser des données complexes ou des chiffres par des images, des graphiques et des couleurs. Elle favorise une compréhension rapide et visuelle d'un sujet."
                 },
                 {
                     "questionNumber": 66,
@@ -755,7 +755,7 @@ quiz_data = {
                         {"text": "L'Agence de Formation Professionnelle", "isCorrect": False},
                         {"text": "L'Actualité Française Permanente", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'AFP est l'une des trois plus grandes agences de presse mondiales. Elle collecte les informations 24h/24 et les revend aux journaux, télévisions et radios du monde entier."
+                    "correction": " L'AFP est l'une des trois plus grandes agences de presse mondiales. Elle collecte les informations 24h/24 et les revend aux journaux, télévisions et radios du monde entier."
                 },
                 {
                     "questionNumber": 67,
@@ -766,7 +766,7 @@ quiz_data = {
                         {"text": "La rubrique thématique du jour", "isCorrect": False},
                         {"text": "Le ventre situé au centre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La manchette est conçue pour attirer immédiatement l'attention du client. Elle présente le titre le plus important du journal en caractères très larges et gras."
+                    "correction": " La manchette est conçue pour attirer immédiatement l'attention du client. Elle présente le titre le plus important du journal en caractères très larges et gras."
                 },
                 {
                     "questionNumber": 68,
@@ -777,7 +777,7 @@ quiz_data = {
                         {"text": "Un accessoire porté par les journalistes", "isCorrect": False},
                         {"text": "Le paragraphe de conclusion final", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le chapeau (ou chapô) est un texte court placé entre le titre et le début de l'article. Il résume les points clés (Qui, quoi, où, quand) pour inviter à la lecture du corps de l'article."
+                    "correction": " Le chapeau (ou chapô) est un texte court placé entre le titre et le début de l'article. Il résume les points clés (Qui, quoi, où, quand) pour inviter à la lecture du corps de l'article."
                 },
                 {
                     "questionNumber": 69,
@@ -788,7 +788,7 @@ quiz_data = {
                         {"text": "Le droit de mentir de façon répétée", "isCorrect": False},
                         {"text": "Le droit de détruire des machines", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est un droit fondamental dans une démocratie. Il garantit aux journalistes le droit de diffuser des informations, des opinions et des critiques sans subir de censure ou de pressions du pouvoir."
+                    "correction": " C'est un droit fondamental dans une démocratie. Il garantit aux journalistes le droit de diffuser des informations, des opinions et des critiques sans subir de censure ou de pressions du pouvoir."
                 },
                 {
                     "questionNumber": 70,
@@ -799,7 +799,7 @@ quiz_data = {
                         {"text": "Un microphone de studio radio", "isCorrect": False},
                         {"text": "Un lecteur qui est très mécontent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans le langage familier de la profession, un 'canard' désigne un journal. On retrouve ce terme dans le titre de titres célèbres comme 'Le Canard enchaîné'."
+                    "correction": " Dans le langage familier de la profession, un 'canard' désigne un journal. On retrouve ce terme dans le titre de titres célèbres comme 'Le Canard enchaîné'."
                 },
                 {
                     "questionNumber": 71,
@@ -810,7 +810,7 @@ quiz_data = {
                         {"text": "Donner le prix de vente du journal", "isCorrect": False},
                         {"text": "Lister les annonceurs publicitaires", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La légende est un texte explicatif court placé à côté ou sous une illustration. Elle apporte les informations nécessaires pour bien interpréter ce que l'on voit (nom des gens, date, lieu)."
+                    "correction": " La légende est un texte explicatif court placé à côté ou sous une illustration. Elle apporte les informations nécessaires pour bien interpréter ce que l'on voit (nom des gens, date, lieu)."
                 },
                 {
                     "questionNumber": 72,
@@ -821,7 +821,7 @@ quiz_data = {
                         {"text": "Vérifier la longueur totale de l'article", "isCorrect": False},
                         {"text": "Compter le nombre de photos présentes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le fact-checking consiste à croiser les témoignages et les documents pour confirmer la réalité d'un événement. C'est le garant de la crédibilité du média face aux fausses informations (infox)."
+                    "correction": " Le fact-checking consiste à croiser les témoignages et les documents pour confirmer la réalité d'un événement. C'est le garant de la crédibilité du média face aux fausses informations (infox)."
                 },
                 {
                     "questionNumber": 73,
@@ -832,7 +832,7 @@ quiz_data = {
                         {"text": "La couleur spécifique du papier", "isCorrect": False},
                         {"text": "Un type particulier de publicité", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une rubrique est une division thématique permanente du journal (ex: Sport, Culture, Faits divers). Elle permet d'organiser l'information pour que le lecteur s'y retrouve facilement."
+                    "correction": " Une rubrique est une division thématique permanente du journal (ex: Sport, Culture, Faits divers). Elle permet d'organiser l'information pour que le lecteur s'y retrouve facilement."
                 },
                 {
                     "questionNumber": 74,
@@ -843,7 +843,7 @@ quiz_data = {
                         {"text": "Vendre des micros dans la rue passante", "isCorrect": False},
                         {"text": "Filmer les voitures sur le boulevard", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le micro-trottoir consiste à interroger des gens au hasard dans la rue sur un sujet précis. Cela donne une dimension humaine et populaire à l'information, même si ce n'est pas un sondage scientifique."
+                    "correction": " Le micro-trottoir consiste à interroger des gens au hasard dans la rue sur un sujet précis. Cela donne une dimension humaine et populaire à l'information, même si ce n'est pas un sondage scientifique."
                 },
                 {
                     "questionNumber": 75,
@@ -854,7 +854,7 @@ quiz_data = {
                         {"text": "Prendre des médicaments prescrits", "isCorrect": False},
                         {"text": "Se taire et ne rien dire du tout", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Médiatiser un sujet signifie lui donner une exposition importante à travers les différents supports de communication (TV, presse, internet) pour que le grand public en soit informé."
+                    "correction": " Médiatiser un sujet signifie lui donner une exposition importante à travers les différents supports de communication (TV, presse, internet) pour que le grand public en soit informé."
                 },
                 {
                     "questionNumber": 76,
@@ -865,7 +865,7 @@ quiz_data = {
                         {"text": "Le budget total de la production", "isCorrect": False},
                         {"text": "Le nom exact du cinéma de quartier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le scénario est le document de base d'un film ou d'un reportage vidéo. Il contient la description des scènes, les actions des personnages et l'intégralité des dialogues pour guider l'équipe de tournage."
+                    "correction": " Le scénario est le document de base d'un film ou d'un reportage vidéo. Il contient la description des scènes, les actions des personnages et l'intégralité des dialogues pour guider l'équipe de tournage."
                 },
                 {
                     "questionNumber": 77,
@@ -876,7 +876,7 @@ quiz_data = {
                         {"text": "Le nettoyage minutieux de l'objectif", "isCorrect": False},
                         {"text": "La vitesse de déclenchement du clic", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le cadrage est l'action de choisir ce qui sera inclus ou exclu du champ de l'image. Il permet au photographe d'orienter le regard du spectateur et de donner un sens particulier à la photo."
+                    "correction": " Le cadrage est l'action de choisir ce qui sera inclus ou exclu du champ de l'image. Il permet au photographe d'orienter le regard du spectateur et de donner un sens particulier à la photo."
                 },
                 {
                     "questionNumber": 78,
@@ -887,7 +887,7 @@ quiz_data = {
                         {"text": "Son prix de vente unitaire", "isCorrect": False},
                         {"text": "La langue utilisée dans le texte", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le format désigne les dimensions du support papier. Les plus connus sont le format 'Berlinois' (moyen) et le format 'Tabloïd' (petit), apprécié pour sa maniabilité dans les transports."
+                    "correction": " Le format désigne les dimensions du support papier. Les plus connus sont le format 'Berlinois' (moyen) et le format 'Tabloïd' (petit), apprécié pour sa maniabilité dans les transports."
                 },
                 {
                     "questionNumber": 79,
@@ -898,7 +898,7 @@ quiz_data = {
                         {"text": "Acheter un journal au kiosque", "isCorrect": False},
                         {"text": "Écrire une lettre de motivation", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un événement ou une personne 'fait la Une' lorsqu'il est choisi par le journal pour occuper la place la plus importante et la plus visible sur la première page de l'édition."
+                    "correction": " Un événement ou une personne 'fait la Une' lorsqu'il est choisi par le journal pour occuper la place la plus importante et la plus visible sur la première page de l'édition."
                 },
                 {
                     "questionNumber": 80,
@@ -909,7 +909,7 @@ quiz_data = {
                         {"text": "Attendre le journal du petit matin", "isCorrect": False},
                         {"text": "Surveiller les locaux de l'imprimerie", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La veille consiste à surveiller régulièrement les nouvelles publications sur un thème choisi. C'est un exercice de documentation permanent pour rester au courant des dernières évolutions."
+                    "correction": " La veille consiste à surveiller régulièrement les nouvelles publications sur un thème choisi. C'est un exercice de documentation permanent pour rester au courant des dernières évolutions."
                 }
             ]
         },
@@ -928,7 +928,7 @@ quiz_data = {
                         {"text": "Le dramaturge célèbre Molière", "isCorrect": False},
                         {"text": "L'écrivain naturaliste Émile Zola", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Jean de La Fontaine est l'auteur des célèbres 'Fables'. À travers des récits mettant en scène des animaux (Le Loup et l'Agneau, etc.), il critiquait avec finesse les défauts de ses contemporains et la cour du roi Louis XIV."
+                    "correction": " Jean de La Fontaine est l'auteur des célèbres 'Fables'. À travers des récits mettant en scène des animaux (Le Loup et l'Agneau, etc.), il critiquait avec finesse les défauts de ses contemporains et la cour du roi Louis XIV."
                 },
                 {
                     "questionNumber": 82,
@@ -939,7 +939,7 @@ quiz_data = {
                         {"text": "la notion de terre fertile", "isCorrect": False},
                         {"text": "la notion de feu brûlant", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le préfixe 'bio-' vient du grec ancien 'bios' qui signifie la vie. On le retrouve dans de nombreux mots de la langue française comme 'biologie' (étude de la vie) ou 'biodégradable' (qui se décompose par des organismes vivants)."
+                    "correction": " Le préfixe 'bio-' vient du grec ancien 'bios' qui signifie la vie. On le retrouve dans de nombreux mots de la langue française comme 'biologie' (étude de la vie) ou 'biodégradable' (qui se décompose par des organismes vivants)."
                 },
                 {
                     "questionNumber": 83,
@@ -950,7 +950,7 @@ quiz_data = {
                         {"text": "des hibou sans marque finale", "isCorrect": False},
                         {"text": "des hibouxes avec un e muet", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La règle générale est d'ajouter un 's' aux mots en -ou (ex: des clous). Cependant, sept mots font exception et prennent un 'x' au pluriel : bijou, caillou, chou, genou, hibou, joujou, pou."
+                    "correction": " La règle générale est d'ajouter un 's' aux mots en -ou (ex: des clous). Cependant, sept mots font exception et prennent un 'x' au pluriel : bijou, caillou, chou, genou, hibou, joujou, pou."
                 },
                 {
                     "questionNumber": 84,
@@ -961,7 +961,7 @@ quiz_data = {
                         {"text": "la forme adjectivale longuee", "isCorrect": False},
                         {"text": "la forme adjectivale longu", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour former le féminin, on ajoute un 'u' après le 'g' pour conserver le son dur [g]. Sans ce 'u', on lirait 'longe' comme le verbe longer."
+                    "correction": " Pour former le féminin, on ajoute un 'u' après le 'g' pour conserver le son dur [g]. Sans ce 'u', on lirait 'longe' comme le verbe longer."
                 },
                 {
                     "questionNumber": 85,
@@ -972,7 +972,7 @@ quiz_data = {
                         {"text": "Les deux genres sont possibles", "isCorrect": False},
                         {"text": "Le genre neutre universel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une erreur de genre très fréquente car on l'associe souvent à 'fleur'. On doit dire 'un pétale de rose'. C'est le même cas pour les mots 'parapluie' ou 'squelette'."
+                    "correction": " C'est une erreur de genre très fréquente car on l'associe souvent à 'fleur'. On doit dire 'un pétale de rose'. C'est le même cas pour les mots 'parapluie' ou 'squelette'."
                 },
                 {
                     "questionNumber": 86,
@@ -983,7 +983,7 @@ quiz_data = {
                         {"text": "L'étude scientifique des fossiles", "isCorrect": False},
                         {"text": "L'étude scientifique des oiseaux", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Du grec 'anthrôpos' (l'homme) et 'logos' (le discours/l'étude). Cette science étudie l'évolution de l'homme sous tous ses aspects, aussi bien biologiques que sociaux et culturels, à travers les différentes époques."
+                    "correction": " Du grec 'anthrôpos' (l'homme) et 'logos' (le discours/l'étude). Cette science étudie l'évolution de l'homme sous tous ses aspects, aussi bien biologiques que sociaux et culturels, à travers les différentes époques."
                 },
                 {
                     "questionNumber": 87,
@@ -994,7 +994,7 @@ quiz_data = {
                         {"text": "L'écrivain Gustave Flaubert", "isCorrect": False},
                         {"text": "L'écrivain Émile Zola", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Les Misérables' est un chef-d'œuvre de Victor Hugo publié en 1862. Ce roman suit le destin de Jean Valjean et brosse un portrait puissant des injustices sociales et de la pauvreté dans la France du XIXe siècle."
+                    "correction": " 'Les Misérables' est un chef-d'œuvre de Victor Hugo publié en 1862. Ce roman suit le destin de Jean Valjean et brosse un portrait puissant des injustices sociales et de la pauvreté dans la France du XIXe siècle."
                 },
                 {
                     "questionNumber": 88,
@@ -1005,7 +1005,7 @@ quiz_data = {
                         {"text": "l'adjectif couragement", "isCorrect": False},
                         {"text": "l'adjectif coureux", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un adjectif se forme souvent à partir d'un nom en ajoutant un suffixe. Ici, pour le nom 'courage', on ajoute le suffixe '-eux' qui indique la présence d'une qualité. Le féminin est 'courageuse'."
+                    "correction": " Un adjectif se forme souvent à partir d'un nom en ajoutant un suffixe. Ici, pour le nom 'courage', on ajoute le suffixe '-eux' qui indique la présence d'une qualité. Le féminin est 'courageuse'."
                 },
                 {
                     "questionNumber": 89,
@@ -1016,7 +1016,7 @@ quiz_data = {
                         {"text": "Un atlas de géographie", "isCorrect": False},
                         {"text": "Un manuel de formation", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le thésaurus (ou dictionnaire des synonymes) permet de trouver des mots de sens voisins pour enrichir ses écrits, préciser ses idées et éviter les répétitions dans un texte écrit professionnel ou littéraire."
+                    "correction": " Le thésaurus (ou dictionnaire des synonymes) permet de trouver des mots de sens voisins pour enrichir ses écrits, préciser ses idées et éviter les répétitions dans un texte écrit professionnel ou littéraire."
                 },
                 {
                     "questionNumber": 90,
@@ -1027,7 +1027,7 @@ quiz_data = {
                         {"text": "Gagner une récompense méritée", "isCorrect": False},
                         {"text": "Faire un gros chèque bancaire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Cette expression ancienne signifie que l'on reconnaît publiquement son erreur et que l'on demande pardon. Elle est liée à la dignité et au respect moral des autres."
+                    "correction": " Cette expression ancienne signifie que l'on reconnaît publiquement son erreur et que l'on demande pardon. Elle est liée à la dignité et au respect moral des autres."
                 },
                 {
                     "questionNumber": 91,
@@ -1038,7 +1038,7 @@ quiz_data = {
                         {"text": "la forme mes-sieurs", "isCorrect": False},
                         {"text": "la forme messieur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Monsieur' est un mot composé ancien (mon + sieur). Au pluriel, chaque partie prend sa marque : 'mon' devient 'mes' et 'sieur' devient 'sieurs', ce qui donne 'messieurs'. C'est une exception à mémoriser."
+                    "correction": " 'Monsieur' est un mot composé ancien (mon + sieur). Au pluriel, chaque partie prend sa marque : 'mon' devient 'mes' et 'sieur' devient 'sieurs', ce qui donne 'messieurs'. C'est une exception à mémoriser."
                 },
                 {
                     "questionNumber": 92,
@@ -1049,7 +1049,7 @@ quiz_data = {
                         {"text": "le fruit pamplemouce", "isCorrect": False},
                         {"text": "le fruit pamplemouse", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On applique la règle du 'M' devant 'M, B, P'. Le son nasale [an] s'écrit donc 'am' lorsqu'il précède la lettre 'p' de pamplemousse. Cette règle est l'une des bases de l'orthographe française."
+                    "correction": " On applique la règle du 'M' devant 'M, B, P'. Le son nasale [an] s'écrit donc 'am' lorsqu'il précède la lettre 'p' de pamplemousse. Cette règle est l'une des bases de l'orthographe française."
                 },
                 {
                     "questionNumber": 93,
@@ -1060,7 +1060,7 @@ quiz_data = {
                         {"text": "une personne qui mange", "isCorrect": False},
                         {"text": "une personne qui soigne", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le suffixe '-cide' vient du latin 'caedere' qui signifie abattre ou tuer. On le retrouve dans 'insecticide' (qui tue les insectes), 'homicide' (qui tue un homme) ou 'fongicide' (qui tue les champignons)."
+                    "correction": " Le suffixe '-cide' vient du latin 'caedere' qui signifie abattre ou tuer. On le retrouve dans 'insecticide' (qui tue les insectes), 'homicide' (qui tue un homme) ou 'fongicide' (qui tue les champignons)."
                 },
                 {
                     "questionNumber": 94,
@@ -1071,7 +1071,7 @@ quiz_data = {
                         {"text": "Le genre féminin uniquement", "isCorrect": False},
                         {"text": "Le genre neutre universel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En général, il est masculin ('un vaste espace'). Mais en imprimerie, on dit 'une espace' (féminin) pour désigner la petite lame de métal qui sert à séparer deux mots ou deux lignes."
+                    "correction": " En général, il est masculin ('un vaste espace'). Mais en imprimerie, on dit 'une espace' (féminin) pour désigner la petite lame de métal qui sert à séparer deux mots ou deux lignes."
                 },
                 {
                     "questionNumber": 95,
@@ -1082,7 +1082,7 @@ quiz_data = {
                         {"text": "Vraiment sale et très négligé", "isCorrect": False},
                         {"text": "Qui ne brille pas dans le noir", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Insolite qualifie ce qui surprend par son originalité, son caractère bizarre ou étrange par rapport aux habitudes classiques du quotidien ou aux attentes normales."
+                    "correction": " Insolite qualifie ce qui surprend par son originalité, son caractère bizarre ou étrange par rapport aux habitudes classiques du quotidien ou aux attentes normales."
                 },
                 {
                     "questionNumber": 96,
@@ -1093,7 +1093,7 @@ quiz_data = {
                         {"text": "ce qui vient après le reste", "isCorrect": False},
                         {"text": "ce qui est avec ou accompagne", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le préfixe 'anti-' (d'origine grecque) exprime l'opposition ou la lutte contre quelque chose. Exemples : 'antivol' (contre le vol), 'antigel' (contre le gel) ou 'antibiotique' (contre la vie des bactéries)."
+                    "correction": " Le préfixe 'anti-' (d'origine grecque) exprime l'opposition ou la lutte contre quelque chose. Exemples : 'antivol' (contre le vol), 'antigel' (contre le gel) ou 'antibiotique' (contre la vie des bactéries)."
                 },
                 {
                     "questionNumber": 97,
@@ -1104,7 +1104,7 @@ quiz_data = {
                         {"text": "Un article indéfini singulier", "isCorrect": False},
                         {"text": "Un pronom personnel sujet pluriel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Placé devant un nom pour le désigner, le pointer ou le reprendre dans le discours, 'Ce' (ou cet/cette/ces) est un déterminant démonstratif."
+                    "correction": " Placé devant un nom pour le désigner, le pointer ou le reprendre dans le discours, 'Ce' (ou cet/cette/ces) est un déterminant démonstratif."
                 },
                 {
                     "questionNumber": 98,
@@ -1115,7 +1115,7 @@ quiz_data = {
                         {"text": "Un sentiment de grande tristesse vive", "isCorrect": False},
                         {"text": "Une sensation de froid très intense", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'exaspération est une forme de colère ou d'agacement portée à son maximum face à une situation agaçante qui dure ou se répète de façon insupportable."
+                    "correction": " L'exaspération est une forme de colère ou d'agacement portée à son maximum face à une situation agaçante qui dure ou se répète de façon insupportable."
                 },
                 {
                     "questionNumber": 99,
@@ -1126,7 +1126,7 @@ quiz_data = {
                         {"text": "le terme de Dentition", "isCorrect": False},
                         {"text": "l'objet nommé Dentier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les mots d'une même famille partagent un radical commun lié au sens. 'Dentiste' et 'dentition' partagent 'dent-'. 'Dedans' est un mot de lieu sans aucun rapport de sens."
+                    "correction": " Les mots d'une même famille partagent un radical commun lié au sens. 'Dentiste' et 'dentition' partagent 'dent-'. 'Dedans' est un mot de lieu sans aucun rapport de sens."
                 },
                 {
                     "questionNumber": 100,
@@ -1137,7 +1137,7 @@ quiz_data = {
                         {"text": "Un verbe d'action à l'infinitif", "isCorrect": False},
                         {"text": "Une préposition de lieu fixe", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les mots se terminant en '-ment' formés à partir d'un adjectif féminin (ici 'lente') sont presque toujours des adverbes de manière. Ils précisent comment l'action du verbe se déroule."
+                    "correction": " Les mots se terminant en '-ment' formés à partir d'un adjectif féminin (ici 'lente') sont presque toujours des adverbes de manière. Ils précisent comment l'action du verbe se déroule."
                 }
             ]
         }

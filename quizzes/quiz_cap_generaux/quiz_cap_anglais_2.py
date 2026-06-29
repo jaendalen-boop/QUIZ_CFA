@@ -11,7 +11,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Cross the road',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'expression "
+                                              'correction': " L'expression "
                                                             "'go straight on' (ou 'go straight "
                                                             "ahead') est une structure figée pour "
                                                             "indiquer qu'il ne faut pas tourner. "
@@ -31,7 +31,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                    {   'text': 'A full journey '
                                                                                'ticket',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Single ticket' "
+                                              'correction': " 'Single ticket' "
                                                             'désigne un aller simple. Un '
                                                             "aller-retour se dit 'Return ticket' "
                                                             "au Royaume-Uni et 'Round trip ticket' "
@@ -49,7 +49,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Un parking',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** Le 'roundabout' "
+                                              'correction': " Le 'roundabout' "
                                                             "est l'intersection circulaire (le "
                                                             'rond-point). Un carrefour classique '
                                                             "en croix se dit 'crossroads' et les "
@@ -66,7 +66,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To stay the bus',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Pour les moyens '
+                                              'correction': ' Pour les moyens '
                                                             'de transport publics (bus, train, '
                                                             "métro), on utilise le verbe 'to take' "
                                                             "ou parfois 'to catch' "
@@ -83,7 +83,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'I am find',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Lost' est le "
+                                              'correction': " 'Lost' est le "
                                                             "participe passé de 'to lose' "
                                                             "(perdre). Utilisé avec l'auxiliaire "
                                                             "'be', il fonctionne comme un adjectif "
@@ -99,7 +99,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Go left',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Left' signifie "
+                                              'correction': " 'Left' signifie "
                                                             "gauche et 'Right' signifie droite. Le "
                                                             "verbe 'turn' (tourner) est utilisé à "
                                                             "l'impératif pour donner un ordre ou "
@@ -115,7 +115,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'En façe de',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Next to' (ou "
+                                              'correction': " 'Next to' (ou "
                                                             "'beside') exprime la proximité "
                                                             'immédiate latérale (à côté de). '
                                                             "'Opposite' signifie en face de, "
@@ -136,7 +136,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                    {   'text': 'Who is the '
                                                                                'station?',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Where' est le "
+                                              'correction': " 'Where' est le "
                                                             'mot interrogatif spécifique au lieu. '
                                                             "On l'utilise toujours pour demander "
                                                             'une adresse, un bâtiment ou une '
@@ -156,7 +156,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                    {   'text': "Excuse moi, j'ai "
                                                                                'vue...',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To look for' "
+                                              'correction': " 'To look for' "
                                                             'est un verbe à particule (phrasal '
                                                             "verb) qui signifie 'chercher'. "
                                                             'Attention à ne pas le confondre avec '
@@ -172,7 +172,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'In foot',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est une "
+                                              'correction': " C'est une "
                                                             'exception importante. Pour les '
                                                             "véhicules, on utilise 'by' (by car, "
                                                             'by bus, by train), mais pour la '
@@ -188,7 +188,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Line',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Platform' "
+                                              'correction': " 'Platform' "
                                                             'désigne le quai où les voyageurs '
                                                             "attendent. 'Track' (ou rails) désigne "
                                                             'la voie ferrée elle-même. Pour '
@@ -204,7 +204,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Attendre',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To board' "
+                                              'correction': " 'To board' "
                                                             "signifie monter à bord d'un avion, "
                                                             "d'un bateau ou d'un bus. La 'boarding "
                                                             "pass' est la carte d'embarquement "
@@ -220,7 +220,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A late',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Delay' est le "
+                                              'correction': " 'Delay' est le "
                                                             'nom commun qui désigne un retard. '
                                                             "'Late' est l'adjectif qui signifie "
                                                             "'en retard' (ex: The train is late). "
@@ -237,7 +237,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A journey',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Flight' est le "
+                                              'correction': " 'Flight' est le "
                                                             "nom dérivé du verbe 'to fly'. On "
                                                             "l'utilise pour désigner le trajet "
                                                             'aérien identifié par un numéro (ex: '
@@ -254,7 +254,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Dans le chemin',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La préposition '
+                                              'correction': ' La préposition '
                                                             "'across' indique la traversée ou la "
                                                             "position opposée. 'Across the street' "
                                                             "signifie donc 'de l'autre côté de la "
@@ -269,7 +269,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Travel card',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Passport' est "
+                                              'correction': " 'Passport' est "
                                                             'un mot transparent (très proche du '
                                                             'français). Il est indispensable pour '
                                                             "les voyages hors de l'Union "
@@ -285,7 +285,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Un signe',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Map' désigne "
+                                              'correction': " 'Map' désigne "
                                                             'une carte géographique ou un plan. On '
                                                             "parle de 'city map' pour un plan de "
                                                             "ville et de 'world map' pour une "
@@ -300,7 +300,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Little cases',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Luggage' (ou "
+                                              'correction': " 'Luggage' (ou "
                                                             "'baggage') est un nom indénombrable "
                                                             'en anglais ; il ne prend jamais de '
                                                             "'s'. 'Hand luggage' désigne les "
@@ -316,7 +316,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'The border',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Customs' "
+                                              'correction': " 'Customs' "
                                                             "désigne le service de l'État chargé "
                                                             'du contrôle des marchandises aux '
                                                             "frontières. Le 'customs officer' est "
@@ -331,7 +331,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Journée calme',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Safe' signifie "
+                                              'correction': " 'Safe' signifie "
                                                             "en sécurité ou sans danger. 'Safe "
                                                             "journey' (ou 'Safe trip') est une "
                                                             'formule de politesse pour souhaiter '
@@ -348,7 +348,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Will I help you?',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est la phrase "
+                                              'correction': " C'est la phrase "
                                                             "d'accueil standard et polie dans tout "
                                                             'commerce ou service client. On '
                                                             "utilise l'auxiliaire de capacité "
@@ -363,7 +363,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A discount',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Refund' "
+                                              'correction': " 'Refund' "
                                                             'désigne spécifiquement le rendu '
                                                             "d'argent suite à une insatisfaction "
                                                             "ou un retour produit. 'Discount' "
@@ -379,7 +379,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To fold it',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To try "
+                                              'correction': " 'To try "
                                                             "something on' signifie essayer un "
                                                             'vêtement ou une chaussure. Les '
                                                             "cabines d'essayage se disent 'fitting "
@@ -396,7 +396,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Final exit',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Checkout' est "
+                                              'correction': " 'Checkout' est "
                                                             "le terme général pour l'endroit où "
                                                             "l'on paie ses achats. 'Cash desk' est "
                                                             'un peu plus formel. Le caissier ou la '
@@ -411,7 +411,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'The shop assistant',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Tag' désigne "
+                                              'correction': " 'Tag' désigne "
                                                             'une étiquette pendue ou collée. Le '
                                                             "'price tag' est indispensable pour "
                                                             'informer le consommateur du coût de '
@@ -426,7 +426,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Shoe foot',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** Le mot 'size' "
+                                              'correction': " Le mot 'size' "
                                                             'est utilisé aussi bien pour la taille '
                                                             'des vêtements que pour la pointure '
                                                             'des chaussures. On demande souvent : '
@@ -441,7 +441,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'High price',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'On sale' "
+                                              'correction': " 'On sale' "
                                                             "signifie que l'article est en "
                                                             'promotion ou en soldes. Aux '
                                                             "États-Unis, 'For sale' signifie "
@@ -458,7 +458,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To like an item',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To order' est "
+                                              'correction': " 'To order' est "
                                                             'le verbe pour passer commande. Le mot '
                                                             "'command' est un faux-ami qui désigne "
                                                             'un ordre militaire ou une commande '
@@ -473,7 +473,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'In the sales',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Out of stock' "
+                                              'correction': " 'Out of stock' "
                                                             'signifie que le produit est en '
                                                             "rupture de stock. S'il est "
                                                             "disponible, on dit 'In stock'."},
@@ -487,7 +487,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'The bill',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Attention au '
+                                              'correction': ' Attention au '
                                                             "faux-ami : 'Receipt' est le ticket de "
                                                             "caisse (preuve d'achat). 'Recipe' est "
                                                             'la recette de cuisine pour préparer '
@@ -502,7 +502,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A gift',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Discount' est "
+                                              'correction': " 'Discount' est "
                                                             'le terme commercial standard pour une '
                                                             'remise ou un rabais sur le prix '
                                                             'affiché.'},
@@ -516,7 +516,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To tidy',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To deliver' "
+                                              'correction': " 'To deliver' "
                                                             'signifie livrer (marchandises, '
                                                             'colis). La livraison se dit '
                                                             "'delivery'. Dans un contexte "
@@ -537,7 +537,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                    {   'text': 'Can I have credit '
                                                                                'cards?',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est la "
+                                              'correction': " C'est la "
                                                             'structure standard pour interroger '
                                                             'sur les moyens de paiement acceptés. '
                                                             "On utilise l'auxiliaire 'Do' pour une "
@@ -553,7 +553,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A room',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Aisle' désigne "
+                                              'correction': " 'Aisle' désigne "
                                                             "l'allée ou le rayon. 'Department' "
                                                             'désigne plutôt le secteur (ex: '
                                                             'clothing department = rayon '
@@ -568,7 +568,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Closing hours',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Opening hours' "
+                                              'correction': " 'Opening hours' "
                                                             "(ou 'Business hours') indique les "
                                                             'plages horaires durant lesquelles un '
                                                             'établissement accueille le public.'},
@@ -582,7 +582,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Bag',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Trolley' est "
+                                              'correction': " 'Trolley' est "
                                                             'le terme britannique pour le chariot '
                                                             'de supermarché. Les Américains '
                                                             "utilisent plus souvent 'cart'. "
@@ -598,7 +598,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Old',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Expensive' "
+                                              'correction': " 'Expensive' "
                                                             'signifie cher. Son contraire est '
                                                             "'Cheap'. En anglais soutenu, on peut "
                                                             "aussi utiliser 'dear' pour signifier "
@@ -613,7 +613,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A gift',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Bargain' "
+                                              'correction': " 'Bargain' "
                                                             'désigne une occasion financièrement '
                                                             "très avantageuse (une 'affaire' ou un "
                                                             "'bon plan')."},
@@ -627,7 +627,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A sign',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Brand' désigne "
+                                              'correction': " 'Brand' désigne "
                                                             "la marque commerciale d'un produit "
                                                             "(ex: Nike, Apple). 'Mark' est une "
                                                             'trace physique ou une note scolaire.'},
@@ -641,7 +641,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Fast',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Wholesale' "
+                                              'correction': " 'Wholesale' "
                                                             'signifie la vente en gros (destinée '
                                                             'aux professionnels). La vente au '
                                                             'détail (pour les particuliers) se dit '
@@ -658,7 +658,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Will',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Can' exprime "
+                                              'correction': " 'Can' exprime "
                                                             'la capacité physique (I can swim) ou '
                                                             'intellectuelle (I can speak English). '
                                                             "Au passé, il devient 'Could'."},
@@ -673,7 +673,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Could',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Must' exprime "
+                                              'correction': " 'Must' exprime "
                                                             'une obligation absolue ou une '
                                                             'nécessité. Sa forme négative '
                                                             "'Mustn't' exprime une interdiction "
@@ -689,7 +689,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Must',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Should' "
+                                              'correction': " 'Should' "
                                                             '(devrait) est le modal du conseil ou '
                                                             'de la suggestion. Il est moins fort '
                                                             "que 'must' ou 'have to'."},
@@ -703,7 +703,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Present simple',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le présent '
+                                              'correction': ' Le présent '
                                                             'continu (be + base verbale + ing) '
                                                             'sert à décrire une action qui se '
                                                             "déroule au moment même où l'on "
@@ -720,7 +720,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Will to',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Used to' "
+                                              'correction': " 'Used to' "
                                                             'exprime une rupture avec le présent. '
                                                             'Il désigne une habitude ou un état '
                                                             'qui était vrai autrefois mais qui ne '
@@ -735,7 +735,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'I must',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Could' est la "
+                                              'correction': " 'Could' est la "
                                                             'forme de conditionnel ou de prétérit '
                                                             "du modal 'Can'. Il exprime une "
                                                             'possibilité plus incertaine ou plus '
@@ -751,7 +751,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Do I...?',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'May' est "
+                                              'correction': " 'May' est "
                                                             'utilisé pour demander ou accorder une '
                                                             'permission dans un registre soutenu '
                                                             'ou formel.'},
@@ -768,7 +768,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Adjective + est',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Pour les '
+                                              'correction': ' Pour les '
                                                             'adjectifs de plus de deux syllabes, '
                                                             "on utilise 'More' + adjectif + 'than' "
                                                             'pour établir une comparaison de '
@@ -783,7 +783,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'The most good',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Good' est un "
+                                              'correction': " 'Good' est un "
                                                             'adjectif irrégulier. Son comparatif '
                                                             "est 'Better' et son superlatif est "
                                                             "'The best'."},
@@ -798,7 +798,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Capacity',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Have to' "
+                                              'correction': " 'Have to' "
                                                             'exprime une obligation imposée par '
                                                             'des circonstances extérieures (la '
                                                             'loi, un règlement, un patron), alors '
@@ -814,7 +814,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': "He won't",
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Must not' (ou "
+                                              'correction': " 'Must not' (ou "
                                                             "'mustn't') exprime une interdiction. "
                                                             "Attention : 'Don't have to' signifie "
                                                             "'ne pas être obligé de'."},
@@ -828,7 +828,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Was go',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To go' est un "
+                                              'correction': " 'To go' est un "
                                                             'verbe irrégulier très fréquent. Son '
                                                             "prétérit est 'Went' et son participe "
                                                             "passé est 'Gone'."},
@@ -842,7 +842,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Everybody',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Nobody' ou 'No "
+                                              'correction': " 'Nobody' ou 'No "
                                                             "one' exprime la négation totale "
                                                             "d'individus. On utilise une forme de "
                                                             'verbe affirmative avec ces pronoms '
@@ -857,7 +857,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Each',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Both' "
+                                              'correction': " 'Both' "
                                                             "s'utilise exclusivement pour parler "
                                                             'de deux éléments ou deux personnes.'},
                                           {   'questionNumber': 55,
@@ -870,7 +870,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Few',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Enough' se "
+                                              'correction': " 'Enough' se "
                                                             'place avant un nom (enough water) '
                                                             'mais après un adjectif (old enough).'},
                                           {   'questionNumber': 56,
@@ -883,7 +883,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Easily',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Slowly' est "
+                                              'correction': " 'Slowly' est "
                                                             "l'adverbe de manière pour "
                                                             "'lentement'. Son contraire est 'Fast' "
                                                             "(adjectif et adverbe) ou 'Quickly'."},
@@ -897,7 +897,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Small size',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le suffixe '
+                                              'correction': ' Le suffixe '
                                                             "'-less' indique l'absence ou la "
                                                             "privation. Exemples : 'Wireless' "
                                                             "(sans fil) ou 'Homeless' (sans "
@@ -912,7 +912,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'One day',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Every' (suivi "
+                                              'correction': " 'Every' (suivi "
                                                             "d'un singulier) exprime la totalité "
                                                             "répétée d'une série. 'Each' insiste "
                                                             "davantage sur l'unité séparée du "
@@ -927,7 +927,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Mouse',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est un "
+                                              'correction': " C'est un "
                                                             'pluriel irrégulier. Un seul animal se '
                                                             "dit 'mouse', plusieurs se disent "
                                                             "'mice'."},
@@ -942,7 +942,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'It does rain',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Pour une action '
+                                              'correction': ' Pour une action '
                                                             'météo en cours, on utilise le présent '
                                                             'continu (auxiliaire Be + Base Verbale '
                                                             '+ ing).'}]},
@@ -957,7 +957,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Hair',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Head' désigne "
+                                              'correction': " 'Head' désigne "
                                                             'la tête. Attention à la prononciation '
                                                             "courte du 'e' qui le distingue de "
                                                             "'hand' (main) ou 'hair' (cheveux)."},
@@ -971,7 +971,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Leg pain',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** En anglais, '
+                                              'correction': ' En anglais, '
                                                             'beaucoup de douleurs se forment avec '
                                                             "le nom de l'organe suivi du suffixe "
                                                             "'-ache' (ex: stomach-ache, "
@@ -986,7 +986,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Casque',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Gloves' "
+                                              'correction': " 'Gloves' "
                                                             'signifie des gants. Ce sont des '
                                                             'Équipements de Protection '
                                                             'Individuelle (PPE) indispensables en '
@@ -1001,7 +1001,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Goggles',
                                                                        'isCorrect': True}],
-                                              'correction': "**Rappel de cours :** 'Safety' "
+                                              'correction': " 'Safety' "
                                                             'renvoie à la sécurité physique. On '
                                                             "utilise 'glasses' ou 'goggles' pour "
                                                             'les lunettes de protection '
@@ -1016,7 +1016,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Weather',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Health' "
+                                              'correction': " 'Health' "
                                                             "signifie la santé. L'adjectif "
                                                             "'healthy' signifie 'en bonne santé' "
                                                             "ou 'sain' (ex: healthy food)."},
@@ -1030,7 +1030,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Pill',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Plaster' est "
+                                              'correction': " 'Plaster' est "
                                                             'le terme britannique pour pansement. '
                                                             'Les Américains utilisent souvent la '
                                                             "marque déposée 'Band-aid'."},
@@ -1044,7 +1044,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Heat',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Heart' se "
+                                              'correction': " 'Heart' se "
                                                             "prononce avec un 'a' long. Attention "
                                                             "à ne pas le confondre avec 'hurt' "
                                                             "(blessé) ou 'heat' (chaleur)."},
@@ -1058,7 +1058,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Lunch',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Warning' "
+                                              'correction': " 'Warning' "
                                                             '(avertissement) est un mot-clé de la '
                                                             'signalétique de sécurité pour '
                                                             "prévenir d'un risque imminent."},
@@ -1072,7 +1072,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'I have mal',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On utilise le '
+                                              'correction': ' On utilise le '
                                                             "verbe de sensation 'to feel'. 'Sick' "
                                                             "et 'ill' sont synonymes pour désigner "
                                                             'un état maladif.'},
@@ -1086,7 +1086,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Doctor',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Medicine' est "
+                                              'correction': " 'Medicine' est "
                                                             "le terme général. 'Drug' est très "
                                                             'utilisé en anglais pour désigner les '
                                                             'médicaments vendus en pharmacie '
@@ -1101,7 +1101,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Eye gear',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Helmet' "
+                                              'correction': " 'Helmet' "
                                                             'désigne un casque (moto, chantier, '
                                                             'vélo). Pour le chantier, on utilise '
                                                             "aussi le terme 'hard hat'."},
@@ -1115,7 +1115,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Face',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Eye' "
+                                              'correction': " 'Eye' "
                                                             "(singulier) devient 'Eyes' au "
                                                             "pluriel. C'est un nom régulier."},
                                           {   'questionNumber': 73,
@@ -1128,7 +1128,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Broken',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Injured' "
+                                              'correction': " 'Injured' "
                                                             "s'utilise pour une blessure physique "
                                                             "accidentelle. 'Hurt' est également "
                                                             'très commun.'},
@@ -1142,7 +1142,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'General doctor',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'First aid' "
+                                              'correction': " 'First aid' "
                                                             'désigne les premiers secours. Le '
                                                             "'First aider' est le sauveteur "
                                                             'secouriste du travail (SST).'},
@@ -1156,7 +1156,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A visit',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Pour un '
+                                              'correction': ' Pour un '
                                                             'professionnel (médecin, dentiste, '
                                                             'banquier), on utilise obligatoirement '
                                                             "'appointment'. 'Meeting' est pour les "
@@ -1172,7 +1172,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Face',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Skin' désigne "
+                                              'correction': " 'Skin' désigne "
                                                             "l'organe de la peau. C'est un mot "
                                                             'court à mémoriser.'},
                                           {   'questionNumber': 77,
@@ -1185,7 +1185,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To walk',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To breathe' "
+                                              'correction': " 'To breathe' "
                                                             "est le verbe respirer. Le nom 'le "
                                                             "souffle/la respiration' s'écrit "
                                                             "'breath' (sans le 'e' final)."},
@@ -1199,7 +1199,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Bleed',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Blood' est le "
+                                              'correction': " 'Blood' est le "
                                                             "nom (le sang). 'To bleed' est le "
                                                             'verbe irrégulier (saigner).'},
                                           {   'questionNumber': 79,
@@ -1212,7 +1212,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Young',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Pregnant' est "
+                                              'correction': " 'Pregnant' est "
                                                             "l'adjectif spécifique pour une femme "
                                                             'enceinte. Attention à ne pas utiliser '
                                                             "'full' (plein) qui serait impoli."},
@@ -1226,7 +1226,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Sleepy',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Dizzy' exprime "
+                                              'correction': " 'Dizzy' exprime "
                                                             'la sensation de vertige ou de tête '
                                                             'qui tourne.'}]},
                   5: {   'name': 'THÈME 5 : CULTURE, MÉDIAS ET RÉSEAUX SOCIAUX',
@@ -1240,7 +1240,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Advertising',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Social Media' "
+                                              'correction': " 'Social Media' "
                                                             "regroupe l'ensemble des plateformes "
                                                             "numériques permettant d'interagir "
                                                             '(Facebook, Instagram, etc.).'},
@@ -1254,7 +1254,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A word',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un SMS se dit '
+                                              'correction': ' Un SMS se dit '
                                                             "'text message' ou simplement 'a text' "
                                                             'en anglais courant.'},
                                           {   'questionNumber': 83,
@@ -1268,7 +1268,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To write',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To subscribe' "
+                                              'correction': " 'To subscribe' "
                                                             'est utilisé pour un service payant ou '
                                                             "une newsletter. 'To follow' est "
                                                             'utilisé pour les profils de réseaux '
@@ -1283,7 +1283,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To delete',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To share' "
+                                              'correction': " 'To share' "
                                                             'signifie partager un contenu avec ses '
                                                             'amis ou sa communauté.'},
                                           {   'questionNumber': 85,
@@ -1298,7 +1298,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A screen computer',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Laptop' "
+                                              'correction': " 'Laptop' "
                                                             '(littéralement : sur les genoux) '
                                                             "s'oppose au 'Desktop' (ordinateur "
                                                             'fixe de bureau).'},
@@ -1312,7 +1312,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To charge',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Download' "
+                                              'correction': " 'Download' "
                                                             'signifie récupérer un fichier du '
                                                             "réseau vers son appareil. 'Upload' "
                                                             "est l'action inverse (mettre en "
@@ -1327,7 +1327,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Fast wire',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Wire' (fil) + "
+                                              'correction': " 'Wire' (fil) + "
                                                             "suffixe '-less' (sans). C'est le "
                                                             'terme technique pour désigner les '
                                                             'technologies Wi-Fi ou Bluetooth.'},
@@ -1341,7 +1341,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Open word',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Password' est "
+                                              'correction': " 'Password' est "
                                                             'le terme standard pour la sécurité '
                                                             'informatique.'},
                                           {   'questionNumber': 89,
@@ -1354,7 +1354,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To close',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To browse' "
+                                              'correction': " 'To browse' "
                                                             'signifie naviguer ou feuilleter. Un '
                                                             "'browser' est un logiciel de "
                                                             'navigation comme Chrome ou Firefox.'},
@@ -1368,7 +1368,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A file',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Attachment' "
+                                              'correction': " 'Attachment' "
                                                             "(du verbe 'to attach') désigne tout "
                                                             'fichier lié à un e-mail.'},
                                           {   'questionNumber': 91,
@@ -1381,7 +1381,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'The face',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On utilise '
+                                              'correction': ' On utilise '
                                                             "'screen' pour la surface d'affichage "
                                                             "et 'monitor' pour l'appareil physique "
                                                             'complet.'},
@@ -1395,7 +1395,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To send',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To delete' (ou "
+                                              'correction': " 'To delete' (ou "
                                                             "'to erase') signifie supprimer "
                                                             'définitivement une donnée numérique.'},
                                           {   'questionNumber': 93,
@@ -1408,7 +1408,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A site',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Link' (ou "
+                                              'correction': " 'Link' (ou "
                                                             "'hyperlink') est le terme pour un "
                                                             'lien cliquable sur le web.'},
                                           {   'questionNumber': 94,
@@ -1421,7 +1421,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To power',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Turn on' "
+                                              'correction': " 'Turn on' "
                                                             "(allumer) et 'Turn off' (éteindre) "
                                                             'sont utilisés pour les appareils '
                                                             'électriques.'},
@@ -1435,7 +1435,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'The maker',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'User' (du "
+                                              'correction': " 'User' (du "
                                                             "verbe 'to use') signifie "
                                                             "l'utilisateur. Le 'username' est le "
                                                             "nom d'utilisateur."},
@@ -1449,7 +1449,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'Control',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Settings' "
+                                              'correction': " 'Settings' "
                                                             "désigne le menu de configuration d'un "
                                                             "téléphone, d'un logiciel ou d'un "
                                                             'ordinateur.'},
@@ -1466,7 +1466,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                    {   'text': 'The battery is '
                                                                                'sleep',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On utilise '
+                                              'correction': ' On utilise '
                                                             "l'adjectif idiomatique 'dead' ou "
                                                             "'flat' pour signifier qu'une batterie "
                                                             "n'a plus d'énergie."},
@@ -1480,7 +1480,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To click',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To type' "
+                                              'correction': " 'To type' "
                                                             'signifie saisir du texte au clavier '
                                                             '(machine à écrire ou ordinateur).'},
                                           {   'questionNumber': 99,
@@ -1493,7 +1493,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'A call',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'Email' est "
+                                              'correction': " 'Email' est "
                                                             "l'abréviation de 'Electronic mail'. "
                                                             'Le terme français officiel est '
                                                             'courriel.'},
@@ -1508,7 +1508,7 @@ quiz_data = {   'title': 'Quiz Anglais #2 - Niveau CAP (100 Questions) - Version
                                                                        'isCorrect': False},
                                                                    {   'text': 'To go on',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** 'To sign up' "
+                                              'correction': " 'To sign up' "
                                                             "signifie s'inscrire pour la première "
                                                             "fois. 'To sign in' ou 'To log in' "
                                                             'signifie se connecter à un compte '

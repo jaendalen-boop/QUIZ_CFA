@@ -16,7 +16,7 @@ quiz_data = {
                         {"text": "La couche externe de protection thermique", "isCorrect": False},
                         {"text": "La liaison covalente entre les molécules", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un atome est constitué d'un noyau central chargé positivement, autour duquel gravitent des électrons chargés négativement. Le noyau concentre la quasi-totalité de la masse de l'atome bien qu'il occupe un volume minuscule."
+                    "correction": " Un atome est constitué d'un noyau central chargé positivement, autour duquel gravitent des électrons chargés négativement. Le noyau concentre la quasi-totalité de la masse de l'atome bien qu'il occupe un volume minuscule."
                 },
                 {
                     "questionNumber": 2,
@@ -27,7 +27,7 @@ quiz_data = {
                         {"text": "Une charge globale toujours négative", "isCorrect": False},
                         {"text": "Une charge variable selon la température", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un atome contient autant de protons (positifs) que d'électrons (négatifs). Les charges s'annulent exactement, ce qui rend l'atome électriquement neutre. S'il gagne ou perd un électron, il devient alors un ion."
+                    "correction": " Un atome contient autant de protons (positifs) que d'électrons (négatifs). Les charges s'annulent exactement, ce qui rend l'atome électriquement neutre. S'il gagne ou perd un électron, il devient alors un ion."
                 },
                 {
                     "questionNumber": 3,
@@ -38,7 +38,7 @@ quiz_data = {
                         {"text": "Une molécule organique complexe", "isCorrect": False},
                         {"text": "Un noyau radioactif instable", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'électron porte une charge négative. En perdant une charge négative, l'atome se retrouve avec un excès de protons (positifs) : il devient donc un ion positif, appelé 'cation' (comme l'ion sodium Na+)."
+                    "correction": " L'électron porte une charge négative. En perdant une charge négative, l'atome se retrouve avec un excès de protons (positifs) : il devient donc un ion positif, appelé 'cation' (comme l'ion sodium Na+)."
                 },
                 {
                     "questionNumber": 4,
@@ -49,7 +49,7 @@ quiz_data = {
                         {"text": "Une éprouvette graduée en verre", "isCorrect": False},
                         {"text": "Une balance de précision au milligramme", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le pH (potentiel Hydrogène) mesure l'acidité d'un liquide. On peut utiliser du papier pH (couleur) pour une estimation, mais seul le pH-mètre donne une valeur numérique précise. L'échelle va de 0 à 14."
+                    "correction": " Le pH (potentiel Hydrogène) mesure l'acidité d'un liquide. On peut utiliser du papier pH (couleur) pour une estimation, mais seul le pH-mètre donne une valeur numérique précise. L'échelle va de 0 à 14."
                 },
                 {
                     "questionNumber": 5,
@@ -60,7 +60,7 @@ quiz_data = {
                         {"text": "Une solution fortement basique", "isCorrect": False},
                         {"text": "Une solution gazeuse inflammable", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Sur l'échelle de pH : de 0 à 7, la solution est acide ; à 7, elle est neutre (eau pure) ; de 7 à 14, elle est basique (ou alcaline). Plus le pH est proche de 0, plus l'acidité est forte."
+                    "correction": " Sur l'échelle de pH : de 0 à 7, la solution est acide ; à 7, elle est neutre (eau pure) ; de 7 à 14, elle est basique (ou alcaline). Plus le pH est proche de 0, plus l'acidité est forte."
                 },
                 {
                     "questionNumber": 6,
@@ -71,7 +71,7 @@ quiz_data = {
                         {"text": "Le produit est toxique pour la peau", "isCorrect": False},
                         {"text": "Le produit est corrosif pour les métaux", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Ce symbole avertit que le produit peut s'enflammer facilement au contact d'une flamme, d'une étincelle ou d'une source de chaleur. Il doit être stocké loin de toute source d'ignition."
+                    "correction": " Ce symbole avertit que le produit peut s'enflammer facilement au contact d'une flamme, d'une étincelle ou d'une source de chaleur. Il doit être stocké loin de toute source d'ignition."
                 },
                 {
                     "questionNumber": 7,
@@ -82,7 +82,7 @@ quiz_data = {
                         {"text": "Des gants en latex épais", "isCorrect": False},
                         {"text": "Une blouse en coton blanc", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les projections de produits chimiques (surtout les acides et bases concentrés) peuvent causer des dommages irréversibles à la cornée. Le port de lunettes de sécurité est une règle de base en laboratoire."
+                    "correction": " Les projections de produits chimiques (surtout les acides et bases concentrés) peuvent causer des dommages irréversibles à la cornée. Le port de lunettes de sécurité est une règle de base en laboratoire."
                 },
                 {
                     "questionNumber": 8,
@@ -93,7 +93,7 @@ quiz_data = {
                         {"text": "On mélange les deux d'un coup sec", "isCorrect": False},
                         {"text": "On chauffe le mélange au préalable", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La règle de sécurité absolue est : 'L'acide dans l'eau' (Acide -> Eau). Verser de l'eau dans un acide concentré peut provoquer une réaction violente avec des projections brûlantes (réaction exothermique)."
+                    "correction": " La règle de sécurité absolue est : 'L'acide dans l'eau' (Acide -> Eau). Verser de l'eau dans un acide concentré peut provoquer une réaction violente avec des projections brûlantes (réaction exothermique)."
                 },
                 {
                     "questionNumber": 9,
@@ -104,7 +104,7 @@ quiz_data = {
                         {"text": "Une solution neutre et pure", "isCorrect": False},
                         {"text": "Une solution de sel de cuisine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un pH de 12 est très élevé. Cela correspond à une base forte (comme l'eau de Javel ou la soude). Ces produits sont très agressifs pour la peau et nécessitent des protections (EPI)."
+                    "correction": " Un pH de 12 est très élevé. Cela correspond à une base forte (comme l'eau de Javel ou la soude). Ces produits sont très agressifs pour la peau et nécessitent des protections (EPI)."
                 },
                 {
                     "questionNumber": 10,
@@ -115,7 +115,7 @@ quiz_data = {
                         {"text": "Le produit est inflammable", "isCorrect": False},
                         {"text": "Le produit est polluant", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Ce symbole signifie que le produit attaque les tissus vivants (peau, yeux) mais aussi les matériaux comme les métaux ou le bois. En cas de contact, il faut rincer immédiatement à l'eau claire."
+                    "correction": " Ce symbole signifie que le produit attaque les tissus vivants (peau, yeux) mais aussi les matériaux comme les métaux ou le bois. En cas de contact, il faut rincer immédiatement à l'eau claire."
                 },
                 {
                     "questionNumber": 11,
@@ -126,7 +126,7 @@ quiz_data = {
                         {"text": "Le symbole chimique Fr", "isCorrect": False},
                         {"text": "Le symbole chimique I", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Fe vient du latin 'Ferrum'. À ne pas confondre avec F (Fluor) ou Fr (Francium). Le fer est un métal très utilisé dans l'industrie sous forme d'alliages (acier, fonte)."
+                    "correction": " Fe vient du latin 'Ferrum'. À ne pas confondre avec F (Fluor) ou Fr (Francium). Le fer est un métal très utilisé dans l'industrie sous forme d'alliages (acier, fonte)."
                 },
                 {
                     "questionNumber": 12,
@@ -137,7 +137,7 @@ quiz_data = {
                         {"text": "Le phénomène de vaporisation", "isCorrect": False},
                         {"text": "Le phénomène de liquéfaction", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est un changement d'état physique. La solidification se produit quand on refroidit un liquide (ex: l'eau qui devient glace à 0°C). L'inverse est la fusion."
+                    "correction": " C'est un changement d'état physique. La solidification se produit quand on refroidit un liquide (ex: l'eau qui devient glace à 0°C). L'inverse est la fusion."
                 },
                 {
                     "questionNumber": 13,
@@ -148,7 +148,7 @@ quiz_data = {
                         {"text": "La valeur basique de quatorze", "isCorrect": False},
                         {"text": "La valeur variable de dix", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'eau pure est le point de référence de la neutralité. Elle contient autant d'ions acides (H+) que d'ions basiques (OH-), ce qui donne un pH de 7."
+                    "correction": " L'eau pure est le point de référence de la neutralité. Elle contient autant d'ions acides (H+) que d'ions basiques (OH-), ce qui donne un pH de 7."
                 },
                 {
                     "questionNumber": 14,
@@ -159,7 +159,7 @@ quiz_data = {
                         {"text": "Le gaz dioxyde de carbone", "isCorrect": False},
                         {"text": "Le gaz argon de l'air", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour qu'il y ait un feu, il faut un 'comburant' : c'est le dioxygène (O2) présent à 21% dans l'air. Si on supprime l'oxygène, le feu s'éteint immédiatement."
+                    "correction": " Pour qu'il y ait un feu, il faut un 'comburant' : c'est le dioxygène (O2) présent à 21% dans l'air. Si on supprime l'oxygène, le feu s'éteint immédiatement."
                 },
                 {
                     "questionNumber": 15,
@@ -170,7 +170,7 @@ quiz_data = {
                         {"text": "La formule simple HO2", "isCorrect": False},
                         {"text": "La formule simple O2H", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une molécule d'eau est composée de 2 atomes d'hydrogène (H) et d'un seul atome d'oxygène (O). C'est le constituant majeur du corps humain."
+                    "correction": " Une molécule d'eau est composée de 2 atomes d'hydrogène (H) et d'un seul atome d'oxygène (O). C'est le constituant majeur du corps humain."
                 },
                 {
                     "questionNumber": 16,
@@ -181,7 +181,7 @@ quiz_data = {
                         {"text": "A mis du sable et de l'eau ensemble", "isCorrect": False},
                         {"text": "A mis de l'huile et de l'eau ensemble", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans un mélange homogène (comme de l'eau salée ou du sirop), les substances sont parfaitement mélangées. Si on voit des grains ou des gouttes séparées, le mélange est dit hétérogène."
+                    "correction": " Dans un mélange homogène (comme de l'eau salée ou du sirop), les substances sont parfaitement mélangées. Si on voit des grains ou des gouttes séparées, le mélange est dit hétérogène."
                 },
                 {
                     "questionNumber": 17,
@@ -192,7 +192,7 @@ quiz_data = {
                         {"text": "Indique un risque électrique", "isCorrect": False},
                         {"text": "Indique un produit très chaud", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Ce pictogramme signale que l'ingestion, l'inhalation ou le contact cutané avec le produit peut provoquer la mort ou des effets graves immédiats. Une prudence extrême est requise."
+                    "correction": " Ce pictogramme signale que l'ingestion, l'inhalation ou le contact cutané avec le produit peut provoquer la mort ou des effets graves immédiats. Une prudence extrême est requise."
                 },
                 {
                     "questionNumber": 18,
@@ -203,7 +203,7 @@ quiz_data = {
                         {"text": "Une couleur verte claire", "isCorrect": False},
                         {"text": "Une couleur jaune pâle", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le papier pH change de couleur selon l'acidité. Rouge = très acide, Orange/Jaune = moyennement acide, Vert = neutre, Bleu/Violet = basique."
+                    "correction": " Le papier pH change de couleur selon l'acidité. Rouge = très acide, Orange/Jaune = moyennement acide, Vert = neutre, Bleu/Violet = basique."
                 },
                 {
                     "questionNumber": 19,
@@ -214,7 +214,7 @@ quiz_data = {
                         {"text": "Le gaz nommé hélium", "isCorrect": False},
                         {"text": "Le gaz nommé vapeur d'eau", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'air n'est pas un corps pur mais un mélange de gaz. Il contient majoritairement du diazote (N2) et seulement 21 % de dioxygène (O2) nécessaire à la vie."
+                    "correction": " L'air n'est pas un corps pur mais un mélange de gaz. Il contient majoritairement du diazote (N2) et seulement 21 % de dioxygène (O2) nécessaire à la vie."
                 },
                 {
                     "questionNumber": 20,
@@ -225,7 +225,7 @@ quiz_data = {
                         {"text": "Le phénomène de fusion lente", "isCorrect": False},
                         {"text": "Le phénomène de congélation", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La vaporisation peut être lente (évaporation à température ambiante) ou rapide (ébullition à 100°C pour l'eau). L'inverse est la liquéfaction."
+                    "correction": " La vaporisation peut être lente (évaporation à température ambiante) ou rapide (ébullition à 100°C pour l'eau). L'inverse est la liquéfaction."
                 }
             ]
         },
@@ -244,7 +244,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Watt", "isCorrect": False},
                         {"text": "L'unité nommée l'Ohm", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La tension (U) se mesure en Volts (V) à l'aide d'un voltmètre branché en dérivation. En France, la tension d'une prise domestique standard est de 230 Volts."
+                    "correction": " La tension (U) se mesure en Volts (V) à l'aide d'un voltmètre branché en dérivation. En France, la tension d'une prise domestique standard est de 230 Volts."
                 },
                 {
                     "questionNumber": 22,
@@ -255,7 +255,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Joule", "isCorrect": False},
                         {"text": "L'unité nommée le Mètre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'intensité (I) représente le débit d'électricité. Elle se mesure en Ampères (A) à l'aide d'un ampèremètre branché en série dans le circuit."
+                    "correction": " L'intensité (I) représente le débit d'électricité. Elle se mesure en Ampères (A) à l'aide d'un ampèremètre branché en série dans le circuit."
                 },
                 {
                     "questionNumber": 23,
@@ -266,7 +266,7 @@ quiz_data = {
                         {"text": "Elles brillent beaucoup plus fort", "isCorrect": False},
                         {"text": "Elles explosent immédiatement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans un circuit en série, le courant ne dispose que d'un seul chemin. Si un composant est défaillant, le circuit est ouvert et le courant ne circule plus du tout."
+                    "correction": " Dans un circuit en série, le courant ne dispose que d'un seul chemin. Si un composant est défaillant, le circuit est ouvert et le courant ne circule plus du tout."
                 },
                 {
                     "questionNumber": 24,
@@ -277,7 +277,7 @@ quiz_data = {
                         {"text": "Un thermomètre digital", "isCorrect": False},
                         {"text": "Un chronomètre manuel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La puissance (P) se mesure en Watts (W). Pour un appareil fonctionnant en courant continu, elle se calcule par la formule P = U x I (Tension x Intensité)."
+                    "correction": " La puissance (P) se mesure en Watts (W). Pour un appareil fonctionnant en courant continu, elle se calcule par la formule P = U x I (Tension x Intensité)."
                 },
                 {
                     "questionNumber": 25,
@@ -288,7 +288,7 @@ quiz_data = {
                         {"text": "Le verre des fenêtres", "isCorrect": False},
                         {"text": "Le bois sec des meubles", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les métaux (cuivre, aluminium, or, fer) sont conducteurs car ils possèdent des électrons libres. Le plastique, le verre et le bois sec sont des isolants : ils empêchent le passage du courant."
+                    "correction": " Les métaux (cuivre, aluminium, or, fer) sont conducteurs car ils possèdent des électrons libres. Le plastique, le verre et le bois sec sont des isolants : ils empêchent le passage du courant."
                 },
                 {
                     "questionNumber": 26,
@@ -299,7 +299,7 @@ quiz_data = {
                         {"text": "La formule E = P x t", "isCorrect": False},
                         {"text": "La formule I = U x R", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La loi d'Ohm relie la tension (U en Volts), la résistance (R en Ohms) et l'intensité (I en Ampères). Elle permet de calculer la valeur d'une résistance pour protéger un composant."
+                    "correction": " La loi d'Ohm relie la tension (U en Volts), la résistance (R en Ohms) et l'intensité (I en Ampères). Elle permet de calculer la valeur d'une résistance pour protéger un composant."
                 },
                 {
                     "questionNumber": 27,
@@ -310,7 +310,7 @@ quiz_data = {
                         {"text": "Une absence de courant", "isCorrect": False},
                         {"text": "Un appareil de chauffage", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** AC (Alternating Current) signifie que le courant change de sens périodiquement. C'est le type de courant fourni par les prises de courant murales (EDF)."
+                    "correction": " AC (Alternating Current) signifie que le courant change de sens périodiquement. C'est le type de courant fourni par les prises de courant murales (EDF)."
                 },
                 {
                     "questionNumber": 28,
@@ -321,7 +321,7 @@ quiz_data = {
                         {"text": "La prise de terre verte", "isCorrect": False},
                         {"text": "L'ampoule LED moderne", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un fusible ou un disjoncteur coupe le circuit si l'intensité du courant devient trop élevée (court-circuit ou surcharge), évitant ainsi l'échauffement des câbles et les incendies."
+                    "correction": " Un fusible ou un disjoncteur coupe le circuit si l'intensité du courant devient trop élevée (court-circuit ou surcharge), évitant ainsi l'échauffement des câbles et les incendies."
                 },
                 {
                     "questionNumber": 29,
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "Le Volt par heure", "isCorrect": False},
                         {"text": "L'Ampère par seconde", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'énergie (E) est le produit de la puissance par le temps (E = P x t). L'unité officielle est le Joule (J), mais pour la facturation, on utilise le kilowatt-heure (kWh)."
+                    "correction": " L'énergie (E) est le produit de la puissance par le temps (E = P x t). L'unité officielle est le Joule (J), mais pour la facturation, on utilise le kilowatt-heure (kWh)."
                 },
                 {
                     "questionNumber": 30,
@@ -343,7 +343,7 @@ quiz_data = {
                         {"text": "Produire plus de courant", "isCorrect": False},
                         {"text": "Éteindre les appareils", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La terre (fil vert et jaune) évacue les fuites de courant vers le sol. Couplée à un disjoncteur différentiel, elle protège les personnes contre les chocs électriques si un appareil est défectueux."
+                    "correction": " La terre (fil vert et jaune) évacue les fuites de courant vers le sol. Couplée à un disjoncteur différentiel, elle protège les personnes contre les chocs électriques si un appareil est défectueux."
                 },
                 {
                     "questionNumber": 31,
@@ -354,7 +354,7 @@ quiz_data = {
                         {"text": "La tension est trop faible", "isCorrect": False},
                         {"text": "L'isolant est trop épais", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un court-circuit met en contact direct la phase et le neutre sans passer par un récepteur. L'intensité augmente brutalement, ce qui peut provoquer des étincelles et un incendie."
+                    "correction": " Un court-circuit met en contact direct la phase et le neutre sans passer par un récepteur. L'intensité augmente brutalement, ce qui peut provoquer des étincelles et un incendie."
                 },
                 {
                     "questionNumber": 32,
@@ -365,7 +365,7 @@ quiz_data = {
                         {"text": "Un courant de type haute tension", "isCorrect": False},
                         {"text": "Un courant de type intermittent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le courant continu (DC - Direct Current) circule toujours dans le même sens, du pôle positif vers le pôle négatif. C'est le cas des piles, batteries et accumulateurs."
+                    "correction": " Le courant continu (DC - Direct Current) circule toujours dans le même sens, du pôle positif vers le pôle négatif. C'est le cas des piles, batteries et accumulateurs."
                 },
                 {
                     "questionNumber": 33,
@@ -376,7 +376,7 @@ quiz_data = {
                         {"text": "Une tension de 12 Volts", "isCorrect": False},
                         {"text": "Une tension de 0 Volt", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les piles standards (alcalines ou salines) délivrent une tension de 1,5 V. Si on les branche en série, les tensions s'additionnent (ex: 2 piles de 1,5 V fournissent 3 V)."
+                    "correction": " Les piles standards (alcalines ou salines) délivrent une tension de 1,5 V. Si on les branche en série, les tensions s'additionnent (ex: 2 piles de 1,5 V fournissent 3 V)."
                 },
                 {
                     "questionNumber": 34,
@@ -387,7 +387,7 @@ quiz_data = {
                         {"text": "Deux kilowattheures", "isCorrect": False},
                         {"text": "Huit kilowattheures", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** E = P x t. Ici P = 2 kW et t = 2 h. Calcul : 2 x 2 = 4 kWh. C'est la consommation typique d'un radiateur électrique pendant une soirée."
+                    "correction": " E = P x t. Ici P = 2 kW et t = 2 h. Calcul : 2 x 2 = 4 kWh. C'est la consommation typique d'un radiateur électrique pendant une soirée."
                 },
                 {
                     "questionNumber": 35,
@@ -398,7 +398,7 @@ quiz_data = {
                         {"text": "La lettre I majuscule", "isCorrect": False},
                         {"text": "La lettre P majuscule", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** R désigne la résistance. Son unité est l'Ohm (Ω). Elle caractérise la capacité d'un matériau à freiner le passage du courant électrique."
+                    "correction": " R désigne la résistance. Son unité est l'Ohm (Ω). Elle caractérise la capacité d'un matériau à freiner le passage du courant électrique."
                 },
                 {
                     "questionNumber": 36,
@@ -409,7 +409,7 @@ quiz_data = {
                         {"text": "Un danger de court-circuit", "isCorrect": False},
                         {"text": "Un dispositif de chauffage", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** DC signifie 'Direct Current'. Les batteries de téléphones et d'ordinateurs fonctionnent exclusivement avec du courant continu."
+                    "correction": " DC signifie 'Direct Current'. Les batteries de téléphones et d'ordinateurs fonctionnent exclusivement avec du courant continu."
                 },
                 {
                     "questionNumber": 37,
@@ -420,7 +420,7 @@ quiz_data = {
                         {"text": "Un débit d'eau liquide", "isCorrect": False},
                         {"text": "Une puissance de moteur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'ohmmètre s'utilise sur un composant 'hors tension' (débranché). S'il affiche une valeur infinie sur un fil, c'est que le fil est coupé."
+                    "correction": " L'ohmmètre s'utilise sur un composant 'hors tension' (débranché). S'il affiche une valeur infinie sur un fil, c'est que le fil est coupé."
                 },
                 {
                     "questionNumber": 38,
@@ -431,7 +431,7 @@ quiz_data = {
                         {"text": "Cercle autour du compteur", "isCorrect": False},
                         {"text": "Étoile vers le jardin", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le branchement en dérivation permet à chaque appareil de recevoir la même tension (230 V) et de fonctionner indépendamment des autres."
+                    "correction": " Le branchement en dérivation permet à chaque appareil de recevoir la même tension (230 V) et de fonctionner indépendamment des autres."
                 },
                 {
                     "questionNumber": 39,
@@ -442,7 +442,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Volt", "isCorrect": False},
                         {"text": "L'unité nommée le Watt", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'Ohm (symbole Ω, lettre grecque oméga) rend hommage à Georg Ohm, qui a découvert la relation entre tension et courant."
+                    "correction": " L'Ohm (symbole Ω, lettre grecque oméga) rend hommage à Georg Ohm, qui a découvert la relation entre tension et courant."
                 },
                 {
                     "questionNumber": 40,
@@ -453,7 +453,7 @@ quiz_data = {
                         {"text": "Les appareils vont plus vite", "isCorrect": False},
                         {"text": "L'électricité devient gratuite", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Chaque appareil ajouté en dérivation augmente l'intensité totale demandée. Si elle dépasse la capacité du câble, celui-ci chauffe (effet Joule) et peut brûler."
+                    "correction": " Chaque appareil ajouté en dérivation augmente l'intensité totale demandée. Si elle dépasse la capacité du câble, celui-ci chauffe (effet Joule) et peut brûler."
                 }
             ]
         },
@@ -472,7 +472,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Joule", "isCorrect": False},
                         {"text": "L'unité nommée le Mètre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une force (F) s'exprime en Newtons (N). Elle est représentée par un vecteur caractérisé par un point d'application, une direction, un sens et une valeur (norme)."
+                    "correction": " Une force (F) s'exprime en Newtons (N). Elle est représentée par un vecteur caractérisé par un point d'application, une direction, un sens et une valeur (norme)."
                 },
                 {
                     "questionNumber": 42,
@@ -483,7 +483,7 @@ quiz_data = {
                         {"text": "Un thermomètre gradué", "isCorrect": False},
                         {"text": "Un mètre ruban souple", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le dynamomètre contient souvent un ressort qui s'allonge de façon proportionnelle à la force exercée. On lit la valeur directement sur une graduation en Newtons."
+                    "correction": " Le dynamomètre contient souvent un ressort qui s'allonge de façon proportionnelle à la force exercée. On lit la valeur directement sur une graduation en Newtons."
                 },
                 {
                     "questionNumber": 43,
@@ -494,7 +494,7 @@ quiz_data = {
                         {"text": "Il n'y a aucune différence", "isCorrect": False},
                         {"text": "Ils se mesurent en mètres", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La masse (en kg) est la quantité de matière (invariable). Le poids (en N) est la force d'attraction exercée par la Terre (ou une autre planète). Sur la Lune, votre masse est la même, mais votre poids est divisé par 6."
+                    "correction": " La masse (en kg) est la quantité de matière (invariable). Le poids (en N) est la force d'attraction exercée par la Terre (ou une autre planète). Sur la Lune, votre masse est la même, mais votre poids est divisé par 6."
                 },
                 {
                     "questionNumber": 44,
@@ -505,7 +505,7 @@ quiz_data = {
                         {"text": "La formule m = P x g", "isCorrect": False},
                         {"text": "La formule g = P x m", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** g est l'intensité de la pesanteur. Sur Terre, g vaut environ 9,81 N/kg (souvent arrondi à 10 pour les calculs simplifiés en CAP)."
+                    "correction": " g est l'intensité de la pesanteur. Sur Terre, g vaut environ 9,81 N/kg (souvent arrondi à 10 pour les calculs simplifiés en CAP)."
                 },
                 {
                     "questionNumber": 45,
@@ -516,7 +516,7 @@ quiz_data = {
                         {"text": "Une courbe quelconque", "isCorrect": False},
                         {"text": "Un point immobile unique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La trajectoire est l'ensemble des positions occupées par l'objet. Si c'est une droite, le mouvement est rectiligne ; si c'est un cercle, il est circulaire."
+                    "correction": " La trajectoire est l'ensemble des positions occupées par l'objet. Si c'est une droite, le mouvement est rectiligne ; si c'est un cercle, il est circulaire."
                 },
                 {
                     "questionNumber": 46,
@@ -527,7 +527,7 @@ quiz_data = {
                         {"text": "La vitesse diminue sans cesse", "isCorrect": False},
                         {"text": "L'objet est totalement arrêté", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans un mouvement uniforme, l'objet parcourt des distances égales pendant des durées égales. Sa vitesse ne change pas au cours du temps."
+                    "correction": " Dans un mouvement uniforme, l'objet parcourt des distances égales pendant des durées égales. Sa vitesse ne change pas au cours du temps."
                 },
                 {
                     "questionNumber": 47,
@@ -538,7 +538,7 @@ quiz_data = {
                         {"text": "Le mile par heure (mph)", "isCorrect": False},
                         {"text": "Le nœud marin (kt)", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Bien que l'on utilise les km/h au quotidien, l'unité officielle du système international est le m/s. Pour passer des m/s aux km/h, on multiplie par 3,6."
+                    "correction": " Bien que l'on utilise les km/h au quotidien, l'unité officielle du système international est le m/s. Pour passer des m/s aux km/h, on multiplie par 3,6."
                 },
                 {
                     "questionNumber": 48,
@@ -549,7 +549,7 @@ quiz_data = {
                         {"text": "Distance multipliée par Temps", "isCorrect": False},
                         {"text": "Somme de Distance et Temps", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** V = d / t. Il faut veiller à ce que les unités soient cohérentes : si d est en mètres et t en secondes, V sera en m/s."
+                    "correction": " V = d / t. Il faut veiller à ce que les unités soient cohérentes : si d est en mètres et t en secondes, V sera en m/s."
                 },
                 {
                     "questionNumber": 49,
@@ -560,7 +560,7 @@ quiz_data = {
                         {"text": "Une force qui n'existe pas", "isCorrect": False},
                         {"text": "Une force toujours verticale", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le frottement se produit entre deux surfaces en contact. Il ralentit le mouvement et transforme l'énergie mécanique en chaleur (échauffement)."
+                    "correction": " Le frottement se produit entre deux surfaces en contact. Il ralentit le mouvement et transforme l'énergie mécanique en chaleur (échauffement)."
                 },
                 {
                     "questionNumber": 50,
@@ -571,7 +571,7 @@ quiz_data = {
                         {"text": "Cent Newtons par kilogramme", "isCorrect": False},
                         {"text": "Zéro Newton par kilogramme", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** g = 9,81 N/kg. Cela signifie qu'une masse de 1 kg pèse environ 9,81 Newtons sur notre planète."
+                    "correction": " g = 9,81 N/kg. Cela signifie qu'une masse de 1 kg pèse environ 9,81 Newtons sur notre planète."
                 },
                 {
                     "questionNumber": 51,
@@ -582,7 +582,7 @@ quiz_data = {
                         {"text": "La vitesse reste la même", "isCorrect": False},
                         {"text": "Le trajet est une ligne droite", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Si la vitesse augmente, le mouvement est dit 'accéléré'. Si elle diminue, il est dit 'ralenti' ou 'décéléré'."
+                    "correction": " Si la vitesse augmente, le mouvement est dit 'accéléré'. Si elle diminue, il est dit 'ralenti' ou 'décéléré'."
                 },
                 {
                     "questionNumber": 52,
@@ -593,7 +593,7 @@ quiz_data = {
                         {"text": "La force électrique", "isCorrect": False},
                         {"text": "La force du vent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La gravitation est une force d'attraction mutuelle entre tous les corps possédant une masse. C'est elle qui régit le mouvement des planètes et nous empêche de 's'envoler' dans l'espace."
+                    "correction": " La gravitation est une force d'attraction mutuelle entre tous les corps possédant une masse. C'est elle qui régit le mouvement des planètes et nous empêche de 's'envoler' dans l'espace."
                 },
                 {
                     "questionNumber": 53,
@@ -604,7 +604,7 @@ quiz_data = {
                         {"text": "L'état d'accélération nulle", "isCorrect": True},
                         {"text": "L'état de chute libre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un objet est à l'équilibre si la somme des forces qui s'exercent sur lui est nulle. S'il ne bouge pas, sa vitesse et son accélération sont égales à zéro."
+                    "correction": " Un objet est à l'équilibre si la somme des forces qui s'exercent sur lui est nulle. S'il ne bouge pas, sa vitesse et son accélération sont égales à zéro."
                 },
                 {
                     "questionNumber": 54,
@@ -615,7 +615,7 @@ quiz_data = {
                         {"text": "Dix mètres par seconde", "isCorrect": False},
                         {"text": "Trente mètres par seconde", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour passer de km/h en m/s, on divise par 3,6. Calcul : 72 / 3,6 = 20 m/s."
+                    "correction": " Pour passer de km/h en m/s, on divise par 3,6. Calcul : 72 / 3,6 = 20 m/s."
                 },
                 {
                     "questionNumber": 55,
@@ -626,7 +626,7 @@ quiz_data = {
                         {"text": "Zéro virgule cinq Newton", "isCorrect": False},
                         {"text": "Cinq cents Newtons", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** P = m x g. Calcul : 5 kg x 10 N/kg = 50 Newtons."
+                    "correction": " P = m x g. Calcul : 5 kg x 10 N/kg = 50 Newtons."
                 },
                 {
                     "questionNumber": 56,
@@ -637,7 +637,7 @@ quiz_data = {
                         {"text": "Le point de départ rapide", "isCorrect": False},
                         {"text": "Le point de rupture acier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un levier permet de multiplier une force. Le point fixe autour duquel il tourne s'appelle l'axe de rotation ou le point d'appui."
+                    "correction": " Un levier permet de multiplier une force. Le point fixe autour duquel il tourne s'appelle l'axe de rotation ou le point d'appui."
                 },
                 {
                     "questionNumber": 57,
@@ -648,7 +648,7 @@ quiz_data = {
                         {"text": "Le Joule par seconde", "isCorrect": False},
                         {"text": "Le Watt par Newton", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le moment d'une force mesure sa capacité à faire tourner un objet. Il est égal au produit de la force par la distance à l'axe (bras de levier)."
+                    "correction": " Le moment d'une force mesure sa capacité à faire tourner un objet. Il est égal au produit de la force par la distance à l'axe (bras de levier)."
                 },
                 {
                     "questionNumber": 58,
@@ -659,7 +659,7 @@ quiz_data = {
                         {"text": "Elle reste parfaitement stable", "isCorrect": False},
                         {"text": "Elle devient infinie", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le freinage exerce une force opposée au mouvement, ce qui provoque une décélération (mouvement ralenti) jusqu'à l'arrêt complet."
+                    "correction": " Le freinage exerce une force opposée au mouvement, ce qui provoque une décélération (mouvement ralenti) jusqu'à l'arrêt complet."
                 },
                 {
                     "questionNumber": 59,
@@ -670,7 +670,7 @@ quiz_data = {
                         {"text": "Une trajectoire en zig-zag", "isCorrect": False},
                         {"text": "Une trajectoire immobile", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'extrémité de l'aiguille décrit un cercle parfait autour de l'axe central. C'est le mouvement de rotation."
+                    "correction": " L'extrémité de l'aiguille décrit un cercle parfait autour de l'axe central. C'est le mouvement de rotation."
                 },
                 {
                     "questionNumber": 60,
@@ -681,7 +681,7 @@ quiz_data = {
                         {"text": "Le poids total de la machine", "isCorrect": False},
                         {"text": "Le nom du savant qui a trouvé la loi", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un mouvement est toujours relatif. Par exemple, vous êtes immobile par rapport au sol, mais en mouvement très rapide par rapport au Soleil. Il faut donc toujours préciser le référentiel."
+                    "correction": " Un mouvement est toujours relatif. Par exemple, vous êtes immobile par rapport au sol, mais en mouvement très rapide par rapport au Soleil. Il faut donc toujours préciser le référentiel."
                 }
             ]
         },
@@ -700,7 +700,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Joule", "isCorrect": False},
                         {"text": "L'unité nommée le Mètre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le niveau sonore se mesure en décibels (dB) avec un sonomètre. L'échelle est logarithmique : une augmentation de 3 dB correspond à un doublement de l'intensité sonore."
+                    "correction": " Le niveau sonore se mesure en décibels (dB) avec un sonomètre. L'échelle est logarithmique : une augmentation de 3 dB correspond à un doublement de l'intensité sonore."
                 },
                 {
                     "questionNumber": 62,
@@ -711,7 +711,7 @@ quiz_data = {
                         {"text": "Le seuil de cinquante décibels", "isCorrect": False},
                         {"text": "Le seuil de dix décibels", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** À 85 dB, une exposition prolongée peut causer des lésions. À 120 dB, on atteint le seuil de la douleur où les dommages sont immédiats et souvent irréversibles."
+                    "correction": " À 85 dB, une exposition prolongée peut causer des lésions. À 120 dB, on atteint le seuil de la douleur où les dommages sont immédiats et souvent irréversibles."
                 },
                 {
                     "questionNumber": 63,
@@ -722,7 +722,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Volt", "isCorrect": False},
                         {"text": "L'unité nommée le Watt", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La fréquence (f) se mesure en Hertz (Hz). Elle correspond au nombre de vibrations par seconde. Un son grave a une fréquence basse (ex: 100 Hz) et un son aigu a une fréquence haute (ex: 10 000 Hz)."
+                    "correction": " La fréquence (f) se mesure en Hertz (Hz). Elle correspond au nombre de vibrations par seconde. Un son grave a une fréquence basse (ex: 100 Hz) et un son aigu a une fréquence haute (ex: 10 000 Hz)."
                 },
                 {
                     "questionNumber": 64,
@@ -733,7 +733,7 @@ quiz_data = {
                         {"text": "En zig-zag constant", "isCorrect": False},
                         {"text": "Elle ne se déplace pas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est le principe de la propagation rectiligne de la lumière. Un rayon lumineux ne dévie pas tant qu'il ne rencontre pas un obstacle ou qu'il ne change pas de milieu (réfraction)."
+                    "correction": " C'est le principe de la propagation rectiligne de la lumière. Un rayon lumineux ne dévie pas tant qu'il ne rencontre pas un obstacle ou qu'il ne change pas de milieu (réfraction)."
                 },
                 {
                     "questionNumber": 65,
@@ -744,7 +744,7 @@ quiz_data = {
                         {"text": "Trois cents mètres par seconde", "isCorrect": False},
                         {"text": "Vitesse égale à celle du son", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La lumière est la chose la plus rapide de l'univers : environ 300 000 000 m/s (ou 300 000 km/s). Elle met environ 8 minutes pour nous parvenir du Soleil."
+                    "correction": " La lumière est la chose la plus rapide de l'univers : environ 300 000 000 m/s (ou 300 000 km/s). Elle met environ 8 minutes pour nous parvenir du Soleil."
                 },
                 {
                     "questionNumber": 66,
@@ -755,7 +755,7 @@ quiz_data = {
                         {"text": "Cent kilomètres par heure", "isCorrect": False},
                         {"text": "Vitesse égale à celle de la lumière", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le son voyage beaucoup moins vite que la lumière. C'est pour cela que l'on voit l'éclair d'un orage avant d'entendre le tonnerre."
+                    "correction": " Le son voyage beaucoup moins vite que la lumière. C'est pour cela que l'on voit l'éclair d'un orage avant d'entendre le tonnerre."
                 },
                 {
                     "questionNumber": 67,
@@ -766,7 +766,7 @@ quiz_data = {
                         {"text": "Un objet qui absorbe la lumière", "isCorrect": False},
                         {"text": "Un objet totalement invisible", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Soleil, une flamme ou une ampoule allumée sont des sources primaires. La Lune ou un miroir sont des objets diffusants (ils ne font que renvoyer la lumière d'une autre source)."
+                    "correction": " Le Soleil, une flamme ou une ampoule allumée sont des sources primaires. La Lune ou un miroir sont des objets diffusants (ils ne font que renvoyer la lumière d'une autre source)."
                 },
                 {
                     "questionNumber": 68,
@@ -777,7 +777,7 @@ quiz_data = {
                         {"text": "L'énergie de type thermique", "isCorrect": False},
                         {"text": "L'énergie de type nucléaire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'énergie cinétique (Ec) dépend de la masse et surtout de la vitesse de l'objet (Ec = 1/2 x m x v²). Si la vitesse double, l'énergie cinétique est multipliée par 4."
+                    "correction": " L'énergie cinétique (Ec) dépend de la masse et surtout de la vitesse de l'objet (Ec = 1/2 x m x v²). Si la vitesse double, l'énergie cinétique est multipliée par 4."
                 },
                 {
                     "questionNumber": 69,
@@ -788,7 +788,7 @@ quiz_data = {
                         {"text": "L'énergie de type chimique", "isCorrect": False},
                         {"text": "L'énergie de type sonore", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le panneau capte l'énergie lumineuse du soleil et la transforme directement en électricité. C'est une énergie renouvelable."
+                    "correction": " Le panneau capte l'énergie lumineuse du soleil et la transforme directement en électricité. C'est une énergie renouvelable."
                 },
                 {
                     "questionNumber": 70,
@@ -799,7 +799,7 @@ quiz_data = {
                         {"text": "Elle devient de la lumière", "isCorrect": False},
                         {"text": "Elle crée de l'électricité", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Rien ne se perd, tout se transforme. L'énergie mécanique 'perdue' devient de l'énergie thermique (chaleur). C'est pourquoi les freins d'une voiture chauffent après un freinage."
+                    "correction": " Rien ne se perd, tout se transforme. L'énergie mécanique 'perdue' devient de l'énergie thermique (chaleur). C'est pourquoi les freins d'une voiture chauffent après un freinage."
                 },
                 {
                     "questionNumber": 71,
@@ -810,7 +810,7 @@ quiz_data = {
                         {"text": "Le vent soufflant sur mer", "isCorrect": False},
                         {"text": "L'eau des barrages de zone", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les énergies fossiles (pétrole, gaz, charbon) mettent des millions d'années à se former. Leur combustion rejette du CO2, gaz responsable du réchauffement climatique."
+                    "correction": " Les énergies fossiles (pétrole, gaz, charbon) mettent des millions d'années à se former. Leur combustion rejette du CO2, gaz responsable du réchauffement climatique."
                 },
                 {
                     "questionNumber": 72,
@@ -821,7 +821,7 @@ quiz_data = {
                         {"text": "Une source qui est gratuite", "isCorrect": False},
                         {"text": "Une source que l'on jette", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le soleil, le vent et l'eau sont des sources renouvelables car elles se renouvellent naturellement à l'échelle d'une vie humaine."
+                    "correction": " Le soleil, le vent et l'eau sont des sources renouvelables car elles se renouvellent naturellement à l'échelle d'une vie humaine."
                 },
                 {
                     "questionNumber": 73,
@@ -832,7 +832,7 @@ quiz_data = {
                         {"text": "Un anémomètre à coupelles", "isCorrect": False},
                         {"text": "Un voltmètre électronique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En France, on utilise l'échelle Celsius (°C). Le point 0 correspond à la glace fondante et le point 100 à l'eau bouillante (sous pression atmosphérique normale)."
+                    "correction": " En France, on utilise l'échelle Celsius (°C). Le point 0 correspond à la glace fondante et le point 100 à l'eau bouillante (sous pression atmosphérique normale)."
                 },
                 {
                     "questionNumber": 74,
@@ -843,7 +843,7 @@ quiz_data = {
                         {"text": "La couleur jaune vive", "isCorrect": False},
                         {"text": "La couleur miroir argent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un objet noir absorbe tous les rayons lumineux et les transforme en chaleur. Un objet blanc les renvoie (réflexion). C'est pourquoi on a plus chaud avec un t-shirt noir au soleil."
+                    "correction": " Un objet noir absorbe tous les rayons lumineux et les transforme en chaleur. Un objet blanc les renvoie (réflexion). C'est pourquoi on a plus chaud avec un t-shirt noir au soleil."
                 },
                 {
                     "questionNumber": 75,
@@ -854,7 +854,7 @@ quiz_data = {
                         {"text": "La zone de lumière vive", "isCorrect": False},
                         {"text": "Le reflet dans un miroir", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'ombre propre est la partie de l'objet non éclairée. L'ombre portée est la trace noire projetée sur une surface derrière l'objet qui cache la lumière."
+                    "correction": " L'ombre propre est la partie de l'objet non éclairée. L'ombre portée est la trace noire projetée sur une surface derrière l'objet qui cache la lumière."
                 },
                 {
                     "questionNumber": 76,
@@ -865,7 +865,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Joule", "isCorrect": False},
                         {"text": "L'unité nommée le Watt", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Hertz (Hz) est utilisé pour les sons, mais aussi pour les ondes radio ou la fréquence de rafraîchissement d'un écran."
+                    "correction": " Le Hertz (Hz) est utilisé pour les sons, mais aussi pour les ondes radio ou la fréquence de rafraîchissement d'un écran."
                 },
                 {
                     "questionNumber": 77,
@@ -876,7 +876,7 @@ quiz_data = {
                         {"text": "Seulement si la lumière passe", "isCorrect": False},
                         {"text": "Seulement près des planètes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le son est une onde mécanique : il a besoin de matière (air, eau, métal) pour vibrer et se déplacer. Dans l'espace, il n'y a pas d'air, donc pas de son."
+                    "correction": " Le son est une onde mécanique : il a besoin de matière (air, eau, métal) pour vibrer et se déplacer. Dans l'espace, il n'y a pas d'air, donc pas de son."
                 },
                 {
                     "questionNumber": 78,
@@ -887,7 +887,7 @@ quiz_data = {
                         {"text": "L'unité nommée l'Ampère", "isCorrect": False},
                         {"text": "L'unité nommée l'Ohm", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Watt (W) mesure l'efficacité d'un moteur ou d'une lampe. 1000 Watts = 1 kilowatt (kW)."
+                    "correction": " Le Watt (W) mesure l'efficacité d'un moteur ou d'une lampe. 1000 Watts = 1 kilowatt (kW)."
                 },
                 {
                     "questionNumber": 79,
@@ -898,7 +898,7 @@ quiz_data = {
                         {"text": "Pour que ce soit plus joli", "isCorrect": False},
                         {"text": "Parce qu'elles sont lourdes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le blanc réfléchit une grande partie du rayonnement solaire, ce qui limite l'échauffement des murs et maintient la maison plus fraîche."
+                    "correction": " Le blanc réfléchit une grande partie du rayonnement solaire, ce qui limite l'échauffement des murs et maintient la maison plus fraîche."
                 },
                 {
                     "questionNumber": 80,
@@ -909,7 +909,7 @@ quiz_data = {
                         {"text": "Augmenter la vitesse du vent", "isCorrect": False},
                         {"text": "Éclairer une pièce de vie", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le thermostat est un interrupteur automatique qui coupe le chauffage quand la température souhaitée est atteinte et le relance quand elle baisse."
+                    "correction": " Le thermostat est un interrupteur automatique qui coupe le chauffage quand la température souhaitée est atteinte et le relance quand elle baisse."
                 }
             ]
         },
@@ -928,7 +928,7 @@ quiz_data = {
                         {"text": "Un total de dix millimètres", "isCorrect": False},
                         {"text": "Un total de dix mille millimètres", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans le système métrique, chaque unité est 10 fois plus grande que la précédente. 1 m = 10 dm = 100 cm = 1000 mm."
+                    "correction": " Dans le système métrique, chaque unité est 10 fois plus grande que la précédente. 1 m = 10 dm = 100 cm = 1000 mm."
                 },
                 {
                     "questionNumber": 82,
@@ -939,7 +939,7 @@ quiz_data = {
                         {"text": "L'unité nommée la Tonne", "isCorrect": False},
                         {"text": "L'unité nommée le Newton", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le kilogramme (kg) est l'unité de base pour la masse. Attention, le gramme n'est qu'une sous-unité."
+                    "correction": " Le kilogramme (kg) est l'unité de base pour la masse. Attention, le gramme n'est qu'une sous-unité."
                 },
                 {
                     "questionNumber": 83,
@@ -950,7 +950,7 @@ quiz_data = {
                         {"text": "Un total de dix millilitres", "isCorrect": False},
                         {"text": "Un total de un millilitre seul", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 1 L = 10 dL = 100 cL = 1000 mL. C'est une conversion indispensable pour la cuisine ou la chimie."
+                    "correction": " 1 L = 10 dL = 100 cL = 1000 mL. C'est une conversion indispensable pour la cuisine ou la chimie."
                 },
                 {
                     "questionNumber": 84,
@@ -961,7 +961,7 @@ quiz_data = {
                         {"text": "L'unité nommée la Minute", "isCorrect": False},
                         {"text": "L'unité nommée le Jour", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Bien qu'on utilise les minutes et les heures, la seconde (s) est l'unité officielle utilisée dans toutes les formules scientifiques (ex: V = d/t)."
+                    "correction": " Bien qu'on utilise les minutes et les heures, la seconde (s) est l'unité officielle utilisée dans toutes les formules scientifiques (ex: V = d/t)."
                 },
                 {
                     "questionNumber": 85,
@@ -972,7 +972,7 @@ quiz_data = {
                         {"text": "Un volume de dix millilitres", "isCorrect": False},
                         {"text": "Un volume de cent millilitres", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est la passerelle entre volume et capacité : 1 cm³ = 1 mL. De même, 1 dm³ = 1 L et 1 m³ = 1000 L."
+                    "correction": " C'est la passerelle entre volume et capacité : 1 cm³ = 1 mL. De même, 1 dm³ = 1 L et 1 m³ = 1000 L."
                 },
                 {
                     "questionNumber": 86,
@@ -983,7 +983,7 @@ quiz_data = {
                         {"text": "Un anémomètre à coupelles", "isCorrect": False},
                         {"text": "Un pH-mètre électronique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le baromètre mesure le poids de l'air. L'unité courante est l'hectopascal (hPa). Une pression qui baisse annonce souvent de la pluie."
+                    "correction": " Le baromètre mesure le poids de l'air. L'unité courante est l'hectopascal (hPa). Une pression qui baisse annonce souvent de la pluie."
                 },
                 {
                     "questionNumber": 87,
@@ -994,7 +994,7 @@ quiz_data = {
                         {"text": "Un baromètre de station", "isCorrect": False},
                         {"text": "Un compteur de vitesse car", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'anémomètre possède des petites coupelles qui tournent. Plus elles tournent vite, plus le vent est fort."
+                    "correction": " L'anémomètre possède des petites coupelles qui tournent. Plus elles tournent vite, plus le vent est fort."
                 },
                 {
                     "questionNumber": 88,
@@ -1005,7 +1005,7 @@ quiz_data = {
                         {"text": "Le mètre linéaire (m)", "isCorrect": False},
                         {"text": "Le kilogramme par mètre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La surface (ou aire) mesure une étendue en deux dimensions (longueur x largeur)."
+                    "correction": " La surface (ou aire) mesure une étendue en deux dimensions (longueur x largeur)."
                 },
                 {
                     "questionNumber": 89,
@@ -1016,7 +1016,7 @@ quiz_data = {
                         {"text": "Quinze mille grammes", "isCorrect": False},
                         {"text": "Quinze grammes seulement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 1,5 x 1000 = 1500 g."
+                    "correction": " 1,5 x 1000 = 1500 g."
                 },
                 {
                     "questionNumber": 90,
@@ -1027,7 +1027,7 @@ quiz_data = {
                         {"text": "Un total de trente secondes", "isCorrect": False},
                         {"text": "Un total de douze secondes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le temps fonctionne en base 60 (système sexagésimal). 1 minute = 60 secondes, 1 heure = 60 minutes = 3600 secondes."
+                    "correction": " Le temps fonctionne en base 60 (système sexagésimal). 1 minute = 60 secondes, 1 heure = 60 minutes = 3600 secondes."
                 },
                 {
                     "questionNumber": 91,
@@ -1038,7 +1038,7 @@ quiz_data = {
                         {"text": "Un montant de deux euros", "isCorrect": False},
                         {"text": "Un montant de cent euros", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 10/100 x 200 = 0,1 x 200 = 20 €. Prendre 10 % revient à diviser la valeur par 10."
+                    "correction": " 10/100 x 200 = 0,1 x 200 = 20 €. Prendre 10 % revient à diviser la valeur par 10."
                 },
                 {
                     "questionNumber": 92,
@@ -1049,7 +1049,7 @@ quiz_data = {
                         {"text": "Cinquante vibrations par heure", "isCorrect": False},
                         {"text": "Une vibration tous les 50 ans", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En France, le courant électrique alternatif a une fréquence de 50 Hz, ce qui signifie qu'il change de sens 100 fois par seconde."
+                    "correction": " En France, le courant électrique alternatif a une fréquence de 50 Hz, ce qui signifie qu'il change de sens 100 fois par seconde."
                 },
                 {
                     "questionNumber": 93,
@@ -1060,7 +1060,7 @@ quiz_data = {
                         {"text": "La température de l'eau", "isCorrect": False},
                         {"text": "Le pH d'une solution", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'éprouvette mesure le volume. Pour lire correctement, il faut placer l'œil au niveau du bas du ménisque (le creux formé par la surface du liquide)."
+                    "correction": " L'éprouvette mesure le volume. Pour lire correctement, il faut placer l'œil au niveau du bas du ménisque (le creux formé par la surface du liquide)."
                 },
                 {
                     "questionNumber": 94,
@@ -1071,7 +1071,7 @@ quiz_data = {
                         {"text": "Une tension électrique", "isCorrect": False},
                         {"text": "Une vitesse de moteur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Wh (ou kWh) est l'unité pratique pour mesurer l'énergie consommée sur une période donnée (Puissance x Temps)."
+                    "correction": " Le Wh (ou kWh) est l'unité pratique pour mesurer l'énergie consommée sur une période donnée (Puissance x Temps)."
                 },
                 {
                     "questionNumber": 95,
@@ -1082,7 +1082,7 @@ quiz_data = {
                         {"text": "Une pression très haute (canicule)", "isCorrect": False},
                         {"text": "La température du jour", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 1013 hPa est la valeur moyenne de pression au niveau de la mer. En dessous, on parle de dépression (mauvais temps) ; au-dessus, d'anticyclone (beau temps)."
+                    "correction": " 1013 hPa est la valeur moyenne de pression au niveau de la mer. En dessous, on parle de dépression (mauvais temps) ; au-dessus, d'anticyclone (beau temps)."
                 },
                 {
                     "questionNumber": 96,
@@ -1093,7 +1093,7 @@ quiz_data = {
                         {"text": "Le préfixe Giga (G)", "isCorrect": False},
                         {"text": "Le préfixe Milli (m)", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Kilo = 1000. Méga = 1 000 000. Giga = 1 000 000 000. On les utilise pour les unités de puissance (MW) ou d'informatique (Mo, Go)."
+                    "correction": " Kilo = 1000. Méga = 1 000 000. Giga = 1 000 000 000. On les utilise pour les unités de puissance (MW) ou d'informatique (Mo, Go)."
                 },
                 {
                     "questionNumber": 97,
@@ -1104,7 +1104,7 @@ quiz_data = {
                         {"text": "Un temps très court", "isCorrect": False},
                         {"text": "Un angle très ouvert", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le pied à coulisse permet de mesurer des diamètres intérieurs, extérieurs ou des profondeurs au dixième de millimètre près."
+                    "correction": " Le pied à coulisse permet de mesurer des diamètres intérieurs, extérieurs ou des profondeurs au dixième de millimètre près."
                 },
                 {
                     "questionNumber": 98,
@@ -1115,7 +1115,7 @@ quiz_data = {
                         {"text": "Zéro virgule vingt-cinq m", "isCorrect": False},
                         {"text": "Deux cent cinquante m", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On divise par 100. 250 / 100 = 2,5 m."
+                    "correction": " On divise par 100. 250 / 100 = 2,5 m."
                 },
                 {
                     "questionNumber": 99,
@@ -1126,7 +1126,7 @@ quiz_data = {
                         {"text": "L'échelle de type Ampère", "isCorrect": False},
                         {"text": "L'échelle de type Pascal", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Bien que l'unité internationale soit le Kelvin (K), l'échelle usuelle en Europe est le degré Celsius (°C)."
+                    "correction": " Bien que l'unité internationale soit le Kelvin (K), l'échelle usuelle en Europe est le degré Celsius (°C)."
                 },
                 {
                     "questionNumber": 100,
@@ -1137,7 +1137,7 @@ quiz_data = {
                         {"text": "Énergie solaire vers électrique", "isCorrect": False},
                         {"text": "Énergie nucléaire vers électrique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une pile est un convertisseur : elle transforme l'énergie stockée sous forme chimique en énergie électrique prête à l'emploi."
+                    "correction": " Une pile est un convertisseur : elle transforme l'énergie stockée sous forme chimique en énergie électrique prête à l'emploi."
                 }
             ]
         }

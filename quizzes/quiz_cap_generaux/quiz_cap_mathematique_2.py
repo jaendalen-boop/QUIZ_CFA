@@ -16,7 +16,7 @@ quiz_data = {
                         {"text": "Le plan est cinquante fois plus grand que la réalité", "isCorrect": False},
                         {"text": "Il faut ajouter 50 cm à chaque mesure prise sur le plan", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'échelle est le rapport entre la mesure sur le plan et la mesure réelle. Une échelle de 1/50 signifie que l'on a divisé les dimensions réelles par 50 pour dessiner. Pour retrouver la taille réelle, on multiplie la mesure lue sur le plan par 50."
+                    "correction": " L'échelle est le rapport entre la mesure sur le plan et la mesure réelle. Une échelle de 1/50 signifie que l'on a divisé les dimensions réelles par 50 pour dessiner. Pour retrouver la taille réelle, on multiplie la mesure lue sur le plan par 50."
                 },
                 {
                     "questionNumber": 2,
@@ -27,7 +27,7 @@ quiz_data = {
                         {"text": "Les parts sont de cent euros et vingt euros", "isCorrect": False},
                         {"text": "Les parts sont de quatre-vingt-dix euros et trente euros", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Ratio 2:1 signifie qu'il y a 2 + 1 = 3 parts égales au total. Valeur d'une part : 120 / 3 = 40 €. La première personne reçoit 2 parts (2 x 40 = 80 €) et la seconde 1 part (40 €)."
+                    "correction": " Ratio 2:1 signifie qu'il y a 2 + 1 = 3 parts égales au total. Valeur d'une part : 120 / 3 = 40 €. La première personne reçoit 2 parts (2 x 40 = 80 €) et la seconde 1 part (40 €)."
                 },
                 {
                     "questionNumber": 3,
@@ -38,7 +38,7 @@ quiz_data = {
                         {"text": "Une distance totale de cent soixante kilomètres", "isCorrect": False},
                         {"text": "Une distance totale de cent kilomètres", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Formule de la distance : d = v x t. Ici, t = 1,5 heure (car 30 min = 0,5 h). Calcul : 80 km/h x 1,5 h = 120 km. Attention à toujours convertir les minutes en heures décimales."
+                    "correction": " Formule de la distance : d = v x t. Ici, t = 1,5 heure (car 30 min = 0,5 h). Calcul : 80 km/h x 1,5 h = 120 km. Attention à toujours convertir les minutes en heures décimales."
                 },
                 {
                     "questionNumber": 4,
@@ -49,7 +49,7 @@ quiz_data = {
                         {"text": "On multiplie les deux nombres d'une même colonne entre eux", "isCorrect": False},
                         {"text": "On fait la moyenne de tous les nombres du tableau complet", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le coefficient de proportionnalité (k) est le nombre par lequel on multiplie les valeurs de la ligne 1 pour obtenir celles de la ligne 2. Formule : k = Valeur 2 / Valeur 1."
+                    "correction": " Le coefficient de proportionnalité (k) est le nombre par lequel on multiplie les valeurs de la ligne 1 pour obtenir celles de la ligne 2. Formule : k = Valeur 2 / Valeur 1."
                 },
                 {
                     "questionNumber": 5,
@@ -60,7 +60,7 @@ quiz_data = {
                         {"text": "Le prix total sera de vingt euros", "isCorrect": False},
                         {"text": "Le prix total sera de dix-huit euros", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise la règle de trois ou le passage par l'unité. Prix d'un kg : 6 / 4 = 1,50 €. Prix pour 10 kg : 1,50 x 10 = 15 €. Les grandeurs poids et prix sont ici proportionnelles."
+                    "correction": " On utilise la règle de trois ou le passage par l'unité. Prix d'un kg : 6 / 4 = 1,50 €. Prix pour 10 kg : 1,50 x 10 = 15 €. Les grandeurs poids et prix sont ici proportionnelles."
                 },
                 {
                     "questionNumber": 6,
@@ -71,7 +71,7 @@ quiz_data = {
                         {"text": "Le prix après remise est de trente euros seulement", "isCorrect": False},
                         {"text": "Le prix après remise est de deux cent quinze euros", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Montant de la remise : 200 x 0,15 = 30 €. Nouveau prix : 200 - 30 = 170 €. On peut aussi multiplier directement par 0,85 (1 - 0,15)."
+                    "correction": " Montant de la remise : 200 x 0,15 = 30 €. Nouveau prix : 200 - 30 = 170 €. On peut aussi multiplier directement par 0,85 (1 - 0,15)."
                 },
                 {
                     "questionNumber": 7,
@@ -82,7 +82,7 @@ quiz_data = {
                         {"text": "Le pourcentage de filles est de douze pour cent", "isCorrect": False},
                         {"text": "Le pourcentage de filles est de quarante pour cent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour calculer un pourcentage, on fait : (Nombre concerné / Nombre total) x 100. Calcul : (12 / 25) x 100 = 0,48 x 100 = 48 %."
+                    "correction": " Pour calculer un pourcentage, on fait : (Nombre concerné / Nombre total) x 100. Calcul : (12 / 25) x 100 = 0,48 x 100 = 48 %."
                 },
                 {
                     "questionNumber": 8,
@@ -93,7 +93,7 @@ quiz_data = {
                         {"text": "L'objet est agrandi de dix pour cent", "isCorrect": False},
                         {"text": "L'objet n'est pas représenté sur le papier", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'échelle 1:1 signifie que 1 cm sur le papier représente 1 cm dans la réalité. C'est ce qu'on appelle la 'vraie grandeur'."
+                    "correction": " L'échelle 1:1 signifie que 1 cm sur le papier représente 1 cm dans la réalité. C'est ce qu'on appelle la 'vraie grandeur'."
                 },
                 {
                     "questionNumber": 9,
@@ -104,7 +104,7 @@ quiz_data = {
                         {"text": "Une distance réelle de vingt-cinq kilomètres", "isCorrect": False},
                         {"text": "Une distance réelle de quatre kilomètres", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Distance réelle = mesure plan x dénominateur échelle. Calcul : 4 cm x 25 000 = 100 000 cm. On convertit : 100 000 cm = 1 000 m = 1 km."
+                    "correction": " Distance réelle = mesure plan x dénominateur échelle. Calcul : 4 cm x 25 000 = 100 000 cm. On convertit : 100 000 cm = 1 000 m = 1 km."
                 },
                 {
                     "questionNumber": 10,
@@ -115,7 +115,7 @@ quiz_data = {
                         {"text": "Trois cinquièmes du mélange total", "isCorrect": False},
                         {"text": "La moitié exacte du mélange total", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le volume total du mélange est de 2 + 3 = 5 litres. Le jus représente donc 2 litres sur les 5 du total, soit la fraction 2/5 (ou 40 %)."
+                    "correction": " Le volume total du mélange est de 2 + 3 = 5 litres. Le jus représente donc 2 litres sur les 5 du total, soit la fraction 2/5 (ou 40 %)."
                 },
                 {
                     "questionNumber": 11,
@@ -126,7 +126,7 @@ quiz_data = {
                         {"text": "La valeur de y est de vingt", "isCorrect": False},
                         {"text": "La valeur de y est de cinquante", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Coefficient de proportionnalité : 10 / 2 = 5. Pour x = 5, on multiplie par le coefficient : y = 5 x 5 = 25."
+                    "correction": " Coefficient de proportionnalité : 10 / 2 = 5. Pour x = 5, on multiplie par le coefficient : y = 5 x 5 = 25."
                 },
                 {
                     "questionNumber": 12,
@@ -137,7 +137,7 @@ quiz_data = {
                         {"text": "Une diminution de zéro pour cent", "isCorrect": False},
                         {"text": "Le retour au prix initial sans changement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Augmenter de 100 % revient à doubler la valeur (x 2). Pour revenir à la valeur de départ, il faut diviser par 2, ce qui correspond à une baisse de 50 %."
+                    "correction": " Augmenter de 100 % revient à doubler la valeur (x 2). Pour revenir à la valeur de départ, il faut diviser par 2, ce qui correspond à une baisse de 50 %."
                 },
                 {
                     "questionNumber": 13,
@@ -148,7 +148,7 @@ quiz_data = {
                         {"text": "Il fabrique vingt-sept pièces", "isCorrect": False},
                         {"text": "Il fabrique trente pièces", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Rendement horaire : 20 / 4 = 5 pièces par heure. Production pour 7 heures : 5 x 7 = 35 pièces."
+                    "correction": " Rendement horaire : 20 / 4 = 5 pièces par heure. Production pour 7 heures : 5 x 7 = 35 pièces."
                 },
                 {
                     "questionNumber": 14,
@@ -159,7 +159,7 @@ quiz_data = {
                         {"text": "Quarante-trois pour cent", "isCorrect": False},
                         {"text": "Quatre-vingts pour cent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un ratio 3:4 peut se voir comme la fraction 3/4. En effectuant la division 3 / 4, on obtient 0,75, soit 75 %."
+                    "correction": " Un ratio 3:4 peut se voir comme la fraction 3/4. En effectuant la division 3 / 4, on obtient 0,75, soit 75 %."
                 },
                 {
                     "questionNumber": 15,
@@ -170,7 +170,7 @@ quiz_data = {
                         {"text": "Le dessin mesure cinq centimètres de long", "isCorrect": False},
                         {"text": "L'objet réel a été divisé par cinq pour le dessin", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une échelle d'agrandissement. Elle est utilisée pour dessiner de très petits objets (horlogerie, micro-électronique). 1 cm réel est représenté par 5 cm sur le papier."
+                    "correction": " C'est une échelle d'agrandissement. Elle est utilisée pour dessiner de très petits objets (horlogerie, micro-électronique). 1 cm réel est représenté par 5 cm sur le papier."
                 },
                 {
                     "questionNumber": 16,
@@ -181,7 +181,7 @@ quiz_data = {
                         {"text": "Trente kilomètres par heure", "isCorrect": False},
                         {"text": "Cinq kilomètres par heure", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 30 minutes correspondent à 0,5 heure. Vitesse = Distance / Temps = 10 / 0,5 = 20 km/h."
+                    "correction": " 30 minutes correspondent à 0,5 heure. Vitesse = Distance / Temps = 10 / 0,5 = 20 km/h."
                 },
                 {
                     "questionNumber": 17,
@@ -192,7 +192,7 @@ quiz_data = {
                         {"text": "Une multiplication par cinq des valeurs", "isCorrect": False},
                         {"text": "Une réduction de cinq pour cent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Multiplier par 0,5 (soit 1/2) revient mathématiquement à diviser par 2. C'est utile pour calculer rapidement des moitiés."
+                    "correction": " Multiplier par 0,5 (soit 1/2) revient mathématiquement à diviser par 2. C'est utile pour calculer rapidement des moitiés."
                 },
                 {
                     "questionNumber": 18,
@@ -203,7 +203,7 @@ quiz_data = {
                         {"text": "Il faut six litres de peinture", "isCorrect": False},
                         {"text": "Il faut douze litres de peinture", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On cherche le coefficient multiplicateur entre les surfaces : 48 / 12 = 4. Il faut donc 4 fois plus de peinture. Calcul : 1 x 4 = 4 litres."
+                    "correction": " On cherche le coefficient multiplicateur entre les surfaces : 48 / 12 = 4. Il faut donc 4 fois plus de peinture. Calcul : 1 x 4 = 4 litres."
                 },
                 {
                     "questionNumber": 19,
@@ -214,7 +214,7 @@ quiz_data = {
                         {"text": "On divise le prix par vingt", "isCorrect": False},
                         {"text": "On soustrait vingt euros au prix", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 20 % = 20/100 = 0,2. Multiplier un montant par 0,2 permet d'obtenir directement le montant de la réduction à appliquer."
+                    "correction": " 20 % = 20/100 = 0,2. Multiplier un montant par 0,2 permet d'obtenir directement le montant de la réduction à appliquer."
                 },
                 {
                     "questionNumber": 20,
@@ -225,7 +225,7 @@ quiz_data = {
                         {"text": "La taille réelle est de cent mètres", "isCorrect": False},
                         {"text": "La taille réelle est de dix centimètres", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 10 cm x 100 = 1 000 cm. En convertissant en mètres : 1 000 cm = 10 m."
+                    "correction": " 10 cm x 100 = 1 000 cm. En convertissant en mètres : 1 000 cm = 10 m."
                 }
             ]
         },
@@ -244,7 +244,7 @@ quiz_data = {
                         {"text": "Le théorème de l'angle droit", "isCorrect": False},
                         {"text": "Le théorème des milieux", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le théorème de Pythagore s'applique exclusivement dans les triangles rectangles. Il établit que le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés."
+                    "correction": " Le théorème de Pythagore s'applique exclusivement dans les triangles rectangles. Il établit que le carré de l'hypoténuse est égal à la somme des carrés des deux autres côtés."
                 },
                 {
                     "questionNumber": 22,
@@ -255,7 +255,7 @@ quiz_data = {
                         {"text": "Le côté nommé l'opposé", "isCorrect": False},
                         {"text": "Le côté nommé la base", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'hypoténuse est le côté le plus long du triangle rectangle. C'est celui qui ne touche pas l'angle droit."
+                    "correction": " L'hypoténuse est le côté le plus long du triangle rectangle. C'est celui qui ne touche pas l'angle droit."
                 },
                 {
                     "questionNumber": 23,
@@ -266,7 +266,7 @@ quiz_data = {
                         {"text": "Avoir trois côtés de même longueur", "isCorrect": False},
                         {"text": "Avoir un cercle qui passe par les sommets", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le théorème de Thalès nécessite deux droites parallèles coupées par deux sécantes. Il permet de calculer des longueurs grâce à la proportionnalité des segments."
+                    "correction": " Le théorème de Thalès nécessite deux droites parallèles coupées par deux sécantes. Il permet de calculer des longueurs grâce à la proportionnalité des segments."
                 },
                 {
                     "questionNumber": 24,
@@ -277,7 +277,7 @@ quiz_data = {
                         {"text": "Quatre-vingt-dix degrés au total", "isCorrect": False},
                         {"text": "Cinq cent quarante degrés au total", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un quadrilatère peut être coupé en deux triangles. Comme chaque triangle totalise 180°, le quadrilatère totalise 2 x 180° = 360°."
+                    "correction": " Un quadrilatère peut être coupé en deux triangles. Comme chaque triangle totalise 180°, le quadrilatère totalise 2 x 180° = 360°."
                 },
                 {
                     "questionNumber": 25,
@@ -288,7 +288,7 @@ quiz_data = {
                         {"text": "Un polygone nommé pentagone", "isCorrect": False},
                         {"text": "Un polygone nommé décagone", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Octo' signifie huit en grec. Un octogone régulier possède 8 côtés égaux et 8 angles égaux."
+                    "correction": " 'Octo' signifie huit en grec. Un octogone régulier possède 8 côtés égaux et 8 angles égaux."
                 },
                 {
                     "questionNumber": 26,
@@ -299,7 +299,7 @@ quiz_data = {
                         {"text": "La droite qui relie deux sommets opposés", "isCorrect": False},
                         {"text": "La droite parallèle au segment choisi", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La médiatrice est l'ensemble des points situés à égale distance des deux extrémités du segment. Elle est toujours perpendiculaire au segment et passe par son milieu."
+                    "correction": " La médiatrice est l'ensemble des points situés à égale distance des deux extrémités du segment. Elle est toujours perpendiculaire au segment et passe par son milieu."
                 },
                 {
                     "questionNumber": 27,
@@ -310,7 +310,7 @@ quiz_data = {
                         {"text": "Une droite qui coupe un angle en deux angles égaux", "isCorrect": False},
                         {"text": "Une droite qui mesure la longueur totale du côté", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La hauteur sert à calculer l'aire du triangle (Base x Hauteur / 2). Les trois hauteurs d'un triangle se coupent en un point appelé l'orthocentre."
+                    "correction": " La hauteur sert à calculer l'aire du triangle (Base x Hauteur / 2). Les trois hauteurs d'un triangle se coupent en un point appelé l'orthocentre."
                 },
                 {
                     "questionNumber": 28,
@@ -321,7 +321,7 @@ quiz_data = {
                         {"text": "Un quadrilatère ayant deux côtés parallèles", "isCorrect": False},
                         {"text": "Un triangle ayant deux côtés de même longueur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le losange est un parallélogramme particulier. Ses diagonales se coupent en leur milieu et sont perpendiculaires."
+                    "correction": " Le losange est un parallélogramme particulier. Ses diagonales se coupent en leur milieu et sont perpendiculaires."
                 },
                 {
                     "questionNumber": 29,
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "Trente degrés exactement", "isCorrect": False},
                         {"text": "Cent vingt degrés exactement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La somme fait 180°. Calcul : 180 - (60 + 60) = 180 - 120 = 60°. Le triangle est donc équilatéral."
+                    "correction": " La somme fait 180°. Calcul : 180 - (60 + 60) = 180 - 120 = 60°. Le triangle est donc équilatéral."
                 },
                 {
                     "questionNumber": 30,
@@ -343,7 +343,7 @@ quiz_data = {
                         {"text": "Une équerre à angle droit", "isCorrect": False},
                         {"text": "Une règle plate graduée", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le compas permet de reporter des longueurs et de tracer des arcs de cercle. L'écartement des branches définit le rayon du cercle."
+                    "correction": " Le compas permet de reporter des longueurs et de tracer des arcs de cercle. L'écartement des branches définit le rayon du cercle."
                 },
                 {
                     "questionNumber": 31,
@@ -354,7 +354,7 @@ quiz_data = {
                         {"text": "Il ne possède aucun côté de même longueur", "isCorrect": False},
                         {"text": "Il possède obligatoirement un angle droit", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un triangle isocèle a deux côtés égaux et deux angles égaux (les angles à la base)."
+                    "correction": " Un triangle isocèle a deux côtés égaux et deux angles égaux (les angles à la base)."
                 },
                 {
                     "questionNumber": 32,
@@ -365,7 +365,7 @@ quiz_data = {
                         {"text": "La ligne courbe qui entoure toute la surface", "isCorrect": False},
                         {"text": "Un segment qui ne touche jamais le centre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le diamètre est la plus longue corde d'un cercle. Sa longueur est égale à deux fois celle du rayon (D = 2R)."
+                    "correction": " Le diamètre est la plus longue corde d'un cercle. Sa longueur est égale à deux fois celle du rayon (D = 2R)."
                 },
                 {
                     "questionNumber": 33,
@@ -376,7 +376,7 @@ quiz_data = {
                         {"text": "Elles coupent les angles du sommet en deux", "isCorrect": False},
                         {"text": "Elles sont parallèles aux côtés extérieurs", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans un rectangle, les diagonales sont égales mais ne sont pas perpendiculaires (sauf si c'est un carré)."
+                    "correction": " Dans un rectangle, les diagonales sont égales mais ne sont pas perpendiculaires (sauf si c'est un carré)."
                 },
                 {
                     "questionNumber": 34,
@@ -387,7 +387,7 @@ quiz_data = {
                         {"text": "Un total de deux sommets", "isCorrect": False},
                         {"text": "Un total de six sommets", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le sommet est le point de rencontre de deux côtés. Un triangle a 3 côtés, 3 angles et 3 sommets."
+                    "correction": " Le sommet est le point de rencontre de deux côtés. Un triangle a 3 côtés, 3 angles et 3 sommets."
                 },
                 {
                     "questionNumber": 35,
@@ -398,7 +398,7 @@ quiz_data = {
                         {"text": "Égale à cent-quatre-vingts degrés", "isCorrect": False},
                         {"text": "Égale à quatre-vingt-dix degrés", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un angle aigu est 'pointu'. S'il mesure exactement 90°, il est droit. S'il est compris entre 90° et 180°, il est obtus."
+                    "correction": " Un angle aigu est 'pointu'. S'il mesure exactement 90°, il est droit. S'il est compris entre 90° et 180°, il est obtus."
                 },
                 {
                     "questionNumber": 36,
@@ -409,7 +409,7 @@ quiz_data = {
                         {"text": "La valeur entière de six", "isCorrect": False},
                         {"text": "La valeur entière de quatorze", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La racine carrée d'un nombre A est le nombre qui, multiplié par lui-même, donne A. Ici : 7 x 7 = 49."
+                    "correction": " La racine carrée d'un nombre A est le nombre qui, multiplié par lui-même, donne A. Ici : 7 x 7 = 49."
                 },
                 {
                     "questionNumber": 37,
@@ -420,7 +420,7 @@ quiz_data = {
                         {"text": "La valeur entière de vingt-cinq", "isCorrect": False},
                         {"text": "La valeur entière de douze", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Calcul : 3² + 4² = 9 + 16 = 25. La racine carrée de 25 est 5. C'est le célèbre triangle 3-4-5."
+                    "correction": " Calcul : 3² + 4² = 9 + 16 = 25. La racine carrée de 25 est 5. C'est le célèbre triangle 3-4-5."
                 },
                 {
                     "questionNumber": 38,
@@ -431,7 +431,7 @@ quiz_data = {
                         {"text": "Quatre-vingt-dix degrés", "isCorrect": False},
                         {"text": "Cent degrés", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une règle d'or en géométrie plane : peu importe sa forme, les trois angles d'un triangle additionnés font toujours un angle plat (180°)."
+                    "correction": " C'est une règle d'or en géométrie plane : peu importe sa forme, les trois angles d'un triangle additionnés font toujours un angle plat (180°)."
                 },
                 {
                     "questionNumber": 39,
@@ -442,7 +442,7 @@ quiz_data = {
                         {"text": "Deux droites qui ont la même couleur", "isCorrect": False},
                         {"text": "Deux droites qui se croisent en un point", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Deux droites parallèles conservent un écartement constant sur toute leur longueur."
+                    "correction": " Deux droites parallèles conservent un écartement constant sur toute leur longueur."
                 },
                 {
                     "questionNumber": 40,
@@ -453,7 +453,7 @@ quiz_data = {
                         {"text": "Un triangle de type équilatéral", "isCorrect": False},
                         {"text": "Un triangle de type rectangle", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Scalène' (ou triangle quelconque) signifie qu'il n'a aucune symétrie particulière."
+                    "correction": " 'Scalène' (ou triangle quelconque) signifie qu'il n'a aucune symétrie particulière."
                 }
             ]
         },
@@ -472,7 +472,7 @@ quiz_data = {
                         {"text": "La valeur de x est égale à deux virgule cinq", "isCorrect": False},
                         {"text": "La valeur de x est égale à cinq", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On isole x en soustrayant 10 des deux côtés. Calcul : x = 25 - 10 = 15."
+                    "correction": " On isole x en soustrayant 10 des deux côtés. Calcul : x = 25 - 10 = 15."
                 },
                 {
                     "questionNumber": 42,
@@ -483,7 +483,7 @@ quiz_data = {
                         {"text": "Le résultat est égal à seize", "isCorrect": False},
                         {"text": "Le résultat est égal à vingt-et-un", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On remplace x par 3 et on respecte les priorités (multiplication d'abord). Calcul : (2 x 3) + 5 = 6 + 5 = 11."
+                    "correction": " On remplace x par 3 et on respecte les priorités (multiplication d'abord). Calcul : (2 x 3) + 5 = 6 + 5 = 11."
                 },
                 {
                     "questionNumber": 43,
@@ -494,7 +494,7 @@ quiz_data = {
                         {"text": "La valeur de x est égale à quatre", "isCorrect": False},
                         {"text": "La valeur de x est égale à quatre-vingt-seize", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On divise 24 par 4 pour trouver la valeur de x. Calcul : x = 24 / 4 = 6."
+                    "correction": " On divise 24 par 4 pour trouver la valeur de x. Calcul : x = 24 / 4 = 6."
                 },
                 {
                     "questionNumber": 44,
@@ -505,7 +505,7 @@ quiz_data = {
                         {"text": "L'expression réduite est égale à 3a", "isCorrect": False},
                         {"text": "L'expression réduite est égale à a", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On additionne les coefficients car les lettres sont identiques. Calcul : (5 - 2 + 4)a = 7a."
+                    "correction": " On additionne les coefficients car les lettres sont identiques. Calcul : (5 - 2 + 4)a = 7a."
                 },
                 {
                     "questionNumber": 45,
@@ -516,7 +516,7 @@ quiz_data = {
                         {"text": "La valeur de y est égale à quatre", "isCorrect": False},
                         {"text": "La valeur de y est égale à sept tiers", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'inverse de la division par 3 est la multiplication par 3. Calcul : y = 7 x 3 = 21."
+                    "correction": " L'inverse de la division par 3 est la multiplication par 3. Calcul : y = 7 x 3 = 21."
                 },
                 {
                     "questionNumber": 46,
@@ -527,7 +527,7 @@ quiz_data = {
                         {"text": "L'expression développée est x - 8", "isCorrect": False},
                         {"text": "L'expression développée est 4x + 8", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On distribue le 4 sur chaque terme de la parenthèse. Calcul : (4 x x) - (4 x 2) = 4x - 8."
+                    "correction": " On distribue le 4 sur chaque terme de la parenthèse. Calcul : (4 x x) - (4 x 2) = 4x - 8."
                 },
                 {
                     "questionNumber": 47,
@@ -538,7 +538,7 @@ quiz_data = {
                         {"text": "Le produit est égal à trois", "isCorrect": False},
                         {"text": "Le produit est égal à vingt-cinq", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On effectue simplement la multiplication. Calcul : 5 x 2 = 10."
+                    "correction": " On effectue simplement la multiplication. Calcul : 5 x 2 = 10."
                 },
                 {
                     "questionNumber": 48,
@@ -549,7 +549,7 @@ quiz_data = {
                         {"text": "La valeur est de soixante-quatre", "isCorrect": False},
                         {"text": "La valeur est de six", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 6² = 6 x 6 = 36. Elever au carré, c'est multiplier par soi-même."
+                    "correction": " 6² = 6 x 6 = 36. Elever au carré, c'est multiplier par soi-même."
                 },
                 {
                     "questionNumber": 49,
@@ -560,7 +560,7 @@ quiz_data = {
                         {"text": "La valeur de x est égale à seize", "isCorrect": False},
                         {"text": "La valeur de x est égale à six", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 1) 2x = 12 - 4 = 8. 2) x = 8 / 2 = 4. La solution est 4."
+                    "correction": " 1) 2x = 12 - 4 = 8. 2) x = 8 / 2 = 4. La solution est 4."
                 },
                 {
                     "questionNumber": 50,
@@ -571,7 +571,7 @@ quiz_data = {
                         {"text": "L'expression algébrique 2(x + 1)", "isCorrect": False},
                         {"text": "L'expression algébrique x² + 1", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Double de x' = 2x. 'Augmenté de 1' = + 1. Donc 2x + 1."
+                    "correction": " 'Double de x' = 2x. 'Augmenté de 1' = + 1. Donc 2x + 1."
                 },
                 {
                     "questionNumber": 51,
@@ -582,7 +582,7 @@ quiz_data = {
                         {"text": "Le résultat est égal à huit", "isCorrect": False},
                         {"text": "Le résultat est égal à trente", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Priorité à la multiplication ! Calcul : 10 - (2 x 3) = 10 - 6 = 4."
+                    "correction": " Priorité à la multiplication ! Calcul : 10 - (2 x 3) = 10 - 6 = 4."
                 },
                 {
                     "questionNumber": 52,
@@ -593,7 +593,7 @@ quiz_data = {
                         {"text": "Le prix est de x moins trois", "isCorrect": False},
                         {"text": "Le prix est de trois plus x", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour trouver le prix unitaire, on divise le prix total par la quantité."
+                    "correction": " Pour trouver le prix unitaire, on divise le prix total par la quantité."
                 },
                 {
                     "questionNumber": 53,
@@ -604,7 +604,7 @@ quiz_data = {
                         {"text": "L'expression factorisée est 3x(1 + 5)", "isCorrect": False},
                         {"text": "L'expression factorisée est 15(x + 3)", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le facteur commun est 3 car 15 = 3 x 5. On place le 3 devant la parenthèse."
+                    "correction": " Le facteur commun est 3 car 15 = 3 x 5. On place le 3 devant la parenthèse."
                 },
                 {
                     "questionNumber": 54,
@@ -615,7 +615,7 @@ quiz_data = {
                         {"text": "Le résultat est de moins un", "isCorrect": False},
                         {"text": "Le résultat est de neuf positif", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le produit d'un nombre négatif par un nombre positif est toujours négatif."
+                    "correction": " Le produit d'un nombre négatif par un nombre positif est toujours négatif."
                 },
                 {
                     "questionNumber": 55,
@@ -626,7 +626,7 @@ quiz_data = {
                         {"text": "La valeur de x est égale à moins six", "isCorrect": False},
                         {"text": "La valeur de x est égale à quatre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 10 moins quel nombre fait 4 ? La réponse est 10 - 4 = 6."
+                    "correction": " 10 moins quel nombre fait 4 ? La réponse est 10 - 4 = 6."
                 },
                 {
                     "questionNumber": 56,
@@ -637,7 +637,7 @@ quiz_data = {
                         {"text": "L'inconnue a disparu du calcul", "isCorrect": False},
                         {"text": "Le résultat final est forcément faux", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Zéro est un nombre comme un autre qui peut parfaitement être la solution d'un problème."
+                    "correction": " Zéro est un nombre comme un autre qui peut parfaitement être la solution d'un problème."
                 },
                 {
                     "questionNumber": 57,
@@ -648,7 +648,7 @@ quiz_data = {
                         {"text": "La valeur entière de cinq", "isCorrect": False},
                         {"text": "La valeur entière de douze", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Calcul : 5 x 0 + 7 = 0 + 7 = 7."
+                    "correction": " Calcul : 5 x 0 + 7 = 0 + 7 = 7."
                 },
                 {
                     "questionNumber": 58,
@@ -659,7 +659,7 @@ quiz_data = {
                         {"text": "Le chiffre zéro systématiquement", "isCorrect": False},
                         {"text": "Le même nombre sans changement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Changer le signe d'un nombre revient à prendre son opposé."
+                    "correction": " Changer le signe d'un nombre revient à prendre son opposé."
                 },
                 {
                     "questionNumber": 59,
@@ -670,7 +670,7 @@ quiz_data = {
                         {"text": "La valeur de x est égale à deux", "isCorrect": False},
                         {"text": "La valeur de x est égale à moins un", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 2x = 2 - 2 = 0. Donc x = 0 / 2 = 0."
+                    "correction": " 2x = 2 - 2 = 0. Donc x = 0 / 2 = 0."
                 },
                 {
                     "questionNumber": 60,
@@ -681,7 +681,7 @@ quiz_data = {
                         {"text": "La valeur image de quatorze", "isCorrect": False},
                         {"text": "La valeur image de dix", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une fonction constante. Elle renvoie toujours 4, peu importe la valeur de x choisie."
+                    "correction": " C'est une fonction constante. Elle renvoie toujours 4, peu importe la valeur de x choisie."
                 }
             ]
         },
@@ -700,7 +700,7 @@ quiz_data = {
                         {"text": "Un volume de dix litres", "isCorrect": False},
                         {"text": "Un volume de un litre seul", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 1 dm³ = 1 litre. Comme il y a 1 000 dm³ dans 1 m³, il y a 1 000 litres dans un mètre cube."
+                    "correction": " 1 dm³ = 1 litre. Comme il y a 1 000 dm³ dans 1 m³, il y a 1 000 litres dans un mètre cube."
                 },
                 {
                     "questionNumber": 62,
@@ -711,7 +711,7 @@ quiz_data = {
                         {"text": "Vingt-cinq litres au total", "isCorrect": False},
                         {"text": "Zéro virgule zéro vingt-cinq litre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On divise par 1000. Calcul : 250 / 1000 = 0,25 L. Cela correspond à un quart de litre."
+                    "correction": " On divise par 1000. Calcul : 250 / 1000 = 0,25 L. Cela correspond à un quart de litre."
                 },
                 {
                     "questionNumber": 63,
@@ -722,7 +722,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Joule (J)", "isCorrect": False},
                         {"text": "L'unité nommée le Watt (W)", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Pascal est l'unité de pression. En météo, on utilise souvent l'hectopascal (hPa). 1 bar = 100 000 Pa."
+                    "correction": " Le Pascal est l'unité de pression. En météo, on utilise souvent l'hectopascal (hPa). 1 bar = 100 000 Pa."
                 },
                 {
                     "questionNumber": 64,
@@ -733,7 +733,7 @@ quiz_data = {
                         {"text": "Mille centimètres carrés", "isCorrect": False},
                         {"text": "Dix centimètres carrés", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour les unités d'aire, on multiplie par 100 à chaque rang. 1 m² = 100 dm² = 10 000 cm²."
+                    "correction": " Pour les unités d'aire, on multiplie par 100 à chaque rang. 1 m² = 100 dm² = 10 000 cm²."
                 },
                 {
                     "questionNumber": 65,
@@ -744,7 +744,7 @@ quiz_data = {
                         {"text": "L'unité nommée le Volt (V)", "isCorrect": False},
                         {"text": "L'unité nommée le Mètre (m)", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Hertz mesure le nombre de vibrations par seconde. Le Décibel mesure l'intensité (le volume sonore)."
+                    "correction": " Le Hertz mesure le nombre de vibrations par seconde. Le Décibel mesure l'intensité (le volume sonore)."
                 },
                 {
                     "questionNumber": 66,
@@ -755,7 +755,7 @@ quiz_data = {
                         {"text": "Trente-cinq mille kilogrammes", "isCorrect": False},
                         {"text": "Trente-cinq kilogrammes seulement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 1 tonne = 1 000 kg. Calcul : 3,5 x 1 000 = 3 500 kg."
+                    "correction": " 1 tonne = 1 000 kg. Calcul : 3,5 x 1 000 = 3 500 kg."
                 },
                 {
                     "questionNumber": 67,
@@ -766,7 +766,7 @@ quiz_data = {
                         {"text": "Trente-trois litres", "isCorrect": False},
                         {"text": "Trente-trois décilitres", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 33 cL = 0,33 L. C'est le format standard des boissons individuelles."
+                    "correction": " 33 cL = 0,33 L. C'est le format standard des boissons individuelles."
                 },
                 {
                     "questionNumber": 68,
@@ -777,7 +777,7 @@ quiz_data = {
                         {"text": "L'unité nommée l'Ampère (A)", "isCorrect": False},
                         {"text": "L'unité nommée le Volt (V)", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Joule est l'unité d'énergie (chaleur, travail, électricité). On utilise aussi souvent le kiloWatt-heure (kWh) sur les factures."
+                    "correction": " Le Joule est l'unité d'énergie (chaleur, travail, électricité). On utilise aussi souvent le kiloWatt-heure (kWh) sur les factures."
                 },
                 {
                     "questionNumber": 69,
@@ -788,7 +788,7 @@ quiz_data = {
                         {"text": "Dix minutes de temps seulement", "isCorrect": False},
                         {"text": "Vingt-quatre heures de temps", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 60 secondes x 60 minutes = 3 600 secondes. C'est la définition d'une heure."
+                    "correction": " 60 secondes x 60 minutes = 3 600 secondes. C'est la définition d'une heure."
                 },
                 {
                     "questionNumber": 70,
@@ -799,7 +799,7 @@ quiz_data = {
                         {"text": "Un total de quatre faces carrées", "isCorrect": False},
                         {"text": "Un total de douze faces carrées", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un cube est comme un dé à jouer : il a 6 faces, 8 sommets et 12 arêtes."
+                    "correction": " Un cube est comme un dé à jouer : il a 6 faces, 8 sommets et 12 arêtes."
                 },
                 {
                     "questionNumber": 71,
@@ -810,7 +810,7 @@ quiz_data = {
                         {"text": "Côté x côté x côté uniquement", "isCorrect": False},
                         {"text": "Base x hauteur divisé par deux", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour un solide rectangulaire, on multiplie les trois dimensions de l'espace."
+                    "correction": " Pour un solide rectangulaire, on multiplie les trois dimensions de l'espace."
                 },
                 {
                     "questionNumber": 72,
@@ -821,7 +821,7 @@ quiz_data = {
                         {"text": "Un volume d'eau dans un bac", "isCorrect": False},
                         {"text": "Le poids d'une barre métallique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le mètre linéaire est utilisé dans le bâtiment pour les plinthes, les câbles ou les clôtures (une seule dimension)."
+                    "correction": " Le mètre linéaire est utilisé dans le bâtiment pour les plinthes, les câbles ou les clôtures (une seule dimension)."
                 },
                 {
                     "questionNumber": 73,
@@ -832,7 +832,7 @@ quiz_data = {
                         {"text": "Huit mètres carrés", "isCorrect": False},
                         {"text": "Trente mètres carrés", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Aire = 5 x 3 = 15 m²."
+                    "correction": " Aire = 5 x 3 = 15 m²."
                 },
                 {
                     "questionNumber": 74,
@@ -843,7 +843,7 @@ quiz_data = {
                         {"text": "Un total de mille centilitres", "isCorrect": False},
                         {"text": "Un total de un centilitre seul", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Centi' signifie centième. Il faut donc 100 cL pour faire 1 L."
+                    "correction": " 'Centi' signifie centième. Il faut donc 100 cL pour faire 1 L."
                 },
                 {
                     "questionNumber": 75,
@@ -854,7 +854,7 @@ quiz_data = {
                         {"text": "Sept mille cinq cents grammes", "isCorrect": False},
                         {"text": "Sept virgule cinq grammes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 0,75 x 1000 = 750 g."
+                    "correction": " 0,75 x 1000 = 750 g."
                 },
                 {
                     "questionNumber": 76,
@@ -865,7 +865,7 @@ quiz_data = {
                         {"text": "L'unité nommée l'Ampère (A)", "isCorrect": False},
                         {"text": "L'unité nommée le Watt (W)", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La résistance s'oppose au passage du courant."
+                    "correction": " La résistance s'oppose au passage du courant."
                 },
                 {
                     "questionNumber": 77,
@@ -876,7 +876,7 @@ quiz_data = {
                         {"text": "Dix minutes exactement", "isCorrect": False},
                         {"text": "Vingt minutes exactement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 60 minutes / 4 = 15 minutes."
+                    "correction": " 60 minutes / 4 = 15 minutes."
                 },
                 {
                     "questionNumber": 78,
@@ -887,7 +887,7 @@ quiz_data = {
                         {"text": "Zéro virgule un millimètre", "isCorrect": False},
                         {"text": "Un millimètre seulement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est la graduation de base de la règle d'écolier."
+                    "correction": " C'est la graduation de base de la règle d'écolier."
                 },
                 {
                     "questionNumber": 79,
@@ -898,7 +898,7 @@ quiz_data = {
                         {"text": "Une capacité de deux cents litres", "isCorrect": False},
                         {"text": "Une capacité de zéro virgule deux litre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 1 000 cm³ = 1 L. Donc 2 000 cm³ = 2 L."
+                    "correction": " 1 000 cm³ = 1 L. Donc 2 000 cm³ = 2 L."
                 },
                 {
                     "questionNumber": 80,
@@ -909,7 +909,7 @@ quiz_data = {
                         {"text": "Un mètre ruban de couturière", "isCorrect": False},
                         {"text": "Un rapporteur en plastique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le pied à coulisse permet de mesurer au dixième de millimètre."
+                    "correction": " Le pied à coulisse permet de mesurer au dixième de millimètre."
                 }
             ]
         },
@@ -928,7 +928,7 @@ quiz_data = {
                         {"text": "La moyenne est égale à quarante-cinq", "isCorrect": False},
                         {"text": "La moyenne est égale à douze", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Somme = 45. Nombre de valeurs = 3. Moyenne = 45 / 3 = 15."
+                    "correction": " Somme = 45. Nombre de valeurs = 3. Moyenne = 45 / 3 = 15."
                 },
                 {
                     "questionNumber": 82,
@@ -939,7 +939,7 @@ quiz_data = {
                         {"text": "Une probabilité de zéro virgule deux", "isCorrect": False},
                         {"text": "Une probabilité de zéro virgule vingt-cinq", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 1 chance sur 2 = 1/2 = 0,5."
+                    "correction": " 1 chance sur 2 = 1/2 = 0,5."
                 },
                 {
                     "questionNumber": 83,
@@ -950,7 +950,7 @@ quiz_data = {
                         {"text": "Le résultat final d'un calcul complexe", "isCorrect": False},
                         {"text": "Un graphique avec des barres de couleur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On étudie un petit groupe (échantillon) pour comprendre le grand groupe (population)."
+                    "correction": " On étudie un petit groupe (échantillon) pour comprendre le grand groupe (population)."
                 },
                 {
                     "questionNumber": 84,
@@ -961,7 +961,7 @@ quiz_data = {
                         {"text": "Huit chances sur dix soit quatre-vingts pour cent", "isCorrect": False},
                         {"text": "Une chance sur deux soit cinquante pour cent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Total = 10 boules. Rouges = 2. Probabilité = 2/10 = 0,2."
+                    "correction": " Total = 10 boules. Rouges = 2. Probabilité = 2/10 = 0,2."
                 },
                 {
                     "questionNumber": 85,
@@ -972,7 +972,7 @@ quiz_data = {
                         {"text": "La valeur centrale est de dix", "isCorrect": False},
                         {"text": "La valeur centrale est de deux", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La série est ordonnée. Il y a 5 valeurs. La 3ème valeur (8) laisse deux nombres avant et deux nombres après."
+                    "correction": " La série est ordonnée. Il y a 5 valeurs. La 3ème valeur (8) laisse deux nombres avant et deux nombres après."
                 },
                 {
                     "questionNumber": 86,
@@ -983,7 +983,7 @@ quiz_data = {
                         {"text": "L'événement a une chance sur deux", "isCorrect": False},
                         {"text": "L'événement est très rare ici même", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En probabilité, 1 signifie 100 % de chances."
+                    "correction": " En probabilité, 1 signifie 100 % de chances."
                 },
                 {
                     "questionNumber": 87,
@@ -994,7 +994,7 @@ quiz_data = {
                         {"text": "Une moyenne de l'expérience", "isCorrect": False},
                         {"text": "Une erreur de l'expérience", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Chaque possibilité de résultat (ex: 'obtenir 6') est une issue."
+                    "correction": " Chaque possibilité de résultat (ex: 'obtenir 6') est une issue."
                 },
                 {
                     "questionNumber": 88,
@@ -1005,7 +1005,7 @@ quiz_data = {
                         {"text": "Les valeurs de moins un et plus un", "isCorrect": False},
                         {"text": "Toutes les valeurs positives possibles", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une fréquence f = n/N est une proportion, elle ne peut pas dépasser 1 ni être négative."
+                    "correction": " Une fréquence f = n/N est une proportion, elle ne peut pas dépasser 1 ni être négative."
                 },
                 {
                     "questionNumber": 89,
@@ -1016,7 +1016,7 @@ quiz_data = {
                         {"text": "Zéro virgille quatre pour cent", "isCorrect": False},
                         {"text": "Quatre cents pour cent de l'effectif", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On multiplie par 100. 0,40 x 100 = 40 %."
+                    "correction": " On multiplie par 100. 0,40 x 100 = 40 %."
                 },
                 {
                     "questionNumber": 90,
@@ -1027,7 +1027,7 @@ quiz_data = {
                         {"text": "L'histogramme rectangulaire", "isCorrect": False},
                         {"text": "La courbe de température", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Appelé aussi 'camembert', l'angle est proportionnel à la fréquence."
+                    "correction": " Appelé aussi 'camembert', l'angle est proportionnel à la fréquence."
                 },
                 {
                     "questionNumber": 91,
@@ -1038,7 +1038,7 @@ quiz_data = {
                         {"text": "Une probabilité de un sur six", "isCorrect": False},
                         {"text": "Une probabilité de six sur six", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est un événement impossible, car le dé s'arrête à 6."
+                    "correction": " C'est un événement impossible, car le dé s'arrête à 6."
                 },
                 {
                     "questionNumber": 92,
@@ -1049,7 +1049,7 @@ quiz_data = {
                         {"text": "La plus grande valeur numérique", "isCorrect": False},
                         {"text": "La plus petite valeur numérique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est la donnée la plus fréquente."
+                    "correction": " C'est la donnée la plus fréquente."
                 },
                 {
                     "questionNumber": 93,
@@ -1060,7 +1060,7 @@ quiz_data = {
                         {"text": "Dix unités au total", "isCorrect": False},
                         {"text": "Vingt-cinq unités au total", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 50 - 10 = 40."
+                    "correction": " 50 - 10 = 40."
                 },
                 {
                     "questionNumber": 94,
@@ -1071,7 +1071,7 @@ quiz_data = {
                         {"text": "Le caractère faux d'un test", "isCorrect": False},
                         {"text": "Le caractère nul d'un test", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Aléatoire vient du latin 'alea' (le dé)."
+                    "correction": " Aléatoire vient du latin 'alea' (le dé)."
                 },
                 {
                     "questionNumber": 95,
@@ -1082,7 +1082,7 @@ quiz_data = {
                         {"text": "La valeur entière de zéro", "isCorrect": False},
                         {"text": "La valeur de l'effectif total", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Si on additionne toutes les parts d'un tout, on obtient 1 (ou 100 %)."
+                    "correction": " Si on additionne toutes les parts d'un tout, on obtient 1 (ou 100 %)."
                 },
                 {
                     "questionNumber": 96,
@@ -1093,7 +1093,7 @@ quiz_data = {
                         {"text": "Une chance sur huit issues", "isCorrect": False},
                         {"text": "Quatre chances sur trente-deux", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Il n'y a qu'un seul roi de cœur dans le paquet."
+                    "correction": " Il n'y a qu'un seul roi de cœur dans le paquet."
                 },
                 {
                     "questionNumber": 97,
@@ -1104,7 +1104,7 @@ quiz_data = {
                         {"text": "Soixante-quinze pour cent", "isCorrect": False},
                         {"text": "Zéro virgule vingt-cinq pour cent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 0,25 x 100 = 25 %."
+                    "correction": " 0,25 x 100 = 25 %."
                 },
                 {
                     "questionNumber": 98,
@@ -1115,7 +1115,7 @@ quiz_data = {
                         {"text": "La liste des nombres du tableau", "isCorrect": False},
                         {"text": "La moyenne de l'ensemble des gens", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La population est le groupe total (ex: tous les élèves du lycée). L'échantillon en est une petite partie."
+                    "correction": " La population est le groupe total (ex: tous les élèves du lycée). L'échantillon en est une petite partie."
                 },
                 {
                     "questionNumber": 99,
@@ -1126,7 +1126,7 @@ quiz_data = {
                         {"text": "Cent vingt-cinq pour cent", "isCorrect": False},
                         {"text": "Zéro virgule cent vingt-cinq pour cent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 0,125 x 100 = 12,5 %."
+                    "correction": " 0,125 x 100 = 12,5 %."
                 },
                 {
                     "questionNumber": 100,
@@ -1137,7 +1137,7 @@ quiz_data = {
                         {"text": "On ne gagne aucun cadeau au tirage", "isCorrect": False},
                         {"text": "On tire tout en même temps à la main", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans un tirage sans remise, l'effectif total diminue à chaque tour, ce qui change les probabilités suivantes."
+                    "correction": " Dans un tirage sans remise, l'effectif total diminue à chaque tour, ce qui change les probabilités suivantes."
                 }
             ]
         }
