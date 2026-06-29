@@ -25,7 +25,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "d'évolution de "
                                                                                'départ',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Pour trouver '
+                                              'correction': ' Pour trouver '
                                                             'une évolution réciproque, on cherche '
                                                             'le coefficient multiplicateur '
                                                             'inverse. Si le CM initial est 1,25 '
@@ -58,7 +58,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'vingt-deux virgule '
                                                                                'cinq pour cent',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une baisse de '
+                                              'correction': ' Une baisse de '
                                                             '20 % correspond à un coefficient '
                                                             'multiplicateur (CM) de 0,8 (1 - '
                                                             '0,20). Pour retrouver la valeur '
@@ -86,7 +86,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'multiplicateur '
                                                                                'final est de 0,729',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Lors '
+                                              'correction': ' Lors '
                                                             "d'évolutions successives, les "
                                                             'coefficients multiplicateurs se '
                                                             'multiplient entre eux. Une hausse de '
@@ -116,7 +116,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'multiplicateur de '
                                                                                'la variation',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le taux '
+                                              'correction': ' Le taux '
                                                             "d'évolution (t) mesure la variation "
                                                             'relative. Il se calcule par la '
                                                             'formule : t = (Valeur Finale - Valeur '
@@ -149,7 +149,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'positif de dix '
                                                                                'pour cent',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On applique la '
+                                              'correction': ' On applique la '
                                                             'formule : (600 - 500) / 500 = 100 / '
                                                             '500 = 0,2. Pour obtenir le '
                                                             'pourcentage, on multiplie par 100, '
@@ -179,7 +179,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'multipliée par '
                                                                                'cent-cinq',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'indice permet "
+                                              'correction': " L'indice permet "
                                                             'de comparer des valeurs à une base '
                                                             'fixe (généralement 100). Un indice de '
                                                             '105 signifie que la valeur est 1,05 '
@@ -207,7 +207,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'variations '
                                                                                "s'annulent",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Hausse de 50 % '
+                                              'correction': ' Hausse de 50 % '
                                                             '(CM = 1,5) et baisse de 50 % (CM = '
                                                             '0,5). CM global = 1,5 x 0,5 = 0,75. '
                                                             'Puisque 0,75 est inférieur à 1, le '
@@ -232,7 +232,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'de quatre pour '
                                                                                'cent au total',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On multiplie '
+                                              'correction': ' On multiplie '
                                                             'les coefficients multiplicateurs : '
                                                             '1,2 x 1,2 = 1,44. Le taux global est '
                                                             "(1,44 - 1) x 100 = 44 %. Ce n'est pas "
@@ -258,7 +258,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'virgule huit pour '
                                                                                'cent de la valeur',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'évolution en "
+                                              'correction': " L'évolution en "
                                                             'pourcentage est donnée par (Indice - '
                                                             '100). Ici, 80 - 100 = -20. Le signe '
                                                             'moins indique une diminution. La '
@@ -282,7 +282,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'multiplicateur '
                                                                                'égal à 0,20',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le coefficient '
+                                              'correction': ' Le coefficient '
                                                             'multiplicateur (CM) pour une baisse '
                                                             'se calcule par la formule : CM = 1 - '
                                                             '(t / 100). Ici, CM = 1 - (2 / 100) = '
@@ -305,7 +305,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Valeur Finale plus '
                                                                                'Valeur Initiale',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La variation '
+                                              'correction': ' La variation '
                                                             "absolue mesure l'écart réel entre "
                                                             'deux états. Contrairement au taux, '
                                                             "elle s'exprime dans la même unité que "
@@ -331,7 +331,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'multiplicateur '
                                                                                'égal à la valeur 3',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une remise est '
+                                              'correction': ' Une remise est '
                                                             'une baisse de prix. On applique la '
                                                             'formule de la diminution : CM = 1 - '
                                                             '0,30 = 0,7. Multiplier un prix par '
@@ -354,7 +354,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Une augmentation '
                                                                                'de deux pour cent',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Doubler une '
+                                              'correction': ' Doubler une '
                                                             "valeur signifie que l'on ajoute une "
                                                             'fois la valeur initiale à elle-même. '
                                                             'Si le prix passe de 10 à 20, la '
@@ -380,7 +380,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'valeur TTC est de '
                                                                                'cent',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'indice se "
+                                              'correction': " L'indice se "
                                                             'calcule par (Valeur à comparer / '
                                                             'Valeur de référence) x 100. Ici : '
                                                             "(120 / 100) x 100 = 120. L'indice "
@@ -406,7 +406,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'cinquante pour '
                                                                                'cent',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le taux '
+                                              'correction': ' Le taux '
                                                             "d'évolution t se déduit du "
                                                             'coefficient multiplicateur par la '
                                                             'formule : t = (CM - 1) x 100. Ici, t '
@@ -429,7 +429,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Un taux positif de '
                                                                                'cent pour cent',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Tripler '
+                                              'correction': ' Tripler '
                                                             'signifie multiplier par 3. Le taux '
                                                             'est donc (3 - 1) x 100 = 200 %. On a '
                                                             'ajouté deux fois la valeur initiale à '
@@ -453,7 +453,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'initiale égale à '
                                                                                'quatre-vingt-dix',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On sait que '
+                                              'correction': ' On sait que '
                                                             'Valeur Initiale x CM = Valeur Finale. '
                                                             'Donc VI = VF / CM. Ici, pour une '
                                                             'hausse de 10 %, le CM est 1,1. VI = '
@@ -478,7 +478,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'multiplicateur '
                                                                                'associé est zéro',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Si la valeur '
+                                              'correction': ' Si la valeur '
                                                             'finale est égale à la valeur '
                                                             'initiale, la variation est nulle. Le '
                                                             'coefficient multiplicateur est alors '
@@ -498,7 +498,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Zéro virgule zéro '
                                                                                'cinq pour cent',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On applique t = '
+                                              'correction': ' On applique t = '
                                                             '(CM - 1) x 100. Ici, (1,005 - 1) x '
                                                             "100 = 0,005 x 100 = 0,5 %. C'est une "
                                                             'très faible augmentation.'},
@@ -519,7 +519,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'influence sur les '
                                                                                'ventes',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'IPC (établi "
+                                              'correction': " L'IPC (établi "
                                                             "par l'INSEE en France) suit "
                                                             "l'évolution des prix d'un 'panier de "
                                                             "biens et services' représentatif de "
@@ -546,7 +546,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "dérivée est f'(x) "
                                                                                '= 1/x',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La règle '
+                                              'correction': ' La règle '
                                                             'générale de dérivation pour une '
                                                             'puissance de x (x^n) est de '
                                                             "multiplier par l'exposant n et de "
@@ -573,7 +573,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'directeur de la '
                                                                                'droite sécante',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est l'utilité "
+                                              'correction': " C'est l'utilité "
                                                             "principale de la dérivation. Si f'(x) "
                                                             'est positive sur un intervalle, alors '
                                                             'f est croissante sur cet intervalle. '
@@ -599,7 +599,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'égale à la '
                                                                                'variable x',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une fonction '
+                                              'correction': ' Une fonction '
                                                             'constante ne varie pas (sa courbe est '
                                                             'une droite horizontale). Puisque la '
                                                             'dérivée mesure le taux de variation, '
@@ -624,7 +624,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'horizontale vers '
                                                                                "l'infini",
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** Lorsqu'une "
+                                              'correction': " Lorsqu'une "
                                                             'fonction cesse de croître pour '
                                                             'décroître (ou inversement), sa courbe '
                                                             'atteint un sommet ou un creux. À cet '
@@ -650,7 +650,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'possible est F(x) '
                                                                                '= 2x',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Chercher une '
+                                              'correction': ' Chercher une '
                                                             'primitive consiste à trouver la '
                                                             "fonction F telle que F' = f. Puisque "
                                                             'la dérivée de x² est 2x, la dérivée '
@@ -675,7 +675,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Un cercle parfait '
                                                                                'de rayon déterminé',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Les fonctions '
+                                              'correction': ' Les fonctions '
                                                             'du type f(x) = ax² + bx + c sont '
                                                             'représentées par des paraboles. Leur '
                                                             "orientation dépend du signe de 'a' : "
@@ -702,7 +702,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'polynomiale '
                                                                                'choisie',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le discriminant '
+                                              'correction': ' Le discriminant '
                                                             'Δ (Delta) permet de savoir si '
                                                             "l'équation f(x) = 0 a des solutions "
                                                             'réelles. Si Δ > 0, il y a deux '
@@ -727,7 +727,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'racines sur '
                                                                                "l'ensemble R",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Lorsque Δ < 0, '
+                                              'correction': ' Lorsque Δ < 0, '
                                                             "le polynôme ax² + bx + c ne s'annule "
                                                             'jamais. Graphiquement, cela signifie '
                                                             'que la parabole ne traverse jamais '
@@ -753,7 +753,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "dérivée est f'(x) "
                                                                                '= 8',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La dérivée '
+                                              'correction': ' La dérivée '
                                                             "d'une fonction affine f(x) = ax + b "
                                                             'est toujours égale au coefficient '
                                                             "directeur 'a'. Ici a=5. La constante "
@@ -781,7 +781,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "l'axe des "
                                                                                'ordonnées',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le nombre '
+                                              'correction': ' Le nombre '
                                                             "dérivé f'(a) donne la pente de la "
                                                             "droite qui 'frôle' la courbe au point "
                                                             "d'abscisse a. Cette droite est "
@@ -807,7 +807,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "dérivée est f'(x) "
                                                                                '= 0',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** Il s'agit d'une "
+                                              'correction': " Il s'agit d'une "
                                                             'formule de référence à connaître par '
                                                             'cœur. La fonction f(x) = 1/x est '
                                                             'définie sur R* (tout sauf zéro). Sa '
@@ -835,7 +835,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'possédant un '
                                                                                'centre de symétrie',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La dérivée de '
+                                              'correction': ' La dérivée de '
                                                             'x³ est 3x². Un carré étant toujours '
                                                             'positif ou nul, 3x² est toujours ≥ 0. '
                                                             'La fonction cube est donc croissante '
@@ -858,7 +858,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'La forme y = x² + '
                                                                                'f(a)',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Cette formule '
+                                              'correction': ' Cette formule '
                                                             "permet de calculer l'équation de la "
                                                             'droite tangente. On y retrouve le '
                                                             "coefficient directeur f'(a) et "
@@ -883,7 +883,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'variable x au '
                                                                                'carré',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On applique la '
+                                              'correction': ' On applique la '
                                                             "règle (x^n)' = nx^(n-1). Pour n=3 : 3 "
                                                             '* x^(3-1) = 3x². On utilise beaucoup '
                                                             "ce calcul pour l'étude des variations "
@@ -908,7 +908,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'divisé par quatre '
                                                                                'a',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'abscisse du "
+                                              'correction': " L'abscisse du "
                                                             'sommet (notée souvent α ou xS) est '
                                                             'donnée par -b / 2a. Ce point '
                                                             'correspond au maximum ou au minimum '
@@ -932,7 +932,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Vers la gauche de '
                                                                                'façon horizontale',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Si a < 0, la '
+                                              'correction': ' Si a < 0, la '
                                                             'fonction croît puis décroît. Son '
                                                             'sommet est donc un maximum. On dit '
                                                             "parfois que la parabole fait 'la "
@@ -953,7 +953,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'divisé par la '
                                                                                "dérivée v'",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La dérivation '
+                                              'correction': ' La dérivation '
                                                             "est une opération 'linéaire' "
                                                             "vis-à-vis de l'addition. Dériver une "
                                                             'somme revient à dériver chaque terme '
@@ -977,7 +977,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'divisé par la '
                                                                                'variable x',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La fonction '
+                                              'correction': ' La fonction '
                                                             'racine carrée f(x) = √x est définie '
                                                             "sur [0 ; +inf[ mais elle n'est "
                                                             'dérivable que sur ]0 ; +inf[. Sa '
@@ -1008,7 +1008,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "l'échelle utilisée "
                                                                                'pour le repère',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le tableau de '
+                                              'correction': ' Le tableau de '
                                                             'variations utilise les résultats du '
                                                             'signe de la dérivée pour indiquer par '
                                                             'des flèches si la fonction monte ou '
@@ -1037,7 +1037,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'obligatoirement '
                                                                                'égale à zéro',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est la notion "
+                                              'correction': " C'est la notion "
                                                             "de limite. Quand on s'éloigne sur "
                                                             "l'axe des abscisses (ou qu'on se "
                                                             "rapproche d'une valeur interdite), "
@@ -1065,7 +1065,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'Hypoténuse divisé '
                                                                                'par le Côté opposé',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La '
+                                              'correction': ' La '
                                                             'trigonométrie relie les angles aux '
                                                             'rapports de longueurs. Le cosinus '
                                                             "d'un angle aigu se calcule en "
@@ -1088,7 +1088,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Une valeur non '
                                                                                'définie ou infinie',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Sur le cercle '
+                                              'correction': ' Sur le cercle '
                                                             'trigonométrique de rayon 1, le '
                                                             "cosinus est l'abscisse du point. Pour "
                                                             'un angle de 0°, le point est situé à '
@@ -1114,7 +1114,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'carrés cos²(α) - '
                                                                                'sin²(α) = 1',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est "
+                                              'correction': " C'est "
                                                             "l'identité fondamentale de la "
                                                             'trigonométrie. Elle découle du '
                                                             'théorème de Pythagore appliqué dans '
@@ -1142,7 +1142,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'fois Pi multiplié '
                                                                                'par le rayon',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Formule du '
+                                              'correction': ' Formule du '
                                                             'volume : V = (4/3) x π x R³. '
                                                             'Attention à ne pas confondre avec '
                                                             "l'aire de la surface d'une sphère qui "
@@ -1167,7 +1167,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Une mesure nulle '
                                                                                'de zéro degré',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le radian est '
+                                              'correction': ' Le radian est '
                                                             "une unité de mesure d'angle basée sur "
                                                             "la longueur de l'arc de cercle. Un "
                                                             'cercle complet fait 2π radians '
@@ -1191,7 +1191,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'La valeur du côté '
                                                                                'élevée au carré',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Pour la '
+                                              'correction': ' Pour la '
                                                             "diagonale d'une face carrée, on "
                                                             'utilise d = a√2. Pour la grande '
                                                             'diagonale qui traverse le cube, on '
@@ -1219,7 +1219,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'rayon et la '
                                                                                'hauteur',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un cône (ou une '
+                                              'correction': ' Un cône (ou une '
                                                             'pyramide) occupe exactement le tiers '
                                                             "du volume du solide 'droit' (cylindre "
                                                             'ou pavé) ayant la même base et la '
@@ -1244,7 +1244,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'égale à zéro '
                                                                                'virgule cinq',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Dans le cercle '
+                                              'correction': ' Dans le cercle '
                                                             'trigonométrique, le sinus est '
                                                             "l'ordonnée (axe vertical). À 90°, le "
                                                             'point est au sommet du cercle, sa '
@@ -1270,7 +1270,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'opposé divisé par '
                                                                                "l'Hypoténuse",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La tangente '
+                                              'correction': ' La tangente '
                                                             '(tan) est le rapport entre les deux '
                                                             "côtés de l'angle droit. On peut aussi "
                                                             'la calculer en faisant tan(α) = '
@@ -1296,7 +1296,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'cent-quatre-vingt-huit '
                                                                                'centimètres cubes',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** V = π x R² x h. '
+                                              'correction': ' V = π x R² x h. '
                                                             'Ici : V = π x 3² x 10 = π x 9 x 10 = '
                                                             '90π. Avec π ≈ 3,14, on obtient 90 x '
                                                             '3,14 = 282,6 cm³. On arrondit à 283.'},
@@ -1320,7 +1320,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'les côtés '
                                                                                'dépendent du rayon',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Si vous '
+                                              'correction': ' Si vous '
                                                             "'coupez' une balle (une sphère) avec "
                                                             'un couteau (un plan), la trace de la '
                                                             'coupure sera toujours un cercle. Si '
@@ -1346,7 +1346,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'faces '
                                                                                'rectangulaires',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un pavé droit '
+                                              'correction': ' Un pavé droit '
                                                             '(comme une boîte à chaussures) '
                                                             'possède 6 faces (opposées deux à '
                                                             'deux), 8 sommets et 12 arêtes. Si '
@@ -1367,7 +1367,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Une capacité égale '
                                                                                'à un seul litre',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Il faut retenir '
+                                              'correction': ' Il faut retenir '
                                                             'que 1 dm³ = 1 litre. Comme 1 m³ = '
                                                             '1000 dm³ (car 10x10x10), alors 1 m³ '
                                                             "correspond à 1000 litres. C'est une "
@@ -1389,7 +1389,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'négative de moins '
                                                                                'un',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** À 90°, l'angle "
+                                              'correction': " À 90°, l'angle "
                                                             "est vertical. Sa projection sur l'axe "
                                                             'horizontal (abscisse) est nulle. Donc '
                                                             'cos(90°) = 0. Inversement, son sinus '
@@ -1410,7 +1410,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Un volume égal à '
                                                                                'seize mètres cubes',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** V = (1/3) x '
+                                              'correction': ' V = (1/3) x '
                                                             'Base x H. Aire de la base (carré) = 3 '
                                                             'x 3 = 9 m². Volume = (1/3) x 9 x 4 = '
                                                             '3 x 4 = 12 m³.'},
@@ -1431,7 +1431,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'précision à '
                                                                                'mercure',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le rapporteur '
+                                              'correction': ' Le rapporteur '
                                                             "permet de lire la mesure d'un angle. "
                                                             'Il est généralement semi-circulaire '
                                                             '(180°) ou circulaire (360°). On '
@@ -1455,7 +1455,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'approchée égale à '
                                                                                '0,866',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est une "
+                                              'correction': " C'est une "
                                                             'valeur remarquable à connaître. '
                                                             'sin(30°) = 1/2 = 0,5. À cet angle, le '
                                                             'côté opposé mesure exactement la '
@@ -1479,7 +1479,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'le centre à la '
                                                                                'bordure',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La tangente est '
+                                              'correction': ' La tangente est '
                                                             'perpendiculaire au rayon au point de '
                                                             "contact. C'est la droite qui "
                                                             "'effleure' le cercle sans jamais "
@@ -1505,7 +1505,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'cent-quatre-vingts '
                                                                                'degrés exactement',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un angle aigu '
+                                              'correction': ' Un angle aigu '
                                                             'est < 90°. Un angle droit = 90°. Un '
                                                             "angle obtus est plus ouvert qu'un "
                                                             "angle droit mais moins qu'un angle "
@@ -1526,7 +1526,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Seize centimètres '
                                                                                'carrés au total',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un cube possède '
+                                              'correction': ' Un cube possède '
                                                             '6 faces carrées identiques. Aire '
                                                             "d'une face = 2 x 2 = 4 cm². Aire "
                                                             'totale = 6 faces x 4 cm² = 24 cm².'}]},
@@ -1553,7 +1553,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'Gauss représentant '
                                                                                'une loi normale',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** En statistique '
+                                              'correction': ' En statistique '
                                                             'bivariée (à deux variables), chaque '
                                                             'individu est représenté par un point '
                                                             'dont les coordonnées (x ; y) '
@@ -1583,7 +1583,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'du repère servant '
                                                                                'à la construction',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le point moyen '
+                                              'correction': ' Le point moyen '
                                                             'G a pour abscisse la moyenne x̄ des '
                                                             'valeurs de la première variable et '
                                                             'pour ordonnée la moyenne ȳ de la '
@@ -1612,7 +1612,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'chacune des deux '
                                                                                'variables',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Si le nuage est '
+                                              'correction': ' Si le nuage est '
                                                             "allongé, on peut 'résumer' sa forme "
                                                             "par une droite. L'équation de cette "
                                                             "droite (y = ax + b) permet d'estimer "
@@ -1642,7 +1642,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "l'axe des "
                                                                                'abscisses x',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une corrélation '
+                                              'correction': ' Une corrélation '
                                                             'positive signifie que les deux '
                                                             'variables évoluent dans le même sens. '
                                                             'Sur le graphique, cela se traduit par '
@@ -1670,7 +1670,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'en traçant la '
                                                                                'droite à la main',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** La méthode des '
+                                              'correction': ' La méthode des '
                                                             'moindres carrés minimise la somme des '
                                                             'carrés des distances verticales entre '
                                                             "les points et la droite. C'est "
@@ -1699,7 +1699,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "l'ensemble des "
                                                                                'données est nulle',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Plus le nuage '
+                                              'correction': ' Plus le nuage '
                                                             "est 'serré' autour d'une direction, "
                                                             "plus l'ajustement linéaire est de "
                                                             'bonne qualité. Cela permet de dire '
@@ -1726,7 +1726,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'statistiques sont '
                                                                                'positives',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un coefficient '
+                                              'correction': ' Un coefficient '
                                                             'directeur nul (a = 0) correspond à '
                                                             'une droite horizontale. Cela indique '
                                                             'que même si x change, y reste à peu '
@@ -1752,7 +1752,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'négatif fort entre '
                                                                                'les variables',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le coefficient '
+                                              'correction': ' Le coefficient '
                                                             "r est compris entre -1 et 1. S'il est "
                                                             'proche de 1, les points sont presque '
                                                             "alignés sur une droite montante. S'il "
@@ -1781,7 +1781,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "de mesure de l'axe "
                                                                                'des ordonnées',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'interpolation "
+                                              'correction': " L'interpolation "
                                                             "est l'utilisation de la droite "
                                                             "d'ajustement pour trouver une valeur "
                                                             'de y correspondant à un x situé à '
@@ -1810,7 +1810,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "l'origine est "
                                                                                'nulle',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est une "
+                                              'correction': " C'est une "
                                                             'propriété fondamentale : la droite de '
                                                             'régression de y en x passe '
                                                             'obligatoirement par le point moyen '
@@ -1837,7 +1837,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'impossible pour ce '
                                                                                'coefficient',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Puisque |r| est '
+                                              'correction': ' Puisque |r| est '
                                                             'proche de 1, le lien est fort. Le '
                                                             'signe moins indique que la droite '
                                                             'descend : quand x augmente, y diminue '
@@ -1862,7 +1862,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'secondaires au '
                                                                                'sein du repère',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un point '
+                                              'correction': ' Un point '
                                                             'aberrant peut être dû à une erreur de '
                                                             'mesure ou à un individu exceptionnel. '
                                                             'Ces points peuvent fausser les '
@@ -1891,7 +1891,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'variables de '
                                                                                'longueur',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le coefficient '
+                                              'correction': ' Le coefficient '
                                                             'r est un pur indicateur de qualité de '
                                                             "l'alignement. Il ne dépend pas des "
                                                             "unités choisies pour x et y. C'est "
@@ -1917,7 +1917,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'deux variables sur '
                                                                                'les axes',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'extrapolation "
+                                              'correction': " L'extrapolation "
                                                             'consiste à faire des prévisions dans '
                                                             'le futur (au-delà des données '
                                                             "mesurées). C'est plus risqué que "
@@ -1942,7 +1942,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'points de la série '
                                                                                'étudiée',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Pour tracer la '
+                                              'correction': ' Pour tracer la '
                                                             'droite des moindres carrés, on '
                                                             'utilise deux repères : elle passe par '
                                                             "le point G(x̄, ȳ) et coupe l'axe "
@@ -1971,7 +1971,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'parfaitement '
                                                                                'verticale',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Un r nul '
+                                              'correction': ' Un r nul '
                                                             'indique que les points sont dispersés '
                                                             'sans aucune direction privilégiée. Un '
                                                             "ajustement par une droite n'a alors "
@@ -1991,7 +1991,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Une valeur égale à '
                                                                                'une seule unité',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est la "
+                                              'correction': " C'est la "
                                                             'définition même du coefficient '
                                                             "directeur (la pente). Le nombre 'a' "
                                                             "indique de combien l'ordonnée y varie "
@@ -2016,7 +2016,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "l'axe des "
                                                                                'ordonnées',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est le "
+                                              'correction': " C'est le "
                                                             'critère visuel de validité. Si le '
                                                             'nuage ressemble à une ellipse '
                                                             "allongée, l'erreur commise en "
@@ -2042,7 +2042,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'à côté du cadre du '
                                                                                'graphique',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On étudie y '
+                                              'correction': ' On étudie y '
                                                             "(l'effet) en fonction de x (la cause "
                                                             'ou le temps). Par exemple : le '
                                                             "chiffre d'affaires (y) en fonction du "
@@ -2068,7 +2068,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'points présents '
                                                                                'sur le nuage',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** b est la valeur '
+                                              'correction': ' b est la valeur '
                                                             "de y lorsque x vaut 0. C'est "
                                                             "l'endroit où la droite d'ajustement "
                                                             "coupe l'axe vertical. On l'appelle "
@@ -2096,7 +2096,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'infini au sein '
                                                                                "d'une population",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Une épreuve de '
+                                              'correction': ' Une épreuve de '
                                                             "Bernoulli est une expérience qui n'a "
                                                             'que deux issues possibles, par '
                                                             "convention appelées 'Succès' (S) avec "
@@ -2123,7 +2123,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'arithmétique de la '
                                                                                'série de données',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** n désigne la '
+                                              'correction': ' n désigne la '
                                                             "taille de l'échantillon ou le nombre "
                                                             "de fois que l'on répète l'expérience "
                                                             'de Bernoulli de manière identique et '
@@ -2149,7 +2149,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'de zéro virgule '
                                                                                'cinq',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** Puisqu'il n'y a "
+                                              'correction': " Puisqu'il n'y a "
                                                             'que deux issues, la somme des '
                                                             'probabilités succès + échec vaut 1. '
                                                             'Donc q = 1 - p. Ici, 1 - 0,2 = 0,8.'},
@@ -2167,7 +2167,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Le produit n fois '
                                                                                'p fois q',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'espérance "
+                                              'correction': " L'espérance "
                                                             'E(X) = n * p représente le nombre '
                                                             "moyen de succès que l'on peut espérer "
                                                             "obtenir si on répète l'expérience un "
@@ -2192,7 +2192,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'par la même '
                                                                                'personne',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'indépendance "
+                                              'correction': " L'indépendance "
                                                             "signifie que le résultat d'un tirage "
                                                             'ne doit pas influencer le suivant. En '
                                                             'pratique, cela correspond à un tirage '
@@ -2219,7 +2219,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "l'expérience menée "
                                                                                'par le chercheur',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** X est une '
+                                              'correction': ' X est une '
                                                             'variable discrète qui compte les '
                                                             "succès. Elle peut prendre n'importe "
                                                             'quelle valeur entière comprise entre '
@@ -2243,7 +2243,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'zéro virgule '
                                                                                'vingt-cinq',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** P(X=0) signifie '
+                                              'correction': ' P(X=0) signifie '
                                                             'obtenir 0 succès, donc 3 échecs '
                                                             'consécutifs. Le calcul est q * q * q '
                                                             '= 0,5 * 0,5 * 0,5 = 0,125.'},
@@ -2267,7 +2267,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'pour la droite de '
                                                                                'régression',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Pdf '
+                                              'correction': ' Pdf '
                                                             '(Probability Density Function) sert '
                                                             'pour un point précis (ex: P(X=3)). '
                                                             'Cdf (Cumulative Distribution '
@@ -2291,7 +2291,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'égale au chiffre '
                                                                                'zéro',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Cette somme '
+                                              'correction': ' Cette somme '
                                                             'représente la probabilité de toutes '
                                                             'les issues possibles de la loi '
                                                             'binomiale. Comme il est certain que '
@@ -2319,7 +2319,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'par ordre '
                                                                                'décroissant',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est un outil "
+                                              'correction': " C'est un outil "
                                                             "visuel. Chaque 'branche' porte la "
                                                             "probabilité de l'issue. Pour calculer "
                                                             "la probabilité d'un chemin (une suite "
@@ -2347,7 +2347,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "d'obtenir au moins "
                                                                                'deux succès',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** P(X ≤ k) est '
+                                              'correction': ' P(X ≤ k) est '
                                                             'une probabilité cumulée. Elle '
                                                             "signifie 'obtenir au plus k succès'. "
                                                             'On additionne toutes les probabilités '
@@ -2371,7 +2371,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'commise par '
                                                                                "l'expérimentateur",
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Formule : σ = '
+                                              'correction': ' Formule : σ = '
                                                             '√(n * p * q). Comme en statistiques, '
                                                             "l'écart-type mesure si les succès "
                                                             'sont très concentrés autour de la '
@@ -2391,7 +2391,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                    {   'text': 'Un nombre moyen de '
                                                                                'cent succès',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** On calcule '
+                                              'correction': ' On calcule '
                                                             "l'espérance : E(X) = n * p = 100 * "
                                                             '0,1 = 10. Cela signifie que sur un '
                                                             "grand nombre d'échantillons de taille "
@@ -2414,7 +2414,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'succès p de '
                                                                                "l'épreuve",
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est la règle "
+                                              'correction': " C'est la règle "
                                                             "des nœuds. Puisqu'après un événement, "
                                                             "il est certain qu'un des résultats "
                                                             'suivants se produira, la somme des '
@@ -2442,7 +2442,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'correspondant à ne '
                                                                                'pas participer',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Le contraire de '
+                                              'correction': ' Le contraire de '
                                                             "'au moins un' (≥ 1) est 'aucun' (= "
                                                             '0). On utilise souvent cette astuce '
                                                             'de calcul : P(X ≥ 1) = 1 - P(X = 0). '
@@ -2467,7 +2467,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'pour le tracé des '
                                                                                'courbes',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** LinReg (Linear '
+                                              'correction': ' LinReg (Linear '
                                                             'Regression) calcule par la méthode '
                                                             'des moindres carrés les paramètres de '
                                                             "la droite d'ajustement y = ax + b. "
@@ -2492,7 +2492,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'rigoureusement '
                                                                                'identiques',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Ils sont '
+                                              'correction': ' Ils sont '
                                                             "incompatibles car ils n'ont aucune "
                                                             'carte en commun (une carte ne peut '
                                                             'pas être à la fois Cœur et Pique). '
@@ -2519,7 +2519,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                "infinité d'issues "
                                                                                'possibles au test',
                                                                        'isCorrect': False}],
-                                              'correction': '**Rappel de cours :** Les trois '
+                                              'correction': ' Les trois '
                                                             'conditions sont : 1. Une épreuve à '
                                                             'deux issues. 2. La répétition n fois. '
                                                             "3. L'indépendance des épreuves (la "
@@ -2544,7 +2544,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'finale de gagner à '
                                                                                'la fin du jeu',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** L'espérance est "
+                                              'correction': " L'espérance est "
                                                             'le gain moyen (ou le nombre moyen de '
                                                             "succès) que l'on obtiendrait en "
                                                             "répétant l'expérience à l'infini. Si "
@@ -2571,7 +2571,7 @@ quiz_data = {   'title': 'Quiz Bac Pro Mathématiques N°2 - Niveau Avancé (100
                                                                                'égale zéro) '
                                                                                'seulement',
                                                                        'isCorrect': False}],
-                                              'correction': "**Rappel de cours :** C'est une "
+                                              'correction': " C'est une "
                                                             'application de la règle des '
                                                             "événements contraires. L'événement "
                                                             "'au moins un succès' est le contraire "

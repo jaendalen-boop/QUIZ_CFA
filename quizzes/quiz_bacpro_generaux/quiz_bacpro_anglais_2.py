@@ -16,7 +16,7 @@ quiz_data = {
                         {"text": "Signaler l'entrée du personnel", "isCorrect": False},
                         {"text": "Message de bienvenue", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Caution' est le terme standard pour signaler un danger potentiel ou appeler à la prudence. C'est un faux-ami majeur : il ne signifie pas 'caution' (garantie financière) qui se dit 'deposit'. En atelier, il est souvent associé à des risques de chute ou de brûlure."
+                    "correction": " 'Caution' est le terme standard pour signaler un danger potentiel ou appeler à la prudence. C'est un faux-ami majeur : il ne signifie pas 'caution' (garantie financière) qui se dit 'deposit'. En atelier, il est souvent associé à des risques de chute ou de brûlure."
                 },
                 {
                     "questionNumber": 2,
@@ -27,7 +27,7 @@ quiz_data = {
                         {"text": "Contact lenses", "isCorrect": False},
                         {"text": "Sun glasses", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les 'safety goggles' sont des lunettes de protection étanches ou des masques intégraux. On les distingue des 'safety glasses' (lunettes de sécurité classiques). C'est un élément essentiel de l'équipement de protection individuelle dans les secteurs industriels et chimiques."
+                    "correction": " Les 'safety goggles' sont des lunettes de protection étanches ou des masques intégraux. On les distingue des 'safety glasses' (lunettes de sécurité classiques). C'est un élément essentiel de l'équipement de protection individuelle dans les secteurs industriels et chimiques."
                 },
                 {
                     "questionNumber": 3,
@@ -38,7 +38,7 @@ quiz_data = {
                         {"text": "Fire fighter", "isCorrect": False},
                         {"text": "Fire place", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Fire extinguisher' désigne l'appareil portatif pour éteindre un feu. Ne confondez pas avec 'fire engine' (le camion de pompiers) ou 'fire fighter' (le pompier lui-même). Connaître l'emplacement de l'extincteur fait partie des consignes de sécurité obligatoires."
+                    "correction": " 'Fire extinguisher' désigne l'appareil portatif pour éteindre un feu. Ne confondez pas avec 'fire engine' (le camion de pompiers) ou 'fire fighter' (le pompier lui-même). Connaître l'emplacement de l'extincteur fait partie des consignes de sécurité obligatoires."
                 },
                 {
                     "questionNumber": 4,
@@ -49,7 +49,7 @@ quiz_data = {
                         {"text": "Headphones", "isCorrect": False},
                         {"text": "Hair bands", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les 'ear plugs' sont les bouchons d'oreilles. Pour une protection plus forte, on utilise un 'ear defender' ou 'noise-cancelling earmuffs' (casque antibruit). La protection de l'audition est une obligation légale dans les environnements dépassant 80 décibels."
+                    "correction": " Les 'ear plugs' sont les bouchons d'oreilles. Pour une protection plus forte, on utilise un 'ear defender' ou 'noise-cancelling earmuffs' (casque antibruit). La protection de l'audition est une obligation légale dans les environnements dépassant 80 décibels."
                 },
                 {
                     "questionNumber": 5,
@@ -60,7 +60,7 @@ quiz_data = {
                         {"text": "Clean floor", "isCorrect": False},
                         {"text": "Big floor", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Wet' signifie mouillé. Le panneau 'Caution: Wet Floor' prévient les risques de glissade (slips). L'adjectif 'slippery' (glissant) est souvent ajouté pour renforcer le message de sécurité."
+                    "correction": " 'Wet' signifie mouillé. Le panneau 'Caution: Wet Floor' prévient les risques de glissade (slips). L'adjectif 'slippery' (glissant) est souvent ajouté pour renforcer le message de sécurité."
                 },
                 {
                     "questionNumber": 6,
@@ -71,7 +71,7 @@ quiz_data = {
                         {"text": "Public Paper Edition", "isCorrect": False},
                         {"text": "Plastic Pipe Engine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le PPE est l'équivalent de l'EPI (Équipement de Protection Individuelle). Il comprend le casque (helmet), les gants (gloves), les chaussures de sécurité (safety boots) et tout vêtement de haute visibilité (high-visibility vest)."
+                    "correction": " Le PPE est l'équivalent de l'EPI (Équipement de Protection Individuelle). Il comprend le casque (helmet), les gants (gloves), les chaussures de sécurité (safety boots) et tout vêtement de haute visibilité (high-visibility vest)."
                 },
                 {
                     "questionNumber": 7,
@@ -82,7 +82,7 @@ quiz_data = {
                         {"text": "Good luck", "isCorrect": False},
                         {"text": "Start now", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Out of order' est l'expression standard pour 'hors service'. Pour une panne plus complexe ou un bug informatique, on peut aussi utiliser 'broken down' ou 'malfunctioning'. Ne jamais tenter d'utiliser une machine portant cette étiquette."
+                    "correction": " 'Out of order' est l'expression standard pour 'hors service'. Pour une panne plus complexe ou un bug informatique, on peut aussi utiliser 'broken down' ou 'malfunctioning'. Ne jamais tenter d'utiliser une machine portant cette étiquette."
                 },
                 {
                     "questionNumber": 8,
@@ -93,7 +93,7 @@ quiz_data = {
                         {"text": "Finger tips", "isCorrect": False},
                         {"text": "Arm guards", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Gloves' désigne les gants. En milieu professionnel, ils peuvent être 'heat-resistant' (contre la chaleur), 'chemical-resistant' ou 'cut-resistant' (contre les coupures). Le choix des gants dépend de l'aléa identifié."
+                    "correction": " 'Gloves' désigne les gants. En milieu professionnel, ils peuvent être 'heat-resistant' (contre la chaleur), 'chemical-resistant' ou 'cut-resistant' (contre les coupures). Le choix des gants dépend de l'aléa identifié."
                 },
                 {
                     "questionNumber": 9,
@@ -104,7 +104,7 @@ quiz_data = {
                         {"text": "Entrance", "isCorrect": False},
                         {"text": "Toilet", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Emergency' renvoie à l'urgence. L' 'Emergency Exit' est la sortie dédiée exclusivement à l'évacuation. 'Way out' est une sortie banale. Ces panneaux sont obligatoirement rétro-éclairés pour rester visibles en cas de fumée."
+                    "correction": " 'Emergency' renvoie à l'urgence. L' 'Emergency Exit' est la sortie dédiée exclusivement à l'évacuation. 'Way out' est une sortie banale. Ces panneaux sont obligatoirement rétro-éclairés pour rester visibles en cas de fumée."
                 },
                 {
                     "questionNumber": 10,
@@ -115,7 +115,7 @@ quiz_data = {
                         {"text": "To make an effort", "isCorrect": False},
                         {"text": "To start", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To avoid' est le verbe central de la prévention des risques. En sécurité au travail, on cherche à 'avoid accidents' par la formation et le respect rigoureux des procédures (SOP - Standard Operating Procedures)."
+                    "correction": " 'To avoid' est le verbe central de la prévention des risques. En sécurité au travail, on cherche à 'avoid accidents' par la formation et le respect rigoureux des procédures (SOP - Standard Operating Procedures)."
                 },
                 {
                     "questionNumber": 11,
@@ -126,7 +126,7 @@ quiz_data = {
                         {"text": "Une opportunité", "isCorrect": False},
                         {"text": "Un divertissement", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Hazard' est un faux-ami. Le 'hasard' (la chance) se traduit par 'chance' ou 'luck'. Un 'hazard' est une source de danger. On parle de 'fire hazard' (risque d'incendie) ou de 'health hazard' (danger pour la santé)."
+                    "correction": " 'Hazard' est un faux-ami. Le 'hasard' (la chance) se traduit par 'chance' ou 'luck'. Un 'hazard' est une source de danger. On parle de 'fire hazard' (risque d'incendie) ou de 'health hazard' (danger pour la santé)."
                 },
                 {
                     "questionNumber": 12,
@@ -137,7 +137,7 @@ quiz_data = {
                         {"text": "Danger box", "isCorrect": False},
                         {"text": "Poison paper", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Waste' désigne les déchets. Le traitement des 'hazardous waste' (déchets dangereux) est soumis à une réglementation stricte pour éviter la pollution environnementale. Ne pas confondre avec 'rubbish' ou 'garbage' qui désignent les ordures ménagères."
+                    "correction": " 'Waste' désigne les déchets. Le traitement des 'hazardous waste' (déchets dangereux) est soumis à une réglementation stricte pour éviter la pollution environnementale. Ne pas confondre avec 'rubbish' ou 'garbage' qui désignent les ordures ménagères."
                 },
                 {
                     "questionNumber": 13,
@@ -148,7 +148,7 @@ quiz_data = {
                         {"text": "Blue", "isCorrect": False},
                         {"text": "Yellow", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En signalétique de sécurité : Rouge = Interdiction ou Matériel incendie. Jaune/Orange = Avertissement. Bleu = Obligation (ex: port du casque). Vert = Secours et Sauvetage."
+                    "correction": " En signalétique de sécurité : Rouge = Interdiction ou Matériel incendie. Jaune/Orange = Avertissement. Bleu = Obligation (ex: port du casque). Vert = Secours et Sauvetage."
                 },
                 {
                     "questionNumber": 14,
@@ -159,7 +159,7 @@ quiz_data = {
                         {"text": "Un kit de démarrage", "isCorrect": False},
                         {"text": "Une boîte à outils", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le 'First Aid Kit' contient les pansements (bandages), désinfectants et ciseaux nécessaires aux premiers soins. En entreprise, le 'First Aider' est le salarié formé pour intervenir en cas d'accident (SST en France)."
+                    "correction": " Le 'First Aid Kit' contient les pansements (bandages), désinfectants et ciseaux nécessaires aux premiers soins. En entreprise, le 'First Aider' est le salarié formé pour intervenir en cas d'accident (SST en France)."
                 },
                 {
                     "questionNumber": 15,
@@ -170,7 +170,7 @@ quiz_data = {
                         {"text": "A top head", "isCorrect": False},
                         {"text": "A helmet", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Hard hat' est le terme spécifique pour le casque de protection industrielle. 'Helmet' est plus général (vélo, pompier, moto). Le port du 'hard hat' est obligatoire dans toutes les zones de levage ou de construction."
+                    "correction": " 'Hard hat' est le terme spécifique pour le casque de protection industrielle. 'Helmet' est plus général (vélo, pompier, moto). Le port du 'hard hat' est obligatoire dans toutes les zones de levage ou de construction."
                 },
                 {
                     "questionNumber": 16,
@@ -181,7 +181,7 @@ quiz_data = {
                         {"text": "Noyade dans un réservoir", "isCorrect": False},
                         {"text": "Brûlure par vapeur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'High Voltage' signifie 'Haute Tension'. Ce panneau signale la présence de courants électriques mortels. Il est souvent accompagné d'un pictogramme en forme d'éclair noir sur fond jaune."
+                    "correction": " 'High Voltage' signifie 'Haute Tension'. Ce panneau signale la présence de courants électriques mortels. Il est souvent accompagné d'un pictogramme en forme d'éclair noir sur fond jaune."
                 },
                 {
                     "questionNumber": 17,
@@ -192,7 +192,7 @@ quiz_data = {
                         {"text": "Brûler des matériaux", "isCorrect": False},
                         {"text": "Enfouir des objets", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le recyclage fait partie de la politique environnementale des entreprises (CSR - Corporate Social Responsibility). Les mots clés sont 'Reuse' (réutiliser), 'Reduce' (réduire la consommation) et 'Recycle'."
+                    "correction": " Le recyclage fait partie de la politique environnementale des entreprises (CSR - Corporate Social Responsibility). Les mots clés sont 'Reuse' (réutiliser), 'Reduce' (réduire la consommation) et 'Recycle'."
                 },
                 {
                     "questionNumber": 18,
@@ -203,7 +203,7 @@ quiz_data = {
                         {"text": "High heels", "isCorrect": False},
                         {"text": "Running shoes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les 'safety boots' (ou 'steel-toe boots') protègent les pieds contre la chute d'objets lourds et la perforation. Elles sont obligatoires dans la plupart des secteurs techniques (logistique, BTP, maintenance)."
+                    "correction": " Les 'safety boots' (ou 'steel-toe boots') protègent les pieds contre la chute d'objets lourds et la perforation. Elles sont obligatoires dans la plupart des secteurs techniques (logistique, BTP, maintenance)."
                 },
                 {
                     "questionNumber": 19,
@@ -214,7 +214,7 @@ quiz_data = {
                         {"text": "Slowly", "isCorrect": False},
                         {"text": "Sticky", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Slippery' est l'adjectif. Le verbe glisser se dit 'to slip'. L'expression 'Watch your step' (Faites attention où vous marchez) accompagne souvent les avertissements sur les zones glissantes."
+                    "correction": " 'Slippery' est l'adjectif. Le verbe glisser se dit 'to slip'. L'expression 'Watch your step' (Faites attention où vous marchez) accompagne souvent les avertissements sur les zones glissantes."
                 },
                 {
                     "questionNumber": 20,
@@ -225,7 +225,7 @@ quiz_data = {
                         {"text": "Zone naturelle sans danger", "isCorrect": False},
                         {"text": "Fumée polluante", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Équivalent de 'eco-friendly'. Cela désigne des produits, des matériaux ou des processus qui ont un impact réduit sur la planète. C'est un argument de vente et un engagement de durabilité (sustainability)."
+                    "correction": " Équivalent de 'eco-friendly'. Cela désigne des produits, des matériaux ou des processus qui ont un impact réduit sur la planète. C'est un argument de vente et un engagement de durabilité (sustainability)."
                 }
             ]
         },
@@ -244,7 +244,7 @@ quiz_data = {
                         {"text": "The Bus", "isCorrect": False},
                         {"text": "The Box", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'The Boss' est le terme informel courant. En entreprise, on utilise plus volontiers 'Manager', 'Supervisor' ou 'Head of department'. 'Base' est un faux-ami graphique."
+                    "correction": " 'The Boss' est le terme informel courant. En entreprise, on utilise plus volontiers 'Manager', 'Supervisor' ou 'Head of department'. 'Base' est un faux-ami graphique."
                 },
                 {
                     "questionNumber": 22,
@@ -255,7 +255,7 @@ quiz_data = {
                         {"text": "Stage d'été", "isCorrect": False},
                         {"text": "Travail d'intérim", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Full-time' correspond généralement à 35-40 heures par semaine selon les pays. Son opposé est 'Part-time'. Un 'permanent job' est un CDI, tandis qu'un 'temporary job' est un CDD."
+                    "correction": " 'Full-time' correspond généralement à 35-40 heures par semaine selon les pays. Son opposé est 'Part-time'. Un 'permanent job' est un CDI, tandis qu'un 'temporary job' est un CDD."
                 },
                 {
                     "questionNumber": 23,
@@ -266,7 +266,7 @@ quiz_data = {
                         {"text": "Sale", "isCorrect": False},
                         {"text": "Sell", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Salary' est le salaire fixe mensuel des cadres et employés. 'Wages' désigne la paye à l'heure ou à la semaine (souvent pour les ouvriers). 'Salt' (sel) est l'origine étymologique du mot mais ne désigne plus la paye."
+                    "correction": " 'Salary' est le salaire fixe mensuel des cadres et employés. 'Wages' désigne la paye à l'heure ou à la semaine (souvent pour les ouvriers). 'Salt' (sel) est l'origine étymologique du mot mais ne désigne plus la paye."
                 },
                 {
                     "questionNumber": 24,
@@ -277,7 +277,7 @@ quiz_data = {
                         {"text": "A collection", "isCorrect": False},
                         {"text": "A caller", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Attention : 'college' (avec un 'e') signifie université ou faculté en anglais américain. Un collègue de travail se dit 'colleague' (UK) ou 'coworker' (US)."
+                    "correction": " Attention : 'college' (avec un 'e') signifie université ou faculté en anglais américain. Un collègue de travail se dit 'colleague' (UK) ou 'coworker' (US)."
                 },
                 {
                     "questionNumber": 25,
@@ -288,7 +288,7 @@ quiz_data = {
                         {"text": "Louer", "isCorrect": False},
                         {"text": "Vendre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To hire' ou 'to employ' signifie recruter. Son contraire est 'to fire' (licencier de façon brutale) ou 'to dismiss' (terme plus formel)."
+                    "correction": " 'To hire' ou 'to employ' signifie recruter. Son contraire est 'to fire' (licencier de façon brutale) ou 'to dismiss' (terme plus formel)."
                 },
                 {
                     "questionNumber": 26,
@@ -299,7 +299,7 @@ quiz_data = {
                         {"text": "A menu", "isCorrect": False},
                         {"text": "A recipe", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Resume' est utilisé aux USA, 'CV' (Curriculum Vitae) est utilisé au Royaume-Uni. Ce document doit toujours être accompagné d'une 'cover letter' (lettre de motivation)."
+                    "correction": " 'Resume' est utilisé aux USA, 'CV' (Curriculum Vitae) est utilisé au Royaume-Uni. Ce document doit toujours être accompagné d'une 'cover letter' (lettre de motivation)."
                 },
                 {
                     "questionNumber": 27,
@@ -310,7 +310,7 @@ quiz_data = {
                         {"text": "Un internat", "isCorrect": False},
                         {"text": "Un accès Internet", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Internship' (US) ou 'Work placement' (UK). Le stagiaire est un 'intern' ou un 'trainee'. C'est une étape cruciale pour valider un diplôme professionnel comme le Bac Pro."
+                    "correction": " 'Internship' (US) ou 'Work placement' (UK). Le stagiaire est un 'intern' ou un 'trainee'. C'est une étape cruciale pour valider un diplôme professionnel comme le Bac Pro."
                 },
                 {
                     "questionNumber": 28,
@@ -321,7 +321,7 @@ quiz_data = {
                         {"text": "Overlap", "isCorrect": False},
                         {"text": "Overview", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Overtime' désigne les heures faites en plus. Elles sont souvent payées avec un bonus ('overtime pay'). On utilise le verbe 'to work overtime'."
+                    "correction": " 'Overtime' désigne les heures faites en plus. Elles sont souvent payées avec un bonus ('overtime pay'). On utilise le verbe 'to work overtime'."
                 },
                 {
                     "questionNumber": 29,
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "Une école", "isCorrect": False},
                         {"text": "Un ciel nuageux", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Skill' = compétence. On distingue les 'hard skills' (techniques : savoir réparer, coder) et les 'soft skills' (comportementales : savoir écouter, travailler en équipe)."
+                    "correction": " 'Skill' = compétence. On distingue les 'hard skills' (techniques : savoir réparer, coder) et les 'soft skills' (comportementales : savoir écouter, travailler en équipe)."
                 },
                 {
                     "questionNumber": 30,
@@ -343,7 +343,7 @@ quiz_data = {
                         {"text": "A job preview", "isCorrect": False},
                         {"text": "A job view", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Interview' est le terme pour l'entretien. Le candidat est l' 'interviewee' et le recruteur l' 'interviewer'. C'est l'étape finale du processus de recrutement (recruitment process)."
+                    "correction": " 'Interview' est le terme pour l'entretien. Le candidat est l' 'interviewee' et le recruteur l' 'interviewer'. C'est l'étape finale du processus de recrutement (recruitment process)."
                 },
                 {
                     "questionNumber": 31,
@@ -354,7 +354,7 @@ quiz_data = {
                         {"text": "Ligne en panne", "isCorrect": False},
                         {"text": "Titre de journal", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Deadline' désigne le moment où un projet doit être impérativement rendu. On utilise l'expression 'to meet a deadline' (respecter les délais) ou 'to miss a deadline' (être en retard)."
+                    "correction": " 'Deadline' désigne le moment où un projet doit être impérativement rendu. On utilise l'expression 'to meet a deadline' (respecter les délais) ou 'to miss a deadline' (être en retard)."
                 },
                 {
                     "questionNumber": 32,
@@ -365,7 +365,7 @@ quiz_data = {
                         {"text": "To be busy", "isCorrect": False},
                         {"text": "To be happy", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Unemployed' vient de 'employment' avec le préfixe négatif 'un-'. On peut aussi dire 'to be out of work' ou 'to be on the dole' (plus familier en UK pour désigner les allocations)."
+                    "correction": " 'Unemployed' vient de 'employment' avec le préfixe négatif 'un-'. On peut aussi dire 'to be out of work' ou 'to be on the dole' (plus familier en UK pour désigner les allocations)."
                 },
                 {
                     "questionNumber": 33,
@@ -376,7 +376,7 @@ quiz_data = {
                         {"text": "Un magasin", "isCorrect": False},
                         {"text": "Une usine à gaz", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un 'warehouse' est un bâtiment logistique central. On y trouve des 'forklifts' (chariots élévateurs) et des 'racks' (étagères de stockage). La gestion d'entrepôt se dit 'warehousing'."
+                    "correction": " Un 'warehouse' est un bâtiment logistique central. On y trouve des 'forklifts' (chariots élévateurs) et des 'racks' (étagères de stockage). La gestion d'entrepôt se dit 'warehousing'."
                 },
                 {
                     "questionNumber": 34,
@@ -387,7 +387,7 @@ quiz_data = {
                         {"text": "A chain work", "isCorrect": False},
                         {"text": "A line dance", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Assembly line' est le terme technique. Il fait référence à l'organisation du travail où le produit circule devant les ouvriers qui effectuent des tâches répétitives (Fordisme/Toyotisme)."
+                    "correction": " 'Assembly line' est le terme technique. Il fait référence à l'organisation du travail où le produit circule devant les ouvriers qui effectuent des tâches répétitives (Fordisme/Toyotisme)."
                 },
                 {
                     "questionNumber": 35,
@@ -398,7 +398,7 @@ quiz_data = {
                         {"text": "Une pluie fine", "isCorrect": False},
                         {"text": "Un traitement médical", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Training' est indispensable pour monter en compétences. On parle de 'vocational training' pour la formation professionnelle. Le formateur est le 'trainer'."
+                    "correction": " 'Training' est indispensable pour monter en compétences. On parle de 'vocational training' pour la formation professionnelle. Le formateur est le 'trainer'."
                 },
                 {
                     "questionNumber": 36,
@@ -409,7 +409,7 @@ quiz_data = {
                         {"text": "A costume", "isCorrect": False},
                         {"text": "A consumer", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Customer' est celui qui achète dans un commerce. 'Client' est plutôt utilisé pour les professions libérales (avocat, comptable). 'Consumer' est le terme général en économie."
+                    "correction": " 'Customer' est celui qui achète dans un commerce. 'Client' est plutôt utilisé pour les professions libérales (avocat, comptable). 'Consumer' est le terme général en économie."
                 },
                 {
                     "questionNumber": 37,
@@ -420,7 +420,7 @@ quiz_data = {
                         {"text": "Le travail du thé", "isCorrect": False},
                         {"text": "Le travail dur", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Teamwork' est une compétence très recherchée par les employeurs. Cela implique la coopération et la communication. On utilise souvent l'expression 'a team player' pour désigner quelqu'un qui travaille bien en groupe."
+                    "correction": " 'Teamwork' est une compétence très recherchée par les employeurs. Cela implique la coopération et la communication. On utilise souvent l'expression 'a team player' pour désigner quelqu'un qui travaille bien en groupe."
                 },
                 {
                     "questionNumber": 38,
@@ -431,7 +431,7 @@ quiz_data = {
                         {"text": "To design a product", "isCorrect": False},
                         {"text": "To begin a mission", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To resign' est l'acte formel de démission. 'To quit' est plus courant à l'oral. Attention : 'To sign' signifie signer."
+                    "correction": " 'To resign' est l'acte formel de démission. 'To quit' est plus courant à l'oral. Attention : 'To sign' signifie signer."
                 },
                 {
                     "questionNumber": 39,
@@ -442,7 +442,7 @@ quiz_data = {
                         {"text": "Une chambre à coucher", "isCorrect": False},
                         {"text": "Une cantine", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To meet' signifie se rencontrer ou se réunir. La 'meeting room' est équipée pour les présentations. Une réunion se dit simplement 'a meeting'."
+                    "correction": " 'To meet' signifie se rencontrer ou se réunir. La 'meeting room' est équipée pour les présentations. Une réunion se dit simplement 'a meeting'."
                 },
                 {
                     "questionNumber": 40,
@@ -453,7 +453,7 @@ quiz_data = {
                         {"text": "A bad holiday", "isCorrect": False},
                         {"text": "A doctor time", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Sick' = malade. 'Leave' = permission d'absence. Si vous êtes malade, vous appelez votre patron pour dire 'I am on sick leave'. On parle aussi de 'sick pay' (indemnités journalières)."
+                    "correction": " 'Sick' = malade. 'Leave' = permission d'absence. Si vous êtes malade, vous appelez votre patron pour dire 'I am on sick leave'. On parle aussi de 'sick pay' (indemnités journalières)."
                 }
             ]
         },
@@ -472,7 +472,7 @@ quiz_data = {
                         {"text": "A hummer", "isCorrect": False},
                         {"text": "A hanger", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Hammer' est l'outil. Le geste est 'to hit' (frapper). Un 'sledgehammer' désigne une masse pour les travaux plus lourds."
+                    "correction": " 'Hammer' est l'outil. Le geste est 'to hit' (frapper). Un 'sledgehammer' désigne une masse pour les travaux plus lourds."
                 },
                 {
                     "questionNumber": 42,
@@ -483,7 +483,7 @@ quiz_data = {
                         {"text": "Un chauffeur", "isCorrect": False},
                         {"text": "Une perceuse", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Screw' = vis. 'Driver' = celui qui conduit/dirige. Il existe des 'flat-head screwdrivers' (plats) et des 'Phillips screwdrivers' (cruciformes)."
+                    "correction": " 'Screw' = vis. 'Driver' = celui qui conduit/dirige. Il existe des 'flat-head screwdrivers' (plats) et des 'Phillips screwdrivers' (cruciformes)."
                 },
                 {
                     "questionNumber": 43,
@@ -494,7 +494,7 @@ quiz_data = {
                         {"text": "A door key", "isCorrect": False},
                         {"text": "A wheel key", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Spanner' est utilisé au Royaume-Uni, 'Wrench' aux États-Unis. 'Adjustable' signifie qu'on peut régler l'ouverture pour l'adapter à la taille de l'écrou (nut)."
+                    "correction": " 'Spanner' est utilisé au Royaume-Uni, 'Wrench' aux États-Unis. 'Adjustable' signifie qu'on peut régler l'ouverture pour l'adapter à la taille de l'écrou (nut)."
                 },
                 {
                     "questionNumber": 44,
@@ -505,7 +505,7 @@ quiz_data = {
                         {"text": "Wall", "isCorrect": False},
                         {"text": "Wind", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Wood' est la matière. 'Timber' ou 'Lumber' désigne le bois de construction (poutres, planches). L'adjectif est 'wooden' (en bois)."
+                    "correction": " 'Wood' est la matière. 'Timber' ou 'Lumber' désigne le bois de construction (poutres, planches). L'adjectif est 'wooden' (en bois)."
                 },
                 {
                     "questionNumber": 45,
@@ -516,7 +516,7 @@ quiz_data = {
                         {"text": "Le vol", "isCorrect": False},
                         {"text": "Une pierre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Steel' est indispensable dans l'industrie. 'Stainless steel' signifie acier inoxydable (inox). Attention au verbe homophone 'to steal' qui signifie voler."
+                    "correction": " 'Steel' est indispensable dans l'industrie. 'Stainless steel' signifie acier inoxydable (inox). Attention au verbe homophone 'to steal' qui signifie voler."
                 },
                 {
                     "questionNumber": 46,
@@ -527,7 +527,7 @@ quiz_data = {
                         {"text": "A mill", "isCorrect": False},
                         {"text": "A bill", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Drill' est l'outil. Le verbe est 'to drill'. Un 'cordless drill' est une perceuse sans fil (sur batterie), très courante sur les chantiers."
+                    "correction": " 'Drill' est l'outil. Le verbe est 'to drill'. Un 'cordless drill' est une perceuse sans fil (sur batterie), très courante sur les chantiers."
                 },
                 {
                     "questionNumber": 47,
@@ -538,7 +538,7 @@ quiz_data = {
                         {"text": "A bolt", "isCorrect": False},
                         {"text": "A nut", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Screw' = vis. 'Nail' = clou. 'Bolt' = boulon. Pour fixer solidement, on utilise souvent un 'bolt' et une 'nut' (un écrou)."
+                    "correction": " 'Screw' = vis. 'Nail' = clou. 'Bolt' = boulon. Pour fixer solidement, on utilise souvent un 'bolt' et une 'nut' (un écrou)."
                 },
                 {
                     "questionNumber": 48,
@@ -549,7 +549,7 @@ quiz_data = {
                         {"text": "Manger", "isCorrect": False},
                         {"text": "Mentir", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise un 'tape measure' (mètre ruban) ou un 'ruler' (règle). En mécanique de précision, on utilise un 'calliper' (pied à coulisse)."
+                    "correction": " On utilise un 'tape measure' (mètre ruban) ou un 'ruler' (règle). En mécanique de précision, on utilise un 'calliper' (pied à coulisse)."
                 },
                 {
                     "questionNumber": 49,
@@ -560,7 +560,7 @@ quiz_data = {
                         {"text": "Cement", "isCorrect": False},
                         {"text": "Brick", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Cement' est l'ingrédient (la poudre). 'Concrete' est le matériau final (mélange de ciment, sable, eau et graviers). On parle de 'reinforced concrete' pour le béton armé."
+                    "correction": " 'Cement' est l'ingrédient (la poudre). 'Concrete' est le matériau final (mélange de ciment, sable, eau et graviers). On parle de 'reinforced concrete' pour le béton armé."
                 },
                 {
                     "questionNumber": 50,
@@ -571,7 +571,7 @@ quiz_data = {
                         {"text": "To cut", "isCorrect": False},
                         {"text": "To paint", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To weld' = souder. Le soudeur est un 'welder'. L'équipement de protection indispensable est le 'welding mask' (masque de soudure) pour protéger les yeux des UV."
+                    "correction": " 'To weld' = souder. Le soudeur est un 'welder'. L'équipement de protection indispensable est le 'welding mask' (masque de soudure) pour protéger les yeux des UV."
                 },
                 {
                     "questionNumber": 51,
@@ -582,7 +582,7 @@ quiz_data = {
                         {"text": "Un moteur", "isCorrect": False},
                         {"text": "Un fil électrique", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Blade' désigne la partie tranchante. Une 'saw blade' est une lame de scie. Une 'razor blade' est une lame de rasoir. C'est une pièce d'usure qu'il faut changer régulièrement."
+                    "correction": " 'Blade' désigne la partie tranchante. Une 'saw blade' est une lame de scie. Une 'razor blade' est une lame de rasoir. C'est une pièce d'usure qu'il faut changer régulièrement."
                 },
                 {
                     "questionNumber": 52,
@@ -593,7 +593,7 @@ quiz_data = {
                         {"text": "A desk", "isCorrect": False},
                         {"text": "A chair", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Workbench' est composé de 'work' (travail) et 'bench' (banc). C'est la table robuste sur laquelle l'artisan ou l'ouvrier fixe ses outils comme l'étau (vise)."
+                    "correction": " 'Workbench' est composé de 'work' (travail) et 'bench' (banc). C'est la table robuste sur laquelle l'artisan ou l'ouvrier fixe ses outils comme l'étau (vise)."
                 },
                 {
                     "questionNumber": 53,
@@ -604,7 +604,7 @@ quiz_data = {
                         {"text": "Rubber", "isCorrect": False},
                         {"text": "Paper", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Mot transparent. On distingue les plastiques 'recyclable' des 'single-use' (à usage unique). Le plastique est omniprésent dans les composants techniques."
+                    "correction": " Mot transparent. On distingue les plastiques 'recyclable' des 'single-use' (à usage unique). Le plastique est omniprésent dans les composants techniques."
                 },
                 {
                     "questionNumber": 54,
@@ -615,7 +615,7 @@ quiz_data = {
                         {"text": "Outil neuf", "isCorrect": False},
                         {"text": "Produit fini", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Raw' signifie 'cru' ou 'non transformé'. Exemples : iron ore (minerai de fer), crude oil (pétrole brut), wood (bois). Les 'raw materials' sont le point de départ de la chaîne de production."
+                    "correction": " 'Raw' signifie 'cru' ou 'non transformé'. Exemples : iron ore (minerai de fer), crude oil (pétrole brut), wood (bois). Les 'raw materials' sont le point de départ de la chaîne de production."
                 },
                 {
                     "questionNumber": 55,
@@ -626,7 +626,7 @@ quiz_data = {
                         {"text": "To buy", "isCorrect": False},
                         {"text": "To clean", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To repair' est formel. 'To fix' est très utilisé à l'oral. On dit aussi 'to mend' pour réparer un vêtement ou un objet simple. Le technicien de maintenance fait des 'repairs'."
+                    "correction": " 'To repair' est formel. 'To fix' est très utilisé à l'oral. On dit aussi 'to mend' pour réparer un vêtement ou un objet simple. Le technicien de maintenance fait des 'repairs'."
                 },
                 {
                     "questionNumber": 56,
@@ -637,7 +637,7 @@ quiz_data = {
                         {"text": "Bridge", "isCorrect": False},
                         {"text": "Brake", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Brick' est le matériau. Un 'bricklayer' est un maçon. Attention aux homophones : 'break' (casser/pause) et 'brake' (frein)."
+                    "correction": " 'Brick' est le matériau. Un 'bricklayer' est un maçon. Attention aux homophones : 'break' (casser/pause) et 'brake' (frein)."
                 },
                 {
                     "questionNumber": 57,
@@ -648,7 +648,7 @@ quiz_data = {
                         {"text": "Coudre", "isCorrect": False},
                         {"text": "Cuire", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Verbe irrégulier (Cut / Cut / Cut). On utilise des 'cutters' ou des 'scissors' (ciseaux). En atelier, on parle de 'cutting tools'."
+                    "correction": " Verbe irrégulier (Cut / Cut / Cut). On utilise des 'cutters' ou des 'scissors' (ciseaux). En atelier, on parle de 'cutting tools'."
                 },
                 {
                     "questionNumber": 58,
@@ -659,7 +659,7 @@ quiz_data = {
                         {"text": "A pen", "isCorrect": False},
                         {"text": "A pipe", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Paintbrush' est composé de 'paint' et 'brush' (brosse). 'Pencil' est le crayon à papier. Le geste est 'to brush' (brosser)."
+                    "correction": " 'Paintbrush' est composé de 'paint' et 'brush' (brosse). 'Pencil' est le crayon à papier. Le geste est 'to brush' (brosser)."
                 },
                 {
                     "questionNumber": 59,
@@ -670,7 +670,7 @@ quiz_data = {
                         {"text": "Color", "isCorrect": False},
                         {"text": "Corner", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Copper' est le cuivre. C'est un métal essentiel pour les 'electric wires' (fils électriques). Ne pas confondre avec 'brass' (laiton) ou 'bronze'."
+                    "correction": " 'Copper' est le cuivre. C'est un métal essentiel pour les 'electric wires' (fils électriques). Ne pas confondre avec 'brass' (laiton) ou 'bronze'."
                 },
                 {
                     "questionNumber": 60,
@@ -681,7 +681,7 @@ quiz_data = {
                         {"text": "Boîte de nuit", "isCorrect": False},
                         {"text": "Boîte de conserve", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La 'toolbox' contient l'équipement de base du technicien. À plus grande échelle, on parle de 'tool kit'. Ranger ses outils est une règle de base de la sécurité 5S."
+                    "correction": " La 'toolbox' contient l'équipement de base du technicien. À plus grande échelle, on parle de 'tool kit'. Ranger ses outils est une règle de base de la sécurité 5S."
                 }
             ]
         },
@@ -700,7 +700,7 @@ quiz_data = {
                         {"text": "Bus stop", "isCorrect": False},
                         {"text": "Gas station", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Station' désigne généralement la gare ferroviaire. Le quai se dit 'platform'. Les passagers qui font le trajet quotidien domicile-travail sont des 'commuters'."
+                    "correction": " 'Station' désigne généralement la gare ferroviaire. Le quai se dit 'platform'. Les passagers qui font le trajet quotidien domicile-travail sont des 'commuters'."
                 },
                 {
                     "questionNumber": 62,
@@ -711,7 +711,7 @@ quiz_data = {
                         {"text": "Aller tout droit", "isCorrect": False},
                         {"text": "Demi-tour", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Vocabulaire du guidage : 'Left' = gauche. 'Right' = droite. 'Straight on' = tout droit. 'U-turn' = demi-tour. On utilise souvent l'impératif pour donner ces instructions."
+                    "correction": " Vocabulaire du guidage : 'Left' = gauche. 'Right' = droite. 'Straight on' = tout droit. 'U-turn' = demi-tour. On utilise souvent l'impératif pour donner ces instructions."
                 },
                 {
                     "questionNumber": 63,
@@ -722,7 +722,7 @@ quiz_data = {
                         {"text": "Move sideways", "isCorrect": False},
                         {"text": "Roundabout", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Straight on' ou 'straight ahead'. Ne pas confondre avec 'right' (droite) qui se prononce presque pareil que 'straight' pour une oreille peu exercée."
+                    "correction": " 'Straight on' ou 'straight ahead'. Ne pas confondre avec 'right' (droite) qui se prononce presque pareil que 'straight' pour une oreille peu exercée."
                 },
                 {
                     "questionNumber": 64,
@@ -733,7 +733,7 @@ quiz_data = {
                         {"text": "Fast ticket", "isCorrect": False},
                         {"text": "Free ticket", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** UK : 'Return ticket' / US : 'Round-trip ticket'. Un aller simple se dit 'single ticket' (UK) ou 'one-way ticket' (US). C'est une distinction importante à la billetterie."
+                    "correction": " UK : 'Return ticket' / US : 'Round-trip ticket'. Un aller simple se dit 'single ticket' (UK) ou 'one-way ticket' (US). C'est une distinction importante à la billetterie."
                 },
                 {
                     "questionNumber": 65,
@@ -744,7 +744,7 @@ quiz_data = {
                         {"text": "Tunnel piéton", "isCorrect": False},
                         {"text": "Type de sandwich", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Londres = 'The Underground' (ou 'The Tube'). New York = 'The Subway'. Paris = 'The Metro'. Bien que 'Subway' soit aussi une marque de sandwichs, dans un contexte de transport, il s'agit du métro."
+                    "correction": " Londres = 'The Underground' (ou 'The Tube'). New York = 'The Subway'. Paris = 'The Metro'. Bien que 'Subway' soit aussi une marque de sandwichs, dans un contexte de transport, il s'agit du métro."
                 },
                 {
                     "questionNumber": 66,
@@ -755,7 +755,7 @@ quiz_data = {
                         {"text": "About", "isCorrect": False},
                         {"text": "Above", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To go abroad' = aller à l'étranger. Attention à l'homophone 'aboard' (à bord). Un étranger (la personne) se dit 'a foreigner'."
+                    "correction": " 'To go abroad' = aller à l'étranger. Attention à l'homophone 'aboard' (à bord). Un étranger (la personne) se dit 'a foreigner'."
                 },
                 {
                     "questionNumber": 67,
@@ -766,7 +766,7 @@ quiz_data = {
                         {"text": "Costumes", "isCorrect": False},
                         {"text": "Curtains", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Customs' prend toujours un 's'. Sans 's', 'custom' signifie une coutume ou une habitude. Le passage de la douane se dit 'to go through customs'."
+                    "correction": " 'Customs' prend toujours un 's'. Sans 's', 'custom' signifie une coutume ou une habitude. Le passage de la douane se dit 'to go through customs'."
                 },
                 {
                     "questionNumber": 68,
@@ -777,7 +777,7 @@ quiz_data = {
                         {"text": "Une bagarre", "isCorrect": False},
                         {"text": "Une fuite", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Flight number' = numéro de vol. L'hôtesse de l'air/steward se dit 'flight attendant'. Le verbe est 'to fly' (voler)."
+                    "correction": " 'Flight number' = numéro de vol. L'hôtesse de l'air/steward se dit 'flight attendant'. Le verbe est 'to fly' (voler)."
                 },
                 {
                     "questionNumber": 69,
@@ -788,7 +788,7 @@ quiz_data = {
                         {"text": "Damages", "isCorrect": False},
                         {"text": "Garbage", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Luggage' est indénombrable (on ne met jamais de 's'). Pour compter, on dit 'a piece of luggage'. 'Baggage' est utilisé de la même manière, plus fréquent aux USA."
+                    "correction": " 'Luggage' est indénombrable (on ne met jamais de 's'). Pour compter, on dit 'a piece of luggage'. 'Baggage' est utilisé de la même manière, plus fréquent aux USA."
                 },
                 {
                     "questionNumber": 70,
@@ -799,7 +799,7 @@ quiz_data = {
                         {"text": "To sell a car", "isCorrect": False},
                         {"text": "To wash a car", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Car rental' désigne la location de voiture. 'To hire' est aussi utilisé (UK). Le contrat de location est le 'rental agreement'."
+                    "correction": " 'Car rental' désigne la location de voiture. 'To hire' est aussi utilisé (UK). Le contrat de location est le 'rental agreement'."
                 },
                 {
                     "questionNumber": 71,
@@ -810,7 +810,7 @@ quiz_data = {
                         {"text": "Le retard", "isCorrect": False},
                         {"text": "L'annulation", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Affiché sur les écrans d'aéroport/gare. Son contraire est 'Arrival' (arrivée). La salle de départ est la 'departure lounge'."
+                    "correction": " Affiché sur les écrans d'aéroport/gare. Son contraire est 'Arrival' (arrivée). La salle de départ est la 'departure lounge'."
                 },
                 {
                     "questionNumber": 72,
@@ -821,7 +821,7 @@ quiz_data = {
                         {"text": "Credit card", "isCorrect": False},
                         {"text": "Map", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Boarding pass'. Le verbe 'to board' signifie monter à bord (avion ou bateau). Le moment où l'on monte est le 'boarding time'."
+                    "correction": " 'Boarding pass'. Le verbe 'to board' signifie monter à bord (avion ou bateau). Le moment où l'on monte est le 'boarding time'."
                 },
                 {
                     "questionNumber": 73,
@@ -832,7 +832,7 @@ quiz_data = {
                         {"text": "To cook", "isCorrect": False},
                         {"text": "To hook", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To book' vient de l'époque où l'on écrivait les noms dans un livre (book) de registre. Une réservation se dit 'a booking' ou 'a reservation'."
+                    "correction": " 'To book' vient de l'époque où l'on écrivait les noms dans un livre (book) de registre. Une réservation se dit 'a booking' ou 'a reservation'."
                 },
                 {
                     "questionNumber": 74,
@@ -843,7 +843,7 @@ quiz_data = {
                         {"text": "Panne de feu", "isCorrect": False},
                         {"text": "Confiture", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Traffic jam' ou 'congestion'. 'Jam' signifie ici coincé/bloqué. C'est le cauchemar des 'commuters' (travailleurs quotidiens)."
+                    "correction": " 'Traffic jam' ou 'congestion'. 'Jam' signifie ici coincé/bloqué. C'est le cauchemar des 'commuters' (travailleurs quotidiens)."
                 },
                 {
                     "questionNumber": 75,
@@ -854,7 +854,7 @@ quiz_data = {
                         {"text": "School trip", "isCorrect": False},
                         {"text": "Boat trip", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Business trip'. On dit aussi 'to travel on business'. Ne pas confondre avec 'travel' (le voyage en général) et 'journey' (le trajet)."
+                    "correction": " 'Business trip'. On dit aussi 'to travel on business'. Ne pas confondre avec 'travel' (le voyage en général) et 'journey' (le trajet)."
                 },
                 {
                     "questionNumber": 76,
@@ -865,7 +865,7 @@ quiz_data = {
                         {"text": "The street", "isCorrect": False},
                         {"text": "The floor", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Platform' est le quai de gare. 'The train is standing at platform 4'. Le quai d'un port (pour les bateaux) se dit 'pier' ou 'quay' (prononcé comme 'key')."
+                    "correction": " 'Platform' est le quai de gare. 'The train is standing at platform 4'. Le quai d'un port (pour les bateaux) se dit 'pier' ou 'quay' (prononcé comme 'key')."
                 },
                 {
                     "questionNumber": 77,
@@ -876,7 +876,7 @@ quiz_data = {
                         {"text": "Une annulation", "isCorrect": False},
                         {"text": "Une vitesse excessive", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Delay' (retard). 'My flight is delayed' (mon vol est retardé). C'est un terme essentiel pour comprendre les annonces dans les lieux de transport."
+                    "correction": " 'Delay' (retard). 'My flight is delayed' (mon vol est retardé). C'est un terme essentiel pour comprendre les annonces dans les lieux de transport."
                 },
                 {
                     "questionNumber": 78,
@@ -887,7 +887,7 @@ quiz_data = {
                         {"text": "Guest house", "isCorrect": False},
                         {"text": "Camping site", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Youth hostel' (souvent abrégé YHA). C'est un mode d'hébergement économique prisé par les étudiants et les voyageurs en 'gap year' (année de césure)."
+                    "correction": " 'Youth hostel' (souvent abrégé YHA). C'est un mode d'hébergement économique prisé par les étudiants et les voyageurs en 'gap year' (année de césure)."
                 },
                 {
                     "questionNumber": 79,
@@ -898,7 +898,7 @@ quiz_data = {
                         {"text": "Car lights", "isCorrect": False},
                         {"text": "Stop signs", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Traffic lights'. Les couleurs sont 'red', 'amber' (orange/ambre) et 'green'. Un carrefour se dit 'crossroads' ou 'intersection'."
+                    "correction": " 'Traffic lights'. Les couleurs sont 'red', 'amber' (orange/ambre) et 'green'. Un carrefour se dit 'crossroads' ou 'intersection'."
                 },
                 {
                     "questionNumber": 80,
@@ -909,7 +909,7 @@ quiz_data = {
                         {"text": "Arriver à destination", "isCorrect": False},
                         {"text": "Être parti", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'I am lost' (je suis perdu). 'Lost property' désigne le bureau des objets trouvés dans les lieux publics. C'est le participe passé du verbe 'to lose' (perdre)."
+                    "correction": " 'I am lost' (je suis perdu). 'Lost property' désigne le bureau des objets trouvés dans les lieux publics. C'est le participe passé du verbe 'to lose' (perdre)."
                 }
             ]
         },
@@ -928,7 +928,7 @@ quiz_data = {
                         {"text": "Éteindre l'ordinateur", "isCorrect": False},
                         {"text": "Allumer la TV", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Download' = télécharger (vers soi). 'Upload' = téléverser/mettre en ligne (vers le réseau). C'est une distinction technique fondamentale en informatique."
+                    "correction": " 'Download' = télécharger (vers soi). 'Upload' = téléverser/mettre en ligne (vers le réseau). C'est une distinction technique fondamentale en informatique."
                 },
                 {
                     "questionNumber": 82,
@@ -939,7 +939,7 @@ quiz_data = {
                         {"text": "Mouse", "isCorrect": False},
                         {"text": "Printer", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Keyboard'. Une touche du clavier se dit 'a key'. Taper au clavier se dit 'to type'. Ne pas confondre avec 'musical keyboard' qui est le synthétiseur."
+                    "correction": " 'Keyboard'. Une touche du clavier se dit 'a key'. Taper au clavier se dit 'to type'. Ne pas confondre avec 'musical keyboard' qui est le synthétiseur."
                 },
                 {
                     "questionNumber": 83,
@@ -950,7 +950,7 @@ quiz_data = {
                         {"text": "Keyword", "isCorrect": False},
                         {"text": "Crossword", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Password'. Pour se connecter, on utilise un 'username' (identifiant) et un 'password'. Un mot-clé pour la recherche est un 'keyword'."
+                    "correction": " 'Password'. Pour se connecter, on utilise un 'username' (identifiant) et un 'password'. Un mot-clé pour la recherche est un 'keyword'."
                 },
                 {
                     "questionNumber": 84,
@@ -961,7 +961,7 @@ quiz_data = {
                         {"text": "S'inscrire", "isCorrect": False},
                         {"text": "Supprimer un compte", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To log in' ou 'to sign in'. Son contraire est 'to log out' ou 'to sign out'. Le journal des événements d'un serveur se dit un 'log file'."
+                    "correction": " 'To log in' ou 'to sign in'. Son contraire est 'to log out' ou 'to sign out'. Le journal des événements d'un serveur se dit un 'log file'."
                 },
                 {
                     "questionNumber": 85,
@@ -972,7 +972,7 @@ quiz_data = {
                         {"text": "Window glass", "isCorrect": False},
                         {"text": "Key", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Screen' est le terme général. 'Monitor' est le terme technique pour l'écran d'ordinateur. 'Touch screen' signifie écran tactile."
+                    "correction": " 'Screen' est le terme général. 'Monitor' est le terme technique pour l'écran d'ordinateur. 'Touch screen' signifie écran tactile."
                 },
                 {
                     "questionNumber": 86,
@@ -983,7 +983,7 @@ quiz_data = {
                         {"text": "A side", "isCorrect": False},
                         {"text": "A slice", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'A slide'. Un diaporama se dit 'a slide show'. Passer à la diapositive suivante se dit 'to move to the next slide'."
+                    "correction": " 'A slide'. Un diaporama se dit 'a slide show'. Passer à la diapositive suivante se dit 'to move to the next slide'."
                 },
                 {
                     "questionNumber": 87,
@@ -994,7 +994,7 @@ quiz_data = {
                         {"text": "Envoyer", "isCorrect": False},
                         {"text": "Imprimer", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To save'. C'est une fonction vitale. On peut 'save as' (enregistrer sous). 'Save' signifie aussi 'sauver' ou 'économiser' (save money) selon le contexte."
+                    "correction": " 'To save'. C'est une fonction vitale. On peut 'save as' (enregistrer sous). 'Save' signifie aussi 'sauver' ou 'économiser' (save money) selon le contexte."
                 },
                 {
                     "questionNumber": 88,
@@ -1005,7 +1005,7 @@ quiz_data = {
                         {"text": "That's all for today", "isCorrect": False},
                         {"text": "Any questions?", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'introduction doit saluer l'auditoire et annoncer le plan. Phrases utiles : 'Today, I'm going to talk about...' ou 'My presentation is divided into three parts'."
+                    "correction": " L'introduction doit saluer l'auditoire et annoncer le plan. Phrases utiles : 'Today, I'm going to talk about...' ou 'My presentation is divided into three parts'."
                 },
                 {
                     "questionNumber": 89,
@@ -1016,7 +1016,7 @@ quiz_data = {
                         {"text": "The thing in my hand is...", "isCorrect": False},
                         {"text": "I speak about weather...", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Topic' est le terme exact pour sujet ou thème d'une discussion. On peut aussi utiliser 'Subject'. 'Issue' est utilisé pour un sujet qui fait débat (un problème)."
+                    "correction": " 'Topic' est le terme exact pour sujet ou thème d'une discussion. On peut aussi utiliser 'Subject'. 'Issue' est utilisé pour un sujet qui fait débat (un problème)."
                 },
                 {
                     "questionNumber": 90,
@@ -1027,7 +1027,7 @@ quiz_data = {
                         {"text": "Pointer", "isCorrect": False},
                         {"text": "Presser", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To print' (imprimer). L'imprimante est la 'printer'. Le papier imprimé est le 'printout'. 'In print' signifie 'publié/édité'."
+                    "correction": " 'To print' (imprimer). L'imprimante est la 'printer'. Le papier imprimé est le 'printout'. 'In print' signifie 'publié/édité'."
                 },
                 {
                     "questionNumber": 91,
@@ -1038,7 +1038,7 @@ quiz_data = {
                         {"text": "A picture", "isCorrect": False},
                         {"text": "A text", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Chart' ou 'Graph'. On les utilise pour 'display data' (afficher des données). Les plus courants sont le 'bar chart' (histogramme) et le 'line graph' (courbe)."
+                    "correction": " 'Chart' ou 'Graph'. On les utilise pour 'display data' (afficher des données). Les plus courants sont le 'bar chart' (histogramme) et le 'line graph' (courbe)."
                 },
                 {
                     "questionNumber": 92,
@@ -1049,7 +1049,7 @@ quiz_data = {
                         {"text": "To stop", "isCorrect": False},
                         {"text": "To stay steady", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To increase' (augmenter). On utilise aussi 'to rise' ou 'to grow'. Pour une augmentation très rapide, on dit 'to rocket' ou 'to soar'."
+                    "correction": " 'To increase' (augmenter). On utilise aussi 'to rise' ou 'to grow'. Pour une augmentation très rapide, on dit 'to rocket' ou 'to soar'."
                 },
                 {
                     "questionNumber": 93,
@@ -1060,7 +1060,7 @@ quiz_data = {
                         {"text": "Grandir", "isCorrect": False},
                         {"text": "Améliorer", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To decrease' (diminuer). Synonymes : 'to fall', 'to drop', 'to decline'. Pour une chute brutale, on dit 'to plummet' ou 'to crash'."
+                    "correction": " 'To decrease' (diminuer). Synonymes : 'to fall', 'to drop', 'to decline'. Pour une chute brutale, on dit 'to plummet' ou 'to crash'."
                 },
                 {
                     "questionNumber": 94,
@@ -1071,7 +1071,7 @@ quiz_data = {
                         {"text": "A circle", "isCorrect": False},
                         {"text": "A round graph", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Pie chart' (car il ressemble à une tarte découpée en parts). Chaque part du graphique est une 'slice' (tranche). C'est idéal pour montrer la répartition d'un tout."
+                    "correction": " 'Pie chart' (car il ressemble à une tarte découpée en parts). Chaque part du graphique est une 'slice' (tranche). C'est idéal pour montrer la répartition d'un tout."
                 },
                 {
                     "questionNumber": 95,
@@ -1082,7 +1082,7 @@ quiz_data = {
                         {"text": "Are there small answers?", "isCorrect": False},
                         {"text": "Are there good results?", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Il est poli de terminer par 'Thank you for listening' puis 'I'd be happy to answer your questions'. Cela montre que vous êtes ouvert à la discussion."
+                    "correction": " Il est poli de terminer par 'Thank you for listening' puis 'I'd be happy to answer your questions'. Cela montre que vous êtes ouvert à la discussion."
                 },
                 {
                     "questionNumber": 96,
@@ -1093,7 +1093,7 @@ quiz_data = {
                         {"text": "The numbers flatten", "isCorrect": False},
                         {"text": "The numbers stop", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To fluctuate'. On parle aussi de 'ups and downs'. Si la courbe ne bouge plus, on dit qu'elle 'plateaus' ou qu'elle 'remains steady'."
+                    "correction": " 'To fluctuate'. On parle aussi de 'ups and downs'. Si la courbe ne bouge plus, on dit qu'elle 'plateaus' ou qu'elle 'remains steady'."
                 },
                 {
                     "questionNumber": 97,
@@ -1104,7 +1104,7 @@ quiz_data = {
                         {"text": "This is most good", "isCorrect": False},
                         {"text": "This is more better", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Comparatifs : 'higher than' (plus haut que). 'slightly' signifie légèrement. Attention aux irrégularités : 'smaller' (plus petit) et 'better' (meilleur)."
+                    "correction": " Comparatifs : 'higher than' (plus haut que). 'slightly' signifie légèrement. Attention aux irrégularités : 'smaller' (plus petit) et 'better' (meilleur)."
                 },
                 {
                     "questionNumber": 98,
@@ -1115,7 +1115,7 @@ quiz_data = {
                         {"text": "Go to the library", "isCorrect": False},
                         {"text": "Imagine a world", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise des 'signposting phrases' (phrases de balisage) : 'As you can see on the screen...', 'I'd like to draw your attention to this chart...'. Cela guide l'auditoire."
+                    "correction": " On utilise des 'signposting phrases' (phrases de balisage) : 'As you can see on the screen...', 'I'd like to draw your attention to this chart...'. Cela guide l'auditoire."
                 },
                 {
                     "questionNumber": 99,
@@ -1126,7 +1126,7 @@ quiz_data = {
                         {"text": "Le but marqué", "isCorrect": False},
                         {"text": "L'audience basse", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Target' = cible. 'Audience' = public/auditoire. Il est crucial d'adapter son langage et son contenu à son 'target audience' pour être efficace."
+                    "correction": " 'Target' = cible. 'Audience' = public/auditoire. Il est crucial d'adapter son langage et son contenu à son 'target audience' pour être efficace."
                 },
                 {
                     "questionNumber": 100,
@@ -1137,7 +1137,7 @@ quiz_data = {
                         {"text": "In the middle", "isCorrect": False},
                         {"text": "However", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To conclude' ou 'In conclusion'. On peut aussi utiliser 'To sum up' (pour résumer) ou 'Lastly' (enfin). Cela signale clairement à l'auditoire que vous terminez."
+                    "correction": " 'To conclude' ou 'In conclusion'. On peut aussi utiliser 'To sum up' (pour résumer) ou 'Lastly' (enfin). Cela signale clairement à l'auditoire que vous terminez."
                 }
             ]
         }

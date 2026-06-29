@@ -16,7 +16,7 @@ quiz_data = {
                         {"text": "I want to go to the station now!", "isCorrect": False},
                         {"text": "Give me the direction for the station!", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour être poli en anglais, on utilise l'expression 'Excuse me' pour aborder quelqu'un. L'emploi du conditionnel 'could you' (pourriez-vous) est beaucoup plus courtois que l'impératif ou le présent. Notez que l'on demande 'the way to' (le chemin vers)."
+                    "correction": " Pour être poli en anglais, on utilise l'expression 'Excuse me' pour aborder quelqu'un. L'emploi du conditionnel 'could you' (pourriez-vous) est beaucoup plus courtois que l'impératif ou le présent. Notez que l'on demande 'the way to' (le chemin vers)."
                 },
                 {
                     "questionNumber": 2,
@@ -27,7 +27,7 @@ quiz_data = {
                         {"text": "Are you lost here?", "isCorrect": False},
                         {"text": "Do you need money?", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'How can I help you?' est la formule standard et professionnelle pour accueillir un client. Elle montre une volonté de service. Dans un contexte plus formel, on peut aussi dire 'May I help you?' qui est encore plus soutenu."
+                    "correction": " 'How can I help you?' est la formule standard et professionnelle pour accueillir un client. Elle montre une volonté de service. Dans un contexte plus formel, on peut aussi dire 'May I help you?' qui est encore plus soutenu."
                 },
                 {
                     "questionNumber": 3,
@@ -38,7 +38,7 @@ quiz_data = {
                         {"text": "I matching with you", "isCorrect": False},
                         {"text": "I have agreement with you", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une erreur fréquente : 'Agree' est un verbe d'action en anglais, pas un adjectif. On ne dit donc jamais 'I am agree' (qui est un calque du français), mais simplement 'I agree' au présent simple."
+                    "correction": " C'est une erreur fréquente : 'Agree' est un verbe d'action en anglais, pas un adjectif. On ne dit donc jamais 'I am agree' (qui est un calque du français), mais simplement 'I agree' au présent simple."
                 },
                 {
                     "questionNumber": 4,
@@ -49,7 +49,7 @@ quiz_data = {
                         {"text": "It is nothing important", "isCorrect": False},
                         {"text": "Go away now", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'You're welcome' est la réponse la plus courante pour dire 'Je vous en prie'. On peut aussi utiliser 'No problem', 'My pleasure' (tout le plaisir est pour moi) ou 'Don't mention it' (ne m'en remerciez pas) dans des contextes plus familiers."
+                    "correction": " 'You're welcome' est la réponse la plus courante pour dire 'Je vous en prie'. On peut aussi utiliser 'No problem', 'My pleasure' (tout le plaisir est pour moi) ou 'Don't mention it' (ne m'en remerciez pas) dans des contextes plus familiers."
                 },
                 {
                     "questionNumber": 5,
@@ -60,7 +60,7 @@ quiz_data = {
                         {"text": "You could talk to the manager", "isCorrect": False},
                         {"text": "You should drink more water", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'auxiliaire modal 'Must' exprime une obligation imposée par celui qui parle ou une nécessité absolue. 'Should' exprime un conseil, tandis que 'Might' et 'Could' expriment une possibilité ou une capacité."
+                    "correction": " L'auxiliaire modal 'Must' exprime une obligation imposée par celui qui parle ou une nécessité absolue. 'Should' exprime un conseil, tandis que 'Might' et 'Could' expriment une possibilité ou une capacité."
                 },
                 {
                     "questionNumber": 6,
@@ -71,7 +71,7 @@ quiz_data = {
                         {"text": "Which clock is it for you?", "isCorrect": False},
                         {"text": "What is the number of the time?", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'What time is it?' est la forme standard. Pour être plus poli avec un inconnu, on préférera 'Could you tell me the time?' ou 'Do you have the time?'. Notez que 'hour' désigne une durée (60 minutes) et non l'heure qu'il est."
+                    "correction": " 'What time is it?' est la forme standard. Pour être plus poli avec un inconnu, on préférera 'Could you tell me the time?' ou 'Do you have the time?'. Notez que 'hour' désigne une durée (60 minutes) et non l'heure qu'il est."
                 },
                 {
                     "questionNumber": 7,
@@ -82,7 +82,7 @@ quiz_data = {
                         {"text": "Maintenant", "isCorrect": False},
                         {"text": "Peut-être", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Actually' est un faux-ami célèbre. Il ne signifie pas 'actuellement' (qui se traduit par 'currently' ou 'at the moment'), mais sert à apporter une précision ou à rectifier une erreur en disant 'en réalité'."
+                    "correction": " 'Actually' est un faux-ami célèbre. Il ne signifie pas 'actuellement' (qui se traduit par 'currently' ou 'at the moment'), mais sert à apporter une précision ou à rectifier une erreur en disant 'en réalité'."
                 },
                 {
                     "questionNumber": 8,
@@ -93,7 +93,7 @@ quiz_data = {
                         {"text": "I have the habit to work late", "isCorrect": False},
                         {"text": "I work lately", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise la structure 'be used to + Verbe-ing' pour parler d'une habitude actuelle ou d'une accoutumance. Ne confondez pas avec 'used to + Base Verbale' qui sert à parler d'une habitude passée qui est terminée."
+                    "correction": " On utilise la structure 'be used to + Verbe-ing' pour parler d'une habitude actuelle ou d'une accoutumance. Ne confondez pas avec 'used to + Base Verbale' qui sert à parler d'une habitude passée qui est terminée."
                 },
                 {
                     "questionNumber": 9,
@@ -104,7 +104,7 @@ quiz_data = {
                         {"text": "It is twelve night", "isCorrect": False},
                         {"text": "It is middle time", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Noon' (midi) s'oppose à 'Midnight' (minuit). On peut aussi dire '12 pm'. 'Midday' est également utilisé. Rappelez-vous qu'en anglais, on utilise souvent le système de 12 heures avec am (matin) et pm (après-midi)."
+                    "correction": " 'Noon' (midi) s'oppose à 'Midnight' (minuit). On peut aussi dire '12 pm'. 'Midday' est également utilisé. Rappelez-vous qu'en anglais, on utilise souvent le système de 12 heures avec am (matin) et pm (après-midi)."
                 },
                 {
                     "questionNumber": 10,
@@ -115,7 +115,7 @@ quiz_data = {
                         {"text": "Je cherche à vous voir", "isCorrect": False},
                         {"text": "Je vous ai déjà rencontré", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une formule de politesse indispensable pour les emails professionnels. 'Look forward to' est toujours suivi d'un nom ou d'un verbe en '-ing'. Cela exprime une attente impatiente et positive."
+                    "correction": " C'est une formule de politesse indispensable pour les emails professionnels. 'Look forward to' est toujours suivi d'un nom ou d'un verbe en '-ing'. Cela exprime une attente impatiente et positive."
                 },
                 {
                     "questionNumber": 11,
@@ -126,7 +126,7 @@ quiz_data = {
                         {"text": "Where are you coming for?", "isCorrect": False},
                         {"text": "From where you are?", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise 'Where are you from?' pour interroger sur l'origine ou la nationalité. On peut aussi dire 'Where do you come from?'. Notez que la préposition 'from' se place à la fin de la question."
+                    "correction": " On utilise 'Where are you from?' pour interroger sur l'origine ou la nationalité. On peut aussi dire 'Where do you come from?'. Notez que la préposition 'from' se place à la fin de la question."
                 },
                 {
                     "questionNumber": 12,
@@ -137,7 +137,7 @@ quiz_data = {
                         {"text": "How is the sky?", "isCorrect": False},
                         {"text": "Which weather have we?", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La structure 'What is... like?' sert à demander une description. Pour la météo, c'est la forme la plus idiomatique. On peut aussi demander 'How is the weather?', mais c'est un peu moins courant."
+                    "correction": " La structure 'What is... like?' sert à demander une description. Pour la météo, c'est la forme la plus idiomatique. On peut aussi demander 'How is the weather?', mais c'est un peu moins courant."
                 },
                 {
                     "questionNumber": 13,
@@ -148,7 +148,7 @@ quiz_data = {
                         {"text": "Dinner", "isCorrect": False},
                         {"text": "Supper", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Breakfast' vient de 'break' (rompre) et 'fast' (le jeûne). C'est le repas du matin. 'Lunch' est le repas de midi. 'Dinner' est le repas du soir (souvent le plus important) et 'Supper' est un souper plus léger."
+                    "correction": " 'Breakfast' vient de 'break' (rompre) et 'fast' (le jeûne). C'est le repas du matin. 'Lunch' est le repas de midi. 'Dinner' est le repas du soir (souvent le plus important) et 'Supper' est un souper plus léger."
                 },
                 {
                     "questionNumber": 14,
@@ -159,7 +159,7 @@ quiz_data = {
                         {"text": "I not understand", "isCorrect": False},
                         {"text": "I no understand", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Au présent simple, pour faire une négation avec un verbe ordinaire, on doit obligatoirement utiliser l'auxiliaire 'do' (ou 'does' à la 3ème personne) suivi de 'not'. 'I not understand' est agrammatical."
+                    "correction": " Au présent simple, pour faire une négation avec un verbe ordinaire, on doit obligatoirement utiliser l'auxiliaire 'do' (ou 'does' à la 3ème personne) suivi de 'not'. 'I not understand' est agrammatical."
                 },
                 {
                     "questionNumber": 15,
@@ -170,7 +170,7 @@ quiz_data = {
                         {"text": "Payez votre repas", "isCorrect": False},
                         {"text": "Cuisinez bien", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Meal' est le terme général pour un repas. Comme 'Bon appétit' n'a pas de traduction littérale parfaite, 'Enjoy your meal' est la formule la plus utilisée par les serveurs ou les hôtes."
+                    "correction": " 'Meal' est le terme général pour un repas. Comme 'Bon appétit' n'a pas de traduction littérale parfaite, 'Enjoy your meal' est la formule la plus utilisée par les serveurs ou les hôtes."
                 },
                 {
                     "questionNumber": 16,
@@ -181,7 +181,7 @@ quiz_data = {
                         {"text": "Nice to meet you", "isCorrect": False},
                         {"text": "Welcome back", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'See you soon' est une formule amicale ou professionnelle pour prendre congé. 'Soon' signifie 'bientôt'. On utilise 'See you later' pour 'À plus tard' ou 'See you tomorrow' pour 'À demain'."
+                    "correction": " 'See you soon' est une formule amicale ou professionnelle pour prendre congé. 'Soon' signifie 'bientôt'. On utilise 'See you later' pour 'À plus tard' ou 'See you tomorrow' pour 'À demain'."
                 },
                 {
                     "questionNumber": 17,
@@ -192,7 +192,7 @@ quiz_data = {
                         {"text": "Je suis en avance", "isCorrect": False},
                         {"text": "Où est la porte ?", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Late' signifie 'en retard' ou 'tard'. L'adjectif s'utilise après le verbe 'be'. Pour s'excuser de son propre retard, c'est la phrase la plus simple et efficace à utiliser."
+                    "correction": " 'Late' signifie 'en retard' ou 'tard'. L'adjectif s'utilise après le verbe 'be'. Pour s'excuser de son propre retard, c'est la phrase la plus simple et efficace à utiliser."
                 },
                 {
                     "questionNumber": 18,
@@ -203,7 +203,7 @@ quiz_data = {
                         {"text": "Who are you?", "isCorrect": False},
                         {"text": "What your name is?", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En anglais, on ne demande pas 'comment on s'appelle' (verbe réfléchi), mais 'quel est ton nom'. 'How do you call you' est une traduction littérale fautive du français."
+                    "correction": " En anglais, on ne demande pas 'comment on s'appelle' (verbe réfléchi), mais 'quel est ton nom'. 'How do you call you' est une traduction littérale fautive du français."
                 },
                 {
                     "questionNumber": 19,
@@ -214,7 +214,7 @@ quiz_data = {
                         {"text": "Friday", "isCorrect": False},
                         {"text": "Saturday", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les jours de la semaine s'écrivent toujours avec une majuscule en anglais. L'ordre est : Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday."
+                    "correction": " Les jours de la semaine s'écrivent toujours avec une majuscule en anglais. L'ordre est : Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday."
                 },
                 {
                     "questionNumber": 20,
@@ -225,7 +225,7 @@ quiz_data = {
                         {"text": "Twentieth-one", "isCorrect": False},
                         {"text": "Two-one", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour les nombres de 21 à 99, on utilise la dizaine suivie de l'unité, reliées par un trait d'union (hyphen). Attention à ne pas confondre 'Twelve' (12) et 'Twenty' (20)."
+                    "correction": " Pour les nombres de 21 à 99, on utilise la dizaine suivie de l'unité, reliées par un trait d'union (hyphen). Attention à ne pas confondre 'Twelve' (12) et 'Twenty' (20)."
                 }
             ]
         },
@@ -244,7 +244,7 @@ quiz_data = {
                         {"text": "Quitter son travail", "isCorrect": False},
                         {"text": "Donner un ordre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le verbe 'to apply' signifie postuler ou poser sa candidature. Le candidat est un 'applicant' et le dossier de candidature est une 'application'. On postule 'for' a job."
+                    "correction": " Le verbe 'to apply' signifie postuler ou poser sa candidature. Le candidat est un 'applicant' et le dossier de candidature est une 'application'. On postule 'for' a job."
                 },
                 {
                     "questionNumber": 22,
@@ -255,7 +255,7 @@ quiz_data = {
                         {"text": "A step", "isCorrect": False},
                         {"text": "A training school", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Internship' est le terme américain, 'work placement' est plus courant au Royaume-Uni. Le stagiaire est un 'intern' ou un 'trainee'. Attention au faux-ami 'stadium' qui signifie stade."
+                    "correction": " 'Internship' est le terme américain, 'work placement' est plus courant au Royaume-Uni. Le stagiaire est un 'intern' ou un 'trainee'. Attention au faux-ami 'stadium' qui signifie stade."
                 },
                 {
                     "questionNumber": 23,
@@ -266,7 +266,7 @@ quiz_data = {
                         {"text": "The worker", "isCorrect": False},
                         {"text": "The trainee", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En anglais, le suffixe '-er' indique celui qui fait l'action (employer = celui qui emploie) et le suffixe '-ee' indique celui qui reçoit l'action (employee = celui qui est employé)."
+                    "correction": " En anglais, le suffixe '-er' indique celui qui fait l'action (employer = celui qui emploie) et le suffixe '-ee' indique celui qui reçoit l'action (employee = celui qui est employé)."
                 },
                 {
                     "questionNumber": 24,
@@ -277,7 +277,7 @@ quiz_data = {
                         {"text": "A boss discussion", "isCorrect": False},
                         {"text": "A professional talk", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Interview' désigne l'entretien. Pour se préparer, on parle de 'interview skills'. Le recruteur est le 'recruiter' ou l' 'interviewer', et le candidat est l' 'interviewee'."
+                    "correction": " 'Interview' désigne l'entretien. Pour se préparer, on parle de 'interview skills'. Le recruteur est le 'recruiter' ou l' 'interviewer', et le candidat est l' 'interviewee'."
                 },
                 {
                     "questionNumber": 25,
@@ -288,7 +288,7 @@ quiz_data = {
                         {"text": "Les outils", "isCorrect": False},
                         {"text": "Les impôts", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Il y a une nuance : 'Salary' est le salaire fixe mensuel des cadres/employés de bureau. 'Wages' désigne la paye (souvent hebdomadaire ou horaire) des ouvriers ou travailleurs manuels."
+                    "correction": " Il y a une nuance : 'Salary' est le salaire fixe mensuel des cadres/employés de bureau. 'Wages' désigne la paye (souvent hebdomadaire ou horaire) des ouvriers ou travailleurs manuels."
                 },
                 {
                     "questionNumber": 26,
@@ -299,7 +299,7 @@ quiz_data = {
                         {"text": "The social seat", "isCorrect": False},
                         {"text": "The boss office", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Headquarters' est un nom qui peut être singulier ou pluriel. C'est le centre administratif où se prennent les décisions importantes d'une firme ou d'une organisation."
+                    "correction": " 'Headquarters' est un nom qui peut être singulier ou pluriel. C'est le centre administratif où se prennent les décisions importantes d'une firme ou d'une organisation."
                 },
                 {
                     "questionNumber": 27,
@@ -310,7 +310,7 @@ quiz_data = {
                         {"text": "To work half-time", "isCorrect": False},
                         {"text": "To work bit-time", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Part-time' s'oppose à 'full-time' (temps plein). En anglais, on utilise ces adjectifs avant le nom (a part-time job) ou après le verbe (I work part-time)."
+                    "correction": " 'Part-time' s'oppose à 'full-time' (temps plein). En anglais, on utilise ces adjectifs avant le nom (a part-time job) ou après le verbe (I work part-time)."
                 },
                 {
                     "questionNumber": 28,
@@ -321,7 +321,7 @@ quiz_data = {
                         {"text": "Démissionner", "isCorrect": False},
                         {"text": "Se coucher tôt", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To retire' signifie cesser son activité professionnelle en raison de l'âge. La retraite se dit 'retirement'. Attention au faux-ami : pour dire 'se retirer d'un projet', on utilisera plutôt 'to withdraw'."
+                    "correction": " 'To retire' signifie cesser son activité professionnelle en raison de l'âge. La retraite se dit 'retirement'. Attention au faux-ami : pour dire 'se retirer d'un projet', on utilisera plutôt 'to withdraw'."
                 },
                 {
                     "questionNumber": 29,
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "Work holidays", "isCorrect": False},
                         {"text": "Money rest", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Leave' signifie ici l'autorisation d'absence. 'Paid leave' signifie que vous êtes payé pendant votre absence. On dit aussi 'annual leave' pour les congés annuels."
+                    "correction": " 'Leave' signifie ici l'autorisation d'absence. 'Paid leave' signifie que vous êtes payé pendant votre absence. On dit aussi 'annual leave' pour les congés annuels."
                 },
                 {
                     "questionNumber": 30,
@@ -343,7 +343,7 @@ quiz_data = {
                         {"text": "Il vend les produits", "isCorrect": False},
                         {"text": "Il répare les machines", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** CEO signifie 'Chief Executive Officer'. C'est l'équivalent du PDG (Président-Directeur Général). C'est le poste le plus élevé dans la hiérarchie d'une entreprise anglo-saxonne."
+                    "correction": " CEO signifie 'Chief Executive Officer'. C'est l'équivalent du PDG (Président-Directeur Général). C'est le poste le plus élevé dans la hiérarchie d'une entreprise anglo-saxonne."
                 },
                 {
                     "questionNumber": 31,
@@ -354,7 +354,7 @@ quiz_data = {
                         {"text": "Powers", "isCorrect": False},
                         {"text": "Knowings", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Skills' désigne les compétences acquises par la formation ou l'expérience. On distingue les 'hard skills' (techniques) des 'soft skills' (comportementales et relationnelles)."
+                    "correction": " 'Skills' désigne les compétences acquises par la formation ou l'expérience. On distingue les 'hard skills' (techniques) des 'soft skills' (comportementales et relationnelles)."
                 },
                 {
                     "questionNumber": 32,
@@ -365,7 +365,7 @@ quiz_data = {
                         {"text": "Être d'accord", "isCorrect": False},
                         {"text": "Vendre ses parts", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To resign' (démissionner) est un acte volontaire de l'employé. Si c'est l'employeur qui met fin au contrat, on utilisera 'to dismiss', 'to fire' (familier) ou 'to lay off' (raisons économiques)."
+                    "correction": " 'To resign' (démissionner) est un acte volontaire de l'employé. Si c'est l'employeur qui met fin au contrat, on utilisera 'to dismiss', 'to fire' (familier) ou 'to lay off' (raisons économiques)."
                 },
                 {
                     "questionNumber": 33,
@@ -376,7 +376,7 @@ quiz_data = {
                         {"text": "Plus time", "isCorrect": False},
                         {"text": "Above time", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Overtime' est le terme technique. On peut l'utiliser comme nom (to do overtime) ou comme adjectif (overtime pay). 'Extra hours' est également compris mais moins formel."
+                    "correction": " 'Overtime' est le terme technique. On peut l'utiliser comme nom (to do overtime) ou comme adjectif (overtime pay). 'Extra hours' est également compris mais moins formel."
                 },
                 {
                     "questionNumber": 34,
@@ -387,7 +387,7 @@ quiz_data = {
                         {"text": "A life paper", "isCorrect": False},
                         {"text": "A job list", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise 'CV' (Curriculum Vitae) au Royaume-Uni et 'Resume' aux États-Unis. Ce document doit être accompagné d'une 'cover letter' (lettre de motivation)."
+                    "correction": " On utilise 'CV' (Curriculum Vitae) au Royaume-Uni et 'Resume' aux États-Unis. Ce document doit être accompagné d'une 'cover letter' (lettre de motivation)."
                 },
                 {
                     "questionNumber": 35,
@@ -398,7 +398,7 @@ quiz_data = {
                         {"text": "Aider quelqu'un", "isCorrect": False},
                         {"text": "Embaucher quelqu'un", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To fire' est un terme familier pour dire licencier. C'est souvent utilisé pour un renvoi suite à une faute. Le terme plus administratif est 'to dismiss' ou 'to terminate a contract'."
+                    "correction": " 'To fire' est un terme familier pour dire licencier. C'est souvent utilisé pour un renvoi suite à une faute. Le terme plus administratif est 'to dismiss' ou 'to terminate a contract'."
                 },
                 {
                     "questionNumber": 36,
@@ -409,7 +409,7 @@ quiz_data = {
                         {"text": "The post-buy assistance", "isCorrect": False},
                         {"text": "The back-shop help", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Souvent abrégé en 'after-sales', ce service est crucial pour la satisfaction client. On parle aussi de 'customer support' ou 'customer service' de manière plus large."
+                    "correction": " Souvent abrégé en 'after-sales', ce service est crucial pour la satisfaction client. On parle aussi de 'customer support' ou 'customer service' de manière plus large."
                 },
                 {
                     "questionNumber": 37,
@@ -420,7 +420,7 @@ quiz_data = {
                         {"text": "Être renvoyé", "isCorrect": False},
                         {"text": "Être en vacances", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Promotion' en anglais peut désigner une publicité ou une promotion hiérarchique. 'To be promoted' signifie obtenir un poste plus important avec plus de responsabilités."
+                    "correction": " 'Promotion' en anglais peut désigner une publicité ou une promotion hiérarchique. 'To be promoted' signifie obtenir un poste plus important avec plus de responsabilités."
                 },
                 {
                     "questionNumber": 38,
@@ -431,7 +431,7 @@ quiz_data = {
                         {"text": "A friend of work", "isCorrect": False},
                         {"text": "A same-worker", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Colleague' est le terme standard. 'Co-worker' est très utilisé, surtout aux USA. Un 'partner' désigne plutôt un associé ou un partenaire d'affaires."
+                    "correction": " 'Colleague' est le terme standard. 'Co-worker' est très utilisé, surtout aux USA. Un 'partner' désigne plutôt un associé ou un partenaire d'affaires."
                 },
                 {
                     "questionNumber": 39,
@@ -442,7 +442,7 @@ quiz_data = {
                         {"text": "To search a job", "isCorrect": False},
                         {"text": "To jobbing", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Look for' est un verbe à particule (phrasal verb) qui signifie chercher. On dit aussi 'to hunt for a job'. 'Find' signifie trouver (le résultat de la recherche)."
+                    "correction": " 'Look for' est un verbe à particule (phrasal verb) qui signifie chercher. On dit aussi 'to hunt for a job'. 'Find' signifie trouver (le résultat de la recherche)."
                 },
                 {
                     "questionNumber": 40,
@@ -453,7 +453,7 @@ quiz_data = {
                         {"text": "Être au chômage", "isCorrect": False},
                         {"text": "Être bénévole", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un 'self-employed worker' est un travailleur indépendant (freelance). Il n'a pas de lien de subordination avec un patron et gère lui-même son entreprise et ses clients."
+                    "correction": " Un 'self-employed worker' est un travailleur indépendant (freelance). Il n'a pas de lien de subordination avec un patron et gère lui-même son entreprise et ses clients."
                 }
             ]
         },
@@ -472,7 +472,7 @@ quiz_data = {
                         {"text": "Done", "isCorrect": False},
                         {"text": "Does", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour poser une question au passé (prétérit simple), on utilise l'auxiliaire 'Did' pour toutes les personnes. Attention : le verbe qui suit reste à la base verbale (ex: 'Did you see?')."
+                    "correction": " Pour poser une question au passé (prétérit simple), on utilise l'auxiliaire 'Did' pour toutes les personnes. Attention : le verbe qui suit reste à la base verbale (ex: 'Did you see?')."
                 },
                 {
                     "questionNumber": 42,
@@ -483,7 +483,7 @@ quiz_data = {
                         {"text": "The most + adjective", "isCorrect": False},
                         {"text": "As + adjective + as", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour les adjectifs de 2 syllabes (ne finissant pas par -y) ou plus, on utilise 'More'. Exemple : 'More expensive than' (plus cher que). Pour les adjectifs courts, on ajoute la terminaison '-er'."
+                    "correction": " Pour les adjectifs de 2 syllabes (ne finissant pas par -y) ou plus, on utilise 'More'. Exemple : 'More expensive than' (plus cher que). Pour les adjectifs courts, on ajoute la terminaison '-er'."
                 },
                 {
                     "questionNumber": 43,
@@ -494,7 +494,7 @@ quiz_data = {
                         {"text": "Mens", "isCorrect": False},
                         {"text": "Manes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Certains noms ont un pluriel irrégulier qui ne prend pas de '-s'. 'Man' devient 'Men', 'Woman' devient 'Women', 'Child' devient 'Children' et 'Foot' devient 'Feet'."
+                    "correction": " Certains noms ont un pluriel irrégulier qui ne prend pas de '-s'. 'Man' devient 'Men', 'Woman' devient 'Women', 'Child' devient 'Children' et 'Foot' devient 'Feet'."
                 },
                 {
                     "questionNumber": 44,
@@ -505,7 +505,7 @@ quiz_data = {
                         {"text": "At", "isCorrect": False},
                         {"text": "To", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise 'On' pour les jours et les dates précises (On Monday, On July 4th). On utilise 'In' pour les mois, les années et les saisons (In July, In 2024)."
+                    "correction": " On utilise 'On' pour les jours et les dates précises (On Monday, On July 4th). On utilise 'In' pour les mois, les années et les saisons (In July, In 2024)."
                 },
                 {
                     "questionNumber": 45,
@@ -516,7 +516,7 @@ quiz_data = {
                         {"text": "Whose", "isCorrect": False},
                         {"text": "Where", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Who' s'utilise exclusivement pour les humains. 'Which' s'utilise pour les objets, les concepts et les animaux. 'Whose' sert à exprimer la possession."
+                    "correction": " 'Who' s'utilise exclusivement pour les humains. 'Which' s'utilise pour les objets, les concepts et les animaux. 'Whose' sert à exprimer la possession."
                 },
                 {
                     "questionNumber": 46,
@@ -527,7 +527,7 @@ quiz_data = {
                         {"text": "It has", "isCorrect": False},
                         {"text": "They are", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Contrairement au français qui utilise 'il y a' pour tout, l'anglais accorde : 'There is' pour le singulier (There is a car) et 'There are' pour le pluriel (There are two cars)."
+                    "correction": " Contrairement au français qui utilise 'il y a' pour tout, l'anglais accorde : 'There is' pour le singulier (There is a car) et 'There are' pour le pluriel (There are two cars)."
                 },
                 {
                     "questionNumber": 47,
@@ -538,7 +538,7 @@ quiz_data = {
                         {"text": "John his car", "isCorrect": False},
                         {"text": "Car John", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est le génitif. On place le possesseur, puis l'apostrophe suivie d'un 's', et enfin l'objet possédé sans article (ex: 'My brother's house')."
+                    "correction": " C'est le génitif. On place le possesseur, puis l'apostrophe suivie d'un 's', et enfin l'objet possédé sans article (ex: 'My brother's house')."
                 },
                 {
                     "questionNumber": 48,
@@ -549,7 +549,7 @@ quiz_data = {
                         {"text": "Preterit", "isCorrect": False},
                         {"text": "Future with will", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le présent en '-ing' (be + participe présent) sert à décrire ce qui se passe sous nos yeux au moment présent. Exemple : 'I am reading this quiz right now'."
+                    "correction": " Le présent en '-ing' (be + participe présent) sert à décrire ce qui se passe sous nos yeux au moment présent. Exemple : 'I am reading this quiz right now'."
                 },
                 {
                     "questionNumber": 49,
@@ -560,7 +560,7 @@ quiz_data = {
                         {"text": "Bigger", "isCorrect": False},
                         {"text": "The most biggest", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour les adjectifs courts d'une syllabe finissant par Consonne-Voyelle-Consonne, on double la consonne finale avant d'ajouter '-est'. On n'oublie pas l'article 'The'."
+                    "correction": " Pour les adjectifs courts d'une syllabe finissant par Consonne-Voyelle-Consonne, on double la consonne finale avant d'ajouter '-est'. On n'oublie pas l'article 'The'."
                 },
                 {
                     "questionNumber": 50,
@@ -571,7 +571,7 @@ quiz_data = {
                         {"text": "Parce que / Car", "isCorrect": False},
                         {"text": "Depuis / À partir de", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Unless' introduit une condition négative. 'I will come unless it rains' signifie 'Je viendrai à moins qu'il ne pleuve' (donc : 'si il ne pleut pas')."
+                    "correction": " 'Unless' introduit une condition négative. 'I will come unless it rains' signifie 'Je viendrai à moins qu'il ne pleuve' (donc : 'si il ne pleut pas')."
                 },
                 {
                     "questionNumber": 51,
@@ -582,7 +582,7 @@ quiz_data = {
                         {"text": "Shouldn't", "isCorrect": False},
                         {"text": "Wouldn't", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Mustn't' exprime une interdiction forte (interdit par la loi ou la morale). 'Can't' peut aussi exprimer l'interdiction (tu ne peux pas). Note : 'Don't have to' signifie 'ne pas être obligé de'."
+                    "correction": " 'Mustn't' exprime une interdiction forte (interdit par la loi ou la morale). 'Can't' peut aussi exprimer l'interdiction (tu ne peux pas). Note : 'Don't have to' signifie 'ne pas être obligé de'."
                 },
                 {
                     "questionNumber": 52,
@@ -593,7 +593,7 @@ quiz_data = {
                         {"text": "will", "isCorrect": False},
                         {"text": "be", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans une proposition hypothétique introduite par 'if', on utilise souvent 'were' à toutes les personnes pour marquer l'irréel du présent. 'If I were rich, I would buy a boat'."
+                    "correction": " Dans une proposition hypothétique introduite par 'if', on utilise souvent 'were' à toutes les personnes pour marquer l'irréel du présent. 'If I were rich, I would buy a boat'."
                 },
                 {
                     "questionNumber": 53,
@@ -604,7 +604,7 @@ quiz_data = {
                         {"text": "During 5 years", "isCorrect": False},
                         {"text": "Ago 5 years", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'For' exprime une durée (pendant). 'Since' exprime un point de départ (depuis 2010). 'Ago' exprime un moment révolu dans le passé (il y a 5 ans)."
+                    "correction": " 'For' exprime une durée (pendant). 'Since' exprime un point de départ (depuis 2010). 'Ago' exprime un moment révolu dans le passé (il y a 5 ans)."
                 },
                 {
                     "questionNumber": 54,
@@ -615,7 +615,7 @@ quiz_data = {
                         {"text": "writed", "isCorrect": False},
                         {"text": "writing", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le verbe écrire est irrégulier. Ses trois formes sont : Write (Base Verbale), Wrote (Prétérit), Written (Participe Passé utilisé avec l'auxiliaire 'have')."
+                    "correction": " Le verbe écrire est irrégulier. Ses trois formes sont : Write (Base Verbale), Wrote (Prétérit), Written (Participe Passé utilisé avec l'auxiliaire 'have')."
                 },
                 {
                     "questionNumber": 55,
@@ -626,7 +626,7 @@ quiz_data = {
                         {"text": "Toujours", "isCorrect": False},
                         {"text": "Souvent", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Dans une phrase négative ou interrogative au Present Perfect, 'yet' signifie 'pas encore' ou 'déjà'. Exemple : 'I haven't finished yet' (Je n'ai pas encore fini)."
+                    "correction": " Dans une phrase négative ou interrogative au Present Perfect, 'yet' signifie 'pas encore' ou 'déjà'. Exemple : 'I haven't finished yet' (Je n'ai pas encore fini)."
                 },
                 {
                     "questionNumber": 56,
@@ -637,7 +637,7 @@ quiz_data = {
                         {"text": "going", "isCorrect": False},
                         {"text": "is go", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Au présent simple, on ajoute un '-s' à la 3ème personne du singulier (he, she, it). Pour les verbes se terminant en -o, -sh, -ch ou -x, on ajoute '-es'."
+                    "correction": " Au présent simple, on ajoute un '-s' à la 3ème personne du singulier (he, she, it). Pour les verbes se terminant en -o, -sh, -ch ou -x, on ajoute '-es'."
                 },
                 {
                     "questionNumber": 57,
@@ -648,7 +648,7 @@ quiz_data = {
                         {"text": "More good", "isCorrect": False},
                         {"text": "Well", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Good' ne devient pas 'gooder'. Son comparatif est 'Better' (mieux) et son superlatif est 'The Best' (le meilleur). 'Well' est l'adverbe."
+                    "correction": " 'Good' ne devient pas 'gooder'. Son comparatif est 'Better' (mieux) et son superlatif est 'The Best' (le meilleur). 'Well' est l'adverbe."
                 },
                 {
                     "questionNumber": 58,
@@ -659,7 +659,7 @@ quiz_data = {
                         {"text": "Who", "isCorrect": False},
                         {"text": "Who's", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Whose' permet d'interroger sur le possesseur. Exemple : 'Whose car is this?' (À qui est cette voiture ?). Ne confondez pas avec 'Who's' qui est la contraction de 'Who is'."
+                    "correction": " 'Whose' permet d'interroger sur le possesseur. Exemple : 'Whose car is this?' (À qui est cette voiture ?). Ne confondez pas avec 'Who's' qui est la contraction de 'Who is'."
                 },
                 {
                     "questionNumber": 59,
@@ -670,7 +670,7 @@ quiz_data = {
                         {"text": "From 2010", "isCorrect": False},
                         {"text": "Ago 2010", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise 'Since' devant un repère temporel précis (une date, une heure, un événement). On utilise 'For' devant une durée (une quantité de temps)."
+                    "correction": " On utilise 'Since' devant un repère temporel précis (une date, une heure, un événement). On utilise 'For' devant une durée (une quantité de temps)."
                 },
                 {
                     "questionNumber": 60,
@@ -681,7 +681,7 @@ quiz_data = {
                         {"text": "Aucun des deux", "isCorrect": False},
                         {"text": "Chaque personne", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Both' s'utilise pour parler de deux personnes ou deux objets ensemble. 'Both of them are students' (Tous les deux sont étudiants)."
+                    "correction": " 'Both' s'utilise pour parler de deux personnes ou deux objets ensemble. 'Both of them are students' (Tous les deux sont étudiants)."
                 }
             ]
         },
@@ -700,7 +700,7 @@ quiz_data = {
                         {"text": "The Dollar", "isCorrect": False},
                         {"text": "The Yen", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Bien qu'ayant fait partie de l'UE, le Royaume-Uni n'a jamais adopté l'euro. La livre sterling (£) est divisée en 'pence' (singulier : penny)."
+                    "correction": " Bien qu'ayant fait partie de l'UE, le Royaume-Uni n'a jamais adopté l'euro. La livre sterling (£) est divisée en 'pence' (singulier : penny)."
                 },
                 {
                     "questionNumber": 62,
@@ -711,7 +711,7 @@ quiz_data = {
                         {"text": "The Tricolour", "isCorrect": False},
                         {"text": "The Red Cross", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Stars and Stripes' fait référence aux 50 étoiles (les États) et aux 13 bandes (les colonies d'origine). Le drapeau britannique est le 'Union Jack'."
+                    "correction": " 'Stars and Stripes' fait référence aux 50 étoiles (les États) et aux 13 bandes (les colonies d'origine). Le drapeau britannique est le 'Union Jack'."
                 },
                 {
                     "questionNumber": 63,
@@ -722,7 +722,7 @@ quiz_data = {
                         {"text": "Empire State Building", "isCorrect": False},
                         {"text": "White House", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Big Ben est techniquement le nom de la grosse cloche à l'intérieur de la tour, mais par extension, on utilise ce nom pour désigner la tour du Parlement (Elizabeth Tower)."
+                    "correction": " Big Ben est techniquement le nom de la grosse cloche à l'intérieur de la tour, mais par extension, on utilise ce nom pour désigner la tour du Parlement (Elizabeth Tower)."
                 },
                 {
                     "questionNumber": 64,
@@ -733,7 +733,7 @@ quiz_data = {
                         {"text": "A plane paper", "isCorrect": False},
                         {"text": "A plane book", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise 'ticket' pour tous les transports (bus ticket, train ticket). Une 'boarding pass' est la carte d'enregistrement que l'on reçoit après l'enregistrement."
+                    "correction": " On utilise 'ticket' pour tous les transports (bus ticket, train ticket). Une 'boarding pass' est la carte d'enregistrement que l'on reçoit après l'enregistrement."
                 },
                 {
                     "questionNumber": 65,
@@ -744,7 +744,7 @@ quiz_data = {
                         {"text": "Cher pour la nature", "isCorrect": False},
                         {"text": "Polluant pour les rivières", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Cet adjectif composé désigne un produit ou une action qui ne nuit pas à l'écologie. On utilise souvent le synonyme plus court 'eco-friendly'."
+                    "correction": " Cet adjectif composé désigne un produit ou une action qui ne nuit pas à l'écologie. On utilise souvent le synonyme plus court 'eco-friendly'."
                 },
                 {
                     "questionNumber": 66,
@@ -755,7 +755,7 @@ quiz_data = {
                         {"text": "Security guard", "isCorrect": False},
                         {"text": "Border line", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Customs' désigne le service chargé de contrôler les marchandises à l'entrée d'un pays. Attention : 'custom' (sans s) signifie une coutume."
+                    "correction": " 'Customs' désigne le service chargé de contrôler les marchandises à l'entrée d'un pays. Attention : 'custom' (sans s) signifie une coutume."
                 },
                 {
                     "questionNumber": 67,
@@ -766,7 +766,7 @@ quiz_data = {
                         {"text": "La fin de l'esclavage", "isCorrect": False},
                         {"text": "Naissance du premier roi", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Célébré le 4 juillet (Fourth of July), ce jour commémore la signature de la Déclaration d'indépendance en 1776, marquant la naissance des États-Unis d'Amérique."
+                    "correction": " Célébré le 4 juillet (Fourth of July), ce jour commémore la signature de la Déclaration d'indépendance en 1776, marquant la naissance des États-Unis d'Amérique."
                 },
                 {
                     "questionNumber": 68,
@@ -777,7 +777,7 @@ quiz_data = {
                         {"text": "Sky burning", "isCorrect": False},
                         {"text": "World hotting", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On parle de 'global warming' ou de 'climate change'. C'est l'augmentation de la température moyenne de l'atmosphère et des océans sur Terre."
+                    "correction": " On parle de 'global warming' ou de 'climate change'. C'est l'augmentation de la température moyenne de l'atmosphère et des océans sur Terre."
                 },
                 {
                     "questionNumber": 69,
@@ -788,7 +788,7 @@ quiz_data = {
                         {"text": "Nettoyer une chambre", "isCorrect": False},
                         {"text": "Vendre une chambre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le verbe 'to book' signifie réserver. Une réservation se dit 'a booking' ou 'a reservation'. C'est un terme essentiel pour voyager ou aller au restaurant."
+                    "correction": " Le verbe 'to book' signifie réserver. Une réservation se dit 'a booking' ou 'a reservation'. C'est un terme essentiel pour voyager ou aller au restaurant."
                 },
                 {
                     "questionNumber": 70,
@@ -799,7 +799,7 @@ quiz_data = {
                         {"text": "Germany", "isCorrect": False},
                         {"text": "Spain", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le Commonwealth est une organisation regroupant 56 États membres, dont la plupart sont d'anciennes colonies de l'Empire britannique partageant des liens historiques et culturels."
+                    "correction": " Le Commonwealth est une organisation regroupant 56 États membres, dont la plupart sont d'anciennes colonies de l'Empire britannique partageant des liens historiques et culturels."
                 },
                 {
                     "questionNumber": 71,
@@ -810,7 +810,7 @@ quiz_data = {
                         {"text": "A small price", "isCorrect": False},
                         {"text": "A gift", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'A discount' est une réduction. Durant les soldes, on dit 'The sales'. Si un article est en promotion, on dit 'It is on sale'."
+                    "correction": " 'A discount' est une réduction. Durant les soldes, on dit 'The sales'. Si un article est en promotion, on dit 'It is on sale'."
                 },
                 {
                     "questionNumber": 72,
@@ -821,7 +821,7 @@ quiz_data = {
                         {"text": "Richesse actionnaire", "isCorrect": False},
                         {"text": "Propreté des sols", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Sustainability' vient de 'sustainable' (durable). Cela désigne la capacité à maintenir un processus sur le long terme sans épuiser les ressources naturelles."
+                    "correction": " 'Sustainability' vient de 'sustainable' (durable). Cela désigne la capacité à maintenir un processus sur le long terme sans épuiser les ressources naturelles."
                 },
                 {
                     "questionNumber": 73,
@@ -832,7 +832,7 @@ quiz_data = {
                         {"text": "The Metro", "isCorrect": False},
                         {"text": "The Sky-train", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'The Tube' est le surnom affectueux du métro londonien à cause de la forme circulaire des tunnels. Aux USA, on utilise généralement le mot 'Subway'."
+                    "correction": " 'The Tube' est le surnom affectueux du métro londonien à cause de la forme circulaire des tunnels. Aux USA, on utilise généralement le mot 'Subway'."
                 },
                 {
                     "questionNumber": 74,
@@ -843,7 +843,7 @@ quiz_data = {
                         {"text": "A free worker", "isCorrect": False},
                         {"text": "A good man", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un 'volunteer' effectue du 'voluntary work'. Une association caritative se dit 'a charity'. C'est une notion centrale dans les pays anglo-saxons."
+                    "correction": " Un 'volunteer' effectue du 'voluntary work'. Une association caritative se dit 'a charity'. C'est une notion centrale dans les pays anglo-saxons."
                 },
                 {
                     "questionNumber": 75,
@@ -854,7 +854,7 @@ quiz_data = {
                         {"text": "Fraternité", "isCorrect": False},
                         {"text": "Justice", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Equality' fait référence à l'égalité des droits. On parle souvent de 'Gender equality' pour l'égalité hommes-femmes et de 'equal opportunities' pour l'égalité des chances."
+                    "correction": " 'Equality' fait référence à l'égalité des droits. On parle souvent de 'Gender equality' pour l'égalité hommes-femmes et de 'equal opportunities' pour l'égalité des chances."
                 },
                 {
                     "questionNumber": 76,
@@ -865,7 +865,7 @@ quiz_data = {
                         {"text": "Wind smoke", "isCorrect": False},
                         {"text": "Cloud gas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Pollution' est un nom indénombrable en anglais. Pour parler du smog ou de la fumée, on utilise les mots 'smoke' ou 'exhaust fumes' (gaz d'échappement)."
+                    "correction": " 'Pollution' est un nom indénombrable en anglais. Pour parler du smog ou de la fumée, on utilise les mots 'smoke' ou 'exhaust fumes' (gaz d'échappement)."
                 },
                 {
                     "questionNumber": 77,
@@ -876,7 +876,7 @@ quiz_data = {
                         {"text": "Recommencer", "isCorrect": False},
                         {"text": "Nettoyer", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le verbe 'to recycle' fait partie de la règle des '3 Rs' : Reduce (réduire), Reuse (réutiliser), Recycle (recycler). Faire du vélo se dit 'to cycle' ou 'to ride a bike'."
+                    "correction": " Le verbe 'to recycle' fait partie de la règle des '3 Rs' : Reduce (réduire), Reuse (réutiliser), Recycle (recycler). Faire du vélo se dit 'to cycle' ou 'to ride a bike'."
                 },
                 {
                     "questionNumber": 78,
@@ -887,7 +887,7 @@ quiz_data = {
                         {"text": "A fear", "isCorrect": False},
                         {"text": "A bad thing", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Threat' est le terme exact. Le verbe est 'to threaten' (menacer). 'Danger' est un synonyme courant et correct dans de nombreux contextes."
+                    "correction": " 'Threat' est le terme exact. Le verbe est 'to threaten' (menacer). 'Danger' est un synonyme courant et correct dans de nombreux contextes."
                 },
                 {
                     "questionNumber": 79,
@@ -898,7 +898,7 @@ quiz_data = {
                         {"text": "Work end", "isCorrect": False},
                         {"text": "No-work", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un chômeur est 'an unemployed person'. Les allocations chômage se disent 'unemployment benefits' ou 'the dole' (familier au Royaume-Uni)."
+                    "correction": " Un chômeur est 'an unemployed person'. Les allocations chômage se disent 'unemployment benefits' ou 'the dole' (familier au Royaume-Uni)."
                 },
                 {
                     "questionNumber": 80,
@@ -909,7 +909,7 @@ quiz_data = {
                         {"text": "La météo", "isCorrect": False},
                         {"text": "Le monde", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Wealth' est le nom (la richesse). 'Wealthy' est l'adjectif (riche). Ne confondez pas avec 'Health' (la santé) ou 'Weather' (la météo)."
+                    "correction": " 'Wealth' est le nom (la richesse). 'Wealthy' est l'adjectif (riche). Ne confondez pas avec 'Health' (la santé) ou 'Weather' (la météo)."
                 }
             ]
         },
@@ -928,7 +928,7 @@ quiz_data = {
                         {"text": "A box", "isCorrect": False},
                         {"text": "A gear", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Tool' est le terme générique. Une boîte à outils se dit 'a toolbox'. Un 'gear' désigne un engrenage ou une vitesse sur un véhicule."
+                    "correction": " 'Tool' est le terme générique. Une boîte à outils se dit 'a toolbox'. Un 'gear' désigne un engrenage ou une vitesse sur un véhicule."
                 },
                 {
                     "questionNumber": 82,
@@ -939,7 +939,7 @@ quiz_data = {
                         {"text": "A store", "isCorrect": False},
                         {"text": "A building", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Factory' est le mot courant. 'Plant' est souvent utilisé pour des installations industrielles lourdes ou des centrales électriques (power plant)."
+                    "correction": " 'Factory' est le mot courant. 'Plant' est souvent utilisé pour des installations industrielles lourdes ou des centrales électriques (power plant)."
                 },
                 {
                     "questionNumber": 83,
@@ -950,7 +950,7 @@ quiz_data = {
                         {"text": "Chaussures de sécurité", "isCorrect": False},
                         {"text": "Casque audio", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est un équipement de protection individuelle (PPE - Personal Protective Equipment) indispensable pour protéger les yeux des projections dans les ateliers."
+                    "correction": " C'est un équipement de protection individuelle (PPE - Personal Protective Equipment) indispensable pour protéger les yeux des projections dans les ateliers."
                 },
                 {
                     "questionNumber": 84,
@@ -961,7 +961,7 @@ quiz_data = {
                         {"text": "The shop", "isCorrect": False},
                         {"text": "The garage", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Un 'warehouse' est un grand bâtiment de stockage. La gestion d'entrepôt est cruciale en logistique (supply chain management)."
+                    "correction": " Un 'warehouse' est un grand bâtiment de stockage. La gestion d'entrepôt est cruciale en logistique (supply chain management)."
                 },
                 {
                     "questionNumber": 85,
@@ -972,7 +972,7 @@ quiz_data = {
                         {"text": "To stop", "isCorrect": False},
                         {"text": "To change", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To repair' est formel. 'To fix' est très utilisé à l'oral. On dit aussi 'to mend' pour réparer un vêtement ou un petit objet."
+                    "correction": " 'To repair' est formel. 'To fix' est très utilisé à l'oral. On dit aussi 'to mend' pour réparer un vêtement ou un petit objet."
                 },
                 {
                     "questionNumber": 86,
@@ -983,7 +983,7 @@ quiz_data = {
                         {"text": "Feu tricolore", "isCorrect": False},
                         {"text": "Dessin mural", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Ces panneaux sont essentiels pour la santé et la sécurité au travail (HSE). Ils signalent des dangers électriques, chimiques ou physiques."
+                    "correction": " Ces panneaux sont essentiels pour la santé et la sécurité au travail (HSE). Ils signalent des dangers électriques, chimiques ou physiques."
                 },
                 {
                     "questionNumber": 87,
@@ -994,7 +994,7 @@ quiz_data = {
                         {"text": "Keeping", "isCorrect": False},
                         {"text": "Cleaning", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La maintenance préventive se dit 'preventive maintenance'. 'Servicing' est souvent utilisé pour l'entretien régulier des véhicules ou des chaudières."
+                    "correction": " La maintenance préventive se dit 'preventive maintenance'. 'Servicing' est souvent utilisé pour l'entretien régulier des véhicules ou des chaudières."
                 },
                 {
                     "questionNumber": 88,
@@ -1005,7 +1005,7 @@ quiz_data = {
                         {"text": "Primary objects", "isCorrect": False},
                         {"text": "Base products", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Raw' signifie 'cru' ou 'brut'. Les 'raw materials' sont les ressources naturelles (bois, métal, pétrole) avant transformation industrielle."
+                    "correction": " 'Raw' signifie 'cru' ou 'brut'. Les 'raw materials' sont les ressources naturelles (bois, métal, pétrole) avant transformation industrielle."
                 },
                 {
                     "questionNumber": 89,
@@ -1016,7 +1016,7 @@ quiz_data = {
                         {"text": "Vendre", "isCorrect": False},
                         {"text": "Acheter", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le fournisseur est le 'supplier'. La chaîne d'approvisionnement est la 'supply chain'. C'est un concept clé de l'économie mondiale."
+                    "correction": " Le fournisseur est le 'supplier'. La chaîne d'approvisionnement est la 'supply chain'. C'est un concept clé de l'économie mondiale."
                 },
                 {
                     "questionNumber": 90,
@@ -1027,7 +1027,7 @@ quiz_data = {
                         {"text": "A cap", "isCorrect": False},
                         {"text": "A security hat", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Hard hat' est le terme spécifique pour les casques de chantier. 'Helmet' est plus général (vélo, moto, protection industrielle)."
+                    "correction": " 'Hard hat' est le terme spécifique pour les casques de chantier. 'Helmet' est plus général (vélo, moto, protection industrielle)."
                 },
                 {
                     "questionNumber": 91,
@@ -1038,7 +1038,7 @@ quiz_data = {
                         {"text": "Surety", "isCorrect": False},
                         {"text": "Paper", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** On utilise 'Warranty' pour la garantie d'un produit électronique ou technique. 'Guarantee' est plus général. Un appareil 'sous garantie' se dit 'under warranty'."
+                    "correction": " On utilise 'Warranty' pour la garantie d'un produit électronique ou technique. 'Guarantee' est plus général. Un appareil 'sous garantie' se dit 'under warranty'."
                 },
                 {
                     "questionNumber": 92,
@@ -1049,7 +1049,7 @@ quiz_data = {
                         {"text": "Mauvaise odeur", "isCorrect": False},
                         {"text": "Crime", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Une 'malfunction' survient quand une machine ou un logiciel ne fonctionne pas comme prévu. En langage courant, on peut dire 'the machine has broken down'."
+                    "correction": " Une 'malfunction' survient quand une machine ou un logiciel ne fonctionne pas comme prévu. En langage courant, on peut dire 'the machine has broken down'."
                 },
                 {
                     "questionNumber": 93,
@@ -1060,7 +1060,7 @@ quiz_data = {
                         {"text": "The stairs", "isCorrect": False},
                         {"text": "The step", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Ladder' est l'objet à barreaux que l'on déplace. 'Scale' est l'échelle d'une carte ou d'un dessin technique. 'Stairs' désigne l'escalier fixe."
+                    "correction": " 'Ladder' est l'objet à barreaux que l'on déplace. 'Scale' est l'échelle d'une carte ou d'un dessin technique. 'Stairs' désigne l'escalier fixe."
                 },
                 {
                     "questionNumber": 94,
@@ -1071,7 +1071,7 @@ quiz_data = {
                         {"text": "Good", "isCorrect": False},
                         {"text": "Perfect", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Accurate' signifie conforme à la vérité ou exact. 'Precise' signifie détaillé. En technique, une mesure doit être à la fois 'accurate' and 'precise'."
+                    "correction": " 'Accurate' signifie conforme à la vérité ou exact. 'Precise' signifie détaillé. En technique, une mesure doit être à la fois 'accurate' and 'precise'."
                 },
                 {
                     "questionNumber": 95,
@@ -1082,7 +1082,7 @@ quiz_data = {
                         {"text": "Vendre cher", "isCorrect": False},
                         {"text": "Éteindre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To upgrade' signifie passer à une version supérieure (matériel ou logiciel). L'inverse est 'to downgrade' (revenir à une version antérieure)."
+                    "correction": " 'To upgrade' signifie passer à une version supérieure (matériel ou logiciel). L'inverse est 'to downgrade' (revenir à une version antérieure)."
                 },
                 {
                     "questionNumber": 96,
@@ -1093,7 +1093,7 @@ quiz_data = {
                         {"text": "A light", "isCorrect": False},
                         {"text": "A pusher", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Switch' désigne l'interrupteur (on/off). 'Button' est le bouton poussoir. Le verbe est 'to switch on' (allumer) ou 'to switch off' (éteindre)."
+                    "correction": " 'Switch' désigne l'interrupteur (on/off). 'Button' est le bouton poussoir. Le verbe est 'to switch on' (allumer) ou 'to switch off' (éteindre)."
                 },
                 {
                     "questionNumber": 97,
@@ -1104,7 +1104,7 @@ quiz_data = {
                         {"text": "A working paper", "isCorrect": False},
                         {"text": "A how-to-work", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'User manual' ou 'user guide' sont les termes les plus fréquents. 'Operating instructions' peut aussi être utilisé pour des machines complexes."
+                    "correction": " 'User manual' ou 'user guide' sont les termes les plus fréquents. 'Operating instructions' peut aussi être utilisé pour des machines complexes."
                 },
                 {
                     "questionNumber": 98,
@@ -1115,7 +1115,7 @@ quiz_data = {
                         {"text": "Vêtements neufs", "isCorrect": False},
                         {"text": "Accident grave", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** C'est une expression idiomatique désignant la dépréciation ou l'usure naturelle d'un objet ou d'un bâtiment qui résulte de son utilisation quotidienne normale."
+                    "correction": " C'est une expression idiomatique désignant la dépréciation ou l'usure naturelle d'un objet ou d'un bâtiment qui résulte de son utilisation quotidienne normale."
                 },
                 {
                     "questionNumber": 99,
@@ -1126,7 +1126,7 @@ quiz_data = {
                         {"text": "A hole", "isCorrect": False},
                         {"text": "A flow", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'To leak' signifie fuir ou couler. Une 'leak' peut désigner une fuite de liquide, de gaz, mais aussi une fuite d'informations (data leak)."
+                    "correction": " 'To leak' signifie fuir ou couler. Une 'leak' peut désigner une fuite de liquide, de gaz, mais aussi une fuite d'informations (data leak)."
                 },
                 {
                     "questionNumber": 100,
@@ -1137,7 +1137,7 @@ quiz_data = {
                         {"text": "Working hands", "isCorrect": False},
                         {"text": "Worker team", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Workforce' désigne l'ensemble des personnes travaillant pour une entreprise ou un pays. 'Labor costs' désigne le coût de la main-d'œuvre."
+                    "correction": " 'Workforce' désigne l'ensemble des personnes travaillant pour une entreprise ou un pays. 'Labor costs' désigne le coût de la main-d'œuvre."
                 }
             ]
         }

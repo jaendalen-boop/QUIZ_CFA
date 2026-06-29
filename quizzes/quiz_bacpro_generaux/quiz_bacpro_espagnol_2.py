@@ -16,7 +16,7 @@ quiz_data = {
                         {"text": "La campaña de marketing", "isCorrect": False},
                         {"text": "El cartel publicitario", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La publicidad' est le terme générique qui englobe toutes les formes de communication payante visant à promouvoir un produit ou une marque. Un message spécifique (à la radio ou TV) est un 'anuncio'."
+                    "correction": " 'La publicidad' est le terme générique qui englobe toutes les formes de communication payante visant à promouvoir un produit ou une marque. Un message spécifique (à la radio ou TV) est un 'anuncio'."
                 },
                 {
                     "questionNumber": 2,
@@ -27,7 +27,7 @@ quiz_data = {
                         {"text": "Una tienda pequeña", "isCorrect": False},
                         {"text": "Una oficina central", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Una feria' est un événement où les entreprises exposent leurs nouveautés. C'est un lieu stratégique pour le 'networking' et la signature de nouveaux 'contratos'."
+                    "correction": " 'Una feria' est un événement où les entreprises exposent leurs nouveautés. C'est un lieu stratégique pour le 'networking' et la signature de nouveaux 'contratos'."
                 },
                 {
                     "questionNumber": 3,
@@ -38,7 +38,7 @@ quiz_data = {
                         {"text": "Comprar una página sin imagen", "isCorrect": False},
                         {"text": "Contratar a un actor famoso", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le lancement d'un produit ('lanzamiento') nécessite une stratégie de communication claire. Une présentation officielle permet de cibler les prescripteurs, la presse et les clients potentiels."
+                    "correction": " Le lancement d'un produit ('lanzamiento') nécessite une stratégie de communication claire. Une présentation officielle permet de cibler les prescripteurs, la presse et les clients potentiels."
                 },
                 {
                     "questionNumber": 4,
@@ -49,7 +49,7 @@ quiz_data = {
                         {"text": "El organigrama", "isCorrect": False},
                         {"text": "El informe anual", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El logotipo' (ou familièrement 'el logo') est l'élément visuel de la 'imagen corporative'. Il doit être facilement identifiable et mémorisable par le 'público objetivo'."
+                    "correction": " 'El logotipo' (ou familièrement 'el logo') est l'élément visuel de la 'imagen corporative'. Il doit être facilement identifiable et mémorisable par le 'público objetivo'."
                 },
                 {
                     "questionNumber": 5,
@@ -60,7 +60,7 @@ quiz_data = {
                         {"text": "El director comercial", "isCorrect": False},
                         {"text": "El proveedor externo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El público objetivo' (ou 'target') est le groupe de consommateurs que l'entreprise souhaite atteindre. Pour le définir, on utilise des critères comme l'âge, le sexe ou le niveau de revenus."
+                    "correction": " 'El público objetivo' (ou 'target') est le groupe de consommateurs que l'entreprise souhaite atteindre. Pour le définir, on utilise des critères comme l'âge, le sexe ou le niveau de revenus."
                 },
                 {
                     "questionNumber": 6,
@@ -71,7 +71,7 @@ quiz_data = {
                         {"text": "Cambiarle el precio", "isCorrect": False},
                         {"text": "Buscar un empleado cualificado", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Lanzar un producto' signifie le mettre sur le marché. Cette phase est précédée d'un 'estudio de mercado' pour s'assurer que le produit répond à un besoin réel."
+                    "correction": " 'Lanzar un producto' signifie le mettre sur le marché. Cette phase est précédée d'un 'estudio de mercado' pour s'assurer que le produit répond à un besoin réel."
                 },
                 {
                     "questionNumber": 7,
@@ -82,7 +82,7 @@ quiz_data = {
                         {"text": "Un sistema informático complejo", "isCorrect": False},
                         {"text": "Un contrato legal firmado", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les marques de distributeur (comme Hacendado en Espagne pour Mercadona) sont des produits créés par les enseignes de distribution pour concurrencer les grandes marques nationales à un prix inférieur."
+                    "correction": " Les marques de distributeur (comme Hacendado en Espagne pour Mercadona) sont des produits créés par les enseignes de distribution pour concurrencer les grandes marques nationales à un prix inférieur."
                 },
                 {
                     "questionNumber": 8,
@@ -93,7 +93,7 @@ quiz_data = {
                         {"text": "La fotografía de productos", "isCorrect": False},
                         {"text": "El dibujo técnico", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La imagen corporativa' représente la perception globale de l'entreprise par le public. Elle se construit par la publicité, mais aussi par les valeurs de l'entreprise (RSE)."
+                    "correction": " 'La imagen corporativa' représente la perception globale de l'entreprise par le public. Elle se construit par la publicité, mais aussi par les valeurs de l'entreprise (RSE)."
                 },
                 {
                     "questionNumber": 9,
@@ -104,7 +104,7 @@ quiz_data = {
                         {"text": "El plano de planta", "isCorrect": False},
                         {"text": "La baja laboral", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El catálogo' est l'outil de vente principal. Il contient les photos, les descriptions techniques et les prix. Il peut être physique ou 'digital'."
+                    "correction": " 'El catálogo' est l'outil de vente principal. Il contient les photos, les descriptions techniques et les prix. Il peut être physique ou 'digital'."
                 },
                 {
                     "questionNumber": 10,
@@ -115,7 +115,7 @@ quiz_data = {
                         {"text": "Cerrar la sucursal", "isCorrect": False},
                         {"text": "Contratar becarios", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Fomentar' est un verbe très utilisé en économie qui signifie encourager, promouvoir ou stimuler. On peut fomenter l'emploi, les ventes ou les exportations."
+                    "correction": " 'Fomentar' est un verbe très utilisé en économie qui signifie encourager, promouvoir ou stimuler. On peut fomenter l'emploi, les ventes ou les exportations."
                 },
                 {
                     "questionNumber": 11,
@@ -126,7 +126,7 @@ quiz_data = {
                         {"text": "Reparar los ordenadores", "isCorrect": False},
                         {"text": "Organizar archivos de papel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le community manager est le porte-parole numérique. Il anime les communautés, répond aux commentaires et surveille l'image de marque sur Internet."
+                    "correction": " Le community manager est le porte-parole numérique. Il anime les communautés, répond aux commentaires et surveille l'image de marque sur Internet."
                 },
                 {
                     "questionNumber": 12,
@@ -137,7 +137,7 @@ quiz_data = {
                         {"text": "El discurso de bienvenida", "isCorrect": False},
                         {"text": "La explicación técnica", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El lema' est la phrase courte et percutante associée à une marque. Elle doit résumer la promesse du produit de façon mémorable."
+                    "correction": " 'El lema' est la phrase courte et percutante associée à une marque. Elle doit résumer la promesse du produit de façon mémorable."
                 },
                 {
                     "questionNumber": 13,
@@ -148,7 +148,7 @@ quiz_data = {
                         {"text": "Limpiar la oficina", "isCorrect": False},
                         {"text": "Firmar con el notario", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El étude de marché' consiste à collecter et analyser des informations pour comprendre le fonctionnement d'un secteur avant d'y lancer une activité."
+                    "correction": " 'El étude de marché' consiste à collecter et analyser des informations pour comprendre le fonctionnement d'un secteur avant d'y lancer une activité."
                 },
                 {
                     "questionNumber": 14,
@@ -159,7 +159,7 @@ quiz_data = {
                         {"text": "Las cartas de papel", "isCorrect": False},
                         {"text": "Los informes orales", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Las redes sociales' (Facebook, LinkedIn, Instagram) sont devenues des canaux de marketing incontournables pour les entreprises modernes."
+                    "correction": " 'Las redes sociales' (Facebook, LinkedIn, Instagram) sont devenues des canaux de marketing incontournables pour les entreprises modernes."
                 },
                 {
                     "questionNumber": 15,
@@ -170,7 +170,7 @@ quiz_data = {
                         {"text": "La gestión de nóminas", "isCorrect": False},
                         {"text": "Un sistema de seguridad", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le merchandising regroupe les techniques de présentation des produits en magasin (disposition des rayons, éclairage, PLV) pour déclencher l'acte d'achat."
+                    "correction": " Le merchandising regroupe les techniques de présentation des produits en magasin (disposition des rayons, éclairage, PLV) pour déclencher l'acte d'achat."
                 },
                 {
                     "questionNumber": 16,
@@ -181,7 +181,7 @@ quiz_data = {
                         {"text": "El documento acreditativo", "isCorrect": False},
                         {"text": "La sanción económica", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Las rebajas' (souvent au pluriel) désigne les soldes saisonnières. 'Un descuento' est une remise ponctuelle accordée à un client."
+                    "correction": " 'Las rebajas' (souvent au pluriel) désigne les soldes saisonnières. 'Un descuento' est une remise ponctuelle accordée à un client."
                 },
                 {
                     "questionNumber": 17,
@@ -192,7 +192,7 @@ quiz_data = {
                         {"text": "Vender una máquina", "isCorrect": False},
                         {"text": "Pagar una multa", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Anunciar' est le verbe lié à l'annonce publicitaire. On peut 'anunciar' en radio, prensa, televisión ou internet."
+                    "correction": " 'Anunciar' est le verbe lié à l'annonce publicitaire. On peut 'anunciar' en radio, prensa, televisión ou internet."
                 },
                 {
                     "questionNumber": 18,
@@ -203,7 +203,7 @@ quiz_data = {
                         {"text": "Darle un catálogo", "isCorrect": False},
                         {"text": "Llamarle por una queja", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La fidélisation ('fidelización') est moins coûteuse que l'acquisition de nouveaux clients. Elle repose sur la satisfaction et la confiance."
+                    "correction": " La fidélisation ('fidelización') est moins coûteuse que l'acquisition de nouveaux clients. Elle repose sur la satisfaction et la confiance."
                 },
                 {
                     "questionNumber": 19,
@@ -214,7 +214,7 @@ quiz_data = {
                         {"text": "Cerrar las oficinas centrales", "isCorrect": False},
                         {"text": "Pintar las paredes del taller", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La participation à une 'feria' permet d'améliorer la visibilité et de réaliser une veille concurrentielle sur les produits du secteur."
+                    "correction": " La participation à une 'feria' permet d'améliorer la visibilité et de réaliser une veille concurrentielle sur les produits du secteur."
                 },
                 {
                     "questionNumber": 20,
@@ -225,7 +225,7 @@ quiz_data = {
                         {"text": "El pago adelantado", "isCorrect": False},
                         {"text": "El informe pericial", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Una muestra' est un échantillon. C'est un outil de promotion direct qui permet de réduire le frein à l'achat en faisant tester le produit."
+                    "correction": " 'Una muestra' est un échantillon. C'est un outil de promotion direct qui permet de réduire le frein à l'achat en faisant tester le produit."
                 }
             ]
         },
@@ -244,7 +244,7 @@ quiz_data = {
                         {"text": "El impuesto sobre la renta", "isCorrect": False},
                         {"text": "La multa de tráfico", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El flete' désigne le prix du transport (le fret). Dans les contrats internationaux (Incoterms), il est crucial de savoir qui paie le flete : 'el exportador' ou 'el importador'."
+                    "correction": " 'El flete' désigne le prix du transport (le fret). Dans les contrats internationaux (Incoterms), il est crucial de savoir qui paie le flete : 'el exportador' ou 'el importador'."
                 },
                 {
                     "questionNumber": 22,
@@ -255,7 +255,7 @@ quiz_data = {
                         {"text": "El contrato de formación", "isCorrect": False},
                         {"text": "La nota de prensa", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El albarán' (bon de livraison) atteste de la remise du colis. Il doit être signé par le destinataire après vérification de l'état de la marchandise."
+                    "correction": " 'El albarán' (bon de livraison) atteste de la remise du colis. Il doit être signé par le destinataire après vérification de l'état de la marchandise."
                 },
                 {
                     "questionNumber": 23,
@@ -266,7 +266,7 @@ quiz_data = {
                         {"text": "Firmar un acuerdo municipal", "isCorrect": False},
                         {"text": "Organizar una rueda de prensa", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El despacho de aduanas' est le processus administratif de dédouanement. Il permet de déclarer la valeur et la nature des produits pour le paiement des taxes."
+                    "correction": " 'El despacho de aduanas' est le processus administratif de dédouanement. Il permet de déclarer la valeur et la nature des produits pour le paiement des taxes."
                 },
                 {
                     "questionNumber": 24,
@@ -277,7 +277,7 @@ quiz_data = {
                         {"text": "Una excursión escolar", "isCorrect": False},
                         {"text": "Una mudanza privada", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Un viaje de negocios' désigne tout déplacement professionnel (visite de client, foire, audit). L'employé perçoit alors des 'dietas' (indemnités de repas/nuits)."
+                    "correction": " 'Un viaje de negocios' désigne tout déplacement professionnel (visite de client, foire, audit). L'employé perçoit alors des 'dietas' (indemnités de repas/nuits)."
                 },
                 {
                     "questionNumber": 25,
@@ -288,7 +288,7 @@ quiz_data = {
                         {"text": "El comedor principal", "isCorrect": False},
                         {"text": "La sala de conferencias", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El almacén' est l'entrepôt. Sa gestion est fondamentale en logistique pour éviter le 'desabastecimiento' (rupture de stock) ou le surstockage coûteux."
+                    "correction": " 'El almacén' est l'entrepôt. Sa gestion est fondamentale en logistique pour éviter le 'desabastecimiento' (rupture de stock) ou le surstockage coûteux."
                 },
                 {
                     "questionNumber": 26,
@@ -299,7 +299,7 @@ quiz_data = {
                         {"text": "La firma del acuerdo", "isCorrect": False},
                         {"text": "El éxito de la venta", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El retraso' (le retard) peut entraîner des pénalités financières pour le transporteur ou le fournisseur. Il nuit à la satisfaction du client."
+                    "correction": " 'El retraso' (le retard) peut entraîner des pénalités financières pour le transporteur ou le fournisseur. Il nuit à la satisfaction du client."
                 },
                 {
                     "questionNumber": 27,
@@ -310,7 +310,7 @@ quiz_data = {
                         {"text": "El recibo eléctrico", "isCorrect": False},
                         {"text": "La suscripción anual", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El arancel' est le droit de douane. C'est une taxe sur les produits importés qui vise souvent à protéger la production nationale d'un pays."
+                    "correction": " 'El arancel' est le droit de douane. C'est une taxe sur les produits importés qui vise souvent à protéger la production nationale d'un pays."
                 },
                 {
                     "questionNumber": 28,
@@ -321,7 +321,7 @@ quiz_data = {
                         {"text": "La silla del despacho", "isCorrect": False},
                         {"text": "El ordenador de mesa", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La mercancía' désigne l'ensemble des biens qui font l'objet d'un commerce et d'un transport. Le pluriel 'las mercancías' est également très utilisé."
+                    "correction": " 'La mercancía' désigne l'ensemble des biens qui font l'objet d'un commerce et d'un transport. Le pluriel 'las mercancías' est également très utilisé."
                 },
                 {
                     "questionNumber": 29,
@@ -332,7 +332,7 @@ quiz_data = {
                         {"text": "La compra de una fábrica", "isCorrect": False},
                         {"text": "El diseño de un cartel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El alojamiento' désigne l'hébergement. En déplacement professionnel, on cherche souvent des hôtels avec 'sala de reuniones' et connexion 'wifi'."
+                    "correction": " 'El alojamiento' désigne l'hébergement. En déplacement professionnel, on cherche souvent des hôtels avec 'sala de reuniones' et connexion 'wifi'."
                 },
                 {
                     "questionNumber": 30,
@@ -343,7 +343,7 @@ quiz_data = {
                         {"text": "El transporte por carretera", "isCorrect": False},
                         {"text": "El transporte ferroviario", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El transporte aéreo' est le plus cher mais le plus rapide. Il est privilégié pour les marchandises à haute valeur ajoutée ou périssables."
+                    "correction": " 'El transporte aéreo' est le plus cher mais le plus rapide. Il est privilégié pour les marchandises à haute valeur ajoutée ou périssables."
                 },
                 {
                     "questionNumber": 31,
@@ -354,7 +354,7 @@ quiz_data = {
                         {"text": "El horario de oficina", "isCorrect": False},
                         {"text": "La nómina mensual", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El bulto' est le terme technique pour un colis. On demande souvent lors d'une expédition : '¿Cuántos bultos son?' (Combien y a-t-il de colis ?)."
+                    "correction": " 'El bulto' est le terme technique pour un colis. On demande souvent lors d'une expédition : '¿Cuántos bultos son?' (Combien y a-t-il de colis ?)."
                 },
                 {
                     "questionNumber": 32,
@@ -365,7 +365,7 @@ quiz_data = {
                         {"text": "Comprar una enciclopedia", "isCorrect": False},
                         {"text": "Llamar a antiguos clientes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El seguimiento' (tracking) est essentiel pour informer le client de la date prévue de livraison. Il permet aussi de détecter d'éventuels incidents de parcours."
+                    "correction": " 'El seguimiento' (tracking) est essentiel pour informer le client de la date prévue de livraison. Il permet aussi de détecter d'éventuels incidents de parcours."
                 },
                 {
                     "questionNumber": 33,
@@ -376,7 +376,7 @@ quiz_data = {
                         {"text": "El contrato fijo", "isCorrect": False},
                         {"text": "La baja médica", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El desabastecimiento' ou 'rotura de stock' signifie que l'entreprise ne peut plus répondre à la demande car l'almacén est vide."
+                    "correction": " 'El desabastecimiento' ou 'rotura de stock' signifie que l'entreprise ne peut plus répondre à la demande car l'almacén est vide."
                 },
                 {
                     "questionNumber": 34,
@@ -387,7 +387,7 @@ quiz_data = {
                         {"text": "El plano de la ciudad", "isCorrect": False},
                         {"text": "La lista de canciones", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La carta de porte' (lettre de voiture) est le contrat entre l'expéditeur et le transporteur routier. Elle détaille le contenu et la destination."
+                    "correction": " 'La carta de porte' (lettre de voiture) est le contrat entre l'expéditeur et le transporteur routier. Elle détaille le contenu et la destination."
                 },
                 {
                     "questionNumber": 35,
@@ -398,7 +398,7 @@ quiz_data = {
                         {"text": "La caja de cartón", "isCorrect": False},
                         {"text": "El cajón de madera", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El contenedor' a révolutionné le commerce mondial. C'est une unité standardisée qui peut passer du navire au train ou au camion (intermodalité)."
+                    "correction": " 'El contenedor' a révolutionné le commerce mondial. C'est une unité standardisée qui peut passer du navire au train ou au camion (intermodalité)."
                 },
                 {
                     "questionNumber": 36,
@@ -409,7 +409,7 @@ quiz_data = {
                         {"text": "Para decorar la entrada", "isCorrect": False},
                         {"text": "Para comprar uniformes", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'assurance ('el seguro') est indispensable car le transporteur n'est pas toujours responsable de la totalité de la valeur en cas de sinistre (vol, avarie)."
+                    "correction": " L'assurance ('el seguro') est indispensable car le transporteur n'est pas toujours responsable de la totalité de la valeur en cas de sinistre (vol, avarie)."
                 },
                 {
                     "questionNumber": 37,
@@ -420,7 +420,7 @@ quiz_data = {
                         {"text": "El capitán del barco", "isCorrect": False},
                         {"text": "El jefe de almacén", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El camionero' est le conducteur de camions. On utilise aussi le terme 'el transportista' pour désigner le prestataire de services de transport."
+                    "correction": " 'El camionero' est le conducteur de camions. On utilise aussi le terme 'el transportista' pour désigner le prestataire de services de transport."
                 },
                 {
                     "questionNumber": 38,
@@ -431,7 +431,7 @@ quiz_data = {
                         {"text": "Firmar cartas laborales", "isCorrect": False},
                         {"text": "Limpiar la nave industrial", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Descargar' signifie décharger. L'action inverse est 'cargar' (charger). Le quai de déchargement se dit 'muelle de descarga'."
+                    "correction": " 'Descargar' signifie décharger. L'action inverse est 'cargar' (charger). Le quai de déchargement se dit 'muelle de descarga'."
                 },
                 {
                     "questionNumber": 39,
@@ -442,7 +442,7 @@ quiz_data = {
                         {"text": "La limpieza general", "isCorrect": False},
                         {"text": "La cocina del comedor", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La logística' est l'art de gérer les flux physiques (marchandises) et d'informations pour livrer au bon moment, au bon endroit et au meilleur coût."
+                    "correction": " 'La logística' est l'art de gérer les flux physiques (marchandises) et d'informations pour livrer au bon moment, au bon endroit et au meilleur coût."
                 },
                 {
                     "questionNumber": 40,
@@ -453,7 +453,7 @@ quiz_data = {
                         {"text": "Las primas de riesgo", "isCorrect": False},
                         {"text": "Los intereses bancarios", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Las dietas' correspondent aux frais de bouche et de déplacement. Elles sont remboursées par l'entreprise au salarié qui voyage pour son travail."
+                    "correction": " 'Las dietas' correspondent aux frais de bouche et de déplacement. Elles sont remboursées par l'entreprise au salarié qui voyage pour son travail."
                 }
             ]
         },
@@ -472,7 +472,7 @@ quiz_data = {
                         {"text": "Reunión presencial", "isCorrect": False},
                         {"text": "Desplazamiento diario", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El teletrabajo' s'est généralisé. Il utilise les 'TIC' (Technologies de l'Information et de la Communication) pour permettre de travailler hors des locaux de l'entreprise."
+                    "correction": " 'El teletrabajo' s'est généralisé. Il utilise les 'TIC' (Technologies de l'Information et de la Communication) pour permettre de travailler hors des locaux de l'entreprise."
                 },
                 {
                     "questionNumber": 42,
@@ -483,7 +483,7 @@ quiz_data = {
                         {"text": "La llamada telefónica", "isCorrect": False},
                         {"text": "El correo postal", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La videoconferencia' (ou 'videollamada') permet de réduire les coûts de transport et de maintenir le contact visuel entre des collaborateurs distants."
+                    "correction": " 'La videoconferencia' (ou 'videollamada') permet de réduire les coûts de transport et de maintenir le contact visuel entre des collaborateurs distants."
                 },
                 {
                     "questionNumber": 43,
@@ -494,7 +494,7 @@ quiz_data = {
                         {"text": "La pantalla", "isCorrect": False},
                         {"text": "El ratón inalámbrico", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La contraseña' est le mot de passe. Elle doit être 'robusta' (complexe) pour garantir la 'seguridad informática' de l'entreprise."
+                    "correction": " 'La contraseña' est le mot de passe. Elle doit être 'robusta' (complexe) pour garantir la 'seguridad informática' de l'entreprise."
                 },
                 {
                     "questionNumber": 44,
@@ -505,7 +505,7 @@ quiz_data = {
                         {"text": "Carpeta de cuero", "isCorrect": False},
                         {"text": "Sobre de papel", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Archivo adjunto' désigne le fichier lié au courriel. On utilise souvent le verbe 'adjuntar' : 'Le adjunto la factura'."
+                    "correction": " 'Archivo adjunto' désigne le fichier lié au courriel. On utilise souvent le verbe 'adjuntar' : 'Le adjunto la factura'."
                 },
                 {
                     "questionNumber": 45,
@@ -516,7 +516,7 @@ quiz_data = {
                         {"text": "La toma de corriente", "isCorrect": False},
                         {"text": "El interruptor de luz", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Inalámbrico' signifie sans fil (sin cable). 'La red wifi' est l'exemple le plus courant de connexion inalámbrica."
+                    "correction": " 'Inalámbrico' signifie sans fil (sin cable). 'La red wifi' est l'exemple le plus courant de connexion inalámbrica."
                 },
                 {
                     "questionNumber": 46,
@@ -527,7 +527,7 @@ quiz_data = {
                         {"text": "Programa de cálculos complejos", "isCorrect": False},
                         {"text": "Base de datos física", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Les outils comme Teams, Slack ou Trello sont des plateformes qui facilitent le 'trabajo colaborativo' et le partage de documents en temps réel."
+                    "correction": " Les outils comme Teams, Slack ou Trello sont des plateformes qui facilitent le 'trabajo colaborativo' et le partage de documents en temps réel."
                 },
                 {
                     "questionNumber": 47,
@@ -538,7 +538,7 @@ quiz_data = {
                         {"text": "El buscador de internet", "isCorrect": False},
                         {"text": "El procesador de textos", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El virus' est identique en espagnol. Pour s'en protéger, l'entreprise installe un 'antivirus' et met à jour ses 'programas'."
+                    "correction": " 'El virus' est identique en espagnol. Pour s'en protéger, l'entreprise installe un 'antivirus' et met à jour ses 'programas'."
                 },
                 {
                     "questionNumber": 48,
@@ -549,7 +549,7 @@ quiz_data = {
                         {"text": "Limpiar el cristal", "isCorrect": False},
                         {"text": "Comprar un panel curvo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Compartir pantalla' (partager l'écran) est essentiel pour faire des démonstrations ou présenter des 'diapositivas' lors de réunions à distance."
+                    "correction": " 'Compartir pantalla' (partager l'écran) est essentiel pour faire des démonstrations ou présenter des 'diapositivas' lors de réunions à distance."
                 },
                 {
                     "questionNumber": 49,
@@ -560,7 +560,7 @@ quiz_data = {
                         {"text": "La dirección de casa", "isCorrect": False},
                         {"text": "El código de barras", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El nombre de usuario' (username) est souvent l'adresse e-mail professionnelle. Il est associé à une 'contraseña'."
+                    "correction": " 'El nombre de usuario' (username) est souvent l'adresse e-mail professionnelle. Il est associé à une 'contraseña'."
                 },
                 {
                     "questionNumber": 50,
@@ -571,7 +571,7 @@ quiz_data = {
                         {"text": "El disco duro", "isCorrect": False},
                         {"text": "La impresora láser", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El enlace' (ou le calque anglais 'el link') permet de naviguer d'un document à un autre ou vers un site internet."
+                    "correction": " 'El enlace' (ou le calque anglais 'el link') permet de naviguer d'un document à un autre ou vers un site internet."
                 },
                 {
                     "questionNumber": 51,
@@ -582,7 +582,7 @@ quiz_data = {
                         {"text": "Curso de gimnasia móvil", "isCorrect": False},
                         {"text": "Instalación de cámaras físicas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La ciberseguridad' protège les données contre le vol, le sabotage ou les 'ataques' informatiques. C'est une priorité absolue pour les entreprises."
+                    "correction": " 'La ciberseguridad' protège les données contre le vol, le sabotage ou les 'ataques' informatiques. C'est une priorité absolue pour les entreprises."
                 },
                 {
                     "questionNumber": 52,
@@ -593,7 +593,7 @@ quiz_data = {
                         {"text": "La cámara de video", "isCorrect": False},
                         {"text": "El teclado ergonómico", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El micrófono' (ou 'micro') doit être configuré correctement pour les réunions. On peut le 'silenciar' (couper le son) quand on ne parle pas."
+                    "correction": " 'El micrófono' (ou 'micro') doit être configuré correctement pour les réunions. On peut le 'silenciar' (couper le son) quand on ne parle pas."
                 },
                 {
                     "questionNumber": 53,
@@ -604,7 +604,7 @@ quiz_data = {
                         {"text": "Mesa de madera", "isCorrect": False},
                         {"text": "Lámpara led", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Escritorio' désigne à la fois le meuble physique et l'interface de l'ordinateur. Le 'escritorio virtual' permet d'accéder à ses fichiers depuis n'importe quel appareil."
+                    "correction": " 'Escritorio' désigne à la fois le meuble physique et l'interface de l'ordinateur. Le 'escritorio virtual' permet d'accéder à ses fichiers depuis n'importe quel appareil."
                 },
                 {
                     "questionNumber": 54,
@@ -615,7 +615,7 @@ quiz_data = {
                         {"text": "Contrato de impresoras", "isCorrect": False},
                         {"text": "Informe de precios", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La copia de seguridad' (backup) est vitale. Elle se fait souvent sur le 'nube' (cloud) pour garantir que les données ne soient pas perdues en cas de panne matérielle."
+                    "correction": " 'La copia de seguridad' (backup) est vitale. Elle se fait souvent sur le 'nube' (cloud) pour garantir que les données ne soient pas perdues en cas de panne matérielle."
                 },
                 {
                     "questionNumber": 55,
@@ -626,7 +626,7 @@ quiz_data = {
                         {"text": "Selección con pruebas físicas", "isCorrect": False},
                         {"text": "Estrategia con radio y TV", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le format 'híbrido' est devenu la norme. Il nécessite un équipement audio et vidéo de qualité pour que tout le monde puisse participer équitablement."
+                    "correction": " Le format 'híbrido' est devenu la norme. Il nécessite un équipement audio et vidéo de qualité pour que tout le monde puisse participer équitablement."
                 },
                 {
                     "questionNumber": 56,
@@ -637,7 +637,7 @@ quiz_data = {
                         {"text": "La gorra de deporte", "isCorrect": False},
                         {"text": "El velo de seda", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Los auriculares' (ou 'cascos') permettent de s'isoler du bruit ambiant pour mieux entendre ses interlocuteurs lors d'un appel."
+                    "correction": " 'Los auriculares' (ou 'cascos') permettent de s'isoler du bruit ambiant pour mieux entendre ses interlocuteurs lors d'un appel."
                 },
                 {
                     "questionNumber": 57,
@@ -648,7 +648,7 @@ quiz_data = {
                         {"text": "Pago de electricidad", "isCorrect": False},
                         {"text": "Firma de contrato", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Actualizar' un logiciel est essentiel pour boucher les failles de sécurité et bénéficier des nouvelles fonctionnalités."
+                    "correction": " 'Actualizar' un logiciel est essentiel pour boucher les failles de sécurité et bénéficier des nouvelles fonctionnalités."
                 },
                 {
                     "questionNumber": 58,
@@ -659,7 +659,7 @@ quiz_data = {
                         {"text": "Carnet de conducir", "isCorrect": False},
                         {"text": "Llave metálica de oficina", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La identidad digital' est l'image que l'on renvoie sur le web. Pour un professionnel, elle doit être soignée, notamment sur des réseaux comme LinkedIn."
+                    "correction": " 'La identidad digital' est l'image que l'on renvoie sur le web. Pour un professionnel, elle doit être soignée, notamment sur des réseaux comme LinkedIn."
                 },
                 {
                     "questionNumber": 59,
@@ -670,7 +670,7 @@ quiz_data = {
                         {"text": "Operario de limpieza industrial", "isCorrect": False},
                         {"text": "Directivo con equipo grande", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El trabajador en remoto' n'est pas lié à un bureau physique. Cela favorise la 'conciliación' entre vie professionnelle et vie personnelle."
+                    "correction": " 'El trabajador en remoto' n'est pas lié à un bureau physique. Cela favorise la 'conciliación' entre vie professionnelle et vie personnelle."
                 },
                 {
                     "questionNumber": 60,
@@ -681,7 +681,7 @@ quiz_data = {
                         {"text": "Llamada a cobro revertido", "isCorrect": False},
                         {"text": "Telegrama enviado por fax", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La mensajería instantánea' (chat) permet une communication plus fluide et moins formelle que l'e-mail pour les questions rapides du quotidien."
+                    "correction": " 'La mensajería instantánea' (chat) permet une communication plus fluide et moins formelle que l'e-mail pour les questions rapides du quotidien."
                 }
             ]
         },
@@ -700,7 +700,7 @@ quiz_data = {
                         {"text": "Pyme", "isCorrect": False},
                         {"text": "IVA", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'EPI' signifie 'Equipos de Protección Individual'. Ils sont obligatoires pour protéger le travailleur contre les risques qui ne peuvent être évités par d'autres moyens."
+                    "correction": " 'EPI' signifie 'Equipos de Protección Individual'. Ils sont obligatoires pour protéger le travailleur contre les risques qui ne peuvent être évités par d'autres moyens."
                 },
                 {
                     "questionNumber": 62,
@@ -711,7 +711,7 @@ quiz_data = {
                         {"text": "Sombrero de paja", "isCorrect": False},
                         {"text": "Pañuelo de seda", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El casco' est indispensable sur les chantiers ('obras') ou dans les zones industrielles pour protéger contre les chutes d'objets ou les chocs."
+                    "correction": " 'El casco' est indispensable sur les chantiers ('obras') ou dans les zones industrielles pour protéger contre les chutes d'objets ou les chocs."
                 },
                 {
                     "questionNumber": 63,
@@ -722,7 +722,7 @@ quiz_data = {
                         {"text": "Reparación de máquinas antiguas", "isCorrect": False},
                         {"text": "Gestión de multas de tráfico", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La Responsabilidad Social Empresarial (RSE) est l'intégration volontaire par les entreprises de préoccupations sociales et écologiques à leurs activités commerciales."
+                    "correction": " La Responsabilidad Social Empresarial (RSE) est l'intégration volontaire par les entreprises de préoccupations sociales et écologiques à leurs activités commerciales."
                 },
                 {
                     "questionNumber": 64,
@@ -733,7 +733,7 @@ quiz_data = {
                         {"text": "Formación técnica especializada", "isCorrect": False},
                         {"text": "Promoción interna", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Un accidente laboral' est une lésion corporelle subie par le travailleur à l'occasion ou par suite de son travail. Cela inclut le trajet ('accidente in itinere')."
+                    "correction": " 'Un accidente laboral' est une lésion corporelle subie par le travailleur à l'occasion ou par suite de son travail. Cela inclut le trajet ('accidente in itinere')."
                 },
                 {
                     "questionNumber": 65,
@@ -744,7 +744,7 @@ quiz_data = {
                         {"text": "Gasto innecesario de recursos", "isCorrect": False},
                         {"text": "Ahorro para la jubilación", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Desarrollo sostenible' (ou 'sustentable') désigne un développement qui répond aux besoins du présent sans compromettre la capacité des générations futures à répondre aux leurs."
+                    "correction": " 'Desarrollo sostenible' (ou 'sustentable') désigne un développement qui répond aux besoins du présent sans compromettre la capacité des générations futures à répondre aux leurs."
                 },
                 {
                     "questionNumber": 66,
@@ -755,7 +755,7 @@ quiz_data = {
                         {"text": "La lista de precios del menú", "isCorrect": False},
                         {"text": "El horario de apertura", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La salida de emergencia' doit être libre de tout obstacle. Elle est signalée par un panneau vert avec un personnage qui court vers une porte."
+                    "correction": " 'La salida de emergencia' doit être libre de tout obstacle. Elle est signalée par un panneau vert avec un personnage qui court vers une porte."
                 },
                 {
                     "questionNumber": 67,
@@ -766,7 +766,7 @@ quiz_data = {
                         {"text": "Gafas de plástico transparente", "isCorrect": False},
                         {"text": "Chalecos reflectantes amarillos", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Los guantes' protègent contre les coupures, les brûlures ou les produits chimiques. Il en existe de différentes matières (latex, cuir, nitrile) selon l'usage."
+                    "correction": " 'Los guantes' protègent contre les coupures, les brûlures ou les produits chimiques. Il en existe de différentes matières (latex, cuir, nitrile) selon l'usage."
                 },
                 {
                     "questionNumber": 68,
@@ -777,7 +777,7 @@ quiz_data = {
                         {"text": "El incendio accidental", "isCorrect": False},
                         {"text": "La compra de herramientas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El reciclaje' permet de valoriser les déchets ('residuos') en les transformant en nouvelles matières premières. C'est un pilier de l'économie circulaire."
+                    "correction": " 'El reciclaje' permet de valoriser les déchets ('residuos') en les transformant en nouvelles matières premières. C'est un pilier de l'économie circulaire."
                 },
                 {
                     "questionNumber": 69,
@@ -788,7 +788,7 @@ quiz_data = {
                         {"text": "Instalar aire a máxima potencia", "isCorrect": False},
                         {"text": "Imprimir correos en color", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le covoiturage ('coche compartido') et les transports publics réduisent l'empreinte carbone ('huella de carbono') de l'entreprise liée aux déplacements."
+                    "correction": " Le covoiturage ('coche compartido') et les transports publics réduisent l'empreinte carbone ('huella de carbono') de l'entreprise liée aux déplacements."
                 },
                 {
                     "questionNumber": 70,
@@ -799,7 +799,7 @@ quiz_data = {
                         {"text": "Bienestar físico", "isCorrect": False},
                         {"text": "Salud mental", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Peligro' (danger) signale un risque imminent. On le trouve sur les panneaux d'avertissement ('advertencia') avec un triangle jaune."
+                    "correction": " 'Peligro' (danger) signale un risque imminent. On le trouve sur les panneaux d'avertissement ('advertencia') avec un triangle jaune."
                 },
                 {
                     "questionNumber": 71,
@@ -810,7 +810,7 @@ quiz_data = {
                         {"text": "El destornillador plano", "isCorrect": False},
                         {"text": "El soplete de gas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El extintor' est obligatoire dans tous les locaux professionnels. Les employés doivent savoir s'en servir et l'emplacement doit être clairement indiqué."
+                    "correction": " 'El extintor' est obligatoire dans tous les locaux professionnels. Les employés doivent savoir s'en servir et l'emplacement doit être clairement indiqué."
                 },
                 {
                     "questionNumber": 72,
@@ -821,7 +821,7 @@ quiz_data = {
                         {"text": "Selección de personal comercial", "isCorrect": False},
                         {"text": "Contabilidad de gastos de viaje", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'ergonomie vise à adapter le poste de travail à l'homme (hauteur du bureau, qualité de la chaise) pour prévenir les troubles musculo-squelettiques (TMS)."
+                    "correction": " L'ergonomie vise à adapter le poste de travail à l'homme (hauteur du bureau, qualité de la chaise) pour prévenir les troubles musculo-squelettiques (TMS)."
                 },
                 {
                     "questionNumber": 73,
@@ -832,7 +832,7 @@ quiz_data = {
                         {"text": "Limpieza profunda de suelos", "isCorrect": False},
                         {"text": "Protección de bosques", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La contaminación' peut être acoustique, atmosphérique ou de l'eau. Les entreprises doivent respecter des normes strictes pour limiter leurs 'emisiones'."
+                    "correction": " 'La contaminación' peut être acoustique, atmosphérique ou de l'eau. Les entreprises doivent respecter des normes strictes pour limiter leurs 'emisiones'."
                 },
                 {
                     "questionNumber": 74,
@@ -843,7 +843,7 @@ quiz_data = {
                         {"text": "Tirar papel a papelera ordinaria", "isCorrect": False},
                         {"text": "Usar el coche privado siempre", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Ahorro energético' (économie d'énergie) consiste à éteindre les lumières, optimiser le chauffage ou utiliser des appareils basse consommation (LED)."
+                    "correction": " 'Ahorro energético' (économie d'énergie) consiste à éteindre les lumières, optimiser le chauffage ou utiliser des appareils basse consommation (LED)."
                 },
                 {
                     "questionNumber": 75,
@@ -854,7 +854,7 @@ quiz_data = {
                         {"text": "Máquina de café para descansos", "isCorrect": False},
                         {"text": "Revisar la conexión a internet", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Los primeros auxilios' sont les gestes d'urgence. En entreprise, certaines personnes sont formées comme 'socorristas' (SST) pour intervenir rapidement."
+                    "correction": " 'Los primeros auxilios' sont les gestes d'urgence. En entreprise, certaines personnes sont formées comme 'socorristas' (SST) pour intervenir rapidement."
                 },
                 {
                     "questionNumber": 76,
@@ -865,7 +865,7 @@ quiz_data = {
                         {"text": "Zapatos de tacón alto", "isCorrect": False},
                         {"text": "Camisas de manga larga", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Las gafas de seguridad' (ou 'protectoras') sont essentielles dans les ateliers de soudure, de menuiserie ou de chimie pour protéger la vue."
+                    "correction": " 'Las gafas de seguridad' (ou 'protectoras') sont essentielles dans les ateliers de soudure, de menuiserie ou de chimie pour protéger la vue."
                 },
                 {
                     "questionNumber": 77,
@@ -876,7 +876,7 @@ quiz_data = {
                         {"text": "Sueño tras jornada larga", "isCorrect": False},
                         {"text": "Descanso durante la playa", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'El estrés laboral' est un risque psychosocial. Il peut être causé par une charge de travail excessive ou un manque de clarté dans les 'funciones'."
+                    "correction": " 'El estrés laboral' est un risque psychosocial. Il peut être causé par une charge de travail excessive ou un manque de clarté dans les 'funciones'."
                 },
                 {
                     "questionNumber": 78,
@@ -887,7 +887,7 @@ quiz_data = {
                         {"text": "Tapar el cable con alfombra vieja", "isCorrect": False},
                         {"text": "Cortar el cable con tijeras", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La sécurité électrique est cruciale. En cas de danger visible, il ne faut jamais intervenir soi-même sans être qualifié et il faut baliser la zone."
+                    "correction": " La sécurité électrique est cruciale. En cas de danger visible, il ne faut jamais intervenir soi-même sans être qualifié et il faut baliser la zone."
                 },
                 {
                     "questionNumber": 79,
@@ -898,7 +898,7 @@ quiz_data = {
                         {"text": "Medicamento fuerte", "isCorrect": False},
                         {"text": "Hospital público periférico", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La salud' au travail ne signifie pas seulement l'absence de maladie, mais un état complet de bien-être physique, mental et social."
+                    "correction": " 'La salud' au travail ne signifie pas seulement l'absence de maladie, mais un état complet de bien-être physique, mental et social."
                 },
                 {
                     "questionNumber": 80,
@@ -909,7 +909,7 @@ quiz_data = {
                         {"text": "Crisis financiera profunda", "isCorrect": False},
                         {"text": "Deuda externa", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'La sostenibilidad' est la capacité d'un système à perdurer dans le temps en respectant l'environnement, l'équité sociale et la viabilité économique."
+                    "correction": " 'La sostenibilidad' est la capacité d'un système à perdurer dans le temps en respectant l'environnement, l'équité sociale et la viabilité économique."
                 }
             ]
         },
@@ -928,7 +928,7 @@ quiz_data = {
                         {"text": "Por + infinitivo", "isCorrect": False},
                         {"text": "Porque + indicativo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Para + infinitivo' s'utilise si le sujet est le même. 'Para que + subjuntivo' s'utilise si les sujets sont différents (Ex: Yo hablo para que tú entiendas)."
+                    "correction": " 'Para + infinitivo' s'utilise si le sujet est le même. 'Para que + subjuntivo' s'utilise si les sujets sont différents (Ex: Yo hablo para que tú entiendas)."
                 },
                 {
                     "questionNumber": 82,
@@ -939,7 +939,7 @@ quiz_data = {
                         {"text": "Si tendré dinero compraría", "isCorrect": False},
                         {"text": "Si hubiera tenido habría comprado", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'hypothèse sur le présent/futur se construit avec 'Si + imperfecto de subjuntivo' (-ra/-se) suivi du 'condicional simple' (-ría)."
+                    "correction": " L'hypothèse sur le présent/futur se construit avec 'Si + imperfecto de subjuntivo' (-ra/-se) suivi du 'condicional simple' (-ría)."
                 },
                 {
                     "questionNumber": 83,
@@ -950,7 +950,7 @@ quiz_data = {
                         {"text": "Dijo que envía el correo", "isCorrect": False},
                         {"text": "Dijo que ha enviado el correo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Au discours indirect, si le verbe introducteur est au passé (dijo), le futur du discours direct devient un conditionnel (enviaría)."
+                    "correction": " Au discours indirect, si le verbe introducteur est au passé (dijo), le futur du discours direct devient un conditionnel (enviaría)."
                 },
                 {
                     "questionNumber": 84,
@@ -961,7 +961,7 @@ quiz_data = {
                         {"text": "De", "isCorrect": False},
                         {"text": "En", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Para' exprime la destination (Voy para Madrid), le but (Para apprendre) ou une échéance temporelle (Para el lunes)."
+                    "correction": " 'Para' exprime la destination (Voy para Madrid), le but (Para apprendre) ou une échéance temporelle (Para el lunes)."
                 },
                 {
                     "questionNumber": 85,
@@ -972,7 +972,7 @@ quiz_data = {
                         {"text": "Es necesario fumar", "isCorrect": False},
                         {"text": "Hay que fumar", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Está prohibido + infinitivo' est la structure impersonnelle standard pour l'interdiction. On peut aussi utiliser 'Prohibido + infinitivo'."
+                    "correction": " 'Está prohibido + infinitivo' est la structure impersonnelle standard pour l'interdiction. On peut aussi utiliser 'Prohibido + infinitivo'."
                 },
                 {
                     "questionNumber": 86,
@@ -983,7 +983,7 @@ quiz_data = {
                         {"text": "Serían fabricadas por la empresa", "isCorrect": False},
                         {"text": "Estaban siendo fabricadas", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La voix passive se construit avec le verbe 'SER' conjugué au temps voulu, suivi du participe passé accordé en genre et en nombre avec le sujet."
+                    "correction": " La voix passive se construit avec le verbe 'SER' conjugué au temps voulu, suivi du participe passé accordé en genre et en nombre avec le sujet."
                 },
                 {
                     "questionNumber": 87,
@@ -994,7 +994,7 @@ quiz_data = {
                         {"text": "Antes", "isCorrect": False},
                         {"text": "Luego", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Mientras' signifie 'pendant que'. S'il est suivi de l'indicatif, il exprime la simultanéité. Suivi du subjonctif, il peut exprimer une condition."
+                    "correction": " 'Mientras' signifie 'pendant que'. S'il est suivi de l'indicatif, il exprime la simultanéité. Suivi du subjonctif, il peut exprimer une condition."
                 },
                 {
                     "questionNumber": 88,
@@ -1005,7 +1005,7 @@ quiz_data = {
                         {"text": "Haber", "isCorrect": False},
                         {"text": "Tener", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** En espagnol, on utilise 'SER' pour définir une profession ou un métier de manière permanente (Soy mecánico). 'ESTAR' s'utilise pour une situation temporaire."
+                    "correction": " En espagnol, on utilise 'SER' pour définir une profession ou un métier de manière permanente (Soy mecánico). 'ESTAR' s'utilise pour une situation temporaire."
                 },
                 {
                     "questionNumber": 89,
@@ -1016,7 +1016,7 @@ quiz_data = {
                         {"text": "Empezar a + infinitivo", "isCorrect": False},
                         {"text": "Volver a + infinitivo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour traduire 'venir de' + infinitif, l'espagnol utilise 'Acabar de + infinitif'. Exemple : 'Acabo de recibir el correo' (Je viens de recevoir le mail). C'est une tournure indispensable pour le passé immédiat."
+                    "correction": " Pour traduire 'venir de' + infinitif, l'espagnol utilise 'Acabar de + infinitif'. Exemple : 'Acabo de recibir el correo' (Je viens de recevoir le mail). C'est une tournure indispensable pour le passé immédiat."
                 },
                 {
                     "questionNumber": 90,
@@ -1027,7 +1027,7 @@ quiz_data = {
                         {"text": "Presente", "isCorrect": False},
                         {"text": "Pasado perfecto", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le conditionnel sert de 'futur du passé'. Si l'on raconte un événement passé qui en envisageait un autre futur, on utilise le conditionnel."
+                    "correction": " Le conditionnel sert de 'futur du passé'. Si l'on raconte un événement passé qui en envisageait un autre futur, on utilise le conditionnel."
                 },
                 {
                     "questionNumber": 91,
@@ -1038,7 +1038,7 @@ quiz_data = {
                         {"text": "Rapidez", "isCorrect": False},
                         {"text": "Rapidillo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** La plupart des adverbes se forment en ajoutant '-mente' au féminin de l'adjectif (Rápida -> Rápidamente). Si l'adjectif possède un accent, l'adverbe le conserve."
+                    "correction": " La plupart des adverbes se forment en ajoutant '-mente' au féminin de l'adjectif (Rápida -> Rápidamente). Si l'adjectif possède un accent, l'adverbe le conserve."
                 },
                 {
                     "questionNumber": 92,
@@ -1049,7 +1049,7 @@ quiz_data = {
                         {"text": "Quien", "isCorrect": False},
                         {"text": "Cual", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Donde' est le relatif de lieu. Il ne prend pas d'accent quand il est relatif. S'il y a un mouvement, on utilise 'Adonde' (Ex: El taller adonde voy)."
+                    "correction": " 'Donde' est le relatif de lieu. Il ne prend pas d'accent quand il est relatif. S'il y a un mouvement, on utilise 'Adonde' (Ex: El taller adonde voy)."
                 },
                 {
                     "questionNumber": 93,
@@ -1060,7 +1060,7 @@ quiz_data = {
                         {"text": "Futuro simple", "isCorrect": False},
                         {"text": "Ir a + infinitivo", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'action en cours se forme avec l'auxiliaire 'ESTAR' + le gérondif. Exemple : 'Estamos preparando el pedido' (Nous sommes en train de préparer la commande). C'est l'équivalent du 'be + V-ing' anglais."
+                    "correction": " L'action en cours se forme avec l'auxiliaire 'ESTAR' + le gérondif. Exemple : 'Estamos preparando el pedido' (Nous sommes en train de préparer la commande). C'est l'équivalent du 'be + V-ing' anglais."
                 },
                 {
                     "questionNumber": 94,
@@ -1071,7 +1071,7 @@ quiz_data = {
                         {"text": "Menos... que", "isCorrect": False},
                         {"text": "Muy... que", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** L'égalité se construit avec 'Tan + adjetivo/adverbio + como'. Si l'on compare des quantités (noms), on utilise 'Tanto/a/os/as + nombre + como'."
+                    "correction": " L'égalité se construit avec 'Tan + adjetivo/adverbio + como'. Si l'on compare des quantités (noms), on utilise 'Tanto/a/os/as + nombre + como'."
                 },
                 {
                     "questionNumber": 95,
@@ -1082,7 +1082,7 @@ quiz_data = {
                         {"text": "Trabajaré aquí desde hace dos años", "isCorrect": False},
                         {"text": "Trabajaba aquí desde hace dos años", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Pour une action qui continue dans le présent, l'espagnol utilise le présent de l'indicatif avec 'desde hace' + durée. Le français utilise le présent également."
+                    "correction": " Pour une action qui continue dans le présent, l'espagnol utilise le présent de l'indicatif avec 'desde hace' + durée. Le français utilise le présent également."
                 },
                 {
                     "questionNumber": 96,
@@ -1093,7 +1093,7 @@ quiz_data = {
                         {"text": "Tienes que revisar el texto", "isCorrect": False},
                         {"text": "Hay que revisar el texto", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le conditionnel du verbe 'DEBER' (debería) est la forme la plus courtoise et diplomatique pour suggérer une action ou donner un conseil."
+                    "correction": " Le conditionnel du verbe 'DEBER' (debería) est la forme la plus courtoise et diplomatique pour suggérer une action ou donner un conseil."
                 },
                 {
                     "questionNumber": 97,
@@ -1104,7 +1104,7 @@ quiz_data = {
                         {"text": "A mí me parece", "isCorrect": False},
                         {"text": "Pienso que", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'Desde mi point de vue' ou 'En mi opinión' sont des expressions idéales pour l'argumentation professionnelle, car elles marquent une prise de position structurée."
+                    "correction": " 'Desde mi point de vue' ou 'En mi opinión' sont des expressions idéales pour l'argumentation professionnelle, car elles marquent une prise de position structurée."
                 },
                 {
                     "questionNumber": 98,
@@ -1115,7 +1115,7 @@ quiz_data = {
                         {"text": "La", "isCorrect": False},
                         {"text": "Se", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** 'LE' est le pronom complément d'objet indirect (COI) pour 'lui' ou 'elle'. Attention, devant un pronom COD (lo/la), 'le' se transforme en 'SE' (Ex: Se lo doy)."
+                    "correction": " 'LE' est le pronom complément d'objet indirect (COI) pour 'lui' ou 'elle'. Attention, devant un pronom COD (lo/la), 'le' se transforme en 'SE' (Ex: Se lo doy)."
                 },
                 {
                     "questionNumber": 99,
@@ -1126,7 +1126,7 @@ quiz_data = {
                         {"text": "Requiere preposición 'de' detrás", "isCorrect": False},
                         {"text": "Solo existe en plural 'gustan'", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Avec 'Gustar', le sujet est la chose aimée. Le verbe s'accorde donc avec elle : 'Me gusta el coche' (singulier) mais 'Me gustan los coches' (pluriel). On utilise les pronoms compléments (me, te, le, nos, os, les)."
+                    "correction": " Avec 'Gustar', le sujet est la chose aimée. Le verbe s'accorde donc avec elle : 'Me gusta el coche' (singulier) mais 'Me gustan los coches' (pluriel). On utilise les pronoms compléments (me, te, le, nos, os, les)."
                 },
                 {
                     "questionNumber": 100,
@@ -1137,7 +1137,7 @@ quiz_data = {
                         {"text": "Ellos venden coches", "isCorrect": False},
                         {"text": "Tú vendes coches", "isCorrect": False}
                     ],
-                    "correction": "**Rappel de cours :** Le 'SE' de 'pasiva refleja' s'accorde avec le sujet réel de l'action. Comme 'coches' est au pluriel, le verbe 'venden' doit également être au pluriel."
+                    "correction": " Le 'SE' de 'pasiva refleja' s'accorde avec le sujet réel de l'action. Comme 'coches' est au pluriel, le verbe 'venden' doit également être au pluriel."
                 }
             ]
         }
