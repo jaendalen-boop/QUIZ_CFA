@@ -788,6 +788,11 @@ def reset_quiz_state_for_selected_quiz():
     st.session_state.last_is_correct = None
     st.session_state.shuffled_questions = None
     st.session_state.shuffled_answers = {}
+    
+    # --- CORRECTION DU BUG : Nettoyage strict du mode examen ---
+    st.session_state.exam_mode = False
+    st.session_state.exam_questions = []
+    st.session_state.exam_user_answers = {}
 
     st.session_state.theme_scores = {}
     
@@ -797,6 +802,20 @@ def reset_quiz_state_for_selected_quiz():
     for num in quiz_data["themes"].keys():
         if num not in st.session_state.theme_scores[quiz_key]:
             st.session_state.theme_scores[quiz_key][num] = None
+
+
+def go_back_to_main_menu():
+    """Retour au menu des thèmes pour le quiz courant (sans effacer les scores)."""
+    st.session_state.current_theme = None
+    st.session_state.current_question_index = 0
+    st.session_state.score = 0
+    st.session_state.show_correction = False
+    st.session_state.last_is_correct = None
+    st.session_state.shuffled_questions = None
+    st.session_state.shuffled_answers = {}
+    
+    # --- CORRECTION DU BUG : Sécurité supplémentaire en sortie de thème ---
+    st.session_state.exam_mode = False
 
 
 def start_theme(theme_number: int):
@@ -1922,83 +1941,7 @@ def show_question_screen():
                 if st.button("✅ Valider ma réponse", use_container_width=True, type="primary"):
                     if not st.session_state.selected_answer:
                         st.warning("Veuillez sélectionner une réponse avant de valider.")
-                    else:
-                        correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
-                        is_correct = (correct_opt and st.session_state.selected_answer == correct_opt["text"])
-                        st.session_state.last_is_correct = is_correct
-                        st.session_state.show_correction = True
-                        st.session_state.answer_locked = True
-                        if is_correct: st.session_state.score += 1
-                        st.rerun()
-            with col2:
-                if st.button("⬅️ Retour", use_container_width=True):
-                    st.session_state.show_quit_confirmation = True
-                    st.rerun()
-        else:
-            for opt in answer_options:
-                is_correct_answer = opt["isCorrect"]
-                is_user_answer = (st.session_state.selected_answer == opt["text"])
-                
-                if is_correct_answer: 
-                    b_c, bg, t_c, icon = "#22c55e", "#d4edda", "#155724", "✅"
-                elif is_user_answer: 
-                    b_c, bg, t_c, icon = "#CD493D", "#f8d7da", "#721c24", "❌"
-                else: 
-                    b_c, bg, t_c, icon = "#e5e7eb", "#ffffff", "#1f2937", ""
-                    
-                st.markdown(f"<div style='border: 1px solid {b_c}; border-left: 6px solid {b_c}; border-radius: 8px; padding: 0.8rem 1.2rem; margin-bottom: 0.5rem; background: {bg}; color: {t_c}; font-family: \"Montserrat\"; text-align: left;'>{icon} <strong>{opt['key']}.</strong> {opt['text']}</div>", unsafe_allow_html=True)
-
-            if st.session_state.last_is_correct:
-                st.markdown("<div style='text-align:center; color:#22c55e; font-family:\"Roboto Slab\"; font-weight:700; font-size:1.2rem; margin:1.5rem 0;'>Excellent ! Bonne réponse.</div>", unsafe_allow_html=True)
-            else:
-                correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
-                sol = correct_opt['text'] if correct_opt else 'N/A'
-                st.markdown(f"<div style='text-align:center; color:#CD493D; font-family:\"Roboto Slab\"; font-weight:700; font-size:1.2rem; margin:1.5rem 0;'>Mauvaise réponse. La solution était : {sol}</div>", unsafe_allow_html=True)
-
-            if q.get("correction"):
-                st.markdown(f"""
-                <div style="background-color: #ffffff; border: 1px solid #0F3250; border-top: 4px solid #0F3250; border-radius: 8px; padding: 1.2rem; margin: 1.5rem 0;">
-                    <span style="font-family: 'Roboto Slab'; font-weight: 700; color: #0F3250; display: block; margin-bottom: 0.3rem;">📚 Rappel de cours</span>
-                    <p style="font-family: 'Montserrat'; color: #333333; margin: 0; font-size: 0.95rem; line-height: 1.5;">{q['correction']}</p>
-                </div>
-                """, unsafe_allow_html=True)
-
-            st.markdown("<br>", unsafe_allow_html=True)
-            col1, col2 = st.columns(2, gap="small")
-            with col1:
-                if st.button("➡️ Question suivante", use_container_width=True, type="primary"):
-                    st.session_state.show_correction = False
-                    st.session_state.answer_locked = False
-                    st.session_state.selected_answer = None
-                    st.session_state.current_question_index += 1
-                    if st.session_state.current_question_index >= total_questions:
-                        show_theme_result()
-                    else:
-                        st.rerun()
-            with col2:
-                if st.button("⬅️ Quitter le thème", use_container_width=True):
-                    st.session_state.show_quit_confirmation = True
-                    st.rerun()
-
-    # --- BLOCK SIGNALEMENT COMMUN ---
-    st.markdown("---")
-    with st.expander("🚩 Signaler une erreur sur cette question"):
-        reason = st.text_area("Précisez l'erreur...", key=f"report_area_{orig_idx_tech}_{theme_origin}")
-        if st.button("Envoyer le rapport", key=f"rep_btn_{orig_idx_tech}_{theme_origin}"):
-            if reason:
-                from auth_persistence import save_question_report
-                vrai_numero = orig_idx_tech + 1
-                save_question_report(
-                    st.session_state.username or "Anonyme", 
-                    st.session_state.selected_quiz_key, 
-                    theme_origin, 
-                    vrai_numero, 
-                    q['question'], 
-                    reason
-                )
-                st.success(f"✅ Signalement envoyé (réf: Thème {theme_origin}, Question n°{vrai_numero}) !")
-            else: 
-                st.warning("Veuillez décrire l'erreur rencontrée.")
+                    else
 
     # --- Confirmation de sortie commune ---
     if st.session_state.get("show_quit_confirmation"):
