@@ -1896,7 +1896,13 @@ def show_question_screen():
 
         st.markdown("<br>", unsafe_allow_html=True)
         col1, col2 = st.columns(2, gap="small")
+        
         with col1:
+            if st.button("⬅️ Quitter l'examen", use_container_width=True):
+                st.session_state.show_quit_confirmation = True
+                st.rerun()
+                
+        with col2:
             label_next = "Soumettre l'examen" if (idx + 1 == total_questions) else "Question suivante ➡️"
             if st.button(label_next, use_container_width=True, type="primary"):
                 if idx not in st.session_state.exam_user_answers:
@@ -1916,10 +1922,6 @@ def show_question_screen():
                     else:
                         st.session_state.current_question_index += 1
                         st.rerun()
-        with col2:
-            if st.button("⬅️ Quitter l'examen", use_container_width=True):
-                st.session_state.show_quit_confirmation = True
-                st.rerun()
 
     # --- CAS D'ORIGINE : ENTRAÎNEMENT CLASSIQUE PAR THÈME ---
     else:
@@ -1937,7 +1939,13 @@ def show_question_screen():
 
             st.markdown("<br>", unsafe_allow_html=True)
             col1, col2 = st.columns(2, gap="small")
+            
             with col1:
+                if st.button("⬅️ Retour au menu", use_container_width=True):
+                    st.session_state.show_quit_confirmation = True
+                    st.rerun()
+                    
+            with col2:
                 if st.button("✅ Valider ma réponse", use_container_width=True, type="primary"):
                     if not st.session_state.selected_answer:
                         st.warning("Veuillez sélectionner une réponse avant de valider.")
@@ -1949,10 +1957,6 @@ def show_question_screen():
                         st.session_state.answer_locked = True
                         if is_correct: st.session_state.score += 1
                         st.rerun()
-            with col2:
-                if st.button("⬅️ Retour", use_container_width=True):
-                    st.session_state.show_quit_confirmation = True
-                    st.rerun()
         else:
             for opt in answer_options:
                 is_correct_answer = opt["isCorrect"]
@@ -1984,7 +1988,13 @@ def show_question_screen():
 
             st.markdown("<br>", unsafe_allow_html=True)
             col1, col2 = st.columns(2, gap="small")
+            
             with col1:
+                if st.button("⬅️ Quitter le thème", use_container_width=True):
+                    st.session_state.show_quit_confirmation = True
+                    st.rerun()
+                    
+            with col2:
                 if st.button("➡️ Question suivante", use_container_width=True, type="primary"):
                     st.session_state.show_correction = False
                     st.session_state.answer_locked = False
@@ -1994,10 +2004,6 @@ def show_question_screen():
                         show_theme_result()
                     else:
                         st.rerun()
-            with col2:
-                if st.button("⬅️ Quitter le thème", use_container_width=True):
-                    st.session_state.show_quit_confirmation = True
-                    st.rerun()
 
     # --- Confirmation de sortie commune ---
     if st.session_state.get("show_quit_confirmation"):
