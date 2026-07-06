@@ -99,53 +99,54 @@ def load_user_scores(username: str) -> dict:
         return {"quizzes": {}}
 
 def save_user_scores(username: str, quiz_key: str, theme_scores: dict, exam_attempt: bool = False, exam_score: int = None):
-    """Sauvegarde les scores des thèmes et met à jour les statistiques de l'examen blanc."""
-    import json
-    import os
-
+    """Sauvegarde les scores dans Google Sheets (remplace la version fichier)."""
     username = username.strip().lower()
-    filepath = os.path.join(DATA_DIR, f"{username}_scores.json")
     
-    # Chargement des données existantes ou initialisation
-    if os.path.exists(filepath):
-        try:
-            with open(filepath, "r", encoding="utf-8") as f:
-                data = json.load(f)
-        except:
-            data = {"quizzes": {}}
+    # 1. Lire les scores actuels depuis Google Sheets
+    try:
+        df = conn.read(worksheet="scores", ttl=0)
+    except:
+        df = pd.DataFrame(columns=["username", "quiz_key", "scores_json", "last_updated"])
+
+    # 2. Trouver la ligne de l'utilisateur pour ce quiz
+    mask = (df['username'] == username) & (df['quiz_key'] == quiz_key)
+    
+    if any(mask):
+        # Récupérer les données existantes
+        existing_data = json.loads(df.loc[mask, 'scores_json'].values[0])
     else:
-        data = {"quizzes": {}}
+        existing_data = {"scores": {}, "exam_stats": {"attempts": 0, "best_score": 0}}
 
-    if "quizzes" not in data:
-        data["quizzes"] = {}
-
-    if quiz_key not in data["quizzes"]:
-        data["quizzes"][quiz_key] = {"scores": {}, "exam_stats": {"attempts": 0, "best_score": 0}}
-
-    # Sécurité pour les structures anciennes qui n'ont pas encore 'exam_stats'
-    if "exam_stats" not in data["quizzes"][quiz_key]:
-        data["quizzes"][quiz_key]["exam_stats"] = {"attempts": 0, "best_score": 0}
-
-    # Mise à jour des scores de thèmes classiques
+    # 3. Mise à jour des thèmes et stats
     for t_num, score in theme_scores.items():
         if score is not None:
-            data["quizzes"][quiz_key]["scores"][str(t_num)] = score
-
-    # Mise à jour spécifique si c'est un examen blanc qui vient d'être soumis
+            existing_data["scores"][str(t_num)] = score
+            
     if exam_attempt:
-        data["quizzes"][quiz_key]["exam_stats"]["attempts"] += 1
+        existing_data["exam_stats"]["attempts"] += 1
         if exam_score is not None:
-            current_best = data["quizzes"][quiz_key]["exam_stats"].get("best_score", 0)
-            if exam_score > current_best:
-                data["quizzes"][quiz_key]["exam_stats"]["best_score"] = exam_score
+            if exam_score > existing_data["exam_stats"].get("best_score", 0):
+                existing_data["exam_stats"]["best_score"] = exam_score
 
-    # Écriture sur le disque
-    try:
-        with open(filepath, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=4)
-        return True
-    except:
-        return False
+    # 4. Préparer la mise à jour du DataFrame
+    new_json = json.dumps(existing_data, ensure_ascii=False)
+    
+    if any(mask):
+        df.loc[mask, 'scores_json'] = new_json
+        df.loc[mask, 'last_updated'] = datetime.now().isoformat()
+    else:
+        new_row = pd.DataFrame([{
+            "username": username,
+            "quiz_key": quiz_key,
+            "scores_json": new_json,
+            "last_updated": datetime.now().isoformat()
+        }])
+        df = pd.concat([df, new_row], ignore_index=True)
+
+    # 5. Envoyer au Sheets
+    conn.update(worksheet="scores", data=df)
+    force_refresh_cache()
+    return True
 
 def reset_quiz_scores(username: str, quiz_key: str):
     """Efface les scores d'un quiz spécifique pour un utilisateur."""
