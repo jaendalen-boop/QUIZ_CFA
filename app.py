@@ -2520,6 +2520,17 @@ def main():
             st.markdown("<br><br>", unsafe_allow_html=True)
             st.image(logo_path, use_container_width=True)
 
+        # --- AJOUT MENTION LÉGALE IA (BORDURE BAS DE SIDEBAR) ---
+        st.markdown("---")
+        st.markdown(
+            """
+            <div style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 0.70rem; color: #B0D2D9; line-height: 1.3; padding: 0.5rem; opacity: 0.7;">
+                ⚠️ <i>Contenu généré majoritairement par IA. Vérifié régulièrement, mais des erreurs restent possibles.</i>
+            </div>
+            """, 
+            unsafe_allow_html=True
+        )
+
     # --- 2. AIGUILLAGE DES ÉCRANS ---
     # AJOUT DE LA SÉCURITÉ : Si l'état d'authentification demande l'écran de saisie, on l'affiche en priorité absolue
     if st.session_state.get("auth_stage") == "entry":
