@@ -2030,7 +2030,7 @@ def show_question_screen():
     # Affichage de la question stylisée
     st.markdown(f"<h3 style='margin: 1.5rem 0; font-size:1.3rem; font-weight:700; line-height:1.4; text-align:center; color:#0F3250;'>{q['question']}</h3>", unsafe_allow_html=True)
 
-    # --- FONCTION INTERNE DE SAUVEGARDE DE LA PAUSE ---
+    # --- FONCTION INTERNE : SAUVEGARDE ET DÉCONNEXION ---
     def trigger_pause_save():
         from auth_persistence import save_quiz_state
         state_data = {
@@ -2044,14 +2044,17 @@ def show_question_screen():
             "exam_user_answers": st.session_state.get("exam_user_answers", {})
         }
         save_quiz_state(st.session_state.username, st.session_state.selected_quiz_key, state_data)
-        st.toast("✅ Progression sauvegardée en pause !", icon="⏸️")
+        st.toast("✅ Progression sauvegardée. À bientôt !", icon="👋")
         
-        # --- CORRECTION ICI : Redirection vers l'écran d'accueil général ---
-        st.session_state.exam_mode = False
-        st.session_state.current_theme = None
+        # Fermeture totale de la session (Déconnexion)
+        st.session_state.auth_stage = "entry"
+        st.session_state.username = None
         st.session_state.selected_quiz_key = None
-        # On peut aussi s'assurer de réinitialiser le niveau si besoin
-        # st.session_state.selected_level = None 
+        st.session_state.current_theme = None
+        st.session_state.selected_level = None
+        st.session_state.selected_cap_family = None
+        st.session_state.selected_cap_general_subject = None
+        st.session_state.exam_mode = False
 
     # --- CAS PARAMÉTRABLE : MODE EXAMEN BLANC ---
     if is_exam:
@@ -2080,7 +2083,8 @@ def show_question_screen():
         with col_p:
             if st.session_state.get("auth_stage") == "logged_in":
                 if st.button("⏸️ Pause", use_container_width=True):
-                    trigger_pause_save()
+                    # Déclenchement de la confirmation de pause
+                    st.session_state.show_pause_confirmation = True
                     st.rerun()
             else:
                 st.button("⏸️ Pause", use_container_width=True, disabled=True, help="Connectez-vous pour sauvegarder votre progression")
@@ -2131,7 +2135,8 @@ def show_question_screen():
             with col_p:
                 if st.session_state.get("auth_stage") == "logged_in":
                     if st.button("⏸️ Pause", use_container_width=True):
-                        trigger_pause_save()
+                        # Déclenchement de la confirmation de pause
+                        st.session_state.show_pause_confirmation = True
                         st.rerun()
                 else:
                     st.button("⏸️ Pause", use_container_width=True, disabled=True, help="Connectez-vous pour sauvegarder votre progression")
@@ -2188,7 +2193,8 @@ def show_question_screen():
             with col_p:
                 if st.session_state.get("auth_stage") == "logged_in":
                     if st.button("⏸️ Pause", use_container_width=True):
-                        trigger_pause_save()
+                        # Déclenchement de la confirmation de pause
+                        st.session_state.show_pause_confirmation = True
                         st.rerun()
                 else:
                     st.button("⏸️ Pause", use_container_width=True, disabled=True, help="Connectez-vous pour sauvegarder votre progression")
@@ -2204,7 +2210,7 @@ def show_question_screen():
                     else:
                         st.rerun()
 
-    # --- Confirmation de sortie commune ---
+    # --- Confirmation de sortie classique ---
     if st.session_state.get("show_quit_confirmation"):
         st.warning("⚠️ Quitter annulera votre progression en cours.")
         c_y, c_n = st.columns(2)
@@ -2215,6 +2221,18 @@ def show_question_screen():
             st.rerun()
         if c_n.button("Non, je reste", use_container_width=True):
             st.session_state.show_quit_confirmation = False
+            st.rerun()
+
+    # --- Confirmation de mise en pause (Nouvelle) ---
+    if st.session_state.get("show_pause_confirmation"):
+        st.info("⏸️ Voulez-vous sauvegarder votre progression et vous déconnecter ?")
+        c_y, c_n = st.columns(2)
+        if c_y.button("Oui, sauvegarder et déconnecter", use_container_width=True, type="primary"):
+            st.session_state.show_pause_confirmation = False
+            trigger_pause_save()
+            st.rerun()
+        if c_n.button("Non, je reste", use_container_width=True):
+            st.session_state.show_pause_confirmation = False
             st.rerun()
 
     # --- BLOCK SIGNALEMENT COMMUN ---
