@@ -1355,7 +1355,81 @@ def show_admin_dashboard():
 # INTERFACE : SÉLECTEUR DE NIVEAU
 # -----------------------
 
+# -----------------------
+# INTERFACE : SÉLECTEUR DE NIVEAU
+# -----------------------
+
+def show_active_pause_barrage():
+    """Affiche le barrage si une pause est active. Retourne True si l'écran est bloqué, False sinon."""
+    if st.session_state.get("auth_stage") == "logged_in" and st.session_state.get("username"):
+        from auth_persistence import get_active_pause, clear_quiz_state
+        active_pause = get_active_pause(st.session_state.username)
+        
+        if active_pause:
+            paused_quiz_key = active_pause["quiz_key"]
+            
+            # --- Mécanique de rechargement en mémoire ---
+            if st.session_state.get("trigger_resume_action"):
+                state_data = active_pause["state_data"]
+                
+                # On restaure absolument tout le contexte du quiz
+                st.session_state.selected_quiz_key = paused_quiz_key
+                st.session_state.exam_mode = state_data.get("exam_mode", False)
+                st.session_state.current_question_index = state_data.get("current_question_index", 0)
+                st.session_state.score = state_data.get("score", 0)
+                st.session_state.current_theme = state_data.get("current_theme")
+                st.session_state.shuffled_questions = state_data.get("shuffled_questions")
+                st.session_state.shuffled_answers = state_data.get("shuffled_answers", {})
+                st.session_state.exam_questions = state_data.get("exam_questions")
+                st.session_state.exam_user_answers = state_data.get("exam_user_answers", {})
+                
+                # On débloque l'interface
+                st.session_state.answer_locked = False
+                st.session_state.show_correction = False
+                st.session_state.trigger_resume_action = False
+                
+                # Consommation de la sauvegarde : on nettoie la base de données
+                clear_quiz_state(st.session_state.username, paused_quiz_key)
+                
+                # On redirige vers l'écran de la question
+                st.rerun()
+
+            # --- Interface visuelle du barrage ---
+            st.warning("⚠️ **Session en cours détectée**")
+            
+            st.markdown(
+                f"""
+                <div style="background-color: #ffffff; border: 1px solid #F1BA33; border-left: 6px solid #F1BA33; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                    <h3 style="color: #866939; font-family: 'Roboto Slab'; margin-top: 0;">Entraînement suspendu</h3>
+                    <p style="font-family: 'Montserrat'; color: #333333;">
+                        Vous avez une partie en pause sur le quiz <strong>{paused_quiz_key.replace('_', ' ').upper()}</strong>.<br>
+                        Afin de garantir votre progression, vous devez la terminer ou l'annuler avant de pouvoir lancer un nouveau quiz.
+                    </p>
+                </div>
+                """, 
+                unsafe_allow_html=True
+            )
+            
+            col_rep, col_del = st.columns(2)
+            with col_rep:
+                if st.button("▶️ Reprendre la session", use_container_width=True, type="primary"):
+                    st.session_state.trigger_resume_action = True
+                    st.rerun()
+            with col_del:
+                if st.button("🗑️ Annuler et perdre la progression", use_container_width=True):
+                    clear_quiz_state(st.session_state.username, paused_quiz_key)
+                    st.toast("🗑️ Pause supprimée. Vous pouvez naviguer librement.")
+                    st.rerun()
+            
+            return True # Le barrage est actif, il faut bloquer le reste
+    return False # Aucune pause, on laisse passer
+
 def show_level_selector():
+    # --- 🛡️ BARRAGE DE REPRISE (PAUSE OBLIGATOIRE) ---
+    if show_active_pause_barrage():
+        return
+    # ------------------------------------------------
+
     with st.container():
         st.markdown("""
         <div style="background-color: #0F3250; padding: 2.5rem 1rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-bottom: 2.5rem;">
@@ -1804,72 +1878,6 @@ def show_quiz_selector():
 
 def show_quiz_page():
     """Affiche la page d'accueil d'un quiz avec la liste de ses thèmes et l'accès à l'Examen Blanc."""
-    
-    # --- 🛡️ BARRAGE DE REPRISE (PAUSE OBLIGATOIRE) ---
-    if st.session_state.get("auth_stage") == "logged_in" and st.session_state.get("username"):
-        from auth_persistence import get_active_pause, clear_quiz_state
-        active_pause = get_active_pause(st.session_state.username)
-        
-        if active_pause:
-            paused_quiz_key = active_pause["quiz_key"]
-            
-            # --- Mécanique de rechargement en mémoire ---
-            if st.session_state.get("trigger_resume_action"):
-                state_data = active_pause["state_data"]
-                
-                # On restaure absolument tout le contexte du quiz
-                st.session_state.selected_quiz_key = paused_quiz_key
-                st.session_state.exam_mode = state_data.get("exam_mode", False)
-                st.session_state.current_question_index = state_data.get("current_question_index", 0)
-                st.session_state.score = state_data.get("score", 0)
-                st.session_state.current_theme = state_data.get("current_theme")
-                st.session_state.shuffled_questions = state_data.get("shuffled_questions")
-                st.session_state.shuffled_answers = state_data.get("shuffled_answers", {})
-                st.session_state.exam_questions = state_data.get("exam_questions")
-                st.session_state.exam_user_answers = state_data.get("exam_user_answers", {})
-                
-                # On débloque l'interface (au cas où la pause ait été faite après une réponse)
-                st.session_state.answer_locked = False
-                st.session_state.show_correction = False
-                st.session_state.trigger_resume_action = False
-                
-                # Consommation de la sauvegarde : on nettoie la base de données
-                clear_quiz_state(st.session_state.username, paused_quiz_key)
-                
-                # On redirige vers l'écran de la question
-                st.rerun()
-
-            # --- Interface visuelle du barrage ---
-            st.warning("⚠️ **Session en cours détectée**")
-            
-            st.markdown(
-                f"""
-                <div style="background-color: #ffffff; border: 1px solid #F1BA33; border-left: 6px solid #F1BA33; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
-                    <h3 style="color: #866939; font-family: 'Roboto Slab'; margin-top: 0;">Entraînement suspendu</h3>
-                    <p style="font-family: 'Montserrat'; color: #333333;">
-                        Vous avez une partie en pause sur le quiz <strong>{paused_quiz_key.replace('_', ' ').upper()}</strong>.<br>
-                        Afin de garantir votre progression, vous devez la terminer ou l'annuler avant de pouvoir lancer un nouveau thème.
-                    </p>
-                </div>
-                """, 
-                unsafe_allow_html=True
-            )
-            
-            col_rep, col_del = st.columns(2)
-            with col_rep:
-                if st.button("▶️ Reprendre la session", use_container_width=True, type="primary"):
-                    st.session_state.trigger_resume_action = True
-                    st.rerun()
-            with col_del:
-                if st.button("🗑️ Annuler et perdre la progression", use_container_width=True):
-                    clear_quiz_state(st.session_state.username, paused_quiz_key)
-                    st.toast("🗑️ Pause supprimée. Vous pouvez naviguer librement.")
-                    st.rerun()
-            
-            # 🛑 On bloque totalement l'exécution de la suite de la fonction
-            return
-    # --- FIN DU BARRAGE ---
-
     quiz_data = get_current_quiz_data()
     quiz_key = st.session_state.selected_quiz_key
     if not quiz_data or not quiz_key:
