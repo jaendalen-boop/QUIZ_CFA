@@ -975,6 +975,84 @@ def generate_score_summary():
 # INTERFACE : PROFIL
 # -----------------------
 
+def check_and_notify_new_badges():
+    """Vérifie si de nouveaux badges ont été débloqués et affiche une notification."""
+    if st.session_state.get("auth_stage") != "logged_in" or not st.session_state.get("username"):
+        return
+
+    from auth_persistence import get_user_stats, load_user_scores
+    username = st.session_state.username
+    
+    # 1. Calculer les statistiques actuelles
+    stats = get_user_stats(username)
+    user_scores = load_user_scores(username)
+    quizzes = user_scores.get("quizzes", {})
+
+    validated_quiz_count = 0
+    validated_cap, validated_bacpro, validated_bp, validated_bts, validated_cs = 0, 0, 0, 0, 0
+    total_exam_attempts = 0
+    has_high_exam_score = False
+
+    for quiz_key, quiz_data_score in quizzes.items():
+        scores = quiz_data_score.get("scores", {})
+        exam_stats = quiz_data_score.get("exam_stats", {})
+        
+        total_exam_attempts += exam_stats.get("attempts", 0)
+        if exam_stats.get("best_score", 0) >= 25:
+            has_high_exam_score = True
+            
+        if not scores: continue
+        
+        total_correct, total_questions = 0, 0
+        all_themes_completed = True
+        for score_str in scores.values():
+            if not isinstance(score_str, str): continue
+            try:
+                correct, total = map(int, score_str.split("/"))
+                total_correct += correct
+                total_questions += total
+            except ValueError: 
+                all_themes_completed = False
+
+        if total_questions > 0:
+            percentage = (total_correct / total_questions) * 100
+            if all_themes_completed and percentage >= 70:
+                validated_quiz_count += 1
+                if quiz_key.startswith("cap_"): validated_cap += 1
+                elif quiz_key.startswith("bacpro_"): validated_bacpro += 1
+                elif quiz_key.startswith("bp_"): validated_bp += 1
+                elif quiz_key.startswith("bts_"): validated_bts += 1
+                elif quiz_key.startswith("cs_"): validated_cs += 1
+
+    # 2. Évaluer les conditions des badges
+    current_badges = set()
+    if validated_quiz_count >= 1: current_badges.add("🎯 Premier quiz")
+    if validated_quiz_count >= 5: current_badges.add("🏅 5 quiz validés")
+    if stats.get("total_questions", 0) >= 100: current_badges.add("📚 100 questions")
+    if stats.get("total_questions", 0) >= 300: current_badges.add("🧠 300 questions")
+    if stats.get("average_percentage", 0) >= 80: current_badges.add("🔥 Moyenne ≥ 80%")
+    if stats.get("average_percentage", 0) >= 90: current_badges.add("💎 Moyenne ≥ 90%")
+    if validated_cap >= 3: current_badges.add("🏗️ Expert CAP")
+    if validated_bacpro >= 2: current_badges.add("🏬 Expert BAC PRO")
+    if (validated_bp >= 1 and validated_bts >= 1): current_badges.add("🎓 Spécialiste Sup")
+    if stats.get("total_quizzes", 0) >= 10: current_badges.add("⏱️ Fidèle au poste")
+    if total_exam_attempts >= 5: current_badges.add("⏳ Assiduité Examen")
+    if has_high_exam_score: current_badges.add("⚡ Maîtrise Examen")
+
+    # 3. Initialiser la mémoire si c'est la première vérification de la session
+    if "earned_badges" not in st.session_state:
+        st.session_state.earned_badges = current_badges
+        return 
+
+    # 4. Comparer et notifier
+    new_badges = current_badges - st.session_state.earned_badges
+    for badge in new_badges:
+        st.toast(f"**Nouveau badge débloqué !**\n{badge}", icon="🏆")
+        st.balloons()
+
+    # 5. Mettre à jour la mémoire
+    st.session_state.earned_badges = current_badges
+
 def show_profile_page():
     if st.session_state.get("auth_stage") != "logged_in" or not st.session_state.get("username"):
         st.info("Connectez-vous pour accéder à votre profil.")
@@ -1726,6 +1804,72 @@ def show_quiz_selector():
 
 def show_quiz_page():
     """Affiche la page d'accueil d'un quiz avec la liste de ses thèmes et l'accès à l'Examen Blanc."""
+    
+    # --- 🛡️ BARRAGE DE REPRISE (PAUSE OBLIGATOIRE) ---
+    if st.session_state.get("auth_stage") == "logged_in" and st.session_state.get("username"):
+        from auth_persistence import get_active_pause, clear_quiz_state
+        active_pause = get_active_pause(st.session_state.username)
+        
+        if active_pause:
+            paused_quiz_key = active_pause["quiz_key"]
+            
+            # --- Mécanique de rechargement en mémoire ---
+            if st.session_state.get("trigger_resume_action"):
+                state_data = active_pause["state_data"]
+                
+                # On restaure absolument tout le contexte du quiz
+                st.session_state.selected_quiz_key = paused_quiz_key
+                st.session_state.exam_mode = state_data.get("exam_mode", False)
+                st.session_state.current_question_index = state_data.get("current_question_index", 0)
+                st.session_state.score = state_data.get("score", 0)
+                st.session_state.current_theme = state_data.get("current_theme")
+                st.session_state.shuffled_questions = state_data.get("shuffled_questions")
+                st.session_state.shuffled_answers = state_data.get("shuffled_answers", {})
+                st.session_state.exam_questions = state_data.get("exam_questions")
+                st.session_state.exam_user_answers = state_data.get("exam_user_answers", {})
+                
+                # On débloque l'interface (au cas où la pause ait été faite après une réponse)
+                st.session_state.answer_locked = False
+                st.session_state.show_correction = False
+                st.session_state.trigger_resume_action = False
+                
+                # Consommation de la sauvegarde : on nettoie la base de données
+                clear_quiz_state(st.session_state.username, paused_quiz_key)
+                
+                # On redirige vers l'écran de la question
+                st.rerun()
+
+            # --- Interface visuelle du barrage ---
+            st.warning("⚠️ **Session en cours détectée**")
+            
+            st.markdown(
+                f"""
+                <div style="background-color: #ffffff; border: 1px solid #F1BA33; border-left: 6px solid #F1BA33; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem;">
+                    <h3 style="color: #866939; font-family: 'Roboto Slab'; margin-top: 0;">Entraînement suspendu</h3>
+                    <p style="font-family: 'Montserrat'; color: #333333;">
+                        Vous avez une partie en pause sur le quiz <strong>{paused_quiz_key.replace('_', ' ').upper()}</strong>.<br>
+                        Afin de garantir votre progression, vous devez la terminer ou l'annuler avant de pouvoir lancer un nouveau thème.
+                    </p>
+                </div>
+                """, 
+                unsafe_allow_html=True
+            )
+            
+            col_rep, col_del = st.columns(2)
+            with col_rep:
+                if st.button("▶️ Reprendre la session", use_container_width=True, type="primary"):
+                    st.session_state.trigger_resume_action = True
+                    st.rerun()
+            with col_del:
+                if st.button("🗑️ Annuler et perdre la progression", use_container_width=True):
+                    clear_quiz_state(st.session_state.username, paused_quiz_key)
+                    st.toast("🗑️ Pause supprimée. Vous pouvez naviguer librement.")
+                    st.rerun()
+            
+            # 🛑 On bloque totalement l'exécution de la suite de la fonction
+            return
+    # --- FIN DU BARRAGE ---
+
     quiz_data = get_current_quiz_data()
     quiz_key = st.session_state.selected_quiz_key
     if not quiz_data or not quiz_key:
@@ -1878,6 +2022,24 @@ def show_question_screen():
     # Affichage de la question stylisée
     st.markdown(f"<h3 style='margin: 1.5rem 0; font-size:1.3rem; font-weight:700; line-height:1.4; text-align:center; color:#0F3250;'>{q['question']}</h3>", unsafe_allow_html=True)
 
+    # --- FONCTION INTERNE DE SAUVEGARDE DE LA PAUSE ---
+    def trigger_pause_save():
+        from auth_persistence import save_quiz_state
+        state_data = {
+            "exam_mode": st.session_state.get("exam_mode", False),
+            "current_question_index": st.session_state.get("current_question_index", 0),
+            "score": st.session_state.get("score", 0),
+            "current_theme": st.session_state.get("current_theme"),
+            "shuffled_questions": st.session_state.get("shuffled_questions"),
+            "shuffled_answers": st.session_state.get("shuffled_answers", {}),
+            "exam_questions": st.session_state.get("exam_questions"),
+            "exam_user_answers": st.session_state.get("exam_user_answers", {})
+        }
+        save_quiz_state(st.session_state.username, st.session_state.selected_quiz_key, state_data)
+        st.toast("✅ Progression sauvegardée en pause !", icon="⏸️")
+        st.session_state.exam_mode = False
+        go_back_to_main_menu()
+
     # --- CAS PARAMÉTRABLE : MODE EXAMEN BLANC ---
     if is_exam:
         st.markdown(f"<style>div[data-testid='stButton'] > button {{ width: 100% !important; text-align: left !important; padding-left: 1.5rem !important; border-radius: 8px !important; min-height: 52px !important; font-family: 'Montserrat', sans-serif !important; }}</style>", unsafe_allow_html=True)
@@ -1895,14 +2057,22 @@ def show_question_screen():
                 st.rerun()
 
         st.markdown("<br>", unsafe_allow_html=True)
-        col1, col2 = st.columns(2, gap="small")
+        col_q, col_p, col_a = st.columns([1, 1, 2], gap="small")
         
-        with col1:
-            if st.button("⬅️ Quitter l'examen", use_container_width=True):
+        with col_q:
+            if st.button("⬅️ Quitter", use_container_width=True):
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
                 
-        with col2:
+        with col_p:
+            if st.session_state.get("auth_stage") == "logged_in":
+                if st.button("⏸️ Pause", use_container_width=True):
+                    trigger_pause_save()
+                    st.rerun()
+            else:
+                st.button("⏸️ Pause", use_container_width=True, disabled=True, help="Connectez-vous pour sauvegarder votre progression")
+                
+        with col_a:
             label_next = "Soumettre l'examen" if (idx + 1 == total_questions) else "Question suivante ➡️"
             if st.button(label_next, use_container_width=True, type="primary"):
                 if idx not in st.session_state.exam_user_answers:
@@ -1938,14 +2108,22 @@ def show_question_screen():
                     st.rerun()
 
             st.markdown("<br>", unsafe_allow_html=True)
-            col1, col2 = st.columns(2, gap="small")
+            col_q, col_p, col_a = st.columns([1, 1, 2], gap="small")
             
-            with col1:
-                if st.button("⬅️ Retour au menu", use_container_width=True):
+            with col_q:
+                if st.button("⬅️ Quitter", use_container_width=True):
                     st.session_state.show_quit_confirmation = True
                     st.rerun()
                     
-            with col2:
+            with col_p:
+                if st.session_state.get("auth_stage") == "logged_in":
+                    if st.button("⏸️ Pause", use_container_width=True):
+                        trigger_pause_save()
+                        st.rerun()
+                else:
+                    st.button("⏸️ Pause", use_container_width=True, disabled=True, help="Connectez-vous pour sauvegarder votre progression")
+                    
+            with col_a:
                 if st.button("✅ Valider ma réponse", use_container_width=True, type="primary"):
                     if not st.session_state.selected_answer:
                         st.warning("Veuillez sélectionner une réponse avant de valider.")
@@ -1987,14 +2165,22 @@ def show_question_screen():
                 """, unsafe_allow_html=True)
 
             st.markdown("<br>", unsafe_allow_html=True)
-            col1, col2 = st.columns(2, gap="small")
+            col_q, col_p, col_a = st.columns([1, 1, 2], gap="small")
             
-            with col1:
-                if st.button("⬅️ Quitter le thème", use_container_width=True):
+            with col_q:
+                if st.button("⬅️ Quitter", use_container_width=True):
                     st.session_state.show_quit_confirmation = True
                     st.rerun()
                     
-            with col2:
+            with col_p:
+                if st.session_state.get("auth_stage") == "logged_in":
+                    if st.button("⏸️ Pause", use_container_width=True):
+                        trigger_pause_save()
+                        st.rerun()
+                else:
+                    st.button("⏸️ Pause", use_container_width=True, disabled=True, help="Connectez-vous pour sauvegarder votre progression")
+                    
+            with col_a:
                 if st.button("➡️ Question suivante", use_container_width=True, type="primary"):
                     st.session_state.show_correction = False
                     st.session_state.answer_locked = False
@@ -2133,13 +2319,14 @@ def show_theme_result():
         st.session_state.theme_scores[quiz_key] = {}
     st.session_state.theme_scores[quiz_key][theme_number] = f"{score}/{total_questions}"
 
-# Sauvegarder les scores du quiz pour l'utilisateur connecté (persistance disque)
+    # Sauvegarder les scores du quiz pour l'utilisateur connecté (persistance disque)
     if st.session_state.get("auth_stage") == "logged_in" and st.session_state.get("username"):
         save_user_scores(
             st.session_state.username,
             quiz_key,
             st.session_state.theme_scores[quiz_key],
         )
+        check_and_notify_new_badges()
     
     st.markdown("<br>", unsafe_allow_html=True)
     # Boutons d'action calés sur la charte
@@ -2186,6 +2373,7 @@ def show_exam_result():
             exam_attempt=True,
             exam_score=score
         )
+        check_and_notify_new_badges()
     
     # --- VISUALISATION DU SCORE (Arc de cercle SVG) ---
     angle = (percentage / 100) * 180
@@ -2257,7 +2445,6 @@ def show_exam_result():
         st.session_state.exam_mode = False
         go_back_to_main_menu()
         st.rerun()
-
 
 def main():
     # Injection systématique du thème graphique CMA

@@ -415,3 +415,62 @@ def get_modified_questions_for_quiz(quiz_key: str) -> dict:
     except Exception:
         # En cas de problème réseau ou de feuille vide, on retourne un dictionnaire vide sans bloquer l'application
         return {}
+
+# ===================== SAUVEGARDE EN COURS (PAUSE) =====================
+
+def save_quiz_state(username: str, quiz_key: str, state_data: dict) -> bool:
+    """Sauvegarde l'état d'un quiz en cours (Pause)."""
+    username = username.strip().lower()
+    try:
+        df = conn.read(worksheet="scores", ttl=0)
+    except:
+        df = pd.DataFrame(columns=["username", "quiz_key", "scores_json", "last_updated"])
+
+    mask = (df['username'] == username) & (df['quiz_key'] == quiz_key)
+    
+    if any(mask):
+        existing_data = json.loads(df.loc[mask, 'scores_json'].values[0])
+    else:
+        existing_data = {"scores": {}, "exam_stats": {"attempts": 0, "best_score": 0}}
+
+    # On injecte les données de la partie en cours sous la clé "saved_state"
+    existing_data["saved_state"] = state_data
+    new_json = json.dumps(existing_data, ensure_ascii=False)
+    
+    if any(mask):
+        df.loc[mask, 'scores_json'] = new_json
+        df.loc[mask, 'last_updated'] = datetime.now().isoformat()
+    else:
+        new_row = pd.DataFrame([{
+            "username": username,
+            "quiz_key": quiz_key,
+            "scores_json": new_json,
+            "last_updated": datetime.now().isoformat()
+        }])
+        df = pd.concat([df, new_row], ignore_index=True)
+
+    conn.update(worksheet="scores", data=df)
+    force_refresh_cache()
+    return True
+
+def get_active_pause(username: str) -> dict:
+    """Cherche si l'utilisateur a une session en pause globale l'empêchant de lancer un autre quiz."""
+    user_scores = load_user_scores(username)
+    quizzes = user_scores.get("quizzes", {})
+    
+    for quiz_key, quiz_data in quizzes.items():
+        # Dans load_user_scores, tout le JSON est stocké dans la sous-clé "scores"
+        full_json_data = quiz_data.get("scores", {}) 
+        
+        # On vérifie si un état sauvegardé existe et n'est pas vide
+        if "saved_state" in full_json_data and full_json_data["saved_state"] is not None:
+            return {
+                "quiz_key": quiz_key,
+                "state_data": full_json_data["saved_state"]
+            }
+            
+    return None # Aucune pause active trouvée
+
+def clear_quiz_state(username: str, quiz_key: str):
+    """Efface la sauvegarde temporaire une fois le quiz terminé ou annulé."""
+    save_quiz_state(username, quiz_key, None)
