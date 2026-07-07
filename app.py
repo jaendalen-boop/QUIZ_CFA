@@ -2045,8 +2045,13 @@ def show_question_screen():
         }
         save_quiz_state(st.session_state.username, st.session_state.selected_quiz_key, state_data)
         st.toast("✅ Progression sauvegardée en pause !", icon="⏸️")
+        
+        # --- CORRECTION ICI : Redirection vers l'écran d'accueil général ---
         st.session_state.exam_mode = False
-        go_back_to_main_menu()
+        st.session_state.current_theme = None
+        st.session_state.selected_quiz_key = None
+        # On peut aussi s'assurer de réinitialiser le niveau si besoin
+        # st.session_state.selected_level = None 
 
     # --- CAS PARAMÉTRABLE : MODE EXAMEN BLANC ---
     if is_exam:
