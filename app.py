@@ -2073,42 +2073,40 @@ def show_question_screen():
                 st.rerun()
 
         st.markdown("<br>", unsafe_allow_html=True)
-        col_q, col_p, col_a = st.columns([1, 1, 2], gap="small")
         
+        # 1. Action principale (pleine largeur)
+        label_next = "Soumettre l'examen" if (idx + 1 == total_questions) else "Question suivante ➡️"
+        if st.button(label_next, use_container_width=True, type="primary"):
+            if idx not in st.session_state.exam_user_answers:
+                st.warning("Veuillez sélectionner une réponse avant de continuer.")
+            else:
+                if idx + 1 == total_questions:
+                    total_score = 0
+                    for exam_idx, question_obj in enumerate(st.session_state.exam_questions):
+                        user_ans = st.session_state.exam_user_answers.get(exam_idx)
+                        correct_opt = next((o for o in question_obj["answerOptions"] if o["isCorrect"]), None)
+                        if correct_opt and user_ans == correct_opt["text"]:
+                            total_score += 1
+                    st.session_state.score = total_score
+                    st.session_state.current_question_index += 1
+                    show_exam_result()
+                else:
+                    st.session_state.current_question_index += 1
+                    st.rerun()
+                    
+        # 2. Actions secondaires (2 colonnes)
+        col_q, col_p = st.columns(2, gap="small")
         with col_q:
             if st.button("⬅️ Quitter", use_container_width=True):
                 st.session_state.show_quit_confirmation = True
                 st.rerun()
-                
         with col_p:
             if st.session_state.get("auth_stage") == "logged_in":
                 if st.button("⏸️ Pause", use_container_width=True):
-                    # Déclenchement de la confirmation de pause
                     st.session_state.show_pause_confirmation = True
                     st.rerun()
             else:
                 st.button("⏸️ Pause", use_container_width=True, disabled=True, help="Connectez-vous pour sauvegarder votre progression")
-                
-        with col_a:
-            label_next = "Soumettre l'examen" if (idx + 1 == total_questions) else "Question suivante ➡️"
-            if st.button(label_next, use_container_width=True, type="primary"):
-                if idx not in st.session_state.exam_user_answers:
-                    st.warning("Veuillez sélectionner une réponse avant de continuer.")
-                else:
-                    if idx + 1 == total_questions:
-                        # Fin de l'examen, calcul automatique du score final
-                        total_score = 0
-                        for exam_idx, question_obj in enumerate(st.session_state.exam_questions):
-                            user_ans = st.session_state.exam_user_answers.get(exam_idx)
-                            correct_opt = next((o for o in question_obj["answerOptions"] if o["isCorrect"]), None)
-                            if correct_opt and user_ans == correct_opt["text"]:
-                                total_score += 1
-                        st.session_state.score = total_score
-                        st.session_state.current_question_index += 1
-                        show_exam_result()
-                    else:
-                        st.session_state.current_question_index += 1
-                        st.rerun()
 
     # --- CAS D'ORIGINE : ENTRAÎNEMENT CLASSIQUE PAR THÈME ---
     else:
@@ -2125,34 +2123,34 @@ def show_question_screen():
                     st.rerun()
 
             st.markdown("<br>", unsafe_allow_html=True)
-            col_q, col_p, col_a = st.columns([1, 1, 2], gap="small")
             
+            # 1. Action principale (pleine largeur)
+            if st.button("✅ Valider ma réponse", use_container_width=True, type="primary"):
+                if not st.session_state.selected_answer:
+                    st.warning("Veuillez sélectionner une réponse avant de valider.")
+                else:
+                    correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
+                    is_correct = (correct_opt and st.session_state.selected_answer == correct_opt["text"])
+                    st.session_state.last_is_correct = is_correct
+                    st.session_state.show_correction = True
+                    st.session_state.answer_locked = True
+                    if is_correct: st.session_state.score += 1
+                    st.rerun()
+                    
+            # 2. Actions secondaires (2 colonnes)
+            col_q, col_p = st.columns(2, gap="small")
             with col_q:
                 if st.button("⬅️ Quitter", use_container_width=True):
                     st.session_state.show_quit_confirmation = True
                     st.rerun()
-                    
             with col_p:
                 if st.session_state.get("auth_stage") == "logged_in":
                     if st.button("⏸️ Pause", use_container_width=True):
-                        # Déclenchement de la confirmation de pause
                         st.session_state.show_pause_confirmation = True
                         st.rerun()
                 else:
                     st.button("⏸️ Pause", use_container_width=True, disabled=True, help="Connectez-vous pour sauvegarder votre progression")
                     
-            with col_a:
-                if st.button("✅ Valider ma réponse", use_container_width=True, type="primary"):
-                    if not st.session_state.selected_answer:
-                        st.warning("Veuillez sélectionner une réponse avant de valider.")
-                    else:
-                        correct_opt = next((o for o in answer_options if o["isCorrect"]), None)
-                        is_correct = (correct_opt and st.session_state.selected_answer == correct_opt["text"])
-                        st.session_state.last_is_correct = is_correct
-                        st.session_state.show_correction = True
-                        st.session_state.answer_locked = True
-                        if is_correct: st.session_state.score += 1
-                        st.rerun()
         else:
             for opt in answer_options:
                 is_correct_answer = opt["isCorrect"]
@@ -2183,32 +2181,31 @@ def show_question_screen():
                 """, unsafe_allow_html=True)
 
             st.markdown("<br>", unsafe_allow_html=True)
-            col_q, col_p, col_a = st.columns([1, 1, 2], gap="small")
             
+            # 1. Action principale (pleine largeur)
+            if st.button("➡️ Question suivante", use_container_width=True, type="primary"):
+                st.session_state.show_correction = False
+                st.session_state.answer_locked = False
+                st.session_state.selected_answer = None
+                st.session_state.current_question_index += 1
+                if st.session_state.current_question_index >= total_questions:
+                    show_theme_result()
+                else:
+                    st.rerun()
+
+            # 2. Actions secondaires (2 colonnes)
+            col_q, col_p = st.columns(2, gap="small")
             with col_q:
                 if st.button("⬅️ Quitter", use_container_width=True):
                     st.session_state.show_quit_confirmation = True
                     st.rerun()
-                    
             with col_p:
                 if st.session_state.get("auth_stage") == "logged_in":
                     if st.button("⏸️ Pause", use_container_width=True):
-                        # Déclenchement de la confirmation de pause
                         st.session_state.show_pause_confirmation = True
                         st.rerun()
                 else:
                     st.button("⏸️ Pause", use_container_width=True, disabled=True, help="Connectez-vous pour sauvegarder votre progression")
-                    
-            with col_a:
-                if st.button("➡️ Question suivante", use_container_width=True, type="primary"):
-                    st.session_state.show_correction = False
-                    st.session_state.answer_locked = False
-                    st.session_state.selected_answer = None
-                    st.session_state.current_question_index += 1
-                    if st.session_state.current_question_index >= total_questions:
-                        show_theme_result()
-                    else:
-                        st.rerun()
 
     # --- Confirmation de sortie classique ---
     if st.session_state.get("show_quit_confirmation"):
@@ -2223,7 +2220,7 @@ def show_question_screen():
             st.session_state.show_quit_confirmation = False
             st.rerun()
 
-    # --- Confirmation de mise en pause (Nouvelle) ---
+    # --- Confirmation de mise en pause ---
     if st.session_state.get("show_pause_confirmation"):
         st.info("⏸️ Voulez-vous sauvegarder votre progression et vous déconnecter ?")
         c_y, c_n = st.columns(2)
