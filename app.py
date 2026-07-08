@@ -2522,7 +2522,7 @@ def main():
         st.markdown(
             """
             <div style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 0.70rem; color: #B0D2D9; line-height: 1.3; padding: 0.5rem; opacity: 0.7;">
-                ⚠️ <i>Contenu généré majoritairement par IA. Vérifié régulièrement, mais des erreurs restent possibles.</i>
+                ⚠️ <i>Contenu généré majoritairement par IA. Vérifié régulièrement, mais des erreurs restent possibles. N'hésitez pas à signaler toute question présentant une erreur, une ambiguïté ou une difficulté à l'aide du bouton de signalement.</i>
             </div>
             """, 
             unsafe_allow_html=True
