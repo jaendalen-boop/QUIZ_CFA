@@ -201,6 +201,13 @@ QUIZZES = {
         "icon": "🛒",
         "color": CMA_TURQUOISE,
     },
+    "cap_imtb_100": {
+        "title": "CAP Interventions en maintenance technique des bâtiments",
+        "description": "Révisions complètes CAP IMTB.",
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_imtb_100",
+        "icon": "🏢",
+        "color": CMA_TURQUOISE,
+    },
     "cap_macon_100": {
         "title": "CAP Maçon",
         "description": "Révisions complètes CAP Maçon.",
@@ -520,6 +527,7 @@ CAP_FAMILIES = {
         "cap_couvreur_100",
         "cap_electricien_100",
         "cap_macon_100",
+        "cap_imtb_100",
         "cap_menuisier_fabricant_100",
         "cap_menuisier_installateur_100",
         "cap_platre_isolation_100",
