@@ -74,14 +74,14 @@ QUIZZES = {
         "description": "Révisions complètes Bac Pro Maintenance des véhicules option A (VP).",
         "path": "quizzes.quiz_bacpro_metiers.quiz_bacpro_mva_100",
         "icon": "🚗",
-        "color": CMA_BLEU,
+        "color": CMA_TURQUOISE,
     },
     "bacpro_cpa_100": {
         "title": "Bac Pro Carrossier Peintre Automobile",
         "description": "Révisions complètes Bac Pro CPA.",
         "path": "quizzes.quiz_bacpro_metiers.quiz_bacpro_cpa_100", 
         "icon": "🚘",
-        "color": CMA_BLEU,
+        "color": CMA_TURQUOISE,
     },
 
     # ----- BP -----
