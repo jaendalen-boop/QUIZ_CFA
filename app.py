@@ -120,6 +120,13 @@ QUIZZES = {
         "icon": "⚡",
         "color": CMA_MOUTARDE,
     },
+    "bp_electricien_100": {
+        "title": "BP Électricien",
+        "description": "Révisions complètes BP Électricien.",
+        "path": "quizzes.quiz_bp_metiers.quiz_bp_electricien_100",
+        "icon": "⚡", 
+        "color": CMA_MOUTARDE,
+    },
 
     # ----- BTS -----
     "bts_meca_vp_100": {
@@ -315,6 +322,34 @@ QUIZZES = {
         "description": "Révisions complètes CS Coiffure coupe couleur.",
         "path": "quizzes.quiz_cs_metiers.quiz_cs_coiffure_coupe_couleur_100",
         "icon": "💇",
+        "color": CMA_ROUGE_WEB,
+    },
+    "cs_barman_100": {
+        "title": "CS Barman",
+        "description": "Révisions complètes CS Barman.",
+        "path": "quizzes.quiz_cs_metiers.quiz_cs_barman_100",
+        "icon": "🍸",
+        "color": CMA_ROUGE_WEB,
+    },
+    "cs_meti_100": {
+        "title": "CS METI (Maintenance Équipements Thermiques)",
+        "description": "Révisions complètes CS METI.",
+        "path": "quizzes.quiz_cs_metiers.quiz_cs_meti_100",
+        "icon": "🔥",
+        "color": CMA_ROUGE_WEB,
+    },
+    "cs_zingueur_100": {
+        "title": "CS Zingueur - Session 1",
+        "description": "Première partie des révisions CS Zingueur.",
+        "path": "quizzes.quiz_cs_metiers.quiz_cs_zingueur_100",
+        "icon": "🏠",
+        "color": CMA_ROUGE_WEB,
+    },
+    "cs_zingueur_100_2": {
+        "title": "CS Zingueur - Session 2",
+        "description": "Deuxième partie des révisions CS Zingueur.",
+        "path": "quizzes.quiz_cs_metiers.quiz_cs_zingueur_100_2",
+        "icon": "🏠",
         "color": CMA_ROUGE_WEB,
     },
 
@@ -620,6 +655,7 @@ BP_QUIZZES = [
     "bp_coiffure_100",
     "bp_macon_100",
     "bp_migcs_100",
+    "bp_electricien_100",
 ]
 
 BTS_QUIZZES = [
@@ -628,6 +664,10 @@ BTS_QUIZZES = [
 
 CS_QUIZZES = [
     "cs_coiffure_coupe_couleur_100",
+    "cs_barman_100",
+    "cs_meti_100",
+    "cs_zingueur_100",
+    "cs_zingueur_100_2",
 ]
 
 LEVELS = ["CAP", "BAC PRO", "BP", "BTS", "CS"]
