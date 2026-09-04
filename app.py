@@ -83,6 +83,13 @@ QUIZZES = {
         "icon": "🚘",
         "color": CMA_TURQUOISE,
     },
+    "bacpro_tma_100": {
+        "title": "Bac Pro Technicien Menuisier-Agenceur (TMA)",
+        "description": "Révisions complètes Bac Pro TMA.",
+        "path": "quizzes.quiz_bacpro_metiers.quiz_bacpro_tma_100",
+        "icon": "🪚",  # L'icône de la scie correspond bien au travail du bois
+        "color": CMA_TURQUOISE,
+    },
 
     # ----- BP -----
     "bp_arts_de_la_cuisine_100": {
@@ -332,13 +339,13 @@ QUIZZES = {
         "color": CMA_ROUGE_WEB,
     },
     "cs_meti_100": {
-        "title": "CS METI (Maintenance Équipements Thermiques)",
+        "title": "CS METI (Maintenance Équipements Thermiques Individuels)",
         "description": "Révisions complètes CS METI.",
         "path": "quizzes.quiz_cs_metiers.quiz_cs_meti_100",
         "icon": "🔥",
         "color": CMA_ROUGE_WEB,
     },
-    "cs_zingueur_100": {
+"cs_zingueur_100": {
         "title": "CS Zingueur - Session 1",
         "description": "Première partie des révisions CS Zingueur.",
         "path": "quizzes.quiz_cs_metiers.quiz_cs_zingueur_100",
@@ -351,6 +358,16 @@ QUIZZES = {
         "path": "quizzes.quiz_cs_metiers.quiz_cs_zingueur_100_2",
         "icon": "🏠",
         "color": CMA_ROUGE_WEB,
+    },
+"cs_zingueur_group": {
+        "title": "CS Zingueur",
+        "description": "Révisions complètes CS Zingueur. Choisissez votre niveau de difficulté :",
+        "icon": "🏠",
+        "color": CMA_ROUGE_WEB,
+        "sub_quizzes": [
+            {"key": "cs_zingueur_100", "label": "Session 1 (Classique)"},
+            {"key": "cs_zingueur_100_2", "label": "Session 2 (Plus difficile)"}
+        ]
     },
 
     # ----- BAC PRO Matières générales -----
@@ -647,6 +664,7 @@ BACPRO_QUIZZES = [
     "bacpro_mcva_100",
     "bacpro_mva_100",
     "bacpro_cpa_100",
+    "bacpro_tma_100",
 ]
 
 BP_QUIZZES = [
@@ -666,8 +684,7 @@ CS_QUIZZES = [
     "cs_coiffure_coupe_couleur_100",
     "cs_barman_100",
     "cs_meti_100",
-    "cs_zingueur_100",
-    "cs_zingueur_100_2",
+    "cs_zingueur_group",
 ]
 
 LEVELS = ["CAP", "BAC PRO", "BP", "BTS", "CS"]
@@ -1718,10 +1735,24 @@ def render_quiz_card(key):
         with cols[1]:
             st.markdown(f"<span style='font-family:\"Roboto Slab\"; font-size:1.1rem; font-weight:700; color:#0F3250;'>{info['title']}</span>", unsafe_allow_html=True)
             st.markdown(f"<p style='margin: 0.5rem 0; font-family:\"Montserrat\"; color:#555555;'>{info['description']}</p>", unsafe_allow_html=True)
-            if st.button("Lancer ce quiz", key=f"select_quiz_{key}"):
-                st.session_state.selected_quiz_key = key
-                reset_quiz_state_for_selected_quiz()
-                st.rerun()
+            
+            # --- NOUVELLE LOGIQUE SCALABLE (Groupes vs Quiz simple) ---
+            if "sub_quizzes" in info:
+                # S'il y a des sous-quiz, on affiche plusieurs boutons sur la même ligne
+                sub_cols = st.columns(len(info["sub_quizzes"]))
+                for i, sub_q in enumerate(info["sub_quizzes"]):
+                    with sub_cols[i]:
+                        if st.button(sub_q["label"], key=f"select_quiz_{sub_q['key']}", use_container_width=True):
+                            st.session_state.selected_quiz_key = sub_q["key"]
+                            reset_quiz_state_for_selected_quiz()
+                            st.rerun()
+            else:
+                # Sinon, affichage classique (pour ne rien casser de l'existant)
+                if st.button("Lancer ce quiz", key=f"select_quiz_{key}"):
+                    st.session_state.selected_quiz_key = key
+                    reset_quiz_state_for_selected_quiz()
+                    st.rerun()
+                    
         st.markdown("</div>", unsafe_allow_html=True)
 
 # -----------------------
