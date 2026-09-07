@@ -144,13 +144,30 @@ QUIZZES = {
         "color": CMA_BLEU_MARINE,
     },
 
-    # ----- CAP métiers -----
+    # ----- CAP -----
     "cap_boucher_100": {
-        "title": "CAP Boucher",
-        "description": "Révisions complètes CAP Boucher.",
+        "title": "CAP Boucher - Session 1",
+        "description": "Première partie des révisions CAP Boucher.",
         "path": "quizzes.quiz_cap_metiers.quiz_cap_boucher_100",
         "icon": "🥩",
         "color": CMA_TURQUOISE,
+    },
+    "cap_boucher_100_2": {
+        "title": "CAP Boucher - Session 2",
+        "description": "Deuxième partie des révisions CAP Boucher.",
+        "path": "quizzes.quiz_cap_metiers.quiz_cap_boucher_100_2",
+        "icon": "🥩",
+        "color": CMA_TURQUOISE,
+    },
+    "cap_boucher_group": {
+        "title": "CAP Boucher",
+        "description": "Révisions complètes CAP Boucher. Choisissez votre session :",
+        "icon": "🥩",
+        "color": CMA_TURQUOISE,
+        "sub_quizzes": [
+            {"key": "cap_boucher_100", "label": "Session 1"},
+            {"key": "cap_boucher_100_2", "label": "Session 2"}
+        ]
     },
     "cap_boulanger_100": {
         "title": "CAP Boulanger",
@@ -345,7 +362,7 @@ QUIZZES = {
         "icon": "🔥",
         "color": CMA_ROUGE_WEB,
     },
-"cs_zingueur_100": {
+    "cs_zingueur_100": {
         "title": "CS Zingueur - Session 1",
         "description": "Première partie des révisions CS Zingueur.",
         "path": "quizzes.quiz_cs_metiers.quiz_cs_zingueur_100",
@@ -359,7 +376,7 @@ QUIZZES = {
         "icon": "🏠",
         "color": CMA_ROUGE_WEB,
     },
-"cs_zingueur_group": {
+    "cs_zingueur_group": {
         "title": "CS Zingueur",
         "description": "Révisions complètes CS Zingueur. Choisissez votre niveau de difficulté :",
         "icon": "🏠",

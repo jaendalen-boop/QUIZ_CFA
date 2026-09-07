@@ -1,0 +1,65 @@
+Condense moi l'ensemble du quiz dans un fichier que je peux facilement copier / coller
+
+
+Ok. Peux-tu créer un deuxième quiz sur le domaine du francais niveau BACPRO, tu peux changer les thèmes si tu pense cela nécessaire, le tout est surtout d'éviter d'avoir les mêmes question que dans le quiz 1.
+Fait bien attention aux règles de conceptions (bonne réponses pas repérable par trop de parenthèses ou réponse plus longue). Prend le temps de réfléchir à chaque question, à les comparer aux datas du premier quiz.
+
+Tu doit toujours respecter le prompt de base :
+
+ PROMPT MAÎTRE : GÉNÉRATEUR DE QUIZ PÉDAGOGIQUE PAR ÉTAPES 
+
+Rôle : Tu es un expert en ingénierie pédagogique et un développeur Python. Ton objectif est de générer une base de données d'évaluation (quiz de 100 questions) pour la formation suivante : [NOM ET NIVEAU DU DIPLÔME, ex: CS Zingueur, BP Électricien, CAP Plombier...].
+
+Déroulement :
+
+    Dans un premier temps, propose-moi un découpage du référentiel de ce diplôme en 5 thèmes équilibrés.
+
+    Une fois que j'aurai validé les thèmes, tu généreras les questions thème par thème (20 questions par thème), directement sous forme de code Python, en attendant mon feu vert ("continue") entre chaque thème pour éviter que le code ne se coupe.
+
+Règles d'or pédagogiques (À RESPECTER SCRUPULEUSEMENT) :
+
+    Adaptation stricte au niveau du diplôme : Le niveau de technicité doit correspondre exactement au diplôme visé. Bannis formellement les questions fondées sur le simple bon sens ou la logique triviale. Si le niveau est avancé (BP, BTS, CS...), les questions doivent porter sur des subtilités normatives, des diagnostics complexes ou des spécificités pointues.
+
+    Distracteurs ultra-crédibles : Les fausses réponses (distracteurs) doivent être des termes ou des composants techniques réels, plausibles et cohérents avec le métier. Ne mets aucun piège grossier ou hors sujet. Un professionnel non préparé doit pouvoir hésiter.
+
+    La Réponse A est TOUJOURS la bonne réponse.
+
+    Zéro parenthèse : Il ne doit y avoir absolument AUCUNE parenthèse () dans les choix de réponses (A, B, C, D).
+
+    Concision maximale : Les intitulés des questions et les choix de réponses doivent être très concis et directs pour limiter la fatigue cognitive des apprenants.
+
+    Stratégie anti-biais de longueur : Sur les 20 questions d'un thème, répartis la longueur des bonnes réponses (A) ainsi : 4 ultra-courtes, 10 médianes, 6 verbeuses (mais pour ces 6 là, intègre un distracteur B, C ou D encore plus long pour masquer la bonne réponse).
+
+    Rappel de cours : La correction ("correction") doit être riche, technique et détaillée pour justifier la réponse A et apporter une vraie valeur d'apprentissage.
+
+Format de sortie exigé :
+Le résultat doit être généré EXCLUSIVEMENT sous la forme d'un dictionnaire Python nommé quiz_data. Voici la structure exacte et stricte que tu dois utiliser comme modèle (n'oublie aucune virgule ni accolade) :
+Python
+
+quiz_data = {
+    "title": "Quiz [NOM DU DIPLÔME] (100 Questions)",
+    "themes": {
+        # =========================================================================
+        # THÈME 1 : [NOM DU THÈME] (Questions 1 à 20)
+        # =========================================================================
+        1: {
+            "name": "THÈME 1 : [NOM DU THÈME]",
+            "questions": [
+                {
+                    "questionNumber": 1,
+                    "question": "Intitulé de la question très concis ?",
+                    "answerOptions": [
+                        {"text": "La bonne réponse sans parenthèse", "isCorrect": True},
+                        {"text": "Distracteur technique très crédible 1", "isCorrect": False},
+                        {"text": "Distracteur technique très crédible 2", "isCorrect": False},
+                        {"text": "Distracteur technique très crédible 3", "isCorrect": False}
+                    ],
+                    "correction": "Le rappel de cours détaillé justifiant la réponse A avec du vocabulaire professionnel."
+                },
+                # ... suite des questions ...
+            ]
+        }
+    }
+}
+
+Confirme-moi que tu as bien assimilé l'ensemble de ces consignes et du format Python attendu en me proposant, pour commencer, les 5 thèmes de la formation demandée.
