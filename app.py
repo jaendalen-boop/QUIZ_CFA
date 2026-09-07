@@ -121,6 +121,7 @@ QUIZZES = {
         "sub_quizzes": [
             {"key": "bp_boucher_100", "label": "Session 1"},
             {"key": "bp_boucher_100_2", "label": "Session 2 (Plus difficile)"}
+        ]
     },
     "bp_coiffure_100": {
         "title": "BP Coiffure",
