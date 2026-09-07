@@ -2,1143 +2,1143 @@ quiz_data = {
     "title": "Quiz BP Boucher (100 Questions)",
     "themes": {
         # =========================================================================
-        # THÈME 1 : TECHNOLOGIE PROFESSIONNELLE, ANATOMIE ET DÉCOUPE (Questions 1 à 20)
+        # THÈME 1 : ANATOMIE APPROFONDIE, BIOCHIMIE MUSCULAIRE ET VALORISATION TECHNIQUE DES CARCASSES (Questions 1 à 20)
         # =========================================================================
         1: {
-            "name": "THÈME 1 : TECHNOLOGIE PROFESSIONNELLE, ANATOMIE ET DÉCOUPE",
+            "name": "THÈME 1 : ANATOMIE APPROFONDIE, BIOCHIMIE MUSCULAIRE ET VALORISATION TECHNIQUE DES CARCASSES",
             "questions": [
                 {
                     "questionNumber": 1,
-                    "question": "Quel muscle principal compose la noix de pâtissière dans la cuisse du bœuf ?",
+                    "question": "Quelle famille d'enzymes est principalement responsable de la dégradation des fibres musculaires lors de la phase de maturation de la viande ?",
                     "answerOptions": [
-                        {"text": "Le droit antérieur", "isCorrect": True},
-                        {"text": "Le vaste externe", "isCorrect": False},
-                        {"text": "Le biceps fémoral", "isCorrect": False},
-                        {"text": "Le semi-tendineux", "isCorrect": False}
+                        {"text": "Les protéases endogènes", "isCorrect": True},
+                        {"text": "Les lipases pancréatiques", "isCorrect": False},
+                        {"text": "Les amylases salivaires", "isCorrect": False},
+                        {"text": "Les transaminases hépatiques", "isCorrect": False}
                     ],
-                    "correction": "La noix de pâtissière, située sur le devant de la cuisse, est principalement composée du muscle droit antérieur (ou droit fémoral) qui fait partie du quadriceps."
+                    "correction": "Les protéases endogènes, notamment les calpaïnes et les cathepsines, dégradent progressivement la structure myofibrillaire, ce qui permet d'attendrir la viande au cours du processus de maturation en chambre froide."
                 },
                 {
                     "questionNumber": 2,
-                    "question": "En découpe de l'agneau, quel terme désigne l'ensemble formé par le filet, le faux-filet et les côtes découvertes désossés et roulés ?",
+                    "question": "Quel phénomène biochimique provoque le brunissement indésirable de la viande rouge exposée de façon prolongée à l'air libre ?",
                     "answerOptions": [
-                        {"text": "Le baron", "isCorrect": True},
-                        {"text": "Le coffre", "isCorrect": False},
-                        {"text": "La selle anglaise", "isCorrect": False},
-                        {"text": "Le canon", "isCorrect": False}
+                        {"text": "La transformation spontanée en pigment metmyoglobine", "isCorrect": True},
+                        {"text": "La réduction immédiate en pigment deoxymyoglobine", "isCorrect": False},
+                        {"text": "L'oxygénation superficielle en pigment oxymyoglobine", "isCorrect": False},
+                        {"text": "La dénaturation thermique des protéines musculaires", "isCorrect": False}
                     ],
-                    "correction": "Le baron d'agneau est une pièce de boucherie majeure comprenant les deux gigots et la selle (filet et faux-filet) attenants, constituant la partie arrière complète de l'animal."
+                    "correction": "L'oxydation du fer contenu dans l'hème de la myoglobine transforme celle-ci en metmyoglobine, un pigment de couleur brune ou grisâtre qui altère la présentation commerciale du produit."
                 },
                 {
                     "questionNumber": 3,
-                    "question": "Sur une carcasse de bœuf, où se situe précisément l'araignée ?",
+                    "question": "Selon la grille communautaire EUROP d'évaluation des carcasses, quelle description anatomique définit précisément la classe de conformation E ?",
                     "answerOptions": [
-                        {"text": "Dans le creux de l'os coxal", "isCorrect": True},
-                        {"text": "Sur la face interne de la scapula", "isCorrect": False},
-                        {"text": "Le long des vertèbres lombaires", "isCorrect": False},
-                        {"text": "À l'intérieur de la cage thoracique", "isCorrect": False}
+                        {"text": "Un développement musculaire exceptionnel avec des profils très convexes", "isCorrect": True},
+                        {"text": "Un développement musculaire exceptionnel avec des profils très convexes et une épaisseur de gras sous cutané particulièrement importante sur toute la carcasse", "isCorrect": False},
+                        {"text": "Un profil globalement rectiligne sur la cuisse et le dos", "isCorrect": False},
+                        {"text": "Une musculature moyenne avec des structures osseuses largement apparentes", "isCorrect": False}
                     ],
-                    "correction": "L'araignée est un muscle 'boucher' très tendre (muscle obturateur), situé dans le creux de l'os coxal (bassin), souvent oubliée si le désossage n'est pas soigné."
+                    "correction": "La lettre E correspond au rang Supérieur dans la grille EUROP. Elle caractérise des animaux d'élite, souvent de race à viande, présentant des masses musculaires rebondies et des profils nettement convexes."
                 },
                 {
                     "questionNumber": 4,
-                    "question": "Quelle est la base osseuse du paleron ?",
+                    "question": "Quel muscle spécifique constitue le morceau de boucherie couramment appelé la poire dans le quartier arrière du bœuf ?",
                     "answerOptions": [
-                        {"text": "La scapula", "isCorrect": True},
-                        {"text": "L'humérus", "isCorrect": False},
-                        {"text": "Le radius", "isCorrect": False},
-                        {"text": "Le fémur", "isCorrect": False}
+                        {"text": "Le muscle pectiné de la cuisse", "isCorrect": True},
+                        {"text": "Le muscle semi membraneux du globe", "isCorrect": False},
+                        {"text": "Le muscle grand droit de l'abdomen", "isCorrect": False},
+                        {"text": "Le muscle tenseur du fascia lata", "isCorrect": False}
                     ],
-                    "correction": "Le paleron est un morceau gélatineux situé au niveau de l'épaule, il est apposé contre la scapula (omoplate)."
+                    "correction": "La poire est un petit muscle extrêmement tendre, le muscle pectiné, situé à la face interne de la cuisse, reposant sur l'os du bassin."
                 },
                 {
                     "questionNumber": 5,
-                    "question": "Quel nom porte la vertèbre atlas dans la colonne vertébrale des animaux de boucherie ?",
+                    "question": "Quel événement biochimique déclenche l'apparition de la rigidité cadavérique au sein des masses musculaires post mortem ?",
                     "answerOptions": [
-                        {"text": "La première cervicale", "isCorrect": True},
-                        {"text": "La deuxième cervicale", "isCorrect": False},
-                        {"text": "La première thoracique", "isCorrect": False},
-                        {"text": "La dernière lombaire", "isCorrect": False}
+                        {"text": "L'épuisement total des réserves d'adénosine triphosphate dans le muscle", "isCorrect": True},
+                        {"text": "L'épuisement total des réserves d'adénosine triphosphate dans le muscle combiné à une baisse du calcium intracellulaire empêchant toute contraction musculaire", "isCorrect": False},
+                        {"text": "L'accumulation excessive et rapide de glycogène pur dans les fibres rouges", "isCorrect": False},
+                        {"text": "La libération massive et incontrôlée d'acide lactique dans le flux sanguin", "isCorrect": False}
                     ],
-                    "correction": "L'atlas est la toute première vertèbre cervicale (C1) qui supporte la tête, suivie immédiatement par l'axis (C2)."
+                    "correction": "L'ATP adénosine triphosphate est l'énergie permettant aux ponts d'actine et de myosine de se détacher. Son épuisement fige ces liaisons, entraînant la contracture irréversible appelée rigor mortis."
                 },
                 {
                     "questionNumber": 6,
-                    "question": "Dans le parage d'un filet de bœuf, comment appelle-t-on l'opération consistant à retirer la chaînette ?",
+                    "question": "Quelle base osseuse supporte la coupe bouchère du collier chez les bovins ?",
                     "answerOptions": [
-                        {"text": "Le dénervage", "isCorrect": True},
-                        {"text": "Le ficelage", "isCorrect": False},
-                        {"text": "Le bardage", "isCorrect": False},
-                        {"text": "Le piéçage", "isCorrect": False}
+                        {"text": "Les vertèbres cervicales", "isCorrect": True},
+                        {"text": "Les apophyses épineuses dorsales", "isCorrect": False},
+                        {"text": "L'os unique de l'atlas", "isCorrect": False},
+                        {"text": "Les vertèbres thoraciques antérieures", "isCorrect": False}
                     ],
-                    "correction": "Le dénervage (ou parage à blanc) consiste à retirer les aponévroses, les nerfs et ici la chaînette (muscle latéral) pour ne garder que le cœur du filet."
+                    "correction": "Le collier est constitué par les muscles qui entourent les sept vertèbres cervicales, formant la région du cou de l'animal."
                 },
                 {
                     "questionNumber": 7,
-                    "question": "Quelle catégorie de bovin correspond à une femelle ayant déjà vêlé ?",
+                    "question": "Quel facteur d'élevage est la cause principale de l'apparition d'une viande à coupe sombre dite DFD ?",
                     "answerOptions": [
-                        {"text": "La vache", "isCorrect": True},
-                        {"text": "La génisse", "isCorrect": False},
-                        {"text": "La taure", "isCorrect": False},
-                        {"text": "Le broutard", "isCorrect": False}
+                        {"text": "Un stress prolongé de l'animal avant abattage", "isCorrect": True},
+                        {"text": "Un refroidissement brutal en cellule de ressuage", "isCorrect": False},
+                        {"text": "Une alimentation fortement carencée en fer héminique", "isCorrect": False},
+                        {"text": "Une maturation prolongée au delà de vingt jours", "isCorrect": False}
                     ],
-                    "correction": "La vache est une femelle adulte ayant eu au moins un veau. La génisse est une femelle n'ayant pas encore vêlé."
+                    "correction": "Un stress prolongé épuise les réserves de glycogène avant l'abattage. La production d'acide lactique est alors insuffisante, le pH reste élevé au-delà de 6, ce qui donne une viande sombre, ferme et sèche."
                 },
                 {
                     "questionNumber": 8,
-                    "question": "Quel est le pH ultime idéal d'une viande de bœuf après la maturation initiale de 24 heures ?",
+                    "question": "En découpe française standardisée, à quel niveau anatomique s'effectue la séparation entre le quartier avant et le quartier arrière du bœuf ?",
                     "answerOptions": [
-                        {"text": "5,5", "isCorrect": True},
-                        {"text": "6,2", "isCorrect": False},
-                        {"text": "4,8", "isCorrect": False},
-                        {"text": "7,0", "isCorrect": False}
+                        {"text": "Entre la cinquième et la sixième côte", "isCorrect": True},
+                        {"text": "Entre la dernière lombaire et le sacrum osseux", "isCorrect": False},
+                        {"text": "Entre la onzième et la douzième côte flottante", "isCorrect": False},
+                        {"text": "Au niveau exact de l'articulation coxo fémorale", "isCorrect": False}
                     ],
-                    "correction": "Après l'abattage, l'acidification du muscle doit descendre le pH aux alentours de 5,4 à 5,8. Un pH de 5,5 est considéré comme optimal pour la conservation et la qualité."
+                    "correction": "La coupe parisienne traditionnelle sépare le quartier arrière comprenant 8 côtes et le quartier avant comprenant 5 côtes, l'incision se faisant donc entre la 5ème et la 6ème côte."
                 },
                 {
                     "questionNumber": 9,
-                    "question": "Quel os doit être retiré pour désosser entièrement une épaule d'agneau façon ballon ?",
+                    "question": "Comment calcule t on techniquement le rendement commercial net d'une carcasse de bovin en atelier de découpe ?",
                     "answerOptions": [
-                        {"text": "La scapula", "isCorrect": True},
-                        {"text": "Le sternum", "isCorrect": False},
-                        {"text": "L'ilium", "isCorrect": False},
-                        {"text": "Le sacrum", "isCorrect": False}
+                        {"text": "Le rapport entre le poids de viande vendable et le poids de carcasse froide", "isCorrect": True},
+                        {"text": "Le rapport entre le poids de viande vendable et le poids de carcasse froide multiplié par le coefficient d'évaporation hygrométrique au ressuage", "isCorrect": False},
+                        {"text": "La soustraction stricte du poids des os par rapport au poids vif de l'animal", "isCorrect": False},
+                        {"text": "Le poids total cumulé des morceaux de première catégorie divisé par cent", "isCorrect": False}
                     ],
-                    "correction": "Pour réaliser une épaule ballon, on retire l'os principal de l'épaule qui est la scapula (omoplate), tout en conservant parfois l'humérus raccourci ou en désossant totalement."
+                    "correction": "Le rendement commercial s'obtient en divisant le poids de la viande désossée et parée prête à la vente par le poids de la carcasse froide, le tout multiplié par 100 pour obtenir un pourcentage."
                 },
                 {
                     "questionNumber": 10,
-                    "question": "Quel morceau du veau est classé en première catégorie et se situe dans la cuisse ?",
+                    "question": "Quel tissu conjonctif relie fermement les masses musculaires aux structures osseuses ?",
                     "answerOptions": [
-                        {"text": "La noix", "isCorrect": True},
-                        {"text": "Le flanchet", "isCorrect": False},
-                        {"text": "Le tendron", "isCorrect": False},
-                        {"text": "Le collier", "isCorrect": False}
+                        {"text": "Les tendons", "isCorrect": True},
+                        {"text": "Les ligaments", "isCorrect": False},
+                        {"text": "Les aponévroses", "isCorrect": False},
+                        {"text": "Les cartilages", "isCorrect": False}
                     ],
-                    "correction": "La noix est l'un des morceaux les plus nobles du veau (1ère catégorie), situé dans la cuisse (interne), très maigre et tendre."
+                    "correction": "Les tendons sont des cordons de tissu conjonctif dense très riches en collagène qui assurent l'insertion des muscles sur le squelette, contrairement aux ligaments qui relient les os entre eux."
                 },
                 {
                     "questionNumber": 11,
-                    "question": "Lors de la découpe du porc, quelle partie grasse est prélevée sur le dos de l'animal ?",
+                    "question": "Quel type de fibres musculaires prédomine dans les muscles à effort continu comme ceux du collier ou du jumeau ?",
                     "answerOptions": [
-                        {"text": "La bardière", "isCorrect": True},
-                        {"text": "La panne", "isCorrect": False},
-                        {"text": "La mouille", "isCorrect": False},
-                        {"text": "La gorge", "isCorrect": False}
+                        {"text": "Les fibres rouges à contraction lente", "isCorrect": True},
+                        {"text": "Les fibres blanches à contraction rapide", "isCorrect": False},
+                        {"text": "Les fibres lisses à motricité involontaire", "isCorrect": False},
+                        {"text": "Les fibres cardiaques fortement striées", "isCorrect": False}
                     ],
-                    "correction": "La bardière est le gras ferme situé sur le dos du porc (gras dorsal), utilisé pour le bardage ou la fabrication de saucissons, contrairement à la panne qui est le gras péritonéal."
+                    "correction": "Les muscles de posture et d'endurance sont riches en fibres rouges type I, très vascularisées et pourvues de beaucoup de myoglobine, ce qui justifie leur cuisson longue en braisage."
                 },
                 {
                     "questionNumber": 12,
-                    "question": "Quel muscle compose majoritairement le morceau appelé rond de gîte ?",
+                    "question": "Quel os long forme l'axe central du morceau tranché pour préparer un osso bucco de veau postérieur ?",
                     "answerOptions": [
-                        {"text": "Le semi-tendineux", "isCorrect": True},
-                        {"text": "Le tenseur du fascia lata", "isCorrect": False},
-                        {"text": "Le grand droit de l'abdomen", "isCorrect": False},
-                        {"text": "Le long vaste dorsal", "isCorrect": False}
+                        {"text": "Le tibia pour le jarret arrière", "isCorrect": True},
+                        {"text": "Le fémur pour la cuisse entière", "isCorrect": False},
+                        {"text": "L'os coxal de la ceinture pelvienne", "isCorrect": False},
+                        {"text": "L'omoplate du quartier avant découvert", "isCorrect": False}
                     ],
-                    "correction": "Le rond de gîte, situé à l'arrière de la cuisse, est formé par le muscle semi-tendineux. C'est un morceau maigre souvent utilisé pour le rôti ou le carpaccio."
+                    "correction": "L'osso bucco de qualité supérieure est tiré du jarret arrière, dont la base osseuse est le tibia, entouré de muscles riches en tissu conjonctif."
                 },
                 {
                     "questionNumber": 13,
-                    "question": "Quel est le nom technique de l'os du 'manche' d'une côte de bœuf ?",
+                    "question": "Quel est le rôle biomécanique précis des calpaïnes lors de la phase de maturation de la viande rouge ?",
                     "answerOptions": [
-                        {"text": "Une côte", "isCorrect": True},
-                        {"text": "Une vertèbre", "isCorrect": False},
-                        {"text": "Une apophyse", "isCorrect": False},
-                        {"text": "Un cartilage", "isCorrect": False}
+                        {"text": "Elles dégradent les protéines structurelles au niveau des stries Z", "isCorrect": True},
+                        {"text": "Elles dégradent les protéines structurelles au niveau des stries Z ce qui entraîne la rupture complète de la fibre et la liquéfaction de la viande", "isCorrect": False},
+                        {"text": "Elles transforment les lipides insaturés en acides gras volatils aromatiques", "isCorrect": False},
+                        {"text": "Elles augmentent massivement la capacité de rétention d'eau du collagène", "isCorrect": False}
                     ],
-                    "correction": "Le manche est formé par le corps de la côte elle-même (l'os costal), qui a été découverte (détalonnée) pour la présentation."
+                    "correction": "Les calpaïnes, activées par le calcium, ciblent spécifiquement les protéines du cytosquelette comme la desmine et la titine situées aux stries Z, fragilisant la fibre myofibrillaire et augmentant la tendreté."
                 },
                 {
                     "questionNumber": 14,
-                    "question": "En technologie des viandes, que signifie l'acronyme PAD ?",
+                    "question": "Quel est le glucide de réserve stocké en abondance dans le muscle du bovin vivant ?",
                     "answerOptions": [
-                        {"text": "Prêt à découper", "isCorrect": True},
-                        {"text": "Paré à détailler", "isCorrect": False},
-                        {"text": "Produit à désosser", "isCorrect": False},
-                        {"text": "Pièce à dégraisser", "isCorrect": False}
+                        {"text": "Le glycogène", "isCorrect": True},
+                        {"text": "Le glucose", "isCorrect": False},
+                        {"text": "Le lactose", "isCorrect": False},
+                        {"text": "L'amidon", "isCorrect": False}
                     ],
-                    "correction": "PAD signifie 'Prêt À Découper'. Ce sont des pièces de gros désossées, parées et conditionnées sous vide par l'industrie, prêtes à être tranchées par le boucher."
+                    "correction": "Le glycogène musculaire est le sucre complexe de réserve. Sa transformation post mortem en acide lactique est fondamentale pour l'abaissement du pH et la bonne conservation de la viande."
                 },
                 {
                     "questionNumber": 15,
-                    "question": "Quelle glande doit impérativement être retirée lors du parage d'un gigot pour éviter le goût fort ?",
+                    "question": "Quels morceaux de détail bovins s'appuient directement sur les apophyses épineuses des vertèbres dorsales ?",
                     "answerOptions": [
-                        {"text": "Le ganglion poplité", "isCorrect": True},
-                        {"text": "La glande thyroïde", "isCorrect": False},
-                        {"text": "Le thymus", "isCorrect": False},
-                        {"text": "L'hypophyse", "isCorrect": False}
+                        {"text": "L'entrecôte et la côte de bœuf", "isCorrect": True},
+                        {"text": "Le filet et le faux filet", "isCorrect": False},
+                        {"text": "La poitrine et le travers charnu", "isCorrect": False},
+                        {"text": "Le collier et les basses côtes", "isCorrect": False}
                     ],
-                    "correction": "Le ganglion poplité (souvent appelé 'le ganglion' ou 'le chat' en jargon) est situé dans la graisse intermusculaire du gigot et doit être retiré pour éviter de communiquer une odeur désagréable à la cuisson."
+                    "correction": "Le muscle long dorsal, qui constitue l'entrecôte, se loge dans la gouttière vertébrale formée par les apophyses épineuses des vertèbres thoraciques dorsales."
                 },
                 {
                     "questionNumber": 16,
-                    "question": "Quel morceau du bœuf est le plus adapté pour réaliser un pot-au-feu gélatineux ?",
+                    "question": "Dans la classification des carcasses ovines, que désigne un état d'engraissement noté quatre ?",
                     "answerOptions": [
-                        {"text": "Le macreuse à pot-au-feu", "isCorrect": True},
-                        {"text": "Le rumsteck", "isCorrect": False},
-                        {"text": "La poire", "isCorrect": False},
-                        {"text": "Le merlan", "isCorrect": False}
+                        {"text": "Une couverture de graisse très forte", "isCorrect": True},
+                        {"text": "Une carcasse extrêmement maigre sans gras", "isCorrect": False},
+                        {"text": "Un persillé intramusculaire très abondant", "isCorrect": False},
+                        {"text": "Une répartition idéale et parfaitement homogène", "isCorrect": False}
                     ],
-                    "correction": "La macreuse à pot-au-feu (située dans l'épaule) est riche en collagène, ce qui donne le moelleux et le gélatineux recherché pour les cuissons longues en milieu liquide."
+                    "correction": "L'état d'engraissement est évalué de 1 maigre à 5 très gras. La note 4 indique une carcasse grasse avec une couverture épaisse, nécessitant un parage important."
                 },
                 {
                     "questionNumber": 17,
-                    "question": "Quel est l'emplacement anatomique de l'onglet ?",
+                    "question": "Pour quelle raison technologique majeure le ligament cervical appelé nerf jaune doit il être minutieusement excisé du collier ?",
                     "answerOptions": [
-                        {"text": "Sur les piliers du diaphragme", "isCorrect": True},
-                        {"text": "Le long de la colonne vertébrale", "isCorrect": False},
-                        {"text": "Dans la cavité pelvienne", "isCorrect": False},
-                        {"text": "Sous l'épaule gauche", "isCorrect": False}
+                        {"text": "C'est un tissu élastique jaune totalement insoluble à la chaleur", "isCorrect": True},
+                        {"text": "C'est un tissu élastique jaune totalement insoluble à la chaleur qui provoquerait une forte rétractation du muscle lors des cuissons de type braisage", "isCorrect": False},
+                        {"text": "Il contient des résidus hormonaux naturels potentiellement toxiques pour l'homme", "isCorrect": False},
+                        {"text": "Il fond beaucoup trop rapidement et rendrait le bouillon inutilisable", "isCorrect": False}
                     ],
-                    "correction": "L'onglet est un morceau unique, qui correspond aux piliers du diaphragme. Il est considéré comme un 'morceau du boucher' pour sa saveur prononcée."
+                    "correction": "Le ligament cervical ou nuchal est composé d'élastine, une protéine conjonctive qui ne gélatinise jamais à la cuisson, restant dure et immangeable sous la dent."
                 },
                 {
                     "questionNumber": 18,
-                    "question": "Comment nomme-t-on la couche de tissu conjonctif argentée qui recouvre certains muscles et doit être retirée ?",
+                    "question": "Quel muscle principal forme le cœur du faux filet situé dans la région lombaire de la carcasse ?",
                     "answerOptions": [
-                        {"text": "L'aponévrose", "isCorrect": True},
-                        {"text": "Le périoste", "isCorrect": False},
-                        {"text": "L'épimysium", "isCorrect": False},
-                        {"text": "Le sarcolemme", "isCorrect": False}
+                        {"text": "Le muscle long dorsal lombaire", "isCorrect": True},
+                        {"text": "Le muscle grand psoas interne", "isCorrect": False},
+                        {"text": "Le muscle supra épineux supérieur", "isCorrect": False},
+                        {"text": "Le muscle semi tendineux allongé", "isCorrect": False}
                     ],
-                    "correction": "L'aponévrose est cette membrane nacrée et résistante (tissu conjonctif) qui entoure les muscles et qui durcit à la cuisson rapide ; elle doit donc être épluchée."
+                    "correction": "Le faux-filet est la continuité lombaire de l'entrecôte. Il est composé majoritairement du muscle long dorsal, séparé du filet grand psoas par les apophyses transverses."
                 },
                 {
                     "questionNumber": 19,
-                    "question": "Quel est le nom de l'os plat situé à l'avant du thorax, sur lequel s'articulent les côtes ?",
+                    "question": "Quelle anomalie biochimique provoque le phénomène redouté de contracture au froid sur les viandes bovines ?",
                     "answerOptions": [
-                        {"text": "Le sternum", "isCorrect": True},
-                        {"text": "Le sacrum", "isCorrect": False},
-                        {"text": "L'ilium", "isCorrect": False},
-                        {"text": "Le pubis", "isCorrect": False}
+                        {"text": "Un refroidissement trop rapide avant l'apparition de la rigidité", "isCorrect": True},
+                        {"text": "Un refroidissement trop rapide avant l'apparition de la rigidité cadavérique figeant ainsi l'architecture des sarcomères de manière irréversible et nuisible pour la tendreté", "isCorrect": False},
+                        {"text": "Une congélation directe d'une viande présentant un pH résiduel acide", "isCorrect": False},
+                        {"text": "Un stress chronique de l'animal engendrant une hyperthermie maligne", "isCorrect": False}
                     ],
-                    "correction": "Le sternum est l'os central de la cage thoracique (le bréchet chez la volaille, le sternum chez les mammifères) qui relie les côtes sternales."
+                    "correction": "Le cold shortening ou contracture au froid survient si la température du muscle descend sous les 10 °C avant que le pH ne chute et que la rigor mortis ne s'installe, raccourcissant dramatiquement les fibres."
                 },
                 {
                     "questionNumber": 20,
-                    "question": "Quelle race bovine est reconnaissable à sa robe blanche et ses muqueuses claires ?",
+                    "question": "Quel est l'intérêt technologique de réaliser un parage à blanc soigné sur un muscle de première catégorie à griller ?",
                     "answerOptions": [
-                        {"text": "La Charolaise", "isCorrect": True},
-                        {"text": "La Limousine", "isCorrect": False},
-                        {"text": "La Salers", "isCorrect": False},
-                        {"text": "L'Aubrac", "isCorrect": False}
+                        {"text": "Il supprime l'aponévrose pour garantir la tendreté", "isCorrect": True},
+                        {"text": "Il conserve la fine membrane externe pour protéger la viande", "isCorrect": False},
+                        {"text": "Il accroît virtuellement le poids de vente lors de la pesée", "isCorrect": False},
+                        {"text": "Il augmente le temps de cuisson nécessaire sur le gril", "isCorrect": False}
                     ],
-                    "correction": "La race Charolaise est typiquement caractérisée par une robe unie blanche ou crème et des muqueuses claires (couleur chair), contrairement aux autres races citées."
-                },
+                    "correction": "L'épluchage ou parage à blanc consiste à retirer l'aponévrose de surface. Ce tissu conjonctif durcit à la cuisson rapide et empêcherait la viande de rester tendre sous la dent."
+                }
             ]
         },
         # =========================================================================
-        # THÈME 2 : SCIENCES APPLIQUÉES, HYGIÈNE ET MICROBIOLOGIE (Questions 21 à 40)
+        # THÈME 2 : MICROBIOLOGIE APPLIQUÉE, PLAN DE MAÎTRISE SANITAIRE ET SÉCURITÉ DES INSTALLATIONS (Questions 21 à 40)
         # =========================================================================
         2: {
-            "name": "THÈME 2 : SCIENCES APPLIQUÉES, HYGIÈNE ET MICROBIOLOGIE",
+            "name": "THÈME 2 : MICROBIOLOGIE APPLIQUÉE, PLAN DE MAÎTRISE SANITAIRE ET SÉCURITÉ DES INSTALLATIONS",
             "questions": [
                 {
                     "questionNumber": 21,
-                    "question": "Que signifie l'acronyme HACCP ?",
+                    "question": "Quel indicateur microbiologique recherche-t-on pour évaluer une contamination fécale récente sur un plan de travail ?",
                     "answerOptions": [
-                        {"text": "Analyse des Dangers et Points Critiques pour leur Maîtrise", "isCorrect": True},
-                        {"text": "Haute Autorité de Contrôle des Certifications Professionnelles", "isCorrect": False},
-                        {"text": "Harmonisation de l'Analyse Critique des Contaminations Pathogènes", "isCorrect": False},
-                        {"text": "Hygiène Alimentaire et Contrôle des Circuits de Production", "isCorrect": False}
+                        {"text": "Escherichia coli", "isCorrect": True},
+                        {"text": "Listeria monocytogenes", "isCorrect": False},
+                        {"text": "Salmonella typhimurium", "isCorrect": False},
+                        {"text": "Staphylococcus aureus", "isCorrect": False}
                     ],
-                    "correction": "HACCP (Hazard Analysis Critical Control Point) est une méthode préventive visant à identifier, évaluer et maîtriser les dangers significatifs au regard de la sécurité des aliments."
+                    "correction": "E. coli est le germe témoin de contamination fécale par excellence. Sa présence indique un manquement grave aux règles d'hygiène, notamment le lavage des mains après le passage aux sanitaires."
                 },
                 {
                     "questionNumber": 22,
-                    "question": "Quelle est la température réglementaire maximale de conservation de la viande hachée préparée à l'avance ?",
+                    "question": "Quelle est la valeur pasteurisatrice de référence pour détruire la flore végétative dans une semi-conserve charcutière ?",
                     "answerOptions": [
-                        {"text": "2 °C", "isCorrect": True},
-                        {"text": "4 °C", "isCorrect": False},
-                        {"text": "7 °C", "isCorrect": False},
-                        {"text": "0 °C", "isCorrect": False}
+                        {"text": "Soixante dix degrés pendant deux minutes", "isCorrect": True},
+                        {"text": "Soixante degrés pendant trente secondes", "isCorrect": False},
+                        {"text": "Quatre vingt dix degrés pendant dix minutes", "isCorrect": False},
+                        {"text": "Cent dix degrés pendant trois minutes", "isCorrect": False}
                     ],
-                    "correction": "La viande hachée est un produit très fragile car sa surface de contact avec l'air est démultipliée. La réglementation impose une conservation stricte entre 0 et +2 °C."
+                    "correction": "Le barème de référence pour la pasteurisation, assurant la destruction des formes végétatives pathogènes comme Listeria, est d'atteindre une température de 70 °C à cœur pendant au moins 2 minutes."
                 },
                 {
                     "questionNumber": 23,
-                    "question": "Quel est le principal réservoir de la bactérie Staphylococcus aureus (Staphylocoque doré) en boucherie ?",
+                    "question": "Dans le cadre d'un audit de plan de maîtrise sanitaire comment justifier l'absence d'analyse de danger pour un risque chimique spécifique ?",
                     "answerOptions": [
-                        {"text": "Le nez et la gorge du manipulateur", "isCorrect": True},
-                        {"text": "Les intestins des animaux de boucherie", "isCorrect": False},
-                        {"text": "La terre présente sur les légumes", "isCorrect": False},
-                        {"text": "L'eau du réseau de distribution", "isCorrect": False}
+                        {"text": "Par la présentation d'une attestation de conformité du fournisseur garantissant l'absence de ce contaminant dans les matières premières", "isCorrect": True},
+                        {"text": "Par la rédaction d'un protocole extrêmement détaillé expliquant que les employés nettoient systématiquement les surfaces de travail avec une solution diluée selon les recommandations strictes du fabricant de produits lessiviels alcalins chlorés", "isCorrect": False},
+                        {"text": "Par un relevé quotidien des températures prouvant que la chambre froide est maintenue en dessous de trois degrés constants", "isCorrect": False},
+                        {"text": "Par une simple déclaration sur l'honneur du gérant certifiant que l'entreprise n'utilise aucun additif dangereux", "isCorrect": False}
                     ],
-                    "correction": "Le Staphylocoque doré est un germe 'humain'. Il se loge principalement dans les fosses nasales, la gorge ou sur les plaies infectées (panaris) du personnel."
+                    "correction": "L'analyse des dangers HACCP peut exclure un risque chimique si celui-ci est rigoureusement maîtrisé en amont et prouvé par des garanties documentaires fiables comme les certificats d'alimentarité."
                 },
                 {
                     "questionNumber": 24,
-                    "question": "Dans le cercle de Sinner (TACT), à quoi correspond le facteur 'Action Mécanique' ?",
+                    "question": "Quelle méthode d'échantillonnage de surface utilise-t-on pour vérifier l'efficacité d'un protocole de nettoyage et désinfection ?",
                     "answerOptions": [
-                        {"text": "Au frottement", "isCorrect": True},
-                        {"text": "Au détergent", "isCorrect": False},
-                        {"text": "À la chaleur", "isCorrect": False},
-                        {"text": "Au trempage", "isCorrect": False}
+                        {"text": "Le test par boîte contact", "isCorrect": True},
+                        {"text": "L'analyse sanguine sur animal", "isCorrect": False},
+                        {"text": "La chromatographie en phase gazeuse", "isCorrect": False},
+                        {"text": "Le titrage acido basique", "isCorrect": False}
                     ],
-                    "correction": "Le TACT regroupe Température, Action mécanique, Chimie et Temps. L'action mécanique correspond à l'énergie physique déployée (brossage, jet haute pression, frottement) pour décoller les souillures."
+                    "correction": "Les boîtes contact composées de gélose ou les écouvillons permettent de prélever directement sur les billots et de dénombrer la flore résiduelle pour valider le plan de nettoyage."
                 },
                 {
                     "questionNumber": 25,
-                    "question": "Quelle bactérie pathogène est particulièrement redoutée car elle est capable de se multiplier même à 4 °C ?",
+                    "question": "Quel paramètre intrinsèque de la viande freine le plus le développement bactérien lors du séchage d'un jambon ?",
                     "answerOptions": [
-                        {"text": "Listeria monocytogenes", "isCorrect": True},
-                        {"text": "Salmonella enterica", "isCorrect": False},
-                        {"text": "Escherichia coli", "isCorrect": False},
-                        {"text": "Clostridium perfringens", "isCorrect": False}
+                        {"text": "L'activité de l'eau", "isCorrect": True},
+                        {"text": "Le potentiel hydrogène", "isCorrect": False},
+                        {"text": "Le taux de collagène", "isCorrect": False},
+                        {"text": "La tension superficielle", "isCorrect": False}
                     ],
-                    "correction": "La Listeria est une bactérie psychrotrophe, ce qui signifie qu'elle est capable de survivre et de se développer lentement aux températures de réfrigération habituelles (+4 °C)."
+                    "correction": "L'activité de l'eau mesure l'eau libre disponible pour les micro-organismes. Le salage osmotique puis le séchage l'abaissent considérablement, bloquant ainsi la prolifération bactérienne."
                 },
                 {
                     "questionNumber": 26,
-                    "question": "Comment appelle-t-on une bactérie qui a besoin d'oxygène pour vivre ?",
+                    "question": "Quelle est la procédure réglementaire immédiate face à un résultat d'analyse positif à la Listeria monocytogenes sur un lot de rillettes déjà commercialisé ?",
                     "answerOptions": [
-                        {"text": "Aérobie", "isCorrect": True},
-                        {"text": "Anaérobie", "isCorrect": False},
-                        {"text": "Thermophile", "isCorrect": False},
-                        {"text": "Mésophile", "isCorrect": False}
+                        {"text": "Déclencher le retrait rappel immédiat du produit alerter les autorités sanitaires et informer les consommateurs par voie de presse et affichage", "isCorrect": True},
+                        {"text": "Augmenter massivement le dosage de sel nitrité lors des futures productions artisanales afin de créer une barrière chimique infranchissable tout en détruisant silencieusement le reste du lot contaminé pour éviter de ternir la réputation du commerce de proximité", "isCorrect": False},
+                        {"text": "Convoquer l'ensemble du personnel pour une formation accélérée sur le lavage des mains et la désinfection du petit matériel de coupe", "isCorrect": False},
+                        {"text": "Suspendre la vente du lot pendant quarante huit heures le temps de procéder à de nouvelles analyses bactériologiques contradictoires en laboratoire", "isCorrect": False}
                     ],
-                    "correction": "Les bactéries aérobies strictes nécessitent la présence d'oxygène pour leur métabolisme, contrairement aux anaérobies qui vivent en son absence."
+                    "correction": "Listeria monocytogenes est un danger majeur. Sa détection dans un produit prêt à consommer déclenche immédiatement une procédure de crise sanitaire incluant le rappel massif des produits et l'information publique."
                 },
                 {
                     "questionNumber": 27,
-                    "question": "Quelle est la définition exacte d'une TIAC ?",
+                    "question": "Quelle famille de détergents est recommandée pour éliminer le tartre minéral sur les équipements d'abattage ?",
                     "answerOptions": [
-                        {"text": "Toxi-Infection Alimentaire Collective", "isCorrect": True},
-                        {"text": "Trouble Intestinal Aigu Contagieux", "isCorrect": False},
-                        {"text": "Traitement Intensif des Aliments Contaminés", "isCorrect": False},
-                        {"text": "Température Idéale d'Activité Cellulaire", "isCorrect": False}
+                        {"text": "L'utilisation spécifique de détergents acides", "isCorrect": True},
+                        {"text": "L'emploi d'agents tensioactifs très alcalins", "isCorrect": False},
+                        {"text": "L'aspersion de solvants chlorés organiques purs", "isCorrect": False},
+                        {"text": "La pulvérisation de solutions enzymatiques neutres", "isCorrect": False}
                     ],
-                    "correction": "Une TIAC est définie par l'apparition d'au moins deux cas similaires d'une symptomatologie, en général gastro-intestinale, dont on peut rapporter la cause à une même origine alimentaire."
+                    "correction": "Les produits acides sont utilisés périodiquement pour dissoudre le tartre et les précipités minéraux calcaires, en alternance avec les détergents alcalins dédiés à l'élimination des graisses."
                 },
                 {
                     "questionNumber": 28,
-                    "question": "Quel parasite peut contaminer l'homme suite à la consommation de viande de porc ou de sanglier insuffisamment cuite ?",
+                    "question": "Quel est le mode de transmission exclusif du parasite Toxoplasma gondii vers l'homme en filière viande ?",
                     "answerOptions": [
-                        {"text": "La trichine", "isCorrect": True},
-                        {"text": "La grande douve", "isCorrect": False},
-                        {"text": "Le varroa", "isCorrect": False},
-                        {"text": "L'anisakis", "isCorrect": False}
+                        {"text": "La consommation de viande crue", "isCorrect": True},
+                        {"text": "La piqûre d'un insecte vecteur", "isCorrect": False},
+                        {"text": "L'inhalation de spores fongiques volatiles", "isCorrect": False},
+                        {"text": "Le contact cutané direct avec le sang", "isCorrect": False}
                     ],
-                    "correction": "La trichine (Trichinella spiralis) est un ver rond parasite dont les larves s'enkystent dans les muscles du porc. C'est pourquoi le contrôle vétérinaire (trichinoscopie) est obligatoire."
+                    "correction": "La toxoplasmose est transmise à l'homme par l'ingestion de kystes microscopiques présents dans la viande notamment mouton, porc, cheval si celle-ci est consommée crue ou insuffisamment cuite."
                 },
                 {
                     "questionNumber": 29,
-                    "question": "Quel document est obligatoire pour assurer la traçabilité sanitaire des viandes bovines ?",
+                    "question": "Comment s'assure-t-on de la validation d'une limite critique associée à un point critique pour la maîtrise lors d'une cuisson ?",
                     "answerOptions": [
-                        {"text": "Le document d'accompagnement bovin", "isCorrect": True},
-                        {"text": "Le certificat de vaccination", "isCorrect": False},
-                        {"text": "Le registre du commerce", "isCorrect": False},
-                        {"text": "La facture proforma", "isCorrect": False}
+                        {"text": "Par des études scientifiques reconnues ou des tests de vieillissement documentés prouvant l'efficacité du barème temps température retenu", "isCorrect": True},
+                        {"text": "En se fiant exclusivement à l'expérience visuelle et olfactive du chef charcutier qui juge empiriquement que la coloration de la croûte extérieure de la terrine est suffisamment foncée pour garantir une destruction microbienne absolue", "isCorrect": False},
+                        {"text": "En augmentant systématiquement la température du four mixte de dix degrés par rapport aux recommandations initiales du constructeur de la machine", "isCorrect": False},
+                        {"text": "En interrogeant la clientèle habituelle sur la texture perçue lors de la dégustation du produit fini vendu en tranche au détail", "isCorrect": False}
                     ],
-                    "correction": "Le DAB (Document d'Accompagnement Bovin) ou 'passeport' suit l'animal de sa naissance à l'abattoir et permet d'assurer la traçabilité (numéro d'identification à 10 chiffres)."
+                    "correction": "La méthode HACCP exige que les limites critiques soient objectivement validées par des données scientifiques, des guides de bonnes pratiques homologués ou des challenge tests validés en laboratoire."
                 },
                 {
                     "questionNumber": 30,
-                    "question": "Quel est le rôle d'un produit détergent lors du nettoyage ?",
+                    "question": "Quelle toxine bactérienne particulièrement thermorésistante provoque des vomissements violents et très rapides après ingestion ?",
                     "answerOptions": [
-                        {"text": "Décoller les souillures grasses", "isCorrect": True},
-                        {"text": "Tuer les micro-organismes", "isCorrect": False},
-                        {"text": "Rendre la surface stérile", "isCorrect": False},
-                        {"text": "Former un film protecteur", "isCorrect": False}
+                        {"text": "Entérotoxine staphylococcique", "isCorrect": True},
+                        {"text": "Toxine botulique endogène", "isCorrect": False},
+                        {"text": "Toxine tétanique musculaire", "isCorrect": False},
+                        {"text": "Mycotoxine fongique volatile", "isCorrect": False}
                     ],
-                    "correction": "Attention à ne pas confondre : le détergent nettoie (enlève le gras et la matière organique) grâce aux tensioactifs, tandis que le désinfectant tue les microbes. On ne désinfecte bien que ce qui est propre."
+                    "correction": "Le staphylocoque doré produit des entérotoxines dans l'aliment. Même si la bactérie est détruite par une cuisson classique, ces toxines résistent à la chaleur et déclenchent des intoxications aiguës fulgurantes."
                 },
                 {
                     "questionNumber": 31,
-                    "question": "À quelle température minimale l'eau chaude doit-elle être pour désinfecter efficacement le petit matériel (couteaux) dans un stérilisateur ?",
+                    "question": "Quel est l'objectif premier du diagramme de fabrication dans l'élaboration du plan HACCP ?",
                     "answerOptions": [
-                        {"text": "82 °C", "isCorrect": True},
-                        {"text": "63 °C", "isCorrect": False},
-                        {"text": "45 °C", "isCorrect": False},
-                        {"text": "100 °C", "isCorrect": False}
+                        {"text": "Identifier toutes les étapes du processus technique", "isCorrect": True},
+                        {"text": "Calculer le coût de revient final du produit", "isCorrect": False},
+                        {"text": "Planifier les horaires de présence du personnel ouvrier", "isCorrect": False},
+                        {"text": "Présenter la recette gastronomique de la charcuterie", "isCorrect": False}
                     ],
-                    "correction": "Les stérilisateurs à couteaux en boucherie doivent maintenir une eau à une température minimale de 82 °C pour assurer une désinfection thermique efficace des lames."
+                    "correction": "Le diagramme de fabrication décrit de manière séquentielle chaque étape de la production, de la réception à l'expédition. Il constitue le socle indispensable pour mener l'analyse des dangers étape par étape."
                 },
                 {
                     "questionNumber": 32,
-                    "question": "Que signifie le terme 'flore banale' en microbiologie alimentaire ?",
+                    "question": "Pourquoi l'utilisation de sciure de bois résineux est-elle strictement proscrite lors du fumage traditionnel des salaisons artisanales ?",
                     "answerOptions": [
-                        {"text": "Les germes d'altération non pathogènes", "isCorrect": True},
-                        {"text": "Les bactéries hautement toxiques", "isCorrect": False},
-                        {"text": "Les virus saisonniers habituels", "isCorrect": False},
-                        {"text": "Les levures utilisées pour le pain", "isCorrect": False}
+                        {"text": "Elle génère une combustion incomplète produisant des hydrocarbures aromatiques polycycliques fortement cancérigènes qui se déposent en surface", "isCorrect": True},
+                        {"text": "Elle contient une quantité beaucoup trop importante de sève naturelle qui s'écoule lentement le long des parois du fumoir encrassant irrémédiablement les grilles en acier inoxydable et demandant un nettoyage quotidien fastidieux", "isCorrect": False},
+                        {"text": "Elle brûle beaucoup trop rapidement ce qui ne laisse pas le temps à la viande de s'imprégner des arômes forestiers subtils attendus par les consommateurs exigeants", "isCorrect": False},
+                        {"text": "Elle provoque une coloration grisâtre extrêmement repoussante sur la peau des saucissons secs altérant gravement leur potentiel de commercialisation en vitrine réfrigérée", "isCorrect": False}
                     ],
-                    "correction": "La flore banale (ou flore d'altération) modifie l'aspect, l'odeur ou le goût de la viande (poissage, verdissement) sans être nécessairement dangereuse pour la santé, contrairement à la flore pathogène."
+                    "correction": "Les bois résineux comme le pin ou le sapin produisent beaucoup de suie et de composés toxiques dits HAP lors de leur combustion lente. On privilégie les bois durs de type hêtre pour garantir la sécurité chimique."
                 },
                 {
                     "questionNumber": 33,
-                    "question": "Quelle est la durée de validité administrative d'un agrément sanitaire pour un laboratoire de boucherie ?",
+                    "question": "Quel phénomène physico-chimique favorise la formation tenace du biofilm bactérien sur les équipements de découpe ?",
                     "answerOptions": [
-                        {"text": "Illimitée tant que les conditions sont respectées", "isCorrect": True},
-                        {"text": "Renouvelable tous les ans", "isCorrect": False},
-                        {"text": "Valable uniquement cinq années", "isCorrect": False},
-                        {"text": "Limitée à la durée du bail commercial", "isCorrect": False}
+                        {"text": "La sécrétion de matrices polymériques extracellulaires", "isCorrect": True},
+                        {"text": "La cristallisation rapide des sels minéraux dissous", "isCorrect": False},
+                        {"text": "L'oxydation métallique de la surface en inox", "isCorrect": False},
+                        {"text": "La saponification spontanée des graisses de surface", "isCorrect": False}
                     ],
-                    "correction": "L'agrément sanitaire, délivré par la DDPP, est acquis de façon permanente, mais il peut être suspendu ou retiré à tout moment en cas de non-respect des normes d'hygiène constatées lors d'un contrôle."
+                    "correction": "Les bactéries adhèrent à une surface et sécrètent un exopolymère complexe qui forme une matrice gluante. Ce biofilm les protège efficacement de l'action létale des agents de nettoyage et de désinfection."
                 },
                 {
                     "questionNumber": 34,
-                    "question": "Quel est l'hôte intermédiaire principal du Ténia saginata (ver solitaire) ?",
+                    "question": "Quelle est la fonction indispensable du registre des non-conformités au sein du plan de maîtrise sanitaire de l'entreprise ?",
                     "answerOptions": [
-                        {"text": "Le bœuf", "isCorrect": True},
-                        {"text": "Le mouton", "isCorrect": False},
-                        {"text": "Le poulet", "isCorrect": False},
-                        {"text": "Le cheval", "isCorrect": False}
+                        {"text": "Tracer les anomalies rencontrées et détailler les actions correctives immédiatement mises en place pour rétablir la situation", "isCorrect": True},
+                        {"text": "Centraliser uniquement les plaintes officielles formulées par écrit par les inspecteurs de la répression des fraudes lors de leurs passages annuels impromptus dans le but exclusif de préparer la défense juridique de l'artisan", "isCorrect": False},
+                        {"text": "Lister l'ensemble des matières premières qui n'ont pas été livrées à l'heure exacte prévue par le contrat cadre signé avec la centrale d'achat", "isCorrect": False},
+                        {"text": "Enregistrer les températures extérieures journalières afin de justify l'augmentation occasionnelle de la facture d'électricité de la chambre froide", "isCorrect": False}
                     ],
-                    "correction": "Le cycle du Ténia saginata passe par le bovin (hôte intermédiaire où se forment les cysticerques dans les muscles) avant de contaminer l'homme (hôte définitif)."
+                    "correction": "La gestion des non-conformités démontre la réactivité du professionnel face au danger. Le registre permet d'historiser le problème panne thermique par exemple et d'en justifier le traitement réglementaire."
                 },
                 {
                     "questionNumber": 35,
-                    "question": "Qu'est-ce qu'un biofilm sur une surface de travail ?",
+                    "question": "Quel organisme d'État évalue de façon scientifique les risques sanitaires alimentaires en France ?",
                     "answerOptions": [
-                        {"text": "Un amas de bactéries protégé par une matrice adhésive", "isCorrect": True},
-                        {"text": "Un film plastique alimentaire de protection", "isCorrect": False},
-                        {"text": "Un produit écologique pour laver les sols", "isCorrect": False},
-                        {"text": "Une couche de graisse visible à l'œil nu", "isCorrect": False}
+                        {"text": "L'Anses", "isCorrect": True},
+                        {"text": "L'Urssaf", "isCorrect": False},
+                        {"text": "L'Afpa", "isCorrect": False},
+                        {"text": "La Carsat", "isCorrect": False}
                     ],
-                    "correction": "Un biofilm est une communauté de micro-organismes qui adhèrent à une surface et sécrètent une matrice protectrice, rendant le nettoyage et la désinfection beaucoup plus difficiles."
+                    "correction": "L'Agence nationale de sécurité sanitaire de l'alimentation de l'environnement et du travail ou ANSES est l'autorité scientifique chargée de l'évaluation des risques, guidant la rédaction des réglementations sanitaires."
                 },
                 {
                     "questionNumber": 36,
-                    "question": "Quelle maladie animale est communément appelée 'vache folle' ?",
+                    "question": "Quel danger chimique majeur cherche-t-on à éviter par le contrôle strict des teneurs en nitrates et nitrites d'apport ?",
                     "answerOptions": [
-                        {"text": "ESB", "isCorrect": True},
-                        {"text": "FCO", "isCorrect": False},
-                        {"text": "IBR", "isCorrect": False},
-                        {"text": "Aujeszky", "isCorrect": False}
+                        {"text": "La formation endogène de nitrosamines cancérigènes", "isCorrect": True},
+                        {"text": "La précipitation de cristaux de phosphate de calcium", "isCorrect": False},
+                        {"text": "La production d'acide cyanhydrique lors de la cuisson", "isCorrect": False},
+                        {"text": "L'apparition de métaux lourds dans la chair charcutière", "isCorrect": False}
                     ],
-                    "correction": "L'Encéphalopathie Spongiforme Bovine (ESB) est causée par un prion. Elle a entraîné une crise sanitaire majeure imposant le retrait des MRS (Matériels à Risque Spécifiés)."
+                    "correction": "Sous certaines conditions thermiques intenses ou dans le milieu acide de l'estomac, les nitrites réagissent avec les acides aminés de la viande pour former des nitrosamines, composés scientifiquement reconnus comme cancérigènes."
                 },
                 {
                     "questionNumber": 37,
-                    "question": "Pour quelle raison interdit-on les planches à découper en bois brut en laboratoire de découpe ?",
+                    "question": "Quelle technologie de nettoyage permet d'atteindre efficacement les recoins inaccessibles d'un hachoir industriel complexe ?",
                     "answerOptions": [
-                        {"text": "Elles sont imputrescibles et poreuses", "isCorrect": True},
-                        {"text": "Elles usent trop vite le fil des couteaux", "isCorrect": False},
-                        {"text": "Elles dégagent une odeur de résine", "isCorrect": False},
-                        {"text": "Elles sont trop lourdes à manipuler", "isCorrect": False}
+                        {"text": "Le nettoyage régulier par canon à mousse", "isCorrect": True},
+                        {"text": "Le raclage manuel intensif avec une spatule", "isCorrect": False},
+                        {"text": "L'aspiration sous vide des micro particules", "isCorrect": False},
+                        {"text": "Le brossage à sec rotatif à haute vitesse", "isCorrect": False}
                     ],
-                    "correction": "Le bois brut est un matériau poreux qui retient l'humidité et les résidus de viande, favorisant la création de nids à bactéries impossibles à désinfecter totalement. On utilise du polyéthylène haute densité."
+                    "correction": "La mousse détergente assure un temps de contact prolongé sur les surfaces verticales et pénètre profondément dans les interstices, décollant chimiquement les souillures organiques avant l'opération de rinçage à l'eau."
                 },
                 {
                     "questionNumber": 38,
-                    "question": "Que doit faire un boucher s'il présente une plaie infectée à la main ?",
+                    "question": "Pourquoi l'évaluation du risque d'anoxie est-elle absolument cruciale dans les laboratoires équipés de machines sous vide à cloche ?",
                     "answerOptions": [
-                        {"text": "Mettre un pansement étanche et un gant ou un doigtier", "isCorrect": True},
-                        {"text": "Se laver les mains plus souvent", "isCorrect": False},
-                        {"text": "Appliquer de l'alcool et travailler sans gant", "isCorrect": False},
-                        {"text": "Arrêter le travail immédiatement", "isCorrect": False}
+                        {"text": "L'utilisation de gaz de conditionnement comme l'azote peut chasser l'oxygène de la pièce en cas de fuite et provoquer une asphyxie", "isCorrect": True},
+                        {"text": "L'aspiration surpuissante de la pompe à vide rotative risque de créer une dépression atmosphérique tellement intense dans le laboratoire fermé que les portes d'accès principales se bloqueraient totalement de l'intérieur", "isCorrect": False},
+                        {"text": "La libération accidentelle d'ozone par le système électrique pourrait enflammer spontanément les vapeurs d'alcool issues des produits de désinfection stockés à proximité", "isCorrect": False},
+                        {"text": "La mise sous vide des viandes exsudatives génère systématiquement des vapeurs d'ammoniac pur particulièrement irritantes pour les muqueuses oculaires du personnel", "isCorrect": False}
                     ],
-                    "correction": "Il n'est pas nécessaire d'arrêter le travail pour une petite plaie, mais pour éviter la contamination par Staphylocoque, la plaie doit être isolée hermétiquement par un pansement occlusif et un gant."
+                    "correction": "Le conditionnement sous atmosphère protectrice utilise des gaz neutres inodores. En cas de fuite importante dans un local de travail mal ventilé, ces gaz remplacent l'oxygène ambiant, créant un danger mortel d'anoxie."
                 },
                 {
                     "questionNumber": 39,
-                    "question": "Quelle est la signification du sigle DDM sur une étiquette d'épices ou de conserves ?",
+                    "question": "Quelle est la principale mesure de prévention contre l'apparition de Campylobacter dans les préparations de volaille crue ?",
                     "answerOptions": [
-                        {"text": "Date de Durabilité Minimale", "isCorrect": True},
-                        {"text": "Date de Destruction Microbiologique", "isCorrect": False},
-                        {"text": "Délai de Distribution Maximum", "isCorrect": False},
-                        {"text": "Durée de Maturation Moyenne", "isCorrect": False}
+                        {"text": "La prévention stricte des contaminations croisées", "isCorrect": True},
+                        {"text": "Le salage au sel sec systématique et prolongé", "isCorrect": False},
+                        {"text": "Le fumage à froid réalisé en cheminée traditionnelle", "isCorrect": False},
+                        {"text": "L'ajout d'antioxydants synthétiques purs dans la saumure", "isCorrect": False}
                     ],
-                    "correction": "La DDM (anciennement DLUO) indique la date jusqu'à laquelle le produit conserve ses qualités organoleptiques. Le produit reste consommable sans danger après cette date."
+                    "correction": "Campylobacter est une bactérie pathogène très fréquente sur la peau des volailles. La seule véritable maîtrise passe par des règles d'hygiène drastiques matériels dédiés pour ne jamais contaminer les autres denrées manipulées."
                 },
                 {
                     "questionNumber": 40,
-                    "question": "Quel vecteur de contamination est le plus fréquent en milieu alimentaire ?",
+                    "question": "Quel est le rôle d'un thermomètre étalon dans le cadre d'un plan de maîtrise sanitaire rigoureux ?",
                     "answerOptions": [
-                        {"text": "Les mains", "isCorrect": True},
-                        {"text": "L'air", "isCorrect": False},
-                        {"text": "Les insectes", "isCorrect": False},
-                        {"text": "Les emballages", "isCorrect": False}
+                        {"text": "Vérifier la justesse des sondes de température usuelles", "isCorrect": True},
+                        {"text": "Enregistrer la température du local en temps réel", "isCorrect": False},
+                        {"text": "Mesurer l'acidité interne des produits carnés fermentés", "isCorrect": False},
+                        {"text": "Chauffer localement la zone de piquage du produit", "isCorrect": False}
                     ],
-                    "correction": "La main de l'homme est le premier vecteur de contamination (manuportage) des germes, d'où l'importance capitale du lavage des mains fréquent et efficace."
-                },
+                    "correction": "Le thermomètre étalon certifié sert de référence pour calibrer périodiquement les thermomètres de travail du laboratoire, garantissant ainsi l'absolue fiabilité des autocontrôles thermiques obligatoires."
+                }
             ]
         },
         # =========================================================================
-        # THÈME 3 : PROCÉDÉS DE CONSERVATION ET TECHNOLOGIE TRAITEUR (Questions 41 à 60)
+        # THÈME 3 : TECHNOLOGIE DES FABRICATIONS CHARCUTIÈRES ET PROCÉDÉS TRAITEUR COMPLEXES (Questions 41 à 60)
         # =========================================================================
         3: {
-            "name": "THÈME 3 : PROCÉDÉS DE CONSERVATION ET TECHNOLOGIE TRAITEUR",
+            "name": "THÈME 3 : TECHNOLOGIE DES FABRICATIONS CHARCUTIÈRES ET PROCÉDÉS TRAITEUR COMPLEXES",
             "questions": [
                 {
                     "questionNumber": 41,
-                    "question": "Quel ingrédient est responsable de la couleur rose caractéristique du jambon cuit ?",
+                    "question": "Quel rôle biochimique majeur joue l'acide ascorbique ajouté dans une mêlée pour saucisson sec ?",
                     "answerOptions": [
-                        {"text": "Le sel nitrité", "isCorrect": True},
-                        {"text": "Le sel marin gris", "isCorrect": False},
-                        {"text": "Le poivre blanc", "isCorrect": False},
-                        {"text": "Le sucre glace", "isCorrect": False}
+                        {"text": "Il accélère la réduction des nitrates en nitrites et stabilise la couleur rouge", "isCorrect": True},
+                        {"text": "Il favorise la multiplication rapide des flores fongiques de surface", "isCorrect": False},
+                        {"text": "Il augmente le pH global pour empêcher le rancissement des lipides", "isCorrect": False},
+                        {"text": "Il dissout les cristaux de phosphate présents dans viandes âgées", "isCorrect": False}
                     ],
-                    "correction": "Le sel nitrité (sel + nitrite de sodium) provoque la réaction de rubéfaction en se fixant sur la myoglobine de la viande, fixant ainsi la couleur rose stable à la cuisson."
+                    "correction": "L'acide ascorbique ou vitamine C agit comme un puissant réducteur et antioxydant. Il favorise la transformation rapide du salpêtre en nitrite actif, assurant une rubéfaction rapide et stable tout en protégeant les graisses de l'oxydation."
                 },
                 {
                     "questionNumber": 42,
-                    "question": "En fabrication de saucisson sec, quel est le rôle principal de l'étuvage avant le séchage ?",
+                    "question": "Quelle est la valeur de l'activité de l'eau idéale pour garantir la conservation d'un saucisson sec traditionnel ?",
                     "answerOptions": [
-                        {"text": "Favoriser le développement des ferments lactiques", "isCorrect": True},
-                        {"text": "Cuire la viande à cœur pour la stériliser", "isCorrect": False},
-                        {"text": "Donner une couleur noire à la peau du saucisson", "isCorrect": False},
-                        {"text": "Congeler rapidement le produit pour le durcir", "isCorrect": False}
+                        {"text": "Inférieure à zéro virgule quatre vingt dix", "isCorrect": True},
+                        {"text": "Supérieure à zéro virgule quatre vingt quinze", "isCorrect": False},
+                        {"text": "Exactement égale à un", "isCorrect": False},
+                        {"text": "Autour de zéro virgule cinquante", "isCorrect": False}
                     ],
-                    "correction": "L'étuvage (20-24°C, forte humidité) permet aux 'bonnes' bactéries (ferments) de se multiplier rapidement, acidifiant le produit (baisse du pH) pour empêcher la putréfaction et permettre le séchage ultérieur."
+                    "correction": "L'activité de l'eau notée aw mesure l'eau libre. Un saucisson bien séché atteint une aw inférieure à 0,90, seuil critique bloquant le développement de la plupart des bactéries pathogènes comme les staphylocoques."
                 },
                 {
                     "questionNumber": 43,
-                    "question": "Quel additif alimentaire porte le code E300 et sert d'antioxygène ?",
+                    "question": "Quel phénomène physico chimique explique la rupture soudaine d'une émulsion de type pâte fine lors du passage au cutter ?",
                     "answerOptions": [
-                        {"text": "L'acide ascorbique", "isCorrect": True},
-                        {"text": "Le glutamate de sodium", "isCorrect": False},
-                        {"text": "Le rouge cochenille", "isCorrect": False},
-                        {"text": "Le nitrate de potassium", "isCorrect": False}
+                        {"text": "L'échauffement excessif de la mêlée provoque la dénaturation thermique prématurée des protéines myofibrillaires qui perdent instantanément leur pouvoir émulsifiant face aux gouttelettes de gras", "isCorrect": True},
+                        {"text": "L'introduction beaucoup trop rapide de la glace pilée au fond de la cuve entraîne une cristallisation immédiate des graisses saturées qui viennent cisailler mécaniquement l'ensemble du réseau protéique formé lors des premières rotations des couteaux en acier trempé", "isCorrect": False},
+                        {"text": "L'ajout tardif du sel nitrité bloque la solubilisation de l'actine et de la myosine", "isCorrect": False},
+                        {"text": "Le manque d'oxygène dans la cuve empêche la liaison entre l'eau et les lipides", "isCorrect": False}
                     ],
-                    "correction": "L'acide ascorbique (Vitamine C) est un antioxygène puissant. Il évite le rancissement des graisses et accélère la prise de couleur lors du salage."
+                    "correction": "Au-delà de 12 à 14 degrés Celsius, les protéines solubilisées coagulent prématurément et les graisses fondent. L'émulsion casse irrémédiablement, libérant l'eau et le gras qui formeront des poches à la cuisson."
                 },
                 {
                     "questionNumber": 44,
-                    "question": "Quelle est la définition technique d'une émulsion type 'pâte fine' (ex : saucisse de Francfort) ?",
+                    "question": "Quelle est la fonction technologique du barattage sous vide lors de la fabrication d'un jambon cuit supérieur ?",
                     "answerOptions": [
-                        {"text": "Une dispersion stable de gras dans l'eau et les protéines", "isCorrect": True},
-                        {"text": "Un mélange grossier de morceaux de viande et de gras", "isCorrect": False},
-                        {"text": "Une superposition de couches de gelée et de farce", "isCorrect": False},
-                        {"text": "Une solution liquide transparente sans matière grasse", "isCorrect": False}
+                        {"text": "Extraire les protéines solubles pour assurer la cohésion des muscles au moulage", "isCorrect": True},
+                        {"text": "Chasser l'eau interstitielle pour réduire drastiquement le temps de cuisson final", "isCorrect": False},
+                        {"text": "Attendrir mécaniquement les fibres conjonctives de la couenne par friction", "isCorrect": False},
+                        {"text": "Stériliser la surface du produit grâce à l'absence totale d'oxygène gazeux", "isCorrect": False}
                     ],
-                    "correction": "Une pâte fine est une émulsion 'huile dans l'eau' où les protéines de la viande (myosine) enrobent les gouttelettes de gras finement broyées pour créer une texture homogène et stable."
+                    "correction": "Le barattage malaxe les muscles injectés. Cette action mécanique, aidée par le sel, extrait la myosine en surface. Cet exsudat protéique agit comme une colle thermophile liant les muscles entre eux à la cuisson."
                 },
                 {
                     "questionNumber": 45,
-                    "question": "Quel boyau naturel est traditionnellement utilisé pour embosser le boudin noir ou blanc ?",
+                    "question": "Dans un produit de salaison quel composé est responsable de la couleur rouge stable obtenue après cuisson ?",
                     "answerOptions": [
-                        {"text": "Le menu de porc", "isCorrect": True},
-                        {"text": "La baudruche de bœuf", "isCorrect": False},
-                        {"text": "Le sacrum de mouton", "isCorrect": False},
-                        {"text": "L'œsophage de veau", "isCorrect": False}
+                        {"text": "Le nitrosomyochromogène", "isCorrect": True},
+                        {"text": "La metmyoglobine oxydée", "isCorrect": False},
+                        {"text": "Le complexe hématine pur", "isCorrect": False},
+                        {"text": "La sulfomyoglobine verte", "isCorrect": False}
                     ],
-                    "correction": "Le 'menu' correspond à l'intestin grêle du porc. C'est le boyau standard pour les saucisses fraîches, les chipolatas (menu de mouton) ou les boudins portions."
+                    "correction": "Sous l'action de la chaleur, la nitrosomyoglobine pigment cru issu de la réaction entre la myoglobine et le nitrite se dénature en nitrosomyochromogène, fixant définitivement la couleur rose caractéristique du jambon cuit."
                 },
                 {
                     "questionNumber": 46,
-                    "question": "Dans le conditionnement sous atmosphère protectrice (MAP) des viandes rouges, quel gaz est majoritaire pour conserver la couleur rouge ?",
+                    "question": "Pourquoi le dosage précis des polyphosphates est il strictement réglementé dans la fabrication des produits de charcuterie cuite ?",
                     "answerOptions": [
-                        {"text": "L'oxygène", "isCorrect": True},
-                        {"text": "L'azote", "isCorrect": False},
-                        {"text": "Le dioxyde de carbone", "isCorrect": False},
-                        {"text": "L'hélium", "isCorrect": False}
+                        {"text": "Ils augmentent artificiellement le pouvoir de rétention d'eau des viandes ce qui pourrait tromper le consommateur sur le poids réel", "isCorrect": True},
+                        {"text": "Ils déclenchent une réaction exothermique extrêmement violente au contact de la saumure liquide qui pourrait provoquer des brûlures chimiques graves sur les mains des opérateurs chargés de l'injection intramusculaire des jambons crus dans le laboratoire de préparation", "isCorrect": False},
+                        {"text": "Ils inhibent complètement l'action des ferments lactiques indispensables à l'acidification", "isCorrect": False},
+                        {"text": "Ils détruisent la flore d'altération superficielle de façon totalement irréversible", "isCorrect": False}
                     ],
-                    "correction": "Contrairement aux autres produits où l'on chasse l'oxygène, pour la viande rouge fraîche, on utilise un mélange riche en oxygène (70-80%) pour maintenir la myoglobine sous forme d'oxymyoglobine (rouge vif)."
+                    "correction": "Les diphosphates et triphosphates écartent les filaments d'actine et de myosine, permettant de piéger massivement l'eau. Leur dosage est plafonné pour éviter les fraudes au poids par mouillage excessif des denrées."
                 },
                 {
                     "questionNumber": 47,
-                    "question": "Quel est le principe physique de la cuisson sous vide à basse température ?",
+                    "question": "Quel boyau naturel d'origine bovine est utilisé pour embosser les pièces de gros calibre comme le cervelas ?",
                     "answerOptions": [
-                        {"text": "La juste température à cœur", "isCorrect": True},
-                        {"text": "L'ébullition rapide de l'eau", "isCorrect": False},
-                        {"text": "La déshydratation par le sel", "isCorrect": False},
-                        {"text": "Le rayonnement infrarouge direct", "isCorrect": False}
+                        {"text": "Le baudruche", "isCorrect": True},
+                        {"text": "Le chaudin", "isCorrect": False},
+                        {"text": "Le menu", "isCorrect": False},
+                        {"text": "Le fuseau", "isCorrect": False}
                     ],
-                    "correction": "La cuisson sous vide vise à atteindre précisément la température à cœur souhaitée (souvent basse, entre 56°C et 65°C) sans la dépasser, pour préserver la texture et les jus."
+                    "correction": "La baudruche de bœuf, issue du cæcum, est un boyau naturel extrêmement large et résistant, parfaitement adapté à la confection de grosses pièces charcutières nécessitant une cuisson prolongée."
                 },
                 {
                     "questionNumber": 48,
-                    "question": "Quelle substance est naturellement riche en collagène et permet la gélification des pâtés de tête ?",
+                    "question": "Quel processus enzymatique est recherché lors de l'étuvage d'une pâte à saucisson sec fraîchement embossée ?",
                     "answerOptions": [
-                        {"text": "La couenne", "isCorrect": True},
-                        {"text": "Le foie", "isCorrect": False},
-                        {"text": "Le sang", "isCorrect": False},
-                        {"text": "La rate", "isCorrect": False}
+                        {"text": "L'acidification de la mêlée par la production d'acide lactique", "isCorrect": True},
+                        {"text": "La liquéfaction des graisses dures par les lipases pancréatiques", "isCorrect": False},
+                        {"text": "La destruction des fibres collagéniques par les protéases fongiques", "isCorrect": False},
+                        {"text": "La caramélisation des sucres lents sous l'action de la chaleur", "isCorrect": False}
                     ],
-                    "correction": "La couenne (peau du porc) et les os/cartilages sont très riches en collagène. À la cuisson, ce collagène se transforme en gélatine naturelle qui fige la préparation au refroidissement."
+                    "correction": "Maintenue à température chaude et très humide, la mêlée fermente. Les bactéries lactiques Pediococcus ou Lactobacillus consomment les sucres et libèrent de l'acide lactique, faisant chuter le pH vers 5 pour garantir la conservation."
                 },
                 {
                     "questionNumber": 49,
-                    "question": "En charcuterie, à quoi sert l'opération de 'foisonnement' lors de la fabrication d'une mousse ?",
+                    "question": "Quelle est l'utilité d'ajouter du dextrose dans la recette d'une saucisse sèche artisanale ?",
                     "answerOptions": [
-                        {"text": "À incorporer de l'air", "isCorrect": True},
-                        {"text": "À retirer tout le gras", "isCorrect": False},
-                        {"text": "À injecter de la saumure", "isCorrect": False},
-                        {"text": "À colorer la surface", "isCorrect": False}
+                        {"text": "Fournir un substrat fermentescible aux bactéries lactiques pour abaisser le pH", "isCorrect": True},
+                        {"text": "Masquer l'amertume naturelle des épices fortes comme le poivre noir concassé", "isCorrect": False},
+                        {"text": "Créer une croûte brillante et sucrée sur l'extérieur du boyau naturel de porc", "isCorrect": False},
+                        {"text": "Retarder l'apparition de la fleur de surface pendant la phase de séchage", "isCorrect": False}
                     ],
-                    "correction": "Le foisonnement est l'action mécanique qui consiste à incorporer des bulles d'air dans la préparation pour lui donner une texture légère et onctueuse (mousses de foie, mousselines)."
+                    "correction": "Les bactéries lactiques ont besoin d'une nourriture facilement assimilable pour démarrer rapidement la fermentation lactique. Le dextrose sucre simple joue ce rôle de démarreur métabolique."
                 },
                 {
                     "questionNumber": 50,
-                    "question": "Quel conservateur est spécifiquement utilisé pour les produits à maturation longue comme le jambon sec ?",
+                    "question": "Quel défaut technologique majeur provoque l'apparition de poches de gélatine disgracieuses à l'intérieur d'un pâté en croûte après cuisson ?",
                     "answerOptions": [
-                        {"text": "Le nitrate de potassium", "isCorrect": True},
-                        {"text": "Le vinaigre d'alcool blanc", "isCorrect": False},
-                        {"text": "L'huile de tournesol raffinée", "isCorrect": False},
-                        {"text": "Le sirop de glucose déshydraté", "isCorrect": False}
+                        {"text": "Un pétrissage nettement insuffisant de la farce qui empêche la libération des protéines liantes provoquant la séparation de l'eau et du gras lors de la montée en température", "isCorrect": True},
+                        {"text": "L'utilisation exclusive de viandes de porc beaucoup trop riches en collagène soluble couplée à une température du four largement supérieure aux recommandations habituelles ce qui entraîne une liquéfaction totale et irrémédiable de l'ensemble de la structure interne de la terrine pâtissière", "isCorrect": False},
+                        {"text": "Le choix d'une pâte brisée beaucoup trop fine qui absorbe toute l'humidité", "isCorrect": False},
+                        {"text": "Une quantité de sel nitrité trop faible pour gélifier les sucs de viande", "isCorrect": False}
                     ],
-                    "correction": "Le nitrate (salpêtre) se transforme lentement en nitrite sous l'action des bactéries. Il sert de 'réserve' pour assurer la conservation et la couleur sur des durées longues (plusieurs mois), là où le nitrite seul agirait trop vite et disparaitrait."
+                    "correction": "Le manque de malaxage empêche l'extraction du réseau protéique liant. À la cuisson, les jus s'échappent des cellules musculaires, coagulent sous forme de gelée amorphe et séparent le gras, créant une texture granuleuse et des poches fluides."
                 },
                 {
                     "questionNumber": 51,
-                    "question": "Qu'est-ce que l'aw (Activity of Water) dans un produit alimentaire ?",
+                    "question": "Quelle température à cœur définit la pasteurisation standard d'une semi conserve charcutière ?",
                     "answerOptions": [
-                        {"text": "L'eau libre", "isCorrect": True},
-                        {"text": "L'eau totale", "isCorrect": False},
-                        {"text": "L'eau liée", "isCorrect": False},
-                        {"text": "L'eau gelée", "isCorrect": False}
+                        {"text": "De soixante dix à quatre vingt cinq degrés", "isCorrect": True},
+                        {"text": "Strictement au dessus de cent degrés", "isCorrect": False},
+                        {"text": "De cinquante à soixante degrés", "isCorrect": False},
+                        {"text": "Précisément cent vingt degrés Celsius", "isCorrect": False}
                     ],
-                    "correction": "L'aw mesure l'eau 'libre', c'est-à-dire l'eau non liée aux molécules de l'aliment et disponible pour le développement des micro-organismes. Plus l'aw est basse (saucisson sec), mieux le produit se conserve."
+                    "correction": "La pasteurisation détruit les formes végétatives des micro-organismes. En charcuterie, elle s'effectue généralement par une cuisson à cœur ciblant une plage entre 70 °C et 85 °C selon le produit et son format."
                 },
                 {
                     "questionNumber": 52,
-                    "question": "Quel ingrédient technologique est souvent ajouté aux saumures d'injection pour retenir l'eau dans le jambon cuit standard ?",
+                    "question": "Quelle est l'action spécifique de la fumée froide sur un produit de charcuterie comme le saumon ou le filet mignon ?",
                     "answerOptions": [
-                        {"text": "Les polyphosphates", "isCorrect": True},
-                        {"text": "La farine de blé", "isCorrect": False},
-                        {"text": "Le jaune d'œuf", "isCorrect": False},
-                        {"text": "La levure chimique", "isCorrect": False}
+                        {"text": "Assurer une action bactériostatique et antioxydante grâce aux phénols", "isCorrect": True},
+                        {"text": "Cuire doucement la chair en coagulant les protéines de surface", "isCorrect": False},
+                        {"text": "Attendrir les fibres conjonctives grâce à l'acidité des goudrons", "isCorrect": False},
+                        {"text": "Hydrater le produit pour compenser la perte de poids du salage", "isCorrect": False}
                     ],
-                    "correction": "Les polyphosphates augmentent le pouvoir de rétention d'eau des protéines musculaires, ce qui permet au jambon de garder son moelleux et son poids après cuisson (limité réglementairement)."
+                    "correction": "Le fumage à froid en dessous de 30 degrés Celsius ne cuit pas. Les composés volatils de la fumée, principalement les phénols et acides organiques, se déposent et bloquent l'oxydation des graisses tout en inhibant les bactéries de surface."
                 },
                 {
                     "questionNumber": 53,
-                    "question": "Quelle est la particularité de la cuisson d'un confit (canard, porc) ?",
+                    "question": "Quel est le rôle technologique de la couenne de porc dans la réalisation d'une hure ou d'un fromage de tête ?",
                     "answerOptions": [
-                        {"text": "Une cuisson lente immergée dans la graisse", "isCorrect": True},
-                        {"text": "Une cuisson rapide sur une grille très chaude", "isCorrect": False},
-                        {"text": "Une cuisson à la vapeur dans un four mixte", "isCorrect": False},
-                        {"text": "Une cuisson par acidité dans du jus de citron", "isCorrect": False}
+                        {"text": "Apporter le collagène nécessaire à la formation d'une gelée ferme au refroidissement", "isCorrect": True},
+                        {"text": "Donner un goût fumé prononcé typique des préparations de charcuterie ancienne", "isCorrect": False},
+                        {"text": "Clarifier le bouillon de cuisson en absorbant les impuretés sanguines en suspension", "isCorrect": False},
+                        {"text": "Protéger la préparation de l'oxydation superficielle lors de la mise en moule", "isCorrect": False}
                     ],
-                    "correction": "Confire, c'est cuire lentement et longtemps une viande immergée dans de la graisse (de canard ou de porc), ce qui la rend tendre et permet ensuite sa conservation une fois la graisse figée."
+                    "correction": "La couenne est gorgée de collagène insoluble. Lors du pochage long, ce collagène s'hydrolyse en gélatine soluble dans le bouillon, permettant à la préparation de figer solidement lors du refroidissement."
                 },
                 {
                     "questionNumber": 54,
-                    "question": "Quel risque présente une boîte de conserve bombée ?",
+                    "question": "Quelle technique de refroidissement est impérative après la cuisson à juste température d'un jambon blanc cuit au torchon pour garantir sa sécurité sanitaire et sa présentation ?",
                     "answerOptions": [
-                        {"text": "Le botulisme", "isCorrect": True},
-                        {"text": "La salmonellose", "isCorrect": False},
-                        {"text": "La listériose", "isCorrect": False},
-                        {"text": "Le ténia", "isCorrect": False}
+                        {"text": "Un refroidissement rapide en cellule pour traverser la zone critique de prolifération bactérienne suivi d'un resserrage à froid pour raffermir les chairs", "isCorrect": True},
+                        {"text": "Une immersion totale et immédiate dans un bain d'eau glacée saturée en sel nitrité afin de bloquer instantanément la cuisson à cœur tout en renforçant chimiquement la couleur rose caractéristique de la charcuterie cuite française destinée à la vente à la coupe", "isCorrect": False},
+                        {"text": "Un repos à température ambiante sur des grilles aérées jusqu'à évaporation complète", "isCorrect": False},
+                        {"text": "Une exposition directe sous des ventilateurs industriels brassant de l'air chaud", "isCorrect": False}
                     ],
-                    "correction": "Le bombage signale une production de gaz par des bactéries anaérobies, souvent Clostridium botulinum, qui produit une toxine mortelle (toxine botulique)."
+                    "correction": "Le refroidissement en cellule descente sous 10 degrés Celsius en moins de deux heures bloque la sporulation des bactéries thermorésistantes. Le resserrage consolide la cohésion des tranches avant la découpe."
                 },
                 {
                     "questionNumber": 55,
-                    "question": "En technologie traiteur, qu'appelle-t-on une 'panade' ?",
+                    "question": "Quel matériel utilise t on pour mesurer avec précision la densité d'une saumure liquide ?",
                     "answerOptions": [
-                        {"text": "Une base de liaison faite de farine, beurre et liquide", "isCorrect": True},
-                        {"text": "Une chapelure grossière pour paner les escalopes", "isCorrect": False},
-                        {"text": "Une farce fine composée uniquement de veau", "isCorrect": False},
-                        {"text": "Une garniture de légumes coupés en dés", "isCorrect": False}
+                        {"text": "Un densimètre ou pèse saumure", "isCorrect": True},
+                        {"text": "Un réfractomètre optique manuel", "isCorrect": False},
+                        {"text": "Un pH mètre électronique à sonde", "isCorrect": False},
+                        {"text": "Un viscosimètre à chute de bille", "isCorrect": False}
                     ],
-                    "correction": "La panade est une détrempe (souvent type pâte à choux ou béchamel épaisse) utilisée comme liant dans les quenelles ou certaines farces fines pour donner de la consistance et du moelleux."
+                    "correction": "Le pèse-saumure est un aréomètre gradué en degrés Baumé permettant de contrôler exactement la concentration en sel de la solution d'injection ou d'immersion."
                 },
                 {
                     "questionNumber": 56,
-                    "question": "Quelle est la température de fusion approximative de la graisse de bœuf (suif) ?",
+                    "question": "Lors de la fabrication du boudin noir à quelle température le sang de porc coagule t il de manière irréversible ?",
                     "answerOptions": [
-                        {"text": "45-50 °C", "isCorrect": True},
-                        {"text": "10-15 °C", "isCorrect": False},
-                        {"text": "25-30 °C", "isCorrect": False},
-                        {"text": "80-90 °C", "isCorrect": False}
+                        {"text": "Autour de soixante quinze degrés Celsius", "isCorrect": True},
+                        {"text": "Dès quarante cinq degrés Celsius", "isCorrect": False},
+                        {"text": "Exclusivement au point d'ébullition", "isCorrect": False},
+                        {"text": "À moins de dix degrés Celsius", "isCorrect": False}
                     ],
-                    "correction": "La graisse de bœuf a un point de fusion élevé (elle fige vite en bouche), contrairement à la graisse de porc ou de cheval qui fondent à des températures plus basses."
+                    "correction": "Les protéines du plasma sanguin s'épaississent puis coagulent fermement lorsque la température de cuisson atteint 72 à 75 °C, donnant sa texture solide au boudin noir."
                 },
                 {
                     "questionNumber": 57,
-                    "question": "Quel nom donne-t-on à la partie du boyau de bœuf utilisée pour embosser de très grosses pièces comme la mortadelle ?",
+                    "question": "Quel est le principal avantage de la technique de cuisson sous vide à basse température pour les viandes de deuxième catégorie ?",
                     "answerOptions": [
-                        {"text": "Le chaudin", "isCorrect": True},
-                        {"text": "Le grêle", "isCorrect": False},
-                        {"text": "Le cæcum", "isCorrect": False},
-                        {"text": "La panse", "isCorrect": False}
+                        {"text": "Solubiliser le collagène en gélatine tout en limitant drastiquement la perte de poids", "isCorrect": True},
+                        {"text": "Créer une croûte croustillante très aromatique issue des réactions de Maillard", "isCorrect": False},
+                        {"text": "Détruire les spores botuliques thermorésistantes sans altérer la texture des muscles", "isCorrect": False},
+                        {"text": "Accélérer le temps de cuisson par rapport aux méthodes de braisage traditionnelles", "isCorrect": False}
                     ],
-                    "correction": "Le chaudin (gros intestin) a un diamètre important, ce qui le rend adapté aux grosses pièces de charcuterie cuite ou sèche (rosette, andouille, mortadelle)."
+                    "correction": "La cuisson longue à basse température souvent entre soixante et septante degrés dégrade lentement le tissu conjonctif collagène des viandes nerveuses sans provoquer la contraction violente des fibres, préservant ainsi l'eau et le moelleux."
                 },
                 {
                     "questionNumber": 58,
-                    "question": "Pourquoi pique-t-on les saucissons avant l'étuvage ?",
+                    "question": "Comment explique t on l'apparition de moisissures de couleur noire ou verte foncée tout à fait indésirables sur le boyau d'un saucisson en cours de séchage ?",
                     "answerOptions": [
-                        {"text": "Pour évacuer l'air emprisonné", "isCorrect": True},
-                        {"text": "Pour faire rentrer les épices", "isCorrect": False},
-                        {"text": "Pour vider le sang restant", "isCorrect": False},
-                        {"text": "Pour ramollir le boyau", "isCorrect": False}
+                        {"text": "Une hygrométrie beaucoup trop élevée combinée à un défaut flagrant de ventilation dans le séchoir qui empêche l'implantation de la fleur noble Penicillium nalgiovense", "isCorrect": True},
+                        {"text": "L'utilisation accidentelle d'une viande de porc présentant un pH extrêmement bas caractéristique du défaut exsudatif PSE entraînant une migration massive et immédiate de l'eau libre vers la surface extérieure du boyau naturel de chaudin", "isCorrect": False},
+                        {"text": "Un dosage excessif en sucres fermentescibles qui nourrit les souches fongiques toxiques", "isCorrect": False},
+                        {"text": "Le contact prolongé avec des étagères en bois de chêne non désinfectées chimiquement", "isCorrect": False}
                     ],
-                    "correction": "On pique le boyau pour chasser les bulles d'air qui auraient pu être emprisonnées lors de l'embossage, car l'air favorise l'oxydation (rancissement) et le développement de moisissures internes."
+                    "correction": "Un air stagnant et trop humide favorise les moisissures sauvages Aspergillus, Mucor au détriment du Penicillium ensemencé. La maîtrise précise du couple température hygrométrie ventilation est essentielle."
                 },
                 {
                     "questionNumber": 59,
-                    "question": "Quel terme désigne la perte de poids d'un produit salé et séché au cours de sa fabrication ?",
+                    "question": "Quelle est l'utilité du salpêtre par rapport au nitrite pur dans les fabrications de charcuterie à cycle long ?",
                     "answerOptions": [
-                        {"text": "La freinte", "isCorrect": True},
-                        {"text": "La tare", "isCorrect": False},
-                        {"text": "La marge", "isCorrect": False},
-                        {"text": "Le solde", "isCorrect": False}
+                        {"text": "Il constitue un réservoir de nitrites libérés lentement par les bactéries réductrices", "isCorrect": True},
+                        {"text": "Il agit instantanément pour bloquer la germination des spores de Clostridium", "isCorrect": False},
+                        {"text": "Il donne un goût piquant et acide très recherché dans les salamis traditionnels", "isCorrect": False},
+                        {"text": "Il empêche la cristallisation du sel marin lors du séchage en cave naturelle", "isCorrect": False}
                     ],
-                    "correction": "La freinte correspond à la perte de masse due à l'évaporation de l'eau pendant le séchage ou la cuisson. Un saucisson sec peut perdre 30 à 40% de son poids initial."
+                    "correction": "Le salpêtre nitrate de potassium n'a pas d'action directe. Il doit être lentement transformé en nitrite par les microcoques de la mêlée, offrant une protection sanitaire diffuse tout au long des mois de séchage."
                 },
                 {
                     "questionNumber": 60,
-                    "question": "Parmi les choix suivants, quel bois est le plus recommandé pour le fumage traditionnel des viandes ?",
+                    "question": "Pourquoi procède t on à l'étuvage des saucisses de type Francfort avant de procéder à l'opération de fumage en cabine chaude ?",
                     "answerOptions": [
-                        {"text": "Le hêtre", "isCorrect": True},
-                        {"text": "Le pin", "isCorrect": False},
-                        {"text": "Le sapin", "isCorrect": False},
-                        {"text": "L'épicéa", "isCorrect": False}
+                        {"text": "Sécher la surface extérieure de la mêlée embossée pour permettre une pénétration optimale et uniforme des composés aromatiques de la fumée", "isCorrect": True},
+                        {"text": "Déclencher une fermentation lactique extrêmement rapide et intense au cœur du produit afin de garantir une texture cassante sous la dent lors de la dégustation finale par le client amateur de spécialités charcutières alsaciennes", "isCorrect": False},
+                        {"text": "Faire fondre volontairement les particules de gras dur pour lier la farce de l'intérieur", "isCorrect": False},
+                        {"text": "Détendre les fibres du boyau de collagène artificiel pour éviter son éclatement futur", "isCorrect": False}
                     ],
-                    "correction": "On utilise des bois durs (hêtre, chêne) ou fruitiers. Les résineux (pin, sapin) sont généralement évités (sauf saucisse de Morteau/Montbéliard très spécifique) car ils dégagent des suies âcres et riches en goudrons nocifs. Le hêtre est le standard 'doux'."
-                },
+                    "correction": "L'étuvage sèche le boyau. Une surface trop humide fait écran et empêche les acides organiques et les phénols de la fumée de se fixer, ce qui donnerait un produit pâle et sans arôme."
+                }
             ]
         },
         # =========================================================================
-        # THÈME 4 : GESTION, CALCULS DE COÛTS ET MANAGEMENT (Questions 61 à 80)
+        # THÈME 4 : GESTION FINANCIÈRE, CALCULS DE RENTABILITÉ ET CADRE JURIDIQUE (Questions 61 à 80)
         # =========================================================================
         4: {
-            "name": "THÈME 4 : GESTION, CALCULS DE COÛTS ET MANAGEMENT",
+            "name": "THÈME 4 : GESTION FINANCIÈRE, CALCULS DE RENTABILITÉ ET CADRE JURIDIQUE",
             "questions": [
                 {
                     "questionNumber": 61,
-                    "question": "Quelle est la formule de base pour calculer un coefficient multiplicateur ?",
+                    "question": "Comment calcule-t-on la marge brute commerciale d'une entreprise artisanale de boucherie ?",
                     "answerOptions": [
-                        {"text": "Prix de Vente TTC divisé par Prix d'Achat HT", "isCorrect": True},
-                        {"text": "Prix d'Achat HT multiplié par Prix de Vente TTC", "isCorrect": False},
-                        {"text": "Marge Commerciale divisée par Chiffre d'Affaires", "isCorrect": False},
-                        {"text": "Prix de Vente HT divisé par la Marge Nette", "isCorrect": False}
+                        {"text": "Le chiffre d'affaires hors taxes minoré du coût d'achat des marchandises vendues hors taxes", "isCorrect": True},
+                        {"text": "Le bénéfice net d'exploitation après déduction systématique de l'ensemble des impôts sur les sociétés et des charges patronales", "isCorrect": False},
+                        {"text": "L'addition du prix d'achat initial et du coefficient multiplicateur appliqué en vitrine", "isCorrect": False},
+                        {"text": "Le chiffre d'affaires total toutes taxes comprises divisé par le nombre de salariés", "isCorrect": False}
                     ],
-                    "correction": "Le coefficient multiplicateur permet de passer directement du prix d'achat HT au prix étiquette (TTC). Formule : PV TTC / PA HT."
+                    "correction": "La marge brute est la différence entre le chiffre d'affaires HT et le coût d'achat HT des marchandises vendues. C'est le premier indicateur de la performance commerciale."
                 },
                 {
                     "questionNumber": 62,
-                    "question": "Quel est le taux de TVA applicable en France pour la vente de viande brute à emporter ?",
+                    "question": "Quel taux de taxe sur la valeur ajoutée s'applique sur une prestation de service traiteur avec consommation sur place ?",
                     "answerOptions": [
-                        {"text": "5,5 %", "isCorrect": True},
-                        {"text": "10 %", "isCorrect": False},
-                        {"text": "20 %", "isCorrect": False},
-                        {"text": "2,1 %", "isCorrect": False}
+                        {"text": "Dix pourcent", "isCorrect": True},
+                        {"text": "Cinq virgule cinq pourcent", "isCorrect": False},
+                        {"text": "Vingt pourcent", "isCorrect": False},
+                        {"text": "Deux virgule un pourcent", "isCorrect": False}
                     ],
-                    "correction": "Les produits alimentaires de première nécessité, comme la viande crue non transformée vendue en boucherie, bénéficient du taux réduit de TVA à 5,5 %."
+                    "correction": "La restauration avec consommation sur place prestation de service avec matériel ou personnel est soumise au taux intermédiaire de 10 %, contrairement à la vente à emporter de base de viande fraîche qui est à 5,5 %."
                 },
                 {
                     "questionNumber": 63,
-                    "question": "En gestion des stocks, que signifie l'acronyme FIFO ?",
+                    "question": "En comptabilité de gestion que désigne précisément le seuil de rentabilité ?",
                     "answerOptions": [
-                        {"text": "Premier Entré Premier Sorti", "isCorrect": True},
-                        {"text": "Fin d'Inventaire Fin d'Octobre", "isCorrect": False},
-                        {"text": "Frais Inclus Frais Oubliés", "isCorrect": False},
-                        {"text": "Produit Interdit Par l'Organisation", "isCorrect": False}
+                        {"text": "Le chiffre d'affaires minimal à réaliser pour couvrir l'intégralité des charges fixes et variables", "isCorrect": True},
+                        {"text": "Le montant maximum des dettes fournisseurs autorisé par le banquier lors de la création d'entreprise", "isCorrect": False},
+                        {"text": "Le pourcentage de viande perdue lors du désossage des carcasses bovines en laboratoire", "isCorrect": False},
+                        {"text": "Le nombre total d'heures supplémentaires autorisées par la convention collective nationale", "isCorrect": False}
                     ],
-                    "correction": "FIFO (First In, First Out) ou PEPS en français est la règle d'or de la rotation des stocks pour éviter les pertes : on vend d'abord ce qui est arrivé le plus tôt (dates les plus courtes)."
+                    "correction": "Le seuil de rentabilité, ou point mort, est le niveau d'activité où l'entreprise ne réalise ni bénéfice ni perte. Son résultat d'exploitation est alors strictement nul."
                 },
                 {
                     "questionNumber": 64,
-                    "question": "Comment calcule-t-on la Marge Brute commerciale ?",
+                    "question": "Quelle est la définition juridique exacte de la démarque inconnue lors de la réalisation du bilan annuel ?",
                     "answerOptions": [
-                        {"text": "Chiffre d'Affaires HT moins Coût d'Achat HT", "isCorrect": True},
-                        {"text": "Bénéfice Net moins les Impôts sur les sociétés", "isCorrect": False},
-                        {"text": "Chiffre d'Affaires TTC plus les Subventions", "isCorrect": False},
-                        {"text": "Total des charges fixes divisé par le nombre de clients", "isCorrect": False}
+                        {"text": "C'est la différence constatée entre le stock théorique calculé par la comptabilité et le stock physique réel inventorié incluant les vols à l'étalage et les erreurs de pesée en caisse", "isCorrect": True},
+                        {"text": "Il s'agit exclusivement de la totalité des marchandises périmées ou avariées que le chef boucher a dû jeter volontairement à la poubelle suite à une panne prolongée et non détectée du moteur principal de la chambre froide négative durant le week-end prolongé du mois de mai", "isCorrect": False},
+                        {"text": "L'ensemble des remises commerciales exceptionnelles accordées aux clients très fidèles lors des fêtes de fin d'année", "isCorrect": False},
+                        {"text": "Le poids des os et des nerfs retirés lors du désossage complet d'un quartier arrière de bœuf", "isCorrect": False}
                     ],
-                    "correction": "La Marge Brute est la différence entre ce que vous avez vendu (HT) et ce que vous a coûté la matière première (HT). C'est le premier indicateur de rentabilité."
+                    "correction": "La démarque inconnue englobe toutes les disparitions de marchandises inexpliquées vols, oublis d'encaissement, erreurs de rendu, par opposition à la démarque connue composée des casses et retraits sanitaires justifiés."
                 },
                 {
                     "questionNumber": 65,
-                    "question": "Qu'est-ce qu'une fiche technique en production culinaire ?",
+                    "question": "Quel sigle désigne la méthode de gestion des stocks privilégiant la sortie des produits les plus anciens ?",
                     "answerOptions": [
-                        {"text": "Un document listant les ingrédients et le coût de revient", "isCorrect": True},
-                        {"text": "Une affiche publicitaire pour les clients", "isCorrect": False},
-                        {"text": "Le planning des horaires de l'équipe", "isCorrect": False},
-                        {"text": "Le bon de livraison du fournisseur", "isCorrect": False}
+                        {"text": "PEPS", "isCorrect": True},
+                        {"text": "CUMP", "isCorrect": False},
+                        {"text": "LIFO", "isCorrect": False},
+                        {"text": "NIFO", "isCorrect": False}
                     ],
-                    "correction": "La fiche technique est un outil de gestion interne qui standardise la recette (poids, progression) et permet de calculer le coût matière précis pour fixer le bon prix de vente."
+                    "correction": "Le PEPS Premier Entré Premier Sorti ou FIFO en anglais garantit une rotation optimale des denrées périssables, limitant ainsi le risque de dépassement de la date limite de consommation."
                 },
                 {
                     "questionNumber": 66,
-                    "question": "Quelle est la durée maximale légale de la période d'essai pour un ouvrier en CDI (hors renouvellement conventionnel) ?",
+                    "question": "Quel est l'objectif principal d'une fiche technique de fabrication dans un atelier traiteur ?",
                     "answerOptions": [
-                        {"text": "2 mois", "isCorrect": True},
-                        {"text": "1 an", "isCorrect": False},
-                        {"text": "3 semaines", "isCorrect": False},
-                        {"text": "5 jours", "isCorrect": False}
+                        {"text": "Déterminer le coût de revient précis d'un plat pour fixer un prix de vente rentable", "isCorrect": True},
+                        {"text": "Décorer la vitrine réfrigérée avec des fiches recettes colorées pour attirer les clients", "isCorrect": False},
+                        {"text": "Justifier le temps de pause des ouvriers charcutiers auprès de l'inspection du travail", "isCorrect": False},
+                        {"text": "Enregistrer la température des chambres froides pour le plan de maîtrise sanitaire", "isCorrect": False}
                     ],
-                    "correction": "Pour les ouvriers et employés, la durée légale initiale de la période d'essai d'un CDI est de 2 mois. Elle peut être renouvelée une fois si la convention collective le prévoit."
+                    "correction": "La fiche technique détaille les ingrédients, les quantités exactes et les étapes de production. Elle est indispensable pour calculer le coût matière et ainsi maîtriser la rentabilité de chaque recette."
                 },
                 {
                     "questionNumber": 67,
-                    "question": "Dans le calcul d'un prix, que représente la 'démarque inconnue' ?",
+                    "question": "Comment se caractérise un amortissement comptable pour le matériel de laboratoire d'une boucherie ?",
                     "answerOptions": [
-                        {"text": "Le coût du vol et de la casse non enregistrés", "isCorrect": True},
-                        {"text": "La remise accordée aux clients fidèles", "isCorrect": False},
-                        {"text": "La viande offerte aux employés", "isCorrect": False},
-                        {"text": "Les promotions affichées en vitrine", "isCorrect": False}
+                        {"text": "C'est la constatation comptable et financière annuelle de la dépréciation irréversible de la valeur d'un investissement matériel due à son utilisation prolongée et à son obsolescence technologique", "isCorrect": True},
+                        {"text": "C'est le remboursement mensuel du capital et des intérêts d'un prêt bancaire souscrit spécifiquement pour l'achat de petit matériel de découpe jetable dont la durée de vie est estimée par le comptable à moins de six mois d'utilisation intensive", "isCorrect": False},
+                        {"text": "C'est une subvention directe versée par la chambre de métiers pour encourager le remplacement des vitrines réfrigérées polluantes", "isCorrect": False},
+                        {"text": "C'est le coût des réparations d'urgence effectuées sur un hachoir industriel par une société externe de maintenance", "isCorrect": False}
                     ],
-                    "correction": "La démarque inconnue est la différence entre le stock théorique (informatique) et le stock réel compté. Elle correspond souvent aux vols à l'étalage ou aux erreurs de pesée/saisie."
+                    "correction": "L'amortissement répartit le coût d'acquisition d'une immobilisation lourde par exemple un four mixte ou une chambre froide sur sa durée d'utilisation normale estimée en années."
                 },
                 {
                     "questionNumber": 68,
-                    "question": "Quel est l'âge limite standard pour signer un contrat d'apprentissage (sauf exceptions handicap ou création d'entreprise) ?",
+                    "question": "Dans le cadre d'un contrat d'apprentissage quel est le rôle réglementaire du maître d'apprentissage ?",
                     "answerOptions": [
-                        {"text": "29 ans révolus", "isCorrect": True},
-                        {"text": "18 ans maximum", "isCorrect": False},
-                        {"text": "21 ans pile", "isCorrect": False},
-                        {"text": "25 ans et demi", "isCorrect": False}
+                        {"text": "Accompagner l'apprenti dans l'acquisition des compétences pratiques liées au diplôme visé", "isCorrect": True},
+                        {"text": "Corriger les examens théoriques de l'apprenti directement au centre de formation des apprentis", "isCorrect": False},
+                        {"text": "Verser l'intégralité du salaire de l'apprenti depuis son compte bancaire personnel", "isCorrect": False},
+                        {"text": "Rédiger le règlement intérieur du centre de formation pour le compte de l'éducation nationale", "isCorrect": False}
                     ],
-                    "correction": "Depuis les réformes récentes de la formation professionnelle, l'apprentissage est ouvert aux jeunes jusqu'à 29 ans révolus (veille des 30 ans)."
+                    "correction": "Le maître d'apprentissage est le tuteur direct en entreprise. Il transmet son savoir-faire professionnel et fait le lien avec le centre de formation pour assurer la cohérence pédagogique de l'alternance."
                 },
                 {
                     "questionNumber": 69,
-                    "question": "Qu'appelle-t-on le 'Seuil de Rentabilité' ?",
+                    "question": "Quel document obligatoire synthétise l'évaluation des risques professionnels dans l'entreprise artisanale ?",
                     "answerOptions": [
-                        {"text": "Le chiffre d'affaires minimum pour couvrir toutes les charges", "isCorrect": True},
-                        {"text": "Le moment de la journée où il y a le plus de clients", "isCorrect": False},
-                        {"text": "Le montant maximum de crédit autorisé par la banque", "isCorrect": False},
-                        {"text": "La date de péremption des produits financiers", "isCorrect": False}
+                        {"text": "Le document unique", "isCorrect": True},
+                        {"text": "Le registre du personnel", "isCorrect": False},
+                        {"text": "Le bilan comptable", "isCorrect": False},
+                        {"text": "Le cahier des charges", "isCorrect": False}
                     ],
-                    "correction": "Le seuil de rentabilité (ou point mort) est le niveau d'activité (CA) à partir duquel l'entreprise ne perd pas d'argent mais n'en gagne pas encore (résultat = 0)."
+                    "correction": "Le Document Unique d'Évaluation des Risques Professionnels DUERP est une obligation légale dès l'embauche du premier salarié. Il recense les risques de santé et sécurité afin de planifier la prévention."
                 },
                 {
                     "questionNumber": 70,
-                    "question": "Qui doit payer les cotisations sociales salariales ?",
+                    "question": "En droit du travail que sanctionne prioritairement le délit de travail dissimulé pour un employeur ?",
                     "answerOptions": [
-                        {"text": "Le salarié via une retenue sur son salaire brut", "isCorrect": True},
-                        {"text": "L'État français intégralement", "isCorrect": False},
-                        {"text": "L'employeur en plus du salaire net", "isCorrect": False},
-                        {"text": "La chambre des métiers", "isCorrect": False}
+                        {"text": "La non déclaration intentionnelle d'une partie ou de la totalité des heures travaillées par un salarié", "isCorrect": True},
+                        {"text": "Le fait de demander à un ouvrier boucher de nettoyer le laboratoire après son temps de pause", "isCorrect": False},
+                        {"text": "L'absence de signature d'un contrat de travail écrit pour un emploi en contrat à durée indéterminée à temps plein", "isCorrect": False},
+                        {"text": "Le refus de payer une prime exceptionnelle de fin d'année non prévue par la convention collective", "isCorrect": False}
                     ],
-                    "correction": "Les charges salariales sont déduites du salaire 'Brut' pour obtenir le salaire 'Net'. C'est donc le salarié qui les supporte, même si c'est l'employeur qui les verse aux organismes."
+                    "correction": "Le travail dissimulé couramment appelé travail au noir inclut l'omission de déclaration préalable à l'embauche ainsi que la mention sur le bulletin de paie d'un nombre d'heures sciemment inférieur à celui réellement accompli."
                 },
                 {
                     "questionNumber": 71,
-                    "question": "En boucherie, qu'est-ce qu'un 'test de rendement' ?",
+                    "question": "Quelle est la fonction essentielle du coefficient multiplicateur utilisé quotidiennement par le chef d'entreprise bouchère ?",
                     "answerOptions": [
-                        {"text": "Peser la viande nette obtenue après désossage pour calculer le coût réel", "isCorrect": True},
-                        {"text": "Courir le plus vite possible avec une carcasse sur le dos", "isCorrect": False},
-                        {"text": "Compter le nombre de clients qui entrent dans la boutique par heure", "isCorrect": False},
-                        {"text": "Vérifier la température de la chambre froide toutes les heures", "isCorrect": False}
+                        {"text": "Il permet de calculer instantanément le prix de vente toutes taxes comprises d'un produit en vitrine en multipliant simplement son coût d'achat hors taxes par un chiffre défini à l'avance", "isCorrect": True},
+                        {"text": "Il sert à calculer le montant exact des charges patronales et salariales qui devront être déduites du salaire brut de chaque ouvrier boucher à la fin du mois pour établir correctement les fiches de paie et les virements bancaires associés", "isCorrect": False},
+                        {"text": "Il évalue le nombre de clients supplémentaires attendus dans la boutique lors de la mise en place d'une opération de promotion sur la viande bovine hachée", "isCorrect": False},
+                        {"text": "Il mesure le taux de perte d'eau d'une carcasse de bœuf lors de son passage prolongé dans la cellule de refroidissement rapide de l'abattoir", "isCorrect": False}
                     ],
-                    "correction": "Le test de rendement est crucial : il consiste à déterminer quel pourcentage de viande vendable on récupère sur une carcasse brute (ex: 65% de viande, 35% d'os/gras). Cela conditionne le prix de vente."
+                    "correction": "Le coefficient multiplicateur intègre d'emblée la marge brute souhaitée par le commerçant et la TVA applicable. Il simplifie grandement la fixation immédiate des prix de vente au détail sur l'étiquette."
                 },
                 {
                     "questionNumber": 72,
-                    "question": "Que signifie l'obligation d'affichage des prix 'au kilogramme' ?",
+                    "question": "Quel est le taux de majoration salariale légal minimum pour les huit premières heures supplémentaires accomplies sur une semaine de travail ?",
                     "answerOptions": [
-                        {"text": "Permettre au consommateur de comparer les prix", "isCorrect": True},
-                        {"text": "Obliger le client à acheter un kilo minimum", "isCorrect": False},
-                        {"text": "Calculer la TVA plus facilement pour le comptable", "isCorrect": False},
-                        {"text": "Remplir l'espace vide sur les étiquettes de prix", "isCorrect": False}
+                        {"text": "Vingt cinq pourcent", "isCorrect": True},
+                        {"text": "Cinquante pourcent", "isCorrect": False},
+                        {"text": "Dix pourcent", "isCorrect": False},
+                        {"text": "Cent pourcent", "isCorrect": False}
                     ],
-                    "correction": "L'affichage du prix à l'unité de mesure (le kg) est obligatoire pour permettre au client de comparer objectivement le prix de produits conditionnés différemment."
+                    "correction": "En l'absence d'accord d'entreprise ou de convention de branche dérogatoire plus favorable, le code du travail fixe la majoration salariale à 25 % pour les huit premières heures soit de la 36ème à la 43ème heure."
                 },
                 {
                     "questionNumber": 73,
-                    "question": "Quelle est la définition comptable de l'amortissement d'un matériel ?",
+                    "question": "Quelle taxe locale directe est due chaque année par les entreprises et les artisans indépendants ?",
                     "answerOptions": [
-                        {"text": "La constatation de sa perte de valeur due au temps et à l'usure", "isCorrect": True},
-                        {"text": "Le remboursement mensuel du crédit à la banque", "isCorrect": False},
-                        {"text": "La réparation du matériel en cas de panne grave", "isCorrect": False},
-                        {"text": "La location d'une machine pour une courte durée", "isCorrect": False}
+                        {"text": "La cotisation foncière", "isCorrect": True},
+                        {"text": "L'impôt sur le revenu", "isCorrect": False},
+                        {"text": "La taxe sur la valeur ajoutée", "isCorrect": False},
+                        {"text": "La contribution sociale", "isCorrect": False}
                     ],
-                    "correction": "L'amortissement est la constatation comptable de la perte de valeur d'un bien due à l'usage et au temps. Il étale le coût d'achat sur sa durée de vie utile."
+                    "correction": "La Cotisation Foncière des Entreprises CFE est un impôt local obligatoire basé sur la valeur locative des biens immobiliers bâtis et non bâtis utilisés par l'entreprise pour son activité commerciale."
                 },
                 {
                     "questionNumber": 74,
-                    "question": "Quel document est obligatoire pour évaluer les risques de santé et sécurité au travail dans l'entreprise ?",
+                    "question": "Que représente concrètement le besoin en fonds de roulement d'une entreprise commerciale de type boucherie ?",
                     "answerOptions": [
-                        {"text": "Le Document Unique d'Évaluation des Risques", "isCorrect": True},
-                        {"text": "Le règlement intérieur de l'immeuble", "isCorrect": False},
-                        {"text": "La notice d'utilisation du hachoir", "isCorrect": False},
-                        {"text": "Le registre des ventes journalières", "isCorrect": False}
+                        {"text": "Le montant financier nécessaire pour couvrir le décalage temporel entre les décaissements et les encaissements", "isCorrect": True},
+                        {"text": "La somme d'argent bloquée sur le compte bancaire de l'entreprise pour payer l'impôt sur les sociétés", "isCorrect": False},
+                        {"text": "Le coût total d'achat des vitrines réfrigérées et des machines de découpe du laboratoire", "isCorrect": False},
+                        {"text": "L'argent liquide présent dans le tiroir caisse à la fin de la journée de vente au comptoir", "isCorrect": False}
                     ],
-                    "correction": "Le DUER (Document Unique) est obligatoire dès le premier salarié. Il recense tous les dangers (coupures, glissades, port de charges) et les mesures de prévention associées."
+                    "correction": "Le BFR traduit le besoin de financement généré par le cycle d'exploitation courant, c'est à dire la différence entre les stocks plus les créances clients et les dettes fournisseurs."
                 },
                 {
                     "questionNumber": 75,
-                    "question": "Sur une fiche de paie, quelle ligne représente ce que le salarié touche réellement sur son compte bancaire ?",
+                    "question": "En matière de sécurité sanitaire que doit impérativement faire l'employeur concernant la formation de ses salariés ?",
                     "answerOptions": [
-                        {"text": "Le net à payer", "isCorrect": True},
-                        {"text": "Le brut global", "isCorrect": False},
-                        {"text": "Le net imposable", "isCorrect": False},
-                        {"text": "Le total chargé", "isCorrect": False}
+                        {"text": "S'assurer que le personnel manipulant des denrées alimentaires soit instruit ou formé en matière d'hygiène alimentaire de façon adaptée à son activité professionnelle spécifique", "isCorrect": True},
+                        {"text": "Obliger l'ensemble du personnel de vente et de production à obtenir un diplôme universitaire de niveau master en microbiologie fondamentale avant de pouvoir signer un contrat à durée indéterminée dans l'entreprise artisanale", "isCorrect": False},
+                        {"text": "Demander aux inspecteurs des services vétérinaires de la préfecture de venir dispenser des cours hebdomadaires payants au sein du laboratoire", "isCorrect": False},
+                        {"text": "Interdire formellement toute manipulation de viande crue aux apprentis n'ayant pas atteint l'âge légal de la majorité civile", "isCorrect": False}
                     ],
-                    "correction": "Le 'Net à payer' est la somme virée. Attention, le 'Net imposable' est souvent plus élevé car il inclut certaines contributions non déductibles des impôts (CSG/CRDS)."
+                    "correction": "Le règlement européen dit Paquet Hygiène exige légalement que les manutentionnaires de denrées alimentaires soient correctement encadrés et disposent d'instructions claires ou d'une formation continue en hygiène alimentaire."
                 },
                 {
                     "questionNumber": 76,
-                    "question": "Quelle est la conséquence financière d'une démarque (perte) élevée sur le résultat de l'entreprise ?",
+                    "question": "Quelle différence financière fondamentale distingue une charge variable d'une charge fixe dans le compte de résultat ?",
                     "answerOptions": [
-                        {"text": "Le bénéfice diminue", "isCorrect": True},
-                        {"text": "Le chiffre d'affaires augmente", "isCorrect": False},
-                        {"text": "La TVA à payer augmente", "isCorrect": False},
-                        {"text": "Les charges de personnel baissent", "isCorrect": False}
+                        {"text": "La charge variable évolue proportionnellement au volume d'activité de l'entreprise", "isCorrect": True},
+                        {"text": "La charge variable doit être payée tous les mois indépendamment des ventes réalisées", "isCorrect": False},
+                        {"text": "La charge fixe correspond exclusivement aux achats de matières premières charcutières", "isCorrect": False},
+                        {"text": "La charge fixe est librement négociable chaque semaine avec l'expert comptable", "isCorrect": False}
                     ],
-                    "correction": "La démarque est une perte sèche (marchandise achetée mais non vendue). Elle vient directement réduire la marge, et donc le bénéfice final de l'artisan."
+                    "correction": "Les charges variables comme les achats de viande augmentent logiquement avec les ventes. Les charges fixes loyer, assurances, amortissements restent incompressibles quel que soit le niveau d'activité de la boucherie."
                 },
                 {
                     "questionNumber": 77,
-                    "question": "En droit du travail, quelle est la durée légale du travail hebdomadaire en France (référence pour les heures supplémentaires) ?",
+                    "question": "Comment se définit légalement l'indemnité de précarité versée à la fin d'un contrat à durée déterminée ?",
                     "answerOptions": [
-                        {"text": "35 heures", "isCorrect": True},
-                        {"text": "39 heures", "isCorrect": False},
-                        {"text": "42 heures", "isCorrect": False},
-                        {"text": "48 heures", "isCorrect": False}
+                        {"text": "Une prime légale égale à dix pourcent de la rémunération brute totale versée durant la totalité du contrat", "isCorrect": True},
+                        {"text": "Un remboursement forfaitaire des frais de transport engagés par le salarié pour se rendre sur son lieu de travail", "isCorrect": False},
+                        {"text": "Une indemnité compensatrice versée uniquement en cas de licenciement pour faute lourde avérée par les prud'hommes", "isCorrect": False},
+                        {"text": "Une avance sur salaire remboursable obligatoirement lors de la signature du futur contrat à durée indéterminée", "isCorrect": False}
                     ],
-                    "correction": "La durée légale est de 35 heures. Au-delà (de la 36ème heure à la fin), ce sont des heures supplémentaires majorées (souvent intégrées dans les forfaits boucherie à 39h, mais la base légale reste 35h)."
+                    "correction": "L'indemnité de fin de contrat prime de précarité est due au salarié en CDD pour compenser la précarité de sa situation, sauf en cas d'embauche immédiate en CDI ou de faute grave justifiée."
                 },
                 {
                     "questionNumber": 78,
-                    "question": "Comment appelle-t-on les charges qui ne dépendent pas du niveau d'activité (ex : Loyer) ?",
+                    "question": "Quelle obligation légale et financière incombe à l'artisan boucher concernant les équipements de protection individuelle de son équipe ?",
                     "answerOptions": [
-                        {"text": "Les charges fixes", "isCorrect": True},
-                        {"text": "Les charges variables", "isCorrect": False},
-                        {"text": "Les charges directes", "isCorrect": False},
-                        {"text": "Les charges proportionnelles", "isCorrect": False}
+                        {"text": "Il doit les fournir gratuitement veiller à leur maintien dans un état hygiénique satisfaisant et s'assurer de leur port effectif par tous les membres du personnel lors des tâches à risque", "isCorrect": True},
+                        {"text": "Il doit proposer un catalogue d'équipements de sécurité à ses employés et retenir le montant total des achats directement sur leur salaire net mensuel en plusieurs échéances afin de ne pas impacter brutalement leur pouvoir d'achat", "isCorrect": False},
+                        {"text": "Il doit interdire le port du tablier en cotte de mailles lors du désossage des quartiers bovins pour ne pas ralentir la cadence de production exigée par la direction", "isCorrect": False},
+                        {"text": "Il doit déléguer l'entretien et le nettoyage à sec des tenues de travail exclusivement à la médecine du travail du département", "isCorrect": False}
                     ],
-                    "correction": "Les charges fixes (ou de structure) sont celles qu'il faut payer même si le chiffre d'affaires est de zéro (loyer, assurances, abonnements, salaires permanents)."
+                    "correction": "L'employeur est pénalement responsable de la santé et de la sécurité de ses salariés au travail. Le matériel de sécurité tabliers métalliques, gants anti coupure ne doit jamais être refacturé à l'employé."
                 },
                 {
                     "questionNumber": 79,
-                    "question": "Quelle sanction peut prendre l'employeur si un salarié ne porte pas ses EPI (Chaussures de sécurité, cotte de mailles) ?",
+                    "question": "Quel registre est strictement obligatoire dans toute entreprise pour recenser le personnel employé ?",
                     "answerOptions": [
-                        {"text": "Une sanction disciplinaire pouvant aller jusqu'au licenciement", "isCorrect": True},
-                        {"text": "Une retenue sur salaire correspondant au prix des chaussures", "isCorrect": False},
-                        {"text": "Une obligation de faire des pompes dans le laboratoire", "isCorrect": False},
-                        {"text": "Une demande de remboursement des frais médicaux", "isCorrect": False}
+                        {"text": "Le registre unique du personnel tenu à jour chronologiquement des embauches et des départs", "isCorrect": True},
+                        {"text": "Le registre des plaintes clients disponible sur le comptoir de la zone de vente au détail", "isCorrect": False},
+                        {"text": "Le registre des déclarations fiscales visé par le président du tribunal de commerce", "isCorrect": False},
+                        {"text": "Le cahier de doléances des fournisseurs de viandes en gros du marché gare", "isCorrect": False}
                     ],
-                    "correction": "Le refus de porter les EPI est une faute. L'employeur, responsable de la sécurité, doit sanctionner (avertissement, mise à pied, voire licenciement pour faute grave) pour se protéger pénalement. Les retenues sur salaire pour amende sont interdites."
+                    "correction": "Le registre unique du personnel permet d'identifier formellement l'ensemble des salariés, apprentis et stagiaires présents ou ayant travaillé dans l'entreprise, indispensable lors d'un contrôle de l'inspection du travail."
                 },
                 {
                     "questionNumber": 80,
-                    "question": "Pour calculer un prix de vente HT à partir d'un coût matière, on utilise un coefficient. Si je veux 50% de marge, par combien je multiplie mon achat ?",
+                    "question": "Quelle démarche administrative s'impose absolument avant l'embauche d'un nouveau salarié dans la boucherie ?",
                     "answerOptions": [
-                        {"text": "2", "isCorrect": True},
-                        {"text": "1,5", "isCorrect": False},
-                        {"text": "5", "isCorrect": False},
-                        {"text": "0,5", "isCorrect": False}
+                        {"text": "Effectuer une déclaration préalable à l'embauche auprès de l'organisme de recouvrement des cotisations sociales dans les huit jours précédant la prise effective de poste du travailleur", "isCorrect": True},
+                        {"text": "Convoquer l'ensemble des fournisseurs et des clients habituels de la boucherie pour organiser un vote à bulletin secret visant à valider démocratiquement le profil psychologique du nouveau candidat avant de lui faire signer son contrat de travail officiel", "isCorrect": False},
+                        {"text": "Publier une annonce légale détaillée dans un journal national présentant le salaire et le temps de travail hebdomadaire du futur boucher ouvrier", "isCorrect": False},
+                        {"text": "Payer une taxe forfaitaire d'installation à la chambre de métiers et de l'artisanat du département concerné par le recrutement", "isCorrect": False}
                     ],
-                    "correction": "Si je veux 50% de marge (taux de marque), cela signifie que le coût d'achat représente les 50% restants du prix. Prix / 0,5 revient à multiplier le prix d'achat par 2."
-                },
+                    "correction": "La Déclaration Préalable À l'Embauche DPAE est une formalité obligatoire et préalable. Elle informe l'URSSAF et déclenche automatiquement l'immatriculation à la sécurité sociale."
+                }
             ]
         },
         # =========================================================================
-        # THÈME 5 : COMMERCIALISATION, RÉGLEMENTATION ET SIGNES DE QUALITÉ (Questions 81 à 100)
+        # THÈME 5 : MANAGEMENT DE L'ÉQUIPE, STRATÉGIE DE COMMERCIALISATION ET CONSEIL GASTRONOMIQUE (Questions 81 à 100)
         # =========================================================================
         5: {
-            "name": "THÈME 5 : COMMERCIALISATION, RÉGLEMENTATION ET SIGNES DE QUALITÉ",
+            "name": "THÈME 5 : MANAGEMENT DE L'ÉQUIPE, STRATÉGIE DE COMMERCIALISATION ET CONSEIL GASTRONOMIQUE",
             "questions": [
                 {
                     "questionNumber": 81,
-                    "question": "Quel signe officiel garantit une qualité organoleptique supérieure à celle d'un produit standard courant ?",
+                    "question": "Quelle est la spécificité juridique du label européen Spécialité Traditionnelle Garantie comparé aux autres signes officiels ?",
                     "answerOptions": [
-                        {"text": "Le Label Rouge", "isCorrect": True},
-                        {"text": "L'Appellation d'Origine Protégée", "isCorrect": False},
-                        {"text": "L'Indication Géographique Protégée", "isCorrect": False},
-                        {"text": "La Spécialité Traditionnelle Garantie", "isCorrect": False}
+                        {"text": "Il protège exclusivement une recette traditionnelle ou un mode de production ancestral sans exiger que les étapes de fabrication soient réalisées dans une zone géographique délimitée", "isCorrect": True},
+                        {"text": "Il impose de manière stricte et inconditionnelle que l'intégralité des matières premières utilisées proviennent exclusivement d'exploitations agricoles certifiées biologiques situées dans un rayon de moins de cinquante kilomètres autour du lieu de transformation", "isCorrect": False},
+                        {"text": "Il certifie uniquement la qualité supérieure des viandes rouges françaises", "isCorrect": False},
+                        {"text": "Il garantit une rémunération équitable pour l'ensemble des producteurs", "isCorrect": False}
                     ],
-                    "correction": "Le Label Rouge est le seul signe officiel français qui atteste d'un niveau de qualité supérieure (goût, conditions d'élevage), contrairement aux autres qui garantissent l'origine ou la recette."
+                    "correction": "La Spécialité Traditionnelle Garantie STG met en valeur la composition traditionnelle d'un produit ou un mode de production traditionnel, indépendamment du lieu géographique de sa fabrication effective."
                 },
                 {
                     "questionNumber": 82,
-                    "question": "Que signifie le sigle AOP ?",
+                    "question": "Quelle est la durée minimale de repos quotidien consécutif obligatoire pour un salarié majeur ?",
                     "answerOptions": [
-                        {"text": "Appellation d'Origine Protégée", "isCorrect": True},
-                        {"text": "Association des Ouvriers Professionnels", "isCorrect": False},
-                        {"text": "Alimentation d'Origine Paysanne", "isCorrect": False},
-                        {"text": "Accord Officiel de Production", "isCorrect": False}
+                        {"text": "Onze heures consécutives entre deux postes", "isCorrect": True},
+                        {"text": "Douze heures fractionnables selon l'activité", "isCorrect": False},
+                        {"text": "Huit heures obligatoires la nuit", "isCorrect": False},
+                        {"text": "Dix heures pour les ouvriers qualifiés", "isCorrect": False}
                     ],
-                    "correction": "L'AOP (Appellation d'Origine Protégée) désigne un produit dont toutes les étapes de fabrication sont réalisées dans une zone géographique précise selon un savoir-faire reconnu."
+                    "correction": "Le code du travail impose un repos quotidien d'au moins 11 heures consécutives entre la fin d'une journée de travail et la reprise de l'activité le lendemain."
                 },
                 {
                     "questionNumber": 83,
-                    "question": "Comment l'information sur la présence d'allergènes doit-elle être communiquée au client en boutique ?",
+                    "question": "Comment calcule t on l'indicateur commercial du panier moyen journalier ?",
                     "answerOptions": [
-                        {"text": "Par écrit à proximité immédiate du produit", "isCorrect": True},
-                        {"text": "Uniquement si le client pose la question", "isCorrect": False},
-                        {"text": "Par un affichage général à l'entrée du magasin", "isCorrect": False},
-                        {"text": "Sur le ticket de caisse après le paiement", "isCorrect": False}
+                        {"text": "Le chiffre d'affaires divisé par le nombre de tickets", "isCorrect": True},
+                        {"text": "La somme des articles divisée par les clients", "isCorrect": False},
+                        {"text": "Le bénéfice net multiplié par le trafic client", "isCorrect": False},
+                        {"text": "Le prix du produit le plus vendu au quotidien", "isCorrect": False}
                     ],
-                    "correction": "La réglementation INCO impose que la présence des 14 allergènes majeurs soit indiquée par écrit (étiquette ou cahier visible et accessible) directement proche de la denrée en vente."
+                    "correction": "Le panier moyen est le montant moyen dépensé par chaque client lors de son passage en caisse. Il s'obtient en divisant le chiffre d'affaires total par le nombre de tickets de caisse émis sur la période."
                 },
                 {
                     "questionNumber": 84,
-                    "question": "Quelles mentions d'origine sont obligatoires sur l'étiquette de la viande bovine fraîche ?",
+                    "question": "À partir de quelle température de surface la réaction de Maillard se déclenche t elle de manière optimale lors du rissolage ?",
                     "answerOptions": [
-                        {"text": "Les lieux de naissance, d'élevage et d'abattage", "isCorrect": True},
-                        {"text": "Le lieu d'abattage et le numéro de lot", "isCorrect": False},
-                        {"text": "Le pays de découpe et le nom du grossiste", "isCorrect": False},
-                        {"text": "L'adresse de l'éleveur et la race de l'animal", "isCorrect": False}
+                        {"text": "Cent quarante degrés", "isCorrect": True},
+                        {"text": "Quatre vingt degrés", "isCorrect": False},
+                        {"text": "Cent quatre vingts degrés", "isCorrect": False},
+                        {"text": "Soixante dix degrés", "isCorrect": False}
                     ],
-                    "correction": "Pour assurer la traçabilité complète (VNB), l'étiquette doit préciser le pays de naissance, le(s) pays d'élevage et le pays d'abattage (plus le numéro d'agrément de l'abattoir)."
+                    "correction": "La réaction de Maillard, responsable du brunissement et de la formation des arômes de viande rôtie, nécessite une température élevée pour se développer pleinement, idéalement entre 140 et 160 degrés Celsius."
                 },
                 {
                     "questionNumber": 85,
-                    "question": "Quel mode de cuisson conseillez-vous pour une basse-côte de bœuf de qualité ?",
+                    "question": "En stratégie de commercialisation en quoi consiste la technique du cross merchandising dans l'espace de vente ?",
                     "answerOptions": [
-                        {"text": "Griller", "isCorrect": True},
-                        {"text": "Bouillir", "isCorrect": False},
-                        {"text": "Braiser", "isCorrect": False},
-                        {"text": "Frire", "isCorrect": False}
+                        {"text": "Implanter un produit complémentaire à côté du produit principal pour susciter un achat d'impulsion logique chez le client", "isCorrect": True},
+                        {"text": "Regrouper l'intégralité des références bénéficiant d'une remise tarifaire exceptionnelle sur un seul et unique présentoir situé juste devant la caisse enregistreuse afin de forcer la vente additionnelle lors du paiement", "isCorrect": False},
+                        {"text": "Déplacer les produits invendus de la veille vers la vitrine centrale de la boutique", "isCorrect": False},
+                        {"text": "Vendre des articles non alimentaires à marge réduite", "isCorrect": False}
                     ],
-                    "correction": "Bien que située à l'avant, une belle basse-côte persillée est un excellent morceau à griller ou poêler, souvent une alternative économique à l'entrecôte."
+                    "correction": "Le cross merchandising ou vente croisée consiste à disposer côte à côte des produits appartenant à des rayons différents mais complémentaires lors de leur consommation par exemple moutarde et rôtis pour déclencher un achat supplémentaire."
                 },
                 {
                     "questionNumber": 86,
-                    "question": "Quel est le logo européen obligatoire pour identifier les produits issus de l'agriculture biologique ?",
+                    "question": "À quelle fréquence l'employeur doit il obligatoirement organiser l'entretien professionnel consacré aux perspectives d'évolution du salarié ?",
                     "answerOptions": [
-                        {"text": "L'eurofeuille", "isCorrect": True},
-                        {"text": "Le logo AB français", "isCorrect": False},
-                        {"text": "Le trèfle vert", "isCorrect": False},
-                        {"text": "L'épi de blé barré", "isCorrect": False}
+                        {"text": "Tous les deux ans", "isCorrect": True},
+                        {"text": "Une fois par an", "isCorrect": False},
+                        {"text": "Tous les cinq ans", "isCorrect": False},
+                        {"text": "Uniquement lors de l'embauche", "isCorrect": False}
                     ],
-                    "correction": "L'eurofeuille (feuille formée d'étoiles sur fond vert) est le logo communautaire obligatoire. Le logo AB français est facultatif et complémentaire."
+                    "correction": "L'entretien professionnel doit avoir lieu tous les deux ans. Il est distinct de l'entretien d'évaluation annuel facultatif et se concentre sur les perspectives d'évolution professionnelle du salarié et ses besoins en formation."
                 },
                 {
                     "questionNumber": 87,
-                    "question": "Quelle est la différence majeure entre une IGP et une AOP ?",
+                    "question": "Quelle particularité physico chimique caractérise le gras intramusculaire des bovins de race Wagyu ?",
                     "answerOptions": [
-                        {"text": "Le lien au terroir est moins fort pour l'IGP", "isCorrect": True},
-                        {"text": "L'IGP interdit totalement les additifs chimiques", "isCorrect": False},
-                        {"text": "L'AOP concerne uniquement les fromages laitiers", "isCorrect": False},
-                        {"text": "L'IGP est une certification purement privée", "isCorrect": False}
+                        {"text": "Une température de fusion exceptionnellement basse", "isCorrect": True},
+                        {"text": "Une concentration élevée en tissu conjonctif dur", "isCorrect": False},
+                        {"text": "Une oxydation très rapide à la lumière naturelle", "isCorrect": False},
+                        {"text": "Une absence totale d'acides gras insaturés", "isCorrect": False}
                     ],
-                    "correction": "Pour une IGP (Indication Géographique Protégée), une seule étape de la production (production, transformation ou élaboration) suffit dans la zone, alors que pour l'AOP, tout doit se faire dans la zone."
+                    "correction": "Le persillé du Wagyu est extrêmement riche en acides gras insaturés acide oléique. Cela lui confère un point de fusion très bas, de sorte que le gras fond littéralement à la température du corps, offrant une onctuosité unique."
                 },
                 {
                     "questionNumber": 88,
-                    "question": "Que garantit le label privé 'Bleu-Blanc-Cœur' sur une viande ?",
+                    "question": "Quel type de vin conseille t on classiquement pour accompagner un cuissot de sanglier rôti ?",
                     "answerOptions": [
-                        {"text": "Une richesse en oméga 3", "isCorrect": True},
-                        {"text": "Une viande issue de l'agriculture biologique", "isCorrect": False},
-                        {"text": "Une origine exclusivement française", "isCorrect": False},
-                        {"text": "Un élevage en plein air intégral", "isCorrect": False}
+                        {"text": "Un vin rouge tannique", "isCorrect": True},
+                        {"text": "Un vin blanc moelleux", "isCorrect": False},
+                        {"text": "Un vin rosé sec", "isCorrect": False},
+                        {"text": "Un vin rouge primeur", "isCorrect": False}
                     ],
-                    "correction": "Ce label garantit une alimentation des animaux riche en sources d'oméga 3 (lin, luzerne), améliorant le profil nutritionnel de la viande."
+                    "correction": "La viande de grand gibier, au goût puissant et à la texture ferme, appelle un vin rouge structuré, charpenté et tannique type Châteauneuf du Pape ou Madiran capable d'équilibrer l'intensité du plat."
                 },
                 {
                     "questionNumber": 89,
-                    "question": "Quelle date figure obligatoirement sur les produits préemballés très périssables (viande hachée, volaille) ?",
+                    "question": "Quel est l'objectif managérial de la méthode DESC lors d'un recadrage ou de la résolution d'un conflit avec un collaborateur ?",
                     "answerOptions": [
-                        {"text": "La DLC", "isCorrect": True},
-                        {"text": "La DDM", "isCorrect": False},
-                        {"text": "La DLUO", "isCorrect": False},
-                        {"text": "La VNB", "isCorrect": False}
+                        {"text": "Structurer l'échange en décrivant les faits de manière objective puis exprimer les conséquences et proposer des solutions constructives", "isCorrect": True},
+                        {"text": "Déléguer immédiatement la gestion du problème relationnel au service des ressources humaines du groupe de manière à éviter toute confrontation verbale directe qui pourrait dégénérer en conflit syndical au sein de l'atelier de découpe", "isCorrect": False},
+                        {"text": "Sanctionner financièrement l'employé pour chaque erreur commise en laboratoire", "isCorrect": False},
+                        {"text": "Ignorer volontairement le comportement fautif pour maintenir le calme apparent", "isCorrect": False}
                     ],
-                    "correction": "La Date Limite de Consommation ('à consommer jusqu'au...') est impérative pour les produits frais périssables car leur consommation après cette date présente un risque immédiat pour la santé."
+                    "correction": "La méthode DESC Décrire les faits, Exprimer son émotion, Spécifier des solutions, Conclure sur les conséquences est un outil de communication assertif permettant de formuler une critique constructive sans attaquer la personne."
                 },
                 {
                     "questionNumber": 90,
-                    "question": "Quelle est la température maximale légale de conservation des abats frais en vitrine ?",
+                    "question": "Comment définit on la zone de chalandise isochrone d'une boucherie artisanale ?",
                     "answerOptions": [
-                        {"text": "3 °C", "isCorrect": True},
-                        {"text": "7 °C", "isCorrect": False},
-                        {"text": "10 °C", "isCorrect": False},
-                        {"text": "0 °C", "isCorrect": False}
+                        {"text": "Une zone géographique délimitée par le temps de trajet nécessaire aux consommateurs pour atteindre le point de vente", "isCorrect": True},
+                        {"text": "Une carte thermique représentant de manière extrêmement précise la densité de population active appartenant exclusivement aux catégories socio professionnelles supérieures consommatrices de viandes maturées et de charcuteries fines", "isCorrect": False},
+                        {"text": "Le périmètre strict défini par la chambre de commerce interdisant toute nouvelle installation", "isCorrect": False},
+                        {"text": "La distance kilométrique calculée à vol d'oiseau depuis le centre ville", "isCorrect": False}
                     ],
-                    "correction": "Les abats sont des denrées très fragiles. La réglementation impose une conservation stricte à +3 °C maximum (contre +7 °C toléré pour les grosses pièces de viande rouge non hachée)."
+                    "correction": "Contrairement à la zone isométrique mesurée en distance pure, la zone isochrone prend en compte le temps de déplacement réel bouchons, infrastructures routières pour délimiter l'aire d'attractivité du commerce."
                 },
                 {
                     "questionNumber": 91,
-                    "question": "Quelle mention valorisante est spécifique à la viande de veau de haute qualité à chair blanche ou rosée ?",
+                    "question": "Pour quelle raison technologique recommande t on de laisser reposer une viande rôtie avant de la trancher ?",
                     "answerOptions": [
-                        {"text": "Élevé sous la mère", "isCorrect": True},
-                        {"text": "Nourri aux céréales", "isCorrect": False},
-                        {"text": "Garanti sans antibiotique", "isCorrect": False},
-                        {"text": "Élevage extensif", "isCorrect": False}
+                        {"text": "Permettre la relaxation des fibres et la redistribution des sucs", "isCorrect": True},
+                        {"text": "Accélérer le refroidissement de la croûte extérieure", "isCorrect": False},
+                        {"text": "Stopper immédiatement la réaction chimique de Maillard", "isCorrect": False},
+                        {"text": "Évaporer l'excédent d'eau libre en surface du muscle", "isCorrect": False}
                     ],
-                    "correction": "'Veau élevé sous la mère' signifie que le veau a été nourri au pis de la vache (lait maternel) généralement deux fois par jour, garantissant une viande tendre et claire."
+                    "correction": "Pendant la cuisson, la chaleur contracte les fibres musculaires et chasse les sucs vers le centre. Le repos post cuisson détend les fibres, permettant aux jus de se répartir uniformément dans toute la pièce."
                 },
                 {
                     "questionNumber": 92,
-                    "question": "À quelle température à cœur correspond une cuisson 'bleue' pour une viande rouge ?",
+                    "question": "Quel terme désigne le prix perçu comme le plus juste par la majorité des consommateurs pour un produit donné ?",
                     "answerOptions": [
-                        {"text": "45 °C maximum", "isCorrect": True},
-                        {"text": "55 °C minimum", "isCorrect": False},
-                        {"text": "65 °C environ", "isCorrect": False},
-                        {"text": "30 °C seulement", "isCorrect": False}
+                        {"text": "Le prix psychologique", "isCorrect": True},
+                        {"text": "Le prix d'appel", "isCorrect": False},
+                        {"text": "Le prix de pénétration", "isCorrect": False},
+                        {"text": "Le prix d'écrémage", "isCorrect": False}
                     ],
-                    "correction": "Une cuisson bleue correspond à un cœur tiède (environ 45°C), avec une structure de viande crue mais chaude, juste saisie en surface."
+                    "correction": "Le prix d'acceptabilité ou prix psychologique est le prix pour lequel un maximum de clients est prêt à acheter, le jugeant ni trop cher inabordable, ni trop bas synonyme de mauvaise qualité."
                 },
                 {
                     "questionNumber": 93,
-                    "question": "En préparation bouchère, quel est le but principal du bardage d'un rôti maigre ?",
+                    "question": "Quelle condition d'expérience est généralement requise pour devenir maître d'apprentissage avec un diplôme équivalent à celui préparé ?",
                     "answerOptions": [
-                        {"text": "Protéger", "isCorrect": True},
-                        {"text": "Saler", "isCorrect": False},
-                        {"text": "Colorer", "isCorrect": False},
-                        {"text": "Lier", "isCorrect": False}
+                        {"text": "Une année d'expérience professionnelle", "isCorrect": True},
+                        {"text": "Cinq années d'expérience consécutives", "isCorrect": False},
+                        {"text": "Trois années d'expérience en management", "isCorrect": False},
+                        {"text": "Dix années d'expérience dans le métier", "isCorrect": False}
                     ],
-                    "correction": "Le bardage (envelopper de lard gras) sert à protéger les viandes maigres du dessèchement causé par la chaleur vive du four et à les nourrir en gras fondant."
+                    "correction": "Pour être maître d'apprentissage, il faut posséder un diplôme de niveau au moins équivalent à celui préparé par l'apprenti et justifier d'une année d'expérience professionnelle en rapport avec la qualification visée."
                 },
                 {
                     "questionNumber": 94,
-                    "question": "A-t-on le droit de vendre des produits uniquement par lot (ex: 3 paupiettes + 1 gratuite) sans proposer l'unité ?",
+                    "question": "En économie commerciale que mesure l'élasticité prix de la demande pour une spécialité bouchère ?",
                     "answerOptions": [
-                        {"text": "Non c'est une pratique commerciale illégale", "isCorrect": True},
-                        {"text": "Oui si le prix est clairement affiché", "isCorrect": False},
-                        {"text": "Oui si c'est pendant les soldes d'été", "isCorrect": False},
-                        {"text": "Non sauf pour les produits de charcuterie sèche", "isCorrect": False}
+                        {"text": "La variation du volume des ventes suite à une modification du prix", "isCorrect": True},
+                        {"text": "L'augmentation des coûts de production face à l'inflation", "isCorrect": False},
+                        {"text": "La marge bénéficiaire dégagée sur une gamme de produits", "isCorrect": False},
+                        {"text": "La vitesse de rotation des stocks en chambre froide", "isCorrect": False}
                     ],
-                    "correction": "Le refus de vente est interdit aux consommateurs. Le commerçant ne peut pas imposer l'achat d'un lot sans permettre l'achat à l'unité (sauf si le lot est un conditionnement original indivisible du fabricant, ce qui est rare en boucherie artisanale)."
+                    "correction": "L'élasticité-prix indique la sensibilité des consommateurs. Si l'augmentation du prix d'un rôti fait fortement chuter ses ventes, on dit que la demande pour ce produit est très élastique."
                 },
                 {
                     "questionNumber": 95,
-                    "question": "Que signifie le logo 'VBF' ?",
+                    "question": "Quelles sont les conditions fondamentales pour réussir la délégation d'une tâche de production à un ouvrier boucher ?",
                     "answerOptions": [
-                        {"text": "Viande Bovine Française", "isCorrect": True},
-                        {"text": "Veau Blanc Français", "isCorrect": False},
-                        {"text": "Viande de Bœuf Fermier", "isCorrect": False},
-                        {"text": "Volaille Bien Facturée", "isCorrect": False}
+                        {"text": "Définir clairement les objectifs transférer les moyens nécessaires accorder le droit à l'erreur et mettre en place un suivi régulier", "isCorrect": True},
+                        {"text": "Transférer l'intégralité de la responsabilité juridique et pénale liée à la sécurité sanitaire des aliments directement sur les épaules de l'employé subalterne afin de décharger totalement le chef d'entreprise de ses obligations légales en cas de contrôle vétérinaire inopiné", "isCorrect": False},
+                        {"text": "Exiger un résultat immédiat et parfait sans fournir aucune explication technique préalable", "isCorrect": False},
+                        {"text": "Laisser le collaborateur totalement livré à lui même sans jamais vérifier son travail", "isCorrect": False}
                     ],
-                    "correction": "VBF certifie que l'animal est né, élevé et abattu en France. C'est une marque de transparence sur l'origine nationale."
+                    "correction": "La délégation managériale nécessite un cadre clair. Le manager confie une mission et les moyens associés, accompagne l'employé pour le faire monter en compétences, mais conserve la responsabilité finale."
                 },
                 {
                     "questionNumber": 96,
-                    "question": "Quelle quantité de viande nette (sans os) comptez-vous par personne pour un rôti de bœuf ?",
+                    "question": "Quel profil aromatique développe principalement une viande de bœuf soumise à une maturation prolongée à sec dite dry aged ?",
                     "answerOptions": [
-                        {"text": "150 à 200 g", "isCorrect": True},
-                        {"text": "80 à 100 g", "isCorrect": False},
-                        {"text": "300 à 400 g", "isCorrect": False},
-                        {"text": "50 à 60 g", "isCorrect": False}
+                        {"text": "Des notes de noisette", "isCorrect": True},
+                        {"text": "Un goût très acide", "isCorrect": False},
+                        {"text": "Une saveur amère", "isCorrect": False},
+                        {"text": "Un arôme de poisson", "isCorrect": False}
                     ],
-                    "correction": "La portion standard pour un adulte est comprise entre 150 g et 200 g de viande nette. Pour une viande avec os, on compte plutôt 250-300 g."
+                    "correction": "La perte d'eau et l'action enzymatique concentrent les saveurs. Une viande affinée longuement à sec développe des arômes complexes caractéristiques de noisette, de sous-bois et de beurre noisette."
                 },
                 {
                     "questionNumber": 97,
-                    "question": "Quel ingrédient acide utilise-t-on dans une marinade pour attendrir les fibres musculaires ?",
+                    "question": "Dans l'aménagement de la vitrine que désigne le terme facing ?",
                     "answerOptions": [
-                        {"text": "Le vinaigre", "isCorrect": True},
-                        {"text": "L'huile", "isCorrect": False},
-                        {"text": "Le thym", "isCorrect": False},
-                        {"text": "Le laurier", "isCorrect": False}
+                        {"text": "La longueur d'exposition frontale d'un produit visible par le client", "isCorrect": True},
+                        {"text": "La décoration lumineuse située au dessus de la banque de froid", "isCorrect": False},
+                        {"text": "Le nettoyage quotidien des vitres séparant le boucher du public", "isCorrect": False},
+                        {"text": "L'étiquette affichant les informations nutritionnelles obligatoires", "isCorrect": False}
                     ],
-                    "correction": "L'acide (vinaigre, citron, vin) attaque le tissu conjonctif et commence une 'cuisson chimique' qui attendrit la viande avant la cuisson thermique."
+                    "correction": "Le facing représente l'espace linéaire occupé par un produit sur le devant de la vitrine. Un facing important augmente drastiquement la visibilité du produit et ses chances d'être vendu."
                 },
                 {
                     "questionNumber": 98,
-                    "question": "Quelle est la seule volaille française bénéficiant d'une AOP ?",
+                    "question": "Quelle est la procédure réglementaire stricte pour informer le client sur la présence d'allergènes dans les plats traiteur artisanaux ?",
                     "answerOptions": [
-                        {"text": "La volaille de Bresse", "isCorrect": True},
-                        {"text": "Le poulet de Loué", "isCorrect": False},
-                        {"text": "La volaille de Janzé", "isCorrect": False},
-                        {"text": "Le canard des Landes", "isCorrect": False}
+                        {"text": "Tenir à disposition immédiate du consommateur un document écrit listant les allergènes à proximité des produits concernés", "isCorrect": True},
+                        {"text": "Mentionner oralement la présence potentielle de traces de fruits à coque ou de gluten uniquement si le client signale explicitement souffrir d'une pathologie grave au moment du règlement en caisse", "isCorrect": False},
+                        {"text": "Inscrire la composition chimique détaillée sur la vitrine réfrigérée", "isCorrect": False},
+                        {"text": "Publier la liste exhaustive des ingrédients secrets sur le site internet", "isCorrect": False}
                     ],
-                    "correction": "La Volaille de Bresse (poulets, chapons, poulardes, dindes) est la seule à posséder une AOP, reconnaissable à ses pattes bleues, son plumage blanc et sa bague tricolore."
+                    "correction": "Pour les denrées non préemballées, l'indication de la présence des allergènes à déclaration obligatoire est requise par écrit. L'information doit être librement et facilement accessible pour le client sans qu'il ait à la demander."
                 },
                 {
                     "questionNumber": 99,
-                    "question": "Quelle mention est obligatoire pour la vente de viande hachée à la demande ?",
+                    "question": "Comment caractérise t on un style de management participatif au sein d'une équipe de boucherie ?",
                     "answerOptions": [
-                        {"text": "Le pourcentage de matières grasses", "isCorrect": True},
-                        {"text": "La race de l'animal", "isCorrect": False},
-                        {"text": "Le nom du hacheur", "isCorrect": False},
-                        {"text": "L'heure exacte du hachage", "isCorrect": False}
+                        {"text": "Le chef d'entreprise associe ses collaborateurs aux prises de décisions", "isCorrect": True},
+                        {"text": "Le patron impose ses choix sans jamais consulter son équipe", "isCorrect": False},
+                        {"text": "Le manager délègue toutes ses responsabilités de direction", "isCorrect": False},
+                        {"text": "Les employés fixent eux mêmes leurs propres horaires de travail", "isCorrect": False}
                     ],
-                    "correction": "Pour le steak haché, le boucher doit préciser le taux de matières grasses (ex: <5%, 15%) et le rapport collagène/protéines, ou à défaut utiliser les dénominations réglementaires ('biftek haché', 'haché bouchère'). En artisanat, l'oral suffit souvent mais l'affichage du %MG est la norme de transparence attendue."
+                    "correction": "Le management participatif encourage l'implication du personnel dans l'organisation du travail et la résolution de problèmes, favorisant ainsi la motivation et la responsabilisation de l'équipe."
                 },
                 {
                     "questionNumber": 100,
-                    "question": "Le 'Code de la consommation' interdit une pratique trompeuse appelée 'francisation'. De quoi s'agit-il ?",
+                    "question": "En technique de vente à quoi correspond l'action de montée en gamme proposée à un client ?",
                     "answerOptions": [
-                        {"text": "Présenter un produit étranger comme français", "isCorrect": True},
-                        {"text": "Ajouter du colorant rouge dans la viande", "isCorrect": False},
-                        {"text": "Parler uniquement français aux clients", "isCorrect": False},
-                        {"text": "Vendre uniquement des produits nationaux", "isCorrect": False}
+                        {"text": "Suggérer un produit similaire de qualité supérieure et de prix plus élevé", "isCorrect": True},
+                        {"text": "Ajouter des articles périphériques comme des sauces ou des épices", "isCorrect": False},
+                        {"text": "Vendre une quantité de viande deux fois plus importante que demandée", "isCorrect": False},
+                        {"text": "Offrir une dégustation gratuite pour fidéliser la clientèle de passage", "isCorrect": False}
                     ],
-                    "correction": "La francisation est un délit qui consiste à faire croire au consommateur qu'un produit importé est d'origine française (changement d'étiquette, logos tricolores abusifs)."
-                },
+                    "correction": "La montée en gamme up-selling consiste à orienter le client vers une référence plus qualitative que son choix initial par exemple un poulet fermier Label Rouge plutôt qu'un poulet standard afin d'augmenter le panier moyen et la satisfaction gustative."
+                }
             ]
         }
     }
