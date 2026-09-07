@@ -106,6 +106,22 @@ QUIZZES = {
         "icon": "🥩",
         "color": CMA_MOUTARDE,
     },
+    "bp_boucher_100_2": {
+        "title": "BP Boucher - Session 2",
+        "description": "Deuxième partie des révisions BP Boucher (Niveau avancé).",
+        "path": "quizzes.quiz_bp_metiers.quiz_bp_boucher_100_2",
+        "icon": "🥩",
+        "color": CMA_MOUTARDE,
+    },
+    "bp_boucher_group": {
+        "title": "BP Boucher",
+        "description": "Révisions complètes BP Boucher. Choisissez votre niveau :",
+        "icon": "🥩",
+        "color": CMA_MOUTARDE,
+        "sub_quizzes": [
+            {"key": "bp_boucher_100", "label": "Session 1"},
+            {"key": "bp_boucher_100_2", "label": "Session 2 (Plus difficile)"}
+    },
     "bp_coiffure_100": {
         "title": "BP Coiffure",
         "description": "Révisions complètes BP Coiffure.",
@@ -586,7 +602,7 @@ def inject_cma_theme():
 CAP_FAMILIES = {
     "Matières générales": [],
     "Métiers de bouche": [
-        "cap_boucher_100",
+        "cap_boucher_group",
         "cap_boulanger_100",
         "cap_patissier_100",
         "cap_charcutier_traiteur_100",
@@ -686,7 +702,7 @@ BACPRO_QUIZZES = [
 
 BP_QUIZZES = [
     "bp_arts_de_la_cuisine_100",
-    "bp_boucher_100",
+    "bp_boucher_group",
     "bp_coiffure_100",
     "bp_macon_100",
     "bp_migcs_100",
