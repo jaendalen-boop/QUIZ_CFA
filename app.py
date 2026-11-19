@@ -1695,22 +1695,45 @@ def show_cap_families():
 
 
 def show_cap_general_subjects():
-    """Écran : choix de la matière générale CAP."""
-    st.subheader("CAP – Matières générales")
+    """Écran : choix de la matière générale CAP (aligné sur le design des familles)."""
+    st.markdown(
+        "<h2 style='text-align:center;margin-bottom:2rem;color:#374151;font-size:1.8rem;'>CAP – Matières générales</h2>",
+        unsafe_allow_html=True
+    )
 
-    if st.button("⬅️ Retour aux familles CAP"):
+    if st.button("⬅️ Retour aux familles CAP", key="back_to_cap_families"):
         st.session_state.selected_cap_family = None
         st.session_state.selected_cap_general_subject = None
         st.rerun()
 
-    cols = st.columns(3)
-    for i, (subject, info) in enumerate(CAP_GENERAL_SUBJECTS.items()):
-        col = cols[i % 3]
+    color = "#4f46e5"  # Couleur de la carte "Matières générales"
+    st.markdown("<div style='max-width:800px;margin:0 auto;'>", unsafe_allow_html=True)
+
+    for idx, (subject, info) in enumerate(CAP_GENERAL_SUBJECTS.items()):
+        if idx % 2 == 0:
+            cols = st.columns(2)
+        col = cols[idx % 2]
+
         with col:
-            if st.button(f"{info['icon']} {subject}", key=f"cap_gen_subject_{subject}"):
+            icon = info["icon"]
+            quiz_count = len(info["quizzes"])
+            badge = f"{quiz_count} quiz"
+            badge_html = f'<div style="position:absolute;top:10px;right:10px;background:{color};color:white;padding:0.3rem 0.6rem;border-radius:20px;font-size:0.75rem;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.15);">{badge}</div>'
+
+            card_html = f"""
+<div style="position:relative;background:linear-gradient(135deg, {color}15 0%, {color}05 100%);border:3px solid {color};border-radius:16px;padding:1.5rem;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.12);min-height:140px;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:1rem;">
+{badge_html}
+<div style="font-size:3rem;margin-bottom:0.5rem;">{icon}</div>
+<div style="font-size:1.3rem;font-weight:700;color:{color};">{subject}</div>
+</div>
+"""
+            st.markdown(card_html, unsafe_allow_html=True)
+
+            if st.button("Accéder", key=f"cap_gen_subject_{subject}", type="primary", use_container_width=True):
                 st.session_state.selected_cap_general_subject = subject
                 st.rerun()
 
+    st.markdown("</div>", unsafe_allow_html=True)
 
 def show_cap_general_quizzes_for_subject():
     """Écran : liste des quiz (1, 2, ...) pour une matière générale CAP."""
@@ -1794,21 +1817,45 @@ def render_quiz_card(key):
 # -----------------------
 
 def show_bacpro_general_subjects():
-    """Écran : choix de la matière générale BAC PRO."""
-    st.subheader("BAC PRO – Matières générales")
+    """Écran : choix de la matière générale BAC PRO (aligné sur le design des familles)."""
+    st.markdown(
+        "<h2 style='text-align:center;margin-bottom:2rem;color:#374151;font-size:1.8rem;'>BAC PRO – Matières générales</h2>",
+        unsafe_allow_html=True
+    )
 
     if st.button("⬅️ Retour aux catégories BAC PRO", key="back_to_bacpro_categories"):
         st.session_state.selected_bacpro_family = None
         st.session_state.selected_bacpro_general_subject = None
         st.rerun()
 
-    cols = st.columns(3)
-    for i, (subject, info) in enumerate(BACPRO_GENERAL_SUBJECTS.items()):
-        col = cols[i % 3]
+    color = "#4f46e5"
+    st.markdown("<div style='max-width:800px;margin:0 auto;'>", unsafe_allow_html=True)
+
+    for idx, (subject, info) in enumerate(BACPRO_GENERAL_SUBJECTS.items()):
+        if idx % 2 == 0:
+            cols = st.columns(2)
+        col = cols[idx % 2]
+
         with col:
-            if st.button(f"{info['icon']} {subject}", key=f"bacpro_gen_subject_{subject}"):
+            icon = info["icon"]
+            quiz_count = len(info["quizzes"])
+            badge = f"{quiz_count} quiz"
+            badge_html = f'<div style="position:absolute;top:10px;right:10px;background:{color};color:white;padding:0.3rem 0.6rem;border-radius:20px;font-size:0.75rem;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.15);">{badge}</div>'
+
+            card_html = f"""
+<div style="position:relative;background:linear-gradient(135deg, {color}15 0%, {color}05 100%);border:3px solid {color};border-radius:16px;padding:1.5rem;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.12);min-height:140px;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:1rem;">
+{badge_html}
+<div style="font-size:3rem;margin-bottom:0.5rem;">{icon}</div>
+<div style="font-size:1.3rem;font-weight:700;color:{color};">{subject}</div>
+</div>
+"""
+            st.markdown(card_html, unsafe_allow_html=True)
+
+            if st.button("Accéder", key=f"bacpro_gen_subject_{subject}", type="primary", use_container_width=True):
                 st.session_state.selected_bacpro_general_subject = subject
                 st.rerun()
+
+    st.markdown("</div>", unsafe_allow_html=True)
 
 
 def show_bacpro_general_quizzes_for_subject():
@@ -1884,44 +1931,94 @@ def show_quiz_list_for_bp():
 
 
 def show_quiz_list_for_bacpro():
-    """Écran : choix entre matières générales BAC PRO et autres quiz BAC PRO."""
-    st.subheader("BAC PRO – Choisissez une catégorie")
+    """Écran : choix entre matières générales BAC PRO et autres quiz BAC PRO (aligné sur le design CAP)."""
 
-    if st.button("⬅️ Retour aux niveaux"):
-        st.session_state.selected_level = None
-        st.session_state.selected_bacpro_family = None
-        st.session_state.selected_bacpro_general_subject = None
-        st.session_state.selected_quiz_key = None
-        st.session_state.current_theme = None
-        st.rerun()
-
-    # Si aucune famille n'est encore choisie, on propose deux entrées :
-    # - Matières générales (nouveaux quiz)
-    # - Autres quiz BAC PRO (ce que tu avais déjà : BACPRO_QUIZZES)
+    # Écran de choix des catégories (design identique à show_cap_families)
     if st.session_state.get("selected_bacpro_family") is None:
-        col1, col2 = st.columns(2)
-        with col1:
-            if st.button("📚 Matières générales", key="bacpro_btn_general"):
-                st.session_state.selected_bacpro_family = "Matières générales"
-                st.rerun()
-        with col2:
-            if st.button("🛠️ Spécialités / Métiers", key="bacpro_btn_specialites"):
-                st.session_state.selected_bacpro_family = "Spécialités"
-                st.rerun()
+        st.markdown(
+            "<h2 style='text-align:center;margin-bottom:2rem;color:#374151;font-size:1.8rem;'>BAC PRO – Choisissez une catégorie</h2>",
+            unsafe_allow_html=True
+        )
+
+        if st.button("⬅️ Retour aux niveaux", key="back_to_levels_bacpro"):
+            st.session_state.selected_level = None
+            st.session_state.selected_bacpro_family = None
+            st.session_state.selected_bacpro_general_subject = None
+            st.session_state.selected_quiz_key = None
+            st.session_state.current_theme = None
+            st.rerun()
+
+        bacpro_categories = {
+            "Matières générales": {
+                "icon": "📚",
+                "color": "#4f46e5",
+                "value": "Matières générales",
+            },
+            "Spécialités / Métiers": {
+                "icon": "🛠️",
+                "color": "#CD493D",  # Rouge CMA (couleur du niveau BAC PRO)
+                "value": "Spécialités",
+            },
+        }
+
+        st.markdown("<div style='max-width:800px;margin:0 auto;'>", unsafe_allow_html=True)
+        cols = st.columns(2)
+
+        for idx, (cat_name, config) in enumerate(bacpro_categories.items()):
+            with cols[idx]:
+                icon = config["icon"]
+                color = config["color"]
+
+                if config["value"] == "Matières générales":
+                    quiz_count = sum(len(info["quizzes"]) for info in BACPRO_GENERAL_SUBJECTS.values())
+                    badge = f"{quiz_count} quiz"
+                else:
+                    quiz_count = len(BACPRO_QUIZZES)
+                    badge = None
+
+                has_quiz = quiz_count > 0
+
+                badge_html = ""
+                if badge:
+                    badge_html = f'<div style="position:absolute;top:10px;right:10px;background:{color};color:white;padding:0.3rem 0.6rem;border-radius:20px;font-size:0.75rem;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,0.15);">{badge}</div>'
+
+                card_html = f"""
+<div style="position:relative;background:linear-gradient(135deg, {color}15 0%, {color}05 100%);border:3px solid {color};border-radius:16px;padding:1.5rem;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.12);min-height:140px;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:1rem;opacity:{'1' if has_quiz else '0.5'};">
+{badge_html}
+<div style="font-size:3rem;margin-bottom:0.5rem;">{icon}</div>
+<div style="font-size:1.3rem;font-weight:700;color:{color};">{cat_name}</div>
+</div>
+"""
+                st.markdown(card_html, unsafe_allow_html=True)
+
+                if has_quiz:
+                    if st.button("Accéder", key=f"btn_bacpro_cat_{config['value']}", type="primary", use_container_width=True):
+                        st.session_state.selected_bacpro_family = config["value"]
+                        st.session_state.selected_bacpro_general_subject = None
+                        st.session_state.selected_quiz_key = None
+                        st.session_state.current_theme = None
+                        st.rerun()
+                else:
+                    st.markdown("<p style='text-align:center;color:#9ca3af;font-size:0.9rem;'>Bientôt disponible</p>", unsafe_allow_html=True)
+
+        st.markdown("</div>", unsafe_allow_html=True)
         return
 
     # Cas 1 : Matières générales BAC PRO
     if st.session_state.selected_bacpro_family == "Matières générales":
-        # Si aucune matière n'est sélectionnée, on affiche la liste des matières
         if st.session_state.get("selected_bacpro_general_subject") is None:
             show_bacpro_general_subjects()
         else:
             show_bacpro_general_quizzes_for_subject()
         return
 
-    # Cas 2 : Spécialités / anciens quiz BAC PRO
+    # Cas 2 : Spécialités / Métiers BAC PRO
     if st.session_state.selected_bacpro_family == "Spécialités":
         st.subheader("BAC PRO – Quiz métiers / spécialités")
+
+        if st.button("⬅️ Retour aux catégories BAC PRO", key="back_to_bacpro_cat_from_spec"):
+            st.session_state.selected_bacpro_family = None
+            st.rerun()
 
         quiz_keys = get_sorted_quiz_keys(BACPRO_QUIZZES)
 
@@ -1930,7 +2027,6 @@ def show_quiz_list_for_bacpro():
         else:
             for key in quiz_keys:
                 render_quiz_card(key)
-
 
 def show_quiz_list_for_bts():
     st.subheader("BTS – Choisissez un quiz")
