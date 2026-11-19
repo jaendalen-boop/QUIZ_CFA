@@ -416,6 +416,8 @@ QUIZZES = {
     "bacpro_enseignement_moral_et_civique": {"title": "BAC PRO Matières générales – Enseignement moral et civique", "description": "Révisions d'EMC – BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_enseignement_moral_et_civique", "icon": "🕊️", "color": CMA_BLEU_MARINE},
     "bacpro_mathematique": {"title": "BAC PRO Matières générales – Mathématiques", "description": "Révisions de mathématiques – BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique", "icon": "📐", "color": CMA_BLEU_MARINE},
     "bacpro_mathematique_2": {"title": "BAC PRO Matières générales – Mathématiques (quiz 2)", "description": "Révisions de mathématiques – série 2 BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_mathematique_2", "icon": "📐", "color": CMA_BLEU_MARINE},
+    "bacpro_sciencephysique_chimie": {"title": "BAC PRO Matières générales – Physique-Chimie", "description": "Révisions de physique-chimie – BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_sciencephysique_chimie", "icon": "🔬", "color": CMA_BLEU_MARINE},
+    "bacpro_sciencephysique_chimie_2": {"title": "BAC PRO Matières générales – Physique-Chimie (quiz 2)", "description": "Révisions de physique-chimie – série 2 BAC PRO.", "path": "quizzes.quiz_bacpro_generaux.quiz_bacpro_sciencephysique_chimie_2", "icon": "⚗️", "color": CMA_BLEU_MARINE},
 }
 
 # -----------------------
@@ -686,6 +688,10 @@ BACPRO_GENERAL_SUBJECTS = {
     "Mathématiques": {
         "icon": "📐",
         "quizzes": ["bacpro_mathematique", "bacpro_mathematique_2"],
+    },
+    "Physique-Chimie": {
+        "icon": "🔬",
+        "quizzes": ["bacpro_sciencephysique_chimie", "bacpro_sciencephysique_chimie_2"],
     },
     "Enseignement moral et civique": {
         "icon": "🕊️",
