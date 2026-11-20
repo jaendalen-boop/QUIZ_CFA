@@ -1742,7 +1742,7 @@ def show_cap_general_subjects():
     st.markdown("</div>", unsafe_allow_html=True)
 
 def show_cap_general_quizzes_for_subject():
-    """Écran : liste des quiz (1, 2, ...) pour une matière générale CAP."""
+    """Écran : liste des quiz (1, 2, ...) pour une matière générale CAP (design en cartes)."""
     subject = st.session_state.selected_cap_general_subject
     if not subject or subject not in CAP_GENERAL_SUBJECTS:
         st.warning("Aucune matière sélectionnée.")
@@ -1751,20 +1751,42 @@ def show_cap_general_quizzes_for_subject():
     info = CAP_GENERAL_SUBJECTS[subject]
     quizzes = info["quizzes"]
 
-    st.subheader(f"CAP – {subject}")
+    st.markdown(
+        f"<h2 style='text-align:center;margin-bottom:2rem;color:#374151;font-size:1.8rem;'>CAP – {subject}</h2>",
+        unsafe_allow_html=True
+    )
 
-    if st.button("⬅️ Retour aux matières générales"):
+    if st.button("⬅️ Retour aux matières générales", key="back_to_cap_subjects"):
         st.session_state.selected_cap_general_subject = None
         st.rerun()
 
-    for idx, key in enumerate(quizzes, start=1):
-        quiz_info = QUIZZES[key]
-        label = f"Quiz {idx}"
-        if st.button(label, key=f"{subject}_quiz_{idx}"):
-            st.session_state.selected_quiz_key = key
-            reset_quiz_state_for_selected_quiz()
-            st.rerun()
+    color = "#4f46e5"
+    st.markdown("<div style='max-width:800px;margin:0 auto;'>", unsafe_allow_html=True)
 
+    for idx, key in enumerate(quizzes):
+        if idx % 2 == 0:
+            cols = st.columns(2)
+        col = cols[idx % 2]
+
+        quiz_info = QUIZZES[key]
+        icon = quiz_info.get("icon", info["icon"])
+        label = f"Quiz {idx + 1}" if len(quizzes) > 1 else "Quiz"
+
+        with col:
+            card_html = f"""
+<div style="position:relative;background:linear-gradient(135deg, {color}15 0%, {color}05 100%);border:3px solid {color};border-radius:16px;padding:1.5rem;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.12);min-height:140px;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:1rem;">
+<div style="font-size:3rem;margin-bottom:0.5rem;">{icon}</div>
+<div style="font-size:1.3rem;font-weight:700;color:{color};">{label}</div>
+</div>
+"""
+            st.markdown(card_html, unsafe_allow_html=True)
+
+            if st.button("Lancer ce quiz", key=f"{subject}_quiz_{idx + 1}", type="primary", use_container_width=True):
+                st.session_state.selected_quiz_key = key
+                reset_quiz_state_for_selected_quiz()
+                st.rerun()
+
+    st.markdown("</div>", unsafe_allow_html=True)
 
 def render_quiz_card(key):
     info = QUIZZES[key]
@@ -1865,7 +1887,7 @@ def show_bacpro_general_subjects():
 
 
 def show_bacpro_general_quizzes_for_subject():
-    """Écran : liste des quiz pour une matière générale BAC PRO."""
+    """Écran : liste des quiz pour une matière générale BAC PRO (design en cartes)."""
     subject = st.session_state.get("selected_bacpro_general_subject")
     if not subject or subject not in BACPRO_GENERAL_SUBJECTS:
         st.warning("Aucune matière sélectionnée.")
@@ -1874,19 +1896,42 @@ def show_bacpro_general_quizzes_for_subject():
     info = BACPRO_GENERAL_SUBJECTS[subject]
     quizzes = info["quizzes"]
 
-    st.subheader(f"BAC PRO – {subject}")
+    st.markdown(
+        f"<h2 style='text-align:center;margin-bottom:2rem;color:#374151;font-size:1.8rem;'>BAC PRO – {subject}</h2>",
+        unsafe_allow_html=True
+    )
 
     if st.button("⬅️ Retour aux matières générales", key="back_to_bacpro_subjects"):
         st.session_state.selected_bacpro_general_subject = None
         st.rerun()
 
-    for idx, key in enumerate(quizzes, start=1):
+    color = "#4f46e5"
+    st.markdown("<div style='max-width:800px;margin:0 auto;'>", unsafe_allow_html=True)
+
+    for idx, key in enumerate(quizzes):
+        if idx % 2 == 0:
+            cols = st.columns(2)
+        col = cols[idx % 2]
+
         quiz_info = QUIZZES[key]
-        label = f"Quiz {idx}" if len(quizzes) > 1 else "Quiz"
-        if st.button(label, key=f"bacpro_{subject}_quiz_{idx}"):
-            st.session_state.selected_quiz_key = key
-            reset_quiz_state_for_selected_quiz()
-            st.rerun()
+        icon = quiz_info.get("icon", info["icon"])
+        label = f"Quiz {idx + 1}" if len(quizzes) > 1 else "Quiz"
+
+        with col:
+            card_html = f"""
+<div style="position:relative;background:linear-gradient(135deg, {color}15 0%, {color}05 100%);border:3px solid {color};border-radius:16px;padding:1.5rem;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.12);min-height:140px;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-bottom:1rem;">
+<div style="font-size:3rem;margin-bottom:0.5rem;">{icon}</div>
+<div style="font-size:1.3rem;font-weight:700;color:{color};">{label}</div>
+</div>
+"""
+            st.markdown(card_html, unsafe_allow_html=True)
+
+            if st.button("Lancer ce quiz", key=f"bacpro_{subject}_quiz_{idx + 1}", type="primary", use_container_width=True):
+                st.session_state.selected_quiz_key = key
+                reset_quiz_state_for_selected_quiz()
+                st.rerun()
+
+    st.markdown("</div>", unsafe_allow_html=True)
 
 # -----------------------
 # INTERFACE : LISTE DES QUIZ CAP
